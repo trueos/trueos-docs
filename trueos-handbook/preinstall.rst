@@ -261,11 +261,11 @@ Creating Free Space
 
 If you wish to dual-boot TrueOS® with an existing operating system, you
 must first make sure that there is either a free partition or an area of
-free space to install into. For example, if you are currently running a
-Windows operating system, it will be installed to the entire hard drive.
+free space to use. For example, if you are currently running a
+Windows operating system, it usually occupies the entire hard drive.
 You will need to first shrink the partition that contains the current
-operating system in order to make room to install TrueOS®. Shrinking is
-an operation that retains the current operating system, while reducing
+operating system to make room to install TrueOS®. Shrinking is
+an operation that retains the current operating system while reducing
 the size of its partition. This section demonstrates how to create free
 space within Windows 10.
 
@@ -276,34 +276,44 @@ space within Windows 10.
 To shrink the drive, right-click the "Start" menu and click
 "Disk Management". In the example shown in
 :numref:`Figure %s: Viewing Disk Layout in Disk Management <partition1>`, 
-the Windows system has three partitions: a 16GB recovery partition, a
-100MB system partition, and a 450GB data partition.
+the Windows system has three partitions: a 450MB recovery partition, a
+237.93GB data partition, and a 100MB system partition.
 
 .. _partition1:
 
-.. figure:: images/partition1.jpg
+.. figure:: images/partition1.png
 
-Since the three Windows partitions are using the entire disk, the data
-partition needs to be shrunk in order to create space to install TrueOS®
-into. To shrink the data partition, right-click the partition, which in
-this example is called *Acer (C:)*, and select "Shrink Volume". Wait a
-moment as it queries the volume for available shrink space. The results
-will be displayed as seen in the example in
+Since the three Windows partitions fill the entire disk, the data
+partition must be shrunk to create space to install TrueOS®. Right-click
+the data partition (in this example, the *(C:)* partition),
+and select "Shrink Volume" as shown in
+:numref:`Figure %s: Shrink Volume Menu Selection <partition2>`.
+
+.. _partition2:
+
+.. figure:: images/partition2.png
+
+Wait a
+moment as the volume is queried for available shrink space. The results
+are shown in
 :numref:`Figure %s: Available Shrink Space <shrink1>`. 
 
 .. _shrink1:
 
-.. figure:: images/shrink1.jpg
+.. figure:: images/shrink1.png
 
-In this example, 321089MB of space is available. To divide the partition
-between Windows and TrueOS®, change that number to *230000* and click
-the "Shrink" button. When finished, the newly created free space will be
-displayed, as seen in
+Here, 119307MB of space is available. This is the maximum amount
+Windows can shrink this particular partition. Accept that number, or choose a
+smaller number for a smaller TrueOS® partition.  Click
+the "Shrink" button to begin the shrinking process.  This procedure can
+take several minutes to complete.
+When finished, the newly created free space will be
+displayed as seen in
 :numref:`Figure %s: Disk Now Has Free Space <shrink2>`.
 
 .. _shrink2: 
 
-.. figure:: images/shrink2.jpg
+.. figure:: images/shrink2.png
 
 .. warning:: It is important that you **do not** choose to install
    TrueOS® into any of the three Windows partitions when you get to the
