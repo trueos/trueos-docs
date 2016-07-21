@@ -1,4 +1,3 @@
-
 **Preface** 
 
 Written by users of the TrueOS® operating system.
