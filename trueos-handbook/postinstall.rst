@@ -426,7 +426,7 @@ you select or input the following:
   :ref:`AppCafe®`, use the drop-down menu to select the desktop to log
   into.
 
-.. note:: if you created a PersonaCrypt user, you will need to insert
+.. note:: If you created a PersonaCrypt user, you will need to insert
    the PersonaCrypt device in order to login. As seen in the example
    in :numref:`Figure %s: TrueOS® PersonaCrypt Login Screen <login5>`,
    this will add an extra field to the login screen so that you can
@@ -458,18 +458,6 @@ login.
 The first time you log in, the PC-BSD® "Getting Started" screen will
 load as seen in
 :numref:`Figure %s: PC-BSD® Getting Started Screen <welcome1a>`. 
-
-.. _welcome1a:
-
-.. figure:: images/welcome1a.png
-
-If you click the "Next" button, you can read an overview of the
-utilities that are used to configure your network connection, install
-applications, configure your system, make a backup, and keep the
-system updated, as well as how to get involved with the TrueOS®
-community. Check the box "Don't show on next startup" if you do not
-want to see this screen the next time you log in. To re-run this
-screen, type :command:`pc-welcome`.
 
 .. index:: troubleshooting
 .. _Installation Troubleshooting:
