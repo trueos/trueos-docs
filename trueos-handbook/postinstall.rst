@@ -246,12 +246,12 @@ used to login to the system. Set a good value for the password as that
 password is used whenever the system indicates that administrative
 access is required.
 
-:numref:`Figure %s: User Creation Screen <config4>` shows the
+:numref:`Figure %s: User Creation Screen <config4a>` shows the
 configuration screen used to create the initial user account.
 
-.. _config4:
+.. _config4a:
 
-.. figure:: images/config4.png
+.. figure:: images/config4a.png
 
 The "User Details" tab is used to create a login user. This screen
 requires you to complete the following fields: 
@@ -280,7 +280,7 @@ menu if the removable media associated with that TrueOS® system is
 inserted. They must input the password associated with the removable
 device in order to login.
 
-.. note:: when a user is configured to use a PersonaCrypt device, that
+.. note:: When a user is configured to use a PersonaCrypt device, that
    user can not login using an unencrypted session on the same system.
    In other words, the PersonaCrypt username is reserved for
    PersonaCrypt use. If you need to login to both encrypted and
@@ -288,18 +288,18 @@ device in order to login.
    accounts, one for each type of session.
 
 The "PersonaCrypt" tab, shown in
-:numref:`Figure %s: Initializing PersonaCrypt for this User <persona1>`,
+:numref:`Figure %s: Initializing PersonaCrypt for this User <persona1a>`,
 is used to initialize PersonaCrypt for the user.
 
-.. _persona1:
+.. _persona1a:
 
-.. figure:: images/persona1.png
+.. figure:: images/persona1a.png
 
 Check the box "Initialize PersonaCrypt Device", insert a removable
 media that is large enough to hold the files you plan to store in your
 home directory, and click the "Select" button.
 
-.. warning:: make sure you do not have any files that you wish to keep
+.. warning:: Make sure you do not have any files that you wish to keep
    on the removable media. Initializing the media for PersonaCrypt
    will format the device with ZFS and encrypt it with GELI, meaning
    that any existing data will be destroyed.
@@ -366,11 +366,11 @@ Enable Optional Services
 ========================
 
 The next screen is shown in
-:numref:`Figure %s: Optional Services <optional1a>`.
+:numref:`Figure %s: Optional Services <config6>`.
 
-.. _optional1a:
+.. _config6:
 
-.. figure:: images/optional1a.png
+.. figure:: images/config6.png
 
 If you check the "Disable IPV6 (Requires Reboot)" box, the system will
 be configured to only support IPv4 addresses. The default is to
@@ -384,13 +384,13 @@ system.
 **DO NOT check this box if you do not want to allow SSH connections to the system.**
 
 When finished, click the "Next" button. The screen in
-:numref:`Figure %s: Setup is Complete <config6a>` indicates that the
+:numref:`Figure %s: Setup is Complete <config7>` indicates that the
 post-installation setup is complete. Click the "Finish" button to
 access the login menu.
 
-.. _config6a:
+.. _config7:
 
-.. figure:: images/config6a.png
+.. figure:: images/config7.png
 
 .. index:: login
 .. _Logging In:

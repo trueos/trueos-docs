@@ -112,7 +112,9 @@ area allow you to:
 Hover over an icon to view its description in the tip bar at the
 bottom of the screen.
 
-.. note:: The default keyboard layout can be changed now, during the post-installation :ref:`Language Screen`, or when :ref:`Logging In`.
+.. note:: The default keyboard layout can be changed now, during the
+   post-installation :ref:`Language Screen`, or when
+   :ref:`Logging In`.
 
 A button is also provided to "Load config from USB". If you have saved
 the configuration from a previous installation, it can be loaded at
