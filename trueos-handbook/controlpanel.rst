@@ -46,8 +46,6 @@ The following utilities are found in the Control Panel of a TrueOS® system, reg
 
 **System management** 
 
-* :ref:`About`
-
 * :ref:`Active Directory & LDAP`
 
 * :ref:`Hardware Compatibility`
@@ -83,40 +81,6 @@ The following utilities are found in the Control Panel of a TrueOS® system, reg
 * :ref:`Network Configuration`
 
 This chapter describes these utilities in more detail.
-
-.. index:: configuration
-.. _About:
-
-About
-=====
-
-The "About" icon of Control Panel can be used to quickly find information about the TrueOS® system. To start the application, double-click its icon in
-Control Panel or type :command:`about-gui`. An example is seen in :numref:`Figure %s: About Information <about1>`. 
-
-.. _about1:
-
-.. figure:: images/about1.png
-
-he displayed information includes the version of TrueOS®, whether the system is using the PRODUCTION, EDGE, or ENTERPRISE package set, the hostname of the system, the underlying version of
-FreeBSD, the architecture, the name of the kernel (ident), the type of CPU, and the amount of installed memory.
-
-If you click the "Software and system components" button, the screen shown in :numref:`Figure %s: System Components Screen <about2a>` will be displayed. 
- 
- .. _about2a:
- 
- .. figure:: images/about2a.png
-
-Click the arrow next to an entry to display or hide its its details. The following information is available:
-
-* **Video stack:** the Xorg version number, the type and version of the loaded video driver, and the version of the loaded VirtualBox driver.
-
-* **Toolkits:** the version numbers for the installed graphical toolkits.
-
-* **Desktops:** the version numbers of each installed desktop environment.
-
-* **Office:** if an office suite is installed, its version number.
-
-* **Scripting languages:** the version numbers of any installed scripting languages, such as Perl or Python.
 
 .. index:: configuration
 .. _Active Directory & LDAP:
@@ -157,8 +121,7 @@ the rest of the screen, allowing you to configure the following:
   Directory domain (e.g. *example.com*) or child domain (e.g.
   *sales.example.com*). This setting is mandatory.
 
-* **NetBIOS Name:** input the hostname of the TrueOS® system as listed
-  in the :ref:`About` icon.
+* **NetBIOS Name:** input the hostname of the TrueOS® system.
 
 * **Workgroup Name:** input the name of the Windows workgroup. Unless
   the administrator has changed it, the default workgroup name is
@@ -521,7 +484,7 @@ user account creation screen that opens when you click the "Add" button.
 .. figure:: images/user3.png
 
 .. note:: if you click the "Add" button while in "Simple View", you will
-only be prompted to enter the username, full name, and password.
+   only be prompted to enter the username, full name, and password.
 
 This screen is used to input the following information when adding a new
 user or system account: 

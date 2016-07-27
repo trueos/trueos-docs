@@ -226,10 +226,18 @@ The following features or enhancements were introduced for TrueOS®
 * A TrueOS® installation installs the :ref:`Lumina Desktop`. Additional
   window managers can be installed using :ref:`AppCafe®`.
 
-* The :ref:`SysAdm™ Client` and server have been added and most of the
-  :ref:`Control Panel` utilities have been rewritten to use the SysAdm™
+* The :ref:`SysAdm™ Client` and server has replaced the
+  :ref:`Control Panel`. Most of the utilities that were in the
+  :ref:`Control Panel` have been rewritten to use the SysAdm™
   middleware. Under the hood, SysAdm™ provides REST and WebSocket APIs
   for securely managing local and remote FreeBSD and TrueOS® systems.
+  The following utilities have been converted to the SysAdm™ API and
+  are available in the :ref:`SysAdm™ client`: :ref:`AppCafe®`,
+  :ref:`Update Manager`, :ref:`Boot Environment Manager`, and
+  :ref:`Life Preserver`.
+  
+* The functionality that used to be provided by the About utility has
+  been incorporated into :ref:`Lumina Information`.
 
 * :command:`freebsd-update` has been retired in favor of using
   :command:`pkg` for system updates.
@@ -249,19 +257,12 @@ The following features or enhancements were introduced for TrueOS®
   
 * The "Boot to console (Disable X)" option has been added to the 
   graphical boot menu.
-
-* The following utilities have been removed from :ref:`Control Panel` as
-  they have been converted to the SysAdm™ API and are available in the
-  :ref:`SysAdm™ client`: :ref:`AppCafe®`, :ref:`Update Manager`,
-  :ref:`Boot Environment Manager`, and :ref:`Life Preserver`.
   
 * These new utilites are available in the :ref:`SysAdm™ Client`:
   :ref:`Manage SSL Keys` and :ref:`Task Manager`.  
 
 * The graphical and command line versions of PBI Manager and Warden have
   been removed.
-  
-* The "Report a Bug" utility has been removed from :ref:`Control Panel`.
 
 .. index:: Linux
 .. _TrueOS® for Linux Users:
