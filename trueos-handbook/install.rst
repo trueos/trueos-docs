@@ -126,7 +126,7 @@ untranslated menus will be displayed in English. Refer to
 :ref:`Become a Translator` if you would like to assist in translating
 the graphical menus to your native language.
 
-.. note:: small screens may not display the entire installer window,
+.. note:: Small screens may not display the entire installer window,
    which means that the buttons at the bottom of the window are hidden
    and inaccessible. In this situation, either press :kbd:`Alt` while
    dragging the window with the mouse or press :kbd:`Alt+N` to select
@@ -179,11 +179,11 @@ The "Disk Selection" screen, seen in
 This screen provides a drop-down "Boot-Loader" menu with these boot
 manager options:
 
-**GRUB:** select this option if you will be dual-booting the system
-and prefer to use the GRUB bootloader
-
 **BSD:** uses the FreeBSD boot loader. This is recommended as it
 supports the ZFS boot environments used by :ref:`Update Manager`.
+
+**GRUB:** select this option if you will be dual-booting the system
+and prefer to use the GRUB bootloader
 
 .. warning:: By default, TrueOS® will assume that you wish to install
    on the entire first disk. If you are installing TrueOS® as the only
@@ -209,8 +209,9 @@ describes these modes in detail.
 
 * **Advanced:** select this mode if you wish to specify the
   installation partition or disk, use MBR partitioning, change the
-  default ZFS pool name, force the block size used by ZFS, specify the
-  filesystem layout, add a log or cache device, or encrypt the disk.
+  default ZFS pool name, force the block size used by ZFS, configure a
+  multi-disk installation, add a log or cache device, encrypt the
+  disk, or specify the filesystem layout.
 
 * **FreeBSD Expert:** select this mode if you prefer to drop down to a
   shell to manually enter the commands to setup your disk.
@@ -560,6 +561,11 @@ disabling any of the following ZFS properties:
   write traffic when reading files and can result in significant performance gains, though it might confuse mailers and some other utilities.
 
 * **canmount:** if set to "off", the filesystem can not be mounted.
+
+* **casesensitivity:** the default is "sensitive", as UNIX filesystems
+  use case-sensitive file names. This means, for example, that "kris"
+  is different from "Kris". To tell the dataset to ignore case, select
+  "insensitive".
 
 * **checksum:** automatically verifies the integrity of the data stored on disks.
   **Setting this property to "off" is highly discouraged.**
