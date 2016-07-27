@@ -706,34 +706,39 @@ until the replication is finished and it will not start a second replication bef
 Restoring the Operating System
 ------------------------------
 
-If you have replicated the system's snapshots to a remote backup server, you can use a TrueOS® installation media to perform an operating system restore or to clone
-another system. Start the installation as usual until you get to the screen shown in :numref:`Figure %s: Selecting to Restore/Clone From Backup <restore1>`. 
+If you have replicated the system's snapshots to a remote backup
+server, you can use a TrueOS® installation media to perform an
+operating system restore or to clone another system. Start the
+installation as usual until you get to the screen shown in
+:numref:`Figure %s: Selecting to Restore/Clone From Backup <restore1>`. 
 
 .. _restore1: 
 
 .. figure:: images/restore1.png
 
-Before you can perform a restore, the network interface must be configured. Click the "network connectivity" icon (second from the left) in order to determine
-if the network connection was automatically detected. If it was not, refer to the instructions in :ref:`Network Configuration` and make sure that networking is
-working before continuing.
+Before you can perform a restore, the network interface must be
+configured. Click the "network connectivity" icon (second from the
+left) in order to determine if the network connection was
+automatically detected. If it was not, refer to the instructions in
+:ref:`Network Configuration` and make sure that networking is working
+before continuing.
 
-Once you are ready, click "Restore from Life-Preserver backup" and the "Next" button. This will start the Restore Wizard. In the screen shown in
-:numref:`Figure %s: Input the Information for a SSH Restore <restore2>`, input the IP address of the backup server and the name of the user account used to replicate the snapshots. If
-the server is listening on a non-standard SSH port, change the "SSH port" number. Then, click "Next" to select an authentication method in the screen shown in
-:numref:`Figure %s: Select the Authentication Method <restore3>`.
+Once you are ready, click "Restore from Life-Preserver backup" and the
+"Next" button. This will start the Restore Wizard. In the screen shown
+in
+:numref:`Figure %s: Input the Information for a SSH Restore <restore2>`,
+input the IP address of the backup server and the name of the user
+account used to replicate the snapshots. If the server is listening on
+a non-standard SSH port, change the "SSH port" number. 
 
 .. _restore2: 
 
 .. figure:: images/restore2.png
 
-.. _restore3: 
+Click "Next" and the wizard will provide a summary of your selections.
+If correct, click "Finish"; otherwise, click "Back" to correct them.
 
-.. figure:: images/restore3.png
-
-If you previously saved the SSH key to a USB stick, insert the stick then press "Next". Otherwise, change the selection to "Use password authentication" and
-press "Next". The next screen will either read the inserted USB key or prompt for the password, depending upon your selection. The wizard will then attempt a
-connection to the server.
-
+Once you click "Finish",
 Once the connection to the backup server succeeds, you will be able to select which host to restore. In the example shown in :numref:`Figure %s: Select the Host to Restore <restore4>`,
 only one host has been backed up to the replication server.
 
