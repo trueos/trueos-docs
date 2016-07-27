@@ -160,9 +160,6 @@ software post-installation, using :ref:`AppCafe®`.
 To install the desktop, click the "Next" button to proceed to the next
 screen.
 
-.. note:: When installing a desktop, the installer will display a pop-up message if it cannot find a physical or virtual disk that does not meet the
-   recommended minimum size of 50GB. It will let you continue an installation on a smaller disk, but you may run into disk space issues on smaller disks.
-
 .. index:: installation
 .. _Disk Selection Screen:
 
@@ -170,7 +167,8 @@ Disk Selection Screen
 =====================
 
 The "Disk Selection" screen, seen in
-:numref:`Figure %s: Disk Selection Screen <install5b>`, summarizes the default disk configuration.
+:numref:`Figure %s: Disk Selection Screen <install5b>`, summarizes the
+default disk configuration.
 
 .. _install5b:
 
@@ -194,8 +192,8 @@ and prefer to use the GRUB bootloader
    review the section on :ref:`Dual Booting`.
 
 If you wish to select which disk or partition to install TrueOS® into,
-click the "Customize" button to start the Disk Setup Wizard, shown in
-:numref:`Figure %s: Disk Setup Wizard <install6b>`. 
+click the "Customize" button to start the TrueOS® Disk Wizard, shown in
+:numref:`Figure %s: TrueOS® Disk Wizard <install6b>`. 
 
 .. _install6b: 
 
@@ -557,8 +555,11 @@ redundancy.
 If you right-click any mount point, you can toggle between enabling or
 disabling any of the following ZFS properties:
 
-* **atime:** when set to "on", controls whether the access time for files is updated when they are read. When set to "off", this property avoids producing
-  write traffic when reading files and can result in significant performance gains, though it might confuse mailers and some other utilities.
+* **atime:** when set to "on", controls whether the access time for
+  files is updated when they are read. When set to "off", this
+  property avoids producing write traffic when reading files and can
+  result in significant performance gains, though it might confuse
+  mailers and some other utilities.
 
 * **canmount:** if set to "off", the filesystem can not be mounted.
 
@@ -567,12 +568,15 @@ disabling any of the following ZFS properties:
   is different from "Kris". To tell the dataset to ignore case, select
   "insensitive".
 
-* **checksum:** automatically verifies the integrity of the data stored on disks.
+* **checksum:** automatically verifies the integrity of the data
+  stored on disks.
   **Setting this property to "off" is highly discouraged.**
 
-* **compression:** if set to "on", automatically compresses stored data to conserve disk space.
+* **compression:** if set to "on", automatically compresses stored
+  data to conserve disk space.
 
-* **exec:** if set to "off", processes can not be executed from within this filesystem.
+* **exec:** if set to "off", processes can not be executed from within
+  this filesystem.
 
 * **setuid:** if set to "on", the set-UID bit is respected.
 
