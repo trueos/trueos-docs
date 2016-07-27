@@ -16,58 +16,103 @@ troubleshooting tips for failed installations.
 Booting Into TrueOS®
 =====================
 
-After installation, TrueOS® will reboot and display the boot menu shown in :numref:`Figure %s: Initial Boot Menu <boot2>`.
+After installation, TrueOS® will reboot and display a boot menu. The
+menu that is displayed depends upon the boot loader selection chosen
+during the installation.
 
-.. _boot2:
+.. _BSD Boot Loader:
 
-.. figure:: images/boot2.png
+BSD Boot Loader
+---------------
 
-This menu provides the following options. To pause this menu, press any key except for :kbd:`Enter`. To select an option, press either the bolded number or key for that option. Once you
-have finished making your selections, press :kbd:`Enter` to boot using the selected options.
+If you performed a default install or kept the "BSD" option for the
+boot loader, it will load the
+:numref:`Figure %s: TrueOS® Boot Menu <install1b>`. 
 
-* **1. Boot Multi User:** this is the default option for booting TrueOS®. The system will automatically use this option after pausing for a few moments or if you press :kbd:`Enter` when this
+.. _install1b:
+
+.. figure:: images/install1b.png
+
+This menu provides the following options. To pause this menu, press
+any key except for :kbd:`Enter`. To select an option, press either the
+bolded number or key for that option. Once you have finished making
+your selections, press :kbd:`Enter` to boot using the selected
+options.
+
+* **1. Boot Multi User:** this is the default option for booting
+  TrueOS®. The system will automatically use this option either after
+  pausing for a few moments or if you press :kbd:`Enter` when this
   menu displays.
 
-* **2. Boot Single User:** advanced users can select this option to fix critical system failures.
+* **2. Boot Single User:** advanced users can select this option to
+  fix critical system failures.
 
-* **3. Escape to loader prompt:** advanced users can select this option to perform advanced operations, such as loading kernel modules.
+* **3. Escape to loader prompt:** advanced users can select this
+  option to perform advanced operations, such as loading kernel
+  modules.
 
 * **4. Reboot:** reboots the system.
 
-* **5. Kernel:** this option will indicate how many kernels are available. Press either :kbd:`5` or :kbd:`k` to toggle between available kernels.
+* **5. Kernel:** this option will indicate how many kernels are
+  available. Press either :kbd:`5` or :kbd:`k` to toggle between
+  available kernels.
 
-* **6. Configure Boot Options:** if you press either :kbd:`6` or :kbd:`o`, the boot options screen shown in :numref:`Figure %s: Boot Options Menu <boot1b>` will open. To change an option,
-  press either the bolded number or key for that option to toggle through its available settings. When finished, press either :kbd:`1` or :kbd:`Backspace` to return to the main boot menu.
+* **6. Configure Boot Options:** if you press either :kbd:`6` or
+  :kbd:`o`, the boot options screen shown in
+  :numref:`Figure %s: Boot Options Menu <boot1b>` will open. To change
+  an option, press either the bolded number or key for that option to
+  toggle through its available settings. When finished, press either
+  :kbd:`1` or :kbd:`Backspace` to return to the TrueOS® boot menu.
 
-* **7. Select Boot Environment:** in TrueOS®, boot environments are automatically created when the system updates and can also be manually created using :ref:`Boot Environment Manager`. This
-  allows you to boot the system to the point in time before an update occurred and can be used to recover from a failed update. Press either :kbd:`7` or :kbd:`e` to view the available boot
-  environments. Note that the first time the system boots, no additional boot environments are available. Over time, this menu will populate as boot environments are created.
-
+* **7. Select Boot Environment:** in TrueOS®, boot environments are
+  automatically created when the system updates and can also be
+  manually created using :ref:`Boot Environment Manager`. This allows
+  you to boot the system to the point in time before an update
+  occurred and can be used to recover from a failed update. Press
+  either :kbd:`7` or :kbd:`e` to view the available boot environments.
+  Note that the first time the system boots, no additional boot
+  environments are yet available. Over time, this menu will populate
+  as boot environments are created.
+  
 .. _boot1b:
 
 .. figure:: images/boot1b.png
 
-The following boot options are available in the :numref:`Figure %s: Boot Options Menu <boot1b>`:
+The following boot options are available in the
+:numref:`Figure %s: Boot Options Menu <boot1b>`:
 
-* **3. ACPI Support:** toggles  power  management support,  which may be useful for  certain BIOS's  and laptops. 
+* **3. ACPI Support:** toggles  power  management support which may be
+  useful for  certain BIOS's  and laptops. 
 
-* **4. Safe Mode:** select this option if the  installation hangs when probing your hardware and option "3 ACPI Support" did not help. It will boot with a forced PIO mode (disabling the use
-  of DMA), disable write caching for all IDE hard drives and CD ROM drives, and disable the probing of EISA slots (as very few systems have them). 
+* **4. Safe Mode:** select this option if the installation hangs when
+  probing hardware and option "3 ACPI Support" did not help. It will
+  boot with a forced PIO mode (disabling the use of DMA), disable
+  write caching for all IDE hard drives and CD ROM drives, and disable
+  the probing of EISA slots (as very few systems have them). 
 
-* **5. Single User:** advanced users can select this option to fix critical system failures.
+* **5. Single User:** advanced users can select this option to fix
+  critical system failures.
 
-* **6. Verbose:** select this option if you would like to see more detailed messages during the boot process. This can be useful if you are troubleshooting
-  a piece of hardware.
+* **6. Verbose:** select this option if you would like to see more
+  detailed messages during the boot process. This can be useful when
+  troubleshooting a piece of hardware.
 
 * **7. Display Wizard:** if you are unable to access the GUI due to a display setting, enable this option to boot into the display settings wizard.
 
 * **8. Disable X:** boots the system to a command prompt. This is useful if you want to manually configure and test the X configuration file.
 
-The first time the boot completes, the post-installer configuration script will attempt to set the optimal display settings. A pop-up menu will ask if you would like to accept these
-settings. If you click "Yes", TrueOS® will then proceed to the :ref:`Language Screen` so that you can perform the initial configuration of the system. 
+.. _GRUB Boot Loader:
 
-Read through the rest of this section if you have encrypted your disk(s) or if you have problems setting the display settings. If you are dual booting and your other operating system was not
-automatically added to the graphical boot menu by the installer, refer to :ref:`Dual Booting`.
+GRUB Boot Loader
+---------------
+
+If you customized the installation and selected the "GRUB" option for
+the boot loader, it will instead load the menu shown in
+:numref:`Figure %s: GRUB Boot Menu <boot2>`.
+
+.. _boot2:
+
+.. figure:: images/boot2.png
 
 .. index:: encryption
 .. _If you Encrypted Your Disks:
@@ -86,24 +131,37 @@ The boot process will wait for you to successfully input the password that you c
 correct password is typed in, the system will continue to boot.
 
 .. index:: video
-.. _If Your Display is Not Automatically Detected:
+.. _Display Detection:
 
-If Your Display is Not Automatically Detected 
-----------------------------------------------
+Display Detection
+-----------------
 
-If the optimal display settings can not be determined during first boot, if you select "No"in the "Confirm Resolution" screen when asked to confirm the
-display settings, or if you select "Run the Display Wizard" from the boot menu, the "Display Settings" screen shown in :numref:`Figure %s: Display Settings Wizard <display1>` will launch.
+The first time the boot completes, the post-installer configuration
+script will attempt to set the optimal display settings. A pop-up menu
+will either ask if you would like to accept the settings or indicate
+that it could not find the optimal settings. If you click "Yes" to
+accept the settings, TrueOS® will then proceed to the
+:ref:`Language Screen` so that you can perform the initial
+configuration of the system. 
 
-.. _display1:
+If the optimal display settings could not be determined, or if you
+select "No"in the "Confirm Resolution" screen when asked to confirm
+the display settings, or if you select "Run the Display Wizard" from the boot menu, the "Display Settings" screen shown in :numref:`Figure %s: Display Settings Wizard <display3>` will launch.
 
-.. figure:: images/display1.png
+.. _display3:
+
+.. figure:: images/display3.png
 
 The settings in this screen are described in more detail in :ref:`Display`. If you wish to return to this display wizard at a later time, go to
 :menuselection:`Control Panel --> Display`.
 
-If you change any display settings, click the "Apply" button for the settings to be tested. If anything goes wrong during testing, you will be taken back to
-the "Display Settings" screen so that you can try another setting. Once you are happy with the tested setting, click the "Yes" button to save the setting and
-to proceed.
+If you change any display settings, click the "Apply" button for the
+settings to be tested. If anything goes wrong during testing, you will
+be taken back to the "Display Settings" screen so that you can try
+another setting. Once you are happy with the tested setting, click the
+"Yes" button to save the setting and to proceed. Alternately, click
+the "Skip" button if you prefer to configure the display settings at a
+later time. 
 
 .. index:: language
 .. _Language Screen:

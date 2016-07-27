@@ -22,6 +22,9 @@ As the system boots it will display the menu shown in
 just press :kbd:`Enter` or wait for this menu to go by and the system
 will continue to boot. 
 
+.. note:: This boot menu is described in detail in
+   :ref:`BSD Boot Loader`.
+
 .. _install1b:
 
 .. figure:: images/install1b.png
