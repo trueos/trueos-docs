@@ -104,7 +104,7 @@ The following boot options are available in the
 .. _GRUB Boot Loader:
 
 GRUB Boot Loader
----------------
+----------------
 
 If you customized the installation and selected the "GRUB" option for
 the boot loader, it will instead load the menu shown in
@@ -452,12 +452,6 @@ following options on a per-login basis:
 Once you have made your selections, input the password associated with
 the selected user and press enter or click the blue arrow icon to
 login.
-
-.. index:: welcome
-
-The first time you log in, the PC-BSD® "Getting Started" screen will
-load as seen in
-:numref:`Figure %s: PC-BSD® Getting Started Screen <welcome1a>`. 
 
 .. index:: troubleshooting
 .. _Installation Troubleshooting:

@@ -315,7 +315,7 @@ The "Misc" tab is shown in :numref:`Figure %s: Miscellaneous Options <login4a>`.
 
 This screen provides the following options:
 
-**Enable "show password" button:** by default, when a user types their password at the login prompt shown in :numref:`Figure %s: Optional Services <optional1a>`, "*" characters are displayed
+**Enable "show password" button:** by default, when a user types their password at the login prompt shown in :numref:`Figure %s: Optional Services <config6>`, "*" characters are displayed
 as the password is typed in order to prevent another user from seeing the password as it is typed. When the  "Enable "show password" button" box is checked, and the user clicks the lock icon
 next to the typed password in the login screen, the asterisks will change to reveal the password.
 

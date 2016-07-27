@@ -356,13 +356,7 @@ wish to install into and **make sure that you do not select a partition that alr
 .. warning:: **make sure that you click the "Customize" button while in the "Disk Selection" screen.** If you just click "Next" without customizing the disk
    layout, the installer will overwrite the contents of the primary disk.
 
-.. index:: GRUB
-.. _GRUB Boot Loader:
-
-GRUB Boot Loader
-----------------
-
-In TrueOS® 11, the FreeBSD boot loader is the preferred, and default, boot loader as it provides native support for ZFS boot environments. If you changed the default during installation,
+In TrueOS® 11, the BSD boot loader is the preferred, and default, boot loader as it provides native support for ZFS boot environments. If you changed the default during installation,
 the installer will use a customized version of the GRUB boot loader that provides limited ZFS boot environment support.
 
 The TrueOS® version of GRUB will attempt to identify other installed operating systems, such as Windows and Linux, and add them to the GRUB boot menu. If your other operating system is not
