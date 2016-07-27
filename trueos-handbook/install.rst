@@ -634,5 +634,10 @@ appears once the installation is complete.
 
 .. figure:: images/install14a.png
 
-Click the "Finish" button to reboot into your TrueOS® installation.
-Wait until the installer exits before removing the installation media.
+Click the "Finish" button to complete the TrueOS® installation. It
+will return to the
+:numref:`Figure %s: TrueOS® Installer Boot Menu <install1d>`. If you
+wish to manually configure the system before booting into it, select
+the "utility" entry to open a *root* shell. Otherwise, select the
+"reboot" entry to reboot into the new installation. Wait until this
+menu exits before removing the installation media.
