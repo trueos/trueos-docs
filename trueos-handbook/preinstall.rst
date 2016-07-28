@@ -68,15 +68,12 @@ available disk space will improve your computing experience:
 
 * NVIDIA 3D-accelerated video card 
 
-The TrueOS® installer's hardware check will display a warning message if
-the selected partition contains less than 20GB for a server installation
-or less than 50GB for a desktop installation. The installation itself
-does not require this much disk space. Instead, the minimum
-recommendation is to provide sufficient room for the installation of
-applications and to store local ZFS snapshots and boot environments
-which can be used to retrieve earlier versions of files, rollback the
-operating system to an earlier point in time, or clone the operating
-system.
+TrueOS® does not require 50GB for its installation. Instead, the
+minimum recommendation is to provide sufficient room for the
+installation of applications and to store local ZFS snapshots and boot
+environments which can be used to retrieve earlier versions of files,
+rollback the operating system to an earlier point in time, or clone
+the operating system.
 
 You can never have too much RAM, so install as much as you can afford.
 To play modern video games, you should use a fast CPU. If you want to
@@ -327,30 +324,17 @@ displayed as seen in
 Obtaining TrueOS®
 ==================
 
-TrueOS® version numbers are similar to those used by FreeBSD. In
-addition, TrueOS® provides two branches. The branch that you choose to
-install or upgrade to determines when you will receive updates as new
-features and drivers are added to the operating system. Downloadable
-files include the version number, where |version| is the most recent
-version, and either the word :file:`RELEASE` or :file:`STABLE`, where: 
+TrueOS® uses a rolling release model rather than versioned releases.
+This model...
 
-* **RELEASE:** indicates that new drivers and features will not be added
-  to the operating system until the next RELEASE version becomes
-  available and the user upgrades to that new version. If reliability is
-  more important to you than new features or drivers, use the RELEASE
-  version.
-
-* **STABLE:** around the 1st of each month, :ref:`Update Manager` will
+Around the 1st of each month, :ref:`Update Manager` will
   provide a patch which will update the operating system to include all
   of the new features and drivers. If you wish to have or test the
   latest features and drivers as they become available and can tolerate
   possible breakage caused by new features being available before the
   next RELEASE, use the STABLE version.
 
-The files for the current RELEASE can be downloaded from the
-`PC-BSD® website <http://www.pcbsd.org/download/>`_. Previous RELEASE
-and STABLE versions can be downloaded from the
-`PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_. 
+Installation files can be downloaded from the `TrueOS® website <http://www.pcbsd.org/download/>`_ or the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_. 
 
 Several types of files are available for download. Before downloading a
 file, review the following descriptions to see which one best suits your
@@ -377,32 +361,16 @@ device.
 If you prefer to install a command-line only server, you can either download the same ISO or download the ISO with :file:`TRUEOS` in the name. The
 :file:`TRUEOS` download is smaller and can be burned to a CD or written to a removable USB device.
 
-Pre-installed virtual images are also available, making it easy to use or try TrueOS® in a virtual environment. Four types of images are
-available: 
-
-* Files ending in :file:`.ova` can be used in VirtualBox, as described in :ref:`Using the Downloadable .ova File`.
-
-* Files ending in :file:`.vdi.xz` can be used in Virtualbox, as described in :ref:`Using the Downloadable VirtualBox or VMWare Disk`.
-
-* Files ending in :file:`.vmdk.xz` can be used in VMware, as described in :ref:`Using the Downloadable VirtualBox or VMWare Disk`.
-
-* Files ending in :file:`.raw.xz` can be used in Qemu and can also be converted to other virtual image formats.
-
-When selecting a virtual image file, choose a format that matches your virtualization technology, and an edition that matches what you would like to use.
-The following editions are available: 
-
-* :file:`consumer-desktop`: provides an installed version of TrueOS® with the KDE and Fluxbox desktop environments.
-
-* :file:`trueos-server`: provides a pre-installed TrueOS® server that is command-line only.
-
-If you downloaded an installation file, instead of a virtual image, refer to :ref:`Burning the Installation Media` for instructions on how to burn the file to
+Refer to :ref:`Burning the Installation Media` for instructions on how to burn the file to
 bootable media.
 
 If you have a slow download connection or wish to support the TrueOS® project financially, you can purchase PC-BSD® DVDs from the
 `FreeBSD Mall <https://www.freebsdmall.com/cgi-bin/fm/scan/su=yes/fi=prod_bsd/sf=sku/sf=title/sf=category/se=pcbsd>`_.
 
-Members of the TrueOS® project attend many IT conferences across the globe and give out PC-BSD® DVDs at conference booths. Visiting a PC-BSD® booth is an
-excellent way to meet other TrueOS® users and to get your questions answered. Check the `PC-BSD® Blog <https://blog.pcbsd.org/>`_ to see if any events are
+Members of the TrueOS® project attend many IT conferences across the
+globe and give out TrueOS® DVDs at the FreeBSD booth. Visiting a
+FreeBSD booth is an excellent way to meet other TrueOS® and FreeBSD
+users and to get your questions answered. Check the `PC-BSD® Blog <https://blog.pcbsd.org/>`_ to see if any events are
 happening near you. If you are organizing a PC-BSD® booth, `contact us <http://www.pcbsd.org/support/>`_ to arrange for DVDs.
 
 .. index:: checksum
@@ -725,9 +693,7 @@ supports a large number of operating systems that can be installed into
 a virtual machine.
 
 This section describes how to prepare VirtualBox for an installation of
-TrueOS® using an :file:`.iso` file as well as how to use the
-downloadable :file:`.vmdk`, :file:`.vdi`, and :file:`.ova` images with
-VirtualBox.
+TrueOS® using an :file:`.iso` file.
 
 .. index:: virtualization
 .. _Creating a Virtual Machine for an ISO File:
@@ -881,68 +847,3 @@ into the installation program. If it does not or if you are using an ISO
 stored on the hard disk, press "F12" to select the boot device when you
 see the message to do so, then press "c" to boot from CD-ROM. You can
 then proceed through the installation as described in :ref:`Installing TrueOS®`.
-
-.. index:: virtualization
-.. _Using the Downloadable VirtualBox or VMWare Disk:
-
-Using the Downloadable VirtualBox or VMWare Disk
-------------------------------------------------
-
-TrueOS® provides pre-built VirtualBox and VMWare disks which create a a pre-made virtual machine with TrueOS® already installed. The VirtualBox file ends in
-a :file:`.vdi.xz` extension and the VMWare disk file ends in a :file:`.vmdk.xz` extension. The :file:`.xz` means that the file needs to be unzipped first so that it
-just ends with a :file:`.vdi` or :file:`.vmdk` extension.
-
-On a Linux or BSD system, use the :command:`xz` command by giving it the name of the file which you downloaded::
-
- xz -d PCBSD11.0-RELEASE-x64-consumer-desktop.vmdk.xz
-
-Since this is a large file, the command will take a few minutes to extract the image. You will receive the prompt back when it has finished.
-
-On a Windows system, you can use a utility such as `7-Zip <http://www.7-zip.org/>`_. On a Mac OS X system, simply double-click the file in "Finder" to extract
-it.
-
-Once the file is unzipped, open VirtualBox. When you get to :numref:`Figure %s: Select Whether to Use an Existing or Create a New Virtual Hard Drive <vbox4>`, select "Use an existing virtual
-hard drive file". 
-
-Use the browse icon to browse to the location of the :file:`.vdi` or :file:`.vmdk` file then press "Next". A message will indicate that the virtual machine
-will be created. Click the "Create" button to finish the wizard. You can then configure the network adapter and start the virtual machine.
-
-The "consumer-desktop" virtual machine will boot into the post-installation configuration screens so that the system can be configured. Once the display
-wizard is finished and the login menu appears, input the username and password that you configured at the :ref:`Create a User Screen`.
-
-When using the "trueos-server" edition, the virtual machine will boot into a password prompt. Enter *root* as the username and *pcbsd* as the password. It is
-recommended to immediately change the *root* password by typing :command:`passwd` and following the prompts. It is also recommended to create a user account
-to login with. You can do so by typing :command:`adduser` and following the prompts.
-
-.. index:: virtualization
-.. _Using the Downloadable .ova File:
-
-Using the Downloadable .ova File
---------------------------------
-
-A file that ends in a :file:`.ova` extension is a tarball of a virtual machine that follows the Open Virtualization Format (OVF). This file can be used in any
-virtualization technology that supports OVF, such as VirtualBox or VMware.
-
-If you double-click the :file:`.ova` file on a Windows or Mac system, it will automatically open the image for you in the default virtualization application.
-
-The first time you open an :file:`.ova` file on a TrueOS® system, right-click the file, select "Open With", browse to the application to open it with, and
-check the box "Remember application association for this type of file". The following example assumes the user has selected
-:menuselection:`System --> Oracle VM VirtualBox` as the application.
-
-The first time a TrueOS® :file:`.ova` file is opened, a screen will open so that you can review the virtual machine's settings that came with the file. An
-example is shown in :numref:`Figure %s: Appliance Settings Screen <ova1>`. To edit a setting, double-click its name.
-
-.. _ova1:
-
-.. figure:: images/ova1.png
-
-Depending upon the setting, you can either type in the desired value or select it from a drop-down menu. Once you are finished, click the "Import" button. It
-will take a few minutes for the import to complete and a status bar will indicate the status of the import. Once imported, the virtual machine will show in
-the left frame of VirtualBox. Highlight the virtual machine and click "Start" to boot into the image.
-
-When using the "consumer-desktop" edition, the virtual machine will boot into Figure 4.2a so that you can perform the post-installation configuration for the
-desktop.
-
-When using the "trueos-server" edition, the virtual machine will boot into a password prompt. Enter *root* as the username and *pcbsd* as the password. It is
-recommended to immediately change the *root* password by typing :command:`passwd` and following the prompts. It is also recommended to create a user account
-to login with. You can do so by typing :command:`adduser` and following the prompts.
