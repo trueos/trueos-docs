@@ -155,71 +155,105 @@ If you choose to install a server in the screen shown in :numref:`Figure %s: Sel
 
 * whether or not you want to enable SSH access to the server.
 
-The next screen, shown in :numref:`Figure %s: Review Installation Options <text9>`, provides the following options: 
+The next screen, is shown in
+:numref:`Figure %s: Review Installation Options <text9a>`.
 
-* **install:** to start the installation, select this option and press enter.
+.. _text9a: 
 
-* **wizard:** select this option to re-run the text installer and re-input your selections.
+.. figure:: images/text9a.png
 
-* **edit:** used to review, and possibly change any of the installation parameters.
+This menu provides the following options: 
 
-* **hardware:** selecting this option will display a summary of the system's hardware. The example shown in :numref:`Figure %s: Hardware Summary <text10>` is from a system with a disabled
-  sound card and no wireless card.
+* **install:** to start the installation, select this option and press
+  :kbd:`Enter`.
 
-* **quit:** select this option to return to the screen shown in :numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
+* **wizard:** select this option to re-run the text installer and
+  re-input your selections.
 
-.. _text9: 
+* **edit:** use this option to review, and possibly change, any of the
+  installation parameters.
 
-.. figure:: images/text9.png
+* **hardware:** select this option to display a summary of the
+  system's hardware. The example shown in
+  :numref:`Figure %s: Hardware Summary <text10>` is from a system with
+  a disabled sound card and no wireless card.
+
+* **quit:** select this option to return to the screen shown in
+  :numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
 
 .. _text10:
 
 .. figure:: images/text10.png
 
-If you select "edit", the menu shown in :numref:`Figure %s: Edit Menu <text11>` will open.
+If you select "edit", the menu shown in
+:numref:`Figure %s: Edit Menu <text11a>` will open.
 
-.. _text11:
+.. _text11a:
 
-.. figure:: images/text11.png
+.. figure:: images/text11a.png
 
 This screen contains the following options: 
 
-* **disk:** used to change the disk to install into. Selecting this option will re-open the screens shown in :numref:`Figure %s: Select Installation Disk <text3a>` through
-  :numref:`Figure %s: Full Disk Encryption <text7a>`, and then return you back to this menu.
+* **disk:** used to change the disk to install into. Selecting this
+  option will re-open the screens shown in
+  :numref:`Figure %s: Select Installation Disk <text3a>` through
+  :numref:`Figure %s: Full Disk Encryption <text7a>`, and then return
+  you back to this menu.
 
-* **zpool:** select this option if the system contains multiple disks and you wish to change the disk layout to a mirror or RAIDZ. The allowable layouts for
-  the number of available disks will be displayed so that you can select the desired layout.
+* **zpool:** select this option if the system contains multiple disks
+  and you wish to change the disk layout to a mirror or RAIDZ. The
+  allowable layouts for the number of available disks will be
+  displayed so that you can select the desired layout.
 
-* **zfs:** used to modify the default ZFS layout. Selecting this option will open the screen shown in :numref:`Figure %s: ZFS Layout <text12>`. To edit the properties of an existing
-  dataset, highlight the dataset's name and press enter. This will show the list of available ZFS properties for that dataset, as seen in the example shown in
-  :numref:`Figure %s: ZFS Properties for a Dataset <text13>`. To change the value of a ZFS property, highlight it and press enter. The available values will vary, depending upon the selected property. If
-  you wish to add additional datasets, select *add*. This will prompt for the full path of the mountpoint to create. For example, you could create a dataset
-  named :file:`/usr/shares`. The dataset you create will be added to the bottom of the list. If you select the dataset and press enter, you can set its ZFS
-  properties. Once you are finished customizing the ZFS layout, select *done*.
+* **zfs:** used to modify the default ZFS layout. Selecting this
+  option will open the screen shown in
+  :numref:`Figure %s: ZFS Layout <text12a>`. To edit the properties of
+  an existing dataset, highlight the dataset's name and press
+  :kbd:`Enter`. This will show the list of available ZFS properties
+  for that dataset, as seen in the example shown in
+  :numref:`Figure %s: ZFS Properties for a Dataset <text13a>`. To
+  change the value of a ZFS property, highlight it and press enter.
+  The available values will vary, depending upon the selected
+  property. If you wish to add additional datasets, select *add*. This
+  will prompt for the full path of the mountpoint to create. For
+  example, you could create a dataset named :file:`/usr/shares`. The
+  dataset you create will be added to the bottom of the list. If you 
+  select the dataset and press enter, you can set its ZFS properties.
+  Once you are finished customizing the ZFS layout, select *done*.
 
-.. note:: while you can delete a dataset, the default datasets are needed for boot environments. For this reason,
-   **it is not recommended to delete any default datasets.** ZFS options are described in `zfs(8) <http://www.freebsd.org/cgi/man.cgi?query=zfs>`_ and you should not
-   change any options unless you are familiar with the ramifications of doing so.
+.. warning:: While you can delete a dataset, the default datasets are
+   needed for boot environments. For this reason,
+   **it is not recommended to delete any default datasets.** ZFS
+   options are described in
+   `zfs(8) <http://www.freebsd.org/cgi/man.cgi?query=zfs>`_ and you
+   should not change any options unless you are familiar with the
+   ramifications of doing so.
 
-* **network:** used to configure networking. Selecting this option will prompt to enter a hostname, to select either automatic DHCP configuration on all
-  interfaces or to specify the interface to configure, and whether or not to enable SSH.
+* **network:** used to configure networking. Selecting this option
+  will prompt to enter a hostname, to select either automatic DHCP
+  configuration on all interfaces or to specify the interface to
+  configure, and whether or not to enable SSH.
 
 * **packages:** used to install additional packages. The following package roles are available: "Devel", "FreeNAS", "Office", and "Server". 
 
-* **view:** if you select this option, a read-only copy of the ASCII text file containing the configuration script will be displayed.
+* **view:** if you select this option, a read-only copy of the ASCII
+  text file containing the configuration script will be displayed.
 
-* **edit:** if you select this option, the configuration script will open in the :command:`ee` editor, allowing you to make changes. The parameters supported
-  by the installation script are described in . 
+* **edit:** if you select this option, the configuration script will
+  open in the :command:`ee` editor, allowing you to make changes. The
+  parameters supported by the installation script are described in
+  :ref:`Creating an Automated Installation`. 
 
-* **back:** select this option to return you to the menu shown in :numref:`Figure %s: Review Installation Options <text9>`.
+* **back:** select this option to return you to the menu shown in
+  :numref:`Figure %s: Review Installation Options <text9a>`.
 
-.. _text12:
+.. _text12a:
 
-.. figure:: images/text12.png
+.. figure:: images/text12a.png
 
-.. _text13:
+.. _text13a:
 
-.. figure:: images/text13.png
+.. figure:: images/text13a.png
 
 .. index:: install
 .. _Using the System Utilities Menu:
