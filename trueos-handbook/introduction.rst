@@ -263,6 +263,8 @@ The following features or enhancements were introduced for TrueOS®
 
 * The graphical and command line versions of PBI Manager and Warden have
   been removed.
+  
+* **pc-thinclient** has been removed as it is deprecated.
 
 .. index:: Linux
 .. _TrueOS® for Linux Users:

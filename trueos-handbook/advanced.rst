@@ -575,7 +575,7 @@ Finally, create a custom installation media or installation server. :command:`pc
 
 * from a CD, DVD, or USB media 
 
-* from an installation directory on an HTTP, FTP, SSH+rsync, or a :ref:`PXE Boot Install Server`
+* from an installation directory on an HTTP, FTP, or SSH+rsync server
 
 The easiest way to create a custom installation media is to modify an existing installation image. For example, if you have downloaded an ISO for the TrueOS®
 version that you wish to customize, the superuser can access the contents of the ISO as follows::
@@ -631,5 +631,4 @@ To begin an installation that requires user interaction::
 To begin a fully automated installation, insert the installation media and reboot.
 
 If you are using an HTTP, FTP, or SSH server as the installation media, untar or copy the required files to a directory on the server that is accessible to
-users. Be sure to configure the server so that the installation files are accessible to the systems that you wish to install. If you are using a PXE Boot
-Install server, follow the instructions at :ref:`PXE Boot Install Server`. 
+users. Be sure to configure the server so that the installation files are accessible to the systems that you wish to install.
