@@ -223,92 +223,125 @@ This screen provides the following options:
 Install a Server 
 =================
 
-The :ref:`System Selection Screen` of the TrueOS® installer can be used to install a FreeBSD-based server operating system rather than a  desktop operating system.
+The :ref:`System Selection Screen` of the TrueOS® installer can be
+used to install a FreeBSD-based command-line server operating system
+rather than a graphical desktop operating system.
 
 TrueOS® adds the following to a vanilla installation of FreeBSD: :command:`iocage` for jail management and the command line
 versions of most of the :ref:`Control Panel` utilities. You will find those utilities in :file:`/usr/local/bin/pc-*`. It also installs the software mentioned in
 `the RUN_DEPENDS= section of this file <https://github.com/pcbsd/freebsd-ports/blob/master/misc/trueos-base/Makefile>`_.
 
-For a server installation, using the TrueOS® installer rather than the FreeBSD installer offers several benefits: 
+For a server installation, using the TrueOS® installer rather than the
+FreeBSD installer offers several benefits: 
 
 * the ability to easily configure ZFS during installation 
 
 * the ability to configure multiple boot environments
 
-* a wizard (described in this section) is provided during installation to configure the server for first use
+* a wizard (described in this section) is provided during installation
+to configure the server for first use
 
-.. note:: this section describes how to install a command-line only server using the graphical installer. Alternately, you can also install a server
-   :ref:`Using the TrueOS® CD` or :ref:`Using the Text Installer`.
+.. note:: This section describes how to install a command-line only
+   server using the graphical installer. Alternately, you can also
+   install a server :ref:`Using the TrueOS® CD` or
+   :ref:`Using the Text Installer`.
 
-To perform a graphical server installation, start the TrueOS® installation as usual. When you get to the :ref:`System Selection Screen` of the installer, select "TrueOS
+To perform a graphical server installation, start the TrueOS®
+installation as usual. When you get to the
+:ref:`System Selection Screen` of the installer, select "TrueOS
 (Console based server)".
 
-Click "Next" to start the "Server Setup Wizard" then click "Next" again to see the screen shown in :numref:`Figure %s: Set the Root Password <server2>`.
+Click "Next" to start the "Server Setup Wizard" then click "Next"
+again to see the screen shown in
+:numref:`Figure %s: Set the Root Password <server2a>`.
 
-.. _server2:
+.. _server2a:
 
-.. figure:: images/server2.png
+.. figure:: images/server2a.png
 
-Input and confirm the root password then click "Next" to proceed to the screen shown in :numref:`Figure %s: Create the Primary User Account <server3>`. 
+Input and confirm the root password then click "Next" to proceed to
+the screen shown in
+:numref:`Figure %s: Create the Primary User Account <server3a>`. 
 
-.. _server3:
+.. _server3a:
 
-.. figure:: images/server3.png
+.. figure:: images/server3a.png
 
-For security reasons, you should not login as the *root* user. For this reason, the wizard requires you to create a primary user account that will be used to
-login to the server. This account will automatically be added to the *wheel* group, allowing that user to :command:`su` to the root account when
-administrative access is required.
+For security reasons, you should not login as the *root* user. For
+this reason, the wizard requires you to create a primary user account
+that will be used to login to the server. This account will
+automatically be added to the *wheel* group, allowing that user to
+:command:`su` to the *root* account when administrative access is
+required.
 
 This screen contains the following fields: 
 
 * **Name:** can contain capital letters and spaces.
 
-* **Username:** the name used when logging in. Can not contain spaces and is case sensitive (e.g. *Kris* is a different username than *kris*).
+* **Username:** the name used when logging in. Can not contain spaces
+  and is case sensitive (e.g. *Kris* is a different username than
+  *kris*).
 
-* **Password:** the password used when logging in. You must type it twice in order to confirm it.
+* **Password:** the password used when logging in. You must type it
+  twice in order to confirm it.
 
-* **Default shell:** use the drop-down menu to select the **csh**, **tcsh**, **sh**, or **bash** login shell.
+* **Default shell:** use the drop-down menu to select the **csh**,
+  **tcsh**, **sh**, or **bash** login shell.
 
-When finished, click "Next" to proceed to the screen shown in :numref:`Figure %s: Set the Hostname <server4>`. 
+When finished, click "Next" to proceed to the screen shown in
+:numref:`Figure %s: Set the Hostname <server4a>`. 
 
-.. _server4:
+.. _server4a:
 
-.. figure:: images/server4.png
+.. figure:: images/server4a.png
 
-Input the system's hostname. If you will be using :command:`ssh` to connect to the system, check the box "Enable remote SSH login". Click "Next" to proceed to
-the network configuration screen shown in :numref:`Figure %s: Configure the Network <server5>`. 
+Input the system's hostname. If you will be using :command:`ssh` to
+connect to the system, check the box "Enable remote SSH login". Click
+"Next" to proceed to the network configuration screen shown in
+:numref:`Figure %s: Configure the Network <server5a>`. 
 
-.. _server5:
+.. _server5a:
 
-.. figure:: images/server5.png
+.. figure:: images/server5a.png
 
 Use the "Network Interface" drop-down menu to select from the following: 
 
-* **AUTO-DHCP-SLAAC:** (default) will configure every active interface for DHCP and for both IPv4 and IPv6 
+* **AUTO-DHCP-SLAAC:** (default) will configure every active interface
+  for DHCP and for both IPv4 and IPv6 
 
-* **AUTO-DHCP:** will configure every active interface for DHCP and for IPv4 
+* **AUTO-DHCP:** will configure every active interface for DHCP and
+  for IPv4 
 
-* **IPv6-SLAAC:** will configure every active interface for DHCP and for IPv6 
+* **IPv6-SLAAC:** will configure every active interface for DHCP and
+  for IPv6 
 
-Alternately, select the device name for the interface that you wish to manually configure and input the IPv4 and/or IPv6 addressing information. When finished, click "Next" to access the
-screen shown in :numref:`Figure %s: Install Ports <server7>`.
+Alternately, use the drop-down menu to select the device name for the
+interface and manually configure and input the IPv4 and/or IPv6
+addressing information. When finished, click "Next" to access the
+screen shown in :numref:`Figure %s: Install Ports <server6a>`.
 
-.. _server7:
+.. _server6a:
 
-.. figure:: images/server7.png
+.. figure:: images/server6a.png
 
-If you wish to install the FreeBSD ports collection, check the "Install ports tree" box then click "Finish" to exit the wizard and access the summary screen
-shown in :ref:`Disk Selection Screen`.
+If you wish to install the FreeBSD ports collection, check the
+"Install ports tree" box then click "Finish" to exit the wizard and
+access the summary screen shown in :ref:`Disk Selection Screen`.
 
-Click "Customize" if you wish to proceed to the  screen in order to configure the system's disk(s).
+Click "Customize" if you wish to configure the system's disk(s).
 
-If you wish to save the finished configuration to re-use it at a later time, insert a FAT-formatted USB stick and click "Save Config to USB". 
+If you wish to save the finished configuration to re-use it at a later
+time, insert a FAT-formatted USB stick and click "Save Config to USB". 
 
-Once you are ready to start the installation, click "Next". A pop-up menu will ask if you would like to start the installation now.
+Once you are ready to start the installation, click "Next". A pop-up
+menu will ask if you would like to start the installation now.
 
-Once the system is installed, it will boot to a command-line login prompt. Login using the primary user account that was configured during installation. You
-can now configure and use the server as you would any other FreeBSD server installation. The
-`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_ is an excellent reference for performing common FreeBSD server tasks.
+Once the system is installed, it will boot to a command-line login
+prompt. Login using the primary user account that was configured
+during installation. You can now configure and use the server as you
+would any other FreeBSD server installation. The
+`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
+is an excellent reference for performing common FreeBSD server tasks.
 
 .. index:: install
 .. _Using the TrueOS® CD:
