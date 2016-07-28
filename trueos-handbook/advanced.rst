@@ -261,31 +261,47 @@ This screen contains the following options:
 Using the System Utilities Menu
 -------------------------------
 
-The text installer contains some handy tools for troubleshooting and fixing an existing TrueOS® installation.
+The text installer contains some handy tools for troubleshooting and
+fixing an existing TrueOS® installation.
 
-If you click the *utility* option in the main menu of the text based installer shown in :numref:`Figure %s: TrueOS® Installation Menu <install1d>`, it will open the screen shown in
-:numref:`Figure %s: System Utilities Menu <util1>`. 
+If you click the *utility* option in the main menu of the graphical
+or text based installer shown in
+:numref:`Figure %s: TrueOS® Installation Menu <install1d>`, it will
+open the screen shown in
+:numref:`Figure %s: System Utilities Menu <util1a>`. 
 
-.. _util1:
+.. _util1a:
 
-.. figure:: images/util1.png
+.. figure:: images/util1a.png
 
 This screen provides the following options: 
 
-* **shell:** this option is useful if you are troubleshooting a TrueOS® system that no longer boots. It will open a shell with administrative access that
-  includes the base FreeBSD utilities. Advanced users can use this shell to try to determine what the problem is, to create a backup or copy essential
-  files to another system, or edit configuration files with an editor such as `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or :command:`vi`. When you are finished using the shell,
-  type :command:`exit` to return to the screen shown in :numref:`Figure %s: System Utilities Menu <util1>`.  
+* **shell:** this option is useful if you are troubleshooting a
+  TrueOS® system that no longer boots. It will open a shell with
+  administrative access that includes the base FreeBSD utilities.
+  Advanced users can use this shell to try to determine what the
+  problem is, create a backup or copy essential files to another
+  system, or edit configuration files with an editor such as
+  `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or
+  :command:`vi`. When you are finished using the shell, type
+  :command:`exit` to return to the screen shown in
+  :numref:`Figure %s: System Utilities Menu <util1a>`.  
 
-* **zimport** this option will display the names of available ZFS pools. Type the name of an available pool and it will import it then display the available boot environments (BEs).
-  Type the name of the desired BE and this option will mount it then offer to open a chroot shell so that you can view its contents and manipulate files as
-  needed in order to perform maintenance on that boot environment. When you are finished, type :command:`exit` to leave the boot environment and return to the screen
-  shown in :numref:`Figure %s: System Utilities Menu <util1>`.
+* **zimport** this option will display the names of available ZFS
+  pools. Type the name of an available pool and it will import it then
+  display the available boot environments (BEs). Type the name of the
+  desired BE and this option will mount it then offer to open a chroot
+  shell so that you can view its contents and manipulate files as
+  needed in order to perform maintenance on that boot environment.
+  When you are finished, type :command:`exit` to leave the boot
+  environment and return to the screen shown in
+  :numref:`Figure %s: System Utilities Menu <util1a>`.
 
 * **fixgrub:** this option can be used to restamp the GRUB boot loader should the installed system no longer boot. When this option is selected, it will first
   show the available ZFS pools and prompt you to input the name of the pool to import.
 
-* **exit:** this option will return you to the main menu seen in :numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
+* **exit:** this option will return to the main
+  :numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
 
 .. index:: install
 .. _Install a Server:
