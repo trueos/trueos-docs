@@ -4,7 +4,7 @@
 Advanced Installation Topics
 ****************************
 
-The previous section discussed a default installation of TrueOS®. This section covers the following advanced installation topics: 
+This section covers the following advanced installation topics: 
 
 * :ref:`Using the Text Installer`
 
@@ -16,86 +16,122 @@ The previous section discussed a default installation of TrueOS®. This section 
 
 * :ref:`Creating an Automated Installation`
 
+If your intent is to install a graphical desktop using a graphical
+installer, instead refer to :ref:`Installing TrueOS®`.
+
 .. index:: install
 .. _Using the Text Installer:
 
 Using the Text Installer
 ========================
 
-If you prefer to perform an installation using an ncurses menu rather than a full graphical installer, start the installation as usual and select the option "install" from
-the :numref:`Figure %s: TrueOS® Installation Menu <install1c>`. 
+If you prefer to perform an installation using an ncurses menu rather
+than a full graphical installer, start the installation as usual and
+select the "install" option from the
+:numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
 
-.. _install1c:
+.. _install1d:
 
-.. figure:: images/install1c.png
+.. figure:: images/install1d.png
 
-The next screen will prompt to install a desktop or a server, as seen in :numref:`Figure %s: Select Desktop or Server <text2>`. 
+The next screen will prompt to install a desktop or a server, as seen
+in :numref:`Figure %s: Select Desktop or Server <text2a>`. 
 
-.. _text2:
+.. _text2a:
 
-.. figure:: images/text2.png
+.. figure:: images/text2a.png
 
-If you choose to install a desktop, the :ref:`Lumina Desktop` will be installed and configured for you. After the installation is complete, the
-system will boot into the usual post-installation configuration screens.
+If you choose to install a desktop, the :ref:`Lumina Desktop` will be
+installed and configured for you. After the desktop installation is
+complete, the system will boot into the usual post-installation
+configuration screens.
 
-If you choose to install a server, neither X nor a window manager will be installed, resulting in a command-line only TrueOS® installation. Once the server installation
-is complete, the system will boot into a command prompt where you can enter the username and password that was created during the installation.
+If you choose to install a server, neither X nor a window manager will
+be installed, resulting in a command-line only TrueOS® installation.
+Once the server installation is complete, the system will boot into a
+command prompt where you can enter the username and password that was
+created during the installation.
 
-After making a selection and pressing enter, the next screen will display the available disks on the system. In the example shown in :numref:`Figure %s: Select Installation Disk <text3>`,
-one disk is available.
+After making a selection and pressing enter, the next screen will
+display the available disks on the system. In the example shown in
+:numref:`Figure %s: Select Installation Disk <text3a>`, one disk is
+available.
 
-.. _text3:
+.. _text3a:
 
-.. figure:: images/text3.png
+.. figure:: images/text3a.png
 
-Select the disk to install into and press :kbd:`Enter`. In the next screen, the installer will display all available primary or GPT partitions. In the example
-shown in :numref:`Figure %s: Select Partition <text4>`, there is only one partition and the installer has selected the default of installing to the entire disk.
+Select the disk to install into and press :kbd:`Enter`. In the next
+screen, the installer will display all available primary or GPT
+partitions. In the example shown in
+:numref:`Figure %s: Select Partition <text4a>`, there is only one partition and the installer has selected the default of installing to the entire disk.
 **If you have multiple partitions and disks, carefully select the disk and partition to install to.**
 
-.. _text4:
+.. _text4a:
 
-.. figure:: images/text4.png
+.. figure:: images/text4a.png
 
-The next screen, shown in :numref:`Figure %s: Select Disk Format <text5>`, is used to select the type of disk format. If the installation disk or partition is larger than 2 TB, *GPT*
-**must** be selected. Otherwise, selecting 
-*GPT* should work for most modern hardware. When installing on older hardware, or if the newly installed system will not boot after selecting
-*GPT*, select
+The next screen, shown in
+:numref:`Figure %s: Select Disk Format <text5a>`, is used to select
+the type of disk format. If the installation disk or partition is
+larger than 2 TB, *GPT*
+**must** be selected. Otherwise, selecting *GPT* should work for most
+modern hardware. When installing on older hardware, or if the newly
+installed system will not boot after selecting *GPT*, select
 *MBR* instead.
 
-.. _text5:
+.. _text5a:
 
-.. figure:: images/text5.png
+.. figure:: images/text5a.png
 
-The next screen, shown in :numref:`Figure %s: Select Boot Manager <text6>`, is used to select the boot manager.
+The next screen, shown in
+:numref:`Figure %s: Select Boot Manager <text6a>`, is used to select
+the boot manager.
 
-.. _text6:
+.. _text6a:
 
-.. figure:: images/text6.png
+.. figure:: images/text6a.png
 
-The default is to use *BSD* as it provides native support for boot environments. While 
-*GRUB* provides some boot environment support, it may not be as up-to-date as the BSD support. It is recommended to only select this option if you are dual booting and the BSD boot manager
-does not find your other operating systems. If you select  *none*, no boot manager will be installed and boot environments will not be available.
+The default is to use *BSD* as it provides native support for boot
+environments. While *GRUB* provides some boot environment support, it
+may not be as up-to-date as the BSD support. It is recommended to only
+select *GRUB* if you are dual booting and the BSD boot manager does
+not find your other operating systems. If you select  *none*, no boot
+manager will be installed and boot environments will not be available.
 
-The next screen is shown in :numref:`Figure %s: Full Disk Encryption <text7>`.
+The next screen is shown in
+:numref:`Figure %s: Full Disk Encryption <text7a>`.
 
-.. _text7:
+.. _text7a:
 
-.. figure:: images/text7.png
+.. figure:: images/text7a.png
 
-This screen provides the option to encrypt the selected disk(s) with the FreeBSD `GELI <https://www.freebsd.org/cgi/man.cgi?query=geli/qgit/>`_ framework. If
-you keep the default of *Yes* and press enter, you will be prompted to enter and confirm a passphrase. You will be prompted to enter this passphrase whenever
-you boot into PC-BSD®. This means that if someone else boots your computer, they will not be able to boot into PC-BSD® if they do not know your passphrase.
-**However, if you forget your passphrase, you will not be able to access PC-BSD® either.** For these reasons, it is important to choose a good passphrase
-that other users will not guess and which you will not forget. Passphrases are case-sensitive and can contain spaces. The passphrase should be memorable to
-you, such as a line from a song or piece of literature, but hard to guess in that people who know you should not be able to guess your favorite line from a
-song or piece of literature.
+This screen provides the option to encrypt the selected disk(s) with
+the FreeBSD
+`GELI <https://www.freebsd.org/cgi/man.cgi?query=geli/qgit/>`_
+framework. If you keep the default of *Yes* and press enter, you will
+be prompted to enter and confirm a passphrase. You will be prompted to
+enter this passphrase whenever you boot into TrueOS®. This means that
+if someone else boots your computer, they will not be able to boot
+into TrueOS® if they do not know your passphrase.
+**However, if you forget your passphrase, you will not be able to access TrueOS® either.**
+For these reasons, it is important to choose a good passphrase that
+other users will not guess and which you will not forget. Passphrases
+are case-sensitive and can contain spaces. The passphrase should be
+memorable to you, such as a line from a song or piece of literature,
+but hard to guess so that people who know you won't try to input your
+favorite line from a song or piece of literature.
 
-.. warning:: be careful if you have changed your keyboard variant and layout. At this time, the GELI encryption framework only supports QWERTY passphrases, so
-   do not use any characters not found on a QWERTY keyboard in your passphrase. **DO NOT** set a passphrase with accents or special characters which are not
-   found on a US keyboard. This is a limitation in FreeBSD as the keymap is not loaded until after the passphrase is entered, meaning that such a passphrase
-   will render that partition as inaccessible.
+.. warning:: Be careful if you have changed your keyboard variant and
+   layout. The GELI encryption framework only supports QWERTY
+   passphrases, so do not use any characters not found on a QWERTY
+   keyboard in your passphrase. **DO NOT** set a passphrase with
+   accents or special characters which are not found on a US keyboard.
+   This is a limitation in FreeBSD as the keymap is not loaded until
+   after the passphrase is entered, meaning that such a passphrase
+   will render the encrypted disks inaccessible.
 
-If you choose to install a server in the screen shown in :numref:`Figure %s: Select Desktop or Server <text2>`, the installer will next prompt for the following information: 
+If you choose to install a server in the screen shown in :numref:`Figure %s: Select Desktop or Server <text2a>`, the installer will next prompt for the following information: 
 
 * the *root* password 
 
@@ -130,7 +166,7 @@ The next screen, shown in :numref:`Figure %s: Review Installation Options <text9
 * **hardware:** selecting this option will display a summary of the system's hardware. The example shown in :numref:`Figure %s: Hardware Summary <text10>` is from a system with a disabled
   sound card and no wireless card.
 
-* **quit:** select this option to return to the screen shown in :numref:`Figure %s: TrueOS® Installation Menu <install1c>`. 
+* **quit:** select this option to return to the screen shown in :numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
 
 .. _text9: 
 
@@ -148,8 +184,8 @@ If you select "edit", the menu shown in :numref:`Figure %s: Edit Menu <text11>` 
 
 This screen contains the following options: 
 
-* **disk:** used to change the disk to install into. Selecting this option will re-open the screens shown in :numref:`Figure %s: Select Installation Disk <text3>` through
-  :numref:`Figure %s: Full Disk Encryption <text7>`, and then return you back to this menu.
+* **disk:** used to change the disk to install into. Selecting this option will re-open the screens shown in :numref:`Figure %s: Select Installation Disk <text3a>` through
+  :numref:`Figure %s: Full Disk Encryption <text7a>`, and then return you back to this menu.
 
 * **zpool:** select this option if the system contains multiple disks and you wish to change the disk layout to a mirror or RAIDZ. The allowable layouts for
   the number of available disks will be displayed so that you can select the desired layout.
@@ -193,7 +229,7 @@ Using the System Utilities Menu
 
 The text installer contains some handy tools for troubleshooting and fixing an existing TrueOS® installation.
 
-If you click the *utility* option in the main menu of the text based installer shown in :numref:`Figure %s: TrueOS® Installation Menu <install1c>`, it will open the screen shown in
+If you click the *utility* option in the main menu of the text based installer shown in :numref:`Figure %s: TrueOS® Installation Menu <install1d>`, it will open the screen shown in
 :numref:`Figure %s: System Utilities Menu <util1>`. 
 
 .. _util1:
@@ -215,7 +251,7 @@ This screen provides the following options:
 * **fixgrub:** this option can be used to restamp the GRUB boot loader should the installed system no longer boot. When this option is selected, it will first
   show the available ZFS pools and prompt you to input the name of the pool to import.
 
-* **exit:** this option will return you to the main menu seen in :numref:`Figure %s: TrueOS® Installation Menu <install1c>`. 
+* **exit:** this option will return you to the main menu seen in :numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
 
 .. index:: install
 .. _Install a Server:
@@ -349,19 +385,24 @@ is an excellent reference for performing common FreeBSD server tasks.
 Using the TrueOS® CD
 =====================
 
-The CD-sized TrueOS® ISO provides an ncurses installer for installing a command-line version of TrueOS®. If your
-intent is to only install servers and you do not need a graphical installer, this ISO is convenient to use and quick to download.
+The CD-sized TrueOS® ISO provides an ncurses installer for installing
+a command-line version of TrueOS®. If your intent is to only install
+servers and you do not need a graphical installer, this ISO is
+convenient to use and quick to download. The TrueOS® CD can also be
+used to repair an existing installation, using the instructions in
+:ref:`Using the System Utilities Menu`. 
 
-To start a server installation using the TrueOS® ISO, insert the prepared boot media. Once the system has finished booting into the installer, it will display the installation menu shown in
-:numref:`Figure %s: TrueOS® Installation Menu <cd2>`. 
+To start a server installation using the TrueOS® ISO, insert the
+prepared boot media. Once the system has finished booting into the
+installer, it will display the installation menu shown in
+:numref:`Figure %s: TrueOS® Installation Menu <cd2a>`. 
 
-.. _cd2:
+.. _cd2a:
 
-.. figure:: images/cd2.png
+.. figure:: images/cd2a.png
 
-To begin the installation, press :kbd:`Enter`. The server installation will proceed as described in :ref:`Using the Text Installer`.
+To begin the installation, press :kbd:`Enter`. The server installation will proceed as described in :ref:`Using the Text Installer`,
 
-The TrueOS® boot media can also be used to repair an existing installation, using the instructions in :ref:`Using the System Utilities Menu`. 
 
 .. index:: dualboot
 .. _Dual Booting:
