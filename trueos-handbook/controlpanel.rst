@@ -48,8 +48,6 @@ The following utilities are found in the Control Panel of a TrueOS® system, reg
 
 * :ref:`Active Directory & LDAP`
 
-* :ref:`Hardware Compatibility`
-
 * :ref:`Login Manager`
 
 * :ref:`Service Manager`
@@ -204,30 +202,6 @@ The values that you input into this tab are saved to
 If you are new to LDAP terminology, you may find it useful to skim
 through the
 `OpenLDAP Software 2.4 Administrator's Guide <http://www.openldap.org/doc/admin24/>`_. 
-
-.. index:: configuration
-.. _Hardware Compatibility:
-
-Hardware Compatibility
-======================
-
-The TrueOS® installer allows you to quickly determine if your system's video card, Ethernet card, wireless device, and sound card are compatible with
-TrueOS®. 
-
-A "Hardware Compatibility" icon in Control Panel provides a quick overview of the system's detected hardware. To start the application, double-click its icon
-in Control Panel or type :command:`pc-sysinstaller -checkhardware`.
-
-In the example shown in :numref:`Figure %s: Sample Hardware Compatibility <hardware>`, this system has a detected NVIDIA video card with a configured resolution of 1600x900, one Ethernet
-device using the `em(4) <http://www.freebsd.org/cgi/man.cgi?query=em&apropos=0&sektion=4>`_ driver, and one wireless device using the
-`iwn(4) <http://www.freebsd.org/cgi/man.cgi?query=iwn&apropos=0&sektion=4>`_ driver. Currently no sound card is detected, meaning that the user should
-configure and test their sound card using the instructions in :ref:`PC-BSD Mixer Tray`. 
-
-Hardware that is currently incompatible may show with a green checkbox after a system upgrade or update. This indicates that the update added the driver for
-the device.
-
-.. _hardware:
-
-.. figure:: images/hardware.png
 
 .. index:: configuration
 .. _Login Manager:

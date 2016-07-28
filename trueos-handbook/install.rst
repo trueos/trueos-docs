@@ -86,10 +86,12 @@ present you with its options.
 
 .. figure:: images/install2b.png
 
-Starting on the left-hand side, the icons in the bottom navigation
+Starting on the left-hand side, these icons in the bottom navigation
 area allow you to: 
 
-* access :ref:`Hardware Compatibility` information 
+* access hardware compatibility information to quickly determine if
+  the system's video card, Ethernet card, wireless device, and sound
+  card are compatible with TrueOS®
 
 * manage :ref:`Network Configuration` for a network installation or
   system restore
