@@ -2,12 +2,10 @@
 
 Written by users of the TrueOS® operating system.
 
-Version |version|
-
 Copyright © 2005 - 2016 The TrueOS® Project.
 
 Welcome to TrueOS®! This Handbook covers the installation and use of
-TrueOS® |version|. This Handbook is a work in progress and relies on th
+TrueOS®. This Handbook is a work in progress and relies on th
 e contributions of many individuals. If you are interested in assisting
 with the Handbook, refer to the documentation
 `README <https://github.com/pcbsd/pcbsd/blob/master/src-qt5/docs/README.md>`_. 
@@ -206,16 +204,14 @@ TrueOS® provides the following features:
 * **Vibrant community:** TrueOS® has a friendly and helpful community. 
 
 .. index:: What's New
-.. _What's New in |version|:
+.. _What's New:
 
-What's New in |version|
-=======================
+What's New
+==========
 
-The following features or enhancements were introduced for TrueOS®
-|version|:
+The following features or enhancements were introduced for TrueOS®:
 
-* Based on FreeBSD 11.0 which adds these
-  `features <https://www.freebsd.org/releases/11.0R/relnotes.html>`_.
+* Based on FreeBSD-CURRENT.
 
 * The GRUB bootloader has been replaced by the FreeBSD bootloader which
   now provides both GELI and boot environment support. The "Use GRUB
