@@ -41,7 +41,7 @@ in :numref:`Figure %s: Select Desktop or Server <text2a>`.
 
 .. figure:: images/text2a.png
 
-If you choose to install a desktop, the :ref:`Lumina Desktop` will be
+If you choose to install a desktop, the Lumina desktop will be
 installed and configured for you. After the desktop installation is
 complete, the system will boot into the usual post-installation
 configuration screens.

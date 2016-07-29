@@ -119,7 +119,7 @@ TrueOS® provides an easy-to-use installer which can be used to install a
 desktop or a server version of FreeBSD. Other differences from FreeBSD
 include: 
 
-* TrueOS® pre-configures the BSD-licensed, :ref:`Lumina Desktop`
+* TrueOS® pre-configures the BSD-licensed, Lumina desktop
   environment during a desktop installation. Additional desktop
   environments can be installed and will appear in the login menu,
   allowing the user to select  which environment to log into.
@@ -165,9 +165,9 @@ TrueOS® provides the following features:
 * **Automatically configured hardware:** video, sound, network, and
   other devices are configured automatically during installation.
 
-* **Intuitive desktop interface:** TrueOS® installs the
-  :ref:`Lumina Desktop` and additional desktop environments can be
-  installed to support your day-to-day computing needs.
+* **Intuitive desktop interface:** TrueOS® installs the Lumina desktop
+  and additional desktop environments can be installed to support your
+  day-to-day computing needs.
 
 * **Easy software management:** with :ref:`AppCafe®`, installing,
   upgrading, and uninstalling software is safe and easy.
@@ -219,7 +219,7 @@ The following features or enhancements were introduced for TrueOS®:
   screens for users of dual-boot systems who prefer to use the GRUB boot
   loader.
 
-* A TrueOS® installation installs the :ref:`Lumina Desktop`. Additional
+* A TrueOS® installation installs the Lumina Desktop. Additional
   window managers can be installed using :ref:`AppCafe®`.
 
 * The :ref:`SysAdm™ Client` and server has replaced the

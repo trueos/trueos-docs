@@ -161,7 +161,7 @@ command-line only server.
 .. figure:: images/install3c.png
 
 By default, "TrueOS (Graphical desktop)" will be selected and the
-:ref:`Lumina Desktop` will be installed. You can install additional
+Lumina Desktop will be installed. You can install additional
 software post-installation, using :ref:`AppCafe®`.
 
 To install the desktop, click the "Next" button to proceed to the next
