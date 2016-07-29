@@ -12,7 +12,10 @@ Contents:
    install
    postinstall
    advanced
-   lumina
+   luminaintro
+   luminaconfig
+   luminaplugins
+   luminautl
    sysadmclient
    controlpanel
    using
