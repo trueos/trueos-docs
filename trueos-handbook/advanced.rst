@@ -526,34 +526,59 @@ information on the syntax used, refer to the
 Creating an Automated Installation
 ==================================
 
-TrueOS® provides a set of Bourne shell scripts that allow advanced users to create automatic or customized TrueOS® installations. :command:`pc-sysinstall`
-is the name of the master script; it reads a customizable configuration file and uses dozens of backend scripts to perform the installation. You can read more
-about this utility by typing **man pc-sysinstall**.
+TrueOS® provides a set of Bourne shell scripts that allow advanced
+users to create automatic or customized TrueOS® installations.
+:command:`pc-sysinstall` is the name of the master script; it reads a
+customizable configuration file and uses dozens of backend scripts to
+perform the installation. You can read more about this utility by
+typing **man pc-sysinstall**.
 
-Here is a quick overview of the components used by :command:`pc-sysinstall`: 
+Here is a quick overview of the components used by
+:command:`pc-sysinstall`: 
 
-* :file:`/usr/local/share/pc-sysinstall/backend/` contains the scripts used by the TrueOS® installer. Scripts have been divided by function, such as
-  :file:`functions-bsdlabel.sh` and :file:`functions-installcomponents.sh`. If you have ever wondered how the TrueOS® installer works, read through these
-  scripts. This directory also contains the :file:`parseconfig.sh` and :file:`startautoinstall.sh` scripts which :command:`pc-sysinstall` uses to parse the
-  configuration file and begin the installation.
+* :file:`/usr/local/share/pc-sysinstall/backend/` contains the scripts
+  used by the TrueOS® installer. Scripts have been divided by
+  function, such as :file:`functions-bsdlabel.sh` and
+  :file:`functions-installcomponents.sh`. If you have ever wondered
+  how the TrueOS® installer works, read through these scripts. This
+  directory also contains the :file:`parseconfig.sh` and
+  :file:`startautoinstall.sh` scripts which :command:`pc-sysinstall`
+  uses to parse the configuration file and begin the installation.
 
-* :file:`/usr/local/share/pc-sysinstall/backend-query/` contains the scripts which are used by the installer to detect and configure hardware.
+* :file:`/usr/local/share/pc-sysinstall/backend-query/` contains the
+  scripts which are used by the installer to detect and configure
+  hardware.
 
-* :file:`/usr/local/share/pc-sysinstall/conf/` contains the configuration file :file:`pc-sysinstall.conf`. It also contains a file indicating which
-  localizations are available (:file:`avail-langs`), an :file:`exclude-from-upgrade` file, and a :file:`licenses/` subdirectory containing text files of applicable licenses.
+* :file:`/usr/local/share/pc-sysinstall/conf/` contains the
+  configuration file :file:`pc-sysinstall.conf`. It also contains a
+  file indicating which localizations are available
+  (:file:`avail-langs`), an :file:`exclude-from-upgrade` file, and a
+  :file:`licenses/` subdirectory containing text files of applicable
+  licenses.
 
-* :file:`/usr/local/share/pc-sysinstall/doc/` contains the help text that is seen if you run :command:`pc-sysinstall` without any arguments.
+* :file:`/usr/local/share/pc-sysinstall/doc/` contains the help text
+  that is seen if you run :command:`pc-sysinstall` without any
+  arguments.
 
-* :file:`/usr/local/share/pc-sysinstall/examples/` contains several example configuration files for different scenarios (e.g. :file:`upgrade`,
-  :file:`fbsd-netinstall`). The :file:`README` file in this directory should be considered as mandatory reading before using :command:`pc-sysinstall`.
+* :file:`/usr/local/share/pc-sysinstall/examples/` contains several
+  example configuration files for different scenarios (e.g.
+  :file:`upgrade` and :file:`fbsd-netinstall`). The :file:`README` in
+  this directory should be considered as mandatory reading before
+  using :command:`pc-sysinstall`.
 
-* :file:`/usr/sbin/pc-sysinstall` this is the script that is used to perform a customized installation.
+* :file:`/usr/sbin/pc-sysinstall` is the script that is used to
+  perform a customized installation.
 
-This section discusses the steps needed to create a custom installation.
+This section discusses the steps needed to create a custom
+installation.
 
-First, determine which variables you wish to customize. A list of possible variables can be found in :file:`/usr/local/share/pc-sysinstall/examples/README` and
-are summarized in Table 5.5a. Note that the Table is meant as a quick reference to determine which variables are available. The :file:`README` file contains more
-complete descriptions for each variable.
+First, determine which variables you wish to customize. A list of
+possible variables can be found in
+:file:`/usr/local/share/pc-sysinstall/examples/README` and are
+summarized in Table 5.5a. Note that the Table is meant as a quick
+reference to determine which variables are available. The
+:file:`README` file contains more complete descriptions for each
+variable.
 
 **Table 5.5a: Available Variables for Customizing a TrueOS® Installation**
 
@@ -614,9 +639,11 @@ complete descriptions for each variable.
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | installType=               | "PCBSD" or "FreeBSD"                                                           | determines whether this is a desktop or a server install                                                                                                                                                |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| installQuiet               | "yes" or "no"                                                                  | set to "yes" for automatic installations                                                                                                                                                                |
++----------------------------+--------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | installFile=               | e.g. "fbsd-release.tbz"                                                        | only set if using a customized installer archive                                                                                                                                                        |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| packageType=               | "tar", "uzip", "split", or "dist"                                              | the archive type on the installation media                                                                                                                                                              |
+| packageType=               | "tar", "uzip", "split", "dist", or "pkg"                                       | the archive type on the installation media                                                                                                                                                              |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | distFiles=                 | e.g. "base src kernel"                                                         | list of FreeBSD distribution files to install when using *packageType=dist*                                                                                                                             |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -634,7 +661,7 @@ complete descriptions for each variable.
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | installPackages=           | e.g. "Xorg cabextract                                                          | list of traditional or pkg packages to install; requires *pkgExt=*                                                                                                                                      |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| pkgExt=                    | ".txz" or ".tbz"                                                               | specify the extension used by the type of package to be installed                                                                                                                                       |
+| pkgExt=                    | ".txz"                                                                         | specify the extension used by the type of package to be installed                                                                                                                                       |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | upgradeKeepDesktopProfile= | "yes" or "no"                                                                  | specify if you wish to keep your existing user's desktop profile data during an upgrade                                                                                                                 |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -666,6 +693,18 @@ complete descriptions for each variable.
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | runExtCommand=             | full path to command                                                           | runs a command outside the chroot                                                                                                                                                                       |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| runPrePkgCommand=          | full path to command                                                           | runs the specified command before starting the pkg installation                                                                                                                                         |
++----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| runPrePkgScript=           | full path to command                                                           | runs the specified sript before starting the pkg installation                                                                                                                                           |
++----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| runPrePkgExtCommand=       | full path to command                                                           | runs the specified command before extracting the pkg                                                                                                                                                    |
++----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| runPreExtractCommand=      | full path to command                                                           | runs the specified command before extracting                                                                                                                                                            |
++----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| runPreExtractScript=       | full path to command                                                           | runs the specified command before starting the pkg installation                                                                                                                                         |
++----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| runPreExtractExtCommand=   | full path to command                                                           | runs the specified command before starting the pkg installation                                                                                                                                         |
++----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | timeZone=                  | e.g. "America/New_York"                                                        | location must exist in :file:`/usr/share/zoneinfo/`                                                                                                                                                     |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | enableNTP=                 | "yes" or "no"                                                                  | enable/disable NTP                                                                                                                                                                                      |
@@ -693,21 +732,33 @@ complete descriptions for each variable.
 | zfsRemoteDataset=          | e.g. "tank/backups/mybackup"                                                   | location of remote dataset to restore from when using *installMode=zfsrestore*                                                                                                                          |
 +----------------------------+--------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Next, create a customized configuration. One way to create a customized configuration file is to read through the configuration examples in
-:file:`/usr/local/share/pc-sysinstall/examples/` to find the one that most closely matches your needs. Copy that file to any location and customize it so that
-it includes the variables and values you would like to use in your installation.
+Next, create a customized configuration. One way to create a
+customized configuration file is to read through the configuration
+examples in :file:`/usr/local/share/pc-sysinstall/examples/` to find
+the one that most closely matches your needs. Copy that file to any
+location and customize it so that it includes the variables and values
+you would like to use in your installation.
 
-An alternate way to create this file is to start an installation, configure the system as desired, and save the configuration to a USB stick (with or without
-actually performing the installation). You can use that saved configuration file as-is or customize it to meet an installation's needs. This method may prove
-easier when performing complex disk layouts.
+An alternate way to create this file is to start an installation,
+configure the system as desired, and save the configuration to a USB
+stick (with or without actually performing the installation). You can
+use that saved configuration file as-is or customize it to meet an
+installation's needs. This method may prove easier when performing
+complex disk layouts.
 
-If you wish to perform a fully-automated installation that does not prompt for any user input, you will also need to review
-:file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf` and place a customized copy of that file into :file:`/boot/pc-autoinstall.conf` on your
-installation media.
+If you wish to perform a fully-automated installation that does not
+prompt for any user input, you will also need to review
+:file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf`
+and place a customized copy of that file into
+:file:`/boot/pc-autoinstall.conf` on your installation media.
 
-Table 5.5b summarizes the additional variables that are available for fully automatic installations.
-More detailed descriptions can be found in the :file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf` file. Note that the variables in this file
-use a different syntax than those in Table 5.6a in that the values follow a colon and a space rather than the equals sign.
+Table 5.5b summarizes the additional variables that are available for
+fully automatic installations. More detailed descriptions can be found
+in the
+:file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf`
+file. Note that the variables in this file use a different syntax than
+those in Table 5.6a in that the values follow a colon and a space
+rather than the equals sign.
 
 **Table 5.5b: Additional Variables for Automated Installations** 
 
@@ -728,21 +779,25 @@ use a different syntax than those in Table 5.6a in that the values follow a colo
 +-----------------+-----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 
-Finally, create a custom installation media or installation server. :command:`pc-sysinstall` supports the following installation methods: 
+Finally, create a custom installation media or installation server.
+:command:`pc-sysinstall` supports the following installation methods: 
 
 * from a CD, DVD, or USB media 
 
 * from an installation directory on an HTTP, FTP, or SSH+rsync server
 
-The easiest way to create a custom installation media is to modify an existing installation image. For example, if you have downloaded an ISO for the TrueOS®
-version that you wish to customize, the superuser can access the contents of the ISO as follows::
+The easiest way to create a custom installation media is to modify an
+existing installation image. For example, if you have downloaded an
+ISO for the TrueOS® version that you wish to customize, the superuser
+can access the contents of the ISO as follows::
 
  mdconfig -a -t vnode -f PCBSD10.1.2-RELEASE-x64-DVD-USB.iso -u 1
 
  mount -t cd9660 /dev/md1 /mnt
 
-Make sure to :command:`cd` into a directory where you would like to copy the contents of the ISO. In the following examples, :file:`/tmp/custominstall/` was
-created for this purpose::
+Make sure to :command:`cd` into a directory where you would like to
+copy the contents of the ISO. In the following examples,
+:file:`/tmp/custominstall/` was created for this purpose::
 
  cd /tmp/custominstall
 
@@ -750,7 +805,8 @@ created for this purpose::
 
  umount /mnt
 
-Alternately, if you have inserted an installation CD or DVD, you can mount the media and copy its contents to your desired directory::
+Alternately, if you have inserted an installation CD or DVD, you can
+mount the media and copy its contents to your desired directory::
 
  mount -t cd9660 /dev/cd0 /mnt
 
@@ -758,34 +814,47 @@ Alternately, if you have inserted an installation CD or DVD, you can mount the m
 
  umount /mnt
 
-If you are creating an automated installation, copy your customized :file:`pc-autoinstall.conf` to :file:`/tmp/custominstall/boot/`.
+If you are creating an automated installation, copy your customized
+:file:`pc-autoinstall.conf` to :file:`/tmp/custominstall/boot/`.
 
-Copy your customized configuration file to :file:`/tmp/custominstall/`. Double-check that the "installMedium=" variable in your customized configuration file
-is set to the type of media that you will be installing from.
+Copy your customized configuration file to
+:file:`/tmp/custominstall/`. Double-check that the "installMedium="
+variable in your customized configuration file is set to the type of
+media that you will be installing from.
 
-You may also need to add some extra files if you set the following variables in your custom configuration file: 
+You may also need to add some extra files if you set the following
+variables in your custom configuration file: 
 
-* **installComponents=** make sure that any extra components you wish to install exist in :file:`extras/components/`
+* **installComponents=** make sure that any extra components you wish
+  to install exist in :file:`extras/components/`
 
 * **runCommand=** make sure the command exists in the specified path 
 
 * **runScript=** make sure the script exists in the specified path 
 
-* **runExtCommand=** make sure the command exists in the specified path 
+* **runExtCommand=** make sure the command exists in the specified
+  path 
 
-If the installation media is a CD or DVD, you will need to create a bootable media that contains the files in your directory. To create a bootable ISO::
+If the installation media is a CD or DVD, you will need to create a
+bootable media that contains the files in your directory. To create a
+bootable ISO::
 
  cd /tmp/custominstall
 
  mkisofs -V mycustominstall -J -R -b boot/cdboot -no-emul-boot -o myinstall.iso
 
-You can then use your favorite burning utility to burn the ISO to the media.
+You can then use your favorite burning utility to burn the ISO to the
+media.
 
 To begin an installation that requires user interaction::
 
  pc-sysinstall -c /path_to_your_config_file
 
-To begin a fully automated installation, insert the installation media and reboot.
+To begin a fully automated installation, insert the installation media
+and reboot.
 
-If you are using an HTTP, FTP, or SSH server as the installation media, untar or copy the required files to a directory on the server that is accessible to
-users. Be sure to configure the server so that the installation files are accessible to the systems that you wish to install.
+If you are using an HTTP, FTP, or SSH server as the installation
+media, untar or copy the required files to a directory on the server
+that is accessible to users. Be sure to configure the server so that
+the installation files are accessible to the systems that you wish to
+install.
