@@ -131,32 +131,40 @@ favorite line from a song or piece of literature.
    after the passphrase is entered, meaning that such a passphrase
    will render the encrypted disks inaccessible.
 
-If you choose to install a server in the screen shown in :numref:`Figure %s: Select Desktop or Server <text2a>`, the installer will next prompt for the following information: 
+If you chose to install a server in the screen shown in
+:numref:`Figure %s: Select Desktop or Server <text2a>`, the installer
+will provide some additional menus. These will prompt for the
+following information: 
 
 * the *root* password 
 
 * confirm the *root* password (enter the same value) 
 
-* the username to use when logging into the server (as *root* logins are discouraged) 
+* the username to use when logging into the server (as *root* logins
+  are discouraged) 
 
 * the password to use when logging into the server 
 
 * confirm the password to use when logging into the server 
 
-* the real name for the user who logs into the server (can contain spaces) 
+* the real name for the user who logs into the server (can contain
+  spaces) 
 
 * the default shell for the user's login 
 
 * the hostname for the server 
 
-* whether or not you wish to enable networking. If you press "Yes", you can either select "auto" to enable DHCP on all interfaces or select an interface to
-  statically configure. If you select an interface, you will be prompted to enter the IP address, subnet mask, IP address of the DNS server, and the IP
-  address of the default gateway.
+* whether or not you wish to enable networking. If you press "Yes",
+  you can either select "auto" to enable DHCP on all interfaces or
+  select an interface to statically configure. If you select an
+  interface, you will be prompted to enter the IP address, subnet
+  mask, IP address of the DNS server, and the IP address of the
+  default gateway.
 
 * whether or not you want to enable SSH access to the server.
 
-The next screen, is shown in
-:numref:`Figure %s: Review Installation Options <text9a>`.
+The next screen, for both a desktop and server installation, is shown
+in :numref:`Figure %s: Review Installation Options <text9a>`.
 
 .. _text9a: 
 
@@ -234,8 +242,6 @@ This screen contains the following options:
   configuration on all interfaces or to specify the interface to
   configure, and whether or not to enable SSH.
 
-* **packages:** used to install additional packages. The following package roles are available: "Devel", "FreeNAS", "Office", and "Server". 
-
 * **view:** if you select this option, a read-only copy of the ASCII
   text file containing the configuration script will be displayed.
 
@@ -297,8 +303,13 @@ This screen provides the following options:
   environment and return to the screen shown in
   :numref:`Figure %s: System Utilities Menu <util1a>`.
 
-* **fixgrub:** this option can be used to restamp the GRUB boot loader should the installed system no longer boot. When this option is selected, it will first
-  show the available ZFS pools and prompt you to input the name of the pool to import.
+* **fixgrub:** this option can be used to restamp the GRUB boot loader
+  should the installed system no longer boot from GRUB. When this
+  option is selected, it will first show the available ZFS pools and
+  prompt you to input the name of the pool to import.
+  
+.. note:: the "fixgrub" action will fail on systems that are instead
+   using the default BSD boot loader.
 
 * **exit:** this option will return to the main
   :numref:`Figure %s: TrueOS® Installation Menu <install1d>`. 
@@ -451,7 +462,8 @@ installer, it will display the installation menu shown in
 
 .. figure:: images/cd2a.png
 
-To begin the installation, press :kbd:`Enter`. The server installation will proceed as described in :ref:`Using the Text Installer`,
+To begin the installation, press :kbd:`Enter`. The server installation
+will proceed as described in :ref:`Using the Text Installer`,
 
 
 .. index:: dualboot
@@ -460,31 +472,52 @@ To begin the installation, press :kbd:`Enter`. The server installation will proc
 Dual Booting
 ============
 
-A TrueOS® installation assumes that you have an existing primary partition to install into. If your computer has only one disk and TrueOS® will be the only
-operating system, it is fine to accept the default partitioning scheme. However, if you will be sharing TrueOS® with other operating systems, be
-careful that TrueOS® is installed into the correct partition or you may inadvertently overwrite an existing operating system.
+A TrueOS® installation assumes that you have an existing GPT or
+primary partition to install into. If your computer has only one disk
+and TrueOS® will be the only operating system, it is fine to accept
+the default partitioning scheme. However, if you will be sharing
+TrueOS® with other operating systems, be careful that TrueOS® is
+installed into the correct partition or you may inadvertently
+overwrite an existing operating system.
 
-If you wish to install multiple operating systems on your computer, you will need the following: 
+If you wish to install multiple operating systems on your computer,
+you will need the following: 
 
-* a partition for each operating system. Many operating systems, including TrueOS®, can only be installed into a primary or GPT partition. This means that
-  you will need to use partitioning software as described in :ref:`Creating Free Space`. 
+* a partition for each operating system. Many operating systems,
+  including TrueOS®, can only be installed into a primary or GPT
+  partition. This means that you will need to use partitioning
+  software as described in :ref:`Creating Free Space`. 
 
-* a backup of any existing data. This backup should not be stored on your computer's hard drive but on another computer or on a removable media such as a USB
-  drive or burnt onto a DVD media. If you are careful in your installation, everything should go fine. However, you will be glad that you made a backup should
-  something go wrong.
+* a backup of any existing data. This backup should not be stored on
+  your computer's hard drive but on another computer or on a removable
+  media such as a USB drive or burnt onto a DVD media. If you are
+  careful in your installation, everything should go fine. However,
+  you will be glad that you made a backup should something go wrong.
 
-When installing TrueOS® onto a computer that is to contain multiple operating systems, care must be taken to **select the correct partition** in the
-:ref:`Disk Selection Screen` of the installation. On a system containing multiple partitions, each partition will be listed. Highlight the partition that you
-wish to install into and **make sure that you do not select a partition that already contains an operating system or data that you wish to keep.**
+When installing TrueOS® onto a computer that is to contain multiple
+operating systems, care must be taken to
+**select the correct partition** in the :ref:`Disk Selection Screen`
+of the installation. On a system containing multiple partitions, each
+partition will be listed. Highlight the partition that you wish to
+install into and
+**make sure that you do not select a partition that already contains an operating system or data that you wish to keep.**
 
-.. warning:: **make sure that you click the "Customize" button while in the "Disk Selection" screen.** If you just click "Next" without customizing the disk
-   layout, the installer will overwrite the contents of the primary disk.
+.. warning:: **make sure that you click the "Customize" button while in the "Disk Selection" screen.**
+   If you just click "Next" without customizing the disk layout, the
+   installer will overwrite the contents of the primary disk.
 
-In TrueOS® 11, the BSD boot loader is the preferred, and default, boot loader as it provides native support for ZFS boot environments. If you changed the default during installation,
-the installer will use a customized version of the GRUB boot loader that provides limited ZFS boot environment support.
+In TrueOS®, the BSD boot loader is the preferred, and default, boot
+loader as it provides native support for ZFS boot environments. If you
+changed the default during installation, the installer will use a
+customized version of the GRUB boot loader that provides limited ZFS
+boot environment support.
 
-The TrueOS® version of GRUB will attempt to identify other installed operating systems, such as Windows and Linux, and add them to the GRUB boot menu. If your other operating system is not
-automatically detected, you will need to manually add an entry to the :file:`/usr/local/etc/grub.d/40_custom.dist` file. For more information on the syntax used, refer to the
+The TrueOS® version of GRUB will attempt to identify other installed
+operating systems, such as Windows and Linux, and add them to the GRUB
+boot menu. If your other operating system is not automatically
+detected, you will need to manually add an entry to the
+:file:`/usr/local/etc/grub.d/40_custom.dist` file. For more
+information on the syntax used, refer to the
 `GRUB Manual <http://www.gnu.org/software/grub/manual/grub.html>`_. 
 
 .. index:: install
