@@ -97,10 +97,6 @@ The following boot options are available in the
   detailed messages during the boot process. This can be useful when
   troubleshooting a piece of hardware.
 
-* **7. Display Wizard:** if you are unable to access the GUI due to a display setting, enable this option to boot into the display settings wizard.
-
-* **8. Disable X:** boots the system to a command prompt. This is useful if you want to manually configure and test the X configuration file.
-
 .. _GRUB Boot Loader:
 
 GRUB Boot Loader
@@ -114,21 +110,66 @@ the boot loader, it will instead load the menu shown in
 
 .. figure:: images/boot2.png
 
+This boot menu is used to display the entry for TrueOS®, an entry for
+the screen which lists the available boot environments (these are
+automatically created when the system updates and can also be manually
+created using :ref:`Boot Environment Manager`), and any other
+operating systems installed on the system.
+
+By default, this menu will display for a few seconds before continuing
+to boot into TrueOS®. To pause this screen so that you can review its
+items, press any key (other than :kbd:`Enter`). To boot into a
+different operating system or boot environment, use your up and down
+arrows to select the desired entry then press :kbd:`Enter`.
+
+If you press :kbd:`Enter` when the "TrueOS" entry is highlighted, the
+TrueOS® boot options screen shown in
+:numref:`Figure %s:  TrueOS® Graphical Boot Menu Options <boot3>` will
+be displayed. 
+
+.. _boot3:
+
+.. figure:: images/boot3.png
+
+The following boot options are available: 
+
+* **Normal Bootup:** continues to boot TrueOS®. 
+
+* **Single User Mode:** advanced users can select this option to fix
+  critical system failures.
+
+* **Verbose Mode:** select this option if you would like to see more
+  detailed messages during the boot process. This can be useful when
+  troubleshooting a piece of hardware.
+
+Use the arrow keys to select an option then press enter to boot using
+that option.
+
+This menu is provided by GRUB. If you are familiar with editing GRUB,
+you can press :kbd:`e` to access the GRUB editor or :kbd:`c` to access
+the GRUB command line.
+
 .. index:: encryption
 .. _If you Encrypted Your Disks:
 
 If you Encrypted Your Disks
 ---------------------------
 
-If you selected the "Encrypt disk with GELI" checkbox during installation, you will need physical access to the TrueOS® system when it boots. As the system
-starts to boot, it will display a message similar to the one shown in :numref:`Figure %s:  Input Password to Decrypt Master Key <encrypt1>`.
+If you selected the "Encrypt disk with GELI" checkbox during
+installation, you will need physical access to the TrueOS® system when
+it boots. As the system starts to boot, it will display a message
+similar to the one shown in
+:numref:`Figure %s:  Input Password to Decrypt Master Key <encrypt1>`.
 
 .. _encrypt1:
 
 .. figure:: images/encrypt1.png
 
-The boot process will wait for you to successfully input the password that you created in the installation screen shown in :numref:`Figure %s: Configure Encryption <install11b>`. If the
-correct password is typed in, the system will continue to boot.
+The boot process will wait for you to input the password that you
+created in the installation screen shown in
+:numref:`Figure %s: Configure Encryption <install11b>`. If the correct
+password is typed in, the system will calculate the GELI encryption
+key, then continue to boot.
 
 .. index:: video
 .. _Display Detection:
@@ -146,14 +187,84 @@ configuration of the system.
 
 If the optimal display settings could not be determined, or if you
 select "No"in the "Confirm Resolution" screen when asked to confirm
-the display settings, or if you select "Run the Display Wizard" from the boot menu, the "Display Settings" screen shown in :numref:`Figure %s: Display Settings Wizard <display3>` will launch.
+the display settings, the "Display Settings" screen shown in
+:numref:`Figure %s: Display Settings Wizard <display3>` will launch.
 
-.. _display3:
+.. _display3: 
 
 .. figure:: images/display3.png
 
-The settings in this screen are described in more detail in :ref:`Display`. If you wish to return to this display wizard at a later time, go to
-:menuselection:`Control Panel --> Display`.
+This screen can be used to select the desired screen resolution, color
+depth, and video driver. If you select the "vesa" driver, it will
+always work but will provide sub-optimal performance. Click on the
+drop-down menu to select the driver that most closely matches your
+video card name.
+
+You can also use the drop-down menus to change the screen resolution
+and color depth values. If the value you desire is not listed, it may
+be the selected driver does not support that resolution or depth.
+
+Advanced users can select their monitor's horizontal sync and vertical
+refresh rate in the "Advanced" tab, seen in
+:numref:`Figure %s: Advanced Tab of Display Settings <display4>`.
+
+.. _display4:
+
+.. figure:: images/display4.png
+
+Use caution and refer to your monitor's documentation if you make any
+changes here. If you are not sure what you are doing, leave the
+default values as-is.
+
+If your computer is connected to two monitors, check the box "Enable
+Dual-Head support". 
+
+When you are finished, click the "Apply" button for your settings to
+be tested. If anything goes wrong during testing, you should be taken
+back to the "Display Settings" screen so that you can try another
+setting. Once you are satisfied with the settings, click "Yes" when
+prompted to accept them.
+
+.. index:: troubleshooting
+.. _Display Troubleshooting:
+
+Display Troubleshooting 
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are having problems with your display settings and would like to
+manually edit :file:`/etc/X11/xorg.conf` or run
+:command:`Xorg --config`, first tell the TrueOS® system to not
+automatically start X. To do so, add this temporary line to
+:file:`/etc/rc.conf`, then reboot the system::
+
+ pcdm_enable="NO"
+
+The system will reboot to a login prompt. After logging in, try the
+instructions in the
+`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_ 
+to manually configure and test Xorg. Once you have a configuration that
+works for you, save it to :file:`/etc/X11/xorg.conf`. Then, remove that
+temporary line from :file:`/etc/rc.conf` and start PCDM::
+
+ service pcdm start
+
+If your graphics white-out after a suspend or resume, try running this
+command as the superuser::
+
+ sysctl hw.acpi.reset_video=1
+
+If that fixes the problem, carefully add this line to
+:file:`/etc/sysctl.conf`::
+
+ hw.acpi.reset_video=1
+
+If the monitor goes blank and does not come back, try running this
+command as your regular user account::
+
+ xset -dpms
+
+If that fixes the problem, add that line to the :file:`.xprofile` file
+in your home directory.
 
 If you change any display settings, click the "Apply" button for the
 settings to be tested. If anything goes wrong during testing, you will
@@ -500,15 +611,6 @@ this case, make sure that the preferred device is listed first. If you
 can not see your BIOS settings you may need to move a jumper or remove
 a battery to make it revert to the default of built-in graphics; check
 your manual or contact your manufacturer for details.
-
-If that change did not help, try rebooting and selecting "6. Configure Boot Options" from the boot menu shown in :numref:`Figure %s: Initial Boot Menu <install1b>`.
-This will open the screen shown in :numref:`Figure %s: TrueOS® Boot Options <menu1>`.
-
-.. _menu1:
-
-.. figure:: images/menu1.png
-
-Press :kbd:`7` to toggle "Off" to "On, then press :kbd:`Enter`. This will boot the installer using the VESA graphics driver which is supported on all systems.
 
 A not uncommon cause for problems is the LBA (Logical Block
 Addressing) setting in the BIOS. If your PC is not booting up before

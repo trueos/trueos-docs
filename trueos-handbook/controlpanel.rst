@@ -4,44 +4,6 @@
 Control Panel
 *************
 
-TrueOS® provides a Control Panel which contains tools for managing your system. The Control Panel is available from any desktop, meaning it is available
-regardless of which desktop you log into.
-
-.. note:: if a desktop does not contain an icon or menu item for Control Panel, type :command:`pc-controlpanel` from a shell prompt to launch the Control
-   Panel.
-
-A screenshot of Control Panel started from the KDE desktop can be seen in :numref:`Figure %s: TrueOS® Control Panel <control1a>`.
-
-.. _control1a:
-
-.. figure:: images/control1a.png
-
-The available utilities are divided into sections. If you click a grey section bar, you can toggle between displaying (bar has up arrow) or hiding (bar has
-down arrow) its icons.
-
-The search box in the upper right can be used to find the proper control panel item if you know what you would like to configure but are uncertain which
-utility to use. The icon next to the search box can be used to change the size of the icons, change the view from a grid to a list, and organize the icons
-into a fixed layout.
-
-If an icon includes a yellow exclamation mark, you will need to input your password in order to access that configuration utility.
-
-.. note:: if your user account is not a member of the *wheel* group, you will not see the configuration utilities in Control Panel that require a password.
-   By default, the first user account that you create is made a member of the *wheel* group. You can log in as that user and use :ref:`User Manager` to add
-   other accounts to this group.
-
-Control Panel includes a "desktop selector" menu which allows you to load the configuration utilities from just the operating system (as seen in the example in
-:numref:`Figure %s: TrueOS® Control Panel <control1a>`), all installed desktops, or one of these installed desktops: KDE, GNOME, Cinnamon, MATE, XFCE4, LXDE, or Lumina.
-In the example shown in :numref:`Figure %s: Desktop Selector Menu <control2>`, the user is currently logged into the LXDE desktop but they have chosen to view the GNOME utilities.
-The menu icon indicates the control panel view while "(current)" will be beside the desktop that is presently active.
-
-.. _control2:
-
-.. figure:: images/control2.png
-
-Switching between the icons in the selector changes the icons displayed within the control panel window to match those used in that desktop. If "All desktops"
-is set by the desktop selector, you will see every utility that is available, depending upon which desktops are currently installed. You can change which
-desktops are installed using :ref:`AppCafe®`.
-
 The following utilities are found in the Control Panel of a TrueOS® system, regardless of which desktops are installed: 
 
 **System management** 
@@ -59,8 +21,6 @@ The following utilities are found in the Control Panel of a TrueOS® system, reg
 **Hardware** 
 
 * :ref:`Disk Manager`
-
-* :ref:`Display`
 
 * :ref:`Mount Tray`
 
@@ -777,114 +737,6 @@ An example of the "Disks" tab is seen in :numref:`Figure %s: Managing Disks <dis
 
 This screen shows the size of each disk as well as its partitioning scheme. If an unformatted disk or free disk space is available, right-click the device to
 format it.
-
-.. index:: configuration
-.. _Display:
-
-Display
-=======
-
-:menuselection:`Control Panel --> Display` can be used to configure the
-system to run the display wizard the next time the system boots. This
-allows you to reconfigure your video driver and display settings.
-
-.. note:: if you have an NVIDIA card, double-check that "pcbsd-meta-nvidia" is installed in :ref:`AppCafe®` and install it if it is not. To check for this
-   driver, search for "nvidia" in the "App Search" tab of AppCafe®. 
-
-If you click this icon in Control Panel, you will receive the message
-shown in
-:numref:`Figure %s: Display Wizard Will Run at Next Boot <display2>`. 
-
-.. _display2:
-
-.. figure:: images/display2.png
-
-Select "Yes" which will prompt for your password. You should then save
-your work and reboot the system.
-
-Alternately, you can use the boot menu to start the display wizard. As soon as the system starts to boot, press the left :kbd:`Shift` button to access the
-GRUB boot menu. Unless you are dual booting or have configured boot environments, there will be one entry named "PC-BSD (default)" in the boot menu. Press
-:kbd:`Enter` and select "Run the Display Wizard" from the menu.
-
-Regardless of whether you started the Display Wizard from Control Panel or from the boot menu, it will finish booting the system and then prompt you to
-confirm the resolution if it finds an optimal one. To configure a different resolution, click "No" to access the display wizard, shown in
-:numref:`Figure %s:  Display Settings Wizard <display3>`. 
-
-.. _display3: 
-
-.. figure:: images/display3.png
-
-This screen can be used to select the desired screen resolution, color
-depth, and video driver. If you select the "vesa" driver, it will always
-work but will provide sub-optimal performance. Click on the drop-down
-menu to select the driver that most closely matches your video card
-name.
-
-You can also use the drop-down menus to change the screen resolution and
-color depth values. If the value you desire is not listed, it may be the
-selected driver does not support that resolution or depth.
-
-Advanced users can select their monitor's horizontal sync and vertical
-refresh rate in the "Advanced" tab, seen in
-:numref:`Figure %s: Advanced Tab of Display Settings <display4>`.
-
-.. _display4:
-
-.. figure:: images/display4.png
-
-Use caution and refer to your monitor's documentation if you make any
-changes here. If you are not sure what you are doing, leave the default
-values as-is.
-
-If your computer is connected to two monitors, check the box "Enable
-Dual-Head support". 
-
-When you are finished, click the "Apply" button for your settings to be
-tested. If anything goes wrong during testing, you should be taken back
-to the "Display Settings" screen so that you can try another setting.
-Once you are satisfied with the settings, click "Yes" when prompted to
-accept them.
-
-.. index:: troubleshooting
-.. _Display Troubleshooting:
-
-Display Troubleshooting 
------------------------
-
-If you are having problems with your display settings and would like to
-manually edit :file:`/etc/X11/xorg.conf` or run
-:command:`Xorg --config`, first tell the TrueOS® system to not
-automatically start X. To do so, add this temporary line to
-:file:`/etc/rc.conf`, then reboot the system::
-
- pcdm_enable="NO"
-
-The system will reboot to a login prompt. After logging in, try the
-instructions in the
-`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_ 
-to manually configure and test Xorg. Once you have a configuration that
-works for you, save it to :file:`/etc/X11/xorg.conf`. Then, remove that
-temporary line from :file:`/etc/rc.conf` and start PCDM::
-
- service pcdm start
-
-If your graphics white-out after a suspend or resume, try running this
-command as the superuser::
-
- sysctl hw.acpi.reset_video=1
-
-If that fixes the problem, carefully add this line to
-:file:`/etc/sysctl.conf`::
-
- hw.acpi.reset_video=1
-
-If the monitor goes blank and does not come back, try running this
-command as your regular user account::
-
- xset -dpms
-
-If that fixes the problem, add that line to the :file:`.xprofile` file
-in your home directory.
 
 .. index:: mount
 .. _Mount Tray:
