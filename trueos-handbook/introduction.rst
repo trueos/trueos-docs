@@ -229,14 +229,29 @@ The following features or enhancements were introduced for TrueOS®:
   for securely managing local and remote FreeBSD and TrueOS® systems.
   The following utilities have been converted to the SysAdm™ API and
   are available in the :ref:`SysAdm™ client`: :ref:`AppCafe®`,
-  :ref:`Update Manager`, :ref:`Boot Environment Manager`, and
-  :ref:`Life Preserver`.
+  :ref:`Update Manager`, :ref:`Boot Environment Manager`,
+  :ref:`Life Preserver`, :ref:`Firewall Manager`, :ref:`User Manager`,
+  :ref:`Network Manager`, and :ref:`Mount Tray`.
   
 * The functionality that used to be provided by the About utility has
   been incorporated into :ref:`Lumina Information`.
+  
+* The functionality that used to be provided by Service Manager
+  (:command:`pc-servicemanager`) has been integrated into
+  :ref:`Task Manager`.
+  
+* The Active Directory & LDAP utility (:command:`pc-adsldap`) has been
+  deprecated.
+  
+* Login Manager (:command:`pc-dmconf`) has been replaced by
+  :command:`pcdm-config`).
+  
+* System Manager (:command:`pc-sysmanager`) has been deprecated.
 
 * :command:`freebsd-update` has been retired in favor of using
   :command:`pkg` for system updates.
+  
+* Disk Manager (:command:`pc-zmanager) has been deprecated.  
 
 * The option to use the SCFB display driver has been added to the
   installer. This driver is suitable for newer UEFI laptops as it

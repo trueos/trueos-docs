@@ -93,7 +93,7 @@ area allow you to:
   the system's video card, Ethernet card, wireless device, and sound
   card are compatible with TrueOS®
 
-* manage :ref:`Network Configuration` for a network installation or
+* manage :ref:`Network Manager` for a network installation or
   system restore
 
 * read that screen's Help text 

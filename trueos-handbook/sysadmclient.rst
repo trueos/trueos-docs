@@ -5,7 +5,7 @@ SysAdm™ Client
 **************
 
 Beginning with TrueOS® 11, most of the system management utilities that
-were previously available in the PC-BSD® :ref:`Control Panel` have been
+were previously available in the PC-BSD® Control Panel have been
 rewritten to use the SysAdm™ API. This API is designed to make it easy
 to manage any FreeBSD or TrueOS® desktop or server system over a secure
 connection from any operating system that has the SysAdm™ application
@@ -13,8 +13,7 @@ installed. SysAdm™ is built into TrueOS® and downloadable packages for
 other operating systems are available from the
 `SysAdm Website <https://sysadm.us/>`_.
 
-The following utilities have been removed from :ref:`Control Panel` as
-they are now available in the SysAdm™ client:
+The following utilities have been removed from Control Panel as they are now available in the SysAdm™ client:
 
 **Application Management**
 
@@ -35,6 +34,16 @@ they are now available in the SysAdm™ client:
 **Utilities**
 
 * :ref:`Life Preserver`
+
+STILL NEED TO BE ADDED IN THE ORDER THEY APPEAR:
+
+* :ref:`Firewall Manager`
+
+* :ref:`User Manager`
+
+* :ref:`Network Manager`
+
+* :ref:`Mount Tray`
 
 The rest of this chapter provides an overview of the SysAdm™
 architecture, how to manage its secure connections, and how to use its
@@ -493,7 +502,7 @@ In order to configure replication, the remote system to hold a copy of the snaps
   version of ZFS include TrueOS®, FreeBSD 9.2 or higher, and FreeNAS 9.1.x or higher.
 
 * That system must have SSH installed and the SSH service must be running. If the backup server is running TrueOS®, SSH is already installed and you can start
-  SSH using :ref:`Service Manager`. If that system is running FreeNAS® or FreeBSD, SSH is already installed, but you will need to start SSH.
+  SSH using :ref:`Task Manager`. If that system is running FreeNAS® or FreeBSD, SSH is already installed, but you will need to start SSH.
 
 * If the backup server is running TrueOS®, you will need to open TCP port 22 (SSH) using :ref:`Firewall Manager`. If the server is running FreeBSD and a
   firewall has been configured, add a rule to open this port in the firewall ruleset. FreeNAS® does not run a firewall by default. Also, if there is a
@@ -720,7 +729,7 @@ Before you can perform a restore, the network interface must be
 configured. Click the "network connectivity" icon (second from the
 left) in order to determine if the network connection was
 automatically detected. If it was not, refer to the instructions in
-:ref:`Network Configuration` and make sure that networking is working
+:ref:`Network Manager` and make sure that networking is working
 before continuing.
 
 Once you are ready, click "Restore from Life-Preserver backup" and the
@@ -750,3 +759,850 @@ After making your selection, click "Next". The restore wizard will provide a sum
 associated with the replication, and the hostname of the target system. Click "Finish" and the installer will proceed to the :ref:`Disk Selection Screen`. At
 this point, you can click the "Customize" button to customize the disk options. However, in the screen shown in Figure 3.3h, the ZFS datasets will be greyed
 out as they will be recreated from the backup during the restore. Once you are finished with any customizations, click "Next" to perform the restore.
+
+.. index:: firewall
+.. _Firewall Manager:
+
+Firewall Manager
+================
+
+TrueOS® uses the `IPFW firewall <http://www.freebsd.org/cgi/man.cgi?query=ipfw>`_ to protect your system. By default, the firewall is configured to allow all
+outgoing connections, but to deny all incoming connection requests. The default rulebase is located in :file:`/etc/ipfw.rules`. Use the Firewall Manager GUI
+utility to view and modify the existing firewall rules.
+
+.. note:: typically it is not necessary to change the firewall rules. You should only add rules if you understand the security implications of doing so,
+   as any custom rules will be used to allow connections to your computer.
+
+To access the Firewall Manager, click Firewall Manager within SysAdm™ or type :command:`pc-su pc-fwmanager`. You will be prompted to input
+your password. :numref:`Figure %s: Firewall Manager Utility <firewall1>` shows the initial screen when you launch this utility.
+
+.. _firewall1:
+
+.. figure:: images/firewall1.png
+
+The "General" tab of this utility allows you to: 
+
+* Determine whether or not the firewall starts when the system boots. Unless you have a reason to do so and understand the security implications, the
+  "Enable Firewall on startup" box should be checked so that your system is protected by the firewall.
+
+* "Start", "Stop", or "Restart" the firewall.
+
+* The "Restore Default Configuration" button allows you to return to the original, working configuration.
+
+To add or delete custom firewall rules, click the "Open Ports" tab to open the screen shown in :numref:`Figure %s: Adding a New Firewall Rule <firewall2>`. Note that your custom rules will
+allow **incoming** connections on the specified protocol and port number.
+
+.. _firewall2:
+
+.. figure:: images/firewall2.png
+
+Any rules that you create will appear in this screen. To add a rule, input the port number to open. By default, "tcp" is selected. If the rule is for the
+UDP protocol, click the "tcp" drop-down menu and select "udp". Once you have the protocol and port number selected, click the "Open Port" button to add the
+new rule to your custom list.
+
+If you have created any custom rules and wish to delete one, highlight the rule to delete and click the "Close Selected Ports" button to remove it from
+the custom rules list.
+
+.. note:: whenever you add or delete a custom rule, the rule will not be used until you click the "Restart" button shown in :numref:`Figure %s: Firewall Manager Utility <firewall1>`. Also,
+   your custom rules are not used whenever the system is in :ref:`Tor Mode`.
+
+Whenever you create a custom rule, test that your new rule works as expected. For example, if you create a rule to allow incoming SSH connections, try connecting
+to your TrueOS® system using :command:`ssh` to verify that the firewall is now allowing the connection.
+
+.. index:: configuration
+.. _User Manager:
+
+User Manager
+============
+
+The TrueOS® User Manager utility allows you to easily add and delete
+users and groups, as well as change a user's or the administrative
+password. To access this utility, go to click "User Manager" within SysAdm™ or type :command:`pc-su pc-usermanager`. You will need to input your password in
+order to access this utility.
+
+.. index:: users
+.. _Managing User Accounts:
+
+Managing User Accounts
+----------------------
+
+In the example shown in
+:numref:`Figure %s: Viewing User Accounts in User Manager <user1>`, the
+system has two user accounts. The *dru* account has the ability to
+become the superuser as the "Can administrate system" checkbox is
+checked.
+
+.. _user1:
+
+.. figure:: images/user1.png
+
+If you click the "Remove" button for a highlighted user, a pop-up menu
+will ask if you would like to also delete the user's home directory
+(along with all of their files). If you click "No", the user will still
+be deleted but their home directory will remain. If you have only
+created one user account, the "Remove" button will be greyed out as you
+need at least one user to be able to login to the TrueOS® system.
+
+.. note:: while a removed user will no longer be listed, the user
+   account will not actually be deleted until you click the "Apply"
+   button. A pop-up message will indicate that you have pending changes
+   if you close User Manager without clicking "Apply". If you change
+   your mind, click "No" and the user account will not be deleted;
+   otherwise, click "Yes" and the user will be deleted and User Manager
+   will close.
+
+The password for any user can be changed by first highlighting the user
+name then clicking the "Change Password" button. You will not be
+prompted for the old password in order to reset a user's password; this
+can be handy if a user has forgotten their password and can no longer
+log into the TrueOS® system. If you click the "Change Admin Password"
+button, you can change the root user's password.
+
+If you click the "Advanced View" button, this screen will change to show
+all of the accounts on the system, not just the user accounts that you
+created. An example is seen in
+:numref:`Figure %s: Viewing All Accounts and Their Details <user2>`. 
+
+.. _user2:
+
+.. figure:: images/user2.png
+
+The accounts that you did not create are known as system accounts and
+are needed by the operating system or installed applications. Do **not**
+delete any accounts that you did not create yourself as doing so may
+cause a previously working application to stop working. "Advanced View"
+provides additional information associated with each account, such as
+the user ID number, full name (description), home directory, default
+shell, and primary group. System accounts usually have a shell of
+*nologin* for security reasons, meaning that an attacker can not try to
+login to the system using that account name.
+
+:numref:`Figure %s: Creating a New User Account <user3>` shows the add
+user account creation screen that opens when you click the "Add" button.
+
+.. _user3:
+
+.. figure:: images/user3.png
+
+.. note:: if you click the "Add" button while in "Simple View", you will
+   only be prompted to enter the username, full name, and password.
+
+This screen is used to input the following information when adding a new
+user or system account: 
+
+**Full Name:** this field provides a description of the account and can
+contain spaces. If it is a user account, use the person's first and las
+t name. If it is a system account, input a description to remind you
+which application uses the account.
+
+**Username:** the name the user will use when they log in to the system;
+it is case sensitive and can not contain any spaces. If you are creating
+a system account needed by an application, use the name provided by the
+application's installation instructions. If the name that you choose
+already exists as an account, it will be highlighted in red and the
+utility will prompt you to use another name.
+
+**Home Directory:** leave this field empty for a user account as the
+system will automatically create a ZFS dataset for the user's home
+directory under :file:`/usr/home/username`. However, if you are creating
+a system account it is important to override this default by typing in
+:file:`/var/empty` or :file:`/nonexistent` unless the application's
+installation instructions specify that the account needs a specific home
+directory.
+
+**Shell:** this drop-down menu contains the shells that are available to
+users when they are at a command prompt. You can either keep the default
+or select a shell which the user prefers.
+
+**UID:** by default, the user will be assigned the next available User
+ID (UID). If you need to force a specific UID, you can set it here. Note
+that you cannot set a UID lower than 1001 or specify a UID that is
+already in use by another user account.
+
+**Primary Group:** if you leave the default button of "New Group"
+selected, a group will be created with the same name as the user. This
+is usually what you want unless you are creating a system account and
+the installation instructions specify a different group name. Note that
+the drop-down menu for specifying a group name will only show existing
+groups, but you can quickly create a group using the "Groups" tab.
+
+**Password:** the password is case-sensitive and needs to be confirmed.
+
+Once you have made your selections, press the "Save" button to create
+the account.
+
+.. index:: users
+.. _PersonaCrypt:
+
+PersonaCrypt
+------------
+
+TrueOS® provides support for PersonaCrypt. A PersonaCrypt device is a
+removable USB media, such as a USB stick, which has been formatted with
+ZFS and encrypted with GELI. This device is used to hold a specific
+user's home directory, meaning that they can securely transport and
+access their personal files on any TrueOS® or PC-BSD® 10.1.2 or higher
+system. This can be used, for example, to securely access one's home
+directory from a laptop, home computer, and work computer. The device is
+protected by an encryption key and a password which is, and should be,
+separate from the user's login password.
+
+.. note:: when a user is configured to use a PersonaCrypt device, that
+   user can not login using an unencrypted session on the same system.
+   In other words, the PersonaCrypt username is reserved for
+   PersonaCrypt use. If you need to login to both encrypted and
+   unencrypted sessions on the same system, create two different user
+   accounts, one for each type of session.
+
+PersonaCrypt uses GELI's ability to split the key into two parts: one
+being your passphrase, and the other being a key stored on disk. Withou
+t both of these parts, the media cannot be decrypted. This means that if
+somebody steals the key and manages to get your password, it is still 
+worthless without the system it was paired with.
+
+.. warning:: USB devices can and do eventually fail. Always backup any
+   important files stored on the PersonaCrypt device to another device
+   or system.
+
+Advanced Mode can be used to initialize a PersonaCrypt device for any
+created user, **except** for the currently logged in user. In the
+example shown in
+:numref:`Figure %s: Initialize PersonaCrypt Device <user5>`, a new user,
+named *dlavigne*, has been created and the entry for that user has been
+clicked.
+
+.. _user5: 
+
+.. figure:: images/user5.png
+
+Before a user is configured to use PersonaCrypt on a TrueOS® system, two
+buttons are available in the "PersonaCrypt" section of "Advanced Mode".
+Note that this section is hidden if the currently logged in user is
+selected. Also, if you have just created a user and do not see these
+options, click "Apply" then re-highlight the user to display these
+options:
+
+* **Import Key:** if the user has already created a PersonaCrypt device
+  on another TrueOS® system, click this button to import a previously
+  saved copy of the key associated with the device. Once the key is
+  imported, the user can now login to this computer using PersonaCrypt.
+
+* **Initialize Device:** used to prepare the USB device that will be
+  used as the user's home directory.
+
+To prepare a PersonaCrypt device for this user, insert a USB stick and
+click "Initialize Device". A pop-up menu will indicate that the current
+contents of the device will be wiped and that the device must be larger
+than the user's current home directory.
+
+.. warning:: since the USB stick will hold the user's home directory and
+   files, ensure that the stick is large enough to meet the anticipated
+   storage needs of the home directory. Since the stick will be
+   reformatted during the initialization process, make sure that any
+   current data on the stick that you need has been copied elsewhere.
+   Also, the faster the stick, the better the user experience while
+   logged in.
+
+Press "OK" in the pop-up menu. This will prompt you to input and confirm
+the password to associate with the device. Another message will ask if
+you are ready. Click "Yes" to initialize the device. The User Manager
+screen will be greyed out while the device is prepared. Once the
+initialization is complete, the User Manager screen will change to
+display the device's key options, as seen in
+:numref:`Figure %s: PersonaCrypt Key Options <user6>`.
+
+.. _user6:
+
+.. figure:: images/user6.png
+
+The following options are now available:
+
+* **Export Key:** used to create a copy of the encryption key so that it
+  can be imported for use on another TrueOS® system.
+
+* **Disable Key (No Data):** used to uninitialize the PersonaCrypt
+  device on this system. Note that the device can still be used to login
+  to other TrueOS® systems.
+
+* **Disable Key (Import Data):** in addition to uninitializing the
+  PersonaCrypt device on this system, copy the contents of the user's
+  home directory to this system.
+
+Once a user has been initialized for PersonaCrypt on the system, their
+user account will no longer be displayed when :ref:`Logging In`
+**unless** their PersonaCrypt device is inserted. Once the USB device is
+inserted, the login screen will add an extra field, as seen in the
+example shown in Figure 4.8b.
+
+.. note:: when stealth sessions have been configured, PersonaCrypt users will still be displayed in the login menu, even if
+   their USB device is not inserted. This is to allow those users the option to instead login using a stealth session.
+
+In the field with the yellow padlock icon, input the password for the
+user account. In the field with the grey USB stick icon, input the
+password associated with the PersonaCrypt device.
+
+.. warning:: To prevent data corruption and freezing the system
+   **DO NOT** remove the PersonaCrypt device while logged in! Always log
+   out of your session before physically removing the device.
+
+.. index:: users
+.. _Managing Groups:
+
+Managing Groups
+---------------
+
+If you click the "Groups" tab, you can view all of the groups on the 
+system, as seen in
+:numref:`Figure %s: Managing Groups Using User Manager <user4>`. 
+
+.. _user4: 
+
+.. figure:: images/user4.png
+
+This screen has 3 columns: 
+
+**Groups:** shows all of the groups on the system.
+
+**Available:** shows all of the system and user accounts on the system
+in alphabetical order.
+
+**Members:** indicates if the highlighted group contains any user
+accounts.
+
+To add an account to a group, highlight the group name in the "Groups"
+column. Then, highlight the account name in the "Available" column.
+Click the right arrow and the selected account will appear in the
+"Members" column. You should only add user accounts to groups that you
+create yourself or when an application's installation instructions
+indicate that an account needs to be added to a group.
+
+If you click the "Add" button, a pop-up menu will prompt you for the
+name of the new group. Once you press "OK", the group will be added to
+the "Groups" column.
+
+If you click the "Remove" button, the highlighted group will
+automatically be deleted after you press the "Apply" button, so be sure
+to do this with care. Again, do **not** remove any groups that you did
+not create yourself or applications that used to work may stop working.
+
+.. index:: network
+.. _Network Manager:
+
+Network Manager
+===============
+
+During installation, TrueOS® configures your Ethernet interfaces to use DHCP and provides a screen to :ref:`Connect to a Wireless Network`. In most cases,
+this means that your connected interfaces should "just work" whenever you use your TrueOS® system.
+
+For desktops that provide a system tray, a wireless configuration icon will appear if TrueOS® detects a supported wireless card. If you hover over the wireless icon, shown in
+:numref:`Figure %s: Wireless Information in System Tray <network1>`, it will indicate if the interface is associated and provide information regarding the IP address, IPv6 address, SSID,
+connection strength, connection speed, MAC address, and type of wireless device.
+
+.. _network1:
+
+.. figure:: images/network1.png
+
+If you right-click the wireless icon, you will see a list of detected wireless networks. Simply click the name of a network to associate with it. The
+right-click menu also provides options to configure the wireless device, start the Network Manager, restart the network (useful if you need to renew your DHCP
+address), and to close the Network Monitor so that the icon no longer shows in the system tray. If you have multiple wireless devices, each will have its own
+icon in the system tray. If you do not use one of the devices, click its "Close the Network Monitor" to remove it from the tray.
+
+To view or manually configure all of your network interfaces click "Network Manager" within SysAdm™ or type
+:command:`pc-su pc-netmanager`. If a new device has been inserted (e.g. a USB wireless interface), a pop-up message will open when you start Network Manager, indicate the name of the
+new device, and ask if you would like to enable it. Click "Yes" and the new device will be displayed with the list of network interfaces that TrueOS® recognizes. In the example seen in
+:numref:`Figure %s: Network Manager <network2a>`, the system has one Intel Ethernet interface that uses the *em* driver and an Intel wireless interface that uses the
+*wlan* driver.
+
+.. _network2a:
+
+.. figure:: images/network2a.png
+
+The rest of this section describes each tab of the Network Manager utility and demonstrate how to view and configure the network settings for both
+Ethernet and wireless devices. It will then present some common troubleshooting scenarios, known issues, and suggestions for when a device does not have a
+built-in driver.
+
+.. index:: network
+.. _Ethernet Adapters:
+
+Ethernet Adapters
+-----------------
+
+If you highlight an Ethernet interface in the "Devices" tab and either click the "Configure" button or double-click the interface name, you will see the
+screen shown in :numref:`Figure %s: Network Settings for an Ethernet Interface <network3>`.
+
+.. _network3:
+
+.. figure:: images/network3.png
+
+There are two ways to configure an Ethernet interface: 
+
+1. **Use DHCP:** this method assumes that your Internet provider or network assigns your addressing information automatically using the DHCP protocol. Most
+   networks are already setup to do this. This method is recommended as it should "just work". 
+
+2. **Manually type in the IP addressing information:** this method requires you to understand the basics of TCP/IP addressing or to know which IP address you
+   should be using on your network. If you do not know which IP address or subnet mask to use, you will have to ask your Internet provider or network
+   administrator.
+
+By default, TrueOS® will attempt to obtain an address from a DHCP server. If you wish to manually type in your IP address, check the box "Assign static IP
+address". Type in the IP address, using the right arrow key or the mouse to move between octets. Then, double-check that the subnet mask ("Netmask") is the
+correct value and change it if it is not.
+
+If the Ethernet network uses 802.1x authentication, check the box "Enable WPA authentication" which will enable the "Configure WPA" button. Click this button
+to select the network and to input the authentication values required by the network.
+
+By default, the "Disable this network device" box is unchecked. If you check this checkbox, TrueOS® will immediately stop the interface from using the
+network. The interface will remain inactive until this checkbox is unchecked.
+
+The "Advanced" tab, seen in :numref:`Figure %s: Advanced Tab of an Ethernet Interface's Network Settings <network4>`, allows advanced users to change their
+:wikipedia:`MAC address` or to automatically obtain an :wikipedia:`IPv6 address`. Both boxes should remain checked unless
+you are an advanced user who has a reason to change the default MAC or IPv6 address and you understand how to input an appropriate replacement address.
+
+.. _network4:
+
+.. figure:: images/network4.png
+
+The "Info" tab, seen in :numref:`Figure %s: Info Tab of an Ethernet Interface's Network Settings <network5>`, will display the current network address settings and some traffic statistics.
+
+.. _network5:
+
+.. figure:: images/network5.png
+
+If you make any changes within any of the tabs, click the "Apply" button to activate them. Click the "OK" button when you are finished to go back to the main
+Network Manager window.
+
+You can repeat this procedure for each network interface that you wish to view or configure.
+
+.. index:: network
+.. _Wireless Adapters:
+
+Wireless Adapters
+-----------------
+
+If your wireless interface does not automatically associate with a wireless network, you probably need to configure a wireless profile that contains the security settings required by the
+wireless network. Double-click the wireless icon in the system tray or highlight the wireless interface displayed in the "Devices" tab of Network Manager and click the "Configure"
+button. :numref:`Figure %s: Wireless Configuration <network6>` demonstrates that this system's wireless interface is currently
+associated with the wireless network listed in the "Configured Network Profiles" section.
+
+.. _network6: 
+
+.. figure:: images/network6.png
+
+To associate with a wireless network, click the "Scan" button to receive the list of possible wireless networks to connect to. Highlight the network you wish
+to associate with and click the "Add Selected" button. If the network requires authentication, a pop-up window will prompt you for the authentication details.
+Input the values required by the network then click the "Close" button. TrueOS® will add an entry for the network in the "Configured Network Profiles"
+section.
+
+If the network is hidden, click the "Add Hidden" button, input the name of the network in the pop-up window, and click "OK".
+
+If you add multiple networks, use the arrow keys to place them in the desired connection order. TrueOS® will try to connect to the first profile in the list
+and will move down the list in order if it is unable to connect. When finished, click the "Apply" button. A pop-up message will indicate that TrueOS® is
+restarting the network. If all went well, there should be an IP address and status of "associated" when you hover over the wireless icon in the system tray.
+If this is not the case, double-check for typos in your configuration values and read the section on :ref:`Troubleshooting Network Settings`. 
+
+TrueOS® supports the types of authentication shown in :numref:`Figure %s: Configuring Wireless Authentication Settings <network7>`. You can access this screen (and change your authentication
+settings) by highlighting an entry in the "Configured Network Profiles" section and clicking the "Edit" button.
+
+.. _network7: 
+
+.. figure:: images/network7.png
+
+This screen allows you to configure the following types of wireless security: 
+
+* **Disabled:** if the network is open, no additional configuration is required.
+
+* **WEP:** this type of network can be configured to use either a hex or a plaintext key and Network Manager will automatically select the type of key that it has detected.
+  If you click "WEP" then the "Configure" button, you will see the screen shown in :numref:`Figure %s: WEP Security Settings <network8>`. Type the key into both network key boxes. If the key
+  is complex, check the "Show Key" box to make sure that the passwords are correct and that they match. Uncheck this box when you are finished to replace the characters in the key with the
+  "*" symbol. A wireless access point that uses WEP can store up to 4 keys and the number in the key index indicates which key you wish to use.
+
+* **WPA Personal:** this type of network uses a plaintext key. If you click "WPA Personal" then the "Configure" button, you will see the screen shown in
+  :numref:`Figure %s: WPA Personal Security Settings <network9>`. Type in the key twice to verify it. If the key is complex, you can check the "Show Key" box to make sure the passwords match.
+
+* **WPA Enterprise:** if you click "WPA Enterprise" then the "Configure" button, you will see the screen shown in :numref:`Figure %s: WPA Enterprise Security Settings <network10>`. Select
+  the authentication method ("EAP-TLS", "EAP-TTLS", or "EAP-PEAP"), input the EAP identity, browse for the CA certificate, client certificate and private key file, and input and
+  verify the password.
+
+.. note:: if you are unsure which type of encryption is being used, ask the person who setup the wireless router. They should also be able to give you the
+   value of any of the settings seen in these configuration screens.
+
+.. _network8: 
+
+.. figure:: images/network8.png
+
+.. _network9: 
+
+.. figure:: images/network9.jpg
+
+.. _network10:
+
+.. figure:: images/network10.png
+
+If you wish to disable this wireless interface, check the box "Disable this wireless device". This setting can be desirable if you want to temporarily prevent
+the wireless interface from connecting to untrusted wireless networks.
+
+The "Advanced" tab, seen in :numref:`Figure %s: Advanced Tab of a Wireless Interface <network11>`, allows you to configure the following: 
+
+* a custom MAC address. This setting is for advanced users and requires the "Use hardware default MAC address" box to be unchecked.
+
+* how the interface receives its IP address information. If the network contains a DHCP server, check the box "Obtain IP automatically (DHCP)". Otherwise,
+  input the IP address and subnet mask to use on the network.
+
+* the country code. This setting is not required if you are in North America. For other countries, check the "Set Country Code" box and select your country
+  from the drop-down menu.
+
+.. _network11:
+
+.. figure:: images/network11.png
+
+The "Info" tab, seen in :numref:`Figure %s: Info Tab of a Wireless Interface <network12>`, shows the current network status and statistics for the wireless interface.
+
+.. _network12:
+
+.. figure:: images/network12.png
+
+.. index:: network
+.. _Network Configuration (Advanced):
+
+Network Configuration (Advanced)
+--------------------------------
+
+The "Network Configuration (Advanced)" tab of the Network Manager is seen in
+:numref:`Figure %s: Network Configuration (Advanced) tab <network13a>`. The displayed information is for the currently
+highlighted interface. If you wish to edit these settings, make sure that the interface that you wish to configure is highlighted in the "Devices" tab.
+
+
+.. _network13a: 
+
+.. figure:: images/network13a.png
+
+If the interface receives its IP address information from a DHCP server, this screen allows you to view the received DNS information. If you wish to override
+the default DNS settings or set them manually, check the "Enable Custom DNS" box. You can then set the following: 
+
+**DNS 1:** the IP address of the primary DNS server. If you do not know which IP address to use, click the "Public servers" button to select a public DNS
+server.
+
+**DNS 2:** the IP address of the secondary DNS server.
+
+**Search Domain:** the name of the domain served by the DNS server.
+
+If you wish to change or set the default gateway, check the "Enable Custom Gateway" box and input the IP address of the default gateway.
+
+The following settings can be modified in the IPv6 section: 
+
+**Enable IPv6 support:** if this box is checked, the specified interface can participate in IPv6 networks.
+
+**IPv6 gateway:** the IPv6 address of the default gateway used on the IPv6 network.
+
+**IPv6 DNS 1:** the IPv6 address of the primary DNS server used on the IPv6 network. If you do not know which IP address to use, click the "Public servers"
+button to select a public DNS server.
+
+**IPv6 DNS 2:** the IPv6 address of the secondary DNS server used on the IPv6 network.
+
+The "Misc" section allows you to configure these options: 
+
+**System Hostname:** the name of your computer. It must be unique on your network.
+
+**Enable wireless/wired failover via lagg0 interface:** the  interface allows you to seamlessly switch between using an Ethernet interface and a wireless
+interface. If you want this functionality, check this box.
+
+.. note:: some users experience problems using lagg. If you have problems connecting to a network using an interface that previously worked, uncheck this box
+   and remove any references to "lagg" in your :file:`/etc/rc.conf` file.
+
+**Domain Name:** if the system is in a domain, you can specify it here.
+
+If you make any changes within this window, click the "Apply" button to apply them.
+
+.. index:: network
+.. _Proxy Settings:
+
+Proxy Settings 
+---------------
+
+The "Proxy" tab, shown in :numref:`Figure %s: Proxy Settings Configuration <network14>`, is used when your network requires you to go through a proxy server in order to access the Internet.
+
+.. _network14: 
+
+.. figure:: images/network14.png
+
+Check the "Proxy Configuration" check box to activate the settings. The follow settings can be configured in this screen: 
+
+**Server Address:** enter the IP address or hostname of the proxy server.
+
+**Port Number:** enter the port number used to connect to the proxy server.
+
+**Proxy Type:** choices are "Basic" (sends the username and password unencrypted to the server) and "Digest" (never transfers the actual password across the
+network, but instead uses it to encrypt a value sent from the server). Do not select "Digest" unless you know that the proxy server supports it.
+
+**Specify a Username/Password:** check this box and input the username and password if they are required to connect to the proxy server.
+
+Proxy settings are saved to the :file:`/etc/profile` and :file:`/etc/csh.cshrc` files so that they are available to the TrueOS® utilities as well as any
+application that uses :command:`fetch`.
+
+Applications that did not come with the operating system, such as web browsers, may require you to configure proxy support using that application's
+configuration utility.
+
+If you apply any changes to this tab, a pop-up message will warn that you may have to logout and back in in order for the proxy settings to take effect.
+
+.. index:: network
+.. _Configuring a Wireless Access Point:
+
+Configuring a Wireless Access Point
+-----------------------------------
+
+If you click the entry for a wireless device, as seen in :numref:`Figure %s: Setup Access Point Option <network15>`, the right-click menu has an option to "Setup Access Point". 
+
+.. _network15:
+
+.. figure:: images/network15.png
+
+:numref:`Figure %s: Access Point Basic Setup <network16>` shows the configuration screen if you select "Setup Access Point". 
+
+.. _network16:
+
+.. figure:: images/network16.png
+
+This screen contains two options: 
+
+- **Visible Name:** this is the name that will appear when users scan for available access points.
+
+- **Set Password:** setting a WPA password is optional, though recommended if you only want authorized devices to use the access point. If used, the password
+  must be a minimum of 8 characters.
+
+:numref:`Figure %s: Access Point Advanced Setup <network17>` shows the "Advanced Configuration (optional)" screen.
+
+.. _network17:
+
+.. figure:: images/network17.png
+
+The settings in this screen are optional and allow you to fine-tune the access point's configuration: 
+
+- **Base IP:** the IP address of the access point.
+
+- **Netmask:** the associated subnet mask for the access point.
+
+- **Mode:** available modes are *11g* (for 802.11g), *11ng* (for 802.11n on the 2.4-GHz band), or *11n* (for 802.11n).
+
+- **Channel:** select the channel to use.
+
+- **Country Code:** the two letter country code of operation.
+
+.. index:: network
+.. _Troubleshooting Network Settings:
+
+Troubleshooting Network Settings 
+---------------------------------
+
+While Ethernet networking usually "just works" on a TrueOS® system, users sometimes encounter problems, especially when connecting to wireless networks.
+Sometimes the problem is due to a configuration error; sometimes a driver is buggy or is not yet available. This section is meant to help you pinpoint the
+problem so that you can either fix it yourself or give the developers the information they need to fix or create the driver.
+
+When troubleshooting your network configuration, use the following files and commands.
+
+The :file:`/etc/rc.conf` file is read when the system boots up. In order for the system to configure an interface at boot time, an entry must exist for it in
+this file. Entries are automatically created for you during installation for each interface that is active. An entry will be added (if it does not exist) or
+modified (if it already exists) when you configure an interface using Network Manager.
+
+Here is an example of the :file:`rc.conf` entries for an ethernet driver (*em0*) and a wireless driver (*run0*)::
+
+ ifconfig_em0="DHCP"
+ wlans_run0="wlan0"
+ ifconfig_wlan0="WPA SYNCDHCP"
+
+When reading through your own file, look for lines that begin with *ifconfig*. For a wireless interface, also look for lines containing *wlans*.
+
+.. note:: unlike Linux interface driver names, FreeBSD/TrueOS® interface driver names indicate the type of chipset. Each driver name has an associated man
+   page where you can learn which devices use that chipset and if there are any configuration options or limitations for the driver. When reading the man
+   page, do not include the interface number. For the above example, you could read :command:`man em` and :command:`man run`.
+
+
+The :file:`/etc/wpa_supplicant.conf` file is used by wireless interfaces and contains the information needed to connect to a WPA network. If this file does
+not already exist, it is created for you when you enter the "Configuration" screen of a wireless interface.
+
+The :command:`ifconfig` command shows the current state of your interfaces. When reading through its output, check that your interface is listed, has a status
+of "active", and has an IP address. Here is a sample :command:`ifconfig` output showing the entries for the *re0* Ethernet interface and the *run0* wireless
+interface::
+
+ re0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500 options=389b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,WOL_UCAST,WOL_MCAST,WOL_MAGIC>
+ ether 60:eb:69:0b:dd:4d
+ inet 192.168.1.3 netmask 0xffffff00 broadcast 192.168.1.255
+ media: Ethernet autoselect (100baseTX <full-duplex>)
+ status: active
+
+ run0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 2290
+ ether 00:25:9c:9f:a2:30
+ media: IEEE 802.11 Wireless Ethernet autoselect mode 11g
+ status: associated
+
+ wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+ ether 00:25:9c:9f:a2:30
+ media: IEEE 802.11 Wireless Ethernet autoselect (autoselect)
+ status: no carrier
+ ssid "" channel 10 (2457 MHz 11g)
+ country US authmode WPA1+WPA2/802.11i privacy ON deftxkey UNDEF
+ txpower 0 bmiss 7 scanvalid 60 protmode CTS wme roaming MANUAL bintval 0
+
+In this example, the ethernet interface (*re0*) is active and has an IP address. However, the wireless interface (*run0*, which is associated with *wlan0*)
+has a status of "no carrier" and does not have an IP address. In other words, it has not yet successfully connected to the wireless network.
+
+The :command:`dmesg` command lists the hardware that was probed during boot time and will indicate if the associated driver was loaded. If you wish to search
+the output of this command for specific information, pipe it to :command:`grep` as seen in the following examples::
+
+ dmesg | grep Ethernet
+ re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
+ re0: Ethernet address: 60:eb:69:0b:dd:4d
+
+ dmesg |grep re0
+ re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
+ re0: Using 1 MSI messages
+ re0: Chip rev. 0x28000000
+ re0: MAC rev. 0x00000000 miibus0: <MII bus> on re0
+ re0: Ethernet address: 60:eb:69:0b:dd:4d
+ re0: [FILTER]
+ re0: link state changed to DOWN
+ re0: link state changed to UP
+
+ dmesg | grep run0
+ run0: <1.0> on usbus3
+ run0: MAC/BBP RT3070 (rev 0x0201), RF RT2020 (MIMO 1T1R), address 00:25:9c:9f:a2:30
+ run0: firmware RT2870 loaded
+
+If your interface does not show up in :command:`ifconfig` or :command:`dmesg`, it is possible that a driver for this card is not provided with the operating
+system. If the interface is built into the motherboard of the computer, you can use the :command:`pciconf` command to find out the type of card::
+
+ pciconf -lv | grep Ethernet
+ device = 'Gigabit Ethernet NIC(NDIS 6.0) (RTL8168/8111/8111c)'
+
+ pciconf -lv | grep wireless
+ device = 'Realtek RTL8191SE wireless LAN 802.11N PCI-E NIC (RTL8191SE?)'
+
+In this example, there is a built-in Ethernet device that uses a driver that supports the RTL8168/8111/8111c chipsets. As we saw earlier, that driver is
+*re0*. The built-in wireless device was also found but the *?* indicates that a driver for the RTL8191SE chipset was not found. A web search for "FreeBSD
+RTL8191SE" will give an indication of whether a driver exists (perhaps in a version of FreeBSD that has not been released yet) or if a driver is being
+developed.
+
+The FreeBSD Handbook chapter on `Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_ provides a good overview of how
+wireless works and offers some troubleshooting suggestions.
+
+.. index:: mount
+.. _Mount Tray:
+
+Mount Tray
+==========
+
+The Mount Tray graphical application is used to facilitate the mounting and unmounting of filesystems on internal disks, USB storage devices, and optical
+media. It is included in the system tray, meaning that in can be used within any window manager that provides a system tray. If you remove the icon from the
+system tray, you can re-add by clicking "Mount Tray" within SysAdm™ or by typing :command:`pc-mounttray &`.
+
+.. note:: if you prefer to mount devices from the command line, see the section on :ref:`pc-sysconfig`. 
+
+In the example shown in :numref:`Figure %s: Mount Tray Example <mount1>`, a USB device and a music CD are currently inserted and the user has clicked "More Options" to view the
+available options.
+
+.. _mount1:
+
+.. figure:: images/mount1.png
+
+When you first insert a USB drive, a "New Device" message should appear in the system tray. If you click Mount Tray and the filesystem on the device is
+recognized, it will automatically mount and the contents of the device will be displayed in the default file manager for the desktop. Alternately, right-click
+Mount Tray and click the "Mount" button to mount the device and its contents. A list of available file managers can be found in
+:ref:`Files and File Sharing` and Table 1.3a lists which filesystems are supported by Mount Tray. If the filesystem is not recognized, a
+*?* will appear next to the device. When the device is mounted, its "Mount" button changes to "Eject". When you are finished using the device, press this
+"Eject" button and wait for the message indicating that it is safe to remove the device before physically removing the device. Note that you will receive a
+"Device Busy" message if the file manager is still open with the device's contents. If you receive this message, press "No" to close it, close the file
+manager, then press "Eject" again. This will ensure that the device is cleanly unmounted.
+
+.. note:: while Mount Tray will allow you to physically remove a USB device without unmounting it first, it is recommended to always "Eject" the drive first.
+
+When you first insert an optical media, such as a music CD or DVD video, a message will indicate that an optical disk is available and, by default, the default player
+application will open so that you can play the contents of the disk. The default player that is used depends upon which applications have been installed, where
+`VLC <http://www.videolan.org/vlc/>`_ takes precedence, followed by `SMPlayer <http://smplayer.sourceforge.net/>`_. If you close the player, you can click
+the "Play" button shown in :numref:`Figure %s: Mount Tray Example <mount1>` to restart it.
+
+The following options are available in the "More Options" menu: 
+
+* **Open Media Directory:** this will only appear if a filesystem has been mounted and can be used to open the default file manager if it does not automatically open.
+  If the desktop does not provide a default file manager, Mount Tray will provide an "open with" dialogue so that you can select the utility to use to browse the
+  contents of the USB device.
+
+* **View Disk Usage:** in the example shown in :numref:`Figure %s: View Disk Usage Using Mount Tray <mount2>`, a UFS-formatted USB device is mounted at :file:`/Media/STECH-1d`. The
+  amount of disk space used by the system hard drive and the USB drive is shown in both GB and as a percentage of available disk space. The Mount Tray will turn yellow if
+  disk space is over 70% and red if disk space is over 90%. If the internal disk drives are partitioned with any other filesystems, these will also appear in Mount Tray.
+
+* **Rescan Devices:** click this option if an entry for the USB device does not automatically appear.
+
+* **Load ISO File:** used to mount an ISO to a memory disk. It will prompt for your password then open a browse menu so that you can browse to the location of
+  the :file:`.iso` file. Once the file is selected and mounted, its contents will be displayed in the default file manager. When you are finished browsing the
+  contents, close the file manager and click the "Eject" button for the memory device in Mount Tray and enter your password when prompted. As the ISO is
+  unmounted, the memory disk is also detached from the system.
+
+**Change Settings:** as seen in :numref:`Figure %s: Configure Disk Space Check <mount3a>`, this screen allows you to configure whether or not optical disks automatically open using
+  the default player, whether or not Mount Tray automatically rechecks the disk space used by mounted devices and how often to perform that check, and whether or not
+  Mount Tray checks disk space when a disk is mounted.
+
+* **Close Tray:** click this option to remove Mount Tray from the system tray.
+
+.. _mount2:
+
+.. figure:: images/mount2.png
+
+.. _mount3a:
+
+.. figure:: images/mount3a.png
+
+.. index:: mount
+.. _pc-sysconfig:
+
+pc-sysconfig
+------------
+
+The previous section described TrueOS®'s graphical mount utility. This graphical utility has a command-line backend, :command:`pc-sysconfig`, which can be
+used directly from the command line on TrueOS® systems, window managers without a system tray, or by users who prefer to use the command line.
+
+For usage information, run the command without any options::
+
+ pc-sysconfig
+ pc-sysconfig: Simple system configuration utility
+ Usage: "pc-sysconfig <command 1> <command 2> ..."
+ Available Information Commands:
+ "list-remdev": List all removable devices attached to the system.
+ "list-mounteddev": List all removable devices that are currently mounted
+ "list-audiodev": List all available audio devices
+ "probe-netdrives": List all the available shared drives on the local network
+ "list-mountednetdrives": List all the available shared drives which can currently be browsed (assuming the remote system is running properly)
+ "supportedfilesystems": List all the filesystems that are currently detected/supported by pc-sysconfig
+ "devinfo <device> [skiplabel]": Fetch device information (Filesystem, Label, Type)
+ "devsize <device>": Fetch device space (must be mounted)
+ "usingtormode": [TRUE/FALSE] Returns whether the system is routing all traffic through TOR
+ "getscreenbrightness": Returns the brightness of the first controllable screen as a percentage (0-100) or "[ERROR]" otherwise
+ "systemcansuspend": [TRUE/FALSE] Returns whether the system supports the S3 suspend state
+
+ Available Action Commands:
+  "mount <device> [<filesystem>] [<mountpoint>]":
+   -- This will mount the removable device on the system (with user-accessible permissions if the mountpoint needs to be created)
+   -- If there is no filesystem set (or "auto" is used), it will try to use the one that is auto-detected for the device
+   -- If there is no mountpoint set, it will assign a new mountpoint within the "/media/" directory based on the device label
+  "unmount <device or mountpoint> [force]":
+   -- This will unmount the removable device from the system
+   -- This may be forced by using the "force" flag as well (not recommended for all cases)
+   -- If the input device is a memory disk (/dev/md*), then it will automatically remove the memory disk from the system as well
+  "mountnet <IP of remote host> <Name of remote host>":
+   -- This will setup the remote host to be browsable on the local system with the given name
+   -- Note that the remote host is automatically mounted/unmounted based on local user activity
+   -- To see where these network drives are mounted and can be browsed, see the output of "list-mountednetdrives"
+  "unmountnet <IP of remote host>":
+   -- This will remove the remote host from being browsable on the local system
+  "load-iso <absolute path to the *.iso file>":
+   -- This will load the ISO file as a memory disk on the system (making it available for mounting/browsing)
+  "setdefaultaudiodevice <pcm device>":
+   -- This will set the given pcm device (I.E. "pcm3") as the default audio output device
+  "setscreenbrightness <percentage>":
+   -- This will set the brightness of all the available screens to the given percentage
+   -- It is also possible to adjust the current value by supplying a [+/-] before the number
+   -- For example: using "+5" as the percentage will increase the brightness by 5% for each screen
+   -- This returns "[ERROR]" or "[SUCCESS]" based on whether the change could be performed
+  "suspendsystem": Puts the system into the suspended state (S3)
+
+For example, to see a listed of the supported filesystems, use::
+
+ pc-sysconfig supportedfilesystems
+ FAT, NTFS, EXT, CD9660, UFS, REISERFS, XFS, UDF, ZFS

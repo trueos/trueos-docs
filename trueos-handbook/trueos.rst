@@ -17,7 +17,6 @@ Contents:
    luminaplugins
    luminautl
    sysadmclient
-   controlpanel
    using
    help
    support

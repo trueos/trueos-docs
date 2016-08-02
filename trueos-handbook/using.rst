@@ -3,7 +3,7 @@
 Using TrueOS®
 **************
 
-This section discusses how to perform common tasks that were not discussed in the :ref:`Control Panel` section.
+This section discusses how to perform common tasks that were not discussed in the :ref:`SysAdm™ Client` section.
 
 .. index:: configuration
 .. _Java and Flash:
@@ -19,10 +19,10 @@ running the following command as your regular user account should fix the proble
 
  flashpluginctl on
 
-The Adobe Flash Player preferences icon in :ref:`Control Panel` can be used to modify how websites interact with your browser using Adobe Flash. Many of the
+The Adobe Flash Player preferences utility can be used to modify how websites interact with your browser using Adobe Flash. Many of the
 same configurations can be done via right-click within an active flash object in a web browser.
 
-To access the utility shown in :numref:`Figure %s: Flash Player Configuration Utility <flash>`, use :menuselection:`Control Panel --> Adobe Flash Player preferences` or type
+To access the utility shown in :numref:`Figure %s: Flash Player Configuration Utility <flash>`, use :menuselection:`Browse Applications --> Adobe Flash Player preferences` or type
 :command:`flash-player-properties`.
 
 .. _flash:
@@ -83,6 +83,98 @@ If you prefer to install fonts from the command line, become the superuser and c
 Then, refresh the fonts cache::
 
  fc-cache -f -v /usr/local/share/fonts/name_of_font
+ 
+.. index:: sound
+.. _Sound Mixer Tray:
+
+Sound Mixer Tray
+=================
+
+TrueOS® includes a graphical utility for managing the sound card's mixer settings. Desktops that include a system tray should have a speaker icon in the system tray
+which can be used to access this utility. If this icon does not appear in the system tray,
+type :command:`pc-mixer &` to add it. Alternately, to open this application without adding it to the system tray, type :command:`pc-mixer -notray`.
+
+:numref:`Figure %s: Mixer Icon <sound1>` shows an example of right-clicking the icon in the system tray on a system with multiple audio outputs. If the system only has one audio output,
+the "Outputs" menu will not be displayed. To change the default output, click its entry in the "Output" menu.
+
+.. _sound1:
+
+.. figure:: images/sound1.png
+
+:numref:`Figure %s: Mixer Controls <sound2>` shows the mixer application which can be opened by either clicking the "Mixer" button shown in :numref:`Figure %s: Mixer Icon <sound1>` or by
+typing :command:`pc-mixer -notray`.
+
+.. _sound2:
+
+.. figure:: images/sound2.png
+
+The "Mixer Controls" screen provides sliders to modify the left and right channels that control volume, pcm (the sound driver), the speaker, the microphone,
+the recording level, and the sound provided by the monitor. Each control can be muted/unmuted individually by clicking its "Mute" or"Unmute" button, depending
+upon its current mute state.
+
+:numref:`Figure %s: System Sound Configuration <sound3>` shows the "System Configuration" tab.
+
+.. _sound3:
+
+.. figure:: images/sound3.png
+
+This tab contains the following options: 
+
+* **Recording Device:** use the drop-down menu to select the device to use for recording sound.
+
+* **Default Tray Device:** use the drop-down menu to set the default slider to display in the system tray.
+
+* **Audio Output Channel:** use the drop-down menu to change the sound device and use the "Test" button to determine that sound is working. This is sometimes
+  necessary when you change audio devices. For example, if you connect a USB headset, TrueOS® will detect the new device and will automatically change the
+  audio device to the USB input. However, if you insert a headset into an audio jack, the system may not detect the new input so you will have to manually
+  change the default device.
+
+The "File" menu can be used to quit this mixer screen or to close both this screen and remove the icon from the system tray.
+
+The "Configuration" menu provides options for accessing the "PulseAudio Mixer" and "PulseAudio Settings" utilities as well as for restarting PulseAudio.
+TrueOS® provides full `PulseAudio <https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ support and these utilities can be used to configure discoverable
+network sound devices and mixer levels.
+
+For command line only systems, type :command:`mixer` from the command line to see the current sound settings::
+
+ mixer
+ Mixer vol      is currently set to   0:0
+ Mixer pcm      is currently set to 100:100
+ Mixer speaker  is currently set to 100:100
+ Mixer mic      is currently set to  50:50
+ Mixer rec      is currently set to   1:1
+ Mixer monitor  is currently set to  42:42
+ Recording source: monitor
+
+If any of these settings are set to *0*, set them to a higher value, by specifying the name of the mixer setting and a percentage value up to *100*::
+
+ mixer vol 100
+ Setting the mixer vol from 0:0 to 100:100.
+
+You can make that change permanent by creating a file named :file:`.xprofile` in your home directory that contains the corrected mixer setting.
+
+.. index:: troubleshooting
+.. _Troubleshooting Sound:
+
+Troubleshooting Sound 
+----------------------
+
+If you only get one or two mixer settings, you need to change the default mixer channel. As the superuser, try this command::
+
+ sysctl -w hw.snd.default_unit=1
+
+To see if that changed to the correct channel, type :command:`mixer` again. If you still only have one or two mixer settings, try setting the
+:command:`sysctl` value to *2*, and if necessary, to *3*.
+
+Once you have all of the mixer settings and none are set to *0*, your sound should work. If it still doesn't, these resources may help you to pinpoint the
+problem: 
+
+* `Sound Section of FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
+
+* `FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_
+
+If you still have problems with sound, see the section on :ref:`Finding Help` to determine which help resources are available. When reporting your problem,
+include your version of TrueOS® and the name of your sound card. 
 
 .. index:: multimedia
 .. _Multimedia:
@@ -158,6 +250,56 @@ Once installed, an entry for "Plex Home Theater" will also be added to the login
 The first time you run or log into Plex Home Theater, a wizard will check your audio settings and sign into your Plex account. If you do not have a Plex account yet,
 create one at `plex.tv <https://plex.tv/>`_. The wizard will give you a PIN code and an URL to enter the code. Once you enter the PIN, the wizard will connect and sign you in.
 You can now search for and watch media. To exit Plex, click the "<" then "Quit".
+
+.. index:: keyboard
+.. _PC-BSD Keyboard Settings:
+
+PC-BSD Keyboard Settings
+========================
+
+TrueOS® includes a graphical utility for managing the keyboard's layout settings. To start the application, type :command:`pc-syskeyboard` at the command line. A screenshot of this utility is seen in :numref:`Figure %s: Configuring Keyboard Settings <keyboard1>`. 
+
+.. _keyboard1:
+
+.. figure:: images/keyboard1.png
+
+.. note:: any changes made using this utility can be saved as either for just this login session or permanently. To make the changes permanent, click the "Save to
+   User Profile" button once you are finished making your changes. Otherwise, click the "Apply to Session" button. If you just click the "Close" button, your changes
+   will not be saved.
+
+Click the "Keyboard model" drop-down menu to select the type of keyboard. Note that the default model of "Generic 104-key PC" does **not** support special keys
+such as multimedia or Windows keys. You will need to change this default to enable support for hot keys.
+
+To add another keyboard layout, click the "+" button, which will open the screen shown in :numref:`Figure %s: Adding Another Layout <keyboard2>`. Highlight the desired layout. This will
+activate the "Layout variant" drop-down menu where you can select to either use the "Typical" variant or a specific variant. Press "OK" to add the configured layout.
+
+.. _keyboard2:
+
+.. figure:: images/keyboard2.png
+
+To edit an existing layout, highlight it then click the icon that looks like a pencil. You can then either change the "Layout variant" for that layout or
+select a different layout entirely. Selecting a different layout will replace the current layout.
+
+If there are multiple layout entries defined in the "Keyboard layouts" screen, you can delete a layout by highlighting it and clicking the "-" icon. Note
+that this icon is greyed out when there is only one entry as at least one keyboard layout must be defined.
+
+After creating or editing a layout, you can test it by typing some text into the "Test here" field.
+
+To configure keyboard shortcuts, click the "Options" tab. As seen in :numref:`Figure %s: Configuring Layout Switch Keys <keyboard3>`, the default view is used to set the keyboard layout
+switch keys.
+
+.. _keyboard3:
+
+.. figure:: images/keyboard3.png
+
+If you wish to set the keys for terminating the graphical session, check the box "Ctrl+Alt+Backspace terminates xorg". 
+
+To configure many more keyboard shortcuts, click the "Advanced view" button which will open the screen shown in :numref:`Figure %s: Configuring Keyboard Shortcuts <keyboard4>`. In this
+example, several categories have been expanded to show their options. To enable an option, check its box.
+
+.. _keyboard4:
+
+.. figure:: images/keyboard4.png
 
 .. index:: files
 .. _Files and File Sharing:
@@ -271,7 +413,7 @@ separately using :ref:`AppCafe®`, and a short description of how to access the 
 | **Utility**  | **Desktop/AppCafe**  | **How to Access Existing Shares**                                                                                        |
 +==============+======================+==========================================================================================================================+
 | dolphin      | KDE                  | in the left frame, click on :menuselection:`Network --> Samba Shares`, then the Workgroup name; if the network requires  |
-|              |                      | a username and password to browse for shares, set this in :menuselection:`Control Panel --> System Settings --> Sharing` |
+|              |                      | a username and password to browse for shares, set this in :menuselection:`System Settings --> Sharing`                   |
 |              |                      | while in KDE or type :command:`systemsettings` and click "Sharing" while in another desktop                              |
 +--------------+----------------------+--------------------------------------------------------------------------------------------------------------------------+
 | konqueror    | KDE                  | in the location bar, type *smb:/*                                                                                        |
@@ -527,9 +669,9 @@ The security features built into TrueOS® include:
   configured to identify possible break-in attempts and to respond with an action such as creating a firewall rule to ban the intruder. Instructions for
   configuring fail2ban can be found on the `fail2ban wiki <http://www.fail2ban.org/wiki/index.php/MANUAL_0_8#Usage>`_. 
 
-* **Very few services are enabled by default:** you can easily view which services are started at boot time using :ref:`Service Manager` or by reading through
-  :file:`/etc/rc.conf`. You can disable the services that you do not use by disabling that service in :ref:`Service Manager` or by commenting out that
-  line with a *#* in :file:`/etc/rc.conf`.
+* **Very few services are enabled by default:** you can easily view which services are started at boot time by reading through
+  :file:`/etc/rc.conf`. You can disable the services that you do not use by commenting the line for that service
+  with a *#* in :file:`/etc/rc.conf`.
 
 * **SSH is disabled by default:** and can only be enabled by the superuser. This setting prevents bots and other users from trying to access your system. If
   you do need to use SSH, add the line *sshd_enable=YES* to :file:`/etc/rc.conf`. You can then start the service by typing
@@ -669,3 +811,191 @@ The KDE-Accessibility component installs the following software:
   :menuselection:`Applications --> Utilities --> Speech Synthesizer Frontend` or type :command:`kmouth` from the command line. The first time you run
   this application, a configuration wizard will prompt you to set the command to use for speaking texts (such as :file:`/usr/local/bin/espeak`) and the
   character encoding.
+  
+.. index:: printing
+.. _Printing:
+
+Printing and Scanning
+=====================
+
+Like many open source operating systems, TrueOS® uses the Common Unix Printing System (`CUPS <http://cups.org/>`_) to manage printing and provides
+a graphical front-end for adding and managing printers.
+
+While the graphical utility is easy to use, it may or may not automatically detect your printer depending upon how well your printer is supported by an open
+source print driver. This section will walk you through a sample configuration for a HP Officejet 4500 printer. Your printer may "just work", allowing you to
+breeze through the configuration screens. If your printer configuration does not work, read this section more closely for hints on how to locate the correct
+driver for your printer.
+
+.. index:: printing
+.. _Researching Your Printer:
+
+Researching your Printer 
+-------------------------
+
+Before configuring your printer, it is worth the time to see if a print driver exists for your particular model, and if so, which driver is recommended. If
+you are planning to purchase a printer, this is definitely good information to know beforehand. You can look up the vendor and model of the printer in the
+`Open Printing Database <http://www.openprinting.org/printers>`_ which will indicate if the model is supported and if there are any known caveats with the
+print driver.
+
+:numref:`Figure %s: Using Open Printing Database to Locate a Driver <print1>` shows a search for our example printer. There are two models in this series and this particular hardware
+supports wireless.
+
+.. _print1:
+
+.. figure:: images/print1.png
+
+Once the model is selected, click on the "Show this printer" button to see the results, as demonstrated in :numref:`Figure %s: Driver Recommendation from Open Printing Database <print2>`. 
+
+.. _print2:
+
+.. figure:: images/print2.png
+
+For this model, the HPLIP driver is recommended. In TrueOS®, the HPLIP driver is available as an optional system component called "pcbsd-meta-hplip". You can
+see if the driver is installed, and install it if it is not, using :ref:`AppCafe®`.
+
+.. index:: printing
+.. _Adding a Printer:
+
+Adding a Printer 
+-----------------
+
+Once you know that your printer is supported, make sure that the printer is plugged into your computer or, if the printer is a network printer, that both your
+computer and the printer are connected to the network. Then, go to :menuselection:`Browse Applications --> Printing` or type :command:`pc-su pc-cupscfg`. Input your
+password to see a window similar to :numref:`Figure %s: Printer Configuration Utility <print4>`. 
+
+.. _print4: 
+
+.. figure:: images/print4.png
+
+To add a new printer, click the "+Add" button. The printing utility will pause for a few seconds as as the wizard searches to see if any printers are
+connected to your computer or network. When it is finished, you should see a screen similar to :numref:`Figure %s: Select a Print Device <print5>`. 
+
+.. _print5: 
+
+.. figure:: images/print5.png
+
+In this example, the wizard has found this printer and highlighted the entry for the HP OfficeJet 4500. To also install the fax capability, instead select the
+driver which includes "HP Fax". The wizard should find any supported printer that is attached to the computer or network and list it as the highlighted entry
+in the "Devices" frame. Click "Forward" and the wizard will attempt to load the correct driver for the device. If it is successful, it will display the screen
+shown in :numref:`Figure %s: Describe Printer Screen <print6>`. If it does not automatically find your printer, read the section on :ref:`Printer Troubleshooting`.
+
+.. _print6:
+
+.. figure:: images/print6.png
+
+Since the configuration wizard found this printer, the "Describe Printer" screen automatically fills out the printer model series, a description, and the
+hostname of your computer, if the printer is locally attached, or the hostname of the network printer. If you wish, you can change the printer's name or
+description. Once you click the "Apply" button, the wizard will ask if you would like to print a test page. Ensure the printer has paper and click "Yes" to
+print the test page. If you can not print a successful test page, see the :ref:`Printer Troubleshooting` section.
+
+Once the printer is created, a screen will open where you can set the properties of the printer. Our sample printer's properties screen is shown in
+:numref:`Figure %s: Viewing the Settings of the Newly Created Printer <print7>`.
+
+.. _print7:
+
+.. figure:: images/print7.png
+
+You may wish to take a few minutes to review the settings in the "Policies", "Access Control", "Printer Options", and "Job Options" tabs as these allow you to
+configure options such as print banners, permissions, the default paper size, and double-sided printing. The available settings will vary, depending upon the
+capabilities of the print driver.
+
+.. index:: printing
+.. _Manually Adding a Driver:
+
+Manually Adding a Driver 
+-------------------------
+
+If the print configuration wizard fails, double-check that the printer is supported as described in :ref:`Researching your Printer` and that HPLIP is
+installed if it is a HP printer. Also check that the printer is plugged in and powered on.
+
+If the wizard is unable to even detect the device, try to manually add the print device. In the "Select Device" screen (:numref:`Figure %s: Select a Print Device <print5>`) you will need to
+highlight and configure the type of connection to the printer: 
+
+**USB:** this entry will only appear if a printer is plugged into a USB port and the number of entries will vary depending upon the number of USB ports on the
+system. If there are multiple USB entries, highlight the one that represents the USB port your printer is plugged into.
+
+**Enter URI:** this option allows you to manually type in the URI to the printer. A list of possible URIs is available on the
+`cups site <http://www.cups.org/documentation.php/network.html>`_. 
+
+**AppSocket/HP JetDirect:** select this option if you are connecting to an HP network printer. You will need to input the IP address of the printer in the
+"Host" field. Only change the port number if the printer is using a port other than the default of 9100. 
+
+**IPP:** select this option if you are connecting to a printer cabled to another computer (typically running a Microsoft operating system) that is sharing the
+printer using IPP. You will need to input the IP address of the printer in the "Host" field and the name of the print queue. You can then click the "Verify"
+button to ensure that you can connect to the print queue.
+
+**LPD/LPR:** select this option if you are connecting to a printer which is cabled to a Unix computer that is using LPD to share the printer. You will need to
+select the hostname and queue name from the drop-down menus.
+
+Once you have input the information for the type of printer, press "Forward" for the wizard to continue.
+
+If the wizard is able to find the printer but is unable to locate the correct driver for the printer, it will display the screen shown in
+:numref:`Figure %s: Manually Select the Manufacturer <print8>` instead of the "Describe Printer" screen.
+
+.. _print8:
+
+.. figure:: images/print8.png
+
+Select the manufacturer name and then click "Forward" to select the model, as seen in the example in :numref:`Figure %s: Manually Select the Driver <print9>`. 
+
+.. _print9:
+
+.. figure:: images/print9.png
+
+Click "Forward" and the wizard should continue to the "Describe Printer" screen.
+
+If the selected driver does not work, go back to the "Choose Driver" screen shown in :numref:`Figure %s: Manually Select the Manufacturer <print8>`. This screen provides two additional
+options for installing the driver: 
+
+1. **Provide PPD file:** a PostScript Printer Description (PPD) is a driver created by the manufacturer that ends in a :file:`.ppd` extension. Sometimes the
+   file will end with a :file:`.ppd.gz` extension, indicating that it has been compressed with :command:`gzip`. If the driver you need was not automatically
+   found, see if there is a PPD file on the driver CD that came with the printer or if one is available for download from the manufacturer's website. If you
+   find a PPD, select this option and browse to the location of that file. Then, click "Forward" to continue with the printer configuration.
+
+2. **Search for a printer driver to download:** if you know the name of the driver that you are looking for, try typing its name or number into the "Search"
+   box. If found, it will display in the "Printer" model drop-down menu.
+
+.. index:: printing
+.. _Printer Troubleshooting:
+
+Printer Troubleshooting
+-----------------------
+
+Here are some solutions to common printing problems: 
+
+- **A test page prints but it is all garbled:** this typically means that you are using the wrong driver. If your specific model was not listed, click the
+  "Change" button in the "Driver Details" section of the "Settings" tab of the printer and try choosing another driver model that is close to your model
+  number. If trial and error does not fix the problem, see if there are any suggestions for your model in the
+  `Open Printing database <http://www.openprinting.org/printers>`_. A web search for the word "freebsd" followed by the printer model name may also help you
+  to find the correct driver to use.
+
+- **Nothing happens when you try to print:** in this case, type :command:`tail -f /var/log/cups/error_log` in a console and then print a test page. The error
+  messages should appear in the console. If the solution is not obvious from the error messages, try a web search for the error message. If you are still
+  stuck, post the error, the model of your printer, and your version of TrueOS® as you :ref:`Report a Bug`.
+
+.. index:: scanner
+.. _Scanner:
+
+Scanning
+--------
+
+TrueOS® includes `XSane <http://www.xsane.org/>`_, a graphical utility for managing scanners.
+
+To use your scanner, make sure the device is plugged into the TrueOS® system and click :menuselection:`Browse Applications --> Scanner` or type :command:`xsane` from the
+command line. A pop-up message will indicate that XSane is detecting devices and will prompt you to accept the XSane license if a device is detected.
+If a device is not detected, search for your device at the `list of supported scanners <http://www.sane-project.org/sane-backends.html>`_. 
+
+.. note:: if the scanner is part of an HP All-in-One device, make sure that the "pcbsd-meta-hplip" package is installed. You can see if the driver is
+   installed, and install it if it is not, using :ref:`AppCafe®`.
+
+:numref:`Figure %s: XSane Interface <sane>` shows the XSane interface running on a TrueOS® system attached to an HP OfficeJet.
+
+.. _sane:
+
+.. figure:: images/sane.png
+
+The `XSane documentation <http://www.xsane.org/doc/sane-xsane-doc.html>`_ contains details on how to perform common tasks such as saving an image to a file,
+photocopying an image, and creating a fax. It also describes all of the icons in the interface and how to use them.
+
+By default, XSane uses the default browser when you click :kbd:`F1` to access its built-in documentation. How to configure the default browser varies by
+window manager so you may need to do an Internet search if you need to set that configuration setting and can not find it. 

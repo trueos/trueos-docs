@@ -420,10 +420,7 @@ pop-up menu will indicate that the current contents of the device will
 be wiped. Click "Yes" to initialize the device.
 
 If you share your computer with other users, you will be able to
-create additional login and PersonaCrypt accounts using
-:menuselection:`Control Panel --> User Manager`. After you have
-created at least one user, click "Next" to continue to the next
-screen.
+create additional login and PersonaCrypt accounts using :ref:`User Manager`. After you have created at least one user, click "Next" to continue to the next screen.
 
 .. index:: sound
 .. _Configure Audio Output:
@@ -445,7 +442,7 @@ working configuration will result in a test sound. You can also use
 the "Testing Volume" slider to set the default volume level.
 
 You can view and edit these settings at a later time using the
-instructions in :ref:`PC-BSD Mixer Tray`.
+instructions in :ref:`Sound Mixer Tray`.
 
 .. index:: wireless
 .. _Connect to a Wireless Network:
@@ -468,7 +465,7 @@ a password, it will prompt you to input it and will indicate the type
 of security used on the network. If the network you wish to connect to
 does not appear, try clicking the "Rescan" button. If you are unable
 to connect, or you wish to configure the connection at a later time,
-refer to the instructions in :ref:`Network Configuration`.
+refer to the instructions in :ref:`Network Manager`.
 
 .. index:: SSH, IPv6
 .. _Enable Optional Services:

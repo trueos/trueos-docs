@@ -324,8 +324,8 @@ The :ref:`System Selection Screen` of the TrueOS® installer can be
 used to install a FreeBSD-based command-line server operating system
 rather than a graphical desktop operating system.
 
-TrueOS® adds the following to a vanilla installation of FreeBSD: :command:`iocage` for jail management and the command line
-versions of most of the :ref:`Control Panel` utilities. You will find those utilities in :file:`/usr/local/bin/pc-*`. It also installs the software mentioned in
+TrueOS® adds the following to a vanilla installation of FreeBSD: :command:`iocage` for jail management and several command line
+utilities for managing the server. You will find those utilities in :file:`/usr/local/bin/pc-*`. It also installs the software mentioned in
 `the RUN_DEPENDS= section of this file <https://github.com/pcbsd/freebsd-ports/blob/master/misc/trueos-base/Makefile>`_.
 
 For a server installation, using the TrueOS® installer rather than the
@@ -336,7 +336,7 @@ FreeBSD installer offers several benefits:
 * the ability to configure multiple boot environments
 
 * a wizard (described in this section) is provided during installation
-to configure the server for first use
+  to configure the server for first use
 
 .. note:: This section describes how to install a command-line only
    server using the graphical installer. Alternately, you can also

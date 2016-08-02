@@ -131,9 +131,7 @@ installer.
 Support for the major graphic vendors is as follows: 
 
 **NVIDIA:** if you want to use 3D acceleration, NVIDIA well supported
-with native FreeBSD drivers. If an NVIDIA video card is detected, an
-"nVidia settings" icon will be added to the :ref:`Control Panel` for
-managing NVIDIA settings.
+with native FreeBSD drivers. If an NVIDIA video card is detected, an "nVidia settings" icon will be added to "Browse Applications" for managing NVIDIA settings.
 
 **Intel:** 3D acceleration on most Intel graphics is supported. With
 TrueOS® 11, this includes Skylake, Haswell, Broadwell, and ValleyView.
