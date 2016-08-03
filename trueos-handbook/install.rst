@@ -86,15 +86,13 @@ present you with its options.
 
 .. figure:: images/install2b.png
 
-Starting on the left-hand side, these icons in the bottom navigation
-area allow you to: 
+Starting on the left-hand side, these icons in the bottom navigation area allow you to: 
 
 * access hardware compatibility information to quickly determine if
   the system's video card, Ethernet card, wireless device, and sound
   card are compatible with TrueOS®
 
-* manage :ref:`Network Manager` for a network installation or
-  system restore
+* manage :ref:`Network Manager` for a network installation or system restore
 
 * read that screen's Help text 
 
@@ -150,8 +148,7 @@ System Selection Screen
 
 The "System Selection" screen, shown in
 :numref:`Figure %s: System Selection Screen <install3c>`, allows you
-to install a graphical desktop or a console-based server operating
-system. It also can be used for :ref:`Restoring the Operating System`.
+to install a graphical desktop or a console-based server operating system. It also can be used for :ref:`Restoring the Operating System`.
 This chapter concentrates on a desktop installation. Refer to
 :ref:`Install a Server` for instructions on how to install a
 command-line only server.
@@ -218,8 +215,7 @@ describes these modes in detail.
   multi-disk installation, add a log or cache device, encrypt the
   disk, or specify the filesystem layout.
 
-* **FreeBSD Expert:** select this mode if you prefer to drop down to a
-  shell to manually enter the commands to setup your disk.
+* **FreeBSD Expert:** select this mode if you prefer to drop down to a shell to manually enter the commands to setup your disk.
 
 .. warning:: Regardless of the mode that you select, once the disk
    wizard completes and you click "Next" at the disk "Summary" screen,
