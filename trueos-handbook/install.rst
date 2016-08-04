@@ -86,13 +86,12 @@ present you with its options.
 
 .. figure:: images/install2b.png
 
-Starting on the left-hand side, these icons in the bottom navigation area allow you to: 
+Starting on the left-hand side, these icons in the bottom navigation
+area allow you to: 
 
 * access hardware compatibility information to quickly determine if
   the system's video card, Ethernet card, wireless device, and sound
   card are compatible with TrueOS®
-
-* manage :ref:`Network Manager` for a network installation or system restore
 
 * read that screen's Help text 
 
@@ -102,8 +101,6 @@ Starting on the left-hand side, these icons in the bottom navigation area allow 
 
 * access the emergency shell described in
   :ref:`Using the System Utilities Menu`
-
-* access the :ref:`Disk Manager` utility
 
 * abort the installation
 
@@ -203,7 +200,7 @@ click the "Customize" button to start the TrueOS® Disk Wizard, shown in
 
 .. figure:: images/install6b.png
 
-The wizard provides three modes of operation. The rest of this section
+The wizard provides two modes of operation. The rest of this section
 describes these modes in detail.
 
 * **Basic:** (default) select this mode if you wish to specify which
@@ -214,8 +211,6 @@ describes these modes in detail.
   default ZFS pool name, force the block size used by ZFS, configure a
   multi-disk installation, add a log or cache device, encrypt the
   disk, or specify the filesystem layout.
-
-* **FreeBSD Expert:** select this mode if you prefer to drop down to a shell to manually enter the commands to setup your disk.
 
 .. warning:: Regardless of the mode that you select, once the disk
    wizard completes and you click "Next" at the disk "Summary" screen,
@@ -587,21 +582,6 @@ Once you click "Next", the wizard will show a summary of your
 selections. If you wish to change anything, use the “Back” button to
 return to a previous screen. Otherwise, click "Finish" to leave the
 wizard and return to the "Disk Selection" screen.
-
-.. index:: install
-.. _FreeBSD Expert Mode:
-
-FreeBSD Expert Mode
--------------------
-
-If you select FreeBSD expert mode, you will be prompted to launch a
-terminal where you can use command line utilities such as
-:command:`bsdinstall` to manually configure the partitions. When you
-are finished, type :command:`exit` to leave the terminal, then click
-"Next" to review the disk summary. If you wish to change anything, use
-the "Back" button to return to a previous screen. Otherwise, click
-"Finish" to leave the wizard and return to the "Disk Selection"
-screen.
 
 .. index:: installation
 .. _Installation Progress Screen:

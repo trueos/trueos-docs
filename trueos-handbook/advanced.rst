@@ -463,7 +463,9 @@ installer, it will display the installation menu shown in
 .. figure:: images/cd2a.png
 
 To begin the installation, press :kbd:`Enter`. The server installation
-will proceed as described in :ref:`Using the Text Installer`,
+will then display the screen shown in
+:numref:`Figure %s: Select Installation Disk <text3a>` and proceed as
+described in :ref:`Using the Text Installer`.
 
 
 .. index:: dualboot
