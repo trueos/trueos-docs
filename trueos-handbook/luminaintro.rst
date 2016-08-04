@@ -1,6 +1,3 @@
-.. globalindex::
-   :maxdepth: 4
-
 .. _Introduction to Lumina:
 
 Introduction to Lumina
