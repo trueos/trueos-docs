@@ -91,16 +91,19 @@ This screen contains the following options:
 **Back:** click this button to leave a category or search result and
 return to the previous screen.
 
+**Repository drop-down menu:** use this drop-down menu to select the
+repository to search or browse. The selections include: "major"
+(applications available for installation), "base" (applications that
+are part of the base operating system), and "local" (all installed
+applications).
+
 **Search:** to see if an application is available, enter its name and
 click the "binoculars" icon. Alternately, enter a description. For example, a search for "browser" will display
 software with "browser" in the name as well as applications which provide browser functionality, such as Firefox. 
 
-**pcbsd-major:** the name of this drop-down menu will vary, depending
-upon the selection. This menu allows you to browse a specific pkg set.
-
-**Browse Categories:** this drop-down menu lists the available software
-categories. If you select a category, it will display all of the
-available applications within that category.
+**Filter By:** this drop-down menu lists the available software
+categories. If you select a category, it will only display or show
+search results from that category.
 
 **Popular Searches and Popular Categories:** the buttons in these
 sections can be used to quickly find applications which are recommended
@@ -112,8 +115,6 @@ Applications which are already installed and which are not required by
 other applications have a trashcan icon which can be clicked to
 uninstall that application. Applications which are not installed have a
 down arrow icon which can be clicked to install that application. 
-Applications which are required by other applications will not display an icon. If you click on that application, a yellow
-"Required" triangle will be displayed and a "Related" tab will indicate the name of the application(s) which require it.
 
 Click the name of an application to view more information about that
 application. In the example shown in
