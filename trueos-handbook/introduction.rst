@@ -84,7 +84,7 @@ United States and other countries.
   Categories" button.
 
 * Menu selections are italicized and separated by arrows. For example:
-  :menuselection:`Control Panel --> About`.
+  :menuselection:`View --> Show Hidden Files`.
 
 * Commands that are mentioned within text are highlighted in
   :command:`bold text`. Command examples and command output are
@@ -222,12 +222,13 @@ The following features or enhancements were introduced for TrueOS®:
 * A TrueOS® installation installs the Lumina Desktop. Additional
   window managers can be installed using :ref:`AppCafe®`.
 
-* The :ref:`SysAdm™ Client` and server has replaced the
-  :ref:`Control Panel`. Most of the utilities that were in the
-  :ref:`Control Panel` have been rewritten to use the SysAdm™
-  middleware. Under the hood, SysAdm™ provides REST and WebSocket APIs
-  for securely managing local and remote FreeBSD and TrueOS® systems.
-  The following utilities have been converted to the SysAdm™ API and
+* The :ref:`SysAdm™ Client` and server has replaced Control Panel.
+  Most of the utilities that were in the Control Panel have been
+  rewritten to use the SysAdm™ middleware. Under the hood, SysAdm™
+  provides REST and WebSocket APIs for securely managing local and
+  remote FreeBSD and TrueOS® systems.
+  
+* The following utilities have been converted to the SysAdm™ API and
   are available in the :ref:`SysAdm™ client`: :ref:`AppCafe®`,
   :ref:`Update Manager`, :ref:`Boot Environment Manager`,
   :ref:`Life Preserver`, :ref:`Firewall Manager`, :ref:`User Manager`,
@@ -251,7 +252,7 @@ The following features or enhancements were introduced for TrueOS®:
 * :command:`freebsd-update` has been retired in favor of using
   :command:`pkg` for system updates.
   
-* Disk Manager (:command:`pc-zmanager) has been deprecated.  
+* Disk Manager (:command:`pc-zmanager`) has been deprecated.  
 
 * The option to use the SCFB display driver has been added to the
   installer. This driver is suitable for newer UEFI laptops as it
