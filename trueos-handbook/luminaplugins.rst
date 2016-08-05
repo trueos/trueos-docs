@@ -586,10 +586,10 @@ be active. Disabling the system tray on monitor zero will activate the
 tray on monitor one, automatically migrating any docked applications to
 the other panel.
 
-.. _Task Manager (No Groups):
+.. _Task Manager Plugin (No Groups):
 
-Task Manager (No Groups)
-------------------------
+Task Manager Plugin (No Groups)
+-------------------------------
 
 .. _luminapanelplugin10:
 
@@ -603,10 +603,10 @@ will use a large amount of space on the panel, as every window will
 need to display a part of its title. This plugin is added to the default
 panel for Lumina.
 
-.. _Task Manager:
+.. _Task Manager Plugin:
 
-Task Manager
-------------
+Task Manager Plugin
+-------------------
 
 .. _luminapanelplugin11:
 
