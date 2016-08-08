@@ -22,3 +22,4 @@
 ```
   html_theme_path = ['themes']
 ```
+#Adjusted for Lumina with theme changes and added guilabel directive support.

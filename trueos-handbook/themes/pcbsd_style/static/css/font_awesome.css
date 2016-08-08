@@ -1732,13 +1732,4 @@
 .fa-meanpath:before {
     content: "\F20C "
 }
-.guilabel{
-	border:1px solid #7fbbe3;
-	background:#e7f2fa;
-	font-size:80%;
-	font-weight:700;
-	text-transform:uppercase;
-	border-radius:4px;
-	padding:2.4px 6px;
-	margin:auto 2px
-}
+.guilabel{border:1px solid #7fbbe3;background:#e7f2fa;font-size:80%;font-weight:700;text-transform:uppercase;border-radius:4px;padding:2.4px 6px;margin:auto 2px}
