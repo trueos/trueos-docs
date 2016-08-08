@@ -783,13 +783,17 @@ The KDE-Accessibility component installs the following software:
 Printing and Scanning
 =====================
 
-Like many open source operating systems, TrueOS® uses the Common Unix Printing System (`CUPS <http://cups.org/>`_) to manage printing and provides
-a graphical front-end for adding and managing printers.
+Like many open source operating systems, TrueOS® uses the Common Unix
+Printing System (`CUPS <http://cups.org/>`_) to manage printing.
 
-While the graphical utility is easy to use, it may or may not automatically detect your printer depending upon how well your printer is supported by an open
-source print driver. This section will walk you through a sample configuration for a HP Officejet 4500 printer. Your printer may "just work", allowing you to
-breeze through the configuration screens. If your printer configuration does not work, read this section more closely for hints on how to locate the correct
-driver for your printer.
+CUPS provides an easy-to-use utility for adding and managing printers.
+Whether or not it automatically detects your printer depends upon how
+well your printer is supported by an open source print driver. This
+section will walk you through a sample configuration for a HP DeskJet
+36xx series printer. Your printer may "just work", allowing you to
+breeze through the configuration screens. If your printer
+configuration does not work, read this section more closely for hints
+on how to locate the correct driver for your printer.
 
 .. index:: printing
 .. _Researching Your Printer:
@@ -804,25 +808,13 @@ definitely good information to know beforehand. You can look up the
 vendor and model of the printer in the
 `Open Printing Database <http://www.openprinting.org/printers>`_ which
 will indicate if the model is supported and if there are any known
-caveats with the print driver.
+caveats with the print driver. Once the model is selected, click the
+"Show this printer" button to see the results.
 
-:numref:`Figure %s: Using Open Printing Database to Locate a Driver <print1>`
-shows a search for our example printer. There are two models in this series and this particular hardware supports wireless.
-
-.. _print1:
-
-.. figure:: images/print1.png
-
-Once the model is selected, click on the "Show this printer" button to see the results, as demonstrated in :numref:`Figure %s: Driver Recommendation from Open Printing Database <print2>`. 
-
-.. _print2:
-
-.. figure:: images/print2.png
-
-For this model, the HPLIP driver is recommended. In TrueOS®, the HPLIP
-driver is available as an optional package called "hplip". You can
-search if the driver is installed, and install it if it is not, using
-:ref:`AppCafe®`.
+For the example HP DeskJet model, the HPLIP driver is recommended. In
+TrueOS®, the HPLIP driver is available as an optional package called
+"hplip". You can search if the driver is installed, and install it if
+it is not, using :ref:`AppCafe®`.
 
 .. index:: printing
 .. _Adding a Printer:
@@ -910,55 +902,63 @@ a successful test page, refer to :ref:`Printer Troubleshooting`.
 Manually Adding a Driver 
 -------------------------
 
-If the print configuration wizard fails, double-check that the printer is supported as described in :ref:`Researching your Printer` and that HPLIP is
-installed if it is a HP printer. Also check that the printer is plugged in and powered on.
+If the print configuration fails, double-check that the printer is
+supported as described in :ref:`Researching your Printer` and that
+HPLIP is installed if it is a HP printer. Also check that the printer
+is plugged in and powered on.
 
-If the wizard is unable to even detect the device, try to manually add the print device. In the "Select Device" screen (:numref:`Figure %s: Select a Print Device <print5a>`) you will need to
-highlight and configure the type of connection to the printer: 
+If the wizard is unable to even detect the device, try to manually add
+the information for the print device. In the "Select Device" screen 
+(:numref:`Figure %s: Select a Print Device <print5a>`), select the type
+of connection to the printer and input the following information. The
+type of information depends upon the type of connection:
 
-**USB:** this entry will only appear if a printer is plugged into a USB port and the number of entries will vary depending upon the number of USB ports on the
-system. If there are multiple USB entries, highlight the one that represents the USB port your printer is plugged into.
+**USB:** this entry will only appear if a printer is plugged into a
+USB port and the number of entries will vary depending upon the number
+of USB ports on the system. If there are multiple USB entries,
+highlight the one that represents the USB port your printer is plugged
+into.
 
-**Enter URI:** this option allows you to manually type in the URI to the printer. A list of possible URIs is available on the
-`cups site <http://www.cups.org/documentation.php/network.html>`_. 
+**IPP:** select this option if you are connecting to a printer cabled
+to another computer (typically running a Microsoft operating system)
+that is sharing the printer using IPP. You will need to input the IP
+address of the printer and the name of the print queue. To use IPP
+over an encrypted connection, select "ipps" instead.
 
-**AppSocket/HP JetDirect:** select this option if you are connecting to an HP network printer. You will need to input the IP address of the printer in the
-"Host" field. Only change the port number if the printer is using a port other than the default of 9100. 
+**HTTP:** this option allows you to manually type in the URI to the
+printer. A list of possible URIs is available on the
+`cups site <http://www.cups.org/documentation.php/network.html>`_. To
+use HTTP over an encrypted connection, select "https" instead.
 
-**IPP:** select this option if you are connecting to a printer cabled to another computer (typically running a Microsoft operating system) that is sharing the
-printer using IPP. You will need to input the IP address of the printer in the "Host" field and the name of the print queue. You can then click the "Verify"
-button to ensure that you can connect to the print queue.
+**AppSocket/HP JetDirect:** select this option if you are connecting
+to an HP network printer. You will need to input the IP address of the
+printer. Only change the port number if the printer is using a port
+other than the default of 9100. 
 
-**LPD/LPR:** select this option if you are connecting to a printer which is cabled to a Unix computer that is using LPD to share the printer. You will need to
-select the hostname and queue name from the drop-down menus.
+**LPD/LPR:** select this option if you are connecting to a printer
+which is cabled to a Unix computer that is using LPD to share the
+printer. You will need to input the hostname and queue name of the
+Unix system.
 
-Once you have input the information for the type of printer, press "Forward" for the wizard to continue.
+After inputting the connection information, continue to add the
+printer and test the connection by printing a test page as described
+in :ref:`Adding a Printer`.
 
-If the wizard is able to find the printer but is unable to locate the correct driver for the printer, it will display the screen shown in
-:numref:`Figure %s: Manually Select the Manufacturer <print8>` instead of the "Describe Printer" screen.
+If the default driver is not working, try readding the printer. When
+you get to the
+:numref:`Figure %s: Viewing the Default Driver <print7a>` screen, try
+selecting a different driver.
 
-.. _print8:
+.. _print7a:
 
-.. figure:: images/print8.png
+.. figure:: images/print7a.png
 
-Select the manufacturer name and then click "Forward" to select the model, as seen in the example in :numref:`Figure %s: Manually Select the Driver <print9>`. 
-
-.. _print9:
-
-.. figure:: images/print9.png
-
-Click "Forward" and the wizard should continue to the "Describe Printer" screen.
-
-If the selected driver does not work, go back to the "Choose Driver" screen shown in :numref:`Figure %s: Manually Select the Manufacturer <print8>`. This screen provides two additional
-options for installing the driver: 
-
-1. **Provide PPD file:** a PostScript Printer Description (PPD) is a driver created by the manufacturer that ends in a :file:`.ppd` extension. Sometimes the
-   file will end with a :file:`.ppd.gz` extension, indicating that it has been compressed with :command:`gzip`. If the driver you need was not automatically
-   found, see if there is a PPD file on the driver CD that came with the printer or if one is available for download from the manufacturer's website. If you
-   find a PPD, select this option and browse to the location of that file. Then, click "Forward" to continue with the printer configuration.
-
-2. **Search for a printer driver to download:** if you know the name of the driver that you are looking for, try typing its name or number into the "Search"
-   box. If found, it will display in the "Printer" model drop-down menu.
+Alternately, if you have a PPD driver from the manufacturer's website
+or on the CD that came with the printer, click "Choose File" to browse
+to the location of the PPD file. PPD (PostScript Printer Description)
+is a driver created by the manufacturer that ends in a :file:`.ppd`
+extension. Sometimes the file will end with a :file:`.ppd.gz`
+extension, indicating that it has been compressed. 
 
 .. index:: printing
 .. _Printer Troubleshooting:
@@ -968,15 +968,25 @@ Printer Troubleshooting
 
 Here are some solutions to common printing problems: 
 
-- **A test page prints but it is all garbled:** this typically means that you are using the wrong driver. If your specific model was not listed, click the
-  "Change" button in the "Driver Details" section of the "Settings" tab of the printer and try choosing another driver model that is close to your model
-  number. If trial and error does not fix the problem, see if there are any suggestions for your model in the
-  `Open Printing database <http://www.openprinting.org/printers>`_. A web search for the word "freebsd" followed by the printer model name may also help you
-  to find the correct driver to use.
+* **A test page prints but it is all garbled:** this typically means
+  that you are using the wrong driver. If your specific model was not
+  listed, click :menuselection:`Adminstration --> Modify Printer` for
+  the printer in the "Printers" tab. In the screen shown in
+  :numref:`Figure %s: Viewing the Default Driver <print7a>`, try
+  choosing another driver that is close to your model number. If trial
+  and error does not fix the problem, see if there are any suggestions
+  for your model in the
+  `Open Printing database <http://www.openprinting.org/printers>`_. A
+  web search for the word "freebsd" followed by the printer model name
+  may also help you to find the correct driver to use.
 
-- **Nothing happens when you try to print:** in this case, type :command:`tail -f /var/log/cups/error_log` in a console and then print a test page. The error
-  messages should appear in the console. If the solution is not obvious from the error messages, try a web search for the error message. If you are still
-  stuck, post the error, the model of your printer, and your version of TrueOS® as you :ref:`Report a Bug`.
+* **Nothing happens when you try to print:** in this case, type
+  :command:`tail -f /var/log/cups/error_log` in a console and then try
+  to print a test page. The error messages should appear in the
+  console. If the solution is not obvious from the error messages, try
+  a web search for the error message. If you are still stuck, post th
+  e error, the model of your printer, and your version of TrueOS® as
+  you :ref:`Report a Bug`.
 
 .. index:: scanner
 .. _Scanner:
