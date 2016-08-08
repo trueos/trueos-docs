@@ -797,13 +797,17 @@ driver for your printer.
 Researching your Printer 
 -------------------------
 
-Before configuring your printer, it is worth the time to see if a print driver exists for your particular model, and if so, which driver is recommended. If
-you are planning to purchase a printer, this is definitely good information to know beforehand. You can look up the vendor and model of the printer in the
-`Open Printing Database <http://www.openprinting.org/printers>`_ which will indicate if the model is supported and if there are any known caveats with the
-print driver.
+Before configuring your printer, it is worth the time to see if a
+print driver exists for your particular model, and if so, which driver
+is recommended. If you are planning to purchase a printer, this is
+definitely good information to know beforehand. You can look up the
+vendor and model of the printer in the
+`Open Printing Database <http://www.openprinting.org/printers>`_ which
+will indicate if the model is supported and if there are any known
+caveats with the print driver.
 
-:numref:`Figure %s: Using Open Printing Database to Locate a Driver <print1>` shows a search for our example printer. There are two models in this series and this particular hardware
-supports wireless.
+:numref:`Figure %s: Using Open Printing Database to Locate a Driver <print1>`
+shows a search for our example printer. There are two models in this series and this particular hardware supports wireless.
 
 .. _print1:
 
@@ -815,8 +819,10 @@ Once the model is selected, click on the "Show this printer" button to see the r
 
 .. figure:: images/print2.png
 
-For this model, the HPLIP driver is recommended. In TrueOS®, the HPLIP driver is available as an optional system component called "pcbsd-meta-hplip". You can
-see if the driver is installed, and install it if it is not, using :ref:`AppCafe®`.
+For this model, the HPLIP driver is recommended. In TrueOS®, the HPLIP
+driver is available as an optional package called "hplip". You can
+search if the driver is installed, and install it if it is not, using
+:ref:`AppCafe®`.
 
 .. index:: printing
 .. _Adding a Printer:
@@ -824,45 +830,79 @@ see if the driver is installed, and install it if it is not, using :ref:`AppCafe
 Adding a Printer 
 -----------------
 
-Once you know that your printer is supported, make sure that the printer is plugged into your computer or, if the printer is a network printer, that both your
-computer and the printer are connected to the network. Then, go to :menuselection:`Browse Applications --> Printing` or type :command:`pc-su pc-cupscfg`. Input your
-password to see a window similar to :numref:`Figure %s: Printer Configuration Utility <print4>`. 
+Once you know that your printer is supported, make sure that the
+printer is plugged into your computer or, if the printer is a network
+printer, that both your computer and the printer are connected to the
+network. Then, open a web browser and enter the address
+"127.00.1:631/admin". This will open the CUPS configuration shown in
+:numref:`Figure %s: Printer Configuration <print4a>`. 
 
-.. _print4: 
+.. _print4a: 
 
-.. figure:: images/print4.png
+.. figure:: images/print4a.png
 
-To add a new printer, click the "+Add" button. The printing utility will pause for a few seconds as as the wizard searches to see if any printers are
-connected to your computer or network. When it is finished, you should see a screen similar to :numref:`Figure %s: Select a Print Device <print5>`. 
+To add a new printer, click the "Add Printer" button. CUPS will pause
+for a few seconds as it searches for available printers. When it is
+finished, you should see a screen similar to
+:numref:`Figure %s: Select a Print Device <print5a>`. 
 
-.. _print5: 
+.. _print5a: 
 
-.. figure:: images/print5.png
+.. figure:: images/print5a.png
 
-In this example, the wizard has found this printer and highlighted the entry for the HP OfficeJet 4500. To also install the fax capability, instead select the
-driver which includes "HP Fax". The wizard should find any supported printer that is attached to the computer or network and list it as the highlighted entry
-in the "Devices" frame. Click "Forward" and the wizard will attempt to load the correct driver for the device. If it is successful, it will display the screen
-shown in :numref:`Figure %s: Describe Printer Screen <print6>`. If it does not automatically find your printer, read the section on :ref:`Printer Troubleshooting`.
+In this example, the wizard has found the HP DeskJet 3630 printer on
+both the USB port (first entry) and the wireless network (second
+entry). Click the desired connection method then click "Continue".
+CUPS will attempt to load the correct driver for the device. If it is
+successful, it will display the screen shown in
+:numref:`Figure %s: Describe Printer Screen <print6a>`. 
 
-.. _print6:
+.. _print6a:
 
-.. figure:: images/print6.png
+.. figure:: images/print6a.png
 
-Since the configuration wizard found this printer, the "Describe Printer" screen automatically fills out the printer model series, a description, and the
-hostname of your computer, if the printer is locally attached, or the hostname of the network printer. If you wish, you can change the printer's name or
-description. Once you click the "Apply" button, the wizard will ask if you would like to print a test page. Ensure the printer has paper and click "Yes" to
-print the test page. If you can not print a successful test page, see the :ref:`Printer Troubleshooting` section.
+This screen automatically fills out the printer model series, a
+description, and the type of connection. If you wish, you can add a
+descriptive "Location". If you will be sharing the printer on the
+network, check the "Sharing" box. 
 
-Once the printer is created, a screen will open where you can set the properties of the printer. Our sample printer's properties screen is shown in
-:numref:`Figure %s: Viewing the Settings of the Newly Created Printer <print7>`.
+Once you click the "Continue" button, the next screen, shown in
+:numref:`Figure %s: Viewing the Default Driver <print7a>`,
+will show a summary of the selected options and offer the ability to
+select another driver. For now, leave the driver that was detected and
+click "Add Printer". If the printer does not work using the default
+driver, read the section on :ref:`Printer Troubleshooting` which
+describes how to use this screen in more detail.
 
-.. _print7:
+.. _print7a:
 
-.. figure:: images/print7.png
+.. figure:: images/print7a.png
 
-You may wish to take a few minutes to review the settings in the "Policies", "Access Control", "Printer Options", and "Job Options" tabs as these allow you to
-configure options such as print banners, permissions, the default paper size, and double-sided printing. The available settings will vary, depending upon the
-capabilities of the print driver.
+The next screen, shown in
+:numref:`Figure %s: Modify Print Properties <print8a>`, can be used to
+modify the properties of the printer. 
+
+.. _print8a:
+
+.. figure:: images/print8a.png
+
+You may wish to take a few minutes to review the settings in the
+"General", "Banners", and "Policies" tabs as these allow you to
+configure options such as print banners, permissions, the default
+paper size, and double-sided printing. The available settings will
+vary, depending upon the capabilities of the print driver. When
+finished, click the "Set Default Options" button to save the options.
+This will open the Printers tab, with the new printer displayed. An
+example is shown in :numref:`Figure %s: Manage Printer <print9a>`.
+
+.. _print9a:
+
+.. figure:: images/print9a.png
+
+You should print a test page to ensure that the printer is working.
+Ensure the printer has paper and click
+:menuselection:`Maintenance -> Print Test Page`. If you can not print
+a successful test page, refer to :ref:`Printer Troubleshooting`.
 
 .. index:: printing
 .. _Manually Adding a Driver:
@@ -873,7 +913,7 @@ Manually Adding a Driver
 If the print configuration wizard fails, double-check that the printer is supported as described in :ref:`Researching your Printer` and that HPLIP is
 installed if it is a HP printer. Also check that the printer is plugged in and powered on.
 
-If the wizard is unable to even detect the device, try to manually add the print device. In the "Select Device" screen (:numref:`Figure %s: Select a Print Device <print5>`) you will need to
+If the wizard is unable to even detect the device, try to manually add the print device. In the "Select Device" screen (:numref:`Figure %s: Select a Print Device <print5a>`) you will need to
 highlight and configure the type of connection to the printer: 
 
 **USB:** this entry will only appear if a printer is plugged into a USB port and the number of entries will vary depending upon the number of USB ports on the
