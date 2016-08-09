@@ -98,8 +98,10 @@ are part of the base operating system), and "local" (all installed
 applications).
 
 **Search:** to see if an application is available, enter its name and
-click the "binoculars" icon. Alternately, enter a description. For example, a search for "browser" will display
-software with "browser" in the name as well as applications which provide browser functionality, such as Firefox. 
+click the "binoculars" icon. Alternately, enter a description. For
+example, a search for "browser" will display software with "browser"
+in the name as well as applications which provide browser
+functionality, such as Firefox. 
 
 **Filter By:** this drop-down menu lists the available software
 categories. If you select a category, it will only display or show
@@ -121,20 +123,29 @@ application. In the example shown in
 :numref:`Figure %s: Viewing the Details of an Installed Application <appcafe2>`,
 the user has clicked "Firefox" on a system that has Firefox installed.
 
+.. note:: AppCafe® provides a graphical front-end for displaying the
+   contents of the package database. Since installed applications
+   provide more information to the package database, some fields will
+   be empty, depending upon the  selected repository. For example, the
+   package message will only be displayed when the "local" repository
+   is selected, the package is actually installed, and the package
+   provides a message during installation.
+
 .. _appcafe2:
 
 .. figure:: images/appcafe2.png
 
-The information for an application includes the following: 
+As seen in this example, the information for an application includes
+the application's icon, name, and description. Click the application's
+name to open the website for the application in the default web
+browser. If the application is installed, there will be an "Uninstall"
+button.
 
-* Icon, name, and description of the application. Click the
-  application's name to open the website for the application in the
-  default web browser.
+Beneath this area are 4 tabs. The first tab on the left contains two
+panes. The first (middle) pane displays the package description. The
+second (bottom) pane displays the message that appears when the
+package is installed.
   
-* An uninstall button.  
-  
-* A description of the application.  
-
 An example of the "?" tab is shown in 
 :numref:`Figure %s: More Application Details <appcafe3>`
 
@@ -176,8 +187,8 @@ An example of the last tab, which has a list icon, is shown in
 .. figure:: images/appcafe5.png
 
 This tab contains the following information. Click the right arrow next
-to an entry to expand its information and the down arrow to collapse the
-information.
+to an entry to expand its information and the down arrow to collapse
+the information.
 
 * **Build Options:** shows the values of the make options that the
   package was built with.
@@ -188,8 +199,8 @@ information.
 * **Required By:** indicates the names of any other packages that
   require this software to be installed.
 
-* **Shared Libaries (Required):** lists the names of the libraries that
-  this application requires.
+* **Shared Libraries (Required):** lists the names of the libraries
+  that this application requires.
   
 Managing Installed Software
 ---------------------------
@@ -202,12 +213,68 @@ click the "Installed" tab.  An example is seen in
 
 .. figure:: images/appcafe6.png
 
-If you install or uninstall any software, a "Status" tab will be added. In the example shown in :numref:`Figure %s: Example Status Tab <remote6a>`, the firefox application was installed.
-Click the hyperlink under the "Result" column to review the installation log.
+This screen provides the following actions:
 
-.. _remote6a:
+* **All:** check this box to select all installed applications or
+  uncheck it to deselect all installed applications.
+  
+* **Uninstall:** click the garbage can icon to uninstall the selected
+  applications.
+  
+* **Clean:** this operation deletes any orphaned packages for the 
+  selected applications. An orphaned package is one that is not
+  required by any other applications. It will have a black flag icon
+  (the same as the "Clean" icon) in its "Status" column.
+  
+This screen also provides an "Options" drop-down menu that allows you
+to select or deselect the following options:
 
-.. figure:: images/remote6a.png
+* **View All Packages:** by default, the installed tab only shows the
+  packages that you installed. Check this box to also see the packages
+  that came with the operating system. Packages which have a black
+  banner icon under their "Status" column have dependent packages.
+  This means if you delete a package with a black banner, you will
+  also delete their dependent packages so that you do not end up with
+  orphaned packages.
+
+* **View Advanced Options:** if you check this box, two extra icons, a
+  lock and an unlock icon, will be added to the right of the trash
+  icon. If you select an application and click the lock icon, a lock
+  lock icon will be added to its "Status" column. As long as an
+  application is locked, it will not be updated by
+  :ref:`Update Manager`. This can be useful if you need to stay at a
+  certain version of an application. In order to upgrade that
+  application, you will need to first select it and click the unlock
+  icon.
+
+* **Auto-clean packages:** if you check this box, the "Clean" icon
+  will disappear as you no longer need to manually clean orphans.
+  Instead, whenever you uninstall an application, any orphans will
+  automatically be uninstalled as well.
+
+In the example shown in 
+:numref:`Figure %s: Viewing Applications With All Options Checked <appcafe7>`,
+the user has checked all available options. In this example, "aalib"
+has dependencies (banner icon), "alsa-lib" has been locked, and
+"alsa-plugins" is an orphan (flag icon).
+
+.. _appcafe7:
+
+.. figure:: images/appcafe7.png
+  
+If you install or uninstall any software, click the "Pending" tab to
+view the details of the operation. In the example shown in
+:numref:`Figure %s: Viewing the Status of the Operation <appcafe8>`,
+an application is being installed. Eariler install, autoremove,
+remove, and locking operations have also occurred and each has a dated
+entry in the process log. If you highlight an entry and check the
+"View Process Log" box, you can review the log for that operation. In
+this example, the installation is still in progress and the process
+log indicates which dependency packages are being installed.
+
+.. _appcafe8:
+
+.. figure:: images/appcafe8.png
 
 .. index:: updates
 .. _Update Manager:
