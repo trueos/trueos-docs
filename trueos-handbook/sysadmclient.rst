@@ -313,9 +313,7 @@ The following steps occur automatically during an update:
 * Once the update is complete, the new boot environment, or updated
   snapshot, is added as the first entry in the boot menu and activated
   so that the system will boot into it, unless you pause the boot menu
-  and specify otherwise. A pop-up message, shown in
-  :numref:`Figure %s: Managing the Reboot After Update <update1>`, will
-  indicate that a reboot is required. You can either finish what you are
+  and specify otherwise. A pop-up message will indicate that a reboot is required. You can either finish what you are
   doing and reboot now into the upgraded snapshot, or ask the system to
   remind you again at a later time. To configure the time of the next warning, click the "Next Reminder" drop-down menu where you can select 1, 5, 12, or 24 hours, 30 minutes, or never (for this login
   session). Note that the system will not apply any more updates or allow you to start another manual update or install additional software using AppCafe®
@@ -330,49 +328,73 @@ The following steps occur automatically during an update:
   return the system to its previous state, before the update was
   applied.
 
+Managing Updates
+----------------
+
+An example of the "Updates" tab is shown in
+:numref:`Figure %s: Managing Updates <update1>`.
+
 .. _update1:
 
 .. figure:: images/update1.png
 
-Managing Updates
-----------------
+In this example, the system is up-to-date. The "Latest Check" field
+indicates the date and time the system last checked for updates. To
+manually check for updates, click the "check for Updates" button.
 
-The "System Updates" tab of Update Manager can be used to determine if
-any updates are available and to start the selected updates.
 
-In the example shown in :numref:`Figure %s: Managing Updates <update2>`,
 a security update is available. Click the "Start Updates" button to manually start the update. When prompted, reboot so that the system can
 boot into the newly patched operating system.
 
-.. _update2:
-
-.. figure:: images/update2.png
-
 When package updates are available a "View Package Updates" box can be clicked to see which packages will be upgraded.
 
-.. note:: how often package updates are available depends upon the "Repository Settings" set in :menuselection:`AppCafe® --> Configure`. The default setting
-   of "Production" will only provide package updates every 3 months whereas a setting of "Edge" will provide package updates as soon as a new version is
-   available. If you need application stability, stay on "Production". If you can handle some application breakage in favor of having the latest software,
-   change to "Edge". Also, if you select "Security" or "Nothing" in the "Configure Automatic Updates" tab of Update Manager, packages will only get updated
-   with the next software release which happens every 3 months.
-
-.. warning:: updates will update **all** installed software. If you have placed a lock on a package using :command:`pkg` or an older version of
-   AppCafe®, Update Manager will fail and will generate a message in the log indicating that the failure is due to a locked package. If you prefer to lock certain applications
+.. warning:: Updates will update **all** installed software. If you
+   have placed a lock on a package using :command:`pkg` or AppCafe®,
+   Update Manager will fail and will generate a message indicating that the failure is due to a locked package. If you prefer to lock certain applications
    against being updated, select "Security" or "Nothing" in the "Configure Automatic Updates" tab of Update Manager and manually update software as needed using
    :command:`pkg`.
    
-The "Change Branches" tab of Update Manager provides a listing of available branches. In the example shown in
+The "Branches" tab of Update Manager provides a listing of available branches. In the example shown in
   :numref:`Figure %s: Switching Branches <update3>`, this system is currently running the 10.2 branch and the upcoming 11.0 branch is available for selection.
 
 .. _update3:
 
-.. figure:: images/update3.png   
+.. figure:: images/update3.png  
+
+The "Settings" tab is shown in
+:numref:`Figure %s: Settings Tab <update4>`.
+
+.. _update4:
+
+.. figure:: images/update4.png 
+
+This tab contains the following configurable options:
+
+* **Max Boot Environments:** TrueOS® automatically creates a boot
+  environment before updating any software, the operating system, or
+  applying a system update. Once the configured maximum number of boot
+  environments is reached, TrueOS® will automatically prune (delete)
+  the oldest automatically created boot environment. However, it will
+  not delete any boot environments you create manually using
+  :ref:`Boot Environment Manager`. The default number of boot
+  environments is *3* and the allowable range is from *1* to *10*. 
+
+* **Automatically perform updates:** when checked, the automatic
+  updater will automatically keep your system and packages up-to-date.
+  You will know that an update has completed when the pop-up menu indicates that a reboot is needed to complete the update process. If you uncheck this box, an update will only occur when
+  You do not need to initiate updates manually. TrueOS® uses an automated updater that automatically checks for updates, no more than once per day, 20
+  minutes after a reboot and then every 24 hours.
+  
+* **Custom Package Repository:** if you have followed the instructions
+  to :ref:`Create a Local Package Mirror`, check this box. This will
+  activate the "URL" field so that you can input the URL to the custom
+  repository.
 
 .. index:: updates
 .. _Upgrading from 10.x to |version|:
 
-Upgrading from 10.x to |version|
---------------------------------
+Upgrading from PC-BSD® 10.x to TrueOS®
+--------------------------------------
 
 .. index:: sysadm, configuration
 .. _Manage SSL Keys:
