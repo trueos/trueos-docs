@@ -118,10 +118,10 @@ connected, use the following information in your IRC client:
 
 * **Server name:** irc.freenode.net 
 
-* **Channel name:** #pcbsd (note that the # is required) 
+* **Channel name:** #trueos (note that the # is required) 
 
 :ref:`AppCafe®` has an IRC category where you can find IRC client software. If you do not wish to install an IRC client, you can instead use the
-`web interface to #pcbsd <http://irc.lc/freenode/pcbsd>`_.  
+`web interface to #trueos <http://irc.lc/freenode/trueos>`_.  
 
 IRC is a great way to chat with other users and get answers to your questions. A few things to keep in mind if you ask a question on IRC: 
 
