@@ -429,7 +429,7 @@ include:
 * You can move a boot environment to another machine, physical or
   virtual, in order to check hardware support.
 
-.. note:: for boot environments to work properly, 
+.. note:: For boot environments to work properly, 
    **do not delete the default ZFS mount points during installation.** 
    The default ZFS layout ensures that when boot environments are
    created, the :file:`/usr/local/`, :file:`/usr/home/`,
@@ -459,6 +459,25 @@ installation.
 
 .. figure:: images/be1.png
 
+Each entry contains the following information:
+
+* **Name:** the name of the boot entry as it will appear in the boot
+  menu.
+
+* **Nickname:** a description, which can be different from the "Name".
+
+* **Active:** the possible values of this field are "R" (active on
+  reboot), "N" (active now), or "-" (inactive). In this example, the
+  system booted from "initial" and is set to boot from "initial" on
+  the next boot.
+
+* **Space:** the size of the boot environment.
+
+* **Mountpoint:** indicates whether or not the BE is mounted, and if
+  so, where.
+
+* **Date:** the date and time the BE was created.
+  
 From left to right, the buttons on the top bar are used to: 
 
 **Create BE:** creates a new boot environment. You should do this before
@@ -469,12 +488,13 @@ environment, then add it to the list of boot environments.
 
 **Clone BE:** creates a copy of the highlighted boot environment.
 
-**Delete BE:** deletes the highlighted boot environment. You can not delete the boot environment which has a "Running" status of *Yes* as that is the current
-boot environment.
+**Delete BE:** deletes the highlighted boot environment. You can not
+delete the boot environment which is marked as *N* or as
+*R* in the "Active" column.
 
 **Rename BE:** renames the highlighted boot environment. The name is
-what appears in the boot menu when the system boots. You cannot rename the BE you are
-currently booted into and an error message will occur if you try to do so.
+what appears in the boot menu when the system boots. You cannot rename
+the BE you are currently booted into.
 
 **Mount BE:** mounts the highlighted BE in :file:`/tmp` so that its
 contents are browseable. Note that this setting only applies to inactive
@@ -483,24 +503,22 @@ BEs.
 **Unmount BE:** unmounts the previously mounted BE.
 
 **Activate BE:** tells the system to boot into the highlighted boot
-environment at next system boot. The "Default" will change to *Yes*, but the "Running" will
-remain the same. In other words, "Running" refers to the boot environment the system last booted into (is currently running from) whereas "Default" indicates
-which boot environment the system will boot into at next system boot.
+environment at next system boot. This will change the "Active" column
+to *R*.
 
-Whenever there are multiple boot environments, a boot menu similar to the one seen in :numref:`Figure %s: Boot Menu With Multiple Boot Environments <be4>` will appear for two seconds during
-system boot. If you do not pause this screen, the system will automatically boot into either the last "Running" boot environment or, if you have activated another boot environment, the
-environment that was set as the "Default". 
-
-.. _be4:
-
-.. figure:: images/be4.png
-
-The "Boot Environment Menu" entry indicates that multiple boot environments are available. To browse the available boot environments, press the :kbd:`spacebar` to pause the screen,
-arrow down to "Boot Environment Menu" and press :kbd:`Enter`. In the example shown in :numref:`Figure %s: Boot Menu Shows Created Boot Environments <be2>`, two boot environments are
-available. The entry with "default" in the name indicates the date and time of the initial installation. The first boot entry indicates the operating system's current patch level and the
-date the system was updated. It is first in the boot order and since it is highlighted in blue, it is the active boot environment, or the one the system will boot into unless another BE is
-manually selected in this menu. Use the arrow keys to highlight the boot environment you would like to boot into, and press :kbd:`Enter` to continue booting into the selected boot
-environment. 
+If you wish to boot into another boot environment, press :kbd:`7` at
+the :numref:`Figure %s: TrueOS® Boot Menu <install1b>` to access the
+boot menu selection screen. In the example shown in
+:numref:`Figure %s: Boot Environments Menu <be2>`, two boot
+environments are available in the "Boot Environments" section: the
+entry named "initial" represents the initial installation and the
+entry named "mybootenvironment" was manually created using Boot
+Environment Manager. The upper section of this menu indicates that the
+"initial" boot environment is set to active, or the one the system
+has been configured to boot into unless another BE is manually
+selected in this menu. Use the arrow keys to highlight the boot
+environment you would like to boot into, and press :kbd:`Enter` to
+continue booting into the selected boot environment. 
 
 .. _be2:
 
