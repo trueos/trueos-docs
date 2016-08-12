@@ -2,11 +2,13 @@ The TrueOS Users Handbook is generated from ASCII text files, that end in a .rst
 
 ##Requirements:
 
+A system with Perl installed.
+
 At a minimum, the following software needs to be installed as the root/superuser. If this is the first time you have used pkg on the system, it may prompt you to fetch and install it. Say yes to the prompts to do so. Once it is finished, you can then finish installing the needed software.
 
 Instructions are given for both the port and the package as some software may not have a package. Try the pkg command first as it is faster. If the pkg command succeeds, you do not need to run the make command as the software is already installed; however if it fails, use the make command to install the software. If the software is already installed, the pkg command will indicate that the most recent version is already installed. 
 
-TrueOS users can alternately install the pcbsd-toolchain package using AppCafe as it contains all of the necessary packages.
+TrueOS users can alternately install the trueos-toolchain package using AppCafe as it contains all of the necessary packages.
 
 ```
 portsnap fetch extract
@@ -44,26 +46,25 @@ PDF output will be found in /path/to/your-build-directory/trueos-docs/trueos-han
 To build a local copy of the HTML, with a separate page for each chapter and that chapter's table of contents in the left frame with navigational links to browse between chapters, run the following command:
 
 ```
-sphinx-build -b html . _build
+make html
 ```
 
 To build a local copy of the HTML as one long page, with the entire table of contents in the left frame, use this command instead:
 
 ```
-sphinx-build -b singlehtml . _build
+make singlehtml
 ```
 
-To build a local PDF, run this command TWICE and ignore its error messages:
+To build a local PDF:
 
 ```
-yes '' | gmake latexpdf
-yes '' | gmake latexpdf
+make pdf
 ```
 
 To build a local EPUB, run this command:
 
 ```
-sphinx-build -b epub . _build
+make epub
 ```
 
 ##Editing the Documentation
