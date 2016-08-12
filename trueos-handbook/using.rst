@@ -949,10 +949,6 @@ you get to the
 :numref:`Figure %s: Viewing the Default Driver <print7a>` screen, try
 selecting a different driver.
 
-.. _print7a:
-
-.. figure:: images/print7a.png
-
 Alternately, if you have a PPD driver from the manufacturer's website
 or on the CD that came with the printer, click "Choose File" to browse
 to the location of the PPD file. PPD (PostScript Printer Description)
