@@ -325,8 +325,7 @@ Obtaining TrueOS®
 TrueOS® uses a rolling release model rather than versioned releases.
 This model...
 
-Around the 1st of each month, :ref:`Update Manager` will
-  provide a patch which will update the operating system to include all
+Around the 1st of each month, :ref:`Update Manager` will  provide a patch which will update the operating system to include all
   of the new features and drivers. If you wish to have or test the
   latest features and drivers as they become available and can tolerate
   possible breakage caused by new features being available before the
@@ -334,33 +333,47 @@ Around the 1st of each month, :ref:`Update Manager` will
 
 Installation files can be downloaded from the `TrueOS® website <http://www.pcbsd.org/download/>`_ or the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_. 
 
-Several types of files are available for download. Before downloading a
-file, review the following descriptions to see which one best suits your
-needs: 
+Several types of files are available for download. Before downloading
+a file, review the following descriptions to see which one best suits
+your needs: 
 
-* Files beginning with :file:`PCBSD` and ending in :file:`DVD-USB.iso` contain all of the information needed to install a graphical desktop or command-line
-  server as well as several applications during installation. This type of file can either be burned to a DVD media or a USB thumb drive. There will also be
-  associated files with the same name but ending in a :file:`.md5` or :file:`.sha256` extension. Depending upon your current operating system and its tools,
-  you can use the value in either one of those files to determine the integrity of the download, as described in :ref:`Data Integrity Check`. If a torrent is available,
-  there will also be a file with the same name and a :file:`.torrent` extension.
-
-* Files beginning with :file:`TrueOS` contain a command-line installer and are used to install a command-line version of a server. This type of file can
-  either be burned to a CD media or a USB thumb drive. There will also be associated files with the same name but ending in a :file:`.md5` or
-  :file:`.sha256` extension. Depending upon your current operating system and its tools, you can use the value in either one of those files to determine the
-  integrity of the download, as described in :ref:`Data Integrity Check`. If a torrent is available, there will also be a file with the same name and a
+* Files beginning with :file:`TrueOS-Desktop` contain all of the
+  information needed to install either a graphical desktop or
+  command-line server using a graphical installer. If the file has an 
+  :file:`.iso`  extension, it should be burned to a DVD media. If it
+  has a :file:`img` extension, it should be burned to a USB stick.
+  There will also be associated files with the same name but ending in
+  an :file:`.md5` or :file:`.sha256` extension. Depending upon your
+  current operating system and its tools, you can use the value in
+  either one of those files to determine the integrity of the
+  download, as described in :ref:`Data Integrity Check`. If a torrent
+  is available, there will also be a file with the same name and a
   :file:`.torrent` extension.
 
-* Files containing :file:`netinstall` in their name are used to perform a network install. These files can be burned to a CD, so are a smaller initial download size.
-  However, they require an Internet connection during installation as the files needed by the installer will be downloaded from the Internet.
+* Files beginning with :file:`TrueOS-Server` contain a command-line
+  installer and are used to install a command-line version of a
+  server. If the file has an  :file:`.iso`  extension, it should be
+  burned to a CD media. If it has a :file:`img` extension, it should
+  be burned to a USB stick. There will also be associated files with
+  the same name but ending in an :file:`.md5` or :file:`.sha256`
+  extension. Depending upon your current operating system and its
+  tools, you can use the value in either one of those files to
+  determine the integrity of the download, as described in
+  :ref:`Data Integrity Check`. If a torrent is available, there will
+  also be a file with the same name and a :file:`.torrent` extension.
 
-If you plan to install a graphical desktop, download the file with :file:`PCBSD` in its name and either burn it to a DVD media or write it to a removable USB
-device.
+If you plan to install a graphical desktop, download the file with
+:file:`TrueOS-Desktop` in its name and either burn it to a DVD media
+or write it to a removable USB device.
 
-If you prefer to install a command-line only server, you can either download the same ISO or download the ISO with :file:`TRUEOS` in the name. The
-:file:`TRUEOS` download is smaller and can be burned to a CD or written to a removable USB device.
+If you prefer to install a command-line only server, you can either
+download a file beginning with :file:`TrueOS-Desktop` (to use the
+graphical installer) or :file:`TrueOS-Server` (to use the command-line
+installer). The :file:`TrueOS-Server` files are smaller and can fit on
+CD.
 
-Refer to :ref:`Burning the Installation Media` for instructions on how to burn the file to
-bootable media.
+Refer to :ref:`Burning the Installation Media` for instructions on how
+to burn the downloaded file to bootable media.
 
 If you have a slow download connection or wish to support the TrueOS® project financially, you can purchase PC-BSD® DVDs from the
 `FreeBSD Mall <https://www.freebsdmall.com/cgi-bin/fm/scan/su=yes/fi=prod_bsd/sf=sku/sf=title/sf=category/se=pcbsd>`_.
@@ -438,7 +451,8 @@ Windows 10 has built-in support for writing ISO images to disc.
 Right-click on the :file:`.iso` file in Windows Explorer and select
 "Burn disk image". Select the DVD device in the "Disk Burner" drop-down
 menu and then click "Burn" to write the disc. See the Microsoft article
-`Burn a CD or DVD from an ISO file <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-from-an-ISO-file>`_ for more detailed instructions.
+`Burn a CD or DVD from an ISO file <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-from-an-ISO-file>`_
+for more detailed instructions.
 
 Alternately, the
 `InfraRecorder utility <http://infrarecorder.org/>`_ is an open source
