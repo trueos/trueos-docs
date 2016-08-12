@@ -793,7 +793,7 @@ existing installation image. For example, if you have downloaded an
 ISO for the TrueOS® version that you wish to customize, the superuser
 can access the contents of the ISO as follows::
 
- mdconfig -a -t vnode -f PCBSD10.1.2-RELEASE-x64-DVD-USB.iso -u 1
+ mdconfig -a -t vnode -f TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5 -u 1
 
  mount -t cd9660 /dev/md1 /mnt
 

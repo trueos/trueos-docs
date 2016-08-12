@@ -8,12 +8,9 @@ Welcome to TrueOS®! This Handbook covers the installation and use of
 TrueOS®. This Handbook is a work in progress and relies on th
 e contributions of many individuals. If you are interested in assisting
 with the Handbook, refer to the documentation
-`README <https://github.com/pcbsd/pcbsd/blob/master/src-qt5/docs/README.md>`_. 
-If you use IRC Freenode, you are welcome to join the #pcbsd channel
+`README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_. 
+If you use IRC Freenode, you are welcome to join the #trueos channel
 where you will find other TrueOS® users.
-
-Previous versions of the Handbook in various formats and languages are
-available from `here <http://www.pcbsd.org/docs/>`_. 
 
 The TrueOS® Users Handbook is freely available for sharing and
 redistribution under the terms of the

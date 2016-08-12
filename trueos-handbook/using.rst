@@ -226,7 +226,7 @@ Kodi
 formats, CDs and DVDs from a disk or image file, and even files inside ZIP and RAR archives. It can scan all of your media and automatically create a personalized library with album covers,
 descriptions, and fan art. 
 
-To install Kodi, use AppCafe®. Click "App Search" and search for "pcbsd-meta-kodi". Once installed, an entry for "Media Center" should be added to the "Multimedia"
+To install Kodi, use AppCafe®. Click "App Search" and search for "kodi". Once installed, an entry for "Media Center" should be added to the "Multimedia"
 section of the application menu of your desktop. You can also start Kodi by typing :command:`kodi` from a command prompt. 
 
 If you have never used Kodi before, take some time to skim through the `Kodi Wiki Manual <http://kodi.wiki/>`_.
@@ -1000,7 +1000,7 @@ To use your scanner, make sure the device is plugged into the TrueOS® system an
 command line. A pop-up message will indicate that XSane is detecting devices and will prompt you to accept the XSane license if a device is detected.
 If a device is not detected, search for your device at the `list of supported scanners <http://www.sane-project.org/sane-backends.html>`_. 
 
-.. note:: if the scanner is part of an HP All-in-One device, make sure that the "pcbsd-meta-hplip" package is installed. You can see if the driver is
+.. note:: if the scanner is part of an HP All-in-One device, make sure that the "hplip" package is installed. You can see if the driver is
    installed, and install it if it is not, using :ref:`AppCafe®`.
 
 :numref:`Figure %s: XSane Interface <sane>` shows the XSane interface running on a TrueOS® system attached to an HP OfficeJet.

@@ -56,7 +56,8 @@ Anyone can become a beta tester. Follow these tips so that you can accurately de
 Become a Translator
 ===================
 
-If you are interested in translating TrueOS® into your native language, there are three translation areas that you can choose to become involved in: 
+If you are interested in translating TrueOS® into your native
+language, there are three translation areas that you can choose to become involved in: 
 
 1. Translate the graphical menus within the TrueOS® operating system.
 
@@ -64,7 +65,8 @@ If you are interested in translating TrueOS® into your native language, there a
 
 3. Translate the TrueOS® website.
 
-This section describes each of these translation areas in more detail and how to get started as a translator.
+This section describes each of these translation areas in more detail
+and how to get started as a translator.
 
 Regardless of the type of translation you are interested in, you should first join the
 `translations mailing list <http://lists.pcbsd.org/mailman/listinfo/translations>`_. When you join, send an email to introduce yourself and indicate which
@@ -77,50 +79,82 @@ updates that affect translators.
 Interface Translation
 ---------------------
 
-TrueOS® uses :wikipedia:`Pootle` for managing localization of the menu screens used by the installer and the TrueOS® utilities.
-Pootle makes it possible to find out if your native language has been fully localized for TrueOS®. Pootle also makes it easy for users to check and submit
-translated text as it provides a web editor and commenting system. This means that translators can spend their time making and reviewing translations rather
-than learning how to use a translation tool.
+TrueOS® uses `Weblate <https://weblate.org>`_ for managing
+localization of the menu screens used by the installer and the TrueOS®
+utilities. Weblate makes it easy to find out if your native language
+has been fully localized for TrueOS®. It also makes it easy to verify
+and submit translated text as it provides a web editor and commenting
+system. This means that translators can spend their time making and
+reviewing translations rather than learning how to use a translation
+tool.
 
-To see the status of a localization, open up the `translation website <http://translate.pcbsd.org/>`_ in a web browser, as seen in
-:numref:`Figure %s: The TrueOS® Pootle Translation System <translate1>`. 
+To assist with a localization, open up the
+`TrueOS® translation website <http://weblate.trueos.org/>`_ in a web
+browser. An example is seen in
+:numref:`Figure %s: The TrueOS® Weblate Translation System <translate1>`. 
 
 .. _translate1:
 
 .. figure:: images/translate1.png
 
-The localizations TrueOS® users have requested are listed alphabetically on the left. If your language is missing and you would like to help in its
-translation, send an email to the `translations mailing list <http://lists.pcbsd.org/mailman/listinfo/translations>`_ so it can be added.
-
-The green bar in the "Progress" column indicates the percentage of TrueOS® menus that have been localized. If a language is not at 100%, it means that the
-menus that currently are not translated will appear in English instead of in that language.
-
-If you click on a language name then click on the "PC-BSD" hyperlink under the "Name" column, you will see each menu item that is available for translation. The example shown in
-:numref:`Figure %s: Viewing a Language's Available Menus <translate2>` is for the Greek localization. In this example, the menu for "ethernetconfig" is complete, but the one for
-"LifePreserver" is not.
+Before you can edit a translation, you need to first create a a login
+account and verify the activation email. Once you are logged in, click
+the "Manage your languages" box shown in 
+:numref:`Figure %s: Weblate Dashboard <translate2>`.
 
 .. _translate2:
 
 .. figure:: images/translate2.png
 
-In order to edit a translation, you need to first create a Pootle login account. Once you are logged in to Pootle, navigate to the menu item that you wish to
-translate. In :numref:`Figure %s: Using the Pootle Interface to Edit a Translation String <translate3>`, the translator has clicked on "LifePreserver.ts" then clicked the "Translate" tab.
+In the screen shown in 
+:numref:`Figure %s: Manage Languages <translate3>`, use the "Interface
+Language" drop-down menu to select the language for the Weblate
+interface itself. Then, in the "Translated languages" section, use the
+arrows to add or remove the languages that you wish to translate. Once
+you have made your selections, click the "Save" button.
 
 .. _translate3:
 
 .. figure:: images/translate3.png
 
-In this example, the first string, the phrase "Classic Home-Dir Backup" has not yet been translated. To add the translation, type the translated text into the
-white text field and click the "Submit" button. To translate another text field, click on the hyperlink associated with its name, or use the "Next" and
-"Previous" links to navigate between text fields. Sometimes, a text field exists in another screen and already has a translation.
-:numref:`Figure %s: Selecting a Suggested Translation <translate4>` provides an example where the translator clicked the hyperlink for "Filename" which displays three previous translations.
-The translator then clicked the first suggestion and it was automatically added to the white text field.
+.. note:: If the language you wish to translate is missing from the
+   "Translated languages" menu, send an email to the `translations mailing list <http://lists.pcbsd.org/mailman/listinfo/translations>`_ so it can be added.
+
+Next, click the "Projects" button at the top of the screen to select
+a localization project. In the example shown in
+:numref:`Figure %s: Select a Project <translate4>`,
+the user has selected the "trueos-utils-qt5" project, which represents
+the localization of the TrueOS graphical interface. This screen shows
+the components of that project and the current progress of each
+component's translation. The green bar indicates the percentage that
+has been localized. If a component is not at 100%, it means that its
+untranslated menus will instead appear in English.
 
 .. _translate4:
 
 .. figure:: images/translate4.png
 
-If you need help with a translation or using the Pootle system, you can ask for help on the translations mailing list or in the
+To start translating, click a component name. In the screen shown in
+:numref:`Figure %s: Select a Language to Translate <translate5>`,
+select a language, and click its "Translate" button.
+
+.. _translate5:
+
+.. figure:: images/translate5.png  
+
+In the example shown in
+:numref:`Figure %s: Using the Translation Editor <translate6>`, the
+user has selected to translate the "pc-installgui" component into the 
+Spanish language. The English text is displayed in the "Source" field
+and the translator can type the Spanish translation into  the
+"Translation" field. Use the arrows near the "Strings needing action"
+field to navigate between the strings to translate.
+
+.. _translate6:
+
+.. figure:: images/translate6.png
+
+If you need help with a translation or using the Weblate system, you can ask for help on the translations mailing list or in the
 `translations forum <https://forums.pcbsd.org/forum-40.html>`_. 
 
 .. index:: translations
@@ -130,42 +164,42 @@ Documentation Translation
 -------------------------
 
 The source for the TrueOS® Users Handbook is stored in the
-`PC-BSD® github repository <https://github.com/trueos/pcbsd/tree/master/src-qt5/docs>`_. This means that the documentation and any translations can be built
-with the operating system and updates to this documentation can be automatically installed when the system is updated using :ref:`Update Manager`. This has the
-added advantage of making sure that the installed version of the Handbook always matches the operating system version and that, as new features are added,
-that they are documented and appear as a local copy on the user's system. The local copy is stored in :file:`/usr/local/share/pcbsd/doc/html` and a desktop shortcut
-provides easy access to the documentation.
+`TrueOS® github repository <https://github.com/trueos/trueos-docs/tree/master/trueos-handbook>`_.
+This allows the documentation and its translations to be built with
+the operating system. Documentation updates are automatically pushed
+to the TrueOS® website and, when the system is updated using
+:ref:`Update Manager`, the doc updates are installed to the local copy
+named
+:file:`/usr/local/share/trueos/handbook/trueos.html`. This ensures
+that the installed version of the Handbook always matches the
+operating system and that, as new features are added, they are
+documented and appear as a local copy on the user's system.
 
-At this time, the TrueOS® build server has been configured to automatically build the HTML version of the TrueOS® Users Handbook. Over time, additional
-:file:`Makefiles` will be tested and added to provide the documentation in other formats, such as single HTML, PDF, and EPUB. Instructions for building your own
-HTML or PDF version can be found in this `README.md <https://github.com/trueos/pcbsd/blob/master/src-qt5/docs/README.md>`_.
+The TrueOS® build server provides the HTML version of the TrueOS®
+Users Handbook. Instructions for building your own HTML, PDF, or EPUB
+version can be found in this
+`README.md <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
 
-The documentation source files have been integrated into the Pootle translation system so that the TrueOS® documentation can be translated using a web browser.
-The process is similar to :ref:`Interface Translation` except that you must first select "PC-BSD Handbook" from the "Projects" drop-down menu shown in
-:numref:`Figure %s: Selecting the Handbook Project <translate5>`.
-
-.. _translate5:
-
-.. figure:: images/translate5.png
-
-You can then select the language to translate into from the available languages list. If the language that you want to translate is not listed, send an email to
-the `translations mailing list <http://lists.pcbsd.org/mailman/listinfo/translations>`_ and request that it be added.
+The documentation source files have been integrated into the Weblate
+translation system so that the TrueOS® documentation can be translated
+using a web browser. The process is similar to :ref:`Interface Translation` except that you must first select "PC-BSD Handbook" from the "Projects" drop-down menu shown in
+:numref:`Figure %s: Select a Project <translate4>`.
 
 When translating the documentation, be aware of the following:
 
-* At this time, some formatting tags are still displayed in raw text, as seen in the examples in :numref:`Figure %s: Do Not Remove Formatting Characters <translate6>`
+* At this time, some formatting tags are still displayed in raw text, as seen in the examples in :numref:`Figure %s: Do Not Remove Formatting Characters <translate7>`
   and :numref:`Figure %s: Another Formatting Characters Example <translate7>`.
   **It is IMPORTANT that you do not accidentally remove the formatting as this can break the documentation build for that language.** In the first example, it is OK to
   translate the phrase "Using the Text Installer" but care must be taken to not accidental remove any of the surrounding colons and backticks, or to change the text
   of the "ref" tag. In the second example, the asterisks are used to bold the word "install". It is OK to translate "install", but do not remove the asterisks.
 
-.. _translate6:
-
-.. figure:: images/translate6.png
-
 .. _translate7:
 
 .. figure:: images/translate7.png
+
+.. _translate8:
+
+.. figure:: images/translate8.png
 
 If you would like to receive notifications of documentation changes that affect translations, subscribe to the
 `Translation-notifications <http://lists.pcbsd.org/mailman/listinfo/translations-notifications>`_ mailing list.
