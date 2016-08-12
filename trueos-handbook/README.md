@@ -2,8 +2,6 @@ The TrueOS Users Handbook is generated from ASCII text files, that end in a .rst
 
 ##Requirements:
 
-A system with Perl installed.
-
 At a minimum, the following software needs to be installed as the root/superuser. If this is the first time you have used pkg on the system, it may prompt you to fetch and install it. Say yes to the prompts to do so. Once it is finished, you can then finish installing the needed software.
 
 Instructions are given for both the port and the package as some software may not have a package. Try the pkg command first as it is faster. If the pkg command succeeds, you do not need to run the make command as the software is already installed; however if it fails, use the make command to install the software. If the software is already installed, the pkg command will indicate that the most recent version is already installed. 
@@ -58,7 +56,7 @@ make singlehtml
 To build a local PDF:
 
 ```
-make pdf
+make latexpdf
 ```
 
 To build a local EPUB, run this command:
