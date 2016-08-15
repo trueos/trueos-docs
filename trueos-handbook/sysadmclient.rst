@@ -103,7 +103,7 @@ example, a search for "browser" will display software with "browser"
 in the name as well as applications which provide browser
 functionality, such as Firefox. 
 
-**Filter By:** this drop-down menu lists the available software
+**Browse Categories:** this drop-down menu lists the available software
 categories. If you select a category, it will only display or show
 search results from that category.
 
@@ -265,12 +265,10 @@ has dependencies (banner icon), "alsa-lib" has been locked, and
 If you install or uninstall any software, click the "Pending" tab to
 view the details of the operation. In the example shown in
 :numref:`Figure %s: Viewing the Status of the Operation <appcafe8>`,
-an application is being installed. Eariler install, autoremove,
-remove, and locking operations have also occurred and each has a dated
-entry in the process log. If you highlight an entry and check the
-"View Process Log" box, you can review the log for that operation. In
-this example, the installation is still in progress and the process
-log indicates which dependency packages are being installed.
+this system has had a package install and a package locking operation,
+and each has a dated entry in the process log. If you highlight an
+entry and check the "View Process Log" box, you can review the log for
+that operation.
 
 .. _appcafe8:
 
