@@ -3,7 +3,8 @@
 Using TrueOS®
 **************
 
-This section discusses how to perform common tasks that were not discussed in the :ref:`SysAdm™ Client` section.
+This section discusses how to perform common tasks that were not
+discussed in the :ref:`SysAdm™ Client` section.
 
 .. index:: configuration
 .. _Java and Flash:
@@ -11,11 +12,17 @@ This section discusses how to perform common tasks that were not discussed in th
 Java and Flash
 ==============
 
-IcedTea-Web provides an open source Java browser plugin which automatically works with the FireFox, Chromium, and Opera web browsers without any
-additional configuration. To install this software, search for "icedtea" within :ref:`AppCafe®`. 
+IcedTea-Web provides an open source Java browser plugin which
+automatically works with the FireFox, Chromium, and Opera web browsers
+without any additional configuration. To install this software, search
+for "icedtea" within :ref:`AppCafe®`. 
 
-Version 11 of the Adobe Flash player is also available from :ref:`AppCafe®`. Once installed, flash should "just work" when browsing the web. If Adobe Flash does not seem to be working, 
-running the following command as your regular user account should fix the problem::
+Version 11 of the Adobe Flash player is available for installation
+through :ref:`AppCafe®`. To install flash as a browser plugin search
+for and install both the "flashplugin" and "nspluginwrapper" packages.
+Once installed, flash should "just work" when browsing the web. If
+Adobe Flash does not seem to be working, running the following command
+as your regular user account should fix the problem::
 
  flashpluginctl on
 
@@ -41,46 +48,22 @@ The options available in each tab and when to use them are described at the Adob
 * `Advanced <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff0.html>`_ controls how Flash Player handles browsing data, updates, trusted locations,
   and protected content.
 
-.. index:: configuration
-.. _Installing Custom Fonts:
+.. index:: fonts
+.. _Fonts:
 
-Installing Custom Fonts 
-=======================
+Fonts 
+=====
 
-TrueOS® includes `Google Noto <http://www.google.com/get/noto/>`_ which provide multi-lingual Sans and Serif fonts.
+TrueOS® installs with `Google Noto <http://www.google.com/get/noto/>`_
+which provides multi-lingual Sans and Serif fonts. Many other fonts
+are available from :ref:`AppCafe®`. Any font installed using AppCafe®
+should not require any additional configuration to "just work". 
 
-If you have a collection of fonts that you have downloaded or purchased, you can configure your TrueOS® system to also use these fonts. Which utility you use
-depends upon which window manager you have logged into.
-
-.. note:: many other fonts are available from :ref:`AppCafe®`. Check the "Search all available software" box in the "App Search" tab to search for fonts. Any font installed using
-   AppCafe® should not require any additional configuration to "just work". 
-
-To install custom fonts within KDE, go to :menuselection:`System Settings --> Font Management`. In :numref:`Figure %s: Using KDE's Font Installer to Install Custom Fonts <font1>`, "All
-Fonts" is currently selected under the "Group" column, showing all of the fonts installed on this system.
-
-.. _font1:
-
-.. figure:: images/font1.png
-
-To install your fonts, highlight "Personal Fonts" under the "Group" column, then click the "+Add" button. This will allow you to browse to the font you wish
-to add. You can add multiple fonts in the same directory by holding down the :kbd:`Ctrl` key while making your selection. Click the "Open" button, which will
-install the font for you. When it is finished, a pop-up message will indicate that you will need to restart any open applications for the font change to take
-affect. Your newly installed font(s) should now show up in the "Personal Fonts" section in the "Group" column and be available to the applications you use.
-
-To install custom fonts within GNOME, go to :menuselection:`Activities --> Files`. Navigate to the location of the font that you would like to install and
-either double-click the font name or select "Font Viewer" from the icon's right-click menu. This will open the font in Font Viewer, allowing you to view it.
-If you like the font, click the "Install Font" button to make it available to your applications. In the example shown in
-:numref:`Figure %s: Using Files to Install a Custom Font <font2>`, the user is installing the BlackFlag font.
-
-.. _font2:
-
-.. figure:: images/font2.png
-
-To install custom fonts within XFCE, use :menuselection:`Applications --> System --> Thunar File Manager`. Once you browse to the location of the font and
-double- or right-click it, you will see the same Font Viewer used by GNOME.
-
-If you prefer to install fonts from the command line, become the superuser and copy the downloaded font to the :file:`/usr/local/share/fonts/` directory.
-Then, refresh the fonts cache::
+If you have a collection of fonts that you have downloaded or
+purchased, you can configure your TrueOS® system to also use those
+fonts. Become the superuser and copy the downloaded font to the
+:file:`/usr/local/share/fonts/` directory. Then, run this command to
+refresh the fonts cache::
 
  fc-cache -f -v /usr/local/share/fonts/name_of_font
  
@@ -90,27 +73,34 @@ Then, refresh the fonts cache::
 Sound Mixer Tray
 =================
 
-TrueOS® includes a graphical utility for managing the sound card's mixer settings. Desktops that include a system tray should have a speaker icon in the system tray
-which can be used to access this utility. If this icon does not appear in the system tray,
-type :command:`pc-mixer &` to add it. Alternately, to open this application without adding it to the system tray, type :command:`pc-mixer -notray`.
+TrueOS® includes a graphical utility for managing the sound card's
+mixer settings. The utility can be accessed using the speaker icon in
+the system tray.
 
-:numref:`Figure %s: Mixer Icon <sound1>` shows an example of right-clicking the icon in the system tray on a system with multiple audio outputs. If the system only has one audio output,
-the "Outputs" menu will not be displayed. To change the default output, click its entry in the "Output" menu.
+:numref:`Figure %s: Mixer Icon <sound1>` shows an example of
+clicking the mixer icon in the system tray on a system with
+multiple audio outputs. If the system only has one audio output, the
+"Outputs" submenu will not be displayed. To change the default audio
+output, click its entry in the "Output" menu.
 
 .. _sound1:
 
 .. figure:: images/sound1.png
 
-:numref:`Figure %s: Mixer Controls <sound2>` shows the mixer application which can be opened by either clicking the "Mixer" button shown in :numref:`Figure %s: Mixer Icon <sound1>` or by
-typing :command:`pc-mixer -notray`.
+:numref:`Figure %s: Mixer Controls <sound2>` shows the menu which
+opens when you instead click the "Mixer" button shown in
+:numref:`Figure %s: Mixer Icon <sound1>`.
 
 .. _sound2:
 
 .. figure:: images/sound2.png
 
-The "Mixer Controls" screen provides sliders to modify the left and right channels that control volume, pcm (the sound driver), the speaker, the microphone,
-the recording level, and the sound provided by the monitor. Each control can be muted/unmuted individually by clicking its "Mute" or"Unmute" button, depending
-upon its current mute state.
+The "Mixer Controls" screen provides sliders to modify the left and
+right channels that control volume, pcm (the sound driver), the
+speaker, the microphone, the recording level, the input level, and the
+output level. Each control can be muted/unmuted individually by
+clicking its "Mute" or"Unmute" button, depending upon its current mute
+state.
 
 :numref:`Figure %s: System Sound Configuration <sound3>` shows the "System Configuration" tab.
 
@@ -120,16 +110,28 @@ upon its current mute state.
 
 This tab contains the following options: 
 
-* **Recording Device:** use the drop-down menu to select the device to use for recording sound.
+* **Recording Device:** use the drop-down menu to select the device to
+  use for recording sound.
 
-* **Default Tray Device:** use the drop-down menu to set the default slider to display in the system tray.
+* **Default Tray Device:** use the drop-down menu to set the default
+  slider to display in the system tray.
 
-* **Audio Output Channel:** use the drop-down menu to change the sound device and use the "Test" button to determine that sound is working. This is sometimes
-  necessary when you change audio devices. For example, if you connect a USB headset, TrueOS® will detect the new device and will automatically change the
-  audio device to the USB input. However, if you insert a headset into an audio jack, the system may not detect the new input so you will have to manually
+* **Audio Output Channel:** use the drop-down menu to change the sound
+  device and use the "Test" button to determine that sound is working.
+  This is sometimes necessary when you change audio devices. For
+  example, if you connect a USB headset, TrueOS® will detect the new
+  device and will automatically change the audio device to the USB
+  input. However, if you insert a headset into an audio jack, the
+  system may not detect the new input so you will have to manually
   change the default device.
 
-The "File" menu can be used to quit this mixer screen or to close both this screen and remove the icon from the system tray.
+The "File" menu can be used to quit this mixer screen or to close both
+this screen and remove the icon from the system tray.
+
+.. note:: To re-add the mixer icon after removing it, type
+   :command:`pc-mixer &`. Alternately, to open this application
+   without adding it back to the system tray, type
+   :command:`pc-mixer -notray`.
 
 The "Configuration" menu provides options for accessing the "PulseAudio Mixer" and "PulseAudio Settings" utilities as well as for restarting PulseAudio.
 TrueOS® provides full `PulseAudio <https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ support and these utilities can be used to configure discoverable
