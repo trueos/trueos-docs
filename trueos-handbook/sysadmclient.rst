@@ -336,21 +336,29 @@ An example of the "Updates" tab is shown in
 
 .. figure:: images/update1.png
 
-In this example, the system is up-to-date. The "Latest Check" field
-indicates the date and time the system last checked for updates. To
-manually check for updates, click the "check for Updates" button.
+In this example, updates are available for installed packages. To
+update the software, click the box next to "Package Updates" which
+will activate the "Start Updates" button. Once you click that button,
+it will change to "Stop Updates" so that you can stop the update, if
+needed. As the packages are updated, the progress of the updates will
+be displayed.
 
+.. warning:: Update Manager will update **all** installed software. If
+   you have placed a lock on a package using :command:`pkg` or
+   AppCafe®, Update Manager will fail and will generate a message
+   indicating that the failure is due to a locked package. If you need
+   to lock certain applications against being updated, you will need
+   to instead manually update software as needed using :command:`pkg`.
 
-a security update is available. Click the "Start Updates" button to manually start the update. When prompted, reboot so that the system can
-boot into the newly patched operating system.
+The "Latest Check" field indicates the date and time the system last
+checked for updates. To manually check for updates, click the "Check
+for Updates" button.
 
-When package updates are available a "View Package Updates" box can be clicked to see which packages will be upgraded.
-
-.. warning:: Updates will update **all** installed software. If you
-   have placed a lock on a package using :command:`pkg` or AppCafe®,
-   Update Manager will fail and will generate a message indicating that the failure is due to a locked package. If you prefer to lock certain applications
-   against being updated, select "Security" or "Nothing" in the "Configure Automatic Updates" tab of Update Manager and manually update software as needed using
-   :command:`pkg`.
+If a security update is available, it will be listed as such and can 
+be applied by checking its box and clicking the "Start Updates"
+button. If the update requires a reboot, Update Manager will provide a
+message after installation so that you can save your work and manually
+reboot into the newly patched operating system.
    
 The "Branches" tab of Update Manager provides a listing of available branches. In the example shown in
   :numref:`Figure %s: Switching Branches <update3>`, this system is currently running the 10.2 branch and the upcoming 11.0 branch is available for selection.
@@ -375,7 +383,7 @@ This tab contains the following configurable options:
   the oldest automatically created boot environment. However, it will
   not delete any boot environments you create manually using
   :ref:`Boot Environment Manager`. The default number of boot
-  environments is *3* and the allowable range is from *1* to *10*. 
+  environments is *5* and the allowable range is from *1* to *10*. 
 
 * **Automatically perform updates:** when checked, the automatic
   updater will automatically keep your system and packages up-to-date.
