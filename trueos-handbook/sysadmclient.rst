@@ -336,12 +336,13 @@ An example of the "Updates" tab is shown in
 
 .. figure:: images/update1.png
 
-In this example, updates are available for installed packages. To
-update the software, click the box next to "Package Updates" which
+In this example, updates are available for installed packages. If a
+security update is available, it will be listed as such. To apply the
+available updates, click the box next to each entry to update, which
 will activate the "Start Updates" button. Once you click that button,
 it will change to "Stop Updates" so that you can stop the update, if
-needed. As the packages are updated, the progress of the updates will
-be displayed.
+needed. As the selected updates are applied, the progress of the
+updates will be displayed.
 
 .. warning:: Update Manager will update **all** installed software. If
    you have placed a lock on a package using :command:`pkg` or
@@ -350,16 +351,15 @@ be displayed.
    to lock certain applications against being updated, you will need
    to instead manually update software as needed using :command:`pkg`.
 
+Once the update is complete, Update Manager will provide a message
+indicating that a reboot is required. Save your work and, when ready,
+manually reboot into the new boot environment containing the applied
+updates.
+   
 The "Latest Check" field indicates the date and time the system last
 checked for updates. To manually check for updates, click the "Check
 for Updates" button.
 
-If a security update is available, it will be listed as such and can 
-be applied by checking its box and clicking the "Start Updates"
-button. If the update requires a reboot, Update Manager will provide a
-message after installation so that you can save your work and manually
-reboot into the newly patched operating system.
-   
 The "Branches" tab of Update Manager provides a listing of available branches. In the example shown in
   :numref:`Figure %s: Switching Branches <update3>`, this system is currently running the 10.2 branch and the upcoming 11.0 branch is available for selection.
 
