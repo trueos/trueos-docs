@@ -599,21 +599,38 @@ Life Preserver.
 Snapshots Tab
 -------------
 
-:numref:`Figure %s: Snapshot Tab <lpreserver1>` shows the initial Life Preserver screen on a system that has not yet been configured. It is opened to the "Snapshots" tab and the system has
-a "ZFS Pool" named "tank". This screen will display any manually created snapshots and contains buttons to do the following:
+:numref:`Figure %s: Snapshot Tab <lpreserver1>` shows the "Snapshots"
+tab on a system that has not yet been configured. This system has a
+"ZFS Pool" named "tank". 
 
 .. _lpreserver1:
 
 .. figure:: images/lpreserver1.png
 
-**Remove:** used to delete the previously created and highlighted snapshot. This is a permanent change that can not be reversed. In other words, the versions of files at that point in time
-will be lost.
+This screen will display any createdsnapshots and provides buttons to:
 
-**Create:** click this button to manually create a snapshot now. For example, you can create a snapshot before making changes to a file, so that you can preserve a copy of the previous
-version of the file. Or, you can create a snapshot as you make modifications to the system configuration. When creating a snapshot, a pop-up message will prompt you to input a name for
-the snapshot, allowing you to choose a name that is useful in helping you remember why you took the snapshot.
+**Create:** used to create a manual snapshot of the specified pool
+now. For example, you could create a snapshot before making changes to
+an important file, so that you can preserve a copy of the previous
+version of the file. Or, you can create a snapshot as you make
+modifications to the system configuration. When creating a snapshot, a
+pop-up message will prompt you to input a name for the snapshot,
+allowing you to choose a name that is useful in helping you remember
+why you took the snapshot. An entry will be added to this screen for
+the snapshot where the "Name" will be the name you input and the
+"Comment" will inidcate the date and time the snapshot was created.
 
-**Revert:**
+**Remove:** used to delete a highlighted snapshot. 
+**This is a permanent change that can not be reversed.** In other
+words, the versions of files at that point in time the snapshot was
+created will be lost.
+
+**Revert:** if you highlight a snapshot entry, this button and the
+drop-down menu next to it will activate. You can use the drop-down
+menu to select which dataset you would like to revert back to.
+**Be aware that a revert will overwrite the current contents of the selected pool or dataset to the point in time the snapshot was created.**
+This means that files changes that occurred after the snapshot was
+taken will be lost.
 
 .. index:: replication, life preserver
 .. _Replication Tab:
@@ -621,29 +638,45 @@ the snapshot, allowing you to choose a name that is useful in helping you rememb
 Replication Tab
 ---------------
 
-Life Preserver can be configured to replicate snapshots to another system over an encrypted SSH connection, though the backup itself is stored in an encrypted format. This ensures that you
-have a backup copy of your snapshots on another system. 
+Life Preserver can be configured to replicate snapshots to another
+system over an encrypted SSH connection, though the backup itself is
+stored in an unencrypted format. This ensures that you have a backup
+copy of your snapshots on another system. 
 
-In order to configure replication, the remote system to hold a copy of the snapshots must first meet the following requirements:
+In order to configure replication, the remote system to hold a copy of
+the snapshots must first meet the following requirements:
 
-* The backup server **must be formatted with the latest version of ZFS,** also known as ZFS feature flags or ZFSv5000. Operating systems that support this
-  version of ZFS include TrueOS®, FreeBSD 9.2 or higher, and FreeNAS 9.1.x or higher.
+* The backup server
+  **must be formatted with the latest version of ZFS,** also known as
+  ZFS feature flags or ZFSv5000. Operating systems that support this
+  version of ZFS include TrueOS®, FreeBSD or PC-BSD® 9.2 or higher,
+  and FreeNAS 9.1.x or higher.
 
-* That system must have SSH installed and the SSH service must be running. If the backup server is running TrueOS®, SSH is already installed and you can start
-  SSH using :ref:`Task Manager`. If that system is running FreeNAS® or FreeBSD, SSH is already installed, but you will need to start SSH.
+* That system must have SSH installed and the SSH service must be
+  running. If the backup server is running TrueOS®, PC-BSD®, FreeNAS®
+  or FreeBSD, SSH is already installed, but you will need to start the
+  SSH service.
 
-* If the backup server is running TrueOS®, you will need to open TCP port 22 (SSH) using :ref:`Firewall Manager`. If the server is running FreeBSD and a
-  firewall has been configured, add a rule to open this port in the firewall ruleset. FreeNAS® does not run a firewall by default. Also, if there is a
-  network firewall between the TrueOS® system and the backup system, make sure it has a rule to allow SSH.
+* If the backup server is running TrueOS® or PC-BSD®, you will need to
+  open TCP port 22 (SSH) using :ref:`Firewall Manager`. If the server
+  is running FreeBSD and a firewall has been configured, add a rule to
+  open this port in the firewall ruleset. FreeNAS® does not run a
+  firewall by default. Also, if there is a network firewall between
+  the TrueOS® system and the backup system, make sure it has a rule to
+  allow SSH.
 
-:numref:`Figure %s: Replication Tab <lpreserver2>` shows the initial "Replication" tab on a system that has not yet been configured for replication. This screen is used to create, view,
-remove, and configure the replication schedule.  
+:numref:`Figure %s: Replication Tab <lpreserver2>` shows the initial
+"Replication" tab on a system that has not yet been configured for
+replication. This screen is used to create, view, remove, and
+configure the replication schedule.  
 
 .. _lpreserver2:
 
 .. figure:: images/lpreserver2.png
 
-To schedule the replication, click the "+" button to display the "Setup Replication" screen shown in :numref:`Figure %s: Scheduling a Replication <lpreserver3>`.
+To schedule the replication, click the "+" button to display the
+"Setup Replication" screen shown in
+:numref:`Figure %s: Scheduling a Replication <lpreserver3>`.
 
 .. _lpreserver3:
 
@@ -651,34 +684,51 @@ To schedule the replication, click the "+" button to display the "Setup Replicat
 
 Input the following information:
 
-* **Host IP:** the IP address of the remote system to store the replicated snapshots.
+* **Host IP:** the IP address of the remote system to store the
+  replicated snapshots.
 
-* **SSH Port:** the port number, if the remote system is running SSH on a port other than the default of 22.
+* **SSH Port:** the port number, if the remote system is running SSH
+  on a port other than the default of 22.
 
-* **Dataset:** the name of the ZFS pool and optional dataset on the remote system. For example, "remotetank" will save the snapshots to a ZFS pool of that name and "remotetank/mybackups"
-  will save the snapshots to an existing dataset named "mybackups" on the pool named "remotetank".
+* **Dataset:** the name of the ZFS pool and optional dataset on the
+  remote system. For example, "remotetank" will save the snapshots to
+  a ZFS pool of that name and "remotetank/mybackups" will save the
+  snapshots to an existing dataset named "mybackups" on the pool named
+  "remotetank".
 
-* **Frequency:** use the drop-down menu to select how often to initiate the replication. Available choices are "Sync with snapshot" (at the same time a snapshot is created), "Daily" (when
-  selected, displays a time drop-down menu so you can select the time of day), "Hourly", every "30 minutes", every "10 minutes", or "Manual Only" (only occurs when you click the "Start"
-  button) in this screen.
+* **Frequency:** use the drop-down menu to select how often to
+  initiate the replication. Available choices are "Sync with snapshot"
+  (at the same time a snapshot is created), "Daily" (when selected,
+  displays a time drop-down menu so you can select the time of day),
+  "Hourly", every "30 minutes", every "10 minutes", or "Manual Only"
+  (only occurs when you click the "Start" button) in this screen.
 
-* **Username:** the username must already exist on the remote system, have write access to the specified "Dataset", and have permission to SSH into that system.
+* **Username:** the username must already exist on the remote system,
+  have write access to the specified "Dataset", and have permission to
+  SSH into that system.
 
 * **Password:** the password associated with the "Username".
 
-* **Local DS:** use the drop-down menu to select the pool or dataset to replicate to the remote system.
+* **Local DS:** use the drop-down menu to select the pool or dataset
+  to replicate to the remote system.
 
 The buttons at the top of the "Setup Replication" screen are used to:
 
-**+ icon** add a replication schedule. Multiple schedules are supported, meaning that you can replicate to multiple systems or replicate different "Local DS" datasets at different times.
+**+ icon** add a replication schedule. Multiple schedules are
+supported, meaning that you can replicate to multiple systems or
+replicate different "Local DS" datasets at different times.
 
-**- icon** remove an already created, and highlighted, replication schedule.
+**- icon** remove an already created, and highlighted, replication
+schedule.
 
 **gear icon:** modify the schedule for the highlighted replication.
 
-**Start:** manually starts a replication to the system specified in the highlighted replication.
+**Start:** manually starts a replication to the system specified in
+the highlighted replication.
 
-**Initialize:** deletes the existing replicated snapshots on the remote system and starts a new replication. This is useful if a replication gets stuck and will not complete.
+**Initialize:** deletes the existing replicated snapshots on the
+remote system and starts a new replication. This is useful if a
+replication gets stuck and will not complete.
 
 .. index:: configuration, life preserver
 .. _Schedules Tab:
