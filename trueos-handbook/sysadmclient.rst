@@ -536,6 +536,20 @@ continue booting into the selected boot environment.
 Task Manager
 ============
 
+Task Manager provides a graphical view of memory use, per-CPU use and
+a listing of currently running applications. An example is shown in 
+:numref:`Figure %s: Task Manager <task1>`.
+
+.. _task1:
+
+.. figure:: images/task1.png  
+
+The "Running Programs: section provides a graphical front-end to
+`top(1) <https://www.freebsd.org/cgi/man.cgi?query=top>`_.
+
+The "Kill Selected Process" button can be used to terminate the
+selected process.
+
 .. index:: sysadm, life preserver
 .. _Life Preserver:
 
