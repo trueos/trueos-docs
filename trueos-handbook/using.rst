@@ -427,56 +427,72 @@ Table 11.5c summarizes some of the available utilities.
 Windows Emulation
 =================
 
-`Wine <https://wiki.winehq.org/Main_Page>`_ is an application that allows you to create a Windows environment for installing Windows software. This can be useful if your
-favorite Windows game or productivity application has not been ported to Linux or BSD.
+`Wine <https://wiki.winehq.org/Main_Page>`_ is an application that
+allows you to create a Windows environment for installing Windows
+software. This can be useful if your favorite Windows game or
+productivity application has not been ported to Linux or BSD.
 
-Wine is not guaranteed to work with every Windows application. If you are unsure if the application that you require is supported, search for it in the
-"Browse Apps" section of the `Wine application database <https://appdb.winehq.org/>`_. The  `Wine wiki <http://wiki.winehq.org/>`_ contains many resources to
-get you started and to refer to if you encounter problems with your Windows application.
+Wine is not guaranteed to work with every Windows application. If you
+are unsure if the application that you require is supported, search
+for it in the "Browse Apps" section of the
+`Wine application database <https://appdb.winehq.org/>`_. The
+`Wine wiki <http://wiki.winehq.org/>`_ contains many resources to get
+you started and to refer to if you encounter problems with your
+Windows application.
 
-Wine can be installed during installation or from :ref:`AppCafe®`. Once installed, it can be started by clicking the entry for "Wine Configuration" from the
-desktop's application menu or by typing :command:`winecfg` at the command line. The initial Wine configuration menu shown in :numref:`Figure %s: Wine Configuration Menu <wine1>`.
+Wine can be installed using :ref:`AppCafe®`. Once installed, it can
+be started by typing :command:`winecfg` at the command line. The first
+time you run this utility, it may prompt you to install the packages
+it needs. If prompted, click the "Install" button in the pop-up menu.
+
+The initial Wine configuration menu is shown in
+:numref:`Figure %s: Wine Configuration Menu <wine1>`.
 
 .. _wine1:
 
-.. figure:: images/wine1.jpg
+.. figure:: images/wine1.png
 
-Click the "Add application" button to browse to the application's installer file. By default, the contents of your hard drive will be listed under "drive_c".
-If the installer is on a CD/DVD, use the drop-down menu to browse to your :menuselection:`home directory --> *.wine --> dosdevices` folder. The contents of
-the CD/DVD should be listed under *d:*. If they are not, the most likely reason is that your CD/DVD was not automatically mounted by the desktop. To mount the
-media, type the following as the superuser::
+Click the "Add application" button to browse to the application's
+installer file. By default, the contents of your hard drive will be
+listed under "drive_c". If the installer is on a CD/DVD, use the
+drop-down menu to browse to your
+:menuselection:`home directory --> *.wine --> dosdevices` folder. The
+contents of the CD/DVD should be listed under *d:*. If they are not,
+the most likely reason is that your CD/DVD was not automatically
+mounted by the desktop. To mount the media, type the following as the
+superuser::
 
  mount -t cd9660 /dev/cd0 /cdrom
 
-You should hear the media spin and be able to select the installer file. Once selected, press "Apply" then "OK" to exit the configuration utility.
+You should hear the media spin and be able to select the installer
+file. Once selected, press "Apply" then "OK" to exit the configuration
+utility.
 
-To install the application, click the Winefile desktop icon or type :command:`winefile` to see the screen shown in :numref:`Figure %s: Installing the Application Using winefile <wine2>`.
+To install the application, type :command:`winefile` to see the screen
+shown in
+:numref:`Figure %s: Installing the Application Using winefile <wine2>`.
 
 .. _wine2: 
 
-.. figure:: images/wine2.jpg
+.. figure:: images/wine2.png
 
-Click the button representing the drive containing the installer and double-click on the installation file (e.g. :file:`setup.exe`).
-The installer should launch and you can proceed to install the application as you would on a Windows system.
+Click the button representing the drive containing the installer and
+double-click on the installation file (e.g. :file:`setup.exe`). The
+installer should launch and you can proceed to install the application
+as you would on a Windows system.
 
-.. note:: if you had to manually mount the CD/DVD, you will need to unmount it before it will eject. As the superuser, use the command :command:`umount /mnt`.
+.. note:: if you had to manually mount the CD/DVD, you will need to
+   unmount it before it will eject. As the superuser, use the command
+   :command:`umount /mnt`.
 
-Once the installation is complete, browse to the application's location. :numref:`Figure %s: Running the Installed Application <wine3>` shows an example of running Internet Explorer within
-:command:`winefile`.
+Once the installation is complete, browse to the application's
+location.
+:numref:`Figure %s: Running the Installed Application <wine3>` shows
+an example of running Internet Explorer within :command:`winefile`.
 
 .. _wine3:
 
-.. figure:: images/wine3.jpg
-
-.. index:: games
-.. _Running Steam:
-
-Running Steam
--------------
-
-Wine can be configured to install and run `Steam games <http://store.steampowered.com/about/>`_. Video instructions can be found
-at `Steam on PC-BSD - How to Get Wine Running 3D Games <https://www.youtube.com/watch?v=B04EuZ9hpAI>`_ and at
-`Steam on PCBSD 2 - Using Wine as a Streaming Client <http://blog.pcbsd.org/2014/12/steam-on-pcbsd-2-using-wine-as-a-streaming-client/>`_.
+.. figure:: images/wine3.png
 
 .. index:: security
 .. _Security:
@@ -484,55 +500,80 @@ at `Steam on PC-BSD - How to Get Wine Running 3D Games <https://www.youtube.com/
 Security
 ========
 
-Your TrueOS® system is secure by default. This section provides an overview of the built-in security features and additional resources should you like to
-learn more about increasing the security of your system beyond its current level.
+Your TrueOS® system is secure by default. This section provides an
+overview of the built-in security features and additional resources
+should you like to learn more about increasing the security of your
+system beyond its current level.
 
 The security features built into TrueOS® include: 
 
-* **Naturally immune to viruses and other malware:** most viruses are written to exploit Windows systems and do not understand the binaries or paths found on
-  a TrueOS® system. Antivirus software is still available in the Security section of :ref:`AppCafe®` as this can be useful if you send or forward email
-  attachments to users running other operating systems.
+* **Naturally immune to viruses and other malware:** most viruses are
+  written to exploit Windows systems and do not understand the binaries
+  or paths found on a TrueOS® system. Antivirus software is still
+  available in the Security section of :ref:`AppCafe®` as this can be
+  useful if you send or forward email attachments to users running
+  other operating systems.
 
-* **Potential for serious damage is limited:** file and directory ownership and permissions along with separate user and group functions mean that as an
-  ordinary user any program executed will only be granted the abilities and access of that user. A user that is not a member of the *wheel* group can not
-  switch to administrative access and can not enter or list the contents of a directory that has not been set for universal access.
+* **Potential for serious damage is limited:** file and directory
+  ownership and permissions along with separate user and group
+  functions mean that as an ordinary user any program executed will
+  only be granted the abilities and access of that user. A user that
+  is not a member of the *wheel* group can not switch to
+  administrative access and can not enter or list the contents of a
+  directory that has not been set for universal access.
 
-* **Built-in firewall:** the default firewall ruleset allows you to access the Internet and the shares available on your network but does not allow
-  any inbound connections to your computer. In addition, `Fail2ban <http://www.fail2ban.org/wiki/index.php/Main_Page>`_ is installed. This service can be
-  configured to identify possible break-in attempts and to respond with an action such as creating a firewall rule to ban the intruder. Instructions for
-  configuring fail2ban can be found on the `fail2ban wiki <http://www.fail2ban.org/wiki/index.php/MANUAL_0_8#Usage>`_. 
+* **Built-in firewall:** the default firewall ruleset allows you to
+  access the Internet and the shares available on your network but
+  does not allow any inbound connections to your computer.
 
-* **Very few services are enabled by default:** you can easily view which services are started at boot time by reading through
-  :file:`/etc/rc.conf`. You can disable the services that you do not use by commenting the line for that service
-  with a *#* in :file:`/etc/rc.conf`.
+* **Very few services are enabled by default:** you can view which
+  services are started at boot time by reading through
+  :file:`/etc/rc.conf.trueos`.
 
-* **SSH is disabled by default:** and can only be enabled by the superuser. This setting prevents bots and other users from trying to access your system. If
-  you do need to use SSH, add the line *sshd_enable=YES* to :file:`/etc/rc.conf`. You can then start the service by typing
-  :command:`service sshd start`. You will need to add a firewall rule using :ref:`Firewall Manager` to allow SSH connections over TCP port 22.
+* **SSH is disabled by default:** and can only be enabled by the
+  superuser. This setting prevents bots and other users from trying to
+  access your system. If you do need to use SSH, add the line
+  *sshd_enable=YES* to :file:`/etc/rc.conf`. You can then start the
+  service by typing :command:`service sshd start`. You will also need
+  to add a firewall rule using :ref:`Firewall Manager` to allow SSH
+  connections over TCP port 22.
 
-* **SSH root logins are disabled by default:** if you enable SSH, you must login as a regular user and use :command:`su` or :command:`sudo` when you need
-  to perform administrative actions. You should not change this default as this prevents an unwanted user from having complete access to your system.
+* **SSH root logins are disabled by default:** if you enable SSH, you
+  must login as a regular user and use :command:`su` or
+  :command:`sudo` when you need to perform administrative actions. You
+  should not change this default as this prevents an unwanted user
+  from having complete access to your system.
 
-* **sudo is installed:** and configured to allow users in the *wheel* group permission to run an administrative command after typing their password. By
-  default, the first user you create during installation is added to the *wheel* group. You can use :ref:`User Manager` to add other users to this group. You
-  can change the default :command:`sudo` configuration using the :command:`visudo` command as the superuser.
+* **sudo is installed:** and configured to allow users in the *wheel*
+  group permission to run an administrative command after typing their
+  password. By default, the first user you create during installation
+  is added to the *wheel* group. You can use :ref:`User Manager` to
+  add other users to this group. You can change the default
+  :command:`sudo` configuration using the :command:`visudo` command as
+  the superuser.
 
-* :wikipedia:`AES instruction set` (AESNI) support is loaded by default for the Intel Core i5/i7 processors that support this
+* :wikipedia:`AES instruction set` (AESNI) support is loaded by
+  default for the Intel Core i5/i7 processors that support this
   encryption set. This support speeds up AES encryption and decryption.
 
-* **Automatic notification of security advisories:** :ref:`Update Manager` will automatically notify you if an update is available as the result of a
-  `security advisory <http://www.freebsd.org/security/advisories.html>`_ that affects TrueOS®. This allows you to keep your operating system fully patched
-  with just the click of a mouse.
+* **Automatic notification of security advisories:**
+  :ref:`Update Manager` will automatically notify you if an update is
+  available as the result of a
+  `security advisory <http://www.freebsd.org/security/advisories.html>`_ 
+  that affects TrueOS®. This allows you to keep your operating system
+  fully patched with just the click of a mouse.
 
-* TrueOS® packages are built with `LibreSSL <http://www.libressl.org/>`_ which has fewer vulnerabilities than OpenSSL.
+* The TrueOS® operating system and its available software packages are
+  built with `LibreSSL <http://www.libressl.org/>`_ which has fewer
+  vulnerabilities than OpenSSL.
 
-* :ref:`PersonaCrypt` allows a user to use a removable, encrypted device as their home directory.
+* :ref:`PersonaCrypt` allows a user to use a removable, encrypted
+  device as their home directory.
 
-* Logging into a stealth session creates an encrypted zvol as a temporary home directory for that login session.
-  When the user logs out of a stealth session, the zvol is destroyed, along with the contents of the temporary home directory. 
-
-If you would like to learn more about security on FreeBSD/TrueOS® systems, :command:`man security` is a good place to start. These resources provide more
-information about security on FreeBSD-based operating systems: 
+If you would like to learn more about security on FreeBSD and TrueOS®
+systems, :command:`man security` is a good place to start. These
+resources provide more information about security on FreeBSD-based
+operating systems: 
 
 * `FreeBSD Security Information <http://www.freebsd.org/security/>`_
 
