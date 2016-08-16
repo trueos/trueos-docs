@@ -295,43 +295,50 @@ You can now search for and watch media. To exit Plex, click the "<" then "Quit".
 Files and File Sharing
 ======================
 
-Depending upon which desktops you have installed, different graphical file manager utilities may already be installed for you. You do not need to be
-logged into a specific window manager to use an installed file manager. For example, if KDE is installed, you can run its file manager from any window manager
-by typing :command:`dolphin`. KDE, GNOME, LXDE, and XFCE install their own file managers while most of the other desktops assume that you will install your
-favorite file manager. Table 9.4a summarizes the available file managers and indicates which desktop they are installed with. Some file managers can be
-installed independent of a desktop using :ref:`AppCafe®`. Once a file manager is installed, type its name if you wish to run it from another desktop.
+Several file managers are available for installation using
+:ref:`AppCafe®`. Table 11.5a provides an overview of several popular
+file managers. To launch an installed file manager, type its name as
+it appears in the "Application" column. To install the file manager,
+use :ref:`AppCafe®` to install the package name listed in the
+"Install" column. To research a file manager's capabilities, start
+with the URL listed in its "Screenshot" column.
 
-**Table 9.4a: Available File Managers**
+**Table 11.5a: Available File Managers**
 
-+---------------+------------------+--------------------------------------------------------------------+
-| File Manager  | Desktop/AppCafe  | Screenshots                                                        |
-+===============+==================+====================================================================+
-| dolphin       | KDE              | `<https://userbase.kde.org/Dolphin>`_                              |
-+---------------+------------------+--------------------------------------------------------------------+
-| emelfm2       | AppCafe          | `<http://emelfm2.net/wiki/ScreenShots>`_                           |
-+---------------+------------------+--------------------------------------------------------------------+
-| caja          | MATE             | `<http://mate-desktop.org/gallery/1.6/>`_                          |
-+---------------+------------------+--------------------------------------------------------------------+
-| mucommander   | AppCafe          | `<http://www.mucommander.com/screenshots.php>`_                    |
-+---------------+------------------+--------------------------------------------------------------------+
-| nautilus      | GNOME, AppCafe   | `<https://projects.gnome.org/nautilus/screenshots.html>`_          |
-+---------------+------------------+--------------------------------------------------------------------+
-| pcmanfm       | LXDE, AppCafe    | `<http://lxde.org/easy_fast_file_management_pcmanfm>`_             |
-+---------------+------------------+--------------------------------------------------------------------+
-| thunar        | XFCE, AppCafe    | `<http://docs.xfce.org/xfce/thunar/start>`_                        |
-+---------------+------------------+--------------------------------------------------------------------+
-| xfe           | AppCafe          | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_        |
-+---------------+------------------+--------------------------------------------------------------------+
++-------------------+----------------------+-------------------------------------------------------------+
+| **Application**   | **Install**          | **Screenshots**                                             |
++===================+======================+=============================================================+
+| dolphin           | kde-baseapps         | `<https://userbase.kde.org/Dolphin>`_                       |
++-------------------+----------------------+-------------------------------------------------------------+
+| emelfm2           | emelfm2              | `<http://emelfm2.net/wiki/ScreenShots>`_                    |
++-------------------+----------------------+-------------------------------------------------------------+
+| caja              | caja                 | `<http://mate-desktop.org/gallery/1.6/>`_                   |
++-------------------+----------------------+-------------------------------------------------------------+
+| mucommander       | mucommander          | `<http://www.mucommander.com/screenshots.php>`_             |
++-------------------+----------------------+-------------------------------------------------------------+
+| nautilus          | nautilus             | `<https://projects.gnome.org/nautilus/screenshots.html>`_   |
++-------------------+----------------------+-------------------------------------------------------------+
+| pcmanfm           | pcmanfm              | `<http://lxde.org/easy_fast_file_management_pcmanfm>`_      |
++-------------------+----------------------+-------------------------------------------------------------+
+| thunar            | thunar               | `<http://docs.xfce.org/xfce/thunar/start>`_                 |
++-------------------+----------------------+-------------------------------------------------------------+
+| xfe               | xfe                  | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_ |
++-------------------+-----------------------+------------------------------------------------------------+
 
-When working with files on your TrueOS® system, save your own files to your home directory. Since most of the files outside of your home directory are used
-by the operating system and applications, you should not delete or modify any files outside of your home directory, unless you know what you are doing.
+When working with files on your TrueOS® system, save your own files to
+your home directory. Since most of the files outside of your home
+directory are used by the operating system and applications, you
+should not delete or modify any files outside of your home directory,
+unless you know what you are doing.
 
-Table 9.4b summarizes the directory structure found on a TrueOS® system. :command:`man hier` explains this directory structure in more detail.
+Table 11.5b summarizes the directory structure found on a TrueOS®
+system. :command:`man hier` explains this directory structure in more
+detail.
 
-**Table 9.4b: TrueOS Directory Structure**
+**Table 11.5b: TrueOS Directory Structure**
 
 +--------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| Directory                | Contents                                                                                                                        |
+| **Directory**            | **Contents**                                                                                                                    |
 +==========================+=================================================================================================================================+
 | /                        | pronounced as "root" and represents the beginning of the directory structure                                                    |
 +--------------------------+---------------------------------------------------------------------------------------------------------------------------------+
@@ -389,30 +396,30 @@ Table 9.4b summarizes the directory structure found on a TrueOS® system. :comma
 | /var/                    | files that change (vary), such as log files and print jobs                                                                      |
 +--------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
-TrueOS® provides built-in support for accessing Windows shares, meaning you only have to decide which utility you prefer to access existing Windows shares on
-your network. If a desktop is installed, you do not have to be logged into that desktop in order to use that utility.
+TrueOS® provides built-in support for accessing Windows shares,
+meaning you only have to decide which utility you prefer to access
+existing Windows shares on your network.
 
-Table 9.4c summarizes the available utilities (type a utility's name to launch it in any desktop), which desktop it installs with, whether or not it can be installed
-separately using :ref:`AppCafe®`, and a short description of how to access the available shares using that utility.
+Table 11.5c summarizes some of the available utilities.
 
-**Table 9.4c: Utilities that Support Windows Shares**
+**Table 11.5c: Utilities that Support Windows Shares**
 
-+--------------+----------------------+--------------------------------------------------------------------------------------------------------------------------+
-| **Utility**  | **Desktop/AppCafe**  | **How to Access Existing Shares**                                                                                        |
-+==============+======================+==========================================================================================================================+
-| dolphin      | KDE                  | in the left frame, click on :menuselection:`Network --> Samba Shares`, then the Workgroup name; if the network requires  |
-|              |                      | a username and password to browse for shares, set this in :menuselection:`System Settings --> Sharing`                   |
-|              |                      | while in KDE or type :command:`systemsettings` and click "Sharing" while in another desktop                              |
-+--------------+----------------------+--------------------------------------------------------------------------------------------------------------------------+
-| konqueror    | KDE                  | in the location bar, type *smb:/*                                                                                        |
-+--------------+----------------------+--------------------------------------------------------------------------------------------------------------------------+
-| mucommander  | AppCafe              | click on :menuselection:`Go --> Connect to server --> SMB`; input the NETBIOS name of server, name of share, name of     |
-|              |                      | domain (or workgroup), and the share's username and password                                                             |
-+--------------+----------------------+--------------------------------------------------------------------------------------------------------------------------+
-| nautilus     | GNOME, AppCafe       | click on :menuselection:`Browse Network --> Windows Network`                                                             |
-+--------------+----------------------+--------------------------------------------------------------------------------------------------------------------------+
-| thunar       | XFCE, AppCafe        | in the left frame, click on :menuselection:`Network --> Windows Network`                                                 |
-+--------------+----------------------+--------------------------------------------------------------------------------------------------------------------------+
++------------------+--------------+--------------------------------------------------------------------------------------------------------------------------+
+| **Application**  | **Install**  | **How to Access Existing Shares**                                                                                        |
++==================+==============+==========================================================================================================================+
+| dolphin          | kde-baseapps | in the left frame, click on :menuselection:`Network --> Samba Shares`, then the Workgroup name; if the network requires  |
+|                  |              | a username and password to browse for shares, set this in :menuselection:`System Settings --> Sharing`                   |
+|                  |              | while in KDE or type :command:`systemsettings` and click "Sharing" while in another desktop                              |
++------------------+--------------+--------------------------------------------------------------------------------------------------------------------------+
+| smb4k            | smb4k-kde4   |                                                                                                                          |
++------------------+--------------+--------------------------------------------------------------------------------------------------------------------------+
+| mucommander      | mucommander  | click on :menuselection:`Go --> Connect to server --> SMB`; input the NETBIOS name of server, name of share, name of     |
+|                  |              | domain (or workgroup), and the share's username and password                                                             |
++------------------+--------------+--------------------------------------------------------------------------------------------------------------------------+
+| nautilus         | nautilus     | click on :menuselection:`Browse Network --> Windows Network`                                                             |
++------------------+--------------+--------------------------------------------------------------------------------------------------------------------------+
+| thunar           | thunar       | in the left frame, click on :menuselection:`Network --> Windows Network`                                                 |
++------------------+----------------------+------------------------------------------------------------------------------------------------------------------+
 
 .. index:: windows
 .. _Windows Emulation:
