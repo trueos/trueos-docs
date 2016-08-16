@@ -547,16 +547,28 @@ you select or input the following:
 The toolbar at the bottom of the screen allows you to select the
 following options on a per-login basis:
 
-* **Locale:** if you did not set the localization during installation
-  or wish to change it, click this icon to set the locale for this
-  login session.
+* **Locale:** if you did not set the localization during installation or wish to change it, click this icon to set the locale for this login session.
 
 * **Keyboard Layout:** click this icon to change the keyboard layout
-  for this login session.
+  for this login session. This will open the window seen in
+  :numref:`Figure %s: Configuring Keyboard Settings <keyboard1>`. 
+
+.. _keyboard1:
+
+.. figure:: images/keyboard1.png
+
+Click the "Keyboard model" drop-down menu to select the type of
+keyboard. Note that the default model of "Generic 104-key PC" does
+**not** support special keys such as multimedia or Windows keys. You
+will need to change this default to enable support for hot keys.
+This screen also allows you to select the "Key Layout" and "Variant".
+After making your selections, you can test them by typing some text
+into the "you may type into the space below..." field.
 
 * **Restart/Shut Down:** if you wish to restart or shutdown the system
   without logging in, click the icon in the lower, far right corner.
-
+  This icon also allows you to "Change DPI" and to "Refresh PCDM".
+  
 Once you have made your selections, input the password associated with
 the selected user and press enter or click the blue arrow icon to
 login.

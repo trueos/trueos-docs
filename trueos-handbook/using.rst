@@ -137,7 +137,14 @@ The "Configuration" menu provides options for accessing the "PulseAudio Mixer" a
 TrueOS® provides full `PulseAudio <https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ support and these utilities can be used to configure discoverable
 network sound devices and mixer levels.
 
-For command line only systems, type :command:`mixer` from the command line to see the current sound settings::
+.. index:: troubleshooting
+.. _Troubleshooting Sound:
+
+Troubleshooting Sound 
+----------------------
+
+Type :command:`mixer` from the command line to see the current sound
+settings::
 
  mixer
  Mixer vol      is currently set to   0:0
@@ -148,35 +155,38 @@ For command line only systems, type :command:`mixer` from the command line to se
  Mixer monitor  is currently set to  42:42
  Recording source: monitor
 
-If any of these settings are set to *0*, set them to a higher value, by specifying the name of the mixer setting and a percentage value up to *100*::
+If any of these settings are set to *0*, set them to a higher value,
+by specifying the name of the mixer setting and a percentage value up
+to *100*::
 
  mixer vol 100
  Setting the mixer vol from 0:0 to 100:100.
 
-You can make that change permanent by creating a file named :file:`.xprofile` in your home directory that contains the corrected mixer setting.
+You can make that change permanent by creating a file named
+:file:`.xprofile` in your home directory that contains the corrected
+mixer setting.
 
-.. index:: troubleshooting
-.. _Troubleshooting Sound:
-
-Troubleshooting Sound 
-----------------------
-
-If you only get one or two mixer settings, you need to change the default mixer channel. As the superuser, try this command::
+If you only get one or two mixer settings, you need to change the
+default mixer channel. As the superuser, try this command::
 
  sysctl -w hw.snd.default_unit=1
 
-To see if that changed to the correct channel, type :command:`mixer` again. If you still only have one or two mixer settings, try setting the
-:command:`sysctl` value to *2*, and if necessary, to *3*.
+To see if that changed to the correct channel, type :command:`mixer`
+again. If you still only have one or two mixer settings, try setting
+the :command:`sysctl` value to *2*, and if necessary, to *3*.
 
-Once you have all of the mixer settings and none are set to *0*, your sound should work. If it still doesn't, these resources may help you to pinpoint the
-problem: 
+Once you have all of the mixer settings and none are set to *0*, your
+sound should work. If it still doesn't, these resources may help you
+to pinpoint the problem: 
 
 * `Sound Section of FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
 
 * `FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_
 
-If you still have problems with sound, see the section on :ref:`Finding Help` to determine which help resources are available. When reporting your problem,
-include your version of TrueOS® and the name of your sound card. 
+If you still have problems with sound, see the section on
+:ref:`Finding Help` to determine which help resources are available.
+When reporting your problem, include your version of TrueOS® and the
+name of your sound card. 
 
 .. index:: multimedia
 .. _Multimedia:
@@ -184,39 +194,58 @@ include your version of TrueOS® and the name of your sound card.
 Multimedia
 ==========
 
-TrueOS® has been pre-configured to support most multimedia formats and makes it easy to install most open source media applications using :ref:`AppCafe®`.
-TrueOS® supports both `PulseAudio <https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ and `OSS <http://opensound.com/>`_ so that applications using
-either sound server should work.
+TrueOS® has been pre-configured to support most multimedia formats and
+makes it easy to install most open source media applications using
+:ref:`AppCafe®`.
 
-If you install your web browser using AppCafe®, you should be able to play most media formats, including YouTube videos, Internet radio, and many trailer and
-movie sites.
+If you install a web browser using AppCafe®, you should be able to
+play most media formats, including YouTube videos, Internet radio, and
+many trailer and movie sites.
 
-If people are blue in YouTube videos, this is due to a known issue in flash which Adobe hasn't fixed for open source players. To resolve this issue,
-right-click an area in the video, select "Settings", then uncheck the box "Enable hardware acceleration". Alternately, install `Minitube <http://flavio.tordini.org/minitube>`_ using
-+:ref:`AppCafe®` and use it to watch YouTube.
+If people are blue in YouTube videos, this is due to a known issue in
+flash which Adobe hasn't fixed for open source players. To resolve
+this issue, right-click an area in the video, select "Settings", then
+uncheck the box "Enable hardware acceleration". Alternately, install
+`Minitube <http://flavio.tordini.org/minitube>`_ using :ref:`AppCafe®`
+and use it to watch YouTube.
 
-.. note:: if you happen to come across a file that you can not play in a web browser or media player, it is probably because it is in a proprietary format
-   that requires a licensing fee or restricts distribution of the codec that is required to play that media format.
+.. note:: if you happen to come across a file that you can not play in
+   a web browser or media player, it is probably because it is in a
+   proprietary format that requires a licensing fee or restricts
+   distribution of the codec that is required to play that media
+   format.
 
-AppCafe® contains several dozen applications for playing and editing multimedia. It includes these popular applications (click the links to view screenshots): 
+AppCafe® contains several dozen applications for playing and editing
+multimedia. It includes these popular applications (click the links to
+view screenshots): 
 
-* `aTunes <http://www.atunes.org/?page_id=5>`_: full-featured audio player and manager that can play mp3, ogg, wma, wav, flac, mp4 and radio streaming,
-  allowing users to easily edit tags, organize music and rip audio CDs.
+* `aTunes <http://www.atunes.org/?page_id=5>`_: full-featured audio
+  player and manager that can play mp3, ogg, wma, wav, flac, mp4 and
+  radio streaming, allowing users to easily edit tags, organize music
+  and rip audio CDs.
 
-* `Audacity <https://sourceforge.net/projects/audacity/?lang=en>`_: multilingual audio editor and recorder.
+* `Audacity <https://sourceforge.net/projects/audacity/?lang=en>`_:
+  multilingual audio editor and recorder.
 
-* `DeaDBeeF <http://deadbeef.sourceforge.net/screenshots.html>`_: music player that supports most audio formats.
+* `DeaDBeeF <http://deadbeef.sourceforge.net/screenshots.html>`_:
+  music player that supports most audio formats.
 
-* `Decibel <http://decibel.silent-blade.org/index.php?n=Main.Screenshots>`_: audio player built around a highly modular structure that lets the user disable
-  completely the features he does not need. Able to play CDs directly.
+* `Decibel <http://decibel.silent-blade.org/index.php?n=Main.Screenshots>`_:
+  audio player built around a highly modular structure that lets the
+  user disable completely the features he does not need. Able to play
+  CDs directly.
 
-* `gtkpod <http://www.gtkpod.org/index.php?title=Screenshots>`_: graphical user interface for the Apple iPod.
+* `gtkpod <http://www.gtkpod.org/index.php?title=Screenshots>`_:
+  graphical user interface for the Apple iPod.
 
-* `Miro <http://www.getmiro.com/download/screenshots/>`_: HD video player that can play almost any video file and offers over 6,000 free Internet TV shows and
-  video podcasts.
+* `Miro <http://www.getmiro.com/download/screenshots/>`_: HD video
+  player that can play almost any video file and offers over 6,000
+  free Internet TV shows and video podcasts.
 
-* `SMPlayer <http://smplayer.sourceforge.net/>`_: universal media player that can handle any media format and play audio CDs, DVDs, (S)VCDs, TV/radio cards,
-  YouTube™ and SHOUTcast™ streams. This is the default player used by :ref:`Mount Tray`.
+* `SMPlayer <http://smplayer.sourceforge.net/>`_: universal media
+  player that can handle any media format and play audio CDs, DVDs,
+  (S)VCDs, TV/radio cards, YouTube™ and SHOUTcast™ streams. This is
+  the default player used by :ref:`Mount Tray`.
 
 .. index:: multimedia
 .. _Kodi:
@@ -224,15 +253,21 @@ AppCafe® contains several dozen applications for playing and editing multimedia
 Kodi
 ----
 
-`Kodi, formerly known as XBMC, <https://kodi.tv/>`_ is a GPL-licensed software media player and entertainment hub for digital media. It can play most audio and video
-formats, CDs and DVDs from a disk or image file, and even files inside ZIP and RAR archives. It can scan all of your media and automatically create a personalized library with album covers,
-descriptions, and fan art. 
+`Kodi, formerly known as XBMC, <https://kodi.tv/>`_ is a GPL-licensed
+software media player and entertainment hub for digital media. It can
+play most audio and video formats, CDs and DVDs from a disk or image
+file, and even files inside ZIP and RAR archives. It can scan all of
+your media and automatically create a personalized library with album
+covers, descriptions, and fan art. 
 
-To install Kodi, use AppCafe®. Click "App Search" and search for "kodi". Once installed, an entry for "Media Center" should be added to the "Multimedia"
-section of the application menu of your desktop. You can also start Kodi by typing :command:`kodi` from a command prompt. 
+Kodi can be installed using :ref:`AppCafe®`. Once installed, an entry
+for "Kodi media center" will be added to "Browse Applications". You
+can also start Kodi by typing :command:`kodi` from a command prompt. 
 
-If you have never used Kodi before, take some time to skim through the `Kodi Wiki Manual <http://kodi.wiki/>`_.
-The `Turn PC-BSD into a home theater forum post <https://forums.pcbsd.org/thread-19799.html>`_ contains a quick how-to for configuring Kodi.
+If you have never used Kodi before, take some time to skim through the
+`Kodi Wiki Manual <http://kodi.wiki/>`_. The
+`Turn PC-BSD into a home theater forum post <https://forums.pcbsd.org/thread-19799.html>`_
+contains a quick how-to for configuring Kodi.
 
 .. index:: multimedia
 .. _PlexHome Theater:
@@ -240,11 +275,12 @@ The `Turn PC-BSD into a home theater forum post <https://forums.pcbsd.org/thread
 PlexHome Theater
 ----------------
 
-`Plex Home Theater <https://plex.tv/>`_ is a centralized media playback system. The central Plex Media Server streams media to many Plex player Apps which are used to view
-your media library and watch shows. 
+`Plex Home Theater <https://plex.tv/>`_ is a centralized media
+playback system. The central Plex Media Server streams media to many
+Plex player Apps which are used to view your media library and watch
+shows. 
 
-To install PlexHome Theater, use AppCafe®. Click the box "Search all
-available software" and search for "plexhometheater". Once installed, an entry should be added to the "Multimedia" section of the application menu
+To install PlexHome Theater, use AppCafe®. Once installed, an entry should be added to the "Multimedia" section of the application menu
 of your desktop. You can also start this application by typing :command:`plexhometheater` from a command prompt. 
 
 Once installed, an entry for "Plex Home Theater" will also be added to the login manager so that you can login directly to the home theater instead of a desktop.
@@ -252,56 +288,6 @@ Once installed, an entry for "Plex Home Theater" will also be added to the login
 The first time you run or log into Plex Home Theater, a wizard will check your audio settings and sign into your Plex account. If you do not have a Plex account yet,
 create one at `plex.tv <https://plex.tv/>`_. The wizard will give you a PIN code and an URL to enter the code. Once you enter the PIN, the wizard will connect and sign you in.
 You can now search for and watch media. To exit Plex, click the "<" then "Quit".
-
-.. index:: keyboard
-.. _PC-BSD Keyboard Settings:
-
-PC-BSD Keyboard Settings
-========================
-
-TrueOS® includes a graphical utility for managing the keyboard's layout settings. To start the application, type :command:`pc-syskeyboard` at the command line. A screenshot of this utility is seen in :numref:`Figure %s: Configuring Keyboard Settings <keyboard1>`. 
-
-.. _keyboard1:
-
-.. figure:: images/keyboard1.png
-
-.. note:: any changes made using this utility can be saved as either for just this login session or permanently. To make the changes permanent, click the "Save to
-   User Profile" button once you are finished making your changes. Otherwise, click the "Apply to Session" button. If you just click the "Close" button, your changes
-   will not be saved.
-
-Click the "Keyboard model" drop-down menu to select the type of keyboard. Note that the default model of "Generic 104-key PC" does **not** support special keys
-such as multimedia or Windows keys. You will need to change this default to enable support for hot keys.
-
-To add another keyboard layout, click the "+" button, which will open the screen shown in :numref:`Figure %s: Adding Another Layout <keyboard2>`. Highlight the desired layout. This will
-activate the "Layout variant" drop-down menu where you can select to either use the "Typical" variant or a specific variant. Press "OK" to add the configured layout.
-
-.. _keyboard2:
-
-.. figure:: images/keyboard2.png
-
-To edit an existing layout, highlight it then click the icon that looks like a pencil. You can then either change the "Layout variant" for that layout or
-select a different layout entirely. Selecting a different layout will replace the current layout.
-
-If there are multiple layout entries defined in the "Keyboard layouts" screen, you can delete a layout by highlighting it and clicking the "-" icon. Note
-that this icon is greyed out when there is only one entry as at least one keyboard layout must be defined.
-
-After creating or editing a layout, you can test it by typing some text into the "Test here" field.
-
-To configure keyboard shortcuts, click the "Options" tab. As seen in :numref:`Figure %s: Configuring Layout Switch Keys <keyboard3>`, the default view is used to set the keyboard layout
-switch keys.
-
-.. _keyboard3:
-
-.. figure:: images/keyboard3.png
-
-If you wish to set the keys for terminating the graphical session, check the box "Ctrl+Alt+Backspace terminates xorg". 
-
-To configure many more keyboard shortcuts, click the "Advanced view" button which will open the screen shown in :numref:`Figure %s: Configuring Keyboard Shortcuts <keyboard4>`. In this
-example, several categories have been expanded to show their options. To enable an option, check its box.
-
-.. _keyboard4:
-
-.. figure:: images/keyboard4.png
 
 .. index:: files
 .. _Files and File Sharing:
