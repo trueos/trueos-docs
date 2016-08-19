@@ -601,9 +601,9 @@ FreeBSD system, the superuser can use this command to write the file to
 the first plugged in USB device::
 
  dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1M
- 3658+1 records in
- 3658+1 records out 
- 3836317696 bytes transferred in 670.278574 secs (5723468 bytes/sec)
+ 1415+1 records in
+ 1415+1 records out
+ 1483990016 bytes transferred in 238.552250 secs (6220818 bytes/sec)
 
 When using the :command:`dd` command: 
 
@@ -661,9 +661,9 @@ following example, an 8GB USB stick has a device name of
 
  sudo dd if=/Users/dru/Downloads/TrueOS-Desktop-2016-08-11-x64.img of=/dev/rdisk1 bs=4m
  Password:
- 3658+1 records in
- 3658+1 records out 
- 3836317696 bytes transferred in 670.278574 secs (5723468 bytes/sec)
+ 1415+1 records in
+ 1415+1 records out
+ 1483990016 bytes transferred in 238.552250 secs (6220818 bytes/sec)
 
 .. index:: virtualization
 .. _Virtualization:
