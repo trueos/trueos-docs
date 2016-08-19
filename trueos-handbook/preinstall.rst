@@ -551,7 +551,7 @@ that the driver was already loaded.
 After inserting the DVD media into the device, you can start the burn
 using this command::
 
- growisofs -Z /dev/cd0=TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5
+ growisofs -Z /dev/cd0=TrueOS-Desktop-2016-08-11-x64-DVD.iso
 
 If your device is not the first burning device, change the number *0* 
 accordingly. If your ISO has a different name, substitute the correct
@@ -600,7 +600,7 @@ a BSD or Linux system, use the :command:`dd` command line utility. On a
 FreeBSD system, the superuser can use this command to write the file to
 the first plugged in USB device::
 
- dd if=TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5 of=/dev/da0 bs=1M
+ dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1M
  3658+1 records in
  3658+1 records out 
  3836317696 bytes transferred in 670.278574 secs (5723468 bytes/sec)
@@ -659,7 +659,7 @@ following example, an 8GB USB stick has a device name of
  diskutil unmountDisk /dev/disk1
  Unmount of all volumes on disk1 was successful
 
- sudo dd if=/Users/dru/Downloads/TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5 of=/dev/rdisk1 bs=4m
+ sudo dd if=/Users/dru/Downloads/TrueOS-Desktop-2016-08-11-x64.img of=/dev/rdisk1 bs=4m
  Password:
  3658+1 records in
  3658+1 records out 
