@@ -775,7 +775,7 @@ a .icon {
 .rst-content .wy-alert-danger.warning .admonition-title,
 .rst-content .wy-alert-danger.seealso .admonition-title,
 .rst-content .wy-alert-danger.admonition-todo .admonition-title {
-    background: #f29f97
+    background: #f23e35
 }
 .wy-alert.wy-alert-warning,
 .rst-content .wy-alert-warning.note,
@@ -816,7 +816,7 @@ a .icon {
 .rst-content .warning .admonition-title,
 .rst-content .wy-alert-warning.seealso .admonition-title,
 .rst-content .admonition-todo .admonition-title {
-    background: #ffa318
+    background: #ed6c1c
 }
 .wy-alert.wy-alert-info,
 .rst-content .note,
@@ -857,7 +857,7 @@ a .icon {
 .rst-content .wy-alert-info.warning .admonition-title,
 .rst-content .seealso .admonition-title,
 .rst-content .wy-alert-info.admonition-todo .admonition-title {
-    background: #89c7f7
+    background: #69adfa
 }
 .wy-alert.wy-alert-success,
 .rst-content .wy-alert-success.note,
@@ -871,7 +871,7 @@ a .icon {
 .rst-content .wy-alert-success.warning,
 .rst-content .wy-alert-success.seealso,
 .rst-content .wy-alert-success.admonition-todo {
-    background: #edbeb6;
+    background: #cfe8c4
 }
 .wy-alert.wy-alert-success .wy-alert-title,
 .rst-content .wy-alert-success.note .wy-alert-title,
@@ -898,7 +898,7 @@ a .icon {
 .rst-content .wy-alert-success.warning .admonition-title,
 .rst-content .wy-alert-success.seealso .admonition-title,
 .rst-content .wy-alert-success.admonition-todo .admonition-title {
-    background: #f23e35
+    background: #59c267
 }
 .wy-alert.wy-alert-neutral,
 .rst-content .wy-alert-neutral.note,
@@ -3681,7 +3681,7 @@ code.menuselection,
     background-color: #D5DDE2; /* saturate from ecf0f3 to be more visible/blue on screen. */
     display: inline-block;
 	font-family:'Inconsolata', monospace;
-    font-size: 88%;
+    font-size: 95%;
     padding-right: 3px;
     padding-left: 3px;
     padding-top: 3px;
@@ -3691,25 +3691,29 @@ code.menuselection,
 	overflow: hidden;
 }
 code.kbd, .kbd {
-    border: thin solid rgb(45, 45,255);
+    border: thin solid #000;
     border-radius: 2px;
 	font-weight: bold
 }
 code.file, .file {
-    border: thin solid #999;
+    border: hidden/*thin solid #999*/
 }
 code.guilabel, .guilabel {
-	border:hidden;/*1px solid #7fbbe3;*/
+	border:hidden;
 	font-weight:bold;
 	background:#e7f2fa;
 	text-transform: none
 }
 code.menuselection, .menuselection {
-    background-color: #F0F0F0;
+    background-color: #e6e6ed;
     color: inherit;
-    font-weight: bold;
-    border: thin solid #000000
-} 
+    font-weight: 600;
+    border: hidden;
+	font-size: 98%
+}
+code.command, .command {
+	font-family:'Inconsolata', monospace;
+}
 th {
     background-color: #ede;
 }
@@ -3846,7 +3850,8 @@ table.docutils {
  | textboxes adjusted for rst/RtD   (BEGIN)  | 
  *"""""""""""""""""""""""""""""""""""""""""""*/
 .rst-content .danger, .rdangerbox {
-border:solid #BA0000;
+border:solid #bababa;
+background: #edbeb6
 }
 
 .rst-content .warning, .rwarningbox {
@@ -3858,6 +3863,10 @@ border:solid #BABABA;
 }
 
 .rst-content .important, .rimportantbox{
+border:solid #bababa;
+}
+
+.rst-content .tip, .rtipbox{
 border:solid #bababa;
 }
 
