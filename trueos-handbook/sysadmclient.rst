@@ -560,12 +560,6 @@ The TrueOS® User Manager utility allows you to easily add, configure,
 and delete users and groups. To access this utility in SysAdm™, click
 :menuselection:`System Management --> User Manager`. 
 
-.. index:: users
-.. _Managing User Accounts:
-
-Managing User Accounts
-----------------------
-
 In the example shown in
 :numref:`Figure %s: Viewing User Accounts in User Manager <user1>`,
 the system has one user account that was created in the "Create a User
@@ -652,8 +646,9 @@ you highlight the user that started SysAdm™. It will also be greyed
 out if there is only one user account as you need at least one user to
 be able to login to the TrueOS® system.
 
-If you click the "Advanced View" button, this screen will change to show all of the accounts on the system, not just the user accounts that you
-created. An example is seen in
+If you click the "Advanced View" button, this screen will change to
+show all of the accounts on the system, not just the user accounts 
+that you created. An example is seen in
 :numref:`Figure %s: Viewing All Accounts and Their Details <user3>`. 
 
 .. _user3:
@@ -676,17 +671,18 @@ login to the system using that account name.
 PersonaCrypt
 ------------
 
-TrueOS® provides support for PersonaCrypt. A PersonaCrypt device is a
-removable USB media, such as a USB stick, which has been formatted with
-ZFS and encrypted with GELI. This device is used to hold a specific
-user's home directory, meaning that they can securely transport and
-access their personal files on any TrueOS® or PC-BSD® 10.1.2 or higher
-system. This can be used, for example, to securely access one's home
-directory from a laptop, home computer, and work computer. The device is
-protected by an encryption key and a password which is, and should be,
-separate from the user's login password.
+TrueOS® provides support for a security feature known as PersonaCrypt.
+A PersonaCrypt device is a removable USB media, such as a USB stick,
+which has been formatted with ZFS and encrypted with GELI. This device
+is used to hold a specific user's home directory, meaning that they
+can securely transport and access their personal files on any TrueOS®
+or PC-BSD® 10.1.2 or higher system. This can be used, for example, to
+securely access one's home directory from a laptop, home computer, and
+work computer. The device is protected by an encryption key and a
+password which is, and should be, separate from the user's login
+password.
 
-.. note:: when a user is configured to use a PersonaCrypt device, that
+.. note:: When a user is configured to use a PersonaCrypt device, that
    user can not login using an unencrypted session on the same system.
    In other words, the PersonaCrypt username is reserved for
    PersonaCrypt use. If you need to login to both encrypted and
@@ -694,17 +690,16 @@ separate from the user's login password.
    accounts, one for each type of session.
 
 PersonaCrypt uses GELI's ability to split the key into two parts: one
-being your passphrase, and the other being a key stored on disk. Withou
-t both of these parts, the media cannot be decrypted. This means that if
-somebody steals the key and manages to get your password, it is still 
-worthless without the system it was paired with.
+being your passphrase, and the other being a key stored on disk.
+Without both of these parts, the media cannot be decrypted. This means
+that if somebody steals the key and manages to get your password, it
+is still  worthless without the system it was paired with.
 
 .. warning:: USB devices can and do eventually fail. Always backup any
    important files stored on the PersonaCrypt device to another device
    or system.
 
-Advanced Mode can be used to initialize a PersonaCrypt device for any
-created user, **except** for the currently logged in user. In the
+The "PersonaCrypt" tab can be used to initialize a PersonaCrypt device for any login user, **except** for the currently logged in user. In the
 example shown in
 :numref:`Figure %s: Initialize PersonaCrypt Device <user5>`, a new user,
 named *dlavigne*, has been created and the entry for that user has been
@@ -716,18 +711,17 @@ clicked.
 
 Before a user is configured to use PersonaCrypt on a TrueOS® system, two
 buttons are available in the "PersonaCrypt" section of "Advanced Mode".
-Note that this section is hidden if the currently logged in user is
-selected. Also, if you have just created a user and do not see these
+Note that this section is hidden if the currently logged in user is selected. Also, if you have just created a user and do not see these
 options, click "Apply" then re-highlight the user to display these
 options:
+
+* **Initialize Device:** used to prepare the USB device that will be
+  used as the user's home directory.
 
 * **Import Key:** if the user has already created a PersonaCrypt device
   on another TrueOS® system, click this button to import a previously
   saved copy of the key associated with the device. Once the key is
   imported, the user can now login to this computer using PersonaCrypt.
-
-* **Initialize Device:** used to prepare the USB device that will be
-  used as the user's home directory.
 
 To prepare a PersonaCrypt device for this user, insert a USB stick and
 click "Initialize Device". A pop-up menu will indicate that the current
@@ -790,40 +784,38 @@ password associated with the PersonaCrypt device.
 Managing Groups
 ---------------
 
-If you click the "Groups" tab, you can view all of the groups on the 
-system, as seen in
-:numref:`Figure %s: Managing Groups Using User Manager <user4>`. 
+Click the "Groups" tab to view and manage the groups on the system.
+The "Standard" tab, seen in
+:numref:`Figure %s: Managing Groups Using User Manager <user4>`,
+shows the group membership for the *operator* and *wheel* groups:
 
 .. _user4: 
 
 .. figure:: images/user4.png
 
-This screen has 3 columns: 
-
-**Groups:** shows all of the groups on the system.
-
-**Available:** shows all of the system and user accounts on the system
-in alphabetical order.
+This screen has 2 columns: 
 
 **Members:** indicates if the highlighted group contains any user
 accounts.
 
-To add an account to a group, highlight the group name in the "Groups"
-column. Then, highlight the account name in the "Available" column.
-Click the right arrow and the selected account will appear in the
-"Members" column. You should only add user accounts to groups that you
-create yourself or when an application's installation instructions
-indicate that an account needs to be added to a group.
+**Available:** shows all of the system and user accounts on the system
+in alphabetical order.
 
-If you click the "Add" button, a pop-up menu will prompt you for the
-name of the new group. Once you press "OK", the group will be added to
-the "Groups" column.
+To add an account to a group, highlight the group name, then highlight
+the account name in the "Available" column. Click the left arrow and
+the selected account will appear in the "Members" column. You should
+only add user accounts to groups that you create yourself or when an
+application's installation instructions indicate that an account needs
+to be added to a group.
 
-If you click the "Remove" button, the highlighted group will
-automatically be deleted after you press the "Apply" button, so be sure
-to do this with care. Again, do **not** remove any groups that you did
-not create yourself or applications that used to work may stop working.
+.. note:: If you add a user to the *operator* group, they will have
+   permission to use commands requiring administrative access and will
+   be prompted for their own password when administrative access is
+   required. If you add a user to the *wheel* group, they will be
+   granted access to the :command:`su` command and will be prompted
+   for the superuser password whenever they use that command.
 
+To view all of the groups on the system, click "Advanced".
 
 .. index:: sysadm, life preserver
 .. _Life Preserver:
