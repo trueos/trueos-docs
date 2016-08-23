@@ -4,9 +4,9 @@
 Supporting TrueOS®
 *******************
 
-TrueOS® is a community project which relies on involvement from its users and supporters. This section lists some ideas for becoming involved.
-
-
+TrueOS® is a community project which relies on involvement from its
+users and supporters. This section lists some ideas for becoming
+involved.
 
 .. index:: testing
 .. _Become a Beta Tester:
@@ -14,35 +14,41 @@ TrueOS® is a community project which relies on involvement from its users and s
 Become a Beta Tester
 ====================
 
-If you like playing around with operating systems and have a bit of spare time, one of the most effective ways you can assist the TrueOS® community is by
-reporting problems you encounter while using TrueOS®. 
+If you like playing around with operating systems and have a bit of
+spare time, one of the most effective ways you can assist the TrueOS®
+community is by reporting problems you encounter while using TrueOS®. 
 
-If you have a spare system or virtual machine, you can also download and try out the latest release candidate snapshots. These versions are still in testing
-and have not been officially released yet. Having as many people as possible using TrueOS® on many different hardware configurations assists the Project in
-finding and fixing bugs. This makes using TrueOS® better for everyone. Subscribing to the `PC-BSD® blog <https://blog.pcbsd.org/>`_ is a good way to keep
-up-to-date on the availability of testing snapshots and any major bugs that affect users.
+If you have a spare system or virtual machine, you can also download
+and try out the latest testing snapshots. Having as many people as
+possible using TrueOS® on many different hardware configurations
+assists the Project in finding and fixing bugs. This makes using
+TrueOS® better for everyone.
 
 If becoming a tester interests you, subscribe to the `testing mailing list <http://lists.pcbsd.org/mailman/listinfo/testing>`_. As new testing versions become
 available they will be announced on this list. You will also be able to see what problems other testers are finding and can check to see if the problem exists
 on your hardware as well. You can also subscribe to `these RSS feeds <http://dir.gmane.org/gmane.os.pcbsd.testing>`_ if you want a quick way to keep up with
 the subjects being discussed on the testing mailing list.
 
-Anyone can become a beta tester. Follow these tips so that you can accurately describe your findings so they can be fixed as soon as possible: 
+Anyone can become a beta tester. Follow these tips so that you can
+accurately describe your findings so they can be fixed as soon as
+possible: 
 
 * Before you :ref:`Report a bug`, skim through the archives of the `testing mailing list <http://lists.pcbsd.org/mailman/listinfo/testing>`_ to see if anyone else has reported a similar
   problem.
 
-* When reporting a new issue, use a descriptive subject that includes the error and the version of TrueOS®. Ideally, the subject is short (8 words or less)
-  and contains key words about the error. An example would be "AppCafe on 10.2-RELEASE-p1 fails to create jail". 
+* When reporting a new issue, use a descriptive subject that includes
+  the error and the version of TrueOS®. Ideally, the subject is short
+  (8 words or less) and contains key words about the error.
 
-* Ensure that the body of the bug report includes the TrueOS® version.
+* Ensure that the body of the bug report contains the output of
+  :command:`uname -a`.
 
-* Give a short (2-3 sentences) description of how to recreate the error. If there is an error message, include its complete text.
+* Give a short (2-3 sentences) description of how to recreate the
+  error. If there is an error message, include its complete text.
 
-* Include any other info that may be useful (e.g. this used to work on 10.0).
-
-* If the problem appears to be hardware related, include a copy of :file:`/var/run/dmesg.boot` as this file shows the hardware that was probed the last time
-  the TrueOS® system booted.
+* If the problem appears to be hardware related, include a copy of
+  :file:`/var/run/dmesg.boot` as this file shows the hardware that was
+  probed the last time the TrueOS® system booted.
   
 .. index:: translations
 .. _Become a Translator:
@@ -50,8 +56,9 @@ Anyone can become a beta tester. Follow these tips so that you can accurately de
 Become a Translator
 ===================
 
-If you are interested in translating TrueOS® into your native
-language, there are three translation areas that you can choose to become involved in: 
+If you are interested in translating TrueOS® into your native 
+language, there are three translation areas that you can choose to
+become involved in: 
 
 1. Translate the graphical menus within the TrueOS® operating system.
 
@@ -198,13 +205,15 @@ When translating the documentation, be aware of the following:
 If you would like to receive notifications of documentation changes that affect translations, subscribe to the
 `Translation-notifications <http://lists.pcbsd.org/mailman/listinfo/translations-notifications>`_ mailing list.
 
-If you would like to build a local HTML copy that includes the latest translations, either for your own use or to visualize the translated Guide, do the following from the command line.
-These instructions are for a TrueOS® system::
+If you would like to build a local HTML copy that includes the latest
+translations, either for your own use or to visualize the translated
+Guide, do the following from the command line. These instructions are
+for a TrueOS® system::
 
- sudo pkg install pcbsd-toolchain
+ sudo pkg install trueos-toolchain
  rehash
- git clone git://github.com/trueos/pcbsd.git
- cd pcbsd/src-qt5/docs 
+ git clone git://github.com/trueos/trueos-docs
+ cd trueos-docs/trueos-handbook
  sudo make i18n
  make html
  ls _build
@@ -214,12 +223,15 @@ These instructions are for a TrueOS® system::
  html-de                 html-pt_BR        	 locale-po     
 
  
-This will make an HTML version of the Guide for each of the available translations. In this example, translations are available for English (in :file:`html`), Danish, German, Spanish,
-French, Indonesian, Brazilian Portuguese, Turkish, and UK English. To update the HTML at a later time::
+This will make an HTML version of the Guide for each of the available
+translations. In this example, translations are available for English
+(in :file:`html`), Danish, German, Spanish, French, Indonesian,
+Brazilian Portuguese, Turkish, and UK English. To update the HTML at a
+later time::
 
- cd ~/pcbsd
+ cd ~/trueos-docs
  git pull
- cd src-qt5/docs 
+ cd trueos-docs/trueos-handbook 
  sudo make i18n
  sudo make html
 
@@ -241,15 +253,19 @@ Currently, the the website is being translated to several languages, including: 
 Become a Developer
 ==================
 
-If you like programming, and especially coding on FreeBSD, we would love to see you join the TrueOS® team as a TrueOS® committer. Developers who want to help improve the
-TrueOS® codebase are always welcome! If you would like to participate in core development, subscribe to the
-`developers mailing list <http://lists.pcbsd.org/mailman/listinfo/dev>`_. Once you have signed up, feel free to browse the active tickets in the PC-BSD®
-`bug tracker <https://bugs.pcbsd.org/projects/pcbsd/>`_. If you see something that you want to work on, or have a proposal for a project you wish to add to
-TrueOS®, please let us know via the developers list and we will be happy to help get you started.
+If you like programming, and especially coding on FreeBSD, we would
+love to see you join the TrueOS® team as a TrueOS® committer.
+Developers who want to help improve the TrueOS® codebase are always
+welcome! If you would like to participate in core development, subscribe to the
+`developers mailing list <http://lists.pcbsd.org/mailman/listinfo/dev>`_. Once you have signed up, feel free to browse the "Issues" in the 
+`TrueOS® repository <https://github.com/trueos/>`_. If you see
+something that you want to work on, or have a proposal for a project
+you wish to add to TrueOS®, please let us know via the developers list and we will be happy to help get you started.
 
-Most of the TrueOS® specific GUI tools are developed in C++ using the Qt Libraries, and other non-GUI development is done using standard Bourne shell
-scripts. There may be cases where other languages or libraries are needed, but those will be evaluated on a case-by-case basis, so feel free to let us know
-your proposals on the developers mailing list.
+Most of the TrueOS® specific GUI tools are developed in C++ using Qt
+libraries and other non-GUI development is done using standard Bourne
+shell scripts. There may be cases where other languages or libraries
+are needed, but those will be evaluated on a case-by-case basis, so feel free to let us know your proposals on the developers mailing list.
 
 .. index:: development
 .. _Getting the Source Code:
@@ -257,49 +273,67 @@ your proposals on the developers mailing list.
 Getting the Source Code
 -----------------------
 
-The TrueOS® source code is available from github and :command:`git` needs to be installed in order to download the source code. When using TrueOS®,
-:command:`git` is included in the base install.
+The TrueOS® source code is available from the
+`GitHub <https://github.com/trueos/>`_. The code has been organized
+into repositories that represent the Lumina desktop, the graphical
+utilities, SysAdm™, and various other applications. :command:`git`
+needs to be installed in order to download the source code. When using
+TrueOS®, :command:`git` is included in the base install.
 
-To download the source code, :command:`cd` to the directory to store the source and type::
+To download the source code, :command:`cd` to the directory to store
+the source code and specify the name of the desired repository. In
+this example, the user wishes to download the source for the graphical
+utilities::
 
- git clone git://github.com/trueos/pcbsd.git
+ git clone git://github.com/trueos/trueos-utils-qt5
 
-This will create a directory named :file:`pcbsd/` which contains the local copy of the repository. To keep the local copy in sync with the official
-repository, run :command:`git pull` within the :file:`pcbsd` directory.
+This will create a directory with the same name as the repository.
 
-TrueOS® graphical applications use Qt version 5 and their source is located in :file:`pcbsd/src-qt5/`. In order to compile the applications in this
-directory, install the "PC-BSD Build Toolchain" package using :ref:`AppCafe®`. To instead install this software from the command line, type :command:`pkg install pcbsd-toolchain`.
+.. note:: To keep the local copy in sync with the official repository,
+   periodically run :command:`git pull` within that directory.
 
-Most of the TrueOS® source code is divided into two sub-categories: 
+Before you can compile any source, ensure that the Ports Collection is
+installed as the superuser::
 
-* :file:`src-sh/` contains shell and C programs which do not include GUIs. These are the command line utilities used in TrueOS®.
+ portsnap fetch extract
+   
+Then, :command:`cd` to the directory containing the source you wish to
+build and run the :command:`mkports.sh` script. In this example, the
+developer wants to compile the graphical utilities::
 
-* :file:`src-qt5/` contains the desktop Qt5-based GUIs.
+ cd trueos-utils-qt5
 
-To compile the command line utilities::
+ ./mkports /usr/ports/
 
- cd src-sh
+This will create a port which can be installed. The name of the port
+is located in :file:`mkports.sh`. This example determines the name of
+the port directory, changes to that directory, and then builds the
+port. Since this system is already running the TrueOS® graphical
+utilities, :command:`reinstall` is used to overwrite the current
+utilities::
 
- make
+ grep port= mkports.sh
+ port="sysutils/trueos-utils-qt5"
+ cd /usr/ports/sysutils/trueos-utils-qt5
+ make reinstall
+ 
+If you plan to make source changes, several Qt IDEs are available in
+:ref:`AppCafe®`. The
+`QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_ application
+is a full-featured IDE designed to help new Qt users get up and
+running faster while boosting the productivity of experienced Qt
+developers.
+`Qt Designer <http://doc.qt.io/qt-4.8/designer-manual.html>`_ is
+lighter weight as it is only a :file:`.ui` file editor and does not
+provide any other IDE functionality. 
 
-To compile the graphical utilities::
-
- cd src-qt5
-
- /usr/local/lib/qt5/bin/qmake
-
- make
-
-Several Qt IDEs are available in :ref:`AppCafe®`. The `QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a full-featured IDE designed
-to help new Qt users get up and running faster while boosting the productivity of experienced Qt developers.
-`Qt Designer <http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is only a :file:`.ui` file editor and does not provide any
-other IDE functionality. To install this package, check the "Search all available software" in the "App Search" tab of AppCafe® and search for "qt5-designer".
-Alternately, install it using :command:`pkg install qt5-designer`.
-
-If you plan to submit changes so that they can be included in TrueOS®, fork the repository using the instructions in
-`fork a repo <https://help.github.com/articles/fork-a-repo>`_. Make your changes to the fork, then submit them by issuing a
-`git pull request <https://help.github.com/articles/using-pull-requests>`_. Once your changes have been reviewed, they will be committed or sent back with
-suggestions.
+If you plan to submit changes so that they can be included in TrueOS®,
+fork the repository using the instructions in
+`fork a repo <https://help.github.com/articles/fork-a-repo>`_. Make
+your changes to the fork, then submit them by issuing a
+`git pull request <https://help.github.com/articles/using-pull-requests>`_.
+Once your changes have been reviewed, they will be committed or sent
+back with suggestions.
 
 .. index:: development
 .. _Design Guidelines:
@@ -307,24 +341,34 @@ suggestions.
 Design Guidelines
 -----------------
 
-TrueOS® is a community driven project that relies on the support of developers in the community to help in the design and implementation of new utilities and
-tools for TrueOS®. The Project aims to present a unified design so that programs feel familiar to users. As an example, while programs could have
-"File", "Main", or "System" as their first entry in a menu bar, "File" is used as the accepted norm for the first category on the menu bar.
+TrueOS® is a community driven project that relies on the support of
+developers in the community to help in the design and implementation
+of new utilities and tools for TrueOS®. The Project aims to present a
+unified design so that programs feel familiar to users. As an example,
+while programs could have "File", "Main", or "System" as their first
+entry in a menu bar, "File" is used as the accepted norm for the first
+category on the menu bar.
 
-This section describes a small list of guidelines for menu and program design in TrueOS®.
+This section describes a small list of guidelines for menu and program
+design in TrueOS®.
 
-Any graphical program that is a full-featured utility, such as :ref:`Life Preserver`, should have a "File" menu. However, file menus are not
-necessary for small widget programs or dialogue boxes. When making a file menu, a good rule of thumb is keep it simple. Most TrueOS® utilities do not need
-more than two or three items on the file menu.
+Any graphical program that is a full-featured utility, such as
+:ref:`Life Preserver`, should have a "File" menu. However, file menus
+are not necessary for small widget programs or dialogue boxes. When
+making a file menu, a good rule of thumb is keep it simple. Most
+TrueOS® utilities do not need more than two or three items on the file
+menu.
 
-"Configure" is our adopted standard for the category that contains settings or configuration-related settings. If additional categories are needed, check to
-see what other TrueOS® utilities are using.
+"Configure" is our adopted standard for the category that contains
+settings or configuration-related settings. If additional categories
+are needed, check to see what other TrueOS® utilities are using.
 
-File menu icons are taken from the KDE Oxygen theme located in :file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do not have a bunch of
-different icons used for the same function. Table 11.3a lists the commonly used icons and their default file names.
+File menu icons are taken from the KDE Oxygen theme located in
+:file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we
+do not have a bunch of different icons used for the same function.
+Table 13.3a lists the commonly used icons and their default file names.
 
-
-**Table 11.3a: Commonly Used File Menu Icons** 
+**Table 13.3a: Commonly Used File Menu Icons** 
 
 +-----------+-----------------+--------------------+
 | Function  | File Menu Icon  | File Name          |
@@ -333,7 +377,6 @@ different icons used for the same function. Table 11.3a lists the commonly used 
 +-----------+-----------------+--------------------+
 | Settings  | row 2, cell 2   | configure.png      |
 +-----------+-----------------+--------------------+
-
 
 TrueOS® utilities use these buttons as follows: 
 
@@ -347,17 +390,25 @@ TrueOS® utilities use these buttons as follows:
 
 * **Save:** saves settings and closes window.
 
-Fully functional programs like :ref:`Life Preserver` do not use close buttons on the front of the application. Basically, whenever there is a
-"File" menu, that and an "x" in the top right corner of the application are used instead. Dialogues and widget programs are exceptions to this rule. A good
-example of a widget program would be :ref:`Update Manager`. 
+Fully functional programs like :ref:`Life Preserver` do not use close
+buttons on the front of the application. Basically, whenever there is
+a "File" menu, that and an "x" in the top right corner of the
+application are used instead. Dialogues and widget programs are
+exceptions to this rule.
 
-Many users benefit from keyboard shortcuts and we aim to make them available in every TrueOS® utility. Qt makes it easy to assign keyboard shortcuts. For
-instance, to configure keyboard shortcuts that browse the "File" menu, put *&File* in the text slot for the menu entry when making the application.
-Whichever letter has the *&* symbol in front of it will become the hot key. You can also make a shortcut key by clicking the menu or submenu entry and
-assigning a shortcut key. Be careful not to duplicate hot keys or shortcut keys. Every key in a menu and submenu should have a key assigned for ease of use
-and accessibility. Tables 11.3b and 11.3c summarize the commonly used shortcut and hot keys.
+Many users benefit from keyboard shortcuts and we aim to make them
+available in every TrueOS® utility. Qt makes it easy to assign
+keyboard shortcuts. For instance, to configure keyboard shortcuts that
+browse the "File" menu, put *&File* in the text slot for the menu
+entry when making the application. Whichever letter has the *&* symbol
+in front of it will become the hot key. You can also make a shortcut
+key by clicking the menu or submenu entry and assigning a shortcut
+key. Be careful not to duplicate hot keys or shortcut keys. Every key
+in a menu and submenu should have a key assigned for ease of use and
+accessibility. Tables 13.3b and 13.3c summarize the commonly used
+shortcut and hot keys.
 
-**Table 11.3b: Shortcut Keys** 
+**Table 13.3b: Shortcut Keys** 
 
 +---------------+---------+
 | Shortcut Key  | Action  |
@@ -367,7 +418,7 @@ and accessibility. Tables 11.3b and 11.3c summarize the commonly used shortcut a
 | F1            | Help    |
 +---------------+---------+
 
-**Table 11.3c: Hot Keys** 
+**Table 13.3c: Hot Keys** 
 
 +-----------+-----------------+
 | Hot Key   | Action          |
@@ -387,22 +438,26 @@ and accessibility. Tables 11.3b and 11.3c summarize the commonly used shortcut a
 | ALT + H   | Help Menu       |
 +-----------+-----------------+
 
-When saving an application's settings, the QSettings class should be used if possible. There are two different "organizations", depending on whether the
-application is running with *root* permissions or user permissions. Use "PCBSD" for the organization for applications that run with user permissions and
-"PCBSD-root" for applications that are started with root permissions via :command:`sudo`. Proper use prevents the directory where settings files are saved
-from being locked down by *root* applications, allowing user applications to save and load their settings. Examples 11.3a and 11.3b demonstrate how to use the
+When saving an application's settings, the QSettings class should be
+used if possible. There are two different "organizations", depending
+on whether the application is running with *root* permissions or user
+permissions. Use "PCBSD" for the organization for applications that
+run with user permissions and "PCBSD-root" for applications that are
+started with root permissions via :command:`sudo`. Proper use prevents
+the directory where settings files are saved from being locked down by
+*root* applications, allowing user applications to save and load their
+settings. Examples 13.3a and 13.3b demonstrate how to use the
 QSettings class for each type of permission.
 
-**Example 11.3a: User Permission Settings**::
+**Example 13.3a: User Permission Settings**::
 
  (user application - C++ code): 
  QSettings settings("PCBSD", "myapplication");
 
-**Example 11.3b: Root Permission Settings**::
+**Example 13.3b: Root Permission Settings**::
 
  (root application - C++ code):
  QSettings settings("PCBSD-root", "myapplication");
-
 
 Developers will also find the following resources helpful: 
 
@@ -413,36 +468,26 @@ Developers will also find the following resources helpful:
 * `C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_
 
 .. index:: advocacy
-.. _Purchase TrueOS® Swag:
-
-Purchase TrueOS® Swag
-======================
-
-While TrueOS® is free, some users may wish to purchase media or other items to show their support for the TrueOS® Project. TrueOS® items are available from
-the following websites: 
-
-* `FreeBSD Mall <https://www.freebsdmall.com/cgi-bin/fm/scan/fi=prod_bsd/tf=list_order/sf=sku/sf=title/sf=category/se=pc-bsd?id=B3TkJm7G&mv_pc=5>`_: sells
-  PC-BSD® DVDs and subscriptions, stickers, and apparel. 
-
-* Amazon: sells The Definitive Guide to PC-BSD® (hard copy and Kindle formats) as well as the Kindle versions of the PC-BSD® Handbook. Items available for
-  purchase in your country may vary. 
-
-* `The PC-BSD® Corporate Storefront <http://pcbsd.qbstores.com/>`_: sells high-quality apparel and accessories. 
-
-.. index:: advocacy
 .. _Become an Advocate:
 
 Become an Advocate
 ==================
 
-So you love TrueOS®? Why not tell your family, friends, fellow students and colleagues about it? You will not be the only one that likes a virus-free,
-feature-rich, no-cost operating system. Here are some suggestions to get you started: 
+So you love TrueOS®? Why not tell your family, friends, fellow 
+students and colleagues about it? You will not be the only one that
+likes a virus-free, feature-rich, no-cost operating system. Here are
+some suggestions to get you started: 
 
-* Burn a couple of DVDs and pass them out. If your school or user group has an upcoming event where you can promote TrueOS®, you can request additional DVDs
-  from sales@pcbsd.com.
+* Burn a couple of DVDs and pass them out. If your school or user
+  group has an upcoming event where you can promote TrueOS®, you can
+  request additional DVDs from sales@pcbsd.com.
 
-* Consider giving a presentation about TrueOS® at a local community event or conference. Let us know about it and we will help you spread the word.
+* Consider giving a presentation about TrueOS® at a local community
+  event or conference. Let us know about it and we will help you
+  spread the word.
 
-* Write a personal blog detailing your journey from your first TrueOS® install experience to your most recent accomplishment. The blog could also be used to
-  teach or explain how to perform tasks on TrueOS®. A regional language blog may help build the community in your area and to find others with similar
-  interests.
+* Write a personal blog detailing your journey from your first TrueOS®
+  install experience to your most recent accomplishment. The blog
+  could also be used to teach or explain how to perform tasks on
+  TrueOS®. A regional language blog may help build the community in
+  your area and to find others with similar interests.
