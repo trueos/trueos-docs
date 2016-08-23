@@ -420,7 +420,9 @@ pop-up menu will indicate that the current contents of the device will
 be wiped. Click "Yes" to initialize the device.
 
 If you share your computer with other users, you will be able to
-create additional login and PersonaCrypt accounts using :ref:`User Manager`. After you have created at least one user, click "Next" to continue to the next screen.
+create additional login and :ref:`PersonaCrypt` accounts using
+:ref:`User Manager`. After you have created at least one user, click
+"Next" to continue to the next screen.
 
 .. index:: sound
 .. _Configure Audio Output:

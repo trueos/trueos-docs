@@ -64,7 +64,9 @@ available.
 Select the disk to install into and press :kbd:`Enter`. In the next
 screen, the installer will display all available primary or GPT
 partitions. In the example shown in
-:numref:`Figure %s: Select Partition <text4a>`, there is only one partition and the installer has selected the default of installing to the entire disk.
+:numref:`Figure %s: Select Partition <text4a>`, there is only one
+partition and the installer has selected the default of installing to
+the entire disk.
 **If you have multiple partitions and disks, carefully select the disk and partition to install to.**
 
 .. _text4a:
@@ -322,11 +324,9 @@ Install a Server
 
 The :ref:`System Selection Screen` of the TrueOS® installer can be
 used to install a FreeBSD-based command-line server operating system
-rather than a graphical desktop operating system.
-
-TrueOS® adds the following to a vanilla installation of FreeBSD: :command:`iocage` for jail management and several command line
-utilities for managing the server. You will find those utilities in :file:`/usr/local/bin/pc-*`. It also installs the software mentioned in
-`the RUN_DEPENDS= section of this file <https://github.com/pcbsd/freebsd-ports/blob/master/misc/trueos-base/Makefile>`_.
+rather than a graphical desktop operating system. A TrueOS®
+installation includes the `SysAdm™ API <https://api.sysadm.us/>`_ and
+:ref:`SysAdm™ Client` for managing the server locally or remotely.
 
 For a server installation, using the TrueOS® installer rather than the
 FreeBSD installer offers several benefits: 

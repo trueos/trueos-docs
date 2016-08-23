@@ -145,7 +145,8 @@ System Selection Screen
 
 The "System Selection" screen, shown in
 :numref:`Figure %s: System Selection Screen <install3c>`, allows you
-to install a graphical desktop or a console-based server operating system. It also can be used for :ref:`Restoring the Operating System`.
+to install a graphical desktop or a console-based server operating
+system. It also can be used for :ref:`Restoring the Operating System`.
 This chapter concentrates on a desktop installation. Refer to
 :ref:`Install a Server` for instructions on how to install a
 command-line only server.
