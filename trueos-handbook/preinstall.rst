@@ -436,142 +436,40 @@ downloaded::
 Burning the Installation Media
 ==============================
 
-If you downloaded an :file:`.iso` file, it can be burned to a DVD. If
-you downloaded an :file:`img` file, it can be burned to a USB stick.
-This section demonstrates how to perform these operations using several
-different applications and operating systems.
+Once you have downloaded the installation file and verified its
+checksum, you are ready to burn it to a media. Which media depends
+upon the file you downloaded:
 
-.. index:: Windows
-.. _Burning to DVD on Windows:
+* Files beginning with :file:`TrueOS-Desktop` and ending with
+  :file:`.iso` must be burned to a DVD. 
+  
+* Files beginning with :file:`TrueOS-Server` and ending with
+  :file:`.iso` should be burned to a CD. 
+  
+* Files ending in :file:`img` must be burned to a USB stick.
 
-Burning to DVD on Windows 
---------------------------
+To burn to a CD or DVD, use either a burning utility that came with
+the operating system on the system with the burner or a burning
+application. Table 2.5a lists some freely available burning utilities.
 
-Windows 10 has built-in support for writing ISO images to disc.
-Right-click on the :file:`.iso` file in Windows Explorer and select
-"Burn disk image". Select the DVD device in the "Disk Burner" drop-down
-menu and then click "Burn" to write the disc. See the Microsoft article
-`Burn a CD or DVD from an ISO file <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-from-an-ISO-file>`_
-for more detailed instructions.
+**Table 2.5a: Free Burning Utilities**
 
-Alternately, the
-`InfraRecorder utility <http://infrarecorder.org/>`_ is an open source
-burning application for both CDs and DVDs. Once installed, open
-InfraRecorder and click on the "Write Image" button shown in
-:numref:`Figure %s: Initial InfraRecorder Screen <infra1>`.
++-------------------------+-------------------------------------------------------------------------------------------------+
+| **Operating System**    | **Utility**                                                                                     |
++=========================+=================================================================================================+
+| Windows                 | `InfraRecorder utility <http://infrarecorder.org/>`_                                            |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| Windows                 | `Disk Burner <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-from-an-ISO-file>`_  |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| Linux or *BSD           | `K3B <https://www.kde.org/applications/multimedia/k3b/>`_                                       |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| Linux or *BSD           | `Brasero <https://wiki.gnome.org/Apps/Brasero>`_                                                |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| FreeBSD/PC-BSD/TrueOS   | `growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/creating-dvds.html>`_    |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| Mac OS X                | `Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_                             |
++-------------------------+-------------------------------------------------------------------------------------------------+
 
-.. _infra1:
-
-.. figure:: images/infra1.png
-
-InfraRecorder will display a screen where you can browse to the location
-of the :file:`.iso` file. Once selected, you will be presented with the
-screen shown in
-:numref:`Figure %s: Burn Options in InfraRecorder <infra2>`. You can
-accept the defaults and click "OK" to start the burn. When finished, the
-burner tray will open and a dialog box will appear indicating that the
-burning process has finished.
-
-.. _infra2:
-
-.. figure:: images/infra2.png
-
-.. index:: burn
-.. _Burning to DVD on a BSD or Linux System:
-
-Burning to DVD on a BSD or Linux System
----------------------------------------
-
-`The K3B burner <https://www.kde.org/applications/multimedia/k3b/>`_ is
-an easy-to-use graphical burning application for Linux and BSD systems.
-This utility can be installed using :ref:`AppCafe®`. Once installed, it
-can be started by typing :command:`k3b`.
-
-To burn the ISO, insert a blank DVD media, browse to the location of the
-:file:`.iso` file in the screen shown in
-:numref:`Figure %s: Selecting the Burn Image Tool Within K3B <k3b1>`,
-and click :menuselection:`Tools --> Burn Image...` to see the screen in
-:numref:`Figure %s: K3B's Burn Image Screen <k3b2>`.
-
-.. _k3b1:
-
-.. figure:: images/k3b1.png
-
-.. _k3b2:
-
-.. figure:: images/k3b2.png
-
-Click the "Start" button to burn the file. K3B will automatically eject
-the media once the burn is complete.
-
-`The Brasero burner <https://wiki.gnome.org/Apps/Brasero>`_ provides an
-alternative, easy-to-use burning application included with the GNOME
-desktop. A stand-alone application is also available within
-:ref:`AppCafe®`. Once installed, Brasero can be launched by typing
-:command:`brasero`.
-:numref:`Figure %s: Brasero's Initial Screen <brasero1>` shows the
-initial Brasero screen.
-
-.. _brasero1:
-
-.. figure:: images/brasero1.png
-
-Click "Burn image" to open the screen seen in
-:numref:`Figure %s: Brasero Image Burning Setup <brasero2>`. Use the
-"Click here to select a disk image" button to select your :file:`.iso`
-file.
-
-.. _brasero2:
-
-.. figure:: images/brasero2.png
-
-The name and size of your :file:`.iso` file should appear and Brasero
-will indicate the size of the media. If you click on the "Properties"
-button, you can change some options, but it is fine to keep the default
-settings. When you are ready, click the "Burn" button and Brasero will
-burn your ISO.
-
-If you are familiar with using the command line, you can use the
-:command:`growisofs` command line utility to burn the DVD. This utility
-is installed by default on a TrueOS® system. To install that software on
-a FreeBSD system, issue this command as the superuser::
-
- pkg install dvd+rw-tools
-
-Depending upon the type of DVD burner hardware, you may have to
-configure the system to use it. If the device is not USB or SCSI, the
-ATAPI driver must be loaded by running this command as the superuser::
-
- kldload atapicam
-
-If you just get your prompt back, the driver successfully loaded. If you
-get the message "kldload: can't load atapicam: File exists", this means
-that the driver was already loaded. 
-
-After inserting the DVD media into the device, you can start the burn
-using this command::
-
- growisofs -Z /dev/cd0=TrueOS-Desktop-2016-08-11-x64-DVD.iso
-
-If your device is not the first burning device, change the number *0* 
-accordingly. If your ISO has a different name, substitute the correct
-name in the command shown above.
-
-.. index:: Mac
-.. _Burning to DVD on a Mac OS X System:
-
-Burning to DVD on a Mac OS X System
------------------------------------
-
-To burn the ISO on a Mac OS X system, go to
-:menuselection:`Finder --> Applications --> Utilities --> Disk Utility`. 
-With a blank media inserted into the burner, highlight the device
-representing the DVD writer and click the "Burn" button. This will open
-up a browser where you can select the ISO to burn.
-
-Once the ISO is highlighted, click the "Burn" button. A pop-up message
-will indicate that the device is ready to burn. Click "Burn" once more
-and Disk Utility will write the ISO to the DVD media.
 
 .. index:: burn
 .. _Writing to a USB Device:
@@ -586,9 +484,6 @@ following:
   you use will depend upon your operating system 
 
 * a USB thumb drive or hard drive large enough to hold the image 
-
-Once the image is written, boot from the removable device and proceed
-with the TrueOS® installation.
 
 .. note:: If there is a card reader on the system or the USB drive is
    connected using a USB dongle, device enumeration may be affected. For
