@@ -391,10 +391,9 @@ This tab contains the following configurable options:
   You do not need to initiate updates manually. TrueOS® uses an automated updater that automatically checks for updates, no more than once per day, 20
   minutes after a reboot and then every 24 hours.
   
-* **Custom Package Repository:** if you have followed the instructions
-  to :ref:`Create a Local Package Mirror`, check this box. This will
-  activate the "URL" field so that you can input the URL to the custom
-  repository.
+* **Custom Package Repository:** if you have a custom package
+  repository, check this box. This will activate the "URL" field so
+  that you can input the URL to the custom repository.
 
 .. index:: updates
 .. _Upgrading from 10.x to |version|:
@@ -1248,8 +1247,7 @@ new rule to your custom list.
 If you have created any custom rules and wish to delete one, highlight the rule to delete and click the "Close Selected Ports" button to remove it from
 the custom rules list.
 
-.. note:: whenever you add or delete a custom rule, the rule will not be used until you click the "Restart" button shown in :numref:`Figure %s: Firewall Manager Utility <firewall1>`. Also,
-   your custom rules are not used whenever the system is in :ref:`Tor Mode`.
+.. note:: whenever you add or delete a custom rule, the rule will not be used until you click the "Restart" button shown in :numref:`Figure %s: Firewall Manager Utility <firewall1>`.
 
 Whenever you create a custom rule, test that your new rule works as expected. For example, if you create a rule to allow incoming SSH connections, try connecting
 to your TrueOS® system using :command:`ssh` to verify that the firewall is now allowing the connection.

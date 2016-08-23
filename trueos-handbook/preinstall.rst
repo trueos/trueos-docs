@@ -461,9 +461,9 @@ application. Table 2.5a lists some freely available burning utilities.
 +-------------------------+-------------------------------------------------------------------------------------------------+
 | Windows                 | `Disk Burner <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-from-an-ISO-file>`_  |
 +-------------------------+-------------------------------------------------------------------------------------------------+
-| Linux or *BSD           | `K3B <https://www.kde.org/applications/multimedia/k3b/>`_                                       |
+| Linux or \*BSD          | `K3B <https://www.kde.org/applications/multimedia/k3b/>`_                                       |
 +-------------------------+-------------------------------------------------------------------------------------------------+
-| Linux or *BSD           | `Brasero <https://wiki.gnome.org/Apps/Brasero>`_                                                |
+| Linux or \*BSD          | `Brasero <https://wiki.gnome.org/Apps/Brasero>`_                                                |
 +-------------------------+-------------------------------------------------------------------------------------------------+
 | FreeBSD/PC-BSD/TrueOS   | `growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/creating-dvds.html>`_    |
 +-------------------------+-------------------------------------------------------------------------------------------------+
