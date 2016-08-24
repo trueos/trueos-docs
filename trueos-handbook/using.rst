@@ -295,65 +295,96 @@ You can now search for and watch media. To exit Plex, click the "<" then "Quit".
 Mount Tray
 ==========
 
-The Mount Tray graphical application is used to facilitate the mounting and unmounting of filesystems on internal disks, USB storage devices, and optical
-media. It is included in the system tray, meaning that in can be used within any window manager that provides a system tray. If you remove the icon from the
-system tray, you can re-add by clicking "Mount Tray" within SysAdm™ or by typing :command:`pc-mounttray &`.
+The Mount Tray graphical application is used to facilitate the
+mounting and unmounting of internal disks, USB storage devices,
+optical media, and network shares. It is included in the system tray
+by default. If you remove the icon from the system tray, you can
+re-add it by typing :command:`pc-mounttray &`.
 
-.. note:: if you prefer to mount devices from the command line, see the section on :ref:`pc-sysconfig`. 
+.. note:: If you prefer to mount devices from the command line, see
+   the section on :ref:`pc-sysconfig`. 
 
-In the example shown in :numref:`Figure %s: Mount Tray Example <mount1>`, a USB device and a music CD are currently inserted and the user has clicked "More Options" to view the
-available options.
+In the example shown in
+:numref:`Figure %s: Mount Tray Example <mount1>`, a USB device and a
+music CD are currently inserted and the user has clicked "More
+Options" to view the available options.
 
 .. _mount1:
 
 .. figure:: images/mount1.png
 
-When you first insert a USB drive, a "New Device" message should appear in the system tray. If you click Mount Tray and the filesystem on the device is
-recognized, it will automatically mount and the contents of the device will be displayed in the default file manager for the desktop. Alternately, right-click
-Mount Tray and click the "Mount" button to mount the device and its contents. A list of available file managers can be found in
-:ref:`Files and File Sharing` and Table 1.3a lists which filesystems are supported by Mount Tray. If the filesystem is not recognized, a
-*?* will appear next to the device. When the device is mounted, its "Mount" button changes to "Eject". When you are finished using the device, press this
-"Eject" button and wait for the message indicating that it is safe to remove the device before physically removing the device. Note that you will receive a
-"Device Busy" message if the file manager is still open with the device's contents. If you receive this message, press "No" to close it, close the file
-manager, then press "Eject" again. This will ensure that the device is cleanly unmounted.
+When you first insert a USB drive, a "New Device" message will appear
+in the system tray. Click the Mount Tray icon, then the "Mount" button
+for the device. Mount Tray will try to determine the filesystem on the
+device and then to mount it. If it is not sure, a pop-up menu will
+prompt you to select the correct filesystem. A list of supported
+filesystems can be found in Table 1.3a. Once mounted, the "Mount"
+button changes to "Unmount", and if the device contains files,
+an indicator of the drive's used capacity and a button to "Browse" the
+contents of the device will be added. An example is shown in 
+:numref:`Figure %s: Mounted USB Device <mount2>`.
 
-.. note:: while Mount Tray will allow you to physically remove a USB device without unmounting it first, it is recommended to always "Eject" the drive first.
+.. _mount2:
+
+.. figure:: images/mount2.png
+
+If you mount the device often and would like it to mount automatically
+when inserted, check the "Auto-Run" box.
+
+When you are finished using the device, press the "Unmount" button.
+This will safely unmount the device and toggle the button back to
+"Mount". Note that you will receive a "Device Busy" message if the
+file manager is still open with the device's contents. If you receive
+this message, press "No" to close the pop-up, close the file manager,
+then press "Unmount" again. This will ensure that the device is
+cleanly unmounted.
+
+.. note:: While Mount Tray will allow you to physically remove a USB
+   device without unmounting it first, it is recommended to always
+   "Unmount" the drive first.
 
 When you first insert an optical media, such as a music CD or DVD video, a message will indicate that an optical disk is available and, by default, the default player
 application will open so that you can play the contents of the disk. The default player that is used depends upon which applications have been installed, where
 `VLC <http://www.videolan.org/vlc/>`_ takes precedence, followed by `SMPlayer <http://smplayer.sourceforge.net/>`_. If you close the player, you can click
 the "Play" button shown in :numref:`Figure %s: Mount Tray Example <mount1>` to restart it.
 
+If any shares are available on the network, PUT EXAMPLE IN HERE ON HOW TO BROWSE TO SHARE AND TYPES OF AVAILABLE SHARES
+
 The following options are available in the "More Options" menu: 
 
-* **Open Media Directory:** this will only appear if a filesystem has been mounted and can be used to open the default file manager if it does not automatically open.
-  If the desktop does not provide a default file manager, Mount Tray will provide an "open with" dialogue so that you can select the utility to use to browse the
-  contents of the USB device.
+* **View Disk Usage:** in the example shown in
+   :numref:`Figure %s: View Disk Usage Using Mount Tray <mount3>`,
+   a UFS-formatted USB device is mounted at
+   :file:`/Media/STECH-1d`. The amount of disk space used by the
+   system hard drive and the USB drive is shown in both GB and as a
+   percentage of available disk space. The Mount Tray will turn yellow if
+   disk space is over 70% and red if disk space is over 90%. If the internal disk drives are partitioned with any other filesystems, these will also appear in Mount Tray.
 
-* **View Disk Usage:** in the example shown in :numref:`Figure %s: View Disk Usage Using Mount Tray <mount2>`, a UFS-formatted USB device is mounted at :file:`/Media/STECH-1d`. The
-  amount of disk space used by the system hard drive and the USB drive is shown in both GB and as a percentage of available disk space. The Mount Tray will turn yellow if
-  disk space is over 70% and red if disk space is over 90%. If the internal disk drives are partitioned with any other filesystems, these will also appear in Mount Tray.
+* **Rescan Devices:** click this option if an entry for a newly
+  inserted device does not automatically appear.
 
-* **Rescan Devices:** click this option if an entry for the USB device does not automatically appear.
-
-* **Load ISO File:** used to mount an ISO to a memory disk. It will prompt for your password then open a browse menu so that you can browse to the location of
-  the :file:`.iso` file. Once the file is selected and mounted, its contents will be displayed in the default file manager. When you are finished browsing the
+* **Load ISO File:** used to mount an ISO to a memory disk. It will
+  open a browse menu so that you can browse to the location of the
+  :file:`.iso` file. Once the file is selected and mounted, its contents will be displayed in the default file manager. When you are finished browsing the
   contents, close the file manager and click the "Eject" button for the memory device in Mount Tray and enter your password when prompted. As the ISO is
   unmounted, the memory disk is also detached from the system.
 
-**Change Settings:** as seen in :numref:`Figure %s: Configure Disk Space Check <mount3a>`, this screen allows you to configure whether or not optical disks automatically open using
+**Change Settings:** as seen in
+  :numref:`Figure %s: Configure Disk Space Check <mount4>`, this
+  screen allows you to configure whether or not optical disks automatically open using
   the default player, whether or not Mount Tray automatically rechecks the disk space used by mounted devices and how often to perform that check, and whether or not
   Mount Tray checks disk space when a disk is mounted.
 
-* **Close Tray:** click this option to remove Mount Tray from the system tray.
+* **Close Tray:** click this option to remove Mount Tray from the
+  system tray.
 
-.. _mount2:
+.. _mount3:
 
-.. figure:: images/mount2.png
+.. figure:: images/mount3.png
 
-.. _mount3a:
+.. _mount4:
 
-.. figure:: images/mount3a.png
+.. figure:: images/mount4.png
 
 .. index:: mount
 .. _pc-sysconfig:
