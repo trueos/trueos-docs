@@ -617,13 +617,13 @@ Network Manager starts, indicating the name of the new device, and
 asking if you would like to enable it. Click "Yes" and the new device
 will be displayed with the list of network interfaces that TrueOS®
 recognizes. In the example seen in
-:numref:`Figure %s: Network Manager <network2a>`, the system has one
+:numref:`Figure %s: Network Manager <network2>`, the system has one
 Intel Ethernet interface that uses the *em* driver and an Intel
 wireless interface that uses the *wlan* driver.
 
-.. _network2a:
+.. _network2:
 
-.. figure:: images/network2a.png
+.. figure:: images/network2.png
 
 The rest of this section describes each tab of the Network Manager
 utility and demonstrate how to view and configure the network settings
@@ -798,7 +798,7 @@ security:
 
 .. _network9: 
 
-.. figure:: images/network9.jpg
+.. figure:: images/network9.png
 
 .. _network10:
 
