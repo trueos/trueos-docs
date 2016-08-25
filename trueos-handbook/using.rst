@@ -582,20 +582,31 @@ Table 11.5c summarizes some of the available utilities.
 Network Manager
 ===============
 
-During installation, TrueOS® configures your Ethernet interfaces to use DHCP and provides a screen to :ref:`Connect to a Wireless Network`. In most cases,
-this means that your connected interfaces should "just work" whenever you use your TrueOS® system.
+During installation, TrueOS® configures any connected Ethernet
+interfaces to use DHCP and provides a screen to
+:ref:`Connect to a Wireless Network`. In most cases, this means that
+connected interfaces should "just work" whenever you use your TrueOS®
+system.
 
-For desktops that provide a system tray, a wireless configuration icon will appear if TrueOS® detects a supported wireless card. If you hover over the wireless icon, shown in
-:numref:`Figure %s: Wireless Information in System Tray <network1>`, it will indicate if the interface is associated and provide information regarding the IP address, IPv6 address, SSID,
-connection strength, connection speed, MAC address, and type of wireless device.
+After installation, a wireless configuration icon will appear in the
+system tray if TrueOS® detects a supported wireless card. If you hover
+over the wireless icon, shown in
+:numref:`Figure %s: Wireless Information in System Tray <network1>`,
+it will indicate if the interface is associated and provide information
+regarding the IP address, IPv6 address, SSID, connection strength,
+connection speed, MAC address, and type of wireless device.
 
 .. _network1:
 
 .. figure:: images/network1.png
 
-If you right-click the wireless icon, you will see a list of detected wireless networks. Simply click the name of a network to associate with it. The
-right-click menu also provides options to configure the wireless device, start the Network Manager, restart the network (useful if you need to renew your DHCP
-address), and to close the Network Monitor so that the icon no longer shows in the system tray. If you have multiple wireless devices, each will have its own
+If you right-click the wireless icon, you will see a list of detected
+wireless networks. Click the name of a network to associate with it.
+The right-click menu also provides options to configure the wireless
+device, start the Network Manager, restart the network (useful if you
+need to renew your DHCP address), route the network connection through
+Tor (to browse the Internet anonymously as described in :ref:`Tor Mode`), and to close the Network Monitor so that the icon no longer
+shows in the system tray. If you have multiple wireless devices, each will have its own
 icon in the system tray. If you do not use one of the devices, click its "Close the Network Monitor" to remove it from the tray.
 
 To view or manually configure all of your network interfaces click "Network Manager" within SysAdm™ or type
@@ -974,6 +985,38 @@ developed.
 The FreeBSD Handbook chapter on `Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_ provides a good overview of how
 wireless works and offers some troubleshooting suggestions.
 
+.. index:: security
+.. _Tor Mode:
+
+Tor Mode
+--------
+
+Tor mode uses `Tor <https://www.torproject.org/>`_, `socat <http://www.dest-unreach.org/socat/>`_, and a built-in script which automatically creates the necessary firewall
+rules to enable and disable tor mode at the user's request. While in tor mode, the firewall will redirect all outgoing port 80 (HTTP), 443 (HTTPS), and DNS traffic through the
+Tor transparent proxy network.
+
+To start tor mode, right-click Update Manager and check the "Routing through Tor" box. The pop-up message shown in :numref:`Figure %s: Enabling Tor Mode <tor1>` will appear.
+
+.. _tor1:
+
+.. figure:: images/tor1.png
+
+If you have never used the Tor network before, it is recommended to read the link for the Tor FAQ. Click "Yes" to enable tor mode and enter your password when prompted
+so that the firewall rules can be updated for you.
+
+While in tor mode, a small onion will be added to the Update Manager icon and, if you hover over the icon, it will say "(Routing through Tor)". You can also verify that
+you are connected to the Tor network by right-clicking Update Manager and clicking "Check Tor connection". It will take a moment or so, but a pop-up message should
+indicate that the connection to `<https://check.torproject.org/>`_ succeeded.
+
+.. note:: the system will remain in tor mode, even after a reboot, until you disable it. To disable tor mode, right-click Update Manager and uncheck the "Routing through Tor"
+   box. Now when you "Check Tor connection", it should indicate that you are not using Tor.
+
+To enable and disable tor mode from the command line or on a desktop that does not provide a system tray, use the following commands:
+
+* :command:`sudo enable-tor-mode` enables tor mode.
+
+* :command:`sudo disable-tor-mode` disables tor mode.
+
 .. index:: windows
 .. _Windows Emulation:
 
@@ -1122,6 +1165,9 @@ The security features built into TrueOS® include:
 
 * :ref:`PersonaCrypt` allows a user to use a removable, encrypted
   device as their home directory.
+  
+* :ref:`Tor Mode` can be used to anonymously access Internet sites as this mode automatically forwards all Internet traffic through the
+  `Tor Project's <https://www.torproject.org/>`_ transparent proxy service.
 
 If you would like to learn more about security on FreeBSD and TrueOS®
 systems, :command:`man security` is a good place to start. These
