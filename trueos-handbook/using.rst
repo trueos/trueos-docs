@@ -844,51 +844,67 @@ interface.
 Network Configuration (Advanced)
 --------------------------------
 
-The "Network Configuration (Advanced)" tab of the Network Manager is seen in
-:numref:`Figure %s: Network Configuration (Advanced) tab <network13a>`. The displayed information is for the currently
-highlighted interface. If you wish to edit these settings, make sure that the interface that you wish to configure is highlighted in the "Devices" tab.
+The "Network Configuration (Advanced)" tab of the Network Manager is
+seen in
+:numref:`Figure %s: Network Configuration (Advanced) tab <network13>`.
+The displayed information is for the currently highlighted interface.
+If you wish to edit these settings, make sure that the interface that
+you wish to configure is highlighted in the "Devices" tab.
 
+.. _network13: 
 
-.. _network13a: 
+.. figure:: images/network13.png
 
-.. figure:: images/network13a.png
+If the interface receives its IP address information from a DHCP
+server, this screen allows you to view the received DNS information. If
+you wish to override the default DNS settings or set them manually,
+check the "Enable Custom DNS" box. You can then set the following: 
 
-If the interface receives its IP address information from a DHCP server, this screen allows you to view the received DNS information. If you wish to override
-the default DNS settings or set them manually, check the "Enable Custom DNS" box. You can then set the following: 
+* **DNS 1:** the IP address of the primary DNS server. If you do not
+  know which IP address to use, click the "Public servers" button to
+  select a public DNS server.
 
-**DNS 1:** the IP address of the primary DNS server. If you do not know which IP address to use, click the "Public servers" button to select a public DNS
-server.
+* **DNS 2:** the IP address of the secondary DNS server.
 
-**DNS 2:** the IP address of the secondary DNS server.
+* **Search Domain:** the name of the domain served by the DNS server.
 
-**Search Domain:** the name of the domain served by the DNS server.
-
-If you wish to change or set the default gateway, check the "Enable Custom Gateway" box and input the IP address of the default gateway.
+If you wish to change or set the default gateway, check the "Enable
+Custom Gateway" box and input the IP address of the default gateway.
 
 The following settings can be modified in the IPv6 section: 
 
-**Enable IPv6 support:** if this box is checked, the specified interface can participate in IPv6 networks.
+* **Enable IPv6 support:** if this box is checked, the specified
+  interface can participate in IPv6 networks.
 
-**IPv6 gateway:** the IPv6 address of the default gateway used on the IPv6 network.
+* **IPv6 gateway:** the IPv6 address of the default gateway used on
+  the IPv6 network.
 
-**IPv6 DNS 1:** the IPv6 address of the primary DNS server used on the IPv6 network. If you do not know which IP address to use, click the "Public servers"
-button to select a public DNS server.
+* **IPv6 DNS 1:** the IPv6 address of the primary DNS server used on
+  the IPv6 network. If you do not know which IP address to use, click
+  the "Public servers" button to select a public DNS server.
 
-**IPv6 DNS 2:** the IPv6 address of the secondary DNS server used on the IPv6 network.
+* **IPv6 DNS 2:** the IPv6 address of the secondary DNS server used on
+  the IPv6 network.
 
 The "Misc" section allows you to configure these options: 
 
-**System Hostname:** the name of your computer. It must be unique on your network.
+* **System Hostname:** the name of your computer. It must be unique on
+  your network.
+  
+* **Domain Name:** if the system is in a domain, you can specify it here.
 
-**Enable wireless/wired failover via lagg0 interface:** the  interface allows you to seamlessly switch between using an Ethernet interface and a wireless
-interface. If you want this functionality, check this box.
+* **Enable wireless/wired failover via lagg0 interface:** this
+  interface allows you to seamlessly switch between using an Ethernet
+  interface and a wireless interface. If you want this functionality,
+  check this box.
 
-.. note:: some users experience problems using lagg. If you have problems connecting to a network using an interface that previously worked, uncheck this box
-   and remove any references to "lagg" in your :file:`/etc/rc.conf` file.
+.. note:: Some users experience problems using lagg. If you have
+   problems connecting to a network using an interface that previously
+   worked, uncheck this box and remove any references to "lagg" in
+   your :file:`/etc/rc.conf` file.
 
-**Domain Name:** if the system is in a domain, you can specify it here.
-
-If you make any changes within this window, click the "Apply" button to apply them.
+If you make any changes within this window, click the "Apply" button
+to apply them.
 
 .. index:: network
 .. _Proxy Settings:
@@ -896,30 +912,45 @@ If you make any changes within this window, click the "Apply" button to apply th
 Proxy Settings 
 ---------------
 
-The "Proxy" tab, shown in :numref:`Figure %s: Proxy Settings Configuration <network14>`, is used when your network requires you to go through a proxy server in order to access the Internet.
+The "Proxy" tab, shown in
+:numref:`Figure %s: Proxy Settings Configuration <network14>`, is
+used when your network requires you to go through a proxy server in
+order to access the Internet.
 
 .. _network14: 
 
 .. figure:: images/network14.png
 
-Check the "Proxy Configuration" check box to activate the settings. The follow settings can be configured in this screen: 
+Check the "Proxy Configuration" check box to activate the settings.
+The following settings can be configured in this screen: 
 
-**Server Address:** enter the IP address or hostname of the proxy server.
+* **Server Address:** enter the IP address or hostname of the proxy
+  server.
 
-**Port Number:** enter the port number used to connect to the proxy server.
+* **Port Number:** enter the port number used to connect to the proxy
+  server.
 
-**Proxy Type:** choices are "Basic" (sends the username and password unencrypted to the server) and "Digest" (never transfers the actual password across the
-network, but instead uses it to encrypt a value sent from the server). Do not select "Digest" unless you know that the proxy server supports it.
+* **Proxy Type:** choices are "Basic" (sends the username and password
+  unencrypted to the server) and "Digest" (never transfers the actual
+  password across the network, but instead uses it to encrypt a value
+  sent from the server). Do not select "Digest" unless you know that
+  the proxy server supports it.
 
-**Specify a Username/Password:** check this box and input the username and password if they are required to connect to the proxy server.
+* **Specify a Username/Password:** check this box and input the
+  username and password if they are required to connect to the proxy
+  server.
 
-Proxy settings are saved to the :file:`/etc/profile` and :file:`/etc/csh.cshrc` files so that they are available to the TrueOS® utilities as well as any
-application that uses :command:`fetch`.
+Proxy settings are saved to the :file:`/etc/profile` and
+:file:`/etc/csh.cshrc` files so that they are available to the TrueOS®
+utilities as well as any application that uses :command:`fetch`.
 
-Applications that did not come with the operating system, such as web browsers, may require you to configure proxy support using that application's
-configuration utility.
+Applications that did not come with the operating system, such as web
+browsers, may require you to configure proxy support using that
+application's configuration utility.
 
-If you apply any changes to this tab, a pop-up message will warn that you may have to logout and back in in order for the proxy settings to take effect.
+If you apply any changes to this tab, a pop-up message will warn that
+you may have to logout and back in in order for the proxy settings to
+take effect.
 
 .. index:: network
 .. _Configuring a Wireless Access Point:
@@ -927,42 +958,50 @@ If you apply any changes to this tab, a pop-up message will warn that you may ha
 Configuring a Wireless Access Point
 -----------------------------------
 
-If you click the entry for a wireless device, as seen in :numref:`Figure %s: Setup Access Point Option <network15>`, the right-click menu has an option to "Setup Access Point". 
+If you right-click the entry for a wireless device, as seen in
+:numref:`Figure %s: Setup Access Point Option <network15>`, the
+right-click menu has an option to "Setup Access Point". 
 
 .. _network15:
 
 .. figure:: images/network15.png
 
-:numref:`Figure %s: Access Point Basic Setup <network16>` shows the configuration screen if you select "Setup Access Point". 
+:numref:`Figure %s: Access Point Basic Setup <network16>` shows the
+configuration screen if you select "Setup Access Point". 
 
 .. _network16:
 
 .. figure:: images/network16.png
 
-This screen contains two options: 
+The "Basic Setup" tab of this screen contains two options: 
 
-- **Visible Name:** this is the name that will appear when users scan for available access points.
+* **Visible Name:** this is the name that will appear when users scan
+  for available access points.
 
-- **Set Password:** setting a WPA password is optional, though recommended if you only want authorized devices to use the access point. If used, the password
-  must be a minimum of 8 characters.
+* **Set Password:** setting a WPA password is optional, though
+  recommended if you only want authorized devices to use the access
+  point. If used, the password must be a minimum of 8 characters.
 
-:numref:`Figure %s: Access Point Advanced Setup <network17>` shows the "Advanced Configuration (optional)" screen.
+:numref:`Figure %s: Access Point Advanced Setup <network17>` shows the
+"Advanced Configuration (optional)" screen.
 
 .. _network17:
 
 .. figure:: images/network17.png
 
-The settings in this screen are optional and allow you to fine-tune the access point's configuration: 
+The settings in this screen are optional and allow you to fine-tune the
+access point's configuration: 
 
-- **Base IP:** the IP address of the access point.
+* **Base IP:** the IP address of the access point.
 
-- **Netmask:** the associated subnet mask for the access point.
+* **Netmask:** the associated subnet mask for the access point.
 
-- **Mode:** available modes are *11g* (for 802.11g), *11ng* (for 802.11n on the 2.4-GHz band), or *11n* (for 802.11n).
+* **Mode:** available modes are *11g* (for 802.11g), *11ng* (for
+  802.11n on the 2.4-GHz band), or *11n* (for 802.11n).
 
-- **Channel:** select the channel to use.
+* **Channel:** select the channel to use.
 
-- **Country Code:** the two letter country code of operation.
+* **Country Code:** the two letter country code of operation.
 
 .. index:: network
 .. _Troubleshooting Network Settings:
@@ -970,35 +1009,57 @@ The settings in this screen are optional and allow you to fine-tune the access p
 Troubleshooting Network Settings 
 ---------------------------------
 
-While Ethernet networking usually "just works" on a TrueOS® system, users sometimes encounter problems, especially when connecting to wireless networks.
-Sometimes the problem is due to a configuration error; sometimes a driver is buggy or is not yet available. This section is meant to help you pinpoint the
-problem so that you can either fix it yourself or give the developers the information they need to fix or create the driver.
+While networking usually "just works" on a TrueOS® system, users
+sometimes encounter problems, especially when connecting to wireless
+networks. Sometimes the problem is due to a configuration error and
+sometimes a driver is buggy or is not yet available. This section is
+meant to help you pinpoint the problem so that you can either fix it
+yourself or give the developers the information they need to fix or
+create the driver.
 
-When troubleshooting your network configuration, use the following files and commands.
+When troubleshooting your network configuration, use the following
+files and commands.
 
-The :file:`/etc/rc.conf` file is read when the system boots up. In order for the system to configure an interface at boot time, an entry must exist for it in
-this file. Entries are automatically created for you during installation for each interface that is active. An entry will be added (if it does not exist) or
-modified (if it already exists) when you configure an interface using Network Manager.
+The :file:`/etc/rc.conf` file is read when the system boots up. In
+order for the system to configure an interface at boot time, an entry
+must exist for it in this file. Entries are automatically created for
+you during installation for each interface that is active. An entry
+will be added (if it does not exist) or modified (if it already exists)
+when you configure an interface using Network Manager.
 
-Here is an example of the :file:`rc.conf` entries for an ethernet driver (*em0*) and a wireless driver (*run0*)::
+Here is an example of the :file:`rc.conf` entries for an ethernet 
+driver (*em0*) and a wireless driver (*run0*):
+
+.. code-block:: none
 
  ifconfig_em0="DHCP"
- wlans_run0="wlan0"
+ wlans_iwm0="wlan0"
  ifconfig_wlan0="WPA SYNCDHCP"
 
-When reading through your own file, look for lines that begin with *ifconfig*. For a wireless interface, also look for lines containing *wlans*.
+When reading through your own file, look for lines that begin with
+*ifconfig*. For a wireless interface, also look for lines containing
+*wlans*.
 
-.. note:: unlike Linux interface driver names, FreeBSD/TrueOS® interface driver names indicate the type of chipset. Each driver name has an associated man
-   page where you can learn which devices use that chipset and if there are any configuration options or limitations for the driver. When reading the man
-   page, do not include the interface number. For the above example, you could read :command:`man em` and :command:`man run`.
+.. note:: Unlike Linux interface driver names, FreeBSD/TrueOS®
+   interface driver names indicate the type of chipset. Each driver
+   name has an associated man page where you can learn which devices
+   use that chipset and if there are any configuration options or
+   limitations for the driver. When reading the man page, do not
+   include the interface number. For the above example, you could read
+   :command:`man em` and :command:`man iwm`.
 
+The :file:`/etc/wpa_supplicant.conf` file is used by wireless
+interfaces and contains the information needed to connect to a WPA
+network. If this file does not already exist, it is created for you
+when you enter the "Configuration" screen of a wireless interface.
 
-The :file:`/etc/wpa_supplicant.conf` file is used by wireless interfaces and contains the information needed to connect to a WPA network. If this file does
-not already exist, it is created for you when you enter the "Configuration" screen of a wireless interface.
+The :command:`ifconfig` command shows the current state of your
+interfaces. When reading through its output, check that your interface
+is listed, has a status of "active", and has an IP address. Here is a
+sample :command:`ifconfig` output showing the entries for an *re0*
+Ethernet interface and a *run0* wireless interface:
 
-The :command:`ifconfig` command shows the current state of your interfaces. When reading through its output, check that your interface is listed, has a status
-of "active", and has an IP address. Here is a sample :command:`ifconfig` output showing the entries for the *re0* Ethernet interface and the *run0* wireless
-interface::
+.. code-block:: none
 
  re0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500 options=389b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,WOL_UCAST,WOL_MCAST,WOL_MAGIC>
  ether 60:eb:69:0b:dd:4d
@@ -1019,11 +1080,18 @@ interface::
  country US authmode WPA1+WPA2/802.11i privacy ON deftxkey UNDEF
  txpower 0 bmiss 7 scanvalid 60 protmode CTS wme roaming MANUAL bintval 0
 
-In this example, the ethernet interface (*re0*) is active and has an IP address. However, the wireless interface (*run0*, which is associated with *wlan0*)
-has a status of "no carrier" and does not have an IP address. In other words, it has not yet successfully connected to the wireless network.
+In this example, the ethernet interface (*re0*) is active and has an IP
+address. However, the wireless interface (*run0*, which is associated
+with *wlan0*) has a status of "no carrier" and does not have an IP
+address. In other words, it has not yet successfully connected to the
+wireless network.
 
-The :command:`dmesg` command lists the hardware that was probed during boot time and will indicate if the associated driver was loaded. If you wish to search
-the output of this command for specific information, pipe it to :command:`grep` as seen in the following examples::
+The :command:`dmesg` command lists the hardware that was probed during
+boot time and will indicate if the associated driver was loaded. If you
+wish to search the output of this command for specific information,
+pipe it to :command:`grep` as seen in the following examples:
+
+.. code-block:: none
 
  dmesg | grep Ethernet
  re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
@@ -1044,8 +1112,13 @@ the output of this command for specific information, pipe it to :command:`grep` 
  run0: MAC/BBP RT3070 (rev 0x0201), RF RT2020 (MIMO 1T1R), address 00:25:9c:9f:a2:30
  run0: firmware RT2870 loaded
 
-If your interface does not show up in :command:`ifconfig` or :command:`dmesg`, it is possible that a driver for this card is not provided with the operating
-system. If the interface is built into the motherboard of the computer, you can use the :command:`pciconf` command to find out the type of card::
+If your interface does not show up in :command:`ifconfig` or
+:command:`dmesg`, it is possible that a driver for this card is not
+provided with the operating system. If the interface is built into the
+motherboard of the computer, you can use the :command:`pciconf` command
+to find out the type of card:
+
+.. code-block:: none
 
  pciconf -lv | grep Ethernet
  device = 'Gigabit Ethernet NIC(NDIS 6.0) (RTL8168/8111/8111c)'
@@ -1053,13 +1126,17 @@ system. If the interface is built into the motherboard of the computer, you can 
  pciconf -lv | grep wireless
  device = 'Realtek RTL8191SE wireless LAN 802.11N PCI-E NIC (RTL8191SE?)'
 
-In this example, there is a built-in Ethernet device that uses a driver that supports the RTL8168/8111/8111c chipsets. As we saw earlier, that driver is
-*re0*. The built-in wireless device was also found but the *?* indicates that a driver for the RTL8191SE chipset was not found. A web search for "FreeBSD
-RTL8191SE" will give an indication of whether a driver exists (perhaps in a version of FreeBSD that has not been released yet) or if a driver is being
-developed.
+In this example, there is a built-in Ethernet device that uses a driver
+that supports the RTL8168/8111/8111c chipsets. As we saw earlier, that
+driver is *re0*. The built-in wireless device was also found but the
+*?* indicates that a driver for the RTL8191SE chipset was not found.
+A web search for "FreeBSD RTL8191SE" will give an indication of whether
+a driver existsor is being developed.
 
-The FreeBSD Handbook chapter on `Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_ provides a good overview of how
-wireless works and offers some troubleshooting suggestions.
+The FreeBSD Handbook chapter on
+`Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_
+provides a good overview of how wireless works and offers some
+additional troubleshooting suggestions.
 
 .. index:: security
 .. _Tor Mode:
