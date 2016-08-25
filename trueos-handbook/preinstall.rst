@@ -66,7 +66,7 @@ available disk space will improve your computing experience:
 
 * Sound card 
 
-* NVIDIA 3D-accelerated video card 
+* 3D-accelerated video card 
 
 TrueOS® does not require 50GB for its installation. Instead, the
 minimum recommendation is to provide sufficient room for the
@@ -130,17 +130,16 @@ installer.
 
 Support for the major graphic vendors is as follows: 
 
-**NVIDIA:** if you want to use 3D acceleration, NVIDIA well supported
-with native FreeBSD drivers. If an NVIDIA video card is detected, an "nVidia settings" icon will be added to "Browse Applications" for managing NVIDIA settings.
+**NVIDIA:** 3D acceleration on NVIDIA is provided by native FreeBSD
+drivers. If an NVIDIA video card is detected, an "nVidia settings" icon will be added to "Browse Applications" for managing NVIDIA settings.
 
-**Intel:** 3D acceleration on most Intel graphics is supported. With
-TrueOS® 11, this includes Skylake, Haswell, Broadwell, and ValleyView.
+**Intel:** 3D acceleration on most Intel graphics is supported. This
+includes Skylake, Haswell, Broadwell, and ValleyView.
 
 **ATI/Radeon:** 3D acceleration on most ATI and Radeon cards is
 supported.
 
-**Optimus:** at this time there is no switching support between the two
-graphics adapters provided by Optimus. Optimus implementations vary, so
+**Optimus:** at this time there is no switching support between the two graphics adapters provided by Optimus. Optimus implementations vary, so
 TrueOS® may or may not be able to successfully load a graphics driver on
 your hardware. If you get a blank screen after installation, check your
 BIOS to see if it has an option to disable one of the graphics adapters
@@ -148,21 +147,10 @@ or to set "discrete" mode. If the BIOS does not provide a discrete mode,
 TrueOS® will default to the 3D Intel driver and disable NVIDIA. This
 will change in the future when the NVIDIA driver supports Optimus.
 
-A list of tested graphics cards can be found on the
-`FreeBSD Graphics Wiki <https://wiki.freebsd.org/Graphics>`_.
-
 Wireless
 --------
 
-TrueOS® has built-in support for dozens of wireless networking cards.
-You can check if your card has a
-`FreeBSD driver <http://www.freebsd.org/releases/11.0R/hardware.html#WLAN>`_. 
-If it does, it should "just work". A list of supported Atheros devices
-and known limitations can be found on the
-`Status of Atheros Wifi Hardware wiki page <https://wiki.freebsd.org/dev/ath_hal%284%29/HardwareSupport>`_.
-A list of supported Intel devices and known limitations can be found on
-the `iwn(4) Intel 802.11n series NICs wiki page <https://wiki.freebsd.org/dev/iwn%284%29>`_.
-
+TrueOS® has built-in support for most wireless networking cards.
 TrueOS® will automatically detect available wireless networks for
 supported wireless devices. You can verify that your device is supported
 by clicking the "Hardware Compatibility" icon within the installer. If
@@ -202,17 +190,11 @@ deal with:
   the workaround in this
   `PR <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=160838>`_.
 
-* **Internal wireless:** some chipsets do not have a FreeBSD driver yet.
-
 * **Synaptics:** depending upon the hardware, you may or may not be able
   to disable the system's touchpad. This
   `forum post <https://forums.freebsd.org/threads/17370/#post-100670>`_ 
   describes how to enable Synaptics and some of the :command:`sysctl`
   options that this feature provides.
-
-* **Optimus graphics:** the current workaround is to disable Optimus in
-  the BIOS, set the onboard Intel video to be dominant, or to change the
-  graphics mode to discrete.
 
 If you wish to test your laptop's hardware, use the "Hardware
 Compatibility" icon in the :ref:`Language Selection Screen` before
@@ -236,17 +218,6 @@ restart the installer and go into "Advanced Mode" in the
 :ref:`Disk Selection Screen`. Make sure that the  “GPT (Best for new
 hardware)” box is unchecked. If it was checked previously, redo the
 installation with that box unchecked.
-
-.. index:: hardware
-.. _Touch Screens:
-
-Touch Screens 
---------------
-
-TrueOS® should automatically detect USB-based touch screen devices. If
-your display is USB and is not auto-detected, :ref:`Report a bug` that
-includes the output of :command:`usbconfig` and the contents of
-:file:`/etc/X11/xorg.conf` (if it exists).
 
 .. index:: partition
 .. _Creating Free Space:
@@ -298,12 +269,11 @@ are shown in
 .. figure:: images/shrink1.png
 
 Here, 119307MB of space is available. This is the maximum amount
-Windows can shrink this particular partition. Accept that number, or choose a
-smaller number for a smaller TrueOS® partition.  Click
-the "Shrink" button to begin the shrinking process.  This procedure can
-take several minutes to complete.
-When finished, the newly created free space will be
-displayed as seen in
+Windows can shrink this particular partition. Accept that number, or
+choose a smaller number for a smaller TrueOS® partition.  Click the
+"Shrink" button to begin the shrinking process.  This procedure can
+take several minutes to complete. When finished, the newly created
+free space will be displayed as seen in
 :numref:`Figure %s: Disk Now Has Free Space <shrink2>`.
 
 .. _shrink2: 
@@ -331,7 +301,8 @@ Around the 1st of each month, :ref:`Update Manager` will  provide a patch which 
   possible breakage caused by new features being available before the
   next RELEASE, use the STABLE version.
 
-Installation files can be downloaded from the `TrueOS® website <http://www.pcbsd.org/download/>`_ or the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_. 
+Installation files can be downloaded from the
+`TrueOS® website <https://www.trueos.org/downloads/>`_ or the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_. 
 
 Several types of files are available for download. Before downloading
 a file, review the following descriptions to see which one best suits
@@ -375,14 +346,13 @@ CD.
 Refer to :ref:`Burning the Installation Media` for instructions on how
 to burn the downloaded file to bootable media.
 
-If you have a slow download connection or wish to support the TrueOS® project financially, you can purchase PC-BSD® DVDs from the
-`FreeBSD Mall <https://www.freebsdmall.com/cgi-bin/fm/scan/su=yes/fi=prod_bsd/sf=sku/sf=title/sf=category/se=pcbsd>`_.
-
 Members of the TrueOS® project attend many IT conferences across the
 globe and give out TrueOS® DVDs at the FreeBSD booth. Visiting a
 FreeBSD booth is an excellent way to meet other TrueOS® and FreeBSD
-users and to get your questions answered. Check the `PC-BSD® Blog <https://blog.pcbsd.org/>`_ to see if any events are
-happening near you. If you are organizing a PC-BSD® booth, `contact us <http://www.pcbsd.org/support/>`_ to arrange for DVDs.
+users and to get your questions answered. Check the
+`TrueOS® Blog <https://www.trueos.org/blog/>`_ to see if any events
+are happening near you. If you are organizing a TrueOS® booth, contact
+us `on Gitter <https://gitter.im/trueos/Lobby>`_ to arrange for DVDs.
 
 .. index:: checksum
 .. _Data Integrity Check:
