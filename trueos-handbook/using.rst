@@ -605,23 +605,31 @@ wireless networks. Click the name of a network to associate with it.
 The right-click menu also provides options to configure the wireless
 device, start the Network Manager, restart the network (useful if you
 need to renew your DHCP address), route the network connection through
-Tor (to browse the Internet anonymously as described in :ref:`Tor Mode`), and to close the Network Monitor so that the icon no longer
-shows in the system tray. If you have multiple wireless devices, each will have its own
-icon in the system tray. If you do not use one of the devices, click its "Close the Network Monitor" to remove it from the tray.
+Tor (to browse the Internet anonymously as described in
+:ref:`Tor Mode`), and to close the Network Monitor so that the icon no
+longer shows in the system tray.
 
-To view or manually configure all of your network interfaces click "Network Manager" within SysAdm™ or type
-:command:`pc-su pc-netmanager`. If a new device has been inserted (e.g. a USB wireless interface), a pop-up message will open when you start Network Manager, indicate the name of the
-new device, and ask if you would like to enable it. Click "Yes" and the new device will be displayed with the list of network interfaces that TrueOS® recognizes. In the example seen in
-:numref:`Figure %s: Network Manager <network2a>`, the system has one Intel Ethernet interface that uses the *em* driver and an Intel wireless interface that uses the
-*wlan* driver.
+To view or manually configure a network interface, click "Start the
+Network Manager" within SysAdm™ or type
+:command:`pc-su pc-netmanager`. If a new device has been inserted,
+such as a USB wireless interface, a pop-up message will open when
+Network Manager starts, indicating the name of the new device, and
+asking if you would like to enable it. Click "Yes" and the new device
+will be displayed with the list of network interfaces that TrueOS®
+recognizes. In the example seen in
+:numref:`Figure %s: Network Manager <network2a>`, the system has one
+Intel Ethernet interface that uses the *em* driver and an Intel
+wireless interface that uses the *wlan* driver.
 
 .. _network2a:
 
 .. figure:: images/network2a.png
 
-The rest of this section describes each tab of the Network Manager utility and demonstrate how to view and configure the network settings for both
-Ethernet and wireless devices. It will then present some common troubleshooting scenarios, known issues, and suggestions for when a device does not have a
-built-in driver.
+The rest of this section describes each tab of the Network Manager
+utility and demonstrate how to view and configure the network settings
+for both Ethernet and wireless devices. It will then present some
+common troubleshooting scenarios, known issues, and suggestions for
+when a device does not have a built-in driver.
 
 .. index:: network
 .. _Ethernet Adapters:
@@ -629,8 +637,10 @@ built-in driver.
 Ethernet Adapters
 -----------------
 
-If you highlight an Ethernet interface in the "Devices" tab and either click the "Configure" button or double-click the interface name, you will see the
-screen shown in :numref:`Figure %s: Network Settings for an Ethernet Interface <network3>`.
+If you highlight an Ethernet interface in the "Devices" tab and either
+click the "Configure" button or double-click the interface name, you
+will see the screen shown in
+:numref:`Figure %s: Network Settings for an Ethernet Interface <network3>`.
 
 .. _network3:
 
@@ -638,41 +648,61 @@ screen shown in :numref:`Figure %s: Network Settings for an Ethernet Interface <
 
 There are two ways to configure an Ethernet interface: 
 
-1. **Use DHCP:** this method assumes that your Internet provider or network assigns your addressing information automatically using the DHCP protocol. Most
-   networks are already setup to do this. This method is recommended as it should "just work". 
+1. **Use DHCP:** this method assumes that your Internet provider or
+   network router assigns addressing information automatically using
+   the DHCP protocol. Most networks are already setup to do this. This
+   method is recommended as it should "just work". 
 
-2. **Manually type in the IP addressing information:** this method requires you to understand the basics of TCP/IP addressing or to know which IP address you
-   should be using on your network. If you do not know which IP address or subnet mask to use, you will have to ask your Internet provider or network
-   administrator.
+2. **Manually type in the IP addressing information:** this method
+   requires you to understand the basics of TCP/IP addressing or to
+   know which IP address you should be using on your network. If you
+   do not know which IP address or subnet mask to use, you will have
+   to ask your Internet provider or network administrator.
 
-By default, TrueOS® will attempt to obtain an address from a DHCP server. If you wish to manually type in your IP address, check the box "Assign static IP
-address". Type in the IP address, using the right arrow key or the mouse to move between octets. Then, double-check that the subnet mask ("Netmask") is the
-correct value and change it if it is not.
+By default, TrueOS® attempts to obtain an address from a DHCP server.
+If you wish to manually type in your IP address, check the box "Assign
+static IP address". Type in the IP address, using the right arrow key
+or the mouse to move between octets. Then, double-check that the
+subnet mask ("Netmask") is the correct value and change it if it is
+not.
 
-If the Ethernet network uses 802.1x authentication, check the box "Enable WPA authentication" which will enable the "Configure WPA" button. Click this button
-to select the network and to input the authentication values required by the network.
+If the Ethernet network uses 802.1x authentication, check the box
+"Enable WPA authentication" which will enable the "Configure WPA"
+button. Click this button to select the network and to input the
+authentication values required by the network.
 
-By default, the "Disable this network device" box is unchecked. If you check this checkbox, TrueOS® will immediately stop the interface from using the
-network. The interface will remain inactive until this checkbox is unchecked.
+By default, the "Disable this network device" box is unchecked. If you
+check this checkbox, TrueOS® will immediately stop the interface from
+using the network. The interface will remain inactive until this
+checkbox is unchecked.
 
-The "Advanced" tab, seen in :numref:`Figure %s: Advanced Tab of an Ethernet Interface's Network Settings <network4>`, allows advanced users to change their
-:wikipedia:`MAC address` or to automatically obtain an :wikipedia:`IPv6 address`. Both boxes should remain checked unless
-you are an advanced user who has a reason to change the default MAC or IPv6 address and you understand how to input an appropriate replacement address.
+The "Advanced" tab, seen in
+:numref:`Figure %s: Advanced Tab of an Ethernet Interface's Network Settings <network4>`,
+allows advanced users to manually input a :wikipedia:`MAC address` or
+:wikipedia:`IPv6 address`. Both boxes should remain checked, in order
+to automatically receive these addresses, unless you are an advanced
+user who has a reason to change the default MAC or IPv6 address and
+you understand how to input an appropriate replacement address.
 
 .. _network4:
 
 .. figure:: images/network4.png
 
-The "Info" tab, seen in :numref:`Figure %s: Info Tab of an Ethernet Interface's Network Settings <network5>`, will display the current network address settings and some traffic statistics.
+The "Info" tab, seen in
+:numref:`Figure %s: Info Tab of an Ethernet Interface's Network Settings <network5>`,
+displays the current network address settings and some traffic
+statistics.
 
 .. _network5:
 
 .. figure:: images/network5.png
 
-If you make any changes within any of the tabs, click the "Apply" button to activate them. Click the "OK" button when you are finished to go back to the main
-Network Manager window.
+If you make any changes within any of the tabs, click the "Apply"
+button to activate them. Click the "OK" button when you are finished
+to go back to the main Network Manager window.
 
-You can repeat this procedure for each network interface that you wish to view or configure.
+You can repeat this procedure for each network interface that you wish
+to view or configure.
 
 .. index:: network
 .. _Wireless Adapters:
@@ -680,52 +710,87 @@ You can repeat this procedure for each network interface that you wish to view o
 Wireless Adapters
 -----------------
 
-If your wireless interface does not automatically associate with a wireless network, you probably need to configure a wireless profile that contains the security settings required by the
-wireless network. Double-click the wireless icon in the system tray or highlight the wireless interface displayed in the "Devices" tab of Network Manager and click the "Configure"
-button. :numref:`Figure %s: Wireless Configuration <network6>` demonstrates that this system's wireless interface is currently
-associated with the wireless network listed in the "Configured Network Profiles" section.
+If your wireless interface does not automatically associate with a
+wireless network, you probably need to configure a wireless profile
+that contains the security settings required by the wireless network.
+Double-click the wireless icon in the system tray or highlight the
+wireless interface displayed in the "Devices" tab of Network Manager
+and click the "Configure" button.
+:numref:`Figure %s: Wireless Configuration <network6>` demonstrates
+that this system's wireless interface is currently associated with the
+wireless network listed in the "Configured Network Profiles" section.
 
 .. _network6: 
 
 .. figure:: images/network6.png
 
-To associate with a wireless network, click the "Scan" button to receive the list of possible wireless networks to connect to. Highlight the network you wish
-to associate with and click the "Add Selected" button. If the network requires authentication, a pop-up window will prompt you for the authentication details.
-Input the values required by the network then click the "Close" button. TrueOS® will add an entry for the network in the "Configured Network Profiles"
-section.
+To associate with a wireless network, click the "Scan" button to
+receive the list of possible wireless networks to connect to. Highlight
+the network you wish to associate with and click the "+Add Selected"
+button. If the network requires authentication, a pop-up window will
+prompt you for the authentication details. Input the values required
+by the network then click the "Close" button. TrueOS® will add an
+entry for the network in the "Configured Network Profiles" section.
 
-If the network is hidden, click the "Add Hidden" button, input the name of the network in the pop-up window, and click "OK".
+If the network is hidden, click the "+Add Hidden" button, input the
+name of the network in the pop-up window, and click "OK".
 
-If you add multiple networks, use the arrow keys to place them in the desired connection order. TrueOS® will try to connect to the first profile in the list
-and will move down the list in order if it is unable to connect. When finished, click the "Apply" button. A pop-up message will indicate that TrueOS® is
-restarting the network. If all went well, there should be an IP address and status of "associated" when you hover over the wireless icon in the system tray.
-If this is not the case, double-check for typos in your configuration values and read the section on :ref:`Troubleshooting Network Settings`. 
+If you add multiple networks, use the arrow keys to place them in the
+desired connection order. TrueOS® will try to connect to the first
+profile in the list and will move down the list, in order, if it is
+unable to connect. When finished, click the "Apply" button. A pop-up
+message will indicate that TrueOS® is restarting the network. If all
+went well, there should be an IP address and status of "associated"
+when you hover over the wireless icon in the system tray. If this is
+not the case, double-check for typos in your configuration values and
+read the section on :ref:`Troubleshooting Network Settings`. 
 
-TrueOS® supports the types of authentication shown in :numref:`Figure %s: Configuring Wireless Authentication Settings <network7>`. You can access this screen (and change your authentication
-settings) by highlighting an entry in the "Configured Network Profiles" section and clicking the "Edit" button.
+TrueOS® supports the types of authentication shown in
+:numref:`Figure %s: Configuring Wireless Authentication Settings <network7>`.
+You can access this screen, and change your authentication settings,
+by highlighting an entry in the "Configured Network Profiles" section
+and clicking the "Edit" button.
 
 .. _network7: 
 
 .. figure:: images/network7.png
 
-This screen allows you to configure the following types of wireless security: 
+This screen allows you to configure the following types of wireless
+security: 
 
-* **Disabled:** if the network is open, no additional configuration is required.
+* **Disabled:** if the network is open, no additional configuration is
+  required.
 
-* **WEP:** this type of network can be configured to use either a hex or a plaintext key and Network Manager will automatically select the type of key that it has detected.
-  If you click "WEP" then the "Configure" button, you will see the screen shown in :numref:`Figure %s: WEP Security Settings <network8>`. Type the key into both network key boxes. If the key
-  is complex, check the "Show Key" box to make sure that the passwords are correct and that they match. Uncheck this box when you are finished to replace the characters in the key with the
-  "*" symbol. A wireless access point that uses WEP can store up to 4 keys and the number in the key index indicates which key you wish to use.
+* **WEP:** this type of network can be configured to use either a hex
+  or a plaintext key and Network Manager will automatically select the
+  type of key that it has detected. If you click "WEP" then the
+  "Configure" button, you will see the screen shown in
+  :numref:`Figure %s: WEP Security Settings <network8>`.
+  Type the key into both "Network Key" boxes. If the key is complex,
+  check the "Show Key" box to make sure that the passwords are correct
+  and that they match. Uncheck this box when you are finished to
+  replace the characters in the key with bullets. A wireless access
+  point that uses WEP can store up to 4 keys and the number in the
+  "key index" indicates which key you wish to use.
 
-* **WPA Personal:** this type of network uses a plaintext key. If you click "WPA Personal" then the "Configure" button, you will see the screen shown in
-  :numref:`Figure %s: WPA Personal Security Settings <network9>`. Type in the key twice to verify it. If the key is complex, you can check the "Show Key" box to make sure the passwords match.
+* **WPA Personal:** this type of network uses a plaintext key. If you
+  click "WPA Personal" then the "Configure" button, you will see the
+  screen shown in
+  :numref:`Figure %s: WPA Personal Security Settings <network9>`. Type
+  in the key twice to verify it. If the key is complex, you can check
+  the "Show Key" box to make sure the passwords match.
 
-* **WPA Enterprise:** if you click "WPA Enterprise" then the "Configure" button, you will see the screen shown in :numref:`Figure %s: WPA Enterprise Security Settings <network10>`. Select
-  the authentication method ("EAP-TLS", "EAP-TTLS", or "EAP-PEAP"), input the EAP identity, browse for the CA certificate, client certificate and private key file, and input and
-  verify the password.
+* **WPA Enterprise:** if you click "WPA Enterprise" then the
+  "Configure" button, you will see the screen shown in
+  :numref:`Figure %s: WPA Enterprise Security Settings <network10>`.
+  Select the "EAP Authentication Method", input the EAP identity,
+  browse for the CA certificate, client certificate and private key
+  file, and input and verify the password.
 
-.. note:: if you are unsure which type of encryption is being used, ask the person who setup the wireless router. They should also be able to give you the
-   value of any of the settings seen in these configuration screens.
+.. note:: If you are unsure which type of encryption is being used,
+   ask the person who setup the wireless router. They should also be
+   able to give you the value of any of the settings seen in these
+   configuration screens.
 
 .. _network8: 
 
@@ -739,24 +804,35 @@ This screen allows you to configure the following types of wireless security:
 
 .. figure:: images/network10.png
 
-If you wish to disable this wireless interface, check the box "Disable this wireless device". This setting can be desirable if you want to temporarily prevent
-the wireless interface from connecting to untrusted wireless networks.
+If you wish to disable this wireless interface, check the box "Disable
+this wireless device" in the "General" tab for the device. This
+setting can be desirable if you want to temporarily prevent the
+wireless interface from connecting to untrusted wireless networks.
 
-The "Advanced" tab, seen in :numref:`Figure %s: Advanced Tab of a Wireless Interface <network11>`, allows you to configure the following: 
+The "Advanced" tab, seen in
+:numref:`Figure %s: Advanced Tab of a Wireless Interface <network11>`,
+allows you to configure the following: 
 
-* a custom MAC address. This setting is for advanced users and requires the "Use hardware default MAC address" box to be unchecked.
+* a custom MAC address. This setting is for advanced users and
+  requires the "Use hardware default MAC address" box to be unchecked.
 
-* how the interface receives its IP address information. If the network contains a DHCP server, check the box "Obtain IP automatically (DHCP)". Otherwise,
-  input the IP address and subnet mask to use on the network.
+* how the interface receives its IP address information. If the network
+  contains a DHCP server, check the box "Obtain IP automatically
+  (DHCP)". Otherwise, input the IP address and subnet mask to use on
+  the network.
 
-* the country code. This setting is not required if you are in North America. For other countries, check the "Set Country Code" box and select your country
-  from the drop-down menu.
+* the country code. This setting is not required if you are in North
+  America. For other countries, check the "Set Country Code" box and
+  select your country from the drop-down menu.
 
 .. _network11:
 
 .. figure:: images/network11.png
 
-The "Info" tab, seen in :numref:`Figure %s: Info Tab of a Wireless Interface <network12>`, shows the current network status and statistics for the wireless interface.
+The "Info" tab, seen in
+:numref:`Figure %s: Info Tab of a Wireless Interface <network12>`,
+shows the current network status and statistics for the wireless
+interface.
 
 .. _network12:
 
@@ -1166,8 +1242,10 @@ The security features built into TrueOS® include:
 * :ref:`PersonaCrypt` allows a user to use a removable, encrypted
   device as their home directory.
   
-* :ref:`Tor Mode` can be used to anonymously access Internet sites as this mode automatically forwards all Internet traffic through the
-  `Tor Project's <https://www.torproject.org/>`_ transparent proxy service.
+* :ref:`Tor Mode` can be used to anonymously access Internet sites as
+  this mode automatically forwards all Internet traffic through the
+  `Tor Project's <https://www.torproject.org/>`_ transparent proxy
+  service.
 
 If you would like to learn more about security on FreeBSD and TrueOS®
 systems, :command:`man security` is a good place to start. These
