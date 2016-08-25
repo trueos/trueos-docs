@@ -576,6 +576,404 @@ Table 11.5c summarizes some of the available utilities.
 | thunar           | thunar       | in the left frame, click on :menuselection:`Network --> Windows Network`                                                 |
 +------------------+----------------------+------------------------------------------------------------------------------------------------------------------+
 
+.. index:: network
+.. _Network Manager:
+
+Network Manager
+===============
+
+During installation, TrueOS® configures your Ethernet interfaces to use DHCP and provides a screen to :ref:`Connect to a Wireless Network`. In most cases,
+this means that your connected interfaces should "just work" whenever you use your TrueOS® system.
+
+For desktops that provide a system tray, a wireless configuration icon will appear if TrueOS® detects a supported wireless card. If you hover over the wireless icon, shown in
+:numref:`Figure %s: Wireless Information in System Tray <network1>`, it will indicate if the interface is associated and provide information regarding the IP address, IPv6 address, SSID,
+connection strength, connection speed, MAC address, and type of wireless device.
+
+.. _network1:
+
+.. figure:: images/network1.png
+
+If you right-click the wireless icon, you will see a list of detected wireless networks. Simply click the name of a network to associate with it. The
+right-click menu also provides options to configure the wireless device, start the Network Manager, restart the network (useful if you need to renew your DHCP
+address), and to close the Network Monitor so that the icon no longer shows in the system tray. If you have multiple wireless devices, each will have its own
+icon in the system tray. If you do not use one of the devices, click its "Close the Network Monitor" to remove it from the tray.
+
+To view or manually configure all of your network interfaces click "Network Manager" within SysAdm™ or type
+:command:`pc-su pc-netmanager`. If a new device has been inserted (e.g. a USB wireless interface), a pop-up message will open when you start Network Manager, indicate the name of the
+new device, and ask if you would like to enable it. Click "Yes" and the new device will be displayed with the list of network interfaces that TrueOS® recognizes. In the example seen in
+:numref:`Figure %s: Network Manager <network2a>`, the system has one Intel Ethernet interface that uses the *em* driver and an Intel wireless interface that uses the
+*wlan* driver.
+
+.. _network2a:
+
+.. figure:: images/network2a.png
+
+The rest of this section describes each tab of the Network Manager utility and demonstrate how to view and configure the network settings for both
+Ethernet and wireless devices. It will then present some common troubleshooting scenarios, known issues, and suggestions for when a device does not have a
+built-in driver.
+
+.. index:: network
+.. _Ethernet Adapters:
+
+Ethernet Adapters
+-----------------
+
+If you highlight an Ethernet interface in the "Devices" tab and either click the "Configure" button or double-click the interface name, you will see the
+screen shown in :numref:`Figure %s: Network Settings for an Ethernet Interface <network3>`.
+
+.. _network3:
+
+.. figure:: images/network3.png
+
+There are two ways to configure an Ethernet interface: 
+
+1. **Use DHCP:** this method assumes that your Internet provider or network assigns your addressing information automatically using the DHCP protocol. Most
+   networks are already setup to do this. This method is recommended as it should "just work". 
+
+2. **Manually type in the IP addressing information:** this method requires you to understand the basics of TCP/IP addressing or to know which IP address you
+   should be using on your network. If you do not know which IP address or subnet mask to use, you will have to ask your Internet provider or network
+   administrator.
+
+By default, TrueOS® will attempt to obtain an address from a DHCP server. If you wish to manually type in your IP address, check the box "Assign static IP
+address". Type in the IP address, using the right arrow key or the mouse to move between octets. Then, double-check that the subnet mask ("Netmask") is the
+correct value and change it if it is not.
+
+If the Ethernet network uses 802.1x authentication, check the box "Enable WPA authentication" which will enable the "Configure WPA" button. Click this button
+to select the network and to input the authentication values required by the network.
+
+By default, the "Disable this network device" box is unchecked. If you check this checkbox, TrueOS® will immediately stop the interface from using the
+network. The interface will remain inactive until this checkbox is unchecked.
+
+The "Advanced" tab, seen in :numref:`Figure %s: Advanced Tab of an Ethernet Interface's Network Settings <network4>`, allows advanced users to change their
+:wikipedia:`MAC address` or to automatically obtain an :wikipedia:`IPv6 address`. Both boxes should remain checked unless
+you are an advanced user who has a reason to change the default MAC or IPv6 address and you understand how to input an appropriate replacement address.
+
+.. _network4:
+
+.. figure:: images/network4.png
+
+The "Info" tab, seen in :numref:`Figure %s: Info Tab of an Ethernet Interface's Network Settings <network5>`, will display the current network address settings and some traffic statistics.
+
+.. _network5:
+
+.. figure:: images/network5.png
+
+If you make any changes within any of the tabs, click the "Apply" button to activate them. Click the "OK" button when you are finished to go back to the main
+Network Manager window.
+
+You can repeat this procedure for each network interface that you wish to view or configure.
+
+.. index:: network
+.. _Wireless Adapters:
+
+Wireless Adapters
+-----------------
+
+If your wireless interface does not automatically associate with a wireless network, you probably need to configure a wireless profile that contains the security settings required by the
+wireless network. Double-click the wireless icon in the system tray or highlight the wireless interface displayed in the "Devices" tab of Network Manager and click the "Configure"
+button. :numref:`Figure %s: Wireless Configuration <network6>` demonstrates that this system's wireless interface is currently
+associated with the wireless network listed in the "Configured Network Profiles" section.
+
+.. _network6: 
+
+.. figure:: images/network6.png
+
+To associate with a wireless network, click the "Scan" button to receive the list of possible wireless networks to connect to. Highlight the network you wish
+to associate with and click the "Add Selected" button. If the network requires authentication, a pop-up window will prompt you for the authentication details.
+Input the values required by the network then click the "Close" button. TrueOS® will add an entry for the network in the "Configured Network Profiles"
+section.
+
+If the network is hidden, click the "Add Hidden" button, input the name of the network in the pop-up window, and click "OK".
+
+If you add multiple networks, use the arrow keys to place them in the desired connection order. TrueOS® will try to connect to the first profile in the list
+and will move down the list in order if it is unable to connect. When finished, click the "Apply" button. A pop-up message will indicate that TrueOS® is
+restarting the network. If all went well, there should be an IP address and status of "associated" when you hover over the wireless icon in the system tray.
+If this is not the case, double-check for typos in your configuration values and read the section on :ref:`Troubleshooting Network Settings`. 
+
+TrueOS® supports the types of authentication shown in :numref:`Figure %s: Configuring Wireless Authentication Settings <network7>`. You can access this screen (and change your authentication
+settings) by highlighting an entry in the "Configured Network Profiles" section and clicking the "Edit" button.
+
+.. _network7: 
+
+.. figure:: images/network7.png
+
+This screen allows you to configure the following types of wireless security: 
+
+* **Disabled:** if the network is open, no additional configuration is required.
+
+* **WEP:** this type of network can be configured to use either a hex or a plaintext key and Network Manager will automatically select the type of key that it has detected.
+  If you click "WEP" then the "Configure" button, you will see the screen shown in :numref:`Figure %s: WEP Security Settings <network8>`. Type the key into both network key boxes. If the key
+  is complex, check the "Show Key" box to make sure that the passwords are correct and that they match. Uncheck this box when you are finished to replace the characters in the key with the
+  "*" symbol. A wireless access point that uses WEP can store up to 4 keys and the number in the key index indicates which key you wish to use.
+
+* **WPA Personal:** this type of network uses a plaintext key. If you click "WPA Personal" then the "Configure" button, you will see the screen shown in
+  :numref:`Figure %s: WPA Personal Security Settings <network9>`. Type in the key twice to verify it. If the key is complex, you can check the "Show Key" box to make sure the passwords match.
+
+* **WPA Enterprise:** if you click "WPA Enterprise" then the "Configure" button, you will see the screen shown in :numref:`Figure %s: WPA Enterprise Security Settings <network10>`. Select
+  the authentication method ("EAP-TLS", "EAP-TTLS", or "EAP-PEAP"), input the EAP identity, browse for the CA certificate, client certificate and private key file, and input and
+  verify the password.
+
+.. note:: if you are unsure which type of encryption is being used, ask the person who setup the wireless router. They should also be able to give you the
+   value of any of the settings seen in these configuration screens.
+
+.. _network8: 
+
+.. figure:: images/network8.png
+
+.. _network9: 
+
+.. figure:: images/network9.jpg
+
+.. _network10:
+
+.. figure:: images/network10.png
+
+If you wish to disable this wireless interface, check the box "Disable this wireless device". This setting can be desirable if you want to temporarily prevent
+the wireless interface from connecting to untrusted wireless networks.
+
+The "Advanced" tab, seen in :numref:`Figure %s: Advanced Tab of a Wireless Interface <network11>`, allows you to configure the following: 
+
+* a custom MAC address. This setting is for advanced users and requires the "Use hardware default MAC address" box to be unchecked.
+
+* how the interface receives its IP address information. If the network contains a DHCP server, check the box "Obtain IP automatically (DHCP)". Otherwise,
+  input the IP address and subnet mask to use on the network.
+
+* the country code. This setting is not required if you are in North America. For other countries, check the "Set Country Code" box and select your country
+  from the drop-down menu.
+
+.. _network11:
+
+.. figure:: images/network11.png
+
+The "Info" tab, seen in :numref:`Figure %s: Info Tab of a Wireless Interface <network12>`, shows the current network status and statistics for the wireless interface.
+
+.. _network12:
+
+.. figure:: images/network12.png
+
+.. index:: network
+.. _Network Configuration (Advanced):
+
+Network Configuration (Advanced)
+--------------------------------
+
+The "Network Configuration (Advanced)" tab of the Network Manager is seen in
+:numref:`Figure %s: Network Configuration (Advanced) tab <network13a>`. The displayed information is for the currently
+highlighted interface. If you wish to edit these settings, make sure that the interface that you wish to configure is highlighted in the "Devices" tab.
+
+
+.. _network13a: 
+
+.. figure:: images/network13a.png
+
+If the interface receives its IP address information from a DHCP server, this screen allows you to view the received DNS information. If you wish to override
+the default DNS settings or set them manually, check the "Enable Custom DNS" box. You can then set the following: 
+
+**DNS 1:** the IP address of the primary DNS server. If you do not know which IP address to use, click the "Public servers" button to select a public DNS
+server.
+
+**DNS 2:** the IP address of the secondary DNS server.
+
+**Search Domain:** the name of the domain served by the DNS server.
+
+If you wish to change or set the default gateway, check the "Enable Custom Gateway" box and input the IP address of the default gateway.
+
+The following settings can be modified in the IPv6 section: 
+
+**Enable IPv6 support:** if this box is checked, the specified interface can participate in IPv6 networks.
+
+**IPv6 gateway:** the IPv6 address of the default gateway used on the IPv6 network.
+
+**IPv6 DNS 1:** the IPv6 address of the primary DNS server used on the IPv6 network. If you do not know which IP address to use, click the "Public servers"
+button to select a public DNS server.
+
+**IPv6 DNS 2:** the IPv6 address of the secondary DNS server used on the IPv6 network.
+
+The "Misc" section allows you to configure these options: 
+
+**System Hostname:** the name of your computer. It must be unique on your network.
+
+**Enable wireless/wired failover via lagg0 interface:** the  interface allows you to seamlessly switch between using an Ethernet interface and a wireless
+interface. If you want this functionality, check this box.
+
+.. note:: some users experience problems using lagg. If you have problems connecting to a network using an interface that previously worked, uncheck this box
+   and remove any references to "lagg" in your :file:`/etc/rc.conf` file.
+
+**Domain Name:** if the system is in a domain, you can specify it here.
+
+If you make any changes within this window, click the "Apply" button to apply them.
+
+.. index:: network
+.. _Proxy Settings:
+
+Proxy Settings 
+---------------
+
+The "Proxy" tab, shown in :numref:`Figure %s: Proxy Settings Configuration <network14>`, is used when your network requires you to go through a proxy server in order to access the Internet.
+
+.. _network14: 
+
+.. figure:: images/network14.png
+
+Check the "Proxy Configuration" check box to activate the settings. The follow settings can be configured in this screen: 
+
+**Server Address:** enter the IP address or hostname of the proxy server.
+
+**Port Number:** enter the port number used to connect to the proxy server.
+
+**Proxy Type:** choices are "Basic" (sends the username and password unencrypted to the server) and "Digest" (never transfers the actual password across the
+network, but instead uses it to encrypt a value sent from the server). Do not select "Digest" unless you know that the proxy server supports it.
+
+**Specify a Username/Password:** check this box and input the username and password if they are required to connect to the proxy server.
+
+Proxy settings are saved to the :file:`/etc/profile` and :file:`/etc/csh.cshrc` files so that they are available to the TrueOS® utilities as well as any
+application that uses :command:`fetch`.
+
+Applications that did not come with the operating system, such as web browsers, may require you to configure proxy support using that application's
+configuration utility.
+
+If you apply any changes to this tab, a pop-up message will warn that you may have to logout and back in in order for the proxy settings to take effect.
+
+.. index:: network
+.. _Configuring a Wireless Access Point:
+
+Configuring a Wireless Access Point
+-----------------------------------
+
+If you click the entry for a wireless device, as seen in :numref:`Figure %s: Setup Access Point Option <network15>`, the right-click menu has an option to "Setup Access Point". 
+
+.. _network15:
+
+.. figure:: images/network15.png
+
+:numref:`Figure %s: Access Point Basic Setup <network16>` shows the configuration screen if you select "Setup Access Point". 
+
+.. _network16:
+
+.. figure:: images/network16.png
+
+This screen contains two options: 
+
+- **Visible Name:** this is the name that will appear when users scan for available access points.
+
+- **Set Password:** setting a WPA password is optional, though recommended if you only want authorized devices to use the access point. If used, the password
+  must be a minimum of 8 characters.
+
+:numref:`Figure %s: Access Point Advanced Setup <network17>` shows the "Advanced Configuration (optional)" screen.
+
+.. _network17:
+
+.. figure:: images/network17.png
+
+The settings in this screen are optional and allow you to fine-tune the access point's configuration: 
+
+- **Base IP:** the IP address of the access point.
+
+- **Netmask:** the associated subnet mask for the access point.
+
+- **Mode:** available modes are *11g* (for 802.11g), *11ng* (for 802.11n on the 2.4-GHz band), or *11n* (for 802.11n).
+
+- **Channel:** select the channel to use.
+
+- **Country Code:** the two letter country code of operation.
+
+.. index:: network
+.. _Troubleshooting Network Settings:
+
+Troubleshooting Network Settings 
+---------------------------------
+
+While Ethernet networking usually "just works" on a TrueOS® system, users sometimes encounter problems, especially when connecting to wireless networks.
+Sometimes the problem is due to a configuration error; sometimes a driver is buggy or is not yet available. This section is meant to help you pinpoint the
+problem so that you can either fix it yourself or give the developers the information they need to fix or create the driver.
+
+When troubleshooting your network configuration, use the following files and commands.
+
+The :file:`/etc/rc.conf` file is read when the system boots up. In order for the system to configure an interface at boot time, an entry must exist for it in
+this file. Entries are automatically created for you during installation for each interface that is active. An entry will be added (if it does not exist) or
+modified (if it already exists) when you configure an interface using Network Manager.
+
+Here is an example of the :file:`rc.conf` entries for an ethernet driver (*em0*) and a wireless driver (*run0*)::
+
+ ifconfig_em0="DHCP"
+ wlans_run0="wlan0"
+ ifconfig_wlan0="WPA SYNCDHCP"
+
+When reading through your own file, look for lines that begin with *ifconfig*. For a wireless interface, also look for lines containing *wlans*.
+
+.. note:: unlike Linux interface driver names, FreeBSD/TrueOS® interface driver names indicate the type of chipset. Each driver name has an associated man
+   page where you can learn which devices use that chipset and if there are any configuration options or limitations for the driver. When reading the man
+   page, do not include the interface number. For the above example, you could read :command:`man em` and :command:`man run`.
+
+
+The :file:`/etc/wpa_supplicant.conf` file is used by wireless interfaces and contains the information needed to connect to a WPA network. If this file does
+not already exist, it is created for you when you enter the "Configuration" screen of a wireless interface.
+
+The :command:`ifconfig` command shows the current state of your interfaces. When reading through its output, check that your interface is listed, has a status
+of "active", and has an IP address. Here is a sample :command:`ifconfig` output showing the entries for the *re0* Ethernet interface and the *run0* wireless
+interface::
+
+ re0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500 options=389b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,WOL_UCAST,WOL_MCAST,WOL_MAGIC>
+ ether 60:eb:69:0b:dd:4d
+ inet 192.168.1.3 netmask 0xffffff00 broadcast 192.168.1.255
+ media: Ethernet autoselect (100baseTX <full-duplex>)
+ status: active
+
+ run0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 2290
+ ether 00:25:9c:9f:a2:30
+ media: IEEE 802.11 Wireless Ethernet autoselect mode 11g
+ status: associated
+
+ wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+ ether 00:25:9c:9f:a2:30
+ media: IEEE 802.11 Wireless Ethernet autoselect (autoselect)
+ status: no carrier
+ ssid "" channel 10 (2457 MHz 11g)
+ country US authmode WPA1+WPA2/802.11i privacy ON deftxkey UNDEF
+ txpower 0 bmiss 7 scanvalid 60 protmode CTS wme roaming MANUAL bintval 0
+
+In this example, the ethernet interface (*re0*) is active and has an IP address. However, the wireless interface (*run0*, which is associated with *wlan0*)
+has a status of "no carrier" and does not have an IP address. In other words, it has not yet successfully connected to the wireless network.
+
+The :command:`dmesg` command lists the hardware that was probed during boot time and will indicate if the associated driver was loaded. If you wish to search
+the output of this command for specific information, pipe it to :command:`grep` as seen in the following examples::
+
+ dmesg | grep Ethernet
+ re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
+ re0: Ethernet address: 60:eb:69:0b:dd:4d
+
+ dmesg |grep re0
+ re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
+ re0: Using 1 MSI messages
+ re0: Chip rev. 0x28000000
+ re0: MAC rev. 0x00000000 miibus0: <MII bus> on re0
+ re0: Ethernet address: 60:eb:69:0b:dd:4d
+ re0: [FILTER]
+ re0: link state changed to DOWN
+ re0: link state changed to UP
+
+ dmesg | grep run0
+ run0: <1.0> on usbus3
+ run0: MAC/BBP RT3070 (rev 0x0201), RF RT2020 (MIMO 1T1R), address 00:25:9c:9f:a2:30
+ run0: firmware RT2870 loaded
+
+If your interface does not show up in :command:`ifconfig` or :command:`dmesg`, it is possible that a driver for this card is not provided with the operating
+system. If the interface is built into the motherboard of the computer, you can use the :command:`pciconf` command to find out the type of card::
+
+ pciconf -lv | grep Ethernet
+ device = 'Gigabit Ethernet NIC(NDIS 6.0) (RTL8168/8111/8111c)'
+
+ pciconf -lv | grep wireless
+ device = 'Realtek RTL8191SE wireless LAN 802.11N PCI-E NIC (RTL8191SE?)'
+
+In this example, there is a built-in Ethernet device that uses a driver that supports the RTL8168/8111/8111c chipsets. As we saw earlier, that driver is
+*re0*. The built-in wireless device was also found but the *?* indicates that a driver for the RTL8191SE chipset was not found. A web search for "FreeBSD
+RTL8191SE" will give an indication of whether a driver exists (perhaps in a version of FreeBSD that has not been released yet) or if a driver is being
+developed.
+
+The FreeBSD Handbook chapter on `Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_ provides a good overview of how
+wireless works and offers some troubleshooting suggestions.
+
 .. index:: windows
 .. _Windows Emulation:
 
