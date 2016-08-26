@@ -1144,11 +1144,16 @@ additional troubleshooting suggestions.
 Tor Mode
 --------
 
-Tor mode uses `Tor <https://www.torproject.org/>`_, `socat <http://www.dest-unreach.org/socat/>`_, and a built-in script which automatically creates the necessary firewall
-rules to enable and disable tor mode at the user's request. While in tor mode, the firewall will redirect all outgoing port 80 (HTTP), 443 (HTTPS), and DNS traffic through the
-Tor transparent proxy network.
+Tor mode uses `Tor <https://www.torproject.org/>`_,
+`socat <http://www.dest-unreach.org/socat/>`_, and a built-in script
+which automatically creates the necessary firewall rules to enable and
+disable Tor mode at the user's request. While in Tor mode, the
+firewall will redirect all outgoing port 80 (HTTP), 443 (HTTPS), and
+DNS traffic through the Tor transparent proxy network.
 
-To start tor mode, right-click Update Manager and check the "Routing through Tor" box. The pop-up message shown in :numref:`Figure %s: Enabling Tor Mode <tor1>` will appear.
+To start tor mode, right-click the wireless icon in the system tray
+and check the "Route through TOR" box. You will be prompted to enter your password. The pop-up message shown in
+:numref:`Figure %s: Enabling Tor Mode <tor1>` will appear.
 
 .. _tor1:
 
