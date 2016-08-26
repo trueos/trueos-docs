@@ -582,24 +582,97 @@ Table 11.5c summarizes some of the available utilities.
 Disk Manager
 ============
 
-The PC-BSD® Disk Manager can be used to manage ZFS pools and datasets as well as the disks attached to the system. To access this utility, use
-:menuselection:`Control Panel --> Disk Manager` or type :command:`pc-su pc-zmanager` from within an xterm. You will need to input your password in order to
-access this utility.
+The TrueOS® Disk Manager can be used to manage ZFS pools and datasets
+as well as the disks attached to the system. To access this utility,
+use :menuselection:`Browse Applications --> Disk Manager` or type
+:command:`pc-su pc-diskmanager` from within an xterm. You will need to
+input your password in order to access this utility.
 
-As seen in the example in :numref:`Figure %s: Viewing the System's ZFS Datasets <disk1>`, the utility will open in the "ZFS Filesystems" tab and will display the system's ZFS datasets
-and their snapshots, the amount of space available to each dataset, and the amount of space each dataset is using.
+As seen in the example in
+:numref:`Figure %s: Managing Disks <disk1>`, the utility will open in
+the "Disks" tab which shows the size of each disk as well as its
+partitioning scheme. If an unformatted disk or free disk space is available, right-click the device to format it.
 
 .. _disk1:
 
 .. figure:: images/disk1.png
 
-The name of the pool in this example is *tank1*. If the system has multiple pools, click the green arrow to select the desired pool.
+To view the status of the ZFS pool(s) and the disk(s) in each pool,
+click the "ZFS Pools" tab. In the example, shown in
+:numref:`Figure %s: Viewing the Status of the ZFS Pool <disk2>`, the
+ZFS pool named *tank1* was created from one disk. The state of
+"Online" indicates that the pool is healthy.
 
-If you right-click the pool name under "Filesystems", the following options are available: 
+.. _disk2: 
 
-* **Mount:** whether or not the filesystem can be mounted depends upon the value of the "canmount" property of the dataset.
+.. figure:: images/disk2.png
 
-* **Create new dataset:** :numref:`Figure %s: Creating a New ZFS Dataset <disk2>` shows the options that are available when you create a new dataset.
+If you right-click the pool name, the following options are available: 
+
+* **Create new pool:** use this option if additional disks are
+  available and you would like to create another pool instead of adding
+  them to the existing pool. This will open a screen that allows you to
+  name the new pool, select which additional disks will go into it, and
+  select how to configure the disks.
+
+* **Rename pool:** will prompt you to input the new name for the pool.
+
+* **Destroy pool:** **do not select this option unless your intent is
+  to destroy all of the data on the disks!**
+
+* **Add devices:** depending upon the type of disk configuration, you
+  may be able to extend the size of the pool by adding an equal number
+  of disks.
+
+* **Add log devices:** used to add an SSD or disk as a secondary ZIL.
+
+* **Add cache devices:** used to add an SSD or disk as an L2ARC.
+
+* **Add spare devices:** at this time, FreeBSD does not support hot
+  spares.
+
+* **Scrub:** will start a ZFS scrub now. This option can be I/O
+  intensive so it isn't recommended to do this while the system is in
+  use.
+
+* **Export pool:** this action should be performed if you will be
+  physically moving the disks from one system to another.
+
+* **Properties:** used to manage the default properties of the pool.
+  Datasets inherit the default properties, unless a property is set to
+  a different value on the dataset.
+
+If you right-click a disk entry, such as *ada0p5* in this example, the
+following options are available: 
+
+* **Attach (mirror) device:** if you wish to mirror additional disk(s),
+  this option will open a screen which allows you to specify the
+  disk(s) to add.
+
+* **Take offline:** if you need to replace a bad disk, select this
+  option before physically removing the disk.
+
+As seen in the example shown in
+:numref:`Figure %s: Viewing the System's ZFS Datasets <disk3>`, the
+"ZFS Filesystems" tab will display the system's ZFS datasets and their snapshots, the amount of space available to each dataset, and the
+amount of space each dataset is using.
+
+.. _disk3:
+
+.. figure:: images/disk3.png
+
+The name of the pool in this example is *tank1*. If the system has
+multiple pools, click the green arrow to select the desired pool.
+
+If you right-click the pool name under "Filesystems", the following
+options are available: 
+
+* **Mount:** whether or not the filesystem can be mounted depends upon
+  the value of the "canmount" property of the dataset.
+
+* **Create new dataset:**
+  :numref:`Figure %s: Creating a New ZFS Dataset <disk4>` shows the
+  options that are available when you create a new dataset.
 
 * **Create a clone dataset:** creates a copy of the dataset.
 
@@ -610,87 +683,61 @@ If you right-click the pool name under "Filesystems", the following options are 
   time, or edit its properties. If you forget when you made the snapshot, pick "Edit properties" from the snapshot's right-click menu as it will show its
   "creation" property.
 
-* **Edit properties:** allows you modify the ZFS properties for the pool, as seen in the example shown in Figure :numref:`Figure %s: Editing the Pool's ZFS Properties <disk3>`. The
-  available options depend upon the property being modified. The options which are read-only will have a red minus sign icon next to them. ZFS options are described in
-  :command:`man zfs` and  you should not change any options unless you are familiar with the ramifications of doing so.
+* **Edit properties:** allows you modify the ZFS properties for the
+  pool, as seen in the example shown in
+  :numref:`Figure %s: Editing the Pool's ZFS Properties <disk5>`. The
+  available options depend upon the property being modified. The
+  options which are read-only will have a red minus sign icon next to
+  them. ZFS options are described in :command:`man zfs` and  you should
+  not change any options unless you are familiar with the ramifications
+  of doing so.
 
-.. _disk2:
-
-.. figure:: images/disk2.png
-
-.. _disk3:
-
-.. figure:: images/disk3.png
-
-When creating a new dataset or clone, the following options are available. Again, these options are described in :command:`man zfs` and you should not change
-any options unless you are familiar with the ramifications of doing so.
-
-* **Name:** this field is pink as a reminder to type in the dataset name immediately after the trailing "/" of the displayed pool name.
-
-* **Prevent auto mount:** if the box is checked, the dataset will not be mounted at boot time and must instead be manually mounted as needed.
-
-* **Mountpoint:** choices are *none*, *legacy*, or *[path]*.
-
-* **Force UTF-8 only:** if checked, you will not be able to save any filenames that are not in the UTF-8 character code set.
-
-* **Unicode normalization:** if checked, indicate whether unicode normalization should occur when comparing filenames, and if so, which normalization
-  algorithm to use. Choices are *none*, *formD*, or *formKCF*.
-
-* **Copies:** if checked, indicates the number of copies (1 to 3) of data to store in the dataset. The copies are in addition to any redundancy and are stored
-  on different disks when possible.
-
-* **Deduplication:** enables deduplication.
-  **Do not** enable this option if the system has less than the minimum recommended 5GB of RAM per TB of storage to be deduplicated.
-
-* **Compression:** if checked and a compression algorithm is selected in the drop-down menu, data will automatically be compressed as it is written and
-  uncompressed as it is read. The algorithm determines the amount and speed of compression, where typically increased compression results in decreased speed.
-  The *lz4* algorithm is recommended as it provides very good compression at near real-time speed.
-
-To view the status of the ZFS pools and the disk(s) in the pool, click the "ZFS Pools" tab. In the example, shown in
-:numref:`Figure %s: Viewing the Status of the ZFS Pool <disk4>`, the ZFS pool named *tank1* was created from one disk. The state of "Online" indicates that the pool is healthy.
-
-.. _disk4: 
+.. _disk4:
 
 .. figure:: images/disk4.png
-
-If you right-click the pool name, the following options are available: 
-
-* **Create new pool:** use this option if additional disks are available and you would like to create another pool instead of adding them to the existing
-  pool. This will open a screen that allows you to name the new pool, select which additional disks will go into it, and select how to configure the disks.
-
-* **Rename pool:** will prompt you to input the new name for the pool.
-
-* **Destroy pool:** **do not select this option unless your intent is to destroy all of the data on the disks!**
-
-* **Add devices:** depending upon the type of disk configuration, you may be able to extend the size of the pool by adding an equal number of disks.
-
-* **Add log devices:** used to add an SSD or disk as a secondary ZIL.
-
-* **Add cache devices:** used to add an SSD or disk as an L2ARC.
-
-* **Add spare devices:** at this time, FreeBSD does not support hot spares.
-
-* **Scrub:** will start a ZFS scrub now. This option can be I/O intensive so it isn't recommended to do this while the system is in use.
-
-* **Export pool:** this action should be performed if you will be physically moving the disks from one system to another.
-
-* **Properties:** used to manage the default properties of the pool. Datasets inherit the default properties, unless a property is set to a different value on
-  the dataset.
-
-If you right-click a disk entry, such as *ada0p2* in this example, the following options are available: 
-
-* **Attach (mirror) device:** if you wish to mirror additional disk(s), this option will open a screen which allows you to specify the disk(s) to add.
-
-* **Take offline:** if you need to replace a bad disk, select this option before physically removing the disk.
-
-An example of the "Disks" tab is seen in :numref:`Figure %s: Managing Disks <disk5>`.
 
 .. _disk5:
 
 .. figure:: images/disk5.png
 
-This screen shows the size of each disk as well as its partitioning scheme. If an unformatted disk or free disk space is available, right-click the device to
-format it.
+When creating a new dataset or clone, the following options are
+available. Again, these options are described in :command:`man zfs` and
+you should not change any options unless you are familiar with the
+ramifications of doing so.
+
+* **Name:** this field is pink as a reminder to type in the dataset
+  name immediately after the trailing "/" of the displayed pool name.
+
+* **Prevent auto mount:** if the box is checked, the dataset will not
+  be mounted at boot time and must instead be manually mounted as
+  needed.
+
+* **Mountpoint:** choices are *none*, *legacy*, or *[path]*. If you
+  select *[path]*, input the full path for the mountpoint.
+
+* **Force UTF-8 only:** if checked, you will not be able to save any
+  filenames that are not in the UTF-8 character code set.
+
+* **Unicode normalization:** if checked, indicate whether unicode
+  normalization should occur when comparing filenames, and if so, which
+  normalization algorithm to use. Choices are *none*, *formD*, or
+  *formKCF*.
+
+* **Copies:** if checked, indicates the number of copies (1 to 3) of
+  data to store in the dataset. The copies are in addition to any
+  redundancy and are stored on different disks when possible.
+
+* **Deduplication:** enables deduplication.
+  **Do not** enable this option if the system has less than the
+  minimum recommended 5GB of RAM per TB of storage to be deduplicated.
+
+* **Compression:** if checked and a compression algorithm is selected
+  in the drop-down menu, data will automatically be compressed as it
+  is written and uncompressed as it is read. The algorithm determines
+  the amount and speed of compression, where typically increased
+  compression results in decreased speed. The *lz4* algorithm is
+  recommended as it provides very good compression at near real-time
+  speed.
 
 .. index:: network
 .. _Network Manager:
