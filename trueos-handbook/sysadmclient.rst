@@ -1213,7 +1213,7 @@ utility to view and modify the existing firewall rules.
 .. note:: typically it is not necessary to change the firewall rules. You should only add rules if you understand the security implications of doing so,
    as any custom rules will be used to allow connections to your computer.
 
-To access the Firewall Manager, click Firewall Manager within SysAdm™ or type :command:`pc-su pc-fwmanager`. You will be prompted to input
+To access the Firewall Manager, click Firewall Manager within SysAdm™ or type :command:`sudo pc-fwmanager`. You will be prompted to input
 your password. :numref:`Figure %s: Firewall Manager Utility <firewall1>` shows the initial screen when you launch this utility.
 
 .. _firewall1:

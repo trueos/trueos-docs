@@ -611,7 +611,7 @@ longer shows in the system tray.
 
 To view or manually configure a network interface, click "Start the
 Network Manager" within SysAdm™ or type
-:command:`pc-su pc-netmanager`. If a new device has been inserted,
+:command:`sudo pc-netmanager`. If a new device has been inserted,
 such as a USB wireless interface, a pop-up message will open when
 Network Manager starts, indicating the name of the new device, and
 asking if you would like to enable it. Click "Yes" and the new device
