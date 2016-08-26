@@ -249,7 +249,9 @@ The following features or enhancements were introduced for TrueOS®:
 * :command:`freebsd-update` has been retired in favor of using
   :command:`pkg` for system updates.
   
-* Disk Manager (:command:`pc-zmanager`) has been deprecated.  
+* The binary for :ref:`Disk Manager` (:command:`pc-zmanager`) has been
+  renamed to :command:`pc-diskmanager` and the graphical version has
+  been moved to the "Browse Applications" menu.
 
 * The option to use the SCFB display driver has been added to the
   installer. This driver is suitable for newer UEFI laptops as it
