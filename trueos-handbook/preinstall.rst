@@ -463,7 +463,9 @@ following:
 To write the :file:`.img` file to a flash card or removable USB drive on
 a BSD or Linux system, use the :command:`dd` command line utility. On a
 FreeBSD system, the superuser can use this command to write the file to
-the first plugged in USB device::
+the first plugged in USB device:
+
+.. code-block:: none
 
  dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1M
  1415+1 records in
@@ -491,8 +493,11 @@ When using the :command:`dd` command:
    mount the USB stick on Linux as Linux has very limited support for
    UFS, the BSD filesystem that gets created on the USB stick.
 
-To burn the image file on a Windows system, you can use `win32-image-writer <https://sourceforge.net/projects/win32diskimager/>`_. When downloading win32-image-writer,
-download the latest version that ends in :file:`-binary.zip` and use a utility such as Windows Explorer or 7zip to unzip the executable.
+To burn the image file on a Windows system, you can use
+`win32-image-writer <https://sourceforge.net/projects/win32diskimager/>`_.
+When downloading win32-image-writer, download the latest version that
+ends in :file:`-binary.zip` and use a utility such as Windows Explorer
+or 7zip to unzip the executable.
 
 If you launch :command:`win32-image-writer.exe`, it will start the Win32 Disk Imager utility, shown in :numref:`Figure %s: Using Win32 Disk Imager to Write the Image <writer1>`. Use the
 "browse" button to browse to the location of the :file:`.iso` file. Insert a USB thumb drive and select its drive letter (in this example, drive D). Click the "Write" button and the image
@@ -507,7 +512,9 @@ Terminal. Run the :command:`diskutil list` command to find out the
 device name of the USB disk, unmount the USB disk, then use
 :command:`dd` to write the image to the raw disk (:file:`rdisk`). In the
 following example, an 8GB USB stick has a device name of
-:file:`/dev/disk1` and a raw device name of :file:`/dev/rdisk1`.::
+:file:`/dev/disk1` and a raw device name of :file:`/dev/rdisk1`.:
+
+.. code-block:: none
 
  diskutil list 
  /dev/disk0
@@ -707,8 +714,7 @@ Double-click the word "Empty", which represents your DVD reader. If you
 wish to access the TrueOS® installer from your DVD reader, double-check 
 that the "Slot" is pointing to the correct location (e.g. "IDE Secondary
 Master") and use the drop-down menu to change it if the location is
-incorrect. Click the "CD/DVD Device" drop-down menu to change it from
-empty to the "Host Drive" value.
+incorrect.
 
 If you prefer to use an ISO that is stored on your hard disk, click the
 DVD icon then "Choose a virtual CD/DVD disk file" to open a browser menu
