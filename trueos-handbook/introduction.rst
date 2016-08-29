@@ -76,26 +76,27 @@ United States and other countries.
 
 **Typographic Conventions** 
 
-* Names of graphical elements such as buttons, icons, fields, columns,
-  and boxes are enclosed within quotes. For example: click the "Browse
-  Categories" button.
+The TrueOS® User Guide uses these typographic conventions:
 
-* Menu selections are italicized and separated by arrows. For example:
-  :menuselection:`View --> Show Hidden Files`.
+**Table 1: Text Format Examples**
 
-* Commands that are mentioned within text are highlighted in
-  :command:`bold text`. Command examples and command output are
-  contained within code blocks.
-
-* File names are enclosed in a blue box :file:`/like/this`.
-
-* Keystrokes are formatted in a blue box. For example: press
-  :kbd:`Enter`.
-
-* **bold text** is used to emphasize an important point.
-
-* *italic text* is used to represent device names or text that is input
-  into a GUI field.
++----------------------------------------------------------------+---------------------------------------------------+
+| Item                                                           | Visual Example                                    |
++================================================================+===================================================+
+| Graphical elements: buttons, icons, fields, columns, and boxes | Click the :guilabel:`Import CA` button.           |
++----------------------------------------------------------------+---------------------------------------------------+
+| Menu selections                                                | Select :menuselection:`System --> Information`.   |
++----------------------------------------------------------------+---------------------------------------------------+
+| Commands                                                       | Use the :command:`scp` command.                   |
++----------------------------------------------------------------+---------------------------------------------------+
+| File names and volume and dataset names                        | Locate the :file:`/etc/rc.conf` file.             |
++----------------------------------------------------------------+---------------------------------------------------+
+| Keyboard keys                                                  | Press the :kbd:`Enter` key.                       |
++----------------------------------------------------------------+---------------------------------------------------+
+| Important points                                               | **This is important.**                            |
++----------------------------------------------------------------+---------------------------------------------------+
+| Values entered into fields, or device names                    | Enter *127.0.0.1* in the address field.           |
++----------------------------------------------------------------+---------------------------------------------------+
 
 Introduction
 ************
