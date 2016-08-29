@@ -1261,12 +1261,17 @@ out as they will be recreated from the backup during the restore. Once you are f
 Firewall Manager
 ================
 
-TrueOS® uses the `IPFW firewall <http://www.freebsd.org/cgi/man.cgi?query=ipfw>`_ to protect your system. By default, the firewall is configured to allow all
-outgoing connections, but to deny all incoming connection requests. The default rulebase is located in :file:`/etc/ipfw.rules`. Use the Firewall Manager GUI
-utility to view and modify the existing firewall rules.
+TrueOS® uses the
+`IPFW firewall <http://www.freebsd.org/cgi/man.cgi?query=ipfw>`_ to
+protect your system. By default, the firewall is configured to allow
+all outgoing connections, but to deny all incoming connection
+requests. Use the Firewall Manager graphical utility to view and modify
+the existing firewall rules.
 
-.. note:: typically it is not necessary to change the firewall rules. You should only add rules if you understand the security implications of doing so,
-   as any custom rules will be used to allow connections to your computer.
+.. note:: Typically it is not necessary to change the firewall rules.
+   You should only add rules if you understand the security
+   implications of doing so, as custom rules can be used to allow
+   connections to your computer.
 
 To access the Firewall Manager, click Firewall Manager within SysAdm™ or type :command:`sudo pc-fwmanager`. You will be prompted to input
 your password. :numref:`Figure %s: Firewall Manager Utility <firewall1>` shows the initial screen when you launch this utility.
@@ -1275,30 +1280,45 @@ your password. :numref:`Figure %s: Firewall Manager Utility <firewall1>` shows t
 
 .. figure:: images/firewall1.png
 
-The "General" tab of this utility allows you to: 
+The "Open Ports" tab is used to view and manage custom rules. Note
+that all rules shown in this tab allow **incoming** connections on the
+specified protocol and port number.
 
-* Determine whether or not the firewall starts when the system boots. Unless you have a reason to do so and understand the security implications, the
-  "Enable Firewall on startup" box should be checked so that your system is protected by the firewall.
+.. note:: By default, UDP port 5353 is open to allow
+   :wikipedia:`Multicast DNS`,  which provides local name resolution.
 
-* "Start", "Stop", or "Restart" the firewall.
+To add a custom rule, input the port number to open. By default, "tcp"
+is selected. If the rule is for the UDP protocol, click the "tcp"
+drop-down menu and select "udp". Once you have the protocol and port
+number selected, click the "Open Port" button to add the new rule.
 
-* The "Restore Default Configuration" button allows you to return to the original, working configuration.
+To delete a rule, highlight the rule to delete and click the "Close
+Selected Ports" button.
 
-To add or delete custom firewall rules, click the "Open Ports" tab to open the screen shown in :numref:`Figure %s: Adding a New Firewall Rule <firewall2>`. Note that your custom rules will
-allow **incoming** connections on the specified protocol and port number.
+.. note:: Whenever you add or delete a rule, the rule will not be used
+   until you click the "Restart" button shown in
+   :numref:`Figure %s: General Firewall Settings <firewall2>`.
+
+Whenever you create and apply a rule, test that your new rule works as
+expected. For example, if you create a rule to allow incoming SSH
+connections, try connecting to your TrueOS® system using :command:`ssh`
+to verify that the firewall is now allowing the connection.
+
+The "General" tab is shown in
+:numref:`Figure %s: General Firewall Settings <firewall2>`
 
 .. _firewall2:
 
 .. figure:: images/firewall2.png
 
-Any rules that you create will appear in this screen. To add a rule, input the port number to open. By default, "tcp" is selected. If the rule is for the
-UDP protocol, click the "tcp" drop-down menu and select "udp". Once you have the protocol and port number selected, click the "Open Port" button to add the
-new rule to your custom list.
+This tab allows you to: 
 
-If you have created any custom rules and wish to delete one, highlight the rule to delete and click the "Close Selected Ports" button to remove it from
-the custom rules list.
+* Determine whether or not the firewall starts when the system boots.
+  Unless you have a reason to do so and understand the security
+  implications, the "Enable Firewall on startup" box should remain
+  checked so that your system is protected by the firewall.
 
-.. note:: whenever you add or delete a custom rule, the rule will not be used until you click the "Restart" button shown in :numref:`Figure %s: Firewall Manager Utility <firewall1>`.
+* "Start", "Stop", or "Restart" the firewall.
 
-Whenever you create a custom rule, test that your new rule works as expected. For example, if you create a rule to allow incoming SSH connections, try connecting
-to your TrueOS® system using :command:`ssh` to verify that the firewall is now allowing the connection.
+* The "Restore Default Configuration" button allows you to return to
+  the original, working configuration.
