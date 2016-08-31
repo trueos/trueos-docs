@@ -392,10 +392,16 @@ This tab contains the following configurable options:
   that you can input the URL to the custom repository.
 
 .. index:: updates
-.. _Upgrading from 10.x to |version|:
+.. _Upgrading from PC-BSD® 10.x to TrueOS®:
 
 Upgrading from PC-BSD® 10.x to TrueOS®
 --------------------------------------
+
+:numref:`Figure %s: Upgrade In Place Option <upgrade1>`, 
+
+.. _upgrade1:
+
+.. figure:: images/upgrade1.png
 
 .. index:: sysadm, configuration
 .. _Manage SSL Keys:

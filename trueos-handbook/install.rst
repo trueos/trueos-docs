@@ -144,23 +144,30 @@ System Selection Screen
 =======================
 
 The "System Selection" screen, shown in
-:numref:`Figure %s: System Selection Screen <install3c>`, allows you
+:numref:`Figure %s: System Selection Screen <install3b>`, allows you
 to install a graphical desktop or a console-based server operating
 system. It also can be used for :ref:`Restoring the Operating System`.
 This chapter concentrates on a desktop installation. Refer to
 :ref:`Install a Server` for instructions on how to install a
 command-line only server.
 
-.. _install3c: 
+.. _install3b: 
 
-.. figure:: images/install3c.png
+.. figure:: images/install3b.png
 
 By default, "TrueOS (Graphical desktop)" will be selected and the
 Lumina Desktop will be installed. You can install additional
 software post-installation, using :ref:`AppCafe®`.
 
-To install the desktop, click the "Next" button to proceed to the next
-screen.
+To install the desktop, click the "Next" button.
+
+.. note:: When installing to an existing PC-BSD® or TrueOS® system, a
+   pop-up window will ask if you would like to install to the existing
+   pool without reformatting it. Press "OK" if you would like to keep
+   the existing pool. If you instead click "Cancel", the existing pool
+   and all of its data will be formatted. Refer to
+   :ref:`Upgrading from PC-BSD® 10.x to TrueOS®` for more information
+   about this option.
 
 .. index:: installation
 .. _Disk Selection Screen:
