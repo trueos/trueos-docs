@@ -24,21 +24,18 @@ possible using TrueOS® on many different hardware configurations
 assists the Project in finding and fixing bugs. This makes using
 TrueOS® better for everyone.
 
-If becoming a tester interests you, subscribe to the `testing mailing list <http://lists.pcbsd.org/mailman/listinfo/testing>`_. As new testing versions become
-available they will be announced on this list. You will also be able to see what problems other testers are finding and can check to see if the problem exists
-on your hardware as well. You can also subscribe to `these RSS feeds <http://dir.gmane.org/gmane.os.pcbsd.testing>`_ if you want a quick way to keep up with
-the subjects being discussed on the testing mailing list.
+If becoming a tester interests you, join the
+`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. As new testing 
+versions become available they will be announced here. You will also
+be able to see what problems other testers are finding and can check
+to see if the problem exists on your hardware as well.
 
 Anyone can become a beta tester. Follow these tips so that you can
-accurately describe your findings so they can be fixed as soon as
-possible: 
+accurately describe your findings when you :ref:`Report a bug` so that
+it can be fixed as soon as possible: 
 
-* Before you :ref:`Report a bug`, skim through the archives of the `testing mailing list <http://lists.pcbsd.org/mailman/listinfo/testing>`_ to see if anyone else has reported a similar
-  problem.
-
-* When reporting a new issue, use a descriptive subject that includes
-  the error and the version of TrueOS®. Ideally, the subject is short
-  (8 words or less) and contains key words about the error.
+* Use a descriptive subject that is short (8 words or less) and
+  contains key words about the error.
 
 * Ensure that the body of the bug report contains the output of
   :command:`uname -a`.
@@ -69,10 +66,12 @@ become involved in:
 This section describes each of these translation areas in more detail
 and how to get started as a translator.
 
-Regardless of the type of translation you are interested in, you should first join the
-`translations mailing list <http://lists.pcbsd.org/mailman/listinfo/translations>`_. When you join, send an email to introduce yourself and indicate which
-language(s) and which type(s) of translations you can assist with. This will allow you to meet other volunteers as well as keep abreast of any notices or
-updates that affect translators.
+Regardless of the type of translation you are interested in, you should
+first join the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. The
+first time you join the channel, introduce yourself and indicate which
+language(s) and which type(s) of translations you can assist with. This
+will allow you to meet other volunteers as well as keep abreast of any
+notices or updates that affect translators.
 
 .. index:: translations
 .. _Interface Translation:
@@ -119,7 +118,8 @@ you have made your selections, click the "Save" button.
 .. figure:: images/translate3.png
 
 .. note:: If the language you wish to translate is missing from the
-   "Translated languages" menu, send an email to the `translations mailing list <http://lists.pcbsd.org/mailman/listinfo/translations>`_ so it can be added.
+   "Translated languages" menu, ask for it to be added in the
+   `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
 
 Next, click the "Projects" button at the top of the screen to select
 a localization project. In the example shown in
@@ -155,8 +155,9 @@ field to navigate between the strings to translate.
 
 .. figure:: images/translate6.png
 
-If you need help with a translation or using the Weblate system, you can ask for help on the translations mailing list or in the
-`translations forum <https://forums.pcbsd.org/forum-40.html>`_. 
+If you need help with a translation or using the Weblate system, you
+can ask for help in the
+`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. 
 
 .. index:: translations
 .. _Documentation Translation:
@@ -202,9 +203,6 @@ When translating the documentation, be aware of the following:
 
 .. figure:: images/translate8.png
 
-If you would like to receive notifications of documentation changes that affect translations, subscribe to the
-`Translation-notifications <http://lists.pcbsd.org/mailman/listinfo/translations-notifications>`_ mailing list.
-
 If you would like to build a local HTML copy that includes the latest
 translations, either for your own use or to visualize the translated
 Guide, do the following from the command line. These instructions are
@@ -241,9 +239,9 @@ later time::
 Website Translation
 -------------------
 
-If you are interested in translating the PC-BSD® website, send an email to the
-`translations mailing list <http://lists.pcbsd.org/mailman/listinfo/translations>`_. Someone will introduce you to the webmaster who will get you started on
-website translation.
+If you are interested in translating the PC-BSD® website, introduce
+yourself in the
+`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
 
 Currently, the the website is being translated to several languages, including: Dutch, French, German, Polish, Spanish, Swedish, and Turkish.
 
@@ -256,16 +254,19 @@ Become a Developer
 If you like programming, and especially coding on FreeBSD, we would
 love to see you join the TrueOS® team as a TrueOS® committer.
 Developers who want to help improve the TrueOS® codebase are always
-welcome! If you would like to participate in core development, subscribe to the
-`developers mailing list <http://lists.pcbsd.org/mailman/listinfo/dev>`_. Once you have signed up, feel free to browse the "Issues" in the 
+welcome! If you would like to participate in core development,
+introduce yourself in the
+`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. Feel free to browse
+the "Issues" in the 
 `TrueOS® repository <https://github.com/trueos/>`_. If you see
 something that you want to work on, or have a proposal for a project
-you wish to add to TrueOS®, please let us know via the developers list and we will be happy to help get you started.
+you wish to add to TrueOS®, mention it and someone will be happy to
+help get you started.
 
 Most of the TrueOS® specific GUI tools are developed in C++ using Qt
 libraries and other non-GUI development is done using standard Bourne
 shell scripts. There may be cases where other languages or libraries
-are needed, but those will be evaluated on a case-by-case basis, so feel free to let us know your proposals on the developers mailing list.
+are needed, but those will be evaluated on a case-by-case basis.
 
 .. index:: development
 .. _Getting the Source Code:
@@ -299,7 +300,9 @@ installed as the superuser::
    
 Then, :command:`cd` to the directory containing the source you wish to
 build and run the :command:`mkports.sh` script. In this example, the
-developer wants to compile the graphical utilities::
+developer wants to compile the graphical utilities:
+
+.. code-block:: none
 
  cd trueos-utils-qt5
 
@@ -310,7 +313,9 @@ is located in :file:`mkports.sh`. This example determines the name of
 the port directory, changes to that directory, and then builds the
 port. Since this system is already running the TrueOS® graphical
 utilities, :command:`reinstall` is used to overwrite the current
-utilities::
+utilities:
+
+.. code-block:: none
 
  grep port= mkports.sh
  port="sysutils/trueos-utils-qt5"
@@ -449,12 +454,16 @@ the directory where settings files are saved from being locked down by
 settings. Examples 13.3a and 13.3b demonstrate how to use the
 QSettings class for each type of permission.
 
-**Example 13.3a: User Permission Settings**::
+**Example 13.3a: User Permission Settings**:
+
+.. code-block:: none
 
  (user application - C++ code): 
  QSettings settings("PCBSD", "myapplication");
 
-**Example 13.3b: Root Permission Settings**::
+**Example 13.3b: Root Permission Settings**:
+
+.. code-block:: none
 
  (root application - C++ code):
  QSettings settings("PCBSD-root", "myapplication");

@@ -19,19 +19,61 @@ important to follow certain protocols when requesting help:
 
 * `How To Ask Questions The Smart Way <http://catb.org/~esr/faqs/smart-questions.html>`_
 
-.. index:: slack
-.. _TrueOS® Slack Channel:
+.. index:: chat
+.. _TrueOS® Gitter Channel:
 
-TrueOS® Slack Channel
-=====================
+TrueOS® Gitter Channel
+======================
 
+The TrueOS® Project uses
+`Gitter <https://en.wikipedia.org/wiki/Gitter>`_ to provide real-time
+chat and collaboration with TrueOS® users and developers. Gitter does
+not require an application to use, but does require a login using
+either an existing GitHub or Twitter account.
 
+To access the Gitter channel, point your web browser to the
+`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. 
+
+Gitter is a great way to chat with other users and get answers to your
+questions. A few things to keep in mind if you ask a question on the
+Gitter channel:
+
+* Most of the regular users are always logged in, even when they are
+  away from their computer or are busy doing other things. If you do
+  not get an answer right away, do not get mad, leave the channel, and
+  never come back again. Stick around for a while to see if anyone
+  responds.
+    
+* Users represent many different time zones. It is quite possible tha
+  t it is late at night or very early in the morning for some users
+  when you ask a question.
+
+* Do not post large error messages in the channel. Instead, use a
+  pasting service such as pastebin.com and refer to the URL on channel.
+    
+* Be polite and do not demand that others answer your question.
+    
+* It is considered rude to "Chat Privately" with someone who does not
+  know you without first asking their permission. If no one answers
+  your question, do not start chatting privately with people you do not
+  know.
+  
+* The first time you join the channel, it is okay to say hi and
+  introduce yourself. If a new person joins the channel, feel free to
+  welcome them and to make them feel welcome.
 
 .. index:: reddit
 .. _TrueOS® Subreddit:
 
 TrueOS® Subreddit
 =================
+
+The TrueOS® Project also has a
+`Subreddit <https://www.reddit.com/r/TrueOS/>`_ for users who prefer
+to use Reddit to ask questions and to search for or post how-tos. You
+do not need a Reddit account in order to read the Subreddit, but will
+need to create a login account if you wish to submit or comment on
+posts.
 
 .. index:: bug
 .. _Report a bug:
@@ -45,18 +87,12 @@ Report a bug
 Social Media
 ============
 
-The TrueOS® project maintains several social media sites to help users keep up-to-date with what is happening and to provide venues for developers and users
-to network with each other. Anyone is welcome to join.
+The TrueOS® project maintains several social media sites to help users
+keep up-to-date with what is happening and to provide venues for
+developers and users to network with each other. Anyone is welcome to
+join.
 
-* `Official PC-BSD® Blog <https://blog.pcbsd.org/>`_
-
-* `PC-BSD® on Twitter <https://twitter.com/PCBSD/>`_
-
-* `PC-BSD® Facebook Group <https://www.facebook.com/groups/4210443834/>`_
-
-* `PC-BSD® Google+ page <https://plus.google.com/u/0/+pcbsd/posts>`_
-
-* `PC-BSD® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_
+* `Official TrueOS® Blog <https://www.trueos.org/blog/>`_
 
 .. index:: help
 .. _FreeBSD Handbook and FAQ:
@@ -64,12 +100,21 @@ to network with each other. Anyone is welcome to join.
 FreeBSD Handbook and FAQ
 ========================
 
-TrueOS® uses FreeBSD as its underlying operating system, so everything in the `FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_ and
-`FreeBSD FAQ <http://www.freebsd.org/doc/en/books/faq/>`_ applies to TrueOS® as well. Both documents are comprehensive and cover nearly every task you
-can accomplish on a FreeBSD system. They are also an excellent resource for learning how things work under the hood of your TrueOS® system.
+TrueOS® uses FreeBSD as its underlying operating system, so everything
+in the
+`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
+and
+`FreeBSD FAQ <http://www.freebsd.org/doc/en/books/faq/>`_ applies to
+TrueOS® as well. Both documents are comprehensive and cover nearly
+every task you can accomplish on a FreeBSD system. They are also an
+excellent resource for learning how things work under the hood of your
+TrueOS® system.
 
-.. note:: some configurations described in the FreeBSD Handbook already "just work" on your TrueOS® system as they have been pre-configured for you. In these
-   instances, reading that FreeBSD Handbook section can help you to understand how your system is configured and why it works.
+.. note:: Some configurations described in the FreeBSD Handbook
+   already "just work" on your TrueOS® system as they have been
+   pre-configured for you. In these instances, reading that FreeBSD
+   Handbook section can help you to understand how your system is
+   configured and why it works.
 
 .. index:: help
 .. _Search and Portals:
@@ -77,11 +122,14 @@ can accomplish on a FreeBSD system. They are also an excellent resource for lear
 Search and Portals
 ==================
 
-Many BSD related search portals exist. If you can not find the answer that you are looking for in the forums or mailing lists, try searching these websites: 
+Many BSD related search portals exist. If you can not find the answer
+that you are looking for in the forums or mailing lists, try searching
+these websites: 
 
 * `The OpenDirectory <http://www.dmoz.org/Computers/Software/Operating_Systems/Unix/BSD/>`_
 
-* `FreeBSD Search <http://www.freebsd.org/search/index.html>`_ (includes mailing list archives, man pages, and web pages) 
+* `FreeBSD Search <http://www.freebsd.org/search/index.html>`_
+  (includes mailing list archives, man pages, and web pages) 
 
 * `FreeBSD News <https://www.freebsdnews.com/>`_
 
@@ -101,7 +149,8 @@ Many BSD related search portals exist. If you can not find the answer that you a
 Other Resources
 ===============
 
-The following BSD sites and resources may also contain useful information: 
+The following BSD sites and resources may also contain useful
+information: 
 
 * `The FreeBSD Diary <http://www.freebsddiary.org/>`_
 
