@@ -42,8 +42,11 @@ STILL NEED TO BE ADDED IN THE ORDER THEY APPEAR:
 * :ref:`Firewall Manager`
 
 The rest of this chapter provides an overview of the SysAdm™
-architecture, how to manage its secure connections, and how to use its
-built-in utilities.
+architecture, how to manage its secure connections, and how to use the
+client's built-in utilities.
+
+.. note:: Instructions for using the API in your own scripts can be
+   found in the `SysAdm™ API Reference <http://api.sysadm.us/>`_.
 
 SysAdm™ Overview
 ================
@@ -397,11 +400,62 @@ This tab contains the following configurable options:
 Upgrading from PC-BSD® 10.x to TrueOS®
 --------------------------------------
 
-:numref:`Figure %s: Upgrade In Place Option <upgrade1>`, 
+If you are currently running PC-BSD® 10.x, the option to update to
+TrueOS® will not appear in the Control Panel version of Update Manager.
+This is because a new installation is required in order to migrate to
+TrueOS®. However, the TrueOS® installer allows you to keep all of your
+existing data and home directories as it provides the ability to install
+TrueOS® into a new boot environment. In other words, the new operating
+system and updated applications are installed while the ZFS pool and
+any existing boot environments are preserved. Since the new install is
+in a boot environment, you retain the option to boot back into your
+previous PC-BSD® installation.
+
+.. note:: This option overwrites the contents of :file:`/etc`. If you
+   have any custom configurations, save them to a backup or your home
+   directory first. Alternately, you can use
+   :ref:`Boot Environment Manager` post-installation to mount your
+   previous PC-BSD® boot environment to copy over any configuration
+   files you forgot to backup.
+
+To perform the installation to a new boot environment, start the
+TrueOS® installation as described in :ref:`Installing TrueOS®`. In the
+:ref:`System Selection Screen` select to install either a desktop or a
+server. When you press "Next", the pop-up screen shown in
+:numref:`Figure %s: Install to Boot Environment <upgrade1>` will
+appear.
 
 .. _upgrade1:
 
 .. figure:: images/upgrade1.png
+
+To upgrade, select the existing pool to install into and press "OK".
+
+.. warning:: If you instead press "Cancel", the installation will
+   continue as usual and will reformat the disks, destroying any
+   existing data.
+   
+If you press "OK" to proceed with an installation into a new boot
+environment, the installer will skip the "Disk Selection" screen and
+instead show a summary as seen in
+:numref:`Figure %s: Start the Install to Boot Environment <upgrade2>`.
+
+.. _upgrade2:
+
+.. figure:: images/upgrade2.png
+
+Press "Next" to start the installation. Once the installation is
+complete, reboot the system and remove the installation media. The
+post-installation screens will run as described in
+:ref:`Post Installation Configuration and Installation Troubleshooting`
+so that you can configure the new installation.
+
+.. note:: When you get to the :ref:`Create a User Screen`, recreate the
+   primary user account using the same name you used on your PC-BSD®
+   system so that TrueOS® can associate the existing home directory
+   with that user. Once you have logged in, you can use
+   :ref:`User Manager` to recreate any other user accounts or to
+   reassociate any PersonaCrypt accounts.
 
 .. index:: sysadm, configuration
 .. _Manage SSL Keys:
