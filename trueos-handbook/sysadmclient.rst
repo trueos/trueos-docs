@@ -37,10 +37,6 @@ The following utilities have been removed from Control Panel as they are now ava
 
 * :ref:`Life Preserver`
 
-STILL NEED TO BE ADDED IN THE ORDER THEY APPEAR:
-
-* :ref:`Firewall Manager`
-
 The rest of this chapter provides an overview of the SysAdm™
 architecture, how to manage its secure connections, and how to use the
 client's built-in utilities.
@@ -1314,71 +1310,3 @@ After making your selection, click "Next". The restore wizard will provide a sum
 associated with the replication, and the hostname of the target system. Click "Finish" and the installer will proceed to the :ref:`Disk Selection Screen`. At
 this point, you can click the "Customize" button to customize the disk options. However, in the screen shown in Figure 3.3h, the ZFS datasets will be greyed
 out as they will be recreated from the backup during the restore. Once you are finished with any customizations, click "Next" to perform the restore.
-
-.. index:: firewall
-.. _Firewall Manager:
-
-Firewall Manager
-================
-
-TrueOS® uses the
-`IPFW firewall <http://www.freebsd.org/cgi/man.cgi?query=ipfw>`_ to
-protect your system. By default, the firewall is configured to allow
-all outgoing connections, but to deny all incoming connection
-requests. Use the Firewall Manager graphical utility to view and modify
-the existing firewall rules.
-
-.. note:: Typically it is not necessary to change the firewall rules.
-   You should only add rules if you understand the security
-   implications of doing so, as custom rules can be used to allow
-   connections to your computer.
-
-To access the Firewall Manager, click Firewall Manager within SysAdm™ or type :command:`sudo pc-fwmanager`. You will be prompted to input
-your password. :numref:`Figure %s: Firewall Manager Utility <firewall1>` shows the initial screen when you launch this utility.
-
-.. _firewall1:
-
-.. figure:: images/firewall1.png
-
-The "Open Ports" tab is used to view and manage custom rules. Note
-that all rules shown in this tab allow **incoming** connections on the
-specified protocol and port number.
-
-.. note:: By default, UDP port 5353 is open to allow
-   :wikipedia:`Multicast DNS`,  which provides local name resolution.
-
-To add a custom rule, input the port number to open. By default, "tcp"
-is selected. If the rule is for the UDP protocol, click the "tcp"
-drop-down menu and select "udp". Once you have the protocol and port
-number selected, click the "Open Port" button to add the new rule.
-
-To delete a rule, highlight the rule to delete and click the "Close
-Selected Ports" button.
-
-.. note:: Whenever you add or delete a rule, the rule will not be used
-   until you click the "Restart" button shown in
-   :numref:`Figure %s: General Firewall Settings <firewall2>`.
-
-Whenever you create and apply a rule, test that your new rule works as
-expected. For example, if you create a rule to allow incoming SSH
-connections, try connecting to your TrueOS® system using :command:`ssh`
-to verify that the firewall is now allowing the connection.
-
-The "General" tab is shown in
-:numref:`Figure %s: General Firewall Settings <firewall2>`
-
-.. _firewall2:
-
-.. figure:: images/firewall2.png
-
-This tab allows you to: 
-
-* Determine whether or not the firewall starts when the system boots.
-  Unless you have a reason to do so and understand the security
-  implications, the "Enable Firewall on startup" box should remain
-  checked so that your system is protected by the firewall.
-
-* "Start", "Stop", or "Restart" the firewall.
-
-* The "Restore Default Configuration" button allows you to return to
-  the original, working configuration.
