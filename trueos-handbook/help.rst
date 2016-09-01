@@ -151,6 +151,12 @@ join.
 
 * `Official TrueOS® Blog <https://www.trueos.org/blog/>`_
 
+* `TrueOS® Project on Twitter <https://twitter.com/TrueOS_Project/>`_
+
+* `TrueOSD® Facebook Group <https://www.facebook.com/groups/4210443834/>`_
+
+* `TrueOS® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_
+
 .. index:: help
 .. _FreeBSD Handbook and FAQ:
 
