@@ -81,6 +81,63 @@ posts.
 Report a bug
 ============
 
+One of the most effective ways to assist the TrueOS® Project is by
+reporting problems or bugs encountered while using TrueOS®. Anyone can
+report a TrueOS® bug. However, a few guidelines should be followed to
+ensure a speedy response:
+
+* TrueOS® uses `GitHub <https://github.com/trueos/>`_, to manage bugs.
+  A GitHub account is required before bugs can be reported. Navigate
+  to https://github.com, fill in the required fields, and click
+  :guilabel:`Sign up for GitHub` to create a new github account.
+
+.. note:: The GitHub issues tracker uses email to update contributors
+   on the status of bugs. Please use a valid and frequently used
+   email address when creating a GitHub account for the efficient
+   resolution of issues.
+
+* The TrueOS® code has been organized into repositories that represent
+  the Lumina desktop, the graphical utilities, SysAdm™, and various
+  other applications. Select the repository that most closely matches
+  the application that has a bug. If you are in doubt, select the
+  "trueos-utils-qt5" repository.
+   
+* Once you have clicked a repostitory name, use the "Search" bar on its
+  page to confirm no similar bug report exists. If a similar report does
+  exist, add any additional information to the report via a comment.
+  While it is not required to log in to search existing bugs, adding a
+  comment or creating a new report does require signing into the
+  website.
+
+* To create a new bug report,
+  click :menuselection:`Issues --> New Issue` within the repository.
+  :numref:`Figure %s: Creating a Bug Report <bug1>` shows an example
+  from within the "trueos-utils-qt5" repository.
+
+.. _bug1:
+
+.. figure:: images/bug1.png
+   :scale: 100%
+
+* Write a brief but descriptive "Title" that includes the error.
+  Ideally, the title is short (8 words or less) and contains key words
+  about the error so the bug report is easily found with the search tool.
+
+* In the "Leave a Comment" text area, write about the circumstance of
+  the error, including instructions how to recreate it. If an error
+  message is generated, paste the error in its entirety. Attaching a
+  screenshot to the report can greatly aid the developer in visualizing
+  the problem. Remember to include the output of :command:`uname -a`.
+
+* If the problem appears to be hardware related, attach a copy of
+  :file:`/var/run/dmesg.boot` as this file shows the hardware that was
+  probed the last time the TrueOS® system booted.
+
+* After describing the issue, click :guilabel:`Submit new issue` to
+  create the issue. The bug tracker will attach a unique number to the
+  report and send update messages to the your registered email address
+  whenever activity occurs with the bug report.
+
 .. index:: help
 .. _Social Media:
 

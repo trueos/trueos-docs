@@ -30,22 +30,9 @@ versions become available they will be announced here. You will also
 be able to see what problems other testers are finding and can check
 to see if the problem exists on your hardware as well.
 
-Anyone can become a beta tester. Follow these tips so that you can
+Anyone can become a beta tester. If you find a bug while testing,
 accurately describe your findings when you :ref:`Report a bug` so that
 it can be fixed as soon as possible: 
-
-* Use a descriptive subject that is short (8 words or less) and
-  contains key words about the error.
-
-* Ensure that the body of the bug report contains the output of
-  :command:`uname -a`.
-
-* Give a short (2-3 sentences) description of how to recreate the
-  error. If there is an error message, include its complete text.
-
-* If the problem appears to be hardware related, include a copy of
-  :file:`/var/run/dmesg.boot` as this file shows the hardware that was
-  probed the last time the TrueOS® system booted.
   
 .. index:: translations
 .. _Become a Translator:
