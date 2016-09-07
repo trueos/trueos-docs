@@ -1552,7 +1552,7 @@ Once you know that your printer is supported, make sure that the
 printer is plugged into your computer or, if the printer is a network
 printer, that both your computer and the printer are connected to the
 network. Then, open a web browser and enter the address
-"127.00.1:631/admin". This will open the CUPS configuration shown in
+"127.0.0.1:631/admin". This will open the CUPS configuration shown in
 :numref:`Figure %s: Printer Configuration <print4a>`. 
 
 .. _print4a: 
