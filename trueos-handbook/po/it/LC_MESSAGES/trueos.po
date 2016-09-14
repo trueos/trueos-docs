@@ -1,0 +1,28 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-14 16:10-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../trueos.rst:11
+msgid "TrueOS\\ |reg| User Guide |release|"
+msgstr ""
+
+#: ../../trueos.rst:13
+msgid "Contents:"
+msgstr ""
+
+#: ../../trueos.rst:36
+msgid "Index"
+msgstr ""
+
+#: ../../trueos.rst:38
+msgid ":ref:`genindex`"
+msgstr ""

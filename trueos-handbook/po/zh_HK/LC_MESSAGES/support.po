@@ -1,0 +1,644 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-14 16:10-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../support.rst:14
+msgid "Supporting TrueOS®"
+msgstr ""
+
+#: ../../support.rst:16
+msgid ""
+"TrueOS® is a community project which relies on involvement from its users "
+"and supporters. This section lists some ideas for becoming involved."
+msgstr ""
+
+#: ../../support.rst:24
+msgid "Become a Beta Tester"
+msgstr ""
+
+#: ../../support.rst:26
+msgid ""
+"If you like playing around with operating systems and have a bit of spare "
+"time, one of the most effective ways you can assist the TrueOS® community is"
+" by reporting problems you encounter while using TrueOS®."
+msgstr ""
+
+#: ../../support.rst:30
+msgid ""
+"If you have a spare system or virtual machine, you can also download and try"
+" out the latest testing snapshots. Having as many people as possible using "
+"TrueOS® on many different hardware configurations assists the Project in "
+"finding and fixing bugs. This makes using TrueOS® better for everyone."
+msgstr ""
+
+#: ../../support.rst:36
+msgid ""
+"If becoming a tester interests you, join the `TrueOS® Lobby "
+"<https://gitter.im/trueos/Lobby>`_. As new testing versions become available"
+" they will be announced here. You will also be able to see what problems "
+"other testers are finding and can check to see if the problem exists on your"
+" hardware as well."
+msgstr ""
+
+#: ../../support.rst:42
+msgid ""
+"Anyone can become a beta tester. If you find a bug while testing, accurately"
+" describe your findings when you :ref:`Report a bug` so that it can be fixed"
+" as soon as possible:"
+msgstr ""
+
+#: ../../support.rst:50
+msgid "Become a Translator"
+msgstr ""
+
+#: ../../support.rst:52
+msgid ""
+"If you are interested in translating TrueOS® into your native language, "
+"there are three translation areas that you can choose to become involved in:"
+msgstr ""
+
+#: ../../support.rst:56
+msgid "Translate the graphical menus within the TrueOS® operating system."
+msgstr ""
+
+#: ../../support.rst:58
+msgid "Translate the documentation that is published with TrueOS®."
+msgstr ""
+
+#: ../../support.rst:60
+msgid "Translate the TrueOS® website."
+msgstr ""
+
+#: ../../support.rst:62
+msgid ""
+"This section describes each of these translation areas in more detail and "
+"how to get started as a translator."
+msgstr ""
+
+#: ../../support.rst:65
+msgid ""
+"Regardless of the type of translation you are interested in, you should "
+"first join the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. The first "
+"time you join the channel, introduce yourself and indicate which language(s)"
+" and which type(s) of translations you can assist with. This will allow you "
+"to meet other volunteers as well as keep abreast of any notices or updates "
+"that affect translators."
+msgstr ""
+
+#: ../../support.rst:76
+msgid "Interface Translation"
+msgstr ""
+
+#: ../../support.rst:78
+msgid ""
+"TrueOS® uses `Weblate <https://weblate.org>`_ for managing localization of "
+"the menu screens used by the installer and the TrueOS® utilities. Weblate "
+"makes it easy to find out if your native language has been fully localized "
+"for TrueOS®. It also makes it easy to verify and submit translated text as "
+"it provides a web editor and commenting system. This means that translators "
+"can spend their time making and reviewing translations rather than learning "
+"how to use a translation tool."
+msgstr ""
+
+#: ../../support.rst:87
+msgid ""
+"To assist with a localization, open up the `TrueOS® translation website "
+"<http://weblate.trueos.org/>`_ in a web browser. An example is seen in "
+":numref:`Figure %s: The TrueOS® Weblate Translation System <translate1>`."
+msgstr ""
+
+#: ../../support.rst:96
+msgid ""
+"Before you can edit a translation, you need to first create a a login "
+"account and verify the activation email. Once you are logged in, click the "
+"\"Manage your languages\" box shown in :numref:`Figure %s: Weblate Dashboard"
+" <translate2>`."
+msgstr ""
+
+#: ../../support.rst:105
+msgid ""
+"In the screen shown in :numref:`Figure %s: Manage Languages <translate3>`, "
+"use the \"Interface Language\" drop-down menu to select the language for the"
+" Weblate interface itself. Then, in the \"Translated languages\" section, "
+"use the arrows to add or remove the languages that you wish to translate. "
+"Once you have made your selections, click the \"Save\" button."
+msgstr ""
+
+#: ../../support.rst:116
+msgid ""
+"If the language you wish to translate is missing from the \"Translated "
+"languages\" menu, ask for it to be added in the `TrueOS® Lobby "
+"<https://gitter.im/trueos/Lobby>`_."
+msgstr ""
+
+#: ../../support.rst:120
+msgid ""
+"Next, click the \"Projects\" button at the top of the screen to select a "
+"localization project. In the example shown in :numref:`Figure %s: Select a "
+"Project <translate4>`, the user has selected the \"trueos-utils-qt5\" "
+"project, which represents the localization of the TrueOS graphical "
+"interface. This screen shows the components of that project and the current "
+"progress of each component's translation. The green bar indicates the "
+"percentage that has been localized. If a component is not at 100%, it means "
+"that its untranslated menus will instead appear in English."
+msgstr ""
+
+#: ../../support.rst:134
+msgid ""
+"To start translating, click a component name. In the screen shown in "
+":numref:`Figure %s: Select a Language to Translate <translate5>`, select a "
+"language, and click its \"Translate\" button."
+msgstr ""
+
+#: ../../support.rst:142
+msgid ""
+"In the example shown in :numref:`Figure %s: Using the Translation Editor "
+"<translate6>`, the user has selected to translate the \"pc-installgui\" "
+"component into the Spanish language. The English text is displayed in the "
+"\"Source\" field and the translator can type the Spanish translation into  "
+"the \"Translation\" field. Use the arrows near the \"Strings needing "
+"action\" field to navigate between the strings to translate."
+msgstr ""
+
+#: ../../support.rst:154
+msgid ""
+"If you need help with a translation or using the Weblate system, you can ask"
+" for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
+msgstr ""
+
+#: ../../support.rst:162
+msgid "Documentation Translation"
+msgstr ""
+
+#: ../../support.rst:164
+msgid ""
+"The source for the TrueOS® Users Handbook is stored in the `TrueOS® github "
+"repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
+"handbook>`_. This allows the documentation and its translations to be built "
+"with the operating system. Documentation updates are automatically pushed to"
+" the TrueOS® website and, when the system is updated using :ref:`Update "
+"Manager`, the doc updates are installed to the local copy named "
+":file:`/usr/local/share/trueos/handbook/trueos.html`. This ensures that the "
+"installed version of the Handbook always matches the operating system and "
+"that, as new features are added, they are documented and appear as a local "
+"copy on the user's system."
+msgstr ""
+
+#: ../../support.rst:176
+msgid ""
+"The TrueOS® build server provides the HTML version of the TrueOS® Users "
+"Handbook. Instructions for building your own HTML, PDF, or EPUB version can "
+"be found in this `README.md <https://github.com/trueos/trueos-"
+"docs/blob/master/trueos-handbook/README.md>`_."
+msgstr ""
+
+#: ../../support.rst:181
+msgid ""
+"The documentation source files have been integrated into the Weblate "
+"translation system so that the TrueOS® documentation can be translated using"
+" a web browser. The process is similar to :ref:`Interface Translation` "
+"except that you must first select \"PC-BSD Handbook\" from the \"Projects\" "
+"drop-down menu shown in :numref:`Figure %s: Select a Project <translate4>`."
+msgstr ""
+
+#: ../../support.rst:186
+msgid "When translating the documentation, be aware of the following:"
+msgstr ""
+
+#: ../../support.rst:188
+msgid ""
+"At this time, some formatting tags are still displayed in raw text, as seen "
+"in the examples in :numref:`Figure %s: Do Not Remove Formatting Characters "
+"<translate7>` and :numref:`Figure %s: Another Formatting Characters Example "
+"<translate7>`. **It is IMPORTANT that you do not accidentally remove the "
+"formatting as this can break the documentation build for that language.** In"
+" the first example, it is OK to translate the phrase \"Using the Text "
+"Installer\" but care must be taken to not accidental remove any of the "
+"surrounding colons and backticks, or to change the text of the \"ref\" tag. "
+"In the second example, the asterisks are used to bold the word \"install\". "
+"It is OK to translate \"install\", but do not remove the asterisks."
+msgstr ""
+
+#: ../../support.rst:202
+msgid ""
+"If you would like to build a local HTML copy that includes the latest "
+"translations, either for your own use or to visualize the translated Guide, "
+"do the following from the command line. These instructions are for a TrueOS®"
+" system::"
+msgstr ""
+
+#: ../../support.rst:220
+msgid ""
+"This will make an HTML version of the Guide for each of the available "
+"translations. In this example, translations are available for English (in "
+":file:`html`), Danish, German, Spanish, French, Indonesian, Brazilian "
+"Portuguese, Turkish, and UK English. To update the HTML at a later time::"
+msgstr ""
+
+#: ../../support.rst:236
+msgid "Website Translation"
+msgstr ""
+
+#: ../../support.rst:238
+msgid ""
+"If you are interested in translating the PC-BSD® website, introduce yourself"
+" in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
+msgstr ""
+
+#: ../../support.rst:242
+msgid ""
+"Currently, the the website is being translated to several languages, "
+"including: Dutch, French, German, Polish, Spanish, Swedish, and Turkish."
+msgstr ""
+
+#: ../../support.rst:248
+msgid "Become a Developer"
+msgstr ""
+
+#: ../../support.rst:250
+msgid ""
+"If you like programming, and especially coding on FreeBSD, we would love to "
+"see you join the TrueOS® team as a TrueOS® committer. Developers who want to"
+" help improve the TrueOS® codebase are always welcome! If you would like to "
+"participate in core development, introduce yourself in the `TrueOS® Lobby "
+"<https://gitter.im/trueos/Lobby>`_. Feel free to browse the \"Issues\" in "
+"the `TrueOS® repository <https://github.com/trueos/>`_. If you see something"
+" that you want to work on, or have a proposal for a project you wish to add "
+"to TrueOS®, mention it and someone will be happy to help get you started."
+msgstr ""
+
+#: ../../support.rst:262
+msgid ""
+"Most of the TrueOS® specific GUI tools are developed in C++ using Qt "
+"libraries and other non-GUI development is done using standard Bourne shell "
+"scripts. There may be cases where other languages or libraries are needed, "
+"but those will be evaluated on a case-by-case basis."
+msgstr ""
+
+#: ../../support.rst:271
+msgid "Getting the Source Code"
+msgstr ""
+
+#: ../../support.rst:273
+msgid ""
+"The TrueOS® source code is available from the `GitHub "
+"<https://github.com/trueos/>`_. The code has been organized into "
+"repositories that represent the Lumina desktop, the graphical utilities, "
+"SysAdm™, and various other applications. :command:`git` needs to be "
+"installed in order to download the source code. When using TrueOS®, "
+":command:`git` is included in the base install."
+msgstr ""
+
+#: ../../support.rst:280
+msgid ""
+"To download the source code, :command:`cd` to the directory to store the "
+"source code and specify the name of the desired repository. In this example,"
+" the user wishes to download the source for the graphical utilities::"
+msgstr ""
+
+#: ../../support.rst:287
+msgid "This will create a directory with the same name as the repository."
+msgstr ""
+
+#: ../../support.rst:289
+msgid ""
+"To keep the local copy in sync with the official repository, periodically "
+"run :command:`git pull` within that directory."
+msgstr ""
+
+#: ../../support.rst:292
+msgid ""
+"Before you can compile any source, ensure that the Ports Collection is "
+"installed as the superuser::"
+msgstr ""
+
+#: ../../support.rst:297
+msgid ""
+"Then, :command:`cd` to the directory containing the source you wish to build"
+" and run the :command:`mkports.sh` script. In this example, the developer "
+"wants to compile the graphical utilities:"
+msgstr ""
+
+#: ../../support.rst:307
+msgid ""
+"This will create a port which can be installed. The name of the port is "
+"located in :file:`mkports.sh`. This example determines the name of the port "
+"directory, changes to that directory, and then builds the port. Since this "
+"system is already running the TrueOS® graphical utilities, "
+":command:`reinstall` is used to overwrite the current utilities:"
+msgstr ""
+
+#: ../../support.rst:321
+msgid ""
+"If you plan to make source changes, several Qt IDEs are available in "
+":ref:`AppCafe®`. The `QtCreator "
+"<http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a full-"
+"featured IDE designed to help new Qt users get up and running faster while "
+"boosting the productivity of experienced Qt developers. `Qt Designer "
+"<http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is "
+"only a :file:`.ui` file editor and does not provide any other IDE "
+"functionality."
+msgstr ""
+
+#: ../../support.rst:331
+msgid ""
+"If you plan to submit changes so that they can be included in TrueOS®, fork "
+"the repository using the instructions in `fork a repo "
+"<https://help.github.com/articles/fork-a-repo>`_. Make your changes to the "
+"fork, then submit them by issuing a `git pull request "
+"<https://help.github.com/articles/using-pull-requests>`_. Once your changes "
+"have been reviewed, they will be committed or sent back with suggestions."
+msgstr ""
+
+#: ../../support.rst:343
+msgid "Design Guidelines"
+msgstr ""
+
+#: ../../support.rst:345
+msgid ""
+"TrueOS® is a community driven project that relies on the support of "
+"developers in the community to help in the design and implementation of new "
+"utilities and tools for TrueOS®. The Project aims to present a unified "
+"design so that programs feel familiar to users. As an example, while "
+"programs could have \"File\", \"Main\", or \"System\" as their first entry "
+"in a menu bar, \"File\" is used as the accepted norm for the first category "
+"on the menu bar."
+msgstr ""
+
+#: ../../support.rst:353
+msgid ""
+"This section describes a small list of guidelines for menu and program "
+"design in TrueOS®."
+msgstr ""
+
+#: ../../support.rst:356
+msgid ""
+"Any graphical program that is a full-featured utility, such as :ref:`Life "
+"Preserver`, should have a \"File\" menu. However, file menus are not "
+"necessary for small widget programs or dialogue boxes. When making a file "
+"menu, a good rule of thumb is keep it simple. Most TrueOS® utilities do not "
+"need more than two or three items on the file menu."
+msgstr ""
+
+#: ../../support.rst:363
+msgid ""
+"\"Configure\" is our adopted standard for the category that contains "
+"settings or configuration-related settings. If additional categories are "
+"needed, check to see what other TrueOS® utilities are using."
+msgstr ""
+
+#: ../../support.rst:367
+msgid ""
+"File menu icons are taken from the KDE Oxygen theme located in "
+":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
+"not have a bunch of different icons used for the same function. Table 13.3a "
+"lists the commonly used icons and their default file names."
+msgstr ""
+
+#: ../../support.rst:372
+msgid "**Table 13.3a: Commonly Used File Menu Icons**"
+msgstr ""
+
+#: ../../support.rst:375
+msgid "Function"
+msgstr ""
+
+#: ../../support.rst:375
+msgid "File Menu Icon"
+msgstr ""
+
+#: ../../support.rst:375
+msgid "File Name"
+msgstr ""
+
+#: ../../support.rst:377 ../../support.rst:417 ../../support.rst:427
+msgid "Quit"
+msgstr ""
+
+#: ../../support.rst:377
+msgid "row 1, cell 2"
+msgstr ""
+
+#: ../../support.rst:377
+msgid "window-close.png"
+msgstr ""
+
+#: ../../support.rst:379 ../../support.rst:429
+msgid "Settings"
+msgstr ""
+
+#: ../../support.rst:379
+msgid "row 2, cell 2"
+msgstr ""
+
+#: ../../support.rst:379
+msgid "configure.png"
+msgstr ""
+
+#: ../../support.rst:382
+msgid "TrueOS® utilities use these buttons as follows:"
+msgstr ""
+
+#: ../../support.rst:384
+msgid "**Apply:** applies settings and leaves the window open."
+msgstr ""
+
+#: ../../support.rst:386
+msgid "**Close:** closes program without applying settings."
+msgstr ""
+
+#: ../../support.rst:388
+msgid "**OK:** closes dialogue window and saves settings."
+msgstr ""
+
+#: ../../support.rst:390
+msgid "**Cancel:** closes dialog window without applying settings."
+msgstr ""
+
+#: ../../support.rst:392
+msgid "**Save:** saves settings and closes window."
+msgstr ""
+
+#: ../../support.rst:394
+msgid ""
+"Fully functional programs like :ref:`Life Preserver` do not use close "
+"buttons on the front of the application. Basically, whenever there is a "
+"\"File\" menu, that and an \"x\" in the top right corner of the application "
+"are used instead. Dialogues and widget programs are exceptions to this rule."
+msgstr ""
+
+#: ../../support.rst:400
+msgid ""
+"Many users benefit from keyboard shortcuts and we aim to make them available"
+" in every TrueOS® utility. Qt makes it easy to assign keyboard shortcuts. "
+"For instance, to configure keyboard shortcuts that browse the \"File\" menu,"
+" put *&File* in the text slot for the menu entry when making the "
+"application. Whichever letter has the *&* symbol in front of it will become "
+"the hot key. You can also make a shortcut key by clicking the menu or "
+"submenu entry and assigning a shortcut key. Be careful not to duplicate hot "
+"keys or shortcut keys. Every key in a menu and submenu should have a key "
+"assigned for ease of use and accessibility. Tables 13.3b and 13.3c summarize"
+" the commonly used shortcut and hot keys."
+msgstr ""
+
+#: ../../support.rst:412
+msgid "**Table 13.3b: Shortcut Keys**"
+msgstr ""
+
+#: ../../support.rst:415
+msgid "Shortcut Key"
+msgstr ""
+
+#: ../../support.rst:415 ../../support.rst:425
+msgid "Action"
+msgstr ""
+
+#: ../../support.rst:417
+msgid "CTRL + Q"
+msgstr ""
+
+#: ../../support.rst:419
+msgid "F1"
+msgstr ""
+
+#: ../../support.rst:419
+msgid "Help"
+msgstr ""
+
+#: ../../support.rst:422
+msgid "**Table 13.3c: Hot Keys**"
+msgstr ""
+
+#: ../../support.rst:425
+msgid "Hot Key"
+msgstr ""
+
+#: ../../support.rst:427
+msgid "Alt + Q"
+msgstr ""
+
+#: ../../support.rst:429
+msgid "Alt + S"
+msgstr ""
+
+#: ../../support.rst:431
+msgid "Alt + I"
+msgstr ""
+
+#: ../../support.rst:431
+msgid "Import"
+msgstr ""
+
+#: ../../support.rst:433
+msgid "Alt + E"
+msgstr ""
+
+#: ../../support.rst:433
+msgid "Export"
+msgstr ""
+
+#: ../../support.rst:435
+msgid "ALT + F"
+msgstr ""
+
+#: ../../support.rst:435
+msgid "File Menu"
+msgstr ""
+
+#: ../../support.rst:437
+msgid "ALT + C"
+msgstr ""
+
+#: ../../support.rst:437
+msgid "Configure Menu"
+msgstr ""
+
+#: ../../support.rst:439
+msgid "ALT + H"
+msgstr ""
+
+#: ../../support.rst:439
+msgid "Help Menu"
+msgstr ""
+
+#: ../../support.rst:442
+msgid ""
+"When saving an application's settings, the QSettings class should be used if"
+" possible. There are two different \"organizations\", depending on whether "
+"the application is running with *root* permissions or user permissions. Use "
+"\"PCBSD\" for the organization for applications that run with user "
+"permissions and \"PCBSD-root\" for applications that are started with root "
+"permissions via :command:`sudo`. Proper use prevents the directory where "
+"settings files are saved from being locked down by *root* applications, "
+"allowing user applications to save and load their settings. Examples 13.3a "
+"and 13.3b demonstrate how to use the QSettings class for each type of "
+"permission."
+msgstr ""
+
+#: ../../support.rst:453
+msgid "**Example 13.3a: User Permission Settings**:"
+msgstr ""
+
+#: ../../support.rst:460
+msgid "**Example 13.3b: Root Permission Settings**:"
+msgstr ""
+
+#: ../../support.rst:467
+msgid "Developers will also find the following resources helpful:"
+msgstr ""
+
+#: ../../support.rst:469
+msgid ""
+"`Commits Mailing List <http://lists.pcbsd.org/mailman/listinfo/commits>`_"
+msgstr ""
+
+#: ../../support.rst:471
+msgid "`Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_"
+msgstr ""
+
+#: ../../support.rst:473
+msgid "`C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_"
+msgstr ""
+
+#: ../../support.rst:479
+msgid "Become an Advocate"
+msgstr ""
+
+#: ../../support.rst:481
+msgid ""
+"So you love TrueOS®? Why not tell your family, friends, fellow students and "
+"colleagues about it? You will not be the only one that likes a virus-free, "
+"feature-rich, no-cost operating system. Here are some suggestions to get you"
+" started:"
+msgstr ""
+
+#: ../../support.rst:486
+msgid ""
+"Burn a couple of DVDs and pass them out. If your school or user group has an"
+" upcoming event where you can promote TrueOS®, you can request additional "
+"DVDs from sales@pcbsd.com."
+msgstr ""
+
+#: ../../support.rst:490
+msgid ""
+"Consider giving a presentation about TrueOS® at a local community event or "
+"conference. Let us know about it and we will help you spread the word."
+msgstr ""
+
+#: ../../support.rst:494
+msgid ""
+"Write a personal blog detailing your journey from your first TrueOS® install"
+" experience to your most recent accomplishment. The blog could also be used "
+"to teach or explain how to perform tasks on TrueOS®. A regional language "
+"blog may help build the community in your area and to find others with "
+"similar interests."
+msgstr ""

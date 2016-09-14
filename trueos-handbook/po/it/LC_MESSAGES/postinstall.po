@@ -1,0 +1,823 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-14 16:10-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../postinstall.rst:14
+msgid "Post Installation Configuration and Installation Troubleshooting"
+msgstr ""
+
+#: ../../postinstall.rst:16
+msgid ""
+"Once the TrueOS® system has finished booting for the first time, the "
+"installer will present you with some additional screens so that you can "
+"configure your system. This section describes the boot process, the post-"
+"installation configuration screens, and provides some troubleshooting tips "
+"for failed installations."
+msgstr ""
+
+#: ../../postinstall.rst:26
+msgid "Booting Into TrueOS®"
+msgstr ""
+
+#: ../../postinstall.rst:28
+msgid ""
+"After installation, TrueOS® will reboot and display a boot menu. The menu "
+"that is displayed depends upon the boot loader selection chosen during the "
+"installation."
+msgstr ""
+
+#: ../../postinstall.rst:35
+msgid "BSD Boot Loader"
+msgstr ""
+
+#: ../../postinstall.rst:37
+msgid ""
+"If you performed a default install or kept the \"BSD\" option for the boot "
+"loader, it will load the :numref:`Figure %s: TrueOS® Boot Menu <install1b>`."
+msgstr ""
+
+#: ../../postinstall.rst:45
+msgid ""
+"This menu provides the following options. To pause this menu, press any key "
+"except for :kbd:`Enter`. To select an option, press either the bolded number"
+" or key for that option. Once you have finished making your selections, "
+"press :kbd:`Enter` to boot using the selected options."
+msgstr ""
+
+#: ../../postinstall.rst:51
+msgid ""
+"**1. Boot Multi User:** this is the default option for booting TrueOS®. The "
+"system will automatically use this option either after pausing for a few "
+"moments or if you press :kbd:`Enter` when this menu displays."
+msgstr ""
+
+#: ../../postinstall.rst:56
+msgid ""
+"**2. Boot Single User:** advanced users can select this option to fix "
+"critical system failures."
+msgstr ""
+
+#: ../../postinstall.rst:59
+msgid ""
+"**3. Escape to loader prompt:** advanced users can select this option to "
+"perform advanced operations, such as loading kernel modules."
+msgstr ""
+
+#: ../../postinstall.rst:63
+msgid "**4. Reboot:** reboots the system."
+msgstr ""
+
+#: ../../postinstall.rst:65
+msgid ""
+"**5. Kernel:** this option will indicate how many kernels are available. "
+"Press either :kbd:`5` or :kbd:`k` to toggle between available kernels."
+msgstr ""
+
+#: ../../postinstall.rst:69
+msgid ""
+"**6. Configure Boot Options:** if you press either :kbd:`6` or :kbd:`o`, the"
+" boot options screen shown in :numref:`Figure %s: Boot Options Menu "
+"<boot1b>` will open. To change an option, press either the bolded number or "
+"key for that option to toggle through its available settings. When finished,"
+" press either :kbd:`1` or :kbd:`Backspace` to return to the TrueOS® boot "
+"menu."
+msgstr ""
+
+#: ../../postinstall.rst:76
+msgid ""
+"**7. Select Boot Environment:** in TrueOS®, boot environments are "
+"automatically created when the system updates and can also be manually "
+"created using :ref:`Boot Environment Manager`. This allows you to boot the "
+"system to the point in time before an update occurred and can be used to "
+"recover from a failed update. Press either :kbd:`7` or :kbd:`e` to view the "
+"available boot environments. Note that the first time the system boots, no "
+"additional boot environments are yet available. Over time, this menu will "
+"populate as boot environments are created."
+msgstr ""
+
+#: ../../postinstall.rst:90
+msgid ""
+"The following boot options are available in the :numref:`Figure %s: Boot "
+"Options Menu <boot1b>`:"
+msgstr ""
+
+#: ../../postinstall.rst:93
+msgid ""
+"**3. ACPI Support:** toggles  power  management support which may be useful "
+"for  certain BIOS's  and laptops."
+msgstr ""
+
+#: ../../postinstall.rst:96
+msgid ""
+"**4. Safe Mode:** select this option if the installation hangs when probing "
+"hardware and option \"3 ACPI Support\" did not help. It will boot with a "
+"forced PIO mode (disabling the use of DMA), disable write caching for all "
+"IDE hard drives and CD ROM drives, and disable the probing of EISA slots (as"
+" very few systems have them)."
+msgstr ""
+
+#: ../../postinstall.rst:102
+msgid ""
+"**5. Single User:** advanced users can select this option to fix critical "
+"system failures."
+msgstr ""
+
+#: ../../postinstall.rst:105
+msgid ""
+"**6. Verbose:** select this option if you would like to see more detailed "
+"messages during the boot process. This can be useful when troubleshooting a "
+"piece of hardware."
+msgstr ""
+
+#: ../../postinstall.rst:112
+msgid "GRUB Boot Loader"
+msgstr ""
+
+#: ../../postinstall.rst:114
+msgid ""
+"If you customized the installation and selected the \"GRUB\" option for the "
+"boot loader, it will instead load the menu shown in :numref:`Figure %s: GRUB"
+" Boot Menu <boot2>`."
+msgstr ""
+
+#: ../../postinstall.rst:122
+msgid ""
+"This boot menu is used to display the entry for TrueOS®, an entry for the "
+"screen which lists the available boot environments (these are automatically "
+"created when the system updates and can also be manually created using "
+":ref:`Boot Environment Manager`), and any other operating systems installed "
+"on the system."
+msgstr ""
+
+#: ../../postinstall.rst:128
+msgid ""
+"By default, this menu will display for a few seconds before continuing to "
+"boot into TrueOS®. To pause this screen so that you can review its items, "
+"press any key (other than :kbd:`Enter`). To boot into a different operating "
+"system or boot environment, use your up and down arrows to select the "
+"desired entry then press :kbd:`Enter`."
+msgstr ""
+
+#: ../../postinstall.rst:134
+msgid ""
+"If you press :kbd:`Enter` when the \"TrueOS\" entry is highlighted, the "
+"TrueOS® boot options screen shown in :numref:`Figure %s:  TrueOS® Graphical "
+"Boot Menu Options <boot3>` will be displayed."
+msgstr ""
+
+#: ../../postinstall.rst:143
+msgid "The following boot options are available:"
+msgstr ""
+
+#: ../../postinstall.rst:145
+msgid "**Normal Bootup:** continues to boot TrueOS®."
+msgstr ""
+
+#: ../../postinstall.rst:147
+msgid ""
+"**Single User Mode:** advanced users can select this option to fix critical "
+"system failures."
+msgstr ""
+
+#: ../../postinstall.rst:150
+msgid ""
+"**Verbose Mode:** select this option if you would like to see more detailed "
+"messages during the boot process. This can be useful when troubleshooting a "
+"piece of hardware."
+msgstr ""
+
+#: ../../postinstall.rst:154
+msgid ""
+"Use the arrow keys to select an option then press enter to boot using that "
+"option."
+msgstr ""
+
+#: ../../postinstall.rst:157
+msgid ""
+"This menu is provided by GRUB. If you are familiar with editing GRUB, you "
+"can press :kbd:`e` to access the GRUB editor or :kbd:`c` to access the GRUB "
+"command line."
+msgstr ""
+
+#: ../../postinstall.rst:165
+msgid "If you Encrypted Your Disks"
+msgstr ""
+
+#: ../../postinstall.rst:167
+msgid ""
+"If you selected the \"Encrypt disk with GELI\" checkbox during installation,"
+" you will need physical access to the TrueOS® system when it boots. As the "
+"system starts to boot, it will display a message similar to the one shown in"
+" :numref:`Figure %s:  Input Password to Decrypt Master Key <encrypt1>`."
+msgstr ""
+
+#: ../../postinstall.rst:177
+msgid ""
+"The boot process will wait for you to input the password that you created in"
+" the installation screen shown in :numref:`Figure %s: Configure Encryption "
+"<install11b>`. If the correct password is typed in, the system will "
+"calculate the GELI encryption key, then continue to boot."
+msgstr ""
+
+#: ../../postinstall.rst:187
+msgid "Display Detection"
+msgstr ""
+
+#: ../../postinstall.rst:189
+msgid ""
+"The first time the boot completes, the post-installer configuration script "
+"will attempt to set the optimal display settings. A pop-up menu will either "
+"ask if you would like to accept the settings or indicate that it could not "
+"find the optimal settings. If you click \"Yes\" to accept the settings, "
+"TrueOS® will then proceed to the :ref:`Language Screen` so that you can "
+"perform the initial configuration of the system."
+msgstr ""
+
+#: ../../postinstall.rst:197
+msgid ""
+"If the optimal display settings could not be determined, or if you select "
+"\"No\"in the \"Confirm Resolution\" screen when asked to confirm the display"
+" settings, the \"Display Settings\" screen shown in :numref:`Figure %s: "
+"Display Settings Wizard <display3>` will launch."
+msgstr ""
+
+#: ../../postinstall.rst:206
+msgid ""
+"This screen can be used to select the desired screen resolution, color "
+"depth, and video driver. If you select the \"vesa\" driver, it will always "
+"work but will provide sub-optimal performance. Click on the drop-down menu "
+"to select the driver that most closely matches your video card name."
+msgstr ""
+
+#: ../../postinstall.rst:212
+msgid ""
+"You can also use the drop-down menus to change the screen resolution and "
+"color depth values. If the value you desire is not listed, it may be the "
+"selected driver does not support that resolution or depth."
+msgstr ""
+
+#: ../../postinstall.rst:216
+msgid ""
+"Advanced users can select their monitor's horizontal sync and vertical "
+"refresh rate in the \"Advanced\" tab, seen in :numref:`Figure %s: Advanced "
+"Tab of Display Settings <display4>`."
+msgstr ""
+
+#: ../../postinstall.rst:224
+msgid ""
+"Use caution and refer to your monitor's documentation if you make any "
+"changes here. If you are not sure what you are doing, leave the default "
+"values as-is."
+msgstr ""
+
+#: ../../postinstall.rst:228
+msgid ""
+"If your computer is connected to two monitors, check the box \"Enable Dual-"
+"Head support\"."
+msgstr ""
+
+#: ../../postinstall.rst:231
+msgid ""
+"When you are finished, click the \"Apply\" button for your settings to be "
+"tested. If anything goes wrong during testing, you should be taken back to "
+"the \"Display Settings\" screen so that you can try another setting. Once "
+"you are satisfied with the settings, click \"Yes\" when prompted to accept "
+"them."
+msgstr ""
+
+#: ../../postinstall.rst:241
+msgid "Display Troubleshooting"
+msgstr ""
+
+#: ../../postinstall.rst:243
+msgid ""
+"If you are having problems with your display settings and would like to "
+"manually edit :file:`/etc/X11/xorg.conf` or run :command:`Xorg --config`, "
+"first tell the TrueOS® system to not automatically start X. To do so, add "
+"this temporary line to :file:`/etc/rc.conf`, then reboot the system::"
+msgstr ""
+
+#: ../../postinstall.rst:251
+msgid ""
+"The system will reboot to a login prompt. After logging in, try the "
+"instructions in the `FreeBSD Handbook "
+"<http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_ "
+"to manually configure and test Xorg. Once you have a configuration that "
+"works for you, save it to :file:`/etc/X11/xorg.conf`. Then, remove that "
+"temporary line from :file:`/etc/rc.conf` and start PCDM::"
+msgstr ""
+
+#: ../../postinstall.rst:260
+msgid ""
+"If your graphics white-out after a suspend or resume, try running this "
+"command as the superuser::"
+msgstr ""
+
+#: ../../postinstall.rst:265
+msgid ""
+"If that fixes the problem, carefully add this line to "
+":file:`/etc/sysctl.conf`::"
+msgstr ""
+
+#: ../../postinstall.rst:270
+msgid ""
+"If the monitor goes blank and does not come back, try running this command "
+"as your regular user account::"
+msgstr ""
+
+#: ../../postinstall.rst:275
+msgid ""
+"If that fixes the problem, add that line to the :file:`.xprofile` file in "
+"your home directory."
+msgstr ""
+
+#: ../../postinstall.rst:278
+msgid ""
+"If you change any display settings, click the \"Apply\" button for the "
+"settings to be tested. If anything goes wrong during testing, you will be "
+"taken back to the \"Display Settings\" screen so that you can try another "
+"setting. Once you are happy with the tested setting, click the \"Yes\" "
+"button to save the setting and to proceed. Alternately, click the \"Skip\" "
+"button if you prefer to configure the display settings at a later time."
+msgstr ""
+
+#: ../../postinstall.rst:290
+msgid "Language Screen"
+msgstr ""
+
+#: ../../postinstall.rst:292
+msgid ""
+"The language selection screen is seen in :numref:`Figure %s: Language "
+"Selection Screen <config1a>`."
+msgstr ""
+
+#: ../../postinstall.rst:299
+msgid ""
+"This allows you to select the language you will use to access the installed "
+"system. It also contains three icons from the installer screens so that you "
+"can:"
+msgstr ""
+
+#: ../../postinstall.rst:303
+msgid "read that screen's Help text"
+msgstr ""
+
+#: ../../postinstall.rst:305
+msgid "use the onscreen keyboard"
+msgstr ""
+
+#: ../../postinstall.rst:307
+msgid "switch between the US keyboard layout and a user selected layout"
+msgstr ""
+
+#: ../../postinstall.rst:309
+msgid ""
+"Once you have made your selection, click \"Next\" to go to the next "
+"configuration screen."
+msgstr ""
+
+#: ../../postinstall.rst:316
+msgid "Time Zone Selection Screen"
+msgstr ""
+
+#: ../../postinstall.rst:318
+msgid ""
+"The next configuration screen, shown in :numref:`Figure %s: Select Time Zone"
+" <config2b>`, allows you to select your timezone."
+msgstr ""
+
+#: ../../postinstall.rst:326
+msgid ""
+"Use the drop-down menu to select the city closest to your location. If the "
+"system is connected to the Internet, the installer will most likely have the"
+" correct timezone already selected."
+msgstr ""
+
+#: ../../postinstall.rst:330
+msgid ""
+"If the system is dual booting and the other operating system expects the "
+"BIOS to use UTC, also check the box \"Set BIOS to UTC time\"."
+msgstr ""
+
+#: ../../postinstall.rst:333
+msgid ""
+"A default system hostname will be created for you. If you wish t o change "
+"the default, type in the desired hostname in the \"System Hostname\" field. "
+"If the computer is a member of a DNS domain, you can also input the \"Domain"
+" Name\"."
+msgstr ""
+
+#: ../../postinstall.rst:338
+msgid "When finished, click \"Next\" to proceed to the next screen."
+msgstr ""
+
+#: ../../postinstall.rst:344
+msgid "Set Root Password Screen"
+msgstr ""
+
+#: ../../postinstall.rst:346
+msgid ""
+"This configuration screen, seen in :numref:`Figure %s: Set Root Password "
+"<config3a>`, requires you to set the root (administrative) password."
+msgstr ""
+
+#: ../../postinstall.rst:354
+msgid ""
+"The password must be a minimum of 4 characters and you are required to type "
+"it in twice to confirm the password. Click the \"Next\" button when you are "
+"finished."
+msgstr ""
+
+#: ../../postinstall.rst:362
+msgid "Create a User Screen"
+msgstr ""
+
+#: ../../postinstall.rst:364
+msgid ""
+"This screen is used to create the primary user account that will be used to "
+"login to the system. Set a good value for the password as that password is "
+"used whenever the system indicates that administrative access is required."
+msgstr ""
+
+#: ../../postinstall.rst:369
+msgid ""
+":numref:`Figure %s: User Creation Screen <config4a>` shows the configuration"
+" screen used to create the initial user account."
+msgstr ""
+
+#: ../../postinstall.rst:376
+msgid ""
+"The \"User Details\" tab is used to create a login user. This screen "
+"requires you to complete the following fields:"
+msgstr ""
+
+#: ../../postinstall.rst:379
+msgid ""
+"**Name:** this value will be displayed in the login screen. It can be your "
+"full name and can contain capital letters and spaces."
+msgstr ""
+
+#: ../../postinstall.rst:382
+msgid ""
+"**Username:** this is the name you will use when logging in. It can not "
+"contain spaces and is case sensitive (e.g. *Kris* is a different username "
+"than *kris*)."
+msgstr ""
+
+#: ../../postinstall.rst:386
+msgid ""
+"**Password:** this is the password you will use when logging in. You must "
+"type it twice in order to confirm it."
+msgstr ""
+
+#: ../../postinstall.rst:389
+msgid ""
+"**Specify UID:** by default, the user will be assigned the next available "
+"User ID (UID). If you need to force a specific UID, you can set it here. "
+"Note that you cannot set a UID lower than 1001 or specify a UID that is "
+"already in use by another user account."
+msgstr ""
+
+#: ../../postinstall.rst:394
+msgid ""
+"TrueOS® provides the ability to use a removable device, such as a USB stick,"
+" as the user's encrypted home directory. This is useful in a multi-user or "
+"multi-computer environment as it provides the user with secure access to "
+"their encrypted files.  When a user is configured to use "
+":ref:`PersonaCrypt`, their username will only appear in the login menu if "
+"the removable media associated with that TrueOS® system is inserted. They "
+"must input the password associated with the removable device in order to "
+"login."
+msgstr ""
+
+#: ../../postinstall.rst:403
+msgid ""
+"When a user is configured to use a PersonaCrypt device, that user can not "
+"login using an unencrypted session on the same system. In other words, the "
+"PersonaCrypt username is reserved for PersonaCrypt use. If you need to login"
+" to both encrypted and unencrypted sessions on the same system, create two "
+"different user accounts, one for each type of session."
+msgstr ""
+
+#: ../../postinstall.rst:410
+msgid ""
+"The \"PersonaCrypt\" tab, shown in :numref:`Figure %s: Initializing "
+"PersonaCrypt for this User <persona1a>`, is used to initialize PersonaCrypt "
+"for the user."
+msgstr ""
+
+#: ../../postinstall.rst:418
+msgid ""
+"Check the box \"Initialize PersonaCrypt Device\", insert a removable media "
+"that is large enough to hold the files you plan to store in your home "
+"directory, and click the \"Select\" button."
+msgstr ""
+
+#: ../../postinstall.rst:422
+msgid ""
+"Make sure you do not have any files that you wish to keep on the removable "
+"media. Initializing the media for PersonaCrypt will format the device with "
+"ZFS and encrypt it with GELI, meaning that any existing data will be "
+"destroyed."
+msgstr ""
+
+#: ../../postinstall.rst:427
+msgid ""
+"Input and repeat the \"Device Password\" to associate with the device. A "
+"pop-up menu will indicate that the current contents of the device will be "
+"wiped. Click \"Yes\" to initialize the device."
+msgstr ""
+
+#: ../../postinstall.rst:431
+msgid ""
+"If you share your computer with other users, you will be able to create "
+"additional login and :ref:`PersonaCrypt` accounts using :ref:`User Manager`."
+" After you have created at least one user, click \"Next\" to continue to the"
+" next screen."
+msgstr ""
+
+#: ../../postinstall.rst:440
+msgid "Configure Audio Output"
+msgstr ""
+
+#: ../../postinstall.rst:442
+msgid ""
+"The next screen, seen in :numref:`Figure %s: Configure Audio Output "
+"<audio1a>`, is used to configure the default audio output."
+msgstr ""
+
+#: ../../postinstall.rst:450
+msgid ""
+"Click the \"Output Device\" drop-down menu to select the desired sound "
+"device. You can click the \"Test\" button to verify the setting as a working"
+" configuration will result in a test sound. You can also use the \"Testing "
+"Volume\" slider to set the default volume level."
+msgstr ""
+
+#: ../../postinstall.rst:455
+msgid ""
+"You can view and edit these settings at a later time using the instructions "
+"in :ref:`Sound Mixer Tray`."
+msgstr ""
+
+#: ../../postinstall.rst:462
+msgid "Connect to a Wireless Network"
+msgstr ""
+
+#: ../../postinstall.rst:464
+msgid ""
+"If the system has an active wireless interface, a screen similar to "
+":numref:`Figure %s: Connect to a Wireless Network <config5>` will indicate "
+"the wireless networks which were automatically detected. Available networks "
+"will be ordered by signal strength."
+msgstr ""
+
+#: ../../postinstall.rst:473
+msgid ""
+"If you would like to set the default wireless connection, highlight the "
+"network that you would like to connect to. If the network requires a "
+"password, it will prompt you to input it and will indicate the type of "
+"security used on the network. If the network you wish to connect to does not"
+" appear, try clicking the \"Rescan\" button. If you are unable to connect, "
+"or you wish to configure the connection at a later time, refer to the "
+"instructions in :ref:`Network Manager`."
+msgstr ""
+
+#: ../../postinstall.rst:485
+msgid "Enable Optional Services"
+msgstr ""
+
+#: ../../postinstall.rst:487
+msgid ""
+"The next screen is shown in :numref:`Figure %s: Optional Services "
+"<config6>`."
+msgstr ""
+
+#: ../../postinstall.rst:494
+msgid ""
+"If you check the \"Disable IPV6 (Requires Reboot)\" box, the system will be "
+"configured to only support IPv4 addresses. The default is to support both "
+"IPv4 and IPv6 and to prefer IPv6 over IPv4. Note that this setting will not "
+"take affect until the next system reboot."
+msgstr ""
+
+#: ../../postinstall.rst:499
+msgid ""
+"If you check the \"Enable SSH\" box, the SSH service will start and be "
+"configured to start whenever the system boots. It will also create the "
+"firewall rules needed to allow incoming SSH connections to the TrueOS® "
+"system. **DO NOT check this box if you do not want to allow SSH connections "
+"to the system.**"
+msgstr ""
+
+#: ../../postinstall.rst:505
+msgid ""
+"When finished, click the \"Next\" button. The screen in :numref:`Figure %s: "
+"Setup is Complete <config7>` indicates that the post-installation setup is "
+"complete. Click the \"Finish\" button to access the login menu."
+msgstr ""
+
+#: ../../postinstall.rst:518
+msgid "Logging In"
+msgstr ""
+
+#: ../../postinstall.rst:520
+msgid ""
+"Once you have finished setting up your system, you will be presented with "
+"the PCDM (PC-BSD® Display Manager) graphical login screen. An example is "
+"seen in :numref:`Figure %s: TrueOS® Login Screen <login1>`."
+msgstr ""
+
+#: ../../postinstall.rst:529
+msgid ""
+"The hostname of the system will be displayed at the top of the login window."
+" In this example, it is *trueos-5320*. This login screen lets you select or "
+"input the following:"
+msgstr ""
+
+#: ../../postinstall.rst:533
+msgid ""
+"**user:** the first time you login, the \"Username\" that you created in the"
+" :ref:`Create a User Screen` will be the only available user to login as. If"
+" you create additional users using :ref:`User Manager`, they will be added "
+"to the drop-down menu so you can choose which user to login as. PCDM will "
+"not let you login as the *root* user. Instead, whenever you access a utility"
+" that requires administrative access, TrueOS® will first ask you to input "
+"the password of your login account."
+msgstr ""
+
+#: ../../postinstall.rst:542
+msgid "**password:** input the password associated with the selected user."
+msgstr ""
+
+#: ../../postinstall.rst:544
+msgid ""
+"**desktop:** if you installed any additional desktops using :ref:`AppCafe®`,"
+" use the drop-down menu to select the desktop to log into."
+msgstr ""
+
+#: ../../postinstall.rst:548
+msgid ""
+"If you created a PersonaCrypt user, you will need to insert the PersonaCrypt"
+" device in order to login. As seen in the example in :numref:`Figure %s: "
+"TrueOS® PersonaCrypt Login Screen <login5>`, this will add an extra field to"
+" the login screen so that you can input the password associated with the "
+"PersonaCrypt device."
+msgstr ""
+
+#: ../../postinstall.rst:558
+msgid ""
+"The toolbar at the bottom of the screen allows you to select the following "
+"options on a per-login basis:"
+msgstr ""
+
+#: ../../postinstall.rst:561
+msgid ""
+"**Locale:** if you did not set the localization during installation or wish "
+"to change it, click this icon to set the locale for this login session."
+msgstr ""
+
+#: ../../postinstall.rst:563
+msgid ""
+"**Keyboard Layout:** click this icon to change the keyboard layout for this "
+"login session. This will open the window seen in :numref:`Figure %s: "
+"Configuring Keyboard Settings <keyboard1>`."
+msgstr ""
+
+#: ../../postinstall.rst:571
+msgid ""
+"Click the \"Keyboard model\" drop-down menu to select the type of keyboard. "
+"Note that the default model of \"Generic 104-key PC\" does **not** support "
+"special keys such as multimedia or Windows keys. You will need to change "
+"this default to enable support for hot keys. This screen also allows you to "
+"select the \"Key Layout\" and \"Variant\". After making your selections, you"
+" can test them by typing some text into the \"you may type into the space "
+"below...\" field."
+msgstr ""
+
+#: ../../postinstall.rst:579
+msgid ""
+"**Restart/Shut Down:** if you wish to restart or shutdown the system without"
+" logging in, click the icon in the lower, far right corner. This icon also "
+"allows you to \"Change DPI\" and to \"Refresh PCDM\"."
+msgstr ""
+
+#: ../../postinstall.rst:583
+msgid ""
+"Once you have made your selections, input the password associated with the "
+"selected user and press enter or click the blue arrow icon to login."
+msgstr ""
+
+#: ../../postinstall.rst:591
+msgid "Installation Troubleshooting"
+msgstr ""
+
+#: ../../postinstall.rst:593
+msgid ""
+"Installing TrueOS® is usually an easy process that \"just works\". However, "
+"sometimes you will run into a problem. This section will look at solutions "
+"to the most common installation problems."
+msgstr ""
+
+#: ../../postinstall.rst:597
+msgid ""
+"The TrueOS® installer creates a log which keeps a record of all the steps "
+"that are completed as well as any errors. When an installation error occurs,"
+" the TrueOS® installer will ask if you would like to generate an error "
+"report. If you click \"Yes\", a pop-up message will ask if you would like to"
+" save the error log to a USB stick. Type **y** and insert a FAT formatted "
+"USB thumb drive to copy the log."
+msgstr ""
+
+#: ../../postinstall.rst:604
+msgid ""
+"While in the installer, you can read this log to see what went wrong. Click "
+"the black \"Emergency Shell and Utilities\" icon, then select \"shell\" from"
+" the \"PC-BSD Utility Menu\". You can now read the log by typing this "
+"command::"
+msgstr ""
+
+#: ../../postinstall.rst:610
+msgid ""
+"If you can not figure out how to fix the error or believe that you have "
+"discovered an installation bug, send the log that was saved on the USB stick"
+" using the instructions in :ref:`Report a Bug`."
+msgstr ""
+
+#: ../../postinstall.rst:614
+msgid ""
+"If the installer does not make it to the initial GUI installer screen, try "
+"unplugging as many devices as possible, such as webcams, scanners, printers,"
+" USB mice and keyboards. If this solves the problem, plug in one piece of "
+"hardware at a time, then reboot. This will help you pinpoint which device is"
+" causing the problem."
+msgstr ""
+
+#: ../../postinstall.rst:620
+msgid ""
+"If your computer freezes while probing hardware and unplugging extra devices"
+" does not fix the problem, it is possible that the installation media is "
+"corrupt. If the :ref:`Data Integrity check` on the file you downloaded is "
+"correct, try burning the file again at a lower speed."
+msgstr ""
+
+#: ../../postinstall.rst:625
+msgid ""
+"If the system freezes and you suspect the video card to be the cause, review"
+" your system's BIOS settings. If there is a setting for video memory, set it"
+" to its highest value. Also check to see if the BIOS is set to prefer built-"
+"in graphics or a non-existent graphics card. On some systems this is "
+"determined by the order of the devices listed; in this case, make sure that "
+"the preferred device is listed first. If you can not see your BIOS settings "
+"you may need to move a jumper or remove a battery to make it revert to the "
+"default of built-in graphics; check your manual or contact your manufacturer"
+" for details."
+msgstr ""
+
+#: ../../postinstall.rst:635
+msgid ""
+"A not uncommon cause for problems is the LBA (Logical Block Addressing) "
+"setting in the BIOS. If your PC is not booting up before or after "
+"installation, check your BIOS and turn LBA off (do not leave it on "
+"automatic)."
+msgstr ""
+
+#: ../../postinstall.rst:640
+msgid ""
+"If the SATA settings in your BIOS are set to \"compatibility\" mode, try "
+"changing this setting to \"AHCI\". If the system hangs with a BTX error, try"
+" turning off AHCI in the BIOS."
+msgstr ""
+
+#: ../../postinstall.rst:644
+msgid ""
+"If the USB keyboard is non-functional, check if there is an option in your "
+"BIOS for \"legacy support\" in relation to the keyboard or to USB, or both. "
+"Enabling this feature in your BIOS may solve this issue."
+msgstr ""
+
+#: ../../postinstall.rst:648
+msgid ""
+"If you boot the installer and receive a *mountroot>* command prompt, it may "
+"be due to a change in the location of the boot device. This can occur when "
+"the enumeration of a card reader changes. The solution is to enter "
+"*ufs:/dev/da1* at the prompt. Depending on the exact location of the boot "
+"media, it may be different than :file:`da1`. Type *?* at the prompt to "
+"display the available devices."
+msgstr ""
+
+#: ../../postinstall.rst:655
+msgid ""
+"If none of the above has fixed your problem, search the `PC-BSD® forums "
+"<https://forums.pcbsd.org/>`_ to see if a solution exists, try a web search,"
+" or check the section on :ref:`Finding Help`."
+msgstr ""

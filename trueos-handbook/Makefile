@@ -51,17 +51,21 @@ help:
 
 i18n:
 	$(MAKE) gettext
-	$(SPHINXINTL) update -p $(BUILDDIR)/locale -l da -l de -l fr -l es -l id -l pt_BR -l tr -l uk
-	@fetch -o $(BUILDDIR)/pcbsd-handbook-i18n.txz https://github.com/pcbsd/pcbsd-translate/archive/master.tar.gz
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/da/LC_MESSAGES --strip-components 3 pcbsd-translate-master/pcbsd-handbook/da/
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/de/LC_MESSAGES --strip-components 3 ./pcbsd-translate-master/pcbsd-handbook/de/
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/es/LC_MESSAGES --strip-components 3 ./pcbsd-translate-master/pcbsd-handbook/es/
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/fr/LC_MESSAGES --strip-components 3 ./pcbsd-translate-master/pcbsd-handbook/fr/
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/id/LC_MESSAGES --strip-components 3 ./pcbsd-translate-master/pcbsd-handbook/id/
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/pt_BR/LC_MESSAGES --strip-components 3 ./pcbsd-translate-master/pcbsd-handbook/pt_BR/
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/tr/LC_MESSAGES --strip-components 3 ./pcbsd-translate-master/pcbsd-handbook/tr/
-	@tar xpf $(BUILDDIR)/pcbsd-handbook-i18n.txz -C $(BUILDDIR)/locale-po/uk/LC_MESSAGES --strip-components 3 ./pcbsd-translate-master/pcbsd-handbook/uk/
-	$(SPHINXINTL) build
+	$(SPHINXINTL) -p $(BUILDDIR)/locale -d ./po update \
+		-l ar \
+		-l bg \
+		-l da \
+		-l de \
+		-l es \
+		-l fr \
+		-l id \
+		-l it \
+		-l pt_BR \
+		-l tr \
+		-l uk \
+		-l zh_CN \
+		-l zh_HK
+	$(SPHINXINTL) -d ./po build
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -69,45 +73,29 @@ clean:
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 .if exists($(BUILDDIR)/locale-po)
+	$(SPHINXBUILD) -D language='bg' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-bg
 	$(SPHINXBUILD) -D language='da' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-da
 	$(SPHINXBUILD) -D language='de' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-de
 	$(SPHINXBUILD) -D language='es' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-es
 	$(SPHINXBUILD) -D language='fr' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-fr
 	$(SPHINXBUILD) -D language='id' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-id
+	$(SPHINXBUILD) -D language='it' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-it
 	$(SPHINXBUILD) -D language='pt_BR' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-pt_BR
 	$(SPHINXBUILD) -D language='tr' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-tr
 	$(SPHINXBUILD) -D language='uk' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-uk
+	$(SPHINXBUILD) -D language='zh_CN' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-zh_CN
+	$(SPHINXBUILD) -D language='zh_HK' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-zh_HK
 .endif
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
-.if exists($(BUILDDIR)/locale-po)
-	$(SPHINXBUILD) -D language='da' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-da
-	$(SPHINXBUILD) -D language='de' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-de
-	$(SPHINXBUILD) -D language='es' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-es
-	$(SPHINXBUILD) -D language='fr' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-fr
-	$(SPHINXBUILD) -D language='id' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-id
-	$(SPHINXBUILD) -D language='pt_BR' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-pt_BR
-	$(SPHINXBUILD) -D language='tr' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-tr
-	$(SPHINXBUILD) -D language='uk' -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml-uk
-.endif
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 
 singlehtml:
 	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
-.if exists($(BUILDDIR)/locale-po)
-	$(SPHINXBUILD) -D language='da' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-da
-	$(SPHINXBUILD) -D language='de' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-de
-	$(SPHINXBUILD) -D language='es' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-es
-	$(SPHINXBUILD) -D language='fr' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-fr
-	$(SPHINXBUILD) -D language='id' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-id
-	$(SPHINXBUILD) -D language='pt_BR' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-pt_BR
-	$(SPHINXBUILD) -D language='tr' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-tr
-	$(SPHINXBUILD) -D language='uk' -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml-uk
-.endif
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 

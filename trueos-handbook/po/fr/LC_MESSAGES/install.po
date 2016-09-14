@@ -1,0 +1,850 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-14 16:10-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install.rst:14
+msgid "Installing TrueOS®"
+msgstr ""
+
+#: ../../install.rst:16
+msgid ""
+"This chapter describes how to use the graphical installer to install a "
+"graphical desktop directly onto a hard drive or into a virtual machine using"
+" virtualization software such as `VirtualBox "
+"<https://www.virtualbox.org/>`_. If you have downloaded the CD version of "
+"TrueOS® or prefer to use a text based installer, instead use the "
+"instructions in :ref:`Using the Text Installer`."
+msgstr ""
+
+#: ../../install.rst:23
+msgid ""
+"To begin the TrueOS® installation, insert the prepared boot media and boot "
+"the system. If the computer boots into an existing operating system instead "
+"of the installer, reboot and check your computer's BIOS program to ensure "
+"that the drive containing the installation media is listed first in the boot"
+" order. Save your BIOS changes and reboot."
+msgstr ""
+
+#: ../../install.rst:29
+msgid ""
+"As the system boots it will display the menu shown in :numref:`Figure %s: "
+"Initial Boot Menu <install1b>`. Typically, you can just press :kbd:`Enter` "
+"or wait for this menu to go by and the system will continue to boot."
+msgstr ""
+
+#: ../../install.rst:34
+msgid "This boot menu is described in detail in :ref:`BSD Boot Loader`."
+msgstr ""
+
+#: ../../install.rst:41
+msgid ""
+"Next, the \"TrueOS Installation Menu\", shown in :numref:`Figure %s: TrueOS®"
+" Installer Boot Menu <install1d>`, will be displayed."
+msgstr ""
+
+#: ../../install.rst:49
+msgid ""
+"If you press any key (other than :kbd:`Enter`) this screen will pause so "
+"that you can review its options. If you do not pause this screen, it will "
+"automatically boot into the **xorg** option after a few seconds. This menu "
+"offers the following options:"
+msgstr ""
+
+#: ../../install.rst:54
+msgid ""
+"**xorg:** starts a graphical installer that will auto-detect the driver "
+"required by the video hardware."
+msgstr ""
+
+#: ../../install.rst:57
+msgid ""
+"**vesa:** starts the graphical installer with the VESA driver loaded. Select"
+" this option if the \"xorg\" option hangs when loading the graphics driver."
+msgstr ""
+
+#: ../../install.rst:61
+msgid ""
+"**scfb:** starts the graphical installer with the SCFB driver loaded. Select"
+" this option if a UEFI system hangs when loading the graphics driver as it "
+"provides a nicer display than the \"vesa\" driver. Before selecting this "
+"option, double-check that CSM has been disabled in the BIOS."
+msgstr ""
+
+#: ../../install.rst:67
+msgid ""
+"**install:** starts the text-based installer as described in :ref:`Using the"
+" Text Installer`."
+msgstr ""
+
+#: ../../install.rst:70
+msgid ""
+"**utility:** starts the system utilities as described in :ref:`Using the "
+"System Utilities Menu`."
+msgstr ""
+
+#: ../../install.rst:73
+msgid "**reboot:** exits the installer and reboots the system."
+msgstr ""
+
+#: ../../install.rst:75
+msgid ""
+"To select an option from this menu, use the arrow keys to highlight the "
+"option, then press :kbd:`Enter` to continue to boot into that option."
+msgstr ""
+
+#: ../../install.rst:79
+msgid ""
+"The rest of this chapter describes the screens of the graphical installer. "
+"If you have problems booting into the graphical installer, refer to "
+":ref:`Installation Troubleshooting`."
+msgstr ""
+
+#: ../../install.rst:87
+msgid "Language Selection Screen"
+msgstr ""
+
+#: ../../install.rst:89
+msgid ""
+"The first graphical installer screen, seen in :numref:`Figure %s: Welcome "
+"and Language Selection Screen <install2b>`, indicates that the installer "
+"successfully loaded and is ready to present you with its options."
+msgstr ""
+
+#: ../../install.rst:98
+msgid ""
+"Starting on the left-hand side, these icons in the bottom navigation area "
+"allow you to:"
+msgstr ""
+
+#: ../../install.rst:101
+msgid ""
+"access hardware compatibility information to quickly determine if the "
+"system's video card, Ethernet card, wireless device, and sound card are "
+"compatible with TrueOS®"
+msgstr ""
+
+#: ../../install.rst:105
+msgid "read that screen's Help text"
+msgstr ""
+
+#: ../../install.rst:107
+msgid "use the onscreen keyboard"
+msgstr ""
+
+#: ../../install.rst:109
+msgid "switch between the US keyboard layout and a user selected layout"
+msgstr ""
+
+#: ../../install.rst:111
+msgid ""
+"access the emergency shell described in :ref:`Using the System Utilities "
+"Menu`"
+msgstr ""
+
+#: ../../install.rst:114
+msgid "abort the installation"
+msgstr ""
+
+#: ../../install.rst:116
+msgid "navigate to a previous or upcoming screen"
+msgstr ""
+
+#: ../../install.rst:118
+msgid ""
+"Hover over an icon to view its description in the tip bar at the bottom of "
+"the screen."
+msgstr ""
+
+#: ../../install.rst:121
+msgid ""
+"The default keyboard layout can be changed now, during the post-installation"
+" :ref:`Language Screen`, or when :ref:`Logging In`."
+msgstr ""
+
+#: ../../install.rst:125
+msgid ""
+"A button is also provided to \"Load config from USB\". If you have saved the"
+" configuration from a previous installation, it can be loaded at this time "
+"from a FAT-formatted USB stick."
+msgstr ""
+
+#: ../../install.rst:129
+msgid ""
+"By default, TrueOS® menus will display in English, unless you select another"
+" language in the drop-down menu in this screen. The menus in TrueOS® have "
+"been translated to several different languages and you can see the status of"
+" your native language at the `PC-BSD® Translation Site "
+"<http://translate.pcbsd.org/>`_. If your language does not show 100% "
+"translation at this website, it means that not all of the menus have been "
+"translated yet and that the untranslated menus will be displayed in English."
+" Refer to :ref:`Become a Translator` if you would like to assist in "
+"translating the graphical menus to your native language."
+msgstr ""
+
+#: ../../install.rst:140
+msgid ""
+"Small screens may not display the entire installer window, which means that "
+"the buttons at the bottom of the window are hidden and inaccessible. In this"
+" situation, either press :kbd:`Alt` while dragging the window with the mouse"
+" or press :kbd:`Alt+N` to select the next button of the window."
+msgstr ""
+
+#: ../../install.rst:146
+msgid ""
+"When you are finished reviewing this screen, click the \"Next\" button to go"
+" to the next installation screen."
+msgstr ""
+
+#: ../../install.rst:153
+msgid "System Selection Screen"
+msgstr ""
+
+#: ../../install.rst:155
+msgid ""
+"The \"System Selection\" screen, shown in :numref:`Figure %s: System "
+"Selection Screen <install3b>`, allows you to install a graphical desktop or "
+"a console-based server operating system. It also can be used for "
+":ref:`Restoring the Operating System`. This chapter concentrates on a "
+"desktop installation. Refer to :ref:`Install a Server` for instructions on "
+"how to install a command-line only server."
+msgstr ""
+
+#: ../../install.rst:167
+msgid ""
+"By default, \"TrueOS (Graphical desktop)\" will be selected and the Lumina "
+"Desktop will be installed. You can install additional software post-"
+"installation, using :ref:`AppCafe®`."
+msgstr ""
+
+#: ../../install.rst:171
+msgid "To install the desktop, click the \"Next\" button."
+msgstr ""
+
+#: ../../install.rst:173
+msgid ""
+"When installing to an existing PC-BSD® or TrueOS® system, a pop-up window "
+"will ask if you would like to install to the existing pool without "
+"reformatting it. Press \"OK\" if you would like to keep the existing pool. "
+"If you instead click \"Cancel\", the existing pool and all of its data will "
+"be formatted. Refer to :ref:`Upgrading from PC-BSD® 10.x to TrueOS®` for "
+"more information about this option."
+msgstr ""
+
+#: ../../install.rst:185
+msgid "Disk Selection Screen"
+msgstr ""
+
+#: ../../install.rst:187
+msgid ""
+"The \"Disk Selection\" screen, seen in :numref:`Figure %s: Disk Selection "
+"Screen <install5b>`, summarizes the default disk configuration."
+msgstr ""
+
+#: ../../install.rst:195
+msgid ""
+"This screen provides a drop-down \"Boot-Loader\" menu with these boot "
+"manager options:"
+msgstr ""
+
+#: ../../install.rst:198
+msgid ""
+"**BSD:** uses the FreeBSD boot loader. This is recommended as it supports "
+"the ZFS boot environments used by :ref:`Update Manager`."
+msgstr ""
+
+#: ../../install.rst:201
+msgid ""
+"**GRUB:** select this option if you will be dual-booting the system and "
+"prefer to use the GRUB bootloader"
+msgstr ""
+
+#: ../../install.rst:204
+msgid ""
+"By default, TrueOS® will assume that you wish to install on the entire first"
+" disk. If you are installing TrueOS® as the only operating system on your "
+"computer, simply click \"Next\" to start the installation. However, if this "
+"is not your intent, review the rest of this section to determine how to "
+"layout your disk. If you plan on booting TrueOS® with another operating "
+"system, you should also review the section on :ref:`Dual Booting`."
+msgstr ""
+
+#: ../../install.rst:212
+msgid ""
+"If you wish to select which disk or partition to install TrueOS® into, click"
+" the \"Customize\" button to start the TrueOS® Disk Wizard, shown in "
+":numref:`Figure %s: TrueOS® Disk Wizard <install6b>`."
+msgstr ""
+
+#: ../../install.rst:220
+msgid ""
+"The wizard provides two modes of operation. The rest of this section "
+"describes these modes in detail."
+msgstr ""
+
+#: ../../install.rst:223
+msgid ""
+"**Basic:** (default) select this mode if you wish to specify which partition"
+" or disk to install to."
+msgstr ""
+
+#: ../../install.rst:226
+msgid ""
+"**Advanced:** select this mode if you wish to specify the installation "
+"partition or disk, use MBR partitioning, change the default ZFS pool name, "
+"force the block size used by ZFS, configure a multi-disk installation, add a"
+" log or cache device, encrypt the disk, or specify the filesystem layout."
+msgstr ""
+
+#: ../../install.rst:232
+msgid ""
+"Regardless of the mode that you select, once the disk wizard completes and "
+"you click \"Next\" at the disk \"Summary\" screen, a pop-up window will ask "
+"if you would like to start the installation. Be sure to review the disk "
+"summary before clicking \"Yes\" and starting the installation. The disk "
+"\"Summary\" screen is your **very last chance** to make sure that you are "
+"ready. Once you click \"Yes\", the selected hard drive or partition will be "
+"formatted and any data it contains will be lost."
+msgstr ""
+
+#: ../../install.rst:241
+msgid ""
+"Once you have finished configuring your disks, you can save the finished "
+"configuration to re-use it at a later time. Insert a FAT-formatted USB stick"
+" and click \"Save Config to USB\"."
+msgstr ""
+
+#: ../../install.rst:249
+msgid "Basic Mode"
+msgstr ""
+
+#: ../../install.rst:251
+msgid ""
+"If you select \"Basic\" mode, the wizard will display the screen shown in "
+":numref:`Figure %s: Select a Disk or Partition <install7b>`."
+msgstr ""
+
+#: ../../install.rst:258
+msgid ""
+"By default, the first hard disk will be selected. If you wish to install on "
+"a different disk, use the \"Selected Disk\" drop-down menu to select the "
+"disk to install into."
+msgstr ""
+
+#: ../../install.rst:262
+msgid ""
+"By default, the entire selected disk will be formatted. If the disk has been"
+" divided into partitions or you have an area of free space, use the "
+"\"Selected Partition\" drop-down menu to select the desired partition."
+msgstr ""
+
+#: ../../install.rst:267 ../../install.rst:299
+msgid ""
+"TrueOS® will only install into a primary MBR partition, a GPT partition, or "
+"an area of free space. That is, you can not install TrueOS® into a secondary"
+" or an extended partition. If you wish to create an area of free space to "
+"install into, refer to :ref:`Creating Free Space` for instructions."
+msgstr ""
+
+#: ../../install.rst:273
+msgid ""
+"Once you have selected the disk and partition, click \"Next\" to return to "
+"the disk \"Summary\" screen so that you can review your selections. If you "
+"wish to change anything, use the \"Back\" button to return to a previous "
+"screen. Otherwise, click \"Finish\" to leave the wizard. Click \"Next\" then"
+" \"Yes\" to start the installation."
+msgstr ""
+
+#: ../../install.rst:283
+msgid "Advanced Mode"
+msgstr ""
+
+#: ../../install.rst:285
+msgid ""
+"If you select advanced mode, the wizard will display the screen shown in "
+":numref:`Figure %s: Advanced Mode Options <install8c>`."
+msgstr ""
+
+#: ../../install.rst:292
+msgid "This screen provides the following options:"
+msgstr ""
+
+#: ../../install.rst:294
+msgid "**Selected Disk:** select the disk to install into."
+msgstr ""
+
+#: ../../install.rst:296
+msgid ""
+"**Selected Partition:** select the desired partition or area of free space."
+msgstr ""
+
+#: ../../install.rst:305
+msgid ""
+"**Partition Scheme:**  the default of \"GPT (Best for new hardware)\" is a "
+"partition table layout that supports larger partition sizes than the "
+"traditional \"MBR (Legacy)\" layout. **If your installation disk/partition "
+"is larger than 2 TB, the GPT option must be selected**. Since some older "
+"motherboards do not support GPT, if the installation fails, try again with "
+"\"MBR (Legacy)\" selected. When in doubt, try the default selection first. "
+"Note that this section will not appear if you specify a partition rather "
+"than \"Use entire disk\" in the \"Selected Partition\" drop-down menu."
+msgstr ""
+
+#: ../../install.rst:315
+msgid ""
+"**ZFS pool name:** if you wish to use a pool name other than the default of "
+"*tank*, check this box and input the name of the pool. Note that *root* is a"
+" reserved term and can not be used as a pool name."
+msgstr ""
+
+#: ../../install.rst:320
+msgid ""
+"**Force ZFS 4k block size:** this option should only be checked if you know "
+"for sure that the disk supports 4k, even though it lies and reports its size"
+" as 512b. Use with caution as it may cause the installation to fail."
+msgstr ""
+
+#: ../../install.rst:325
+msgid ""
+"After making your selections click \"Next\" to access the ZFS configuration "
+"screens. The rest of this section provides a ZFS overview and then "
+"demonstrates how to customize the ZFS layout."
+msgstr ""
+
+#: ../../install.rst:333
+msgid "ZFS Overview"
+msgstr ""
+
+#: ../../install.rst:335
+msgid ""
+"ZFS is an enterprise grade file-system, which provides many features "
+"including: support for high storage capacities, high reliability, the "
+"ability to quickly take snapshots, boot environments, continuous integrity "
+"checking and automatic repair, RAIDZ which was designed to overcome the "
+"limitations of hardware RAID, and native NFSv4 ACLs."
+msgstr ""
+
+#: ../../install.rst:341
+msgid ""
+"If you are new to ZFS, the Wikipedia entry on :wikipedia:`ZFS` provides an "
+"excellent starting point to learn about its features. Additionally, `FreeBSD"
+" Mastery: ZFS <https://www.michaelwlucas.com/nonfiction/freebsd-mastery-"
+"zfs>`_ by Michael W Lucas and Allan Jude is a helpful resource that is "
+"specific to ZFS as it is implemented in FreeBSD."
+msgstr ""
+
+#: ../../install.rst:348
+msgid "These resources are also useful to bookmark and refer to as needed:"
+msgstr ""
+
+#: ../../install.rst:350
+msgid ""
+"`ZFS Evil Tuning Guide "
+"<http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_"
+msgstr ""
+
+#: ../../install.rst:352
+msgid "`FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_"
+msgstr ""
+
+#: ../../install.rst:354
+msgid ""
+"`ZFS Best Practices Guide "
+"<http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide>`_"
+msgstr ""
+
+#: ../../install.rst:356
+msgid ""
+"`ZFS Administration Guide "
+"<http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_"
+msgstr ""
+
+#: ../../install.rst:358
+msgid ""
+"`Becoming a ZFS Ninja (video) "
+"<https://blogs.oracle.com/video/entry/becoming_a_zfs_ninja>`_"
+msgstr ""
+
+#: ../../install.rst:360
+msgid ""
+"`blog post explaining how ZFS simplifies the storage stack "
+"<https://blogs.oracle.com/bonwick/entry/rampant_layering_violation>`_"
+msgstr ""
+
+#: ../../install.rst:362
+msgid "The following is a glossary of terms used by ZFS:"
+msgstr ""
+
+#: ../../install.rst:364
+msgid ""
+"**Pool:** a collection of devices that provides physical storage and data "
+"replication managed by ZFS. This pooled storage model eliminates the concept"
+" of volumes and the associated problems of partitions, provisioning, wasted "
+"bandwidth, and stranded storage. Thousands of filesystems can draw from a "
+"common storage pool, each one consuming only as much space as it actually "
+"needs. The combined I/O bandwidth of all devices in the pool is available to"
+" all filesystems at all times. The `Storage Pools Recommendations "
+"<http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide#ZFS_Storage_Pools_Recommendations>`_"
+" of the ZFS Best Practices Guide provides detailed recommendations for "
+"creating the storage pool."
+msgstr ""
+
+#: ../../install.rst:376
+msgid ""
+"**Mirror:** a form of RAID where all data is mirrored onto two or more "
+"disks, creating a redundant copy should a disk fail."
+msgstr ""
+
+#: ../../install.rst:379
+msgid ""
+"**RAIDZ:** ZFS software solution that is equivalent to RAID5 in that it "
+"allows one disk to fail without losing data. Requires a minimum of 3 disks."
+msgstr ""
+
+#: ../../install.rst:383
+msgid ""
+"**RAIDZ2:** double-parity ZFS software solution that is similar to RAID6 in "
+"that it allows two disks to fail without losing data. Requires a minimum of "
+"4 disks."
+msgstr ""
+
+#: ../../install.rst:387
+msgid ""
+"**RAIDZ3:** triple-parity ZFS software solution. RAIDZ3 offers three parity "
+"drives and can operate in degraded mode if up to three drives fail with no "
+"restrictions on which drives can fail."
+msgstr ""
+
+#: ../../install.rst:391
+msgid ""
+"**Dataset:** once a pool is created, it can be divided into datasets. A "
+"dataset is similar to a folder in that it supports permissions. A dataset is"
+" also similar to a filesystem in that you can set properties such as quotas "
+"and compression."
+msgstr ""
+
+#: ../../install.rst:396
+msgid ""
+"**Snapshot:** a read-only point-in-time copy of a filesystem. Snapshots can "
+"be created quickly and, if little data changes, new snapshots take up very "
+"little space. For example, a snapshot where no files have changed takes 0MB "
+"of storage, but if you change a 10GB file it will keep a copy of both the "
+"old and the new 10GB version. Snapshots provide a clever way of keeping a "
+"history of files, should you need to recover an older copy or even a deleted"
+" file. For this reason, many administrators take snapshots often (e.g. every"
+" 15 minutes), store them for a period of time (e.g. for a month), and store "
+"them on another system. Such a strategy allows the administrator to roll the"
+" system back to a specific time or, if there is a catastrophic loss, an off-"
+"site snapshot can restore the system up to the last snapshot interval (e.g. "
+"within 15 minutes of the data loss). Snapshots can be cloned or rolled back,"
+" but the files on the snapshot can not be accessed independently."
+msgstr ""
+
+#: ../../install.rst:412
+msgid ""
+"**Clone:** a writable copy of a snapshot which can only be created on the "
+"same ZFS volume. Clones provide an extremely space-efficient way to store "
+"many copies of mostly-shared data such as workspaces, software "
+"installations, and diskless clients. Clones do not inherit the properties of"
+" the parent dataset, but rather inherit the properties based on where the "
+"clone is created in the ZFS pool. Because a clone initially shares all its "
+"disk space with the original snapshot, its used property is initially zero. "
+"As changes are made to the clone, it uses more space."
+msgstr ""
+
+#: ../../install.rst:422
+msgid ""
+"**ZIL:** is effectively a filesystem journal that manages writes. The ZIL is"
+" a temporary storage area for sync writes until they are written "
+"asynchronously to the ZFS pool. If the system has many sync writes, such as "
+"from a database server, performance can be increased by adding a dedicated "
+"log device known as a SLOG (Secondary LOG). If the system has few sync "
+"writes, a SLOG will not speed up writes. When creating a dedicated log "
+"device, it is recommended to use a fast SSD with a supercapacitor or a bank "
+"of capacitors that can handle writing the contents of the SSD's RAM to the "
+"SSD. If you decide to create a dedicated log device, the SSD should be half "
+"the size of system RAM as anything larger than that is unused capacity. Note"
+" that a dedicated log device can not be shared between ZFS pools and that "
+"the same device cannot hold both a log and a cache device."
+msgstr ""
+
+#: ../../install.rst:436
+msgid ""
+"**L2ARC:** ZFS uses a RAM cache to reduce read latency. If an SSD is "
+"dedicated as a cache device, it is known as an L2ARC and ZFS uses it to "
+"store more reads which can increase random read performance. However, adding"
+" a cache device will not improve a system with too little RAM and will "
+"actually decrease performance as ZFS uses RAM to track the contents of "
+"L2ARC. RAM is always faster than disks, so always add as much RAM as "
+"possible before determining if the system would benefit from a L2ARC device."
+" If you have a lot of applications that do large amounts of random reads on "
+"a dataset small enough to fit into the L2ARC, read performance may be "
+"increased by adding a dedicated cache device. SSD cache devices only help if"
+" your working set is larger than system RAM, but small enough that a "
+"significant percentage of it will fit on the SSD. Note that a dedicated "
+"L2ARC device can not be shared between ZFS pools."
+msgstr ""
+
+#: ../../install.rst:455
+msgid "ZFS Layout"
+msgstr ""
+
+#: ../../install.rst:457
+msgid ""
+"In \"Advanced Mode\", the disk setup wizard allows you to configure your ZFS"
+" layout. The initial ZFS configuration screen is seen in :numref:`Figure %s:"
+" ZFS Configuration <install9b>`."
+msgstr ""
+
+#: ../../install.rst:465
+msgid ""
+"If your system contains multiple drives and you would like to use them to "
+"create a ZFS mirror or RAIDZ*, check the box \"Add additional disks to "
+"zpool\" which will enable this screen. Any available disks will be listed in"
+" the box below the \"ZFS Virtual Device Mode\" drop-down menu. Select the "
+"desired level of redundancy from the \"ZFS Virtual Device Mode\" drop-down "
+"menu, then check the box for each disk that you would like to add to that "
+"configuration."
+msgstr ""
+
+#: ../../install.rst:473
+msgid ""
+"The TrueOS® installer requires you to use entire disks (not partitions) when"
+" adding additional disks to the pool."
+msgstr ""
+
+#: ../../install.rst:476
+msgid ""
+"While ZFS will let you use disks of different sizes, this is discouraged as "
+"it will decrease storage capacity and ZFS performance."
+msgstr ""
+
+#: ../../install.rst:479
+msgid "The TrueOS® installer supports the following ZFS configurations:"
+msgstr ""
+
+#: ../../install.rst:481
+msgid "**mirror:** requires a minimum of 2 disks."
+msgstr ""
+
+#: ../../install.rst:483
+msgid ""
+"**RAIDZ1:** requires a minimum of 3 disks. For best performance, a maximum "
+"of 9 disks is recommended."
+msgstr ""
+
+#: ../../install.rst:486
+msgid ""
+"**RAIDZ2:** requires a minimum of 4 disks. For best performance, a maximum "
+"of 10 disks is recommended."
+msgstr ""
+
+#: ../../install.rst:489
+msgid ""
+"**RAIDZ3:** requires a minimum of 5 disks. For best performance, a maximum "
+"of 11 disks is recommended."
+msgstr ""
+
+#: ../../install.rst:492
+msgid ""
+"**stripe:** requires a minimum of 2 disks. **Note that a stripe does NOT "
+"provide ANY redundancy. If any disk fails in a stripe, all data in the pool "
+"is lost!**"
+msgstr ""
+
+#: ../../install.rst:495
+msgid ""
+"The installer will not let you select a configuration if your system does "
+"not meet the minimum number of disks required by that configuration. As you "
+"select a configuration, a message will indicate how many more disks you need"
+" to select."
+msgstr ""
+
+#: ../../install.rst:500
+msgid ""
+"When finished, click the \"Next\" button to see the screen shown in "
+":numref:`Figure %s: Add L2ARC or ZIL <install10b>`."
+msgstr ""
+
+#: ../../install.rst:507
+msgid ""
+"This screen can be used to specify an SSD to use as an L2ARC read cache or "
+"as a secondary log device (ZIL). Any available devices will be listed in the"
+" boxes in this screen. Note that a separate SSD is needed for each type of "
+"device. Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS "
+"Overview` to determine if your system would benefit from any of these "
+"devices before adding them in this screen. When finished, click \"Next\" to "
+"see the screen shown in :numref:`Figure %s: Configure Encryption "
+"<install11b>`."
+msgstr ""
+
+#: ../../install.rst:520
+msgid ""
+"This screen can be used to configure full-disk encryption which is meant to "
+"protect the data on the disks should the system itself be lost or stolen. "
+"This type of encryption prevents the data on the disks from being available "
+"during bootup, unless the correct passphrase is typed at the bootup screen. "
+"Once the passphrase is accepted, the data is unencrypted and can easily be "
+"read from disk."
+msgstr ""
+
+#: ../../install.rst:527
+msgid ""
+"To configure full-disk encryption, check the box \"Encrypt disk with GELI\"."
+" This option will be greyed out if \"GPT (Best for new hardware)\" is not "
+"selected as GELI does not support MBR partitioning. If needed, use the "
+"\"Back\" button to go back to the :ref:`Advanced Mode` screen and select the"
+" option \"GPT (Best for new hardware)\". Once the \"Encrypt disk with GELI\""
+" box is checked, input a good passphrase twice into the \"Password\" fields."
+" This password should be long and something that you will not forget, but "
+"hard for other users, especially those who know you, to guess."
+msgstr ""
+
+#: ../../install.rst:537
+msgid ""
+"If you ever forget this passphrase, you will be unable to decrypt the disks "
+"and will lose access to their data!"
+msgstr ""
+
+#: ../../install.rst:540
+msgid ""
+"When finished, click \"Next\" to move on the screen shown in :numref:`Figure"
+" %s: Default ZFS Layout <install12b>`."
+msgstr ""
+
+#: ../../install.rst:547
+msgid ""
+"Regardless of how many disks you selected for your ZFS configuration, the "
+"default layout will be the same. ZFS does not require separate partitions "
+"for :file:`/usr`, :file:`/tmp`, or :file:`/var`. Instead, you create one ZFS"
+" partition (pool) and specify a mount for each dataset. A :file:`/boot` "
+"partition is not mandatory with ZFS as the TrueOS® installer puts a 64k "
+"partition at the beginning of the drive."
+msgstr ""
+
+#: ../../install.rst:554
+msgid ""
+"**Do not remove any of the default mount points** as they are used by "
+"TrueOS®."
+msgstr ""
+
+#: ../../install.rst:557
+msgid ""
+"You can use the \"Add\" button to add additional mount points. You will only"
+" be prompted for the name of the mount point as size is not limited at "
+"creation time. Instead, the data on any mount point can continue to grow as "
+"long as space remains within the ZFS pool."
+msgstr ""
+
+#: ../../install.rst:562
+msgid ""
+"If you wish to set the swap size, click the \"Swap Size\" button. This will "
+"prompt you to enter a size in MB. If you have created a RAIDZ* or mirror, a "
+"swap partition of the specified size will be created on each disk and "
+"mirrored between the drives. For example, if you specify a 2048MB swap size,"
+" a 2GB swap partition will be created on all of the specified disks, yet the"
+" total swap size will be 2GB, due to redundancy."
+msgstr ""
+
+#: ../../install.rst:570
+msgid ""
+"If you right-click any mount point, you can toggle between enabling or "
+"disabling any of the following ZFS properties:"
+msgstr ""
+
+#: ../../install.rst:573
+msgid ""
+"**atime:** when set to \"on\", controls whether the access time for files is"
+" updated when they are read. When set to \"off\", this property avoids "
+"producing write traffic when reading files and can result in significant "
+"performance gains, though it might confuse mailers and some other utilities."
+msgstr ""
+
+#: ../../install.rst:579
+msgid "**canmount:** if set to \"off\", the filesystem can not be mounted."
+msgstr ""
+
+#: ../../install.rst:581
+msgid ""
+"**casesensitivity:** the default is \"sensitive\", as UNIX filesystems use "
+"case-sensitive file names. This means, for example, that \"kris\" is "
+"different from \"Kris\". To tell the dataset to ignore case, select "
+"\"insensitive\"."
+msgstr ""
+
+#: ../../install.rst:586
+msgid ""
+"**checksum:** automatically verifies the integrity of the data stored on "
+"disks. **Setting this property to \"off\" is highly discouraged.**"
+msgstr ""
+
+#: ../../install.rst:590
+msgid ""
+"**compression:** if set to \"on\", automatically compresses stored data to "
+"conserve disk space."
+msgstr ""
+
+#: ../../install.rst:593
+msgid ""
+"**exec:** if set to \"off\", processes can not be executed from within this "
+"filesystem."
+msgstr ""
+
+#: ../../install.rst:596
+msgid "**setuid:** if set to \"on\", the set-UID bit is respected."
+msgstr ""
+
+#: ../../install.rst:598
+msgid ""
+"Once you click \"Next\", the wizard will show a summary of your selections. "
+"If you wish to change anything, use the “Back” button to return to a "
+"previous screen. Otherwise, click \"Finish\" to leave the wizard and return "
+"to the \"Disk Selection\" screen."
+msgstr ""
+
+#: ../../install.rst:607
+msgid "Installation Progress Screen"
+msgstr ""
+
+#: ../../install.rst:609
+msgid ""
+"Once you select \"Yes\" to start the installation, a progress screen, seen "
+"in :numref:`Figure %s: Installation Progress Screen <install13b>`, provides "
+"a progress bar and messages so that you can watch the installation's "
+"progress."
+msgstr ""
+
+#: ../../install.rst:619
+msgid ""
+"How long the installation takes depends upon the speed of your hardware and "
+"the installation type you selected. A typical installation takes between 5 "
+"and 15 minutes."
+msgstr ""
+
+#: ../../install.rst:627
+msgid "Installation Finished Screen"
+msgstr ""
+
+#: ../../install.rst:629
+msgid ""
+"The screen shown in :numref:`Figure %s: TrueOS® Installation is Now Complete"
+" <install14a>` appears once the installation is complete."
+msgstr ""
+
+#: ../../install.rst:637
+msgid ""
+"Click the \"Finish\" button to complete the TrueOS® installation. It will "
+"return to the :numref:`Figure %s: TrueOS® Installer Boot Menu <install1d>`. "
+"If you wish to manually configure the system before booting into it, select "
+"the \"utility\" entry to open a *root* shell. Otherwise, select the "
+"\"reboot\" entry to reboot into the new installation. Wait until this menu "
+"exits before removing the installation media."
+msgstr ""

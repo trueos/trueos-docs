@@ -1,0 +1,357 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-14 16:10-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../help.rst:14
+msgid "Finding Help"
+msgstr ""
+
+#: ../../help.rst:16
+msgid ""
+"The TrueOS® Project strives to make using TrueOS® as easy as possible for "
+"newcomers. Should you need help, there are plenty of ways to get in touch "
+"with the TrueOS® community. This chapter describes the available resources."
+msgstr ""
+
+#: ../../help.rst:21
+msgid ""
+"As your teacher may have told you, \"there is no such thing as a stupid "
+"question\". However, there are ways to ensure that you receive the response "
+"you seek and that it will be a productive exchange for all parties involved."
+" The two articles below describe how and why it is important to follow "
+"certain protocols when requesting help:"
+msgstr ""
+
+#: ../../help.rst:27
+msgid ""
+"`How to Ask Smart Questions (PDF) <http://divajutta.com/doctormo/foo/ask-"
+"smart-questions.pdf>`_"
+msgstr ""
+
+#: ../../help.rst:29
+msgid ""
+"`How To Ask Questions The Smart Way <http://catb.org/~esr/faqs/smart-"
+"questions.html>`_"
+msgstr ""
+
+#: ../../help.rst:35
+msgid "TrueOS® Gitter Channel"
+msgstr ""
+
+#: ../../help.rst:37
+msgid ""
+"The TrueOS® Project uses `Gitter <https://en.wikipedia.org/wiki/Gitter>`_ to"
+" provide real-time chat and collaboration with TrueOS® users and developers."
+" Gitter does not require an application to use, but does require a login "
+"using either an existing GitHub or Twitter account."
+msgstr ""
+
+#: ../../help.rst:43
+msgid ""
+"To access the Gitter channel, point your web browser to the `TrueOS® Lobby "
+"<https://gitter.im/trueos/Lobby>`_."
+msgstr ""
+
+#: ../../help.rst:46
+msgid ""
+"Gitter is a great way to chat with other users and get answers to your "
+"questions. A few things to keep in mind if you ask a question on the Gitter "
+"channel:"
+msgstr ""
+
+#: ../../help.rst:50
+msgid ""
+"Most of the regular users are always logged in, even when they are away from"
+" their computer or are busy doing other things. If you do not get an answer "
+"right away, do not get mad, leave the channel, and never come back again. "
+"Stick around for a while to see if anyone responds."
+msgstr ""
+
+#: ../../help.rst:56
+msgid ""
+"Users represent many different time zones. It is quite possible tha t it is "
+"late at night or very early in the morning for some users when you ask a "
+"question."
+msgstr ""
+
+#: ../../help.rst:60
+msgid ""
+"Do not post large error messages in the channel. Instead, use a pasting "
+"service such as pastebin.com and refer to the URL on channel."
+msgstr ""
+
+#: ../../help.rst:63
+msgid "Be polite and do not demand that others answer your question."
+msgstr ""
+
+#: ../../help.rst:65
+msgid ""
+"It is considered rude to \"Chat Privately\" with someone who does not know "
+"you without first asking their permission. If no one answers your question, "
+"do not start chatting privately with people you do not know."
+msgstr ""
+
+#: ../../help.rst:70
+msgid ""
+"The first time you join the channel, it is okay to say hi and introduce "
+"yourself. If a new person joins the channel, feel free to welcome them and "
+"to make them feel welcome."
+msgstr ""
+
+#: ../../help.rst:78
+msgid "TrueOS® Subreddit"
+msgstr ""
+
+#: ../../help.rst:80
+msgid ""
+"The TrueOS® Project also has a `Subreddit "
+"<https://www.reddit.com/r/TrueOS/>`_ for users who prefer to use Reddit to "
+"ask questions and to search for or post how-tos. You do not need a Reddit "
+"account in order to read the Subreddit, but will need to create a login "
+"account if you wish to submit or comment on posts."
+msgstr ""
+
+#: ../../help.rst:91
+msgid "Report a bug"
+msgstr ""
+
+#: ../../help.rst:93
+msgid ""
+"One of the most effective ways to assist the TrueOS® Project is by reporting"
+" problems or bugs encountered while using TrueOS®. Anyone can report a "
+"TrueOS® bug. However, a few guidelines should be followed to ensure a speedy"
+" response:"
+msgstr ""
+
+#: ../../help.rst:98
+msgid ""
+"TrueOS® uses `GitHub <https://github.com/trueos/>`_, to manage bugs. A "
+"GitHub account is required before bugs can be reported. Navigate to "
+"https://github.com, fill in the required fields, and click :guilabel:`Sign "
+"up for GitHub` to create a new github account."
+msgstr ""
+
+#: ../../help.rst:103
+msgid ""
+"The GitHub issues tracker uses email to update contributors on the status of"
+" bugs. Please use a valid and frequently used email address when creating a "
+"GitHub account for the efficient resolution of issues."
+msgstr ""
+
+#: ../../help.rst:108
+msgid ""
+"The TrueOS® code has been organized into repositories that represent the "
+"Lumina desktop, the graphical utilities, SysAdm™, and various other "
+"applications. Select the repository that most closely matches the "
+"application that has a bug. If you are in doubt, select the \"trueos-utils-"
+"qt5\" repository."
+msgstr ""
+
+#: ../../help.rst:114
+msgid ""
+"Once you have clicked a repostitory name, use the \"Search\" bar on its page"
+" to confirm no similar bug report exists. If a similar report does exist, "
+"add any additional information to the report via a comment. While it is not "
+"required to log in to search existing bugs, adding a comment or creating a "
+"new report does require signing into the website."
+msgstr ""
+
+#: ../../help.rst:121
+msgid ""
+"To create a new bug report, click :menuselection:`Issues --> New Issue` "
+"within the repository. :numref:`Figure %s: Creating a Bug Report <bug1>` "
+"shows an example from within the \"trueos-utils-qt5\" repository."
+msgstr ""
+
+#: ../../help.rst:131
+msgid ""
+"Write a brief but descriptive \"Title\" that includes the error. Ideally, "
+"the title is short (8 words or less) and contains key words about the error "
+"so the bug report is easily found with the search tool."
+msgstr ""
+
+#: ../../help.rst:135
+msgid ""
+"In the \"Leave a Comment\" text area, write about the circumstance of the "
+"error, including instructions how to recreate it. If an error message is "
+"generated, paste the error in its entirety. Attaching a screenshot to the "
+"report can greatly aid the developer in visualizing the problem. Remember to"
+" include the output of :command:`uname -a`."
+msgstr ""
+
+#: ../../help.rst:141
+msgid ""
+"If the problem appears to be hardware related, attach a copy of "
+":file:`/var/run/dmesg.boot` as this file shows the hardware that was probed "
+"the last time the TrueOS® system booted."
+msgstr ""
+
+#: ../../help.rst:145
+msgid ""
+"After describing the issue, click :guilabel:`Submit new issue` to create the"
+" issue. The bug tracker will attach a unique number to the report and send "
+"update messages to the your registered email address whenever activity "
+"occurs with the bug report."
+msgstr ""
+
+#: ../../help.rst:154
+msgid "Social Media"
+msgstr ""
+
+#: ../../help.rst:156
+msgid ""
+"The TrueOS® project maintains several social media sites to help users keep "
+"up-to-date with what is happening and to provide venues for developers and "
+"users to network with each other. Anyone is welcome to join."
+msgstr ""
+
+#: ../../help.rst:161
+msgid "`Official TrueOS® Blog <https://www.trueos.org/blog/>`_"
+msgstr ""
+
+#: ../../help.rst:163
+msgid "`TrueOS® Project on Twitter <https://twitter.com/TrueOS_Project/>`_"
+msgstr ""
+
+#: ../../help.rst:165
+msgid ""
+"`TrueOSD® Facebook Group <https://www.facebook.com/groups/4210443834/>`_"
+msgstr ""
+
+#: ../../help.rst:167
+msgid "`TrueOS® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_"
+msgstr ""
+
+#: ../../help.rst:173
+msgid "FreeBSD Handbook and FAQ"
+msgstr ""
+
+#: ../../help.rst:175
+msgid ""
+"TrueOS® uses FreeBSD as its underlying operating system, so everything in "
+"the `FreeBSD Handbook "
+"<http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_ and `FreeBSD "
+"FAQ <http://www.freebsd.org/doc/en/books/faq/>`_ applies to TrueOS® as well."
+" Both documents are comprehensive and cover nearly every task you can "
+"accomplish on a FreeBSD system. They are also an excellent resource for "
+"learning how things work under the hood of your TrueOS® system."
+msgstr ""
+
+#: ../../help.rst:185
+msgid ""
+"Some configurations described in the FreeBSD Handbook already \"just work\" "
+"on your TrueOS® system as they have been pre-configured for you. In these "
+"instances, reading that FreeBSD Handbook section can help you to understand "
+"how your system is configured and why it works."
+msgstr ""
+
+#: ../../help.rst:195
+msgid "Search and Portals"
+msgstr ""
+
+#: ../../help.rst:197
+msgid ""
+"Many BSD related search portals exist. If you can not find the answer that "
+"you are looking for in the forums or mailing lists, try searching these "
+"websites:"
+msgstr ""
+
+#: ../../help.rst:201
+msgid ""
+"`The OpenDirectory "
+"<http://www.dmoz.org/Computers/Software/Operating_Systems/Unix/BSD/>`_"
+msgstr ""
+
+#: ../../help.rst:203
+msgid ""
+"`FreeBSD Search <http://www.freebsd.org/search/index.html>`_ (includes "
+"mailing list archives, man pages, and web pages)"
+msgstr ""
+
+#: ../../help.rst:206
+msgid "`FreeBSD News <https://www.freebsdnews.com/>`_"
+msgstr ""
+
+#: ../../help.rst:208
+msgid "`About BSD <http://aboutbsd.net/>`_"
+msgstr ""
+
+#: ../../help.rst:210
+msgid "`BSD Guides <http://www.bsdguides.org/guides/>`_"
+msgstr ""
+
+#: ../../help.rst:212
+msgid "`Slashdot BSD <https://bsd.slashdot.org/>`_"
+msgstr ""
+
+#: ../../help.rst:214
+msgid "`DistroWatch <http://distrowatch.com/>`_"
+msgstr ""
+
+#: ../../help.rst:216
+msgid "`LinuxBSDos <http://linuxbsdos.com/>`_"
+msgstr ""
+
+#: ../../help.rst:222
+msgid "Other Resources"
+msgstr ""
+
+#: ../../help.rst:224
+msgid ""
+"The following BSD sites and resources may also contain useful information:"
+msgstr ""
+
+#: ../../help.rst:227
+msgid "`The FreeBSD Diary <http://www.freebsddiary.org/>`_"
+msgstr ""
+
+#: ../../help.rst:229
+msgid ""
+"`PC-BSD® YouTube channel <https://www.youtube.com/channel/UCyd7MaPVUpa-"
+"ueUsGjUujag>`_"
+msgstr ""
+
+#: ../../help.rst:231
+msgid "`BSD YouTube channel <https://www.youtube.com/user/bsdconferences>`_"
+msgstr ""
+
+#: ../../help.rst:233
+msgid "`BSD Talk <http://bsdtalk.blogspot.com/>`_"
+msgstr ""
+
+#: ../../help.rst:235
+msgid "`BSD Now <http://www.bsdnow.tv/>`_"
+msgstr ""
+
+#: ../../help.rst:237
+msgid "`BSD Magazine <https://bsdmag.org/>`_ (free, monthly download)"
+msgstr ""
+
+#: ../../help.rst:239
+msgid ""
+"`FreeBSD Journal <http://www.freebsdjournal.com/>`_ (bi-monthly magazine)"
+msgstr ""
+
+#: ../../help.rst:241
+msgid "`BSD Hacks <http://shop.oreilly.com/product/9780596006792.do>`_ (book)"
+msgstr ""
+
+#: ../../help.rst:243
+msgid ""
+"`The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ "
+"(book)"
+msgstr ""
+
+#: ../../help.rst:245
+msgid ""
+"`Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)"
+msgstr ""
