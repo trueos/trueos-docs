@@ -72,7 +72,11 @@ clean:
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+.if exists(po)
 .if exists($(BUILDDIR)/locale-po)
+	@rm -rf $(BUILDDIR)/locale-po
+.endif
+	@cp -r ./po $(BUILDDIR)/locale-po
 	$(SPHINXBUILD) -D language='bg' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-bg
 	$(SPHINXBUILD) -D language='da' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-da
 	$(SPHINXBUILD) -D language='de' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-de
