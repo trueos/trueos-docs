@@ -171,16 +171,25 @@ version can be found in this
 
 The documentation source files have been integrated into the Weblate
 translation system so that the TrueOS® documentation can be translated
-using a web browser. The process is similar to :ref:`Interface Translation` except that you must first select "PC-BSD Handbook" from the "Projects" drop-down menu shown in
+using a web browser. The process is similar to
+:ref:`Interface Translation` except that you must first select
+"trueos-guide" from the "Projects" drop-down menu shown in
 :numref:`Figure %s: Select a Project <translate4>`.
 
 When translating the documentation, be aware of the following:
 
-* At this time, some formatting tags are still displayed in raw text, as seen in the examples in :numref:`Figure %s: Do Not Remove Formatting Characters <translate7>`
-  and :numref:`Figure %s: Another Formatting Characters Example <translate7>`.
-  **It is IMPORTANT that you do not accidentally remove the formatting as this can break the documentation build for that language.** In the first example, it is OK to
-  translate the phrase "Using the Text Installer" but care must be taken to not accidental remove any of the surrounding colons and backticks, or to change the text
-  of the "ref" tag. In the second example, the asterisks are used to bold the word "install". It is OK to translate "install", but do not remove the asterisks.
+* At this time, some formatting tags are still displayed in raw text,
+  as seen in the examples in
+  :numref:`Figure %s: Do Not Remove Formatting Characters <translate7>`
+  and
+  :numref:`Figure %s: Another Formatting Characters Example <translate8>`.
+  **It is IMPORTANT that you do not accidentally remove the formatting as this can break the documentation build for that language.**
+  In the first example, it is fine to translate the phrase "Using the
+  Text Installer" but care must be taken to not accidental remove any
+  of the surrounding colons and backticks, or to change the text of the
+  *ref* tag. In the second example, the asterisks are used to bold the
+  words "bare minimum". It is fine to translate "bare minimum", but do
+  not remove the asterisks.
 
 .. _translate7:
 

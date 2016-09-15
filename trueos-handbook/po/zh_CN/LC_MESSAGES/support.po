@@ -201,34 +201,11 @@ msgid ""
 "docs/blob/master/trueos-handbook/README.md>`_."
 msgstr ""
 
-#: ../../support.rst:181
-msgid ""
-"The documentation source files have been integrated into the Weblate "
-"translation system so that the TrueOS® documentation can be translated using"
-" a web browser. The process is similar to :ref:`Interface Translation` "
-"except that you must first select \"PC-BSD Handbook\" from the \"Projects\" "
-"drop-down menu shown in :numref:`Figure %s: Select a Project <translate4>`."
-msgstr ""
-
-#: ../../support.rst:186
+#: ../../support.rst:188
 msgid "When translating the documentation, be aware of the following:"
 msgstr ""
 
-#: ../../support.rst:188
-msgid ""
-"At this time, some formatting tags are still displayed in raw text, as seen "
-"in the examples in :numref:`Figure %s: Do Not Remove Formatting Characters "
-"<translate7>` and :numref:`Figure %s: Another Formatting Characters Example "
-"<translate7>`. **It is IMPORTANT that you do not accidentally remove the "
-"formatting as this can break the documentation build for that language.** In"
-" the first example, it is OK to translate the phrase \"Using the Text "
-"Installer\" but care must be taken to not accidental remove any of the "
-"surrounding colons and backticks, or to change the text of the \"ref\" tag. "
-"In the second example, the asterisks are used to bold the word \"install\". "
-"It is OK to translate \"install\", but do not remove the asterisks."
-msgstr ""
-
-#: ../../support.rst:202
+#: ../../support.rst:211
 msgid ""
 "If you would like to build a local HTML copy that includes the latest "
 "translations, either for your own use or to visualize the translated Guide, "
@@ -236,7 +213,7 @@ msgid ""
 " system::"
 msgstr ""
 
-#: ../../support.rst:220
+#: ../../support.rst:229
 msgid ""
 "This will make an HTML version of the Guide for each of the available "
 "translations. In this example, translations are available for English (in "
@@ -244,27 +221,27 @@ msgid ""
 "Portuguese, Turkish, and UK English. To update the HTML at a later time::"
 msgstr ""
 
-#: ../../support.rst:236
+#: ../../support.rst:245
 msgid "Website Translation"
 msgstr ""
 
-#: ../../support.rst:238
+#: ../../support.rst:247
 msgid ""
 "If you are interested in translating the PC-BSD® website, introduce yourself"
 " in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../support.rst:242
+#: ../../support.rst:251
 msgid ""
 "Currently, the the website is being translated to several languages, "
 "including: Dutch, French, German, Polish, Spanish, Swedish, and Turkish."
 msgstr ""
 
-#: ../../support.rst:248
+#: ../../support.rst:257
 msgid "Become a Developer"
 msgstr ""
 
-#: ../../support.rst:250
+#: ../../support.rst:259
 msgid ""
 "If you like programming, and especially coding on FreeBSD, we would love to "
 "see you join the TrueOS® team as a TrueOS® committer. Developers who want to"
@@ -276,7 +253,7 @@ msgid ""
 "to TrueOS®, mention it and someone will be happy to help get you started."
 msgstr ""
 
-#: ../../support.rst:262
+#: ../../support.rst:271
 msgid ""
 "Most of the TrueOS® specific GUI tools are developed in C++ using Qt "
 "libraries and other non-GUI development is done using standard Bourne shell "
@@ -284,11 +261,11 @@ msgid ""
 "but those will be evaluated on a case-by-case basis."
 msgstr ""
 
-#: ../../support.rst:271
+#: ../../support.rst:280
 msgid "Getting the Source Code"
 msgstr ""
 
-#: ../../support.rst:273
+#: ../../support.rst:282
 msgid ""
 "The TrueOS® source code is available from the `GitHub "
 "<https://github.com/trueos/>`_. The code has been organized into "
@@ -298,37 +275,37 @@ msgid ""
 ":command:`git` is included in the base install."
 msgstr ""
 
-#: ../../support.rst:280
+#: ../../support.rst:289
 msgid ""
 "To download the source code, :command:`cd` to the directory to store the "
 "source code and specify the name of the desired repository. In this example,"
 " the user wishes to download the source for the graphical utilities::"
 msgstr ""
 
-#: ../../support.rst:287
+#: ../../support.rst:296
 msgid "This will create a directory with the same name as the repository."
 msgstr ""
 
-#: ../../support.rst:289
+#: ../../support.rst:298
 msgid ""
 "To keep the local copy in sync with the official repository, periodically "
 "run :command:`git pull` within that directory."
 msgstr ""
 
-#: ../../support.rst:292
+#: ../../support.rst:301
 msgid ""
 "Before you can compile any source, ensure that the Ports Collection is "
 "installed as the superuser::"
 msgstr ""
 
-#: ../../support.rst:297
+#: ../../support.rst:306
 msgid ""
 "Then, :command:`cd` to the directory containing the source you wish to build"
 " and run the :command:`mkports.sh` script. In this example, the developer "
 "wants to compile the graphical utilities:"
 msgstr ""
 
-#: ../../support.rst:307
+#: ../../support.rst:316
 msgid ""
 "This will create a port which can be installed. The name of the port is "
 "located in :file:`mkports.sh`. This example determines the name of the port "
@@ -337,7 +314,7 @@ msgid ""
 ":command:`reinstall` is used to overwrite the current utilities:"
 msgstr ""
 
-#: ../../support.rst:321
+#: ../../support.rst:330
 msgid ""
 "If you plan to make source changes, several Qt IDEs are available in "
 ":ref:`AppCafe®`. The `QtCreator "
@@ -349,7 +326,7 @@ msgid ""
 "functionality."
 msgstr ""
 
-#: ../../support.rst:331
+#: ../../support.rst:340
 msgid ""
 "If you plan to submit changes so that they can be included in TrueOS®, fork "
 "the repository using the instructions in `fork a repo "
@@ -359,11 +336,11 @@ msgid ""
 "have been reviewed, they will be committed or sent back with suggestions."
 msgstr ""
 
-#: ../../support.rst:343
+#: ../../support.rst:352
 msgid "Design Guidelines"
 msgstr ""
 
-#: ../../support.rst:345
+#: ../../support.rst:354
 msgid ""
 "TrueOS® is a community driven project that relies on the support of "
 "developers in the community to help in the design and implementation of new "
@@ -374,13 +351,13 @@ msgid ""
 "on the menu bar."
 msgstr ""
 
-#: ../../support.rst:353
+#: ../../support.rst:362
 msgid ""
 "This section describes a small list of guidelines for menu and program "
 "design in TrueOS®."
 msgstr ""
 
-#: ../../support.rst:356
+#: ../../support.rst:365
 msgid ""
 "Any graphical program that is a full-featured utility, such as :ref:`Life "
 "Preserver`, should have a \"File\" menu. However, file menus are not "
@@ -389,14 +366,14 @@ msgid ""
 "need more than two or three items on the file menu."
 msgstr ""
 
-#: ../../support.rst:363
+#: ../../support.rst:372
 msgid ""
 "\"Configure\" is our adopted standard for the category that contains "
 "settings or configuration-related settings. If additional categories are "
 "needed, check to see what other TrueOS® utilities are using."
 msgstr ""
 
-#: ../../support.rst:367
+#: ../../support.rst:376
 msgid ""
 "File menu icons are taken from the KDE Oxygen theme located in "
 ":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
@@ -404,71 +381,71 @@ msgid ""
 "lists the commonly used icons and their default file names."
 msgstr ""
 
-#: ../../support.rst:372
+#: ../../support.rst:381
 msgid "**Table 13.3a: Commonly Used File Menu Icons**"
 msgstr ""
 
-#: ../../support.rst:375
+#: ../../support.rst:384
 msgid "Function"
 msgstr ""
 
-#: ../../support.rst:375
+#: ../../support.rst:384
 msgid "File Menu Icon"
 msgstr ""
 
-#: ../../support.rst:375
+#: ../../support.rst:384
 msgid "File Name"
 msgstr ""
 
-#: ../../support.rst:377 ../../support.rst:417 ../../support.rst:427
+#: ../../support.rst:386 ../../support.rst:426 ../../support.rst:436
 msgid "Quit"
 msgstr ""
 
-#: ../../support.rst:377
+#: ../../support.rst:386
 msgid "row 1, cell 2"
 msgstr ""
 
-#: ../../support.rst:377
+#: ../../support.rst:386
 msgid "window-close.png"
 msgstr ""
 
-#: ../../support.rst:379 ../../support.rst:429
+#: ../../support.rst:388 ../../support.rst:438
 msgid "Settings"
 msgstr ""
 
-#: ../../support.rst:379
+#: ../../support.rst:388
 msgid "row 2, cell 2"
 msgstr ""
 
-#: ../../support.rst:379
+#: ../../support.rst:388
 msgid "configure.png"
 msgstr ""
 
-#: ../../support.rst:382
+#: ../../support.rst:391
 msgid "TrueOS® utilities use these buttons as follows:"
 msgstr ""
 
-#: ../../support.rst:384
+#: ../../support.rst:393
 msgid "**Apply:** applies settings and leaves the window open."
 msgstr ""
 
-#: ../../support.rst:386
+#: ../../support.rst:395
 msgid "**Close:** closes program without applying settings."
 msgstr ""
 
-#: ../../support.rst:388
+#: ../../support.rst:397
 msgid "**OK:** closes dialogue window and saves settings."
 msgstr ""
 
-#: ../../support.rst:390
+#: ../../support.rst:399
 msgid "**Cancel:** closes dialog window without applying settings."
 msgstr ""
 
-#: ../../support.rst:392
+#: ../../support.rst:401
 msgid "**Save:** saves settings and closes window."
 msgstr ""
 
-#: ../../support.rst:394
+#: ../../support.rst:403
 msgid ""
 "Fully functional programs like :ref:`Life Preserver` do not use close "
 "buttons on the front of the application. Basically, whenever there is a "
@@ -476,7 +453,7 @@ msgid ""
 "are used instead. Dialogues and widget programs are exceptions to this rule."
 msgstr ""
 
-#: ../../support.rst:400
+#: ../../support.rst:409
 msgid ""
 "Many users benefit from keyboard shortcuts and we aim to make them available"
 " in every TrueOS® utility. Qt makes it easy to assign keyboard shortcuts. "
@@ -490,87 +467,87 @@ msgid ""
 " the commonly used shortcut and hot keys."
 msgstr ""
 
-#: ../../support.rst:412
+#: ../../support.rst:421
 msgid "**Table 13.3b: Shortcut Keys**"
 msgstr ""
 
-#: ../../support.rst:415
+#: ../../support.rst:424
 msgid "Shortcut Key"
 msgstr ""
 
-#: ../../support.rst:415 ../../support.rst:425
+#: ../../support.rst:424 ../../support.rst:434
 msgid "Action"
 msgstr ""
 
-#: ../../support.rst:417
+#: ../../support.rst:426
 msgid "CTRL + Q"
 msgstr ""
 
-#: ../../support.rst:419
+#: ../../support.rst:428
 msgid "F1"
 msgstr ""
 
-#: ../../support.rst:419
+#: ../../support.rst:428
 msgid "Help"
 msgstr ""
 
-#: ../../support.rst:422
+#: ../../support.rst:431
 msgid "**Table 13.3c: Hot Keys**"
 msgstr ""
 
-#: ../../support.rst:425
+#: ../../support.rst:434
 msgid "Hot Key"
 msgstr ""
 
-#: ../../support.rst:427
+#: ../../support.rst:436
 msgid "Alt + Q"
 msgstr ""
 
-#: ../../support.rst:429
+#: ../../support.rst:438
 msgid "Alt + S"
 msgstr ""
 
-#: ../../support.rst:431
+#: ../../support.rst:440
 msgid "Alt + I"
 msgstr ""
 
-#: ../../support.rst:431
+#: ../../support.rst:440
 msgid "Import"
 msgstr ""
 
-#: ../../support.rst:433
+#: ../../support.rst:442
 msgid "Alt + E"
 msgstr ""
 
-#: ../../support.rst:433
+#: ../../support.rst:442
 msgid "Export"
 msgstr ""
 
-#: ../../support.rst:435
+#: ../../support.rst:444
 msgid "ALT + F"
 msgstr ""
 
-#: ../../support.rst:435
+#: ../../support.rst:444
 msgid "File Menu"
 msgstr ""
 
-#: ../../support.rst:437
+#: ../../support.rst:446
 msgid "ALT + C"
 msgstr ""
 
-#: ../../support.rst:437
+#: ../../support.rst:446
 msgid "Configure Menu"
 msgstr ""
 
-#: ../../support.rst:439
+#: ../../support.rst:448
 msgid "ALT + H"
 msgstr ""
 
-#: ../../support.rst:439
+#: ../../support.rst:448
 msgid "Help Menu"
 msgstr ""
 
-#: ../../support.rst:442
+#: ../../support.rst:451
 msgid ""
 "When saving an application's settings, the QSettings class should be used if"
 " possible. There are two different \"organizations\", depending on whether "
@@ -584,36 +561,36 @@ msgid ""
 "permission."
 msgstr ""
 
-#: ../../support.rst:453
+#: ../../support.rst:462
 msgid "**Example 13.3a: User Permission Settings**:"
 msgstr ""
 
-#: ../../support.rst:460
+#: ../../support.rst:469
 msgid "**Example 13.3b: Root Permission Settings**:"
 msgstr ""
 
-#: ../../support.rst:467
+#: ../../support.rst:476
 msgid "Developers will also find the following resources helpful:"
 msgstr ""
 
-#: ../../support.rst:469
+#: ../../support.rst:478
 msgid ""
 "`Commits Mailing List <http://lists.pcbsd.org/mailman/listinfo/commits>`_"
 msgstr ""
 
-#: ../../support.rst:471
+#: ../../support.rst:480
 msgid "`Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_"
 msgstr ""
 
-#: ../../support.rst:473
+#: ../../support.rst:482
 msgid "`C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_"
 msgstr ""
 
-#: ../../support.rst:479
+#: ../../support.rst:488
 msgid "Become an Advocate"
 msgstr ""
 
-#: ../../support.rst:481
+#: ../../support.rst:490
 msgid ""
 "So you love TrueOS®? Why not tell your family, friends, fellow students and "
 "colleagues about it? You will not be the only one that likes a virus-free, "
@@ -621,20 +598,20 @@ msgid ""
 " started:"
 msgstr ""
 
-#: ../../support.rst:486
+#: ../../support.rst:495
 msgid ""
 "Burn a couple of DVDs and pass them out. If your school or user group has an"
 " upcoming event where you can promote TrueOS®, you can request additional "
 "DVDs from sales@pcbsd.com."
 msgstr ""
 
-#: ../../support.rst:490
+#: ../../support.rst:499
 msgid ""
 "Consider giving a presentation about TrueOS® at a local community event or "
 "conference. Let us know about it and we will help you spread the word."
 msgstr ""
 
-#: ../../support.rst:494
+#: ../../support.rst:503
 msgid ""
 "Write a personal blog detailing your journey from your first TrueOS® install"
 " experience to your most recent accomplishment. The blog could also be used "
@@ -642,3 +619,48 @@ msgid ""
 "blog may help build the community in your area and to find others with "
 "similar interests."
 msgstr ""
+
+#: ../../support.rst:181
+msgid ""
+"The documentation source files have been integrated into the Weblate "
+"translation system so that the TrueOS® documentation can be translated using"
+" a web browser. The process is similar to :ref:`Interface Translation` "
+"except that you must first select \"trueos-guide\" from the \"Projects\" "
+"drop-down menu shown in :numref:`Figure %s: Select a Project <translate4>`."
+msgstr ""
+
+#: ../../support.rst:190
+msgid ""
+"At this time, some formatting tags are still displayed in raw text, as seen "
+"in the examples in :numref:`Figure %s: Do Not Remove Formatting Characters "
+"<translate7>` and :numref:`Figure %s: Another Formatting Characters Example "
+"<translate8>`. **It is IMPORTANT that you do not accidentally remove the "
+"formatting as this can break the documentation build for that language.** In"
+" the first example, it is fine to translate the phrase \"Using the Text "
+"Installer\" but care must be taken to not accidental remove any of the "
+"surrounding colons and backticks, or to change the text of the *ref* tag. In"
+" the second example, the asterisks are used to bold the words \"bare "
+"minimum\". It is fine to translate \"bare minimum\", but do not remove the "
+"asterisks."
+msgstr ""
+
+#~ msgid ""
+#~ "The documentation source files have been integrated into the Weblate "
+#~ "translation system so that the TrueOS® documentation can be translated using"
+#~ " a web browser. The process is similar to :ref:`Interface Translation` "
+#~ "except that you must first select \"PC-BSD Handbook\" from the \"Projects\" "
+#~ "drop-down menu shown in :numref:`Figure %s: Select a Project <translate4>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "At this time, some formatting tags are still displayed in raw text, as seen "
+#~ "in the examples in :numref:`Figure %s: Do Not Remove Formatting Characters "
+#~ "<translate7>` and :numref:`Figure %s: Another Formatting Characters Example "
+#~ "<translate7>`. **It is IMPORTANT that you do not accidentally remove the "
+#~ "formatting as this can break the documentation build for that language.** In"
+#~ " the first example, it is OK to translate the phrase \"Using the Text "
+#~ "Installer\" but care must be taken to not accidental remove any of the "
+#~ "surrounding colons and backticks, or to change the text of the \"ref\" tag. "
+#~ "In the second example, the asterisks are used to bold the word \"install\". "
+#~ "It is OK to translate \"install\", but do not remove the asterisks."
+#~ msgstr ""
