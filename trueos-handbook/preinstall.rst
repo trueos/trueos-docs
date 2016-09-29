@@ -88,7 +88,7 @@ Supported Hardware
 
 If you wish to check your hardware before installing TrueOS®, a good
 place to start is the
-`FreeBSD Hardware Notes <http://www.freebsd.org/releases/11.0R/hardware.html>`_. 
+`FreeBSD Hardware Notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_. 
 Another good resource is to start the installer and click the "Hardware
 Compatibility" icon.
 
@@ -115,7 +115,7 @@ Processor
 TrueOS® should install on any system containing a 64-bit (also called 
 *amd64*) processor. Despite the name, a 64-bit processor does
 **not need** to be manufactured by AMD in order to be supported. The
-`FreeBSD Hardware Notes <http://www.freebsd.org/releases/11.0R/hardware.html#proc>`_ 
+`FreeBSD Hardware Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_ 
 lists the *amd64* processors known to work.
 
 Graphics
