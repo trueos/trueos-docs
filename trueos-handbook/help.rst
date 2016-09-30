@@ -98,16 +98,16 @@ ensure a speedy response:
 
 * The TrueOS® code has been organized into repositories that represent
   the Lumina desktop, the graphical utilities, SysAdm™, and various
-  other applications. Select the repository that most closely matches
-  the application that has a bug. If you are in doubt, select the
-  "trueos-utils-qt5" repository.
+  other applications. When reporting a bug, select the "trueos-core"
+  repository. If the bug is specific to Lumina, instead select the
+  "lumina" repository.
    
-* Once you have clicked a repostitory name, use the "Search" bar on its
-  page to confirm no similar bug report exists. If a similar report does
-  exist, add any additional information to the report via a comment.
-  While it is not required to log in to search existing bugs, adding a
-  comment or creating a new report does require signing into the
-  website.
+* Once you have clicked the repostitory name, use the "Search" bar on
+  its page to confirm no similar bug report exists. If a similar
+  report does exist, add any additional information to the report via
+  a comment. While it is not required to log in to search existing
+  bugs, adding a comment or creating a new report does require signing
+  into the website.
 
 * To create a new bug report,
   click :menuselection:`Issues --> New Issue` within the repository.
