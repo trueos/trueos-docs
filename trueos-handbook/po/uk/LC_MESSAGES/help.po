@@ -147,24 +147,6 @@ msgid ""
 "GitHub account for the efficient resolution of issues."
 msgstr ""
 
-#: ../../help.rst:108
-msgid ""
-"The TrueOS® code has been organized into repositories that represent the "
-"Lumina desktop, the graphical utilities, SysAdm™, and various other "
-"applications. Select the repository that most closely matches the "
-"application that has a bug. If you are in doubt, select the \"trueos-utils-"
-"qt5\" repository."
-msgstr ""
-
-#: ../../help.rst:114
-msgid ""
-"Once you have clicked a repostitory name, use the \"Search\" bar on its page"
-" to confirm no similar bug report exists. If a similar report does exist, "
-"add any additional information to the report via a comment. While it is not "
-"required to log in to search existing bugs, adding a comment or creating a "
-"new report does require signing into the website."
-msgstr ""
-
 #: ../../help.rst:121
 msgid ""
 "To create a new bug report, click :menuselection:`Issues --> New Issue` "
@@ -355,3 +337,36 @@ msgstr ""
 msgid ""
 "`Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)"
 msgstr ""
+
+#: ../../help.rst:108
+msgid ""
+"The TrueOS® code has been organized into repositories that represent the "
+"Lumina desktop, the graphical utilities, SysAdm™, and various other "
+"applications. When reporting a bug, select the \"trueos-core\" repository. "
+"If the bug is specific to Lumina, instead select the \"lumina\" repository."
+msgstr ""
+
+#: ../../help.rst:114
+msgid ""
+"Once you have clicked the repostitory name, use the \"Search\" bar on its "
+"page to confirm no similar bug report exists. If a similar report does "
+"exist, add any additional information to the report via a comment. While it "
+"is not required to log in to search existing bugs, adding a comment or "
+"creating a new report does require signing into the website."
+msgstr ""
+
+#~ msgid ""
+#~ "The TrueOS® code has been organized into repositories that represent the "
+#~ "Lumina desktop, the graphical utilities, SysAdm™, and various other "
+#~ "applications. Select the repository that most closely matches the "
+#~ "application that has a bug. If you are in doubt, select the \"trueos-utils-"
+#~ "qt5\" repository."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have clicked a repostitory name, use the \"Search\" bar on its page"
+#~ " to confirm no similar bug report exists. If a similar report does exist, "
+#~ "add any additional information to the report via a comment. While it is not "
+#~ "required to log in to search existing bugs, adding a comment or creating a "
+#~ "new report does require signing into the website."
+#~ msgstr ""
