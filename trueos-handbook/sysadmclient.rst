@@ -1043,7 +1043,7 @@ schedule snapshots of a ZFS pool and to optionally replicate those
 snapshots to another system over an encrypted connection. This design
 provides several benefits:
 
-* A snapshot provides a "point-in-time" image of the ZFS pool. In one
+* A snapshot provides a "point-in-time" image of the ZFS dataset. In one
   way, this is similar to a full system backup as the snapshot contains
   the information for the entire filesystem. However, it has several
   advantages over a full backup. Snapshots occur instantaneously,
@@ -1250,7 +1250,8 @@ Schedule" pane as seen in :numref:`Figure %s <lpreserver4>`.
 
 This pane contains several options:
 
-**ZPool:** Select the ZFS pool to snapshot.
+**Storage Pool:** Select the ZFS storage pool that contains the datasets
+that you wish to snapshot.
 
 **Snapshots to keep:** Snapshots are automatically pruned after the
 specified number of snapshots to prevent snapshots from eventually
@@ -1272,8 +1273,10 @@ next to the "camera" icon to modify the highlighted schedule or the
 
 This screen can also be used to manage the ZFS scrub schedule. Scrubs
 are recommended as they can provide an early indication of a potential
-disk failure. Since scrubs can be scheduled on a per-pool basis, if you
-have multiple pools, create a scrub schedule for each pool.
+disk failure. Scrubs can be scheduled on a per-pool basis. 
+
+.. tip:: If you have multiple pools, be sure to create a scrub schedule
+   for each pool.
 
 To schedule when the scrub occurs, click the third icon from the right
 which will activate the "Setup Scrub Schedule" screen shown in
@@ -1285,13 +1288,13 @@ which will activate the "Setup Scrub Schedule" screen shown in
 
    Scheduling a Scrub
 
-Select the pool from the :guilabel:`ZPool` drop-down menu, then select
-the :guilabel:`Frequency`. Supported frequencies are "Daily", "Weekly",
-or "Monthly". If you select "Daily", you can configure the "Hour". If
-you select "Weekly", you can configure the "Day of week" and the "Hour".
-If you select "Monthly", you can configure the "Date" and "Hour". Since
-a scrub can be disk I/O intensive, it is recommended to pick a time when
-the system will not be in heavy use.
+Select the pool from the :guilabel:`Storage Pool` drop-down menu, then
+select the :guilabel:`Frequency`. Supported frequencies are "Daily",
+"Weekly", or "Monthly". If you select "Daily", you can configure the
+"Hour". If you select "Weekly", you can configure the "Day of week" and
+the "Hour".  If you select "Monthly", you can configure the "Date" and
+"Hour". Since a scrub can be disk I/O intensive, it is recommended to
+pick a time when the system will not be in heavy use.
 
 Once you have created a scrub schedule, you can use the "gear" icon
 next to the "schedule scrub" icon to modify the highlighted schedule or
@@ -1386,8 +1389,8 @@ the :command:`lpreserver cronsnap` command, type:
   * A hourly snapshot will be kept for a day.
   * A daily snapshot will be kept for a month.
   * A Monthly snapshot will be kept for a year.
-  * The life-preserver daemon will also keep track of the zpool disk space,
-    if the capacity falls below 75%, the oldest snapshot will be auto-pruned.
+  * The life-preserver daemon will also keep track of the storage pool disk space.
+    If the capacity falls below 75%, the oldest snapshot will be auto-pruned.
  Examples:
   lpreserver cronsnap start tank1/usr/home/kris daily@22 10
   Schedule snapshots of dataset tank1/usr/home/kris daily at 22:00.
