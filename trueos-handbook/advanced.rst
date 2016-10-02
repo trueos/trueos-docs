@@ -210,9 +210,9 @@ This screen contains the following options:
   :numref:`Figure %s: Full Disk Encryption <text7a>`, and then return
   you back to this menu.
 
-* **zpool:** select this option if the system contains multiple disks
-  and you wish to change the disk layout to a mirror or RAIDZ. The
-  allowable layouts for the number of available disks will be
+* **storage pool:** select this option if the system contains multiple
+  disks and you wish to change the disk layout to a mirror or RAIDZ.
+  The allowable layouts for the number of available disks will be
   displayed so that you can select the desired layout.
 
 * **zfs:** used to modify the default ZFS layout. Selecting this
