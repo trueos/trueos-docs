@@ -77,3 +77,10 @@ Some very helpful tools for editing the documentation are listed below by editor
 Need help getting started or want to discuss edits? Join the http://lists.pcbsd.org/mailman/listinfo/docs mailing list.
 
 To issue a git pull request containing your edits, use the instructions at https://help.github.com/articles/using-pull-requests.
+
+##Optimizing images
+
+Screenshots should be saved in PNG format. Most UI snapshots turn out well when using 256 colors.
+PNG images can be smaller using any number of optimization utilities. Arguably the best:
+* [TruePNG](http://x128.ho.ua/pngutils.html) can be invoked under `wine`, e.g.
+  ```wine /path/to/TruePNG.exe /o max file.png```
