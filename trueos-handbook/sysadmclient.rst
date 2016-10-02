@@ -429,6 +429,12 @@ This tab contains several configurable options:
 Upgrading from |pcbsd| 10.x to |trueos|
 ---------------------------------------
 
+.. warning:: If your primary user account uses PersonaCrypt, please be
+   sure to save your encryption keys to a safe place (e.g. a thumb
+   drive) before you begin the upgrade process. If you do not, you may
+   not be able to import your home directory after the upgrade is
+   complete.
+
 If you are currently using |pcbsd| 10.x, the option to update to
 |trueos| will not appear in the Control Panel version of Update Manager.
 This is because a new installation is required in order to migrate to
