@@ -74,8 +74,6 @@ Some very helpful tools for editing the documentation are listed below by editor
 [Vim](http://www.vim.org):
 * [vim-rst-tables](https://github.com/nvie/vim-rst-tables) will help you create and reformat grid tables
 
-Need help getting started or want to discuss edits? Join the http://lists.pcbsd.org/mailman/listinfo/docs mailing list.
-
 To issue a git pull request containing your edits, use the instructions at https://help.github.com/articles/using-pull-requests.
 
 ##Optimizing images
