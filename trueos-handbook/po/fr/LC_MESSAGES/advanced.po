@@ -270,14 +270,6 @@ msgid ""
 "and then return you back to this menu."
 msgstr ""
 
-#: ../../advanced.rst:222
-msgid ""
-"**zpool:** select this option if the system contains multiple disks and you "
-"wish to change the disk layout to a mirror or RAIDZ. The allowable layouts "
-"for the number of available disks will be displayed so that you can select "
-"the desired layout."
-msgstr ""
-
 #: ../../advanced.rst:227
 msgid ""
 "**zfs:** used to modify the default ZFS layout. Selecting this option will "
@@ -1775,6 +1767,21 @@ msgid ""
 "location of remote dataset to restore from when using "
 "*installMode=zfsrestore*"
 msgstr ""
+
+#: ../../advanced.rst:222
+msgid ""
+"**storage pool:** select this option if the system contains multiple disks "
+"and you wish to change the disk layout to a mirror or RAIDZ. The allowable "
+"layouts for the number of available disks will be displayed so that you can "
+"select the desired layout."
+msgstr ""
+
+#~ msgid ""
+#~ "**zpool:** select this option if the system contains multiple disks and you "
+#~ "wish to change the disk layout to a mirror or RAIDZ. The allowable layouts "
+#~ "for the number of available disks will be displayed so that you can select "
+#~ "the desired layout."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "First, determine which variables you wish to customize. A list of possible "
