@@ -86,12 +86,6 @@ msgid ""
 "installation."
 msgstr ""
 
-#: ../../postinstall.rst:37
-msgid ""
-"A system with a default install or the \"BSD\" option for the boot loader, "
-"will load the boot menu, seen in :numref:`Figure %s <install1b>`."
-msgstr ""
-
 #: ../../postinstall.rst:44
 msgid ": TrueOS® Boot Menu"
 msgstr ""
@@ -281,14 +275,6 @@ msgstr ""
 
 #: ../../postinstall.rst:180
 msgid ": Input Password to Decrypt Master Key"
-msgstr ""
-
-#: ../../postinstall.rst:182
-msgid ""
-"The boot process will wait for the password created in the installation "
-"screen shown in :ref:`Configure Encryption <install11b>`. If the correct "
-"password is typed in, the system will calculate the GELI encryption key, "
-"then continue to boot."
 msgstr ""
 
 #: ../../postinstall.rst:193
@@ -907,6 +893,32 @@ msgid ""
 " Channel <https://gitter.im/trueos/Lobby>`_. For additional communications "
 "options, check the section on :ref:`Finding Help`."
 msgstr ""
+
+#: ../../postinstall.rst:37
+msgid ""
+"A system with a default install or the \"BSD\" option for the boot loader, "
+"will load the boot menu, seen in :numref:`Figure %s <install1b2>`."
+msgstr ""
+
+#: ../../postinstall.rst:182
+msgid ""
+"The boot process will wait for the password created in the installation "
+"screen shown in :ref:`Configure Encryption <install11b>`. If the correct "
+"password is typed, the system will calculate the GELI encryption key, then "
+"continue to boot."
+msgstr ""
+
+#~ msgid ""
+#~ "A system with a default install or the \"BSD\" option for the boot loader, "
+#~ "will load the boot menu, seen in :numref:`Figure %s <install1b>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The boot process will wait for the password created in the installation "
+#~ "screen shown in :ref:`Configure Encryption <install11b>`. If the correct "
+#~ "password is typed in, the system will calculate the GELI encryption key, "
+#~ "then continue to boot."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Once the TrueOS® system has finished booting for the first time, the "
