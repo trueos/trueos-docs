@@ -26,9 +26,9 @@ BSD Boot Loader
 ---------------
 
 A system with a default install or the "BSD" option for the boot loader,
-will load the boot menu, seen in :numref:`Figure %s <install1b>`.
+will load the boot menu, seen in :numref:`Figure %s <install1b2>`.
 
-.. _install1b:
+.. _install1b2:
 
 .. figure:: images/install1b.png
 
@@ -172,8 +172,8 @@ shown in :numref:`Figure %s <encrypt1>`.
 
 The boot process will wait for the password created in the installation
 screen shown in :ref:`Configure Encryption <install11b>`. If the
-correct password is typed in, the system will calculate the GELI
-encryption key, then continue to boot.
+correct password is typed, the system will calculate the GELI encryption
+key, then continue to boot.
 
 .. index:: video
 .. _Display Detection:
