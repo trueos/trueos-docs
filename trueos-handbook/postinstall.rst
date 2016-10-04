@@ -4,172 +4,176 @@
 Post Installation Configuration and Installation Troubleshooting
 ****************************************************************
 
-Once the TrueOS® system has finished booting for the first time, the
-installer will present you with some additional screens so that you
-can configure your system. This section describes the boot process,
-the post-installation configuration screens, and provides some
-troubleshooting tips for failed installations.
+Once the |trueos| system has finished booting for the first time, the
+installer will present some additional screens to configure the system.
+This section describes the boot process, the post-installation
+configuration screens, and provides troubleshooting tips for failed
+installations.
 
 .. index:: boot
 .. _Booting Into TrueOS®:
 
 Booting Into TrueOS®
-=====================
+====================
 
-After installation, TrueOS® will reboot and display a boot menu. The
-menu that is displayed depends upon the boot loader selection chosen
-during the installation.
+After installation, |trueos| will reboot and display a boot menu. The
+menu displayed depends upon the boot loader selection chosen during the
+installation.
 
 .. _BSD Boot Loader:
 
 BSD Boot Loader
 ---------------
 
-If you performed a default install or kept the "BSD" option for the
-boot loader, it will load the
-:numref:`Figure %s: TrueOS® Boot Menu <install1b>`. 
+A system with a default install or the "BSD" option for the boot loader,
+will load the boot menu, seen in :numref:`Figure %s <install1b>`.
 
 .. _install1b:
 
 .. figure:: images/install1b.png
 
-This menu provides the following options. To pause this menu, press
+   : TrueOS® Boot Menu
+
+This menu provides several options. To pause this menu, press
 any key except for :kbd:`Enter`. To select an option, press either the
-bolded number or key for that option. Once you have finished making
-your selections, press :kbd:`Enter` to boot using the selected
-options.
+bolded number or key for that option. Once any selections have been
+made, press :kbd:`Enter` to boot using the selected options.
 
-* **1. Boot Multi User:** this is the default option for booting
-  TrueOS®. The system will automatically use this option either after
-  pausing for a few moments or if you press :kbd:`Enter` when this
-  menu displays.
+* **1. Boot Multi User:** This is the default option for booting
+  |trueos|. The system will automatically use this option either after
+  pausing for a few moments or if :kbd:`Enter` is pressed while the
+  boot menu is displayed.
 
-* **2. Boot Single User:** advanced users can select this option to
+* **2. Boot Single User:** Advanced users can select this option to
   fix critical system failures.
 
-* **3. Escape to loader prompt:** advanced users can select this
-  option to perform advanced operations, such as loading kernel
-  modules.
+* **3. Escape to loader prompt:** Advanced users can select this option
+  to perform advanced operations, such as loading kernel modules.
 
-* **4. Reboot:** reboots the system.
+* **4. Reboot:** Reboots the system.
 
-* **5. Kernel:** this option will indicate how many kernels are
+* **5. Kernel:** This option will indicate how many kernels are
   available. Press either :kbd:`5` or :kbd:`k` to toggle between
   available kernels.
 
-* **6. Configure Boot Options:** if you press either :kbd:`6` or
-  :kbd:`o`, the boot options screen shown in
-  :numref:`Figure %s: Boot Options Menu <boot1b>` will open. To change
-  an option, press either the bolded number or key for that option to
-  toggle through its available settings. When finished, press either
-  :kbd:`1` or :kbd:`Backspace` to return to the TrueOS® boot menu.
+* **6. Configure Boot Options:** Press either :kbd:`6` or :kbd:`o` to
+  see the boot options screen, shown in :numref:`Figure %s <boot1b>`.
+  To change an option, press either the bolded number or key for the
+  option to toggle through its available settings. When finished, press
+  either :kbd:`1` or :kbd:`Backspace` to return to the |trueos| boot
+  menu.
 
-* **7. Select Boot Environment:** in TrueOS®, boot environments are
+* **7. Select Boot Environment:** In |trueos|, boot environments are
   automatically created when the system updates and can also be
-  manually created using :ref:`Boot Environment Manager`. This allows
-  you to boot the system to the point in time before an update
+  manually created using the :ref:`Boot Environment Manager`. This
+  allows the system to boot to the point of time before an update
   occurred and can be used to recover from a failed update. Press
   either :kbd:`7` or :kbd:`e` to view the available boot environments.
-  Note that the first time the system boots, no additional boot
-  environments are yet available. Over time, this menu will populate
-  as boot environments are created.
-  
+
+.. tip:: The first time the system boots, no additional boot
+   environments are available. Over time, this menu will populate as
+   boot environments are created.
+
 .. _boot1b:
 
 .. figure:: images/boot1b.png
 
-The following boot options are available in the
-:numref:`Figure %s: Boot Options Menu <boot1b>`:
+   : Boot Options Menu
 
-* **3. ACPI Support:** toggles  power  management support which may be
-  useful for  certain BIOS's  and laptops. 
+Several boot options are available in the Boot Options Menu:
 
-* **4. Safe Mode:** select this option if the installation hangs when
-  probing hardware and option "3 ACPI Support" did not help. It will
-  boot with a forced PIO mode (disabling the use of DMA), disable
-  write caching for all IDE hard drives and CD ROM drives, and disable
-  the probing of EISA slots (as very few systems have them). 
+* **3. ACPI Support:** Toggles  power  management support which may be
+  useful for some BIOS's and laptops.
 
-* **5. Single User:** advanced users can select this option to fix
+* **4. Safe Mode:** Select this option if the installation hangs when
+  probing hardware and :guilabel:`3 ACPI Support` did not help. It will
+  boot with a forced PIO mode (disabling the use of DMA), disable write
+  caching for all IDE hard drives and CD ROM drives, and disable the
+  probing of EISA slots (as very few systems have them).
+
+* **5. Single User:** Advanced users can select this option to fix
   critical system failures.
 
-* **6. Verbose:** select this option if you would like to see more
-  detailed messages during the boot process. This can be useful when
-  troubleshooting a piece of hardware.
+* **6. Verbose:** Select this option to see more detailed messages
+  during the boot process. This can be useful when troubleshooting a
+  piece of hardware.
 
 .. _GRUB Boot Loader:
 
 GRUB Boot Loader
 ----------------
 
-If you customized the installation and selected the "GRUB" option for
+If the installation was customized with the :guilabel:`GRUB` option for
 the boot loader, it will instead load the menu shown in
-:numref:`Figure %s: GRUB Boot Menu <boot2>`.
+:numref:`Figure %s <boot2>`.
 
 .. _boot2:
 
 .. figure:: images/boot2.png
 
-This boot menu is used to display the entry for TrueOS®, an entry for
+   : GRUB Boot Menu
+
+This boot menu is used to display the entry for |trueos|, an entry for
 the screen which lists the available boot environments (these are
 automatically created when the system updates and can also be manually
 created using :ref:`Boot Environment Manager`), and any other
 operating systems installed on the system.
 
 By default, this menu will display for a few seconds before continuing
-to boot into TrueOS®. To pause this screen so that you can review its
-items, press any key (other than :kbd:`Enter`). To boot into a
-different operating system or boot environment, use your up and down
+to boot into |trueos|. To pause this screen to review its items, press
+any key (other than :kbd:`Enter`). To boot into a different operating
+system or boot environment, use the :kbd:`up` and :kbd:`down`
 arrows to select the desired entry then press :kbd:`Enter`.
 
-If you press :kbd:`Enter` when the "TrueOS" entry is highlighted, the
-TrueOS® boot options screen shown in
-:numref:`Figure %s:  TrueOS® Graphical Boot Menu Options <boot3>` will
-be displayed. 
+Press :kbd:`Enter` when the :guilabel:`TrueOS` entry is highlighted to
+see the |trueos| boot options screen, shown in
+:numref:`Figure %s <boot3>`.
 
 .. _boot3:
 
 .. figure:: images/boot3.png
 
-The following boot options are available: 
+   : TrueOS® Graphical Boot Menu Options
 
-* **Normal Bootup:** continues to boot TrueOS®. 
+Several boot options are available:
 
-* **Single User Mode:** advanced users can select this option to fix
+* **Normal Bootup:** Continues to boot |trueos|.
+
+* **Single User Mode:** Advanced users can select this option to fix
   critical system failures.
 
-* **Verbose Mode:** select this option if you would like to see more
-  detailed messages during the boot process. This can be useful when
-  troubleshooting a piece of hardware.
+* **Verbose Mode:** Select this option to see more detailed messages
+  during the boot process. This can be useful when troubleshooting a
+  piece of hardware.
 
-Use the arrow keys to select an option then press enter to boot using
-that option.
+Use the arrow keys to select an option, then press :kbd:`Enter`to boot
+using that option.
 
-This menu is provided by GRUB. If you are familiar with editing GRUB,
-you can press :kbd:`e` to access the GRUB editor or :kbd:`c` to access
-the GRUB command line.
+This menu is provided by GRUB. Press :kbd:`e` to access the GRUB editor
+or :kbd:`c` to access the GRUB command line. Familiarity with GRUB is
+recommended.
 
 .. index:: encryption
-.. _If you Encrypted Your Disks:
+.. _Encrypted Disks:
 
-If you Encrypted Your Disks
----------------------------
+Encrypted Disks
+---------------
 
-If you selected the "Encrypt disk with GELI" checkbox during
-installation, you will need physical access to the TrueOS® system when
-it boots. As the system starts to boot, it will display a message
-similar to the one shown in
-:numref:`Figure %s:  Input Password to Decrypt Master Key <encrypt1>`.
+If :guilabel:`Encrypt disk with GELI` was selected during installation,
+physical access to the |trueos| system when it boots is required. As the
+system starts to boot, it will display a message similar to the one
+shown in :numref:`Figure %s <encrypt1>`.
 
 .. _encrypt1:
 
 .. figure:: images/encrypt1.png
 
-The boot process will wait for you to input the password that you
-created in the installation screen shown in
-:numref:`Figure %s: Configure Encryption <install11b>`. If the correct
-password is typed in, the system will calculate the GELI encryption
-key, then continue to boot.
+   : Input Password to Decrypt Master Key
+
+The boot process will wait for the password created in the installation
+screen shown in :ref:`Configure Encryption <install11b>`. If the
+correct password is typed in, the system will calculate the GELI
+encryption key, then continue to boot.
 
 .. index:: video
 .. _Display Detection:
@@ -179,100 +183,92 @@ Display Detection
 
 The first time the boot completes, the post-installer configuration
 script will attempt to set the optimal display settings. A pop-up menu
-will either ask if you would like to accept the settings or indicate
-that it could not find the optimal settings. If you click "Yes" to
-accept the settings, TrueOS® will then proceed to the
-:ref:`Language Screen` so that you can perform the initial
-configuration of the system. 
+will either ask to accept the settings or indicate it could not find the
+optimal settings. Click :guilabel:`Yes` to accept the settings and
+|trueos| will proceed to the :ref:`Language Screen` so the system's
+initial configuration can continue.
 
-If the optimal display settings could not be determined, or if you
-select "No"in the "Confirm Resolution" screen when asked to confirm
-the display settings, the "Display Settings" screen shown in
-:numref:`Figure %s: Display Settings Wizard <display3>` will launch.
+If the optimal display settings could not be determined, or if
+:guilabel:`No` is selected in the :guilabel:`Confirm Resolution` screen,
+the :guilabel:`Display Settings` screen shown in
+:numref:`Figure %s <display3>` will launch.
 
-.. _display3: 
+.. _display3:
 
 .. figure:: images/display3.png
 
-This screen can be used to select the desired screen resolution, color
-depth, and video driver. If you select the "vesa" driver, it will
-always work but will provide sub-optimal performance. Click on the
-drop-down menu to select the driver that most closely matches your
-video card name.
+   : Display Settings Wizard
 
-You can also use the drop-down menus to change the screen resolution
-and color depth values. If the value you desire is not listed, it may
-be the selected driver does not support that resolution or depth.
+This screen can be used to select the desired screen resolution, color
+depth, and video driver. The :guilabel:`vesa` driver will always work
+but will provide sub-optimal performance. Click on the drop-down menu to
+select the driver that most closely matches your video card name.
+
+The drop-down menus can also be used to change the screen resolution
+and color depth values. If the desired value is not listed, the selected
+driver may not support that resolution or depth.
 
 Advanced users can select their monitor's horizontal sync and vertical
-refresh rate in the "Advanced" tab, seen in
-:numref:`Figure %s: Advanced Tab of Display Settings <display4>`.
+refresh rate in the :guilabel:`Advanced` tab, seen in
+:numref:`Figure %s <display4>`.
 
 .. _display4:
 
 .. figure:: images/display4.png
 
-Use caution and refer to your monitor's documentation if you make any
-changes here. If you are not sure what you are doing, leave the
-default values as-is.
+   : Advanced Tab of Display Settings
 
-If your computer is connected to two monitors, check the box "Enable
-Dual-Head support". 
+Use caution and refer to the connected monitor's documentation while
+making changes. If unsure what settings are required, it is recommended
+to leave the default values.
 
-When you are finished, click the "Apply" button for your settings to
-be tested. If anything goes wrong during testing, you should be taken
-back to the "Display Settings" screen so that you can try another
-setting. Once you are satisfied with the settings, click "Yes" when
-prompted to accept them.
+If the computer is connected to two monitors, check
+:guilabel:`Enable Dual-Head support`.
+
+When finished, click :guilabel:`Apply` for the settings to be tested. If
+anything goes wrong during testing, the system will return to the
+:guilabel:`Display Settings` screen in order for the user to select
+another setting. Once satisfied with the settings, click :guilabel:`Yes`
+when prompted to accept them.
 
 .. index:: troubleshooting
 .. _Display Troubleshooting:
 
-Display Troubleshooting 
+Display Troubleshooting
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are having problems with your display settings and would like to
-manually edit :file:`/etc/X11/xorg.conf` or run
-:command:`Xorg --config`, first tell the TrueOS® system to not
-automatically start X. To do so, add this temporary line to
-:file:`/etc/rc.conf`, then reboot the system::
+If problems exist with the display settings and manually editing
+:file:`/etc/X11/xorg.conf` or running :command:`Xorg --config` is
+necessary, first tell the |trueos| system to not automatically start X.
+To do this, add :command:`pcdm_enable="NO"` temporarily to
+:file:`/etc/rc.conf`, then reboot the system.
 
- pcdm_enable="NO"
-
-The system will reboot to a login prompt. After logging in, try the
+The system will reboot to a login prompt. After logging in, follow the
 instructions in the
-`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_ 
-to manually configure and test Xorg. Once you have a configuration that
-works for you, save it to :file:`/etc/X11/xorg.conf`. Then, remove that
-temporary line from :file:`/etc/rc.conf` and start PCDM::
+`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_
+to manually configure and test Xorg. Once a working configuration is
+found, save it to :file:`/etc/X11/xorg.conf`. Then, remove the
+temporary line shown above from :file:`/etc/rc.conf` and start PCDM with
+:command:`service pcdm start`.
 
- service pcdm start
+If the graphics white-out after a suspend or resume, run
+:command:`sysctl hw.acpi.reset_video=1` as the superuser.
 
-If your graphics white-out after a suspend or resume, try running this
-command as the superuser::
+If the problem is fixed, carefully add
+:command:`hw.acpi.reset_video=1` to :file:`/etc/sysctl.conf`.
 
- sysctl hw.acpi.reset_video=1
+If the monitor goes blank and does not come back, run
+:command:`xset -dpms` as the regular user account
 
-If that fixes the problem, carefully add this line to
-:file:`/etc/sysctl.conf`::
+If the problem is fixed, add :command:`xset -dpms` to the
+:file:`.xprofile` file in the user's home directory.
 
- hw.acpi.reset_video=1
-
-If the monitor goes blank and does not come back, try running this
-command as your regular user account::
-
- xset -dpms
-
-If that fixes the problem, add that line to the :file:`.xprofile` file
-in your home directory.
-
-If you change any display settings, click the "Apply" button for the
-settings to be tested. If anything goes wrong during testing, you will
-be taken back to the "Display Settings" screen so that you can try
-another setting. Once you are happy with the tested setting, click the
-"Yes" button to save the setting and to proceed. Alternately, click
-the "Skip" button if you prefer to configure the display settings at a
-later time. 
+If any display settings change, click :guilabel:`Apply` for the settings
+to be tested. If anything goes wrong during testing, the system will
+return to the :guilabel:`Display Settings` screen for the user to try
+another setting. Once satisfied with the tested setting, click
+:guilabel:`"Yes` to save the setting and proceed. Alternately, click
+:guilabel:`Skip` to configure the display settings later.
 
 .. index:: language
 .. _Language Screen:
@@ -280,24 +276,25 @@ later time.
 Language Screen
 ===============
 
-The language selection screen is seen in
-:numref:`Figure %s: Language Selection Screen <config1a>`. 
+The language selection screen is seen in :numref:`Figure %s <config1a>`.
 
 .. _config1a:
 
 .. figure:: images/config1a.png
 
-This allows you to select the language you will use to access the
+   : Language Selection Screen
+
+This allows for the selection of the language used to access the
 installed system. It also contains three icons from the installer
-screens so that you can:
+screens to enable:
 
-* read that screen's Help text 
+* Reading the screen's Help text.
 
-* use the onscreen keyboard 
+* Using the onscreen keyboard.
 
-* switch between the US keyboard layout and a user selected layout
+* Switching between the US keyboard layout and a user selected layout.
 
-Once you have made your selection, click "Next" to go to the next
+Once the selection is made, click :guilabel:`Next` to move to the next
 configuration screen.
 
 .. index:: time
@@ -306,27 +303,28 @@ configuration screen.
 Time Zone Selection Screen
 ==========================
 
-The next configuration screen, shown in
-:numref:`Figure %s: Select Time Zone <config2b>`, allows you to select
-your timezone.
+The next configuration screen, shown in :numref:`Figure %s <config2b>`,
+allows selection of the timezone.
 
 .. _config2b:
 
 .. figure:: images/config2b.png
 
-Use the drop-down menu to select the city closest to your location. If
-the system is connected to the Internet, the installer will most
-likely have the correct timezone already selected.
+   : Select Time Zone
+
+Use the drop-down menu to select the city closest to the system's
+location. If the system is connected to the Internet, the installer will
+attempt to detect the correct timezone.
 
 If the system is dual booting and the other operating system expects
-the BIOS to use UTC, also check the box "Set BIOS to UTC time".
+the BIOS to use UTC, also check :guilabel:`Set BIOS to UTC time`.
 
-A default system hostname will be created for you. If you wish t
-o change the default, type in the desired hostname in the "System
-Hostname" field. If the computer is a member of a DNS domain, you can
-also input the "Domain Name".
+A default system hostname will be created. To change the name, type the
+desired hostname in the :guilabel:`System Hostname` field. If the
+computer is a member of a DNS domain, the "Domain Name" is also an
+option.
 
-When finished, click "Next" to proceed to the next screen.
+When finished, click :guilabel:`Next` to proceed to the next screen.
 
 .. index:: password
 .. _Set Root Password Screen:
@@ -334,17 +332,18 @@ When finished, click "Next" to proceed to the next screen.
 Set Root Password Screen
 ========================
 
-This configuration screen, seen in
-:numref:`Figure %s: Set Root Password <config3a>`, requires you to set
-the root (administrative) password.
+This configuration screen, seen in :numref:`Figure %s <config3a>`,
+requires the root (administrative) password to be set.
 
 .. _config3a:
 
 .. figure:: images/config3a.png
 
-The password must be a minimum of 4 characters and you are required to
-type it in twice to confirm the password. Click the "Next" button when
-you are finished.
+   : Set Root Password
+
+The password must be a minimum of 4 characters and is required to be
+typed twice to confirm the password. Click :guilabel:`Next` when
+finished.
 
 .. index:: users
 .. _Create a User Screen:
@@ -352,77 +351,81 @@ you are finished.
 Create a User Screen
 ====================
 
-This screen is used to create the primary user account that will be
-used to login to the system. Set a good value for the password as that
-password is used whenever the system indicates that administrative
-access is required.
+This screen is used to create the primary user account used to login to
+the system. Create a strong password as the password is used whenever
+the system indicates administrative access is required.
 
-:numref:`Figure %s: User Creation Screen <config4a>` shows the
-configuration screen used to create the initial user account.
+:numref:`Figure %s <config4a>` shows the configuration screen used to
+create the initial user account.
 
 .. _config4a:
 
 .. figure:: images/config4a.png
 
-The "User Details" tab is used to create a login user. This screen
-requires you to complete the following fields: 
+   : User Creation Screen
 
-* **Name:** this value will be displayed in the login screen. It can
-  be your full name and can contain capital letters and spaces.
+The :guilabel:`User Details` tab is used to create a login user. This
+screen requires completing several fields:
 
-* **Username:** this is the name you will use when logging in. It can
-  not contain spaces and is case sensitive (e.g. *Kris* is a different
-  username than *kris*).
+* **Name:** This value displays in the login screen. It can be the
+  user's full name and can contain both capital letters and spaces.
 
-* **Password:** this is the password you will use when logging in. You
-  must type it twice in order to confirm it.
+* **Username:** This is the name used when logging in. It can **not**
+  contain spaces and **is** case sensitive (e.g. *Kris* is a different
+  username from *kris*).
 
-* **Specify UID:** by default, the user will be assigned the next
-  available User ID (UID). If you need to force a specific UID, you
-  can set it here. Note that you cannot set a UID lower than 1001 or
-  specify a UID that is already in use by another user account.
-  
-TrueOS® provides the ability to use a removable device, such as a USB
+* **Password:** This is the password to use when logging in. It must
+  be typed twice to confirm it.
+
+* **Specify UID:** By default, the user will be assigned the next
+  available User ID (UID). If a specific UID is required, it can be set
+  here.
+
+.. note:: A UID can not be set lower than 1001, and a UID already in use
+   by another account will also be unavailable.
+
+|trueos| provides the ability to use a removable device, such as a USB
 stick, as the user's encrypted home directory. This is useful in a
 multi-user or multi-computer environment as it provides the user with
 secure access to their encrypted files.  When a user is configured to
 use :ref:`PersonaCrypt`, their username will only appear in the login
-menu if the removable media associated with that TrueOS® system is
+menu if the removable media associated with that |trueos| system is
 inserted. They must input the password associated with the removable
 device in order to login.
 
 .. note:: When a user is configured to use a PersonaCrypt device, that
    user can not login using an unencrypted session on the same system.
    In other words, the PersonaCrypt username is reserved for
-   PersonaCrypt use. If you need to login to both encrypted and
+   PersonaCrypt use. If necessary to login to both encrypted and
    unencrypted sessions on the same system, create two different user
-   accounts, one for each type of session.
+   accounts; one for each type of session.
 
-The "PersonaCrypt" tab, shown in
-:numref:`Figure %s: Initializing PersonaCrypt for this User <persona1a>`,
-is used to initialize PersonaCrypt for the user.
+The :guilabel:`PersonaCrypt` tab, shown in
+:numref:`Figure %s <persona1a>`, is used to initialize PersonaCrypt for
+the user.
 
 .. _persona1a:
 
 .. figure:: images/persona1a.png
 
-Check the box "Initialize PersonaCrypt Device", insert a removable
-media that is large enough to hold the files you plan to store in your
-home directory, and click the "Select" button.
+   : Initializing PersonaCrypt for this User
 
-.. warning:: Make sure you do not have any files that you wish to keep
-   on the removable media. Initializing the media for PersonaCrypt
-   will format the device with ZFS and encrypt it with GELI, meaning
-   that any existing data will be destroyed.
-   
-Input and repeat the "Device Password" to associate with the device. A
-pop-up menu will indicate that the current contents of the device will
-be wiped. Click "Yes" to initialize the device.
+Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable
+media large enough to hold the files to store in the home directory,
+and click :guilabel:`Select`.
 
-If you share your computer with other users, you will be able to
-create additional login and :ref:`PersonaCrypt` accounts using
-:ref:`User Manager`. After you have created at least one user, click
-"Next" to continue to the next screen.
+.. warning:: Ensure there are no desired files on the removable media.
+   Initializing the media for PersonaCrypt will format the device with
+   ZFS and encrypt it with GELI, deleting any existing data.
+
+Input and repeat the :guilabel:`Device Password` to associate with the
+device. A pop-up menu will indicate the current contents of the device
+will be wiped. Click :guilabel:`Yes` to initialize the device.
+
+To share the computer with other users, create additional login and
+:ref:`PersonaCrypt` accounts using :ref:`User Manager`. After creating
+at least one user, click :guilabel:`Next` to continue to the next
+screen.
 
 .. index:: sound
 .. _Configure Audio Output:
@@ -431,19 +434,22 @@ Configure Audio Output
 ======================
 
 The next screen, seen in
-:numref:`Figure %s: Configure Audio Output <audio1a>`, is used to
+:numref:`Figure %s <audio1a>`, is used to
 configure the default audio output.
 
 .. _audio1a:
 
 .. figure:: images/audio1a.png
 
-Click the "Output Device" drop-down menu to select the desired sound
-device. You can click the "Test" button to verify the setting as a
-working configuration will result in a test sound. You can also use
-the "Testing Volume" slider to set the default volume level.
+   : Configure Audio Output
 
-You can view and edit these settings at a later time using the
+Click the :guilabel:`Output Device` drop-down menu to select the
+desired sound device. Click :guilabel:`Test` to verify the setting as a
+working configuration will result in a test sound. The
+:guilabel:`Testing Volume` slider can also be used to set the default
+volume level.
+
+All these settings can be viewed and edited at any time using the
 instructions in :ref:`Sound Mixer Tray`.
 
 .. index:: wireless
@@ -453,21 +459,22 @@ Connect to a Wireless Network
 =============================
 
 If the system has an active wireless interface, a screen similar to
-:numref:`Figure %s: Connect to a Wireless Network <config5>` will
-indicate the wireless networks which were automatically detected.
-Available networks will be ordered by signal strength.
+:numref:`Figure %s <config5>` will indicate the wireless networks which
+were automatically detected. Available networks will be ordered by
+signal strength.
 
 .. _config5:
 
 .. figure:: images/config5.png
 
-If you would like to set the default wireless connection, highlight
-the network that you would like to connect to. If the network requires
-a password, it will prompt you to input it and will indicate the type
-of security used on the network. If the network you wish to connect to
-does not appear, try clicking the "Rescan" button. If you are unable
-to connect, or you wish to configure the connection at a later time,
-refer to the instructions in :ref:`Network Manager`.
+   : Connect to a Wireless Network
+
+To set the default wireless connection, highlight the desired network.
+If the network requires a password, it will prompt for it and indicate
+the type of security used on the network. If the desired network does
+not appear, try clicking :guilabel:`Rescan`. If unable to connect or the
+connection needs be configured later, refer to the instructions in
+:ref:`Network Manager`.
 
 .. index:: SSH, IPv6
 .. _Enable Optional Services:
@@ -475,32 +482,38 @@ refer to the instructions in :ref:`Network Manager`.
 Enable Optional Services
 ========================
 
-The next screen is shown in
-:numref:`Figure %s: Optional Services <config6>`.
+:numref:`Figure %s <config6>` shows the next screen in the process.
 
 .. _config6:
 
 .. figure:: images/config6.png
 
-If you check the "Disable IPV6 (Requires Reboot)" box, the system will
-be configured to only support IPv4 addresses. The default is to
-support both IPv4 and IPv6 and to prefer IPv6 over IPv4. Note that
-this setting will not take affect until the next system reboot.
+   : Optional Services
 
-If you check the "Enable SSH" box, the SSH service will start and be
+Check :guilabel:`Disable IPV6 (Requires Reboot)` and the system will be
+configured to only support IPv4 addresses. The default is to support
+both IPv4 and IPv6 and prefer IPv6 over IPv4. 
+
+.. tip:: Altering this setting will not take affect until the next
+   system reboot.
+
+If :guilabel:`Enable SSH` is checked, the SSH service will start and be
 configured to start whenever the system boots. It will also create the
-firewall rules needed to allow incoming SSH connections to the TrueOS®
+firewall rules needed to allow incoming SSH connections to the |trueos|
 system. 
-**DO NOT check this box if you do not want to allow SSH connections to the system.**
 
-When finished, click the "Next" button. The screen in
-:numref:`Figure %s: Setup is Complete <config7>` indicates that the
-post-installation setup is complete. Click the "Finish" button to
-access the login menu.
+.. danger:: **Do not** check this box if SSH connections to the system
+   are undesired.
+
+When finished, click :guilabel:`Next`. The screen in
+:numref:`Figure %s <config7>` indicates the post-installation setup is
+complete. Click :guilabel:`Finish` to access the login menu.
 
 .. _config7:
 
 .. figure:: images/config7.png
+
+   : Setup is Complete
 
 .. index:: login
 .. _Logging In:
@@ -508,72 +521,81 @@ access the login menu.
 Logging In
 ==========
 
-Once you have finished setting up your system, you will be presented
-with the PCDM (PC-BSD® Display Manager) graphical login screen. An
-example is seen in
-:numref:`Figure %s: TrueOS® Login Screen <login1>`.
+Once finished setting up the system, the PCDM (|pcbsd| Display Manager)
+graphical login screen will display. An example is seen in
+:numref:`Figure %s <login1>`.
 
 .. _login1:
 
 .. figure:: images/login1.png
 
+   : TrueOS® Login Screen
+
 The hostname of the system will be displayed at the top of the login
 window. In this example, it is *trueos-5320*. This login screen lets
-you select or input the following: 
+has several configuration options:
 
-* **user:** the first time you login, the "Username" that you created
-  in the :ref:`Create a User Screen` will be the only available user
-  to login as. If you create additional users using
-  :ref:`User Manager`, they will be added to the drop-down menu so you
-  can choose which user to login as. PCDM will not let you login as
-  the *root* user. Instead, whenever you access a utility that
-  requires administrative access, TrueOS® will first ask you to input
-  the password of your login account.
+* **user:** Upon first login, the created **username** (from
+  :ref:`Create a User Screen`) will be the only available login user.
+  If additional users are created using :ref:`User Manager`, they will
+  be added to the drop-down menu for more login choices. PCDM will not
+  allow logging in as the *root* user. Instead, whenever a utility
+  requires administrative access, |trueos| will first ask for the
+  password of the login account.
 
-* **password:** input the password associated with the selected user.
+* **password:** Input the password associated with the selected user.
 
-* **desktop:** if you installed any additional desktops using
+* **desktop:** If any additional desktops are installed using
   :ref:`AppCafe®`, use the drop-down menu to select the desktop to log
   into.
 
-.. note:: If you created a PersonaCrypt user, you will need to insert
-   the PersonaCrypt device in order to login. As seen in the example
-   in :numref:`Figure %s: TrueOS® PersonaCrypt Login Screen <login5>`,
-   this will add an extra field to the login screen so that you can
-   input the password associated with the PersonaCrypt device.
+.. note:: If a PersonaCrypt user is active, insert the PersonaCrypt
+   device in order to login. As seen in :numref:`Figure %s <login5>`,
+   this will add an extra field to the login screen so the password
+   associated with the PersonaCrypt device can be typed.
 
 .. _login5:
 
 .. figure:: images/login5.png
 
-The toolbar at the bottom of the screen allows you to select the
-following options on a per-login basis:
+   : TrueOS® PersonaCrypt Login Screen
 
-* **Locale:** if you did not set the localization during installation or wish to change it, click this icon to set the locale for this login session.
+The toolbar at the bottom of the screen allows several options to be
+selected on a per-login basis:
 
-* **Keyboard Layout:** click this icon to change the keyboard layout
+* **Locale:** If the localization was not set during installation, or
+  needs to be changed, click this icon to set the locale for this login
+  session.
+
+* **Keyboard Layout:** Click this icon to change the keyboard layout
   for this login session. This will open the window seen in
-  :numref:`Figure %s: Configuring Keyboard Settings <keyboard1>`. 
+  :numref:`Figure %s <keyboard1>`.
 
 .. _keyboard1:
 
 .. figure:: images/keyboard1.png
 
-Click the "Keyboard model" drop-down menu to select the type of
-keyboard. Note that the default model of "Generic 104-key PC" does
-**not** support special keys such as multimedia or Windows keys. You
-will need to change this default to enable support for hot keys.
-This screen also allows you to select the "Key Layout" and "Variant".
-After making your selections, you can test them by typing some text
-into the "you may type into the space below..." field.
+   : Configuring Keyboard Settings
 
-* **Restart/Shut Down:** if you wish to restart or shutdown the system
-  without logging in, click the icon in the lower, far right corner.
-  This icon also allows you to "Change DPI" and to "Refresh PCDM".
-  
-Once you have made your selections, input the password associated with
-the selected user and press enter or click the blue arrow icon to
-login.
+Click the :guilabel:`Keyboard model` drop-down menu to select the type
+of keyboard.
+
+.. note:: The default model of "Generic 104-key PC" does **not** support
+   special keys such as multimedia or Windows keys. This default will
+   need to change to enable support for hot keys.
+
+This screen also allows selection of the :guilabel:`Key Layout` and
+:guilabel:`Variant`. After making any selections, test them by typing
+some text into the :guilabel:`you may type into the space below...`
+field.
+
+* **Restart/Shut Down:** To restart or shutdown the system without
+  logging in, click the icon in the lower-right corner. This icon also
+  allows to :guilabel:`Change DPI` and to :guilabel:`Refresh PCDM`.
+
+Once any selections are made, input the password associated with
+the selected user and press :kbd:`Enter` or click the
+:guilabel:`blue arrow` to login.
 
 .. index:: troubleshooting
 .. _Installation Troubleshooting:
@@ -581,68 +603,70 @@ login.
 Installation Troubleshooting
 ============================
 
-Installing TrueOS® is usually an easy process that "just works".
-However, sometimes you will run into a problem. This section will look
-at solutions to the most common installation problems.
+Installing |trueos| is usually very simple. However, sometimes problems
+will occur. This section will examine solutions to the most common
+installation problems.
 
-The TrueOS® installer creates a log which keeps a record of all the
-steps that are completed as well as any errors. When an installation
-error occurs, the TrueOS® installer will ask if you would like to
-generate an error report. If you click "Yes", a pop-up message will
-ask if you would like to save the error log to a USB stick. Type **y**
-and insert a FAT formatted USB thumb drive to copy the log.
+The |trueos| installer creates a log which keeps a record of all the
+completed steps as well as any errors. When an installation error
+occurs, the |trueos| installer will ask to generate an error report. If
+:guilabel:`Yes` is chosen, a pop-up message will ask to save the error
+log to a USB stick. Type :kbd:`y` and insert a FAT formatted USB thumb
+drive to copy the log.
 
-While in the installer, you can read this log to see what went wrong.
-Click the black "Emergency Shell and Utilities" icon, then select "shell" from the "PC-BSD Utility Menu".
-You can now read the log by typing this command::
+While in the installer, read this log to see what went wrong. Click the
+black :guilabel:`Emergency Shell and Utilities` icon, then select
+:guilabel:`shell` from the :guilabel:`|trueos| Utility Menu`. Read the
+log by typing :command:`more /tmp/.SysInstall.log`.
 
- more /tmp/.SysInstall.log
+If the error can not be fixed or believe an installation bug exists,
+send the log saved on the USB stick using the instructions in
+:ref:`Report a Bug`.
 
-If you can not figure out how to fix the error or believe that you
-have discovered an installation bug, send the log that was saved on
-the USB stick using the instructions in :ref:`Report a Bug`.
-
-If the installer does not make it to the initial GUI installer screen,
+If the installer does not arrive at the initial GUI installer screen,
 try unplugging as many devices as possible, such as webcams, scanners,
 printers, USB mice and keyboards. If this solves the problem, plug in
-one piece of hardware at a time, then reboot. This will help you
-pinpoint which device is causing the problem.
+one piece of hardware at a time, then reboot. This will help pinpoint
+which device is causing the problem.
 
-If your computer freezes while probing hardware and unplugging extra
+If the computer freezes while probing hardware and unplugging extra
 devices does not fix the problem, it is possible that the installation
-media is corrupt. If the :ref:`Data Integrity check` on the file you
-downloaded is correct, try burning the file again at a lower speed.
+media is corrupt. If the :ref:`Data Integrity check` on the downloaded
+file is correct, try burning the file again at a lower speed.
 
-If the system freezes and you suspect the video card to be the cause,
-review your system's BIOS settings. If there is a setting for video
+If the system freezes and the video card is suspected to be the cause,
+review the system's BIOS settings. If there is a setting for video
 memory, set it to its highest value. Also check to see if the BIOS is
 set to prefer built-in graphics or a non-existent graphics card. On
 some systems this is determined by the order of the devices listed; in
-this case, make sure that the preferred device is listed first. If you
-can not see your BIOS settings you may need to move a jumper or remove
-a battery to make it revert to the default of built-in graphics; check
-your manual or contact your manufacturer for details.
+this case, be sure the preferred device is listed first. If the BIOS
+settings are invisible, move a jumper or remove a battery to make it
+revert to the default built-in graphics; check the manual or contact
+the card manufacturer for details.
 
-A not uncommon cause for problems is the LBA (Logical Block
-Addressing) setting in the BIOS. If your PC is not booting up before
-or after installation, check your BIOS and turn LBA off (do not leave
-it on automatic).
+A common cause for problems is the LBA (Logical Block Addressing)
+setting in the BIOS. If the PC is not booting before or after
+installation, check the BIOS and turn LBA off (do not leave it on
+automatic).
 
-If the SATA settings in your BIOS are set to "compatibility" mode, try
-changing this setting to "AHCI". If the system hangs with a BTX error,
-try turning off AHCI in the BIOS.
+If the SATA settings in the BIOS are set to *compatibility* mode, try
+changing this setting to *AHCI*. If the system hangs with a BTX error,
+try turning off *AHCI* in the BIOS.
 
-If the USB keyboard is non-functional, check if there is an option in 
-your BIOS for "legacy support" in relation to the keyboard or to USB,
-or both. Enabling this feature in your BIOS may solve this issue.
+If the USB keyboard is non-functional, check if there is an option in
+the BIOS for *legacy support* in relation to the keyboard, USB,
+or both. Enabling this feature in the BIOS may solve this issue.
 
-If you boot the installer and receive a *mountroot>* command prompt,
-it may be due to a change in the location of the boot device. This can
+If the installer boots and a *mountroot>* command prompt appears, this
+may be due to a change in the location of the boot device. This can
 occur when the enumeration of a card reader changes. The solution is
-to enter *ufs:/dev/da1* at the prompt. Depending on the exact location
-of the boot media, it may be different than :file:`da1`. Type *?* at
-the prompt to display the available devices.
+to enter :command:`ufs:/dev/da1` at the prompt. Depending on the exact
+location of the boot media, it may be different from :file:`da1`. Type
+:kbd:`?` at the prompt to display the available devices.
 
-If none of the above has fixed your problem, search the
-`PC-BSD® forums <https://forums.pcbsd.org/>`_ to see if a solution
-exists, try a web search, or check the section on :ref:`Finding Help`. 
+If none of the above has fixed the problem, search the
+`TrueOS® sub-Reddit <https://www.reddit.com/r/TrueOS/>`_ or ask a
+question on the
+`TrueOS Gitter Channel <https://gitter.im/trueos/Lobby>`_. For
+additional communications options, check the section on
+:ref:`Finding Help`.

@@ -34,7 +34,6 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinxcontrib.httpdomain',
     'wikipedia',
-    'sphinx.ext.numfig'
 ]
 
 # -- Options for automatic Figure numbering
