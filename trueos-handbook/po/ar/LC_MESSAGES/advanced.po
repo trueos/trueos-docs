@@ -1217,19 +1217,6 @@ msgstr ""
 msgid ": Edit Menu"
 msgstr ""
 
-#: ../../advanced.rst:230
-msgid ""
-"This screen contains several options: .. CONTINUE BELOW * **disk:** Used to "
-"change the disk to install into. Selecting this"
-msgstr ""
-
-#: ../../advanced.rst:233
-msgid ""
-"option will re-open the screens shown in :ref:`Select Installation Disk "
-"<text3a>` through :ref:`Full Disk Encryption <text7a>`, and then return to "
-"this menu."
-msgstr ""
-
 #: ../../advanced.rst:237
 msgid ""
 "**storage pool:** Select this option if the system contains multiple disks "
@@ -1881,6 +1868,28 @@ msgid ""
 " sure to configure the server so installation files are accessible to the "
 "systems to install."
 msgstr ""
+
+#: ../../advanced.rst:230
+msgid "This screen contains several options:"
+msgstr ""
+
+#: ../../advanced.rst:232
+msgid ""
+"**disk:** Used to change the disk to install into. Selecting this option "
+"will re-open the screens shown in :ref:`Select Installation Disk <text3a>` "
+"through :ref:`Full Disk Encryption <text7a>`, and then return to this menu."
+msgstr ""
+
+#~ msgid ""
+#~ "This screen contains several options: .. CONTINUE BELOW * **disk:** Used to "
+#~ "change the disk to install into. Selecting this"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "option will re-open the screens shown in :ref:`Select Installation Disk "
+#~ "<text3a>` through :ref:`Full Disk Encryption <text7a>`, and then return to "
+#~ "this menu."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "If you prefer to perform an installation using an ncurses menu rather than a"

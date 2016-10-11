@@ -248,12 +248,6 @@ msgid ""
 "hardware."
 msgstr ""
 
-#: ../../postinstall.rst:158
-msgid ""
-"Use the arrow keys to select an option, then press :kbd:`Enter`to boot using"
-" that option."
-msgstr ""
-
 #: ../../postinstall.rst:161
 msgid ""
 "This menu is provided by GRUB. Press :kbd:`e` to access the GRUB editor or "
@@ -621,14 +615,6 @@ msgid ""
 "instructions in :ref:`Sound Mixer Tray`."
 msgstr ""
 
-#: ../../postinstall.rst:470
-msgid ""
-"If the system has an active wireless interface, a screen similar to "
-":numref:`Figure %s <config5>` will indicate the wireless networks which were"
-" automatically detected. Available networks will be ordered by signal "
-"strength."
-msgstr ""
-
 #: ../../postinstall.rst:479
 msgid ": Connect to a Wireless Network"
 msgstr ""
@@ -907,6 +893,32 @@ msgid ""
 "password is typed, the system will calculate the GELI encryption key, then "
 "continue to boot."
 msgstr ""
+
+#: ../../postinstall.rst:158
+msgid ""
+"Use the arrow keys to select an option, then press :kbd:`Enter` to boot "
+"using the highlighted option."
+msgstr ""
+
+#: ../../postinstall.rst:470
+msgid ""
+"If the system has an active wireless interface, a screen similar to "
+":numref:`Figure %s <config5>` will indicate the wireless networks "
+"automatically detected. Available networks will be ordered by signal "
+"strength."
+msgstr ""
+
+#~ msgid ""
+#~ "Use the arrow keys to select an option, then press :kbd:`Enter`to boot using"
+#~ " that option."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the system has an active wireless interface, a screen similar to "
+#~ ":numref:`Figure %s <config5>` will indicate the wireless networks which were"
+#~ " automatically detected. Available networks will be ordered by signal "
+#~ "strength."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "A system with a default install or the \"BSD\" option for the boot loader, "

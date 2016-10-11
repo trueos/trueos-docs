@@ -171,20 +171,20 @@ msgstr ""
 msgid "Help Menu"
 msgstr ""
 
-#: ../../support.rst:508
+#: ../../support.rst:503
 msgid ""
 "`Commits Mailing List <http://lists.pcbsd.org/mailman/listinfo/commits>`_"
 msgstr ""
 
-#: ../../support.rst:510
+#: ../../support.rst:505
 msgid "`Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_"
 msgstr ""
 
-#: ../../support.rst:512
+#: ../../support.rst:507
 msgid "`C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_"
 msgstr ""
 
-#: ../../support.rst:518
+#: ../../support.rst:513
 msgid "Become an Advocate"
 msgstr ""
 
@@ -569,14 +569,6 @@ msgid ""
 "check to see what other |trueos| utilities are using."
 msgstr ""
 
-#: ../../support.rst:393
-msgid ""
-"File menu icons are taken from the KDE Oxygen theme located in "
-":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
-"not have many different icons used for the same function. :numref:`Table &s "
-"<common icons>` lists the commonly used icons and their default file names."
-msgstr ""
-
 #: ../../support.rst:0
 msgid "Commonly Used File Menu Icons"
 msgstr ""
@@ -614,6 +606,57 @@ msgid ""
 "to this rule."
 msgstr ""
 
+#: ../../support.rst:0
+msgid "Shortcut Keys"
+msgstr ""
+
+#: ../../support.rst:0
+msgid "Hot Keys"
+msgstr ""
+
+#: ../../support.rst:501
+msgid "Developers will also find these resources helpful:"
+msgstr ""
+
+#: ../../support.rst:515
+msgid ""
+"So you love |trueos|? Why not tell your family, friends, fellow students and"
+" colleagues about it? You will not be the only one who prefers a virus-free,"
+" feature-rich, no-cost operating system. Here are some suggestions to get "
+"you started:"
+msgstr ""
+
+#: ../../support.rst:520
+msgid ""
+"Burn a couple of DVDs and pass them out. If your school or user group has an"
+" upcoming event where you can promote |trueos|, you can request additional "
+"DVDs from sales@pcbsd.com."
+msgstr ""
+
+#: ../../support.rst:524
+msgid ""
+"Consider giving a presentation about |trueos| at a local community event, "
+"conference, or online. Let us know about it and we will help you spread the "
+"word."
+msgstr ""
+
+#: ../../support.rst:528
+msgid ""
+"Write a personal blog detailing your journey from your first |trueos| "
+"install experience to your most recent accomplishment. The blog could also "
+"be used to teach or explain how to perform tasks on |trueos|. A regional "
+"language blog may help build the community in your area and to find others "
+"with similar interests."
+msgstr ""
+
+#: ../../support.rst:393
+msgid ""
+"File menu icons are taken from the KDE Oxygen theme located in "
+":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
+"not have many different icons used for the same function. :numref:`Table %s "
+"<common icons>` lists the commonly used icons and their default file names."
+msgstr ""
+
 #: ../../support.rst:429
 msgid ""
 "Many users benefit from keyboard shortcuts and we aim to make them available"
@@ -625,16 +668,8 @@ msgid ""
 " submenu entry and assigning a shortcut key. Be careful not to duplicate hot"
 " keys or shortcut keys. Every key in a menu and submenu should have a key "
 "assigned for ease of use and accessibility. :numref:`Table %s <shortcuts>` "
-"and :numref:`Table &s <hotkeys>` summarize the commonly used shortcut and "
+"and :numref:`Table %s <hotkeys>` summarize the commonly used shortcut and "
 "hot keys."
-msgstr ""
-
-#: ../../support.rst:0
-msgid "Shortcut Keys"
-msgstr ""
-
-#: ../../support.rst:0
-msgid "Hot Keys"
 msgstr ""
 
 #: ../../support.rst:476
@@ -646,53 +681,57 @@ msgid ""
 "permissions and **TrueOS-root** for applications which are started with root"
 " permissions via :command:`sudo`. Proper use prevents the directory where "
 "settings files are saved from being locked down by *root* applications, "
-"allowing user applications to save and load their settings. :numref:`Example"
-" &s <userpermissions>` and :numref:`Example &s <rootpermissions>` "
-"demonstrate how to use the QSettings class for each type of permission."
+"allowing user applications to save and load their settings. Examples 1 and 2"
+" demonstrate how to use the QSettings class for each type of permission."
 msgstr ""
 
-#: ../../support.rst:495
-msgid "**User Permission Settings**"
+#: ../../support.rst:487
+msgid "**Example 1: User Permission Settings**"
 msgstr ""
 
-#: ../../support.rst:504
-msgid "**Root Permission Settings**"
+#: ../../support.rst:494
+msgid "**Example 2: Root Permission Settings**"
 msgstr ""
 
-#: ../../support.rst:506
-msgid "Developers will also find these resources helpful:"
-msgstr ""
+#~ msgid ""
+#~ "File menu icons are taken from the KDE Oxygen theme located in "
+#~ ":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
+#~ "not have many different icons used for the same function. :numref:`Table &s "
+#~ "<common icons>` lists the commonly used icons and their default file names."
+#~ msgstr ""
 
-#: ../../support.rst:520
-msgid ""
-"So you love |trueos|? Why not tell your family, friends, fellow students and"
-" colleagues about it? You will not be the only one who prefers a virus-free,"
-" feature-rich, no-cost operating system. Here are some suggestions to get "
-"you started:"
-msgstr ""
+#~ msgid ""
+#~ "Many users benefit from keyboard shortcuts and we aim to make them available"
+#~ " in every |trueos| utility. Qt makes it easy to assign keyboard shortcuts. "
+#~ "For instance, to configure keyboard shortcuts that browse the **File** menu,"
+#~ " put :command:`&File` in the text slot for the menu entry when making the "
+#~ "application. Whichever letter has the :kbd:`&` symbol in front of it will "
+#~ "become the hot key. You can also make a shortcut key by clicking the menu or"
+#~ " submenu entry and assigning a shortcut key. Be careful not to duplicate hot"
+#~ " keys or shortcut keys. Every key in a menu and submenu should have a key "
+#~ "assigned for ease of use and accessibility. :numref:`Table %s <shortcuts>` "
+#~ "and :numref:`Table &s <hotkeys>` summarize the commonly used shortcut and "
+#~ "hot keys."
+#~ msgstr ""
 
-#: ../../support.rst:525
-msgid ""
-"Burn a couple of DVDs and pass them out. If your school or user group has an"
-" upcoming event where you can promote |trueos|, you can request additional "
-"DVDs from sales@pcbsd.com."
-msgstr ""
+#~ msgid ""
+#~ "When saving an application's settings, the QSettings class should be used if"
+#~ " possible. There are two different *organizations*, depending on whether the"
+#~ " application is running with *root* permissions or user permissions. Use "
+#~ "**TrueOS** for the organization for applications which run with user "
+#~ "permissions and **TrueOS-root** for applications which are started with root"
+#~ " permissions via :command:`sudo`. Proper use prevents the directory where "
+#~ "settings files are saved from being locked down by *root* applications, "
+#~ "allowing user applications to save and load their settings. :numref:`Example"
+#~ " &s <userpermissions>` and :numref:`Example &s <rootpermissions>` "
+#~ "demonstrate how to use the QSettings class for each type of permission."
+#~ msgstr ""
 
-#: ../../support.rst:529
-msgid ""
-"Consider giving a presentation about |trueos| at a local community event, "
-"conference, or online. Let us know about it and we will help you spread the "
-"word."
-msgstr ""
+#~ msgid "**User Permission Settings**"
+#~ msgstr ""
 
-#: ../../support.rst:533
-msgid ""
-"Write a personal blog detailing your journey from your first |trueos| "
-"install experience to your most recent accomplishment. The blog could also "
-"be used to teach or explain how to perform tasks on |trueos|. A regional "
-"language blog may help build the community in your area and to find others "
-"with similar interests."
-msgstr ""
+#~ msgid "**Root Permission Settings**"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "TrueOS® is a community project which relies on involvement from its users "
