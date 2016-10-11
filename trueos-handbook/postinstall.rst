@@ -146,8 +146,8 @@ Several boot options are available:
   during the boot process. This can be useful when troubleshooting a
   piece of hardware.
 
-Use the arrow keys to select an option, then press :kbd:`Enter`to boot
-using that option.
+Use the arrow keys to select an option, then press :kbd:`Enter` to boot
+using the highlighted option.
 
 This menu is provided by GRUB. Press :kbd:`e` to access the GRUB editor
 or :kbd:`c` to access the GRUB command line. Familiarity with GRUB is
@@ -459,9 +459,9 @@ Connect to a Wireless Network
 =============================
 
 If the system has an active wireless interface, a screen similar to
-:numref:`Figure %s <config5>` will indicate the wireless networks which
-were automatically detected. Available networks will be ordered by
-signal strength.
+:numref:`Figure %s <config5>` will indicate the wireless networks
+automatically detected. Available networks will be ordered by signal
+strength.
 
 .. _config5:
 

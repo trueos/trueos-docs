@@ -34,6 +34,9 @@ To access the utility shown in :numref:`Figure %s <flash>`, use
 :menuselection:`Browse Applications --> Adobe Flash Player preferences`
 or type :command:`flash-player-properties`.
 
+.. TODO (10/11 update) APPCAFE does not have flashplugin or
+   nspluginwrapper at the moment, will be added back in next update.
+
 .. _flash:
 
 .. figure:: images/flash.png
@@ -333,7 +336,7 @@ re-added by typing :command:`pc-mounttray &`.
    the section on :ref:`pc-sysconfig`.
 
 In the example shown in :numref:`Figure %s <mount1>`, a USB device and
-a music CD are currently inserted and the user has clicked
+a music CD are currently inserted and the user has hovered over
 :guilabel:`More Options` to view the available options.
 
 .. _mount1:
@@ -383,19 +386,20 @@ followed by `SMPlayer <http://smplayer.sourceforge.net/>`_. When closing
 the player, you can click :guilabel:`Play`, shown in :ref:`mount1`, to
 restart it.
 
-.. TODO PUT EXAMPLE IN HERE ON HOW TO BROWSE TO SHARE AND TYPES OF AVAILABLE SHARES
-   If any shares are available on the network, 
+If any network shares are available, :guilabel:`Network Shares` can be
+hovered over to see more options to browse, share, and view types of
+available shares.
 
 Many options are available in the :guilabel:`More Options` menu:
 
 * **View Disk Usage:** In the example shown in
-  :numref:`Figure %s <mount3>`, a UFS-formatted USB device is mounted at
-  :file:`/Media/STECH-1d`. The amount of disk space used by the system
-  hard drive and the USB drive is shown in both GB and as a percentage
-  of available disk space. The Mount Tray will turn yellow if disk space
-  is over 70% and red if disk space is over 90%. If the internal disk
-  drives are partitioned with any other filesystems, these will also
-  appear in the Mount Tray.
+  :numref:`Figure %s <mount3>`, an MSDOSFS-formatted USB device is
+  mounted at :file:`/media/lexar`. The amount of disk space used by the
+  system hard drive and the USB drive is shown in both GB and as a
+  percentage of available disk space. The Mount Tray will turn yellow
+  if disk space is over 70% and red if disk space is over 90%. If the
+  internal disk drives are partitioned with any other filesystems, these
+  will also appear in the Mount Tray.
 
   .. _mount3:
 
@@ -502,7 +506,7 @@ Files and File Sharing
 ======================
 
 Several file managers are available for installation using
-:ref:`AppCafe®`. :numref:`Table &s <filemanagers>` provides an overview
+:ref:`AppCafe®`. :numref:`Table %s <filemanagers>` provides an overview
 of several popular file managers. To launch an installed file manager,
 type its name as it appears in the :guilabel:`Application` column. To
 install the file manager, use :ref:`AppCafe®` to install the package
@@ -1434,10 +1438,11 @@ disable Tor mode at the user's request. While in Tor mode, the firewall
 will redirect all outgoing *port 80* (HTTP), *443* (HTTPS), and DNS
 traffic through the Tor transparent proxy network.
 
-To start tor mode, right-click the wireless icon in the system tray and
+To start tor mode, right-click the network icon in the system tray and
 check :guilabel:`Route through TOR`. You will be prompted to enter your
-password. The pop-up message shown in :numref:`Figure %s <tor1>` will
-appear.
+password via a pop-up shown in :numref:`Figure %s <tor1>`. If activated
+correctly, |trueos| will open a new browser window directed to
+https://check.torproject.org
 
 .. _tor1:
 
@@ -1867,12 +1872,12 @@ search for your device at the
    the "hplip" package is installed. Use :ref:`AppCafe®` to see if the
    driver is installed, and install it if not.
 
-:numref:`Figure %s <sane>` shows the XSane interface running on a
-|trueos| system attached to an HP OfficeJet.
+:numref:`Figure %s <sane1>` shows the XSane interface running on a
+|trueos| system attached to an HP DeskJet Printer/Scanner.
 
-.. _sane:
+.. _sane1:
 
-.. figure:: images/sane.png
+.. figure:: images/sane1.png
 
    : XSane Interface
 

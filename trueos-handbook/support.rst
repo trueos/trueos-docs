@@ -384,7 +384,7 @@ are needed, check to see what other |trueos| utilities are using.
 File menu icons are taken from the KDE Oxygen theme located in
 :file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we
 do not have many different icons used for the same function.
-:numref:`Table &s <common icons>` lists the commonly used icons and
+:numref:`Table %s <common icons>` lists the commonly used icons and
 their default file names.
 
 .. _common icons:
@@ -427,7 +427,7 @@ make a shortcut key by clicking the menu or submenu entry and assigning
 a shortcut key. Be careful not to duplicate hot keys or shortcut keys.
 Every key in a menu and submenu should have a key assigned for ease of
 use and accessibility. :numref:`Table %s <shortcuts>` and
-:numref:`Table &s <hotkeys>` summarize the commonly used shortcut and
+:numref:`Table %s <hotkeys>` summarize the commonly used shortcut and
 hot keys.
 
 .. _shortcuts:
@@ -472,27 +472,22 @@ run with user permissions and **TrueOS-root** for applications which are
 started with root permissions via :command:`sudo`. Proper use prevents
 the directory where settings files are saved from being locked down by
 *root* applications, allowing user applications to save and load their
-settings. :numref:`Example &s <userpermissions>` and
-:numref:`Example &s <rootpermissions>` demonstrate how to use the
-QSettings class for each type of permission.
+settings. Examples 1 and 2 demonstrate how to use the QSettings class
+for each type of permission.
 
-.. _userpermissions:
+**Example 1: User Permission Settings**
 
 .. code-block:: none
 
  (user application - C++ code): 
- QSettings settings("PCBSD", "myapplication");
+ QSettings settings("TRUEOS", "myapplication");
 
-**User Permission Settings**
-
-.. _rootpermissions:
+**Example 2: Root Permission Settings**
 
 .. code-block:: none
 
  (root application - C++ code):
- QSettings settings("PCBSD-root", "myapplication");
-
-**Root Permission Settings**
+ QSettings settings("TRUEOS-root", "myapplication");
 
 Developers will also find these resources helpful: 
 

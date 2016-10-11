@@ -219,7 +219,7 @@ If select :guilabel:`edit`, the menu shown in
    : Edit Menu
 
 This screen contains several options:
-.. CONTINUE BELOW
+
 * **disk:** Used to change the disk to install into. Selecting this
   option will re-open the screens shown in
   :ref:`Select Installation Disk <text3a>` through

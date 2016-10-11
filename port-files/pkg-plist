@@ -123,6 +123,10 @@ share/trueos/handbook/_images/luminapanelplugin8.png
 share/trueos/handbook/_images/luminapanelplugin9.png
 share/trueos/handbook/_images/luminapanelpluginmenu1.png
 share/trueos/handbook/_images/luminapanelpluginmenu2.png
+share/trueos/handbook/_images/mount1.png
+share/trueos/handbook/_images/mount2.png
+share/trueos/handbook/_images/mount3.png
+share/trueos/handbook/_images/mount4.png
 share/trueos/handbook/_images/network1.png
 share/trueos/handbook/_images/network10.png
 share/trueos/handbook/_images/network11.png
@@ -135,6 +139,7 @@ share/trueos/handbook/_images/network17.png
 share/trueos/handbook/_images/network2.png
 share/trueos/handbook/_images/network3.png
 share/trueos/handbook/_images/network4.png
+share/trueos/handbook/_images/network5.png
 share/trueos/handbook/_images/network6.png
 share/trueos/handbook/_images/network7.png
 share/trueos/handbook/_images/network8.png
@@ -150,6 +155,7 @@ share/trueos/handbook/_images/print8a.png
 share/trueos/handbook/_images/print9a.png
 share/trueos/handbook/_images/restore1.png
 share/trueos/handbook/_images/restore2.png
+share/trueos/handbook/_images/sane1.png
 share/trueos/handbook/_images/server2a.png
 share/trueos/handbook/_images/server3a.png
 share/trueos/handbook/_images/server4a.png
@@ -173,11 +179,13 @@ share/trueos/handbook/_images/text5a.png
 share/trueos/handbook/_images/text6a.png
 share/trueos/handbook/_images/text7a.png
 share/trueos/handbook/_images/text9a.png
+share/trueos/handbook/_images/tor1.png
 share/trueos/handbook/_images/translate1.png
 share/trueos/handbook/_images/translate2.png
 share/trueos/handbook/_images/translate3.png
 share/trueos/handbook/_images/translate4.png
 share/trueos/handbook/_images/translate5.png
+share/trueos/handbook/_images/translate6.png
 share/trueos/handbook/_images/translate7.png
 share/trueos/handbook/_images/translate8.png
 share/trueos/handbook/_images/update1.png
@@ -188,6 +196,7 @@ share/trueos/handbook/_images/user1.png
 share/trueos/handbook/_images/user2.png
 share/trueos/handbook/_images/user3.png
 share/trueos/handbook/_images/user4.png
+share/trueos/handbook/_images/user5.png
 share/trueos/handbook/_images/util1a.png
 share/trueos/handbook/_images/vbox1.png
 share/trueos/handbook/_images/vbox10.png
