@@ -83,7 +83,7 @@ browser. An example is seen in :numref:`Figure %s <translate1>`.
 
 .. figure:: images/translate1.png
 
-   : The TrueOS® Weblate Translation System
+   : TrueOS® Weblate Translation System
 
 Before editing a translation, first create a a login account and verify
 the activation email. Once logged in, click 
@@ -126,7 +126,7 @@ English.
 
 .. figure:: images/translate4.png
 
-   : Select a Project
+   : Project Selection
 
 To start translating, click a component name. In the screen shown in
 :numref:`Figure %s <translate5>`, select a language and click
@@ -136,7 +136,7 @@ To start translating, click a component name. In the screen shown in
 
 .. figure:: images/translate5.png  
 
-   : Select a Language to Translate
+   : Translation Languages
 
 In the example shown in :numref:`Figure %s <translate6>`, the user has
 selected to translate the *pc-installgui* component into the Spanish
@@ -150,7 +150,7 @@ to translate.
 
 .. figure:: images/translate6.png
 
-   : Using the Translation Editor
+   : Translation Editor
 
 If assistance is needed with either a translation or the Weblate system,
 ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. 
@@ -205,17 +205,17 @@ remove the asterisks.
 
 .. figure:: images/translate7.png
 
-   : Do Not Remove Formatting Characters
+   : Formatting Characters - Do Not Remove
 
 .. _translate8:
 
 .. figure:: images/translate8.png
 
-   : Another Formatting Characters Example
+   : More Formatting Characters
 
-If you would like to build a local HTML copy that includes the latest
-translations, either for personal use or to visualize the translated
-Guide, type these commands from the command line:
+To build a local HTML copy that includes the latest translations, either
+for personal use or to visualize the translated Guide, type these
+commands from the command line:
 
 .. note:: These instructions are for a |trueos| system.
 
@@ -503,10 +503,10 @@ Developers will also find these resources helpful:
 Become an Advocate
 ==================
 
-So you love |trueos|? Why not tell your family, friends, fellow 
-students and colleagues about it? You will not be the only one who
-prefers a virus-free, feature-rich, no-cost operating system. Here are
-some suggestions to get you started:
+Love |trueos|? Why not tell your family, friends, fellow students and
+colleagues about it? You will not be the only one who prefers a
+virus-free, feature-rich, and no-cost operating system. Here are some
+suggestions for getting started:
 
 * Burn a couple of DVDs and pass them out. If your school or user
   group has an upcoming event where you can promote |trueos|, you can

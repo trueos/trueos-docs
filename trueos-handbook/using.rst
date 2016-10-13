@@ -30,18 +30,15 @@ websites interact with your browser using Adobe Flash. Many of the
 same configurations can be done via right-click within an active flash
 object in a web browser.
 
-To access the utility shown in :numref:`Figure %s <flash>`, use
+To access the utility shown in :numref:`Figure %s <flash1>`, use
 :menuselection:`Browse Applications --> Adobe Flash Player preferences`
 or type :command:`flash-player-properties`.
 
-.. TODO (10/11 update) APPCAFE does not have flashplugin or
-   nspluginwrapper at the moment, will be added back in next update.
+.. _flash1:
 
-.. _flash:
+.. figure:: images/flash1.png
 
-.. figure:: images/flash.png
-
-   : Flash Player Configuration Utility
+   : Flash Player Configuration
 
 The options available in each tab and when to use them are described on
 the Adobe website:
@@ -343,7 +340,7 @@ a music CD are currently inserted and the user has hovered over
 
 .. figure:: images/mount1.png
 
-   : Mount Tray Example
+   : Mount Tray
 
 When first inserting a USB drive, a :guilabel:`New Device` message will
 appear in the system tray. Click the :guilabel:`Mount Tray` icon, then
@@ -405,7 +402,7 @@ Many options are available in the :guilabel:`More Options` menu:
 
   .. figure:: images/mount3.png
 
-  : View Disk Usage Using Mount Tray
+  : Using Mount Tray to View Disk Usage
 
 * **Rescan Devices:** Click this option if an entry for a newly inserted
   device does not automatically appear.
@@ -429,7 +426,7 @@ Many options are available in the :guilabel:`More Options` menu:
 
   .. figure:: images/mount4.png
 
-  : Configure Disk Space Check
+  : Configuring Disk Space Checks
 
 * **Close Tray:** Click this option to remove Mount Tray from the system
   tray.
@@ -516,7 +513,7 @@ file manager's capabilities, start with the URL listed in its
 
 .. _filemanagers:
 
-.. table:: Available File Managers
+.. table:: : Available File Managers
 
    +-----------------+--------------+-------------------------------------------------------------+
    | **Application** | **Install**  | **Screenshots**                                             |
@@ -550,7 +547,7 @@ structure in more detail.
 
 .. _dirstructure:
 
-.. table:: |TrueOS| Directory Structure
+.. table:: : |TrueOS| Directory Structure
 
    +-------------------------+------------------------------------------+
    | **Directory**           | **Contents**                             |
@@ -642,7 +639,7 @@ available utilities.
 
 .. _windows shares utils:
 
-.. table:: Utilities that Support Windows Shares
+.. table:: : Utilities that Support Windows Shares
 
    +-----------------+--------------+-----------------------------------------------------+
    | **Application** | **Install**  | **How to Access Existing Shares**                   |
@@ -702,7 +699,7 @@ from one disk. :guilabel:`Online` indicates the pool is healthy.
 
 .. figure:: images/disk2.png
 
-   : Viewing the Status of the ZFS Pool
+   : ZFS Pool Status
 
 Right-click the pool name to view a number of options:
 
@@ -756,7 +753,7 @@ dataset is using.
 
 .. figure:: images/disk3.png
 
-   : Viewing the System's ZFS Datasets
+   : ZFS Datasets
 
 The name of the pool in this example is *tank1*. If the system has
 multiple pools, click the :guilabel:`green arrow` to select the desired
@@ -775,7 +772,7 @@ options:
 
   .. figure:: images/disk4.png
 
-  : Creating a New ZFS Dataset
+  : Creating New ZFS Dataset
 
 * **Create a clone dataset:** Creates a copy of the dataset.
 
@@ -868,7 +865,7 @@ connection speed, MAC address, and type of wireless device.
 
 .. figure:: images/network1.png
 
-   : Wireless Information in System Tray
+   : System Tray Wireless Information
 
 If you right-click the wireless icon, a list of detected wireless
 networks will appear. Click the name of a network to associate with it.
@@ -958,7 +955,7 @@ understanding of how to input an appropriate replacement address.
 
 .. figure:: images/network4.png
 
-   : Advanced Tab of an Ethernet Interface's Network Settings
+   : Ethernet Interface Network Settings - Advanced
 
 The :guilabel:`Info` tab, seen in :numref:`Figure %s <network5>`,
 displays the current network address settings and some traffic
@@ -968,7 +965,7 @@ statistics.
 
 .. figure:: images/network5.png
 
-   : Info Tab of an Ethernet Interface's Network Settings
+   : Ethernet Interface Network Settings - Info
 
 If any changes are made within any of the tabs, click :guilabel:`Apply`
 to activate them. Click :guilabel:`OK` when finished to return to the
@@ -1108,7 +1105,7 @@ allows configuring several options:
 
 .. figure:: images/network11.png
 
-   : Advanced Tab of a Wireless Interface
+   : Wireless Interface - Advanced
 
 The :guilabel:`Info` tab, seen in :numref:`Figure %s <network12>`, shows
 the current network status and statistics for the wireless interface.
@@ -1117,7 +1114,7 @@ the current network status and statistics for the wireless interface.
 
 .. figure:: images/network12.png
 
-   : Info Tab of a Wireless Interface
+   : Wireless Interface - Info
 
 .. index:: network
 .. _Network Configuration (Advanced):
@@ -1135,7 +1132,7 @@ highlighted in the :guilabel:`Devices` tab.
 
 .. figure:: images/network13.png
 
-   : Network Configuration (Advanced) tab
+   : Network Configuration - Advanced
 
 If the interface receives its IP address information from a DHCP
 server, this screen allows viewing of the received DNS information. To
@@ -1248,7 +1245,7 @@ Right-click the entry for a wireless device, as seen in
 
 .. figure:: images/network15.png
 
-   : Setup Access Point Option
+   : Setup Access Point
 
 :numref:`Figure %s <network16>` shows the configuration screen if
 :guilabel:`Setup Access Point` is selected.
@@ -1705,7 +1702,7 @@ finished it will display a screen similar to
 
 .. figure:: images/print5a.png
 
-   : Select a Print Device
+   : Print Device Selection
 
 In this example, the wizard has found the HP DeskJet 3630 printer on
 both the USB port (first entry) and the wireless network (second entry).
@@ -1718,7 +1715,7 @@ successful, it will display the screen shown in
 
 .. figure:: images/print6a.png
 
-   : Describe Printer Screen
+   : Describe Printer
 
 This screen automatically fills out the printer model series, a
 description, and the type of connection. If desired, add a descriptive

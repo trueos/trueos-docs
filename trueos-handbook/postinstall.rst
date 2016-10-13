@@ -133,7 +133,7 @@ see the |trueos| boot options screen, shown in
 
 .. figure:: images/boot3.png
 
-   : TrueOS® Graphical Boot Menu Options
+   : |trueos| Graphical Boot Menu Options
 
 Several boot options are available:
 
@@ -168,7 +168,7 @@ shown in :numref:`Figure %s <encrypt1>`.
 
 .. figure:: images/encrypt1.png
 
-   : Input Password to Decrypt Master Key
+   : Master Key Decryption
 
 The boot process will wait for the password created in the installation
 screen shown in :ref:`Configure Encryption <install11b>`. If the
@@ -216,7 +216,7 @@ refresh rate in the :guilabel:`Advanced` tab, seen in
 
 .. figure:: images/display4.png
 
-   : Advanced Tab of Display Settings
+   : Advanced Display Settings
 
 Use caution and refer to the connected monitor's documentation while
 making changes. If unsure what settings are required, it is recommended
@@ -282,7 +282,7 @@ The language selection screen is seen in :numref:`Figure %s <config1a>`.
 
 .. figure:: images/config1a.png
 
-   : Language Selection Screen
+   : Language Selection
 
 This allows for the selection of the language used to access the
 installed system. It also contains three icons from the installer
@@ -310,7 +310,7 @@ allows selection of the timezone.
 
 .. figure:: images/config2b.png
 
-   : Select Time Zone
+   : Time Zone Selection
 
 Use the drop-down menu to select the city closest to the system's
 location. If the system is connected to the Internet, the installer will
@@ -339,7 +339,7 @@ requires the root (administrative) password to be set.
 
 .. figure:: images/config3a.png
 
-   : Set Root Password
+   : Root Password Creation
 
 The password must be a minimum of 4 characters and is required to be
 typed twice to confirm the password. Click :guilabel:`Next` when
@@ -362,7 +362,7 @@ create the initial user account.
 
 .. figure:: images/config4a.png
 
-   : User Creation Screen
+   : User Creation
 
 The :guilabel:`User Details` tab is used to create a login user. This
 screen requires completing several fields:
@@ -408,7 +408,7 @@ the user.
 
 .. figure:: images/persona1a.png
 
-   : Initializing PersonaCrypt for this User
+   : User's PersonaCrypt Initialization
 
 Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable
 media large enough to hold the files to store in the home directory,
@@ -467,7 +467,7 @@ strength.
 
 .. figure:: images/config5.png
 
-   : Connect to a Wireless Network
+   : Wireless Network Connections
 
 To set the default wireless connection, highlight the desired network.
 If the network requires a password, it will prompt for it and indicate
@@ -513,7 +513,7 @@ complete. Click :guilabel:`Finish` to access the login menu.
 
 .. figure:: images/config7.png
 
-   : Setup is Complete
+   : Setup Complete
 
 .. index:: login
 .. _Logging In:
@@ -529,7 +529,7 @@ graphical login screen will display. An example is seen in
 
 .. figure:: images/login1.png
 
-   : TrueOS® Login Screen
+   : |trueos| Login
 
 The hostname of the system will be displayed at the top of the login
 window. In this example, it is *trueos-5320*. This login screen lets
@@ -558,7 +558,7 @@ has several configuration options:
 
 .. figure:: images/login5.png
 
-   : TrueOS® PersonaCrypt Login Screen
+   : |trueos| PersonaCrypt Login
 
 The toolbar at the bottom of the screen allows several options to be
 selected on a per-login basis:
@@ -575,14 +575,14 @@ selected on a per-login basis:
 
 .. figure:: images/keyboard1.png
 
-   : Configuring Keyboard Settings
+   : Keyboard Settings
 
 Click the :guilabel:`Keyboard model` drop-down menu to select the type
 of keyboard.
 
-.. note:: The default model of "Generic 104-key PC" does **not** support
-   special keys such as multimedia or Windows keys. This default will
-   need to change to enable support for hot keys.
+.. note:: The default model of :guilabel:`Generic 104-key PC` does
+   **not** support special keys such as multimedia or Windows keys. This
+   default will need to change to enable support for hot keys.
 
 This screen also allows selection of the :guilabel:`Key Layout` and
 :guilabel:`Variant`. After making any selections, test them by typing
@@ -596,6 +596,9 @@ field.
 Once any selections are made, input the password associated with
 the selected user and press :kbd:`Enter` or click the
 :guilabel:`blue arrow` to login.
+
+.. tip:: It is possible to change keyboard layouts during an active
+   desktop session using the included :guilabel:`fcitx` utility
 
 .. index:: troubleshooting
 .. _Installation Troubleshooting:

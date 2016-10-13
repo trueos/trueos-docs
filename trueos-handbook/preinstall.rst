@@ -250,7 +250,7 @@ and a 100 MB system partition.
 
 .. figure:: images/partition1.png
 
-   : Viewing Disk Layout in Disk Management
+   : Disk Layout in Disk Management
 
 Since the three Windows partitions fill the entire disk, the data
 partition must be shrunk to create space to install |trueos|.
@@ -262,7 +262,7 @@ and select :guilabel:`Shrink Volume`, as shown in
 
 .. figure:: images/partition2.png
 
-   : Shrink Volume Menu Selection 
+   : Shrink Volume Menu Selection
 
 Wait as the volume is queried for available shrink space. The results
 are shown in :numref:`Figure %s <shrink1>`.
@@ -284,7 +284,7 @@ space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
 
 .. figure:: images/shrink2.png
 
-   : Disk Now Has Free Space
+   : Disk with Free Space
 
 .. warning:: It is important to **not** choose to install |trueos| into
    any of the three Windows partitions at the
@@ -394,7 +394,7 @@ downloaded file.
 
 .. figure:: images/checksum.png
 
-   : Verifying a Checksum
+   : Checksum Verification
 
 Once the file is selected, click :guilabel:`Open` to calculate the
 checksums. It may take a minute or so, depending upon the size of the
@@ -517,7 +517,7 @@ drive and select its drive letter (in this example, drive **D**). Click
 
 .. figure:: images/writer1.png
 
-   : Using Win32 Disk Imager to Write the Image
+   : Write an Image using Win32 Disk Imager
 
 To burn the :file:`.iso` file on Mac OS X, insert a USB stick and open
 Terminal. Run :command:`diskutil list` to discover the device name of
@@ -618,7 +618,7 @@ in :numref:`Figure %s <vbox1>`.
 
 .. figure:: images/vbox1.png
 
-   : Initial VirtualBox Screen
+   : VirtualBox Menu
 
 Click :guilabel:`New` to start the new virtual machine wizard and
 display the screen in :numref:`Figure %s <vbox2>`.
@@ -627,8 +627,7 @@ display the screen in :numref:`Figure %s <vbox2>`.
 
 .. figure:: images/vbox2.png
 
-   : Type in a Name and Select the Operating System for the New Virtual
-   Machine
+   : Create Virtual Machine - Name, Type, and Version
 
 Enter a name for the virtual machine; it can be anything which makes
 sense to you. Click the :guilabel:`Operating System` drop-down menu and
@@ -640,7 +639,7 @@ screen in :numref:`Figure %s <vbox3>`.
 
 .. figure:: images/vbox3.png
 
-   : Select the Amount of Memory Reserved for the Virtual Machine
+   : Virtual Machine Reserved Memory
 
 The base memory size must be changed to **at least 1024 MB.** If the
 system has a lot of RAM, use more. Any number within the green area is
@@ -652,8 +651,7 @@ screen in :numref:`Figure %s <vbox4>`.
 
 .. figure:: images/vbox4.png
 
-   : Select Whether to Use an Existing or Create a New Virtual Hard
-   Drive
+   : Virtual Hard Drive - New or Existing
 
 This screen is used to create the virtual hard drive, or the amount of
 disk space available to the virtual machine. If this is your first
@@ -672,7 +670,7 @@ virtual machines.
 
 .. figure:: images/vbox5.png
 
-   : Select the Hard Drive Type
+   : Hard Drive Type
 
 Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
 :numref:`Figure %s <vbox6>`.
@@ -681,7 +679,7 @@ Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
 
 .. figure:: images/vbox6.png
 
-   : Select the Storage Type
+   : Storage Type
 
 Now choose whether to have :guilabel:`Dynamically allocated` or
 :guilabel:`Fixed size` storage. The first option uses disk space as
@@ -696,7 +694,7 @@ the screen in :numref:`Figure %s <vbox7>` will display.
 
 .. figure:: images/vbox7.png
 
-   : Select the File Name and Size of the Virtual Disk
+   : Virtual Disk - File Name and Size
 
 This screen is used to set the size (or upper limit) of the virtual
 machine. If planning to install |trueos| into the virtual machine,
@@ -715,7 +713,7 @@ seen in the example in :numref:`Figure %s <vbox8>`.
 
 .. figure:: images/vbox8.png
 
-   : The New Virtual Machine
+   : New Virtual Machine "Test"
 
 In order to use the network card, configure bridging on the virtual
 machine. To do this, go to :menuselection:`Settings --> Network`. In
@@ -730,7 +728,7 @@ of :file:`re0`.
 
 .. figure:: images/vbox9.png
 
-   : Configuring a Bridged Adapter in VirtualBox
+   : VirtualBox Bridged Adapter Configuration
 
 Before starting the virtual machine, configure it to use the
 installation media. Click the :guilabel:`Storage` hyperlink in the right
@@ -740,7 +738,7 @@ frame to access the storage screen seen in :numref:`Figure %s <vbox10>`.
 
 .. figure:: images/vbox10.png
 
-   : The Storage Settings of the Virtual Machine
+   : Virtual Machine Storage Settings
 
 Double-click the word :guilabel:`Empty`, which represents the DVD
 reader. To access the |trueos| installer from the DVD reader,

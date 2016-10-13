@@ -105,12 +105,10 @@ ensure a speedy response:
   adding a comment or creating a new report does require signing into
   the website.
 
-* To create a new bug report, click
-  :menuselection:`Issues --> New Issue` within the repository.
-  :numref:`Figure %s <bug1>` shows an example from within the
-  "trueos-utils-qt5" repository.
-
-.. TODO update bug1 with an example from the base trueos or lumina repos
+* To create a new bug report, navigate to the 
+  `trueos-core repository <https://github.com/trueos/trueos-core>`_ and
+  press :menuselection:`Issues --> New Issue` within the repository.
+  :numref:`Figure %s <bug1>` shows the creation of a new bug report.
   
 .. _bug1:
 
@@ -118,7 +116,7 @@ ensure a speedy response:
    :scale: 100%
 
    : Creating a Bug Report
-
+   
 * Write a brief but descriptive title which includes the error. Ideally,
   the title is short (8 words or less) and contains key words about the
   error so the bug report is easily found with the search tool.

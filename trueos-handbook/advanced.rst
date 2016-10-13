@@ -42,7 +42,7 @@ in :numref:`Figure %s <text2a>`.
 
 .. figure:: images/text2a.png
 
-   : Select Desktop or Server
+   : Desktop or Server
 
 After choosing to install a desktop, the |lumina| desktop will be
 installed and configured. After the desktop installation is complete,
@@ -63,7 +63,7 @@ display the available disks on the system. In the example shown in
 
 .. figure:: images/text3a.png
 
-   : Select Installation Disk
+   : Installation Disk
 
 Select the disk to install into and press :kbd:`Enter`. In the next
 screen, the installer will display all available primary or GPT
@@ -78,7 +78,7 @@ installing to the entire disk.
 
 .. figure:: images/text4a.png
 
-   : Select Partition
+   : Partition
 
 The next screen, shown in :numref:`Figure %s <text5a>`, is used to
 select the type of disk format. If the installation disk or partition is
@@ -91,7 +91,7 @@ boot after selecting :guilabel:`GPT`, select :guilabel:`MBR` instead.
 
 .. figure:: images/text5a.png
 
-   : Select Disk Format
+   : Disk Format
 
 The next screen, shown in :numref:`Figure %s <text6a>`, is used to
 select the boot manager.
@@ -100,7 +100,7 @@ select the boot manager.
 
 .. figure:: images/text6a.png
 
-   : Select Boot Manager
+   : Boot Manager
 
 The default is to use :guilabel:`BSD` as it provides native support for
 boot environments. While :guilabel:`GRUB` provides some boot environment
@@ -372,7 +372,7 @@ then click :guilabel:`Next` again to see the screen shown in
 
 .. figure:: images/server2a.png
 
-   : Set the Root Password
+   : Root Password Creation
 
 Input and confirm the root password then click :guilabel:`Next` to
 proceed to the screen shown in :numref:`Figure %s <server3a>`.
@@ -381,7 +381,7 @@ proceed to the screen shown in :numref:`Figure %s <server3a>`.
 
 .. figure:: images/server3a.png
 
-   : Create the Primary User Account
+   : Primary User Account Creation
 
 For security reasons, do not login as the *root* user. The wizard
 requires creating a primary user account used to login to the server.
@@ -410,7 +410,7 @@ When finished, click :guilabel:`Next` to proceed to the screen shown in
 
 .. figure:: images/server4a.png
 
-   : Set the Hostname
+   : Hostname Creation
 
 Input the system's hostname. If using :command:`ssh` to connect to the
 system, check :guilabel:`Enable remote SSH login`. Click
@@ -421,7 +421,7 @@ system, check :guilabel:`Enable remote SSH login`. Click
 
 .. figure:: images/server5a.png
 
-   : Configure the Network
+   : Network Configuration
 
 Use the :guilabel:`Network Interface` drop-down menu to choose the
 desired interface:
@@ -444,7 +444,7 @@ the screen shown in :numref:`Figure %s <server6a>`.
 
 .. figure:: images/server6a.png
 
-   : Install Ports
+   : Ports Installation
 
 To install the FreeBSD ports collection, check
 :guilabel:`Install ports tree` then click :guilabel:`Finish` to exit the
@@ -613,7 +613,7 @@ summarized in :numref:`Table %s <installvariables>`.
 
 .. _installvariables:
 
-.. table:: Available Variables for Customizing a TrueOS® Installation
+.. table:: Customizing a TrueOS® Installation
 
    +----------------------------+----------------------------+-------------------------------------+
    | Variable                   | Options                    | Description                         |
@@ -895,7 +895,7 @@ file.
 
 .. _Automated Variables:
 
-.. table:: Additional Variables for Automated Installations
+.. table:: Automated Installation Variables
 
    +-----------------+----------------------------+------------------------------------+
    | Variable        | Options                    | Description                        |

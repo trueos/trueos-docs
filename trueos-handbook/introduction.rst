@@ -81,25 +81,25 @@ in :numref:`Table %s <typ conv>`:
 
 .. _typ conv:
 
-.. table:: : Text Format Examples
+.. table:: : Text Formatting Examples
 
-   +----------------------------------------------------------------+---------------------------------------------------+
-   | Item                                                           | Visual Example                                    |
-   +================================================================+===================================================+
-   | Graphical elements: buttons, icons, fields, columns, and boxes | Click the :guilabel:`Import CA` button.           |
-   +----------------------------------------------------------------+---------------------------------------------------+
-   | Menu selections                                                | Select :menuselection:`System --> Information`.   |
-   +----------------------------------------------------------------+---------------------------------------------------+
-   | Commands                                                       | Use the :command:`scp` command.                   |
-   +----------------------------------------------------------------+---------------------------------------------------+
-   | File names and volume and dataset names                        | Locate the :file:`/etc/rc.conf` file.             |
-   +----------------------------------------------------------------+---------------------------------------------------+
-   | Keyboard keys                                                  | Press the :kbd:`Enter` key.                       |
-   +----------------------------------------------------------------+---------------------------------------------------+
-   | Important points                                               | **This is important.**                            |
-   +----------------------------------------------------------------+---------------------------------------------------+
-   | Values entered into fields, or device names                    | Enter *127.0.0.1* in the address field.           |
-   +----------------------------------------------------------------+---------------------------------------------------+
+   +----------------------------------------------------------------+-------------------------------------------------+
+   | Item                                                           | Visual Example                                  |
+   +================================================================+=================================================+
+   | Graphical elements: buttons, icons, fields, columns, and boxes | Click the :guilabel:`Import CA` button.         |
+   +----------------------------------------------------------------+-------------------------------------------------+
+   | Menu selections                                                | Select :menuselection:`System --> Information`. |
+   +----------------------------------------------------------------+-------------------------------------------------+
+   | Commands                                                       | Use the :command:`scp` command.                 |
+   +----------------------------------------------------------------+-------------------------------------------------+
+   | File names and volume and dataset names                        | Locate the :file:`/etc/rc.conf` file.           |
+   +----------------------------------------------------------------+-------------------------------------------------+
+   | Keyboard keys                                                  | Press the :kbd:`Enter` key.                     |
+   +----------------------------------------------------------------+-------------------------------------------------+
+   | Important points                                               | **This is important.**                          |
+   +----------------------------------------------------------------+-------------------------------------------------+
+   | Values entered into fields, or device names                    | Enter *127.0.0.1* in the address field.         |
+   +----------------------------------------------------------------+-------------------------------------------------+
 
 Introduction
 ************
@@ -310,57 +310,68 @@ some graphical file manager utilities.
 
 .. table:: : Filesystem Support on |trueos|
 
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | Filesystem | Native to         | Type of non-native support                     | **Usage notes**                                                          |
-   +============+===================+================================================+==========================================================================+
-   | Btrfs      | Linux             | none                                           |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | exFAT      | Windows           | none                                           | requires a license from Microsoft                                        |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | EXT2       | Linux             | r/w support loaded by default                  |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | EXT3       | Linux             | r/w support loaded by default                  | since EXT3 journaling is not supported, you will not be able to mount    |
-   |            |                   |                                                | a filesystem requiring a journal replay unless you :command:`fsck` it    |
-   |            |                   |                                                | using an external utility such as                                        |
-   |            |                   |                                                | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | EXT4       | Linux             | r/o support loaded by default                  | EXT3 journaling, extended attributes, and inodes greater than 128 bytes  |
-   |            |                   |                                                | are not supported; EXT3 filesystems converted to EXT4 may have better    |
-   |            |                   |                                                | performance                                                              |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | FAT16      | Windows           | r/w support loaded by default                  |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | FAT32      | Windows           | r/w support loaded by default                  |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | HFS+       | Mac OS X          | none                                           | older Mac versions might work with                                       |
-   |            |                   |                                                | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_                   |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | JFS        | Linux             | none                                           |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | NTFS5      | Windows           | full r/w support loaded by default             |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | NTFS6      | Windows           | r/w support loaded by default                  |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | ReiserFS   | Linux             | r/o support is loaded by default               |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | UFS2       | FreeBSD           | check if your Linux distro provides ufsutils;  |                                                                          |
-   |            |                   | r/w support on Mac; UFS Explorer can be used   |                                                                          |
-   |            |                   | on Windows                                     | changed to r/o support in Mac Lion                                       |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
-   | ZFS        | TrueOS, FreeBSD   |                                                |                                                                          |
-   +------------+-------------------+------------------------------------------------+--------------------------------------------------------------------------+
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | Filesystem | Native to | Type of non-native support | **Usage notes**                                        |
+   +============+===========+============================+========================================================+
+   | Btrfs      | Linux     | none                       |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | exFAT      | Windows   | none                       | requires a license from Microsoft                      |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | EXT2       | Linux     | r/w support loaded         |                                                        |
+   |            |           | by default                 |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | EXT3       | Linux     | r/w support loaded         | since EXT3 journaling is not supported, you will not   |
+   |            |           | by default                 | be able to mount a filesystem requiring a journal      |
+   |            |           |                            | replay unless you :command:`fsck` it using an          |
+   |            |           |                            | external utility such as                               |
+   |            |           |                            | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | EXT4       | Linux     | r/o support loaded         | EXT3 journaling, extended attributes, and inodes       |
+   |            |           | by default                 | greater than 128 bytes are not supported; EXT3         |
+   |            |           |                            | filesystems converted to EXT4 may have better          |
+   |            |           |                            | performance                                            |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | FAT16      | Windows   | r/w support loaded         |                                                        |
+   |            |           | by default                 |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | FAT32      | Windows   | r/w support loaded         |                                                        |
+   |            |           | by default                 |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | HFS+       | Mac OS X  | none                       | older Mac versions might work with                     |
+   |            |           |                            | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | JFS        | Linux     | none                       |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | NTFS5      | Windows   | full r/w support loaded    |                                                        |
+   |            |           | by default                 |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | NTFS6      | Windows   | r/w support loaded         |                                                        |
+   |            |           | by default                 |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | ReiserFS   | Linux     | r/o support is loaded      |                                                        |
+   |            |           | by default                 |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | UFS2       | FreeBSD   | check if a Linux distro    | changed to r/o support in Mac Lion                     |
+   |            |           | provides ufsutils;         |                                                        |
+   |            |           | r/w support on Mac;        |                                                        |
+   |            |           | UFS Explorer can be        |                                                        |
+   |            |           | used on Windows            |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
+   | ZFS        | |trueos|, |                            |                                                        |
+   |            | FreeBSD   |                            |                                                        |
+   +------------+-----------+----------------------------+--------------------------------------------------------+
 
 .. index:: devices
 
-Linux and BSD use different naming conventions for devices. For example: 
+Linux and BSD use different naming conventions for devices. For example:
 
-* in Linux, Ethernet interfaces begin with :file:`eth`; in BSD,
+* In Linux, Ethernet interfaces begin with :file:`eth`. With BSD,
   interface names indicate the name of the driver. For example, an
-  Ethernet interface may be listed as :file:`re0`, indicating that it
-  uses the Realtek :file:`re` driver. The advantage of this convention
-  is that you can read the **man 4** page for the driver (e.g. type
+  Ethernet interface may be listed as :file:`re0`, indicating it uses
+  the Realtek :file:`re` driver. The advantage of this convention is
+  you can read the **man 4** page for the driver (e.g. type
   :command:`man 4 re`) to see which models and features are provided by
-  that driver.
+  the driver.
 
 * BSD disk names differ from Linux. IDE drives begin with :file:`ad` and
   SCSI and USB drives begin with :file:`da`.
@@ -371,20 +382,26 @@ provides some common examples:
 
 .. _feature names:
 
-.. table:: : Names for BSD and Linux Features
+.. table:: : BSD and Linux Feature Names
 
-   +-----------------------------------------------+--------------------------------------+------------------------------------------------------------------+
-   | TrueOS                                        | Linux                                | **Description**                                                  |
-   +===============================================+======================================+==================================================================+
-   | IPFW                                          | iptables                             | default firewall                                                 |
-   +-----------------------------------------------+--------------------------------------+------------------------------------------------------------------+
-   | :file:`/etc/rc.d/` for operating system and   | :file:`rc0.d/`, :file:`rc1.d/`, etc. | in TrueOS the directories containing the startup scripts do not  |
-   | :file:`/usr/local/etc/rc.d/` for applications |                                      | link to runlevels as there are no runlevels; system startup      |
-   |                                               |                                      | scripts are separated from third-party application scripts       |
-   +-----------------------------------------------+--------------------------------------+------------------------------------------------------------------+
-   | :file:`/etc/ttys` and :file:`/etc/rc.conf`    | :command:`telinit`, :file:`init.d/`  | terminals are configured in *ttys* and *rc.conf* indicates which |
-   |                                               |                                      | services will start at boot time                                 |
-   +-----------------------------------------------+--------------------------------------+------------------------------------------------------------------+
+   +------------------------------+---------------------+--------------------------------+
+   | TrueOS                       | Linux               | **Description**                |
+   +==============================+=====================+================================+
+   | IPFW                         | iptables            | default firewall               |
+   +------------------------------+---------------------+--------------------------------+
+   | :file:`/etc/rc.d/` for       | :file:`rc0.d/`,     | in |trueos|, the directories   |
+   | operating system and         | :file:`rc1.d/`,     | containing the startup scripts |
+   | :file:`/usr/local/etc/rc.d/` | etc.                | do not link to runlevels as    |
+   | for applications             |                     | there are no runlevels; system |
+   |                              |                     | startup scripts are separated  |
+   |                              |                     | from third-party application   |
+   |                              |                     | scripts                        |
+   +------------------------------+---------------------+--------------------------------+
+   | :file:`/etc/ttys` and        | :command:`telinit`, | terminals are configured in    |
+   | :file:`/etc/rc.conf`         | :file:`init.d/`     | *ttys* and *rc.conf* indicates |
+   |                              |                     | which services will start at   |
+   |                              |                     | boot time                      |
+   +------------------------------+---------------------+--------------------------------+
 
 Users comfortable with the command line may find some of the common
 Linux commands have different names on BSD.
@@ -395,37 +412,44 @@ what they are used for.
 
 .. table:: : Common BSD and Linux Commands
 
-   +-----------------------------------+------------------------------------------------------------+
-   | Command                           | **Used to:**                                               |
-   +===================================+============================================================+
-   | :command:`dmesg`                  | discover what hardware was detected by the kernel          |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`sysctl dev`             | display configured devices                                 |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`pciconf -l -cv`         | show PCI devices                                           |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`dmesg | grep usb`       | show USB devices                                           |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`kldstat`                | list all modules loaded in the kernel                      |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`kldload <module>`       | load a kernel module for the current session               |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`pkg install <pkgname>`  | install software from the command line                     |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`sysctl hw.realmem`      | display hardware memory                                    |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`sysctl hw.model`        | display CPU model                                          |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`sysctl hw.machine_arch` | display CPU Architecture                                   |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`sysctl hw.ncpu`         | display number of CPUs                                     |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`uname -vm`              | get release version information                            |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`gpart show`             | show device partition information                          |
-   +-----------------------------------+------------------------------------------------------------+
-   | :command:`fuser`                  | list IDs of all processes that have one or more files open |
-   +-----------------------------------+------------------------------------------------------------+
+   +-----------------------------------+-----------------------------+
+   | Command                           | **Used to:**                |
+   +===================================+=============================+
+   | :command:`dmesg`                  | discover what hardware was  |
+   |                                   | detected by the kernel      |
+   +-----------------------------------+-----------------------------+
+   | :command:`sysctl dev`             | display configured devices  |
+   +-----------------------------------+-----------------------------+
+   | :command:`pciconf -l -cv`         | show PCI devices            |
+   +-----------------------------------+-----------------------------+
+   | :command:`dmesg | grep usb`       | show USB devices            |
+   +-----------------------------------+-----------------------------+
+   | :command:`kldstat`                | list all modules loaded in  |
+   |                                   | the kernel                  |
+   +-----------------------------------+-----------------------------+
+   | :command:`kldload <module>`       | load a kernel module for    |
+   |                                   | the current session         |
+   +-----------------------------------+-----------------------------+
+   | :command:`pkg install <pkgname>`  | install software from the   |
+   |                                   | command line                |
+   +-----------------------------------+-----------------------------+
+   | :command:`sysctl hw.realmem`      | display hardware memory     |
+   +-----------------------------------+-----------------------------+
+   | :command:`sysctl hw.model`        | display CPU model           |
+   +-----------------------------------+-----------------------------+
+   | :command:`sysctl hw.machine_arch` | display CPU Architecture    |
+   +-----------------------------------+-----------------------------+
+   | :command:`sysctl hw.ncpu`         | display number of CPUs      |
+   +-----------------------------------+-----------------------------+
+   | :command:`uname -vm`              | get release version         |
+   |                                   | information                 |
+   +-----------------------------------+-----------------------------+
+   | :command:`gpart show`             | show device partition       |
+   |                                   | information                 |
+   +-----------------------------------+-----------------------------+
+   | :command:`fuser`                  | list IDs of all processes   |
+   |                                   | with one or more files open |
+   +-----------------------------------+-----------------------------+
 
 There are many articles and videos which provide additional information
 about some of the differences between BSD and Linux:

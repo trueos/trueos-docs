@@ -113,8 +113,9 @@ Hover over an icon to view its description in the tip bar at the
 bottom of the screen.
 
 .. note:: The default keyboard layout can be changed now, during the
-   post-installation :ref:`Language Screen`, or when
-   :ref:`Logging In`.
+   post-installation :ref:`Language Screen`, when
+   :ref:`Logging In`, or during an active session using the included
+   :guilabel:`fcitx` utility.
 
 There is also an option to :guilabel:`Load config from USB`. If the
 configuration from a previous installation has been saved, it can be
@@ -212,7 +213,7 @@ To select the disk or partition to install |trueos|, click
 
 .. figure:: images/install6b.png
 
-   : TrueOS® Disk Wizard
+   : |trueos| Disk Wizard
 
 The wizard provides two modes of operation:
 
@@ -252,7 +253,7 @@ in :numref:`Figure %s <install7b>`.
 
 .. figure:: images/install7b.png
 
-   : Select a Disk or Partition
+   : Disk or Partition Selection
 
 By default, the first hard disk will be selected. To install on a
 different disk, use the :guilabel:`Selected Disk` drop-down menu to
@@ -505,7 +506,7 @@ When finished, click :guilabel:`Next` to see the screen shown in
 
 .. figure:: images/install10b.png
 
-   : Add L2ARC or ZIL
+   : L2ARC and ZIL
 
 This screen can be used to specify an SSD to use as an L2ARC read
 cache or as a secondary log device (ZIL). Any available devices will
@@ -522,7 +523,7 @@ to see the screen shown in :numref:`Figure %s <install11b>`.
 
 .. figure:: images/install11b.png
 
-   : Configure Encryption
+   : Encryption
 
 This screen can be used to configure full-disk encryption which is
 meant to protect the data on the disks should the system itself be
@@ -624,7 +625,7 @@ bar and messages so the user can watch the installation's progress.
 
 .. figure:: images/install13b.png
 
-   : Installation Progress Screen 
+   : Installation Progress
 
 How long the installation takes depends upon the speed of the hardware
 and the installation type selected. A typical installation takes between
@@ -644,7 +645,7 @@ complete.
 
 .. figure:: images/install14a.png
 
-   : TrueOS® Installation is Now Complete
+   : |trueos| Installation Complete
 
 Click :guilabel:`Finish` to complete the |trueos| installation. It will
 return to the
