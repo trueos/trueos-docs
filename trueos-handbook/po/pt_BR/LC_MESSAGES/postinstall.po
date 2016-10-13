@@ -67,7 +67,7 @@ msgstr ""
 msgid "Logging In"
 msgstr ""
 
-#: ../../postinstall.rst:613
+#: ../../postinstall.rst:616
 msgid "Installation Troubleshooting"
 msgstr ""
 
@@ -223,10 +223,6 @@ msgid ""
 "the |trueos| boot options screen, shown in :numref:`Figure %s <boot3>`."
 msgstr ""
 
-#: ../../postinstall.rst:145
-msgid ": TrueOS® Graphical Boot Menu Options"
-msgstr ""
-
 #: ../../postinstall.rst:147
 msgid "Several boot options are available:"
 msgstr ""
@@ -265,10 +261,6 @@ msgid ""
 "physical access to the |trueos| system when it boots is required. As the "
 "system starts to boot, it will display a message similar to the one shown in"
 " :numref:`Figure %s <encrypt1>`."
-msgstr ""
-
-#: ../../postinstall.rst:180
-msgid ": Input Password to Decrypt Master Key"
 msgstr ""
 
 #: ../../postinstall.rst:193
@@ -313,10 +305,6 @@ msgid ""
 "Advanced users can select their monitor's horizontal sync and vertical "
 "refresh rate in the :guilabel:`Advanced` tab, seen in :numref:`Figure %s "
 "<display4>`."
-msgstr ""
-
-#: ../../postinstall.rst:228
-msgid ": Advanced Tab of Display Settings"
 msgstr ""
 
 #: ../../postinstall.rst:230
@@ -400,10 +388,6 @@ msgid ""
 "The language selection screen is seen in :numref:`Figure %s <config1a>`."
 msgstr ""
 
-#: ../../postinstall.rst:294
-msgid ": Language Selection Screen"
-msgstr ""
-
 #: ../../postinstall.rst:296
 msgid ""
 "This allows for the selection of the language used to access the installed "
@@ -432,10 +416,6 @@ msgstr ""
 msgid ""
 "The next configuration screen, shown in :numref:`Figure %s <config2b>`, "
 "allows selection of the timezone."
-msgstr ""
-
-#: ../../postinstall.rst:322
-msgid ": Select Time Zone"
 msgstr ""
 
 #: ../../postinstall.rst:324
@@ -468,10 +448,6 @@ msgid ""
 "the root (administrative) password to be set."
 msgstr ""
 
-#: ../../postinstall.rst:351
-msgid ": Set Root Password"
-msgstr ""
-
 #: ../../postinstall.rst:353
 msgid ""
 "The password must be a minimum of 4 characters and is required to be typed "
@@ -489,10 +465,6 @@ msgstr ""
 msgid ""
 ":numref:`Figure %s <config4a>` shows the configuration screen used to create"
 " the initial user account."
-msgstr ""
-
-#: ../../postinstall.rst:374
-msgid ": User Creation Screen"
 msgstr ""
 
 #: ../../postinstall.rst:376
@@ -559,10 +531,6 @@ msgid ""
 "is used to initialize PersonaCrypt for the user."
 msgstr ""
 
-#: ../../postinstall.rst:420
-msgid ": Initializing PersonaCrypt for this User"
-msgstr ""
-
 #: ../../postinstall.rst:422
 msgid ""
 "Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable media "
@@ -615,10 +583,6 @@ msgid ""
 "instructions in :ref:`Sound Mixer Tray`."
 msgstr ""
 
-#: ../../postinstall.rst:479
-msgid ": Connect to a Wireless Network"
-msgstr ""
-
 #: ../../postinstall.rst:481
 msgid ""
 "To set the default wireless connection, highlight the desired network. If "
@@ -669,19 +633,11 @@ msgid ""
 ":guilabel:`Finish` to access the login menu."
 msgstr ""
 
-#: ../../postinstall.rst:525
-msgid ": Setup is Complete"
-msgstr ""
-
 #: ../../postinstall.rst:533
 msgid ""
 "Once finished setting up the system, the PCDM (|pcbsd| Display Manager) "
 "graphical login screen will display. An example is seen in :numref:`Figure "
 "%s <login1>`."
-msgstr ""
-
-#: ../../postinstall.rst:541
-msgid ": TrueOS® Login Screen"
 msgstr ""
 
 #: ../../postinstall.rst:543
@@ -719,10 +675,6 @@ msgid ""
 "device can be typed."
 msgstr ""
 
-#: ../../postinstall.rst:570
-msgid ": TrueOS® PersonaCrypt Login Screen"
-msgstr ""
-
 #: ../../postinstall.rst:572
 msgid ""
 "The toolbar at the bottom of the screen allows several options to be "
@@ -742,21 +694,10 @@ msgid ""
 "<keyboard1>`."
 msgstr ""
 
-#: ../../postinstall.rst:587
-msgid ": Configuring Keyboard Settings"
-msgstr ""
-
 #: ../../postinstall.rst:589
 msgid ""
 "Click the :guilabel:`Keyboard model` drop-down menu to select the type of "
 "keyboard."
-msgstr ""
-
-#: ../../postinstall.rst:592
-msgid ""
-"The default model of \"Generic 104-key PC\" does **not** support special "
-"keys such as multimedia or Windows keys. This default will need to change to"
-" enable support for hot keys."
 msgstr ""
 
 #: ../../postinstall.rst:596
@@ -780,14 +721,14 @@ msgid ""
 "login."
 msgstr ""
 
-#: ../../postinstall.rst:615
+#: ../../postinstall.rst:618
 msgid ""
 "Installing |trueos| is usually very simple. However, sometimes problems will"
 " occur. This section will examine solutions to the most common installation "
 "problems."
 msgstr ""
 
-#: ../../postinstall.rst:619
+#: ../../postinstall.rst:622
 msgid ""
 "The |trueos| installer creates a log which keeps a record of all the "
 "completed steps as well as any errors. When an installation error occurs, "
@@ -797,7 +738,7 @@ msgid ""
 "copy the log."
 msgstr ""
 
-#: ../../postinstall.rst:626
+#: ../../postinstall.rst:629
 msgid ""
 "While in the installer, read this log to see what went wrong. Click the "
 "black :guilabel:`Emergency Shell and Utilities` icon, then select "
@@ -805,14 +746,14 @@ msgid ""
 "by typing :command:`more /tmp/.SysInstall.log`."
 msgstr ""
 
-#: ../../postinstall.rst:631
+#: ../../postinstall.rst:634
 msgid ""
 "If the error can not be fixed or believe an installation bug exists, send "
 "the log saved on the USB stick using the instructions in :ref:`Report a "
 "Bug`."
 msgstr ""
 
-#: ../../postinstall.rst:635
+#: ../../postinstall.rst:638
 msgid ""
 "If the installer does not arrive at the initial GUI installer screen, try "
 "unplugging as many devices as possible, such as webcams, scanners, printers,"
@@ -821,7 +762,7 @@ msgid ""
 "causing the problem."
 msgstr ""
 
-#: ../../postinstall.rst:641
+#: ../../postinstall.rst:644
 msgid ""
 "If the computer freezes while probing hardware and unplugging extra devices "
 "does not fix the problem, it is possible that the installation media is "
@@ -829,7 +770,7 @@ msgid ""
 "correct, try burning the file again at a lower speed."
 msgstr ""
 
-#: ../../postinstall.rst:646
+#: ../../postinstall.rst:649
 msgid ""
 "If the system freezes and the video card is suspected to be the cause, "
 "review the system's BIOS settings. If there is a setting for video memory, "
@@ -841,28 +782,28 @@ msgid ""
 "graphics; check the manual or contact the card manufacturer for details."
 msgstr ""
 
-#: ../../postinstall.rst:656
+#: ../../postinstall.rst:659
 msgid ""
 "A common cause for problems is the LBA (Logical Block Addressing) setting in"
 " the BIOS. If the PC is not booting before or after installation, check the "
 "BIOS and turn LBA off (do not leave it on automatic)."
 msgstr ""
 
-#: ../../postinstall.rst:661
+#: ../../postinstall.rst:664
 msgid ""
 "If the SATA settings in the BIOS are set to *compatibility* mode, try "
 "changing this setting to *AHCI*. If the system hangs with a BTX error, try "
 "turning off *AHCI* in the BIOS."
 msgstr ""
 
-#: ../../postinstall.rst:665
+#: ../../postinstall.rst:668
 msgid ""
 "If the USB keyboard is non-functional, check if there is an option in the "
 "BIOS for *legacy support* in relation to the keyboard, USB, or both. "
 "Enabling this feature in the BIOS may solve this issue."
 msgstr ""
 
-#: ../../postinstall.rst:669
+#: ../../postinstall.rst:672
 msgid ""
 "If the installer boots and a *mountroot>* command prompt appears, this may "
 "be due to a change in the location of the boot device. This can occur when "
@@ -872,7 +813,7 @@ msgid ""
 "prompt to display the available devices."
 msgstr ""
 
-#: ../../postinstall.rst:676
+#: ../../postinstall.rst:679
 msgid ""
 "If none of the above has fixed the problem, search the `TrueOS® sub-Reddit "
 "<https://www.reddit.com/r/TrueOS/>`_ or ask a question on the `TrueOS Gitter"
@@ -907,6 +848,116 @@ msgid ""
 "automatically detected. Available networks will be ordered by signal "
 "strength."
 msgstr ""
+
+#: ../../postinstall.rst:145
+msgid ": |trueos| Graphical Boot Menu Options"
+msgstr ""
+
+#: ../../postinstall.rst:180
+msgid ": Master Key Decryption"
+msgstr ""
+
+#: ../../postinstall.rst:228
+msgid ": Advanced Display Settings"
+msgstr ""
+
+#: ../../postinstall.rst:294
+msgid ": Language Selection"
+msgstr ""
+
+#: ../../postinstall.rst:322
+msgid ": Time Zone Selection"
+msgstr ""
+
+#: ../../postinstall.rst:351
+msgid ": Root Password Creation"
+msgstr ""
+
+#: ../../postinstall.rst:374
+msgid ": User Creation"
+msgstr ""
+
+#: ../../postinstall.rst:420
+msgid ": User's PersonaCrypt Initialization"
+msgstr ""
+
+#: ../../postinstall.rst:479
+msgid ": Wireless Network Connections"
+msgstr ""
+
+#: ../../postinstall.rst:525
+msgid ": Setup Complete"
+msgstr ""
+
+#: ../../postinstall.rst:541
+msgid ": |trueos| Login"
+msgstr ""
+
+#: ../../postinstall.rst:570
+msgid ": |trueos| PersonaCrypt Login"
+msgstr ""
+
+#: ../../postinstall.rst:587
+msgid ": Keyboard Settings"
+msgstr ""
+
+#: ../../postinstall.rst:592
+msgid ""
+"The default model of :guilabel:`Generic 104-key PC` does **not** support "
+"special keys such as multimedia or Windows keys. This default will need to "
+"change to enable support for hot keys."
+msgstr ""
+
+#: ../../postinstall.rst:609
+msgid ""
+"It is possible to change keyboard layouts during an active desktop session "
+"using the included :guilabel:`fcitx` utility"
+msgstr ""
+
+#~ msgid ": TrueOS® Graphical Boot Menu Options"
+#~ msgstr ""
+
+#~ msgid ": Input Password to Decrypt Master Key"
+#~ msgstr ""
+
+#~ msgid ": Advanced Tab of Display Settings"
+#~ msgstr ""
+
+#~ msgid ": Language Selection Screen"
+#~ msgstr ""
+
+#~ msgid ": Select Time Zone"
+#~ msgstr ""
+
+#~ msgid ": Set Root Password"
+#~ msgstr ""
+
+#~ msgid ": User Creation Screen"
+#~ msgstr ""
+
+#~ msgid ": Initializing PersonaCrypt for this User"
+#~ msgstr ""
+
+#~ msgid ": Connect to a Wireless Network"
+#~ msgstr ""
+
+#~ msgid ": Setup is Complete"
+#~ msgstr ""
+
+#~ msgid ": TrueOS® Login Screen"
+#~ msgstr ""
+
+#~ msgid ": TrueOS® PersonaCrypt Login Screen"
+#~ msgstr ""
+
+#~ msgid ": Configuring Keyboard Settings"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The default model of \"Generic 104-key PC\" does **not** support special "
+#~ "keys such as multimedia or Windows keys. This default will need to change to"
+#~ " enable support for hot keys."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Use the arrow keys to select an option, then press :kbd:`Enter`to boot using"

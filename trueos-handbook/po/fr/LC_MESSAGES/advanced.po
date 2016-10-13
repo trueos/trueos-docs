@@ -163,10 +163,6 @@ msgid ""
 "reboot."
 msgstr ""
 
-#: ../../advanced.rst:0
-msgid "Available Variables for Customizing a TrueOS® Installation"
-msgstr ""
-
 #: ../../advanced.rst:630
 msgid "hostname="
 msgstr ""
@@ -974,10 +970,6 @@ msgid ""
 ":numref:`Figure %s <text2a>`."
 msgstr ""
 
-#: ../../advanced.rst:54
-msgid ": Select Desktop or Server"
-msgstr ""
-
 #: ../../advanced.rst:56
 msgid ""
 "After choosing to install a desktop, the |lumina| desktop will be installed "
@@ -1001,10 +993,6 @@ msgid ""
 ":numref:`Figure %s <text3a>`, one disk is available."
 msgstr ""
 
-#: ../../advanced.rst:75
-msgid ": Select Installation Disk"
-msgstr ""
-
 #: ../../advanced.rst:77
 msgid ""
 "Select the disk to install into and press :kbd:`Enter`. In the next screen, "
@@ -1019,10 +1007,6 @@ msgid ""
 " disk and partition targets for installation."
 msgstr ""
 
-#: ../../advanced.rst:90
-msgid ": Select Partition"
-msgstr ""
-
 #: ../../advanced.rst:92
 msgid ""
 "The next screen, shown in :numref:`Figure %s <text5a>`, is used to select "
@@ -1033,18 +1017,10 @@ msgid ""
 "selecting :guilabel:`GPT`, select :guilabel:`MBR` instead."
 msgstr ""
 
-#: ../../advanced.rst:103
-msgid ": Select Disk Format"
-msgstr ""
-
 #: ../../advanced.rst:105
 msgid ""
 "The next screen, shown in :numref:`Figure %s <text6a>`, is used to select "
 "the boot manager."
-msgstr ""
-
-#: ../../advanced.rst:112
-msgid ": Select Boot Manager"
 msgstr ""
 
 #: ../../advanced.rst:114
@@ -1411,18 +1387,10 @@ msgid ""
 "<server2a>`."
 msgstr ""
 
-#: ../../advanced.rst:384
-msgid ": Set the Root Password"
-msgstr ""
-
 #: ../../advanced.rst:386
 msgid ""
 "Input and confirm the root password then click :guilabel:`Next` to proceed "
 "to the screen shown in :numref:`Figure %s <server3a>`."
-msgstr ""
-
-#: ../../advanced.rst:393
-msgid ": Create the Primary User Account"
 msgstr ""
 
 #: ../../advanced.rst:395
@@ -1465,20 +1433,12 @@ msgid ""
 ":numref:`Figure %s <server4a>`."
 msgstr ""
 
-#: ../../advanced.rst:422
-msgid ": Set the Hostname"
-msgstr ""
-
 #: ../../advanced.rst:424
 msgid ""
 "Input the system's hostname. If using :command:`ssh` to connect to the "
 "system, check :guilabel:`Enable remote SSH login`. Click :guilabel:`Next` to"
 " proceed to the network configuration screen shown in :numref:`Figure %s "
 "<server5a>`."
-msgstr ""
-
-#: ../../advanced.rst:433
-msgid ": Configure the Network"
 msgstr ""
 
 #: ../../advanced.rst:435
@@ -1509,10 +1469,6 @@ msgid ""
 "interface and manually configure and input the IPv4 and/or IPv6 addressing "
 "information. When finished, click :guilabel:`Next` to access the screen "
 "shown in :numref:`Figure %s <server6a>`."
-msgstr ""
-
-#: ../../advanced.rst:456
-msgid ": Install Ports"
 msgstr ""
 
 #: ../../advanced.rst:458
@@ -1751,10 +1707,6 @@ msgid ""
 " equals sign."
 msgstr ""
 
-#: ../../advanced.rst:0
-msgid "Additional Variables for Automated Installations"
-msgstr ""
-
 #: ../../advanced.rst:915
 msgid ""
 "should be set to \"yes\", or booting the wrong disk will result in a system "
@@ -1879,6 +1831,90 @@ msgid ""
 "will re-open the screens shown in :ref:`Select Installation Disk <text3a>` "
 "through :ref:`Full Disk Encryption <text7a>`, and then return to this menu."
 msgstr ""
+
+#: ../../advanced.rst:54
+msgid ": Desktop or Server"
+msgstr ""
+
+#: ../../advanced.rst:75
+msgid ": Installation Disk"
+msgstr ""
+
+#: ../../advanced.rst:90
+msgid ": Partition"
+msgstr ""
+
+#: ../../advanced.rst:103
+msgid ": Disk Format"
+msgstr ""
+
+#: ../../advanced.rst:112
+msgid ": Boot Manager"
+msgstr ""
+
+#: ../../advanced.rst:384
+msgid ": Root Password Creation"
+msgstr ""
+
+#: ../../advanced.rst:393
+msgid ": Primary User Account Creation"
+msgstr ""
+
+#: ../../advanced.rst:422
+msgid ": Hostname Creation"
+msgstr ""
+
+#: ../../advanced.rst:433
+msgid ": Network Configuration"
+msgstr ""
+
+#: ../../advanced.rst:456
+msgid ": Ports Installation"
+msgstr ""
+
+#: ../../advanced.rst:0
+msgid "Customizing a TrueOS® Installation"
+msgstr ""
+
+#: ../../advanced.rst:0
+msgid "Automated Installation Variables"
+msgstr ""
+
+#~ msgid "Available Variables for Customizing a TrueOS® Installation"
+#~ msgstr ""
+
+#~ msgid ": Select Desktop or Server"
+#~ msgstr ""
+
+#~ msgid ": Select Installation Disk"
+#~ msgstr ""
+
+#~ msgid ": Select Partition"
+#~ msgstr ""
+
+#~ msgid ": Select Disk Format"
+#~ msgstr ""
+
+#~ msgid ": Select Boot Manager"
+#~ msgstr ""
+
+#~ msgid ": Set the Root Password"
+#~ msgstr ""
+
+#~ msgid ": Create the Primary User Account"
+#~ msgstr ""
+
+#~ msgid ": Set the Hostname"
+#~ msgstr ""
+
+#~ msgid ": Configure the Network"
+#~ msgstr ""
+
+#~ msgid ": Install Ports"
+#~ msgstr ""
+
+#~ msgid "Additional Variables for Automated Installations"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "This screen contains several options: .. CONTINUE BELOW * **disk:** Used to "

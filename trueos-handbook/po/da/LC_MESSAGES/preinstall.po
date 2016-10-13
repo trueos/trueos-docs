@@ -482,10 +482,6 @@ msgid ""
 "partition, a 237.93 GB data partition, and a 100 MB system partition."
 msgstr ""
 
-#: ../../preinstall.rst:262
-msgid ": Viewing Disk Layout in Disk Management"
-msgstr ""
-
 #: ../../preinstall.rst:264
 msgid ""
 "Since the three Windows partitions fill the entire disk, the data partition "
@@ -516,10 +512,6 @@ msgid ""
 "to begin the shrinking process.  This procedure can take several minutes to "
 "complete. When finished, the newly created free space will be displayed, as "
 "seen in :numref:`Figure %s <shrink2>`."
-msgstr ""
-
-#: ../../preinstall.rst:296
-msgid ": Disk Now Has Free Space"
 msgstr ""
 
 #: ../../preinstall.rst:298
@@ -636,10 +628,6 @@ msgid ""
 "downloaded file."
 msgstr ""
 
-#: ../../preinstall.rst:406
-msgid ": Verifying a Checksum"
-msgstr ""
-
 #: ../../preinstall.rst:408
 msgid ""
 "Once the file is selected, click :guilabel:`Open` to calculate the "
@@ -735,10 +723,6 @@ msgid ""
 ":guilabel:`Write` and the image will be written to the USB thumb drive."
 msgstr ""
 
-#: ../../preinstall.rst:529
-msgid ": Using Win32 Disk Imager to Write the Image"
-msgstr ""
-
 #: ../../preinstall.rst:531
 msgid ""
 "To burn the :file:`.iso` file on Mac OS X, insert a USB stick and open "
@@ -824,22 +808,13 @@ msgid ""
 ":numref:`Figure %s <vbox1>`."
 msgstr ""
 
-#: ../../preinstall.rst:630
-msgid ": Initial VirtualBox Screen"
-msgstr ""
-
 #: ../../preinstall.rst:632
 msgid ""
 "Click :guilabel:`New` to start the new virtual machine wizard and display "
 "the screen in :numref:`Figure %s <vbox2>`."
 msgstr ""
 
-#: ../../preinstall.rst:639
-msgid ""
-": Type in a Name and Select the Operating System for the New Virtual Machine"
-msgstr ""
-
-#: ../../preinstall.rst:642
+#: ../../preinstall.rst:641
 msgid ""
 "Enter a name for the virtual machine; it can be anything which makes sense "
 "to you. Click the :guilabel:`Operating System` drop-down menu and select "
@@ -848,11 +823,7 @@ msgid ""
 ":numref:`Figure %s <vbox3>`."
 msgstr ""
 
-#: ../../preinstall.rst:652
-msgid ": Select the Amount of Memory Reserved for the Virtual Machine"
-msgstr ""
-
-#: ../../preinstall.rst:654
+#: ../../preinstall.rst:653
 msgid ""
 "The base memory size must be changed to **at least 1024 MB.** If the system "
 "has a lot of RAM, use more. Any number within the green area is considered a"
@@ -861,11 +832,7 @@ msgid ""
 ":numref:`Figure %s <vbox4>`."
 msgstr ""
 
-#: ../../preinstall.rst:664
-msgid ": Select Whether to Use an Existing or Create a New Virtual Hard Drive"
-msgstr ""
-
-#: ../../preinstall.rst:667
+#: ../../preinstall.rst:665
 msgid ""
 "This screen is used to create the virtual hard drive, or the amount of disk "
 "space available to the virtual machine. If this is your first virtual "
@@ -880,20 +847,12 @@ msgid ""
 msgstr ""
 
 #: ../../preinstall.rst:684
-msgid ": Select the Hard Drive Type"
-msgstr ""
-
-#: ../../preinstall.rst:686
 msgid ""
 "Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in "
 ":numref:`Figure %s <vbox6>`."
 msgstr ""
 
 #: ../../preinstall.rst:693
-msgid ": Select the Storage Type"
-msgstr ""
-
-#: ../../preinstall.rst:695
 msgid ""
 "Now choose whether to have :guilabel:`Dynamically allocated` or "
 ":guilabel:`Fixed size` storage. The first option uses disk space as needed "
@@ -906,10 +865,6 @@ msgid ""
 msgstr ""
 
 #: ../../preinstall.rst:708
-msgid ": Select the File Name and Size of the Virtual Disk"
-msgstr ""
-
-#: ../../preinstall.rst:710
 msgid ""
 "This screen is used to set the size (or upper limit) of the virtual machine."
 " If planning to install |trueos| into the virtual machine, **increase the "
@@ -921,7 +876,7 @@ msgid ""
 "sufficient space to hold the virtual machine."
 msgstr ""
 
-#: ../../preinstall.rst:719
+#: ../../preinstall.rst:717
 msgid ""
 "Once the selections are made, press :guilabel:`Create` to finish using the "
 "wizard. The virtual machine will now show up in the left box, as seen in the"
@@ -929,10 +884,6 @@ msgid ""
 msgstr ""
 
 #: ../../preinstall.rst:727
-msgid ": The New Virtual Machine"
-msgstr ""
-
-#: ../../preinstall.rst:729
 msgid ""
 "In order to use the network card, configure bridging on the virtual machine."
 " To do this, go to :menuselection:`Settings --> Network`. In the "
@@ -944,10 +895,6 @@ msgid ""
 msgstr ""
 
 #: ../../preinstall.rst:742
-msgid ": Configuring a Bridged Adapter in VirtualBox"
-msgstr ""
-
-#: ../../preinstall.rst:744
 msgid ""
 "Before starting the virtual machine, configure it to use the installation "
 "media. Click the :guilabel:`Storage` hyperlink in the right frame to access "
@@ -955,10 +902,6 @@ msgid ""
 msgstr ""
 
 #: ../../preinstall.rst:752
-msgid ": The Storage Settings of the Virtual Machine"
-msgstr ""
-
-#: ../../preinstall.rst:754
 msgid ""
 "Double-click the word :guilabel:`Empty`, which represents the DVD reader. To"
 " access the |trueos| installer from the DVD reader, double-check the "
@@ -967,7 +910,7 @@ msgid ""
 "is incorrect."
 msgstr ""
 
-#: ../../preinstall.rst:760
+#: ../../preinstall.rst:758
 msgid ""
 "If using an ISO stored on the hard disk is preferred, click the "
 ":guilabel:`DVD` icon then :guilabel:`Choose a virtual CD/DVD disk file` to "
@@ -976,7 +919,7 @@ msgid ""
 "in the :guilabel:`Storage Tree` section."
 msgstr ""
 
-#: ../../preinstall.rst:766
+#: ../../preinstall.rst:764
 msgid ""
 "|trueos| is now ready to be installed into the virtual machine. Highlight "
 "the virtual machine and click on the green :guilabel:`Start` icon. A window "
@@ -987,6 +930,105 @@ msgid ""
 "appears, then press :kbd:`c` to boot from CD-ROM. Proceed through the "
 "installation as described in :ref:`Installing TrueOS®`."
 msgstr ""
+
+#: ../../preinstall.rst:262
+msgid ": Disk Layout in Disk Management"
+msgstr ""
+
+#: ../../preinstall.rst:296
+msgid ": Disk with Free Space"
+msgstr ""
+
+#: ../../preinstall.rst:406
+msgid ": Checksum Verification"
+msgstr ""
+
+#: ../../preinstall.rst:529
+msgid ": Write an Image using Win32 Disk Imager"
+msgstr ""
+
+#: ../../preinstall.rst:630
+msgid ": VirtualBox Menu"
+msgstr ""
+
+#: ../../preinstall.rst:639
+msgid ": Create Virtual Machine - Name, Type, and Version"
+msgstr ""
+
+#: ../../preinstall.rst:651
+msgid ": Virtual Machine Reserved Memory"
+msgstr ""
+
+#: ../../preinstall.rst:663
+msgid ": Virtual Hard Drive - New or Existing"
+msgstr ""
+
+#: ../../preinstall.rst:682
+msgid ": Hard Drive Type"
+msgstr ""
+
+#: ../../preinstall.rst:691
+msgid ": Storage Type"
+msgstr ""
+
+#: ../../preinstall.rst:706
+msgid ": Virtual Disk - File Name and Size"
+msgstr ""
+
+#: ../../preinstall.rst:725
+msgid ": New Virtual Machine \"Test\""
+msgstr ""
+
+#: ../../preinstall.rst:740
+msgid ": VirtualBox Bridged Adapter Configuration"
+msgstr ""
+
+#: ../../preinstall.rst:750
+msgid ": Virtual Machine Storage Settings"
+msgstr ""
+
+#~ msgid ": Viewing Disk Layout in Disk Management"
+#~ msgstr ""
+
+#~ msgid ": Disk Now Has Free Space"
+#~ msgstr ""
+
+#~ msgid ": Verifying a Checksum"
+#~ msgstr ""
+
+#~ msgid ": Using Win32 Disk Imager to Write the Image"
+#~ msgstr ""
+
+#~ msgid ": Initial VirtualBox Screen"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ": Type in a Name and Select the Operating System for the New Virtual Machine"
+#~ msgstr ""
+
+#~ msgid ": Select the Amount of Memory Reserved for the Virtual Machine"
+#~ msgstr ""
+
+#~ msgid ": Select Whether to Use an Existing or Create a New Virtual Hard Drive"
+#~ msgstr ""
+
+#~ msgid ": Select the Hard Drive Type"
+#~ msgstr ""
+
+#~ msgid ": Select the Storage Type"
+#~ msgstr ""
+
+#~ msgid ": Select the File Name and Size of the Virtual Disk"
+#~ msgstr ""
+
+#~ msgid ": The New Virtual Machine"
+#~ msgstr ""
+
+#~ msgid ": Configuring a Bridged Adapter in VirtualBox"
+#~ msgstr ""
+
+#~ msgid ": The Storage Settings of the Virtual Machine"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "While the TrueOS® installer is very easy to use, installing a brand new "

@@ -250,14 +250,14 @@ msgid "Btrfs"
 msgstr ""
 
 #: ../../introduction.rst:325 ../../introduction.rst:329
-#: ../../introduction.rst:331 ../../introduction.rst:336
-#: ../../introduction.rst:347 ../../introduction.rst:353
-#: ../../introduction.rst:386
+#: ../../introduction.rst:332 ../../introduction.rst:338
+#: ../../introduction.rst:352 ../../introduction.rst:360
+#: ../../introduction.rst:397
 msgid "Linux"
 msgstr ""
 
 #: ../../introduction.rst:325 ../../introduction.rst:327
-#: ../../introduction.rst:344 ../../introduction.rst:347
+#: ../../introduction.rst:349 ../../introduction.rst:352
 msgid "none"
 msgstr ""
 
@@ -265,9 +265,9 @@ msgstr ""
 msgid "exFAT"
 msgstr ""
 
-#: ../../introduction.rst:327 ../../introduction.rst:340
-#: ../../introduction.rst:342 ../../introduction.rst:349
-#: ../../introduction.rst:351
+#: ../../introduction.rst:327 ../../introduction.rst:343
+#: ../../introduction.rst:346 ../../introduction.rst:354
+#: ../../introduction.rst:357
 msgid "Windows"
 msgstr ""
 
@@ -279,342 +279,311 @@ msgstr ""
 msgid "EXT2"
 msgstr ""
 
-#: ../../introduction.rst:329 ../../introduction.rst:331
-#: ../../introduction.rst:340 ../../introduction.rst:342
-#: ../../introduction.rst:351
+#: ../../introduction.rst:329 ../../introduction.rst:332
+#: ../../introduction.rst:343 ../../introduction.rst:346
+#: ../../introduction.rst:357
 msgid "r/w support loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:331
+#: ../../introduction.rst:332
 msgid "EXT3"
 msgstr ""
 
-#: ../../introduction.rst:331
+#: ../../introduction.rst:332
 msgid ""
 "since EXT3 journaling is not supported, you will not be able to mount a "
 "filesystem requiring a journal replay unless you :command:`fsck` it using an"
 " external utility such as `e2fsprogs <http://e2fsprogs.sourceforge.net>`_"
 msgstr ""
 
-#: ../../introduction.rst:336
+#: ../../introduction.rst:338
 msgid "EXT4"
 msgstr ""
 
-#: ../../introduction.rst:336
+#: ../../introduction.rst:338
 msgid "r/o support loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:336
+#: ../../introduction.rst:338
 msgid ""
 "EXT3 journaling, extended attributes, and inodes greater than 128 bytes are "
 "not supported; EXT3 filesystems converted to EXT4 may have better "
 "performance"
 msgstr ""
 
-#: ../../introduction.rst:340
+#: ../../introduction.rst:343
 msgid "FAT16"
 msgstr ""
 
-#: ../../introduction.rst:342
+#: ../../introduction.rst:346
 msgid "FAT32"
 msgstr ""
 
-#: ../../introduction.rst:344
+#: ../../introduction.rst:349
 msgid "HFS+"
 msgstr ""
 
-#: ../../introduction.rst:344
+#: ../../introduction.rst:349
 msgid "Mac OS X"
 msgstr ""
 
-#: ../../introduction.rst:344
+#: ../../introduction.rst:349
 msgid ""
 "older Mac versions might work with `hfsexplorer "
 "<http://www.catacombae.org/hfsexplorer>`_"
 msgstr ""
 
-#: ../../introduction.rst:347
+#: ../../introduction.rst:352
 msgid "JFS"
 msgstr ""
 
-#: ../../introduction.rst:349
+#: ../../introduction.rst:354
 msgid "NTFS5"
 msgstr ""
 
-#: ../../introduction.rst:349
+#: ../../introduction.rst:354
 msgid "full r/w support loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:351
+#: ../../introduction.rst:357
 msgid "NTFS6"
 msgstr ""
 
-#: ../../introduction.rst:353
+#: ../../introduction.rst:360
 msgid "ReiserFS"
 msgstr ""
 
-#: ../../introduction.rst:353
+#: ../../introduction.rst:360
 msgid "r/o support is loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:355
+#: ../../introduction.rst:363
 msgid "UFS2"
 msgstr ""
 
-#: ../../introduction.rst:355
+#: ../../introduction.rst:363
 msgid "FreeBSD"
 msgstr ""
 
-#: ../../introduction.rst:355
-msgid ""
-"check if your Linux distro provides ufsutils; r/w support on Mac; UFS "
-"Explorer can be used on Windows"
-msgstr ""
-
-#: ../../introduction.rst:357
+#: ../../introduction.rst:363
 msgid "changed to r/o support in Mac Lion"
 msgstr ""
 
-#: ../../introduction.rst:359
+#: ../../introduction.rst:369
 msgid "ZFS"
 msgstr ""
 
-#: ../../introduction.rst:359
-msgid "TrueOS, FreeBSD"
-msgstr ""
-
-#: ../../introduction.rst:364
+#: ../../introduction.rst:375
 msgid ""
 "Linux and BSD use different naming conventions for devices. For example:"
 msgstr ""
 
-#: ../../introduction.rst:366
-msgid ""
-"in Linux, Ethernet interfaces begin with :file:`eth`; in BSD, interface "
-"names indicate the name of the driver. For example, an Ethernet interface "
-"may be listed as :file:`re0`, indicating that it uses the Realtek :file:`re`"
-" driver. The advantage of this convention is that you can read the **man 4**"
-" page for the driver (e.g. type :command:`man 4 re`) to see which models and"
-" features are provided by that driver."
-msgstr ""
-
-#: ../../introduction.rst:374
+#: ../../introduction.rst:385
 msgid ""
 "BSD disk names differ from Linux. IDE drives begin with :file:`ad` and SCSI "
 "and USB drives begin with :file:`da`."
 msgstr ""
 
-#: ../../introduction.rst:386
+#: ../../introduction.rst:397
 msgid "TrueOS"
 msgstr ""
 
-#: ../../introduction.rst:386
+#: ../../introduction.rst:397
 msgid "**Description**"
 msgstr ""
 
-#: ../../introduction.rst:388
+#: ../../introduction.rst:399
 msgid "IPFW"
 msgstr ""
 
-#: ../../introduction.rst:388
+#: ../../introduction.rst:399
 msgid "iptables"
 msgstr ""
 
-#: ../../introduction.rst:388
+#: ../../introduction.rst:399
 msgid "default firewall"
 msgstr ""
 
-#: ../../introduction.rst:390
+#: ../../introduction.rst:401
 msgid ""
 ":file:`/etc/rc.d/` for operating system and :file:`/usr/local/etc/rc.d/` for"
 " applications"
 msgstr ""
 
-#: ../../introduction.rst:390
+#: ../../introduction.rst:401
 msgid ":file:`rc0.d/`, :file:`rc1.d/`, etc."
 msgstr ""
 
-#: ../../introduction.rst:390
-msgid ""
-"in TrueOS the directories containing the startup scripts do not link to "
-"runlevels as there are no runlevels; system startup scripts are separated "
-"from third-party application scripts"
-msgstr ""
-
-#: ../../introduction.rst:394
+#: ../../introduction.rst:409
 msgid ":file:`/etc/ttys` and :file:`/etc/rc.conf`"
 msgstr ""
 
-#: ../../introduction.rst:394
+#: ../../introduction.rst:409
 msgid ":command:`telinit`, :file:`init.d/`"
 msgstr ""
 
-#: ../../introduction.rst:394
+#: ../../introduction.rst:409
 msgid ""
 "terminals are configured in *ttys* and *rc.conf* indicates which services "
 "will start at boot time"
 msgstr ""
 
-#: ../../introduction.rst:408
+#: ../../introduction.rst:425
 msgid "Command"
 msgstr ""
 
-#: ../../introduction.rst:408
+#: ../../introduction.rst:425
 msgid "**Used to:**"
 msgstr ""
 
-#: ../../introduction.rst:410
+#: ../../introduction.rst:427
 msgid ":command:`dmesg`"
 msgstr ""
 
-#: ../../introduction.rst:410
+#: ../../introduction.rst:427
 msgid "discover what hardware was detected by the kernel"
 msgstr ""
 
-#: ../../introduction.rst:412
+#: ../../introduction.rst:430
 msgid ":command:`sysctl dev`"
 msgstr ""
 
-#: ../../introduction.rst:412
+#: ../../introduction.rst:430
 msgid "display configured devices"
 msgstr ""
 
-#: ../../introduction.rst:414
+#: ../../introduction.rst:432
 msgid ":command:`pciconf -l -cv`"
 msgstr ""
 
-#: ../../introduction.rst:414
+#: ../../introduction.rst:432
 msgid "show PCI devices"
 msgstr ""
 
-#: ../../introduction.rst:416
+#: ../../introduction.rst:434
 msgid ":command:`dmesg | grep usb`"
 msgstr ""
 
-#: ../../introduction.rst:416
+#: ../../introduction.rst:434
 msgid "show USB devices"
 msgstr ""
 
-#: ../../introduction.rst:418
+#: ../../introduction.rst:436
 msgid ":command:`kldstat`"
 msgstr ""
 
-#: ../../introduction.rst:418
+#: ../../introduction.rst:436
 msgid "list all modules loaded in the kernel"
 msgstr ""
 
-#: ../../introduction.rst:420
+#: ../../introduction.rst:439
 msgid ":command:`kldload <module>`"
 msgstr ""
 
-#: ../../introduction.rst:420
+#: ../../introduction.rst:439
 msgid "load a kernel module for the current session"
 msgstr ""
 
-#: ../../introduction.rst:422
+#: ../../introduction.rst:442
 msgid ":command:`pkg install <pkgname>`"
 msgstr ""
 
-#: ../../introduction.rst:422
+#: ../../introduction.rst:442
 msgid "install software from the command line"
 msgstr ""
 
-#: ../../introduction.rst:424
+#: ../../introduction.rst:445
 msgid ":command:`sysctl hw.realmem`"
 msgstr ""
 
-#: ../../introduction.rst:424
+#: ../../introduction.rst:445
 msgid "display hardware memory"
 msgstr ""
 
-#: ../../introduction.rst:426
+#: ../../introduction.rst:447
 msgid ":command:`sysctl hw.model`"
 msgstr ""
 
-#: ../../introduction.rst:426
+#: ../../introduction.rst:447
 msgid "display CPU model"
 msgstr ""
 
-#: ../../introduction.rst:428
+#: ../../introduction.rst:449
 msgid ":command:`sysctl hw.machine_arch`"
 msgstr ""
 
-#: ../../introduction.rst:428
+#: ../../introduction.rst:449
 msgid "display CPU Architecture"
 msgstr ""
 
-#: ../../introduction.rst:430
+#: ../../introduction.rst:451
 msgid ":command:`sysctl hw.ncpu`"
 msgstr ""
 
-#: ../../introduction.rst:430
+#: ../../introduction.rst:451
 msgid "display number of CPUs"
 msgstr ""
 
-#: ../../introduction.rst:432
+#: ../../introduction.rst:453
 msgid ":command:`uname -vm`"
 msgstr ""
 
-#: ../../introduction.rst:432
+#: ../../introduction.rst:453
 msgid "get release version information"
 msgstr ""
 
-#: ../../introduction.rst:434
+#: ../../introduction.rst:456
 msgid ":command:`gpart show`"
 msgstr ""
 
-#: ../../introduction.rst:434
+#: ../../introduction.rst:456
 msgid "show device partition information"
 msgstr ""
 
-#: ../../introduction.rst:436
+#: ../../introduction.rst:459
 msgid ":command:`fuser`"
 msgstr ""
 
-#: ../../introduction.rst:436
-msgid "list IDs of all processes that have one or more files open"
-msgstr ""
-
-#: ../../introduction.rst:442
+#: ../../introduction.rst:466
 msgid ""
 "`Comparing BSD and Linux <http://www.freebsd.org/doc/en/articles/explaining-"
 "bsd/comparing-bsd-and-linux.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:444
+#: ../../introduction.rst:468
 msgid ""
 "`FreeBSD Quickstart Guide for Linux® Users "
 "<http://www.freebsd.org/doc/en/articles/linux-users/index.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:446
+#: ../../introduction.rst:470
 msgid ""
 "`BSD vs Linux <http://www.over-yonder.net/~fullermd/rants/bsd4linux/01>`_"
 msgstr ""
 
-#: ../../introduction.rst:448
+#: ../../introduction.rst:472
 msgid ""
 "`Why Choose FreeBSD? <http://www.freebsd.org/advocacy/whyusefreebsd.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:450
+#: ../../introduction.rst:474
 msgid ""
 "`Interview: BSD for Human Beings <http://www.unixmen.com/bsd-for-human-"
 "beings-interview/>`_"
 msgstr ""
 
-#: ../../introduction.rst:452
+#: ../../introduction.rst:476
 msgid ""
 "`Video: BSD 4 Linux Users <https://www.youtube.com/watch?v=xk6ouxX51NI>`_"
 msgstr ""
 
-#: ../../introduction.rst:454
+#: ../../introduction.rst:478
 msgid ""
 "`Why you should use a BSD style license for your Open Source Project "
 "<http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:456
+#: ../../introduction.rst:480
 msgid ""
 "`A Sysadmin's Unixersal Translator (ROSETTA STONE) "
 "<http://bhami.com/rosetta.html>`_"
@@ -670,10 +639,6 @@ msgstr ""
 msgid ""
 "The |trueos| User Guide uses several typographic conventions, seen here in "
 ":numref:`Table %s <typ conv>`:"
-msgstr ""
-
-#: ../../introduction.rst:0
-msgid ": Text Format Examples"
 msgstr ""
 
 #: ../../introduction.rst:116
@@ -942,18 +907,14 @@ msgstr ""
 msgid ": Filesystem Support on |trueos|"
 msgstr ""
 
-#: ../../introduction.rst:377
+#: ../../introduction.rst:388
 msgid ""
 "Some of the features used by BSD have similar counterparts to Linux, but the"
 " name of the feature is different. :numref:`Table %s <feature names>` "
 "provides some common examples:"
 msgstr ""
 
-#: ../../introduction.rst:0
-msgid ": Names for BSD and Linux Features"
-msgstr ""
-
-#: ../../introduction.rst:398
+#: ../../introduction.rst:415
 msgid ""
 "Users comfortable with the command line may find some of the common Linux "
 "commands have different names on BSD. :numref:`Table %s <common commands>` "
@@ -964,11 +925,82 @@ msgstr ""
 msgid ": Common BSD and Linux Commands"
 msgstr ""
 
-#: ../../introduction.rst:439
+#: ../../introduction.rst:463
 msgid ""
 "There are many articles and videos which provide additional information "
 "about some of the differences between BSD and Linux:"
 msgstr ""
+
+#: ../../introduction.rst:0
+msgid ": Text Formatting Examples"
+msgstr ""
+
+#: ../../introduction.rst:363
+msgid ""
+"check if a Linux distro provides ufsutils; r/w support on Mac; UFS Explorer "
+"can be used on Windows"
+msgstr ""
+
+#: ../../introduction.rst:369
+msgid "|trueos|, FreeBSD"
+msgstr ""
+
+#: ../../introduction.rst:377
+msgid ""
+"In Linux, Ethernet interfaces begin with :file:`eth`. With BSD, interface "
+"names indicate the name of the driver. For example, an Ethernet interface "
+"may be listed as :file:`re0`, indicating it uses the Realtek :file:`re` "
+"driver. The advantage of this convention is you can read the **man 4** page "
+"for the driver (e.g. type :command:`man 4 re`) to see which models and "
+"features are provided by the driver."
+msgstr ""
+
+#: ../../introduction.rst:0
+msgid ": BSD and Linux Feature Names"
+msgstr ""
+
+#: ../../introduction.rst:401
+msgid ""
+"in |trueos|, the directories containing the startup scripts do not link to "
+"runlevels as there are no runlevels; system startup scripts are separated "
+"from third-party application scripts"
+msgstr ""
+
+#: ../../introduction.rst:459
+msgid "list IDs of all processes with one or more files open"
+msgstr ""
+
+#~ msgid ""
+#~ "check if your Linux distro provides ufsutils; r/w support on Mac; UFS "
+#~ "Explorer can be used on Windows"
+#~ msgstr ""
+
+#~ msgid "TrueOS, FreeBSD"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "in Linux, Ethernet interfaces begin with :file:`eth`; in BSD, interface "
+#~ "names indicate the name of the driver. For example, an Ethernet interface "
+#~ "may be listed as :file:`re0`, indicating that it uses the Realtek :file:`re`"
+#~ " driver. The advantage of this convention is that you can read the **man 4**"
+#~ " page for the driver (e.g. type :command:`man 4 re`) to see which models and"
+#~ " features are provided by that driver."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "in TrueOS the directories containing the startup scripts do not link to "
+#~ "runlevels as there are no runlevels; system startup scripts are separated "
+#~ "from third-party application scripts"
+#~ msgstr ""
+
+#~ msgid "list IDs of all processes that have one or more files open"
+#~ msgstr ""
+
+#~ msgid ": Text Format Examples"
+#~ msgstr ""
+
+#~ msgid ": Names for BSD and Linux Features"
+#~ msgstr ""
 
 #~ msgid "Written by users of the TrueOS® operating system."
 #~ msgstr ""
