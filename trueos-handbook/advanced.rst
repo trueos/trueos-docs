@@ -225,7 +225,7 @@ This screen contains several options:
   :ref:`Select Installation Disk <text3a>` through
   :ref:`Full Disk Encryption <text7a>`, and then return to this menu.
 
-* **storage pool:** Select this option if the system contains multiple
+* **zpool:** Select this option if the system contains multiple
   disks and changing the disk layout to a mirror or RAIDZ is desired.
   The allowable layouts for the number of available disks will be
   displayed so the user can select the desired layout.
