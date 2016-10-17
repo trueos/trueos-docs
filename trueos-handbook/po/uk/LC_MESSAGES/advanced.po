@@ -1193,14 +1193,6 @@ msgstr ""
 msgid ": Edit Menu"
 msgstr ""
 
-#: ../../advanced.rst:237
-msgid ""
-"**storage pool:** Select this option if the system contains multiple disks "
-"and changing the disk layout to a mirror or RAIDZ is desired. The allowable "
-"layouts for the number of available disks will be displayed so the user can "
-"select the desired layout."
-msgstr ""
-
 #: ../../advanced.rst:242
 msgid ""
 "**zfs:** Used to modify the default ZFS layout. Selecting this option will "
@@ -1371,13 +1363,6 @@ msgid ""
 "This section describes how to install a command-line only server using the "
 "graphical installer. Alternately, a server can be installed :ref:`Using the "
 "TrueOS® CD` or :ref:`Using the Text Installer`."
-msgstr ""
-
-#: ../../advanced.rst:372
-msgid ""
-"To perform a graphical server installation, start the |trueos| installation "
-"as usual. At the :ref:`System Selection Screen` of the installer, select "
-":guilabel:`TrueOS (Console based server)`."
 msgstr ""
 
 #: ../../advanced.rst:376
@@ -1879,6 +1864,34 @@ msgstr ""
 #: ../../advanced.rst:0
 msgid "Automated Installation Variables"
 msgstr ""
+
+#: ../../advanced.rst:237
+msgid ""
+"**zpool:** Select this option if the system contains multiple disks and "
+"changing the disk layout to a mirror or RAIDZ is desired. The allowable "
+"layouts for the number of available disks will be displayed so the user can "
+"select the desired layout."
+msgstr ""
+
+#: ../../advanced.rst:372
+msgid ""
+"To perform a graphical server installation, start the |trueos| installation "
+"as usual. At the :ref:`System Selection Screen` of the installer, select "
+":guilabel:`TrueOS Server (console interface only)`."
+msgstr ""
+
+#~ msgid ""
+#~ "**storage pool:** Select this option if the system contains multiple disks "
+#~ "and changing the disk layout to a mirror or RAIDZ is desired. The allowable "
+#~ "layouts for the number of available disks will be displayed so the user can "
+#~ "select the desired layout."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To perform a graphical server installation, start the |trueos| installation "
+#~ "as usual. At the :ref:`System Selection Screen` of the installer, select "
+#~ ":guilabel:`TrueOS (Console based server)`."
+#~ msgstr ""
 
 #~ msgid "Available Variables for Customizing a TrueOS® Installation"
 #~ msgstr ""
