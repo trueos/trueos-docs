@@ -362,7 +362,7 @@ FreeBSD installer offers several benefits:
 
 To perform a graphical server installation, start the |trueos|
 installation as usual. At the :ref:`System Selection Screen` of the
-installer, select :guilabel:`TrueOS (Console based server)`.
+installer, select :guilabel:`TrueOS Server (console interface only)`.
 
 Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`,
 then click :guilabel:`Next` again to see the screen shown in
