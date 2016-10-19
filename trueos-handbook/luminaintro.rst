@@ -106,7 +106,7 @@ configurable, with the numerous options covered in the
 .. figure:: images/lumina1e.png
    :scale: 50%
 
-   Lumina Desktop
+   : Lumina Desktop
 
 :numref:`Figure %s <lumina1e>` is a screenshot of Lumina using its
 default settings. The user has clicked the "|lumina|" icon in

@@ -25,7 +25,7 @@ clicking the :guilabel:`Start Menu`, then
 .. figure:: images/luminamenupluginmenu1.png
    :scale: 100%
 
-   Lumina Menu Plugins
+   : Lumina Menu Plugins
 
 Add or remove plugins by clicking the :guilabel:`green plus` or
 :guilabel:`red minus` buttons in the bottom left corner of the window.
@@ -44,7 +44,7 @@ options on the bottom, as pictured in
 .. figure:: images/luminamenuplugin1.png
    :scale: 100%
 
-   Menu Plugin Default Menu
+   : Menu Plugin Default Menu
 
 The user can completely customize what appears between these two
 elements of the menu.
@@ -59,7 +59,7 @@ Applications
 .. figure:: images/luminamenuplugin2.png
    :scale: 100%
 
-   Applications
+   : Applications
    
 This plugin, shown in :numref:`Figure %s <luminamenuplugin2>` adds an
 application menu which can be navigated to open any installed
@@ -76,9 +76,7 @@ Custom App
 
 .. figure:: images/luminamenuplugin3.png
 
-   Custom Application
-
-
+   : Custom Application
 
 The Custom App option, seen in :numref:`Figure %s <luminamenuplugin3>`,
 adds a specific quickstart icon for a single application to the
@@ -95,7 +93,7 @@ File Manager
 .. figure:: images/luminamenuplugin4.png
    :scale: 100%
 
-   File Manager
+   : File Manager
 
 Opens the user's home directory within the default file manager, seen in
 :numref:`Figure %s <luminamenuplugin4>`.
@@ -115,7 +113,7 @@ plugin immediately brings up the menu configuration window, seen in
 .. figure:: images/luminamenuplugin5.png
    :scale: 100%
 
-   JSON Menu Configuration Window
+   : JSON Menu Configuration Window
 
 This window has three fields: :guilabel:`Visible Name`,
 :guilabel:`Executable`, and :guilabel:`Icon`. :guilabel:`Visible Name`
@@ -129,7 +127,7 @@ specific icon to the custom script.
 .. figure:: images/luminamenuplugin6.png
    :scale: 100%
 
-   JSON Menu Example
+   : JSON Menu Example
 
 For the example in :numref:`Figure %s <luminamenuplugin6>`, after
 completing the configuration window, the resultant display shows
@@ -141,8 +139,6 @@ the menu of files and folders.
 
 Separator
 ---------
-
-
 
 A Separator, seen in :numref:`Figure %s <luminamenuplugin1>`, is simply
 a horizontal line which can be used to divide entries in the right-click
@@ -160,7 +156,7 @@ Preferences
 .. figure:: images/luminamenuplugin7.png
    :scale: 100%
 
-   Preferences
+   : Preferences Shortcut
 
 This plugin, seen in :numref:`Figure %s <luminamenuplugin7>`, adds a
 shortcut to the right-click menu which opens a new menu of configuration
@@ -176,7 +172,7 @@ Terminal
 .. figure:: images/luminamenuplugin8.png
    :scale: 100%
 
-   Terminal
+   : Terminal Shortcut
 
 A shortcut to the default system terminal, seen in
 :numref:`Figure %s <luminamenuplugin8>`.
@@ -191,7 +187,7 @@ Window List
 .. figure:: images/luminamenuplugin9.png
    :scale: 100%
 
-   Window List
+   : Window List
 
 This plugin, seen in :numref:`Figure %s <luminamenuplugin9>`, adds an
 entry to the right-click menu which, when hovered over with the mouse,
@@ -213,7 +209,7 @@ the lower left of the main desktop screen, then click
 
 .. figure:: images/luminadesktoppluginmenu1.png
 
-   Desktop Plugin Menu
+   : Desktop Plugin Menu
 
 This is the primary menu for configuring desktop plugins, seen in
 :numref:`Figure %s <luminadesktoppluginmenu1>`. Click the
@@ -247,7 +243,7 @@ Application Launcher
 .. figure:: images/luminadesktopplugin1.png
    :scale: 100%
 
-   Application Launcher
+   : Application Launcher
 
 Choosing the Application Launcher plugin opens the window seen in
 :numref:`Figure %s <luminadesktopplugin1>`. This drop down menu allows
@@ -263,7 +259,7 @@ Audio Player
 .. figure:: images/luminadesktopplugin2.png
    :scale: 100%
 
-   Audio Player
+   : Audio Player
 
 The Audio Player plugin, seen in
 :numref:`Figure %s <luminadesktopplugin2>`, will play user added lists
@@ -287,7 +283,7 @@ Calendar
 .. figure:: images/luminadesktopplugin3.png
    :scale: 100%
 
-   Calendar
+   : Calendar
 
 This calendar plugin, seen in
 :numref:`Figure %s <luminadesktopplugin3>`, will display a calendar set
@@ -306,7 +302,7 @@ Desktop Icons View
 .. figure:: images/luminadesktopplugin4.png
    :scale: 100%
 
-   Desktop Icons
+   : Desktop Icons
 
 This plugin, seen in :numref:`Figure %s <luminadesktopplugin4>`, will
 define an area on the desktop to display icons. If enough icons are
@@ -323,9 +319,7 @@ Note Pad
 .. figure:: images/luminadesktopplugin5.png
    :scale: 100%
 
-   Note Pad
-
-
+   : Note Pad
 
 Note Pad, seen in :numref:`Figure %s <luminadesktopplugin5>`, adds a
 simple text editor widget to the desktop. The user needs to create or
@@ -350,7 +344,7 @@ RSS Reader
 .. figure:: images/luminadesktopplugin6.png
    :scale: 100%
 
-   RSS Reader
+   : RSS Reader
 
 RSS Reader, seen in :numref:`Figure %s <luminadesktopplugin6>`, displays
 connected RSS feeds. The user can add their own custom RSS feeds to the
@@ -386,7 +380,7 @@ System Monitor
 .. figure:: images/luminadesktopplugin7.png
    :scale: 100%
 
-   System Monitor Display
+   : System Monitor Display
 
 The :guilabel:`Summary` tab of the System Monitor plugin, seen in
 :numref:`Figure %s <luminadesktopplugin7>`. CPU Temperature (in
@@ -399,9 +393,7 @@ statistics and the read/write speed monitor, shown next.
 .. figure:: images/luminadesktopplugin8.png
    :scale: 100%
 
-   System Monitor I/O
-
-
+   : System Monitor I/O
 
 The :guilabel:`Disk I/O` tab of the System Monitor plugin. Displayed are
 the current read and write speeds of the connected hardware, which in
@@ -429,7 +421,7 @@ The settings for this panel are pictured in
 .. figure:: images/luminapanelpluginmenu1.png
    :scale: 100%
 
-   Panel Settings
+   : Panel Settings
 
 As you can see, :guilabel:`Panel 1` is configured to the top center of
 :guilabel:`Monitor 1` (plugged into DVI-I-0). To add or adjust plugins
@@ -441,7 +433,7 @@ menu seen in :numref:`Figure %s <luminapanelpluginmenu2>`.
 .. figure:: images/luminapanelpluginmenu2.png
    :scale: 100%
 
-   Panel Plugins Menu
+   : Panel Plugins Menu
 
 The large field shows currently active plugins. Click the
 :guilabel:`red minus` or :guilabel:`green plus` buttons to add or remove
@@ -460,7 +452,7 @@ Panel Application Launcher
 .. figure:: images/luminapanelplugin1.png
    :scale: 100%
 
-   Panel Application Launcher
+   : Panel Application Launcher
 
 When you select this plugin, seen in
 :numref:`Figure %s <luminapanelplugin1>`, it will prompt to select the
@@ -477,8 +469,8 @@ Application Menu
 .. figure:: images/luminapanelplugin2.png
    :scale: 100%
 
-   Application Menu
-   
+   : Application Menu
+
 Adds an application menu, seen in
 :numref:`Figure %s <luminapanelplugin2>`, which shortcuts to the user's
 home directory, a shortcut to the operating system’s graphical software
@@ -507,14 +499,14 @@ Desktop Bar
 .. figure:: images/luminapanelplugin3.png
    :scale: 100%
 
-   Desktop Bar: :guilabel:`Favorite Applications` ("Star" icon) is
+   : Desktop Bar - :guilabel:`Favorite Applications` ("Star" icon) is
    pressed.
 
 This plugin adds shortcuts to the panel for applications or files
-contained within the ~/Desktop folder or favorited by the user, seen in
-:numref:`Figure %s <luminapanelplugin3>`. The :guilabel:`star` button
-displays applications, the :guilabel:`folder` button displays folders,
-and the :guilabel:`file` button shows favorite files.
+contained within the :file:`~/Desktop` folder or favorited by the user,
+seen in :numref:`Figure %s <luminapanelplugin3>`. The :guilabel:`star`
+button displays applications, the :guilabel:`folder` button displays
+folders, and the :guilabel:`file` button shows favorite files.
 
 .. _Line:
 
@@ -526,7 +518,7 @@ Line
 .. figure:: images/luminapanelplugin4.png
    :scale: 100%
 
-   Line: The line is highlighted in red.
+   : Line - The line is highlighted in red.
 
 Adds a separator line to the panel to provide visual separation between
 plugins, highlighted in :numref:`Figure %s <luminapanelplugin4>`. When
@@ -546,7 +538,7 @@ Show Desktop
 .. figure:: images/luminapanelplugin5.png
    :scale: 100%
 
-   Show Desktop Button
+   : Show Desktop Button
 
 This button, seen in :numref:`Figure %s <luminapanelplugin5>`, will
 immediately hide all open windows on all active monitors so only the
@@ -562,7 +554,7 @@ Spacer
 .. figure:: images/luminapanelplugin6.png
    :scale: 100%
 
-   Spacer Plugin
+   : Spacer Plugin
 
 Adds a blank area to the panel,
 :numref:`Figure %s <luminapanelplugin6>`. Similar to :ref:`Line`,
@@ -579,7 +571,7 @@ Start Menu
 
 .. figure:: images/luminapanelplugin7.png
 
-   Start Menu
+   : Start Menu
 
 Adds a classic start menu as seen on other operating systems. Shown in
 :numref:`Figure %s <luminapanelplugin7>`, this is added by default to
@@ -595,9 +587,7 @@ System Dashboard
 .. figure:: images/luminapanelplugin8.png
    :scale: 100%
 
-   System Dashboard with the button pressed.
-
-
+   : System Dashboard with the button pressed.
 
 The System Dashboard plugin, seen in
 :numref:`Figure %s <luminapanelplugin8>`, is a convenient shortcut to
@@ -621,8 +611,7 @@ System Tray
 .. figure:: images/luminapanelplugin9.png
    :scale: 100%
 
-   System Tray with several docked applications (Quassel IRC, PC Mixer,
-   etc.).
+   : System Tray with several docked applications
 
 Provides an area on the panel for dockable applications, seen in
 :numref:`Figure %s <luminapanelplugin9>`. Applications can be sent to
@@ -645,9 +634,7 @@ Task Manager Plugin (No Groups)
 .. figure:: images/luminapanelplugin10.png
    :scale: 100%
 
-   Task Manager (No Groups)
-
-
+   : Task Manager (No Groups)
 
 Ensures that every window gets its own button on the panel. This plugin
 , seen in :numref:`Figure %s <luminapanelplugin10>`, will use a large
@@ -665,7 +652,7 @@ Task Manager Plugin
 .. figure:: images/luminapanelplugin11.png
    :scale: 100%
 
-   Task Manager
+   : Task Manager
 
 In :numref:`Figure %s <luminapanelplugin11>` are three open terminal
 windows grouped into one minimal panel entry with :guilabel:`(3)`
@@ -686,8 +673,7 @@ Time/Date
 .. figure:: images/luminapanelplugin12.png
    :scale: 100%
 
-   Time/Date with the clock selected, opening the larger calendar and
-   time zone settings.
+   : Time/Date with the clock selected, opening additional settings.
 
 Displays the current time and date. A basic clock is added to the panel;
 clicking it will open the calendar, seen in
@@ -709,7 +695,7 @@ alternative to the :ref:`Panel Start Menu`.
 .. figure:: images/luminapanelplugin13.png
    :scale: 100%
 
-   User Favorites
+   : User Favorites
 
 :numref:`Figure %s <luminapanelplugin13>` shows the default view after
 clicking the :guilabel:`user` button. On the sidebar, the
@@ -727,7 +713,7 @@ Clicking the :guilabel:`gear` icon in the left sidebar will open the
 .. figure:: images/luminapanelplugin14.png
    :scale: 100%
 
-   User Applications
+   : User Applications
 
 This section displays all applications by default, with the drop down
 menu at the top allowing you to view applications by category. The
@@ -739,7 +725,7 @@ menu at the top allowing you to view applications by category. The
 .. figure:: images/luminapanelplugin15.png
    :scale: 100%
 
-   Home Directory
+   : Home Directory
 
 In :numref:`Figure %s <luminapanelplugin15>`, the :guilabel:`folder`
 icon on the left sidebar opens the :file:`Home` directory, providing the
@@ -757,7 +743,7 @@ sidebar will open :guilabel:`Desktop Preferences`, seen in
 .. figure:: images/luminapanelplugin16.png
    :scale: 100%
 
-   Desktop Preferences
+   : Desktop Preferences
 
 This panel displays shortcuts to all the settings and configuration
 utilities, as well as the system information window.
@@ -772,7 +758,7 @@ Workspace Switcher
 .. figure:: images/luminapanelplugin17.png
    :scale: 100%
 
-   Workspace Switcher
+   : Workspace Switcher
 
 The Workspace Switcher, seen in
 :numref:`Figure %s <luminapanelplugin17>`, is used to switch between

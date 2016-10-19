@@ -19,7 +19,7 @@ unavailable, the "Desktop Configuration" application (under the
 .. figure:: images/lumina3d.png
    :scale: 100%
    
-   Lumina Desktop Configuration
+   : Lumina Desktop Configuration
 
 Under the top search bar are four options to configure different areas
 of the system. Clicking a category will expand the configuration options
@@ -51,7 +51,7 @@ cursors.
 .. figure:: images/lumina17d.png
    :scale: 100%
 
-   Modifying the Theme
+   : Modifying the Theme
 
 It is possible to create your own **theme template** or **color scheme**
 by clicking :guilabel:`Edit` next to those options and changing the
@@ -73,7 +73,7 @@ and closes the editor.
 .. figure:: images/lumina18c.png
    :scale: 100%
    
-   Using the Theme Editor
+   : Using the Theme Editor
 
 The "Change Wallpaper" option, shown in :numref:`Figure %s <lumina27>`,
 can be used to add a wallpaper with :guilabel:`+`, or remove with
@@ -89,7 +89,7 @@ next image.
 .. figure:: images/lumina27.png
    :scale: 100%
    
-   |lumina| Wallpaper Settings
+   : |lumina| Wallpaper Settings
 
 Click the :guilabel:`Layout` drop-down menu to change the default
 layout of :guilabel:`Automatic` to one of several options:
@@ -106,7 +106,7 @@ the wallpaper selection drop-down menu.
 .. figure:: images/lumina16b.png
    :scale: 100%
    
-   Modifying the Wallpaper
+   : Modifying the Wallpaper
    
 :guilabel:`Window Effects`, shown in :numref:`Figure %s <lumina28>`, is
 used to add or alter graphical effects or animations applied to your
@@ -118,7 +118,7 @@ adjusted manually.
 .. figure:: images/lumina28.png
    :scale: 100%
 
-   Window Effects
+   : Window Effects
 
 :guilabel:`Window Manager`, shown in :numref:`Figure %s <lumina22c>`,
 contains various configuration options for the window manager.
@@ -128,7 +128,7 @@ contains various configuration options for the window manager.
 .. figure:: images/lumina22c.png
    :scale: 100%
 
-   Session Window Manager
+   : Session Window Manager
 
 Drop-down menus are provided for configuring all options:
 
@@ -155,7 +155,7 @@ every setting related to the display of windows on the system.
 .. figure:: images/lumina29.png
    :scale: 100%
 
-   Window Manager - Advanced
+   : Window Manager - Advanced
 
 .. index:: application startup shortcuts
 
@@ -179,7 +179,7 @@ default applications.
 .. figure:: images/lumina24a.png
    :scale: 100%
 
-   Lumina Default Applications - Basic
+   : Lumina Default Applications - Basic
 
 The default web browser, email client, file manager,and virtual
 terminal are all configurable. Click the desired application, and a new
@@ -203,7 +203,7 @@ application used for particular file types, as seen in
 .. figure:: images/lumina7e.png
    :scale: 100%
 
-   Lumina Default Applications - Advanced
+   : Lumina Default Applications - Advanced
 
 To add an application, select the file type and specific group and
 either click :guilabel:`Set App`, which will open a drop-down menu of
@@ -226,7 +226,7 @@ volume or screen brightness.
 .. figure:: images/lumina8c.png
    :scale: 100%
 
-   Lumina Keyboard Shortcuts - Basic
+   : Lumina Keyboard Shortcuts - Basic
 
 To create a shortcut, click the desired entry, then
 :guilabel:`Change Shortcut`, and define the desired key combination.
@@ -246,7 +246,7 @@ unchecking :guilabel:`View Syntax Codes`.
 .. figure:: images/lumina30.png
    :scale: 100%
 
-   Lumina Keyboard Shortcuts - Advanced
+   : Lumina Keyboard Shortcuts - Advanced
 
 :guilabel:`Startup Services and Applications`, displayed in
 :numref:`Figure %s <lumina6e>`, provides adjustment options for what is
@@ -257,7 +257,7 @@ automatically started when logging into |lumina|.
 .. figure:: images/lumina6e.png
    :scale: 100%
 
-   Lumina Startup Services
+   : Lumina Startup Services
 
 To prevent an application from starting automatically, uncheck its box.
 To add an application to the auto-start configuration , click
@@ -283,7 +283,7 @@ Interface Configuration
 .. figure:: images/lumina31.png
    :scale: 100%
 
-   |lumina| Interface Configuration
+   : |lumina| Interface Configuration
 
 .. note:: The options of :guilabel:`Context Menu and Plugins`,
    :guilabel:`Desktop Icons and Plugins`, and
@@ -322,7 +322,7 @@ screen, as seen in :numref:`Figure %s <lumina5f>`.
 .. figure:: images/lumina5f.png
    :scale: 100%
 
-   Lumina Panel Configuration
+   : Lumina Panel Configuration
 
 This screen can be used to customize the location, alignment, size,
 theme, and plugins for an existing panel. The :guilabel:`+` and
@@ -356,7 +356,7 @@ The :guilabel:`Appearance` tab (monitor icon) is shown in
 .. figure:: images/lumina19d.png
    :scale: 100%
 
-   Panels Appearance Tab
+   : Panels Appearance Tab
 
 To hide the panel unless the mouse is hovered over it, check
 :guilabel:`Auto-hide Panel`. The :guilabel:`Custom Color` option can be
@@ -371,7 +371,7 @@ The :guilabel:`Plugins` tab (puzzle icon) is shown in
 .. figure:: images/lumina20d.png
    :scale: 100%
 
-   Panels Plugins Tab
+   : Panels Plugins Tab
 
 To add a plugin as an icon to the panel, click :guilabel:`+` below the
 listed plugins and select a plugin from the list that appears. To remove
@@ -407,7 +407,7 @@ is used to govern numerous settings for the desktop experience.
 .. figure:: images/lumina12f.png
    :scale: 100%
 
-   |lumina| General Options
+   : |lumina| General Options
 
 The user can choose to automatically enable numlock, play chimes when
 |lumina| starts or exits, and change the icon that appears in the login
@@ -426,7 +426,7 @@ The :guilabel:`Localization Settings` is shown in
 .. figure:: images/lumina21c.png
    :scale: 100%
 
-   Session Locale Tab
+   : Session Locale Tab
 
 The **lumina-i18n** package provides localization files. Once installed,
 this allows customization of the locale used for the various items
