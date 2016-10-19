@@ -256,10 +256,6 @@ msgid ""
 "custom configuration of the |lumina| Desktop Project."
 msgstr ""
 
-#: ../../luminaintro.rst:118
-msgid "Lumina Desktop"
-msgstr ""
-
 #: ../../luminaintro.rst:120
 msgid ""
 ":numref:`Figure %s <lumina1e>` is a screenshot of Lumina using its default "
@@ -399,6 +395,13 @@ msgid ""
 "Xconfig`), the operating system's control panel, and |lumina| version "
 "information contained within \"About |lumina|\"."
 msgstr ""
+
+#: ../../luminaintro.rst:118
+msgid ": Lumina Desktop"
+msgstr ""
+
+#~ msgid "Lumina Desktop"
+#~ msgstr ""
 
 #~ msgid "Introduction to Lumina"
 #~ msgstr ""

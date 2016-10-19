@@ -102,10 +102,6 @@ msgid ""
 "will also open the configuration utility."
 msgstr ""
 
-#: ../../luminaconfig.rst:31
-msgid "Lumina Desktop Configuration"
-msgstr ""
-
 #: ../../luminaconfig.rst:38
 msgid ""
 "If you make changes to any of the options, remember to click :guilabel:`Save"
@@ -119,10 +115,6 @@ msgid ""
 "option, shown in :numref:`Figure %s <lumina17d>`, can be used to change the "
 "default font, font size, theme template, color scheme, icon pack, and mouse "
 "cursors."
-msgstr ""
-
-#: ../../luminaconfig.rst:63
-msgid "Modifying the Theme"
 msgstr ""
 
 #: ../../luminaconfig.rst:65
@@ -142,10 +134,6 @@ msgid ""
 "closes the editor."
 msgstr ""
 
-#: ../../luminaconfig.rst:85
-msgid "Using the Theme Editor"
-msgstr ""
-
 #: ../../luminaconfig.rst:87
 msgid ""
 "The \"Change Wallpaper\" option, shown in :numref:`Figure %s <lumina27>`, "
@@ -155,10 +143,6 @@ msgid ""
 "subdirectories, or a solid color to use as the wallpaper. If multiple images"
 " are selected, :guilabel:`Rotate Background` can be selected as well as a "
 "specified time interval in minutes to move to the next image."
-msgstr ""
-
-#: ../../luminaconfig.rst:101
-msgid "|lumina| Wallpaper Settings"
 msgstr ""
 
 #: ../../luminaconfig.rst:103
@@ -177,10 +161,6 @@ msgid ""
 "wallpaper selection drop-down menu."
 msgstr ""
 
-#: ../../luminaconfig.rst:118
-msgid "Modifying the Wallpaper"
-msgstr ""
-
 #: ../../luminaconfig.rst:120
 msgid ""
 ":guilabel:`Window Effects`, shown in :numref:`Figure %s <lumina28>`, is used"
@@ -189,18 +169,10 @@ msgid ""
 "manually."
 msgstr ""
 
-#: ../../luminaconfig.rst:130
-msgid "Window Effects"
-msgstr ""
-
 #: ../../luminaconfig.rst:132
 msgid ""
 ":guilabel:`Window Manager`, shown in :numref:`Figure %s <lumina22c>`, "
 "contains various configuration options for the window manager."
-msgstr ""
-
-#: ../../luminaconfig.rst:140
-msgid "Session Window Manager"
 msgstr ""
 
 #: ../../luminaconfig.rst:142
@@ -240,10 +212,6 @@ msgid ""
 "windows on the system."
 msgstr ""
 
-#: ../../luminaconfig.rst:167
-msgid "Window Manager - Advanced"
-msgstr ""
-
 #: ../../luminaconfig.rst:176
 msgid ""
 ":guilabel:`Desktop Sessions Options`, seen in :numref:`Figure %s "
@@ -257,10 +225,6 @@ msgid ""
 "Click :guilabel:`Default Applications for File Type` to view the "
 ":guilabel:`Basic Settings` tab, shown in :numref:`Figure %s <lumina24a>`. "
 "This tab can be used to configure default applications."
-msgstr ""
-
-#: ../../luminaconfig.rst:191
-msgid "Lumina Default Applications - Basic"
 msgstr ""
 
 #: ../../luminaconfig.rst:193
@@ -287,10 +251,6 @@ msgid ""
 "used for particular file types, as seen in :numref:`Figure %s <lumina7e>`."
 msgstr ""
 
-#: ../../luminaconfig.rst:215
-msgid "Lumina Default Applications - Advanced"
-msgstr ""
-
 #: ../../luminaconfig.rst:217
 msgid ""
 "To add an application, select the file type and specific group and either "
@@ -312,10 +272,6 @@ msgid ""
 "the system audio volume or screen brightness."
 msgstr ""
 
-#: ../../luminaconfig.rst:238
-msgid "Lumina Keyboard Shortcuts - Basic"
-msgstr ""
-
 #: ../../luminaconfig.rst:240
 msgid ""
 "To create a shortcut, click the desired entry, then :guilabel:`Change "
@@ -334,19 +290,11 @@ msgid ""
 "unchecking :guilabel:`View Syntax Codes`."
 msgstr ""
 
-#: ../../luminaconfig.rst:258
-msgid "Lumina Keyboard Shortcuts - Advanced"
-msgstr ""
-
 #: ../../luminaconfig.rst:260
 msgid ""
 ":guilabel:`Startup Services and Applications`, displayed in :numref:`Figure "
 "%s <lumina6e>`, provides adjustment options for what is automatically "
 "started when logging into |lumina|."
-msgstr ""
-
-#: ../../luminaconfig.rst:269
-msgid "Lumina Startup Services"
 msgstr ""
 
 #: ../../luminaconfig.rst:271
@@ -365,10 +313,6 @@ msgid ""
 ":guilabel:`Interface Configuration`, as seen in :numref:`Figure %s "
 "<lumina31>`, is used to configure the context (right-click menu), desktop "
 "icons, and floating panels."
-msgstr ""
-
-#: ../../luminaconfig.rst:295
-msgid "|lumina| Interface Configuration"
 msgstr ""
 
 #: ../../luminaconfig.rst:297
@@ -399,10 +343,6 @@ msgid ""
 "The :guilabel:`Floating Panels and Plugins` option offers the ability to "
 "create and/or customize panels which are attached to the edges of the "
 "screen, as seen in :numref:`Figure %s <lumina5f>`."
-msgstr ""
-
-#: ../../luminaconfig.rst:334
-msgid "Lumina Panel Configuration"
 msgstr ""
 
 #: ../../luminaconfig.rst:336
@@ -441,10 +381,6 @@ msgid ""
 " <lumina19d>`."
 msgstr ""
 
-#: ../../luminaconfig.rst:368
-msgid "Panels Appearance Tab"
-msgstr ""
-
 #: ../../luminaconfig.rst:370
 msgid ""
 "To hide the panel unless the mouse is hovered over it, check :guilabel"
@@ -457,10 +393,6 @@ msgstr ""
 msgid ""
 "The :guilabel:`Plugins` tab (puzzle icon) is shown in :numref:`Figure %s "
 "<lumina20d>`."
-msgstr ""
-
-#: ../../luminaconfig.rst:383
-msgid "Panels Plugins Tab"
 msgstr ""
 
 #: ../../luminaconfig.rst:385
@@ -495,10 +427,6 @@ msgid ""
 "used to govern numerous settings for the desktop experience."
 msgstr ""
 
-#: ../../luminaconfig.rst:419
-msgid "|lumina| General Options"
-msgstr ""
-
 #: ../../luminaconfig.rst:421
 msgid ""
 "The user can choose to automatically enable numlock, play chimes when "
@@ -515,10 +443,6 @@ msgstr ""
 msgid ""
 "The :guilabel:`Localization Settings` is shown in :numref:`Figure %s "
 "<lumina21c>`."
-msgstr ""
-
-#: ../../luminaconfig.rst:438
-msgid "Session Locale Tab"
 msgstr ""
 
 #: ../../luminaconfig.rst:440
@@ -551,6 +475,139 @@ msgid ""
 "selected language. To assist the |lumina| Project in translating menu items,"
 " see :ref:`Interface Translation`."
 msgstr ""
+
+#: ../../luminaconfig.rst:31
+msgid ": Lumina Desktop Configuration"
+msgstr ""
+
+#: ../../luminaconfig.rst:63
+msgid ": Modifying the Theme"
+msgstr ""
+
+#: ../../luminaconfig.rst:85
+msgid ": Using the Theme Editor"
+msgstr ""
+
+#: ../../luminaconfig.rst:101
+msgid ": |lumina| Wallpaper Settings"
+msgstr ""
+
+#: ../../luminaconfig.rst:118
+msgid ": Modifying the Wallpaper"
+msgstr ""
+
+#: ../../luminaconfig.rst:130
+msgid ": Window Effects"
+msgstr ""
+
+#: ../../luminaconfig.rst:140
+msgid ": Session Window Manager"
+msgstr ""
+
+#: ../../luminaconfig.rst:167
+msgid ": Window Manager - Advanced"
+msgstr ""
+
+#: ../../luminaconfig.rst:191
+msgid ": Lumina Default Applications - Basic"
+msgstr ""
+
+#: ../../luminaconfig.rst:215
+msgid ": Lumina Default Applications - Advanced"
+msgstr ""
+
+#: ../../luminaconfig.rst:238
+msgid ": Lumina Keyboard Shortcuts - Basic"
+msgstr ""
+
+#: ../../luminaconfig.rst:258
+msgid ": Lumina Keyboard Shortcuts - Advanced"
+msgstr ""
+
+#: ../../luminaconfig.rst:269
+msgid ": Lumina Startup Services"
+msgstr ""
+
+#: ../../luminaconfig.rst:295
+msgid ": |lumina| Interface Configuration"
+msgstr ""
+
+#: ../../luminaconfig.rst:334
+msgid ": Lumina Panel Configuration"
+msgstr ""
+
+#: ../../luminaconfig.rst:368
+msgid ": Panels Appearance Tab"
+msgstr ""
+
+#: ../../luminaconfig.rst:383
+msgid ": Panels Plugins Tab"
+msgstr ""
+
+#: ../../luminaconfig.rst:419
+msgid ": |lumina| General Options"
+msgstr ""
+
+#: ../../luminaconfig.rst:438
+msgid ": Session Locale Tab"
+msgstr ""
+
+#~ msgid "Lumina Desktop Configuration"
+#~ msgstr ""
+
+#~ msgid "Modifying the Theme"
+#~ msgstr ""
+
+#~ msgid "Using the Theme Editor"
+#~ msgstr ""
+
+#~ msgid "|lumina| Wallpaper Settings"
+#~ msgstr ""
+
+#~ msgid "Modifying the Wallpaper"
+#~ msgstr ""
+
+#~ msgid "Window Effects"
+#~ msgstr ""
+
+#~ msgid "Session Window Manager"
+#~ msgstr ""
+
+#~ msgid "Window Manager - Advanced"
+#~ msgstr ""
+
+#~ msgid "Lumina Default Applications - Basic"
+#~ msgstr ""
+
+#~ msgid "Lumina Default Applications - Advanced"
+#~ msgstr ""
+
+#~ msgid "Lumina Keyboard Shortcuts - Basic"
+#~ msgstr ""
+
+#~ msgid "Lumina Keyboard Shortcuts - Advanced"
+#~ msgstr ""
+
+#~ msgid "Lumina Startup Services"
+#~ msgstr ""
+
+#~ msgid "|lumina| Interface Configuration"
+#~ msgstr ""
+
+#~ msgid "Lumina Panel Configuration"
+#~ msgstr ""
+
+#~ msgid "Panels Appearance Tab"
+#~ msgstr ""
+
+#~ msgid "Panels Plugins Tab"
+#~ msgstr ""
+
+#~ msgid "|lumina| General Options"
+#~ msgstr ""
+
+#~ msgid "Session Locale Tab"
+#~ msgstr ""
 
 #~ msgid "Lumina Configuration"
 #~ msgstr ""
