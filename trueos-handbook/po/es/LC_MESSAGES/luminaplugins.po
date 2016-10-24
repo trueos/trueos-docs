@@ -229,10 +229,6 @@ msgstr ""
 msgid "Workspace Switcher"
 msgstr ""
 
-#: ../../luminaplugins.rst:14
-msgid "Lumina® Plugins"
-msgstr ""
-
 #: ../../luminaplugins.rst:16
 msgid ""
 "|lumina| offers a wide variety of plugins which allow the user to customize "
@@ -648,10 +644,6 @@ msgid ""
 "have asterisks (*) before and after its name."
 msgstr ""
 
-#: ../../luminaplugins.rst:37
-msgid ": Lumina Menu Plugins"
-msgstr ""
-
 #: ../../luminaplugins.rst:56
 msgid ": Menu Plugin Default Menu"
 msgstr ""
@@ -810,6 +802,20 @@ msgstr ""
 #: ../../luminaplugins.rst:770
 msgid ": Workspace Switcher"
 msgstr ""
+
+#: ../../luminaplugins.rst:14
+msgid "|lumina| Plugins"
+msgstr ""
+
+#: ../../luminaplugins.rst:37
+msgid ": |lumina| Menu Plugins"
+msgstr ""
+
+#~ msgid "Lumina® Plugins"
+#~ msgstr ""
+
+#~ msgid ": Lumina Menu Plugins"
+#~ msgstr ""
 
 #~ msgid "Lumina Menu Plugins"
 #~ msgstr ""

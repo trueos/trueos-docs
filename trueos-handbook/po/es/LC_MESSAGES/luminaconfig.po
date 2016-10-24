@@ -86,10 +86,6 @@ msgstr ""
 msgid "User Settings"
 msgstr ""
 
-#: ../../luminaconfig.rst:14
-msgid "Lumina® Configuration"
-msgstr ""
-
 #: ../../luminaconfig.rst:16
 msgid ""
 "The |lumina| Configuration utility, shown in :numref:`Figure %s <lumina3d>`,"
@@ -132,17 +128,6 @@ msgid ""
 "making your changes, click :guilabel:`Save` to save the theme without "
 "closing the editor, or click :guilabel:`Apply`, which saves the theme and "
 "closes the editor."
-msgstr ""
-
-#: ../../luminaconfig.rst:87
-msgid ""
-"The \"Change Wallpaper\" option, shown in :numref:`Figure %s <lumina27>`, "
-"can be used to add a wallpaper with :guilabel:`+`, or remove with "
-":guilabel:`-`. When :guilabel:`+` is pressed, the drop-down menu can be used"
-" to select the file(s), a single directory, a directory and all of its "
-"subdirectories, or a solid color to use as the wallpaper. If multiple images"
-" are selected, :guilabel:`Rotate Background` can be selected as well as a "
-"specified time interval in minutes to move to the next image."
 msgstr ""
 
 #: ../../luminaconfig.rst:103
@@ -476,10 +461,6 @@ msgid ""
 " see :ref:`Interface Translation`."
 msgstr ""
 
-#: ../../luminaconfig.rst:31
-msgid ": Lumina Desktop Configuration"
-msgstr ""
-
 #: ../../luminaconfig.rst:63
 msgid ": Modifying the Theme"
 msgstr ""
@@ -508,32 +489,8 @@ msgstr ""
 msgid ": Window Manager - Advanced"
 msgstr ""
 
-#: ../../luminaconfig.rst:191
-msgid ": Lumina Default Applications - Basic"
-msgstr ""
-
-#: ../../luminaconfig.rst:215
-msgid ": Lumina Default Applications - Advanced"
-msgstr ""
-
-#: ../../luminaconfig.rst:238
-msgid ": Lumina Keyboard Shortcuts - Basic"
-msgstr ""
-
-#: ../../luminaconfig.rst:258
-msgid ": Lumina Keyboard Shortcuts - Advanced"
-msgstr ""
-
-#: ../../luminaconfig.rst:269
-msgid ": Lumina Startup Services"
-msgstr ""
-
 #: ../../luminaconfig.rst:295
 msgid ": |lumina| Interface Configuration"
-msgstr ""
-
-#: ../../luminaconfig.rst:334
-msgid ": Lumina Panel Configuration"
 msgstr ""
 
 #: ../../luminaconfig.rst:368
@@ -551,6 +508,83 @@ msgstr ""
 #: ../../luminaconfig.rst:438
 msgid ": Session Locale Tab"
 msgstr ""
+
+#: ../../luminaconfig.rst:14
+msgid "|lumina| Configuration"
+msgstr ""
+
+#: ../../luminaconfig.rst:31
+msgid ": |lumina| Desktop Configuration"
+msgstr ""
+
+#: ../../luminaconfig.rst:87
+msgid ""
+":guilabel:`Change Wallpaper` option, shown in :numref:`Figure %s "
+"<lumina27>`, can be used to add a wallpaper with :guilabel:`+`, or remove "
+"with :guilabel:`-`. When :guilabel:`+` is pressed, the drop-down menu can be"
+" used to select the file(s), a single directory, a directory and all of its "
+"subdirectories, or a solid color to use as the wallpaper. If multiple images"
+" are selected, :guilabel:`Rotate Background` can be selected as well as a "
+"specified time interval in minutes to move to the next image."
+msgstr ""
+
+#: ../../luminaconfig.rst:191
+msgid ": |lumina| Default Applications - Basic"
+msgstr ""
+
+#: ../../luminaconfig.rst:215
+msgid ": |lumina| Default Applications - Advanced"
+msgstr ""
+
+#: ../../luminaconfig.rst:238
+msgid ": |lumina| Keyboard Shortcuts - Basic"
+msgstr ""
+
+#: ../../luminaconfig.rst:258
+msgid ": |lumina| Keyboard Shortcuts - Advanced"
+msgstr ""
+
+#: ../../luminaconfig.rst:269
+msgid ": |lumina| Startup Services"
+msgstr ""
+
+#: ../../luminaconfig.rst:334
+msgid ": |lumina| Panel Configuration"
+msgstr ""
+
+#~ msgid "Lumina® Configuration"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The \"Change Wallpaper\" option, shown in :numref:`Figure %s <lumina27>`, "
+#~ "can be used to add a wallpaper with :guilabel:`+`, or remove with "
+#~ ":guilabel:`-`. When :guilabel:`+` is pressed, the drop-down menu can be used"
+#~ " to select the file(s), a single directory, a directory and all of its "
+#~ "subdirectories, or a solid color to use as the wallpaper. If multiple images"
+#~ " are selected, :guilabel:`Rotate Background` can be selected as well as a "
+#~ "specified time interval in minutes to move to the next image."
+#~ msgstr ""
+
+#~ msgid ": Lumina Desktop Configuration"
+#~ msgstr ""
+
+#~ msgid ": Lumina Default Applications - Basic"
+#~ msgstr ""
+
+#~ msgid ": Lumina Default Applications - Advanced"
+#~ msgstr ""
+
+#~ msgid ": Lumina Keyboard Shortcuts - Basic"
+#~ msgstr ""
+
+#~ msgid ": Lumina Keyboard Shortcuts - Advanced"
+#~ msgstr ""
+
+#~ msgid ": Lumina Startup Services"
+#~ msgstr ""
+
+#~ msgid ": Lumina Panel Configuration"
+#~ msgstr ""
 
 #~ msgid "Lumina Desktop Configuration"
 #~ msgstr ""

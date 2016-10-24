@@ -81,18 +81,10 @@ msgid ""
 "selected for the screenshot."
 msgstr ""
 
-#: ../../luminautl.rst:14
-msgid "Lumina® Utilities"
-msgstr ""
-
 #: ../../luminautl.rst:16
 msgid ""
 "|lumina| provides many built-in utilities, which are described in this "
 "chapter."
-msgstr ""
-
-#: ../../luminautl.rst:277
-msgid "Lumina® File Information"
 msgstr ""
 
 #: ../../luminautl.rst:279
@@ -103,10 +95,6 @@ msgid ""
 "shown in in :numref:`Figure %s <file1a>`, the user has typed :command"
 ":`lumina-fileinfo Downloads` from a terminal window to view the file "
 "information of their :file:`~/Downloads` directory."
-msgstr ""
-
-#: ../../luminautl.rst:298
-msgid "Lumina® Information"
 msgstr ""
 
 #: ../../luminautl.rst:300
@@ -161,10 +149,6 @@ msgstr ""
 msgid "**Sponsors:** lists the official sponsors of the |lumina| Project."
 msgstr ""
 
-#: ../../luminautl.rst:359
-msgid "Lumina® Open"
-msgstr ""
-
 #: ../../luminautl.rst:361
 msgid ""
 "To open a file, directory, or URL from the command line, type :command"
@@ -185,10 +169,6 @@ msgid ""
 "check is performed to determine if it is a valid binary and the icon will "
 "change between a :guilabel:`green checkmark` or a :guilabel:`red X` as "
 "appropriate."
-msgstr ""
-
-#: ../../luminautl.rst:397
-msgid "Lumina® Screenshot"
 msgstr ""
 
 #: ../../luminautl.rst:407
@@ -255,10 +235,6 @@ msgid ""
 "window to select an image manipulation program."
 msgstr ""
 
-#: ../../luminautl.rst:470
-msgid "Lumina® Search"
-msgstr ""
-
 #: ../../luminautl.rst:472
 msgid ""
 "|lumina| Search provides options to find and launch applications or to "
@@ -314,10 +290,6 @@ msgid ""
 " settings back to their defaults after closing the menu."
 msgstr ""
 
-#: ../../luminautl.rst:536
-msgid "Lumina® Text Editor"
-msgstr ""
-
 #: ../../luminautl.rst:538
 msgid ""
 "The :command:`lumina-textedit` utility is a plaintext editor with a number "
@@ -343,10 +315,6 @@ msgid ""
 "dynamically with the edge of the window. Additionally, selecting "
 ":guilabel:`Customize \"Colors` gives the option to alter all the default "
 "text and highlight colors, seen in :numref:`Figure %s <lumina32>`."
-msgstr ""
-
-#: ../../luminautl.rst:575
-msgid "Lumina® Xconfig"
 msgstr ""
 
 #: ../../luminautl.rst:577
@@ -930,14 +898,6 @@ msgstr ""
 msgid ": Sample File Information"
 msgstr ""
 
-#: ../../luminautl.rst:313
-msgid ": About Lumina"
-msgstr ""
-
-#: ../../luminautl.rst:376
-msgid ": Lumina Open"
-msgstr ""
-
 #: ../../luminautl.rst:416
 msgid ": New Screenshot Tab"
 msgstr ""
@@ -969,6 +929,76 @@ msgstr ""
 #: ../../luminautl.rst:589
 msgid ": Configuring Monitors"
 msgstr ""
+
+#: ../../luminautl.rst:14
+msgid "|lumina| Utilities"
+msgstr ""
+
+#: ../../luminautl.rst:277
+msgid "|lumina| File Information"
+msgstr ""
+
+#: ../../luminautl.rst:298
+msgid "|lumina| Information"
+msgstr ""
+
+#: ../../luminautl.rst:313
+msgid ": About |lumina|"
+msgstr ""
+
+#: ../../luminautl.rst:359
+msgid "|lumina| Open"
+msgstr ""
+
+#: ../../luminautl.rst:376
+msgid ": |lumina| Open"
+msgstr ""
+
+#: ../../luminautl.rst:397
+msgid "|lumina| Screenshot"
+msgstr ""
+
+#: ../../luminautl.rst:470
+msgid "|lumina| Search"
+msgstr ""
+
+#: ../../luminautl.rst:536
+msgid "|lumina| Text Editor"
+msgstr ""
+
+#: ../../luminautl.rst:575
+msgid "|lumina| Xconfig"
+msgstr ""
+
+#~ msgid "Lumina® Utilities"
+#~ msgstr ""
+
+#~ msgid "Lumina® File Information"
+#~ msgstr ""
+
+#~ msgid "Lumina® Information"
+#~ msgstr ""
+
+#~ msgid "Lumina® Open"
+#~ msgstr ""
+
+#~ msgid "Lumina® Screenshot"
+#~ msgstr ""
+
+#~ msgid "Lumina® Search"
+#~ msgstr ""
+
+#~ msgid "Lumina® Text Editor"
+#~ msgstr ""
+
+#~ msgid "Lumina® Xconfig"
+#~ msgstr ""
+
+#~ msgid ": About Lumina"
+#~ msgstr ""
+
+#~ msgid ": Lumina Open"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "A few additional options may be available at the bottom of the window, "
