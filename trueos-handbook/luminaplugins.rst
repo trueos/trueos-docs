@@ -1,8 +1,8 @@
 .. index:: plugins
 .. _Lumina Plugins:
 
-Lumina® Plugins
-***************
+|lumina| Plugins
+****************
 
 |lumina| offers a wide variety of plugins which allow the user to
 customize their desktop experience. Plugins are divided between context
@@ -25,7 +25,7 @@ clicking the :guilabel:`Start Menu`, then
 .. figure:: images/luminamenupluginmenu1.png
    :scale: 100%
 
-   : Lumina Menu Plugins
+   : |lumina| Menu Plugins
 
 Add or remove plugins by clicking the :guilabel:`green plus` or
 :guilabel:`red minus` buttons in the bottom left corner of the window.

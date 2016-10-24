@@ -1,8 +1,8 @@
 .. index:: Utilities
 .. _Lumina Utilities:
 
-Lumina® Utilities
-*****************
+|lumina| Utilities
+******************
 
 |lumina| provides many built-in utilities, which are described in this
 chapter.
@@ -264,8 +264,8 @@ object or other relevant information.
 .. index:: Lumina File Information
 .. _Lumina File Information:
 
-Lumina® File Information
-========================
+|lumina| File Information
+=========================
 
 The :command:`lumina-fileinfo` utility can be used to open a graphical
 window summarizing the size, permissions and ownership, creation time,
@@ -285,8 +285,8 @@ directory.
 .. index:: Lumina Information
 .. _Lumina Information:
 
-Lumina® Information
-===================
+|lumina| Information
+====================
 
 This utility provides information about the installed version of
 |lumina|, as well as the license, acknowledgements, and project links.
@@ -301,7 +301,7 @@ the question mark icon in :guilabel:`Preferences`, or type
 .. figure:: images/about1c.png
    :scale: 100%
 
-   : About Lumina
+   : About |lumina|
 
 The :guilabel:`General` tab contains a variety of information:
 
@@ -346,8 +346,8 @@ The :guilabel:`Acknowledgements` tab contains the following:
 .. index:: application launcher
 .. _Lumina Open:
 
-Lumina® Open
-============
+|lumina| Open
+=============
 
 To open a file, directory, or URL from the command line, type
 :command:`lumina-open` followed by the full path to the file or the URL.
@@ -364,7 +364,7 @@ applications into three types:
 .. figure:: images/lumina11b.png
    :scale: 100%
 
-   : Lumina Open
+   : |lumina| Open
 
 * **Preferred:** These applications have registered their Mime type with
   the system and can open that type of file. Also included are any
@@ -384,8 +384,8 @@ applications into three types:
 .. index:: screenshot
 .. _Lumina Screenshot:
 
-Lumina® Screenshot
-==================
+|lumina| Screenshot
+===================
 
 This utility can be used to take screenshots of the desktop or selected
 window and save them as PNG image files. To launch this utility, click
@@ -457,8 +457,8 @@ directory and open a window to select an image manipulation program.
 .. index:: search
 .. _Lumina Search:
 
-Lumina® Search
-==============
+|lumina| Search
+===============
   
 |lumina| Search provides options to find and launch applications or to
 quickly search for files and directories. The ***** wildcard can be used
@@ -523,8 +523,8 @@ defaults after closing the menu.
 .. index:: textedit
 .. _Lumina Text Editor:
 
-Lumina® Text Editor
-===================
+|lumina| Text Editor
+====================
 
 The :command:`lumina-textedit` utility is a plaintext editor with a
 number of basic options. :numref:`Figure %s: <lumina23>`
@@ -562,8 +562,8 @@ to alter all the default text and highlight colors, seen in
 .. index:: Xconfig
 .. _Lumina Xconfig:
 
-Lumina® Xconfig
-===============
+|lumina| Xconfig
+================
 
 The :command:`lumina-xconfig` utility is a graphical front-end to the
 :command:`xrandr` command line utility. It provides the ability to probe

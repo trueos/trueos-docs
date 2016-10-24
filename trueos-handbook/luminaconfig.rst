@@ -1,8 +1,8 @@
 .. index:: configuration
 .. _Lumina Configuration:
 
-Lumina® Configuration
-*********************
+|lumina| Configuration
+**********************
 
 The |lumina| Configuration utility, shown in
 :numref:`Figure %s <lumina3d>`, can be used to configure every aspect
@@ -19,7 +19,7 @@ unavailable, the "Desktop Configuration" application (under the
 .. figure:: images/lumina3d.png
    :scale: 100%
    
-   : Lumina Desktop Configuration
+   : |lumina| Desktop Configuration
 
 Under the top search bar are four options to configure different areas
 of the system. Clicking a category will expand the configuration options
@@ -75,14 +75,14 @@ and closes the editor.
    
    : Using the Theme Editor
 
-The "Change Wallpaper" option, shown in :numref:`Figure %s <lumina27>`,
-can be used to add a wallpaper with :guilabel:`+`, or remove with
-:guilabel:`-`. When :guilabel:`+` is pressed, the drop-down menu can be
-used to select the file(s), a single directory, a directory and all of
-its subdirectories, or a solid color to use as the wallpaper. If
-multiple images are selected, :guilabel:`Rotate Background` can be
-selected as well as a specified time interval in minutes to move to the
-next image.
+:guilabel:`Change Wallpaper` option, shown in
+:numref:`Figure %s <lumina27>`, can be used to add a wallpaper with
+:guilabel:`+`, or remove with :guilabel:`-`. When :guilabel:`+` is
+pressed, the drop-down menu can be used to select the file(s), a single
+directory, a directory and all of its subdirectories, or a solid color
+to use as the wallpaper. If multiple images are selected,
+:guilabel:`Rotate Background` can be selected as well as a specified
+time interval in minutes to move to the next image.
 
 .. _lumina27:
 
@@ -179,7 +179,7 @@ default applications.
 .. figure:: images/lumina24a.png
    :scale: 100%
 
-   : Lumina Default Applications - Basic
+   : |lumina| Default Applications - Basic
 
 The default web browser, email client, file manager,and virtual
 terminal are all configurable. Click the desired application, and a new
@@ -203,7 +203,7 @@ application used for particular file types, as seen in
 .. figure:: images/lumina7e.png
    :scale: 100%
 
-   : Lumina Default Applications - Advanced
+   : |lumina| Default Applications - Advanced
 
 To add an application, select the file type and specific group and
 either click :guilabel:`Set App`, which will open a drop-down menu of
@@ -226,7 +226,7 @@ volume or screen brightness.
 .. figure:: images/lumina8c.png
    :scale: 100%
 
-   : Lumina Keyboard Shortcuts - Basic
+   : |lumina| Keyboard Shortcuts - Basic
 
 To create a shortcut, click the desired entry, then
 :guilabel:`Change Shortcut`, and define the desired key combination.
@@ -246,7 +246,7 @@ unchecking :guilabel:`View Syntax Codes`.
 .. figure:: images/lumina30.png
    :scale: 100%
 
-   : Lumina Keyboard Shortcuts - Advanced
+   : |lumina| Keyboard Shortcuts - Advanced
 
 :guilabel:`Startup Services and Applications`, displayed in
 :numref:`Figure %s <lumina6e>`, provides adjustment options for what is
@@ -257,7 +257,7 @@ automatically started when logging into |lumina|.
 .. figure:: images/lumina6e.png
    :scale: 100%
 
-   : Lumina Startup Services
+   : |lumina| Startup Services
 
 To prevent an application from starting automatically, uncheck its box.
 To add an application to the auto-start configuration , click
@@ -322,7 +322,7 @@ screen, as seen in :numref:`Figure %s <lumina5f>`.
 .. figure:: images/lumina5f.png
    :scale: 100%
 
-   : Lumina Panel Configuration
+   : |lumina| Panel Configuration
 
 This screen can be used to customize the location, alignment, size,
 theme, and plugins for an existing panel. The :guilabel:`+` and
