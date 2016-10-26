@@ -37,126 +37,122 @@ msgid ""
 "service such as pastebin.com and refer to the URL on channel."
 msgstr ""
 
-#: ../../help.rst:75
-msgid "TrueOS® Subreddit"
-msgstr ""
-
-#: ../../help.rst:87
+#: ../../help.rst:98
 msgid "Report a bug"
 msgstr ""
 
-#: ../../help.rst:99
+#: ../../help.rst:110
 msgid ""
 "The GitHub issues tracker uses email to update contributors on the status of"
 " bugs. Please use a valid and frequently used email address when creating a "
 "GitHub account for the efficient resolution of issues."
 msgstr ""
 
-#: ../../help.rst:153
+#: ../../help.rst:164
 msgid "Social Media"
 msgstr ""
 
-#: ../../help.rst:160
+#: ../../help.rst:171
 msgid "`Official TrueOS® Blog <https://www.trueos.org/blog/>`_"
 msgstr ""
 
-#: ../../help.rst:162
+#: ../../help.rst:173
 msgid "`TrueOS® Project on Twitter <https://twitter.com/TrueOS_Project/>`_"
 msgstr ""
 
-#: ../../help.rst:164
+#: ../../help.rst:175
 msgid ""
 "`TrueOSD® Facebook Group <https://www.facebook.com/groups/4210443834/>`_"
 msgstr ""
 
-#: ../../help.rst:166
+#: ../../help.rst:177
 msgid "`TrueOS® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_"
 msgstr ""
 
-#: ../../help.rst:172
+#: ../../help.rst:183
 msgid "FreeBSD Handbook and FAQ"
 msgstr ""
 
-#: ../../help.rst:193
+#: ../../help.rst:204
 msgid "Search and Portals"
 msgstr ""
 
-#: ../../help.rst:198
+#: ../../help.rst:209
 msgid ""
 "`The OpenDirectory "
 "<http://www.dmoz.org/Computers/Software/Operating_Systems/Unix/BSD/>`_"
 msgstr ""
 
-#: ../../help.rst:200
+#: ../../help.rst:211
 msgid ""
 "`FreeBSD Search <http://www.freebsd.org/search/index.html>`_ (includes "
 "mailing list archives, man pages, and web pages)"
 msgstr ""
 
-#: ../../help.rst:203
+#: ../../help.rst:214
 msgid "`FreeBSD News <https://www.freebsdnews.com/>`_"
 msgstr ""
 
-#: ../../help.rst:205
+#: ../../help.rst:216
 msgid "`About BSD <http://aboutbsd.net/>`_"
 msgstr ""
 
-#: ../../help.rst:207
+#: ../../help.rst:218
 msgid "`BSD Guides <http://www.bsdguides.org/guides/>`_"
 msgstr ""
 
-#: ../../help.rst:209
+#: ../../help.rst:220
 msgid "`Slashdot BSD <https://bsd.slashdot.org/>`_"
 msgstr ""
 
-#: ../../help.rst:211
+#: ../../help.rst:222
 msgid "`DistroWatch <http://distrowatch.com/>`_"
 msgstr ""
 
-#: ../../help.rst:213
+#: ../../help.rst:224
 msgid "`LinuxBSDos <http://linuxbsdos.com/>`_"
 msgstr ""
 
-#: ../../help.rst:219
+#: ../../help.rst:230
 msgid "Other Resources"
 msgstr ""
 
-#: ../../help.rst:223
+#: ../../help.rst:234
 msgid "`The FreeBSD Diary <http://www.freebsddiary.org/>`_"
 msgstr ""
 
-#: ../../help.rst:227
+#: ../../help.rst:238
 msgid "`BSD YouTube channel <https://www.youtube.com/user/bsdconferences>`_"
 msgstr ""
 
-#: ../../help.rst:229
+#: ../../help.rst:240
 msgid "`BSD Talk <http://bsdtalk.blogspot.com/>`_"
 msgstr ""
 
-#: ../../help.rst:231
+#: ../../help.rst:242
 msgid "`BSD Now <http://www.bsdnow.tv/>`_"
 msgstr ""
 
-#: ../../help.rst:233
+#: ../../help.rst:244
 msgid "`BSD Magazine <https://bsdmag.org/>`_ (free, monthly download)"
 msgstr ""
 
-#: ../../help.rst:235
+#: ../../help.rst:246
 msgid ""
 "`FreeBSD Journal <http://www.freebsdjournal.com/>`_ (bi-monthly magazine)"
 msgstr ""
 
-#: ../../help.rst:237
+#: ../../help.rst:248
 msgid "`BSD Hacks <http://shop.oreilly.com/product/9780596006792.do>`_ (book)"
 msgstr ""
 
-#: ../../help.rst:239
+#: ../../help.rst:250
 msgid ""
 "`The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ "
 "(book)"
 msgstr ""
 
-#: ../../help.rst:241
+#: ../../help.rst:252
 msgid ""
 "`Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)"
 msgstr ""
@@ -238,7 +234,7 @@ msgid ""
 "login account to submit or comment on posts."
 msgstr ""
 
-#: ../../help.rst:89
+#: ../../help.rst:100
 msgid ""
 "One of the most effective ways to assist the |trueos| Project is by "
 "reporting problems or bugs encountered while using |trueos|. Anyone can "
@@ -246,7 +242,7 @@ msgid ""
 "ensure a speedy response:"
 msgstr ""
 
-#: ../../help.rst:94
+#: ../../help.rst:105
 msgid ""
 "|trueos| uses `GitHub <https://github.com/trueos/>`_, to manage bugs. A "
 "GitHub account is required before bugs can be reported. Navigate to "
@@ -254,7 +250,7 @@ msgid ""
 "up for GitHub` to create a new github account."
 msgstr ""
 
-#: ../../help.rst:104
+#: ../../help.rst:115
 msgid ""
 "The |trueos| code has been organized into repositories representing the "
 "|lumina| desktop, the graphical utilities, |sysadm|, and various other "
@@ -263,7 +259,7 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../help.rst:110
+#: ../../help.rst:121
 msgid ""
 "After clicking a repostitory name, use the :guilabel:`Search` bar on its "
 "page to confirm no similar bug report exists. If a similar report does "
@@ -272,18 +268,18 @@ msgid ""
 "creating a new report does require signing into the website."
 msgstr ""
 
-#: ../../help.rst:127
+#: ../../help.rst:138
 msgid ": Creating a Bug Report"
 msgstr ""
 
-#: ../../help.rst:129
+#: ../../help.rst:140
 msgid ""
 "Write a brief but descriptive title which includes the error. Ideally, the "
 "title is short (8 words or less) and contains key words about the error so "
 "the bug report is easily found with the search tool."
 msgstr ""
 
-#: ../../help.rst:133
+#: ../../help.rst:144
 msgid ""
 "In the :guilabel:`Leave a Comment` field, write about the circumstance of "
 "the error, including instructions how to recreate it. If an error message is"
@@ -292,14 +288,14 @@ msgid ""
 " include the output of :command:`uname -a`."
 msgstr ""
 
-#: ../../help.rst:140
+#: ../../help.rst:151
 msgid ""
 "If the problem appears to be hardware related, attach a copy of "
 ":file:`/var/run/dmesg.boot` as this file shows the hardware probed the last "
 "time the |trueos| system booted."
 msgstr ""
 
-#: ../../help.rst:144
+#: ../../help.rst:155
 msgid ""
 "After describing the issue, click :guilabel:`Submit new issue` to create the"
 " issue. The bug tracker will attach a unique number to the report and send "
@@ -307,14 +303,14 @@ msgid ""
 " with the bug report."
 msgstr ""
 
-#: ../../help.rst:155
+#: ../../help.rst:166
 msgid ""
 "The |trueos| project maintains several social media sites to help users keep"
 " up-to-date with what is happening and to provide venues for developers and "
 "users to network with each other. Anyone is welcome to join."
 msgstr ""
 
-#: ../../help.rst:174
+#: ../../help.rst:185
 msgid ""
 "|trueos| uses FreeBSD as its underlying operating system, so everything in "
 "the `FreeBSD Handbook "
@@ -325,7 +321,7 @@ msgid ""
 "learning how things work under the hood of a |trueos| system."
 msgstr ""
 
-#: ../../help.rst:184
+#: ../../help.rst:195
 msgid ""
 "Some configurations described in the FreeBSD Handbook already \"just work\" "
 "on a |trueos| system as they have been pre-configured. In these instances, "
@@ -333,29 +329,48 @@ msgid ""
 "configured and why it works."
 msgstr ""
 
-#: ../../help.rst:195
+#: ../../help.rst:206
 msgid ""
 "Many BSD related search portals exist. If unable to find an answer from the "
 "forums or mailing lists, try searching these websites:"
 msgstr ""
 
-#: ../../help.rst:221
+#: ../../help.rst:232
 msgid "Many BSD sites and resources may also contain useful information:"
 msgstr ""
 
-#: ../../help.rst:225
+#: ../../help.rst:236
 msgid ""
 "`TrueOS® YouTube channel <https://www.youtube.com/channel/UCyd7MaPVUpa-"
 "ueUsGjUujag>`_"
 msgstr ""
 
-#: ../../help.rst:117
+#: ../../help.rst:128
 msgid ""
 "To create a new bug report, navigate to the `trueos-core repository "
 "<https://github.com/trueos/trueos-core>`_ and press :menuselection:`Issues "
 "--> New Issue` within the repository. :numref:`Figure %s <bug1>` shows the "
 "creation of a new bug report."
 msgstr ""
+
+#: ../../help.rst:75
+msgid "|trueos| Subreddit"
+msgstr ""
+
+#: ../../help.rst:86
+msgid "|trueos| Discourse"
+msgstr ""
+
+#: ../../help.rst:88
+msgid ""
+"|trueos| also has a discourse `channel <https://discourse.trueos.org/>`_ "
+"managed concurrently with the Subreddit. Functionally similar to the "
+"Subreddit, a new user will need to sign up with Discourse in order to create"
+" posts, but it is possible to view the current posts without an account."
+msgstr ""
+
+#~ msgid "TrueOS® Subreddit"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "To create a new bug report, click :menuselection:`Issues --> New Issue` "

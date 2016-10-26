@@ -11,10 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../support.rst:14
-msgid "Supporting TrueOS®"
-msgstr ""
-
 #: ../../support.rst:24
 msgid "Become a Beta Tester"
 msgstr ""
@@ -654,10 +650,6 @@ msgstr ""
 msgid "**Example 2: Root Permission Settings**"
 msgstr ""
 
-#: ../../support.rst:95
-msgid ": TrueOS® Weblate Translation System"
-msgstr ""
-
 #: ../../support.rst:138
 msgid ": Project Selection"
 msgstr ""
@@ -692,6 +684,20 @@ msgid ""
 "feature-rich, and no-cost operating system. Here are some suggestions for "
 "getting started:"
 msgstr ""
+
+#: ../../support.rst:14
+msgid "Supporting |trueos|"
+msgstr ""
+
+#: ../../support.rst:95
+msgid ": |trueos| Weblate Translation System"
+msgstr ""
+
+#~ msgid "Supporting TrueOS®"
+#~ msgstr ""
+
+#~ msgid ": TrueOS® Weblate Translation System"
+#~ msgstr ""
 
 #~ msgid ": The TrueOS® Weblate Translation System"
 #~ msgstr ""
