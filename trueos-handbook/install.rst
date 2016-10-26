@@ -1,7 +1,7 @@
 .. index:: installation
 .. _Installing TrueOS®:
 
-Installing TrueOS®
+Installing |trueos|
 *******************
 
 This chapter describes how to use the graphical installer to install a

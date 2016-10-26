@@ -1,6 +1,6 @@
 .. _Using TrueOS®:
 
-Using TrueOS®
+Using |trueos|
 **************
 
 This section discusses how to perform common tasks that were not
