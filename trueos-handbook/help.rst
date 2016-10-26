@@ -62,14 +62,25 @@ on the Gitter channel:
 .. index:: reddit
 .. _TrueOS® Subreddit:
 
-TrueOS® Subreddit
-=================
+|trueos| Subreddit
+==================
 
 The |trueos| Project also has a
 `Subreddit <https://www.reddit.com/r/TrueOS/>`_ for users who prefer
 to use Reddit to ask questions and to search for or post how-tos. A
 Reddit account is not required in order to read the Subreddit, but will
 be necessary to create a login account to submit or comment on posts.
+
+.. index:: discourse
+
+|trueos| Discourse
+==================
+
+|trueos| also has a discourse `channel <https://discourse.trueos.org/>`_
+managed concurrently with the Subreddit. Functionally similar to the
+Subreddit, a new user will need to sign up with Discourse in order to
+create posts, but it is possible to view the current posts without an
+account.
 
 .. index:: bug
 .. _Report a bug:

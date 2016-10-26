@@ -1,8 +1,8 @@
 .. index:: advocacy
 .. _Supporting TrueOS®:
 
-Supporting TrueOS®
-******************
+Supporting |trueos|
+*******************
 
 |trueos| is a community project which relies on involvement from its
 users and supporters. This section lists some ideas for becoming
@@ -83,7 +83,7 @@ browser. An example is seen in :numref:`Figure %s <translate1>`.
 
 .. figure:: images/translate1.png
 
-   : TrueOS® Weblate Translation System
+   : |trueos| Weblate Translation System
 
 Before editing a translation, first create a a login account and verify
 the activation email. Once logged in, click 
