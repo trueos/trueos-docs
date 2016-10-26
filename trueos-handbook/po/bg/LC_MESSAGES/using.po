@@ -11,10 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../using.rst:13
-msgid "Using TrueOS®"
-msgstr ""
-
 #: ../../using.rst:15
 msgid ""
 "This section discusses how to perform common tasks that were not discussed "
@@ -2598,6 +2594,13 @@ msgstr ""
 #: ../../using.rst:531
 msgid "To update an existing local ports directory:"
 msgstr ""
+
+#: ../../using.rst:13
+msgid "Using |trueos|"
+msgstr ""
+
+#~ msgid "Using TrueOS®"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "To access the utility shown in :numref:`Figure %s <flash>`, use "

@@ -11,10 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../install.rst:14
-msgid "Installing TrueOS®"
-msgstr ""
-
 #: ../../install.rst:89
 msgid "Language Selection Screen"
 msgstr ""
@@ -910,6 +906,13 @@ msgstr ""
 #: ../../install.rst:657
 msgid ": |trueos| Installation Complete"
 msgstr ""
+
+#: ../../install.rst:14
+msgid "Installing |trueos|"
+msgstr ""
+
+#~ msgid "Installing TrueOS®"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "The default keyboard layout can be changed now, during the post-installation"
