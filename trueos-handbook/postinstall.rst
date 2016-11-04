@@ -458,6 +458,10 @@ instructions in :ref:`Sound Mixer Tray`.
 Connect to a Wireless Network
 =============================
 
+.. note:: Be sure the network card is supported by FreeBSD. Refer to
+   :ref:`Supported Hardware` for links to FreeBSD support and a list of
+   known issues with different hardware.
+
 If the system has an active wireless interface, a screen similar to
 :numref:`Figure %s <config5>` will indicate the wireless networks
 automatically detected. Available networks will be ordered by signal
