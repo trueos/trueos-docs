@@ -17,6 +17,7 @@ Contents:
    luminaplugins
    luminautl
    sysadmclient
+   pico
    using
    help
    support

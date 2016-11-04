@@ -152,6 +152,8 @@ share/trueos/handbook/_images/network9.png
 share/trueos/handbook/_images/partition1.png
 share/trueos/handbook/_images/partition2.png
 share/trueos/handbook/_images/persona1a.png
+share/trueos/handbook/_images/picoip.png
+share/trueos/handbook/_images/picovglgears.png
 share/trueos/handbook/_images/print4a.png
 share/trueos/handbook/_images/print5a.png
 share/trueos/handbook/_images/print6a.png
@@ -225,6 +227,7 @@ share/trueos/handbook/_sources/luminaconfig.txt
 share/trueos/handbook/_sources/luminaintro.txt
 share/trueos/handbook/_sources/luminaplugins.txt
 share/trueos/handbook/_sources/luminautl.txt
+share/trueos/handbook/_sources/pico.txt
 share/trueos/handbook/_sources/postinstall.txt
 share/trueos/handbook/_sources/preinstall.txt
 share/trueos/handbook/_sources/support.txt
@@ -280,6 +283,7 @@ share/trueos/handbook/luminaconfig.html
 share/trueos/handbook/luminaintro.html
 share/trueos/handbook/luminaplugins.html
 share/trueos/handbook/luminautl.html
+share/trueos/handbook/pico.html
 share/trueos/handbook/objects.inv
 share/trueos/handbook/postinstall.html
 share/trueos/handbook/preinstall.html
