@@ -88,866 +88,866 @@ msgid ""
 "This section discusses the steps needed to create a custom installation."
 msgstr ""
 
-#: ../../advanced.rst:628 ../../advanced.rst:910
+#: ../../advanced.rst:629 ../../advanced.rst:911
 msgid "Variable"
 msgstr ""
 
-#: ../../advanced.rst:628 ../../advanced.rst:910
+#: ../../advanced.rst:629 ../../advanced.rst:911
 msgid "Options"
 msgstr ""
 
-#: ../../advanced.rst:628 ../../advanced.rst:910
+#: ../../advanced.rst:629 ../../advanced.rst:911
 msgid "Description"
 msgstr ""
 
-#: ../../advanced.rst:912
+#: ../../advanced.rst:913
 msgid "pc_config"
 msgstr ""
 
-#: ../../advanced.rst:912
+#: ../../advanced.rst:913
 msgid "URL or /path/to/file"
 msgstr ""
 
-#: ../../advanced.rst:912
+#: ../../advanced.rst:913
 msgid "location of customized :file:`pc-sysinstall.conf`"
 msgstr ""
 
-#: ../../advanced.rst:915
+#: ../../advanced.rst:916
 msgid "confirm_install"
 msgstr ""
 
-#: ../../advanced.rst:640 ../../advanced.rst:731 ../../advanced.rst:771
-#: ../../advanced.rst:835 ../../advanced.rst:915
+#: ../../advanced.rst:641 ../../advanced.rst:732 ../../advanced.rst:772
+#: ../../advanced.rst:836 ../../advanced.rst:916
 msgid "\"yes\" or \"no\""
 msgstr ""
 
-#: ../../advanced.rst:919
+#: ../../advanced.rst:920
 msgid "shutdown_cmd"
 msgstr ""
 
-#: ../../advanced.rst:919
+#: ../../advanced.rst:920
 msgid "e.g. :command:`shutdown -p now`"
 msgstr ""
 
-#: ../../advanced.rst:923
+#: ../../advanced.rst:924
 msgid "nic_config"
 msgstr ""
 
-#: ../../advanced.rst:923
+#: ../../advanced.rst:924
 msgid "\"dhcp-all\" or <interface name> <IP address> <subnet mask>"
 msgstr ""
 
-#: ../../advanced.rst:928
+#: ../../advanced.rst:929
 msgid "nic_dns"
 msgstr ""
 
-#: ../../advanced.rst:928 ../../advanced.rst:930
+#: ../../advanced.rst:929 ../../advanced.rst:931
 msgid "IP address"
 msgstr ""
 
-#: ../../advanced.rst:928
+#: ../../advanced.rst:929
 msgid "DNS server to use"
 msgstr ""
 
-#: ../../advanced.rst:930
+#: ../../advanced.rst:931
 msgid "nic_gateway"
 msgstr ""
 
-#: ../../advanced.rst:930
+#: ../../advanced.rst:931
 msgid "default gateway to use"
 msgstr ""
 
-#: ../../advanced.rst:1008
+#: ../../advanced.rst:1009
 msgid ""
 "To begin a fully automated installation, insert the installation media and "
 "reboot."
 msgstr ""
 
-#: ../../advanced.rst:630
+#: ../../advanced.rst:631
 msgid "hostname="
 msgstr ""
 
-#: ../../advanced.rst:630
+#: ../../advanced.rst:631
 msgid "should be unique for the network"
 msgstr ""
 
-#: ../../advanced.rst:630
+#: ../../advanced.rst:631
 msgid "optional as installer will auto\\-generate a hostname if empty"
 msgstr ""
 
-#: ../../advanced.rst:633
+#: ../../advanced.rst:634
 msgid "installMode="
 msgstr ""
 
-#: ../../advanced.rst:633
+#: ../../advanced.rst:634
 msgid "\"fresh\", \"upgrade\", \"extract\", or \"zfsrestore\""
 msgstr ""
 
-#: ../../advanced.rst:633
+#: ../../advanced.rst:634
 msgid "sets the installation type"
 msgstr ""
 
-#: ../../advanced.rst:636
+#: ../../advanced.rst:637
 msgid "installLocation="
 msgstr ""
 
-#: ../../advanced.rst:636
+#: ../../advanced.rst:637
 msgid "/path/to/location"
 msgstr ""
 
-#: ../../advanced.rst:636
+#: ../../advanced.rst:637
 msgid ""
 "used only when *installMode* is extract and should point to an already "
 "mounted location"
 msgstr ""
 
-#: ../../advanced.rst:640
+#: ../../advanced.rst:641
 msgid "installInteractive="
 msgstr ""
 
-#: ../../advanced.rst:640
+#: ../../advanced.rst:641
 msgid "set to \"no\" for automated installs without user input"
 msgstr ""
 
-#: ../../advanced.rst:644
+#: ../../advanced.rst:645
 msgid "netDev="
 msgstr ""
 
-#: ../../advanced.rst:644
+#: ../../advanced.rst:645
 msgid "\"AUTO-DHCP\" or FreeBSD interface name"
 msgstr ""
 
-#: ../../advanced.rst:644
+#: ../../advanced.rst:645
 msgid "type of network connection to use during the installation"
 msgstr ""
 
-#: ../../advanced.rst:647
+#: ../../advanced.rst:648
 msgid "netIP="
 msgstr ""
 
-#: ../../advanced.rst:647
+#: ../../advanced.rst:648
 msgid "IP address of interface used during installation"
 msgstr ""
 
-#: ../../advanced.rst:647 ../../advanced.rst:650 ../../advanced.rst:653
-#: ../../advanced.rst:656
+#: ../../advanced.rst:648 ../../advanced.rst:651 ../../advanced.rst:654
+#: ../../advanced.rst:657
 msgid "only use if *netDev* is set to an interface name"
 msgstr ""
 
-#: ../../advanced.rst:650
+#: ../../advanced.rst:651
 msgid "netMask="
 msgstr ""
 
-#: ../../advanced.rst:650 ../../advanced.rst:669
+#: ../../advanced.rst:651 ../../advanced.rst:670
 msgid "subnet mask of interface"
 msgstr ""
 
-#: ../../advanced.rst:653
+#: ../../advanced.rst:654
 msgid "netNameServer="
 msgstr ""
 
-#: ../../advanced.rst:653
+#: ../../advanced.rst:654
 msgid "IP address of DNS server"
 msgstr ""
 
-#: ../../advanced.rst:656
+#: ../../advanced.rst:657
 msgid "netDefaultRouter="
 msgstr ""
 
-#: ../../advanced.rst:656 ../../advanced.rst:679
+#: ../../advanced.rst:657 ../../advanced.rst:680
 msgid "IP address of default gateway"
 msgstr ""
 
-#: ../../advanced.rst:659
+#: ../../advanced.rst:660
 msgid "netSaveDev="
 msgstr ""
 
-#: ../../advanced.rst:659
+#: ../../advanced.rst:660
 msgid ""
 "AUTO-DHCP or FreeBSD interface name(s) (multiple allowed separated by "
 "spaces)"
 msgstr ""
 
-#: ../../advanced.rst:659
+#: ../../advanced.rst:660
 msgid ""
 "type of network configuration to enable on the installed system; can set "
 "multiple interfaces"
 msgstr ""
 
-#: ../../advanced.rst:664
+#: ../../advanced.rst:665
 msgid "netSaveIP="
 msgstr ""
 
-#: ../../advanced.rst:664
+#: ../../advanced.rst:665
 msgid "IP address of interface or \"DHCP\""
 msgstr ""
 
-#: ../../advanced.rst:664 ../../advanced.rst:669
+#: ../../advanced.rst:665 ../../advanced.rst:670
 msgid ""
 "only use if *netSaveDev* is set to an interface name or a list of interface "
 "names (repeat for each interface)"
 msgstr ""
 
-#: ../../advanced.rst:669
+#: ../../advanced.rst:670
 msgid "netSaveMask="
 msgstr ""
 
-#: ../../advanced.rst:674
+#: ../../advanced.rst:675
 msgid "netSaveNameServer="
 msgstr ""
 
-#: ../../advanced.rst:674
+#: ../../advanced.rst:675
 msgid "IP address of DNS server (multiple allowed separated by spaces)"
 msgstr ""
 
-#: ../../advanced.rst:674 ../../advanced.rst:679
+#: ../../advanced.rst:675 ../../advanced.rst:680
 msgid ""
 "only use if *netSaveDev* is set to an interface name or a list of interface "
 "names (do not repeat for each interface)"
 msgstr ""
 
-#: ../../advanced.rst:679
+#: ../../advanced.rst:680
 msgid "netSaveDefaultRouter="
 msgstr ""
 
-#: ../../advanced.rst:684
+#: ../../advanced.rst:685
 msgid "disk0="
 msgstr ""
 
-#: ../../advanced.rst:684
+#: ../../advanced.rst:685
 msgid "FreeBSD disk device name, (e.g. *ad0*)"
 msgstr ""
 
-#: ../../advanced.rst:684 ../../advanced.rst:687
+#: ../../advanced.rst:685 ../../advanced.rst:688
 msgid "see *README* for examples"
 msgstr ""
 
-#: ../../advanced.rst:687
+#: ../../advanced.rst:688
 msgid "partition="
 msgstr ""
 
-#: ../../advanced.rst:687
+#: ../../advanced.rst:688
 msgid "\"all\", \"free\", \"s1\", \"s2\", \"s3\", \"s4\", or \"image\""
 msgstr ""
 
-#: ../../advanced.rst:690
+#: ../../advanced.rst:691
 msgid "partscheme="
 msgstr ""
 
-#: ../../advanced.rst:690
+#: ../../advanced.rst:691
 msgid "\"MBR\" or \"GPT\""
 msgstr ""
 
-#: ../../advanced.rst:690
+#: ../../advanced.rst:691
 msgid "partition scheme type"
 msgstr ""
 
-#: ../../advanced.rst:693
+#: ../../advanced.rst:694
 msgid "mirror="
 msgstr ""
 
-#: ../../advanced.rst:693
+#: ../../advanced.rst:694
 msgid "FreeBSD disk device name (e.g. *ad1*)"
 msgstr ""
 
-#: ../../advanced.rst:693
+#: ../../advanced.rst:694
 msgid "sets the target disk for the mirror (i.e. the second disk)"
 msgstr ""
 
-#: ../../advanced.rst:696
+#: ../../advanced.rst:697
 msgid "mirrorbal="
 msgstr ""
 
-#: ../../advanced.rst:696
+#: ../../advanced.rst:697
 msgid "\"load\", \"prefer\", \"round-robin\", or \"split\""
 msgstr ""
 
-#: ../../advanced.rst:696
+#: ../../advanced.rst:697
 msgid "defaults to \"round-robin\" if the *mirrorbal* method is not specified"
 msgstr ""
 
-#: ../../advanced.rst:699
+#: ../../advanced.rst:700
 msgid "bootManager="
 msgstr ""
 
-#: ../../advanced.rst:699
+#: ../../advanced.rst:700
 msgid "\"none\", \"bsd\", or \"GRUB\""
 msgstr ""
 
-#: ../../advanced.rst:699
+#: ../../advanced.rst:700
 msgid "when using \"GRUB\", include its package in *installPackages=*"
 msgstr ""
 
-#: ../../advanced.rst:702
+#: ../../advanced.rst:703
 msgid "image="
 msgstr ""
 
-#: ../../advanced.rst:702
+#: ../../advanced.rst:703
 msgid "/path/to/image /mountpoint"
 msgstr ""
 
-#: ../../advanced.rst:702
+#: ../../advanced.rst:703
 msgid "will write specified image file"
 msgstr ""
 
-#: ../../advanced.rst:704
+#: ../../advanced.rst:705
 msgid "commitDiskPart"
 msgstr ""
 
-#: ../../advanced.rst:704
+#: ../../advanced.rst:705
 msgid ""
 "this variable is mandatory and must be placed at the end of each *diskX* "
 "section; create a *diskX* section for each disk you wish to configure."
 msgstr ""
 
-#: ../../advanced.rst:710
+#: ../../advanced.rst:711
 msgid "encpass="
 msgstr ""
 
-#: ../../advanced.rst:710
+#: ../../advanced.rst:711
 msgid "password value"
 msgstr ""
 
-#: ../../advanced.rst:710
+#: ../../advanced.rst:711
 msgid ""
 "at boot time, system will prompt for this password in order to mount the "
 "associated GELI encrypted partition"
 msgstr ""
 
-#: ../../advanced.rst:715
+#: ../../advanced.rst:716
 msgid "commitDiskLabel"
 msgstr ""
 
-#: ../../advanced.rst:715
+#: ../../advanced.rst:716
 msgid ""
 "this variable is mandatory and must be placed at the end of disk's "
 "partitioning settings; see the *README* for examples on how to set the <File"
 " System Type> <Size> <Mountpoint> entries for each disk"
 msgstr ""
 
-#: ../../advanced.rst:722
+#: ../../advanced.rst:723
 msgid "installMedium="
 msgstr ""
 
-#: ../../advanced.rst:722
+#: ../../advanced.rst:723
 msgid "\"dvd\", \"usb\", \"ftp\", \"rsync\", or \"image\""
 msgstr ""
 
-#: ../../advanced.rst:722
+#: ../../advanced.rst:723
 msgid "source to be used for installation"
 msgstr ""
 
-#: ../../advanced.rst:725
+#: ../../advanced.rst:726
 msgid "localPath="
 msgstr ""
 
-#: ../../advanced.rst:725
+#: ../../advanced.rst:726
 msgid "/path/to/files"
 msgstr ""
 
-#: ../../advanced.rst:725
+#: ../../advanced.rst:726
 msgid "location of directory containing installation files"
 msgstr ""
 
-#: ../../advanced.rst:728
+#: ../../advanced.rst:729
 msgid "installType="
 msgstr ""
 
-#: ../../advanced.rst:728
+#: ../../advanced.rst:729
 msgid "\"PCBSD\" or \"FreeBSD\""
 msgstr ""
 
-#: ../../advanced.rst:728
+#: ../../advanced.rst:729
 msgid "determines whether this is a desktop or a server install"
 msgstr ""
 
-#: ../../advanced.rst:731
+#: ../../advanced.rst:732
 msgid "installQuiet"
 msgstr ""
 
-#: ../../advanced.rst:731
+#: ../../advanced.rst:732
 msgid "set to \"yes\" for automatic installations"
 msgstr ""
 
-#: ../../advanced.rst:734
+#: ../../advanced.rst:735
 msgid "installFile="
 msgstr ""
 
-#: ../../advanced.rst:734
+#: ../../advanced.rst:735
 msgid "e.g. \"fbsd-release.tbz\""
 msgstr ""
 
-#: ../../advanced.rst:734
+#: ../../advanced.rst:735
 msgid "only set if using a customized installer archive"
 msgstr ""
 
-#: ../../advanced.rst:737
+#: ../../advanced.rst:738
 msgid "packageType="
 msgstr ""
 
-#: ../../advanced.rst:737
+#: ../../advanced.rst:738
 msgid "\"tar\", \"uzip\", \"split\", \"dist\", or \"pkg\""
 msgstr ""
 
-#: ../../advanced.rst:737
+#: ../../advanced.rst:738
 msgid "the archive type on the installation media"
 msgstr ""
 
-#: ../../advanced.rst:740
+#: ../../advanced.rst:741
 msgid "distFiles="
 msgstr ""
 
-#: ../../advanced.rst:740
+#: ../../advanced.rst:741
 msgid "e.g. \"base src kernel\""
 msgstr ""
 
-#: ../../advanced.rst:740
+#: ../../advanced.rst:741
 msgid ""
 "list of FreeBSD distribution files to install when using *packageType=dist*"
 msgstr ""
 
-#: ../../advanced.rst:744
+#: ../../advanced.rst:745
 msgid "ftpPath="
 msgstr ""
 
-#: ../../advanced.rst:744
+#: ../../advanced.rst:745
 msgid "ftp://ftp_path"
 msgstr ""
 
-#: ../../advanced.rst:744
+#: ../../advanced.rst:745
 msgid "location of the installer archive when using *installMedium=ftp*"
 msgstr ""
 
-#: ../../advanced.rst:747
+#: ../../advanced.rst:748
 msgid "rsyncPath="
 msgstr ""
 
-#: ../../advanced.rst:747
+#: ../../advanced.rst:748
 msgid "e.g. \"life-preserver /back-2011-09-12T14_53_14\""
 msgstr ""
 
-#: ../../advanced.rst:747
+#: ../../advanced.rst:748
 msgid ""
 "location of the rsync data on the remote server when using "
 "*installMedium=rsync*"
 msgstr ""
 
-#: ../../advanced.rst:751
+#: ../../advanced.rst:752
 msgid "rsyncUser="
 msgstr ""
 
-#: ../../advanced.rst:751 ../../advanced.rst:849 ../../advanced.rst:859
+#: ../../advanced.rst:752 ../../advanced.rst:850 ../../advanced.rst:860
 msgid "username"
 msgstr ""
 
-#: ../../advanced.rst:751 ../../advanced.rst:754 ../../advanced.rst:757
+#: ../../advanced.rst:752 ../../advanced.rst:755 ../../advanced.rst:758
 msgid "set when using *installMedium=rsync*"
 msgstr ""
 
-#: ../../advanced.rst:754
+#: ../../advanced.rst:755
 msgid "rsyncHost="
 msgstr ""
 
-#: ../../advanced.rst:754
+#: ../../advanced.rst:755
 msgid "IP address of rsync server"
 msgstr ""
 
-#: ../../advanced.rst:757
+#: ../../advanced.rst:758
 msgid "rsyncPort="
 msgstr ""
 
-#: ../../advanced.rst:757
+#: ../../advanced.rst:758
 msgid "port number"
 msgstr ""
 
-#: ../../advanced.rst:760
+#: ../../advanced.rst:761
 msgid "installComponents="
 msgstr ""
 
-#: ../../advanced.rst:760
+#: ../../advanced.rst:761
 msgid "e.g. \"amarok, firefox, ports\""
 msgstr ""
 
-#: ../../advanced.rst:760
+#: ../../advanced.rst:761
 msgid ""
 "components must exist in */PCBSD/pc-sysinstall/components/*; typically, "
 "*installPackages=* is used instead"
 msgstr ""
 
-#: ../../advanced.rst:765
+#: ../../advanced.rst:766
 msgid "installPackages="
 msgstr ""
 
-#: ../../advanced.rst:765
+#: ../../advanced.rst:766
 msgid "e.g. \"Xorg cabextract"
 msgstr ""
 
-#: ../../advanced.rst:765
+#: ../../advanced.rst:766
 msgid "list of traditional or pkg packages to install; requires *pkgExt=*"
 msgstr ""
 
-#: ../../advanced.rst:768
+#: ../../advanced.rst:769
 msgid "pkgExt="
 msgstr ""
 
-#: ../../advanced.rst:768
+#: ../../advanced.rst:769
 msgid "\".txz\""
 msgstr ""
 
-#: ../../advanced.rst:768
+#: ../../advanced.rst:769
 msgid "specify the extension used by the type of package to be installed"
 msgstr ""
 
-#: ../../advanced.rst:771
+#: ../../advanced.rst:772
 msgid "upgradeKeepDesktopProfile="
 msgstr ""
 
-#: ../../advanced.rst:771
+#: ../../advanced.rst:772
 msgid ""
 "specify if you wish to keep your existing user's desktop profile data during"
 " an upgrade"
 msgstr ""
 
-#: ../../advanced.rst:775
+#: ../../advanced.rst:776
 msgid "rootPass="
 msgstr ""
 
-#: ../../advanced.rst:775
+#: ../../advanced.rst:776
 msgid "password"
 msgstr ""
 
-#: ../../advanced.rst:775
+#: ../../advanced.rst:776
 msgid "set the root password of the installed system to the specified string"
 msgstr ""
 
-#: ../../advanced.rst:779
+#: ../../advanced.rst:780
 msgid "rootEncPass="
 msgstr ""
 
-#: ../../advanced.rst:779 ../../advanced.rst:789
+#: ../../advanced.rst:780 ../../advanced.rst:790
 msgid "encrypted string"
 msgstr ""
 
-#: ../../advanced.rst:779
+#: ../../advanced.rst:780
 msgid "set root password to specified encrypted string"
 msgstr ""
 
-#: ../../advanced.rst:782
+#: ../../advanced.rst:783
 msgid "userName="
 msgstr ""
 
-#: ../../advanced.rst:782
+#: ../../advanced.rst:783
 msgid "case sensitive value"
 msgstr ""
 
-#: ../../advanced.rst:782
+#: ../../advanced.rst:783
 msgid "create a separate block of user values for each new user"
 msgstr ""
 
-#: ../../advanced.rst:785
+#: ../../advanced.rst:786
 msgid "userComment="
 msgstr ""
 
-#: ../../advanced.rst:785
+#: ../../advanced.rst:786
 msgid "description"
 msgstr ""
 
-#: ../../advanced.rst:785
+#: ../../advanced.rst:786
 msgid "description text can include spaces"
 msgstr ""
 
-#: ../../advanced.rst:787
+#: ../../advanced.rst:788
 msgid "userPass="
 msgstr ""
 
-#: ../../advanced.rst:787
+#: ../../advanced.rst:788
 msgid "password of user"
 msgstr ""
 
-#: ../../advanced.rst:789
+#: ../../advanced.rst:790
 msgid "userEncPass"
 msgstr ""
 
-#: ../../advanced.rst:789
+#: ../../advanced.rst:790
 msgid "set user password to specified encrypted string"
 msgstr ""
 
-#: ../../advanced.rst:792
+#: ../../advanced.rst:793
 msgid "userShell="
 msgstr ""
 
-#: ../../advanced.rst:792
+#: ../../advanced.rst:793
 msgid "e.g. \"/bin/csh\""
 msgstr ""
 
-#: ../../advanced.rst:792
+#: ../../advanced.rst:793
 msgid "path to default shell"
 msgstr ""
 
-#: ../../advanced.rst:794
+#: ../../advanced.rst:795
 msgid "userHome="
 msgstr ""
 
-#: ../../advanced.rst:794
+#: ../../advanced.rst:795
 msgid "e.g. \"/home/username\""
 msgstr ""
 
-#: ../../advanced.rst:794
+#: ../../advanced.rst:795
 msgid "path to home directory"
 msgstr ""
 
-#: ../../advanced.rst:796
+#: ../../advanced.rst:797
 msgid "defaultGroup="
 msgstr ""
 
-#: ../../advanced.rst:796
+#: ../../advanced.rst:797
 msgid "e.g. \"wheel\""
 msgstr ""
 
-#: ../../advanced.rst:796
+#: ../../advanced.rst:797
 msgid "default group"
 msgstr ""
 
-#: ../../advanced.rst:798
+#: ../../advanced.rst:799
 msgid "userGroups="
 msgstr ""
 
-#: ../../advanced.rst:798
+#: ../../advanced.rst:799
 msgid "e.g. \"wheel, operator\""
 msgstr ""
 
-#: ../../advanced.rst:798
+#: ../../advanced.rst:799
 msgid "comma separated (no spaces) list of additional groups"
 msgstr ""
 
-#: ../../advanced.rst:801
+#: ../../advanced.rst:802
 msgid "commitUser"
 msgstr ""
 
-#: ../../advanced.rst:801
+#: ../../advanced.rst:802
 msgid "mandatory, must be last line in each user block"
 msgstr ""
 
-#: ../../advanced.rst:804
+#: ../../advanced.rst:805
 msgid "runCommand="
 msgstr ""
 
-#: ../../advanced.rst:804 ../../advanced.rst:812 ../../advanced.rst:814
-#: ../../advanced.rst:817 ../../advanced.rst:820 ../../advanced.rst:823
-#: ../../advanced.rst:826 ../../advanced.rst:829
+#: ../../advanced.rst:805 ../../advanced.rst:813 ../../advanced.rst:815
+#: ../../advanced.rst:818 ../../advanced.rst:821 ../../advanced.rst:824
+#: ../../advanced.rst:827 ../../advanced.rst:830
 msgid "full path to command"
 msgstr ""
 
-#: ../../advanced.rst:804
+#: ../../advanced.rst:805
 msgid ""
 "run the specified command within chroot of the installed system, after the "
 "installation is complete"
 msgstr ""
 
-#: ../../advanced.rst:808
+#: ../../advanced.rst:809
 msgid "runScript="
 msgstr ""
 
-#: ../../advanced.rst:808
+#: ../../advanced.rst:809
 msgid "full path to script"
 msgstr ""
 
-#: ../../advanced.rst:808
+#: ../../advanced.rst:809
 msgid ""
 "runs specified script within chroot of the installed system, after the "
 "installation is complete"
 msgstr ""
 
-#: ../../advanced.rst:812
+#: ../../advanced.rst:813
 msgid "runExtCommand="
 msgstr ""
 
-#: ../../advanced.rst:812
+#: ../../advanced.rst:813
 msgid "runs a command outside the chroot"
 msgstr ""
 
-#: ../../advanced.rst:814
+#: ../../advanced.rst:815
 msgid "runPrePkgCommand="
 msgstr ""
 
-#: ../../advanced.rst:814 ../../advanced.rst:826 ../../advanced.rst:829
+#: ../../advanced.rst:815 ../../advanced.rst:827 ../../advanced.rst:830
 msgid "runs the specified command before starting the pkg installation"
 msgstr ""
 
-#: ../../advanced.rst:817
+#: ../../advanced.rst:818
 msgid "runPrePkgScript="
 msgstr ""
 
-#: ../../advanced.rst:817
+#: ../../advanced.rst:818
 msgid "runs the specified sript before starting the pkg installation"
 msgstr ""
 
-#: ../../advanced.rst:820
+#: ../../advanced.rst:821
 msgid "runPrePkgExtCommand="
 msgstr ""
 
-#: ../../advanced.rst:820
+#: ../../advanced.rst:821
 msgid "runs the specified command before extracting the pkg"
 msgstr ""
 
-#: ../../advanced.rst:823
+#: ../../advanced.rst:824
 msgid "runPreExtractCommand="
 msgstr ""
 
-#: ../../advanced.rst:823
+#: ../../advanced.rst:824
 msgid "runs the specified command before extracting"
 msgstr ""
 
-#: ../../advanced.rst:826
+#: ../../advanced.rst:827
 msgid "runPreExtractScript="
 msgstr ""
 
-#: ../../advanced.rst:829
+#: ../../advanced.rst:830
 msgid "runPreExtractExtCommand="
 msgstr ""
 
-#: ../../advanced.rst:832
+#: ../../advanced.rst:833
 msgid "timeZone="
 msgstr ""
 
-#: ../../advanced.rst:832
+#: ../../advanced.rst:833
 msgid "e.g. \"America/New_York\""
 msgstr ""
 
-#: ../../advanced.rst:832
+#: ../../advanced.rst:833
 msgid "location must exist in :file:`/usr/share/zoneinfo/`"
 msgstr ""
 
-#: ../../advanced.rst:835
+#: ../../advanced.rst:836
 msgid "enableNTP="
 msgstr ""
 
-#: ../../advanced.rst:835
+#: ../../advanced.rst:836
 msgid "enable/disable NTP"
 msgstr ""
 
-#: ../../advanced.rst:837
+#: ../../advanced.rst:838
 msgid "localizeLang="
 msgstr ""
 
-#: ../../advanced.rst:837 ../../advanced.rst:840
+#: ../../advanced.rst:838 ../../advanced.rst:841
 msgid "e.g. \"en\""
 msgstr ""
 
-#: ../../advanced.rst:837
+#: ../../advanced.rst:838
 msgid "sets the system console and Desktop to the target language"
 msgstr ""
 
-#: ../../advanced.rst:840
+#: ../../advanced.rst:841
 msgid "localizeKeyLayout="
 msgstr ""
 
-#: ../../advanced.rst:840
+#: ../../advanced.rst:841
 msgid "updates the system's Xorg config to set the keyboard layout"
 msgstr ""
 
-#: ../../advanced.rst:843
+#: ../../advanced.rst:844
 msgid "localizeKeyModel="
 msgstr ""
 
-#: ../../advanced.rst:843
+#: ../../advanced.rst:844
 msgid "e.g. \"pc104\""
 msgstr ""
 
-#: ../../advanced.rst:843
+#: ../../advanced.rst:844
 msgid "updates the system's Xorg config to set the keyboard model"
 msgstr ""
 
-#: ../../advanced.rst:846
+#: ../../advanced.rst:847
 msgid "localizeKeyVariant="
 msgstr ""
 
-#: ../../advanced.rst:846
+#: ../../advanced.rst:847
 msgid "e.g. \"intl\""
 msgstr ""
 
-#: ../../advanced.rst:846
+#: ../../advanced.rst:847
 msgid "updates the Xorg config to set the keyboard variant"
 msgstr ""
 
-#: ../../advanced.rst:849
+#: ../../advanced.rst:850
 msgid "autoLoginUser="
 msgstr ""
 
-#: ../../advanced.rst:849
+#: ../../advanced.rst:850
 msgid "user will log in automatically without entering a password"
 msgstr ""
 
-#: ../../advanced.rst:852
+#: ../../advanced.rst:853
 msgid "sshHost="
 msgstr ""
 
-#: ../../advanced.rst:852
+#: ../../advanced.rst:853
 msgid "hostname or IP address"
 msgstr ""
 
-#: ../../advanced.rst:852
+#: ../../advanced.rst:853
 msgid "the address of the remote server when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../advanced.rst:855
+#: ../../advanced.rst:856
 msgid "sshPort="
 msgstr ""
 
-#: ../../advanced.rst:855
+#: ../../advanced.rst:856
 msgid "e.g \"22\""
 msgstr ""
 
-#: ../../advanced.rst:855
+#: ../../advanced.rst:856
 msgid ""
 "the SSH port number of the remote server when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../advanced.rst:859
+#: ../../advanced.rst:860
 msgid "sshUser="
 msgstr ""
 
-#: ../../advanced.rst:859
+#: ../../advanced.rst:860
 msgid "the username on the remote server when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../advanced.rst:862
+#: ../../advanced.rst:863
 msgid "sshKey="
 msgstr ""
 
-#: ../../advanced.rst:862
+#: ../../advanced.rst:863
 msgid "e.g. \"/root/id_rsa\""
 msgstr ""
 
-#: ../../advanced.rst:862
+#: ../../advanced.rst:863
 msgid ""
 "path to the SSH key file on the remote server when using "
 "*installMode=zfsrestore*"
 msgstr ""
 
-#: ../../advanced.rst:866
+#: ../../advanced.rst:867
 msgid "zfsProps="
 msgstr ""
 
-#: ../../advanced.rst:866
+#: ../../advanced.rst:867
 msgid "e.g. \".lp-props -tank#backups#mybackup\""
 msgstr ""
 
-#: ../../advanced.rst:866
+#: ../../advanced.rst:867
 msgid ""
 "location of dataset properties file created by Life Preserver during "
 "replication when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../advanced.rst:871
+#: ../../advanced.rst:872
 msgid "zfsRemoteDataset="
 msgstr ""
 
-#: ../../advanced.rst:871
+#: ../../advanced.rst:872
 msgid "e.g. \"tank/backups/ mybackup\""
 msgstr ""
 
-#: ../../advanced.rst:871
+#: ../../advanced.rst:872
 msgid ""
 "location of remote dataset to restore from when using "
 "*installMode=zfsrestore*"
@@ -1643,14 +1643,7 @@ msgid ""
 "are summarized in :numref:`Table %s <installvariables>`."
 msgstr ""
 
-#: ../../advanced.rst:619
-msgid ""
-"This table is meant as a quick reference to determine which variables are "
-"available. The :file:`README` file contains more complete descriptions for "
-"each variable."
-msgstr ""
-
-#: ../../advanced.rst:876
+#: ../../advanced.rst:877
 msgid ""
 "Next, create a customized configuration. One way to create a customized "
 "configuration file is to read through the configuration examples in "
@@ -1659,7 +1652,7 @@ msgid ""
 "includes the desired variables and values in the installation."
 msgstr ""
 
-#: ../../advanced.rst:882
+#: ../../advanced.rst:883
 msgid ""
 "An alternate way to create this file is to start an installation, configure "
 "the system as desired, and save the configuration to a USB stick (with or "
@@ -1668,7 +1661,7 @@ msgid ""
 " prove easier when performing complex disk layouts."
 msgstr ""
 
-#: ../../advanced.rst:889
+#: ../../advanced.rst:890
 msgid ""
 "To perform a fully automated installation which does not prompt for any user"
 " input, review :file:`/usr/local/share/pc-sysinstall/examples/pc-"
@@ -1676,7 +1669,7 @@ msgid ""
 "/pc-autoinstall.conf` on the installation media."
 msgstr ""
 
-#: ../../advanced.rst:895
+#: ../../advanced.rst:896
 msgid ""
 ":numref:`Table %s <Automated Variables>` summarizes the additional variables"
 " available for fully automatic installations. More detailed descriptions can"
@@ -1684,7 +1677,7 @@ msgid ""
 "autoinstall.conf` file."
 msgstr ""
 
-#: ../../advanced.rst:901
+#: ../../advanced.rst:902
 msgid ""
 "The variables in this file use a different syntax than those in "
 ":ref:`Available Variables for Customizing a TrueOS® Installation "
@@ -1692,39 +1685,39 @@ msgid ""
 " equals sign."
 msgstr ""
 
-#: ../../advanced.rst:915
+#: ../../advanced.rst:916
 msgid ""
 "should be set to \"yes\", or booting the wrong disk will result in a system "
 "wipe"
 msgstr ""
 
-#: ../../advanced.rst:919
+#: ../../advanced.rst:920
 msgid ""
 "running a shutdown is recommended, but this can be any command/script to "
 "execute post-install"
 msgstr ""
 
-#: ../../advanced.rst:923
+#: ../../advanced.rst:924
 msgid ""
 "attempts DHCP on all found NICs until the installation file is fetched or "
 "will setup a specified interface"
 msgstr ""
 
-#: ../../advanced.rst:933
+#: ../../advanced.rst:934
 msgid ""
 "Finally, create a custom installation media or installation server. :command"
 ":`pc-sysinstall` supports two installation methods:"
 msgstr ""
 
-#: ../../advanced.rst:936
+#: ../../advanced.rst:937
 msgid "From CD, DVD, or USB media."
 msgstr ""
 
-#: ../../advanced.rst:938
+#: ../../advanced.rst:939
 msgid "From an installation directory on an HTTP, FTP, or SSH+rsync server."
 msgstr ""
 
-#: ../../advanced.rst:940
+#: ../../advanced.rst:941
 msgid ""
 "The easiest way to create a custom installation media is to modify an "
 "existing installation image. For example, if an ISO for the |trueos| version"
@@ -1732,73 +1725,73 @@ msgid ""
 "ISO with a few commands:"
 msgstr ""
 
-#: ../../advanced.rst:951
+#: ../../advanced.rst:952
 msgid ""
 "Make sure to :command:`cd` into the desired destination directory for the "
 "copied ISO contents. In the next examples, :file:`/tmp/custominstall/` was "
 "created for this purpose:"
 msgstr ""
 
-#: ../../advanced.rst:963
+#: ../../advanced.rst:964
 msgid ""
 "Alternately, if an installation CD or DVD is inserted, mount the media and "
 "copy its contents to the desired directory"
 msgstr ""
 
-#: ../../advanced.rst:974
+#: ../../advanced.rst:975
 msgid ""
 "If creating an automated installation, copy the customized :file:`pc-"
 "autoinstall.conf` to :file:`/tmp/custominstall/boot/`."
 msgstr ""
 
-#: ../../advanced.rst:977
+#: ../../advanced.rst:978
 msgid ""
 "Copy the customized configuration file to :file:`/tmp/custominstall/`. "
 "Double-check the :command:`installMedium=` variable in the customized "
 "configuration file is set to the correct installation media."
 msgstr ""
 
-#: ../../advanced.rst:981
+#: ../../advanced.rst:982
 msgid ""
 "Adding extra files may be necessary if certain variables are set in the "
 "custom configuration file:"
 msgstr ""
 
-#: ../../advanced.rst:984
+#: ../../advanced.rst:985
 msgid ""
 "**installComponents=** Make sure any extra components to install exist in "
 ":file:`extras/components/`"
 msgstr ""
 
-#: ../../advanced.rst:987
+#: ../../advanced.rst:988
 msgid "**runCommand=** Make sure the command exists in the specified path."
 msgstr ""
 
-#: ../../advanced.rst:989
+#: ../../advanced.rst:990
 msgid "**runScript=** Make sure the script exists in the specified path."
 msgstr ""
 
-#: ../../advanced.rst:991
+#: ../../advanced.rst:992
 msgid "**runExtCommand=** Make sure the command exists in the specified path."
 msgstr ""
 
-#: ../../advanced.rst:994
+#: ../../advanced.rst:995
 msgid ""
 "If the installation media is a CD or DVD, create a bootable media containing"
 " the files in the directory. To create a bootable ISO:"
 msgstr ""
 
-#: ../../advanced.rst:1003
+#: ../../advanced.rst:1004
 msgid "Use a preferred burning utility to burn the ISO to the media."
 msgstr ""
 
-#: ../../advanced.rst:1005
+#: ../../advanced.rst:1006
 msgid ""
 "To begin an installation that requires user interaction, type :command:`pc-"
 "sysinstall -c /path_to_your_config_file`"
 msgstr ""
 
-#: ../../advanced.rst:1011
+#: ../../advanced.rst:1012
 msgid ""
 "If using an HTTP, FTP, or SSH server as the installation media, untar or "
 "copy the required files to a directory on the server accessible to users. Be"
@@ -1858,10 +1851,6 @@ msgid ": Ports Installation"
 msgstr ""
 
 #: ../../advanced.rst:0
-msgid "Customizing a TrueOS® Installation"
-msgstr ""
-
-#: ../../advanced.rst:0
 msgid "Automated Installation Variables"
 msgstr ""
 
@@ -1879,6 +1868,26 @@ msgid ""
 "as usual. At the :ref:`System Selection Screen` of the installer, select "
 ":guilabel:`TrueOS Server (console interface only)`."
 msgstr ""
+
+#: ../../advanced.rst:619
+msgid ""
+"This table is meant as a quick reference to determine which variables are "
+"available. The :file:`README` in :file:`/usr/local/share/pc-"
+"sysinstall/examples/` contains more complete descriptions for each variable."
+msgstr ""
+
+#: ../../advanced.rst:0
+msgid "Customizing a |trueos| Installation"
+msgstr ""
+
+#~ msgid ""
+#~ "This table is meant as a quick reference to determine which variables are "
+#~ "available. The :file:`README` file contains more complete descriptions for "
+#~ "each variable."
+#~ msgstr ""
+
+#~ msgid "Customizing a TrueOS® Installation"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "**storage pool:** Select this option if the system contains multiple disks "
