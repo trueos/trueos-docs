@@ -608,12 +608,13 @@ variables can be found in
 summarized in :numref:`Table %s <installvariables>`.
 
 .. note:: This table is meant as a quick reference to determine which
-   variables are available. The :file:`README` file contains more
+   variables are available. The :file:`README` in
+   :file:`/usr/local/share/pc-sysinstall/examples/` contains more
    complete descriptions for each variable.
 
 .. _installvariables:
 
-.. table:: Customizing a TrueOS® Installation
+.. table:: Customizing a |trueos| Installation
 
    +----------------------------+----------------------------+-------------------------------------+
    | Variable                   | Options                    | Description                         |
