@@ -469,3 +469,36 @@ about some of the differences between BSD and Linux:
 * `Why you should use a BSD style license for your Open Source Project <http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_
 
 * `A Sysadmin's Unixersal Translator (ROSETTA STONE) <http://bhami.com/rosetta.html>`_
+
+.. index:: installation
+.. _Ongoing issues:
+
+Ongoing |trueos| issues
+=======================
+
+This section is intended to list all known/longstanding issues with the
+|trueos| project:
+
+* Older AMD/ATI cards not supported in |trueos| yet. There are several
+  ongoing investigations, but no consistent solutions have been found
+  yet. There are experimental drivers
+  `available <https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_,
+  but their effectiveness is (so far) inconsistent.
+
+* **Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from
+  this range need to be installed manually. The |trueos| installer only
+  contains the latest nvidia driver in order to prevent installation
+  conflicts. The drivers are available through :command:`pkg`.
+
+* **Translation issues:** |trueos| began using Weblate as its
+  translation system, but it is currently nonfunctional. The system is
+  being reviewed and should be back online soon.
+
+* **4k desktop wallpapers:** There is an issue with 4k desktop
+  backgrounds not being displayed properly (always displays as "tiled").
+  This is a bug with Qt, and will be fixed with the next version of Qt.
+
+* **Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues
+  with older Broadcom wifi chipsets. Please browse the FreeBSD
+  `hardware notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_
+  to see detailed notes about supported hardware in FreeBSD/|trueos|.
