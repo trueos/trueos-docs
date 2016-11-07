@@ -970,6 +970,63 @@ msgstr ""
 msgid "list IDs of all processes with one or more files open"
 msgstr ""
 
+#: ../../introduction.rst:486
+msgid "Ongoing |trueos| issues"
+msgstr ""
+
+#: ../../introduction.rst:488
+msgid ""
+"This section is intended to list all known/longstanding issues with the "
+"|trueos| project:"
+msgstr ""
+
+#: ../../introduction.rst:497
+msgid ""
+"**Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from this "
+"range need to be installed manually. The |trueos| installer only contains "
+"the latest nvidia driver in order to prevent installation conflicts. These "
+"drivers are available through :command:`pkg`."
+msgstr ""
+
+#: ../../introduction.rst:502
+msgid ""
+"**Translation issues:** |trueos| began using Weblate as its translation "
+"system, but it is currently nonfunctional. The system is being reviewed and "
+"should be back online soon."
+msgstr ""
+
+#: ../../introduction.rst:506
+msgid ""
+"**4k desktop wallpapers:** There is an issue with 4k desktop backgrounds not"
+" being displayed properly (always displays as \"tiled\"). This is a bug with"
+" Qt, and will be fixed with the next version of Qt."
+msgstr ""
+
+#: ../../introduction.rst:510
+msgid ""
+"**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
+" Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
+"<https://www.freebsd.org/releases/11.0R/hardware.html>`_ to see detailed "
+"notes about supported hardware in FreeBSD/|trueos|."
+msgstr ""
+
+#: ../../introduction.rst:491
+msgid ""
+"**Older AMD/ATI cards:** These are not supported in |trueos| yet. There are "
+"several ongoing investigations, but no consistent solutions have been found "
+"yet. There are experimental drivers `available "
+"<https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_, but their "
+"effectiveness is (so far) inconsistent."
+msgstr ""
+
+#~ msgid ""
+#~ "Older AMD/ATI cards not supported in |trueos| yet. There are several ongoing"
+#~ " investigations, but no consistent solutions have been found yet. There are "
+#~ "experimental drivers `available "
+#~ "<https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_, but their "
+#~ "effectiveness is (so far) inconsistent."
+#~ msgstr ""
+
 #~ msgid ""
 #~ "check if your Linux distro provides ufsutils; r/w support on Mac; UFS "
 #~ "Explorer can be used on Windows"

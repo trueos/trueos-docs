@@ -479,9 +479,9 @@ Ongoing |trueos| issues
 This section is intended to list all known/longstanding issues with the
 |trueos| project:
 
-* Older AMD/ATI cards not supported in |trueos| yet. There are several
-  ongoing investigations, but no consistent solutions have been found
-  yet. There are experimental drivers
+* **Older AMD/ATI cards:** These are not supported in |trueos| yet.
+  There are several ongoing investigations, but no consistent solutions
+  have been found yet. There are experimental drivers
   `available <https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_,
   but their effectiveness is (so far) inconsistent.
 
