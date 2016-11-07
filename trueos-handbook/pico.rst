@@ -1,9 +1,3 @@
-.. TODO When ready, this document will be inserted after SysAdm section
-   in the TrueOS handbook.
-   
-   DO NOT add this into the git files/handbook before Kris is ready to
-   unveil the Pico (at MeetBSD).
-   
 .. index:: pico
 .. _trueos pico:
 
@@ -224,9 +218,6 @@ login from the same Pico client.
 VGL Graphics Acceleration
 -------------------------
 
-.. TODO Expand this section as necessary. Provide useful links in the
-   meantime.
-
 VirtualGL (VGL) is the toolkit used by the |trueos| Pico to provide 3D
 hardware acceleration to the Pico Clients. VGL redirects OpenGL commands
 and data to the GPU in the Pico Server, then pulls back the rendered 3D
@@ -253,9 +244,6 @@ of the gears, updating periodically.
 
 Pulse Audio
 -----------
-
-.. TODO Expand this section as necessary. Provide useful links in the
-   meantime.
 
 `Pulse Audio <https://www.freedesktop.org/wiki/Software/PulseAudio>`_
 is the preferred audio solution for Pico clients. Pulse Audio allows
@@ -292,3 +280,13 @@ are added:
    +---------------------+-------------------------------------------+
    | -kill pico_auth <#> | Immediately reboots the specified client. |
    +---------------------+-------------------------------------------+
+
+.. _Pico Current Issues:
+
+Pico Current Issues
+===================
+
+This section lists the currently known bugs with Pico use:
+
+* **Audio:** Pulse Audio has a random issue with freezing upon
+  *client* initialization. A bugfix is forthcoming.
