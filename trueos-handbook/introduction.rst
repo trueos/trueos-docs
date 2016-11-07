@@ -488,7 +488,7 @@ This section is intended to list all known/longstanding issues with the
 * **Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from
   this range need to be installed manually. The |trueos| installer only
   contains the latest nvidia driver in order to prevent installation
-  conflicts. The drivers are available through :command:`pkg`.
+  conflicts. These drivers are available through :command:`pkg`.
 
 * **Translation issues:** |trueos| began using Weblate as its
   translation system, but it is currently nonfunctional. The system is
