@@ -289,4 +289,6 @@ Pico Current Issues
 This section lists the currently known bugs with Pico use:
 
 * **Audio:** Pulse Audio has a random issue with freezing upon
-  *client* initialization. A bugfix is forthcoming.
+  *client* initialization. A workaround has been implemented, but please
+  refer to :ref:`Report a bug` if any additional audio issues are
+  encountered.
