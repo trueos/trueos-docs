@@ -461,8 +461,14 @@ msgstr ""
 #: ../../pico.rst:300
 msgid ""
 "**Audio:** Pulse Audio has a random issue with freezing upon *client* "
-"initialization. A bugfix is forthcoming."
+"initialization. A workaround has been implemented, but please refer to "
+":ref:`Report a bug` if any additional audio issues are encountered."
 msgstr ""
+
+#~ msgid ""
+#~ "**Audio:** Pulse Audio has a random issue with freezing upon *client* "
+#~ "initialization. A bugfix is forthcoming."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "|trueos| Pico is an initiative to connect multiple Raspberry Pi thinclients "
