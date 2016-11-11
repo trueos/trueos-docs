@@ -19,32 +19,32 @@ the Internet, or even play games while one central server dynamically
 provides the needed resources for each of these tasks.
 
 Pico Server is available both
-`online <https://www.trueos.org/downloads/>`_ and in |appcafe|. The
-Server software will need to be configured before downloading the client
-software or initializing the Pico client device.
+`online <https://www.trueos.org/downloads/>`_ and in |appcafe|.
+Configure the server software before downloading the client software or
+initializing the Pico client device.
 
-Pico Client is available to download from the |trueos|
+To download the Pico Client, visit the |trueos|
 `download page <https://www.trueos.org/downloads>`_. A separate computer
-will be required to unpack and transfer the :file:`.img` file to a
-microSD card for insertion into the thin client device.
+is required to unpack and transfer the :file:`.img` file to a microSD
+card for insertion into the thin client device.
 
 Currently, the Pico software is functional for |trueos| and the
 Raspberry Pi 2 model B v1.1. The bulk of development efforts are being
 directed toward ensuring graphics and sound functionality. Future
-development goals include supporting a wider variety of ARM Devices
-and building the server software to be cross-platform.
+development goals include supporting a wider variety of ARM Devices,
+and building cross-platform support for the server software.
 
 .. _picoinit:
 
 Pico Initialization
 ===================
 
-To create a Pico network, several elements will be required:
+To create a Pico network, several elements are required:
 
 * A |trueos| system with both an internet and local network connection
-  to download the necessary files and be used as the Pico server. It is
-  recommended this system have strong hardware to provide the smoothest
-  experience for each connected client.
+  to download the necessary files and be used as the Pico server. For
+  this system, it is recommended to use strong hardware to provide the
+  smoothest experience for each connected client.
 
 .. tip:: For best performance, it is recommended to have wired
    network connections from the Pico server to all connected clients.
@@ -55,7 +55,7 @@ To create a Pico network, several elements will be required:
 * A microSD card for each thin client.
 
 .. note:: Using a microSD card larger than 4 GB in size is largely
-   unnecessary, as the server will store almost all created data.
+   unnecessary, as the server stores almost all created data.
 
 * Adapter or connector for microSD cards to connect to the Pico server
   (Ex. a USB to microSD card reader).
@@ -66,9 +66,9 @@ Each thin client will need:
   resolution and the monitor should have integrated speakers for audio
   to function properly.
 * Network cable.
-* USB Mouse.
-* USB Keyboard.
-* Power Adapter.
+* USB mouse.
+* USB keyboard.
+* Power adapter (for Raspberry Pi thin clients).
 
 Once all these components are assembled, it's time to configure the Pico
 Server.
@@ -78,24 +78,22 @@ Server.
 Pico Server
 ===========
 
-Installing and configuring a Pico server is done via the command prompt,
-with superuser permissions (:command:`su` or
-:command:`sudo <rest of command>`).
-Begin opening a terminal and downloading the Pico Server package with
-:command:`sudo pkg install picoserver` (also available in |appcafe|).
-Next, enable the Pico server using
-:command:`sysrc -f /etc/rc.conf picoserver_enable=yes`. Finally,
-the Pico server is started with :command:`service picoserver start`.
+Installing and configuring the Pico server is done via the command
+prompt, with superuser permissions (:command:`su` or
+:command:`sudo <rest of command>`). Open a terminal and download the
+Pico Server package with :command:`sudo pkg install picoserver`
+(also available in |appcafe|). Next, enable the Pico server using
+:command:`sysrc -f /etc/rc.conf picoserver_enable=yes`. Finally, start
+the Pico server with :command:`service picoserver start`.
 
-Once the Pico server is started, a new :file:`picoserver.ini` file will
-be created on the system, found in :file:`usr/local/etc`. This
+Once the Pico server starts, a new :file:`picoserver.ini` file is
+created on the system, found in :file:`/usr/local/etc`. This
 :file:`.ini` file holds the initialization settings for the Pico server
-and has three sections, seen in :numref:`Table %s <inisett>`. The table
-will expand as additional elements are added to :file:`picoserver.ini`.
+and has three sections, seen in :numref:`Table %s <inisett>`:
 
 .. _inisett:
 
-.. table:: : Pico Server Initialization Settings
+.. table:: : Pico Server Configuration Settings
 
    +-------------------+----------------+------------------+
    | SSH               | Video          | Audio            |
@@ -105,13 +103,16 @@ will expand as additional elements are added to :file:`picoserver.ini`.
    | compression=<1-9> |                |                  |
    +-------------------+----------------+------------------+
 
-The *compression* setting can be any number from 1 to 9. The default
+.. note:: The :ref:`Configuration Settings <inisett>` Table will expand
+   as more options are developed and added to :file:`picoserver.ini`.
+
+Set the *compression* setting to any number from 1 to 9. The default
 setting is recommended as turning up the compression can introduce
 performance issues on the clients.
 
 Pico uses *Virtual GL* (vgl) for graphics hardware acceleration. VGL
-will work with any *OpenGL* supported graphics card, but Nvidia cards
-are generally recommended at this time.
+works with any *OpenGL* supported graphics card, but Nvidia cards are
+generally recommended at this time.
 
 .. warning:: Turning on VGL may introduce security vulnerabilities on a
    network with untrusted clients.
@@ -129,7 +130,8 @@ accounts/logins need to be created for the client systems. See
 :ref:`User Manager` for detailed instructions on creating new users on
 a |trueos| system.
 
-After any new accounts are created, it is time to initialize the client.
+After any new accounts are created, the next step is to initialize the
+client.
 
 .. _startpicoclient:
 
@@ -139,22 +141,21 @@ Starting the Pico Client
 The process of initializing a Pico Client begins on a separate |trueos|
 system. On this system, navigate to the |trueos| website's
 `download page <https://www.trueos.org/downloads>`_ and download the
-latest :file:`<pico>.img.xz` file. This file is compressed with **xz**
-and will need to be decompressed prior to burning the file to a microSD
-card. Open a terminal and navigate to the file's location to use
-:command:`unxz` to unpack the file:
+latest :file:`<pico>.img.xz` file. This file is compressed with **xz**,
+decompress the file before burning it to a microSD card. Open a terminal
+and navigate to the file's location to use :command:`unxz` to unpack the
+file:
 
 .. code-block:: none
 
  [tmoore@Observer] ~% cd Downloads/
  [tmoore@Observer] ~/Downloads% unxz TrueOS-pico-rpi2-2016-10-29.img.xz
 
-Please be patient as it may take a few moments for the system to
-decompress the file.
+It may take a few moments for the system to decompress the file.
 
 Once the file is decompressed to a :file:`.img` file, insert a microSD
-card into the system. An adapter may be necessary if the system
-has no microSD card slots. As the superuser, use the :command:`dd`
+card into the system. An adapter might be necessary if the system has no
+microSD card slots. As the superuser, use the :command:`dd`
 command line utility to write the :file:`.img` file to the card:
 
 .. code-block:: none
@@ -164,15 +165,15 @@ command line utility to write the :file:`.img` file to the card:
  512+0 records out
  2147483648 bytes transferred in 426.140554 secs (5039379 bytes/sec)
 
-Again, please be patient as this command may take some time to process.
+This command may take some time to process.
 
 .. warning:: Be sure the :command:`dd if=` command points to right
    storage device if there are multiple storage devices inserted in the
    system. In the example above, the microSD card is connected to a USB
-   adapter (da0) attached to the system.
+   adapter, identified as *da0* on the system.
 
-Now the :file:`.img` file is written to the microSD card; it is time
-to connect the Pico client to the Pico server:
+After the :file:`.img` file is written to the microSD card; connect the
+Pico client to the Pico server:
 
 * Insert the microSD card into the thin client.
 * Attach the network cable. Be sure the client is wired into the same
@@ -184,7 +185,7 @@ to connect the Pico client to the Pico server:
 Inserting the power cable will generally turn on the client device. The
 Pico client then searches for and connects to any Pico Server on the
 network, bringing the user to the |trueos| login screen. The Pico client
-should now be fully configured and ready to use.
+is now ready for use.
 
 .. _usepicoclient:
 
@@ -206,12 +207,12 @@ simplified server administration.
 
     : Pico Client IP display
 
-When logging out with the Pico client, several processes are begun. The
-client clears the session, then completely restarts the discovery and
-connection processes. The server will destroy the previous user's
-:file:`temp` file, along with the previously assigned **pico_auth #**.
-These processes prepare the server for a brand new connection and user
-login from the same Pico client.
+When logging out with the Pico client, several processes begin. The
+client clears the session, then restarts the discovery and connection
+processes. The server will destroy the previous user's :file:`temp`
+file, along with the previously assigned **pico_auth #**. These
+processes prepare the server for a new connection and user login from
+the same Pico client.
 
 .. _vglaccel:
 
@@ -224,7 +225,7 @@ and data to the GPU in the Pico Server, then pulls back the rendered 3D
 images to the client. For further information about this open-source
 project, please refer to the `VirtualGL website <virtualgl.org>`_
 
-VirtualGL also has a fully featured
+VirtualGL also has an extensive
 `user guide <http://www.virtualgl.org/Documentation/Documentation>`_ to
 help guide new users through the various features of this useful toolkit.
 
@@ -260,9 +261,9 @@ Pico Server Administration
 ==========================
 
 Once the Pico server and clients are installed and ready to use, there
-are a number of administrative commands available to use, seen in
+are a number of administrative commands available, seen in
 :numref:`Table %s <picoadmin>`. This table will expand as new commands
-are added:
+are created:
 
 .. _picoadmin:
 
@@ -288,7 +289,7 @@ Pico Current Issues
 
 This section lists the currently known bugs with Pico use:
 
-* **Audio:** Pulse Audio has a random issue with freezing upon
+* **Audio:** Pulse Audio has an intermittent issue with freezing upon
   *client* initialization. A workaround has been implemented, but please
   refer to :ref:`Report a bug` if any additional audio issues are
   encountered.
