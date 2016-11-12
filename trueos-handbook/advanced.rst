@@ -120,7 +120,7 @@ The next screen is shown in :numref:`Figure %s <text7a>`.
 
 This screen provides the option to encrypt the selected disk(s) with
 the FreeBSD
-`GELI <https://www.freebsd.org/cgi/man.cgi?query=geli/qgit/>`_
+`GELI <https://www.freebsd.org/cgi/man.cgi?query=geli&sektion=8&manpath=FreeBSD>`_
 framework. If the default of :guilabel:`Yes` is kept, press
 :kbd:`Enter` and the system will prompt for a passphrase. This
 passphrase will be required whenever booting into |trueos|. This means
