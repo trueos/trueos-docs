@@ -1042,17 +1042,6 @@ msgstr ""
 msgid ": Full Disk Encryption"
 msgstr ""
 
-#: ../../advanced.rst:130
-msgid ""
-"This screen provides the option to encrypt the selected disk(s) with the "
-"FreeBSD `GELI <https://www.freebsd.org/cgi/man.cgi?query=geli/qgit/>`_ "
-"framework. If the default of :guilabel:`Yes` is kept, press :kbd:`Enter` and"
-" the system will prompt for a passphrase. This passphrase will be required "
-"whenever booting into |trueos|. This means if someone else boots into the "
-"computer, they will not be able to boot into |trueos| if they do not know "
-"the passphrase."
-msgstr ""
-
 #: ../../advanced.rst:139
 msgid ""
 "If the passphrase is lost or forgotten, no one will be able to access "
@@ -1879,6 +1868,28 @@ msgstr ""
 #: ../../advanced.rst:0
 msgid "Customizing a |trueos| Installation"
 msgstr ""
+
+#: ../../advanced.rst:130
+msgid ""
+"This screen provides the option to encrypt the selected disk(s) with the "
+"FreeBSD `GELI "
+"<https://www.freebsd.org/cgi/man.cgi?query=geli&sektion=8&manpath=FreeBSD>`_"
+" framework. If the default of :guilabel:`Yes` is kept, press :kbd:`Enter` "
+"and the system will prompt for a passphrase. This passphrase will be "
+"required whenever booting into |trueos|. This means if someone else boots "
+"into the computer, they will not be able to boot into |trueos| if they do "
+"not know the passphrase."
+msgstr ""
+
+#~ msgid ""
+#~ "This screen provides the option to encrypt the selected disk(s) with the "
+#~ "FreeBSD `GELI <https://www.freebsd.org/cgi/man.cgi?query=geli/qgit/>`_ "
+#~ "framework. If the default of :guilabel:`Yes` is kept, press :kbd:`Enter` and"
+#~ " the system will prompt for a passphrase. This passphrase will be required "
+#~ "whenever booting into |trueos|. This means if someone else boots into the "
+#~ "computer, they will not be able to boot into |trueos| if they do not know "
+#~ "the passphrase."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "This table is meant as a quick reference to determine which variables are "
