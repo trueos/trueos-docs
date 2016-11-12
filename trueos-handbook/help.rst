@@ -37,6 +37,8 @@ lengthy conversations about hardware issues or workarounds will always
 be available for reference. To access the Gitter archive, navigate to
 the |trueos| `archive <https://gitter.im/trueos/Lobby/archives>`_.
 
+.. note:: It is not required to log in to Gitter to browse the archive.
+
 Gitter is a great way to chat with other users and get answers to
 questions. Here are few things to keep in mind when asking a question
 on the Gitter channel:
