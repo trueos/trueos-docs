@@ -20,8 +20,8 @@ important to follow certain protocols when requesting help:
 .. index:: chat
 .. _TrueOS® Gitter Channel:
 
-TrueOS® Gitter Channel
-======================
+|TrueOS| Gitter Channel
+=======================
 
 The |trueos| Project uses
 `Gitter <https://en.wikipedia.org/wiki/Gitter>`_ to provide real-time
@@ -31,6 +31,11 @@ either an existing GitHub or Twitter account.
 
 To access the Gitter channel, point a web browser to the
 `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
+
+Gitter also maintains a full archive of the chat history. This means
+lengthy conversations about hardware issues or workarounds will always
+be available for reference. To access the Gitter archive, navigate to
+the |trueos| `archive <https://gitter.im/trueos/Lobby/archives>`_.
 
 Gitter is a great way to chat with other users and get answers to
 questions. Here are few things to keep in mind when asking a question
