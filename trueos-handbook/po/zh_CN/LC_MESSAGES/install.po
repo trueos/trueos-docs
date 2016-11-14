@@ -11,37 +11,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../install.rst:89
+#: ../../install.rst:92
 msgid "Language Selection Screen"
 msgstr ""
 
-#: ../../install.rst:121
+#: ../../install.rst:124
 msgid ""
 "Hover over an icon to view its description in the tip bar at the bottom of "
 "the screen."
 msgstr ""
 
-#: ../../install.rst:156
+#: ../../install.rst:159
 msgid "System Selection Screen"
 msgstr ""
 
-#: ../../install.rst:188
+#: ../../install.rst:191
 msgid "Disk Selection Screen"
 msgstr ""
 
-#: ../../install.rst:256
+#: ../../install.rst:259
 msgid "Basic Mode"
 msgstr ""
 
-#: ../../install.rst:292
+#: ../../install.rst:295
 msgid "Advanced Mode"
 msgstr ""
 
-#: ../../install.rst:342
+#: ../../install.rst:345
 msgid "ZFS Overview"
 msgstr ""
 
-#: ../../install.rst:344
+#: ../../install.rst:347
 msgid ""
 "ZFS is an enterprise grade file-system, which provides many features "
 "including: support for high storage capacities, high reliability, the "
@@ -50,51 +50,51 @@ msgid ""
 "limitations of hardware RAID, and native NFSv4 ACLs."
 msgstr ""
 
-#: ../../install.rst:356
+#: ../../install.rst:359
 msgid "These resources are also useful to bookmark and refer to as needed:"
 msgstr ""
 
-#: ../../install.rst:358
+#: ../../install.rst:361
 msgid ""
 "`ZFS Evil Tuning Guide "
 "<http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_"
 msgstr ""
 
-#: ../../install.rst:360
+#: ../../install.rst:363
 msgid "`FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_"
 msgstr ""
 
-#: ../../install.rst:362
+#: ../../install.rst:365
 msgid ""
 "`ZFS Best Practices Guide "
 "<http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide>`_"
 msgstr ""
 
-#: ../../install.rst:364
+#: ../../install.rst:367
 msgid ""
 "`ZFS Administration Guide "
 "<http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_"
 msgstr ""
 
-#: ../../install.rst:366
+#: ../../install.rst:369
 msgid ""
 "`Becoming a ZFS Ninja (video) "
 "<https://blogs.oracle.com/video/entry/becoming_a_zfs_ninja>`_"
 msgstr ""
 
-#: ../../install.rst:462
+#: ../../install.rst:465
 msgid "ZFS Layout"
 msgstr ""
 
-#: ../../install.rst:627
+#: ../../install.rst:630
 msgid "Installation Progress Screen"
 msgstr ""
 
-#: ../../install.rst:647
+#: ../../install.rst:650
 msgid "Installation Finished Screen"
 msgstr ""
 
-#: ../../install.rst:16
+#: ../../install.rst:19
 msgid ""
 "This chapter describes how to use the graphical installer to install a "
 "graphical desktop directly onto a hard drive or into a virtual machine using"
@@ -104,7 +104,7 @@ msgid ""
 ":ref:`Using the Text Installer`."
 msgstr ""
 
-#: ../../install.rst:23
+#: ../../install.rst:26
 msgid ""
 "To begin the |trueos| installation, insert the prepared boot media and boot "
 "the system. If the computer boots into an existing operating system instead "
@@ -113,32 +113,32 @@ msgid ""
 "Save any BIOS changes and reboot."
 msgstr ""
 
-#: ../../install.rst:29
+#: ../../install.rst:32
 msgid ""
 "As the system boots it will display the menu shown in :numref:`Figure %s "
 "<install1b>`. Typically, press :kbd:`Enter` or wait for this menu to go by "
 "and the system will continue to boot."
 msgstr ""
 
-#: ../../install.rst:34
+#: ../../install.rst:37
 msgid "See :ref:`BSD Boot Loader` for a detailed description of this menu."
 msgstr ""
 
-#: ../../install.rst:41
+#: ../../install.rst:44
 msgid ": Initial Boot Menu"
 msgstr ""
 
-#: ../../install.rst:43
+#: ../../install.rst:46
 msgid ""
 "Next, the :guilabel:`TrueOS® Installation Menu`, shown in :numref:`Figure %s"
 " <install1d>`, will be displayed."
 msgstr ""
 
-#: ../../install.rst:50
+#: ../../install.rst:53
 msgid ": |trueos| Installer Boot Menu"
 msgstr ""
 
-#: ../../install.rst:52
+#: ../../install.rst:55
 msgid ""
 "If a key other than :kbd:`Enter` is pressed, this screen will pause to "
 "provide additional time to review its options. If this screen is not paused,"
@@ -146,19 +146,19 @@ msgid ""
 "providing a number of new options:"
 msgstr ""
 
-#: ../../install.rst:57
+#: ../../install.rst:60
 msgid ""
 "**xorg:** Starts a graphical installer which will auto-detect the driver "
 "required by the video hardware."
 msgstr ""
 
-#: ../../install.rst:60
+#: ../../install.rst:63
 msgid ""
 "**vesa:** Starts the graphical installer with the VESA driver loaded. Select"
 " this option if :guilabel:`xorg` hangs when loading the graphics driver."
 msgstr ""
 
-#: ../../install.rst:64
+#: ../../install.rst:67
 msgid ""
 "**scfb:** Starts the graphical installer with the SCFB driver loaded. Select"
 " this option if a UEFI system hangs when loading the graphics driver, as it "
@@ -166,92 +166,92 @@ msgid ""
 "this option, double-check CSM has been disabled in the BIOS."
 msgstr ""
 
-#: ../../install.rst:70
+#: ../../install.rst:73
 msgid ""
 "**install:** Starts the text-based installer as described in :ref:`Using the"
 " Text Installer`."
 msgstr ""
 
-#: ../../install.rst:73
+#: ../../install.rst:76
 msgid ""
 "**utility:** Starts the system utilities as described in :ref:`Using the "
 "System Utilities Menu`."
 msgstr ""
 
-#: ../../install.rst:76
+#: ../../install.rst:79
 msgid "**reboot:** Exits the installer and reboots the system."
 msgstr ""
 
-#: ../../install.rst:78
+#: ../../install.rst:81
 msgid ""
 "Use the arrow keys to highlight a desired option, then press :kbd:`Enter` to"
 " continue to boot into the option."
 msgstr ""
 
-#: ../../install.rst:81
+#: ../../install.rst:84
 msgid ""
 "The rest of this chapter describes the screens of the graphical installer. "
 "If any problems arise with booting into the graphical installer, please "
 "refer to :ref:`Installation Troubleshooting`."
 msgstr ""
 
-#: ../../install.rst:91
+#: ../../install.rst:94
 msgid ""
 "The first graphical installer screen, seen in :numref:`Figure %s "
 "<install2b>`, indicates the installer successfully loaded and is ready to "
 "present its options."
 msgstr ""
 
-#: ../../install.rst:99
+#: ../../install.rst:102
 msgid ": Welcome and Language Selection Screen"
 msgstr ""
 
-#: ../../install.rst:101
+#: ../../install.rst:104
 msgid ""
 "Starting on the left side, the icons in the bottom navigation area allow to:"
 msgstr ""
 
-#: ../../install.rst:104
+#: ../../install.rst:107
 msgid ""
 "Access hardware compatibility information to quickly determine if the "
 "system's video card, Ethernet card, wireless device, and sound card are "
 "compatible with |trueos|."
 msgstr ""
 
-#: ../../install.rst:108
+#: ../../install.rst:111
 msgid "Read a screen's Help text."
 msgstr ""
 
-#: ../../install.rst:110
+#: ../../install.rst:113
 msgid "Use the onscreen keyboard."
 msgstr ""
 
-#: ../../install.rst:112
+#: ../../install.rst:115
 msgid "Switch between the US keyboard layout and a user selected layout."
 msgstr ""
 
-#: ../../install.rst:114
+#: ../../install.rst:117
 msgid ""
 "Access the emergency shell described in :ref:`Using the System Utilities "
 "Menu`."
 msgstr ""
 
-#: ../../install.rst:117
+#: ../../install.rst:120
 msgid "Abort the installation."
 msgstr ""
 
-#: ../../install.rst:119
+#: ../../install.rst:122
 msgid "Navigate to a previous or upcoming screen."
 msgstr ""
 
-#: ../../install.rst:129
+#: ../../install.rst:132
 msgid ""
 "There is also an option to :guilabel:`Load config from USB`. If the "
 "configuration from a previous installation has been saved, it can be loaded "
 "at this time from a FAT-formatted USB stick."
 msgstr ""
 
-#: ../../install.rst:133
+#: ../../install.rst:136
 msgid ""
 "By default, |trueos| menus will display in English, unless another language "
 "is selected in the drop-down menu in this screen. The menus in |trueos| are "
@@ -263,7 +263,7 @@ msgid ""
 "Translator` to assist in translating the graphical menus."
 msgstr ""
 
-#: ../../install.rst:143
+#: ../../install.rst:146
 msgid ""
 "Small screens may not display the entire installer window, resulting in "
 "buttons at the bottom of the window being hidden and inaccessible. In this "
@@ -271,13 +271,13 @@ msgid ""
 "or press :kbd:`Alt+N` to select the next button of the window."
 msgstr ""
 
-#: ../../install.rst:149
+#: ../../install.rst:152
 msgid ""
 "When finished reviewing this screen, click :guilabel:`Next` to go to the "
 "next installation screen."
 msgstr ""
 
-#: ../../install.rst:158
+#: ../../install.rst:161
 msgid ""
 "The :guilabel:`System Selection` screen installs a graphical desktop or a "
 "console-based server operating system, as seen in :numref:`Figure %s "
@@ -286,22 +286,22 @@ msgid ""
 " a Server` for instructions on installing a command-line only server."
 msgstr ""
 
-#: ../../install.rst:169
+#: ../../install.rst:172
 msgid ": System Selection Screen"
 msgstr ""
 
-#: ../../install.rst:171
+#: ../../install.rst:174
 msgid ""
 "By default, :guilabel:`TrueOS (Graphical desktop)` will be selected and the "
 "|lumina| Desktop will be installed. Additional software can be added post-"
 "installation using :ref:`AppCafe®`."
 msgstr ""
 
-#: ../../install.rst:175
+#: ../../install.rst:178
 msgid "To install the desktop, click :guilabel:`Next`."
 msgstr ""
 
-#: ../../install.rst:177
+#: ../../install.rst:180
 msgid ""
 "When installing to an existing |pcbsd| or |trueos| system, a pop-up window "
 "will ask to install to the existing pool without reformatting it. Press "
@@ -310,35 +310,35 @@ msgid ""
 "PC-BSD® 10.x to TrueOS®` for more information about this option."
 msgstr ""
 
-#: ../../install.rst:190
+#: ../../install.rst:193
 msgid ""
 "The :guilabel:`Disk Selection\" screen`, seen in :numref:`Figure %s "
 "<install5b>`, summarizes the default disk configuration."
 msgstr ""
 
-#: ../../install.rst:198
+#: ../../install.rst:201
 msgid ": Disk Selection Screen"
 msgstr ""
 
-#: ../../install.rst:200
+#: ../../install.rst:203
 msgid ""
 "This screen provides a drop-down :guilabel:`Boot-Loader` menu with boot "
 "manager options:"
 msgstr ""
 
-#: ../../install.rst:203
+#: ../../install.rst:206
 msgid ""
 "**BSD:** Uses the FreeBSD boot loader. This is recommended as it supports "
 "the ZFS boot environments used by :ref:`Update Manager`."
 msgstr ""
 
-#: ../../install.rst:206
+#: ../../install.rst:209
 msgid ""
 "**GRUB:** Select this option when dual-booting the system and the GRUB "
 "bootloader is preferred."
 msgstr ""
 
-#: ../../install.rst:209
+#: ../../install.rst:212
 msgid ""
 "By default, |trueos| will assume the user wants to install on the entire "
 "first disk. When installing |trueos| as the only operating system on the "
@@ -348,24 +348,24 @@ msgid ""
 " review the section on :ref:`Dual Booting`."
 msgstr ""
 
-#: ../../install.rst:217
+#: ../../install.rst:220
 msgid ""
 "To select the disk or partition to install |trueos|, click "
 ":guilabel:`Customize` to start the |trueos| Disk Wizard, shown in "
 ":numref:`Figure %s <install6b>`."
 msgstr ""
 
-#: ../../install.rst:227
+#: ../../install.rst:230
 msgid "The wizard provides two modes of operation:"
 msgstr ""
 
-#: ../../install.rst:229
+#: ../../install.rst:232
 msgid ""
 "**Basic:** (default) Select this mode if to specify the installation "
 "partition or disk."
 msgstr ""
 
-#: ../../install.rst:232
+#: ../../install.rst:235
 msgid ""
 "**Advanced:** Select this mode to specify the installation partition or "
 "disk, use MBR partitioning, change the default ZFS pool name, force the "
@@ -373,7 +373,7 @@ msgid ""
 "cache device, encrypt the disk, or specify the filesystem layout."
 msgstr ""
 
-#: ../../install.rst:238
+#: ../../install.rst:241
 msgid ""
 "Regardless of the selected mode, once the disk wizard completes and "
 ":guilabel:`Next` is chosen at the disk :guilabel:`Summary` screen, a pop-up "
@@ -384,27 +384,27 @@ msgid ""
 "drive or partition will be formatted and any data it contains will be lost."
 msgstr ""
 
-#: ../../install.rst:248
+#: ../../install.rst:251
 msgid ""
 "Once the disk configuration is finished, the finished configuration can be "
 "saved for later reuse. Insert a FAT-formatted USB stick and click "
 ":guilabel:`Save Config to USB`."
 msgstr ""
 
-#: ../../install.rst:258
+#: ../../install.rst:261
 msgid ""
 "Select :guilabel:`Basic` and the wizard will display the screen shown in "
 ":numref:`Figure %s <install7b>`."
 msgstr ""
 
-#: ../../install.rst:267
+#: ../../install.rst:270
 msgid ""
 "By default, the first hard disk will be selected. To install on a different "
 "disk, use the :guilabel:`Selected Disk` drop-down menu to select the disk to"
 " install into."
 msgstr ""
 
-#: ../../install.rst:271
+#: ../../install.rst:274
 msgid ""
 "By default, the entire selected disk will be formatted. If the disk has been"
 " divided into partitions or there is an area of free space, use the "
@@ -412,7 +412,7 @@ msgid ""
 "partition."
 msgstr ""
 
-#: ../../install.rst:276 ../../install.rst:310
+#: ../../install.rst:279 ../../install.rst:313
 msgid ""
 "|trueos| will only install into a primary MBR partition, a GPT partition, or"
 " an area of free space. That is, |trueos| cannot install into a secondary or"
@@ -420,7 +420,7 @@ msgid ""
 "refer to :ref:`Creating Free Space`."
 msgstr ""
 
-#: ../../install.rst:281
+#: ../../install.rst:284
 msgid ""
 "Once the disk and partition are selected, click :guilabel:`Next` to return "
 "to the disk :guilabel:`Summary` screen so to review the selections. To make "
@@ -429,30 +429,30 @@ msgid ""
 ":guilabel:`Next` then :guilabel:`Yes` to start the installation."
 msgstr ""
 
-#: ../../install.rst:294
+#: ../../install.rst:297
 msgid ""
 "After selecting advanced mode, the wizard will display the screen shown in "
 ":numref:`Figure %s <install8c>`."
 msgstr ""
 
-#: ../../install.rst:301
+#: ../../install.rst:304
 msgid ": Advanced Mode Options"
 msgstr ""
 
-#: ../../install.rst:303
+#: ../../install.rst:306
 msgid "This screen has several options:"
 msgstr ""
 
-#: ../../install.rst:305
+#: ../../install.rst:308
 msgid "**Selected Disk:** Select the disk to install into."
 msgstr ""
 
-#: ../../install.rst:307
+#: ../../install.rst:310
 msgid ""
 "**Selected Partition:** Select the desired partition or area of free space."
 msgstr ""
 
-#: ../../install.rst:315
+#: ../../install.rst:318
 msgid ""
 "**Partition Scheme:**  The default of :guilabel:`GPT (Best for new "
 "hardware)` is a partition table layout that supports larger partition sizes "
@@ -465,28 +465,28 @@ msgid ""
 "Partition` drop-down menu."
 msgstr ""
 
-#: ../../install.rst:326
+#: ../../install.rst:329
 msgid ""
 "**ZFS pool name:** To use a pool name other than the default of *tank*, "
 "check this box and input the name of the pool. Note *root* is reserved and "
 "can not be used as a pool name."
 msgstr ""
 
-#: ../../install.rst:330
+#: ../../install.rst:333
 msgid ""
 "**Force ZFS 4k block size:** This option should only be checked if the disk "
 "supports 4k, even though it lies and reports its size as 512b. Use with "
 "caution as it may cause the installation to fail."
 msgstr ""
 
-#: ../../install.rst:334
+#: ../../install.rst:337
 msgid ""
 "After making any selections, click :guilabel:`Next` to access the ZFS "
 "configuration screens. The rest of this section provides a ZFS overview and "
 "then demonstrates how to customize the ZFS layout."
 msgstr ""
 
-#: ../../install.rst:350
+#: ../../install.rst:353
 msgid ""
 "If new to ZFS, the Wikipedia entry on :wikipedia:`ZFS` provides an excellent"
 " starting point to learn about its features. Additionally, `FreeBSD Mastery:"
@@ -495,17 +495,17 @@ msgid ""
 "is implemented in FreeBSD."
 msgstr ""
 
-#: ../../install.rst:368
+#: ../../install.rst:371
 msgid ""
 "`Blog post explaining how ZFS simplifies the storage stack "
 "<https://blogs.oracle.com/bonwick/entry/rampant_layering_violation>`_"
 msgstr ""
 
-#: ../../install.rst:370
+#: ../../install.rst:373
 msgid "Here is a glossary of terms used by ZFS:"
 msgstr ""
 
-#: ../../install.rst:372
+#: ../../install.rst:375
 msgid ""
 "**Pool:** A collection of devices that provides physical storage and data "
 "replication managed by ZFS. This pooled storage model eliminates the concept"
@@ -519,32 +519,32 @@ msgid ""
 "creating the storage pool."
 msgstr ""
 
-#: ../../install.rst:384
+#: ../../install.rst:387
 msgid ""
 "**Mirror:** A form of RAID where all data is mirrored onto two or more "
 "disks, creating a redundant copy should a disk fail."
 msgstr ""
 
-#: ../../install.rst:387
+#: ../../install.rst:390
 msgid ""
 "**RAIDZ:** ZFS software solution equivalent to RAID5 as it allows one disk "
 "to fail without losing data. Requires a minimum of 3 disks."
 msgstr ""
 
-#: ../../install.rst:390
+#: ../../install.rst:393
 msgid ""
 "**RAIDZ2:** Double-parity ZFS software solution similar to RAID6 as it "
 "allows two disks to fail without losing data. Requires a minimum of 4 disks."
 msgstr ""
 
-#: ../../install.rst:394
+#: ../../install.rst:397
 msgid ""
 "**RAIDZ3:** Triple-parity ZFS software solution. RAIDZ3 offers three parity "
 "drives and can operate in degraded mode if up to three drives fail with no "
 "restrictions on which drives can fail."
 msgstr ""
 
-#: ../../install.rst:398
+#: ../../install.rst:401
 msgid ""
 "**Dataset:** Once a pool is created, it can be divided into datasets. A "
 "dataset is similar to a folder as it supports permissions. A dataset is also"
@@ -552,7 +552,7 @@ msgid ""
 " be set."
 msgstr ""
 
-#: ../../install.rst:403
+#: ../../install.rst:406
 msgid ""
 "**Snapshot:** A read-only, point-in-time copy of a filesystem. Snapshots can"
 " be created quickly and, if little data changes, new snapshots take up very "
@@ -570,7 +570,7 @@ msgid ""
 "independently."
 msgstr ""
 
-#: ../../install.rst:419
+#: ../../install.rst:422
 msgid ""
 "**Clone:** A writable copy of a snapshot which can only be created on the "
 "same ZFS volume. Clones provide an extremely space-efficient way to store "
@@ -582,7 +582,7 @@ msgid ""
 "As changes are made to the clone, it uses more space."
 msgstr ""
 
-#: ../../install.rst:429
+#: ../../install.rst:432
 msgid ""
 "**ZIL:** A filesystem journal that manages writes. The ZIL is a temporary "
 "storage area for sync writes until they are written asynchronously to the "
@@ -598,7 +598,7 @@ msgid ""
 "device."
 msgstr ""
 
-#: ../../install.rst:443
+#: ../../install.rst:446
 msgid ""
 "**L2ARC:** ZFS uses a RAM cache to reduce read latency. If an SSD is "
 "dedicated as a cache device, it is known as an L2ARC and ZFS uses it to "
@@ -615,18 +615,18 @@ msgid ""
 "be shared between ZFS pools."
 msgstr ""
 
-#: ../../install.rst:464
+#: ../../install.rst:467
 msgid ""
 "In :guilabel:`Advanced Mode`, the disk setup wizard allows configuring the "
 "ZFS layout. The initial ZFS configuration screen is seen in :numref:`Figure "
 "%s <install9b>`."
 msgstr ""
 
-#: ../../install.rst:472
+#: ../../install.rst:475
 msgid ": ZFS Configuration"
 msgstr ""
 
-#: ../../install.rst:474
+#: ../../install.rst:477
 msgid ""
 "If the system contains multiple drives to be used to create a ZFS mirror or "
 "RAIDZ*, check :guilabel:`Add additional disks to zpool`, which will enable "
@@ -636,55 +636,55 @@ msgid ""
 "then check the box for each disk to add to the configuration."
 msgstr ""
 
-#: ../../install.rst:482
+#: ../../install.rst:485
 msgid ""
 "The |trueos| installer requires entire disks (not partitions) when adding "
 "additional disks to the pool."
 msgstr ""
 
-#: ../../install.rst:485
+#: ../../install.rst:488
 msgid ""
 "While ZFS allows using disks of different sizes, this is discouraged as it "
 "will decrease storage capacity and ZFS performance."
 msgstr ""
 
-#: ../../install.rst:488
+#: ../../install.rst:491
 msgid "The |trueos| installer supports multiple ZFS configurations:"
 msgstr ""
 
-#: ../../install.rst:490
+#: ../../install.rst:493
 msgid "**mirror:** Requires a minimum of 2 disks."
 msgstr ""
 
-#: ../../install.rst:492
+#: ../../install.rst:495
 msgid ""
 "**RAIDZ1:** Requires a minimum of 3 disks. For best performance, a maximum "
 "of 9 disks is recommended."
 msgstr ""
 
-#: ../../install.rst:495
+#: ../../install.rst:498
 msgid ""
 "**RAIDZ2:** Requires a minimum of 4 disks. For best performance, a maximum "
 "of 10 disks is recommended."
 msgstr ""
 
-#: ../../install.rst:498
+#: ../../install.rst:501
 msgid ""
 "**RAIDZ3:** Requires a minimum of 5 disks. For best performance, a maximum "
 "of 11 disks is recommended."
 msgstr ""
 
-#: ../../install.rst:501
+#: ../../install.rst:504
 msgid "**stripe:** Requires a minimum of 2 disks."
 msgstr ""
 
-#: ../../install.rst:503
+#: ../../install.rst:506
 msgid ""
 "A stripe does NOT provide ANY redundancy. If any disk fails in a stripe, all"
 " data in the pool is lost!"
 msgstr ""
 
-#: ../../install.rst:506
+#: ../../install.rst:509
 msgid ""
 "The installer will not allow a configuration choice in which the system does"
 " not meet the minimum number of disks required by the configuration. When "
@@ -692,24 +692,24 @@ msgid ""
 "required."
 msgstr ""
 
-#: ../../install.rst:511
+#: ../../install.rst:514
 msgid ""
 "When finished, click :guilabel:`Next` to see the screen shown in "
 ":numref:`Figure %s <install10b>`."
 msgstr ""
 
-#: ../../install.rst:520
+#: ../../install.rst:523
 msgid ""
 "This screen can be used to specify an SSD to use as an L2ARC read cache or "
 "as a secondary log device (ZIL). Any available devices will be listed in the"
 " boxes in this screen."
 msgstr ""
 
-#: ../../install.rst:524
+#: ../../install.rst:527
 msgid "A separate SSD is needed for each type of device."
 msgstr ""
 
-#: ../../install.rst:526
+#: ../../install.rst:529
 msgid ""
 "Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS Overview` to "
 "determine if the system would benefit from any of these devices before "
@@ -717,7 +717,7 @@ msgid ""
 " screen shown in :numref:`Figure %s <install11b>`."
 msgstr ""
 
-#: ../../install.rst:537
+#: ../../install.rst:540
 msgid ""
 "This screen can be used to configure full-disk encryption which is meant to "
 "protect the data on the disks should the system itself be lost or stolen. "
@@ -727,7 +727,7 @@ msgid ""
 "read from disk."
 msgstr ""
 
-#: ../../install.rst:544
+#: ../../install.rst:547
 msgid ""
 "To configure full-disk encryption, check :guilabel:`Encrypt disk with GELI`."
 " This option will be greyed out if :guilabel:`GPT (Best for new hardware)` "
@@ -739,23 +739,23 @@ msgid ""
 "remember, but hard for others to guess."
 msgstr ""
 
-#: ../../install.rst:554
+#: ../../install.rst:557
 msgid ""
 "This passphrase is required to decrypt the disks. If the passphrase is lost "
 "or forgotten, all access will be lost to the encrypted data!"
 msgstr ""
 
-#: ../../install.rst:558
+#: ../../install.rst:561
 msgid ""
 "When finished, click :guilabel:`Next` to move to the screen shown in "
 ":numref:`Figure %s <install12b>`."
 msgstr ""
 
-#: ../../install.rst:565
+#: ../../install.rst:568
 msgid ": Default ZFS Layout"
 msgstr ""
 
-#: ../../install.rst:567
+#: ../../install.rst:570
 msgid ""
 "Regardless of how many disks are selected for the ZFS configuration, the "
 "default layout will be the same. ZFS does not require separate partitions "
@@ -765,12 +765,12 @@ msgid ""
 "partition at the beginning of the drive."
 msgstr ""
 
-#: ../../install.rst:574
+#: ../../install.rst:577
 msgid ""
 "Do not remove any of the default mount points as they are used by |trueos|."
 msgstr ""
 
-#: ../../install.rst:577
+#: ../../install.rst:580
 msgid ""
 "Use :guilabel:`Add` to add additional mount points. The system will ask for "
 "the name of the mount point as size is not limited at creation time. "
@@ -778,7 +778,7 @@ msgid ""
 "remains within the ZFS pool."
 msgstr ""
 
-#: ../../install.rst:582
+#: ../../install.rst:585
 msgid ""
 "To set the swap size, click :guilabel:`Swap Size`. This will prompt to enter"
 " a size in MB. If a RAIDZ* or mirror exists, a swap partition of the "
@@ -788,13 +788,13 @@ msgid ""
 "be 2GB, due to redundancy."
 msgstr ""
 
-#: ../../install.rst:589
+#: ../../install.rst:592
 msgid ""
 "Right-click any mount point to toggle between enabling or disabling many ZFS"
 " properties:"
 msgstr ""
 
-#: ../../install.rst:592
+#: ../../install.rst:595
 msgid ""
 "**atime:** When set to :guilabel:`on`, controls whether the access time for "
 "files is updated when they are read. When set to :guilabel:`off`, this "
@@ -803,12 +803,12 @@ msgid ""
 "other utilities."
 msgstr ""
 
-#: ../../install.rst:598
+#: ../../install.rst:601
 msgid ""
 "**canmount:** If set to :guilabel:`off`, the filesystem can not be mounted."
 msgstr ""
 
-#: ../../install.rst:601
+#: ../../install.rst:604
 msgid ""
 "**casesensitivity:** The default is :guilabel:`sensitive`, as UNIX "
 "filesystems use case-sensitive file names. For example, \"kris\" is "
@@ -816,29 +816,29 @@ msgid ""
 ":guilabel:`insensitive`."
 msgstr ""
 
-#: ../../install.rst:606
+#: ../../install.rst:609
 msgid ""
 "**checksum:** Automatically verifies the integrity of the data stored on "
 "disks. Turning this property :guilabel:`off` is highly discouraged."
 msgstr ""
 
-#: ../../install.rst:610
+#: ../../install.rst:613
 msgid ""
 "**compression:** If set to :guilabel:`on`, automatically compresses stored "
 "data to conserve disk space."
 msgstr ""
 
-#: ../../install.rst:613
+#: ../../install.rst:616
 msgid ""
 "**exec:** If set to :guilabel:`off`, processes can not be executed from "
 "within this filesystem."
 msgstr ""
 
-#: ../../install.rst:616
+#: ../../install.rst:619
 msgid "**setuid:** If set to :guilabel:`on`, the set-UID bit is respected."
 msgstr ""
 
-#: ../../install.rst:618
+#: ../../install.rst:621
 msgid ""
 "After clicking :guilabel:`Next`, the wizard will show a summary of the "
 "selections. To make further changes, use :guilabel:`Back` to return to a "
@@ -846,27 +846,27 @@ msgid ""
 " return to the :guilabel:`Disk Selection` screen."
 msgstr ""
 
-#: ../../install.rst:629
+#: ../../install.rst:632
 msgid ""
 "Once :guilabel:`Yes` is selected to start the installation, a progress "
 "screen, seen in :numref:`Figure %s <install13b>`, provides a progress bar "
 "and messages so the user can watch the installation's progress."
 msgstr ""
 
-#: ../../install.rst:639
+#: ../../install.rst:642
 msgid ""
 "How long the installation takes depends upon the speed of the hardware and "
 "the installation type selected. A typical installation takes between 5 and "
 "15 minutes."
 msgstr ""
 
-#: ../../install.rst:649
+#: ../../install.rst:652
 msgid ""
 "The screen shown in :numref:`Figure %s <install14a>` appears once the "
 "installation is complete."
 msgstr ""
 
-#: ../../install.rst:659
+#: ../../install.rst:662
 msgid ""
 "Click :guilabel:`Finish` to complete the |trueos| installation. It will "
 "return to the :numref:`Figure %s: TrueOS® Installer Boot Menu <install1d>`. "
@@ -876,38 +876,38 @@ msgid ""
 " exits before removing the installation media."
 msgstr ""
 
-#: ../../install.rst:124
+#: ../../install.rst:127
 msgid ""
 "The default keyboard layout can be changed now, during the post-installation"
 " :ref:`Language Screen`, when :ref:`Logging In`, or during an active session"
 " using the included :guilabel:`fcitx` utility."
 msgstr ""
 
-#: ../../install.rst:225
+#: ../../install.rst:228
 msgid ": |trueos| Disk Wizard"
 msgstr ""
 
-#: ../../install.rst:265
+#: ../../install.rst:268
 msgid ": Disk or Partition Selection"
 msgstr ""
 
-#: ../../install.rst:518
+#: ../../install.rst:521
 msgid ": L2ARC and ZIL"
 msgstr ""
 
-#: ../../install.rst:535
+#: ../../install.rst:538
 msgid ": Encryption"
 msgstr ""
 
-#: ../../install.rst:637
+#: ../../install.rst:640
 msgid ": Installation Progress"
 msgstr ""
 
-#: ../../install.rst:657
+#: ../../install.rst:660
 msgid ": |trueos| Installation Complete"
 msgstr ""
 
-#: ../../install.rst:14
+#: ../../install.rst:17
 msgid "Installing |trueos|"
 msgstr ""
 

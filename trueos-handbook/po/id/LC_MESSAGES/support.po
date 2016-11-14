@@ -11,39 +11,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../support.rst:24
+#: ../../support.rst:27
 msgid "Become a Beta Tester"
 msgstr ""
 
-#: ../../support.rst:51
+#: ../../support.rst:54
 msgid "Become a Translator"
 msgstr ""
 
-#: ../../support.rst:76
+#: ../../support.rst:79
 msgid "Interface Translation"
 msgstr ""
 
-#: ../../support.rst:171
+#: ../../support.rst:174
 msgid "Documentation Translation"
 msgstr ""
 
-#: ../../support.rst:264
+#: ../../support.rst:267
 msgid "Website Translation"
 msgstr ""
 
-#: ../../support.rst:276
+#: ../../support.rst:279
 msgid "Become a Developer"
 msgstr ""
 
-#: ../../support.rst:298
+#: ../../support.rst:301
 msgid "Getting the Source Code"
 msgstr ""
 
-#: ../../support.rst:316
+#: ../../support.rst:319
 msgid "This will create a directory with the same name as the repository."
 msgstr ""
 
-#: ../../support.rst:347
+#: ../../support.rst:350
 msgid ""
 "If you plan to make source changes, several Qt IDEs are available in "
 ":ref:`AppCafe®`. The `QtCreator "
@@ -55,149 +55,149 @@ msgid ""
 "functionality."
 msgstr ""
 
-#: ../../support.rst:369
+#: ../../support.rst:372
 msgid "Design Guidelines"
 msgstr ""
 
-#: ../../support.rst:404
+#: ../../support.rst:407
 msgid "Function"
 msgstr ""
 
-#: ../../support.rst:404
+#: ../../support.rst:407
 msgid "File Menu Icon"
 msgstr ""
 
-#: ../../support.rst:404
+#: ../../support.rst:407
 msgid "File Name"
 msgstr ""
 
-#: ../../support.rst:406 ../../support.rst:449 ../../support.rst:461
+#: ../../support.rst:409 ../../support.rst:452 ../../support.rst:464
 msgid "Quit"
 msgstr ""
 
-#: ../../support.rst:406
+#: ../../support.rst:409
 msgid "row 1, cell 2"
 msgstr ""
 
-#: ../../support.rst:406
+#: ../../support.rst:409
 msgid "window-close.png"
 msgstr ""
 
-#: ../../support.rst:408 ../../support.rst:463
+#: ../../support.rst:411 ../../support.rst:466
 msgid "Settings"
 msgstr ""
 
-#: ../../support.rst:408
+#: ../../support.rst:411
 msgid "row 2, cell 2"
 msgstr ""
 
-#: ../../support.rst:408
+#: ../../support.rst:411
 msgid "configure.png"
 msgstr ""
 
-#: ../../support.rst:447
+#: ../../support.rst:450
 msgid "Shortcut Key"
 msgstr ""
 
-#: ../../support.rst:447 ../../support.rst:459
+#: ../../support.rst:450 ../../support.rst:462
 msgid "Action"
 msgstr ""
 
-#: ../../support.rst:449
+#: ../../support.rst:452
 msgid "CTRL + Q"
 msgstr ""
 
-#: ../../support.rst:451
+#: ../../support.rst:454
 msgid "F1"
 msgstr ""
 
-#: ../../support.rst:451
+#: ../../support.rst:454
 msgid "Help"
 msgstr ""
 
-#: ../../support.rst:459
+#: ../../support.rst:462
 msgid "Hot Key"
 msgstr ""
 
-#: ../../support.rst:461
+#: ../../support.rst:464
 msgid "Alt + Q"
 msgstr ""
 
-#: ../../support.rst:463
+#: ../../support.rst:466
 msgid "Alt + S"
 msgstr ""
 
-#: ../../support.rst:465
+#: ../../support.rst:468
 msgid "Alt + I"
 msgstr ""
 
-#: ../../support.rst:465
+#: ../../support.rst:468
 msgid "Import"
 msgstr ""
 
-#: ../../support.rst:467
+#: ../../support.rst:470
 msgid "Alt + E"
 msgstr ""
 
-#: ../../support.rst:467
+#: ../../support.rst:470
 msgid "Export"
 msgstr ""
 
-#: ../../support.rst:469
+#: ../../support.rst:472
 msgid "ALT + F"
 msgstr ""
 
-#: ../../support.rst:469
+#: ../../support.rst:472
 msgid "File Menu"
 msgstr ""
 
-#: ../../support.rst:471
+#: ../../support.rst:474
 msgid "ALT + C"
 msgstr ""
 
-#: ../../support.rst:471
+#: ../../support.rst:474
 msgid "Configure Menu"
 msgstr ""
 
-#: ../../support.rst:473
+#: ../../support.rst:476
 msgid "ALT + H"
 msgstr ""
 
-#: ../../support.rst:473
+#: ../../support.rst:476
 msgid "Help Menu"
 msgstr ""
 
-#: ../../support.rst:503
+#: ../../support.rst:506
 msgid ""
 "`Commits Mailing List <http://lists.pcbsd.org/mailman/listinfo/commits>`_"
 msgstr ""
 
-#: ../../support.rst:505
+#: ../../support.rst:508
 msgid "`Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_"
 msgstr ""
 
-#: ../../support.rst:507
+#: ../../support.rst:510
 msgid "`C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_"
 msgstr ""
 
-#: ../../support.rst:513
+#: ../../support.rst:516
 msgid "Become an Advocate"
 msgstr ""
 
-#: ../../support.rst:16
+#: ../../support.rst:19
 msgid ""
 "|trueos| is a community project which relies on involvement from its users "
 "and supporters. This section lists some ideas for becoming involved."
 msgstr ""
 
-#: ../../support.rst:26
+#: ../../support.rst:29
 msgid ""
 "If you enjoy tinkering with operating systems and have a bit of spare time, "
 "one of the most effective ways to can assist the |trueos| community is by "
 "reporting any encountered problems while using |trueos|."
 msgstr ""
 
-#: ../../support.rst:30
+#: ../../support.rst:33
 msgid ""
 "If a spare system or virtual machine is available, you can also download and"
 " try out the latest testing snapshots. Having as many people as possible "
@@ -205,7 +205,7 @@ msgid ""
 " in finding and fixing bugs. This makes using |trueos| better for everyone."
 msgstr ""
 
-#: ../../support.rst:36
+#: ../../support.rst:39
 msgid ""
 "If becoming a tester is tempting, join the `TrueOS® Lobby "
 "<https://gitter.im/trueos/Lobby>`_. New testing versions, once available, "
@@ -214,38 +214,38 @@ msgid ""
 "hardware as well."
 msgstr ""
 
-#: ../../support.rst:42
+#: ../../support.rst:45
 msgid ""
 "Anyone can become a beta tester. If you find a bug while testing, accurately"
 " describe the situation when :ref:`Reporting a bug <Report a bug>` so it can"
 " be fixed as soon as possible."
 msgstr ""
 
-#: ../../support.rst:53
+#: ../../support.rst:56
 msgid ""
 "If interested in translating |trueos| into your native language, there are "
 "three translation areas to become involved in:"
 msgstr ""
 
-#: ../../support.rst:56
+#: ../../support.rst:59
 msgid "Translate the graphical menus within the |trueos| operating system."
 msgstr ""
 
-#: ../../support.rst:58
+#: ../../support.rst:61
 msgid "Translate the documentation published with |trueos|."
 msgstr ""
 
-#: ../../support.rst:60
+#: ../../support.rst:63
 msgid "Translate the |trueos| website."
 msgstr ""
 
-#: ../../support.rst:62
+#: ../../support.rst:65
 msgid ""
 "This section describes each of these translation areas in more detail and "
 "how to begin as a translator."
 msgstr ""
 
-#: ../../support.rst:65
+#: ../../support.rst:68
 msgid ""
 "Regardless of the type of desired translation, you should first join the "
 "`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. The first time joining "
@@ -255,7 +255,7 @@ msgid ""
 "translators."
 msgstr ""
 
-#: ../../support.rst:78
+#: ../../support.rst:81
 msgid ""
 "|trueos| uses `Weblate <https://weblate.org>`_ for managing localization of "
 "the menu screens used by the installer and the |trueos| utilities. Weblate "
@@ -266,25 +266,25 @@ msgid ""
 "to use a translation tool."
 msgstr ""
 
-#: ../../support.rst:87
+#: ../../support.rst:90
 msgid ""
 "To assist with a localization, open the `TrueOS® translation website "
 "<http://weblate.trueos.org/>`_ in a web browser. An example is seen in "
 ":numref:`Figure %s <translate1>`."
 msgstr ""
 
-#: ../../support.rst:97
+#: ../../support.rst:100
 msgid ""
 "Before editing a translation, first create a a login account and verify the "
 "activation email. Once logged in, click :guilabel:`Manage your languages`, "
 "shown in :numref:`Figure %s <translate2>`."
 msgstr ""
 
-#: ../../support.rst:106
+#: ../../support.rst:109
 msgid ": Weblate Dashboard"
 msgstr ""
 
-#: ../../support.rst:108
+#: ../../support.rst:111
 msgid ""
 "In the screen shown in :numref:`Figure %s <translate3>`, use the "
 ":guilabel:`Interface Language` drop-down menu to select the language for the"
@@ -293,18 +293,18 @@ msgid ""
 "Once any selections are made, click :guilabel:`Save`."
 msgstr ""
 
-#: ../../support.rst:118
+#: ../../support.rst:121
 msgid ": Manage Languages"
 msgstr ""
 
-#: ../../support.rst:120
+#: ../../support.rst:123
 msgid ""
 "If the language you wish to translate is missing from the \"Translated "
 "languages\" menu, request its addition in the `TrueOS® Lobby "
 "<https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../support.rst:124
+#: ../../support.rst:127
 msgid ""
 "Next, click :guilabel:`Projects` at the top of the screen to select a "
 "localization project. In the example shown in :numref:`Figure %s "
@@ -316,14 +316,14 @@ msgid ""
 " will instead appear in English."
 msgstr ""
 
-#: ../../support.rst:140
+#: ../../support.rst:143
 msgid ""
 "To start translating, click a component name. In the screen shown in "
 ":numref:`Figure %s <translate5>`, select a language and click "
 ":guilabel:`Translate`."
 msgstr ""
 
-#: ../../support.rst:150
+#: ../../support.rst:153
 msgid ""
 "In the example shown in :numref:`Figure %s <translate6>`, the user has "
 "selected to translate the *pc-installgui* component into the Spanish "
@@ -334,13 +334,13 @@ msgid ""
 "translate."
 msgstr ""
 
-#: ../../support.rst:164
+#: ../../support.rst:167
 msgid ""
 "If assistance is needed with either a translation or the Weblate system, ask"
 " for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../support.rst:173
+#: ../../support.rst:176
 msgid ""
 "The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
 "repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
@@ -354,7 +354,7 @@ msgid ""
 "the user's system."
 msgstr ""
 
-#: ../../support.rst:185
+#: ../../support.rst:188
 msgid ""
 "The |trueos| build server provides the HTML version of the |trueos| Users "
 "Handbook. Instructions for building your own HTML, PDF, or EPUB version can "
@@ -362,7 +362,7 @@ msgid ""
 "docs/blob/master/trueos-handbook/README.md>`_."
 msgstr ""
 
-#: ../../support.rst:190
+#: ../../support.rst:193
 msgid ""
 "The documentation source files have been integrated into the Weblate "
 "translation system so the |trueos| documentation can be translated using a "
@@ -371,26 +371,26 @@ msgid ""
 "menu shown in :ref:`translate4`."
 msgstr ""
 
-#: ../../support.rst:196
+#: ../../support.rst:199
 msgid ""
 "It is important to be aware of a few elements when translating the "
 "documentation:"
 msgstr ""
 
-#: ../../support.rst:199
+#: ../../support.rst:202
 msgid ""
 "At this time, some formatting tags are still displayed in raw text, as seen "
 "in the examples in :numref:`Figure %s <translate7>` and :numref:`Figure %s "
 "<translate8>`."
 msgstr ""
 
-#: ../../support.rst:203
+#: ../../support.rst:206
 msgid ""
 "Do not remove the formatting as this can break the documentation build for "
 "that language."
 msgstr ""
 
-#: ../../support.rst:206
+#: ../../support.rst:209
 msgid ""
 "In :ref:`translate7`, it is fine to translate the phrase \"Using the Text "
 "Installer\", but care must be taken to avoid removing any of the surrounding"
@@ -400,11 +400,11 @@ msgid ""
 "the asterisks."
 msgstr ""
 
-#: ../../support.rst:229
+#: ../../support.rst:232
 msgid "These instructions are for a |trueos| system."
 msgstr ""
 
-#: ../../support.rst:246
+#: ../../support.rst:249
 msgid ""
 "This will make an HTML version of the Guide for each of the available "
 "translations. In this example, translations are available for English (in "
@@ -412,19 +412,19 @@ msgid ""
 "Portuguese, Turkish, and UK English. To update the HTML at a later time"
 msgstr ""
 
-#: ../../support.rst:266
+#: ../../support.rst:269
 msgid ""
 "If you are interested in translating the |trueos| website, introduce "
 "yourself in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../support.rst:269
+#: ../../support.rst:272
 msgid ""
 "Currently, the website is being translated to several languages, including: "
 "Dutch, French, German, Polish, Spanish, Swedish, and Turkish."
 msgstr ""
 
-#: ../../support.rst:278
+#: ../../support.rst:281
 msgid ""
 "If you like programming, and especially coding on FreeBSD, we would love to "
 "see you join the |trueos| team as a |trueos| committer. Developers who want "
@@ -437,7 +437,7 @@ msgid ""
 "will be happy to help you get started."
 msgstr ""
 
-#: ../../support.rst:289
+#: ../../support.rst:292
 msgid ""
 "Most of the |trueos| specific GUI tools are developed in C++ using Qt "
 "libraries and other non-GUI development is done using standard Bourne shell "
@@ -445,7 +445,7 @@ msgid ""
 "but those will be evaluated on a case-by-case basis."
 msgstr ""
 
-#: ../../support.rst:300
+#: ../../support.rst:303
 msgid ""
 "The |trueos| source code is available from `GitHub "
 "<https://github.com/trueos/>`_. The code has been organized into "
@@ -455,33 +455,33 @@ msgid ""
 ":command:`git` is included in the base install."
 msgstr ""
 
-#: ../../support.rst:307
+#: ../../support.rst:310
 msgid ""
 "To download the source code, :command:`cd` to the directory to store the "
 "source code and specify the name of the desired repository. In this example,"
 " the user wishes to download the source for the graphical utilities:"
 msgstr ""
 
-#: ../../support.rst:318
+#: ../../support.rst:321
 msgid ""
 "To keep the local copy in sync with the official repository, periodically "
 "run :command:`git pull` within the directory."
 msgstr ""
 
-#: ../../support.rst:321
+#: ../../support.rst:324
 msgid ""
 "Before compiling any source, ensure the Ports Collection is installed as the"
 " superuser, using :command:`portsnap fetch extract`"
 msgstr ""
 
-#: ../../support.rst:324
+#: ../../support.rst:327
 msgid ""
 "Then, :command:`cd` to the directory containing the source to build and run "
 "the :command:`mkports.sh` script. In this example, the developer wants to "
 "compile the graphical utilities:"
 msgstr ""
 
-#: ../../support.rst:334
+#: ../../support.rst:337
 msgid ""
 "This will create a port which can be installed. The name of the port is "
 "located in :file:`mkports.sh`. This example determines the name of the port "
@@ -490,7 +490,7 @@ msgid ""
 "used to overwrite the current utilities:"
 msgstr ""
 
-#: ../../support.rst:357
+#: ../../support.rst:360
 msgid ""
 "If planning to submit changes to be included in |trueos|, fork the "
 "repository using the instructions in `fork a repo "
@@ -501,7 +501,7 @@ msgid ""
 " improvement."
 msgstr ""
 
-#: ../../support.rst:371
+#: ../../support.rst:374
 msgid ""
 "|trueos| is a community driven project that relies on the support of "
 "developers in the community to help in the design and implementation of new "
@@ -512,13 +512,13 @@ msgid ""
 "on the menu bar."
 msgstr ""
 
-#: ../../support.rst:379
+#: ../../support.rst:382
 msgid ""
 "This section describes a small list of guidelines for menu and program "
 "design in |trueos|."
 msgstr ""
 
-#: ../../support.rst:382
+#: ../../support.rst:385
 msgid ""
 "Any graphical program that is a full-featured utility, such as :ref:`Life "
 "Preserver`, should have a **File** menu. However, file menus are not "
@@ -527,7 +527,7 @@ msgid ""
 " need more than two or three items on the file menu."
 msgstr ""
 
-#: ../../support.rst:389
+#: ../../support.rst:392
 msgid ""
 "**Configure** is our adopted standard for the category containing settings "
 "or configuration-related settings. If additional categories are needed, "
@@ -538,31 +538,31 @@ msgstr ""
 msgid "Commonly Used File Menu Icons"
 msgstr ""
 
-#: ../../support.rst:411
+#: ../../support.rst:414
 msgid "|trueos| utilities use these buttons:"
 msgstr ""
 
-#: ../../support.rst:413
+#: ../../support.rst:416
 msgid "**Apply:** Executes settings changes and leaves the window open."
 msgstr ""
 
-#: ../../support.rst:415
+#: ../../support.rst:418
 msgid "**Close:** Exits program without applying settings."
 msgstr ""
 
-#: ../../support.rst:417
+#: ../../support.rst:420
 msgid "**OK:** Closes dialogue window and saves settings."
 msgstr ""
 
-#: ../../support.rst:419
+#: ../../support.rst:422
 msgid "**Cancel:** Closes dialog window without applying settings."
 msgstr ""
 
-#: ../../support.rst:421
+#: ../../support.rst:424
 msgid "**Save:** Keeps the current settings and closes window."
 msgstr ""
 
-#: ../../support.rst:423
+#: ../../support.rst:426
 msgid ""
 "Fully functional programs like :ref:`Life Preserver` do not use close "
 "buttons on the front of the application. Basically, whenever there is a "
@@ -579,25 +579,25 @@ msgstr ""
 msgid "Hot Keys"
 msgstr ""
 
-#: ../../support.rst:501
+#: ../../support.rst:504
 msgid "Developers will also find these resources helpful:"
 msgstr ""
 
-#: ../../support.rst:520
+#: ../../support.rst:523
 msgid ""
 "Burn a couple of DVDs and pass them out. If your school or user group has an"
 " upcoming event where you can promote |trueos|, you can request additional "
 "DVDs from sales@pcbsd.com."
 msgstr ""
 
-#: ../../support.rst:524
+#: ../../support.rst:527
 msgid ""
 "Consider giving a presentation about |trueos| at a local community event, "
 "conference, or online. Let us know about it and we will help you spread the "
 "word."
 msgstr ""
 
-#: ../../support.rst:528
+#: ../../support.rst:531
 msgid ""
 "Write a personal blog detailing your journey from your first |trueos| "
 "install experience to your most recent accomplishment. The blog could also "
@@ -606,7 +606,7 @@ msgid ""
 "with similar interests."
 msgstr ""
 
-#: ../../support.rst:393
+#: ../../support.rst:396
 msgid ""
 "File menu icons are taken from the KDE Oxygen theme located in "
 ":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
@@ -614,7 +614,7 @@ msgid ""
 "<common icons>` lists the commonly used icons and their default file names."
 msgstr ""
 
-#: ../../support.rst:429
+#: ../../support.rst:432
 msgid ""
 "Many users benefit from keyboard shortcuts and we aim to make them available"
 " in every |trueos| utility. Qt makes it easy to assign keyboard shortcuts. "
@@ -629,7 +629,7 @@ msgid ""
 "hot keys."
 msgstr ""
 
-#: ../../support.rst:476
+#: ../../support.rst:479
 msgid ""
 "When saving an application's settings, the QSettings class should be used if"
 " possible. There are two different *organizations*, depending on whether the"
@@ -642,42 +642,42 @@ msgid ""
 " demonstrate how to use the QSettings class for each type of permission."
 msgstr ""
 
-#: ../../support.rst:487
+#: ../../support.rst:490
 msgid "**Example 1: User Permission Settings**"
 msgstr ""
 
-#: ../../support.rst:494
+#: ../../support.rst:497
 msgid "**Example 2: Root Permission Settings**"
 msgstr ""
 
-#: ../../support.rst:138
+#: ../../support.rst:141
 msgid ": Project Selection"
 msgstr ""
 
-#: ../../support.rst:148
+#: ../../support.rst:151
 msgid ": Translation Languages"
 msgstr ""
 
-#: ../../support.rst:162
+#: ../../support.rst:165
 msgid ": Translation Editor"
 msgstr ""
 
-#: ../../support.rst:217
+#: ../../support.rst:220
 msgid ": Formatting Characters - Do Not Remove"
 msgstr ""
 
-#: ../../support.rst:223
+#: ../../support.rst:226
 msgid ": More Formatting Characters"
 msgstr ""
 
-#: ../../support.rst:225
+#: ../../support.rst:228
 msgid ""
 "To build a local HTML copy that includes the latest translations, either for"
 " personal use or to visualize the translated Guide, type these commands from"
 " the command line:"
 msgstr ""
 
-#: ../../support.rst:515
+#: ../../support.rst:518
 msgid ""
 "Love |trueos|? Why not tell your family, friends, fellow students and "
 "colleagues about it? You will not be the only one who prefers a virus-free, "
@@ -685,11 +685,11 @@ msgid ""
 "getting started:"
 msgstr ""
 
-#: ../../support.rst:14
+#: ../../support.rst:17
 msgid "Supporting |trueos|"
 msgstr ""
 
-#: ../../support.rst:95
+#: ../../support.rst:98
 msgid ": |trueos| Weblate Translation System"
 msgstr ""
 

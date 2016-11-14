@@ -11,173 +11,84 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../pico.rst:14
-msgid "|trueos| Pico"
-msgstr ""
-
-#: ../../pico.rst:49
-msgid "Pico Initialization"
-msgstr ""
-
-#: ../../pico.rst:88
-msgid "Pico Server"
-msgstr ""
-
-#: ../../pico.rst:16
-msgid ""
-"|trueos| Pico is an initiative to connect multiple small ARM device thin "
-"clients to a single |trueos| system. Similar to the |sysadm| project, Pico "
-"utilizes two primary pieces of software: Pico Server and Pico Client."
-msgstr ""
-
-#: ../../pico.rst:21
-msgid ""
-"The goal for the |trueos| Pico is to provide a low-cost solution for users "
-"who wish to have a central server provide resources to multiple low-cost, "
-"low-power systems. In effect, Pico allows one system to provide all the "
-"processing power and graphical \"muscle\" for as many computers the user "
-"wishes to add on the network. For example, three or four users can log into "
-"their thin clients and open utilities, browse the Internet, or even play "
-"games while one central server dynamically provides the needed resources for"
-" each of these tasks."
-msgstr ""
-
-#: ../../pico.rst:58
-msgid ""
-"For best performance, it is recommended to have wired network connections "
-"from the Pico server to all connected clients."
-msgstr ""
-
-#: ../../pico.rst:61
-msgid ""
-"An ARM device to act as the thin client (as many as the user wants or the "
-"server can support). Currently, only the Raspberry Pi 2 model B v1.1 is "
-"supported."
-msgstr ""
-
-#: ../../pico.rst:64
+#: ../../pico.rst:67
 msgid "A microSD card for each thin client."
 msgstr ""
 
-#: ../../pico.rst:69
-msgid ""
-"Adapter or connector for microSD cards to connect to the Pico server (Ex. a "
-"USB to microSD card reader)."
-msgstr ""
-
-#: ../../pico.rst:72
+#: ../../pico.rst:75
 msgid "Each thin client will need:"
 msgstr ""
 
-#: ../../pico.rst:74
+#: ../../pico.rst:77
 msgid ""
 "HDMI monitor. Currently, 1920x1080 is the maximum supported resolution and "
 "the monitor should have integrated speakers for audio to function properly."
 msgstr ""
 
-#: ../../pico.rst:77
+#: ../../pico.rst:80
 msgid "Network cable."
 msgstr ""
 
-#: ../../pico.rst:82
-msgid ""
-"Once all these components are assembled, it's time to configure the Pico "
-"Server."
-msgstr ""
-
-#: ../../pico.rst:108
+#: ../../pico.rst:116
 msgid "SSH"
 msgstr ""
 
-#: ../../pico.rst:108
+#: ../../pico.rst:116
 msgid "Video"
 msgstr ""
 
-#: ../../pico.rst:108
+#: ../../pico.rst:116
 msgid "Audio"
 msgstr ""
 
-#: ../../pico.rst:110
+#: ../../pico.rst:118
 msgid "cipher"
 msgstr ""
 
-#: ../../pico.rst:110
+#: ../../pico.rst:118
 msgid "enablevgl=true"
 msgstr ""
 
-#: ../../pico.rst:110
+#: ../../pico.rst:118
 msgid "enablesound=true"
 msgstr ""
 
-#: ../../pico.rst:112
+#: ../../pico.rst:120
 msgid "compression=<1-9>"
 msgstr ""
 
-#: ../../pico.rst:126
+#: ../../pico.rst:134
 msgid ""
 "Turning on VGL may introduce security vulnerabilities on a network with "
 "untrusted clients."
 msgstr ""
 
-#: ../../pico.rst:129
-msgid ""
-"If the server does not support video acceleration or you wish to avoid any "
-"security vulnerabilities on the Pico network, edit :file:`picoserver.ini` "
-"and change :command:`enablevgl=` to **false**."
-msgstr ""
-
-#: ../../pico.rst:133
+#: ../../pico.rst:141
 msgid ""
 "Currently, audio only functions over the HDMI connection port on the "
 "Raspberry Pi, meaning audio will only work on monitors with built-in audio "
 "capabilities. Change **true** to **false** to disable all audio."
 msgstr ""
 
-#: ../../pico.rst:137
-msgid ""
-"Once satisfied with the settings in :file:`picoserver.ini`, new user "
-"accounts/logins need to be created for the client systems. See :ref:`User "
-"Manager` for detailed instructions on creating new users on a |trueos| "
-"system."
-msgstr ""
-
-#: ../../pico.rst:148
-msgid "Starting the Pico Client"
-msgstr ""
-
-#: ../../pico.rst:187
+#: ../../pico.rst:194
 msgid "Insert the microSD card into the thin client."
 msgstr ""
 
-#: ../../pico.rst:188
-msgid ""
-"Attach the network cable. Be sure the client is wired into the same network "
-"as the Pico Server."
-msgstr ""
-
-#: ../../pico.rst:190
+#: ../../pico.rst:197
 msgid "Plug in the USB Mouse and Keyboard."
 msgstr ""
 
-#: ../../pico.rst:191
+#: ../../pico.rst:198
 msgid "Attach the monitor's HDMI cable."
 msgstr ""
 
-#: ../../pico.rst:192
+#: ../../pico.rst:199
 msgid ""
 "Plug in the ARM device's power cable. This should always be the **last** "
 "step."
 msgstr ""
 
-#: ../../pico.rst:202
-msgid "Using the Pico Client"
-msgstr ""
-
-#: ../../pico.rst:204
-msgid "There are a few differences in |trueos| when using a Pico client."
-msgstr ""
-
-#: ../../pico.rst:206
+#: ../../pico.rst:214
 msgid ""
 "If the server uses the |lumina| Desktop Environment, hovering over the "
 ":guilabel:`Network Status Icon` in the System Tray displays the client's IP "
@@ -187,222 +98,90 @@ msgid ""
 "server administration."
 msgstr ""
 
-#: ../../pico.rst:217
-msgid ": Pico Client IP display"
-msgstr ""
-
-#: ../../pico.rst:229
+#: ../../pico.rst:237
 msgid "VGL Graphics Acceleration"
 msgstr ""
 
-#: ../../pico.rst:231
-msgid ""
-"VirtualGL (VGL) is the toolkit used by the |trueos| Pico to provide 3D "
-"hardware acceleration to the Pico Clients. VGL redirects OpenGL commands and"
-" data to the GPU in the Pico Server, then pulls back the rendered 3D images "
-"to the client. For further information about this open-source project, "
-"please refer to the `VirtualGL website <virtualgl.org>`_"
-msgstr ""
-
-#: ../../pico.rst:241
-msgid ""
-"On a Pico client, test VGL functionality by opening the command line and "
-"typing :command:`/usr/local/VirtualGL/bin/vglrun glxgears`. A window will "
-"popup, displaying several moving gears, as seen in :numref:`Image %s "
-"<vgltest>`. The terminal will also display the framerate of the gears, "
-"updating periodically."
-msgstr ""
-
-#: ../../pico.rst:251
+#: ../../pico.rst:259
 msgid ": VirtualGL Gears Test"
 msgstr ""
 
-#: ../../pico.rst:256
+#: ../../pico.rst:264
 msgid "Pulse Audio"
 msgstr ""
 
-#: ../../pico.rst:258
-msgid ""
-"`Pulse Audio <https://www.freedesktop.org/wiki/Software/PulseAudio>`_ is the"
-" preferred audio solution for Pico clients. Pulse Audio allows Pico clients "
-"play audio sent from the server. The Pulse Audio user `documentation "
-"<https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/>`_"
-" provides a wealth of information on configuring Pulse Audio, including "
-"streaming audio over the network. Advanced controls for Pulse Audio are "
-"available in |appcafe| with the :command:`pavucontrol` multimedia "
-"application."
-msgstr ""
-
-#: ../../pico.rst:270
-msgid "Pico Server Administration"
-msgstr ""
-
-#: ../../pico.rst:0
-msgid ": Pico Server Administration Commands"
-msgstr ""
-
-#: ../../pico.rst:282
+#: ../../pico.rst:290
 msgid "Command"
 msgstr ""
 
-#: ../../pico.rst:282
+#: ../../pico.rst:290
 msgid "Description"
 msgstr ""
 
-#: ../../pico.rst:284
+#: ../../pico.rst:292
 msgid "pico-server"
 msgstr ""
 
-#: ../../pico.rst:284
+#: ../../pico.rst:292
 msgid ""
 "Primary Pico command. All commands begin with :command:`pico-server` and a "
 "space."
 msgstr ""
 
-#: ../../pico.rst:287
+#: ../../pico.rst:295
 msgid "-list"
 msgstr ""
 
-#: ../../pico.rst:287
+#: ../../pico.rst:295
 msgid ""
 "Displays all connected clients, as either \"pico_auth <#>\" or the specific "
 "logins (\"testuser_pico\")"
 msgstr ""
 
-#: ../../pico.rst:291
+#: ../../pico.rst:299
 msgid "-kill pico_auth <#>"
 msgstr ""
 
-#: ../../pico.rst:291
+#: ../../pico.rst:299
 msgid "Immediately reboots the specified client."
 msgstr ""
 
-#: ../../pico.rst:297
-msgid "Pico Current Issues"
-msgstr ""
-
-#: ../../pico.rst:299
-msgid "This section lists the currently known bugs with Pico use:"
-msgstr ""
-
-#: ../../pico.rst:30
-msgid ""
-"Pico Server is available both `online <https://www.trueos.org/downloads/>`_ "
-"and in |appcafe|. Configure the server software before downloading the "
-"client software or initializing the Pico client device."
-msgstr ""
-
-#: ../../pico.rst:35
-msgid ""
-"To download the Pico Client, visit the |trueos| `download page "
-"<https://www.trueos.org/downloads>`_. A separate computer is required to "
-"unpack and transfer the :file:`.img` file to a microSD card for insertion "
-"into the thin client device."
-msgstr ""
-
-#: ../../pico.rst:40
-msgid ""
-"Currently, the Pico software is functional for |trueos| and the Raspberry Pi"
-" 2 model B v1.1. The bulk of development efforts are being directed toward "
-"ensuring graphics and sound functionality. Future development goals include "
-"supporting a wider variety of ARM Devices, and building cross-platform "
-"support for the server software."
-msgstr ""
-
-#: ../../pico.rst:51
-msgid "To create a Pico network, several elements are required:"
-msgstr ""
-
-#: ../../pico.rst:53
-msgid ""
-"A |trueos| system with both an internet and local network connection to "
-"download the necessary files and be used as the Pico server. For this "
-"system, it is recommended to use strong hardware to provide the smoothest "
-"experience for each connected client."
-msgstr ""
-
-#: ../../pico.rst:66
+#: ../../pico.rst:69
 msgid ""
 "Using a microSD card larger than 4 GB in size is largely unnecessary, as the"
 " server stores almost all created data."
 msgstr ""
 
-#: ../../pico.rst:78
+#: ../../pico.rst:81
 msgid "USB mouse."
 msgstr ""
 
-#: ../../pico.rst:79
+#: ../../pico.rst:82
 msgid "USB keyboard."
-msgstr ""
-
-#: ../../pico.rst:80
-msgid "Power adapter (for Raspberry Pi thin clients)."
-msgstr ""
-
-#: ../../pico.rst:90
-msgid ""
-"Installing and configuring the Pico server is done via the command prompt, "
-"with superuser permissions (:command:`su` or :command:`sudo <rest of "
-"command>`). Open a terminal and download the Pico Server package with "
-":command:`sudo pkg install picoserver` (also available in |appcafe|). Next, "
-"enable the Pico server using :command:`sysrc -f /etc/rc.conf "
-"picoserver_enable=yes`. Finally, start the Pico server with "
-":command:`service picoserver start`."
-msgstr ""
-
-#: ../../pico.rst:98
-msgid ""
-"Once the Pico server starts, a new :file:`picoserver.ini` file is created on"
-" the system, found in :file:`/usr/local/etc`. This :file:`.ini` file holds "
-"the initialization settings for the Pico server and has three sections, seen"
-" in :numref:`Table %s <inisett>`:"
 msgstr ""
 
 #: ../../pico.rst:0
 msgid ": Pico Server Configuration Settings"
 msgstr ""
 
-#: ../../pico.rst:115
+#: ../../pico.rst:123
 msgid ""
 "The :ref:`Configuration Settings <inisett>` Table will expand as more "
 "options are developed and added to :file:`picoserver.ini`."
 msgstr ""
 
-#: ../../pico.rst:118
-msgid ""
-"Set the *compression* setting to any number from 1 to 9. The default setting"
-" is recommended as turning up the compression can introduce performance "
-"issues on the clients."
-msgstr ""
-
-#: ../../pico.rst:122
+#: ../../pico.rst:130
 msgid ""
 "Pico uses *Virtual GL* (vgl) for graphics hardware acceleration. VGL works "
 "with any *OpenGL* supported graphics card, but Nvidia cards are generally "
 "recommended at this time."
 msgstr ""
 
-#: ../../pico.rst:142
-msgid ""
-"After any new accounts are created, the next step is to initialize the "
-"client."
-msgstr ""
-
-#: ../../pico.rst:150
-msgid ""
-"The process of initializing a Pico Client begins on a separate |trueos| "
-"system. On this system, navigate to the |trueos| website's `download page "
-"<https://www.trueos.org/downloads>`_ and download the latest "
-":file:`<pico>.img.xz` file. This file is compressed with **xz**, decompress "
-"the file before burning it to a microSD card. Open a terminal and navigate "
-"to the file's location to use :command:`unxz` to unpack the file:"
-msgstr ""
-
-#: ../../pico.rst:163
+#: ../../pico.rst:171
 msgid "It may take a few moments for the system to decompress the file."
 msgstr ""
 
-#: ../../pico.rst:165
+#: ../../pico.rst:173
 msgid ""
 "Once the file is decompressed to a :file:`.img` file, insert a microSD card "
 "into the system. An adapter might be necessary if the system has no microSD "
@@ -410,61 +189,506 @@ msgid ""
 "write the :file:`.img` file to the card:"
 msgstr ""
 
-#: ../../pico.rst:177
+#: ../../pico.rst:189
 msgid "This command may take some time to process."
 msgstr ""
 
-#: ../../pico.rst:179
-msgid ""
-"Be sure the :command:`dd if=` command points to right storage device if "
-"there are multiple storage devices inserted in the system. In the example "
-"above, the microSD card is connected to a USB adapter, identified as *da0* "
-"on the system."
-msgstr ""
-
-#: ../../pico.rst:184
-msgid ""
-"After the :file:`.img` file is written to the microSD card; connect the Pico"
-" client to the Pico server:"
-msgstr ""
-
-#: ../../pico.rst:194
-msgid ""
-"Inserting the power cable will generally turn on the client device. The Pico"
-" client then searches for and connects to any Pico Server on the network, "
-"bringing the user to the |trueos| login screen. The Pico client is now ready"
-" for use."
-msgstr ""
-
-#: ../../pico.rst:219
-msgid ""
-"When logging out with the Pico client, several processes begin. The client "
-"clears the session, then restarts the discovery and connection processes. "
-"The server will destroy the previous user's :file:`temp` file, along with "
-"the previously assigned **pico_auth #**. These processes prepare the server "
-"for a new connection and user login from the same Pico client."
-msgstr ""
-
-#: ../../pico.rst:237
+#: ../../pico.rst:245
 msgid ""
 "VirtualGL also has an extensive `user guide "
 "<http://www.virtualgl.org/Documentation/Documentation>`_ to help guide new "
 "users through the various features of this useful toolkit."
 msgstr ""
 
-#: ../../pico.rst:272
-msgid ""
-"Once the Pico server and clients are installed and ready to use, there are a"
-" number of administrative commands available, seen in :numref:`Table %s "
-"<picoadmin>`. This table will expand as new commands are created:"
-msgstr ""
-
-#: ../../pico.rst:301
+#: ../../pico.rst:309
 msgid ""
 "**Audio:** Pulse Audio has an intermittent issue with freezing upon *client*"
 " initialization. A workaround has been implemented, but please refer to "
 ":ref:`Report a bug` if any additional audio issues are encountered."
 msgstr ""
+
+#: ../../pico.rst:17
+msgid "|trpi|"
+msgstr ""
+
+#: ../../pico.rst:19
+msgid ""
+"|trpi| is an initiative to connect multiple small ARM device thin clients to"
+" a single |trueos| system. Similar to the |sysadm| project, |trpi| utilizes "
+"two primary pieces of software: |pise| and |picl|."
+msgstr ""
+
+#: ../../pico.rst:23
+msgid ""
+"The goal for the |trpi| is to provide a low-cost solution for users who wish"
+" to have a central server provide resources to multiple low-cost, low-power "
+"systems. In effect, |trpi| allows one system to provide all the processing "
+"power and graphical \"muscle\" for as many computers the user wishes to add "
+"on the network. For example, three or four users can log into their thin "
+"clients and open utilities, browse the Internet, or even play games while "
+"one central server dynamically provides the needed resources for each of "
+"these tasks."
+msgstr ""
+
+#: ../../pico.rst:32
+msgid ""
+"|pise| is available both `online <https://www.trueos.org/downloads/>`_ and "
+"in |appcafe|. Configure the server software before downloading the client "
+"software or initializing the |picl|."
+msgstr ""
+
+#: ../../pico.rst:36
+msgid ""
+"To download the |picl| software, visit the |trueos| `download page "
+"<https://www.trueos.org/downloads>`_. A separate computer is required to "
+"unpack and transfer the :file:`.img` file to a microSD card for insertion "
+"into the thin client."
+msgstr ""
+
+#: ../../pico.rst:41
+msgid ""
+"Currently, the |trpi| software is functional for |trueos| and the Raspberry "
+"Pi 2 model B v1.1. The bulk of development efforts are being directed toward"
+" ensuring graphics and sound functionality. Future development goals include"
+" supporting a wider variety of ARM devices and potential thin clients, and "
+"building cross-platform support for the server software."
+msgstr ""
+
+#: ../../pico.rst:51
+msgid "|trpi| Initialization"
+msgstr ""
+
+#: ../../pico.rst:53
+msgid "To create a |trpi| network, several elements are required:"
+msgstr ""
+
+#: ../../pico.rst:55
+msgid ""
+"A |trueos| system with both an internet and local network connection to "
+"download the necessary files and be used as the |pise|. For this system, it "
+"is recommended to use strong hardware to provide the smoothest experience "
+"for each connected client."
+msgstr ""
+
+#: ../../pico.rst:60
+msgid ""
+"For best performance, it is recommended to have wired network connections "
+"from the |pise| to all connected clients."
+msgstr ""
+
+#: ../../pico.rst:63
+msgid ""
+"An ARM device to act as the thin client (as many as the user wants or the "
+"server can support). Currently, only the Raspberry Pi 2 model B v1.1 is "
+"supported, with up to five simultaneous connections on one |pise|."
+msgstr ""
+
+#: ../../pico.rst:72
+msgid ""
+"Adapter or connector for microSD cards to connect to the |pise| (Ex. a USB "
+"to microSD card reader)."
+msgstr ""
+
+#: ../../pico.rst:83
+msgid "Power adapter."
+msgstr ""
+
+#: ../../pico.rst:85
+msgid ""
+"Once all these components are assembled, it's time to configure the |pise|."
+msgstr ""
+
+#: ../../pico.rst:91
+msgid "|pise|"
+msgstr ""
+
+#: ../../pico.rst:93
+msgid ""
+"Installing and configuring the |pise| is done via the command prompt, with "
+"superuser permissions (:command:`su` or :command:`sudo <rest of command>`). "
+"Open a terminal and download the |pise| package with :command:`sudo pkg "
+"install picoserver` (also available in |appcafe|). Next, enable the |pise| "
+"using :command:`sysrc -f /etc/rc.conf picoserver_enable=yes`. Finally, start"
+" the |pise| with :command:`service picoserver start`."
+msgstr ""
+
+#: ../../pico.rst:101
+msgid ""
+"These commands will ensure the |pise| automatically starts and remains "
+"active when the system is booted. Type :command:`picoserver onestart` to run"
+" the server for the current session only."
+msgstr ""
+
+#: ../../pico.rst:106
+msgid ""
+"Once the |pise| starts, a new :file:`picoserver.ini` file is created on the "
+"system, found in :file:`/usr/local/etc`. This :file:`.ini` file holds the "
+"initialization settings for the |pise| and has three sections, seen in "
+":numref:`Table %s <inisett>`:"
+msgstr ""
+
+#: ../../pico.rst:126
+msgid ""
+"Set the *compression* setting to any number from 1 to 9. The default setting"
+" is recommended as turning up the compression can introduce performance "
+"issues on the |picl|."
+msgstr ""
+
+#: ../../pico.rst:137
+msgid ""
+"If the server does not support video acceleration or to avoid any potential "
+"security vulnerabilities on the Pico network, edit :file:`picoserver.ini` "
+"and change :command:`enablevgl=` to **false**."
+msgstr ""
+
+#: ../../pico.rst:145
+msgid ""
+"Once satisfied with the settings in :file:`picoserver.ini`, new user "
+"accounts/logins may need to be created for the client systems. See "
+":ref:`User Manager` for detailed instructions on creating new users on a "
+"|trueos| system."
+msgstr ""
+
+#: ../../pico.rst:150
+msgid ""
+"After any necessary accounts are created, the next step is to initialize the"
+" client."
+msgstr ""
+
+#: ../../pico.rst:156
+msgid "Starting the |picl|"
+msgstr ""
+
+#: ../../pico.rst:158
+msgid ""
+"The process of initializing a |picl| begins on a separate |trueos| system. "
+"On this system, navigate to the |trueos| website's `download page "
+"<https://www.trueos.org/downloads>`_ and download the latest "
+":file:`<pico>.img.xz` file. This file is compressed with **xz**; decompress "
+"the file before burning it to a microSD card. Using the command line, "
+"navigate to the file's location to use :command:`unxz` to unpack the file:"
+msgstr ""
+
+#: ../../pico.rst:178
+msgid ""
+"Be sure the :command:`dd if=` command points to the correct storage device. "
+"In the example below, the microSD card is connected to a USB adapter, "
+"identified as *da0* on the system."
+msgstr ""
+
+#: ../../pico.rst:191
+msgid ""
+"After the :file:`.img` file is written to the microSD card; connect the "
+"|picl| to the |pise|:"
+msgstr ""
+
+#: ../../pico.rst:195
+msgid ""
+"Attach the network cable. Be sure the client is wired into the same network "
+"as the |pise|."
+msgstr ""
+
+#: ../../pico.rst:202
+msgid ""
+"For the Raspberry Pi, inserting the power cable will generally turn on the "
+"client device. The |picl| then searches for and connects to any |pise| on "
+"the network, bringing the user to the |trueos| login screen. The |picl| is "
+"now ready for use."
+msgstr ""
+
+#: ../../pico.rst:210
+msgid "Using the |picl|"
+msgstr ""
+
+#: ../../pico.rst:212
+msgid "There are a few differences in |trueos| when using a |picl|."
+msgstr ""
+
+#: ../../pico.rst:225
+msgid ": |picl| IP display"
+msgstr ""
+
+#: ../../pico.rst:227
+msgid ""
+"When logging out with the |picl|, several processes begin. The client clears"
+" the session, then restarts the discovery and connection processes. The "
+"server will destroy the previous user's :file:`temp` file, along with the "
+"previously assigned **pico_auth #**. These processes prepare the server for "
+"a new connection and user login from the same |picl|."
+msgstr ""
+
+#: ../../pico.rst:239
+msgid ""
+"VirtualGL (VGL) is the toolkit used by the |trpi| to provide 3D hardware "
+"acceleration to the |picl|. VGL redirects OpenGL commands and data to the "
+"GPU in the |pise|, then pulls back the rendered 3D images to the client. For"
+" further information about this open-source project, please refer to the "
+"`VirtualGL website <virtualgl.org>`_"
+msgstr ""
+
+#: ../../pico.rst:249
+msgid ""
+"On a |picl|, test VGL functionality by opening the command line and typing "
+":command:`/usr/local/VirtualGL/bin/vglrun glxgears`. A window will popup, "
+"displaying several moving gears, as seen in :numref:`Image %s <vgltest>`. "
+"The terminal also displays the framerate of the gears, and updates "
+"periodically."
+msgstr ""
+
+#: ../../pico.rst:266
+msgid ""
+"`Pulse Audio <https://www.freedesktop.org/wiki/Software/PulseAudio>`_ is the"
+" preferred audio solution for the |picl|. Pulse Audio allows a |picl| play "
+"audio sent from the server. The Pulse Audio user `documentation "
+"<https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/>`_"
+" provides a wealth of information on configuring Pulse Audio, including "
+"streaming audio over the network. Advanced controls for Pulse Audio are "
+"available in |appcafe| with the :command:`pavucontrol` multimedia "
+"application."
+msgstr ""
+
+#: ../../pico.rst:278
+msgid "|pise| Administration"
+msgstr ""
+
+#: ../../pico.rst:280
+msgid ""
+"Once the |pise| and thin clients are installed and ready to use, there are a"
+" number of administrative commands available, seen in :numref:`Table %s "
+"<picoadmin>`. Any new commands will be added to this table:"
+msgstr ""
+
+#: ../../pico.rst:0
+msgid ": |pise| Administration Commands"
+msgstr ""
+
+#: ../../pico.rst:305
+msgid "|trpi| Current Issues"
+msgstr ""
+
+#: ../../pico.rst:307
+msgid "This section lists the currently known bugs with |trpi| use:"
+msgstr ""
+
+#~ msgid "|trueos| Pico"
+#~ msgstr ""
+
+#~ msgid "Pico Initialization"
+#~ msgstr ""
+
+#~ msgid "Pico Server"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|trueos| Pico is an initiative to connect multiple small ARM device thin "
+#~ "clients to a single |trueos| system. Similar to the |sysadm| project, Pico "
+#~ "utilizes two primary pieces of software: Pico Server and Pico Client."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The goal for the |trueos| Pico is to provide a low-cost solution for users "
+#~ "who wish to have a central server provide resources to multiple low-cost, "
+#~ "low-power systems. In effect, Pico allows one system to provide all the "
+#~ "processing power and graphical \"muscle\" for as many computers the user "
+#~ "wishes to add on the network. For example, three or four users can log into "
+#~ "their thin clients and open utilities, browse the Internet, or even play "
+#~ "games while one central server dynamically provides the needed resources for"
+#~ " each of these tasks."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For best performance, it is recommended to have wired network connections "
+#~ "from the Pico server to all connected clients."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An ARM device to act as the thin client (as many as the user wants or the "
+#~ "server can support). Currently, only the Raspberry Pi 2 model B v1.1 is "
+#~ "supported."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Adapter or connector for microSD cards to connect to the Pico server (Ex. a "
+#~ "USB to microSD card reader)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once all these components are assembled, it's time to configure the Pico "
+#~ "Server."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the server does not support video acceleration or you wish to avoid any "
+#~ "security vulnerabilities on the Pico network, edit :file:`picoserver.ini` "
+#~ "and change :command:`enablevgl=` to **false**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once satisfied with the settings in :file:`picoserver.ini`, new user "
+#~ "accounts/logins need to be created for the client systems. See :ref:`User "
+#~ "Manager` for detailed instructions on creating new users on a |trueos| "
+#~ "system."
+#~ msgstr ""
+
+#~ msgid "Starting the Pico Client"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Attach the network cable. Be sure the client is wired into the same network "
+#~ "as the Pico Server."
+#~ msgstr ""
+
+#~ msgid "Using the Pico Client"
+#~ msgstr ""
+
+#~ msgid "There are a few differences in |trueos| when using a Pico client."
+#~ msgstr ""
+
+#~ msgid ": Pico Client IP display"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "VirtualGL (VGL) is the toolkit used by the |trueos| Pico to provide 3D "
+#~ "hardware acceleration to the Pico Clients. VGL redirects OpenGL commands and"
+#~ " data to the GPU in the Pico Server, then pulls back the rendered 3D images "
+#~ "to the client. For further information about this open-source project, "
+#~ "please refer to the `VirtualGL website <virtualgl.org>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On a Pico client, test VGL functionality by opening the command line and "
+#~ "typing :command:`/usr/local/VirtualGL/bin/vglrun glxgears`. A window will "
+#~ "popup, displaying several moving gears, as seen in :numref:`Image %s "
+#~ "<vgltest>`. The terminal will also display the framerate of the gears, "
+#~ "updating periodically."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Pulse Audio <https://www.freedesktop.org/wiki/Software/PulseAudio>`_ is the"
+#~ " preferred audio solution for Pico clients. Pulse Audio allows Pico clients "
+#~ "play audio sent from the server. The Pulse Audio user `documentation "
+#~ "<https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/>`_"
+#~ " provides a wealth of information on configuring Pulse Audio, including "
+#~ "streaming audio over the network. Advanced controls for Pulse Audio are "
+#~ "available in |appcafe| with the :command:`pavucontrol` multimedia "
+#~ "application."
+#~ msgstr ""
+
+#~ msgid "Pico Server Administration"
+#~ msgstr ""
+
+#~ msgid ": Pico Server Administration Commands"
+#~ msgstr ""
+
+#~ msgid "Pico Current Issues"
+#~ msgstr ""
+
+#~ msgid "This section lists the currently known bugs with Pico use:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pico Server is available both `online <https://www.trueos.org/downloads/>`_ "
+#~ "and in |appcafe|. Configure the server software before downloading the "
+#~ "client software or initializing the Pico client device."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To download the Pico Client, visit the |trueos| `download page "
+#~ "<https://www.trueos.org/downloads>`_. A separate computer is required to "
+#~ "unpack and transfer the :file:`.img` file to a microSD card for insertion "
+#~ "into the thin client device."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Currently, the Pico software is functional for |trueos| and the Raspberry Pi"
+#~ " 2 model B v1.1. The bulk of development efforts are being directed toward "
+#~ "ensuring graphics and sound functionality. Future development goals include "
+#~ "supporting a wider variety of ARM Devices, and building cross-platform "
+#~ "support for the server software."
+#~ msgstr ""
+
+#~ msgid "To create a Pico network, several elements are required:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A |trueos| system with both an internet and local network connection to "
+#~ "download the necessary files and be used as the Pico server. For this "
+#~ "system, it is recommended to use strong hardware to provide the smoothest "
+#~ "experience for each connected client."
+#~ msgstr ""
+
+#~ msgid "Power adapter (for Raspberry Pi thin clients)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Installing and configuring the Pico server is done via the command prompt, "
+#~ "with superuser permissions (:command:`su` or :command:`sudo <rest of "
+#~ "command>`). Open a terminal and download the Pico Server package with "
+#~ ":command:`sudo pkg install picoserver` (also available in |appcafe|). Next, "
+#~ "enable the Pico server using :command:`sysrc -f /etc/rc.conf "
+#~ "picoserver_enable=yes`. Finally, start the Pico server with "
+#~ ":command:`service picoserver start`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the Pico server starts, a new :file:`picoserver.ini` file is created on"
+#~ " the system, found in :file:`/usr/local/etc`. This :file:`.ini` file holds "
+#~ "the initialization settings for the Pico server and has three sections, seen"
+#~ " in :numref:`Table %s <inisett>`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Set the *compression* setting to any number from 1 to 9. The default setting"
+#~ " is recommended as turning up the compression can introduce performance "
+#~ "issues on the clients."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After any new accounts are created, the next step is to initialize the "
+#~ "client."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The process of initializing a Pico Client begins on a separate |trueos| "
+#~ "system. On this system, navigate to the |trueos| website's `download page "
+#~ "<https://www.trueos.org/downloads>`_ and download the latest "
+#~ ":file:`<pico>.img.xz` file. This file is compressed with **xz**, decompress "
+#~ "the file before burning it to a microSD card. Open a terminal and navigate "
+#~ "to the file's location to use :command:`unxz` to unpack the file:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Be sure the :command:`dd if=` command points to right storage device if "
+#~ "there are multiple storage devices inserted in the system. In the example "
+#~ "above, the microSD card is connected to a USB adapter, identified as *da0* "
+#~ "on the system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After the :file:`.img` file is written to the microSD card; connect the Pico"
+#~ " client to the Pico server:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Inserting the power cable will generally turn on the client device. The Pico"
+#~ " client then searches for and connects to any Pico Server on the network, "
+#~ "bringing the user to the |trueos| login screen. The Pico client is now ready"
+#~ " for use."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When logging out with the Pico client, several processes begin. The client "
+#~ "clears the session, then restarts the discovery and connection processes. "
+#~ "The server will destroy the previous user's :file:`temp` file, along with "
+#~ "the previously assigned **pico_auth #**. These processes prepare the server "
+#~ "for a new connection and user login from the same Pico client."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the Pico server and clients are installed and ready to use, there are a"
+#~ " number of administrative commands available, seen in :numref:`Table %s "
+#~ "<picoadmin>`. This table will expand as new commands are created:"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Pico Server is available both `online <https://www.trueos.org/downloads/>`_ "

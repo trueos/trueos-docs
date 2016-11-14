@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../sysadmclient.rst:16
+#: ../../sysadmclient.rst:19
 msgid ""
 "Beginning with |trueos| 11, most of the system management utilities that "
 "were previously available in the |pcbsd| Control Panel have been rewritten "
@@ -22,76 +22,76 @@ msgid ""
 "systems are available from the `SysAdm Website <https://sysadm.us/>`_."
 msgstr ""
 
-#: ../../sysadmclient.rst:25
+#: ../../sysadmclient.rst:28
 msgid ""
 "By default, |sysadm| does not allow for remote access to the system. Please "
 "review the |sysadm| server handbook for instructions on initializing the "
 "remote access elements of |sysadm|."
 msgstr ""
 
-#: ../../sysadmclient.rst:29
+#: ../../sysadmclient.rst:32
 msgid ""
 "A number of utilities have been removed from Control Panel as they are now "
 "available in the |sysadm| client:"
 msgstr ""
 
-#: ../../sysadmclient.rst:32
+#: ../../sysadmclient.rst:35
 msgid "**Application Management**"
 msgstr ""
 
-#: ../../sysadmclient.rst:34
+#: ../../sysadmclient.rst:37
 msgid ":ref:`AppCafe®`"
 msgstr ""
 
-#: ../../sysadmclient.rst:36
+#: ../../sysadmclient.rst:39
 msgid ":ref:`Update Manager`"
 msgstr ""
 
-#: ../../sysadmclient.rst:38
+#: ../../sysadmclient.rst:41
 msgid "**SysAdm Server Settings**"
 msgstr ""
 
-#: ../../sysadmclient.rst:40
+#: ../../sysadmclient.rst:43
 msgid ":ref:`Manage SSL Keys`"
 msgstr ""
 
-#: ../../sysadmclient.rst:42
+#: ../../sysadmclient.rst:45
 msgid "**System Management**"
 msgstr ""
 
-#: ../../sysadmclient.rst:44
+#: ../../sysadmclient.rst:47
 msgid ":ref:`Boot Environment Manager`"
 msgstr ""
 
-#: ../../sysadmclient.rst:50
+#: ../../sysadmclient.rst:53
 msgid ":ref:`Task Manager`"
 msgstr ""
 
-#: ../../sysadmclient.rst:52
+#: ../../sysadmclient.rst:55
 msgid ":ref:`User Manager`"
 msgstr ""
 
-#: ../../sysadmclient.rst:54
+#: ../../sysadmclient.rst:57
 msgid "**Utilities**"
 msgstr ""
 
-#: ../../sysadmclient.rst:56
+#: ../../sysadmclient.rst:59
 msgid ":ref:`Life Preserver`"
 msgstr ""
 
-#: ../../sysadmclient.rst:58
+#: ../../sysadmclient.rst:61
 msgid ""
 "The rest of this client guide provides an overview of the |sysadm| client "
 "and all of its functionality, beginning with |appcafe|."
 msgstr ""
 
-#: ../../sysadmclient.rst:61
+#: ../../sysadmclient.rst:64
 msgid ""
 "Instructions for using the API in your own scripts can be found in the "
 "`SysAdm™ API Reference Guide <http://api.sysadm.us/>`_."
 msgstr ""
 
-#: ../../sysadmclient.rst:70
+#: ../../sysadmclient.rst:73
 msgid ""
 "|appcafe| provides a graphical interface for installing and managing FreeBSD"
 " packages, which are pre-built applications that have been tested for "
@@ -99,20 +99,20 @@ msgid ""
 "such as application screenshots and lists of similar applications."
 msgstr ""
 
-#: ../../sysadmclient.rst:76
+#: ../../sysadmclient.rst:79
 msgid ""
 "The rest of this section describes how to manage software using |appcafe|."
 msgstr ""
 
-#: ../../sysadmclient.rst:82
+#: ../../sysadmclient.rst:85
 msgid "Finding Software"
 msgstr ""
 
-#: ../../sysadmclient.rst:94
+#: ../../sysadmclient.rst:97
 msgid "This screen contains the following options:"
 msgstr ""
 
-#: ../../sysadmclient.rst:120
+#: ../../sysadmclient.rst:123
 msgid ""
 "Displayed applications will be listed in alphabetical order. Applications "
 "which are already installed and which are not required by other applications"
@@ -121,7 +121,7 @@ msgid ""
 "clicked to install that application."
 msgstr ""
 
-#: ../../sysadmclient.rst:131
+#: ../../sysadmclient.rst:134
 msgid ""
 "|appcafe| provides a graphical front-end for displaying the contents of the "
 "package database. Since installed applications provide more information to "
@@ -131,7 +131,7 @@ msgid ""
 "installed, and the package provides a message during installation."
 msgstr ""
 
-#: ../../sysadmclient.rst:145
+#: ../../sysadmclient.rst:148
 msgid ""
 "As seen in this example, the information for an application includes the "
 "application's icon, name, and description. Click the application's name to "
@@ -139,7 +139,7 @@ msgid ""
 "application is installed, there will be an :guilabel:`Uninstall` button."
 msgstr ""
 
-#: ../../sysadmclient.rst:151
+#: ../../sysadmclient.rst:154
 msgid ""
 "Beneath this area are 4 tabs. The first tab on the left contains two panes. "
 "The first (middle) pane displays the package description. The second "
@@ -147,91 +147,91 @@ msgid ""
 "installed."
 msgstr ""
 
-#: ../../sysadmclient.rst:165
+#: ../../sysadmclient.rst:168
 msgid "This tab displays a variety of information:"
 msgstr ""
 
-#: ../../sysadmclient.rst:167
+#: ../../sysadmclient.rst:170
 msgid "Software version."
 msgstr ""
 
-#: ../../sysadmclient.rst:169
+#: ../../sysadmclient.rst:172
 msgid ""
 "Email address for the maintainer of the FreeBSD port the package is built "
 "from."
 msgstr ""
 
-#: ../../sysadmclient.rst:172
+#: ../../sysadmclient.rst:175
 msgid ""
 "The application's architecture. This will indicate the FreeBSD version and "
 "whether or not the application is 32-bit or 64-bit. Note |trueos| can run "
 "both 32 and 64-bit applications."
 msgstr ""
 
-#: ../../sysadmclient.rst:176
+#: ../../sysadmclient.rst:179
 msgid "The application's license."
 msgstr ""
 
-#: ../../sysadmclient.rst:178
+#: ../../sysadmclient.rst:181
 msgid "The application's installation size."
 msgstr ""
 
-#: ../../sysadmclient.rst:180
+#: ../../sysadmclient.rst:183
 msgid "The application's download size."
 msgstr ""
 
-#: ../../sysadmclient.rst:202
+#: ../../sysadmclient.rst:205
 msgid ""
 "This tab contains the following information. Click the right arrow next to "
 "an entry to expand its information and the down arrow to collapse the "
 "information."
 msgstr ""
 
-#: ../../sysadmclient.rst:206
+#: ../../sysadmclient.rst:209
 msgid ""
 "**Build Options:** shows the values of the make options that the package was"
 " built with."
 msgstr ""
 
-#: ../../sysadmclient.rst:209
+#: ../../sysadmclient.rst:212
 msgid ""
 "**Dependencies:** lists the dependent packages that this application "
 "requires to be installed."
 msgstr ""
 
-#: ../../sysadmclient.rst:212
+#: ../../sysadmclient.rst:215
 msgid ""
 "**Required By:** indicates the names of any other packages that require this"
 " software to be installed."
 msgstr ""
 
-#: ../../sysadmclient.rst:215
+#: ../../sysadmclient.rst:218
 msgid ""
 "**Shared Libraries (Required):** lists the names of the libraries that this "
 "application requires."
 msgstr ""
 
-#: ../../sysadmclient.rst:219
+#: ../../sysadmclient.rst:222
 msgid "Managing Installed Software"
 msgstr ""
 
-#: ../../sysadmclient.rst:231
+#: ../../sysadmclient.rst:234
 msgid "This screen offers several actions:"
 msgstr ""
 
-#: ../../sysadmclient.rst:233
+#: ../../sysadmclient.rst:236
 msgid ""
 "**All:** check this box to select all installed applications or uncheck it "
 "to deselect all installed applications."
 msgstr ""
 
-#: ../../sysadmclient.rst:236
+#: ../../sysadmclient.rst:239
 msgid ""
 "**Uninstall:** click the garbage can icon to uninstall the selected "
 "applications."
 msgstr ""
 
-#: ../../sysadmclient.rst:239
+#: ../../sysadmclient.rst:242
 msgid ""
 "**Clean:** this operation deletes any orphaned packages for the selected "
 "applications. An orphaned package is one that is not required by any other "
@@ -239,13 +239,13 @@ msgid ""
 ":guilabel:`Clean` icon) in its :guilabel:`Status` column."
 msgstr ""
 
-#: ../../sysadmclient.rst:245
+#: ../../sysadmclient.rst:248
 msgid ""
 "This screen also provides an :guilabel:`Options` drop-down menu which allows"
 " you to select or deselect a number of options:"
 msgstr ""
 
-#: ../../sysadmclient.rst:248
+#: ../../sysadmclient.rst:251
 msgid ""
 "**View All Packages:** by default, the installed tab only shows the packages"
 " you installed. Check this box to also see the packages included with the "
@@ -255,7 +255,7 @@ msgid ""
 " so you are not left with orphaned packages."
 msgstr ""
 
-#: ../../sysadmclient.rst:256
+#: ../../sysadmclient.rst:259
 msgid ""
 "**View Advanced Options:** if you check this box, two extra icons, a lock "
 "and an unlock icon, will be added to the right of the trash icon. If you "
@@ -266,7 +266,7 @@ msgid ""
 "application, you will need to first select it and click the unlock icon."
 msgstr ""
 
-#: ../../sysadmclient.rst:266
+#: ../../sysadmclient.rst:269
 msgid ""
 "**Auto-clean packages:** if you check this box, the :guilabel:`Clean` icon "
 "will disappear as you no longer need to manually clean orphans. Instead, "
@@ -274,24 +274,24 @@ msgid ""
 "uninstall."
 msgstr ""
 
-#: ../../sysadmclient.rst:301
+#: ../../sysadmclient.rst:304
 msgid "Update Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:303
+#: ../../sysadmclient.rst:306
 msgid ""
 "Update Manager provides a graphical interface for keeping the |trueos| "
 "operating system and its installed applications up-to-date."
 msgstr ""
 
-#: ../../sysadmclient.rst:306
+#: ../../sysadmclient.rst:309
 msgid ""
 "The |trueos| update mechanism provides several safeguards to ensure updating"
 " the operating system or its software is a low-risk operation. The following"
 " steps occur automatically during an update:"
 msgstr ""
 
-#: ../../sysadmclient.rst:310
+#: ../../sysadmclient.rst:313
 msgid ""
 "The update automatically creates a snapshot (copy) of the current operating "
 "system, known as a boot environment (BE), and mounts the snapshot in the "
@@ -302,14 +302,14 @@ msgid ""
 "mounted copy."
 msgstr ""
 
-#: ../../sysadmclient.rst:318
+#: ../../sysadmclient.rst:321
 msgid ""
 "If the system is getting low on disk space and there is not enough space to "
 "create a new BE, the update will fail with a message indicating there is not"
 " enough space to perform the update."
 msgstr ""
 
-#: ../../sysadmclient.rst:322
+#: ../../sysadmclient.rst:325
 msgid ""
 "While the update is occurring, and until you reboot after the update, you "
 "will be unable to use |appcafe| to manage software. This is a safety measure"
@@ -321,7 +321,7 @@ msgid ""
 "update process."
 msgstr ""
 
-#: ../../sysadmclient.rst:331
+#: ../../sysadmclient.rst:334
 msgid ""
 "Once the update is complete, the new boot environment or updated snapshot is"
 " added as the first entry in the boot menu. It is then activated so the "
@@ -336,7 +336,7 @@ msgid ""
 "until you reboot."
 msgstr ""
 
-#: ../../sysadmclient.rst:344
+#: ../../sysadmclient.rst:347
 msgid ""
 "The default ZFS layout used by |trueos| ensures when new boot environments "
 "are created, the :file:`/usr/local/`, :file:`/usr/home/`, "
@@ -347,11 +347,11 @@ msgid ""
 "the system to its previous state, before the update was applied."
 msgstr ""
 
-#: ../../sysadmclient.rst:354
+#: ../../sysadmclient.rst:357
 msgid "Managing Updates"
 msgstr ""
 
-#: ../../sysadmclient.rst:365
+#: ../../sysadmclient.rst:368
 msgid ""
 "In this example, updates are available for installed packages. If a security"
 " update is available, it will be listed as such. Apply the available updates"
@@ -362,7 +362,7 @@ msgid ""
 "displayed."
 msgstr ""
 
-#: ../../sysadmclient.rst:373
+#: ../../sysadmclient.rst:376
 msgid ""
 "Update Manager will update **all** installed software. If you have placed a "
 "lock on a package using :command:`pkg` or |appcafe|, Update Manager will "
@@ -371,25 +371,25 @@ msgid ""
 "will need to be manually updated instead using :command:`pkg`."
 msgstr ""
 
-#: ../../sysadmclient.rst:380
+#: ../../sysadmclient.rst:383
 msgid ""
 "Once the update is complete, Update Manager will provide a message "
 "indicating a reboot is required. When ready, save your work and manually "
 "reboot into the new boot environment containing the applied updates."
 msgstr ""
 
-#: ../../sysadmclient.rst:384
+#: ../../sysadmclient.rst:387
 msgid ""
 "The :guilabel:`Latest Check` field indicates the date and time the system "
 "last checked for updates. To manually check for updates, click "
 ":guilabel:`Check for Updates`."
 msgstr ""
 
-#: ../../sysadmclient.rst:397
+#: ../../sysadmclient.rst:400
 msgid "This tab contains several configurable options:"
 msgstr ""
 
-#: ../../sysadmclient.rst:399
+#: ../../sysadmclient.rst:402
 msgid ""
 "**Max Boot Environments:** |trueos| automatically creates a boot environment"
 " before updating any software, the operating system, or applying a system "
@@ -400,23 +400,23 @@ msgid ""
 "environments is *5*, with an allowable range from *1* to *10*."
 msgstr ""
 
-#: ../../sysadmclient.rst:426
+#: ../../sysadmclient.rst:429
 msgid "Upgrading from |pcbsd| 10.x to |trueos|"
 msgstr ""
 
-#: ../../sysadmclient.rst:464
+#: ../../sysadmclient.rst:467
 msgid ""
 "To upgrade, select the existing pool to install into and press "
 ":guilabel:`OK`."
 msgstr ""
 
-#: ../../sysadmclient.rst:467
+#: ../../sysadmclient.rst:470
 msgid ""
 "If you instead press :guilabel:`Cancel`, the installation will continue as "
 "usual and reformat the disks, destroying any existing data."
 msgstr ""
 
-#: ../../sysadmclient.rst:482
+#: ../../sysadmclient.rst:485
 msgid ""
 "Press :guilabel:`Next` to start the installation. Once the installation is "
 "complete, reboot the system and remove the installation media. The post-"
@@ -426,15 +426,15 @@ msgid ""
 " Handbook so you can configure the new installation."
 msgstr ""
 
-#: ../../sysadmclient.rst:501
+#: ../../sysadmclient.rst:504
 msgid "Manage SSL Keys"
 msgstr ""
 
-#: ../../sysadmclient.rst:507
+#: ../../sysadmclient.rst:510
 msgid "Boot Environment Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:509
+#: ../../sysadmclient.rst:512
 msgid ""
 "|trueos| supports a feature of ZFS known as multiple boot environments "
 "(BEs). With multiple boot environments, the process of updating software "
@@ -443,32 +443,32 @@ msgid ""
 "environment. Other examples of using boot environments include:"
 msgstr ""
 
-#: ../../sysadmclient.rst:515
+#: ../../sysadmclient.rst:518
 msgid ""
 "When making software changes, you can take a snapshot of that boot "
 "environment at any stage during the modifications."
 msgstr ""
 
-#: ../../sysadmclient.rst:518
+#: ../../sysadmclient.rst:521
 msgid ""
 "Save multiple boot environments on your system and perform various updates "
 "on each of them as needed. Install, test, and update different software "
 "packages on each."
 msgstr ""
 
-#: ../../sysadmclient.rst:522
+#: ../../sysadmclient.rst:525
 msgid ""
 "Mount a boot environment in order to :command:`chroot` into the mount point "
 "and update specific packages on the mounted environment."
 msgstr ""
 
-#: ../../sysadmclient.rst:525
+#: ../../sysadmclient.rst:528
 msgid ""
 "Move a boot environment to another machine, physical or virtual, in order to"
 " check hardware support."
 msgstr ""
 
-#: ../../sysadmclient.rst:538
+#: ../../sysadmclient.rst:541
 msgid ""
 "To ensure the files the operating system needs are included when the system "
 "boots, all boot environments on a |trueos| system include :file:`/usr`, "
@@ -478,22 +478,22 @@ msgid ""
 "regardless of which boot environment is selected at system boot."
 msgstr ""
 
-#: ../../sysadmclient.rst:558
+#: ../../sysadmclient.rst:561
 msgid "Each entry contains the same information:"
 msgstr ""
 
-#: ../../sysadmclient.rst:560
+#: ../../sysadmclient.rst:563
 msgid ""
 "**Name:** The name of the boot entry as it will appear in the boot menu."
 msgstr ""
 
-#: ../../sysadmclient.rst:563
+#: ../../sysadmclient.rst:566
 msgid ""
 "**Nickname:** A description, which can be different from the "
 ":guilabel:`Name`."
 msgstr ""
 
-#: ../../sysadmclient.rst:566
+#: ../../sysadmclient.rst:569
 msgid ""
 "**Active:** The possible values of this field are :guilabel:`R` (active on "
 "reboot), :guilabel:`N` (active now), or :guilabel:`-` (inactive). In this "
@@ -501,25 +501,25 @@ msgid ""
 ":guilabel:`initial` on the next boot."
 msgstr ""
 
-#: ../../sysadmclient.rst:572
+#: ../../sysadmclient.rst:575
 msgid "**Space:** The size of the boot environment."
 msgstr ""
 
-#: ../../sysadmclient.rst:574
+#: ../../sysadmclient.rst:577
 msgid ""
 "**Mountpoint:** Indicates whether or not the BE is mounted, and if so, "
 "where."
 msgstr ""
 
-#: ../../sysadmclient.rst:577
+#: ../../sysadmclient.rst:580
 msgid "**Date:** The date and time the BE was created."
 msgstr ""
 
-#: ../../sysadmclient.rst:579
+#: ../../sysadmclient.rst:582
 msgid "From left to right, the buttons on the top bar are used to:"
 msgstr ""
 
-#: ../../sysadmclient.rst:581
+#: ../../sysadmclient.rst:584
 msgid ""
 "**Create BE:** Creates a new boot environment. Do this before making any "
 "changes to the system that may impact on your current boot environment. You "
@@ -528,79 +528,79 @@ msgid ""
 "the list of boot environments."
 msgstr ""
 
-#: ../../sysadmclient.rst:587
+#: ../../sysadmclient.rst:590
 msgid "**Clone BE:** Creates a copy of the highlighted boot environment."
 msgstr ""
 
-#: ../../sysadmclient.rst:589
+#: ../../sysadmclient.rst:592
 msgid ""
 "**Delete BE:** Deletes the highlighted boot environment. You can not delete "
 "the boot environment which is marked as *N* or as *R* in the "
 ":guilabel:`Active` column."
 msgstr ""
 
-#: ../../sysadmclient.rst:593
+#: ../../sysadmclient.rst:596
 msgid ""
 "**Rename BE:** Renames the highlighted boot environment. The name will "
 "appear in the boot menu when the system boots. You cannot rename the BE "
 "which is currently booted."
 msgstr ""
 
-#: ../../sysadmclient.rst:597
+#: ../../sysadmclient.rst:600
 msgid ""
 "**Mount BE:** Mounts the highlighted BE in :file:`/tmp` so its contents are "
 "browseable. Note this setting only applies to inactive BEs."
 msgstr ""
 
-#: ../../sysadmclient.rst:600
+#: ../../sysadmclient.rst:603
 msgid "**Unmount BE:** Unmounts the previously mounted BE."
 msgstr ""
 
-#: ../../sysadmclient.rst:602
+#: ../../sysadmclient.rst:605
 msgid ""
 "**Activate BE:** Notifies the system to boot into the highlighted boot "
 "environment next system boot. This will change the :guilabel:`Active` column"
 " to *R*."
 msgstr ""
 
-#: ../../sysadmclient.rst:734
+#: ../../sysadmclient.rst:737
 msgid "Task Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:749
+#: ../../sysadmclient.rst:752
 msgid ""
 "The :guilabel:`Kill Selected Process` button can be used to terminate the "
 "selected process."
 msgstr ""
 
-#: ../../sysadmclient.rst:756
+#: ../../sysadmclient.rst:759
 msgid "User Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:758
+#: ../../sysadmclient.rst:761
 msgid ""
 "The |trueos| User Manager utility allows you to easily add, configure, and "
 "delete users and groups. To access this utility in |sysadm|, click "
 ":menuselection:`System Management --> User Manager`."
 msgstr ""
 
-#: ../../sysadmclient.rst:772
+#: ../../sysadmclient.rst:775
 msgid "The :guilabel:`Standard` view allows you to configure the following:"
 msgstr ""
 
-#: ../../sysadmclient.rst:774
+#: ../../sysadmclient.rst:777
 msgid ""
 "**User Name:** The name the user will use when they log in to the system. It"
 " is case sensitive and can not contain any spaces."
 msgstr ""
 
-#: ../../sysadmclient.rst:777
+#: ../../sysadmclient.rst:780
 msgid ""
 "**Full Name:** This field provides a description of the account and can "
 "contain spaces."
 msgstr ""
 
-#: ../../sysadmclient.rst:780
+#: ../../sysadmclient.rst:783
 msgid ""
 "**Password:** This is where you can change the password for the user. The "
 "password is case-sensitive and can contain symbols. If you want to display "
@@ -608,32 +608,32 @@ msgid ""
 "icon again to show dots in place of the actual password."
 msgstr ""
 
-#: ../../sysadmclient.rst:786
+#: ../../sysadmclient.rst:789
 msgid ""
 "**UID:** This value is greyed out as it is assigned by the operating system "
 "and cannot be changed after the user is created."
 msgstr ""
 
-#: ../../sysadmclient.rst:789
+#: ../../sysadmclient.rst:792
 msgid ""
 "**Home Dir Path:** If you change the user's home directory, input the full "
 "path."
 msgstr ""
 
-#: ../../sysadmclient.rst:792
+#: ../../sysadmclient.rst:795
 msgid ""
 "**Shell Path:** If you change the user's default shell, input the full path "
 "to an installed shell. The paths for each installed shell can be found in "
 ":file:`/etc/shells`."
 msgstr ""
 
-#: ../../sysadmclient.rst:796
+#: ../../sysadmclient.rst:799
 msgid ""
 "If you make any changes to a user's \"Details\", click the :guilabel:`Save` "
 "button to save them."
 msgstr ""
 
-#: ../../sysadmclient.rst:808
+#: ../../sysadmclient.rst:811
 msgid ""
 "Fields outlined in red are required when creating a user. The "
 ":guilabel:`User Name`, :guilabel:`Full Name`, and :guilabel:`Password` "
@@ -641,7 +641,7 @@ msgid ""
 "several more available fields:"
 msgstr ""
 
-#: ../../sysadmclient.rst:813
+#: ../../sysadmclient.rst:816
 msgid ""
 "**UID:** By default, the user will be assigned the next available User ID "
 "(UID). If you need to force a specific UID, uncheck the :guilabel:`Auto` box"
@@ -649,7 +649,7 @@ msgid ""
 "already in use by another account and those numbers will appear as red."
 msgstr ""
 
-#: ../../sysadmclient.rst:819
+#: ../../sysadmclient.rst:822
 msgid ""
 "**Home Dir Path:** By default, this is set to :file:`/nonexistent` which is "
 "the correct setting for a system account as it prevents unauthorized logins."
@@ -657,7 +657,7 @@ msgid ""
 "to use for the user's home directory."
 msgstr ""
 
-#: ../../sysadmclient.rst:824
+#: ../../sysadmclient.rst:827
 msgid ""
 "**Shell:** By default, this is set to :file:`/usr/bin/nologin`, which is the"
 " correct setting for a system account as it prevents unauthorized logins. If"
@@ -666,27 +666,27 @@ msgid ""
 ":file:`/etc/shells`."
 msgstr ""
 
-#: ../../sysadmclient.rst:830
+#: ../../sysadmclient.rst:833
 msgid ""
 "**Adminstrator Access:** Check this box if the user requires `su(1) "
 "<https://www.freebsd.org/cgi/man.cgi?query=su>`_ access. Note this setting "
 "requires the user to know the password of the *root* user."
 msgstr ""
 
-#: ../../sysadmclient.rst:834
+#: ../../sysadmclient.rst:837
 msgid ""
 "**Operator Access:** Check this box if the user requires :command:`sudo` "
 "access. This allows the user to precede an administrative command with "
 ":command:`sudo` and be prompted for their own password."
 msgstr ""
 
-#: ../../sysadmclient.rst:838
+#: ../../sysadmclient.rst:841
 msgid ""
 "Once you have made your selections, press :guilabel:`Save` to create the "
 "account."
 msgstr ""
 
-#: ../../sysadmclient.rst:841
+#: ../../sysadmclient.rst:844
 msgid ""
 "If you click :guilabel:`-` (remove) for a highlighted user, a pop-up menu "
 "will ask if you are sure you want to remove the user and a second pop-up "
@@ -698,7 +698,7 @@ msgid ""
 "you need at least one user to login to the |trueos| system."
 msgstr ""
 
-#: ../../sysadmclient.rst:861
+#: ../../sysadmclient.rst:864
 msgid ""
 "The accounts you did not create are known as system accounts and are needed "
 "by the operating system or installed applications. Do **not** delete any "
@@ -711,11 +711,11 @@ msgid ""
 "account name."
 msgstr ""
 
-#: ../../sysadmclient.rst:875
+#: ../../sysadmclient.rst:878
 msgid "PersonaCrypt"
 msgstr ""
 
-#: ../../sysadmclient.rst:877
+#: ../../sysadmclient.rst:880
 msgid ""
 "|trueos| provides support for a security feature known as PersonaCrypt. A "
 "PersonaCrypt device is a removable USB media, such as a USB stick, formatted"
@@ -728,7 +728,7 @@ msgid ""
 "user's login password."
 msgstr ""
 
-#: ../../sysadmclient.rst:887
+#: ../../sysadmclient.rst:890
 msgid ""
 "When a user is configured to use a PersonaCrypt device, that user can not "
 "login using an unencrypted session on the same system. In other words, the "
@@ -737,7 +737,7 @@ msgid ""
 "different user accounts, one for each type of session."
 msgstr ""
 
-#: ../../sysadmclient.rst:894
+#: ../../sysadmclient.rst:897
 msgid ""
 "PersonaCrypt uses GELI's ability to split the key into two parts: one being "
 "your passphrase, and the other being a key stored on disk. Without both of "
@@ -746,19 +746,19 @@ msgid ""
 "system it was paired with."
 msgstr ""
 
-#: ../../sysadmclient.rst:900
+#: ../../sysadmclient.rst:903
 msgid ""
 "USB devices do eventually fail. Always backup any important files stored on "
 "the PersonaCrypt device to another device or system."
 msgstr ""
 
-#: ../../sysadmclient.rst:922
+#: ../../sysadmclient.rst:925
 msgid ""
 "**Initialize Device:** Used to prepare the USB device which will be used as "
 "the user's home directory."
 msgstr ""
 
-#: ../../sysadmclient.rst:925
+#: ../../sysadmclient.rst:928
 msgid ""
 "**Import Key:** If the user has already created a PersonaCrypt device on "
 "another |trueos| system, click this button to import a previously saved copy"
@@ -766,7 +766,7 @@ msgid ""
 "can now login to this computer using PersonaCrypt."
 msgstr ""
 
-#: ../../sysadmclient.rst:933
+#: ../../sysadmclient.rst:936
 msgid ""
 "Since the USB stick will hold the user's home directory and files, ensure "
 "the stick is large enough to meet the anticipated storage needs of the home "
@@ -776,7 +776,7 @@ msgid ""
 "logged in."
 msgstr ""
 
-#: ../../sysadmclient.rst:982
+#: ../../sysadmclient.rst:985
 msgid ""
 "When stealth sessions have been configured, PersonaCrypt users will still be"
 " displayed in the login menu, even if their USB device is not inserted. This"
@@ -784,40 +784,40 @@ msgid ""
 "session."
 msgstr ""
 
-#: ../../sysadmclient.rst:987
+#: ../../sysadmclient.rst:990
 msgid ""
 "In the field with the yellow padlock icon, input the password for the user "
 "account. In the field with the grey USB stick icon, input the password "
 "associated with the PersonaCrypt device."
 msgstr ""
 
-#: ../../sysadmclient.rst:991
+#: ../../sysadmclient.rst:994
 msgid ""
 "To prevent data corruption and freezing the system **DO NOT** remove the "
 "PersonaCrypt device while logged in! Always log out of your session before "
 "physically removing the device."
 msgstr ""
 
-#: ../../sysadmclient.rst:999
+#: ../../sysadmclient.rst:1002
 msgid "Managing Groups"
 msgstr ""
 
-#: ../../sysadmclient.rst:1012
+#: ../../sysadmclient.rst:1015
 msgid "This screen has 2 columns:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1014
+#: ../../sysadmclient.rst:1017
 msgid ""
 "**Members:** Indicates if the highlighted group contains any user accounts."
 msgstr ""
 
-#: ../../sysadmclient.rst:1017
+#: ../../sysadmclient.rst:1020
 msgid ""
 "**Available:** Shows all of the system and user accounts on the system in "
 "alphabetical order."
 msgstr ""
 
-#: ../../sysadmclient.rst:1020
+#: ../../sysadmclient.rst:1023
 msgid ""
 "To add an account to a group, highlight the group name, then highlight the "
 "account name in the :guilabel:`Available` column. Click the left arrow and "
@@ -827,7 +827,7 @@ msgid ""
 "added to a group."
 msgstr ""
 
-#: ../../sysadmclient.rst:1027
+#: ../../sysadmclient.rst:1030
 msgid ""
 "If you add a user to the *operator* group, they will have permission to use "
 "commands requiring administrative access and will be prompted for their own "
@@ -836,15 +836,15 @@ msgid ""
 "will be prompted for the superuser password whenever they use the command."
 msgstr ""
 
-#: ../../sysadmclient.rst:1034
+#: ../../sysadmclient.rst:1037
 msgid "To view all of the groups on the system, click :guilabel:`Advanced`."
 msgstr ""
 
-#: ../../sysadmclient.rst:1040
+#: ../../sysadmclient.rst:1043
 msgid "Life Preserver"
 msgstr ""
 
-#: ../../sysadmclient.rst:1042
+#: ../../sysadmclient.rst:1045
 msgid ""
 "The Life Preserver utility is designed to take full advantage of the "
 "functionality provided by ZFS snapshots. This utility allows you to schedule"
@@ -853,25 +853,25 @@ msgid ""
 "benefits:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1064
+#: ../../sysadmclient.rst:1067
 msgid ""
 "Replication is an efficient way to keep the files on two systems in sync. "
 "With Life Preserver, the snapshots taken on the |trueos| system will be "
 "synchronized with their versions stored on the specified backup server."
 msgstr ""
 
-#: ../../sysadmclient.rst:1069
+#: ../../sysadmclient.rst:1072
 msgid "Snapshots are sent to the backup server over an encrypted connection."
 msgstr ""
 
-#: ../../sysadmclient.rst:1071
+#: ../../sysadmclient.rst:1074
 msgid ""
 "Having a copy of the snapshots on another system makes it possible to "
 "perform an operating system restore should the |trueos| system become "
 "unusable or to deploy an identical system to different hardware."
 msgstr ""
 
-#: ../../sysadmclient.rst:1075
+#: ../../sysadmclient.rst:1078
 msgid ""
 "To manage snapshots and replication using the |sysadm| graphical client, go "
 "to :menuselection:`Utilities --> Life Preserver`. The rest of this section "
@@ -879,16 +879,16 @@ msgid ""
 "Preserver."
 msgstr ""
 
-#: ../../sysadmclient.rst:1084
+#: ../../sysadmclient.rst:1087
 msgid "Snapshots Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1095
+#: ../../sysadmclient.rst:1098
 msgid ""
 "This screen will display any created snapshots and provides buttons to:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1097
+#: ../../sysadmclient.rst:1100
 msgid ""
 "**Create:** Used to create a manual snapshot of the specified pool now. For "
 "example, you could create a snapshot before making changes to an important "
@@ -902,14 +902,14 @@ msgid ""
 "snapshot was created."
 msgstr ""
 
-#: ../../sysadmclient.rst:1108
+#: ../../sysadmclient.rst:1111
 msgid ""
 "**Remove:** Used to delete a highlighted snapshot. **This is a permanent "
 "change that can not be reversed.** In other words, the versions of files at "
 "the point in time the snapshot was created will be lost."
 msgstr ""
 
-#: ../../sysadmclient.rst:1113
+#: ../../sysadmclient.rst:1116
 msgid ""
 "**Revert:** If you highlight a snapshot entry, this button and the drop-down"
 " menu next to it will activate. You can use the drop-down menu to specify "
@@ -919,11 +919,11 @@ msgid ""
 " after the snapshot was taken will be lost."
 msgstr ""
 
-#: ../../sysadmclient.rst:1125
+#: ../../sysadmclient.rst:1128
 msgid "Replication Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1127
+#: ../../sysadmclient.rst:1130
 msgid ""
 "Life Preserver can be configured to replicate snapshots to another system "
 "over an encrypted SSH connection, though the backup itself is stored in an "
@@ -931,13 +931,13 @@ msgid ""
 " another system."
 msgstr ""
 
-#: ../../sysadmclient.rst:1132
+#: ../../sysadmclient.rst:1135
 msgid ""
 "In order to configure replication, the remote system to hold a copy of the "
 "snapshots must first meet several requirements:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1139
+#: ../../sysadmclient.rst:1142
 msgid ""
 "The backup server **must be formatted with the latest version of ZFS,** also"
 " known as ZFS feature flags or ZFSv5000. Operating systems that support this"
@@ -945,14 +945,14 @@ msgid ""
 "FreeNAS 9.1.x or higher."
 msgstr ""
 
-#: ../../sysadmclient.rst:1145
+#: ../../sysadmclient.rst:1148
 msgid ""
 "The system must have SSH installed and the SSH service must be running. If "
 "the backup server is running |trueos|, |pcbsd|, |freenas| or FreeBSD, SSH is"
 " already installed, but you will need to start the SSH service."
 msgstr ""
 
-#: ../../sysadmclient.rst:1150
+#: ../../sysadmclient.rst:1153
 msgid ""
 "If the backup server is running |trueos| or |pcbsd|, you will need to open "
 "TCP port 22 (SSH) using the :guilabel:`Firewall Manager`. If the server is "
@@ -962,23 +962,23 @@ msgid ""
 "backup system, make sure it has a rule to allow SSH."
 msgstr ""
 
-#: ../../sysadmclient.rst:1179
+#: ../../sysadmclient.rst:1182
 msgid "Input the following information:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1181
+#: ../../sysadmclient.rst:1184
 msgid ""
 "**Host IP:** The IP address of the remote system to store the replicated "
 "snapshots."
 msgstr ""
 
-#: ../../sysadmclient.rst:1184
+#: ../../sysadmclient.rst:1187
 msgid ""
 "**SSH Port:** The port number, if the remote system is running SSH on a port"
 " other than the default of 22."
 msgstr ""
 
-#: ../../sysadmclient.rst:1187
+#: ../../sysadmclient.rst:1190
 msgid ""
 "**Dataset:** The name of the ZFS pool and optional dataset on the remote "
 "system. For example, \"remotetank\" will save the snapshots to a ZFS pool of"
@@ -986,7 +986,7 @@ msgid ""
 "existing dataset named \"mybackups\" on the pool named \"remotetank\"."
 msgstr ""
 
-#: ../../sysadmclient.rst:1193
+#: ../../sysadmclient.rst:1196
 msgid ""
 "**Frequency:** Use the drop-down menu to select how often to initiate the "
 "replication. Available choices are :guilabel:`Sync with snapshot` (at the "
@@ -997,80 +997,80 @@ msgid ""
 ":guilabel:`Start`) in this screen."
 msgstr ""
 
-#: ../../sysadmclient.rst:1202
+#: ../../sysadmclient.rst:1205
 msgid ""
 "**Username:** The username must already exist on the remote system, have "
 "write access to the specified \"Dataset\", and have permission to SSH into "
 "that system."
 msgstr ""
 
-#: ../../sysadmclient.rst:1206
+#: ../../sysadmclient.rst:1209
 msgid "**Password:** The password associated with the \"Username\"."
 msgstr ""
 
-#: ../../sysadmclient.rst:1208
+#: ../../sysadmclient.rst:1211
 msgid ""
 "**Local DS:** Use the drop-down menu to select the pool or dataset to "
 "replicate to the remote system."
 msgstr ""
 
-#: ../../sysadmclient.rst:1211
+#: ../../sysadmclient.rst:1214
 msgid ""
 "The buttons at the top of the \"Setup Replication\" screen have several "
 "uses:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1214
+#: ../../sysadmclient.rst:1217
 msgid ""
 "**+ icon:** Sdd a replication schedule. Multiple schedules are supported, "
 "meaning you can replicate to multiple systems or replicate different \"Local"
 " DS\" datasets at different times."
 msgstr ""
 
-#: ../../sysadmclient.rst:1218
+#: ../../sysadmclient.rst:1221
 msgid ""
 "**- icon:** Remove an already created, and highlighted, replication "
 "schedule."
 msgstr ""
 
-#: ../../sysadmclient.rst:1221
+#: ../../sysadmclient.rst:1224
 msgid "**gear icon:** Modify the schedule for the highlighted replication."
 msgstr ""
 
-#: ../../sysadmclient.rst:1223
+#: ../../sysadmclient.rst:1226
 msgid ""
 "**Start:** Manually starts a replication to the system specified in the "
 "highlighted replication."
 msgstr ""
 
-#: ../../sysadmclient.rst:1226
+#: ../../sysadmclient.rst:1229
 msgid ""
 "**Initialize:** Deletes the existing replicated snapshots on the remote "
 "system and starts a new replication. This is useful if a replication gets "
 "stuck and will not complete."
 msgstr ""
 
-#: ../../sysadmclient.rst:1234
+#: ../../sysadmclient.rst:1237
 msgid "Schedules Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1236
+#: ../../sysadmclient.rst:1239
 msgid ""
 "This tab is used to manage when snapshots of the ZFS pool are created. "
 "Multiple snapshot schedules are supported if the system has multiple pools."
 msgstr ""
 
-#: ../../sysadmclient.rst:1240
+#: ../../sysadmclient.rst:1243
 msgid ""
 "Snapshots are created on the entire pool as they are needed when "
 ":ref:`Restoring the Operating System`."
 msgstr ""
 
-#: ../../sysadmclient.rst:1253
+#: ../../sysadmclient.rst:1256
 msgid "This pane contains several options:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1258
+#: ../../sysadmclient.rst:1261
 msgid ""
 "**Snapshots to keep:** Snapshots are automatically pruned after the "
 "specified number of snapshots to prevent snapshots from eventually using up "
@@ -1081,7 +1081,7 @@ msgid ""
 "manually in the :guilabel:`Snapshots` tab."
 msgstr ""
 
-#: ../../sysadmclient.rst:1267
+#: ../../sysadmclient.rst:1270
 msgid ""
 "**Frequency:** Use the drop-down menu to select how often snapshots occur. "
 "Options include \"Daily\" (which will allow you to select the time of day), "
@@ -1089,29 +1089,29 @@ msgid ""
 "Minutes\"."
 msgstr ""
 
-#: ../../sysadmclient.rst:1272
+#: ../../sysadmclient.rst:1275
 msgid ""
 "Once you have created a snapshot schedule, you can use the \"gear\" icon "
 "next to the \"camera\" icon to modify the highlighted schedule or the \"X\" "
 "icon to delete the highlighted schedule."
 msgstr ""
 
-#: ../../sysadmclient.rst:1301
+#: ../../sysadmclient.rst:1304
 msgid ""
 "Once you have created a scrub schedule, you can use the \"gear\" icon next "
 "to the \"schedule scrub\" icon to modify the highlighted schedule or the "
 "\"X\" icon to delete the highlighted schedule."
 msgstr ""
 
-#: ../../sysadmclient.rst:1309
+#: ../../sysadmclient.rst:1312
 msgid "Settings Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1320
+#: ../../sysadmclient.rst:1323
 msgid "Many settings are configurable:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1322
+#: ../../sysadmclient.rst:1325
 msgid ""
 "**Disk Usage Warning:** Enter a number up to 99 to indicate at which "
 "percentage of disk space Life Preserver will display an alert in the system "
@@ -1119,145 +1119,145 @@ msgid ""
 "space."
 msgstr ""
 
-#: ../../sysadmclient.rst:1327
+#: ../../sysadmclient.rst:1330
 msgid ""
 "**Email:** To receive an email when disk usage reaches the percentage "
 "configured in the \"Disk Usage Warning\", enter an email address."
 msgstr ""
 
-#: ../../sysadmclient.rst:1330
+#: ../../sysadmclient.rst:1333
 msgid ""
 "**Email Trigger:** This setting can be set to \"All\", \"Warn\", or "
 "\"Error\" and indicates the type of condition which will trigger an email "
 "message."
 msgstr ""
 
-#: ../../sysadmclient.rst:1333
+#: ../../sysadmclient.rst:1336
 msgid "**Recursive Management:**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1335
+#: ../../sysadmclient.rst:1338
 msgid ""
 "If you make any changes in this screen, press :guilabel:`Save Settings` to "
 "apply them."
 msgstr ""
 
-#: ../../sysadmclient.rst:1342
+#: ../../sysadmclient.rst:1345
 msgid "Using the lpreserver CLI"
 msgstr ""
 
-#: ../../sysadmclient.rst:1344
+#: ../../sysadmclient.rst:1347
 msgid ""
 "The :command:`lpreserver` command line utility can also be used to manage "
 "snapshots and replication. This command needs to be run as the superuser. To"
 " display its usage, type the command without any arguments:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1364
+#: ../../sysadmclient.rst:1367
 msgid ""
 "Each command has its own help text that describes its parameters and "
 "provides a usage example. For example, to receive help on how to use the "
 ":command:`lpreserver cronsnap` command, type:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1433
+#: ../../sysadmclient.rst:1436
 msgid "**Command Line**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1433
+#: ../../sysadmclient.rst:1436
 msgid "**GUI**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1433
+#: ../../sysadmclient.rst:1436
 msgid "**Description**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1435
+#: ../../sysadmclient.rst:1438
 msgid "**cronsnap**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1435 ../../sysadmclient.rst:1453
+#: ../../sysadmclient.rst:1438 ../../sysadmclient.rst:1456
 msgid "\"Snapshots\" tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1435
+#: ../../sysadmclient.rst:1438
 msgid ""
 "schedule when snapshots occur and how long to keep them; the **stop** option"
 " can be used to disable snapshot creation"
 msgstr ""
 
-#: ../../sysadmclient.rst:1440
+#: ../../sysadmclient.rst:1443
 msgid "**cronscrub**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1440
+#: ../../sysadmclient.rst:1443
 msgid "\"Schedules\" tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1440
+#: ../../sysadmclient.rst:1443
 msgid "schedule a ZFS scrub"
 msgstr ""
 
-#: ../../sysadmclient.rst:1442
+#: ../../sysadmclient.rst:1445
 msgid "**get**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1442 ../../sysadmclient.rst:1449
+#: ../../sysadmclient.rst:1445 ../../sysadmclient.rst:1452
 msgid "\"Settings\" tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1442
+#: ../../sysadmclient.rst:1445
 msgid "list Life Preserver options"
 msgstr ""
 
-#: ../../sysadmclient.rst:1444
+#: ../../sysadmclient.rst:1447
 msgid "**replicate**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1444
+#: ../../sysadmclient.rst:1447
 msgid "\"Replication\" tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1444
+#: ../../sysadmclient.rst:1447
 msgid ""
 "used to list, add, and remove backup server; read the **help** for this "
 "command for examples"
 msgstr ""
 
-#: ../../sysadmclient.rst:1449
+#: ../../sysadmclient.rst:1452
 msgid "**set**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1449
+#: ../../sysadmclient.rst:1452
 msgid ""
 "configures Life Preserver options; read **help** for the list of "
 "configurable options"
 msgstr ""
 
-#: ../../sysadmclient.rst:1453
+#: ../../sysadmclient.rst:1456
 msgid "**snapshot**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1453
+#: ../../sysadmclient.rst:1456
 msgid ""
 "create and replicate a new ZFS snapshot; by default, snapshots are "
 "recursive, meaning that a that a snapshot is taken of every dataset within a"
 " pool"
 msgstr ""
 
-#: ../../sysadmclient.rst:1459
+#: ../../sysadmclient.rst:1462
 msgid "**status**"
 msgstr ""
 
-#: ../../sysadmclient.rst:1459
+#: ../../sysadmclient.rst:1462
 msgid "lists the last snapshot name and replication status"
 msgstr ""
 
-#: ../../sysadmclient.rst:1466
+#: ../../sysadmclient.rst:1469
 msgid "Restoring the Operating System"
 msgstr ""
 
-#: ../../sysadmclient.rst:1480
+#: ../../sysadmclient.rst:1483
 msgid ""
 "Before you can perform a restore, the network interface must be configured. "
 "Click :guilabel:`Network Connectivity` (second icon from the left) in order "
@@ -1268,26 +1268,26 @@ msgid ""
 "continuing."
 msgstr ""
 
-#: ../../sysadmclient.rst:1502
+#: ../../sysadmclient.rst:1505
 msgid ""
 "Click :guilabel:`Next` and the wizard will provide a summary of your "
 "selections. If correct, click :guilabel:`Finish`; otherwise, click "
 ":guilabel:`Back` to correct them."
 msgstr ""
 
-#: ../../sysadmclient.rst:84
+#: ../../sysadmclient.rst:87
 msgid ""
 "The \"Browse\" tab, shown in :numref:`Figure %s <appcafe1>`, is used to find"
 " available software."
 msgstr ""
 
-#: ../../sysadmclient.rst:96
+#: ../../sysadmclient.rst:99
 msgid ""
 "**Back:** Click this button to leave a category or search result and return "
 "to the previous screen."
 msgstr ""
 
-#: ../../sysadmclient.rst:99
+#: ../../sysadmclient.rst:102
 msgid ""
 "**Repository drop-down menu:** Use this drop-down menu to select the "
 "repository to search or browse. The selections include: \"major\" "
@@ -1296,7 +1296,7 @@ msgid ""
 "applications)."
 msgstr ""
 
-#: ../../sysadmclient.rst:105
+#: ../../sysadmclient.rst:108
 msgid ""
 "**Search:** To see if an application is available, enter its name and click "
 "the \"binoculars\" icon. Alternately, enter a description. For example, a "
@@ -1304,14 +1304,14 @@ msgid ""
 " well as applications which provide browser functionality, such as Firefox."
 msgstr ""
 
-#: ../../sysadmclient.rst:111
+#: ../../sysadmclient.rst:114
 msgid ""
 "**Browse Categories:** This drop-down menu lists the available software "
 "categories. If you select a category, it will only display or show search "
 "results from that category."
 msgstr ""
 
-#: ../../sysadmclient.rst:115
+#: ../../sysadmclient.rst:118
 msgid ""
 "**Popular Searches and Popular Categories:** The buttons in these sections "
 "can be used to quickly find applications which are recommended by other "
@@ -1319,31 +1319,31 @@ msgid ""
 "match the button's description."
 msgstr ""
 
-#: ../../sysadmclient.rst:156
+#: ../../sysadmclient.rst:159
 msgid "An example of the \"?\" tab is shown in :numref:`Figure %s <appcafe3>`"
 msgstr ""
 
-#: ../../sysadmclient.rst:182
+#: ../../sysadmclient.rst:185
 msgid ""
 "If the package includes screenshots of the application, you can click the "
 "next tab, which has an image icon, to view and scroll through the "
 "screenshots. An example is shown in :numref:`Figure %s <appcafe4>`"
 msgstr ""
 
-#: ../../sysadmclient.rst:193
+#: ../../sysadmclient.rst:196
 msgid ""
 "An example of the last tab, which has a list icon, is shown in "
 ":numref:`Figure %s <appcafe5>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:221
+#: ../../sysadmclient.rst:224
 msgid ""
 "To view and manage the applications which are installed on the system, click"
 " the :guilabel:`Installed` tab.  An example is seen in :numref:`Figure %s "
 "<appcafe6>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:271
+#: ../../sysadmclient.rst:274
 msgid ""
 "In the example shown in :numref:`Figure %s <appcafe7>`, the user has checked"
 " all available options. In this example, :guilabel:`aalib` has dependencies "
@@ -1351,7 +1351,7 @@ msgid ""
 "plugins` is an orphan (flag icon)."
 msgstr ""
 
-#: ../../sysadmclient.rst:283
+#: ../../sysadmclient.rst:286
 msgid ""
 "If you install or uninstall any software, click the :guilabel:`Pending` tab "
 "to view the details of the operation. In the example shown in "
@@ -1361,25 +1361,25 @@ msgid ""
 "the log for the operation."
 msgstr ""
 
-#: ../../sysadmclient.rst:356
+#: ../../sysadmclient.rst:359
 msgid ""
 "An example of the :guilabel:`Updates` tab is shown in :numref:`Figure %s "
 "<update1>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:388
+#: ../../sysadmclient.rst:391
 msgid ""
 "The :guilabel:`Settings` tab is shown in :numref:`Figure %s <update4>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:471
+#: ../../sysadmclient.rst:474
 msgid ""
 "If you press :guilabel:`OK` to proceed with an installation into a new boot "
 "environment, the installer will skip the \"Disk Selection\" screen and "
 "instead show a summary, seen in :numref:`Figure %s <upgrade2>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:546
+#: ../../sysadmclient.rst:549
 msgid ""
 "To view, manage, and create boot environments using the |sysadm| graphical "
 "client, go to :menuselection:`System Management --> Boot Environment "
@@ -1387,111 +1387,111 @@ msgid ""
 "entry named *initial* that represents the original |trueos| installation."
 msgstr ""
 
-#: ../../sysadmclient.rst:635
+#: ../../sysadmclient.rst:638
 msgid "Firewall Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:690
+#: ../../sysadmclient.rst:693
 msgid "Service Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:692
+#: ../../sysadmclient.rst:695
 msgid ""
 "The Service Manager offers a view of all the system's installed services, as"
 " seen in :numref:`Figure %s <service1>`. There are also several options to "
 "configure these services."
 msgstr ""
 
-#: ../../sysadmclient.rst:702
+#: ../../sysadmclient.rst:705
 msgid "Services are listed in a chart with four columns:"
 msgstr ""
 
-#: ../../sysadmclient.rst:704
+#: ../../sysadmclient.rst:707
 msgid ""
 "**Name:** The name of the service. All services are listed alphabetically by"
 " name."
 msgstr ""
 
-#: ../../sysadmclient.rst:707
+#: ../../sysadmclient.rst:710
 msgid ""
 "**Running:** Indicates if the service is active. \"True\" means the service "
 "is running, \"false\" means it is not."
 msgstr ""
 
-#: ../../sysadmclient.rst:710
+#: ../../sysadmclient.rst:713
 msgid ""
 "**Start on Boot:** Shows with \"true\" or \"false\" if the service will be "
 "automatically activated when the system is initialized."
 msgstr ""
 
-#: ../../sysadmclient.rst:713
+#: ../../sysadmclient.rst:716
 msgid "**Description:** If available, displays text describing the server."
 msgstr ""
 
-#: ../../sysadmclient.rst:715
+#: ../../sysadmclient.rst:718
 msgid "Underneath the chart is a row with multiple buttons:"
 msgstr ""
 
-#: ../../sysadmclient.rst:717
+#: ../../sysadmclient.rst:720
 msgid "**Play Icon:** Starts the selected service."
 msgstr ""
 
-#: ../../sysadmclient.rst:719
+#: ../../sysadmclient.rst:722
 msgid "**Pause Icon:** Stops the selected service."
 msgstr ""
 
-#: ../../sysadmclient.rst:721
+#: ../../sysadmclient.rst:724
 msgid "**Reload Icon:** Restarts the selected service."
 msgstr ""
 
-#: ../../sysadmclient.rst:723
+#: ../../sysadmclient.rst:726
 msgid "**Power On Icon:** Enables the service to automatically start on boot."
 msgstr ""
 
-#: ../../sysadmclient.rst:725
+#: ../../sysadmclient.rst:728
 msgid "**Power Off Icon:** Disables the service from starting on boot."
 msgstr ""
 
-#: ../../sysadmclient.rst:727
+#: ../../sysadmclient.rst:730
 msgid ""
 "Hovering over any of these icons will display a helpful description across "
 "the bottom of the window."
 msgstr ""
 
-#: ../../sysadmclient.rst:736
+#: ../../sysadmclient.rst:739
 msgid ""
 "Task Manager provides a graphical view of memory use, per-CPU use and a "
 "listing of currently running applications. An example is shown in "
 ":numref:`Figure %s <task1>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:746
+#: ../../sysadmclient.rst:749
 msgid ""
 "The \"Running Programs:\" section provides a graphical front-end to `top(1) "
 "<https://www.freebsd.org/cgi/man.cgi?query=top>`_."
 msgstr ""
 
-#: ../../sysadmclient.rst:762
+#: ../../sysadmclient.rst:765
 msgid ""
 "In the example shown in :numref:`Figure %s <user1>`, the system has one user"
 " account that was created in the \"Create a User\" screen during "
 "installation."
 msgstr ""
 
-#: ../../sysadmclient.rst:799
+#: ../../sysadmclient.rst:802
 msgid ""
 ":numref:`Figure %s <user2>` demonstrates how this screen changes when "
 "clicking :guilabel:`New User`."
 msgstr ""
 
-#: ../../sysadmclient.rst:851
+#: ../../sysadmclient.rst:854
 msgid ""
 "Click :guilabel:`Advanced View` to show all of the accounts on the system, "
 "not just the user accounts you created. An example is seen in "
 ":numref:`Figure %s <user3>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:903
+#: ../../sysadmclient.rst:906
 msgid ""
 "The :guilabel:`PersonaCrypt` tab can be used to initialize a PersonaCrypt "
 "device for any login user, **except** for the currently logged in user. In "
@@ -1499,14 +1499,14 @@ msgid ""
 "*dlavigne*, has been created and the entry for the user has been clicked."
 msgstr ""
 
-#: ../../sysadmclient.rst:1001
+#: ../../sysadmclient.rst:1004
 msgid ""
 "Click the :guilabel:`Groups` tab to view and manage the groups on the "
 "system. The :guilabel:`Standard` tab, seen in :numref:`Figure %s <user4>`, "
 "shows the group membership for the *operator* and *wheel* groups:"
 msgstr ""
 
-#: ../../sysadmclient.rst:1158
+#: ../../sysadmclient.rst:1161
 msgid ""
 ":numref:`Figure %s <lpreserver2>` shows the initial :guilabel:`Replication` "
 "tab on a system that has not yet been configured for replication. This "
@@ -1514,27 +1514,27 @@ msgid ""
 "schedule."
 msgstr ""
 
-#: ../../sysadmclient.rst:1169
+#: ../../sysadmclient.rst:1172
 msgid ""
 "To schedule the replication, click :guilabel:`+` to display the \"Setup "
 "Replication\" screen shown in :numref:`Figure %s <lpreserver3>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:1243
+#: ../../sysadmclient.rst:1246
 msgid ""
 "To create a snapshot schedule, click the :guilabel:`camera` icon in the "
 "lower left corner of this tab. This will activate the \"Setup Snapshot "
 "Schedule\" pane as seen in :numref:`Figure %s <lpreserver4>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:1283
+#: ../../sysadmclient.rst:1286
 msgid ""
 "To schedule when the scrub occurs, click the third icon from the right which"
 " will activate the \"Setup Scrub Schedule\" screen shown in :numref:`Figure "
 "%s <lpreserver5>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:1311
+#: ../../sysadmclient.rst:1314
 msgid ""
 "The :guilabel:`Settings` tab is shown in :numref:`Figure %s <lpreserver6>`."
 msgstr ""
@@ -1543,7 +1543,7 @@ msgstr ""
 msgid "Command Line and GUI Equivalents"
 msgstr ""
 
-#: ../../sysadmclient.rst:1468
+#: ../../sysadmclient.rst:1471
 msgid ""
 "If you have replicated the system's snapshots to a remote backup server, you"
 " can use a |trueos| installation media to perform an operating system "
@@ -1551,7 +1551,7 @@ msgid ""
 "you get to the screen shown in :numref:`Figure %s <restore1>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:1488
+#: ../../sysadmclient.rst:1491
 msgid ""
 "Once you are ready, click :guilabel:`Restore from Life-Preserver backup` and"
 " :guilabel:`Next`. This will start the Restore Wizard. In the screen shown "
@@ -1561,22 +1561,22 @@ msgid ""
 "number."
 msgstr ""
 
-#: ../../sysadmclient.rst:46
+#: ../../sysadmclient.rst:49
 msgid ":ref:`Firewall Manager`"
 msgstr ""
 
-#: ../../sysadmclient.rst:48
+#: ../../sysadmclient.rst:51
 msgid ":ref:`Service Manager`"
 msgstr ""
 
-#: ../../sysadmclient.rst:637
+#: ../../sysadmclient.rst:640
 msgid ""
 "The Firewall Manager is a simple interface used to configure ports and "
 "firewalls. In :numref:`Figure %s <firewall1>`, the Multicast DNS service is "
 "active and using port 5353 is open, with the firewall started."
 msgstr ""
 
-#: ../../sysadmclient.rst:647
+#: ../../sysadmclient.rst:650
 msgid ""
 "The top row of the interface has options to configure the firewall. "
 ":guilabel:`Start` turns on the firewall, :guilabel:`Restart` will turn the "
@@ -1585,14 +1585,14 @@ msgid ""
 ":guilabel:`Power Off`."
 msgstr ""
 
-#: ../../sysadmclient.rst:653
+#: ../../sysadmclient.rst:656
 msgid ""
 "In :numref:`Figure %s <firewall1>`, the :guilabel:`Start` option is greyed "
 "out, as the firewall is currently active. Additionally, :guilabel:`Power On`"
 " is also greyed out as the firewall is configured to start on bootup."
 msgstr ""
 
-#: ../../sysadmclient.rst:658
+#: ../../sysadmclient.rst:661
 msgid ""
 "The central window describes all added services. The list can be sorted by "
 "clicking :guilabel:`Open Ports`. Next, the :guilabel:`Used By` column "
@@ -1601,27 +1601,27 @@ msgid ""
 "name in the same row."
 msgstr ""
 
-#: ../../sysadmclient.rst:664
+#: ../../sysadmclient.rst:667
 msgid ""
 "The bottom portion of the interface provides options to open and close "
 "ports. There are two options to open a port: :guilabel:`Find by Service` and"
 " :guilabel:`Number/Type`:"
 msgstr ""
 
-#: ../../sysadmclient.rst:668
+#: ../../sysadmclient.rst:671
 msgid ""
 "**Find by Service:** Click :guilabel:`Select a Service...` to open a drop "
 "down menu of alphabetized services. Click the desired service, and the "
 "Firewall Manager will automatically add it to the list of open ports."
 msgstr ""
 
-#: ../../sysadmclient.rst:673
+#: ../../sysadmclient.rst:676
 msgid ""
 "The services list can be navigated quickly by typing the name of the desired"
 " service while the list is open."
 msgstr ""
 
-#: ../../sysadmclient.rst:676
+#: ../../sysadmclient.rst:679
 msgid ""
 "**Number/Type:** Manually designate a port to open by typing the number in "
 "the :guilabel:`Number` field. The :guilabel:`Arrow` icons can be pressed to "
@@ -1631,20 +1631,20 @@ msgid ""
 "selections and open the desired port."
 msgstr ""
 
-#: ../../sysadmclient.rst:683
+#: ../../sysadmclient.rst:686
 msgid ""
 "To close a port, select a port from the :guilabel:`Open Ports` column and "
 "press :guilabel:`Close Ports`."
 msgstr ""
 
-#: ../../sysadmclient.rst:1135
+#: ../../sysadmclient.rst:1138
 msgid ""
 "Snapshots occurring too frequently can introduce errors in replication. To "
 "avoid errors, ensure snapshots are configured to take place slower than the "
 "desired pace of replication."
 msgstr ""
 
-#: ../../sysadmclient.rst:408
+#: ../../sysadmclient.rst:411
 msgid ""
 "**Automatically perform updates:** When checked, the automatic updater "
 "automatically keeps your system and packages up-to-date. An update has "
@@ -1656,14 +1656,14 @@ msgid ""
 "after a reboot and then every 24 hours."
 msgstr ""
 
-#: ../../sysadmclient.rst:418
+#: ../../sysadmclient.rst:421
 msgid ""
 "**Custom Package Repository:** To use a custom package repository for "
 "updates, check this box. This will activate the :guilabel:`URL` field so the"
 " user can input the URL to the custom repository."
 msgstr ""
 
-#: ../../sysadmclient.rst:428
+#: ../../sysadmclient.rst:431
 msgid ""
 "If any user account uses PersonaCrypt, please be sure to save any encryption"
 " keys to a safe place (e.g. a thumb drive) before beginning the upgrade "
@@ -1671,7 +1671,7 @@ msgid ""
 "home directory after the upgrade is complete."
 msgstr ""
 
-#: ../../sysadmclient.rst:434
+#: ../../sysadmclient.rst:437
 msgid ""
 "If the system is using |pcbsd| 10.x, the option to update to |trueos| will "
 "not appear in the Control Panel version of Update Manager. This is because a"
@@ -1684,7 +1684,7 @@ msgid ""
 "the option to boot back into the previous |pcbsd| installation will remain."
 msgstr ""
 
-#: ../../sysadmclient.rst:445
+#: ../../sysadmclient.rst:448
 msgid ""
 "This option overwrites the contents of :file:`/etc`. If any custom "
 "configurations exist, save them to a backup or the home directory first. "
@@ -1693,7 +1693,7 @@ msgid ""
 "which may not have been backed up."
 msgstr ""
 
-#: ../../sysadmclient.rst:451
+#: ../../sysadmclient.rst:454
 msgid ""
 "To perform the installation to a new boot environment, start the |trueos| "
 "installation as described in the `TrueOS® Handbook "
@@ -1704,7 +1704,7 @@ msgid ""
 "<upgrade1a>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:489
+#: ../../sysadmclient.rst:492
 msgid ""
 "During the `Create a User Screen "
 "<https://www.trueos.org/handbook/postinstall.html#create-a-user-screen>`_ "
@@ -1715,7 +1715,7 @@ msgid ""
 "accounts."
 msgstr ""
 
-#: ../../sysadmclient.rst:1048
+#: ../../sysadmclient.rst:1051
 msgid ""
 "A snapshot provides a \"point-in-time\" image of the ZFS pool. This is "
 "similar to a full system backup as the snapshot contains the information for"
@@ -1733,26 +1733,26 @@ msgid ""
 "snapshot."
 msgstr ""
 
-#: ../../sysadmclient.rst:1255
+#: ../../sysadmclient.rst:1258
 msgid ""
 "**Storage Pool:** Select the ZFS storage pool that contains the datasets "
 "that you wish to snapshot."
 msgstr ""
 
-#: ../../sysadmclient.rst:1276
+#: ../../sysadmclient.rst:1279
 msgid ""
 "This screen can also be used to manage the ZFS scrub schedule. Scrubs are "
 "recommended as they can provide an early indication of a potential disk "
 "failure. Scrubs can be scheduled on a per-pool basis."
 msgstr ""
 
-#: ../../sysadmclient.rst:1280
+#: ../../sysadmclient.rst:1283
 msgid ""
 "If you have multiple pools, be sure to create a scrub schedule for each "
 "pool."
 msgstr ""
 
-#: ../../sysadmclient.rst:1293
+#: ../../sysadmclient.rst:1296
 msgid ""
 "Select the pool from the :guilabel:`Storage Pool` drop-down menu, then "
 "select the :guilabel:`Frequency`. Supported frequencies are \"Daily\", "
@@ -1763,34 +1763,34 @@ msgid ""
 " pick a time when the system will not be in heavy use."
 msgstr ""
 
-#: ../../sysadmclient.rst:92
+#: ../../sysadmclient.rst:95
 msgid ": Browse Tab of AppCafe®"
 msgstr ""
 
-#: ../../sysadmclient.rst:126
+#: ../../sysadmclient.rst:129
 msgid ""
 "Click the name of an application to view more information about the "
 "application. In the example shown in :numref:`Figure %s <appcafe2>`, the "
 "user has clicked :guilabel:`Firefox` on a system that has Firefox installed."
 msgstr ""
 
-#: ../../sysadmclient.rst:363
+#: ../../sysadmclient.rst:366
 msgid ": Managing Updates"
 msgstr ""
 
-#: ../../sysadmclient.rst:395
+#: ../../sysadmclient.rst:398
 msgid ": Settings Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:462
+#: ../../sysadmclient.rst:465
 msgid ": Install to Boot Environment"
 msgstr ""
 
-#: ../../sysadmclient.rst:480
+#: ../../sysadmclient.rst:483
 msgid ": Start the Install to Boot Environment"
 msgstr ""
 
-#: ../../sysadmclient.rst:528
+#: ../../sysadmclient.rst:531
 msgid ""
 "For boot environments to work properly, **do not** delete the default ZFS "
 "mount points during installation. The default ZFS layout ensures when boot "
@@ -1802,11 +1802,11 @@ msgid ""
 "additional mount points, just don't delete the default ones."
 msgstr ""
 
-#: ../../sysadmclient.rst:556
+#: ../../sysadmclient.rst:559
 msgid ": Managing Boot Environments"
 msgstr ""
 
-#: ../../sysadmclient.rst:612
+#: ../../sysadmclient.rst:615
 msgid ""
 "To boot into another boot environment, press :kbd:`7` at the :numref:`Figure"
 " %s <install1b(1)>` to access the boot menu selection screen. In the example"
@@ -1821,31 +1821,31 @@ msgid ""
 "boot environment."
 msgstr ""
 
-#: ../../sysadmclient.rst:629
+#: ../../sysadmclient.rst:632
 msgid ": Boot Environments Menu"
 msgstr ""
 
-#: ../../sysadmclient.rst:645
+#: ../../sysadmclient.rst:648
 msgid ": |sysadm| Firewall Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:770
+#: ../../sysadmclient.rst:773
 msgid ": Viewing User Accounts in User Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:806
+#: ../../sysadmclient.rst:809
 msgid ": Creating a New User Account"
 msgstr ""
 
-#: ../../sysadmclient.rst:859
+#: ../../sysadmclient.rst:862
 msgid ": Viewing All Accounts and Their Details"
 msgstr ""
 
-#: ../../sysadmclient.rst:913
+#: ../../sysadmclient.rst:916
 msgid ": Initialize PersonaCrypt Device"
 msgstr ""
 
-#: ../../sysadmclient.rst:915
+#: ../../sysadmclient.rst:918
 msgid ""
 "Before a user is configured to use PersonaCrypt on a |trueos| system, two "
 "buttons are available in the \"PersonaCrypt\" section of \"Advanced Mode\". "
@@ -1854,13 +1854,13 @@ msgid ""
 ":guilabel:`Save` then re-highlight the user to display these options:"
 msgstr ""
 
-#: ../../sysadmclient.rst:930
+#: ../../sysadmclient.rst:933
 msgid ""
 "To prepare a PersonaCrypt device for this user, insert a USB stick and click"
 " :guilabel:`Initialize Device`."
 msgstr ""
 
-#: ../../sysadmclient.rst:940
+#: ../../sysadmclient.rst:943
 msgid ""
 "Type a password to associate with the device. Click :guilabel:`Save` to "
 "initialize the device. The User Manager may take a moment to prepare the "
@@ -1868,49 +1868,49 @@ msgid ""
 " to allow removal of PersonaCrypt."
 msgstr ""
 
-#: ../../sysadmclient.rst:1010
+#: ../../sysadmclient.rst:1013
 msgid ": Managing Groups Using User Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:1093
+#: ../../sysadmclient.rst:1096
 msgid ": Snapshot Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1167
+#: ../../sysadmclient.rst:1170
 msgid ": Replication Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:1177
+#: ../../sysadmclient.rst:1180
 msgid ": Scheduling a Replication"
 msgstr ""
 
-#: ../../sysadmclient.rst:1251
+#: ../../sysadmclient.rst:1254
 msgid ": Scheduling a Snapshot"
 msgstr ""
 
-#: ../../sysadmclient.rst:1291
+#: ../../sysadmclient.rst:1294
 msgid ": Scheduling a Scrub"
 msgstr ""
 
-#: ../../sysadmclient.rst:1318
+#: ../../sysadmclient.rst:1321
 msgid ": Life Preserver Settings"
 msgstr ""
 
-#: ../../sysadmclient.rst:1425
+#: ../../sysadmclient.rst:1428
 msgid ""
 ":numref:`Table %s <cmdgui>` shows the command line equivalents to the "
 "graphical options provided by the Life Preserver GUI."
 msgstr ""
 
-#: ../../sysadmclient.rst:1478
+#: ../../sysadmclient.rst:1481
 msgid ": Selecting to Restore/Clone From Backup"
 msgstr ""
 
-#: ../../sysadmclient.rst:1500
+#: ../../sysadmclient.rst:1503
 msgid ": Input the Information for a SSH Restore"
 msgstr ""
 
-#: ../../sysadmclient.rst:1506
+#: ../../sysadmclient.rst:1509
 msgid ""
 "Once the connection to the backup server succeeds, you will be able to "
 "select which host to restore. After making your selection, click "
@@ -1926,7 +1926,7 @@ msgid ""
 ":guilabel:`Next` to perform the restore."
 msgstr ""
 
-#: ../../sysadmclient.rst:970
+#: ../../sysadmclient.rst:973
 msgid ""
 "Once a user has been initialized for PersonaCrypt on the system, their user "
 "account will no longer be displayed when logging in, **unless** their "
@@ -1935,55 +1935,55 @@ msgid ""
 ":numref:`Figure %s <troslogin5>`."
 msgstr ""
 
-#: ../../sysadmclient.rst:980
+#: ../../sysadmclient.rst:983
 msgid ": |trueos| Login Screen with PersonaCrypt"
 msgstr ""
 
-#: ../../sysadmclient.rst:14
+#: ../../sysadmclient.rst:17
 msgid "|sysadm| Client"
 msgstr ""
 
-#: ../../sysadmclient.rst:68
+#: ../../sysadmclient.rst:71
 msgid "|appcafe|"
 msgstr ""
 
-#: ../../sysadmclient.rst:143 ../../sysadmclient.rst:200
+#: ../../sysadmclient.rst:146 ../../sysadmclient.rst:203
 msgid ": |appcafe| - Viewing the Details of an Installed Application"
 msgstr ""
 
-#: ../../sysadmclient.rst:163
+#: ../../sysadmclient.rst:166
 msgid ": |appcafe| - More Application Details"
 msgstr ""
 
-#: ../../sysadmclient.rst:191
+#: ../../sysadmclient.rst:194
 msgid ": |appcafe| - Viewing the Application's Screenshots"
 msgstr ""
 
-#: ../../sysadmclient.rst:229
+#: ../../sysadmclient.rst:232
 msgid ": |appcafe| - Installed Tab"
 msgstr ""
 
-#: ../../sysadmclient.rst:281
+#: ../../sysadmclient.rst:284
 msgid ": |appcafe| - Viewing Applications With All Options Checked"
 msgstr ""
 
-#: ../../sysadmclient.rst:295
+#: ../../sysadmclient.rst:298
 msgid ": |appcafe| - Viewing the Status of the Operation"
 msgstr ""
 
-#: ../../sysadmclient.rst:610
+#: ../../sysadmclient.rst:613
 msgid ": |trueos| Boot Menu"
 msgstr ""
 
-#: ../../sysadmclient.rst:700
+#: ../../sysadmclient.rst:703
 msgid ": |sysadm| Service Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:744
+#: ../../sysadmclient.rst:747
 msgid ": |sysadm| Task Manager"
 msgstr ""
 
-#: ../../sysadmclient.rst:1086
+#: ../../sysadmclient.rst:1089
 msgid ""
 ":numref:`Figure %s <lpreserver1>` shows the :guilabel:`Snapshots` tab on a "
 "system not yet configured. This system has a \"ZFS Pool\" named \"tank1\"."
