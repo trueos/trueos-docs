@@ -230,13 +230,6 @@ msgid ""
 "these tasks."
 msgstr ""
 
-#: ../../pico.rst:32
-msgid ""
-"|pise| is available both `online <https://www.trueos.org/downloads/>`_ and "
-"in |appcafe|. Configure the server software before downloading the client "
-"software or initializing the |picl|."
-msgstr ""
-
 #: ../../pico.rst:36
 msgid ""
 "To download the |picl| software, visit the |trueos| `download page "
@@ -469,6 +462,19 @@ msgstr ""
 #: ../../pico.rst:307
 msgid "This section lists the currently known bugs with |trpi| use:"
 msgstr ""
+
+#: ../../pico.rst:32
+msgid ""
+"|pise| is available through :command:`pkg` and in |appcafe|. Configure the "
+"server software before downloading the client software or initializing the "
+"|picl|."
+msgstr ""
+
+#~ msgid ""
+#~ "|pise| is available both `online <https://www.trueos.org/downloads/>`_ and "
+#~ "in |appcafe|. Configure the server software before downloading the client "
+#~ "software or initializing the |picl|."
+#~ msgstr ""
 
 #~ msgid "|trueos| Pico"
 #~ msgstr ""
