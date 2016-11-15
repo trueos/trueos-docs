@@ -17,9 +17,9 @@ four users can log into their thin clients and open utilities, browse
 the Internet, or even play games while one central server dynamically
 provides the needed resources for each of these tasks.
 
-|pise| is available both `online <https://www.trueos.org/downloads/>`_
-and in |appcafe|. Configure the server software before downloading the
-client software or initializing the |picl|.
+|pise| is available through :commnad:`pkg` and in |appcafe|. Configure
+the server software before downloading the client software or
+initializing the |picl|.
 
 To download the |picl| software, visit the |trueos|
 `download page <https://www.trueos.org/downloads>`_. A separate computer
