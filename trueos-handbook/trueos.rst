@@ -1,5 +1,5 @@
-TrueOS\ |reg| User Guide |release|
-==================================
+|trueos| User Guide |release|
+=============================
 
 Contents:
 
@@ -28,4 +28,3 @@ Index
 =====
 
 * :ref:`genindex`
-

@@ -502,3 +502,7 @@ This section is intended to list all known/longstanding issues with the
   with older Broadcom wifi chipsets. Please browse the FreeBSD
   `hardware notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_
   to see detailed notes about supported hardware in FreeBSD/|trueos|.
+
+Additional information about these issues can be viewed in the various
+communication channels listed in :ref:`Finding Help` section of this
+handbook.
