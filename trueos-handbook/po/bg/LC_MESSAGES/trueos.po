@@ -11,10 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../trueos.rst:14
-msgid "TrueOS\\ |reg| User Guide |release|"
-msgstr ""
-
 #: ../../trueos.rst:16
 msgid "Contents:"
 msgstr ""
@@ -26,3 +22,10 @@ msgstr ""
 #: ../../trueos.rst:42
 msgid ":ref:`genindex`"
 msgstr ""
+
+#: ../../trueos.rst:14
+msgid "|trueos| User Guide |release|"
+msgstr ""
+
+#~ msgid "TrueOS\\ |reg| User Guide |release|"
+#~ msgstr ""

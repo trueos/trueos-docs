@@ -1019,6 +1019,13 @@ msgid ""
 "effectiveness is (so far) inconsistent."
 msgstr ""
 
+#: ../../introduction.rst:518
+msgid ""
+"Additional information about these issues can be viewed in the various "
+"communication channels listed in :ref:`Finding Help` section of this "
+"handbook."
+msgstr ""
+
 #~ msgid ""
 #~ "Older AMD/ATI cards not supported in |trueos| yet. There are several ongoing"
 #~ " investigations, but no consistent solutions have been found yet. There are "
