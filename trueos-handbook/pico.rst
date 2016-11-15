@@ -17,7 +17,7 @@ four users can log into their thin clients and open utilities, browse
 the Internet, or even play games while one central server dynamically
 provides the needed resources for each of these tasks.
 
-|pise| is available through :commnad:`pkg` and in |appcafe|. Configure
+|pise| is available through :command:`pkg` and in |appcafe|. Configure
 the server software before downloading the client software or
 initializing the |picl|.
 
