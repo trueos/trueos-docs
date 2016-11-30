@@ -13,8 +13,8 @@ installations.
 .. index:: boot
 .. _Booting Into TrueOS®:
 
-Booting Into TrueOS®
-====================
+Booting Into |trueos|
+=====================
 
 After installation, |trueos| will reboot and display a boot menu. The
 menu displayed depends upon the boot loader selection chosen during the
@@ -32,7 +32,7 @@ will load the boot menu, seen in :numref:`Figure %s <install1b2>`.
 
 .. figure:: images/install1b.png
 
-   : TrueOS® Boot Menu
+   : |trueos| Boot Menu
 
 This menu provides several options. To pause this menu, press
 any key except for :kbd:`Enter`. To select an option, press either the
@@ -473,12 +473,14 @@ strength.
 
    : Wireless Network Connections
 
-To set the default wireless connection, highlight the desired network.
-If the network requires a password, it will prompt for it and indicate
-the type of security used on the network. If the desired network does
-not appear, try clicking :guilabel:`Rescan`. If unable to connect or the
-connection needs be configured later, refer to the instructions in
-:ref:`Network Manager`.
+To set the default wireless connection, click the desired network in the
+:guilabel:`Available Wireless Networks` area, then click
+:guilabel:`Add Selected`. If the network requires a password, a window
+will appear requesting the password and indicate the security type on
+the desired network. If the desired network is not visible in the
+:guilabel:`Available Wireless Networks` area, click :guilabel:`Scan`. If
+unable to connect or to configure the connection later, refer to
+:ref:`Network Manager` for more detailed instructions.
 
 .. index:: SSH, IPv6
 .. _Enable Optional Services:
