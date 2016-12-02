@@ -111,7 +111,15 @@
           {% endif %}
         {% endblock %}
       </div>
-      &nbsp;
+      <div id="wy-menu rst-imagebox2" style="height: 150px"; background: #444; data-spy="affix" role="navigation" aria-label="main navigation">
+	{% block imagecontainer  %}
+		<a href="{{ pathto('http://track.flexlinkspro.com/a.ashx?foid=1092646.1188305&foc=2&fot=1002&fos=1') }}"><img src="{{pathto("_static/newegg.jpg", 1) }}" border="0" style="float:right;width:128px;height:128px ; padding-top: 10px; padding-right: 10px;" alt="image"/></a>
+	{% endblock %}	
+	{% block imagecontainer2  %}
+		<a href="{{ pathto('https://www.ixsystems.com/freenas-mini/') }}"><img src="{{pathto("_static/freenas.jpg", 1) }}" border="0" style="width:128px;height:128px; padding-top: 10px; padding-left: 5px;" alt="image"/></a>
+	{% endblock %}
+       </div>
+     &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -135,6 +143,8 @@
           {% include "footer.html" %}
         </div>
       </div>
+      
+      {# 
 
     </section>
 

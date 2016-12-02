@@ -2890,6 +2890,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
     padding: 4px 6px;
     margin-bottom: 0.809em
 }
+#wy-menu\ rst-imagebox2 {
+	margin-top: 15px;
+	border: 5px solid gray;
+        border-radius: 8px;
+	background: white; 
+   }
 .wy-side-nav-search>a:hover,
 .wy-side-nav-search .wy-dropdown>a:hover {
     background: rgba(255,255,255,0.1) none repeat scroll 0 0;
