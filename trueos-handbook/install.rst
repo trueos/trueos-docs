@@ -169,8 +169,8 @@ To install the desktop, click :guilabel:`Next`.
    pop-up window will ask to install to the existing pool without
    reformatting it. Press :guilabel:`OK` to keep the existing pool.
    Clicking :guilabel:`Cancel` will format the existing pool and all of
-   its data. Refer to :ref:`Upgrading from PC-BSD® 10.x to TrueOS®` for
-   more information about this option.
+   its data. Refer to the :ref:`Upgrading from PCBSD 10.x to TrueOS`
+   section for more information about this option.
 
 .. index:: installation
 .. _Disk Selection Screen:
