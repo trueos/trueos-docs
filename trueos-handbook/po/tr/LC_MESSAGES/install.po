@@ -301,15 +301,6 @@ msgstr ""
 msgid "To install the desktop, click :guilabel:`Next`."
 msgstr ""
 
-#: ../../install.rst:180
-msgid ""
-"When installing to an existing |pcbsd| or |trueos| system, a pop-up window "
-"will ask to install to the existing pool without reformatting it. Press "
-":guilabel:`OK` to keep the existing pool. Clicking :guilabel:`Cancel` will "
-"format the existing pool and all of its data. Refer to :ref:`Upgrading from "
-"PC-BSD® 10.x to TrueOS®` for more information about this option."
-msgstr ""
-
 #: ../../install.rst:193
 msgid ""
 "The :guilabel:`Disk Selection\" screen`, seen in :numref:`Figure %s "
@@ -910,6 +901,23 @@ msgstr ""
 #: ../../install.rst:17
 msgid "Installing |trueos|"
 msgstr ""
+
+#: ../../install.rst:180
+msgid ""
+"When installing to an existing |pcbsd| or |trueos| system, a pop-up window "
+"will ask to install to the existing pool without reformatting it. Press "
+":guilabel:`OK` to keep the existing pool. Clicking :guilabel:`Cancel` will "
+"format the existing pool and all of its data. Refer to the :ref:`Upgrading "
+"from PCBSD 10.x to TrueOS` section for more information about this option."
+msgstr ""
+
+#~ msgid ""
+#~ "When installing to an existing |pcbsd| or |trueos| system, a pop-up window "
+#~ "will ask to install to the existing pool without reformatting it. Press "
+#~ ":guilabel:`OK` to keep the existing pool. Clicking :guilabel:`Cancel` will "
+#~ "format the existing pool and all of its data. Refer to :ref:`Upgrading from "
+#~ "PC-BSD® 10.x to TrueOS®` for more information about this option."
+#~ msgstr ""
 
 #~ msgid "Installing TrueOS®"
 #~ msgstr ""
