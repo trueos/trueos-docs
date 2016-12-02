@@ -196,7 +196,7 @@ share/trueos/handbook/_images/translate6.png
 share/trueos/handbook/_images/translate7.png
 share/trueos/handbook/_images/translate8.png
 share/trueos/handbook/_images/update1.png
-share/trueos/handbook/_images/update4.png
+share/trueos/handbook/_images/update4a.png
 share/trueos/handbook/_images/upgrade1a.png
 share/trueos/handbook/_images/upgrade2.png
 share/trueos/handbook/_images/user1.png
@@ -274,6 +274,8 @@ share/trueos/handbook/_static/underscore.js
 share/trueos/handbook/_static/up-pressed.png
 share/trueos/handbook/_static/up.png
 share/trueos/handbook/_static/websupport.js
+share/trueos/handbook/_static/freenas.jpg
+share/trueos/handbook/_static/newegg.jpg
 share/trueos/handbook/advanced.html
 share/trueos/handbook/genindex.html
 share/trueos/handbook/help.html
