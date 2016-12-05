@@ -463,7 +463,7 @@ the ZFS layout. The initial ZFS configuration screen is seen in
    : ZFS Configuration
 
 If the system contains multiple drives to be used to create a ZFS mirror
-or RAIDZ*, check :guilabel:`Add additional disks to zpool`, which will
+or RAIDZ*, check :guilabel:`Add additional disks to storage pool`, which will
 enable this screen. Any available disks will be listed in the box below
 the :guilabel:`ZFS Virtual Device Mode` drop-down menu. Select the
 desired level of redundancy from the :guilabel:`ZFS Virtual Device Mode`

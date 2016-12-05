@@ -617,16 +617,6 @@ msgstr ""
 msgid ": ZFS Configuration"
 msgstr ""
 
-#: ../../install.rst:477
-msgid ""
-"If the system contains multiple drives to be used to create a ZFS mirror or "
-"RAIDZ*, check :guilabel:`Add additional disks to zpool`, which will enable "
-"this screen. Any available disks will be listed in the box below the "
-":guilabel:`ZFS Virtual Device Mode` drop-down menu. Select the desired level"
-" of redundancy from the :guilabel:`ZFS Virtual Device Mode` drop-down menu, "
-"then check the box for each disk to add to the configuration."
-msgstr ""
-
 #: ../../install.rst:485
 msgid ""
 "The |trueos| installer requires entire disks (not partitions) when adding "
@@ -910,6 +900,25 @@ msgid ""
 "format the existing pool and all of its data. Refer to the :ref:`Upgrading "
 "from PCBSD 10.x to TrueOS` section for more information about this option."
 msgstr ""
+
+#: ../../install.rst:477
+msgid ""
+"If the system contains multiple drives to be used to create a ZFS mirror or "
+"RAIDZ*, check :guilabel:`Add additional disks to storage pool`, which will "
+"enable this screen. Any available disks will be listed in the box below the "
+":guilabel:`ZFS Virtual Device Mode` drop-down menu. Select the desired level"
+" of redundancy from the :guilabel:`ZFS Virtual Device Mode` drop-down menu, "
+"then check the box for each disk to add to the configuration."
+msgstr ""
+
+#~ msgid ""
+#~ "If the system contains multiple drives to be used to create a ZFS mirror or "
+#~ "RAIDZ*, check :guilabel:`Add additional disks to zpool`, which will enable "
+#~ "this screen. Any available disks will be listed in the box below the "
+#~ ":guilabel:`ZFS Virtual Device Mode` drop-down menu. Select the desired level"
+#~ " of redundancy from the :guilabel:`ZFS Virtual Device Mode` drop-down menu, "
+#~ "then check the box for each disk to add to the configuration."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "When installing to an existing |pcbsd| or |trueos| system, a pop-up window "

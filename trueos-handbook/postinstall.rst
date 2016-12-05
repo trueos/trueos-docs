@@ -54,7 +54,9 @@ made, press :kbd:`Enter` to boot using the selected options.
 
 * **5. Kernel:** This option will indicate how many kernels are
   available. Press either :kbd:`5` or :kbd:`k` to toggle between
-  available kernels.
+  available kernels. The user can use this option if they have created
+  a custom kernel, but wish to have a :file:`kernel.old` boot option
+  available in case the custom primary kernel fails.
 
 * **6. Configure Boot Options:** Press either :kbd:`6` or :kbd:`o` to
   see the boot options screen, shown in :numref:`Figure %s <boot1b>`.

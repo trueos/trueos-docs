@@ -224,14 +224,17 @@ This screen contains several options:
   option will re-open the screens shown in
   :ref:`Select Installation Disk <text3a>` through
   :ref:`Full Disk Encryption <text7a>`, and then return to this menu.
+  If you want to install into a mirrored or RAIDZ pool, select one of the
+  targets using this option, and then select **pool** (see below).
 
-* **zpool:** Select this option if the system contains multiple
+* **pool:** Select this option if the system contains multiple
   disks and changing the disk layout to a mirror or RAIDZ is desired.
   The allowable layouts for the number of available disks will be
   displayed so the user can select the desired layout.
 
-* **zfs:** Used to modify the default ZFS layout. Selecting this
-  option will open the screen shown in :numref:`Figure %s <text12a>`.
+* **datasets:** Used to modify the default ZFS dataset layout. Selecting
+  this option will open the screen shown in
+  :numref:`Figure %s <text12a>`.
 
   .. _text12a:
 
