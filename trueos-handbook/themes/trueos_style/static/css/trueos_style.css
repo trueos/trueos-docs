@@ -2892,12 +2892,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
 }
 #wy-menu\ rst-imagebox2 {
 	margin-top: 15px;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
 	border: 3px solid gray;
-        border-radius: 8px;
-	background: white; 
+	border-radius: 8px;
+	background: gray; 
+	font-size: 75%;
+	margin-left: auto;
+    margin-right: auto;
    }
+   
+#wy-menu\ rst-imageboxcontainer {
+	margin-top: 15px;
+	margin-left: 20px;
+    margin-right: 20px;
+    border: 3px solid gray;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: gray; 
+	padding-left: 5px;
+	padding-top: 3px;
+   }	
+   
+#wy-menu\ rst-imagebox2 > a:nth-child(4) > img:nth-child(1) {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+	padding-top: 20px;
+    }
+	
+#wy-menu\ rst-imagebox2 > a:nth-child(3) > img:nth-child(1) {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }	
+   
 .wy-side-nav-search>a:hover,
 .wy-side-nav-search .wy-dropdown>a:hover {
     background: rgba(255,255,255,0.1) none repeat scroll 0 0;
