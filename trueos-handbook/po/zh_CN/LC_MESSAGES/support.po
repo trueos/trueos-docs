@@ -43,7 +43,7 @@ msgstr ""
 msgid "This will create a directory with the same name as the repository."
 msgstr ""
 
-#: ../../support.rst:350
+#: ../../support.rst:369
 msgid ""
 "If you plan to make source changes, several Qt IDEs are available in "
 ":ref:`AppCafe®`. The `QtCreator "
@@ -55,132 +55,132 @@ msgid ""
 "functionality."
 msgstr ""
 
-#: ../../support.rst:372
+#: ../../support.rst:391
 msgid "Design Guidelines"
 msgstr ""
 
-#: ../../support.rst:407
+#: ../../support.rst:426
 msgid "Function"
 msgstr ""
 
-#: ../../support.rst:407
+#: ../../support.rst:426
 msgid "File Menu Icon"
 msgstr ""
 
-#: ../../support.rst:407
+#: ../../support.rst:426
 msgid "File Name"
 msgstr ""
 
-#: ../../support.rst:409 ../../support.rst:452 ../../support.rst:464
+#: ../../support.rst:428 ../../support.rst:471 ../../support.rst:483
 msgid "Quit"
 msgstr ""
 
-#: ../../support.rst:409
+#: ../../support.rst:428
 msgid "row 1, cell 2"
 msgstr ""
 
-#: ../../support.rst:409
+#: ../../support.rst:428
 msgid "window-close.png"
 msgstr ""
 
-#: ../../support.rst:411 ../../support.rst:466
+#: ../../support.rst:430 ../../support.rst:485
 msgid "Settings"
 msgstr ""
 
-#: ../../support.rst:411
+#: ../../support.rst:430
 msgid "row 2, cell 2"
 msgstr ""
 
-#: ../../support.rst:411
+#: ../../support.rst:430
 msgid "configure.png"
 msgstr ""
 
-#: ../../support.rst:450
+#: ../../support.rst:469
 msgid "Shortcut Key"
 msgstr ""
 
-#: ../../support.rst:450 ../../support.rst:462
+#: ../../support.rst:469 ../../support.rst:481
 msgid "Action"
 msgstr ""
 
-#: ../../support.rst:452
+#: ../../support.rst:471
 msgid "CTRL + Q"
 msgstr ""
 
-#: ../../support.rst:454
+#: ../../support.rst:473
 msgid "F1"
 msgstr ""
 
-#: ../../support.rst:454
+#: ../../support.rst:473
 msgid "Help"
 msgstr ""
 
-#: ../../support.rst:462
+#: ../../support.rst:481
 msgid "Hot Key"
 msgstr ""
 
-#: ../../support.rst:464
+#: ../../support.rst:483
 msgid "Alt + Q"
 msgstr ""
 
-#: ../../support.rst:466
+#: ../../support.rst:485
 msgid "Alt + S"
 msgstr ""
 
-#: ../../support.rst:468
+#: ../../support.rst:487
 msgid "Alt + I"
 msgstr ""
 
-#: ../../support.rst:468
+#: ../../support.rst:487
 msgid "Import"
 msgstr ""
 
-#: ../../support.rst:470
+#: ../../support.rst:489
 msgid "Alt + E"
 msgstr ""
 
-#: ../../support.rst:470
+#: ../../support.rst:489
 msgid "Export"
 msgstr ""
 
-#: ../../support.rst:472
+#: ../../support.rst:491
 msgid "ALT + F"
 msgstr ""
 
-#: ../../support.rst:472
+#: ../../support.rst:491
 msgid "File Menu"
 msgstr ""
 
-#: ../../support.rst:474
+#: ../../support.rst:493
 msgid "ALT + C"
 msgstr ""
 
-#: ../../support.rst:474
+#: ../../support.rst:493
 msgid "Configure Menu"
 msgstr ""
 
-#: ../../support.rst:476
+#: ../../support.rst:495
 msgid "ALT + H"
 msgstr ""
 
-#: ../../support.rst:476
+#: ../../support.rst:495
 msgid "Help Menu"
 msgstr ""
 
-#: ../../support.rst:506
+#: ../../support.rst:525
 msgid ""
 "`Commits Mailing List <http://lists.pcbsd.org/mailman/listinfo/commits>`_"
 msgstr ""
 
-#: ../../support.rst:508
+#: ../../support.rst:527
 msgid "`Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_"
 msgstr ""
 
-#: ../../support.rst:510
+#: ../../support.rst:529
 msgid "`C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_"
 msgstr ""
 
-#: ../../support.rst:516
+#: ../../support.rst:535
 msgid "Become an Advocate"
 msgstr ""
 
@@ -468,29 +468,7 @@ msgid ""
 "run :command:`git pull` within the directory."
 msgstr ""
 
-#: ../../support.rst:324
-msgid ""
-"Before compiling any source, ensure the Ports Collection is installed as the"
-" superuser, using :command:`portsnap fetch extract`"
-msgstr ""
-
-#: ../../support.rst:327
-msgid ""
-"Then, :command:`cd` to the directory containing the source to build and run "
-"the :command:`mkports.sh` script. In this example, the developer wants to "
-"compile the graphical utilities:"
-msgstr ""
-
-#: ../../support.rst:337
-msgid ""
-"This will create a port which can be installed. The name of the port is "
-"located in :file:`mkports.sh`. This example determines the name of the port "
-"directory, changes to it, and then builds the port. Since this system is "
-"already running the |trueos| graphical utilities, :command:`reinstall` is "
-"used to overwrite the current utilities:"
-msgstr ""
-
-#: ../../support.rst:360
+#: ../../support.rst:379
 msgid ""
 "If planning to submit changes to be included in |trueos|, fork the "
 "repository using the instructions in `fork a repo "
@@ -501,7 +479,7 @@ msgid ""
 " improvement."
 msgstr ""
 
-#: ../../support.rst:374
+#: ../../support.rst:393
 msgid ""
 "|trueos| is a community driven project that relies on the support of "
 "developers in the community to help in the design and implementation of new "
@@ -512,13 +490,13 @@ msgid ""
 "on the menu bar."
 msgstr ""
 
-#: ../../support.rst:382
+#: ../../support.rst:401
 msgid ""
 "This section describes a small list of guidelines for menu and program "
 "design in |trueos|."
 msgstr ""
 
-#: ../../support.rst:385
+#: ../../support.rst:404
 msgid ""
 "Any graphical program that is a full-featured utility, such as :ref:`Life "
 "Preserver`, should have a **File** menu. However, file menus are not "
@@ -527,7 +505,7 @@ msgid ""
 " need more than two or three items on the file menu."
 msgstr ""
 
-#: ../../support.rst:392
+#: ../../support.rst:411
 msgid ""
 "**Configure** is our adopted standard for the category containing settings "
 "or configuration-related settings. If additional categories are needed, "
@@ -538,31 +516,31 @@ msgstr ""
 msgid "Commonly Used File Menu Icons"
 msgstr ""
 
-#: ../../support.rst:414
+#: ../../support.rst:433
 msgid "|trueos| utilities use these buttons:"
 msgstr ""
 
-#: ../../support.rst:416
+#: ../../support.rst:435
 msgid "**Apply:** Executes settings changes and leaves the window open."
 msgstr ""
 
-#: ../../support.rst:418
+#: ../../support.rst:437
 msgid "**Close:** Exits program without applying settings."
 msgstr ""
 
-#: ../../support.rst:420
+#: ../../support.rst:439
 msgid "**OK:** Closes dialogue window and saves settings."
 msgstr ""
 
-#: ../../support.rst:422
+#: ../../support.rst:441
 msgid "**Cancel:** Closes dialog window without applying settings."
 msgstr ""
 
-#: ../../support.rst:424
+#: ../../support.rst:443
 msgid "**Save:** Keeps the current settings and closes window."
 msgstr ""
 
-#: ../../support.rst:426
+#: ../../support.rst:445
 msgid ""
 "Fully functional programs like :ref:`Life Preserver` do not use close "
 "buttons on the front of the application. Basically, whenever there is a "
@@ -579,25 +557,25 @@ msgstr ""
 msgid "Hot Keys"
 msgstr ""
 
-#: ../../support.rst:504
+#: ../../support.rst:523
 msgid "Developers will also find these resources helpful:"
 msgstr ""
 
-#: ../../support.rst:523
+#: ../../support.rst:542
 msgid ""
 "Burn a couple of DVDs and pass them out. If your school or user group has an"
 " upcoming event where you can promote |trueos|, you can request additional "
 "DVDs from sales@pcbsd.com."
 msgstr ""
 
-#: ../../support.rst:527
+#: ../../support.rst:546
 msgid ""
 "Consider giving a presentation about |trueos| at a local community event, "
 "conference, or online. Let us know about it and we will help you spread the "
 "word."
 msgstr ""
 
-#: ../../support.rst:531
+#: ../../support.rst:550
 msgid ""
 "Write a personal blog detailing your journey from your first |trueos| "
 "install experience to your most recent accomplishment. The blog could also "
@@ -606,7 +584,7 @@ msgid ""
 "with similar interests."
 msgstr ""
 
-#: ../../support.rst:396
+#: ../../support.rst:415
 msgid ""
 "File menu icons are taken from the KDE Oxygen theme located in "
 ":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
@@ -614,7 +592,7 @@ msgid ""
 "<common icons>` lists the commonly used icons and their default file names."
 msgstr ""
 
-#: ../../support.rst:432
+#: ../../support.rst:451
 msgid ""
 "Many users benefit from keyboard shortcuts and we aim to make them available"
 " in every |trueos| utility. Qt makes it easy to assign keyboard shortcuts. "
@@ -629,7 +607,7 @@ msgid ""
 "hot keys."
 msgstr ""
 
-#: ../../support.rst:479
+#: ../../support.rst:498
 msgid ""
 "When saving an application's settings, the QSettings class should be used if"
 " possible. There are two different *organizations*, depending on whether the"
@@ -642,11 +620,11 @@ msgid ""
 " demonstrate how to use the QSettings class for each type of permission."
 msgstr ""
 
-#: ../../support.rst:490
+#: ../../support.rst:509
 msgid "**Example 1: User Permission Settings**"
 msgstr ""
 
-#: ../../support.rst:497
+#: ../../support.rst:516
 msgid "**Example 2: Root Permission Settings**"
 msgstr ""
 
@@ -677,7 +655,7 @@ msgid ""
 " the command line:"
 msgstr ""
 
-#: ../../support.rst:518
+#: ../../support.rst:537
 msgid ""
 "Love |trueos|? Why not tell your family, friends, fellow students and "
 "colleagues about it? You will not be the only one who prefers a virus-free, "
@@ -692,6 +670,56 @@ msgstr ""
 #: ../../support.rst:98
 msgid ": |trueos| Weblate Translation System"
 msgstr ""
+
+#: ../../support.rst:328
+msgid ""
+"Before compiling any source, ensure the Ports Collection is installed. At "
+"this time, **git** is used to fetch and update ports (see :ref:`FreeBSD "
+"Ports`)."
+msgstr ""
+
+#: ../../support.rst:332
+msgid "Fetching ports for the first time (as root):"
+msgstr ""
+
+#: ../../support.rst:338
+msgid "Update an existing :file:`ports` directory (as root):"
+msgstr ""
+
+#: ../../support.rst:346
+msgid ""
+"Then, :command:`cd` to the directory containing the source to build and run "
+"the :command:`mkport.sh` script. In this example, the developer wants to "
+"compile the graphical utilities:"
+msgstr ""
+
+#: ../../support.rst:356
+msgid ""
+"This will create a port which can be installed. The name of the port is "
+"located in :file:`mkport.sh`. This example determines the name of the port "
+"directory, changes to it, and then builds the port. Since this system is "
+"already running the |trueos| graphical utilities, :command:`reinstall` is "
+"used to overwrite the current utilities:"
+msgstr ""
+
+#~ msgid ""
+#~ "Before compiling any source, ensure the Ports Collection is installed as the"
+#~ " superuser, using :command:`portsnap fetch extract`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Then, :command:`cd` to the directory containing the source to build and run "
+#~ "the :command:`mkports.sh` script. In this example, the developer wants to "
+#~ "compile the graphical utilities:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This will create a port which can be installed. The name of the port is "
+#~ "located in :file:`mkports.sh`. This example determines the name of the port "
+#~ "directory, changes to it, and then builds the port. Since this system is "
+#~ "already running the |trueos| graphical utilities, :command:`reinstall` is "
+#~ "used to overwrite the current utilities:"
+#~ msgstr ""
 
 #~ msgid "Supporting TrueOS®"
 #~ msgstr ""
