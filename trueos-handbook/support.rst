@@ -309,28 +309,47 @@ This will create a directory with the same name as the repository.
 .. note:: To keep the local copy in sync with the official repository,
    periodically run :command:`git pull` within the directory.
 
-Before compiling any source, ensure the Ports Collection is
-installed as the superuser, using :command:`portsnap fetch extract`
-   
+
+.. TODO :command:`portsnap fetch extract` is being reworked. Use git
+   instructions for now (12/5/16).
+
+Before compiling any source, ensure the Ports Collection is installed.
+At this time, **git** is used to fetch and update ports (see
+:ref:`FreeBSD Ports`).
+
+Fetching ports for the first time (as root):
+
+.. code-block:: none
+
+ # git clone http://github.com/trueos/freebsd-ports.git /usr/ports
+
+Update an existing :file:`ports` directory (as root):
+
+.. code-block:: none
+
+ # cd /usr/ports
+ 
+ # git pull
+
 Then, :command:`cd` to the directory containing the source to build and
-run the :command:`mkports.sh` script. In this example, the developer
+run the :command:`mkport.sh` script. In this example, the developer
 wants to compile the graphical utilities:
 
 .. code-block:: none
 
  cd trueos-utils-qt5
 
- ./mkports /usr/ports/
+ ./mkport.sh /usr/ports/
 
 This will create a port which can be installed. The name of the port
-is located in :file:`mkports.sh`. This example determines the name of
+is located in :file:`mkport.sh`. This example determines the name of
 the port directory, changes to it, and then builds the port. Since this
 system is already running the |trueos| graphical utilities,
 :command:`reinstall` is used to overwrite the current utilities:
 
 .. code-block:: none
 
- grep port= mkports.sh
+ grep port= mkport.sh
  port="sysutils/trueos-utils-qt5"
  cd /usr/ports/sysutils/trueos-utils-qt5
  make reinstall
