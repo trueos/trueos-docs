@@ -2890,7 +2890,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
     padding: 4px 6px;
     margin-bottom: 0.809em
 }
-#wy-menu\ rst-imagebox2 {
+.rst-imagebox2 {
 	margin-top: 15px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -2902,7 +2902,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
     margin-right: auto;
    }
    
-#wy-menu\ rst-imageboxcontainer {
+.rst-imageboxcontainer {
 	margin-top: 15px;
 	margin-left: 20px;
     margin-right: 20px;
@@ -2914,14 +2914,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
 	padding-top: 3px;
    }	
    
-#wy-menu\ rst-imagebox2 > a:nth-child(4) > img:nth-child(1) {
+.rst-imagebox2 > a:nth-child(4) > img:nth-child(1) {
 	margin-left: auto;
     margin-right: auto;
     display: block;
 	padding-top: 20px;
     }
 	
-#wy-menu\ rst-imagebox2 > a:nth-child(3) > img:nth-child(1) {
+.rst-imagebox2 > a:nth-child(3) > img:nth-child(1) {
 	margin-left: auto;
     margin-right: auto;
     display: block;
