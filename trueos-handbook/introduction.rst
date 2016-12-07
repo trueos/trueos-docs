@@ -506,3 +506,34 @@ This section is intended to list all known/longstanding issues with the
 Additional information about these issues can be viewed in the various
 communication channels listed in :ref:`Finding Help` section of this
 handbook.
+
+.. index:: advertising
+.. _Ad policy:
+
+Ethical Advertising Policy
+==========================
+
+For many years, users have wanted to give back to the |trueos| project.
+Generally, we encouraged users to donate or actively contribute to the
+FreeBSD project to ensure FreeBSD continues to be successful in the
+future. Because |trueos| is open source software, we have included a
+minimal number of ads as a simple method for users to give back to the
+project, if they wish. 
+
+The primary consideration for these ads is to avoid detracting from the
+user experience as much as possible. To this end, any ads in the
+Handbook will be limited to the navigation sidebar, and only in a
+predefined space underneath all other navigation options. We are
+resolved to protect user privacy and security, and do not collect user
+information, with the exception of click throughs. Furthermore, we do
+not collect any data for targeted ads, and are committed to only show
+high quality ads pertaining to our user base.  
+
+**Cookie Policy**
+
+Clicking on a Newegg ad directs users through an affiliate link that
+gives the |trueos| project a modest commission based on any items
+purchased within 24 hours. This is a simple time tracking cookie used to
+ensure the |trueos| project is afforded its commission. To ask questions
+about our Ethical Advertising policy, please contact joshms@trueos.org
+for more information.
