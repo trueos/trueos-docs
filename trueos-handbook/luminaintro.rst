@@ -1,3 +1,12 @@
+**Preface**
+
+The |lumina| Handbook is freely available for sharing and redistribution
+under the terms of the
+`Creative Commons Attribution License <https://creativecommons.org/licenses/by/4.0/>`_.
+This means you have permission to copy, distribute, translate, and adapt
+the work as long as you attribute the |lumina| Project as the original
+source of the Handbook.
+
 .. _Introduction to Lumina:
 
 Introduction to |lumina|

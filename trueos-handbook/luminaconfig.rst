@@ -5,30 +5,36 @@
 **********************
 
 The |lumina| Configuration utility, shown in
-:numref:`Figure %s <lumina3d>`, can be used to configure every aspect
+:numref:`Figure %s <lumina3>`, can be used to configure every aspect
 of the desktop and is the recommended way to make changes. To launch
 this utility, click the start menu then
 :menuselection:`Preferences --> Configure Desktop`, right-click the
-desktop and click :menuselection:`Preferences --> Desktop`, or type
-:command:`lumina-config` from an xterm. If all those options are
-unavailable, the "Desktop Configuration" application (under the
-"Utilities" category) will also open the configuration utility.
+desktop and hover over :guilabel:`Preferences` and click
+:guilabel:`All desktop settings`, or type :command:`lumina-config` in a
+CLI. If all those options are unavailable, the "Desktop Configuration"
+application (under the :guilabel:`Utilities` category) will also open
+the configuration utility. For convenience, the :guilabel:`Preferences`
+section of the right-click menu also lists the commonly used
+sub-elements of **Screensaver**, **Wallpaper**, and **Display** from
+within the Configuration utility.
 
-.. _lumina3d:
+.. _lumina3:
 
-.. figure:: images/lumina3d.png
+.. figure:: images/lumina3e.png
    :scale: 100%
    
    : |lumina| Desktop Configuration
 
 Under the top search bar are four options to configure different areas
-of the system. Clicking a category will expand the configuration options
-of that category, and clicking an option will open those configuration
-options.
+of the system. By default, each category is expanded to provide an
+efficient view of all available configutation options. Click an option
+to view the specific configuration options.
 
 .. note:: If you make changes to any of the options, remember to click
-   :guilabel:`Save Changes` before exiting this utility in order to save
-   them.
+   :guilabel:`Save` before exiting this utility in order to save
+   them. |lumina| will prompt for a decision if any unsaved changes are
+   present when attempting to navigate away from the current settings
+   area.
 
 The rest of this section describes the configurations that are available
 in each category.
@@ -40,33 +46,41 @@ Appearance
 ==========
 
 This category is used to change the visual appearance and functionality
-of the desktop on a per-screen basis. The
-:guilabel:`Change Desktop Theme` option, shown in
-:numref:`Figure %s <lumina17d>`, can be used to change the default
-font, font size, theme template, color scheme, icon pack, and mouse
-cursors.
+of the desktop on a per-screen basis.
 
-.. _lumina17d:
+.. index:: appearance, themesettings
+.. _Theme Settings:
 
-.. figure:: images/lumina17d.png
+Theme Settings
+--------------
+
+The :guilabel:`Theme` option, shown in :numref:`Figure %s <lumina17>`,
+can be used to change the default font, font size, theme template, color
+scheme, icon pack, and mouse cursors.
+
+.. _lumina17:
+
+.. figure:: images/lumina17e.png
    :scale: 100%
 
-   : Modifying the Theme
+   : Theme settings, Desktop Tab
 
 It is possible to create your own **theme template** or **color scheme**
 by clicking :guilabel:`Edit` next to those options and changing the
-settings as necessary. :numref:`Figure %s <lumina18c>`
-shows an example of clicking :guilabel:`Edit` with the
-:guilabel:`Glass (System)` theme template selected. This action opened
-the :guilabel:`Theme Editor` and the user has clicked the color selector
-(dropper icon) in the upper right corner. Select an item in this menu to
-edit the template controlling the selection by changing the values in
-the theme editor box. Note the theme templates are written as
+settings as necessary. :numref:`Figure %s <lumina18c>` shows an example
+of clicking :guilabel:`Edit` with the :guilabel:`Glass (System)` theme
+template selected. This action opened the :guilabel:`Theme Editor` and
+the user has clicked the color selector (dropper icon) in the upper
+right corner. Select an item in this menu to edit the template
+controlling the selection by changing the values in the theme editor
+box. Note the theme templates are written as
 `Qt stylesheets <http://doc.qt.io/qt-5/stylesheet.html>`_, so some
 scripting experience will be helpful when configuring a theme. After
 making your changes, click :guilabel:`Save` to save the theme without
 closing the editor, or click :guilabel:`Apply`, which saves the theme
 and closes the editor.
+
+.. TODO update this screenshot later to incorporate Ken's bugfix.
 
 .. _lumina18c:
 
@@ -75,14 +89,35 @@ and closes the editor.
    
    : Using the Theme Editor
 
-:guilabel:`Change Wallpaper` option, shown in
-:numref:`Figure %s <lumina27>`, can be used to add a wallpaper with
-:guilabel:`+`, or remove with :guilabel:`-`. When :guilabel:`+` is
-pressed, the drop-down menu can be used to select the file(s), a single
-directory, a directory and all of its subdirectories, or a solid color
-to use as the wallpaper. If multiple images are selected,
-:guilabel:`Rotate Background` can be selected as well as a specified
-time interval in minutes to move to the next image.
+The :guilabel:`Application Themes` tab, seen in
+:numref:`Figure %s <appthemes>`, allows the user to easily apply any
+installed Qt5 theme engines to any Qt based applications.
+
+.. _appthemes:
+
+.. figure:: images/lumina35.png
+   :scale: 100%
+   
+   : Theme settings, Application Themes tab
+
+Select the :guilabel:`Qt5 Theme Engine` drop down menu to choose between
+the defaults of **None** or **Manual Setting**. Any user installed
+theme engines will also appear in this drop down menu.
+
+.. index:: appearance, wallpaper
+.. _Wallpaper:
+
+Wallpaper
+---------
+
+The :guilabel:`Wallpaper` option, shown in
+:numref:`Figure %s <lumina27>`, can be used to add or remove a wallpaper
+with the :guilabel:`+` or :guilabel:`-` buttons, respectively. When
+:guilabel:`+` is pressed, the drop-down menu can be used to select the
+file(s), a single directory, a directory and all of its subdirectories,
+or a solid color to use as the wallpaper. If multiple images are
+selected, :guilabel:`Rotate Background` can be selected as well as a
+specified time interval in minutes to move to the next image.
 
 .. _lumina27:
 
@@ -93,37 +128,55 @@ time interval in minutes to move to the next image.
 
 Click the :guilabel:`Layout` drop-down menu to change the default
 layout of :guilabel:`Automatic` to one of several options:
-*Full Screen*, *Fit Screen*, *Tile*, *Center*, *Top Left*, *Top Right*,
+*Fullscreen*, *Fit screen*, *Tile*, *Center*, *Top Left*, *Top Right*,
 *Bottom Left*, or *Bottom Right*.
 
 Click :menuselection:`+ --> Solid Color` to view all the wallpaper
-options, shown in :numref:`Figure %s <lumina16b>`. Select a color and
-click :guilabel:`OK` and it will be added as a solid color background to
-the wallpaper selection drop-down menu.
+options shown in :numref:`Figure %s <lumina16>`. Select a color and
+click :guilabel:`OK` to add that color as a solid background to the
+wallpaper selection drop-down menu.
 
-.. _lumina16b:
+.. _lumina16:
 
 .. figure:: images/lumina16b.png
    :scale: 100%
-   
+
    : Modifying the Wallpaper
-   
+
+.. index:: appearance, windoweffects
+.. _Window Effects:
+
+Window Effects
+--------------
+
 :guilabel:`Window Effects`, shown in :numref:`Figure %s <lumina28>`, is
 used to add or alter graphical effects or animations applied to your
-windows. By default, no additional effects are added and will need to be
-adjusted manually.
+windows. By default, no additional effects are added. Any desired
+changes need to be adjusted manually.
 
 .. _lumina28:
 
-.. figure:: images/lumina28.png
+.. figure:: images/lumina28a.png
    :scale: 100%
 
    : Window Effects
 
-:guilabel:`Window Manager`, shown in :numref:`Figure %s <lumina22c>`,
+Check :guilabel:`Disable Compositing Manager` to enable this option.
+Restarting the current session is required for any changes to take
+effect. By default,
+:guilabel:`Only use compositing with GPU acceleration` is selected,
+which aids with overall system performance.
+
+.. index:: appearance, windowmanager
+.. _Window Manager:
+
+Window Manager
+--------------
+
+:guilabel:`Window Manager`, shown in :numref:`Figure %s <lumina22>`,
 contains various configuration options for the window manager.
 
-.. _lumina22c:
+.. _lumina22:
 
 .. figure:: images/lumina22c.png
    :scale: 100%
@@ -159,24 +212,29 @@ every setting related to the display of windows on the system.
 
 .. index:: application startup shortcuts
 
-.. _DesktopSession Options:
+.. _Desktop Defaults:
 
-Desktop Session Options
-=======================
+Desktop Defaults
+================
 
-:guilabel:`Desktop Sessions Options`, seen in
-:numref:`Figure %s <lumina3d>`, are used to configure which
-applications automatically start upon logging in to |lumina|, the
-default applications and file types, and keyboard shortcuts.
+The :guilabel:`Desktop Defaults` category, seen in
+:numref:`Figure %s <lumina3>`, is used to configure which applications
+automatically start upon logging in to |lumina|, the default
+applications and file types, and keyboard shortcuts.
 
-Click :guilabel:`Default Applications for File Type` to view the
-:guilabel:`Basic Settings` tab, shown in
-:numref:`Figure %s <lumina24a>`. This tab can be used to configure
-default applications.
+.. index:: applications
+.. _Applications:
 
-.. _lumina24a:
+Applications
+------------
 
-.. figure:: images/lumina24a.png
+Click :guilabel:`Applications` to view the default applications
+:guilabel:`Basic Settings` tab, shown in :numref:`Figure %s <lumina24>`.
+This tab can be used to configure default applications.
+
+.. _lumina24:
+
+.. figure:: images/lumina24b.png
    :scale: 100%
 
    : |lumina| Default Applications - Basic
@@ -192,15 +250,15 @@ then :guilabel:`Restore Defaults`.
    of files. These applications, when configured to use the
    :command:`lumina-open` or :command:`xdg-open` utilities, will refer
    back to the default applications set in
-   :guilabel:`Default Applications for File Type`.
+   :guilabel:`Applications`.
 
 The :guilabel:`Advanced` tab allows for configuring the default
 application used for particular file types, as seen in
-:numref:`Figure %s <lumina7e>`.
+:numref:`Figure %s <lumina7>`.
 
-.. _lumina7e:
+.. _lumina7:
 
-.. figure:: images/lumina7e.png
+.. figure:: images/lumina7f.png
    :scale: 100%
 
    : |lumina| Default Applications - Advanced
@@ -214,14 +272,20 @@ will register the application for all the groups within the selected
 type. Selecting :guilabel:`Clear` will remove the default application
 from the associated file type or group.
 
+.. index:: shortcuts
+.. _Keyboard Shortcuts:
+
+Keyboard Shortcuts
+------------------
+
 :guilabel:`Keyboard Shortcuts`, shown in
-:numref:`Figure %s <lumina8c>`, is used to configure various keyboard
+:numref:`Figure %s <lumina8>`, is used to configure various keyboard
 shortcuts for system or window tasks. Most of these options relate to
 window and workspace management, such as moving windows between
 workspaces, but there are also options for changing the system audio
 volume or screen brightness.
 
-.. _lumina8c:
+.. _lumina8:
 
 .. figure:: images/lumina8c.png
    :scale: 100%
@@ -248,26 +312,32 @@ unchecking :guilabel:`View Syntax Codes`.
 
    : |lumina| Keyboard Shortcuts - Advanced
 
-:guilabel:`Startup Services and Applications`, displayed in
-:numref:`Figure %s <lumina6e>`, provides adjustment options for what is
-automatically started when logging into |lumina|.
+.. index:: startup
+.. _Autostart:
 
-.. _lumina6e:
+Autostart
+---------
+
+:guilabel:`Autostart`, displayed in :numref:`Figure %s <lumina6>`,
+provides adjustment options for what is automatically started when
+logging into |lumina|.
+
+.. _lumina6:
 
 .. figure:: images/lumina6e.png
    :scale: 100%
 
-   : |lumina| Startup Services
+   : |lumina| Startup Services Configuration
 
 To prevent an application from starting automatically, uncheck its box.
 To add an application to the auto-start configuration , click
 :guilabel:`Application` to select the application's name from a
 drop-down menu. Alternately, click :guilabel:`Binary` or
 :guilabel:`File` to browse to the location of the application or file to
-open. If a file name is chosen, |lumina| will automatically open it in
-an application that is capable of reading the file type.
+open. If a file is chosen, |lumina| will automatically open it in an
+application that is capable of reading the file type.
 
-.. index:: menu panel
+.. index:: interface config
 
 .. _Interface:
 
@@ -275,34 +345,35 @@ Interface Configuration
 =======================
 
 :guilabel:`Interface Configuration`, as seen in
-:numref:`Figure %s <lumina31>`, is used to configure the context
-(right-click menu), desktop icons, and floating panels.
+:numref:`Figure %s <lumina31>`, is used to configure the desktop,
+(right-click) menu, and any panels.
 
 .. _lumina31:
 
-.. figure:: images/lumina31.png
+.. figure:: images/lumina31a.png
    :scale: 100%
 
    : |lumina| Interface Configuration
 
-.. note:: The options of :guilabel:`Context Menu and Plugins`,
-   :guilabel:`Desktop Icons and Plugins`, and
-   :guilabel:`Floating Icons and Plugins` involve modifying and
-   interacting with plugins, which are described at length in the
-   :ref:`Lumina Plugins` chapter of this handbook.
+.. note:: The options of :guilabel:`Menu`, :guilabel:`Desktop`, and
+   :guilabel:`Panels` involve modifying and interacting with plugins,
+   which are described at length in the :ref:`Lumina Plugins` chapter of
+   this handbook.
 
-Click :guilabel:`Context Menu and Plugins` to adjust the appearance of
-the menu which appears when right-clicking the desktop. By default, the
-context menu includes the several plugins: **Terminal**,
-**File Manager**, **Applications**, a **Separator**, and **Settings**.
+.. index:: interface, desktop config
+.. _Desktop:
 
-Select :guilabel:`Desktop Icons and Plugins` to modify what appears on
-the current primary desktop. By default, the :ref:`RSS Reader` plugin
-will appear in the lower right corner.
+Desktop
+-------
+
+Select :guilabel:`Desktop` to modify what appears on the current primary
+desktop. By default, the :ref:`RSS Reader` plugin will appear in the
+lower right corner.
 
 Many customization options are available after right-clicking an icon on
 the desktop:
 
+* **Launch Item:** Starts the item.
 * **Start Moving Item:** Click the icon to lock it in place once it is
   in the desired location.
 * **Start Resizing Item:** Use the mouse to increase or decrease size.
@@ -313,11 +384,41 @@ the desktop:
   icons, repeat as necessary.
 * **Remove Item:** Removes the item from the desktop.
 
-The :guilabel:`Floating Panels and Plugins` option offers the ability to
-create and/or customize panels which are attached to the edges of the
-screen, as seen in :numref:`Figure %s <lumina5f>`.
+.. index:: interface, rightclick menu
+.. _rightclick menu:
 
-.. _lumina5f:
+Menu
+----
+
+Click :guilabel:`Menu` to adjust the appearance of the menu which
+appears when right-clicking the desktop, seen in
+:numref:`Figure %s <lumina36>`. By default, the context menu
+includes several plugins: :ref:`Terminal`,
+:ref:`Browse Files <File Manager>`, :ref:`Menu Applications`, a
+:ref:`Separator`, :ref:`Settings`, and **Leave**.
+
+.. _lumina36:
+
+.. figure:: images/lumina36.png
+   :scale: 100%
+   
+   : Context menu plugins configuration with an open context menu.
+
+.. note:: **Leave**, with its options to *Logout*, *Restart*,
+   *Shutdown*, *Lock*, and *Suspend* the system, will **always** be
+   available in the context menu.
+
+.. index:: interface, panels
+.. _Panels:
+
+Panels
+------
+
+The :guilabel:`Panels` option offers the ability to create and/or
+customize panels which are attached to the edges of the screen, as seen
+in :numref:`Figure %s <lumina5>`.
+
+.. _lumina5:
 
 .. figure:: images/lumina5f.png
    :scale: 100%
@@ -349,9 +450,9 @@ The :guilabel:`Location` tab (4 arrow icon) contains a number of items:
   panel length.
 
 The :guilabel:`Appearance` tab (monitor icon) is shown in
-:numref:`Figure %s <lumina19d>`.
+:numref:`Figure %s <lumina19>`.
 
-.. _lumina19d:
+.. _lumina19:
 
 .. figure:: images/lumina19d.png
    :scale: 100%
@@ -364,9 +465,9 @@ used to fine-tune the panel color. Click its box, then the paint icon to
 select a panel color.
 
 The :guilabel:`Plugins` tab (puzzle icon) is shown in
-:numref:`Figure %s <lumina20d>`.
+:numref:`Figure %s <lumina20>`.
 
-.. _lumina20d:
+.. _lumina20:
 
 .. figure:: images/lumina20d.png
    :scale: 100%
@@ -397,7 +498,13 @@ User Settings
 =============
 
 The :guilabel:`User Settings` option governs the general settings for
-the desktop session. Typically, these settings are infrequently changed.
+the desktop session. These settings are typically left unchanged.
+
+.. index:: user settings, general options
+.. _general options:
+
+General Options
+---------------
 
 :guilabel:`General Options`, seen in :numref:`Figure %s <lumina12f>`,
 is used to govern numerous settings for the desktop experience.
@@ -415,13 +522,18 @@ menu and the start menu button. There are also options to set the time
 and date format, as well as the time display format (using a drop menu).
 Additionally, a user can reset **all** their desktop settings via
 :guilabel:`Return to system defaults`, which returns |lumina| to the
-defaults created by the OS, while :guilabel:`Return to Lumina® defaults`
+defaults created by the OS, while :guilabel:`Return to Lumina defaults`
 returns to the |lumina| created settings.
 
-The :guilabel:`Localization Settings` is shown in
-:numref:`Figure %s <lumina21c>`.
+.. index:: user settings, localization
+.. _localization:
 
-.. _lumina21c:
+Localization
+------------
+
+The :guilabel:`Localization` is shown in :numref:`Figure %s <lumina21>`.
+
+.. _lumina21:
 
 .. figure:: images/lumina21c.png
    :scale: 100%
@@ -430,8 +542,9 @@ The :guilabel:`Localization Settings` is shown in
 
 The **lumina-i18n** package provides localization files. Once installed,
 this allows customization of the locale used for the various items
-listed in :numref:`Figure %s <lumina21c>`. To install this package on a
-|trueos| or FreeBSD system, type :command:`sudo pkg install lumina-i18n`.
+listed in :numref:`Figure %s <lumina21>`. To install this package on a
+|trueos| or FreeBSD system, type
+:command:`sudo pkg install lumina-i18n`.
 On other operating systems, use the default software management tool.
 Since each setting has its own drop-down menu, there is flexibility to
 select different locales for each item shown in this screen. If any
@@ -452,3 +565,13 @@ a restart of |lumina|.
           been translated to the selected language. To assist the
           |lumina| Project in translating menu items, see
           :ref:`Interface Translation`.
+
+.. TODO Add section for Input Device settings, once it has been added to
+   UNSTABLE for testing.
+   
+   .. index:: user settings, input devices
+   .. _Input Device Settings
+   
+   Input Device Settings
+   ---------------------
+   

@@ -7,6 +7,153 @@
 |lumina| provides many built-in utilities, which are described in this
 chapter.
 
+.. index:: archiver
+
+.. _Lumina Archiver:
+
+|lumina| Archiver
+=================
+
+The |lumina| Archiver, seen here in :numref:`Figure %s <luminaarc1>`,
+provides compression/decompression services for a wide variety of file
+types. It is listed with other utilities in the GUI, or can be opened
+with :command:`lumina-archiver` in a CLI.
+
+.. _luminaarc1:
+
+.. figure:: images/luminaarc1.png
+   :scale: 100%
+
+   : |lumina| Archiver
+
+The :guilabel:`File` and :guilabel:`Edit` categories contain all
+operations for the utility, which are also reproduced in the icon
+toolbar. :numref:`Table %s <arcmanops>` lists all operations for the
+Archive Manager:
+
+.. _arcmanops:
+
+.. table:: : Archiver operations
+
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Command           | Menu | Icon                  | Shortcut | Result                          |
+   +===================+======+=======================+==========+=================================+
+   | New Archive       | File | Page with White Plus  | Ctrl + N | Opens a window to create a new  |
+   |                   |      |                       |          | archive file                    |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Open Archive      | File | Folder with File      | Ctrl + O | Open an existing archive        |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Quit              | File | None                  | Ctrl + Q | Exit the utility                |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Add File(s)       | Edit | Page with Green Plus  | None     | Add a file to an open archive   |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Add Directory     | Edit | Folder with Plus      | None     | Add a full directory to an open |
+   |                   |      |                       |          | archive                         |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Remove File(s)    | Edit | Page with Red X       | None     | Removes the selected file from  |
+   |                   |      |                       |          | the archive                     |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Extract All       | Edit | Page with White Arrow | None     | Opens a window to extract the   |
+   |                   |      |                       |          | entire contents of the archive  |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+   | Extract Selection | Edit | Page with White Arrow | None     | Opens a window to extract the   |
+   |                   |      |                       |          | highlighted archive contents    |
+   +-------------------+------+-----------------------+----------+---------------------------------+
+
+The primary window under the icon toolbar displays several elements:
+
+* **Archive:** The full pathway to the opened archived.
+* **File:** Lists the names of the files in the archive.
+* **Mimetype:** Lists the mimetypes of archived files.
+* **Size:** Displays the total size of the archived files.
+
+The small section under the primary window will display any tooltips
+when hovering over an icon, as well as messages indicating an
+operation's success or failure.
+
+.. index:: calculator
+.. _Lumina Calculator:
+
+|lumina| Calculator
+===================
+
+The |lumina| calculator utility is designed to provide a simple and
+intuitive interface paired with advanced functions and features. Open
+the calculator through the *Utilities* category of the application list,
+or by typing :command:`lumina-calculator` in a CLI. The interface is
+seen in :numref:`Figure %s <lcalc1a>`:
+
+.. _lcalc1a:
+
+.. figure:: images/lcalc1a.png
+   :scale: 100%
+   
+   : |lumina| Calculator
+
+The calculator is configured to use a numpad, if one is available.
+Enter the values and an operation, and the calculator will display the
+answer in the upper window. Select an equation displayed in the upper
+window to paste it in the entry field. On the right side of the output
+display are two icons. Press the :guilabel:`Paper with red circle` to
+clear the entire output history. Press the :guilabel:`disk and pencil`
+icon to save the calulator history as a basic text document.
+
+|lumina| Calculator also supports a variety of advanced operations, seen
+in :numref:`Figure %s <lcalc2>`.
+
+.. _lcalc2:
+
+.. figure:: images/lcalc2.png
+   :scale: 100%
+   
+   : |lumina| Calculator Advanced Operations
+
+These advanced operations can be selected from the drop down menu, or
+typed manually. The full list of available operations is seen in
+:numref:`Table %s <lcalcops>`.
+
+.. _lcalcops:
+
+.. table:: : |lumina| Calculator Advanced Operations
+
+   +---------------------+--------+
+   | Operation           | Symbol |
+   +=====================+========+
+   | Percentage          | %      |
+   +---------------------+--------+
+   | Power               | ^      |
+   +---------------------+--------+
+   | Base-10 Exponential | E      |
+   +---------------------+--------+
+   | Exponential         | e      |
+   +---------------------+--------+
+   | Constant Pi         | π      |
+   +---------------------+--------+
+   | Square Root         | sqrt(  |
+   +---------------------+--------+
+   | Logarithm           | log(   |
+   +---------------------+--------+
+   | Natural Log         | ln(    |
+   +---------------------+--------+
+   | Sine                | sin(   |
+   +---------------------+--------+
+   | Cosine              | cos(   |
+   +---------------------+--------+
+   | Tangent             | tan(   |
+   +---------------------+--------+
+   | Arc Sine            | asin(  |
+   +---------------------+--------+
+   | Arc Cosine          | acos(  |
+   +---------------------+--------+
+   | Arc Tangent         | atan(  |
+   +---------------------+--------+
+   | Hyperbolic Sine     | sinh(  |
+   +---------------------+--------+
+   | Hyperbolic Cosine   | cosh(  |
+   +---------------------+--------+
+   | Hyperbolic Tangent  | tanh(  |
+   +---------------------+--------+
+   
 .. index:: file manager
 .. _Insight File Manager:
 
@@ -393,15 +540,16 @@ the start menu and select
 :menuselection:`Browse Applications --> Utility --> Lumina Screenshot`,
 right-click the desktop and select
 :menuselection:`Applications --> Utility --> Lumina Screenshot`, type
-:command:`lumina-screenshot` from a terminal window, or press :kbd:`Print Screen`.
+:command:`lumina-screenshot` from a terminal window, or press
+:kbd:`Print Screen`.
 
 On the :guilabel:`New Screenshot` tab, seen here in
-:numref:`Figure %s <lumina25>`, options are available to fine tune the
+:numref:`Figure %s <lumina25a>`, options are available to fine tune the
 screenshot:
 
-.. _lumina25:
+.. _lumina25a:
 
-.. figure:: images/lumina25.png
+.. figure:: images/lumina25a.png
    :scale: 100%
 
    : New Screenshot Tab
@@ -429,12 +577,12 @@ Screenshot, pressing :kbd:`Ctrl+N`, or selecting
 :menuselection:`File --> Take Screenshot`.
 
 After capturing a screenshot, the :guilabel:`View/Edit` tab, seen here
-in :numref:`Figure %s <lumina9a>`, provides additional options for
+in :numref:`Figure %s <lumina9b>`, provides additional options for
 manipulating the screenshot:
 
-.. _lumina9a:
+.. _lumina9b:
 
-.. figure:: images/lumina9a.png
+.. figure:: images/lumina9b.png
    :scale: 100%
 
    : View/Edit Tab
@@ -442,8 +590,16 @@ manipulating the screenshot:
 * **Image Preview:** Displays the captured screenshot. Right-click
   the image to view options for zooming in or out. Click and drag across
   the image to highlight an area which can be cropped by pressing
-  :guilabel:`Crop` in the lower-right corner.
-  
+  :guilabel:`Crop` in the lower-right corner. Click again on the image
+  to remove a highlighted area.
+
+* **Zoom Slider:** The left side of the :guilabel:`Image Preview` area
+  contains the :guilabel:`Zoom Slider`. This tool adjusts the zoom level
+  of the captured image as a percentage value. Click the
+  :guilabel:`white square` and move the mouse up or down to adjust the
+  image scaling. Alternately, mouse over the slider area and use the
+  scroll wheel to adjust the scaling.
+
 * **Save As:** Press :guilabel:`Save As` to open a window to specify the
   filename and location for saving the screenshot.
 
