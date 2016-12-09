@@ -2890,7 +2890,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
     padding: 4px 6px;
     margin-bottom: 0.809em
 }
-.rst-imagebox2 {
+#wy-menu\ rst-imagebox2 {
 	margin-top: 15px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -2901,31 +2901,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
 	margin-left: auto;
     margin-right: auto;
    }
+
    
-.rst-imageboxcontainer {
-	margin-top: 15px;
-	margin-left: 20px;
-    margin-right: 20px;
-    border: 3px solid gray;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	background: gray; 
-	padding-left: 5px;
-	padding-top: 3px;
-   }	
-   
-.rst-imagebox2 > a:nth-child(4) > img:nth-child(1) {
-	margin-left: auto;
-    margin-right: auto;
-    display: block;
-	padding-top: 20px;
-    }
-	
-.rst-imagebox2 > a:nth-child(3) > img:nth-child(1) {
-	margin-left: auto;
-    margin-right: auto;
-    display: block;
-    }	
+#wy-menu\ rst-imagebox2 > a:nth-child(4) > img:nth-child(1) {
+	width: 75%;
+	margin: 0 auto;
+	display: block;
+}
    
 .wy-side-nav-search>a:hover,
 .wy-side-nav-search .wy-dropdown>a:hover {
