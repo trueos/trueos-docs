@@ -65,101 +65,91 @@ msgstr ""
 msgid "Audio Player"
 msgstr ""
 
-#: ../../luminaplugins.rst:281
-msgid ""
-"The green plus icon gives the user options to add files, a directory, or URL"
-" to the playlist. Toggle the play button in the lower left corner of the "
-"plugin in order to start/stop an audio file. The forward and back buttons in"
-" the upper right corner allow the user to skip to the next song or return to"
-" the previous one. Click the currently playing file to open a drop down menu"
-" of all added audio files."
-msgstr ""
-
-#: ../../luminaplugins.rst:291
+#: ../../luminaplugins.rst:292
 msgid "Calendar"
 msgstr ""
 
-#: ../../luminaplugins.rst:310
+#: ../../luminaplugins.rst:311
 msgid "Desktop Icons View"
 msgstr ""
 
-#: ../../luminaplugins.rst:327
+#: ../../luminaplugins.rst:328
 msgid "Note Pad"
 msgstr ""
 
-#: ../../luminaplugins.rst:343
+#: ../../luminaplugins.rst:344
 msgid ""
 "**Open Text File:** Allows the user to browse through their directories to "
 "open a .note or other text file."
 msgstr ""
 
-#: ../../luminaplugins.rst:345
+#: ../../luminaplugins.rst:346
 msgid "**Create a Note:** Creates a new note; a unique name is required."
 msgstr ""
 
-#: ../../luminaplugins.rst:346
+#: ../../luminaplugins.rst:347
 msgid "**Rename Note:** Renames the currently open note."
 msgstr ""
 
-#: ../../luminaplugins.rst:347
+#: ../../luminaplugins.rst:348
 msgid "**Delete Note:** Immediately deletes the displayed note."
 msgstr ""
 
-#: ../../luminaplugins.rst:352
+#: ../../luminaplugins.rst:353
 msgid "RSS Reader"
 msgstr ""
 
-#: ../../luminaplugins.rst:368
+#: ../../luminaplugins.rst:369
 msgid ""
 "**Add RSS Feed:** An option to allow the user to type in their own RSS URL "
 "or load a preset RSS Feed."
 msgstr ""
 
-#: ../../luminaplugins.rst:370
+#: ../../luminaplugins.rst:371
 msgid ""
 "**View Feed Details:** Displays current feed data, including URL, feed "
 "description and website address, and the previous build date and "
 "synchronization settings. Also included is an option to remove the feed."
 msgstr ""
 
-#: ../../luminaplugins.rst:374
+#: ../../luminaplugins.rst:375
 msgid ""
 "**Settings:** Options for syncing the feed. You can choose to synchronize "
 "manually, or instead define the sync interval. Remember to save any changes "
 "in feed settings."
 msgstr ""
 
-#: ../../luminaplugins.rst:377
+#: ../../luminaplugins.rst:378
 msgid "**Update Feeds Now:** Click to immediately update all feeds."
 msgstr ""
 
-#: ../../luminaplugins.rst:379
+#: ../../luminaplugins.rst:380
 msgid ""
 "An active Internet connection is required for the RSS Reader plugin to "
 "function properly."
 msgstr ""
 
-#: ../../luminaplugins.rst:388
+#: ../../luminaplugins.rst:389
 msgid "System Monitor"
 msgstr ""
 
-#: ../../luminaplugins.rst:418
+#: ../../luminaplugins.rst:419
 msgid "Floating Panel Plugins"
 msgstr ""
 
-#: ../../luminaplugins.rst:460
+#: ../../luminaplugins.rst:461
 msgid "Panel Application Launcher"
 msgstr ""
 
-#: ../../luminaplugins.rst:477
+#: ../../luminaplugins.rst:478
 msgid "Application Menu"
 msgstr ""
 
-#: ../../luminaplugins.rst:497
+#: ../../luminaplugins.rst:506
 msgid "Battery Monitor"
 msgstr ""
 
-#: ../../luminaplugins.rst:499
+#: ../../luminaplugins.rst:508
 msgid ""
 "Hover over this icon (not pictured) to view the current charge status of the"
 " battery. When the charge reaches 15% or below, the low battery icon will "
@@ -167,43 +157,43 @@ msgid ""
 "less than 5% charge left."
 msgstr ""
 
-#: ../../luminaplugins.rst:507
+#: ../../luminaplugins.rst:516
 msgid "Desktop Bar"
 msgstr ""
 
-#: ../../luminaplugins.rst:526
+#: ../../luminaplugins.rst:543
 msgid "Line"
 msgstr ""
 
-#: ../../luminaplugins.rst:546
+#: ../../luminaplugins.rst:563
 msgid "Show Desktop"
 msgstr ""
 
-#: ../../luminaplugins.rst:562
+#: ../../luminaplugins.rst:579
 msgid "Spacer"
 msgstr ""
 
-#: ../../luminaplugins.rst:580
+#: ../../luminaplugins.rst:597
 msgid "Start Menu"
 msgstr ""
 
-#: ../../luminaplugins.rst:595
+#: ../../luminaplugins.rst:612
 msgid "System Dashboard"
 msgstr ""
 
-#: ../../luminaplugins.rst:619
+#: ../../luminaplugins.rst:636
 msgid "System Tray"
 msgstr ""
 
-#: ../../luminaplugins.rst:642
+#: ../../luminaplugins.rst:659
 msgid "Task Manager Plugin (No Groups)"
 msgstr ""
 
-#: ../../luminaplugins.rst:660
+#: ../../luminaplugins.rst:677
 msgid "Task Manager Plugin"
 msgstr ""
 
-#: ../../luminaplugins.rst:673
+#: ../../luminaplugins.rst:690
 msgid ""
 "The grouping task manager displays windows in the panel as well. Its primary"
 " function is to group windows by application, saving more space on the "
@@ -211,21 +201,21 @@ msgid ""
 "panel, a further space savings."
 msgstr ""
 
-#: ../../luminaplugins.rst:681
+#: ../../luminaplugins.rst:698
 msgid "Time/Date"
 msgstr ""
 
-#: ../../luminaplugins.rst:699
+#: ../../luminaplugins.rst:716
 msgid "User Menu"
 msgstr ""
 
-#: ../../luminaplugins.rst:760
+#: ../../luminaplugins.rst:777
 msgid ""
 "This panel displays shortcuts to all the settings and configuration "
 "utilities, as well as the system information window."
 msgstr ""
 
-#: ../../luminaplugins.rst:766
+#: ../../luminaplugins.rst:783
 msgid "Workspace Switcher"
 msgstr ""
 
@@ -388,15 +378,7 @@ msgid ""
 "user to choose a specific application to add to the desktop."
 msgstr ""
 
-#: ../../luminaplugins.rst:276
-msgid ""
-"The Audio Player plugin, seen in :numref:`Figure %s <luminadesktopplugin2>`,"
-" will play user added lists of audio files. Pressing the wrench icon in the "
-"upper left corner will open an options menu to clear or shuffle the "
-"playlist."
-msgstr ""
-
-#: ../../luminaplugins.rst:300
+#: ../../luminaplugins.rst:301
 msgid ""
 "This calendar plugin, seen in :numref:`Figure %s <luminadesktopplugin3>`, "
 "will display a calendar set to the current month and day. The arrows in the "
@@ -405,7 +387,7 @@ msgid ""
 "over the calendar and then scroll up or down through the calendar."
 msgstr ""
 
-#: ../../luminaplugins.rst:319
+#: ../../luminaplugins.rst:320
 msgid ""
 "This plugin, seen in :numref:`Figure %s <luminadesktopplugin4>`, will define"
 " an area on the desktop to display icons. If enough icons are added to the "
@@ -413,7 +395,7 @@ msgid ""
 "available icons."
 msgstr ""
 
-#: ../../luminaplugins.rst:336
+#: ../../luminaplugins.rst:337
 msgid ""
 "Note Pad, seen in :numref:`Figure %s <luminadesktopplugin5>`, adds a simple "
 "text editor widget to the desktop. The user needs to create or open a note "
@@ -422,7 +404,7 @@ msgid ""
 "the upper-right corner displays a number of options:"
 msgstr ""
 
-#: ../../luminaplugins.rst:361
+#: ../../luminaplugins.rst:362
 msgid ""
 "RSS Reader, seen in :numref:`Figure %s <luminadesktopplugin6>`, displays "
 "connected RSS feeds. The user can add their own custom RSS feeds to the "
@@ -431,13 +413,13 @@ msgid ""
 ":guilabel:`down arrow` in the upper right corner opens a list of options:"
 msgstr ""
 
-#: ../../luminaplugins.rst:382
+#: ../../luminaplugins.rst:383
 msgid ""
 "Click the :guilabel:`blue globe` to open the default web browser at the "
 "feed's associated website."
 msgstr ""
 
-#: ../../luminaplugins.rst:397
+#: ../../luminaplugins.rst:398
 msgid ""
 "The :guilabel:`Summary` tab of the System Monitor plugin, seen in "
 ":numref:`Figure %s <luminadesktopplugin7>`. CPU Temperature (in Celsius), "
@@ -446,14 +428,14 @@ msgid ""
 " read/write speed monitor, shown next."
 msgstr ""
 
-#: ../../luminaplugins.rst:410
+#: ../../luminaplugins.rst:411
 msgid ""
 "The :guilabel:`Disk I/O` tab of the System Monitor plugin. Displayed are the"
 " current read and write speeds of the connected hardware, which in "
 ":numref:`Figure %s <luminadesktopplugin8>` is a hard drive and cd player."
 msgstr ""
 
-#: ../../luminaplugins.rst:420
+#: ../../luminaplugins.rst:421
 msgid ""
 "Panels are a completely customizable option for |lumina| users. By default, "
 "|lumina| users will have one panel stretched across the bottom of the "
@@ -466,7 +448,7 @@ msgid ""
 "pictured in :numref:`Figure %s <luminapanelpluginmenu1>`."
 msgstr ""
 
-#: ../../luminaplugins.rst:438
+#: ../../luminaplugins.rst:439
 msgid ""
 "As you can see, :guilabel:`Panel 1` is configured to the top center of "
 ":guilabel:`Monitor 1` (plugged into DVI-I-0). To add or adjust plugins for "
@@ -474,7 +456,7 @@ msgid ""
 "in :numref:`Figure %s <luminapanelpluginmenu2>`."
 msgstr ""
 
-#: ../../luminaplugins.rst:450
+#: ../../luminaplugins.rst:451
 msgid ""
 "The large field shows currently active plugins. Click the :guilabel:`red "
 "minus` or :guilabel:`green plus` buttons to add or remove plugins to the "
@@ -484,7 +466,7 @@ msgid ""
 "plugins are listed below."
 msgstr ""
 
-#: ../../luminaplugins.rst:469
+#: ../../luminaplugins.rst:470
 msgid ""
 "When you select this plugin, seen in :numref:`Figure %s "
 "<luminapanelplugin1>`, it will prompt to select the application to launch. "
@@ -492,7 +474,7 @@ msgid ""
 "panel."
 msgstr ""
 
-#: ../../luminaplugins.rst:486
+#: ../../luminaplugins.rst:487
 msgid ""
 "Adds an application menu, seen in :numref:`Figure %s <luminapanelplugin2>`, "
 "which shortcuts to the user's home directory, a shortcut to the operating "
@@ -502,7 +484,7 @@ msgid ""
 "the start button, and will open when the :kbd:`Windows` key is pressed."
 msgstr ""
 
-#: ../../luminaplugins.rst:535
+#: ../../luminaplugins.rst:552
 msgid ""
 "Adds a separator line to the panel to provide visual separation between "
 "plugins, highlighted in :numref:`Figure %s <luminapanelplugin4>`. When "
@@ -512,14 +494,14 @@ msgid ""
 "plugins to be separated."
 msgstr ""
 
-#: ../../luminaplugins.rst:555
+#: ../../luminaplugins.rst:572
 msgid ""
 "This button, seen in :numref:`Figure %s <luminapanelplugin5>`, will "
 "immediately hide all open windows on all active monitors so only the desktop"
 " is visible. This is useful for touch screens or small devices."
 msgstr ""
 
-#: ../../luminaplugins.rst:571
+#: ../../luminaplugins.rst:588
 msgid ""
 "Adds a blank area to the panel, :numref:`Figure %s <luminapanelplugin6>`. "
 "Similar to :ref:`Line`, Spacers need to be positioned between plugins in the"
@@ -527,14 +509,14 @@ msgid ""
 "desired separation."
 msgstr ""
 
-#: ../../luminaplugins.rst:588
+#: ../../luminaplugins.rst:605
 msgid ""
 "Adds a classic start menu as seen on other operating systems. Shown in "
 ":numref:`Figure %s <luminapanelplugin7>`, this is added by default to the "
 "primary desktop panel in the lower left corner."
 msgstr ""
 
-#: ../../luminaplugins.rst:604
+#: ../../luminaplugins.rst:621
 msgid ""
 "The System Dashboard plugin, seen in :numref:`Figure %s "
 "<luminapanelplugin8>`, is a convenient shortcut to view or modify a number "
@@ -545,13 +527,13 @@ msgid ""
 "charge will also be displayed."
 msgstr ""
 
-#: ../../luminaplugins.rst:613
+#: ../../luminaplugins.rst:630
 msgid ""
 "Adjusting the screen brightness on a multi-monitor system will alter both "
 "monitors."
 msgstr ""
 
-#: ../../luminaplugins.rst:628
+#: ../../luminaplugins.rst:645
 msgid ""
 "Provides an area on the panel for dockable applications, seen in "
 ":numref:`Figure %s <luminapanelplugin9>`. Applications can be sent to this "
@@ -564,7 +546,7 @@ msgid ""
 "migrating any docked applications to the other panel."
 msgstr ""
 
-#: ../../luminaplugins.rst:651
+#: ../../luminaplugins.rst:668
 msgid ""
 "Ensures that every window gets its own button on the panel. This plugin , "
 "seen in :numref:`Figure %s <luminapanelplugin10>`, will use a large amount "
@@ -572,14 +554,14 @@ msgid ""
 "title. This plugin is added to the default panel for |lumina|."
 msgstr ""
 
-#: ../../luminaplugins.rst:669
+#: ../../luminaplugins.rst:686
 msgid ""
 "In :numref:`Figure %s <luminapanelplugin11>` are three open terminal windows"
 " grouped into one minimal panel entry with :guilabel:`(3)` displayed next to"
 " the terminal icon."
 msgstr ""
 
-#: ../../luminaplugins.rst:690
+#: ../../luminaplugins.rst:707
 msgid ""
 "Displays the current time and date. A basic clock is added to the panel; "
 "clicking it will open the calendar, seen in :numref:`Figure %s "
@@ -588,14 +570,14 @@ msgid ""
 ":guilabel:`Time Zone` to adjust the displayed time."
 msgstr ""
 
-#: ../../luminaplugins.rst:701
+#: ../../luminaplugins.rst:718
 msgid ""
 "The User Menu is a more complicated plugin that provides an array of "
 "shortcuts to files and applications on the system, essentially as an "
 "alternative to the :ref:`Panel Start Menu`."
 msgstr ""
 
-#: ../../luminaplugins.rst:712
+#: ../../luminaplugins.rst:729
 msgid ""
 ":numref:`Figure %s <luminapanelplugin13>` shows the default view after "
 "clicking the :guilabel:`user` button. On the sidebar, the "
@@ -604,14 +586,14 @@ msgid ""
 "clicking the :guilabel:`Places` and :guilabel:`Files` tabs, respectively."
 msgstr ""
 
-#: ../../luminaplugins.rst:719
+#: ../../luminaplugins.rst:736
 msgid ""
 "Clicking the :guilabel:`gear` icon in the left sidebar will open the "
 ":guilabel:`Applications` section of the menu, seen in :numref:`Figure %s "
 "<luminapanelplugin14>`."
 msgstr ""
 
-#: ../../luminaplugins.rst:730
+#: ../../luminaplugins.rst:747
 msgid ""
 "This section displays all applications by default, with the drop down menu "
 "at the top allowing you to view applications by category. The "
@@ -619,7 +601,7 @@ msgid ""
 "|appcafe|, allowing to quickly search and download more applications."
 msgstr ""
 
-#: ../../luminaplugins.rst:742
+#: ../../luminaplugins.rst:759
 msgid ""
 "In :numref:`Figure %s <luminapanelplugin15>`, the :guilabel:`folder` icon on"
 " the left sidebar opens the :file:`Home` directory, providing the option to "
@@ -629,14 +611,14 @@ msgid ""
 " gear` icon will launch the search utility."
 msgstr ""
 
-#: ../../luminaplugins.rst:749
+#: ../../luminaplugins.rst:766
 msgid ""
 "Finally, selecting the :guilabel:`screwdriver and wrench` icon on the "
 "sidebar will open :guilabel:`Desktop Preferences`, seen in :numref:`Figure "
 "%s <luminapanelplugin16>`."
 msgstr ""
 
-#: ../../luminaplugins.rst:775
+#: ../../luminaplugins.rst:792
 msgid ""
 "The Workspace Switcher, seen in :numref:`Figure %s <luminapanelplugin17>`, "
 "is used to switch between virtual desktops. Click the :guilabel:`monitor` "
@@ -692,53 +674,53 @@ msgstr ""
 msgid ": Audio Player"
 msgstr ""
 
-#: ../../luminaplugins.rst:298
+#: ../../luminaplugins.rst:299
 msgid ": Calendar"
 msgstr ""
 
-#: ../../luminaplugins.rst:317
+#: ../../luminaplugins.rst:318
 msgid ": Desktop Icons"
 msgstr ""
 
-#: ../../luminaplugins.rst:334
+#: ../../luminaplugins.rst:335
 msgid ": Note Pad"
 msgstr ""
 
-#: ../../luminaplugins.rst:359
+#: ../../luminaplugins.rst:360
 msgid ": RSS Reader"
 msgstr ""
 
-#: ../../luminaplugins.rst:395
+#: ../../luminaplugins.rst:396
 msgid ": System Monitor Display"
 msgstr ""
 
-#: ../../luminaplugins.rst:408
+#: ../../luminaplugins.rst:409
 msgid ": System Monitor I/O"
 msgstr ""
 
-#: ../../luminaplugins.rst:436
+#: ../../luminaplugins.rst:437
 msgid ": Panel Settings"
 msgstr ""
 
-#: ../../luminaplugins.rst:448
+#: ../../luminaplugins.rst:449
 msgid ": Panel Plugins Menu"
 msgstr ""
 
-#: ../../luminaplugins.rst:467
+#: ../../luminaplugins.rst:468
 msgid ": Panel Application Launcher"
 msgstr ""
 
-#: ../../luminaplugins.rst:484
+#: ../../luminaplugins.rst:485
 msgid ": Application Menu"
 msgstr ""
 
-#: ../../luminaplugins.rst:514
+#: ../../luminaplugins.rst:523
 msgid ""
 ": Desktop Bar - :guilabel:`Favorite Applications` (\"Star\" icon) is "
 "pressed."
 msgstr ""
 
-#: ../../luminaplugins.rst:517
+#: ../../luminaplugins.rst:526
 msgid ""
 "This plugin adds shortcuts to the panel for applications or files contained "
 "within the :file:`~/Desktop` folder or favorited by the user, seen in "
@@ -747,59 +729,59 @@ msgid ""
 "the :guilabel:`file` button shows favorite files."
 msgstr ""
 
-#: ../../luminaplugins.rst:533
+#: ../../luminaplugins.rst:550
 msgid ": Line - The line is highlighted in red."
 msgstr ""
 
-#: ../../luminaplugins.rst:553
+#: ../../luminaplugins.rst:570
 msgid ": Show Desktop Button"
 msgstr ""
 
-#: ../../luminaplugins.rst:569
+#: ../../luminaplugins.rst:586
 msgid ": Spacer Plugin"
 msgstr ""
 
-#: ../../luminaplugins.rst:586
+#: ../../luminaplugins.rst:603
 msgid ": Start Menu"
 msgstr ""
 
-#: ../../luminaplugins.rst:602
+#: ../../luminaplugins.rst:619
 msgid ": System Dashboard with the button pressed."
 msgstr ""
 
-#: ../../luminaplugins.rst:626
+#: ../../luminaplugins.rst:643
 msgid ": System Tray with several docked applications"
 msgstr ""
 
-#: ../../luminaplugins.rst:649
+#: ../../luminaplugins.rst:666
 msgid ": Task Manager (No Groups)"
 msgstr ""
 
-#: ../../luminaplugins.rst:667
+#: ../../luminaplugins.rst:684
 msgid ": Task Manager"
 msgstr ""
 
-#: ../../luminaplugins.rst:688
+#: ../../luminaplugins.rst:705
 msgid ": Time/Date with the clock selected, opening additional settings."
 msgstr ""
 
-#: ../../luminaplugins.rst:710
+#: ../../luminaplugins.rst:727
 msgid ": User Favorites"
 msgstr ""
 
-#: ../../luminaplugins.rst:728
+#: ../../luminaplugins.rst:745
 msgid ": User Applications"
 msgstr ""
 
-#: ../../luminaplugins.rst:740
+#: ../../luminaplugins.rst:757
 msgid ": Home Directory"
 msgstr ""
 
-#: ../../luminaplugins.rst:758
+#: ../../luminaplugins.rst:775
 msgid ": Desktop Preferences"
 msgstr ""
 
-#: ../../luminaplugins.rst:773
+#: ../../luminaplugins.rst:790
 msgid ": Workspace Switcher"
 msgstr ""
 
@@ -810,6 +792,60 @@ msgstr ""
 #: ../../luminaplugins.rst:40
 msgid ": |lumina| Menu Plugins"
 msgstr ""
+
+#: ../../luminaplugins.rst:276
+msgid ""
+"The Audio Player plugin, seen in :numref:`Figure %s <luminadesktopplugin2>`,"
+" will play user added lists of audio files. Pressing the :guilabel:`wrench` "
+"in the upper left corner will open an options menu to clear or shuffle the "
+"playlist."
+msgstr ""
+
+#: ../../luminaplugins.rst:281
+msgid ""
+"The green :guilabel:`plus` gives the user options to add files, a directory,"
+" or URL to the playlist. Toggle :guilabel:`play` in the lower left corner of"
+" the plugin in order to start/stop an audio file. In the upper right corner,"
+" :guilabel:`forward` and :guilabel:`back` allow the user to skip to the next"
+" song or return to the previous one. Click the currently playing file to "
+"open a drop down menu of all added audio files."
+msgstr ""
+
+#: ../../luminaplugins.rst:498
+msgid "Audio Player (Panel)"
+msgstr ""
+
+#: ../../luminaplugins.rst:500
+msgid ""
+"The panel audio player is identical to the desktop :ref:`Audio Player`, "
+"except the player is on the chosen panel."
+msgstr ""
+
+#: ../../luminaplugins.rst:535
+msgid "JSON Menu (Panel)"
+msgstr ""
+
+#: ../../luminaplugins.rst:537
+msgid ""
+"The panel JSON Menu is functionally identical to the context menu :ref:`JSON"
+" Menu`, only with the menu script generator pinned to a panel."
+msgstr ""
+
+#~ msgid ""
+#~ "The green plus icon gives the user options to add files, a directory, or URL"
+#~ " to the playlist. Toggle the play button in the lower left corner of the "
+#~ "plugin in order to start/stop an audio file. The forward and back buttons in"
+#~ " the upper right corner allow the user to skip to the next song or return to"
+#~ " the previous one. Click the currently playing file to open a drop down menu"
+#~ " of all added audio files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Audio Player plugin, seen in :numref:`Figure %s <luminadesktopplugin2>`,"
+#~ " will play user added lists of audio files. Pressing the wrench icon in the "
+#~ "upper left corner will open an options menu to clear or shuffle the "
+#~ "playlist."
+#~ msgstr ""
 
 #~ msgid "Lumina® Plugins"
 #~ msgstr ""
