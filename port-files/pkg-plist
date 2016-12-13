@@ -233,6 +233,7 @@ share/trueos/handbook/_sources/luminaplugins.txt
 share/trueos/handbook/_sources/luminautl.txt
 share/trueos/handbook/_sources/pico.txt
 share/trueos/handbook/_sources/postinstall.txt
+share/trueos/handbook/_sources/preface.txt
 share/trueos/handbook/_sources/preinstall.txt
 share/trueos/handbook/_sources/support.txt
 share/trueos/handbook/_sources/sysadmclient.txt
@@ -292,6 +293,7 @@ share/trueos/handbook/luminaconfig.html
 share/trueos/handbook/luminaintro.html
 share/trueos/handbook/luminaplugins.html
 share/trueos/handbook/luminautl.html
+share/trueos/handbook/preface.html
 share/trueos/handbook/pico.html
 share/trueos/handbook/objects.inv
 share/trueos/handbook/postinstall.html

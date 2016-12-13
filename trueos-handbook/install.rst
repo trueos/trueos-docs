@@ -28,6 +28,7 @@ continue to boot.
 .. _install1:
 
 .. figure:: images/install1b.png
+   :scale: 100%
 
    : Initial Boot Menu
 
@@ -37,6 +38,7 @@ Next, the :guilabel:`TrueOS® Installation Menu`, shown in
 .. _install15:
 
 .. figure:: images/install15.png
+   :scale: 100%
 
    : |trueos| Installer Boot Menu
 
@@ -86,6 +88,7 @@ loaded and is ready to present its options.
 .. _install2:
 
 .. figure:: images/install2b.png
+   :scale: 100%
 
    : Welcome and Language Selection Screen
 
@@ -156,6 +159,7 @@ on installing a command-line only server.
 .. _install3:
 
 .. figure:: images/install3b.png
+   :scale: 100%
 
    : System Selection Screen
 
@@ -185,6 +189,7 @@ configuration.
 .. _install5:
 
 .. figure:: images/install5b.png
+   :scale: 100%
 
    : Disk Selection Screen
 
@@ -212,6 +217,7 @@ To select the disk or partition to install |trueos|, click
 .. _install6:
 
 .. figure:: images/install6b.png
+   :scale: 100%
 
    : |trueos| Disk Wizard
 
@@ -252,6 +258,7 @@ in :numref:`Figure %s <install7>`.
 .. _install7:
 
 .. figure:: images/install7b.png
+   :scale: 100%
 
    : Disk or Partition Selection
 
@@ -288,6 +295,7 @@ in :numref:`Figure %s <install8>`.
 .. _install8:
 
 .. figure:: images/install8c.png
+   :scale: 100%
 
    : Advanced Mode Options
 
@@ -459,6 +467,7 @@ the ZFS layout. The initial ZFS configuration screen is seen in
 .. _install9:
 
 .. figure:: images/install9b.png
+   :scale: 100%
 
    : ZFS Configuration
 
@@ -505,6 +514,7 @@ When finished, click :guilabel:`Next` to see the screen shown in
 .. _install10:
 
 .. figure:: images/install10b.png
+   :scale: 100%
 
    : L2ARC and ZIL
 
@@ -522,6 +532,7 @@ to see the screen shown in :numref:`Figure %s <install11>`.
 .. _install11:
 
 .. figure:: images/install11b.png
+   :scale: 100%
 
    : Encryption
 
@@ -552,6 +563,7 @@ When finished, click :guilabel:`Next` to move to the screen shown in
 .. _install12:
 
 .. figure:: images/install12b.png
+   :scale: 100%
 
    : Default ZFS Layout
 
@@ -624,6 +636,7 @@ bar and messages so the user can watch the installation's progress.
 .. _install13:
 
 .. figure:: images/install13b.png
+   :scale: 100%
 
    : Installation Progress
 
@@ -644,6 +657,7 @@ complete.
 .. _install14:
 
 .. figure:: images/install14a.png
+   :scale: 100%
 
    : |trueos| Installation Complete
 

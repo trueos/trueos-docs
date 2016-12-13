@@ -27,11 +27,12 @@ Using the Text Installer
 
 If an **ncurses** menu installation is preferred over a full graphical
 installer, start the installation as usual and select
-:guilabel:`install` from :ref:`install15`.
+:guilabel:`install` from :numref:`install15repro`.
 
-.. install15:
+.. _install15repro:
 
-   .. figure:: images/install15.png
+.. figure:: images/install15.png
+   :scale: 100%
 
    : |trueos| Installation Menu
 
@@ -41,6 +42,7 @@ in :numref:`Figure %s <text2>`.
 .. _text2:
 
 .. figure:: images/text2a.png
+   :scale: 100%
 
    : Desktop or Server
 
@@ -62,6 +64,7 @@ display the available disks on the system. In the example shown in
 .. _text3:
 
 .. figure:: images/text3a.png
+   :scale: 100%
 
    : Installation Disk
 
@@ -77,6 +80,7 @@ installing to the entire disk.
 .. _text4:
 
 .. figure:: images/text4a.png
+   :scale: 100%
 
    : Partition
 
@@ -90,6 +94,7 @@ boot after selecting :guilabel:`GPT`, select :guilabel:`MBR` instead.
 .. _text5:
 
 .. figure:: images/text5a.png
+   :scale: 100%
 
    : Disk Format
 
@@ -99,6 +104,7 @@ select the boot manager.
 .. _text6:
 
 .. figure:: images/text6a.png
+   :scale: 100%
 
    : Boot Manager
 
@@ -115,6 +121,7 @@ The next screen is shown in :numref:`Figure %s <text7>`.
 .. _text7:
 
 .. figure:: images/text7a.png
+   :scale: 100%
 
    : Full Disk Encryption
 
@@ -182,6 +189,7 @@ in :numref:`Figure %s <text9>`.
 .. _text9:
 
 .. figure:: images/text9a.png
+   :scale: 100%
 
    : Review Installation Options
 
@@ -206,6 +214,7 @@ This menu provides several options:
 .. _text10:
 
 .. figure:: images/text10.png
+   :scale: 100%
 
    : Hardware Summary
 
@@ -215,6 +224,7 @@ If select :guilabel:`edit`, the menu shown in
 .. _text11:
 
 .. figure:: images/text11a.png
+   :scale: 100%
 
    : Edit Menu
 
@@ -239,6 +249,7 @@ This screen contains several options:
   .. _text12:
 
   .. figure:: images/text12a.png
+     :scale: 100%
 
      : ZFS Layout
 
@@ -250,6 +261,7 @@ This screen contains several options:
   .. _text13:
 
   .. figure:: images/text13a.png
+     :scale: 100%
 
      : ZFS Properties for a Dataset
 
@@ -301,6 +313,7 @@ in :numref:`Figure %s <util1>`.
 .. _util1:
 
 .. figure:: images/util1a.png
+   :scale: 100%
 
    : System Utilities Menu
 
@@ -374,6 +387,7 @@ then click :guilabel:`Next` again to see the screen shown in
 .. _server2:
 
 .. figure:: images/server2a.png
+   :scale: 100%
 
    : Root Password Creation
 
@@ -383,6 +397,7 @@ proceed to the screen shown in :numref:`Figure %s <server3>`.
 .. _server3:
 
 .. figure:: images/server3a.png
+   :scale: 100%
 
    : Primary User Account Creation
 
@@ -412,6 +427,7 @@ When finished, click :guilabel:`Next` to proceed to the screen shown in
 .. _server4:
 
 .. figure:: images/server4a.png
+   :scale: 100%
 
    : Hostname Creation
 
@@ -423,6 +439,7 @@ system, check :guilabel:`Enable remote SSH login`. Click
 .. _server5:
 
 .. figure:: images/server5a.png
+   :scale: 100%
 
    : Network Configuration
 
@@ -446,6 +463,7 @@ the screen shown in :numref:`Figure %s <server6>`.
 .. _server6:
 
 .. figure:: images/server6a.png
+   :scale: 100%
 
    : Ports Installation
 
@@ -490,6 +508,7 @@ installer, it will display the installation menu shown in
 .. _cd2:
 
 .. figure:: images/cd2a.png
+   :scale: 100%
 
    : |trueos| Installation Menu
 
