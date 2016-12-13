@@ -18,25 +18,25 @@ program to ensure the drive containing the installation media is listed
 first in the boot order. Save any BIOS changes and reboot.
 
 As the system boots it will display the menu shown in
-:numref:`Figure %s <install1b>`. Typically, press
+:numref:`Figure %s <install1>`. Typically, press
 :kbd:`Enter` or wait for this menu to go by and the system will
-continue to boot. 
+continue to boot.
 
 .. note:: See :ref:`BSD Boot Loader` for a detailed description of this
    menu.
 
-.. _install1b:
+.. _install1:
 
 .. figure:: images/install1b.png
 
    : Initial Boot Menu
 
 Next, the :guilabel:`TrueOS® Installation Menu`, shown in
-:numref:`Figure %s <install1d>`, will be displayed. 
+:numref:`Figure %s <install15>`, will be displayed. 
 
-.. _install1d:
+.. _install15:
 
-.. figure:: images/install1d.png
+.. figure:: images/install15.png
 
    : |trueos| Installer Boot Menu
 
@@ -80,10 +80,10 @@ Language Selection Screen
 =========================
 
 The first graphical installer screen, seen in
-:numref:`Figure %s <install2b>`, indicates the installer successfully
+:numref:`Figure %s <install2>`, indicates the installer successfully
 loaded and is ready to present its options.
 
-.. _install2b:
+.. _install2:
 
 .. figure:: images/install2b.png
 
@@ -148,12 +148,12 @@ System Selection Screen
 
 The :guilabel:`System Selection` screen installs a graphical desktop or
 a console-based server operating system, as seen in
-:numref:`Figure %s <install3b>`. It also can be used for
+:numref:`Figure %s <install3>`. It also can be used for
 :ref:`Restoring the Operating System`. This chapter concentrates on a
 desktop installation. Refer to :ref:`Install a Server` for instructions
 on installing a command-line only server.
 
-.. _install3b: 
+.. _install3:
 
 .. figure:: images/install3b.png
 
@@ -179,10 +179,10 @@ Disk Selection Screen
 =====================
 
 The :guilabel:`Disk Selection" screen`, seen in
-:numref:`Figure %s <install5b>`, summarizes the default disk
+:numref:`Figure %s <install5>`, summarizes the default disk
 configuration.
 
-.. _install5b:
+.. _install5:
 
 .. figure:: images/install5b.png
 
@@ -207,9 +207,9 @@ bootloader is preferred.
 
 To select the disk or partition to install |trueos|, click
 :guilabel:`Customize` to start the |trueos| Disk Wizard, shown in
-:numref:`Figure %s <install6b>`.
+:numref:`Figure %s <install6>`.
 
-.. _install6b:
+.. _install6:
 
 .. figure:: images/install6b.png
 
@@ -247,9 +247,9 @@ Basic Mode
 ----------
 
 Select :guilabel:`Basic` and the wizard will display the screen shown
-in :numref:`Figure %s <install7b>`.
+in :numref:`Figure %s <install7>`.
 
-.. _install7b:
+.. _install7:
 
 .. figure:: images/install7b.png
 
@@ -283,9 +283,9 @@ Advanced Mode
 -------------
 
 After selecting advanced mode, the wizard will display the screen shown
-in :numref:`Figure %s <install8c>`.
+in :numref:`Figure %s <install8>`.
 
-.. _install8c:
+.. _install8:
 
 .. figure:: images/install8c.png
 
@@ -329,8 +329,8 @@ and then demonstrates how to customize the ZFS layout.
 .. index:: ZFS
 .. _ZFS Overview:
 
-ZFS Overview 
-^^^^^^^^^^^^^
+ZFS Overview
+^^^^^^^^^^^^
 
 ZFS is an enterprise grade file-system, which provides many features
 including: support for high storage capacities, high reliability, the
@@ -376,7 +376,7 @@ creating the storage pool.
 disks, creating a redundant copy should a disk fail.
 
 **RAIDZ:** ZFS software solution equivalent to RAID5 as it allows one
-disk to fail without losing data. Requires a minimum of 3 disks.
+disk to fail without losing data. Requires at least **3** disks.
 
 **RAIDZ2:** Double-parity ZFS software solution similar to
 RAID6 as it allows two disks to fail without losing data. Requires a
@@ -454,18 +454,18 @@ ZFS Layout
 
 In :guilabel:`Advanced Mode`, the disk setup wizard allows configuring
 the ZFS layout. The initial ZFS configuration screen is seen in
-:numref:`Figure %s <install9b>`. 
+:numref:`Figure %s <install9>`.
 
-.. _install9b:
+.. _install9:
 
 .. figure:: images/install9b.png
 
    : ZFS Configuration
 
 If the system contains multiple drives to be used to create a ZFS mirror
-or RAIDZ*, check :guilabel:`Add additional disks to storage pool`, which will
-enable this screen. Any available disks will be listed in the box below
-the :guilabel:`ZFS Virtual Device Mode` drop-down menu. Select the
+or RAIDZ*, check :guilabel:`Add additional disks to storage pool`, which
+will enable this screen. Any available disks will be listed in the box
+below the :guilabel:`ZFS Virtual Device Mode` drop-down menu. Select the
 desired level of redundancy from the :guilabel:`ZFS Virtual Device Mode`
 drop-down menu, then check the box for each disk to add to the
 configuration.
@@ -500,9 +500,9 @@ When selecting a configuration, a message will indicate how many more
 disks are required.
 
 When finished, click :guilabel:`Next` to see the screen shown in
-:numref:`Figure %s <install10b>`.
+:numref:`Figure %s <install10>`.
 
-.. _install10b:
+.. _install10:
 
 .. figure:: images/install10b.png
 
@@ -517,9 +517,9 @@ be listed in the boxes in this screen.
 Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS Overview`
 to determine if the system would benefit from any of these devices
 before adding them in this screen. When finished, click :guilabel:`Next`
-to see the screen shown in :numref:`Figure %s <install11b>`.
+to see the screen shown in :numref:`Figure %s <install11>`.
 
-.. _install11b:
+.. _install11:
 
 .. figure:: images/install11b.png
 
@@ -547,9 +547,9 @@ and easy to remember, but hard for others to guess.
    encrypted data!
 
 When finished, click :guilabel:`Next` to move to the screen shown in
-:numref:`Figure %s <install12b>`.
+:numref:`Figure %s <install12>`.
 
-.. _install12b: 
+.. _install12:
 
 .. figure:: images/install12b.png
 
@@ -618,10 +618,10 @@ Installation Progress Screen
 ============================
 
 Once :guilabel:`Yes` is selected to start the installation, a progress
-screen, seen in :numref:`Figure %s <install13b>`, provides a progress
+screen, seen in :numref:`Figure %s <install13>`, provides a progress
 bar and messages so the user can watch the installation's progress.
 
-.. _install13b:
+.. _install13:
 
 .. figure:: images/install13b.png
 
@@ -638,10 +638,10 @@ Installation Finished Screen
 ============================
 
 The screen shown in
-:numref:`Figure %s <install14a>` appears once the installation is
+:numref:`Figure %s <install14>` appears once the installation is
 complete.
 
-.. _install14a:
+.. _install14:
 
 .. figure:: images/install14a.png
 
@@ -649,7 +649,7 @@ complete.
 
 Click :guilabel:`Finish` to complete the |trueos| installation. It will
 return to the
-:numref:`Figure %s: TrueOS® Installer Boot Menu <install1d>`. To
+:numref:`Figure %s: TrueOS® Installer Boot Menu <install15>`. To
 manually configure the system before booting into it, select
 :guilabel:`utility` to open a *root* shell. Otherwise, select
 :guilabel:`reboot` to reboot into the new installation. Wait until this

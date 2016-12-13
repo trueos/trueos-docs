@@ -173,7 +173,7 @@ shown in :numref:`Figure %s <encrypt1>`.
    : Master Key Decryption
 
 The boot process will wait for the password created in the installation
-screen shown in :ref:`Configure Encryption <install11b>`. If the
+screen shown in :ref:`Configure Encryption <install11>`. If the
 correct password is typed, the system will calculate the GELI encryption
 key, then continue to boot.
 

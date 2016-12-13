@@ -27,18 +27,18 @@ Using the Text Installer
 
 If an **ncurses** menu installation is preferred over a full graphical
 installer, start the installation as usual and select
-:guilabel:`install` from :numref:`Figure %s <install1d2>`.
+:guilabel:`install` from :ref:`install15`.
 
-.. _install1d2:
+.. install15:
 
-.. figure:: images/install1d.png
+   .. figure:: images/install15.png
 
-   : TrueOS® Installation Menu
+   : |trueos| Installation Menu
 
 The next screen will prompt to install a desktop or a server, as seen
-in :numref:`Figure %s <text2a>`.
+in :numref:`Figure %s <text2>`.
 
-.. _text2a:
+.. _text2:
 
 .. figure:: images/text2a.png
 
@@ -57,9 +57,9 @@ during the installation will need to be entered.
 
 After making a selection and pressing :kbd:`Enter`, the next screen will
 display the available disks on the system. In the example shown in
-:numref:`Figure %s <text3a>`, one disk is available.
+:numref:`Figure %s <text3>`, one disk is available.
 
-.. _text3a:
+.. _text3:
 
 .. figure:: images/text3a.png
 
@@ -67,36 +67,36 @@ display the available disks on the system. In the example shown in
 
 Select the disk to install into and press :kbd:`Enter`. In the next
 screen, the installer will display all available primary or GPT
-partitions. In the example shown in :numref:`Figure %s <text4a>`, there
+partitions. In the example shown in :numref:`Figure %s <text4>`, there
 is only one partition and the installer has selected the default of
 installing to the entire disk.
 
 .. warning:: If the system has multiple partitions and disks, be
    careful in selecting the disk and partition targets for installation.
 
-.. _text4a:
+.. _text4:
 
 .. figure:: images/text4a.png
 
    : Partition
 
-The next screen, shown in :numref:`Figure %s <text5a>`, is used to
+The next screen, shown in :numref:`Figure %s <text5>`, is used to
 select the type of disk format. If the installation disk or partition is
 larger than 2 TB, :guilabel:`GPT` **must** be selected. Otherwise,
 selecting :guilabel:`GPT` should work for most modern hardware. When
 installing on older hardware, or if the newly installed system will not
 boot after selecting :guilabel:`GPT`, select :guilabel:`MBR` instead.
 
-.. _text5a:
+.. _text5:
 
 .. figure:: images/text5a.png
 
    : Disk Format
 
-The next screen, shown in :numref:`Figure %s <text6a>`, is used to
+The next screen, shown in :numref:`Figure %s <text6>`, is used to
 select the boot manager.
 
-.. _text6a:
+.. _text6:
 
 .. figure:: images/text6a.png
 
@@ -110,9 +110,9 @@ boot manager does not find the other operating systems. If
 :guilabel:`none` is selected, no boot manager will be installed and boot
 environments will not be available.
 
-The next screen is shown in :numref:`Figure %s <text7a>`.
+The next screen is shown in :numref:`Figure %s <text7>`.
 
-.. _text7a:
+.. _text7:
 
 .. figure:: images/text7a.png
 
@@ -147,7 +147,7 @@ the passphrase.
    inaccessible.
 
 If server installation is chosen in the screen shown in
-:ref:`Select Desktop or Server <text2a>`, the installer will provide
+:ref:`Select Desktop or Server <text2>`, the installer will provide
 more menus. These will prompt for additional information:
 
 * The *root* password.
@@ -177,9 +177,9 @@ more menus. These will prompt for additional information:
 * Whether or not to enable SSH access to the server.
 
 The next screen, for both a desktop and server installation, is shown
-in :numref:`Figure %s <text9a>`.
+in :numref:`Figure %s <text9>`.
 
-.. _text9a:
+.. _text9:
 
 .. figure:: images/text9a.png
 
@@ -201,7 +201,7 @@ This menu provides several options:
   system with a disabled sound card and no wireless card.
 
 * **quit:** Select this option to return to the screen shown in
-  :ref:`TrueOS® Installation Menu <install1d2>`.
+  :ref:`TrueOS® Installation Menu <install1>`.
 
 .. _text10:
 
@@ -210,9 +210,9 @@ This menu provides several options:
    : Hardware Summary
 
 If select :guilabel:`edit`, the menu shown in
-:numref:`Figure %s <text11a>` will open.
+:numref:`Figure %s <text11>` will open.
 
-.. _text11a:
+.. _text11:
 
 .. figure:: images/text11a.png
 
@@ -222,8 +222,8 @@ This screen contains several options:
 
 * **disk:** Used to change the disk to install into. Selecting this
   option will re-open the screens shown in
-  :ref:`Select Installation Disk <text3a>` through
-  :ref:`Full Disk Encryption <text7a>`, and then return to this menu.
+  :ref:`Select Installation Disk <text3>` through
+  :ref:`Full Disk Encryption <text7>`, and then return to this menu.
   If you want to install into a mirrored or RAIDZ pool, select one of the
   targets using this option, and then select **pool** (see below).
 
@@ -234,9 +234,9 @@ This screen contains several options:
 
 * **datasets:** Used to modify the default ZFS dataset layout. Selecting
   this option will open the screen shown in
-  :numref:`Figure %s <text12a>`.
+  :numref:`Figure %s <text12>`.
 
-  .. _text12a:
+  .. _text12:
 
   .. figure:: images/text12a.png
 
@@ -245,9 +245,9 @@ This screen contains several options:
   To edit the properties of an existing dataset, highlight the dataset's
   name and press :kbd:`Enter`. This will show the list of available ZFS
   properties for that dataset, as seen in the example shown in
-  :numref:`Figure %s <text13a>`:
+  :numref:`Figure %s <text13>`:
 
-  .. _text13a:
+  .. _text13:
 
   .. figure:: images/text13a.png
 
@@ -282,7 +282,7 @@ This screen contains several options:
   :ref:`Creating an Automated Installation`.
 
 * **back:** Select this option to return to the menu shown in
-  :ref:`Review Installation Options <text9a>`.
+  :ref:`Review Installation Options <text9>`.
 
 .. index:: install
 .. _Using the System Utilities Menu:
@@ -295,10 +295,10 @@ fixing an existing |trueos| installation.
 
 Choose the :guilabel:`utility` option in the main menu of the graphical
 or text based installer shown in
-:ref:`TrueOS® Installation Menu <install1d>` to open the screen shown
-in :numref:`Figure %s <util1a>`.
+:ref:`TrueOS® Installation Menu <install15>` to open the screen shown
+in :numref:`Figure %s <util1>`.
 
-.. _util1a:
+.. _util1:
 
 .. figure:: images/util1a.png
 
@@ -314,7 +314,7 @@ This screen provides several options:
   such as `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or
   :command:`vi`. When finished using the shell, type :command:`exit` to
   return to the screen shown in
-  :ref:`System Utilities Menu <util1a>`.
+  :ref:`System Utilities Menu <util1>`.
 
 * **zimport** This option will display the names of available ZFS pools.
   Type the name of an available pool and it will import the pool then
@@ -323,7 +323,7 @@ This screen provides several options:
   chroot shell so its contents can be viewed and manipulated as needed
   in order to perform maintenance on the boot environment. When
   finished, type :command:`exit` to leave the boot environment and
-  return to the screen shown in :ref:`System Utilities Menu <util1a>`.
+  return to the screen shown in :ref:`System Utilities Menu <util1>`.
 
 * **fixgrub:** This option can be used to restamp the GRUB boot loader
   should the installed system no longer boot from GRUB. When this option
@@ -334,7 +334,7 @@ This screen provides several options:
    default BSD boot loader.
 
 * **exit:** This option will return to the main
-  :ref:`TrueOS® Installation Menu <install1d>`.
+  :ref:`TrueOS® Installation Menu <install1>`.
 
 .. index:: install
 .. _Install a Server:
@@ -369,18 +369,18 @@ installer, select :guilabel:`TrueOS Server (console interface only)`.
 
 Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`,
 then click :guilabel:`Next` again to see the screen shown in
-:numref:`Figure %s <server2a>`.
+:numref:`Figure %s <server2>`.
 
-.. _server2a:
+.. _server2:
 
 .. figure:: images/server2a.png
 
    : Root Password Creation
 
 Input and confirm the root password then click :guilabel:`Next` to
-proceed to the screen shown in :numref:`Figure %s <server3a>`.
+proceed to the screen shown in :numref:`Figure %s <server3>`.
 
-.. _server3a:
+.. _server3:
 
 .. figure:: images/server3a.png
 
@@ -407,9 +407,9 @@ Create an account by filling in the fields:
   **tcsh**, **sh**, or **bash** login shell.
 
 When finished, click :guilabel:`Next` to proceed to the screen shown in
-:numref:`Figure %s <server4a>`.
+:numref:`Figure %s <server4>`.
 
-.. _server4a:
+.. _server4:
 
 .. figure:: images/server4a.png
 
@@ -418,9 +418,9 @@ When finished, click :guilabel:`Next` to proceed to the screen shown in
 Input the system's hostname. If using :command:`ssh` to connect to the
 system, check :guilabel:`Enable remote SSH login`. Click
 :guilabel:`Next` to proceed to the network configuration screen shown in
-:numref:`Figure %s <server5a>`.
+:numref:`Figure %s <server5>`.
 
-.. _server5a:
+.. _server5:
 
 .. figure:: images/server5a.png
 
@@ -441,9 +441,9 @@ desired interface:
 Alternately, use the drop-down menu to select the device name for the
 interface and manually configure and input the IPv4 and/or IPv6
 addressing information. When finished, click :guilabel:`Next` to access
-the screen shown in :numref:`Figure %s <server6a>`.
+the screen shown in :numref:`Figure %s <server6>`.
 
-.. _server6a:
+.. _server6:
 
 .. figure:: images/server6a.png
 
@@ -485,17 +485,17 @@ an existing installation, using the instructions in
 To start a server installation using the |trueos| ISO, insert the
 prepared boot media. Once the system has finished booting into the
 installer, it will display the installation menu shown in
-:numref:`Figure %s <cd2a>`.
+:numref:`Figure %s <cd2>`.
 
-.. _cd2a:
+.. _cd2:
 
 .. figure:: images/cd2a.png
 
-   : TrueOS® Installation Menu
+   : |trueos| Installation Menu
 
 To begin the installation, press :kbd:`Enter`. The server installation
 will then display the screen shown in
-:ref:`Select Installation Disk <text3a>` and proceed as
+:ref:`Select Installation Disk <text3>` and proceed as
 described in :ref:`Using the Text Installer`.
 
 .. index:: dualboot
@@ -617,7 +617,7 @@ summarized in :numref:`Table %s <installvariables>`.
 
 .. _installvariables:
 
-.. table:: Customizing a |trueos| Installation
+.. table:: : Customizing a |trueos| Installation
 
    +----------------------------+----------------------------+-------------------------------------+
    | Variable                   | Options                    | Description                         |

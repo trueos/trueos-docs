@@ -1,8 +1,9 @@
-**Preface** 
+.. _Preface:
+
+Preface
+*******
 
 Written by users of the |trueos| operating system.
-
-Copyright © 2005 - 2016 The |trueos| Project.
 
 Welcome to |trueos|! This Handbook covers the installation and use of
 |trueos|. This Handbook is a work in progress and relies on the
@@ -10,19 +11,35 @@ contributions of many individuals. To assist with the Handbook, refer to
 the documentation
 `README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
 If using IRC Freenode, join the #trueos channel and converse with many
-other |trueos| users.
+other |trueos| users. `Gitter <https://gitter.im/trueos/Lobby>`_ is
+another popular option for users.
 
-The |trueos| Users Handbook is freely available for sharing and
+.. _Copyright:
+
+Copyright & Trademarks
+======================
+
+Copyright © 2005-2016 iXsystems
+
+The |trueos| User Guide is freely available for sharing and
 redistribution under the terms of the
-`Creative Commons Attribution License <https://creativecommons.org/licenses/by/4.0/>`_.
+`Creative Commons Attribution License <https://creativecommons.org/licenses/by/3.0/>`_.
 This means you have permission to copy, distribute, translate, and
-adapt the work as long as you attribute the |trueos| Project as the
+adapt the work, as long as you attribute the |trueos| Project as the
 original source of the Handbook.
 
 |trueos| and the |trueos| logo are registered trademarks of
 `iXsystems <https://www.ixsystems.com/>`_. To use the |trueos| logo in
 your own works, please ask for permission first from
 marketing@ixsystems.com.
+
+|lumina| and the |lumina| logo are registered trademarks of
+`iXsystems <https://www.ixsystems.com/>`_. To use the |trueos| logo in
+your own works, please ask for permission first from
+marketing@ixsystems.com.
+
+|trpi|, |pise|, and |picl| are trademarks of
+`iXsystems <https://www.ixsystems.com/>`_.
 
 AMD is a trademark of Advanced Micro Devices, Inc.
 
@@ -74,39 +91,80 @@ VMWare® is a registered trademark of VMWare, Inc.
 Windows® is a registered trademark of Microsoft Corporation in the
 United States and other countries.
 
-**Typographic Conventions** 
+.. _Typographic Conventions:
+
+Typographic Conventions
+=======================
 
 The |trueos| User Guide uses several typographic conventions, seen here
-in :numref:`Table %s <typ conv>`:
+in :numref:`Table %s <typconv>`:
 
-.. _typ conv:
+.. _typconv:
 
 .. table:: : Text Formatting Examples
 
-   +----------------------------------------------------------------+-------------------------------------------------+
-   | Item                                                           | Visual Example                                  |
-   +================================================================+=================================================+
-   | Graphical elements: buttons, icons, fields, columns, and boxes | Click the :guilabel:`Import CA` button.         |
-   +----------------------------------------------------------------+-------------------------------------------------+
-   | Menu selections                                                | Select :menuselection:`System --> Information`. |
-   +----------------------------------------------------------------+-------------------------------------------------+
-   | Commands                                                       | Use the :command:`scp` command.                 |
-   +----------------------------------------------------------------+-------------------------------------------------+
-   | File names and volume and dataset names                        | Locate the :file:`/etc/rc.conf` file.           |
-   +----------------------------------------------------------------+-------------------------------------------------+
-   | Keyboard keys                                                  | Press the :kbd:`Enter` key.                     |
-   +----------------------------------------------------------------+-------------------------------------------------+
-   | Important points                                               | **This is important.**                          |
-   +----------------------------------------------------------------+-------------------------------------------------+
-   | Values entered into fields, or device names                    | Enter *127.0.0.1* in the address field.         |
-   +----------------------------------------------------------------+-------------------------------------------------+
+   +-------------------------------------+------------------------------------------------+
+   | Item                                | Visual Example                                 |
+   +=====================================+================================================+
+   | Graphical elements: buttons, icons, | Click the :guilabel:`Import CA` button.        |
+   | fields, columns, and boxes.         |                                                |
+   +-------------------------------------+------------------------------------------------+
+   | Menu selections                     | Click :menuselection:`System --> Information`. |
+   +-------------------------------------+------------------------------------------------+
+   | CLI Command name                    | Use :command:`scp`.                            |
+   +-------------------------------------+------------------------------------------------+
+   | A command line example              | :samp:`[tmoore@example] ls /etc`               |
+   +-------------------------------------+------------------------------------------------+
+   | Files, volume and dataset names,    | Locate the :file:`/etc/rc.conf` file.          |
+   | and directories                     |                                                |
+   +-------------------------------------+------------------------------------------------+
+   | Keyboard keys                       | Press the :kbd:`Enter` key.                    |
+   +-------------------------------------+------------------------------------------------+
+   | Important points                    | **This is important.**                         |
+   +-------------------------------------+------------------------------------------------+
+   | Values entered into fields, or      | Enter *127.0.0.1* in the address field.        |
+   | device names                        |                                                |
+   +-------------------------------------+------------------------------------------------+
+
+.. index:: advertising
+.. _Ad policy:
+
+Ethical Advertising Policy
+==========================
+
+For many years, users have wanted to give back to the |trueos| project.
+Generally, we encouraged users to donate or actively contribute to the
+FreeBSD project to ensure FreeBSD continues to be successful in the
+future. Because |trueos| is open source software, we have included a
+minimal number of ads as a simple method for users to give back to the
+project, if they wish. 
+
+The primary consideration for these ads is to avoid detracting from the
+user experience as much as possible. To this end, any ads in the
+Handbook will be limited to the navigation sidebar, and only in a
+predefined space underneath all other navigation options. We are
+resolved to protect user privacy and security, and do not collect user
+information, with the exception of click throughs. Furthermore, we do
+not collect any data for targeted ads, and are committed to only show
+high quality ads pertaining to our user base.  
+
+**Cookie Policy**
+
+Clicking on a Newegg ad directs users through an affiliate link that
+gives the |trueos| project a modest commission based on any items
+purchased within 24 hours. This is a simple time tracking cookie used to
+ensure the |trueos| project is afforded its commission. To ask questions
+about our Ethical Advertising policy, please contact joshms@trueos.org
+for more information.
+
+.. _TrueOS Introduction:
 
 Introduction
 ************
 
 Welcome to |trueos|!
 
-`TrueOS® <http://www.pcbsd.org/>`_ (formerly known as |pcbsd|) began in
+`TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in
 2005 when Kris Moore presented the first beta version of a FreeBSD
 operating system pre-configured for desktop use. Since then, |trueos|
 has matured into a polished, feature-rich, free-of-charge, open source
@@ -506,34 +564,3 @@ This section is intended to list all known/longstanding issues with the
 Additional information about these issues can be viewed in the various
 communication channels listed in :ref:`Finding Help` section of this
 handbook.
-
-.. index:: advertising
-.. _Ad policy:
-
-Ethical Advertising Policy
-==========================
-
-For many years, users have wanted to give back to the |trueos| project.
-Generally, we encouraged users to donate or actively contribute to the
-FreeBSD project to ensure FreeBSD continues to be successful in the
-future. Because |trueos| is open source software, we have included a
-minimal number of ads as a simple method for users to give back to the
-project, if they wish. 
-
-The primary consideration for these ads is to avoid detracting from the
-user experience as much as possible. To this end, any ads in the
-Handbook will be limited to the navigation sidebar, and only in a
-predefined space underneath all other navigation options. We are
-resolved to protect user privacy and security, and do not collect user
-information, with the exception of click throughs. Furthermore, we do
-not collect any data for targeted ads, and are committed to only show
-high quality ads pertaining to our user base.  
-
-**Cookie Policy**
-
-Clicking on a Newegg ad directs users through an affiliate link that
-gives the |trueos| project a modest commission based on any items
-purchased within 24 hours. This is a simple time tracking cookie used to
-ensure the |trueos| project is afforded its commission. To ask questions
-about our Ethical Advertising policy, please contact joshms@trueos.org
-for more information.
