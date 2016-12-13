@@ -113,25 +113,12 @@ msgid ""
 "Save any BIOS changes and reboot."
 msgstr ""
 
-#: ../../install.rst:32
-msgid ""
-"As the system boots it will display the menu shown in :numref:`Figure %s "
-"<install1b>`. Typically, press :kbd:`Enter` or wait for this menu to go by "
-"and the system will continue to boot."
-msgstr ""
-
 #: ../../install.rst:37
 msgid "See :ref:`BSD Boot Loader` for a detailed description of this menu."
 msgstr ""
 
 #: ../../install.rst:44
 msgid ": Initial Boot Menu"
-msgstr ""
-
-#: ../../install.rst:46
-msgid ""
-"Next, the :guilabel:`TrueOS® Installation Menu`, shown in :numref:`Figure %s"
-" <install1d>`, will be displayed."
 msgstr ""
 
 #: ../../install.rst:53
@@ -193,13 +180,6 @@ msgid ""
 "The rest of this chapter describes the screens of the graphical installer. "
 "If any problems arise with booting into the graphical installer, please "
 "refer to :ref:`Installation Troubleshooting`."
-msgstr ""
-
-#: ../../install.rst:94
-msgid ""
-"The first graphical installer screen, seen in :numref:`Figure %s "
-"<install2b>`, indicates the installer successfully loaded and is ready to "
-"present its options."
 msgstr ""
 
 #: ../../install.rst:102
@@ -277,15 +257,6 @@ msgid ""
 "next installation screen."
 msgstr ""
 
-#: ../../install.rst:161
-msgid ""
-"The :guilabel:`System Selection` screen installs a graphical desktop or a "
-"console-based server operating system, as seen in :numref:`Figure %s "
-"<install3b>`. It also can be used for :ref:`Restoring the Operating System`."
-" This chapter concentrates on a desktop installation. Refer to :ref:`Install"
-" a Server` for instructions on installing a command-line only server."
-msgstr ""
-
 #: ../../install.rst:172
 msgid ": System Selection Screen"
 msgstr ""
@@ -299,12 +270,6 @@ msgstr ""
 
 #: ../../install.rst:178
 msgid "To install the desktop, click :guilabel:`Next`."
-msgstr ""
-
-#: ../../install.rst:193
-msgid ""
-"The :guilabel:`Disk Selection\" screen`, seen in :numref:`Figure %s "
-"<install5b>`, summarizes the default disk configuration."
 msgstr ""
 
 #: ../../install.rst:201
@@ -337,13 +302,6 @@ msgid ""
 " is not intended, review the rest of this section to determine how to layout"
 " the disk. If |trueos| is to be booted with another operating system, please"
 " review the section on :ref:`Dual Booting`."
-msgstr ""
-
-#: ../../install.rst:220
-msgid ""
-"To select the disk or partition to install |trueos|, click "
-":guilabel:`Customize` to start the |trueos| Disk Wizard, shown in "
-":numref:`Figure %s <install6b>`."
 msgstr ""
 
 #: ../../install.rst:230
@@ -382,12 +340,6 @@ msgid ""
 ":guilabel:`Save Config to USB`."
 msgstr ""
 
-#: ../../install.rst:261
-msgid ""
-"Select :guilabel:`Basic` and the wizard will display the screen shown in "
-":numref:`Figure %s <install7b>`."
-msgstr ""
-
 #: ../../install.rst:270
 msgid ""
 "By default, the first hard disk will be selected. To install on a different "
@@ -418,12 +370,6 @@ msgid ""
 "additional changes, press :guilabel:`Back` to return to a previous screen. "
 "Otherwise, click :guilabel:`Finish` to leave the wizard. Click "
 ":guilabel:`Next` then :guilabel:`Yes` to start the installation."
-msgstr ""
-
-#: ../../install.rst:297
-msgid ""
-"After selecting advanced mode, the wizard will display the screen shown in "
-":numref:`Figure %s <install8c>`."
 msgstr ""
 
 #: ../../install.rst:304
@@ -516,12 +462,6 @@ msgid ""
 "disks, creating a redundant copy should a disk fail."
 msgstr ""
 
-#: ../../install.rst:390
-msgid ""
-"**RAIDZ:** ZFS software solution equivalent to RAID5 as it allows one disk "
-"to fail without losing data. Requires a minimum of 3 disks."
-msgstr ""
-
 #: ../../install.rst:393
 msgid ""
 "**RAIDZ2:** Double-parity ZFS software solution similar to RAID6 as it "
@@ -606,13 +546,6 @@ msgid ""
 "be shared between ZFS pools."
 msgstr ""
 
-#: ../../install.rst:467
-msgid ""
-"In :guilabel:`Advanced Mode`, the disk setup wizard allows configuring the "
-"ZFS layout. The initial ZFS configuration screen is seen in :numref:`Figure "
-"%s <install9b>`."
-msgstr ""
-
 #: ../../install.rst:475
 msgid ": ZFS Configuration"
 msgstr ""
@@ -673,12 +606,6 @@ msgid ""
 "required."
 msgstr ""
 
-#: ../../install.rst:514
-msgid ""
-"When finished, click :guilabel:`Next` to see the screen shown in "
-":numref:`Figure %s <install10b>`."
-msgstr ""
-
 #: ../../install.rst:523
 msgid ""
 "This screen can be used to specify an SSD to use as an L2ARC read cache or "
@@ -688,14 +615,6 @@ msgstr ""
 
 #: ../../install.rst:527
 msgid "A separate SSD is needed for each type of device."
-msgstr ""
-
-#: ../../install.rst:529
-msgid ""
-"Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS Overview` to "
-"determine if the system would benefit from any of these devices before "
-"adding them in this screen. When finished, click :guilabel:`Next` to see the"
-" screen shown in :numref:`Figure %s <install11b>`."
 msgstr ""
 
 #: ../../install.rst:540
@@ -724,12 +643,6 @@ msgstr ""
 msgid ""
 "This passphrase is required to decrypt the disks. If the passphrase is lost "
 "or forgotten, all access will be lost to the encrypted data!"
-msgstr ""
-
-#: ../../install.rst:561
-msgid ""
-"When finished, click :guilabel:`Next` to move to the screen shown in "
-":numref:`Figure %s <install12b>`."
 msgstr ""
 
 #: ../../install.rst:568
@@ -827,34 +740,11 @@ msgid ""
 " return to the :guilabel:`Disk Selection` screen."
 msgstr ""
 
-#: ../../install.rst:632
-msgid ""
-"Once :guilabel:`Yes` is selected to start the installation, a progress "
-"screen, seen in :numref:`Figure %s <install13b>`, provides a progress bar "
-"and messages so the user can watch the installation's progress."
-msgstr ""
-
 #: ../../install.rst:642
 msgid ""
 "How long the installation takes depends upon the speed of the hardware and "
 "the installation type selected. A typical installation takes between 5 and "
 "15 minutes."
-msgstr ""
-
-#: ../../install.rst:652
-msgid ""
-"The screen shown in :numref:`Figure %s <install14a>` appears once the "
-"installation is complete."
-msgstr ""
-
-#: ../../install.rst:662
-msgid ""
-"Click :guilabel:`Finish` to complete the |trueos| installation. It will "
-"return to the :numref:`Figure %s: TrueOS® Installer Boot Menu <install1d>`. "
-"To manually configure the system before booting into it, select "
-":guilabel:`utility` to open a *root* shell. Otherwise, select "
-":guilabel:`reboot` to reboot into the new installation. Wait until this menu"
-" exits before removing the installation media."
 msgstr ""
 
 #: ../../install.rst:127
@@ -910,6 +800,210 @@ msgid ""
 " of redundancy from the :guilabel:`ZFS Virtual Device Mode` drop-down menu, "
 "then check the box for each disk to add to the configuration."
 msgstr ""
+
+#: ../../install.rst:32
+msgid ""
+"As the system boots it will display the menu shown in :numref:`Figure %s "
+"<install1>`. Typically, press :kbd:`Enter` or wait for this menu to go by "
+"and the system will continue to boot."
+msgstr ""
+
+#: ../../install.rst:46
+msgid ""
+"Next, the :guilabel:`TrueOS® Installation Menu`, shown in :numref:`Figure %s"
+" <install15>`, will be displayed."
+msgstr ""
+
+#: ../../install.rst:94
+msgid ""
+"The first graphical installer screen, seen in :numref:`Figure %s "
+"<install2>`, indicates the installer successfully loaded and is ready to "
+"present its options."
+msgstr ""
+
+#: ../../install.rst:161
+msgid ""
+"The :guilabel:`System Selection` screen installs a graphical desktop or a "
+"console-based server operating system, as seen in :numref:`Figure %s "
+"<install3>`. It also can be used for :ref:`Restoring the Operating System`. "
+"This chapter concentrates on a desktop installation. Refer to :ref:`Install "
+"a Server` for instructions on installing a command-line only server."
+msgstr ""
+
+#: ../../install.rst:193
+msgid ""
+"The :guilabel:`Disk Selection\" screen`, seen in :numref:`Figure %s "
+"<install5>`, summarizes the default disk configuration."
+msgstr ""
+
+#: ../../install.rst:220
+msgid ""
+"To select the disk or partition to install |trueos|, click "
+":guilabel:`Customize` to start the |trueos| Disk Wizard, shown in "
+":numref:`Figure %s <install6>`."
+msgstr ""
+
+#: ../../install.rst:261
+msgid ""
+"Select :guilabel:`Basic` and the wizard will display the screen shown in "
+":numref:`Figure %s <install7>`."
+msgstr ""
+
+#: ../../install.rst:297
+msgid ""
+"After selecting advanced mode, the wizard will display the screen shown in "
+":numref:`Figure %s <install8>`."
+msgstr ""
+
+#: ../../install.rst:390
+msgid ""
+"**RAIDZ:** ZFS software solution equivalent to RAID5 as it allows one disk "
+"to fail without losing data. Requires at least **3** disks."
+msgstr ""
+
+#: ../../install.rst:467
+msgid ""
+"In :guilabel:`Advanced Mode`, the disk setup wizard allows configuring the "
+"ZFS layout. The initial ZFS configuration screen is seen in :numref:`Figure "
+"%s <install9>`."
+msgstr ""
+
+#: ../../install.rst:514
+msgid ""
+"When finished, click :guilabel:`Next` to see the screen shown in "
+":numref:`Figure %s <install10>`."
+msgstr ""
+
+#: ../../install.rst:529
+msgid ""
+"Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS Overview` to "
+"determine if the system would benefit from any of these devices before "
+"adding them in this screen. When finished, click :guilabel:`Next` to see the"
+" screen shown in :numref:`Figure %s <install11>`."
+msgstr ""
+
+#: ../../install.rst:561
+msgid ""
+"When finished, click :guilabel:`Next` to move to the screen shown in "
+":numref:`Figure %s <install12>`."
+msgstr ""
+
+#: ../../install.rst:632
+msgid ""
+"Once :guilabel:`Yes` is selected to start the installation, a progress "
+"screen, seen in :numref:`Figure %s <install13>`, provides a progress bar and"
+" messages so the user can watch the installation's progress."
+msgstr ""
+
+#: ../../install.rst:652
+msgid ""
+"The screen shown in :numref:`Figure %s <install14>` appears once the "
+"installation is complete."
+msgstr ""
+
+#: ../../install.rst:662
+msgid ""
+"Click :guilabel:`Finish` to complete the |trueos| installation. It will "
+"return to the :numref:`Figure %s: TrueOS® Installer Boot Menu <install15>`. "
+"To manually configure the system before booting into it, select "
+":guilabel:`utility` to open a *root* shell. Otherwise, select "
+":guilabel:`reboot` to reboot into the new installation. Wait until this menu"
+" exits before removing the installation media."
+msgstr ""
+
+#~ msgid ""
+#~ "As the system boots it will display the menu shown in :numref:`Figure %s "
+#~ "<install1b>`. Typically, press :kbd:`Enter` or wait for this menu to go by "
+#~ "and the system will continue to boot."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Next, the :guilabel:`TrueOS® Installation Menu`, shown in :numref:`Figure %s"
+#~ " <install1d>`, will be displayed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first graphical installer screen, seen in :numref:`Figure %s "
+#~ "<install2b>`, indicates the installer successfully loaded and is ready to "
+#~ "present its options."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :guilabel:`System Selection` screen installs a graphical desktop or a "
+#~ "console-based server operating system, as seen in :numref:`Figure %s "
+#~ "<install3b>`. It also can be used for :ref:`Restoring the Operating System`."
+#~ " This chapter concentrates on a desktop installation. Refer to :ref:`Install"
+#~ " a Server` for instructions on installing a command-line only server."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :guilabel:`Disk Selection\" screen`, seen in :numref:`Figure %s "
+#~ "<install5b>`, summarizes the default disk configuration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To select the disk or partition to install |trueos|, click "
+#~ ":guilabel:`Customize` to start the |trueos| Disk Wizard, shown in "
+#~ ":numref:`Figure %s <install6b>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select :guilabel:`Basic` and the wizard will display the screen shown in "
+#~ ":numref:`Figure %s <install7b>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After selecting advanced mode, the wizard will display the screen shown in "
+#~ ":numref:`Figure %s <install8c>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**RAIDZ:** ZFS software solution equivalent to RAID5 as it allows one disk "
+#~ "to fail without losing data. Requires a minimum of 3 disks."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In :guilabel:`Advanced Mode`, the disk setup wizard allows configuring the "
+#~ "ZFS layout. The initial ZFS configuration screen is seen in :numref:`Figure "
+#~ "%s <install9b>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When finished, click :guilabel:`Next` to see the screen shown in "
+#~ ":numref:`Figure %s <install10b>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS Overview` to "
+#~ "determine if the system would benefit from any of these devices before "
+#~ "adding them in this screen. When finished, click :guilabel:`Next` to see the"
+#~ " screen shown in :numref:`Figure %s <install11b>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When finished, click :guilabel:`Next` to move to the screen shown in "
+#~ ":numref:`Figure %s <install12b>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once :guilabel:`Yes` is selected to start the installation, a progress "
+#~ "screen, seen in :numref:`Figure %s <install13b>`, provides a progress bar "
+#~ "and messages so the user can watch the installation's progress."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The screen shown in :numref:`Figure %s <install14a>` appears once the "
+#~ "installation is complete."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click :guilabel:`Finish` to complete the |trueos| installation. It will "
+#~ "return to the :numref:`Figure %s: TrueOS® Installer Boot Menu <install1d>`. "
+#~ "To manually configure the system before booting into it, select "
+#~ ":guilabel:`utility` to open a *root* shell. Otherwise, select "
+#~ ":guilabel:`reboot` to reboot into the new installation. Wait until this menu"
+#~ " exits before removing the installation media."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "If the system contains multiple drives to be used to create a ZFS mirror or "

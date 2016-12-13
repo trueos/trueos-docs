@@ -953,23 +953,6 @@ msgid ""
 "*installMode=zfsrestore*"
 msgstr ""
 
-#: ../../advanced.rst:40
-msgid ""
-"If an **ncurses** menu installation is preferred over a full graphical "
-"installer, start the installation as usual and select :guilabel:`install` "
-"from :numref:`Figure %s <install1d2>`."
-msgstr ""
-
-#: ../../advanced.rst:48 ../../advanced.rst:506
-msgid ": TrueOS® Installation Menu"
-msgstr ""
-
-#: ../../advanced.rst:50
-msgid ""
-"The next screen will prompt to install a desktop or a server, as seen in "
-":numref:`Figure %s <text2a>`."
-msgstr ""
-
 #: ../../advanced.rst:59
 msgid ""
 "After choosing to install a desktop, the |lumina| desktop will be installed "
@@ -986,41 +969,10 @@ msgid ""
 "need to be entered."
 msgstr ""
 
-#: ../../advanced.rst:70
-msgid ""
-"After making a selection and pressing :kbd:`Enter`, the next screen will "
-"display the available disks on the system. In the example shown in "
-":numref:`Figure %s <text3a>`, one disk is available."
-msgstr ""
-
-#: ../../advanced.rst:80
-msgid ""
-"Select the disk to install into and press :kbd:`Enter`. In the next screen, "
-"the installer will display all available primary or GPT partitions. In the "
-"example shown in :numref:`Figure %s <text4a>`, there is only one partition "
-"and the installer has selected the default of installing to the entire disk."
-msgstr ""
-
 #: ../../advanced.rst:86
 msgid ""
 "If the system has multiple partitions and disks, be careful in selecting the"
 " disk and partition targets for installation."
-msgstr ""
-
-#: ../../advanced.rst:95
-msgid ""
-"The next screen, shown in :numref:`Figure %s <text5a>`, is used to select "
-"the type of disk format. If the installation disk or partition is larger "
-"than 2 TB, :guilabel:`GPT` **must** be selected. Otherwise, selecting "
-":guilabel:`GPT` should work for most modern hardware. When installing on "
-"older hardware, or if the newly installed system will not boot after "
-"selecting :guilabel:`GPT`, select :guilabel:`MBR` instead."
-msgstr ""
-
-#: ../../advanced.rst:108
-msgid ""
-"The next screen, shown in :numref:`Figure %s <text6a>`, is used to select "
-"the boot manager."
 msgstr ""
 
 #: ../../advanced.rst:117
@@ -1032,10 +984,6 @@ msgid ""
 "does not find the other operating systems. If :guilabel:`none` is selected, "
 "no boot manager will be installed and boot environments will not be "
 "available."
-msgstr ""
-
-#: ../../advanced.rst:125
-msgid "The next screen is shown in :numref:`Figure %s <text7a>`."
 msgstr ""
 
 #: ../../advanced.rst:131
@@ -1066,13 +1014,6 @@ msgid ""
 "keyboard. This is a limitation in FreeBSD as the keymap is not loaded until "
 "after the passphrase is entered, meaning such a passphrase will render the "
 "encrypted disks inaccessible."
-msgstr ""
-
-#: ../../advanced.rst:161
-msgid ""
-"If server installation is chosen in the screen shown in :ref:`Select Desktop"
-" or Server <text2a>`, the installer will provide more menus. These will "
-"prompt for additional information:"
 msgstr ""
 
 #: ../../advanced.rst:165
@@ -1123,12 +1064,6 @@ msgstr ""
 msgid "Whether or not to enable SSH access to the server."
 msgstr ""
 
-#: ../../advanced.rst:191
-msgid ""
-"The next screen, for both a desktop and server installation, is shown in "
-":numref:`Figure %s <text9a>`."
-msgstr ""
-
 #: ../../advanced.rst:198
 msgid ": Review Installation Options"
 msgstr ""
@@ -1162,20 +1097,8 @@ msgid ""
 " with a disabled sound card and no wireless card."
 msgstr ""
 
-#: ../../advanced.rst:215
-msgid ""
-"**quit:** Select this option to return to the screen shown in :ref:`TrueOS® "
-"Installation Menu <install1d2>`."
-msgstr ""
-
 #: ../../advanced.rst:222
 msgid ": Hardware Summary"
-msgstr ""
-
-#: ../../advanced.rst:224
-msgid ""
-"If select :guilabel:`edit`, the menu shown in :numref:`Figure %s <text11a>` "
-"will open."
 msgstr ""
 
 #: ../../advanced.rst:231
@@ -1184,14 +1107,6 @@ msgstr ""
 
 #: ../../advanced.rst:255
 msgid ": ZFS Layout"
-msgstr ""
-
-#: ../../advanced.rst:257
-msgid ""
-"To edit the properties of an existing dataset, highlight the dataset's name "
-"and press :kbd:`Enter`. This will show the list of available ZFS properties "
-"for that dataset, as seen in the example shown in :numref:`Figure %s "
-"<text13a>`:"
 msgstr ""
 
 #: ../../advanced.rst:266
@@ -1241,23 +1156,10 @@ msgid ""
 "Installation`."
 msgstr ""
 
-#: ../../advanced.rst:296
-msgid ""
-"**back:** Select this option to return to the menu shown in :ref:`Review "
-"Installation Options <text9a>`."
-msgstr ""
-
 #: ../../advanced.rst:305
 msgid ""
 "The text installer contains some handy tools for troubleshooting and fixing "
 "an existing |trueos| installation."
-msgstr ""
-
-#: ../../advanced.rst:308
-msgid ""
-"Choose the :guilabel:`utility` option in the main menu of the graphical or "
-"text based installer shown in :ref:`TrueOS® Installation Menu <install1d>` "
-"to open the screen shown in :numref:`Figure %s <util1a>`."
 msgstr ""
 
 #: ../../advanced.rst:317
@@ -1266,30 +1168,6 @@ msgstr ""
 
 #: ../../advanced.rst:319
 msgid "This screen provides several options:"
-msgstr ""
-
-#: ../../advanced.rst:321
-msgid ""
-"**shell:** This option is useful when troubleshooting a |trueos| system that"
-" no longer boots. It will open a shell with administrative access, including"
-" the base FreeBSD utilities. Advanced users can use this shell to identify a"
-" problem, create a backup of or copy essential files to another system, or "
-"edit configuration files with an editor such as `ee "
-"<https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or :command:`vi`. When "
-"finished using the shell, type :command:`exit` to return to the screen shown"
-" in :ref:`System Utilities Menu <util1a>`."
-msgstr ""
-
-#: ../../advanced.rst:331
-msgid ""
-"**zimport** This option will display the names of available ZFS pools. Type "
-"the name of an available pool and it will import the pool then display the "
-"available boot environments (BEs). Type the name of the desired BE and this "
-"option will mount the BE then offer to open a chroot shell so its contents "
-"can be viewed and manipulated as needed in order to perform maintenance on "
-"the boot environment. When finished, type :command:`exit` to leave the boot "
-"environment and return to the screen shown in :ref:`System Utilities Menu "
-"<util1a>`."
 msgstr ""
 
 #: ../../advanced.rst:340
@@ -1304,12 +1182,6 @@ msgstr ""
 msgid ""
 "The :command:`fixgrub` action will fail on systems using the default BSD "
 "boot loader."
-msgstr ""
-
-#: ../../advanced.rst:348
-msgid ""
-"**exit:** This option will return to the main :ref:`TrueOS® Installation "
-"Menu <install1d>`."
 msgstr ""
 
 #: ../../advanced.rst:357
@@ -1348,19 +1220,6 @@ msgid ""
 "TrueOS® CD` or :ref:`Using the Text Installer`."
 msgstr ""
 
-#: ../../advanced.rst:382
-msgid ""
-"Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`, then "
-"click :guilabel:`Next` again to see the screen shown in :numref:`Figure %s "
-"<server2a>`."
-msgstr ""
-
-#: ../../advanced.rst:392
-msgid ""
-"Input and confirm the root password then click :guilabel:`Next` to proceed "
-"to the screen shown in :numref:`Figure %s <server3a>`."
-msgstr ""
-
 #: ../../advanced.rst:401
 msgid ""
 "For security reasons, do not login as the *root* user. The wizard requires "
@@ -1395,20 +1254,6 @@ msgid ""
 "**sh**, or **bash** login shell."
 msgstr ""
 
-#: ../../advanced.rst:421
-msgid ""
-"When finished, click :guilabel:`Next` to proceed to the screen shown in "
-":numref:`Figure %s <server4a>`."
-msgstr ""
-
-#: ../../advanced.rst:430
-msgid ""
-"Input the system's hostname. If using :command:`ssh` to connect to the "
-"system, check :guilabel:`Enable remote SSH login`. Click :guilabel:`Next` to"
-" proceed to the network configuration screen shown in :numref:`Figure %s "
-"<server5a>`."
-msgstr ""
-
 #: ../../advanced.rst:441
 msgid ""
 "Use the :guilabel:`Network Interface` drop-down menu to choose the desired "
@@ -1429,14 +1274,6 @@ msgstr ""
 #: ../../advanced.rst:450
 msgid ""
 "**IPv6-SLAAC:** Will configure every active interface for DHCP and for IPv6."
-msgstr ""
-
-#: ../../advanced.rst:453
-msgid ""
-"Alternately, use the drop-down menu to select the device name for the "
-"interface and manually configure and input the IPv4 and/or IPv6 addressing "
-"information. When finished, click :guilabel:`Next` to access the screen "
-"shown in :numref:`Figure %s <server6a>`."
 msgstr ""
 
 #: ../../advanced.rst:464
@@ -1480,20 +1317,6 @@ msgid ""
 "quick to download. The |trueos| CD can also be used to repair an existing "
 "installation, using the instructions in :ref:`Using the System Utilities "
 "Menu`."
-msgstr ""
-
-#: ../../advanced.rst:497
-msgid ""
-"To start a server installation using the |trueos| ISO, insert the prepared "
-"boot media. Once the system has finished booting into the installer, it will"
-" display the installation menu shown in :numref:`Figure %s <cd2a>`."
-msgstr ""
-
-#: ../../advanced.rst:508
-msgid ""
-"To begin the installation, press :kbd:`Enter`. The server installation will "
-"then display the screen shown in :ref:`Select Installation Disk <text3a>` "
-"and proceed as described in :ref:`Using the Text Installer`."
 msgstr ""
 
 #: ../../advanced.rst:520
@@ -1844,10 +1667,6 @@ msgid ""
 "sysinstall/examples/` contains more complete descriptions for each variable."
 msgstr ""
 
-#: ../../advanced.rst:0
-msgid "Customizing a |trueos| Installation"
-msgstr ""
-
 #: ../../advanced.rst:133
 msgid ""
 "This screen provides the option to encrypt the selected disk(s) with the "
@@ -1860,15 +1679,6 @@ msgid ""
 "not know the passphrase."
 msgstr ""
 
-#: ../../advanced.rst:235
-msgid ""
-"**disk:** Used to change the disk to install into. Selecting this option "
-"will re-open the screens shown in :ref:`Select Installation Disk <text3a>` "
-"through :ref:`Full Disk Encryption <text7a>`, and then return to this menu. "
-"If you want to install into a mirrored or RAIDZ pool, select one of the "
-"targets using this option, and then select **pool** (see below)."
-msgstr ""
-
 #: ../../advanced.rst:242
 msgid ""
 "**pool:** Select this option if the system contains multiple disks and "
@@ -1877,11 +1687,369 @@ msgid ""
 "select the desired layout."
 msgstr ""
 
+#: ../../advanced.rst:40
+msgid ""
+"If an **ncurses** menu installation is preferred over a full graphical "
+"installer, start the installation as usual and select :guilabel:`install` "
+"from :ref:`install15`."
+msgstr ""
+
+#: ../../advanced.rst:50
+msgid ""
+"The next screen will prompt to install a desktop or a server, as seen in "
+":numref:`Figure %s <text2>`."
+msgstr ""
+
+#: ../../advanced.rst:70
+msgid ""
+"After making a selection and pressing :kbd:`Enter`, the next screen will "
+"display the available disks on the system. In the example shown in "
+":numref:`Figure %s <text3>`, one disk is available."
+msgstr ""
+
+#: ../../advanced.rst:80
+msgid ""
+"Select the disk to install into and press :kbd:`Enter`. In the next screen, "
+"the installer will display all available primary or GPT partitions. In the "
+"example shown in :numref:`Figure %s <text4>`, there is only one partition "
+"and the installer has selected the default of installing to the entire disk."
+msgstr ""
+
+#: ../../advanced.rst:95
+msgid ""
+"The next screen, shown in :numref:`Figure %s <text5>`, is used to select the"
+" type of disk format. If the installation disk or partition is larger than 2"
+" TB, :guilabel:`GPT` **must** be selected. Otherwise, selecting "
+":guilabel:`GPT` should work for most modern hardware. When installing on "
+"older hardware, or if the newly installed system will not boot after "
+"selecting :guilabel:`GPT`, select :guilabel:`MBR` instead."
+msgstr ""
+
+#: ../../advanced.rst:108
+msgid ""
+"The next screen, shown in :numref:`Figure %s <text6>`, is used to select the"
+" boot manager."
+msgstr ""
+
+#: ../../advanced.rst:125
+msgid "The next screen is shown in :numref:`Figure %s <text7>`."
+msgstr ""
+
+#: ../../advanced.rst:161
+msgid ""
+"If server installation is chosen in the screen shown in :ref:`Select Desktop"
+" or Server <text2>`, the installer will provide more menus. These will "
+"prompt for additional information:"
+msgstr ""
+
+#: ../../advanced.rst:191
+msgid ""
+"The next screen, for both a desktop and server installation, is shown in "
+":numref:`Figure %s <text9>`."
+msgstr ""
+
+#: ../../advanced.rst:215
+msgid ""
+"**quit:** Select this option to return to the screen shown in :ref:`TrueOS® "
+"Installation Menu <install1>`."
+msgstr ""
+
+#: ../../advanced.rst:224
+msgid ""
+"If select :guilabel:`edit`, the menu shown in :numref:`Figure %s <text11>` "
+"will open."
+msgstr ""
+
+#: ../../advanced.rst:235
+msgid ""
+"**disk:** Used to change the disk to install into. Selecting this option "
+"will re-open the screens shown in :ref:`Select Installation Disk <text3>` "
+"through :ref:`Full Disk Encryption <text7>`, and then return to this menu. "
+"If you want to install into a mirrored or RAIDZ pool, select one of the "
+"targets using this option, and then select **pool** (see below)."
+msgstr ""
+
 #: ../../advanced.rst:247
 msgid ""
 "**datasets:** Used to modify the default ZFS dataset layout. Selecting this "
-"option will open the screen shown in :numref:`Figure %s <text12a>`."
+"option will open the screen shown in :numref:`Figure %s <text12>`."
 msgstr ""
+
+#: ../../advanced.rst:257
+msgid ""
+"To edit the properties of an existing dataset, highlight the dataset's name "
+"and press :kbd:`Enter`. This will show the list of available ZFS properties "
+"for that dataset, as seen in the example shown in :numref:`Figure %s "
+"<text13>`:"
+msgstr ""
+
+#: ../../advanced.rst:296
+msgid ""
+"**back:** Select this option to return to the menu shown in :ref:`Review "
+"Installation Options <text9>`."
+msgstr ""
+
+#: ../../advanced.rst:308
+msgid ""
+"Choose the :guilabel:`utility` option in the main menu of the graphical or "
+"text based installer shown in :ref:`TrueOS® Installation Menu <install15>` "
+"to open the screen shown in :numref:`Figure %s <util1>`."
+msgstr ""
+
+#: ../../advanced.rst:321
+msgid ""
+"**shell:** This option is useful when troubleshooting a |trueos| system that"
+" no longer boots. It will open a shell with administrative access, including"
+" the base FreeBSD utilities. Advanced users can use this shell to identify a"
+" problem, create a backup of or copy essential files to another system, or "
+"edit configuration files with an editor such as `ee "
+"<https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or :command:`vi`. When "
+"finished using the shell, type :command:`exit` to return to the screen shown"
+" in :ref:`System Utilities Menu <util1>`."
+msgstr ""
+
+#: ../../advanced.rst:331
+msgid ""
+"**zimport** This option will display the names of available ZFS pools. Type "
+"the name of an available pool and it will import the pool then display the "
+"available boot environments (BEs). Type the name of the desired BE and this "
+"option will mount the BE then offer to open a chroot shell so its contents "
+"can be viewed and manipulated as needed in order to perform maintenance on "
+"the boot environment. When finished, type :command:`exit` to leave the boot "
+"environment and return to the screen shown in :ref:`System Utilities Menu "
+"<util1>`."
+msgstr ""
+
+#: ../../advanced.rst:348
+msgid ""
+"**exit:** This option will return to the main :ref:`TrueOS® Installation "
+"Menu <install1>`."
+msgstr ""
+
+#: ../../advanced.rst:382
+msgid ""
+"Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`, then "
+"click :guilabel:`Next` again to see the screen shown in :numref:`Figure %s "
+"<server2>`."
+msgstr ""
+
+#: ../../advanced.rst:392
+msgid ""
+"Input and confirm the root password then click :guilabel:`Next` to proceed "
+"to the screen shown in :numref:`Figure %s <server3>`."
+msgstr ""
+
+#: ../../advanced.rst:421
+msgid ""
+"When finished, click :guilabel:`Next` to proceed to the screen shown in "
+":numref:`Figure %s <server4>`."
+msgstr ""
+
+#: ../../advanced.rst:430
+msgid ""
+"Input the system's hostname. If using :command:`ssh` to connect to the "
+"system, check :guilabel:`Enable remote SSH login`. Click :guilabel:`Next` to"
+" proceed to the network configuration screen shown in :numref:`Figure %s "
+"<server5>`."
+msgstr ""
+
+#: ../../advanced.rst:453
+msgid ""
+"Alternately, use the drop-down menu to select the device name for the "
+"interface and manually configure and input the IPv4 and/or IPv6 addressing "
+"information. When finished, click :guilabel:`Next` to access the screen "
+"shown in :numref:`Figure %s <server6>`."
+msgstr ""
+
+#: ../../advanced.rst:497
+msgid ""
+"To start a server installation using the |trueos| ISO, insert the prepared "
+"boot media. Once the system has finished booting into the installer, it will"
+" display the installation menu shown in :numref:`Figure %s <cd2>`."
+msgstr ""
+
+#: ../../advanced.rst:506
+msgid ": |trueos| Installation Menu"
+msgstr ""
+
+#: ../../advanced.rst:508
+msgid ""
+"To begin the installation, press :kbd:`Enter`. The server installation will "
+"then display the screen shown in :ref:`Select Installation Disk <text3>` and"
+" proceed as described in :ref:`Using the Text Installer`."
+msgstr ""
+
+#: ../../advanced.rst:0
+msgid ": Customizing a |trueos| Installation"
+msgstr ""
+
+#~ msgid ""
+#~ "If an **ncurses** menu installation is preferred over a full graphical "
+#~ "installer, start the installation as usual and select :guilabel:`install` "
+#~ "from :numref:`Figure %s <install1d2>`."
+#~ msgstr ""
+
+#~ msgid ": TrueOS® Installation Menu"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The next screen will prompt to install a desktop or a server, as seen in "
+#~ ":numref:`Figure %s <text2a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After making a selection and pressing :kbd:`Enter`, the next screen will "
+#~ "display the available disks on the system. In the example shown in "
+#~ ":numref:`Figure %s <text3a>`, one disk is available."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select the disk to install into and press :kbd:`Enter`. In the next screen, "
+#~ "the installer will display all available primary or GPT partitions. In the "
+#~ "example shown in :numref:`Figure %s <text4a>`, there is only one partition "
+#~ "and the installer has selected the default of installing to the entire disk."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The next screen, shown in :numref:`Figure %s <text5a>`, is used to select "
+#~ "the type of disk format. If the installation disk or partition is larger "
+#~ "than 2 TB, :guilabel:`GPT` **must** be selected. Otherwise, selecting "
+#~ ":guilabel:`GPT` should work for most modern hardware. When installing on "
+#~ "older hardware, or if the newly installed system will not boot after "
+#~ "selecting :guilabel:`GPT`, select :guilabel:`MBR` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The next screen, shown in :numref:`Figure %s <text6a>`, is used to select "
+#~ "the boot manager."
+#~ msgstr ""
+
+#~ msgid "The next screen is shown in :numref:`Figure %s <text7a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If server installation is chosen in the screen shown in :ref:`Select Desktop"
+#~ " or Server <text2a>`, the installer will provide more menus. These will "
+#~ "prompt for additional information:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The next screen, for both a desktop and server installation, is shown in "
+#~ ":numref:`Figure %s <text9a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**quit:** Select this option to return to the screen shown in :ref:`TrueOS® "
+#~ "Installation Menu <install1d2>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If select :guilabel:`edit`, the menu shown in :numref:`Figure %s <text11a>` "
+#~ "will open."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To edit the properties of an existing dataset, highlight the dataset's name "
+#~ "and press :kbd:`Enter`. This will show the list of available ZFS properties "
+#~ "for that dataset, as seen in the example shown in :numref:`Figure %s "
+#~ "<text13a>`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**back:** Select this option to return to the menu shown in :ref:`Review "
+#~ "Installation Options <text9a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose the :guilabel:`utility` option in the main menu of the graphical or "
+#~ "text based installer shown in :ref:`TrueOS® Installation Menu <install1d>` "
+#~ "to open the screen shown in :numref:`Figure %s <util1a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**shell:** This option is useful when troubleshooting a |trueos| system that"
+#~ " no longer boots. It will open a shell with administrative access, including"
+#~ " the base FreeBSD utilities. Advanced users can use this shell to identify a"
+#~ " problem, create a backup of or copy essential files to another system, or "
+#~ "edit configuration files with an editor such as `ee "
+#~ "<https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or :command:`vi`. When "
+#~ "finished using the shell, type :command:`exit` to return to the screen shown"
+#~ " in :ref:`System Utilities Menu <util1a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**zimport** This option will display the names of available ZFS pools. Type "
+#~ "the name of an available pool and it will import the pool then display the "
+#~ "available boot environments (BEs). Type the name of the desired BE and this "
+#~ "option will mount the BE then offer to open a chroot shell so its contents "
+#~ "can be viewed and manipulated as needed in order to perform maintenance on "
+#~ "the boot environment. When finished, type :command:`exit` to leave the boot "
+#~ "environment and return to the screen shown in :ref:`System Utilities Menu "
+#~ "<util1a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**exit:** This option will return to the main :ref:`TrueOS® Installation "
+#~ "Menu <install1d>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`, then "
+#~ "click :guilabel:`Next` again to see the screen shown in :numref:`Figure %s "
+#~ "<server2a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Input and confirm the root password then click :guilabel:`Next` to proceed "
+#~ "to the screen shown in :numref:`Figure %s <server3a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When finished, click :guilabel:`Next` to proceed to the screen shown in "
+#~ ":numref:`Figure %s <server4a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Input the system's hostname. If using :command:`ssh` to connect to the "
+#~ "system, check :guilabel:`Enable remote SSH login`. Click :guilabel:`Next` to"
+#~ " proceed to the network configuration screen shown in :numref:`Figure %s "
+#~ "<server5a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Alternately, use the drop-down menu to select the device name for the "
+#~ "interface and manually configure and input the IPv4 and/or IPv6 addressing "
+#~ "information. When finished, click :guilabel:`Next` to access the screen "
+#~ "shown in :numref:`Figure %s <server6a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To start a server installation using the |trueos| ISO, insert the prepared "
+#~ "boot media. Once the system has finished booting into the installer, it will"
+#~ " display the installation menu shown in :numref:`Figure %s <cd2a>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To begin the installation, press :kbd:`Enter`. The server installation will "
+#~ "then display the screen shown in :ref:`Select Installation Disk <text3a>` "
+#~ "and proceed as described in :ref:`Using the Text Installer`."
+#~ msgstr ""
+
+#~ msgid "Customizing a |trueos| Installation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**disk:** Used to change the disk to install into. Selecting this option "
+#~ "will re-open the screens shown in :ref:`Select Installation Disk <text3a>` "
+#~ "through :ref:`Full Disk Encryption <text7a>`, and then return to this menu. "
+#~ "If you want to install into a mirrored or RAIDZ pool, select one of the "
+#~ "targets using this option, and then select **pool** (see below)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**datasets:** Used to modify the default ZFS dataset layout. Selecting this "
+#~ "option will open the screen shown in :numref:`Figure %s <text12a>`."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "**zfs:** Used to modify the default ZFS layout. Selecting this option will "
