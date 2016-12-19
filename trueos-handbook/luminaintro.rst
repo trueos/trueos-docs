@@ -15,10 +15,11 @@ Introduction to |lumina|
 The Lumina Desktop Environment (|lumina| for short) is a lightweight,
 XDG-compliant, BSD-licensed desktop environment focused on streamlining
 work efficiency with minimal system overhead. It is specifically
-designed for |trueos| and FreeBSD, but has also been ported to many other
-BSD and Linux operating systems. It is based on the Qt graphical toolkit
-and the Fluxbox window manager, and uses a small number of X utilities
-for various tasks, such as :command:`numlockx` and :command:`xscreensaver`.
+designed for |trueos| and FreeBSD, but has also been ported to many
+other BSD and Linux operating systems. It is based on the Qt graphical
+toolkit and the Fluxbox window manager, and uses a small number of X
+utilities for various tasks, such as :command:`numlockx` and
+:command:`xscreensaver`.
 
 |lumina|'s features include:
 
@@ -41,14 +42,15 @@ for various tasks, such as :command:`numlockx` and :command:`xscreensaver`.
   desktop as light or heavy as they wish by choosing which plugins to
   have running on their desktop and panels. This plugin-based system is
   similar to Android or other modern operating systems.
-  
+
 * A single, easy-to-use :ref:`Lumina Configuration` utility controls all
   the different configuration options for the desktop in one location.
 
 * Intelligent "favorites" system for creating quick shortcuts to
   applications, files, and directories.
 
-* ZFS file restore functionality through the :ref:`Insight File Manager`.
+* ZFS file restore functionality through the
+  :ref:`Insight File Manager`.
 
 * Multi-monitor support includes the :ref:`Lumina Xconfig` graphical
   utility for adding or removing monitors from the |lumina| session.
@@ -65,8 +67,8 @@ for various tasks, such as :command:`numlockx` and :command:`xscreensaver`.
 
 .. _Install and Start Lumina:
 
-Install and Start Lumina®
-=========================
+Install and Start |lumina|
+==========================
 
 |lumina| is available as a pre-built package for numerous operating
 systems. The `Get Lumina® <http://lumina-desktop.org/get-lumina/>`_
@@ -90,10 +92,10 @@ automatically display |lumina| in the login menu. Simply log out, select
 
 .. note:: When using a system with no graphical login manager, type
           :command:`start-lumina-desktop` to start |lumina|.
-   
+
 The rest of this Handbook describes the Lumina Configuration utility,
-other various utilities built into |lumina|, and |lumina| plugins. Also, the
-handbook shows how to be involved improving |lumina| as well as
+other various utilities built into |lumina|, and |lumina| plugins. Also,
+the handbook shows how to be involved improving |lumina|, as well as
 reproducing the change log for each major release of |lumina|.
 
 .. _Initial Settings:
@@ -107,19 +109,18 @@ configurable, with the numerous options covered in the
 :ref:`Lumina Plugins` section of the handbook.
 
 .. note:: The default desktop appearance can vary if using another
-          distrubution's custom configuration of the |lumina| Desktop
-          Project.
-  
-.. _lumina1e:
+   distrubution's custom configuration of the |lumina| Desktop Project.
+
+.. _lumina1:
 
 .. figure:: images/lumina1e.png
    :scale: 50%
 
    : Lumina Desktop
 
-:numref:`Figure %s <lumina1e>` is a screenshot of Lumina using its
-default settings. The user has clicked the "|lumina|" icon in
-order to open the start menu.
+:numref:`Figure %s <lumina1>` is a screenshot of Lumina using its
+default settings. The user has clicked the "|lumina|" icon in order to
+open the start menu.
 
 The Start Menu provides quick access for user interaction with the
 system. The top frame is a search bar for rapidly finding specific
@@ -132,10 +133,10 @@ start menu is divided into several categories:
 
 * **Favorites:** This element is the largest section of the menu. Click
   an entry to launch that application. Right-click an entry to
-  :guilabel:`Remove from Favorites` or to :guilabel:`Add to Quicklaunch`.
-  In |lumina|, Favorites appear in this section of the start menu and
-  :guilabel:`QuickLaunch` adds a button for the application to the panel
-  next to the start menu button.
+  :guilabel:`Remove from Favorites` or to
+  :guilabel:`Add to Quicklaunch`. In |lumina|, Favorites appear in this
+  section of the start menu and :guilabel:`QuickLaunch` adds a button
+  for the application to the panel next to the :guilabel:`Start Menu`.
 
 * **Browse Files:** Used to browse for files and directories using the
   :ref:`Insight File Manager`. One available action in this file manager
@@ -160,8 +161,8 @@ start menu is divided into several categories:
   :guilabel:`Manage Applications` opens |appcafe|. Click
   :guilabel:`Back` to return to the start menu.
 
-* **Control Panel:** If using |trueos| or an operating system with
-  a control panel, click this entry to open the operating system's
+* **Control Panel:** If using |trueos| or an operating system with a
+  control panel, click this entry to open the operating system's
   control panel.
 
 * **Preferences:** Click this entry to access a number of options:
@@ -192,7 +193,7 @@ start menu is divided into several categories:
       information on fine-tuning the locale settings.
 
     * **Back:** Click to return to the start menu.
-  
+
 * **Leave:** Click this entry to view options to
   :guilabel:`Suspend System` (if supported by the operating system,
   press the system's power button to login and resume operation),
@@ -203,7 +204,7 @@ start menu is divided into several categories:
   :guilabel:`Leave` to lock the system, which will start the screensaver
   and password prompt to resume the session.
 
-.. note:: On a |trueos| system which is applying updates, the shutdown 
+.. note:: On a |trueos| system which is applying updates, the shutdown
    and restart options will be disabled until the updates are complete,
    with a note indicating updates are in progress.
 
@@ -216,7 +217,7 @@ By default, |lumina| provides a panel at the bottom of the screen with a
 system tray at the far right of the panel. This section describes the
 default layout. For instructions on how to configure the panel, refer to
 the :ref:`Interface` section.
-  
+
 When opening windows or applications, a button will be added to the
 section of the panel near the start menu. If the application provides
 an icon, the button will appear with the icon and descriptive text.
@@ -230,14 +231,14 @@ including stick, layer/dock, and set transparency, among other options.
 The system tray is located in the right portion of the panel. Any
 applications that register a tray icon will appear in this area. For
 example, on a |trueos| system, icons will appear for Life Preserver, 
-Mount Tray, and SysAdm™. Refer to :ref:`Interface` for instructions on
+Mount Tray, and |sysadm|. Refer to :ref:`Interface` for instructions on
 modifying which applications appear in the system tray. Click or
 right-click an icon to interact with an application directly. The
 current system time shown by the clock is in the default format for the
-current locale. If you click the clock icon and then click "Time Zone",
-a menu will open where you can select to either "Use System Time" or
-click a country name in order to select a city to change to that city's
-time zone.
+current locale. Click the :guilabel:`clock`, then hover over
+:guilabel:`Time Zone` to open the time zone menu. From here, select
+either :guilabel:`Use System Time` or hover over a country name in order
+to select a city to change to that city's time zone.
 
 .. index:: desktop context menu
 .. _Desktop Context Menu:
@@ -248,13 +249,13 @@ Desktop Context Menu
 Right-clicking the desktop will open a menu of quick shortcuts with the
 title of the menu indicating the name of the current workspace. This
 section describes the default menu items. For instructions on how to
-configure the right-click menu, refer to the
-:ref:`Interface` section of this handbook.
+configure the right-click menu, refer to the :ref:`Interface` section of
+this handbook.
 
 By default, the right-click menu contains the following items:
 
 * **Terminal:** Used to launch a system terminal. The default is
-  :command:`xterm`, but this can be customized.
+  :command:`xterm`, but this is customizable.
 
 * **Browse Files:** Launches the default file manager.
   (:ref:`Insight File Manager` for Lumina)
@@ -267,7 +268,8 @@ By default, the right-click menu contains the following items:
 * **Preferences:** Contains shortcuts to the screensaver preferences,
   desktop utility (:ref:`Lumina Configuration`), display configuration
   (:ref:`Lumina Xconfig`), the operating system's control panel, and
-  |lumina| version information contained within "About |lumina|".
+  |lumina| version information contained within
+  :guilabel:`About Lumina`.
 
 * **Leave:** Opens the system log out window, with options to log out of
   the desktop session, restart the system (if the user has permission),

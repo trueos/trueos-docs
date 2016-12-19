@@ -22,7 +22,7 @@ include:
 * |trueos| pre-configures the BSD-licensed, |lumina| desktop
   environment during a desktop installation. Additional desktop
   environments can be installed and will appear in the login menu,
-  allowing the user to select  which environment to log into.
+  allowing the user to select which environment to log into.
 
 * The |trueos| installer supports configuring ZFS and encryption during
   installation.
@@ -55,7 +55,7 @@ solutions provider `iXsystems <https://www.ixsystems.com/>`_.
 Goals and Features
 ==================
 
-|trueos| provides the following features: 
+|trueos| provides these features:
 
 * **Easy installation:** To install either a graphical desktop or
   command-line server, simply insert the installation media, reboot the
@@ -116,6 +116,14 @@ The following features or enhancements were introduced for |trueos|:
   :guilabel:`Use GRUB bootloader` checkbox has been added to the
   :guilabel:`Customize Disk Selection` screens for users of dual-boot
   systems who prefer to use the GRUB boot loader.
+
+* **Quick boot times with OpenRC:** |trueos| is using
+  `OpenRC <https://github.com/OpenRC/openrc>`_ as part of the init
+  process to start services in parallel. This results in dramatically
+  improved system boot times for |trueos|. OpenRC is also used to
+  improve general service management, in addition to adding the
+  functionality to automatically run when new elements are introduced to
+  the system, such as plugging in an ethernet cable.
 
 * A |trueos| installation installs the |lumina| Desktop. Additional
   window managers can be installed using :ref:`AppCafe®`.
@@ -209,56 +217,56 @@ some graphical file manager utilities.
 
 .. table:: : Filesystem Support on |trueos|
 
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | Filesystem | Native to | Type of non-native support | **Usage notes**                                        |
-   +============+===========+============================+========================================================+
-   | Btrfs      | Linux     | none                       |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | exFAT      | Windows   | none                       | requires a license from Microsoft                      |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | EXT2       | Linux     | r/w support loaded         |                                                        |
-   |            |           | by default                 |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | EXT3       | Linux     | r/w support loaded         | since EXT3 journaling is not supported, you will not   |
-   |            |           | by default                 | be able to mount a filesystem requiring a journal      |
-   |            |           |                            | replay unless you :command:`fsck` it using an          |
-   |            |           |                            | external utility such as                               |
-   |            |           |                            | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | EXT4       | Linux     | r/o support loaded         | EXT3 journaling, extended attributes, and inodes       |
-   |            |           | by default                 | greater than 128 bytes are not supported; EXT3         |
-   |            |           |                            | filesystems converted to EXT4 may have better          |
-   |            |           |                            | performance                                            |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | FAT16      | Windows   | r/w support loaded         |                                                        |
-   |            |           | by default                 |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | FAT32      | Windows   | r/w support loaded         |                                                        |
-   |            |           | by default                 |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | HFS+       | Mac OS X  | none                       | older Mac versions might work with                     |
-   |            |           |                            | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | JFS        | Linux     | none                       |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | NTFS5      | Windows   | full r/w support loaded    |                                                        |
-   |            |           | by default                 |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | NTFS6      | Windows   | r/w support loaded         |                                                        |
-   |            |           | by default                 |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | ReiserFS   | Linux     | r/o support is loaded      |                                                        |
-   |            |           | by default                 |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | UFS2       | FreeBSD   | check if a Linux distro    | changed to r/o support in Mac Lion                     |
-   |            |           | provides ufsutils;         |                                                        |
-   |            |           | r/w support on Mac;        |                                                        |
-   |            |           | UFS Explorer can be        |                                                        |
-   |            |           | used on Windows            |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
-   | ZFS        | |trueos|, |                            |                                                        |
-   |            | FreeBSD   |                            |                                                        |
-   +------------+-----------+----------------------------+--------------------------------------------------------+
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | Filesystem | Native to | Non-native support type | Usage notes                                            |
+   +============+===========+=========================+========================================================+
+   | Btrfs      | Linux     | none                    |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | exFAT      | Windows   | none                    | requires a license from Microsoft                      |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | EXT2       | Linux     | r/w support loaded      |                                                        |
+   |            |           | by default              |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | EXT3       | Linux     | r/w support loaded      | since EXT3 journaling is not supported, you will not   |
+   |            |           | by default              | be able to mount a filesystem requiring a journal      |
+   |            |           |                         | replay unless you :command:`fsck` it using an          |
+   |            |           |                         | external utility such as                               |
+   |            |           |                         | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | EXT4       | Linux     | r/o support loaded      | EXT3 journaling, extended attributes, and inodes       |
+   |            |           | by default              | greater than 128 bytes are not supported; EXT3         |
+   |            |           |                         | filesystems converted to EXT4 may have better          |
+   |            |           |                         | performance                                            |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | FAT16      | Windows   | r/w support loaded      |                                                        |
+   |            |           | by default              |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | FAT32      | Windows   | r/w support loaded      |                                                        |
+   |            |           | by default              |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | HFS+       | Mac OS X  | none                    | older Mac versions might work with                     |
+   |            |           |                         | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | JFS        | Linux     | none                    |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | NTFS5      | Windows   | full r/w support loaded |                                                        |
+   |            |           | by default              |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | NTFS6      | Windows   | r/w support loaded      |                                                        |
+   |            |           | by default              |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | ReiserFS   | Linux     | r/o support is loaded   |                                                        |
+   |            |           | by default              |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | UFS2       | FreeBSD   | check if a Linux distro | changed to r/o support in Mac Lion                     |
+   |            |           | provides ufsutils;      |                                                        |
+   |            |           | r/w support on Mac;     |                                                        |
+   |            |           | UFS Explorer can be     |                                                        |
+   |            |           | used on Windows         |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
+   | ZFS        | |trueos|, |                         |                                                        |
+   |            | FreeBSD   |                         |                                                        |
+   +------------+-----------+-------------------------+--------------------------------------------------------+
 
 .. index:: devices
 

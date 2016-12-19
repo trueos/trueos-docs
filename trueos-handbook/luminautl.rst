@@ -8,7 +8,6 @@
 chapter.
 
 .. index:: archiver
-
 .. _Lumina Archiver:
 
 |lumina| Archiver
@@ -81,9 +80,9 @@ The |lumina| calculator utility is designed to provide a simple and
 intuitive interface paired with advanced functions and features. Open
 the calculator through the *Utilities* category of the application list,
 or by typing :command:`lumina-calculator` in a CLI. The interface is
-seen in :numref:`Figure %s <lcalc1a>`:
+seen in :numref:`Figure %s <lcalc1>`:
 
-.. _lcalc1a:
+.. _lcalc1:
 
 .. figure:: images/lcalc1a.png
    :scale: 100%
@@ -91,7 +90,7 @@ seen in :numref:`Figure %s <lcalc1a>`:
    : |lumina| Calculator
 
 The calculator is configured to use a numpad, if one is available.
-Enter the values and an operation, and the calculator will display the
+Enter the values and an operation, and the calculator displays the
 answer in the upper window. Select an equation displayed in the upper
 window to paste it in the entry field. On the right side of the output
 display are two icons. Press the :guilabel:`Paper with red circle` to
@@ -105,7 +104,7 @@ in :numref:`Figure %s <lcalc2>`.
 
 .. figure:: images/lcalc2.png
    :scale: 100%
-   
+
    : |lumina| Calculator Advanced Operations
 
 These advanced operations can be selected from the drop down menu, or
@@ -153,14 +152,14 @@ typed manually. The full list of available operations is seen in
    +---------------------+--------+
    | Hyperbolic Tangent  | tanh(  |
    +---------------------+--------+
-   
+
 .. index:: file manager
 .. _Insight File Manager:
 
 Insight File Manager
 ====================
 
-The Insight file manager, shown in :numref:`Figure %s <lumina10b>`,
+The Insight file manager, shown in :numref:`Figure %s <lumina10>`,
 allows the user to easily browse and modify files on the local system on
 a per-directory basis. To open Insight, click the start menu and select
 :guilabel:`Browse Files`, right-click the desktop and select
@@ -171,7 +170,7 @@ a per-directory basis. To open Insight, click the start menu and select
    Insight. Open a new window of Insight with :kbd:`Ctrl + N` from
    within Insight.
 
-.. _lumina10b:
+.. _lumina10:
 
 .. figure:: images/lumina10b.png
    :scale: 100%
@@ -183,24 +182,24 @@ Insight:
 
 * **File:** Contains basic options for manipulating Insight, seen here
   in :numref:`Table %s <insightfile>`.
-  
-  .. _insightfile:
-  
-  .. table:: : Insight Manager "File" Options
 
-     +------------------+--------------+-----------------------------------+
-     | **Name**         | **Shortcut** | **Description**                   |
-     +==================+==============+===================================+
-     | New Window       | Ctrl + N     | Creates a new instance of Insight |
-     +------------------+--------------+-----------------------------------+
-     | New Tab          | Ctrl + T     | Opens a new tab in Insight        |
-     +------------------+--------------+-----------------------------------+
-     | Search Directory | Ctrl + F     | Opens **lumina-search**           |
-     +------------------+--------------+-----------------------------------+
-     | Close Tab        | Ctrl + W     | Removes an open tab               |
-     +------------------+--------------+-----------------------------------+
-     | Exit             | Ctrl + Q     | Closes Insight                    |
-     +------------------+--------------+-----------------------------------+
+  .. _insightfile:
+
+  .. table:: : Insight Manager *File* Options
+
+     +------------------+----------+-----------------------------------+
+     | Name             | Shortcut | Description                       |
+     +==================+==========+===================================+
+     | New Window       | Ctrl + N | Creates a new instance of Insight |
+     +------------------+----------+-----------------------------------+
+     | New Tab          | Ctrl + T | Opens a new tab in Insight        |
+     +------------------+----------+-----------------------------------+
+     | Search Directory | Ctrl + F | Opens :ref:`Lumina Search`        |
+     +------------------+----------+-----------------------------------+
+     | Close Tab        | Ctrl + W | Removes an open tab               |
+     +------------------+----------+-----------------------------------+
+     | Exit             | Ctrl + Q | Closes Insight                    |
+     +------------------+----------+-----------------------------------+
 
 * **View:** Presents options to alter what Insight will display to the
   user. :numref:`Table %s <insightview>` shows the current options in
@@ -210,20 +209,20 @@ Insight:
   
   .. table:: : Insight Manager "View" Options
 
-     +-------------+--------------+-----------------------------------------+
-     | **Name**    | **Shortcut** | **Description**                         |
-     +=============+==============+=========================================+
-     | Refresh     | F5           | Reloads the current location            |
-     +-------------+--------------+-----------------------------------------+
-     | Show Hidden | None         | Insight will display all files marked   |
-     | Files       |              | *hidden*                                |
-     +-------------+--------------+-----------------------------------------+
-     | View Mode   | None         | Basic: Displays only the names of files |
-     |             |              | an directories.                         |
-     |             |              | Advanced: Displays Name, Size, Type,    |
-     |             |              | Date Modified, and Date Created for     |
-     |             |              | each file or directory.                 |
-     +-------------+--------------+-----------------------------------------+
+     +-------------+----------+-----------------------------------------+
+     | Name        | Shortcut | Description                             |
+     +=============+==========+=========================================+
+     | Refresh     | F5       | Reloads the current location            |
+     +-------------+----------+-----------------------------------------+
+     | Show Hidden | None     | Insight will display all files marked   |
+     | Files       |          | *hidden*                                |
+     +-------------+----------+-----------------------------------------+
+     | View Mode   | None     | Basic: Displays only the names of files |
+     |             |          | an directories.                         |
+     |             |          | Advanced: Displays Name, Size, Type,    |
+     |             |          | Date Modified, and Date Created for     |
+     |             |          | each file or directory.                 |
+     +-------------+----------+-----------------------------------------+
 
 * **Bookmarks:** The :guilabel:`Bookmarks` not only gives options to
   add and manipulate internal links for quick navigation with Insight,
@@ -234,18 +233,18 @@ Insight:
   
   .. table:: : Insight Manager "Bookmark" Options
 
-     +------------------+--------------+--------------------------+
-     | **Name**         | **Shortcut** | **Description**          |
-     +==================+==============+==========================+
-     | Manage Bookmarks | None         | Allows modification      |
-     |                  |              | or removal of bookmarks  |
-     +------------------+--------------+--------------------------+
-     | Add Bookmark     | Ctrl + D     | Creates new bookmark of  |
-     |                  |              | current location         |
-     +------------------+--------------+--------------------------+
-     | Bookmark Display | None         | Populates with bookmarks |
-     |                  |              | as they are created      |
-     +------------------+--------------+--------------------------+
+     +------------------+----------+--------------------------+
+     | Name             | Shortcut | Description              |
+     +==================+==========+==========================+
+     | Manage Bookmarks | None     | Allows modification      |
+     |                  |          | or removal of bookmarks  |
+     +------------------+----------+--------------------------+
+     | Add Bookmark     | Ctrl + D | Creates new bookmark of  |
+     |                  |          | current location         |
+     +------------------+----------+--------------------------+
+     | Bookmark Display | None     | Populates with bookmarks |
+     |                  |          | as they are created      |
+     +------------------+----------+--------------------------+
 
 * **External Devices:** Any attached devices with storage will appear
   in this menu. Click :guilabel:`Scan for Devices` if an attached device
@@ -274,8 +273,8 @@ From left to right, :numref:`Table %s <insightnav>` describes each icon:
 .. table:: : Insight Manager Navigation bar
 
    +------------+--------------------------------------------------+
-   | **Item**   | **Description**                                  |
-   +============+=====================+============================+
+   | Item       | Description                                      |
+   +============+==================================================+
    | Left Arrow | Go back to previous directory                    |
    +------------+--------------------------------------------------+
    | Up Arrow   | Go to parent directory                           |
@@ -295,9 +294,9 @@ From left to right, :numref:`Table %s <insightnav>` describes each icon:
    +------------+--------------------------------------------------+
 
 Pressing the :guilabel:`Green Plus Columns` button next to the
-navigation field will activate columned browsing, displaying two
-independent instances of the file manager in a side-by-side view, seen
-in :numref:`Figure %s <lumina33>`.
+navigation field activates columned browsing, displaying two independent
+instances of the file manager in a side-by-side view, seen in
+:numref:`Figure %s <lumina33>`.
 
 .. _lumina33:
 
@@ -305,13 +304,13 @@ in :numref:`Figure %s <lumina33>`.
 
    : Insight Columns Display
 
-In columns mode, the active column will have the white background. All
-the menu options and ZFS functions will apply to only the active column.
+In columns mode, the active column has a white background. All the menu
+options and ZFS functions apply to **only** the active column.
 
 The :guilabel:`Horizontal Lines Icon` shows file and directory
 operations, commonly seen in the right click menu when an item is
 selected. The directory operations are always available, and, like the
-name implies, provide options effecting the entire directory.
+name implies, provide options affecting the entire directory.
 :numref:`Table %s <insdirops>` shows each of these options, split into
 the :guilabel:`Create...` and :guilabel:`Open...` categories:
 
@@ -319,29 +318,31 @@ the :guilabel:`Create...` and :guilabel:`Open...` categories:
 
 .. table:: : Insight Manager Directory Operations
 
-   +-------------+--------------+------------------+-----------------------+
-   | **Item**    | **Category** | **Shortcut**     | **Description**       |
-   +=============+==============+==================+=======================+
-   | File        | Create       | Ctrl + Shift + F | Create new file       |
-   +-------------+--------------+------------------+-----------------------+
-   | Directory   | Create       | Ctrl + Shift + N | Create new directory  |
-   +-------------+--------------+------------------+-----------------------+
-   | Application | Create       | Ctrl + G         | Launches wizard to    |
-   | Launcher    |              |                  | create link to        |
-   |             |              |                  | desired application   |
-   +-------------+--------------+------------------+-----------------------+
-   | Terminal    | Open         | F1               | Launches the default  |
-   |             |              |                  | terminal set to the   |
-   |             |              |                  | current directory     |
-   +-------------+--------------+------------------+-----------------------+
-   | Slideshow   | Open         | F6               | Creates and populates |
-   |             |              |                  | a slideshow within a  |
-   |             |              |                  | new Insight tab       |
-   +-------------+--------------+------------------+-----------------------+
-   | Multimedia  | Open         | F7               | Opens the directory   |
-   | Player      |              |                  | with the default      |
-   |             |              |                  | multimedia player     |
-   +-------------+--------------+------------------+-----------------------+
+   +-------------+----------+-----------+-----------------------+
+   | Item        | Category | Shortcut  | Description           |
+   +=============+==========+===========+=======================+
+   | File        | Create   | Ctrl +    | Create new file       |
+   |             |          | Shift + F |                       |
+   +-------------+----------+-----------+-----------------------+
+   | Directory   | Create   | Ctrl +    | Create new directory  |
+   |             |          | Shift + N |                       |
+   +-------------+----------+-----------+-----------------------+
+   | Application | Create   | Ctrl + G  | Launches wizard to    |
+   | Launcher    |          |           | create link to        |
+   |             |          |           | desired application   |
+   +-------------+----------+-----------+-----------------------+
+   | Terminal    | Open     | F1        | Launches the default  |
+   |             |          |           | terminal set to the   |
+   |             |          |           | current directory     |
+   +-------------+----------+-----------+-----------------------+
+   | Slideshow   | Open     | F6        | Creates and populates |
+   |             |          |           | a slideshow within a  |
+   |             |          |           | new Insight tab       |
+   +-------------+----------+-----------+-----------------------+
+   | Multimedia  | Open     | F7        | Opens the directory   |
+   | Player      |          |           | with the default      |
+   |             |          |           | multimedia player     |
+   +-------------+----------+-----------+-----------------------+
 
 Once an item is highlighted in Insight, a number of file operations
 become available, seen in :numref:`Table %s <insightfileops>`:
@@ -351,7 +352,7 @@ become available, seen in :numref:`Table %s <insightfileops>`:
 .. table:: : Insight Manager Operations
 
    +------------+--------------+--------------+-------------------------+
-   | **Item**   | **Category** | **Shortcut** | **Description**         |
+   | Item       | Category     | Shortcut     | Description             |
    +============+==============+==============+=========================+
    | Open       | None         | Double-Click | Open the file or        |
    |            |              |              | directory with the      |
@@ -361,10 +362,10 @@ become available, seen in :numref:`Table %s <insightfileops>`:
    |            |              |              | directory with a        |
    |            |              |              | chosen application      |
    +------------+--------------+--------------+-------------------------+
-   | Cut        | Modify Files | Ctrl + X     | Used with "Paste" to    |
+   | Cut        | Modify Files | Ctrl + X     | Used with *Paste* to    |
    | Selection  |              |              | move a file             |
    +------------+--------------+--------------+-------------------------+
-   | Copy       | Modify Files | Ctrl + C     | Used with "Paste" to    |
+   | Copy       | Modify Files | Ctrl + C     | Used with *Paste* to    |
    | Selection  |              |              | create an exact         |
    |            |              |              | duplicate of the        |
    |            |              |              | selected file           |
@@ -382,13 +383,13 @@ become available, seen in :numref:`Table %s <insightfileops>`:
    |            |              |              | information of the      |
    |            |              |              | selection               |
    +------------+--------------+--------------+-------------------------+
-   | Paste      | None         | Ctrl + V     | Used with "Cut" or      |
-   |            |              |              | "Copy" to move or clone |
+   | Paste      | None         | Ctrl + V     | Used with *Cut* or      |
+   |            |              |              | *Copy* to move or clone |
    |            |              |              | files and directories   |
    +------------+--------------+--------------+-------------------------+
 
 The final element to the upper Insight menus, if configured, is the ZFS
-snapshot bar, seen as the long blue line in :ref:`Insight <lumina10b>`.
+snapshot bar, seen as the long blue line in :ref:`Insight <lumina10>`.
 If the system is formatted with ZFS and snapshots of the current
 directory are available, this bar allows the user to view the current
 directory from previous snapshots. In other words, the user can see past
@@ -414,15 +415,14 @@ object or other relevant information.
 |lumina| File Information
 =========================
 
-The :command:`lumina-fileinfo` utility can be used to open a graphical
+The :command:`lumina-fileinfo` utility is used to open a graphical
 window summarizing the size, permissions and ownership, creation time,
 and last modification time of the specified file or directory. In the
-example shown in in :numref:`Figure %s <file1a>`, the user has typed
-:command:`lumina-fileinfo Downloads` from a terminal
-window to view the file information of their :file:`~/Downloads`
-directory.
+example shown in in :numref:`Figure %s <file1>`, the user has typed
+:command:`lumina-fileinfo Downloads` from a terminal window to view
+the file information of their :file:`~/Downloads` directory.
 
-.. _file1a:
+.. _file1:
 
 .. figure:: images/file1a.png
    :scale: 100%  
@@ -438,12 +438,12 @@ directory.
 This utility provides information about the installed version of
 |lumina|, as well as the license, acknowledgements, and project links.
 To launch this utility, right-click the desktop and select
-:menuselection:`Preferences --> About Lumina`, click the start menu then
-the question mark icon in :guilabel:`Preferences`, or type
-:command:`lumina-info` in a terminal window. An example is shown in
-:numref:`Figure %s <about1c>`.
+:menuselection:`Preferences --> About Lumina`, click
+:menuselection:`Start Menu --> Question Mark icon` in
+:guilabel:`Preferences`, or type :command:`lumina-info` in a terminal
+window. An example is shown in :numref:`Figure %s <about1>`.
 
-.. _about1c:
+.. _about1:
 
 .. figure:: images/about1c.png
    :scale: 100%
@@ -480,7 +480,7 @@ The :guilabel:`License` tab contains the license text for |lumina|.
 |lumina| is licensed under a
 `3-clause BSD license <https://github.com/trueos/lumina/blob/master/LICENSE>`_.
 
-The :guilabel:`Acknowledgements` tab contains the following:
+The :guilabel:`Acknowledgements` tab contains a few elements:
 
 * **Project Lead:** The name of the Project's lead developer. Click the
   name to open his or her profile on GitHub in the default web browser.
@@ -503,20 +503,20 @@ specified file or URL. If there is no default application registered for
 the input type, a small dialog will prompt the user to select which
 application to use, and optionally set it as the default application for
 this file type. As seen in the example shown in
-:numref:`Figure %s <lumina11b>`, this dialog organizes the available
+:numref:`Figure %s <lumina11>`, this dialog organizes the available
 applications into three types:
 
-.. _lumina11b:
+.. _lumina11:
 
 .. figure:: images/lumina11b.png
    :scale: 100%
 
    : |lumina| Open
 
-* **Preferred:** These applications have registered their Mime type with
-  the system and can open that type of file. Also included are any
-  applications that have been used to open this type of file before as
-  it keeps track of the last three applications used for that file type.
+* **Preferred:** These applications register their Mime type with the
+  system and can open that type of file. Also included are any
+  applications used to open this type of file before, as it keeps track
+  of the last three applications used for that file type.
 
 * **Available:** Displays all the applications installed on the system,
   organized by category and name.
@@ -525,8 +525,8 @@ applications into three types:
   the application to use. A search button is also available for the
   user to graphically search the system for the binary. Whenever text
   is entered, a check is performed to determine if it is a valid
-  binary and the icon will change between a :guilabel:`green checkmark`
-  or a :guilabel:`red X` as appropriate.
+  binary, changing the icon to a :guilabel:`green checkmark` or
+  :guilabel:`red X` as appropriate.
 
 .. index:: screenshot
 .. _Lumina Screenshot:
@@ -544,10 +544,10 @@ right-click the desktop and select
 :kbd:`Print Screen`.
 
 On the :guilabel:`New Screenshot` tab, seen here in
-:numref:`Figure %s <lumina25a>`, options are available to fine tune the
+:numref:`Figure %s <lumina25>`, options are available to fine tune the
 screenshot:
 
-.. _lumina25a:
+.. _lumina25:
 
 .. figure:: images/lumina25a.png
    :scale: 100%
@@ -577,10 +577,10 @@ Screenshot, pressing :kbd:`Ctrl+N`, or selecting
 :menuselection:`File --> Take Screenshot`.
 
 After capturing a screenshot, the :guilabel:`View/Edit` tab, seen here
-in :numref:`Figure %s <lumina9b>`, provides additional options for
+in :numref:`Figure %s <lumina9>`, provides additional options for
 manipulating the screenshot:
 
-.. _lumina9b:
+.. _lumina9:
 
 .. figure:: images/lumina9b.png
    :scale: 100%
@@ -624,9 +624,9 @@ search term starts with a dot (**.**).
 To start this utility, type :command:`lumina-search`, press
 :kbd:`Alt + F2`, or go to the start menu and press
 :menuselection:`Browse Applications --> Utility --> Lumina Search`.
-:numref:`Figure %s <lumina13b>` shows a screenshot of this utility.
+:numref:`Figure %s <lumina13>` shows a screenshot of this utility.
 
-.. _lumina13b:
+.. _lumina13:
 
 .. figure:: images/lumina13b.png
    :scale: 100%
@@ -634,9 +634,10 @@ To start this utility, type :command:`lumina-search`, press
    : Search for Applications
 
 To open an application, begin to type its name into the search field
-(selected by default). The box below the selected :guilabel:`Applications`
-button will display any matching application names. Select the desired
-application and click :guilabel:`Launch Item` to open it.
+(selected by default). The box below the selected
+:guilabel:`Applications` button displays any matching application names.
+To open an application, select the desired application and click
+:guilabel:`Launch Item`.
 
 Click :guilabel:`Files or Directories` to change the screen slightly,
 as seen in :numref:`Figure %s <lumina26>`.
@@ -653,13 +654,12 @@ user's home directory, as indicated by the :guilabel:`Search: ~` at the
 bottom of the screen. :guilabel:`Smart: Off` indicates every
 subdirectory is included in the search, with no exlusions. Once
 subdirectories have been added to the exclusion list, :guilabel:`Smart:`
-will switch to :guilabel:`On`, and the excluded subdirectories will be
-shown on the :guilabel:`Search:` section of the menu. To add additional
-search directories or to exclude subdirectories, click the
-:guilabel:`wrench` icon to see the screen shown in
-:numref:`Figure %s <lumina14a>`.
+switches to :guilabel:`On`, and the excluded subdirectories are shown on
+the :guilabel:`Search:` section of the menu. To add more search
+directories or to exclude subdirectories, click the :guilabel:`wrench`
+to see the screen shown in :numref:`Figure %s <lumina14>`.
 
-.. _lumina14a:
+.. _lumina14:
 
 .. figure:: images/lumina14a.png
    :scale: 100%
@@ -696,17 +696,16 @@ shows the editor with no file opened.
 
    : |lumina| Text Edit
 
-Clicking :guilabel:`File` will present options to create **New File**,
-**Open File**, **Close File**, **Save file**, **Save File As**, and
-**Close**. Click :guilabel:`Edit` to open options to **Find** and
-**Replace**, also usable with :kbd:`Ctrl-F` and :kbd:`Ctrl-R`,
-respectively. The :guilabel:`View` tab can be used to alter
-**Syntax Highlighting**, **Line Numbers**, **Wrap Lines**, and
-**Customize Colors**. By default, brackets are highlighted, lines are
-numbered, and words will wrap dynamically with the edge of the window.
-Additionally, selecting :guilabel:`Customize "Colors` gives the option
-to alter all the default text and highlight colors, seen in
-:numref:`Figure %s <lumina32>`.
+Clicking :guilabel:`File` presents options to create *New File*,
+*Open File*, *Close File*, *Save file*, *Save File As*, and *Close*.
+Click :guilabel:`Edit` to open options to *Find* and *Replace*, also
+usable with :kbd:`Ctrl-F` and :kbd:`Ctrl-R`, respectively. The
+:guilabel:`View` tab can be used to alter *Syntax Highlighting*,
+*Line Numbers*, *Wrap Lines*, and *Customize Colors*. By default,
+brackets are highlighted, lines are numbered, and words wrap dynamically
+with the edge of the window. Additionally, selecting
+:guilabel:`Customize Colors` gives the option to alter all the default
+text and highlight colors, as seen in :numref:`Figure %s <lumina32>`.
 
 .. _lumina32:
 
@@ -724,11 +723,12 @@ to alter all the default text and highlight colors, seen in
 The :command:`lumina-xconfig` utility is a graphical front-end to the
 :command:`xrandr` command line utility. It provides the ability to probe
 and manage any number of attached monitors. To start this utility,
-right-click the desktop and select :menuselection:`Preferences --> Display`
-or type :command:`lumina-xconfig` from a terminal window. This will open
-a screen similar to the one shown in :numref:`Figure %s <lumina15a>`.
+right-click the desktop and select
+:menuselection:`Preferences --> Display` or type
+:command:`lumina-xconfig` from a terminal window. This opens a screen
+similar to the one shown in :numref:`Figure %s <lumina15>`.
 
-.. _lumina15a:
+.. _lumina15:
 
 .. figure:: images/lumina15a.png
    :scale: 100%
@@ -737,9 +737,10 @@ a screen similar to the one shown in :numref:`Figure %s <lumina15a>`.
 
 In this example, two display inputs are attached to the system and their
 current screen resolutions are displayed. If the display input supports
-multiple resolutions, they will appear in the :guilabel:`Resolution`
+multiple resolutions, these all appear in the :guilabel:`Resolution`
 drop-down menu to select a different resolution.
 
 If another display input is attached, the :guilabel:`Add Screen` tab is
-activated so the new input's resolution can be configured. Also, the
-user can select whether or not it should be the default input.
+activated in order to configure the new input's resolution.
+Additionally, the user can choose to make the new input the system
+default.

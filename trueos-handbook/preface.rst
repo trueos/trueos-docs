@@ -1,7 +1,7 @@
-.. _Preface:
+.. _Preface and Legal:
 
-Preface
-*******
+Preface and Legal
+*****************
 
 Written by users of the |trueos| operating system.
 
@@ -93,41 +93,6 @@ VMWare® is a registered trademark of VMWare, Inc.
 Windows® is a registered trademark of Microsoft Corporation in the
 United States and other countries.
 
-.. _Typographic Conventions:
-
-Typographic Conventions
-=======================
-
-The |trueos| User Guide uses several typographic conventions, seen here
-in :numref:`Table %s <typconv>`:
-
-.. _typconv:
-
-.. table:: : Text Formatting Examples
-
-   +-------------------------------------+------------------------------------------------+
-   | Item                                | Visual Example                                 |
-   +=====================================+================================================+
-   | Graphical elements: buttons, icons, | Click the :guilabel:`Import CA` button.        |
-   | fields, columns, and boxes.         |                                                |
-   +-------------------------------------+------------------------------------------------+
-   | Menu selections                     | Click :menuselection:`System --> Information`. |
-   +-------------------------------------+------------------------------------------------+
-   | CLI Command name                    | Use :command:`scp`.                            |
-   +-------------------------------------+------------------------------------------------+
-   | A command line example              | :samp:`[tmoore@example] ls /etc`               |
-   +-------------------------------------+------------------------------------------------+
-   | Files, volume and dataset names,    | Locate the :file:`/etc/rc.conf` file.          |
-   | and directories                     |                                                |
-   +-------------------------------------+------------------------------------------------+
-   | Keyboard keys                       | Press the :kbd:`Enter` key.                    |
-   +-------------------------------------+------------------------------------------------+
-   | Important points                    | **This is important.**                         |
-   +-------------------------------------+------------------------------------------------+
-   | Values entered into fields, or      | Enter *127.0.0.1* in the address field.        |
-   | device names                        |                                                |
-   +-------------------------------------+------------------------------------------------+
-
 .. index:: advertising
 .. _Ad policy:
 
@@ -158,3 +123,40 @@ purchased within 24 hours. This is a simple time tracking cookie used to
 ensure the |trueos| project is afforded its commission. To ask questions
 about our Ethical Advertising policy, please contact joshms@trueos.org
 for more information.
+
+.. _Typographic Conventions:
+
+Typographic Conventions
+=======================
+
+The |trueos| User Guide uses several typographic conventions, seen here
+in :numref:`Table %s <typconv>`:
+
+.. _typconv:
+
+.. table:: : Text Formatting Examples
+
+   +-------------------------+------------------------------------------------+
+   | Item                    | Visual Example                                 |
+   +=========================+================================================+
+   | Graphical elements:     | Click the :guilabel:`Import CA` button.        |
+   | buttons, icons, fields, |                                                |
+   | columns and boxes       |                                                |
+   +-------------------------+------------------------------------------------+
+   | Menu selections         | Click :menuselection:`System --> Information`. |
+   +-------------------------+------------------------------------------------+
+   | CLI Command name        | Use :command:`scp`.                            |
+   +-------------------------+------------------------------------------------+
+   | A command line example  | :samp:`[tmoore@example] ls /etc`               |
+   +-------------------------+------------------------------------------------+
+   | Files, volume and       | Locate the :file:`/etc/rc.conf` file.          |
+   | dataset names, and      |                                                |
+   | directories             |                                                |
+   +-------------------------+------------------------------------------------+
+   | Keyboard keys           | Press the :kbd:`Enter` key.                    |
+   +-------------------------+------------------------------------------------+
+   | Important points        | **This is important.**                         |
+   +-------------------------+------------------------------------------------+
+   | Values entered into     | Enter *127.0.0.1* in the address field.        |
+   | fields, or device names |                                                |
+   +-------------------------+------------------------------------------------+

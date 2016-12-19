@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# PC-BSD User Guide documentation build configuration file, created by
+# TrueOS User Guide documentation build configuration file, created by
 # sphinx-quickstart on Wed Jun 17 21:10:17 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -161,20 +161,7 @@ html_theme = 'trueos_style'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-#    "stickysidebar": "true",
-#    "rightsidebar": "false",
-#    "pagewidth" : "60em",
-#    "documentwidth" : "45em",
-#    "sidebarwidth" : "240",
-#    "linkcolor" : "#b90009",
-#    "headerlinkcolor" : "#b90009",
-#    "headbgcolor" : "#fff",
-#    "relbarbgcolor" : "#696969",
-#    "sidebarbgcolor" : "#696969",
-#    "bgcolor" : "#fff"
-#    "headercolor1"
-}
+# html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['themes']
@@ -203,7 +190,7 @@ html_static_path = ['_static']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-#html_extra_path = []
+html_extra_path = ['themes/searchresults.html']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -218,7 +205,7 @@ html_use_smartypants = True
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-#html_additional_pages = {}
+html_additional_pages = {'searchresults' : 'searchresults.html'}
 
 # If false, no module index is generated.
 #html_domain_indices = True
@@ -345,7 +332,7 @@ epub_identifier = 'trueos.org'
 #epub_post_files = []
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
+epub_exclude_files = ['searchresults.html']
 
 # The depth of the table of contents in toc.ncx.
 #epub_tocdepth = 3

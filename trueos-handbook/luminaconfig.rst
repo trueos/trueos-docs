@@ -67,7 +67,7 @@ scheme, icon pack, and mouse cursors.
 
 It is possible to create your own **theme template** or **color scheme**
 by clicking :guilabel:`Edit` next to those options and changing the
-settings as necessary. :numref:`Figure %s <lumina18c>` shows an example
+settings as necessary. :numref:`Figure %s <lumina18>` shows an example
 of clicking :guilabel:`Edit` with the :guilabel:`Glass (System)` theme
 template selected. This action opened the :guilabel:`Theme Editor` and
 the user has clicked the color selector (dropper icon) in the upper
@@ -80,9 +80,7 @@ making your changes, click :guilabel:`Save` to save the theme without
 closing the editor, or click :guilabel:`Apply`, which saves the theme
 and closes the editor.
 
-.. TODO update this screenshot later to incorporate Ken's bugfix.
-
-.. _lumina18c:
+.. _lumina18:
 
 .. figure:: images/lumina18c.png
    :scale: 100%
@@ -95,10 +93,10 @@ installed Qt5 theme engines to any Qt based applications.
 
 .. _appthemes:
 
-.. figure:: images/lumina35.png
+.. figure:: images/lumina35a.png
    :scale: 100%
    
-   : Theme settings, Application Themes tab
+   : Application Themes tab, with :guilabel:`Qt5 Theme Engine` pressed.
 
 Select the :guilabel:`Qt5 Theme Engine` drop down menu to choose between
 the defaults of **None** or **Manual Setting**. Any user installed
@@ -338,7 +336,6 @@ open. If a file is chosen, |lumina| will automatically open it in an
 application that is capable of reading the file type.
 
 .. index:: interface config
-
 .. _Interface:
 
 Interface Configuration
@@ -491,7 +488,6 @@ the top of the screen. The bottom panel incorporates the
 :ref:`Desktop Bar` between two :ref:`Spacer` plugins.
 
 .. index:: user settings
-
 .. _User Settings:
 
 User Settings
@@ -566,12 +562,69 @@ a restart of |lumina|.
           |lumina| Project in translating menu items, see
           :ref:`Interface Translation`.
 
-.. TODO Add section for Input Device settings, once it has been added to
-   UNSTABLE for testing.
+.. index:: user settings, input devices
+.. _Input Device Settings:
+
+Input Device Settings
+---------------------
+
+:guilabel:`Input Device Settings` provides a full array of configuration
+options for each detected input device. :numref:`Figure %s <lumina37>`
+shows options to configure a keyboard, while
+:numref:`Figure %s <lumina38>` shows the available mouse options.
+
+.. _lumina37:
+
+.. figure:: images/lumina37.png
+   :scale: 100%
+
+   : Input device configuration, Keyboard settings
+
+Keyboard settings are generally confined to enable/disable, and are
+spread from the *master* device and any *extension* devices.
+
+.. _lumina38:
+
+.. figure:: images/lumina38.png
+   :scale: 100%
    
-   .. index:: user settings, input devices
-   .. _Input Device Settings
-   
-   Input Device Settings
-   ---------------------
-   
+   : Mouse configuration settings
+
+There are a number of different elements available to configure for a
+basic mouse, seen in :numref:`Table %s <>`. For more in-depth
+descriptions of these options, refer to x.org's article on
+`PointerAcceleration <https://www.x.org/wiki/Development/Documentation/PointerAcceleration/>`_:
+
+.. table:: : Mouse configuration options
+
+   +-----------------------+---------------+----------------------------------------------------+
+   | Option Name           | Default Value | Description                                        |
+   +=======================+===============+====================================================+
+   | Button Labels         | Button Names  | Displays all button names on the device            |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Device Accel Adaptive | 1.00          | Improves mouse control at the pixel level without  |
+   | Deceleration          |               | reducing overall speed                             |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Device Accel Constant | 1.00          | Decelerates the mouse by a factor equal to the     |
+   | Deceleration          |               | chosen number value                                |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Device Accel Profile  | 0             | Different acceleration configurations. "1" is not  |
+   |                       |               | a valid option at this time                        |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Device Accel Velocity | 10.00         | Controls the sensitivity of acceleration. The      |
+   | Scaling               |               | effect is dependent on the chosen profile          |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Device Enabled        | Checked       | Used to activate/deactivate the device             |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Device Node           | Path to Node  | Displays the pathway to the mouse node file        |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Mouse Middle Button   | Checked (if a | Activate/deactivates the middle mouse button       |
+   | Emulation             | middle button |                                                    |
+   |                       | is detected)  |                                                    |
+   +-----------------------+---------------+----------------------------------------------------+
+   | Mouse Middle Button   | 50            | A millisecond value for the driver to wait before  |
+   | Timeout               |               | deciding two buttons were "simultaneously" pressed |
+   +-----------------------+---------------+----------------------------------------------------+
+
+When an incompatible value is set, the entire option line will be
+highlighted in red.

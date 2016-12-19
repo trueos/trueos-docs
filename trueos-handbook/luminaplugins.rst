@@ -60,7 +60,7 @@ Applications
    :scale: 100%
 
    : Applications
-   
+
 This plugin, shown in :numref:`Figure %s <luminamenuplugin2>` adds an
 application menu which can be navigated to open any installed
 application. The Control Panel and Application Management options will
@@ -75,6 +75,7 @@ Custom App
 .. _luminamenuplugin3:
 
 .. figure:: images/luminamenuplugin3.png
+   :scale: 100%
 
    : Custom Application
 
@@ -103,9 +104,9 @@ Opens the user's home directory within the default file manager, seen in
 JSON Menu
 ---------
 
-The JSON Menu plugin gives a more advanced user the flexibility to create
-their own entries into the right-click menu. Selecting the JSON Menu
-plugin immediately brings up the menu configuration window, seen in
+The JSON Menu plugin gives a more advanced user the flexibility to
+create their own entries into the right-click menu. Selecting the JSON
+Menu plugin immediately brings up the menu configuration window, seen in
 :numref:`Figure %s <luminamenuplugin5>`.
 
 .. _luminamenuplugin5:
@@ -117,10 +118,10 @@ plugin immediately brings up the menu configuration window, seen in
 
 This window has three fields: :guilabel:`Visible Name`,
 :guilabel:`Executable`, and :guilabel:`Icon`. :guilabel:`Visible Name`
-will define the name of the right-click menu entry.
-:guilabel:`Executable` is the path to the custom script to be run for
-the entry. :guilabel:`Icon` is optional, but is used to assign a
-specific icon to the custom script.
+defines the name of the right-click menu entry. :guilabel:`Executable`
+is the path to the custom script to be run for the entry.
+:guilabel:`Icon` is optional, but is used to assign a specific icon to
+the custom script.
 
 .. _luminamenuplugin6:
 
@@ -143,8 +144,7 @@ Separator
 A Separator, seen in :numref:`Figure %s <luminamenuplugin1>`, is simply
 a horizontal line which can be used to divide entries in the right-click
 menu. When added to the menu, use the up and down arrows in the plugin
-selection menu to place the Separator plugin between the plugins you
-wish to place a line between.
+selection menu to place the Separator.
 
 .. _Settings:
 
@@ -159,8 +159,8 @@ Preferences
    : Preferences Shortcut
 
 This plugin, seen in :numref:`Figure %s <luminamenuplugin7>`, adds a
-shortcut to the right-click menu which opens a new menu of configuration
-quicklinks.
+shortcut to the right-click menu. This shortcut opens a new menu of
+configuration quicklinks.
 
 .. _Terminal:
 
@@ -191,8 +191,8 @@ Window List
 
 This plugin, seen in :numref:`Figure %s <luminamenuplugin9>`, adds an
 entry to the right-click menu which, when hovered over with the mouse,
-will list all open application windows. This plugin is comparable to a
-task manager plugin for panels.
+lists all open application windows. This plugin is comparable to a task
+manager plugin for panels.
 
 .. index:: desktop plugins
 .. _desktop plugins:
@@ -200,14 +200,15 @@ task manager plugin for panels.
 Desktop Plugins
 ===============
 
-Desktop plugins will add icons or widgets for display on the main screen
-of the |lumina| Desktop Environment. Click on the default start menu in
-the lower left of the main desktop screen, then click
+Desktop plugins adds icons or widgets for display on the main screen of
+the |lumina| Desktop Environment. Click on the default start menu in the
+lower left of the main desktop screen, then click
 :menuselection:`Preferences --> Configure Desktop --> Interface Configuration --> Desktop Icons and Plugins`.
 
 .. _luminadesktoppluginmenu1:
 
 .. figure:: images/luminadesktoppluginmenu1.png
+   :scale: 100%
 
    : Desktop Plugin Menu
 
@@ -262,9 +263,9 @@ Audio Player
    : Audio Player
 
 The Audio Player plugin, seen in
-:numref:`Figure %s <luminadesktopplugin2>`, will play user added lists
+:numref:`Figure %s <luminadesktopplugin2>`, plays user added lists
 of audio files. Pressing the :guilabel:`wrench` in the upper left corner
-will open an options menu to clear or shuffle the playlist.
+opens an options menu to clear or shuffle the playlist.
 
 The green :guilabel:`plus` gives the user options to add files, a
 directory, or URL to the playlist. Toggle :guilabel:`play` in the lower
@@ -305,10 +306,10 @@ Desktop Icons View
 
    : Desktop Icons
 
-This plugin, seen in :numref:`Figure %s <luminadesktopplugin4>`, will
-define an area on the desktop to display icons. If enough icons are
-added to the plugin, a scroll bar will appear for the user to scroll
-through all available icons.
+This plugin, seen in :numref:`Figure %s <luminadesktopplugin4>`, defines
+an area on the desktop to display icons. If enough icons are added to
+the plugin, a scroll bar appears for the user to scroll through all
+available icons.
 
 .. _Note Pad:
 
@@ -354,15 +355,15 @@ Environment blog. Click the dropdown menu to choose which RSS feed to
 display. The :guilabel:`down arrow` in the upper right corner opens a
 list of options:
 
-* **Add RSS Feed:** An option to allow the user to type in their
-  own RSS URL or load a preset RSS Feed.
-* **View Feed Details:** Displays current feed data, including URL,
-  feed description and website address, and the previous build date
-  and synchronization settings. Also included is an option to remove
-  the feed.
-* **Settings:** Options for syncing the feed. You can choose to
-  synchronize manually, or instead define the sync interval.
-  Remember to save any changes in feed settings.
+* **Add RSS Feed:** An option to allow the user to type in their own RSS
+  URL or load a preset RSS Feed.
+* **View Feed Details:** Displays current feed data, including URL, feed
+  description and website address, and the previous build date and
+  synchronization settings. Also included is an option to remove the
+  feed.
+* **Settings:** Options for syncing the feed. Manual synchronization is
+  available, or the user can instead define the sync interval. Remember
+  to save any changes in feed settings.
 * **Update Feeds Now:** Click to immediately update all feeds.
 
 .. note:: An active Internet connection is required for the RSS Reader
@@ -407,10 +408,10 @@ Floating Panel Plugins
 ======================
 
 Panels are a completely customizable option for |lumina| users. By
-default, |lumina| users will have one panel stretched across the bottom
-of the primary screen and one smaller pop-up panel in the top middle of
-the primary screen. To adjust the default panels and add plugins, click
-the start menu and navigate
+default, |lumina| users have one panel stretched across the bottom of
+the primary screen and one smaller pop-up panel in the top middle of the
+primary screen. To adjust the default panels and add plugins, click the
+start menu and navigate
 :menuselection:`Preferences --> Configure Desktop --> Interface Configuration --> Floating Panels and Plugins`.
 For demonstration purposes, a simple panel centered at the top of a
 secondary screen was utilized to show the various plugins listed below.
@@ -424,7 +425,7 @@ The settings for this panel are pictured in
 
    : Panel Settings
 
-As you can see, :guilabel:`Panel 1` is configured to the top center of
+:guilabel:`Panel 1` is configured to the top center of
 :guilabel:`Monitor 1` (plugged into DVI-I-0). To add or adjust plugins
 for this panel, click the :guilabel:`green puzzle piece` to open the
 menu seen in :numref:`Figure %s <luminapanelpluginmenu2>`.
@@ -473,12 +474,12 @@ Application Menu
    : Application Menu
 
 Adds an application menu, seen in
-:numref:`Figure %s <luminapanelplugin2>`, which shortcuts to the user's
-home directory, a shortcut to the operating system’s graphical software
-management utility (if one exists), a shortcut to the operating system’s
-Control Panel (if available), and a list of installed software sorted by
-categories. This plugin is a primary menu like the start button, and
-will open when the :kbd:`Windows` key is pressed.
+:numref:`Figure %s <luminapanelplugin2>`. This is a shortcut to the
+user's home directory, a shortcut to the operating system’s graphical
+software management utility (if one exists), a shortcut to the operating
+system’s Control Panel (if available), and a list of installed software
+sorted by categories. This plugin is a primary menu like the start
+button, and opens when the :kbd:`Windows` key is pressed.
 
 .. _Panel Audio Player:
 
@@ -494,9 +495,9 @@ Battery Monitor
 ---------------
 
 Hover over this icon (not pictured) to view the current charge status of
-the battery. When the charge reaches 15% or below, the low battery icon
-will flash intermittently and will change to a low battery icon when
-there is less than 5% charge left.
+the battery. When the charge reaches **15%** or below, the low battery
+icon flashes intermittently. At **5%** charge remaining, a low battery
+icon displays and a warning noise plays.
 
 .. _Desktop Bar:
 
@@ -508,12 +509,12 @@ Desktop Bar
 .. figure:: images/luminapanelplugin3.png
    :scale: 100%
 
-   : Desktop Bar - :guilabel:`Favorite Applications` ("Star" icon) is
+   : Desktop Bar - :guilabel:`Favorite Applications` (Star icon) is
    pressed.
 
 This plugin adds shortcuts to the panel for applications or files
 contained within the :file:`~/Desktop` folder or favorited by the user,
-seen in :numref:`Figure %s <luminapanelplugin3>`. The :guilabel:`star`
+seen in :numref:`Figure %s <luminapanelplugin3>`. The :guilabel:`Star`
 button displays applications, the :guilabel:`folder` button displays
 folders, and the :guilabel:`file` button shows favorite files.
 
@@ -557,8 +558,8 @@ Show Desktop
 
    : Show Desktop Button
 
-This button, seen in :numref:`Figure %s <luminapanelplugin5>`, will
-immediately hide all open windows on all active monitors so only the
+This button, seen in :numref:`Figure %s <luminapanelplugin5>`,
+immediately hides all open windows on all active monitors so only the
 desktop is visible. This is useful for touch screens or small devices.
 
 .. _Spacer:
@@ -587,10 +588,11 @@ Start Menu
 .. _luminapanelplugin7:
 
 .. figure:: images/luminapanelplugin7.png
+   :scale: 100%
 
    : Start Menu
 
-Adds a classic start menu as seen on other operating systems. Shown in
+Adds a classic start menu as seen on other operating systems. Seen in
 :numref:`Figure %s <luminapanelplugin7>`, this is added by default to
 the primary desktop panel in the lower left corner.
 
@@ -609,14 +611,14 @@ System Dashboard
 The System Dashboard plugin, seen in
 :numref:`Figure %s <luminapanelplugin8>`, is a convenient shortcut to
 view or modify a number of basic settings. The system volume and screen
-brightness can be manually adjusted higher or lower, and you can also
-toggle between virtual workspaces with the left and right arrows. A
+brightness can be manually adjusted higher or lower, and it is possible
+to toggle between virtual workspaces with the left and right arrows. A
 :guilabel:`Log Out` button has also been added for additional
 convenience. If the system has a battery, its current charge will also
 be displayed.
 
-.. note:: Adjusting the screen brightness on a multi-monitor system will
-   alter both monitors.
+.. note:: Adjusting the screen brightness on a multi-monitor system
+   alters both monitors.
 
 .. _System Tray:
 
@@ -635,11 +637,11 @@ Provides an area on the panel for dockable applications, seen in
 this area on a per-application basis, but only one system tray plugin
 can be active at a time. By default, the active system tray will be the
 one on the **lowest number** monitor and panel. For example, when adding
-the system tray plugin to monitor zero, panel one and again to monitor
-one, panel one, only the system tray on monitor zero will be active.
-Disabling the system tray on monitor zero will activate the tray on
-monitor one, automatically migrating any docked applications to the
-other panel.
+the system tray plugin to **monitor zero, panel one** and again to
+**monitor one, panel one**, only the system tray on **monitor zero**
+will be active. Disabling the system tray on **monitor zero** activates
+the tray on **monitor one**, automatically migrating any docked
+applications to the other panel.
 
 .. _Task Manager Plugin (No Groups):
 
@@ -653,11 +655,10 @@ Task Manager Plugin (No Groups)
 
    : Task Manager (No Groups)
 
-Ensures that every window gets its own button on the panel. This plugin
-, seen in :numref:`Figure %s <luminapanelplugin10>`, will use a large
-amount of space on the panel, as every window will need to display a
-part of its title. This plugin is added to the default panel for
-|lumina|.
+Ensures that every window gets its own button on the panel. This plugin,
+seen in :numref:`Figure %s <luminapanelplugin10>`, uses a large amount
+of space on the panel, as every window displays part of its title. This
+plugin is added to the default panel for |lumina|.
 
 .. _Task Manager Plugin:
 
@@ -671,14 +672,14 @@ Task Manager Plugin
 
    : Task Manager
 
-In :numref:`Figure %s <luminapanelplugin11>` are three open terminal
+:numref:`Figure %s <luminapanelplugin11>` shows three open terminal
 windows grouped into one minimal panel entry with :guilabel:`(3)`
 displayed next to the terminal icon.
 
 The grouping task manager displays windows in the panel as well. Its
 primary function is to group windows by application, saving more space
 on the panel. This manager also does not typically display window titles
-on the panel, a further space savings.
+on the panel, saving additional space.
 
 .. _Time Date:
 
@@ -693,10 +694,10 @@ Time/Date
    : Time/Date with the clock selected, opening additional settings.
 
 Displays the current time and date. A basic clock is added to the panel;
-clicking it will open the calendar, seen in
-:numref:`Figure %s <luminapanelplugin12>`, which will highlight the
-current date. Click the arrows in the top corners to look back or ahead
-in the calendar. Click :guilabel:`Time Zone` to adjust the displayed time.
+clicking it opens the calendar, seen in
+:numref:`Figure %s <luminapanelplugin12>`, which highlights the current
+date. Click the arrows in the top corners to look back or ahead in the
+calendar. Click :guilabel:`Time Zone` to adjust the displayed time.
 
 .. _User Button:
 
@@ -717,11 +718,11 @@ alternative to the :ref:`Panel Start Menu`.
 :numref:`Figure %s <luminapanelplugin13>` shows the default view after
 clicking the :guilabel:`user` button. On the sidebar, the
 :guilabel:`Favorites` folder is highlighted, with the top tab showing
-:guilabel:`Applications`. You can also view favorite folders and files
-by clicking the :guilabel:`Places` and :guilabel:`Files` tabs,
+:guilabel:`Applications`. Favorite folders and files can be viewed by
+clicking the :guilabel:`Places` and :guilabel:`Files` tabs,
 respectively.
 
-Clicking the :guilabel:`gear` icon in the left sidebar will open the
+Clicking the :guilabel:`gear` icon in the left sidebar opens the
 :guilabel:`Applications` section of the menu, seen in
 :numref:`Figure %s <luminapanelplugin14>`.
 
@@ -733,9 +734,10 @@ Clicking the :guilabel:`gear` icon in the left sidebar will open the
    : User Applications
 
 This section displays all applications by default, with the drop down
-menu at the top allowing you to view applications by category. The
+menu at the top displaying applications by category. The
 :guilabel:`AppCafe®` button in the top right will open the |sysadm|
-|appcafe|, allowing to quickly search and download more applications.
+|appcafe|, providing a means to quickly search and download more
+applications.
 
 .. _luminapanelplugin15:
 
@@ -748,11 +750,11 @@ In :numref:`Figure %s <luminapanelplugin15>`, the :guilabel:`folder`
 icon on the left sidebar opens the :file:`Home` directory, providing the
 option to quickly browse through system directories. Clicking the
 :guilabel:`file/folder` button in the upper right launches the
-:ref:`Insight File Manager` at the home directory. Clicking the
-:guilabel:`binoculars and gear` icon will launch the search utility.
+:ref:`Insight File Manager`, pointed to the home directory. Clicking the
+:guilabel:`binoculars and gear` icon launches the search utility.
 
-Finally, selecting the :guilabel:`screwdriver and wrench` icon on the
-sidebar will open :guilabel:`Desktop Preferences`, seen in
+Selecting the :guilabel:`screwdriver and wrench` icon on the sidebar
+opens :guilabel:`Desktop Preferences`, seen in
 :numref:`Figure %s <luminapanelplugin16>`.
 
 .. _luminapanelplugin16:

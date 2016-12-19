@@ -41,8 +41,8 @@ possible.
 Become a Translator
 ===================
 
-If interested in translating |trueos| into your native language, there
-are three translation areas to become involved in: 
+If interested in translating |trueos| into your native language, start
+by choosing which of the three translation areas to work in:
 
 1. Translate the graphical menus within the |trueos| operating system.
 
@@ -82,6 +82,7 @@ browser. An example is seen in :numref:`Figure %s <translate1>`.
 .. _translate1:
 
 .. figure:: images/translate1.png
+   :scale: 100%
 
    : |trueos| Weblate Translation System
 
@@ -93,6 +94,7 @@ the activation email. Once logged in, click
 .. _translate2:
 
 .. figure:: images/translate2.png
+   :scale: 100%
 
    : Weblate Dashboard
 
@@ -105,6 +107,7 @@ translate. Once any selections are made, click :guilabel:`Save`.
 .. _translate3:
 
 .. figure:: images/translate3.png
+   :scale: 100%
 
    : Manage Languages
 
@@ -125,6 +128,7 @@ English.
 .. _translate4:
 
 .. figure:: images/translate4.png
+   :scale: 100%
 
    : Project Selection
 
@@ -135,6 +139,7 @@ To start translating, click a component name. In the screen shown in
 .. _translate5:
 
 .. figure:: images/translate5.png  
+   :scale: 100%
 
    : Translation Languages
 
@@ -149,6 +154,7 @@ to translate.
 .. _translate6:
 
 .. figure:: images/translate6.png
+   :scale: 100%
 
    : Translation Editor
 
@@ -160,6 +166,9 @@ ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
 
 Documentation Translation
 -------------------------
+
+.. TODO review this section with the final word on using Weblate for
+   documentation translation.
 
 The source for the |trueos| Users Handbook is stored in the
 `TrueOS® github repository <https://github.com/trueos/trueos-docs/tree/master/trueos-handbook>`_.
@@ -204,12 +213,14 @@ remove the asterisks.
 .. _translate7:
 
 .. figure:: images/translate7.png
+   :scale: 100%
 
    : Formatting Characters - Do Not Remove
 
 .. _translate8:
 
 .. figure:: images/translate8.png
+   :scale: 100%
 
    : More Formatting Characters
 
@@ -253,6 +264,8 @@ later time
 
 Website Translation
 -------------------
+
+.. TODO verify website translation process and update as necessary.
 
 If you are interested in translating the |trueos| website, introduce
 yourself in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
@@ -308,7 +321,6 @@ This will create a directory with the same name as the repository.
 
 .. note:: To keep the local copy in sync with the official repository,
    periodically run :command:`git pull` within the directory.
-
 
 .. TODO :command:`portsnap fetch extract` is being reworked. Use git
    instructions for now (12/5/16).
@@ -408,7 +420,7 @@ their default file names.
 
 .. _common icons:
 
-.. table:: Commonly Used File Menu Icons
+.. table:: : Commonly Used File Menu Icons
 
    +-----------+-----------------+--------------------+
    | Function  | File Menu Icon  | File Name          |
@@ -451,7 +463,7 @@ hot keys.
 
 .. _shortcuts:
 
-.. table:: Shortcut Keys
+.. table:: : Shortcut Keys
 
    +---------------+---------+
    | Shortcut Key  | Action  |
@@ -463,7 +475,7 @@ hot keys.
 
 .. _hotkeys:
 
-.. table:: Hot Keys
+.. table:: : Hot Keys
 
    +-----------+-----------------+
    | Hot Key   | Action          |

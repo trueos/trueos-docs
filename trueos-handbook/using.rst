@@ -545,25 +545,25 @@ file manager's capabilities, start with the URL listed in its
 
 .. table:: : Available File Managers
 
-   +-----------------+--------------+-------------------------------------------------------------+
-   | **Application** | **Install**  | **Screenshots**                                             |
-   +=================+==============+=============================================================+
-   | dolphin         | kde-baseapps | `<https://userbase.kde.org/Dolphin>`_                       |
-   +-----------------+--------------+-------------------------------------------------------------+
-   | emelfm2         | emelfm2      | `<http://emelfm2.net/wiki/ScreenShots>`_                    |
-   +-----------------+--------------+-------------------------------------------------------------+
-   | caja            | caja         | `<http://mate-desktop.org/gallery/1.6/>`_                   |
-   +-----------------+--------------+-------------------------------------------------------------+
-   | mucommander     | mucommander  | `<http://www.mucommander.com/screenshots.php>`_             |
-   +-----------------+--------------+-------------------------------------------------------------+
-   | nautilus        | nautilus     | `<https://projects.gnome.org/nautilus/screenshots.html>`_   |
-   +-----------------+--------------+-------------------------------------------------------------+
-   | pcmanfm         | pcmanfm      | `<http://lxde.org/easy_fast_file_management_pcmanfm>`_      |
-   +-----------------+--------------+-------------------------------------------------------------+
-   | thunar          | thunar       | `<http://docs.xfce.org/xfce/thunar/start>`_                 |
-   +-----------------+--------------+-------------------------------------------------------------+
-   | xfe             | xfe          | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_ |
-   +-----------------+--------------+-------------------------------------------------------------+
+   +-------------+--------------+-------------------------------------------------------------+
+   | Application | Install      | Screenshots                                                 |
+   +=============+==============+=============================================================+
+   | dolphin     | kde-baseapps | `<https://userbase.kde.org/Dolphin>`_                       |
+   +-------------+--------------+-------------------------------------------------------------+
+   | emelfm2     | emelfm2      | `<http://emelfm2.net/wiki/ScreenShots>`_                    |
+   +-------------+--------------+-------------------------------------------------------------+
+   | caja        | caja         | `<http://mate-desktop.org/gallery/1.6/>`_                   |
+   +-------------+--------------+-------------------------------------------------------------+
+   | mucommander | mucommander  | `<http://www.mucommander.com/screenshots.php>`_             |
+   +-------------+--------------+-------------------------------------------------------------+
+   | nautilus    | nautilus     | `<https://projects.gnome.org/nautilus/screenshots.html>`_   |
+   +-------------+--------------+-------------------------------------------------------------+
+   | pcmanfm     | pcmanfm      | `<http://lxde.org/easy_fast_file_management_pcmanfm>`_      |
+   +-------------+--------------+-------------------------------------------------------------+
+   | thunar      | thunar       | `<http://docs.xfce.org/xfce/thunar/start>`_                 |
+   +-------------+--------------+-------------------------------------------------------------+
+   | xfe         | xfe          | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_ |
+   +-------------+--------------+-------------------------------------------------------------+
 
 When working with files on a |trueos| system, save your files to your
 home directory. Since most of the files outside your home directory are
@@ -580,83 +580,83 @@ structure in more detail.
 .. table:: : |TrueOS| Directory Structure
 
    +-------------------------+------------------------------------------+
-   | **Directory**           | **Contents**                             |
+   | Directory               | Contents                                 |
    +=========================+==========================================+
-   | /                       | pronounced as "root" and represents the  |
+   | /                       | Pronounced as "root" and represents the  |
    |                         | beginning of the directory structure     |
    +-------------------------+------------------------------------------+
-   | /bin/                   | applications (binaries) that were        |
+   | /bin/                   | Applications (binaries) that were        |
    |                         | installed with the operating system      |
    +-------------------------+------------------------------------------+
-   | /boot/                  | stores the startup code, including       |
+   | /boot/                  | Stores the startup code, including       |
    |                         | kernel modules (like hardware drivers)   |
    +-------------------------+------------------------------------------+
    | /compat/linux/          | Linux software compatibility files       |
    +-------------------------+------------------------------------------+
-   | /dev/                   | files which are used by the operating    |
+   | /dev/                   | Files which are used by the operating    |
    |                         | system to access devices                 |
    +-------------------------+------------------------------------------+
-   | /etc/                   | operating system configuration files     |
+   | /etc/                   | Operating system configuration files     |
    +-------------------------+------------------------------------------+
-   | /etc/X11/               | the :file:`xorg.conf` configuration      |
+   | /etc/X11/               | The :file:`xorg.conf` configuration      |
    |                         | file                                     |
    +-------------------------+------------------------------------------+
-   | /etc/rc.d/              | operating system startup scripts         |
+   | /etc/rc.d/              | Operating system startup scripts         |
    +-------------------------+------------------------------------------+
-   | /home/                  | subdirectories for each user account;    |
+   | /home/                  | Subdirectories for each user account;    |
    |                         | each user should store their files in    |
    |                         | their own home directory                 |
    |                         |                                          |
    +-------------------------+------------------------------------------+
-   | /lib/                   | operating system libraries needed for    |
+   | /lib/                   | Operating system libraries needed for    |
    |                         | applications                             |
    +-------------------------+------------------------------------------+
-   | /libexec/               | operating system libraries and binaries  |
+   | /libexec/               | Operating system libraries and binaries  |
    +-------------------------+------------------------------------------+
-   | /media/                 | mount point for storage media such as    |
+   | /media/                 | Mount point for storage media such as    |
    |                         | DVDs and USB drives                      |
    +-------------------------+------------------------------------------+
-   | /mnt/                   | another mount point                      |
+   | /mnt/                   | Another mount point                      |
    +-------------------------+------------------------------------------+
-   | /proc/                  | the proc filesystem required by some     |
+   | /proc/                  | The proc filesystem required by some     |
    |                         | Linux applications                       |
    +-------------------------+------------------------------------------+
-   | /rescue/                | emergency recovery programs              |
+   | /rescue/                | Emergency recovery programs              |
    +-------------------------+------------------------------------------+
-   | /root/                  | administrative account's home directory  |
+   | /root/                  | Administrative account's home directory  |
    +-------------------------+------------------------------------------+
-   | /sbin/                  | operating system applications;           |
+   | /sbin/                  | Operating system applications;           |
    |                         | typically only the superuser can run     |
    |                         | these applications                       |
    +-------------------------+------------------------------------------+
-   | /tmp/                   | temporary file storage; files stored     |
+   | /tmp/                   | Temporary file storage; files stored     |
    |                         | here may disappear when the system       |
    |                         | reboots                                  |
    +-------------------------+------------------------------------------+
-   | /usr/bin/               | contains most of the command line        |
+   | /usr/bin/               | Contains most of the command line        |
    |                         | programs available to users              |
    +-------------------------+------------------------------------------+
-   | /usr/local/             | contains the binaries, libraries,        |
+   | /usr/local/             | Contains the binaries, libraries,        |
    |                         | startup scripts, documentation, and      |
    |                         | configuration files used by applications |
    |                         | installed from ports or packages         |
    +-------------------------+------------------------------------------+
-   | /usr/local/share/fonts/ | system wide fonts for graphical          |
+   | /usr/local/share/fonts/ | System wide fonts for graphical          |
    |                         | applications                             |
    +-------------------------+------------------------------------------+
-   | /usr/local/share/icons/ | system wide icons                        |
+   | /usr/local/share/icons/ | System wide icons                        |
    +-------------------------+------------------------------------------+
-   | /usr/ports/             | location of system ports tree            |
+   | /usr/ports/             | Location of system ports tree            |
    |                         | (if installed)                           |
    +-------------------------+------------------------------------------+
-   | /usr/share/             | system documentation and man pages       |
+   | /usr/share/             | System documentation and man pages       |
    +-------------------------+------------------------------------------+
-   | /usr/sbin/              | command line programs for the superuser  |
+   | /usr/sbin/              | Command line programs for the superuser  |
    +-------------------------+------------------------------------------+
-   | /usr/src/               | location of system source code           |
+   | /usr/src/               | Location of system source code           |
    |                         | (if installed)                           |
    +-------------------------+------------------------------------------+
-   | /var/                   | files that change (vary), such as log    |
+   | /var/                   | Files that change (vary), such as log    |
    |                         | files and print jobs                     |
    +-------------------------+------------------------------------------+
 
@@ -671,31 +671,31 @@ available utilities.
 
 .. table:: : Utilities that Support Windows Shares
 
-   +-----------------+--------------+-----------------------------------------------------+
-   | **Application** | **Install**  | **How to Access Existing Shares**                   |
-   +=================+==============+=====================================================+
-   | dolphin         | kde-baseapps | in the left frame, click                            |
-   |                 |              | :menuselection:`Network --> Samba Shares`, then the |
-   |                 |              | Workgroup name; if the network requires a username  |
-   |                 |              | and password to browse for shares, set this in      |
-   |                 |              | :menuselection:`System Settings --> Sharing` while  |
-   |                 |              | in KDE or type :command:`systemsettings` and click  |
-   |                 |              | :guilabel:`Sharing` while in another desktop        |
-   +-----------------+--------------+-----------------------------------------------------+
-   | smb4k           | smb4k-kde4   |                                                     |
-   +-----------------+--------------+-----------------------------------------------------+
-   | mucommander     | mucommander  | click                                               |
-   |                 |              | :menuselection:`Go --> Connect to server --> SMB`;  |
-   |                 |              | input the NETBIOS name of server, name of share,    |
-   |                 |              | name of domain (or workgroup), and the share's      |
-   |                 |              | username and password                               |
-   +-----------------+--------------+-----------------------------------------------------+
-   | nautilus        | nautilus     | click                                               |
-   |                 |              | :menuselection:`Browse Network --> Windows Network` |
-   +-----------------+--------------+-----------------------------------------------------+
-   | thunar          | thunar       | in the left frame, click                            |
-   |                 |              | :menuselection:`Network --> Windows Network`        |
-   +-----------------+--------------+-----------------------------------------------------+
+   +-------------+--------------+-----------------------------------------------------+
+   | Application | Install      | How to Access Existing Shares                       |
+   +=============+==============+=====================================================+
+   | dolphin     | kde-baseapps | In the left frame, click                            |
+   |             |              | :menuselection:`Network --> Samba Shares`, then the |
+   |             |              | Workgroup name; if the network requires a username  |
+   |             |              | and password to browse for shares, set this in      |
+   |             |              | :menuselection:`System Settings --> Sharing` while  |
+   |             |              | in KDE or type :command:`systemsettings` and click  |
+   |             |              | :guilabel:`Sharing` while in another desktop        |
+   +-------------+--------------+-----------------------------------------------------+
+   | smb4k       | smb4k-kde4   |                                                     |
+   +-------------+--------------+-----------------------------------------------------+
+   | mucommander | mucommander  | Click                                               |
+   |             |              | :menuselection:`Go --> Connect to server --> SMB`;  |
+   |             |              | input the NETBIOS name of server, name of share,    |
+   |             |              | name of domain (or workgroup), and the share's      |
+   |             |              | username and password                               |
+   +-------------+--------------+-----------------------------------------------------+
+   | nautilus    | nautilus     | Click                                               |
+   |             |              | :menuselection:`Browse Network --> Windows Network` |
+   +-------------+--------------+-----------------------------------------------------+
+   | thunar      | thunar       | In the left frame, click                            |
+   |             |              | :menuselection:`Network --> Windows Network`        |
+   +-------------+--------------+-----------------------------------------------------+
 
 .. index:: configuration
 .. _Disk Manager:
@@ -717,6 +717,7 @@ available, right-click the device to start formatting.
 .. _disk1:
 
 .. figure:: images/disk1.png
+   :scale: 100%
 
    : Managing Disks
 
@@ -728,6 +729,7 @@ from one disk. :guilabel:`Online` indicates the pool is healthy.
 .. _disk2: 
 
 .. figure:: images/disk2.png
+   :scale: 100%
 
    : ZFS Pool Status
 
@@ -782,6 +784,7 @@ dataset is using.
 .. _disk3:
 
 .. figure:: images/disk3.png
+   :scale: 100%
 
    : ZFS Datasets
 
@@ -801,8 +804,9 @@ options:
   .. _disk4:
 
   .. figure:: images/disk4.png
+     :scale: 100%
 
-  : Creating New ZFS Dataset
+     : Creating New ZFS Dataset
 
 * **Create a clone dataset:** Creates a copy of the dataset.
 
@@ -829,8 +833,9 @@ options:
   .. _disk5:
 
   .. figure:: images/disk5.png
+     :scale: 100%
 
-  : Editing the Pool's ZFS Properties
+     : Editing the Pool's ZFS Properties
 
 When creating a new dataset or clone, several options are available.
 Again, these options are described in :command:`man zfs` with changes
@@ -894,6 +899,7 @@ connection speed, MAC address, and type of wireless device.
 .. _network1:
 
 .. figure:: images/network1.png
+   :scale: 100%
 
    : System Tray Wireless Information
 
@@ -919,6 +925,7 @@ an Intel wireless interface that uses the **wlan** driver.
 .. _network2:
 
 .. figure:: images/network2.png
+   :scale: 100%
 
    : Network Manager
 
@@ -941,6 +948,7 @@ name, the screen shown in :numref:`Figure %s <network3>` will appear.
 .. _network3:
 
 .. figure:: images/network3.png
+   :scale: 100%
 
    : Network Settings for an Ethernet Interface
 
@@ -984,6 +992,7 @@ understanding of how to input an appropriate replacement address.
 .. _network4:
 
 .. figure:: images/network4.png
+   :scale: 100%
 
    : Ethernet Interface Network Settings - Advanced
 
@@ -994,6 +1003,7 @@ statistics.
 .. _network5:
 
 .. figure:: images/network5.png
+   :scale: 100%
 
    : Ethernet Interface Network Settings - Info
 
@@ -1022,6 +1032,7 @@ with the wireless network listed in the
 .. _network6:
 
 .. figure:: images/network6.png
+   :scale: 100%
 
    : Wireless Configuration
 
@@ -1055,6 +1066,7 @@ authentication settings by highlighting an entry in the
 .. _network7:
 
 .. figure:: images/network7.png
+   :scale: 100%
 
    : Configuring Wireless Authentication Settings
 
@@ -1078,8 +1090,9 @@ security:
   .. _network8:
 
   .. figure:: images/network8.png
+     :scale: 100%
 
-  : WEP Security Settings
+     : WEP Security Settings
 
 * **WPA Personal:** This type of network uses a plaintext key. If you
   click :guilabel:`WPA Personal` then :guilabel:`Configure`, the screen
@@ -1090,8 +1103,9 @@ security:
   .. _network9:
 
   .. figure:: images/network9.png
+     :scale: 100%
 
-  : WPA Personal Security Settings
+     : WPA Personal Security Settings
 
 * **WPA Enterprise:** If you click :guilabel:`WPA Enterprise` then
   :guilabel:`Configure`, the screen shown in
@@ -1103,8 +1117,9 @@ security:
   .. _network10:
 
   .. figure:: images/network10.png
+     :scale: 100%
 
-  : WPA Enterprise Security Settings
+     : WPA Enterprise Security Settings
 
 .. note:: If unsure which type of encryption is being used, ask the
    person who setup the wireless router. They should also be able to
@@ -1134,6 +1149,7 @@ allows configuring several options:
 .. _network11:
 
 .. figure:: images/network11.png
+   :scale: 100%
 
    : Wireless Interface - Advanced
 
@@ -1143,6 +1159,7 @@ the current network status and statistics for the wireless interface.
 .. _network12:
 
 .. figure:: images/network12.png
+   :scale: 100%
 
    : Wireless Interface - Info
 
@@ -1161,6 +1178,7 @@ highlighted in the :guilabel:`Devices` tab.
 .. _network13:
 
 .. figure:: images/network13.png
+   :scale: 100%
 
    : Network Configuration - Advanced
 
@@ -1229,6 +1247,7 @@ the Internet.
 .. _network14:
 
 .. figure:: images/network14.png
+   :scale: 100%
 
    : Proxy Settings Configuration
 
@@ -1274,6 +1293,7 @@ Right-click the entry for a wireless device, as seen in
 .. _network15:
 
 .. figure:: images/network15.png
+   :scale: 100%
 
    : Setup Access Point
 
@@ -1283,6 +1303,7 @@ Right-click the entry for a wireless device, as seen in
 .. _network16:
 
 .. figure:: images/network16.png
+   :scale: 100%
 
    : Access Point Basic Setup
 
@@ -1301,6 +1322,7 @@ The :guilabel:`Basic Setup` tab of this screen contains two options:
 .. _network17:
 
 .. figure:: images/network17.png
+   :scale: 100%
 
    : Access Point Advanced Setup
 
@@ -1474,6 +1496,7 @@ https://check.torproject.org
 .. _tor1:
 
 .. figure:: images/tor1.png
+   :scale: 100%
 
    : Enabling Tor Mode
 
@@ -1533,6 +1556,7 @@ The initial Wine configuration menu is shown in
 .. _wine1:
 
 .. figure:: images/wine1.png
+   :scale: 100%
 
    : Wine Configuration Menu
 
@@ -1556,8 +1580,9 @@ shown in :numref:`Figure %s <wine2>`.
 .. _wine2:
 
 .. figure:: images/wine2.png
+   :scale: 100%
 
-   : Installing the Application Using winefile
+   : Installing the Application Using :command:`winefile`
 
 Click the button representing the drive containing the installer and
 double-click on the installation file (e.g. :file:`setup.exe`). The
@@ -1574,6 +1599,7 @@ Explorer within :command:`winefile`.
 .. _wine3:
 
 .. figure:: images/wine3.png
+   :scale: 100%
 
    : Running the Installed Application
 
@@ -1715,22 +1741,24 @@ Once printer support is determined, be sure the printer is plugged into
 your computer or, if the printer is a network printer, both your
 computer and the printer are connected to the network. Then, open a web
 browser and enter the address "127.0.0.1:631/admin". This will open the
-CUPS configuration, shown in:numref:`Figure %s <print4a>`.
+CUPS configuration, shown in:numref:`Figure %s <print4>`.
 
-.. _print4a:
+.. _print4:
 
 .. figure:: images/print4a.png
+   :scale: 100%
 
    : Printer Configuration
 
 To add a new printer, click :guilabel:`Add Printer`. CUPS will pause
 for a few seconds as it searches for available printers. When it is
 finished it will display a screen similar to
-:numref:`Figure %s <print5a>`.
+:numref:`Figure %s <print5>`.
 
-.. _print5a:
+.. _print5:
 
 .. figure:: images/print5a.png
+   :scale: 100%
 
    : Print Device Selection
 
@@ -1739,11 +1767,12 @@ both the USB port (first entry) and the wireless network (second entry).
 Click the desired connection method then click :guilabel:`Continue`.
 CUPS will attempt to load the correct driver for the device. If it is
 successful, it will display the screen shown in
-:numref:`Figure %s <print6a>`.
+:numref:`Figure %s <print6>`.
 
-.. _print6a:
+.. _print6:
 
 .. figure:: images/print6a.png
+   :scale: 100%
 
    : Describe Printer
 
@@ -1753,25 +1782,27 @@ description, and the type of connection. If desired, add a descriptive
 :guilabel:`Sharing`.
 
 Once you click :guilabel:`Continue`, the next screen, shown in
-:numref:`Figure %s <print7a>`, will show a summary of the selected
+:numref:`Figure %s <print7>`, will show a summary of the selected
 options and offer the ability to select another driver. For now, leave
 the detected driver and click :guilabel:`Add Printer`. If the printer
 does not work using the default driver, read the section on
 :ref:`Printer Troubleshooting`, which describes how to use this screen
 in more detail.
 
-.. _print7a:
+.. _print7:
 
 .. figure:: images/print7a.png
+   :scale: 100%
 
    : Viewing the Default Driver
 
-The next screen, shown in :numref:`Figure %s <print8a>`, can be used to
+The next screen, shown in :numref:`Figure %s <print8>`, can be used to
 modify the properties of the printer.
 
 .. _print8a:
 
 .. figure:: images/print8a.png
+   :scale: 100%
 
    : Modify Print Properties
 
@@ -1783,11 +1814,12 @@ available settings will vary, depending upon the capabilities of the
 print driver. When finished, click :guilabel:`Set Default Options` to
 save the options. This will open the :guilabel:`Printers` tab, with the
 new printer displayed. An example is shown in
-:numref:`Figure %s <print9a>`.
+:numref:`Figure %s <print9>`.
 
-.. _print9a:
+.. _print9:
 
 .. figure:: images/print9a.png
+   :scale: 100%
 
    : Manage Printer
 
@@ -1808,7 +1840,7 @@ on.
 
 If the wizard is unable to even detect the device, try to manually add
 the information for the print device. In the :guilabel:`Select Device`
-screen (:ref:`print5a`), select the type of connection to the printer
+screen (:ref:`print5`), select the type of connection to the printer
 and input all necessary information. The type of information depends
 upon the type of connection:
 
@@ -1842,7 +1874,7 @@ and test the connection by printing a test page as described in
 :ref:`Adding a Printer`.
 
 If the default driver is not working, try re-adding the printer. At the
-:ref:`print7a` screen, try selecting a different driver.
+:ref:`print7` screen, try selecting a different driver.
 
 Alternately, if you have a PPD driver from the manufacturer's website
 or on the CD packed in with the printer, click :guilabel:`Choose File`
@@ -1905,6 +1937,7 @@ search for your device at the
 .. _sane1:
 
 .. figure:: images/sane1.png
+   :scale: 100%
 
    : XSane Interface
 

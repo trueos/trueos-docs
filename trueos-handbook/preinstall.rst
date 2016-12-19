@@ -1,3 +1,5 @@
+.. _PreInstallation Tasks:
+
 Pre-Installation Tasks
 **********************
 
@@ -99,16 +101,17 @@ problems are occurring with a device, start with a web search for the
 term "FreeBSD" plus the type and model of the hardware. This will show
 if there is a known issue with the device. If there are too many search
 results, concentrate on the most recent ones as oftentimes hardware
-previously problematic has since been fixed or the missing driver
-will be available in an upcoming release of FreeBSD. If a problem occurs
-with a device thought to work but does not, or there are no existing
-problem reports for your hardware, please help improve hardware support
-for all FreeBSD and |trueos| users by
-:ref:`Reporting a bug <Report a bug>` so the issue can be addressed by
-the developers.
+previously problematic has since been fixed or the missing driver will
+be available in an upcoming release of FreeBSD. If a problem occurs with
+a device thought to work but does not, or there are no existing problem
+reports for your hardware, please help improve hardware support for all
+FreeBSD and |trueos| users by :ref:`Reporting a bug <Report a bug>` so
+the issue can be addressed by the developers.
 
-The rest of this section provides an overview of the various
-supported hardware.
+The rest of this section provides an overview of the various supported
+hardware.
+
+.. _Processor:
 
 Processor
 ---------
@@ -118,6 +121,8 @@ Processor
 need to be manufactured by AMD in order to be supported. The
 `FreeBSD Hardware Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_
 lists the *amd64* processors known to work.
+
+.. _Graphics:
 
 Graphics
 --------
@@ -153,6 +158,8 @@ or to set "discrete" mode. If the BIOS does not provide a discrete mode,
 |trueos| will default to the 3D Intel driver and disable NVIDIA. This
 will change in the future when the NVIDIA driver supports Optimus.
 
+.. _Wireless:
+
 Wireless
 --------
 
@@ -164,7 +171,7 @@ external wireless device, insert it before running the installer.
 
 Certain Broadcom devices, typically found in cheaper laptops, are buggy
 and can have lockups when in DMA mode. If the device freezes, try
-switching to "PIO" mode in the BIOS. Alternately, add
+switching to *PIO* mode in the BIOS. Alternately, add
 :command:`hw.bwn.usedma=0` to :file:`/boot/loader.conf` and reboot to
 see if anything changes.
 
@@ -186,7 +193,7 @@ typically deal with:
   laptop is a ThinkPad,
   `ThinkWiki <http://www.thinkwiki.org/wiki/ThinkWiki>`_ is an
   excellent resource. For other types of laptops, try reading the
-  "SYSCTL VARIABLES" section of :command:`man 4 acpi` and check to see
+  *SYSCTL VARIABLES* section of :command:`man 4 acpi` and check to see
   if there is an ACPI man page specific to the laptop's vendor by typing
   :command:`apropos acpi.` The
   `Tuning with sysctl(8) <http://www.freebsd.org/doc/en/books/handbook/configtuning-sysctl.html>`_
@@ -210,8 +217,8 @@ installation.
 To install |trueos| onto an Asus Eee PC, review the
 `FreeBSD Eee page <https://wiki.FreeBSD.org/AsusEee>`_ first.
 
-The 
-`FreeBSD Tuning Power Consumption page <https://wiki.FreeBSD.org/TuningPowerConsumption>`_
+The FreeBSD
+`Tuning Power Consumption page <https://wiki.FreeBSD.org/TuningPowerConsumption>`_
 has some tips for reducing power consumption.
 
 .. index:: thinkpad
@@ -247,12 +254,13 @@ demonstrates how to create free space within Windows 10.
 To shrink the drive, right-click the :guilabel:`Start` menu and click
 :guilabel:`Disk Management`. In the example shown in
 :numref:`Figure %s <partition1>`, the Windows system has three
-partitions: a 450 MB recovery partition, a 237.93 GB data partition,
-and a 100 MB system partition.
+partitions: a 450 MB recovery partition, a 237.93 GB data partition, and
+a 100 MB system partition.
 
 .. _partition1:
 
 .. figure:: images/partition1.png
+   :scale: 100%
 
    : Disk Layout in Disk Management
 
@@ -265,6 +273,7 @@ and select :guilabel:`Shrink Volume`, as shown in
 .. _partition2:
 
 .. figure:: images/partition2.png
+   :scale: 100%
 
    : Shrink Volume Menu Selection
 
@@ -274,6 +283,7 @@ are shown in :numref:`Figure %s <shrink1>`.
 .. _shrink1:
 
 .. figure:: images/shrink1.png
+   :scale: 100%
 
    : Available Shrink Space
 
@@ -287,6 +297,7 @@ space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
 .. _shrink2:
 
 .. figure:: images/shrink2.png
+   :scale: 100%
 
    : Disk with Free Space
 
@@ -299,25 +310,23 @@ space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
 
 .. _Obtaining TrueOS®:
 
-Obtaining TrueOS®
-=================
+Obtaining |trueos|
+==================
 
 |trueos| uses a rolling release model rather than versioned releases.
 
-Around the 1st of each month, :ref:`Update Manager` will provide a
-patch which will update the operating system to include all of the new
-features and drivers. To have or test the latest features and drivers
-as they become available and you can tolerate possible breakage caused
-by new features being available before the next RELEASE, use the STABLE
-version.
+Periodically, the :ref:`Update Manager` will provide a patch which
+updates the operating system to include all of the new features and
+drivers. To have or test the latest features and drivers as they become
+available, and you can tolerate possible breakage caused by new features
+being available before the next RELEASE, use the STABLE version.
 
 Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_ or the
 `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_.
 
 Several types of files are available for download. Before downloading
-a file, review the these descriptions to see which one best suits
-the need:
+a file, review these descriptions to see which one best suits the need:
 
 * Files beginning with :file:`TrueOS-Desktop` contain all of the
   information needed to install either a graphical desktop or
@@ -345,8 +354,8 @@ the need:
   a :file:`.torrent` extension.
 
 If planning to install a graphical desktop, download the file with
-:file:`TrueOS-Desktop` in its name and either burn it to a DVD media
-or write it to a removable USB device.
+:file:`TrueOS-Desktop` in its name and either burn it to a DVD media or
+write it to a removable USB device.
 
 If installing a command-line only server is preferred, either download
 a file beginning with :file:`TrueOS-Desktop` (to use the graphical
@@ -397,6 +406,7 @@ downloaded file.
 .. _fastsum1:
 
 .. figure:: images/checksum.png
+   :scale: 100%
 
    : Checksum Verification
 
@@ -407,7 +417,6 @@ downloaded file.
 On Linux and BSD systems, use the built-in :command:`md5` or
 :command:`md5sum` command line tool to check the MD5 checksum. In this
 example, the file is located in the :file:`Downloads` directory. Using
-command
 :command:`md5 Downloads/TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5`,
 substitute the name and location of the downloaded file.
 
@@ -417,8 +426,8 @@ substitute the name and location of the downloaded file.
 Burning the Installation Media
 ==============================
 
-Once the installation file is downloaded and its checksum verified,
-burn it to a media. Which media depends upon the file downloaded:
+Once the installation file is downloaded and its checksum verified, burn
+it to a media. Which media depends upon the file downloaded:
 
 * Files beginning with :file:`TrueOS-Desktop` and ending with
   :file:`.iso` must be burned to a DVD.
@@ -435,10 +444,10 @@ burning utilities.
 
 .. _burn utils:
 
-.. table:: Free Burning Utilities
+.. table:: : Free Burning Utilities
 
    +-----------------------+------------------------------------------------------------------------------------------------+
-   | **Operating System**  | **Utility**                                                                                    |
+   | Operating System      | Utility                                                                                        |
    +=======================+================================================================================================+
    | Windows               | `InfraRecorder utility <http://infrarecorder.org/>`_                                           |
    +-----------------------+------------------------------------------------------------------------------------------------+
@@ -520,11 +529,12 @@ drive and select its drive letter (in this example, drive **D**). Click
 .. _writer1:
 
 .. figure:: images/writer1.png
+   :scale: 100%
 
    : Write an Image using Win32 Disk Imager
 
 To burn the :file:`.iso` file on Mac OS X, insert a USB stick and open
-Terminal. Run :command:`diskutil list` to discover the device name of
+*Terminal*. Run :command:`diskutil list` to discover the device name of
 the USB disk, unmount the USB disk, then use :command:`dd` to write the
 image to the raw disk (:file:`rdisk`). In this example, an 8 GB USB
 stick has a device name of :file:`/dev/disk1` and a raw device name of
@@ -621,6 +631,7 @@ in :numref:`Figure %s <vbox1>`.
 .. _vbox1:
 
 .. figure:: images/vbox1.png
+   :scale: 100%
 
    : VirtualBox Menu
 
@@ -630,6 +641,7 @@ display the screen in :numref:`Figure %s <vbox2>`.
 .. _vbox2:
 
 .. figure:: images/vbox2.png
+   :scale: 100%
 
    : Create Virtual Machine - Name, Type, and Version
 
@@ -642,6 +654,7 @@ screen in :numref:`Figure %s <vbox3>`.
 .. _vbox3:
 
 .. figure:: images/vbox3.png
+   :scale: 100%
 
    : Virtual Machine Reserved Memory
 
@@ -654,6 +667,7 @@ screen in :numref:`Figure %s <vbox4>`.
 .. _vbox4:
 
 .. figure:: images/vbox4.png
+   :scale: 100%
 
    : Virtual Hard Drive - New or Existing
 
@@ -673,6 +687,7 @@ virtual machines.
 .. _vbox5:
 
 .. figure:: images/vbox5.png
+   :scale: 100%
 
    : Hard Drive Type
 
@@ -682,6 +697,7 @@ Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
 .. _vbox6:
 
 .. figure:: images/vbox6.png
+   :scale: 100%
 
    : Storage Type
 
@@ -697,6 +713,7 @@ the screen in :numref:`Figure %s <vbox7>` will display.
 .. _vbox7:
 
 .. figure:: images/vbox7.png
+   :scale: 100%
 
    : Virtual Disk - File Name and Size
 
@@ -716,6 +733,7 @@ seen in the example in :numref:`Figure %s <vbox8>`.
 .. _vbox8:
 
 .. figure:: images/vbox8.png
+   :scale: 100%
 
    : New Virtual Machine "Test"
 
@@ -731,6 +749,7 @@ of :file:`re0`.
 .. _vbox9:
 
 .. figure:: images/vbox9.png
+   :scale: 100%
 
    : VirtualBox Bridged Adapter Configuration
 
@@ -741,6 +760,7 @@ frame to access the storage screen seen in :numref:`Figure %s <vbox10>`.
 .. _vbox10:
 
 .. figure:: images/vbox10.png
+   :scale: 100%
 
    : Virtual Machine Storage Settings
 
