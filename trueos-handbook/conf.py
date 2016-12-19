@@ -203,7 +203,7 @@ html_static_path = ['_static']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-#html_extra_path = []
+# html_extra_path = ['_exhtml/searchresults.html']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -218,7 +218,7 @@ html_use_smartypants = True
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-#html_additional_pages = {}
+html_additional_pages = {'searchresults' : 'searchresults.html'}
 
 # If false, no module index is generated.
 #html_domain_indices = True
@@ -346,6 +346,7 @@ epub_identifier = 'trueos.org'
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+epub_exclude_files = ['searchresults.html']
 
 # The depth of the table of contents in toc.ncx.
 #epub_tocdepth = 3
