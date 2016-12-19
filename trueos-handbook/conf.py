@@ -190,7 +190,7 @@ html_static_path = ['_static']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-# html_extra_path = ['themes/trueos_style/searchresults.html']
+html_extra_path = ['trueos-handbook/themes/trueos_style/searchresults.html']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -205,7 +205,7 @@ html_use_smartypants = True
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-html_additional_pages = {'searchresults' : 'searchresults.html'}
+html_additional_pages = {'searchresults' : 'searchresults.html',}
 
 # If false, no module index is generated.
 #html_domain_indices = True
