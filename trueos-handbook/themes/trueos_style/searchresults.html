@@ -1,10 +1,19 @@
+{#
+    basic/searchresults.html
+    ~~~~~~~~~~~~~~~~~
+
+    Template for the search page.
+
+    :copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
+    :modified 2016 by Joshua Smith - TrueOS / FreeNAS projects
+    :license: BSD, see LICENSE for details.
+#}
 {%- extends "layout.html" %}
-{% set title = _('Search Results') %}
+{% set title = _('Search') %}
 {% block footer %}
 {{ super() }}
 {% endblock %}
 {% block body %}
-  <div id = "results">
 	<script>
 	  (function() {
 	    var cx = '013099353444728555705:p67oe0n1as8';
