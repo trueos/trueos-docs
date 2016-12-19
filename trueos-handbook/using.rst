@@ -1799,7 +1799,7 @@ in more detail.
 The next screen, shown in :numref:`Figure %s <print8>`, can be used to
 modify the properties of the printer.
 
-.. _print8a:
+.. _print8:
 
 .. figure:: images/print8a.png
    :scale: 100%
@@ -1895,7 +1895,7 @@ Here are some solutions to common printing problems:
   the system is using the wrong driver. If your specific model was not
   listed, click :menuselection:`Adminstration --> Modify Printer` for
   the printer in the :guilabel:`Printers` tab. In the screen shown in
-  :ref:`print7a`, try choosing another driver close to your model
+  :ref:`print7`, try choosing another driver close to your model
   number. If trial and error does not fix the problem, see if there are
   any suggestions for your model in the
   `Open Printing database <http://www.openprinting.org/printers>`_. A

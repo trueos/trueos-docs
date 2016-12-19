@@ -591,9 +591,11 @@ spread from the *master* device and any *extension* devices.
    : Mouse configuration settings
 
 There are a number of different elements available to configure for a
-basic mouse, seen in :numref:`Table %s <>`. For more in-depth
+basic mouse, seen in :numref:`Table %s <mseconfset>`. For more in-depth
 descriptions of these options, refer to x.org's article on
 `PointerAcceleration <https://www.x.org/wiki/Development/Documentation/PointerAcceleration/>`_:
+
+.. _mseconfset:
 
 .. table:: : Mouse configuration options
 
