@@ -4108,6 +4108,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 	border-radius: 2px;
 }
 
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+	padding-left: 4px !important;
+}
+
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
  |    Allow for printing from browser            | 
  |    with reasonable appearance         (END)   | 
