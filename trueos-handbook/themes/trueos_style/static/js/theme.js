@@ -1,3 +1,9 @@
+function externalLinks() 
+{   for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++)
+	{     var b = c[a];     b.getAttribute("href")
+		&& b.hostname !== location.hostname
+		&& (b.target = "_blank")   } } ; externalLinks(); 
+
 function toggleCurrent (elem) {
     var parent_li = elem.closest('li');
     parent_li.siblings('li.current').removeClass('current');
