@@ -4101,6 +4101,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
     }
 }
 
+#gsc-iw-id1 {
+	background: #CECECE !important;
+	border: solid 1px #666666;
+	margin-top: 2px;
+	border-radius: 2px;
+}
+
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
  |    Allow for printing from browser            | 
  |    with reasonable appearance         (END)   | 
