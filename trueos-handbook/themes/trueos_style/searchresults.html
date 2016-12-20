@@ -10,10 +10,7 @@
 #}
 {%- extends "layout.html" %}
 {% set title = _('Search') %}
-{% block footer %}
-{{ super() }}
-{% endblock %}
-{% block body %}
+{% block header %}
 	<script>
 	  (function() {
 	    var cx = '013099353444728555705:p67oe0n1as8';
@@ -25,6 +22,10 @@
 	    s.parentNode.insertBefore(gcse, s);
 	  })();
 	</script>
+{% endblock %}
+{% block footer %}
+{{ super() }}
+{% endblock %}
+{% block body %}
 	<gcse:searchresults-only></gcse:searchresults-only>
-  </div>
 {% endblock %}
