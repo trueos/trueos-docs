@@ -179,7 +179,7 @@ The following features or enhancements were introduced for |trueos|:
   the graphical boot menu.
 
 * These new utilites are available in the :ref:`SysAdm™ Client`:
-  :ref:`Manage SSL Keys` and :ref:`Task Manager`.
+  :ref:`Managing Remote Connections` and :ref:`Task Manager`.
 
 * The graphical and command line versions of PBI Manager and Warden have
   been removed.
