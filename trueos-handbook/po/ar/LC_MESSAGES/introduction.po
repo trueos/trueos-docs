@@ -49,12 +49,6 @@ msgid ""
 "for system updates."
 msgstr ""
 
-#: ../../introduction.rst:193
-msgid ""
-"These new utilites are available in the :ref:`SysAdm™ Client`: :ref:`Manage "
-"SSL Keys` and :ref:`Task Manager`."
-msgstr ""
-
 #: ../../introduction.rst:196
 msgid ""
 "The graphical and command line versions of PBI Manager and Warden have been "
@@ -820,6 +814,17 @@ msgstr ""
 #: ../../introduction.rst:233
 msgid "Usage notes"
 msgstr ""
+
+#: ../../introduction.rst:193
+msgid ""
+"These new utilites are available in the :ref:`SysAdm™ Client`: "
+":ref:`Managing Remote Connections` and :ref:`Task Manager`."
+msgstr ""
+
+#~ msgid ""
+#~ "These new utilites are available in the :ref:`SysAdm™ Client`: :ref:`Manage "
+#~ "SSL Keys` and :ref:`Task Manager`."
+#~ msgstr ""
 
 #~ msgid "Type of non-native support"
 #~ msgstr ""
