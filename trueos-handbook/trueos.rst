@@ -9,12 +9,19 @@ Contents:
 
    preface
    introduction
-   install/index
-   lumina/index
+   preinstall
+   install
+   postinstall
+   advanced
+   luminaintro
+   luminaconfig
+   luminaplugins
+   luminautl
    sysadmclient
    using
    pico
-   helpsupport
+   help
+   support
 
 .. only:: html
 
