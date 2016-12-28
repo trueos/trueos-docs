@@ -31,183 +31,156 @@ Managing Bootup Services
 ========================
    
 OpenRC has a variety of options to *start*, *stop*, *add*, or *remove*
-services from bootup. Most of these actions can be accomplished using
-the :ref:`` <service manager utility> built into |sysadm|. Users
-familiar with the FreeBSD service command will notice the similarities
-between some of these commands:
+services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of
+these actions can be accomplished using the :ref:`Service Manager` built
+into |sysadm|. Individuals familiar with the FreeBSD :command:`service`
+command may notice some similarities between some of these commands:
 
-<Build table here to doc all commands and descriptions>
-service nginx start – to start nginx from /usr/local/etc/init.d/nginx
-service nginx restart – to restart nginx from /usr/local/etc/init.d/nginx
-service nginx stop – to stop nginx from /usr/local/etc/init.d/nginx
-service nginx status – to see the status of the nginx service
+.. _rcbootserv:
 
-rc-status – to see the status of all running services
-rc-update – to add or remove a service from the default runlevel
+.. table:: : Bootup Service Commands
 
-rc-update add nginx default – add a service to the default runlevel
-rc-update remove nginx default – remove a service from the default runlevel
+   +--------------------------------+------------------------------------------------------------+
+   | Command                        | Description                                                |
+   +================================+============================================================+
+   | service nginx start            | Start nginx from :file:`usr/local/etc/init.d/nginx`.       |
+   +--------------------------------+------------------------------------------------------------+
+   | service nginx restart          | Restart nginx from :file:`/usr/local/etc/init.d/nginx`.    |
+   +--------------------------------+------------------------------------------------------------+
+   | service nginx stop             | Stop nginx from :file:`/usr/local/etc/init.d/nginx`.       |
+   +--------------------------------+------------------------------------------------------------+
+   | service nginx status           | View the status of the nginx service.                      |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-status                      | View the status of all running services.                   |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-update                      | Views all runlevels. Used in conjunction with service      |
+   |                                | names to add or remove services from the default runlevel. |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-update add nginx default    | Adds the nginx service to the default runlevel.            |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-update remove nginx default | Removes the nginx service from the default runlevel.       |
+   +--------------------------------+------------------------------------------------------------+
+
+:command:`rc-update` displays all runlevels. The full list of available
+runlevels is seen here in :numref:`Table %s <rcuprnlvl>`
+
+.. _rcuprnlvl:
+
+.. table:: : Services and runlevels
+
+   +-------------+-------------------+
+   | Service     | Runlevel          |
+   +=============+===================+
+   | abi         | boot              |
+   +-------------+-------------------+
+   | adjkerntz   | boot              |
+   +-------------+-------------------+
+   | automount   | default           |
+   +-------------+-------------------+
+   | bootmisc    | boot              |
+   +-------------+-------------------+
+   | bridge      | boot              |
+   +-------------+-------------------+
+   | cron        | boot              |
+   +-------------+-------------------+
+   | cupsd       | default           |
+   +-------------+-------------------+
+   | dbus        | default           |
+   +-------------+-------------------+
+   | devd        | boot              |
+   +-------------+-------------------+
+   | dumpon      | boot              |
+   +-------------+-------------------+
+   | fsck        | boot              |
+   +-------------+-------------------+
+   | hostid      | boot              |
+   +-------------+-------------------+
+   | hostname    | boot              |
+   +-------------+-------------------+
+   | ipfw        | boot              |
+   +-------------+-------------------+
+   | local       | default nonetwork |
+   +-------------+-------------------+
+   | localmount  | boot              |
+   +-------------+-------------------+
+   | lockd       | default           |
+   +-------------+-------------------+
+   | loopback    | boot              |
+   +-------------+-------------------+
+   | modules     | boot              |
+   +-------------+-------------------+
+   | motd        | boot              |
+   +-------------+-------------------+
+   | moused      | default           |
+   +-------------+-------------------+
+   | netmount    | default           |
+   +-------------+-------------------+
+   | network     | boot              |
+   +-------------+-------------------+
+   | newsyslog   | boot              |
+   +-------------+-------------------+
+   | openntpd    | default           |
+   +-------------+-------------------+
+   | pcdm        | default           |
+   +-------------+-------------------+
+   | root        | boot              |
+   +-------------+-------------------+
+   | rpcbind     | default           |
+   +-------------+-------------------+
+   | savecache   | shutdown          |
+   +-------------+-------------------+
+   | savecore    | boot              |
+   +-------------+-------------------+
+   | statd       | default           |
+   +-------------+-------------------+
+   | staticroute | boot              |
+   +-------------+-------------------+
+   | swap        | boot              |
+   +-------------+-------------------+
+   | sysadm      | default           |
+   +-------------+-------------------+
+   | syscons     | boot              |
+   +-------------+-------------------+
+   | sysctl      | boot              |
+   +-------------+-------------------+
+   | syslogd     | boot              |
+   +-------------+-------------------+
+   | trueosinit  | default           |
+   +-------------+-------------------+
+   | urandom     | boot              |
+   +-------------+-------------------+
+   | zfs         | boot              |
+   +-------------+-------------------+
+   | zvol        | boot              |
+   +-------------+-------------------+
+
+OpenRC has a few ordered runlevels in |trueos|. First is the *sysinit*
+runlevel which is used for OpenRC to initialize itself. Second is the
+*boot* runlevel, which starts most base services from
+:file:`/etc/init.d/`. Third is the *default* runlevel, which is where
+services started by ports are added.
+
+.. note:: Services added by ports cannot be added to *boot* or
+   *sysinit*.
+
+OpenRC allows users to add a service in the prefix location to the
+*boot* runlevel, which happens before the :file:`/usr` filesystem is
+mounted. Finally, there is a *shutdown* runlevel reserved for a few
+services like :command:`savecore` or :command:`pc-updatemanager`
+installing updates at shutdown.
+
+When a service is added to a runlevel a symlink is created in
+:file:`/etc/runlevels`. When a service is started, stopped, or changed
+to another state a symlink is added to :file:`/libexec/rc/init.d/`.
+
+.. TODO loook at post to see how to format this.
+
+daemons exclusive inactive scheduled starting wasinactive
+depconfig failed options softlevel stopping
+deptree hotplugged prefix.lock started tmp
 
 **gitter copy/pastes**
 
-Scroll down a little, it was followed by the mention of upstream where
-upstream = OpenRC.
-Also (for newcomers to OpenRC) note that with OpenRC-enabled TrueOS, a
-request for the manual page for service(8) presents the manual page for
-rc-service(8). This is normal.
-Jeffrey Baitis
-@baitisj
-Dec 16 15:11
-that seems the desired behaviour... would you kindly elaborate regarding
-why this is noteworthy?
-Guillermo García Rojas C.
-@SoloBSD
-Dec 16 15:12
-Ok now I am getting new packages on "stable"
-Ira T Taylor
-@itaylor57
-Dec 16 15:13
-yes stable has been updated
-glad you finally work up hehe
-Guillermo García Rojas C.
-@SoloBSD
-Dec 16 15:14
-Let's see how it goes
-_
-Graham Perrin
-@grahamperrin
-Dec 16 15:16
-@baitisj I should probably say something like, "newcomers with a FreeBSD
-background" who might assume, from habit (without reference to a manual
-page) that service is as documented at
-https://www.freebsd.org/cgi/man.cgi?query=service&sektion=8&manpath=FreeBSD
-
-$ service --version
-service (OpenRC) 0.23.83
-$ rc-service --version
-rc-service (OpenRC) 0.23.83
-$ ls -l /sbin/*service
--r-xr-xr-x  2 root  wheel  20368 14 Dec 21:47 /sbin/rc-service
--r-xr-xr-x  2 root  wheel  20368 14 Dec 21:47 /sbin/service
-$
-
-– and the two binaries share the same sha256 checksum. (Previously, I
-wondered whether we would find a symlink at one of the two paths.)
-@SoloBSD I'm curious, what address do you get from host pkg.cdn.trueos.org?
-
-I read clarification (from someone at iXsystems?) that OpenRC-enabled
-TrueOS does, and will contnue to, use rc.conf. Not to be confused with
-rc.conf.trueos.
-
-Ken Moore
-@beanpole135
-Dec 16 14:30
-rc.conf is still used - but not for the <service>_enable=YES stuff anymore
-
-Ken Moore
-@beanpole135
-Dec 16 14:31
-so the rc.conf.trueos file was now unneeded
-since that was primarily just for setting up the default services needed
-for a system
-
-**copy/paste from https://discourse.trueos.org/t/openrc-differences-from-freebsd-rc/389**
-
-Hello everyone. This is my first attempt at a very rough draft of a
-brain dump needed for future handbook additions in relation to OpenRC.
-Please let me know if I have drastically overlooked something you may be
-curious about, or if I have stated something incorrectly. I hope it is
-helpful to answer some of the ongoing questions during the migration to
-OpenRC.
-
-TrueOS now uses OpenRC. This replaces traditional behavior of FreeBSD RC
-in a few ways. Let’s start with the location of rc scripts for starting,
-and stopping services.
-
-TrueOS base system new rc script location:
-/etc/init.d/
-
-FreeBSD base system legacy rc script location:
-/etc/rc.d/
-
-TrueOS ports rc script location:
-/usr/local/etc/init.d/
-
-FreeBSD ports rc script location:
-/usr/local/etc/rc.d/
-
-While we are still going through the migration it may be noticeable that
-leftovers may exist on the system. They should not be used as they most
-will not work at all with OpenRC. They will be likely removed from the
-source tree altogether, and by pc-updatemanager in the future when all
-functionality has been migrated, and there is no longer a reason to keep
-them in our tree for ports compatibility.
-
-Before we get into the more technical stuff. Let’s just start with how
-to start, stop, add, or remove services from bootup. Most of the actions
-can also be accomplished using the service manager utility built into
-sysadm also known as Control Panel in TrueOS. Most of you familiar with
-the FreeBSD service command should feel right at home for the first
-couple of examples.
-
-service nginx start – to start nginx from /usr/local/etc/init.d/nginx
-service nginx restart – to restart nginx from /usr/local/etc/init.d/nginx
-service nginx stop – to stop nginx from /usr/local/etc/init.d/nginx
-service nginx status – to see the status of the nginx service
-
-rc-status – to see the status of all running services
-rc-update – to add or remove a service from the default runlevel
-
-rc-update add nginx default – add a service to the default runlevel
-rc-update remove nginx default – remove a service from the default runlevel
-
-What is a runlevel? Let’s run rc-update by itself to show all of the runlevels.
-
-              abi | boot                                   
-        adjkerntz | boot                                   
-        automount |      default                           
-         bootmisc | boot                                   
-           bridge | boot                                   
-             cron | boot                                   
-            cupsd |      default                           
-             dbus |      default                           
-             devd | boot                                   
-           dumpon | boot                                   
-             fsck | boot                                   
-           hostid | boot                                   
-         hostname | boot                                   
-             ipfw | boot                                   
-            local |      default nonetwork                 
-       localmount | boot                                   
-            lockd |      default                           
-         loopback | boot                                   
-          modules | boot                                   
-             motd | boot                                   
-           moused |      default                           
-         netmount |      default                           
-          network | boot                                   
-        newsyslog | boot                                   
-         openntpd |      default                           
-             pcdm |      default                           
-             root | boot                                   
-          rpcbind |      default                           
-        savecache |                        shutdown        
-         savecore | boot                                   
-            statd |      default                           
-      staticroute | boot                                   
-             swap | boot                                   
-           sysadm |      default                           
-          syscons | boot                                   
-           sysctl | boot                                   
-          syslogd | boot                                   
-       trueosinit |      default                           
-          urandom | boot                                   
-              zfs | boot                                   
-             zvol | boot
-
-With OpenRC there are a few runlevels that happen in order in TrueOS. First is the sysinit runlevel which we start nothing in as it’s just to allow OpenRC to initialize itself. Second is the boot runevel which we start most base services in from /etc/init.d/. Third is the default runlevel which is where services start by ports should be added. In fact services added by ports cannot be added to boot, or sysinit. OpenRC will now allow you to add a service in the prefix location to the runlevel boot which happens before the /usr filesystem is mounted. Lastly there is a shutdown runlevel which only things like savecore should run in, or the in the future perhaps pc-updatemanager installing updates at shutdown.
-
-When a service is added to a runlevel a symlink is created in /etc/runlevels. When a service is started, stopped, or changed to another state a symlink is added into /libexec/rc/init.d/.
 
 daemons exclusive inactive scheduled starting wasinactive
 depconfig failed options softlevel stopping
