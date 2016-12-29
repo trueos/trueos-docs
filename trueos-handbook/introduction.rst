@@ -407,7 +407,7 @@ This section is intended to list all known/longstanding issues with the
 
 * **Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues
   with older Broadcom wifi chipsets. Please browse the FreeBSD
-  `hardware notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_
+  `hardware notes <https://www.freebsd.org/relnotes/CURRENT/hardware/index.html>`_
   to see detailed notes about supported hardware in FreeBSD/|trueos|.
 
 * A |trueos| installation using the FreeBSD loader with both GPT and
