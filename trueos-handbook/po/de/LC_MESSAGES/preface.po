@@ -15,17 +15,6 @@ msgstr ""
 msgid "Written by users of the |trueos| operating system."
 msgstr ""
 
-#: ../../preface.rst:20
-msgid ""
-"Welcome to |trueos|! This Handbook covers the installation and use of "
-"|trueos|. This Handbook is a work in progress and relies on the "
-"contributions of many individuals. To assist with the Handbook, refer to the"
-" documentation `README <https://github.com/trueos/trueos-docs/blob/master"
-"/trueos-handbook/README.md>`_. If using IRC Freenode, join the #trueos "
-"channel and converse with many other |trueos| users. `Gitter "
-"<https://gitter.im/trueos/Lobby>`_ is another popular option for users."
-msgstr ""
-
 #: ../../preface.rst:32
 msgid "Copyright & Trademarks"
 msgstr ""
@@ -295,6 +284,27 @@ msgstr ""
 #: ../../preface.rst:154
 msgid "Graphical elements: buttons, icons, fields, columns and boxes"
 msgstr ""
+
+#: ../../preface.rst:20
+msgid ""
+"Welcome to |trueos|! This Handbook covers the installation and use of "
+"|trueos|. This Handbook is a work in progress and relies on the "
+"contributions of many individuals. To assist with the Handbook, refer to the"
+" documentation `README <https://github.com/trueos/trueos-docs/blob/master"
+"/trueos-handbook/README.md>`_. If using IRC Freenode, join the #trueos "
+"channel and converse with many other |trueos| users. `Gitter "
+"<https://gitter.im/trueos>`_ is another popular option for users."
+msgstr ""
+
+#~ msgid ""
+#~ "Welcome to |trueos|! This Handbook covers the installation and use of "
+#~ "|trueos|. This Handbook is a work in progress and relies on the "
+#~ "contributions of many individuals. To assist with the Handbook, refer to the"
+#~ " documentation `README <https://github.com/trueos/trueos-docs/blob/master"
+#~ "/trueos-handbook/README.md>`_. If using IRC Freenode, join the #trueos "
+#~ "channel and converse with many other |trueos| users. `Gitter "
+#~ "<https://gitter.im/trueos/Lobby>`_ is another popular option for users."
+#~ msgstr ""
 
 #~ msgid "Preface"
 #~ msgstr ""

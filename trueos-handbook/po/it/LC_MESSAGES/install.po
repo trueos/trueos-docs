@@ -86,11 +86,11 @@ msgstr ""
 msgid "ZFS Layout"
 msgstr ""
 
-#: ../../install.rst:642
+#: ../../install.rst:649
 msgid "Installation Progress Screen"
 msgstr ""
 
-#: ../../install.rst:663
+#: ../../install.rst:670
 msgid "Installation Finished Screen"
 msgstr ""
 
@@ -617,7 +617,7 @@ msgstr ""
 msgid "A separate SSD is needed for each type of device."
 msgstr ""
 
-#: ../../install.rst:551
+#: ../../install.rst:558
 msgid ""
 "This screen can be used to configure full-disk encryption which is meant to "
 "protect the data on the disks should the system itself be lost or stolen. "
@@ -627,7 +627,7 @@ msgid ""
 "read from disk."
 msgstr ""
 
-#: ../../install.rst:558
+#: ../../install.rst:565
 msgid ""
 "To configure full-disk encryption, check :guilabel:`Encrypt disk with GELI`."
 " This option will be greyed out if :guilabel:`GPT (Best for new hardware)` "
@@ -639,17 +639,17 @@ msgid ""
 "remember, but hard for others to guess."
 msgstr ""
 
-#: ../../install.rst:568
+#: ../../install.rst:575
 msgid ""
 "This passphrase is required to decrypt the disks. If the passphrase is lost "
 "or forgotten, all access will be lost to the encrypted data!"
 msgstr ""
 
-#: ../../install.rst:580
+#: ../../install.rst:587
 msgid ": Default ZFS Layout"
 msgstr ""
 
-#: ../../install.rst:582
+#: ../../install.rst:589
 msgid ""
 "Regardless of how many disks are selected for the ZFS configuration, the "
 "default layout will be the same. ZFS does not require separate partitions "
@@ -659,12 +659,12 @@ msgid ""
 "partition at the beginning of the drive."
 msgstr ""
 
-#: ../../install.rst:589
+#: ../../install.rst:596
 msgid ""
 "Do not remove any of the default mount points as they are used by |trueos|."
 msgstr ""
 
-#: ../../install.rst:592
+#: ../../install.rst:599
 msgid ""
 "Use :guilabel:`Add` to add additional mount points. The system will ask for "
 "the name of the mount point as size is not limited at creation time. "
@@ -672,7 +672,7 @@ msgid ""
 "remains within the ZFS pool."
 msgstr ""
 
-#: ../../install.rst:597
+#: ../../install.rst:604
 msgid ""
 "To set the swap size, click :guilabel:`Swap Size`. This will prompt to enter"
 " a size in MB. If a RAIDZ* or mirror exists, a swap partition of the "
@@ -682,13 +682,13 @@ msgid ""
 "be 2GB, due to redundancy."
 msgstr ""
 
-#: ../../install.rst:604
+#: ../../install.rst:611
 msgid ""
 "Right-click any mount point to toggle between enabling or disabling many ZFS"
 " properties:"
 msgstr ""
 
-#: ../../install.rst:607
+#: ../../install.rst:614
 msgid ""
 "**atime:** When set to :guilabel:`on`, controls whether the access time for "
 "files is updated when they are read. When set to :guilabel:`off`, this "
@@ -697,12 +697,12 @@ msgid ""
 "other utilities."
 msgstr ""
 
-#: ../../install.rst:613
+#: ../../install.rst:620
 msgid ""
 "**canmount:** If set to :guilabel:`off`, the filesystem can not be mounted."
 msgstr ""
 
-#: ../../install.rst:616
+#: ../../install.rst:623
 msgid ""
 "**casesensitivity:** The default is :guilabel:`sensitive`, as UNIX "
 "filesystems use case-sensitive file names. For example, \"kris\" is "
@@ -710,29 +710,29 @@ msgid ""
 ":guilabel:`insensitive`."
 msgstr ""
 
-#: ../../install.rst:621
+#: ../../install.rst:628
 msgid ""
 "**checksum:** Automatically verifies the integrity of the data stored on "
 "disks. Turning this property :guilabel:`off` is highly discouraged."
 msgstr ""
 
-#: ../../install.rst:625
+#: ../../install.rst:632
 msgid ""
 "**compression:** If set to :guilabel:`on`, automatically compresses stored "
 "data to conserve disk space."
 msgstr ""
 
-#: ../../install.rst:628
+#: ../../install.rst:635
 msgid ""
 "**exec:** If set to :guilabel:`off`, processes can not be executed from "
 "within this filesystem."
 msgstr ""
 
-#: ../../install.rst:631
+#: ../../install.rst:638
 msgid "**setuid:** If set to :guilabel:`on`, the set-UID bit is respected."
 msgstr ""
 
-#: ../../install.rst:633
+#: ../../install.rst:640
 msgid ""
 "After clicking :guilabel:`Next`, the wizard will show a summary of the "
 "selections. To make further changes, use :guilabel:`Back` to return to a "
@@ -740,7 +740,7 @@ msgid ""
 " return to the :guilabel:`Disk Selection` screen."
 msgstr ""
 
-#: ../../install.rst:655
+#: ../../install.rst:662
 msgid ""
 "How long the installation takes depends upon the speed of the hardware and "
 "the installation type selected. A typical installation takes between 5 and "
@@ -770,11 +770,11 @@ msgstr ""
 msgid ": Encryption"
 msgstr ""
 
-#: ../../install.rst:653
+#: ../../install.rst:660
 msgid ": Installation Progress"
 msgstr ""
 
-#: ../../install.rst:674
+#: ../../install.rst:681
 msgid ": |trueos| Installation Complete"
 msgstr ""
 
@@ -882,26 +882,26 @@ msgid ""
 " screen shown in :numref:`Figure %s <install11>`."
 msgstr ""
 
-#: ../../install.rst:572
+#: ../../install.rst:579
 msgid ""
 "When finished, click :guilabel:`Next` to move to the screen shown in "
 ":numref:`Figure %s <install12>`."
 msgstr ""
 
-#: ../../install.rst:644
+#: ../../install.rst:651
 msgid ""
 "Once :guilabel:`Yes` is selected to start the installation, a progress "
 "screen, seen in :numref:`Figure %s <install13>`, provides a progress bar and"
 " messages so the user can watch the installation's progress."
 msgstr ""
 
-#: ../../install.rst:665
+#: ../../install.rst:672
 msgid ""
 "The screen shown in :numref:`Figure %s <install14>` appears once the "
 "installation is complete."
 msgstr ""
 
-#: ../../install.rst:676
+#: ../../install.rst:683
 msgid ""
 "Click :guilabel:`Finish` to complete the |trueos| installation. It will "
 "return to the :numref:`Figure %s: TrueOS® Installer Boot Menu <install15>`. "
@@ -909,6 +909,13 @@ msgid ""
 ":guilabel:`utility` to open a *root* shell. Otherwise, select "
 ":guilabel:`reboot` to reboot into the new installation. Wait until this menu"
 " exits before removing the installation media."
+msgstr ""
+
+#: ../../install.rst:553
+msgid ""
+"Due to a FreeBSD regression, do not use the FreeBSD bootloader with GELI and"
+" GPT encryption for fresh installations of |trueos|. Please see "
+":ref:`Ongoing issues` for more information about this issue."
 msgstr ""
 
 #~ msgid ""

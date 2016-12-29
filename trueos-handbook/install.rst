@@ -536,6 +536,13 @@ to see the screen shown in :numref:`Figure %s <install11>`.
 
    : Encryption
 
+.. TODO remove warning box once FreeBSD regression is fixed.
+
+.. warning:: Due to a FreeBSD regression, do not use the FreeBSD
+   bootloader with GELI and GPT encryption for fresh installations of
+   |trueos|. Please see :ref:`Ongoing issues` for more information about
+   this issue.
+
 This screen can be used to configure full-disk encryption which is
 meant to protect the data on the disks should the system itself be
 lost or stolen. This type of encryption prevents the data on the disks

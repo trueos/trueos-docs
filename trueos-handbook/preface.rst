@@ -11,7 +11,7 @@ contributions of many individuals. To assist with the Handbook, refer to
 the documentation
 `README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
 If using IRC Freenode, join the #trueos channel and converse with many
-other |trueos| users. `Gitter <https://gitter.im/trueos/Lobby>`_ is
+other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is
 another popular option for users.
 
 .. _Copyright:

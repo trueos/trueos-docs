@@ -746,14 +746,6 @@ msgid ""
 " Qt, and will be fixed with the next version of Qt."
 msgstr ""
 
-#: ../../introduction.rst:420
-msgid ""
-"**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
-" Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
-"<https://www.freebsd.org/releases/11.0R/hardware.html>`_ to see detailed "
-"notes about supported hardware in FreeBSD/|trueos|."
-msgstr ""
-
 #: ../../introduction.rst:401
 msgid ""
 "**Older AMD/ATI cards:** These are not supported in |trueos| yet. There are "
@@ -763,7 +755,7 @@ msgid ""
 "effectiveness is (so far) inconsistent."
 msgstr ""
 
-#: ../../introduction.rst:425
+#: ../../introduction.rst:432
 msgid ""
 "Additional information about these issues can be viewed in the various "
 "communication channels listed in :ref:`Finding Help` section of this "
@@ -820,6 +812,30 @@ msgid ""
 "These new utilites are available in the :ref:`SysAdm™ Client`: "
 ":ref:`Managing Remote Connections` and :ref:`Task Manager`."
 msgstr ""
+
+#: ../../introduction.rst:425
+msgid ""
+"A |trueos| installation using the FreeBSD loader with both GPT and GELI "
+"encryption is currently nonfunctional, due to a FreeBSD `regression "
+"<https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=213491>`_. Currently, it "
+"is best to avoid using GPT and GELI together with the BSD bootloader for "
+"fresh installs while the FreeBSD contributors fix the issue."
+msgstr ""
+
+#: ../../introduction.rst:420
+msgid ""
+"**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
+" Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
+"<https://www.freebsd.org/relnotes/CURRENT/hardware/index.html>`_ to see "
+"detailed notes about supported hardware in FreeBSD/|trueos|."
+msgstr ""
+
+#~ msgid ""
+#~ "**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
+#~ " Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
+#~ "<https://www.freebsd.org/releases/11.0R/hardware.html>`_ to see detailed "
+#~ "notes about supported hardware in FreeBSD/|trueos|."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "These new utilites are available in the :ref:`SysAdm™ Client`: :ref:`Manage "
