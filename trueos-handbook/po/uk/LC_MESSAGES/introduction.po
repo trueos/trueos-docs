@@ -746,14 +746,6 @@ msgid ""
 " Qt, and will be fixed with the next version of Qt."
 msgstr ""
 
-#: ../../introduction.rst:420
-msgid ""
-"**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
-" Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
-"<https://www.freebsd.org/releases/11.0R/hardware.html>`_ to see detailed "
-"notes about supported hardware in FreeBSD/|trueos|."
-msgstr ""
-
 #: ../../introduction.rst:401
 msgid ""
 "**Older AMD/ATI cards:** These are not supported in |trueos| yet. There are "
@@ -829,6 +821,21 @@ msgid ""
 "is best to avoid using GPT and GELI together with the BSD bootloader for "
 "fresh installs while the FreeBSD contributors fix the issue."
 msgstr ""
+
+#: ../../introduction.rst:420
+msgid ""
+"**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
+" Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
+"<https://www.freebsd.org/relnotes/CURRENT/hardware/index.html>`_ to see "
+"detailed notes about supported hardware in FreeBSD/|trueos|."
+msgstr ""
+
+#~ msgid ""
+#~ "**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
+#~ " Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
+#~ "<https://www.freebsd.org/releases/11.0R/hardware.html>`_ to see detailed "
+#~ "notes about supported hardware in FreeBSD/|trueos|."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "These new utilites are available in the :ref:`SysAdm™ Client`: :ref:`Manage "

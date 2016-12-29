@@ -27,128 +27,128 @@ msgid ""
 "questions.html>`_"
 msgstr ""
 
-#: ../../help.rst:67
+#: ../../help.rst:69
 msgid ""
 "Do not post large error messages in the channel. Instead, use a pasting "
 "service such as pastebin.com and refer to the URL on channel."
 msgstr ""
 
-#: ../../help.rst:108
+#: ../../help.rst:110
 msgid "Report a bug"
 msgstr ""
 
-#: ../../help.rst:120
+#: ../../help.rst:122
 msgid ""
 "The GitHub issues tracker uses email to update contributors on the status of"
 " bugs. Please use a valid and frequently used email address when creating a "
 "GitHub account for the efficient resolution of issues."
 msgstr ""
 
-#: ../../help.rst:174
+#: ../../help.rst:176
 msgid "Social Media"
 msgstr ""
 
-#: ../../help.rst:181
+#: ../../help.rst:183
 msgid "`Official TrueOS® Blog <https://www.trueos.org/blog/>`_"
 msgstr ""
 
-#: ../../help.rst:183
+#: ../../help.rst:185
 msgid "`TrueOS® Project on Twitter <https://twitter.com/TrueOS_Project/>`_"
 msgstr ""
 
-#: ../../help.rst:185
+#: ../../help.rst:187
 msgid ""
 "`TrueOSD® Facebook Group <https://www.facebook.com/groups/4210443834/>`_"
 msgstr ""
 
-#: ../../help.rst:187
+#: ../../help.rst:189
 msgid "`TrueOS® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_"
 msgstr ""
 
-#: ../../help.rst:193
+#: ../../help.rst:195
 msgid "FreeBSD Handbook and FAQ"
 msgstr ""
 
-#: ../../help.rst:214
+#: ../../help.rst:216
 msgid "Search and Portals"
 msgstr ""
 
-#: ../../help.rst:219
+#: ../../help.rst:221
 msgid ""
 "`The OpenDirectory "
 "<http://www.dmoz.org/Computers/Software/Operating_Systems/Unix/BSD/>`_"
 msgstr ""
 
-#: ../../help.rst:221
+#: ../../help.rst:223
 msgid ""
 "`FreeBSD Search <http://www.freebsd.org/search/index.html>`_ (includes "
 "mailing list archives, man pages, and web pages)"
 msgstr ""
 
-#: ../../help.rst:224
+#: ../../help.rst:226
 msgid "`FreeBSD News <https://www.freebsdnews.com/>`_"
 msgstr ""
 
-#: ../../help.rst:226
+#: ../../help.rst:228
 msgid "`About BSD <http://aboutbsd.net/>`_"
 msgstr ""
 
-#: ../../help.rst:228
+#: ../../help.rst:230
 msgid "`BSD Guides <http://www.bsdguides.org/guides/>`_"
 msgstr ""
 
-#: ../../help.rst:230
+#: ../../help.rst:232
 msgid "`Slashdot BSD <https://bsd.slashdot.org/>`_"
 msgstr ""
 
-#: ../../help.rst:232
+#: ../../help.rst:234
 msgid "`DistroWatch <http://distrowatch.com/>`_"
 msgstr ""
 
-#: ../../help.rst:234
+#: ../../help.rst:236
 msgid "`LinuxBSDos <http://linuxbsdos.com/>`_"
 msgstr ""
 
-#: ../../help.rst:240
+#: ../../help.rst:242
 msgid "Other Resources"
 msgstr ""
 
-#: ../../help.rst:244
+#: ../../help.rst:246
 msgid "`The FreeBSD Diary <http://www.freebsddiary.org/>`_"
 msgstr ""
 
-#: ../../help.rst:248
+#: ../../help.rst:250
 msgid "`BSD YouTube channel <https://www.youtube.com/user/bsdconferences>`_"
 msgstr ""
 
-#: ../../help.rst:250
+#: ../../help.rst:252
 msgid "`BSD Talk <http://bsdtalk.blogspot.com/>`_"
 msgstr ""
 
-#: ../../help.rst:252
+#: ../../help.rst:254
 msgid "`BSD Now <http://www.bsdnow.tv/>`_"
 msgstr ""
 
-#: ../../help.rst:254
+#: ../../help.rst:256
 msgid "`BSD Magazine <https://bsdmag.org/>`_ (free, monthly download)"
 msgstr ""
 
-#: ../../help.rst:256
+#: ../../help.rst:258
 msgid ""
 "`FreeBSD Journal <http://www.freebsdjournal.com/>`_ (bi-monthly magazine)"
 msgstr ""
 
-#: ../../help.rst:258
+#: ../../help.rst:260
 msgid "`BSD Hacks <http://shop.oreilly.com/product/9780596006792.do>`_ (book)"
 msgstr ""
 
-#: ../../help.rst:260
+#: ../../help.rst:262
 msgid ""
 "`The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ "
 "(book)"
 msgstr ""
 
-#: ../../help.rst:262
+#: ../../help.rst:264
 msgid ""
 "`Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)"
 msgstr ""
@@ -176,20 +176,14 @@ msgid ""
 "a login using either an existing GitHub or Twitter account."
 msgstr ""
 
-#: ../../help.rst:44
-msgid ""
-"To access the Gitter channel, point a web browser to the `TrueOS® Lobby "
-"<https://gitter.im/trueos/Lobby>`_."
-msgstr ""
-
-#: ../../help.rst:54
+#: ../../help.rst:56
 msgid ""
 "Gitter is a great way to chat with other users and get answers to questions."
 " Here are few things to keep in mind when asking a question on the Gitter "
 "channel:"
 msgstr ""
 
-#: ../../help.rst:58
+#: ../../help.rst:60
 msgid ""
 "Most of the regular users are always logged in, even when they are away from"
 " their computer or are busy doing other things. If no one responds "
@@ -197,31 +191,24 @@ msgid ""
 "Stick around for a while to see if anyone responds."
 msgstr ""
 
-#: ../../help.rst:63
+#: ../../help.rst:65
 msgid ""
 "Users represent many different time zones. It is quite possible it is late "
 "at night or very early in the morning for some users when asking a question."
 msgstr ""
 
-#: ../../help.rst:70
+#: ../../help.rst:72
 msgid "Be polite and do not demand a response from others."
 msgstr ""
 
-#: ../../help.rst:72
+#: ../../help.rst:74
 msgid ""
 "It is considered rude to \"Chat Privately\" with someone who does not know "
 "you without first asking their permission. If no one answers the question, "
 "do not start chatting privately with unkown people in the room."
 msgstr ""
 
-#: ../../help.rst:77
-msgid ""
-"The first time joining the channel, it is okay to say hi and introduce "
-"yourself. If a new person joins the channel, feel free to welcome them and "
-"to make them feel welcome."
-msgstr ""
-
-#: ../../help.rst:87
+#: ../../help.rst:89
 msgid ""
 "The |trueos| Project also has a `Subreddit "
 "<https://www.reddit.com/r/TrueOS/>`_ for users who prefer to use Reddit to "
@@ -230,7 +217,7 @@ msgid ""
 "login account to submit or comment on posts."
 msgstr ""
 
-#: ../../help.rst:110
+#: ../../help.rst:112
 msgid ""
 "One of the most effective ways to assist the |trueos| Project is by "
 "reporting problems or bugs encountered while using |trueos|. Anyone can "
@@ -238,7 +225,7 @@ msgid ""
 "ensure a speedy response:"
 msgstr ""
 
-#: ../../help.rst:115
+#: ../../help.rst:117
 msgid ""
 "|trueos| uses `GitHub <https://github.com/trueos/>`_, to manage bugs. A "
 "GitHub account is required before bugs can be reported. Navigate to "
@@ -246,7 +233,7 @@ msgid ""
 "up for GitHub` to create a new github account."
 msgstr ""
 
-#: ../../help.rst:125
+#: ../../help.rst:127
 msgid ""
 "The |trueos| code has been organized into repositories representing the "
 "|lumina| desktop, the graphical utilities, |sysadm|, and various other "
@@ -255,7 +242,7 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../help.rst:131
+#: ../../help.rst:133
 msgid ""
 "After clicking a repostitory name, use the :guilabel:`Search` bar on its "
 "page to confirm no similar bug report exists. If a similar report does "
@@ -264,18 +251,18 @@ msgid ""
 "creating a new report does require signing into the website."
 msgstr ""
 
-#: ../../help.rst:148
+#: ../../help.rst:150
 msgid ": Creating a Bug Report"
 msgstr ""
 
-#: ../../help.rst:150
+#: ../../help.rst:152
 msgid ""
 "Write a brief but descriptive title which includes the error. Ideally, the "
 "title is short (8 words or less) and contains key words about the error so "
 "the bug report is easily found with the search tool."
 msgstr ""
 
-#: ../../help.rst:154
+#: ../../help.rst:156
 msgid ""
 "In the :guilabel:`Leave a Comment` field, write about the circumstance of "
 "the error, including instructions how to recreate it. If an error message is"
@@ -284,14 +271,14 @@ msgid ""
 " include the output of :command:`uname -a`."
 msgstr ""
 
-#: ../../help.rst:161
+#: ../../help.rst:163
 msgid ""
 "If the problem appears to be hardware related, attach a copy of "
 ":file:`/var/run/dmesg.boot` as this file shows the hardware probed the last "
 "time the |trueos| system booted."
 msgstr ""
 
-#: ../../help.rst:165
+#: ../../help.rst:167
 msgid ""
 "After describing the issue, click :guilabel:`Submit new issue` to create the"
 " issue. The bug tracker will attach a unique number to the report and send "
@@ -299,14 +286,14 @@ msgid ""
 " with the bug report."
 msgstr ""
 
-#: ../../help.rst:176
+#: ../../help.rst:178
 msgid ""
 "The |trueos| project maintains several social media sites to help users keep"
 " up-to-date with what is happening and to provide venues for developers and "
 "users to network with each other. Anyone is welcome to join."
 msgstr ""
 
-#: ../../help.rst:195
+#: ../../help.rst:197
 msgid ""
 "|trueos| uses FreeBSD as its underlying operating system, so everything in "
 "the `FreeBSD Handbook "
@@ -317,7 +304,7 @@ msgid ""
 "learning how things work under the hood of a |trueos| system."
 msgstr ""
 
-#: ../../help.rst:205
+#: ../../help.rst:207
 msgid ""
 "Some configurations described in the FreeBSD Handbook already \"just work\" "
 "on a |trueos| system as they have been pre-configured. In these instances, "
@@ -325,23 +312,23 @@ msgid ""
 "configured and why it works."
 msgstr ""
 
-#: ../../help.rst:216
+#: ../../help.rst:218
 msgid ""
 "Many BSD related search portals exist. If unable to find an answer from the "
 "forums or mailing lists, try searching these websites:"
 msgstr ""
 
-#: ../../help.rst:242
+#: ../../help.rst:244
 msgid "Many BSD sites and resources may also contain useful information:"
 msgstr ""
 
-#: ../../help.rst:246
+#: ../../help.rst:248
 msgid ""
 "`TrueOS® YouTube channel <https://www.youtube.com/channel/UCyd7MaPVUpa-"
 "ueUsGjUujag>`_"
 msgstr ""
 
-#: ../../help.rst:138
+#: ../../help.rst:140
 msgid ""
 "To create a new bug report, navigate to the `trueos-core repository "
 "<https://github.com/trueos/trueos-core>`_ and press :menuselection:`Issues "
@@ -349,15 +336,15 @@ msgid ""
 "creation of a new bug report."
 msgstr ""
 
-#: ../../help.rst:85
+#: ../../help.rst:87
 msgid "|trueos| Subreddit"
 msgstr ""
 
-#: ../../help.rst:96
+#: ../../help.rst:98
 msgid "|trueos| Discourse"
 msgstr ""
 
-#: ../../help.rst:98
+#: ../../help.rst:100
 msgid ""
 "|trueos| also has a discourse `channel <https://discourse.trueos.org/>`_ "
 "managed concurrently with the Subreddit. Functionally similar to the "
@@ -369,17 +356,49 @@ msgstr ""
 msgid "|TrueOS| Gitter Channel"
 msgstr ""
 
-#: ../../help.rst:47
-msgid ""
-"Gitter also maintains a full archive of the chat history. This means lengthy"
-" conversations about hardware issues or workarounds will always be available"
-" for reference. To access the Gitter archive, navigate to the |trueos| "
-"`archive <https://gitter.im/trueos/Lobby/archives>`_."
-msgstr ""
-
-#: ../../help.rst:52
+#: ../../help.rst:54
 msgid "It is not required to log in to Gitter to browse the archive."
 msgstr ""
+
+#: ../../help.rst:44
+msgid ""
+"Access the Gitter channel by pointing a web browser to the `TrueOS Community"
+" <https://gitter.im/trueos>`_."
+msgstr ""
+
+#: ../../help.rst:47
+msgid ""
+"Gitter also maintains full archives of the chat history. This means lengthy "
+"conversations about hardware issues or workarounds will always be available "
+"for reference. Because |trueos| maintains several chatrooms on Gitter, each "
+"room will have an archive to access. For example, access *Lobby* archive, by"
+" navigating to https://gitter.im/trueos/Lobby/archives."
+msgstr ""
+
+#: ../../help.rst:79
+msgid ""
+"The first time joining the channel, it is okay to say hi and introduce "
+"yourself. If a new person joins the channel, feel free to welcome them and "
+"help them feel at home."
+msgstr ""
+
+#~ msgid ""
+#~ "To access the Gitter channel, point a web browser to the `TrueOS® Lobby "
+#~ "<https://gitter.im/trueos/Lobby>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first time joining the channel, it is okay to say hi and introduce "
+#~ "yourself. If a new person joins the channel, feel free to welcome them and "
+#~ "to make them feel welcome."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Gitter also maintains a full archive of the chat history. This means lengthy"
+#~ " conversations about hardware issues or workarounds will always be available"
+#~ " for reference. To access the Gitter archive, navigate to the |trueos| "
+#~ "`archive <https://gitter.im/trueos/Lobby/archives>`_."
+#~ msgstr ""
 
 #~ msgid "TrueOS® Gitter Channel"
 #~ msgstr ""

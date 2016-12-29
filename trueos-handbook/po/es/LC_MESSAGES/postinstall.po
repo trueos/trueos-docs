@@ -623,14 +623,6 @@ msgid ""
 "prompt to display the available devices."
 msgstr ""
 
-#: ../../postinstall.rst:706
-msgid ""
-"If none of the above has fixed the problem, search the `TrueOS® sub-Reddit "
-"<https://www.reddit.com/r/TrueOS/>`_ or ask a question on the `TrueOS Gitter"
-" Channel <https://gitter.im/trueos/Lobby>`_. For additional communications "
-"options, check the section on :ref:`Finding Help`."
-msgstr ""
-
 #: ../../postinstall.rst:164
 msgid ""
 "Use the arrow keys to select an option, then press :kbd:`Enter` to boot "
@@ -930,6 +922,21 @@ msgid ""
 "in the BIOS. If the PC is not booting before or after installation, check "
 "the BIOS and turn *LBA* off (do not leave it on automatic)."
 msgstr ""
+
+#: ../../postinstall.rst:706
+msgid ""
+"If none of the above has fixed the problem, search the `TrueOS® sub-Reddit "
+"<https://www.reddit.com/r/TrueOS/>`_ or ask a question on the `TrueOS Gitter"
+" Channel <https://gitter.im/trueos>`_. For additional communications "
+"options, check the section on :ref:`Finding Help`."
+msgstr ""
+
+#~ msgid ""
+#~ "If none of the above has fixed the problem, search the `TrueOS® sub-Reddit "
+#~ "<https://www.reddit.com/r/TrueOS/>`_ or ask a question on the `TrueOS Gitter"
+#~ " Channel <https://gitter.im/trueos/Lobby>`_. For additional communications "
+#~ "options, check the section on :ref:`Finding Help`."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "**1. Boot Multi User:** This is the default option for booting |trueos|. The"
