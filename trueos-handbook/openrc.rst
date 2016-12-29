@@ -1,3 +1,4 @@
+.. index:: init
 .. _OpenRC:
 
 OpenRC and |trueos|
@@ -25,6 +26,7 @@ Location of RC scripts for starting and stopping services:
    migrated. If discovered, **do not** attempt to use these leftover
    files.
 
+.. index:: init, bootservices
 .. _Managing Bootup Services:
 
 Managing Bootup Services
@@ -171,296 +173,388 @@ installing updates at shutdown.
 
 When a service is added to a runlevel a symlink is created in
 :file:`/etc/runlevels`. When a service is started, stopped, or changed
-to another state a symlink is added to :file:`/libexec/rc/init.d/`.
+to another state a symlink is added to :file:`/libexec/rc/init.d/`, as
+seen in this example:
 
-.. TODO loook at post to see how to format this.
+.. code-block:: none
 
-daemons exclusive inactive scheduled starting wasinactive
-depconfig failed options softlevel stopping
-deptree hotplugged prefix.lock started tmp
-
-**gitter copy/pastes**
-
-
-daemons exclusive inactive scheduled starting wasinactive
-depconfig failed options softlevel stopping
-deptree hotplugged prefix.lock started tmp
-
-Also under /libexec/rc exists a cache directory which keeps a dependancies cache only updated when dependencies change. In addition several directories exist for other binaries, and special binaries used by OpenRC functions.
-
-With OpenRC we also have a dependency based init system. Let’s look at a service which needs network such as sysadm.
-
-Contents of /usr/local/etc/init.d/sysadm depend section:
-
-depend() {
-need net
-after bootmisc
-keyword -shutdown
-}
-
-We can define that sysadm needs network which is the nickname of the /etc/init.d/network service defined by provide in network. We also see that it starts after bootmisc. If we don’t want restarting network to restart sysadm then we don’t need net for sysadm. If we just want sysadm to start after network then we add network the actually name of the script in after bootmisc.
-
-Now let’s look at /etc/init.d/network
-
-depend()
-{
-provide net
-need localmount
-after bootmisc modules
-keyword -jail -prefix -vserver -stop
-}
-
-The provide option will set the service nickname to net. Need says that restarting localmount will restart network. After defines that we start after bootmisc, and modules. The keyword -jail option for example says we do not run this service in a jail, prefix, or the other options shown.
-
-We have a drastically different rc defaults file from FreeBSD
-TrueOS rc defaults
-github.com2
-trueos/freebsd/blob/drm-next-4.7/etc/defaults/rc.conf
-
-# Global OpenRC configuration settings
-
-# Set to "YES" if you want the rc system to try and start services
-# in parallel for a slight speed improvement. When running in parallel we
-# prefix the service output with its name as the output will get
-# jumbled up.
-# WARNING: whilst we have improved parallel, it can still potentially lock
-# the boot process. Don't file bugs about this unless you can supply
-# patches that fix it without breaking other things!
-#rc_parallel="NO"
-
-# Set rc_interactive to "YES" and you'll be able to press the I key during
-# boot so you can choose to start specific services. Set to "NO" to disable
-# this feature. This feature is automatically disabled if rc_parallel is
-# set to YES.
-#rc_interactive="YES"
-
-# If we need to drop to a shell, you can specify it here.
-# If not specified we use $SHELL, otherwise the one specified in /etc/passwd,
-# otherwise /bin/sh
-
-This file has been truncated. show original
-
-FreeBSD rc defaults
-github.com2
-freebsd/freebsd/blob/master/etc/defaults/rc.conf
-
-#!/bin/sh
-
-# This is rc.conf - a file full of useful variables that you can set
-# to change the default startup behavior of your system.  You should
-# not edit this file!  Put any overrides into one of the ${rc_conf_files}
-# instead and you will be able to update these defaults later without
-# spamming your local configuration information.
-#
-# The ${rc_conf_files} files should only contain values which override
-# values set in this file.  This eases the upgrade path when defaults
-# are changed and new features are added.
-#
-# All arguments must be in double or single quotes.
-#
-# For a more detailed explanation of all the rc.conf variables, please
-# refer to the rc.conf(5) manual page.
-#
-# $FreeBSD$
-
-##############################################################
-
-This file has been truncated. show original
-
-The reason ours is so much smaller is the fact that rc.conf is now primarily used for tuning OpenRC behavior. In particular we currently use 3 knobs by default:
-
-rc_parallel="YES"
-rc_logger="YES"
-rc_log_path="/var/log/rc.log"
-
-The rc_parrallel is just to inform that we want to start all services in parallel. The rc_logger is just to inform that we want to enable logging. The rc_log_path is just to define the location we want to use for logging rc activity.
-
-Let’s look at some of the other knobs we have enabled on a clean install to work for the TrueOS OpenRC migration. We have ensured that many of these knobs would continue to work in /etc/rc.conf to ensure a smoother migration for existing users to upgrade. We do plan to migrate them, and I will outline where they should likely going in the future.
-
-linux_enable="YES"
-ifconfig_re0="DHCP"
-ifconfig_re0_ipv6="inet6 accept_rtadv"
-hostname="trueos-4843"
-kldload_i915kms="i915kms"
-zfs_enable="YES"
-wlans_iwm0="wlan0"
-kldload_i915kms="i915kms"
-ifconfig_wlan0_ipv6="inet6 accept_rtadv"
-
-The linux_enable=”YES” parameter is to tell the /etc/init.d/abi service that we want to enable the Linux compat during boot. This may be migrated in the future to /etc/conf.d/abi or something more OpenRC style.
-
-The ifconfig_re0=”DHCP”, and ifconfig_re0_ipv6="inet6 accept_rtadv" will likely be migrated to /etc/conf.d/network where it is more appropriate.
-
-The hostname="trueos-4843" parameter would typically go under /etc/conf.d/hostname.
-
-The zfs_enable parameter is no longer in use, and needs to to removed.
-
-The three wlans lines would also typically belong in /etc/conf.d.network.
-
-The kldload_i915kms="i915kms" is a TrueOS specific function not normally part of FreeBSD to allow the installer to enable an individual module loading post install. Normally all modules are defined together in /etc/rc.conf with kldlist=””. This should eventually belong in /etc/conf.d/modules.
-
-This would be something which many of you may see leftover from upgrades. The SYNCDHCP parameter was to tell dhclient to wait in the foreground until, and IP address could be obtained. This is undesirable for a laptop, and unfortunately has not worked reliably with for us to use DHCP on wireless devices with dhclient.
-
-wlans_iwm0="wlan0 SYNCDHCP"
-
-This is one of the reasons we are now shipping with dhcpcd as the default dhcp client. For dhcp to work properly SYNCDHCP will not work, and should not be used. Instead it should be:
-
-wlans_iwm0="wlan0 DHCP"
-
-We have a one time migration script which will run for 10-28-16, and older installs still using the legacy FreeBSD rc system.
-github.com1
-trueos/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc
-
-#!/bin/sh
-
-if [ ! -e /etc/rc.conf ] ; then
-  exit 0
-fi
-
-. /etc/rc.conf
-
-for var in `set | grep "_enable="`
-do
-  key=`echo $var | cut -d '=' -f 1 | sed 's|_enable||g'`
-  val=`echo $var | cut -d '=' -f 2`
-  if [ "$val" != "YES" ] && [ "$val" != "NO" ] ; then continue; fi
-  if [ "$val" = "NO" ] && [ -e "/etc/runlevels/default/$key" ] ; then
-      echo "Deleting OpenRC service for $key to default runlevel..."
-      rc-update delete $key default
-  fi
-  if [ -e "/etc/init.d/$key" -o -e "/usr/local/etc/init.d/$key" ] ; then
-    if [ -e "/etc/runlevels/default/$key" ] ; then
-      echo "OpenRC service for $key already enabled, skipping.."
-
-This file has been truncated. show original
-
-With the migration rc.conf.trueos has been phased out of TrueOS, and is removed from legacy installs 10-28-16, and older by pc-updatemanger:
-
-Legacy rc.conf.trueos location:
-/etc/rc.conf.trueos
-
-This script was used to define a list of services such as PCDM that we want to boot by default on a desktop. It also defined what drivers we would want to load on a desktop. We now do this when the trueos-desktop, or trueos-server package is installed instead using sysrc, and other methods. There is no longer a need for us to have an extra overlay file to accomplish this behaviour.
-
-TrueOS Desktop pkg-install script:
-github.com1
-trueos/trueos-desktop/blob/master/port-files/pkg-install
-
-#!/bin/sh
-# Script to install preload.conf
-
-PREFIX=${PKG_PREFIX-/usr/local}
-
-if [ "$2" != "POST-INSTALL" ] ; then
-   exit 0
-fi
-
-# If this is during staging, we can skip for now
-echo $PREFIX | grep -q '/stage/'
-if [ $? -eq 0 ] ; then
-   exit 0
-fi
-
-# REMOVEME - Temp fix to ensure i915kms is loaded on upgraded systems
-# 8-29-2016
-if [ -e "/etc/rc.conf.trueos" ] ; then
-  set +e
-  grep -q "i915kms" /etc/rc.conf.trueos
-
-This file has been truncated. show original
-
-TrueOS Server pkg-install script:
-github.com
-trueos/trueos-server/blob/master/port-files/pkg-install
-
-#!/bin/sh
-# Script to install preload.conf
-
-PREFIX=${PKG_PREFIX-/usr/local}
-
-if [ "$2" != "POST-INSTALL" ] ; then
-   exit 0
-fi
-
-# If this is during staging, we can skip for now
-echo $PREFIX | grep -q '/stage/'
-if [ $? -eq 0 ] ; then
-   exit 0
-fi
-
-# Copy over customizations for TrueOS
-  install -m 644 ${PREFIX}/share/trueos/conf/loader.conf.trueos /boot/loader.conf.trueos
-  install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
-  install -m 644 ${PREFIX}/share/trueos/server-defaults/etc/conf.d/modules /etc/conf.d/modules/
-
-This file has been truncated. show original
-
-As one may have guessed the typical nginx_enable=”YES” is no longer used to enable services. Instead the rc-update command is used to add, or remove services from runlevels. The one time migration script should take care of auto adding previously defined user services to the OpenRC default runlevel. Leftover lines can be removed after migration.
-
-We still have quite a bit of work to do updating each ports Makefile currently using:
-
-USE_RC_SUBR=
-
-To use the new format:
-
-USE_OPENRC_SUBR=
-
-This should only be changed when each service file has the new OpenRC ready format:
-github.com1
-trueos/freebsd-ports/blob/xserver-next/devel/dbus/files/dbus.in
-
-#!/sbin/openrc-run
-# Copyright (c) 2007-2015 The OpenRC Authors.
-# See the Authors file at the top-level directory of this distribution and
-# https://github.com/OpenRC/openrc/blob/master/AUTHORS
-#
-# This file is part of OpenRC. It is subject to the license terms in
-# the LICENSE file found in the top-level directory of this
-# distribution and at https://github.com/OpenRC/openrc/blob/master/LICENSE
-# This file may not be copied, modified, propagated, or distributed
-# except according to the terms contained in the LICENSE file.
-
-command=/usr/local/bin/dbus-daemon
-pidfile=/var/run/dbus/dbus.pid
-command_args="${dbusd_args---system}"
-name="Message Bus Daemon"
-
-depend()
-{
-	need localmount
-	after bootmisc
-
-This file has been truncated. show original
-
-FreeBSD example of dbus using the legacy rc script format:
-github.com
-freebsd/freebsd-ports/blob/master/devel/dbus/files/dbus.in
-
-#!/bin/sh
-#
-# $FreeBSD$
-#
-# PROVIDE: dbus
-# REQUIRE: DAEMON ldconfig
-#
-# Add the following lines to /etc/rc.conf to enable the D-BUS messaging system:
-#
-# dbus_enable="YES"
-#
-
-. /etc/rc.subr
-. %%GNOME_SUBR%%
-
-dbus_enable=${dbus_enable-${gnome_enable}}
-dbus_flags=${dbus_flags-"--system"}
-
-name=dbus
-rcvar=dbus_enable
-
-This file has been truncated. show original
-
-Several developers are working on the thousands of instances as quickly as possible. Going forward anyone can begin transitioning to defining all service configuration in /etc/conf.d/ if desired. All configuration files should reside in that directory with the name of the service for the configuration file itself.
-
-For nginx this would be:
-/etc/conf.d/nginx
-
-In general usage of /etc/rc.conf should be kept to a minimum, and you should only tweak the default OpenRC configuration parameters if you really know what you are doing. Service configuration can still be used in /etc/rc.conf. It's simply no longer used for enabling, or disabling services for startup.
+   [tmoore@Observer] ~% ls /libexec/rc/init.d/
+   daemons exclusive inactive scheduled starting wasinactive
+   depconfig failed options softlevel stopping
+   deptree hotplugged prefix.lock started tmp
+
+Also under :file:`/libexec/rc` exists a cache directory which keeps a
+dependancies cache that is only updated when dependencies change.
+Additionally, several directories exist for other binaries and special
+binaries used by OpenRC functions.
+
+OpenRC has a dependency based init system. As an example, let’s examine
+a service which needs *network* such as SysAdm. Here are the contents of
+the :file:`/usr/local/etc/init.d/sysadm` *depend* section:
+
+.. code-block:: none
+
+   depend() {
+   need net
+   after bootmisc
+   keyword -shutdown
+   }
+
+We can define that SysAdm needs *network*, which is the nickname of the
+:file:`/etc/init.d/network` service defined by *provide in network*. We
+also see that it starts after *bootmisc*. If we don’t want restarting
+*network* to restart SysAdm then we don’t need *net* for SysAdm. If we
+just want SysAdm to start after network then we add *network* the actual
+name of the script in *after bootmisc*.
+
+Here are the contents of :file:`/etc/init.d/network`:
+
+.. code-block:: none
+
+   depend()
+   {
+   provide net
+   need localmount
+   after bootmisc modules
+   keyword -jail -prefix -vserver -stop
+   }
+
+The *provide* option will set the service nickname to *net*. *Need*
+indicates restarting *localmount* will restart *network*. *After*
+defines that we start after *bootmisc* and *modules*. For example, the
+keyword *-jail* option says this service doesn't run in a jail, prefix,
+any of the other options shown.
+
+.. index:: init, rcdefault
+.. _RC Defaults:
+
+RC Defaults
+===========
+
+|trueos| and FreeBSD now have very different rc defaults.
+
+**TrueOS OpenRC Defaults**
+
+The entire
+`TrueOS rc.conf file <https://github.com/trueos/freebsd/blob/drm-next-4.7/etc/defaults/rc.conf>`_
+is viewable on GitHub.
+
+.. code-block:: none
+
+   # Global OpenRC configuration settings
+
+   # Set to "YES" if you want the rc system to try and start services
+   # in parallel for a slight speed improvement. When running in parallel we
+   # prefix the service output with its name as the output will get
+   # jumbled up.
+   # WARNING: whilst we have improved parallel, it can still potentially lock
+   # the boot process. Don't file bugs about this unless you can supply
+   # patches that fix it without breaking other things!
+   #rc_parallel="NO"
+
+   # Set rc_interactive to "YES" and you'll be able to press the I key during
+   # boot so you can choose to start specific services. Set to "NO" to disable
+   # this feature. This feature is automatically disabled if rc_parallel is
+   # set to YES.
+   #rc_interactive="YES"
+
+   # If we need to drop to a shell, you can specify it here.
+   # If not specified we use $SHELL, otherwise the one specified in /etc/passwd,
+   # otherwise /bin/sh
+
+**FreeBSD RC Defaults**
+
+The entire
+`FreeBSD rc.conf file <https://github.com/freebsd/freebsd/blob/master/etc/defaults/rc.conf>`_
+is available online.
+
+.. code-block:: none
+
+   #!/bin/sh
+
+   # This is rc.conf - a file full of useful variables that you can set
+   # to change the default startup behavior of your system.  You should
+   # not edit this file!  Put any overrides into one of the ${rc_conf_files}
+   # instead and you will be able to update these defaults later without
+   # spamming your local configuration information.
+   #
+   # The ${rc_conf_files} files should only contain values which override
+   # values set in this file.  This eases the upgrade path when defaults
+   # are changed and new features are added.
+   #
+   # All arguments must be in double or single quotes.
+   #
+   # For a more detailed explanation of all the rc.conf variables, please
+   # refer to the rc.conf(5) manual page.
+   #
+   # $FreeBSD$
+
+   ##############################################################
+
+The |trueos| :file:`rc.conf` file is much smaller because
+:file:`rc.conf` is now primarily used for tuning OpenRC behavior. By
+default, |trueos| uses 3 elements, documented in
+:numref:`Table %s <orcpritun>`
+
+.. _orcpritun:
+.. table:: : OpenRC Primary Tunables
+
+   +-------------------------------+-------------------------------------+
+   | Tunable                       | Description                         |
+   +===============================+=====================================+
+   | rc_parallel="YES"             | Starts all services in parallel     |
+   +-------------------------------+-------------------------------------+
+   | rc_logger="YES"               | Enables logging                     |
+   +-------------------------------+-------------------------------------+
+   | rc_log_path="/var/log/rc.log" | Defines the location for logging rc |
+   |                               | activity                            |
+   +-------------------------------+-------------------------------------+
+  
+:numref:`Table %s <orcalltun>` shows all other tunables enabled on a 
+clean |trueos| installation. Many of these tunables continue to work in
+:file:`/etc/rc.conf` to ensure a smoother migration for existing users
+to upgrade. The eventual target locations for these services are also
+listed.
+
+.. note:: These migration targets are estimates and subject to change.
+
+.. TODO fill gaps in table with Joe's input.
+
+.. _orcalltun:
+.. table:: : OpenRC Other Tunables
+
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | Tunable                                  | Description                         | Migration Target             |
+   +==========================================+=====================================+==============================+
+   | linux_enable="YES"                       | Notifies :file:`/etc/init.d/abi`    | :file:`/etc/conf.d/abi`      |
+   |                                          | service to enable the Linux         |                              |
+   |                                          | compatability during boot           |                              |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | ifconfig_re0="DHCP"                      | TBD                                 | :file:`/etc/conf.d/network`  |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | ifconfig_re0_ipv6="inet6 accept_rtadv"   | TBD                                 | :file:`/etc/conf.d/network`  |
+   |                                          |                                     |                              |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | hostname="trueos-4843"                   | TBD                                 | :file:`/etc/conf.d/hostname` |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | kldload_i915kms="i915kms"                | TrueOS specific. Allows loading an  | :file:`etc/conf.d/modules`   |
+   |                                          | individual module via the installer |                              |
+   |                                          | post installation.                  |                              |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | zfs_enable="YES"                         | Obsolete, marked for removal        | None                         |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | wlans_iwm0="wlan0"                       | TBD                                 | :file:`/etc.conf.d.network`  |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | wlans_iwm0="wlan 0 DHCP"                 | TBD                                 | :file:`/etc.conf.d.network`  |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | ifconfig_wlan0_ipv6="inet6 accept_rtadv" | TBD                                 | :file:`/etc.conf.d.network`  |
+   +------------------------------------------+-------------------------------------+------------------------------+
+
+.. index:: init, script
+.. _OpenRC Install Scripts:
+
+OpenRC Install Scripts
+======================
+
+There are number of scripts used for older |trueos| systems and new
+installations, listed below.
+
+.. index:: init, scripts, onetime
+.. _One time migration:
+
+One-time Migration Script
+-------------------------
+
+A one time migration script is available for |trueos| installations 
+dated 10-28-16 or older that are still using the legacy FreeBSD rc
+system:
+
+.. note:: This block is truncated from the
+   `original file <https://github.com/trueos/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_
+
+.. code-block:: none
+
+   #!/bin/sh
+
+   if [ ! -e /etc/rc.conf ] ; then
+     exit 0
+   fi
+
+   . /etc/rc.conf
+
+   for var in `set | grep "_enable="`
+   do
+     key=`echo $var | cut -d '=' -f 1 | sed 's|_enable||g'`
+     val=`echo $var | cut -d '=' -f 2`
+     if [ "$val" != "YES" ] && [ "$val" != "NO" ] ; then continue; fi
+     if [ "$val" = "NO" ] && [ -e "/etc/runlevels/default/$key" ] ; then
+         echo "Deleting OpenRC service for $key to default runlevel..."
+         rc-update delete $key default
+     fi
+     if [ -e "/etc/init.d/$key" -o -e "/usr/local/etc/init.d/$key" ] ; then
+       if [ -e "/etc/runlevels/default/$key" ] ; then
+         echo "OpenRC service for $key already enabled, skipping.."
+
+With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`,
+has been phased out of |trueos| and is automatically removed from legacy
+installs dated 10-28-16 and older by :command:`pc-updatemanger`:
+
+This script is used to define a list of services such as *PCDM*
+designated to boot by default on a desktop. It also defines what drivers
+to load on a desktop. This is now accomplished when the
+*trueos-desktop* or *trueos-server* package is installed using
+:command:`sysrc` or other methods. Now there is no need to keep an extra
+overlay file to accomplish this behaviour.
+
+.. index:: init, scripts, desktop pkginstall
+.. _TrueOS desktop pkginstall script:
+
+|trueos| Desktop pkg-install Script
+-----------------------------------
+
+.. note:: This is an excerpt from the |trueos| Desktop
+   :file:`pkg-install` file, available online:
+   https://github.com/trueos/trueos-desktop/blob/master/port-files/pkg-install
+
+.. code-block:: none
+
+   #!/bin/sh
+   # Script to install preload.conf
+
+   PREFIX=${PKG_PREFIX-/usr/local}
+
+   if [ "$2" != "POST-INSTALL" ] ; then
+      exit 0
+   fi
+
+   # If this is during staging, we can skip for now
+   echo $PREFIX | grep -q '/stage/'
+   if [ $? -eq 0 ] ; then
+      exit 0
+   fi
+
+   # REMOVEME - Temp fix to ensure i915kms is loaded on upgraded systems
+   # 8-29-2016
+   if [ -e "/etc/rc.conf.trueos" ] ; then
+     set +e
+     grep -q "i915kms" /etc/rc.conf.trueos
+
+.. index:: init, scripts, server pkginstall
+.. _TrueOS server pkginstall script:
+
+TrueOS Server pkg-install script
+--------------------------------
+
+.. note:: This is an excerpt from the |trueos| Server
+   :file:`pkg-install` file, available online:
+   https://github.com/trueos/trueos-server/blob/master/port-files/pkg-install
+
+.. code-block:: none
+
+   #!/bin/sh
+   # Script to install preload.conf
+
+   PREFIX=${PKG_PREFIX-/usr/local}
+
+   if [ "$2" != "POST-INSTALL" ] ; then
+      exit 0
+   fi
+
+   # If this is during staging, we can skip for now
+   echo $PREFIX | grep -q '/stage/'
+   if [ $? -eq 0 ] ; then
+      exit 0
+   fi
+
+   # Copy over customizations for TrueOS
+     install -m 644 ${PREFIX}/share/trueos/conf/loader.conf.trueos /boot/loader.conf.trueos
+     install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
+     install -m 644 ${PREFIX}/share/trueos/server-defaults/etc/conf.d/modules /etc/conf.d/modules/
+
+The typical :command:`nginx_enable=”YES”` is no longer used to enable
+services. Instead, :command:`rc-update` is used to add or remove
+services from runlevels. The one time migration script automatically
+adds previously defined user services to the OpenRC default runlevel.
+Leftover lines can be removed after migration.
+
+.. index:: init, update makefile
+.. _Update Port Makefile:
+
+Updating a Port's Makefile
+==========================
+
+There is still quite a bit of work to do updating each port's
+:file:`Makefile` to the new format, :command:`USE_OPENRC_SUBR=`.
+However, these are to be changed only when each service file has the new
+OpenRC ready format:
+
+.. note:: This is an excerpt from the |trueos| :file:`dbus.in` file,
+   which is available online:
+   https://github.com/trueos/freebsd-ports/blob/xserver-next/devel/dbus/files/dbus.in
+
+.. code-block:: none
+
+   #!/sbin/openrc-run
+   # Copyright (c) 2007-2015 The OpenRC Authors.
+   # See the Authors file at the top-level directory of this distribution and
+   # https://github.com/OpenRC/openrc/blob/master/AUTHORS
+   #
+   # This file is part of OpenRC. It is subject to the license terms in
+   # the LICENSE file found in the top-level directory of this
+   # distribution and at https://github.com/OpenRC/openrc/blob/master/LICENSE
+   # This file may not be copied, modified, propagated, or distributed
+   # except according to the terms contained in the LICENSE file.
+
+   command=/usr/local/bin/dbus-daemon
+   pidfile=/var/run/dbus/dbus.pid
+   command_args="${dbusd_args---system}"
+   name="Message Bus Daemon"
+
+   depend()
+   {
+           need localmount
+           after bootmisc
+
+
+Here is an example from FreeBSD of *dbus* using the legacy rc script
+format:
+
+.. note:: This is an excerpt from the legacy FreeBSD :file:`dbus.in`
+   file, which is available online:
+   https://github.com/freebsd/freebsd-ports/blob/master/devel/dbus/files/dbus.in
+
+.. code-block:: none
+
+   #!/bin/sh
+   #
+   # $FreeBSD$
+   #
+   # PROVIDE: dbus
+   # REQUIRE: DAEMON ldconfig
+   #
+   # Add the following lines to /etc/rc.conf to enable the D-BUS messaging system:
+   #
+   # dbus_enable="YES"
+   #
+
+   . /etc/rc.subr
+   . %%GNOME_SUBR%%
+
+   dbus_enable=${dbus_enable-${gnome_enable}}
+   dbus_flags=${dbus_flags-"--system"}
+
+   name=dbus
+   rcvar=dbus_enable
+
+Several developers are working on the thousands of instances as quickly
+as possible. Anyone can begin transitioning to defining all service
+configurations in :file:`/etc/conf.d/`, if desired. All configuration
+files should reside in that directory with the name of the service for
+the configuration file itself. For example, *nginx* is
+:file:`/etc/conf.d/nginx`.
+
+Generally, usage of :file:`/etc/rc.conf` is minimized. Tweaking the
+default OpenRC configuration parameters is recommended only for advanced
+users. It is still possible to use service configurations through
+:file:`/etc/rc.conf`, but this file is unusable for enabling or disabling
+services for startup.

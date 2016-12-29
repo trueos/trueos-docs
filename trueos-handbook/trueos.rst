@@ -13,6 +13,7 @@ Contents:
    install
    postinstall
    advanced
+   openrc
    luminaintro
    luminaconfig
    luminaplugins
