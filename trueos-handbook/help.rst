@@ -29,13 +29,15 @@ chat and collaboration with |trueos| users and developers. Gitter does
 not require an application to use, but does require a login using
 either an existing GitHub or Twitter account.
 
-To access the Gitter channel, point a web browser to the
-`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
+Access the Gitter channel by pointing a web browser to the
+`TrueOS Community <https://gitter.im/trueos>`_.
 
-Gitter also maintains a full archive of the chat history. This means
+Gitter also maintains full archives of the chat history. This means
 lengthy conversations about hardware issues or workarounds will always
-be available for reference. To access the Gitter archive, navigate to
-the |trueos| `archive <https://gitter.im/trueos/Lobby/archives>`_.
+be available for reference. Because |trueos| maintains several chatrooms
+on Gitter, each room will have an archive to access. For example, access
+*Lobby* archive, by navigating to
+https://gitter.im/trueos/Lobby/archives.
 
 .. note:: It is not required to log in to Gitter to browse the archive.
 
@@ -64,7 +66,7 @@ on the Gitter channel:
 
 * The first time joining the channel, it is okay to say hi and introduce
   yourself. If a new person joins the channel, feel free to welcome them
-  and to make them feel welcome.
+  and help them feel at home.
 
 .. index:: reddit
 .. _TrueOS® Subreddit:

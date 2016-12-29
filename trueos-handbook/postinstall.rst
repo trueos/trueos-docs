@@ -694,6 +694,5 @@ location of the boot media, it may be different from :file:`da1`. Type
 If none of the above has fixed the problem, search the
 `TrueOS® sub-Reddit <https://www.reddit.com/r/TrueOS/>`_ or ask a
 question on the
-`TrueOS Gitter Channel <https://gitter.im/trueos/Lobby>`_. For
-additional communications options, check the section on
-:ref:`Finding Help`.
+`TrueOS Gitter Channel <https://gitter.im/trueos>`_. For additional
+communications options, check the section on :ref:`Finding Help`.

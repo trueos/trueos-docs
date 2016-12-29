@@ -371,7 +371,7 @@ FreeBSD booth is an excellent way to meet other |trueos| and FreeBSD
 users and get any questions answered. Check the
 `TrueOS® Blog <https://www.trueos.org/blog/>`_ to see if any events
 are happening near you. If organizing a |trueos| booth, contact us
-`on Gitter <https://gitter.im/trueos/Lobby>`_ to arrange for DVDs.
+`on Gitter <https://gitter.im/trueos>`_ to arrange for DVDs.
 
 .. index:: checksum
 .. _Data Integrity Check:
