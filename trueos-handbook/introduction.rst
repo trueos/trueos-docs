@@ -410,6 +410,13 @@ This section is intended to list all known/longstanding issues with the
   `hardware notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_
   to see detailed notes about supported hardware in FreeBSD/|trueos|.
 
+* A |trueos| installation using the FreeBSD loader with both GPT and
+  GELI encryption is currently nonfunctional, due to a FreeBSD
+  `regression <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=213491>`_.
+  Currently, it is best to avoid using GPT and GELI together with the
+  BSD bootloader for fresh installs while the FreeBSD contributors fix
+  the issue.
+
 Additional information about these issues can be viewed in the various
 communication channels listed in :ref:`Finding Help` section of this
 handbook.
