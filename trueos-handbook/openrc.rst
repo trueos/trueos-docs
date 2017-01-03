@@ -231,6 +231,11 @@ any of the other options shown.
 RC Defaults
 ===========
 
+.. TODO periodically check with Joe if RC defaults are changing/have
+   changed. Last check 1/3/16.
+   
+.. note:: RC Defaults are subject to change during development.
+
 |trueos| and FreeBSD now have very different rc defaults.
 
 **TrueOS OpenRC Defaults**
