@@ -56,15 +56,6 @@ msgstr ""
 msgid "Managing Bootup Services"
 msgstr ""
 
-#: ../../openrc.rst:47
-msgid ""
-"OpenRC has a variety of options to *start*, *stop*, *add*, or *remove* "
-"services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
-" actions can be accomplished using the :ref:`Service Manager` built into "
-"|sysadm|. Individuals familiar with the FreeBSD :command:`service` command "
-"may notice some similarities between some of these commands:"
-msgstr ""
-
 #: ../../openrc.rst:0
 msgid ": Bootup Service Commands"
 msgstr ""
@@ -121,22 +112,12 @@ msgstr ""
 msgid "rc-update"
 msgstr ""
 
-#: ../../openrc.rst:70
-msgid ""
-"Views all runlevels. Used in conjunction with service names to add or remove"
-" services from the default runlevel."
-msgstr ""
-
 #: ../../openrc.rst:73
 msgid "rc-update add nginx default"
 msgstr ""
 
 #: ../../openrc.rst:73
 msgid "Adds the nginx service to the default runlevel."
-msgstr ""
-
-#: ../../openrc.rst:75
-msgid "rc-update remove nginx default"
 msgstr ""
 
 #: ../../openrc.rst:75
@@ -653,15 +634,6 @@ msgid ""
 "files/pkg-install"
 msgstr ""
 
-#: ../../openrc.rst:491
-msgid ""
-"The typical :command:`nginx_enable=”YES”` is no longer used to enable "
-"services. Instead, :command:`rc-update` is used to add or remove services "
-"from runlevels. The one time migration script automatically adds previously "
-"defined user services to the OpenRC default runlevel. Leftover lines can be "
-"removed after migration."
-msgstr ""
-
 #: ../../openrc.rst:501
 msgid "Updating a Port's Makefile"
 msgstr ""
@@ -715,6 +687,58 @@ msgstr ""
 #: ../../openrc.rst:249
 msgid "RC Defaults are subject to change during development."
 msgstr ""
+
+#: ../../openrc.rst:47
+msgid ""
+"OpenRC has a variety of options to *start*, *stop*, *add*, or *delete* "
+"services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
+" actions can be accomplished using the :ref:`Service Manager` built into "
+"|sysadm|. Individuals familiar with the FreeBSD :command:`service` command "
+"may notice some similarities between some of these commands:"
+msgstr ""
+
+#: ../../openrc.rst:70
+msgid ""
+"Views all runlevels. Used in conjunction with service names to add or delete"
+" services from the default runlevel."
+msgstr ""
+
+#: ../../openrc.rst:75
+msgid "rc-update delete nginx default"
+msgstr ""
+
+#: ../../openrc.rst:491
+msgid ""
+"The typical :command:`nginx_enable=”YES”` is no longer used to enable "
+"services. Instead, :command:`rc-update` is used to add or delete services "
+"from runlevels. The one time migration script automatically adds previously "
+"defined user services to the OpenRC default runlevel. Leftover lines can be "
+"removed after migration."
+msgstr ""
+
+#~ msgid ""
+#~ "OpenRC has a variety of options to *start*, *stop*, *add*, or *remove* "
+#~ "services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
+#~ " actions can be accomplished using the :ref:`Service Manager` built into "
+#~ "|sysadm|. Individuals familiar with the FreeBSD :command:`service` command "
+#~ "may notice some similarities between some of these commands:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Views all runlevels. Used in conjunction with service names to add or remove"
+#~ " services from the default runlevel."
+#~ msgstr ""
+
+#~ msgid "rc-update remove nginx default"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The typical :command:`nginx_enable=”YES”` is no longer used to enable "
+#~ "services. Instead, :command:`rc-update` is used to add or remove services "
+#~ "from runlevels. The one time migration script automatically adds previously "
+#~ "defined user services to the OpenRC default runlevel. Leftover lines can be "
+#~ "removed after migration."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "When a service is added to a runlevel a symlink is created in "
