@@ -73,7 +73,7 @@ msgstr ""
 msgid "Command"
 msgstr ""
 
-#: ../../openrc.rst:58 ../../openrc.rst:315 ../../openrc.rst:339
+#: ../../openrc.rst:58 ../../openrc.rst:320 ../../openrc.rst:344
 msgid "Description"
 msgstr ""
 
@@ -424,32 +424,32 @@ msgstr ""
 msgid "RC Defaults"
 msgstr ""
 
-#: ../../openrc.rst:246
+#: ../../openrc.rst:251
 msgid "|trueos| and FreeBSD now have very different rc defaults."
 msgstr ""
 
-#: ../../openrc.rst:248
+#: ../../openrc.rst:253
 msgid "**TrueOS OpenRC Defaults**"
 msgstr ""
 
-#: ../../openrc.rst:250
+#: ../../openrc.rst:255
 msgid ""
 "The entire `TrueOS rc.conf file <https://github.com/trueos/freebsd/blob/drm-"
 "next-4.7/etc/defaults/rc.conf>`_ is viewable on GitHub."
 msgstr ""
 
-#: ../../openrc.rst:277
+#: ../../openrc.rst:282
 msgid "**FreeBSD RC Defaults**"
 msgstr ""
 
-#: ../../openrc.rst:279
+#: ../../openrc.rst:284
 msgid ""
 "The entire `FreeBSD rc.conf file "
 "<https://github.com/freebsd/freebsd/blob/master/etc/defaults/rc.conf>`_ is "
 "available online."
 msgstr ""
 
-#: ../../openrc.rst:306
+#: ../../openrc.rst:311
 msgid ""
 "The |trueos| :file:`rc.conf` file is much smaller because :file:`rc.conf` is"
 " now primarily used for tuning OpenRC behavior. By default, |trueos| uses 3 "
@@ -460,35 +460,35 @@ msgstr ""
 msgid ": OpenRC Primary Tunables"
 msgstr ""
 
-#: ../../openrc.rst:315 ../../openrc.rst:339
+#: ../../openrc.rst:320 ../../openrc.rst:344
 msgid "Tunable"
 msgstr ""
 
-#: ../../openrc.rst:317
+#: ../../openrc.rst:322
 msgid "rc_parallel=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:317
+#: ../../openrc.rst:322
 msgid "Starts all services in parallel"
 msgstr ""
 
-#: ../../openrc.rst:319
+#: ../../openrc.rst:324
 msgid "rc_logger=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:319
+#: ../../openrc.rst:324
 msgid "Enables logging"
 msgstr ""
 
-#: ../../openrc.rst:321
+#: ../../openrc.rst:326
 msgid "rc_log_path=\"/var/log/rc.log\""
 msgstr ""
 
-#: ../../openrc.rst:321
+#: ../../openrc.rst:326
 msgid "Defines the location for logging rc activity"
 msgstr ""
 
-#: ../../openrc.rst:325
+#: ../../openrc.rst:330
 msgid ""
 ":numref:`Table %s <orcalltun>` shows all other tunables enabled on a clean "
 "|trueos| installation. Many of these tunables continue to work in "
@@ -496,7 +496,7 @@ msgid ""
 "upgrade. The eventual target locations for these services are also listed."
 msgstr ""
 
-#: ../../openrc.rst:331
+#: ../../openrc.rst:336
 msgid "These migration targets are estimates and subject to change."
 msgstr ""
 
@@ -504,125 +504,125 @@ msgstr ""
 msgid ": OpenRC Other Tunables"
 msgstr ""
 
-#: ../../openrc.rst:339
+#: ../../openrc.rst:344
 msgid "Migration Target"
 msgstr ""
 
-#: ../../openrc.rst:341
+#: ../../openrc.rst:346
 msgid "linux_enable=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:341
+#: ../../openrc.rst:346
 msgid ""
 "Notifies :file:`/etc/init.d/abi` service to enable the Linux compatability "
 "during boot"
 msgstr ""
 
-#: ../../openrc.rst:341
+#: ../../openrc.rst:346
 msgid ":file:`/etc/conf.d/abi`"
 msgstr ""
 
-#: ../../openrc.rst:345
+#: ../../openrc.rst:350
 msgid "ifconfig_re0=\"DHCP\""
 msgstr ""
 
-#: ../../openrc.rst:345 ../../openrc.rst:347 ../../openrc.rst:350
-#: ../../openrc.rst:358 ../../openrc.rst:360 ../../openrc.rst:362
+#: ../../openrc.rst:350 ../../openrc.rst:352 ../../openrc.rst:355
+#: ../../openrc.rst:363 ../../openrc.rst:365 ../../openrc.rst:367
 msgid "TBD"
 msgstr ""
 
-#: ../../openrc.rst:345 ../../openrc.rst:347
+#: ../../openrc.rst:350 ../../openrc.rst:352
 msgid ":file:`/etc/conf.d/network`"
 msgstr ""
 
-#: ../../openrc.rst:347
+#: ../../openrc.rst:352
 msgid "ifconfig_re0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../openrc.rst:350
+#: ../../openrc.rst:355
 msgid "hostname=\"trueos-4843\""
 msgstr ""
 
-#: ../../openrc.rst:350
+#: ../../openrc.rst:355
 msgid ":file:`/etc/conf.d/hostname`"
 msgstr ""
 
-#: ../../openrc.rst:352
+#: ../../openrc.rst:357
 msgid "kldload_i915kms=\"i915kms\""
 msgstr ""
 
-#: ../../openrc.rst:352
+#: ../../openrc.rst:357
 msgid ""
 "TrueOS specific. Allows loading an individual module via the installer post "
 "installation."
 msgstr ""
 
-#: ../../openrc.rst:352
+#: ../../openrc.rst:357
 msgid ":file:`etc/conf.d/modules`"
 msgstr ""
 
-#: ../../openrc.rst:356
+#: ../../openrc.rst:361
 msgid "zfs_enable=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:356
+#: ../../openrc.rst:361
 msgid "Obsolete, marked for removal"
 msgstr ""
 
-#: ../../openrc.rst:356
+#: ../../openrc.rst:361
 msgid "None"
 msgstr ""
 
-#: ../../openrc.rst:358
+#: ../../openrc.rst:363
 msgid "wlans_iwm0=\"wlan0\""
 msgstr ""
 
-#: ../../openrc.rst:358 ../../openrc.rst:360 ../../openrc.rst:362
+#: ../../openrc.rst:363 ../../openrc.rst:365 ../../openrc.rst:367
 msgid ":file:`/etc.conf.d.network`"
 msgstr ""
 
-#: ../../openrc.rst:360
+#: ../../openrc.rst:365
 msgid "wlans_iwm0=\"wlan 0 DHCP\""
 msgstr ""
 
-#: ../../openrc.rst:362
+#: ../../openrc.rst:367
 msgid "ifconfig_wlan0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../openrc.rst:369
+#: ../../openrc.rst:374
 msgid "OpenRC Install Scripts"
 msgstr ""
 
-#: ../../openrc.rst:371
+#: ../../openrc.rst:376
 msgid ""
 "There are number of scripts used for older |trueos| systems and new "
 "installations, listed below."
 msgstr ""
 
-#: ../../openrc.rst:378
+#: ../../openrc.rst:383
 msgid "One-time Migration Script"
 msgstr ""
 
-#: ../../openrc.rst:380
+#: ../../openrc.rst:385
 msgid ""
 "A one time migration script is available for |trueos| installations dated "
 "10-28-16 or older that are still using the legacy FreeBSD rc system:"
 msgstr ""
 
-#: ../../openrc.rst:384
+#: ../../openrc.rst:389
 msgid ""
 "This block is truncated from the `original file <https://github.com/trueos"
 "/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_"
 msgstr ""
 
-#: ../../openrc.rst:410
+#: ../../openrc.rst:415
 msgid ""
 "With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`, has "
 "been phased out of |trueos| and is automatically removed from legacy "
 "installs dated 10-28-16 and older by :command:`pc-updatemanger`:"
 msgstr ""
 
-#: ../../openrc.rst:414
+#: ../../openrc.rst:419
 msgid ""
 "This script is used to define a list of services such as *PCDM* designated "
 "to boot by default on a desktop. It also defines what drivers to load on a "
@@ -631,29 +631,29 @@ msgid ""
 "there is no need to keep an extra overlay file to accomplish this behaviour."
 msgstr ""
 
-#: ../../openrc.rst:425
+#: ../../openrc.rst:430
 msgid "|trueos| Desktop pkg-install Script"
 msgstr ""
 
-#: ../../openrc.rst:427
+#: ../../openrc.rst:432
 msgid ""
 "This is an excerpt from the |trueos| Desktop :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-desktop/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../openrc.rst:458
+#: ../../openrc.rst:463
 msgid "TrueOS Server pkg-install script"
 msgstr ""
 
-#: ../../openrc.rst:460
+#: ../../openrc.rst:465
 msgid ""
 "This is an excerpt from the |trueos| Server :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-server/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../openrc.rst:486
+#: ../../openrc.rst:491
 msgid ""
 "The typical :command:`nginx_enable=”YES”` is no longer used to enable "
 "services. Instead, :command:`rc-update` is used to add or remove services "
@@ -662,11 +662,11 @@ msgid ""
 "removed after migration."
 msgstr ""
 
-#: ../../openrc.rst:496
+#: ../../openrc.rst:501
 msgid "Updating a Port's Makefile"
 msgstr ""
 
-#: ../../openrc.rst:498
+#: ../../openrc.rst:503
 msgid ""
 "There is still quite a bit of work to do updating each port's "
 ":file:`Makefile` to the new format, :command:`USE_OPENRC_SUBR=`. However, "
@@ -674,26 +674,26 @@ msgid ""
 " format:"
 msgstr ""
 
-#: ../../openrc.rst:503
+#: ../../openrc.rst:508
 msgid ""
 "This is an excerpt from the |trueos| :file:`dbus.in` file, which is "
 "available online: https://github.com/trueos/freebsd-ports/blob/xserver-"
 "next/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../openrc.rst:531
+#: ../../openrc.rst:536
 msgid ""
 "Here is an example from FreeBSD of *dbus* using the legacy rc script format:"
 msgstr ""
 
-#: ../../openrc.rst:534
+#: ../../openrc.rst:539
 msgid ""
 "This is an excerpt from the legacy FreeBSD :file:`dbus.in` file, which is "
 "available online: https://github.com/freebsd/freebsd-"
 "ports/blob/master/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../openrc.rst:561
+#: ../../openrc.rst:566
 msgid ""
 "Several developers are working on the thousands of instances as quickly as "
 "possible. Anyone can begin transitioning to defining all service "
@@ -703,13 +703,17 @@ msgid ""
 ":file:`/etc/conf.d/nginx`."
 msgstr ""
 
-#: ../../openrc.rst:568
+#: ../../openrc.rst:573
 msgid ""
 "Generally, usage of :file:`/etc/rc.conf` is minimized. Tweaking the default "
 "OpenRC configuration parameters is recommended only for advanced users. It "
 "is still possible to use service configurations through "
 ":file:`/etc/rc.conf`, but this file is unusable for enabling or disabling "
 "services for startup."
+msgstr ""
+
+#: ../../openrc.rst:249
+msgid "RC Defaults are subject to change during development."
 msgstr ""
 
 #~ msgid ""
