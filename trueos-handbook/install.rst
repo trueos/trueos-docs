@@ -531,7 +531,7 @@ to see the screen shown in :numref:`Figure %s <install11>`.
 
 .. _install11:
 
-.. figure:: images/install11b.png
+.. figure:: images/install11c.png
    :scale: 100%
 
    : Encryption
