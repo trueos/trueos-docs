@@ -32,7 +32,7 @@ Location of RC scripts for starting and stopping services:
 Managing Bootup Services
 ========================
    
-OpenRC has a variety of options to *start*, *stop*, *add*, or *remove*
+OpenRC has a variety of options to *start*, *stop*, *add*, or *delete*
 services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of
 these actions can be accomplished using the :ref:`Service Manager` built
 into |sysadm|. Individuals familiar with the FreeBSD :command:`service`
@@ -56,11 +56,11 @@ command may notice some similarities between some of these commands:
    | rc-status                      | View the status of all running services.                   |
    +--------------------------------+------------------------------------------------------------+
    | rc-update                      | Views all runlevels. Used in conjunction with service      |
-   |                                | names to add or remove services from the default runlevel. |
+   |                                | names to add or delete services from the default runlevel. |
    +--------------------------------+------------------------------------------------------------+
    | rc-update add nginx default    | Adds the nginx service to the default runlevel.            |
    +--------------------------------+------------------------------------------------------------+
-   | rc-update remove nginx default | Removes the nginx service from the default runlevel.       |
+   | rc-update delete nginx default | Removes the nginx service from the default runlevel.       |
    +--------------------------------+------------------------------------------------------------+
 
 :command:`rc-update` displays all runlevels. The full list of available
@@ -477,7 +477,7 @@ TrueOS Server pkg-install script
      install -m 644 ${PREFIX}/share/trueos/server-defaults/etc/conf.d/modules /etc/conf.d/modules/
 
 The typical :command:`nginx_enable=”YES”` is no longer used to enable
-services. Instead, :command:`rc-update` is used to add or remove
+services. Instead, :command:`rc-update` is used to add or delete
 services from runlevels. The one time migration script automatically
 adds previously defined user services to the OpenRC default runlevel.
 Leftover lines can be removed after migration.
