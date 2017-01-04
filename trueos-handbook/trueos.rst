@@ -21,8 +21,7 @@ Contents:
    sysadmclient
    using
    pico
-   help
-   support
+   helpsupport
 
 .. only:: html
 

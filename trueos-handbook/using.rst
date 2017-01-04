@@ -204,10 +204,10 @@ the problem:
 
 * `FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_
 
-If you still have problems with sound, see the section on
-:ref:`Finding Help` to determine which help resources are available.
-When reporting the problem, include both your version of |trueos| and
-the name of your sound card.
+If sound issues persist, check the :ref:`Help and Support` chapter to
+determine what help resources are available. If/when reporting the
+issue, be sure to include both the version of |trueos| and name of
+the sound card.
 
 .. index:: multimedia
 .. _Multimedia:
