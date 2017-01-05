@@ -4111,7 +4111,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 
 #gsc-i-id1 {
 	border: solid 1px #A8A8A8 !important;
-	background: white url("https://www.trueos.org/handbook/_static/searchdocs.png") no-repeat scroll left center !important;
+	background: white !important;
 }
 
 .gsc-search-box-tools .gsc-search-box .gsc-input {
