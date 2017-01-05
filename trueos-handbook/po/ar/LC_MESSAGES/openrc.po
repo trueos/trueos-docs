@@ -60,71 +60,71 @@ msgstr ""
 msgid ": Bootup Service Commands"
 msgstr ""
 
-#: ../../openrc.rst:58
+#: ../../openrc.rst:60
 msgid "Command"
 msgstr ""
 
-#: ../../openrc.rst:58 ../../openrc.rst:320 ../../openrc.rst:344
+#: ../../openrc.rst:60 ../../openrc.rst:322 ../../openrc.rst:346
 msgid "Description"
 msgstr ""
 
-#: ../../openrc.rst:60
+#: ../../openrc.rst:62
 msgid "service nginx start"
 msgstr ""
 
-#: ../../openrc.rst:60
+#: ../../openrc.rst:62
 msgid "Start nginx from :file:`usr/local/etc/init.d/nginx`."
 msgstr ""
 
-#: ../../openrc.rst:62
+#: ../../openrc.rst:64
 msgid "service nginx restart"
 msgstr ""
 
-#: ../../openrc.rst:62
+#: ../../openrc.rst:64
 msgid "Restart nginx from :file:`/usr/local/etc/init.d/nginx`."
 msgstr ""
 
-#: ../../openrc.rst:64
+#: ../../openrc.rst:66
 msgid "service nginx stop"
 msgstr ""
 
-#: ../../openrc.rst:64
+#: ../../openrc.rst:66
 msgid "Stop nginx from :file:`/usr/local/etc/init.d/nginx`."
 msgstr ""
 
-#: ../../openrc.rst:66
+#: ../../openrc.rst:68
 msgid "service nginx status"
 msgstr ""
 
-#: ../../openrc.rst:66
+#: ../../openrc.rst:68
 msgid "View the status of the nginx service."
 msgstr ""
 
-#: ../../openrc.rst:68
+#: ../../openrc.rst:70
 msgid "rc-status"
 msgstr ""
 
-#: ../../openrc.rst:68
+#: ../../openrc.rst:70
 msgid "View the status of all running services."
 msgstr ""
 
-#: ../../openrc.rst:70
+#: ../../openrc.rst:72
 msgid "rc-update"
 msgstr ""
 
-#: ../../openrc.rst:73
+#: ../../openrc.rst:75
 msgid "rc-update add nginx default"
 msgstr ""
 
-#: ../../openrc.rst:73
+#: ../../openrc.rst:75
 msgid "Adds the nginx service to the default runlevel."
 msgstr ""
 
-#: ../../openrc.rst:75
+#: ../../openrc.rst:77
 msgid "Removes the nginx service from the default runlevel."
 msgstr ""
 
-#: ../../openrc.rst:78
+#: ../../openrc.rst:80
 msgid ""
 ":command:`rc-update` displays all runlevels. The full list of available "
 "runlevels is seen here in :numref:`Table %s <rcuprnlvl>`"
@@ -134,206 +134,206 @@ msgstr ""
 msgid ": Services and runlevels"
 msgstr ""
 
-#: ../../openrc.rst:86
+#: ../../openrc.rst:88
 msgid "Service"
 msgstr ""
 
-#: ../../openrc.rst:86
+#: ../../openrc.rst:88
 msgid "Runlevel"
 msgstr ""
 
-#: ../../openrc.rst:88
+#: ../../openrc.rst:90
 msgid "abi"
 msgstr ""
 
-#: ../../openrc.rst:88 ../../openrc.rst:90 ../../openrc.rst:94
-#: ../../openrc.rst:96 ../../openrc.rst:98 ../../openrc.rst:104
-#: ../../openrc.rst:106 ../../openrc.rst:108 ../../openrc.rst:110
-#: ../../openrc.rst:112 ../../openrc.rst:114 ../../openrc.rst:118
-#: ../../openrc.rst:122 ../../openrc.rst:124 ../../openrc.rst:126
-#: ../../openrc.rst:132 ../../openrc.rst:134 ../../openrc.rst:140
-#: ../../openrc.rst:146 ../../openrc.rst:150 ../../openrc.rst:152
-#: ../../openrc.rst:156 ../../openrc.rst:158 ../../openrc.rst:160
-#: ../../openrc.rst:164 ../../openrc.rst:166 ../../openrc.rst:168
+#: ../../openrc.rst:90 ../../openrc.rst:92 ../../openrc.rst:96
+#: ../../openrc.rst:98 ../../openrc.rst:100 ../../openrc.rst:106
+#: ../../openrc.rst:108 ../../openrc.rst:110 ../../openrc.rst:112
+#: ../../openrc.rst:114 ../../openrc.rst:116 ../../openrc.rst:120
+#: ../../openrc.rst:124 ../../openrc.rst:126 ../../openrc.rst:128
+#: ../../openrc.rst:134 ../../openrc.rst:136 ../../openrc.rst:142
+#: ../../openrc.rst:148 ../../openrc.rst:152 ../../openrc.rst:154
+#: ../../openrc.rst:158 ../../openrc.rst:160 ../../openrc.rst:162
+#: ../../openrc.rst:166 ../../openrc.rst:168 ../../openrc.rst:170
 msgid "boot"
 msgstr ""
 
-#: ../../openrc.rst:90
+#: ../../openrc.rst:92
 msgid "adjkerntz"
 msgstr ""
 
-#: ../../openrc.rst:92
+#: ../../openrc.rst:94
 msgid "automount"
 msgstr ""
 
-#: ../../openrc.rst:92 ../../openrc.rst:100 ../../openrc.rst:102
-#: ../../openrc.rst:120 ../../openrc.rst:128 ../../openrc.rst:130
-#: ../../openrc.rst:136 ../../openrc.rst:138 ../../openrc.rst:142
-#: ../../openrc.rst:148 ../../openrc.rst:154 ../../openrc.rst:162
+#: ../../openrc.rst:94 ../../openrc.rst:102 ../../openrc.rst:104
+#: ../../openrc.rst:122 ../../openrc.rst:130 ../../openrc.rst:132
+#: ../../openrc.rst:138 ../../openrc.rst:140 ../../openrc.rst:144
+#: ../../openrc.rst:150 ../../openrc.rst:156 ../../openrc.rst:164
 msgid "default"
 msgstr ""
 
-#: ../../openrc.rst:94
+#: ../../openrc.rst:96
 msgid "bootmisc"
 msgstr ""
 
-#: ../../openrc.rst:96
+#: ../../openrc.rst:98
 msgid "bridge"
 msgstr ""
 
-#: ../../openrc.rst:98
+#: ../../openrc.rst:100
 msgid "cron"
 msgstr ""
 
-#: ../../openrc.rst:100
+#: ../../openrc.rst:102
 msgid "cupsd"
 msgstr ""
 
-#: ../../openrc.rst:102
+#: ../../openrc.rst:104
 msgid "dbus"
 msgstr ""
 
-#: ../../openrc.rst:104
+#: ../../openrc.rst:106
 msgid "devd"
 msgstr ""
 
-#: ../../openrc.rst:106
+#: ../../openrc.rst:108
 msgid "dumpon"
 msgstr ""
 
-#: ../../openrc.rst:108
+#: ../../openrc.rst:110
 msgid "fsck"
 msgstr ""
 
-#: ../../openrc.rst:110
+#: ../../openrc.rst:112
 msgid "hostid"
 msgstr ""
 
-#: ../../openrc.rst:112
+#: ../../openrc.rst:114
 msgid "hostname"
 msgstr ""
 
-#: ../../openrc.rst:114
+#: ../../openrc.rst:116
 msgid "ipfw"
 msgstr ""
 
-#: ../../openrc.rst:116
+#: ../../openrc.rst:118
 msgid "local"
 msgstr ""
 
-#: ../../openrc.rst:116
+#: ../../openrc.rst:118
 msgid "default nonetwork"
 msgstr ""
 
-#: ../../openrc.rst:118
+#: ../../openrc.rst:120
 msgid "localmount"
 msgstr ""
 
-#: ../../openrc.rst:120
+#: ../../openrc.rst:122
 msgid "lockd"
 msgstr ""
 
-#: ../../openrc.rst:122
+#: ../../openrc.rst:124
 msgid "loopback"
 msgstr ""
 
-#: ../../openrc.rst:124
+#: ../../openrc.rst:126
 msgid "modules"
 msgstr ""
 
-#: ../../openrc.rst:126
+#: ../../openrc.rst:128
 msgid "motd"
 msgstr ""
 
-#: ../../openrc.rst:128
+#: ../../openrc.rst:130
 msgid "moused"
 msgstr ""
 
-#: ../../openrc.rst:130
+#: ../../openrc.rst:132
 msgid "netmount"
 msgstr ""
 
-#: ../../openrc.rst:132
+#: ../../openrc.rst:134
 msgid "network"
 msgstr ""
 
-#: ../../openrc.rst:134
+#: ../../openrc.rst:136
 msgid "newsyslog"
 msgstr ""
 
-#: ../../openrc.rst:136
+#: ../../openrc.rst:138
 msgid "openntpd"
 msgstr ""
 
-#: ../../openrc.rst:138
+#: ../../openrc.rst:140
 msgid "pcdm"
 msgstr ""
 
-#: ../../openrc.rst:140
+#: ../../openrc.rst:142
 msgid "root"
 msgstr ""
 
-#: ../../openrc.rst:142
+#: ../../openrc.rst:144
 msgid "rpcbind"
 msgstr ""
 
-#: ../../openrc.rst:144
+#: ../../openrc.rst:146
 msgid "savecache"
 msgstr ""
 
-#: ../../openrc.rst:144
+#: ../../openrc.rst:146
 msgid "shutdown"
 msgstr ""
 
-#: ../../openrc.rst:146
+#: ../../openrc.rst:148
 msgid "savecore"
 msgstr ""
 
-#: ../../openrc.rst:148
+#: ../../openrc.rst:150
 msgid "statd"
 msgstr ""
 
-#: ../../openrc.rst:150
+#: ../../openrc.rst:152
 msgid "staticroute"
 msgstr ""
 
-#: ../../openrc.rst:152
+#: ../../openrc.rst:154
 msgid "swap"
 msgstr ""
 
-#: ../../openrc.rst:154
+#: ../../openrc.rst:156
 msgid "sysadm"
 msgstr ""
 
-#: ../../openrc.rst:156
+#: ../../openrc.rst:158
 msgid "syscons"
 msgstr ""
 
-#: ../../openrc.rst:158
+#: ../../openrc.rst:160
 msgid "sysctl"
 msgstr ""
 
-#: ../../openrc.rst:160
+#: ../../openrc.rst:162
 msgid "syslogd"
 msgstr ""
 
-#: ../../openrc.rst:162
+#: ../../openrc.rst:164
 msgid "trueosinit"
 msgstr ""
 
-#: ../../openrc.rst:164
+#: ../../openrc.rst:166
 msgid "urandom"
 msgstr ""
 
-#: ../../openrc.rst:166
+#: ../../openrc.rst:168
 msgid "zfs"
 msgstr ""
 
-#: ../../openrc.rst:168
+#: ../../openrc.rst:170
 msgid "zvol"
 msgstr ""
 
-#: ../../openrc.rst:171
+#: ../../openrc.rst:173
 msgid ""
 "OpenRC has a few ordered runlevels in |trueos|. First is the *sysinit* "
 "runlevel which is used for OpenRC to initialize itself. Second is the *boot*"
@@ -342,11 +342,11 @@ msgid ""
 "added."
 msgstr ""
 
-#: ../../openrc.rst:177
+#: ../../openrc.rst:179
 msgid "Services added by ports cannot be added to *boot* or *sysinit*."
 msgstr ""
 
-#: ../../openrc.rst:180
+#: ../../openrc.rst:182
 msgid ""
 "OpenRC allows users to add a service in the prefix location to the *boot* "
 "runlevel, which happens before the :file:`/usr` filesystem is mounted. "
@@ -355,7 +355,7 @@ msgid ""
 "shutdown."
 msgstr ""
 
-#: ../../openrc.rst:186
+#: ../../openrc.rst:188
 msgid ""
 "When a service is added to a runlevel a symlink is created in "
 ":file:`/etc/runlevels`. When a service is started, stopped, or changed to "
@@ -363,7 +363,7 @@ msgid ""
 "this example:"
 msgstr ""
 
-#: ../../openrc.rst:198
+#: ../../openrc.rst:200
 msgid ""
 "Also under :file:`/libexec/rc` exists a cache directory which keeps a "
 "dependancies cache that is only updated when dependencies change. "
@@ -371,14 +371,14 @@ msgid ""
 "binaries used by OpenRC functions."
 msgstr ""
 
-#: ../../openrc.rst:203
+#: ../../openrc.rst:205
 msgid ""
 "OpenRC has a dependency based init system. As an example, let’s examine a "
 "service which needs *network* such as SysAdm. Here are the contents of the "
 ":file:`/usr/local/etc/init.d/sysadm` *depend* section:"
 msgstr ""
 
-#: ../../openrc.rst:215
+#: ../../openrc.rst:217
 msgid ""
 "We can define that SysAdm needs *network*, which is the nickname of the "
 ":file:`/etc/init.d/network` service defined by *provide in network*. We also"
@@ -388,11 +388,11 @@ msgid ""
 "script in *after bootmisc*."
 msgstr ""
 
-#: ../../openrc.rst:222
+#: ../../openrc.rst:224
 msgid "Here are the contents of :file:`/etc/init.d/network`:"
 msgstr ""
 
-#: ../../openrc.rst:234
+#: ../../openrc.rst:236
 msgid ""
 "The *provide* option will set the service nickname to *net*. *Need* "
 "indicates restarting *localmount* will restart *network*. *After* defines "
@@ -401,36 +401,36 @@ msgid ""
 "other options shown."
 msgstr ""
 
-#: ../../openrc.rst:244
+#: ../../openrc.rst:246
 msgid "RC Defaults"
 msgstr ""
 
-#: ../../openrc.rst:251
+#: ../../openrc.rst:253
 msgid "|trueos| and FreeBSD now have very different rc defaults."
 msgstr ""
 
-#: ../../openrc.rst:253
+#: ../../openrc.rst:255
 msgid "**TrueOS OpenRC Defaults**"
 msgstr ""
 
-#: ../../openrc.rst:255
+#: ../../openrc.rst:257
 msgid ""
 "The entire `TrueOS rc.conf file <https://github.com/trueos/freebsd/blob/drm-"
 "next-4.7/etc/defaults/rc.conf>`_ is viewable on GitHub."
 msgstr ""
 
-#: ../../openrc.rst:282
+#: ../../openrc.rst:284
 msgid "**FreeBSD RC Defaults**"
 msgstr ""
 
-#: ../../openrc.rst:284
+#: ../../openrc.rst:286
 msgid ""
 "The entire `FreeBSD rc.conf file "
 "<https://github.com/freebsd/freebsd/blob/master/etc/defaults/rc.conf>`_ is "
 "available online."
 msgstr ""
 
-#: ../../openrc.rst:311
+#: ../../openrc.rst:313
 msgid ""
 "The |trueos| :file:`rc.conf` file is much smaller because :file:`rc.conf` is"
 " now primarily used for tuning OpenRC behavior. By default, |trueos| uses 3 "
@@ -441,35 +441,35 @@ msgstr ""
 msgid ": OpenRC Primary Tunables"
 msgstr ""
 
-#: ../../openrc.rst:320 ../../openrc.rst:344
+#: ../../openrc.rst:322 ../../openrc.rst:346
 msgid "Tunable"
 msgstr ""
 
-#: ../../openrc.rst:322
+#: ../../openrc.rst:324
 msgid "rc_parallel=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:322
+#: ../../openrc.rst:324
 msgid "Starts all services in parallel"
 msgstr ""
 
-#: ../../openrc.rst:324
+#: ../../openrc.rst:326
 msgid "rc_logger=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:324
+#: ../../openrc.rst:326
 msgid "Enables logging"
 msgstr ""
 
-#: ../../openrc.rst:326
+#: ../../openrc.rst:328
 msgid "rc_log_path=\"/var/log/rc.log\""
 msgstr ""
 
-#: ../../openrc.rst:326
+#: ../../openrc.rst:328
 msgid "Defines the location for logging rc activity"
 msgstr ""
 
-#: ../../openrc.rst:330
+#: ../../openrc.rst:332
 msgid ""
 ":numref:`Table %s <orcalltun>` shows all other tunables enabled on a clean "
 "|trueos| installation. Many of these tunables continue to work in "
@@ -477,7 +477,7 @@ msgid ""
 "upgrade. The eventual target locations for these services are also listed."
 msgstr ""
 
-#: ../../openrc.rst:336
+#: ../../openrc.rst:338
 msgid "These migration targets are estimates and subject to change."
 msgstr ""
 
@@ -485,125 +485,125 @@ msgstr ""
 msgid ": OpenRC Other Tunables"
 msgstr ""
 
-#: ../../openrc.rst:344
+#: ../../openrc.rst:346
 msgid "Migration Target"
 msgstr ""
 
-#: ../../openrc.rst:346
+#: ../../openrc.rst:348
 msgid "linux_enable=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:346
+#: ../../openrc.rst:348
 msgid ""
 "Notifies :file:`/etc/init.d/abi` service to enable the Linux compatability "
 "during boot"
 msgstr ""
 
-#: ../../openrc.rst:346
+#: ../../openrc.rst:348
 msgid ":file:`/etc/conf.d/abi`"
 msgstr ""
 
-#: ../../openrc.rst:350
+#: ../../openrc.rst:352
 msgid "ifconfig_re0=\"DHCP\""
 msgstr ""
 
-#: ../../openrc.rst:350 ../../openrc.rst:352 ../../openrc.rst:355
-#: ../../openrc.rst:363 ../../openrc.rst:365 ../../openrc.rst:367
+#: ../../openrc.rst:352 ../../openrc.rst:354 ../../openrc.rst:357
+#: ../../openrc.rst:365 ../../openrc.rst:367 ../../openrc.rst:369
 msgid "TBD"
 msgstr ""
 
-#: ../../openrc.rst:350 ../../openrc.rst:352
+#: ../../openrc.rst:352 ../../openrc.rst:354
 msgid ":file:`/etc/conf.d/network`"
 msgstr ""
 
-#: ../../openrc.rst:352
+#: ../../openrc.rst:354
 msgid "ifconfig_re0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../openrc.rst:355
+#: ../../openrc.rst:357
 msgid "hostname=\"trueos-4843\""
 msgstr ""
 
-#: ../../openrc.rst:355
+#: ../../openrc.rst:357
 msgid ":file:`/etc/conf.d/hostname`"
 msgstr ""
 
-#: ../../openrc.rst:357
+#: ../../openrc.rst:359
 msgid "kldload_i915kms=\"i915kms\""
 msgstr ""
 
-#: ../../openrc.rst:357
+#: ../../openrc.rst:359
 msgid ""
 "TrueOS specific. Allows loading an individual module via the installer post "
 "installation."
 msgstr ""
 
-#: ../../openrc.rst:357
+#: ../../openrc.rst:359
 msgid ":file:`etc/conf.d/modules`"
 msgstr ""
 
-#: ../../openrc.rst:361
+#: ../../openrc.rst:363
 msgid "zfs_enable=\"YES\""
 msgstr ""
 
-#: ../../openrc.rst:361
+#: ../../openrc.rst:363
 msgid "Obsolete, marked for removal"
 msgstr ""
 
-#: ../../openrc.rst:361
+#: ../../openrc.rst:363
 msgid "None"
 msgstr ""
 
-#: ../../openrc.rst:363
+#: ../../openrc.rst:365
 msgid "wlans_iwm0=\"wlan0\""
 msgstr ""
 
-#: ../../openrc.rst:363 ../../openrc.rst:365 ../../openrc.rst:367
+#: ../../openrc.rst:365 ../../openrc.rst:367 ../../openrc.rst:369
 msgid ":file:`/etc.conf.d.network`"
 msgstr ""
 
-#: ../../openrc.rst:365
+#: ../../openrc.rst:367
 msgid "wlans_iwm0=\"wlan 0 DHCP\""
 msgstr ""
 
-#: ../../openrc.rst:367
+#: ../../openrc.rst:369
 msgid "ifconfig_wlan0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../openrc.rst:374
+#: ../../openrc.rst:376
 msgid "OpenRC Install Scripts"
 msgstr ""
 
-#: ../../openrc.rst:376
+#: ../../openrc.rst:378
 msgid ""
 "There are number of scripts used for older |trueos| systems and new "
 "installations, listed below."
 msgstr ""
 
-#: ../../openrc.rst:383
+#: ../../openrc.rst:385
 msgid "One-time Migration Script"
 msgstr ""
 
-#: ../../openrc.rst:385
+#: ../../openrc.rst:387
 msgid ""
 "A one time migration script is available for |trueos| installations dated "
 "10-28-16 or older that are still using the legacy FreeBSD rc system:"
 msgstr ""
 
-#: ../../openrc.rst:389
+#: ../../openrc.rst:391
 msgid ""
 "This block is truncated from the `original file <https://github.com/trueos"
 "/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_"
 msgstr ""
 
-#: ../../openrc.rst:415
+#: ../../openrc.rst:417
 msgid ""
 "With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`, has "
 "been phased out of |trueos| and is automatically removed from legacy "
 "installs dated 10-28-16 and older by :command:`pc-updatemanger`:"
 msgstr ""
 
-#: ../../openrc.rst:419
+#: ../../openrc.rst:421
 msgid ""
 "This script is used to define a list of services such as *PCDM* designated "
 "to boot by default on a desktop. It also defines what drivers to load on a "
@@ -612,33 +612,33 @@ msgid ""
 "there is no need to keep an extra overlay file to accomplish this behaviour."
 msgstr ""
 
-#: ../../openrc.rst:430
+#: ../../openrc.rst:432
 msgid "|trueos| Desktop pkg-install Script"
 msgstr ""
 
-#: ../../openrc.rst:432
+#: ../../openrc.rst:434
 msgid ""
 "This is an excerpt from the |trueos| Desktop :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-desktop/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../openrc.rst:463
+#: ../../openrc.rst:465
 msgid "TrueOS Server pkg-install script"
 msgstr ""
 
-#: ../../openrc.rst:465
+#: ../../openrc.rst:467
 msgid ""
 "This is an excerpt from the |trueos| Server :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-server/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../openrc.rst:501
+#: ../../openrc.rst:503
 msgid "Updating a Port's Makefile"
 msgstr ""
 
-#: ../../openrc.rst:503
+#: ../../openrc.rst:505
 msgid ""
 "There is still quite a bit of work to do updating each port's "
 ":file:`Makefile` to the new format, :command:`USE_OPENRC_SUBR=`. However, "
@@ -646,26 +646,26 @@ msgid ""
 " format:"
 msgstr ""
 
-#: ../../openrc.rst:508
+#: ../../openrc.rst:510
 msgid ""
 "This is an excerpt from the |trueos| :file:`dbus.in` file, which is "
 "available online: https://github.com/trueos/freebsd-ports/blob/xserver-"
 "next/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../openrc.rst:536
+#: ../../openrc.rst:538
 msgid ""
 "Here is an example from FreeBSD of *dbus* using the legacy rc script format:"
 msgstr ""
 
-#: ../../openrc.rst:539
+#: ../../openrc.rst:541
 msgid ""
 "This is an excerpt from the legacy FreeBSD :file:`dbus.in` file, which is "
 "available online: https://github.com/freebsd/freebsd-"
 "ports/blob/master/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../openrc.rst:566
+#: ../../openrc.rst:568
 msgid ""
 "Several developers are working on the thousands of instances as quickly as "
 "possible. Anyone can begin transitioning to defining all service "
@@ -675,7 +675,7 @@ msgid ""
 ":file:`/etc/conf.d/nginx`."
 msgstr ""
 
-#: ../../openrc.rst:573
+#: ../../openrc.rst:575
 msgid ""
 "Generally, usage of :file:`/etc/rc.conf` is minimized. Tweaking the default "
 "OpenRC configuration parameters is recommended only for advanced users. It "
@@ -684,30 +684,21 @@ msgid ""
 "services for startup."
 msgstr ""
 
-#: ../../openrc.rst:249
+#: ../../openrc.rst:251
 msgid "RC Defaults are subject to change during development."
 msgstr ""
 
-#: ../../openrc.rst:47
-msgid ""
-"OpenRC has a variety of options to *start*, *stop*, *add*, or *delete* "
-"services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
-" actions can be accomplished using the :ref:`Service Manager` built into "
-"|sysadm|. Individuals familiar with the FreeBSD :command:`service` command "
-"may notice some similarities between some of these commands:"
-msgstr ""
-
-#: ../../openrc.rst:70
+#: ../../openrc.rst:72
 msgid ""
 "Views all runlevels. Used in conjunction with service names to add or delete"
 " services from the default runlevel."
 msgstr ""
 
-#: ../../openrc.rst:75
+#: ../../openrc.rst:77
 msgid "rc-update delete nginx default"
 msgstr ""
 
-#: ../../openrc.rst:491
+#: ../../openrc.rst:493
 msgid ""
 "The typical :command:`nginx_enable=”YES”` is no longer used to enable "
 "services. Instead, :command:`rc-update` is used to add or delete services "
@@ -715,6 +706,25 @@ msgid ""
 "defined user services to the OpenRC default runlevel. Leftover lines can be "
 "removed after migration."
 msgstr ""
+
+#: ../../openrc.rst:47
+msgid ""
+"OpenRC has a variety of options to *start*, *stop*, *add*, or *delete* "
+"services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
+" actions can be accomplished using the `Service Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
+"built into |sysadm|. Individuals familiar with the FreeBSD "
+":command:`service` command may notice some similarities between some of "
+"these commands:"
+msgstr ""
+
+#~ msgid ""
+#~ "OpenRC has a variety of options to *start*, *stop*, *add*, or *delete* "
+#~ "services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
+#~ " actions can be accomplished using the :ref:`Service Manager` built into "
+#~ "|sysadm|. Individuals familiar with the FreeBSD :command:`service` command "
+#~ "may notice some similarities between some of these commands:"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "OpenRC has a variety of options to *start*, *stop*, *add*, or *remove* "

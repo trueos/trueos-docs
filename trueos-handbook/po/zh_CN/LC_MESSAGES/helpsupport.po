@@ -468,20 +468,6 @@ msgstr ""
 msgid "Documentation Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:777
-msgid ""
-"The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
-"repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
-"handbook>`_. This allows the documentation and its translations to be built "
-"with the operating system. Documentation updates are automatically pushed to"
-" the |trueos| website and, when the system is updated using :ref:`Update "
-"Manager`, the doc updates are installed to a local copy named "
-":file:`/usr/local/share/trueos/handbook/trueos.html`. This ensures the "
-"installed version of the Handbook always matches the operating system and "
-"new features are documented as they are added, appearing as a local copy on "
-"the user's system."
-msgstr ""
-
 #: ../../helpsupport.rst:789
 msgid ""
 "The |trueos| build server provides the HTML version of the |trueos| Users "
@@ -658,18 +644,6 @@ msgid ""
 "used to overwrite the current utilities:"
 msgstr ""
 
-#: ../../helpsupport.rst:971
-msgid ""
-"If you plan to make source changes, several Qt IDEs are available in "
-":ref:`AppCafe®`. The `QtCreator "
-"<http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a full-"
-"featured IDE designed to help new Qt users get up and running faster while "
-"boosting the productivity of experienced Qt developers. `Qt Designer "
-"<http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is "
-"only a :file:`.ui` file editor and does not provide any other IDE "
-"functionality."
-msgstr ""
-
 #: ../../helpsupport.rst:981
 msgid ""
 "If planning to submit changes to be included in |trueos|, fork the "
@@ -700,15 +674,6 @@ msgstr ""
 msgid ""
 "This section describes a small list of guidelines for menu and program "
 "design in |trueos|."
-msgstr ""
-
-#: ../../helpsupport.rst:1006
-msgid ""
-"Any graphical program that is a full-featured utility, such as :ref:`Life "
-"Preserver`, should have a **File** menu. However, file menus are not "
-"necessary for small widget programs or dialogue boxes. When making a file "
-"menu, a good rule of thumb is keep it simple. Most |trueos| utilities do not"
-" need more than two or three items on the file menu."
 msgstr ""
 
 #: ../../helpsupport.rst:1013
@@ -742,8 +707,8 @@ msgstr ""
 msgid "File Name"
 msgstr ""
 
-#: ../../helpsupport.rst:1030 ../../helpsupport.rst:1073
-#: ../../helpsupport.rst:1085
+#: ../../helpsupport.rst:1030 ../../helpsupport.rst:1074
+#: ../../helpsupport.rst:1086
 msgid "Quit"
 msgstr ""
 
@@ -755,7 +720,7 @@ msgstr ""
 msgid "window-close.png"
 msgstr ""
 
-#: ../../helpsupport.rst:1032 ../../helpsupport.rst:1087
+#: ../../helpsupport.rst:1032 ../../helpsupport.rst:1088
 msgid "Settings"
 msgstr ""
 
@@ -791,16 +756,7 @@ msgstr ""
 msgid "**Save:** Keeps the current settings and closes window."
 msgstr ""
 
-#: ../../helpsupport.rst:1047
-msgid ""
-"Fully functional programs like :ref:`Life Preserver` do not use close "
-"buttons on the front of the application. Basically, whenever there is a "
-"**File** menu, that and an :guilabel:`x` in the top right corner of the "
-"application are used instead. Dialogues and widget programs are exceptions "
-"to this rule."
-msgstr ""
-
-#: ../../helpsupport.rst:1053
+#: ../../helpsupport.rst:1054
 msgid ""
 "Many users benefit from keyboard shortcuts and we aim to make them available"
 " in every |trueos| utility. Qt makes it easy to assign keyboard shortcuts. "
@@ -819,23 +775,23 @@ msgstr ""
 msgid ": Shortcut Keys"
 msgstr ""
 
-#: ../../helpsupport.rst:1071
+#: ../../helpsupport.rst:1072
 msgid "Shortcut Key"
 msgstr ""
 
-#: ../../helpsupport.rst:1071 ../../helpsupport.rst:1083
+#: ../../helpsupport.rst:1072 ../../helpsupport.rst:1084
 msgid "Action"
 msgstr ""
 
-#: ../../helpsupport.rst:1073
+#: ../../helpsupport.rst:1074
 msgid "CTRL + Q"
 msgstr ""
 
-#: ../../helpsupport.rst:1075
+#: ../../helpsupport.rst:1076
 msgid "F1"
 msgstr ""
 
-#: ../../helpsupport.rst:1075
+#: ../../helpsupport.rst:1076
 msgid "Help"
 msgstr ""
 
@@ -843,59 +799,59 @@ msgstr ""
 msgid ": Hot Keys"
 msgstr ""
 
-#: ../../helpsupport.rst:1083
+#: ../../helpsupport.rst:1084
 msgid "Hot Key"
 msgstr ""
 
-#: ../../helpsupport.rst:1085
+#: ../../helpsupport.rst:1086
 msgid "Alt + Q"
 msgstr ""
 
-#: ../../helpsupport.rst:1087
+#: ../../helpsupport.rst:1088
 msgid "Alt + S"
 msgstr ""
 
-#: ../../helpsupport.rst:1089
+#: ../../helpsupport.rst:1090
 msgid "Alt + I"
 msgstr ""
 
-#: ../../helpsupport.rst:1089
+#: ../../helpsupport.rst:1090
 msgid "Import"
 msgstr ""
 
-#: ../../helpsupport.rst:1091
+#: ../../helpsupport.rst:1092
 msgid "Alt + E"
 msgstr ""
 
-#: ../../helpsupport.rst:1091
+#: ../../helpsupport.rst:1092
 msgid "Export"
 msgstr ""
 
-#: ../../helpsupport.rst:1093
+#: ../../helpsupport.rst:1094
 msgid "ALT + F"
 msgstr ""
 
-#: ../../helpsupport.rst:1093
+#: ../../helpsupport.rst:1094
 msgid "File Menu"
 msgstr ""
 
-#: ../../helpsupport.rst:1095
+#: ../../helpsupport.rst:1096
 msgid "ALT + C"
 msgstr ""
 
-#: ../../helpsupport.rst:1095
+#: ../../helpsupport.rst:1096
 msgid "Configure Menu"
 msgstr ""
 
-#: ../../helpsupport.rst:1097
+#: ../../helpsupport.rst:1098
 msgid "ALT + H"
 msgstr ""
 
-#: ../../helpsupport.rst:1097
+#: ../../helpsupport.rst:1098
 msgid "Help Menu"
 msgstr ""
 
-#: ../../helpsupport.rst:1100
+#: ../../helpsupport.rst:1101
 msgid ""
 "When saving an application's settings, the QSettings class should be used if"
 " possible. There are two different *organizations*, depending on whether the"
@@ -908,36 +864,36 @@ msgid ""
 " demonstrate how to use the QSettings class for each type of permission."
 msgstr ""
 
-#: ../../helpsupport.rst:1111
+#: ../../helpsupport.rst:1112
 msgid "**Example 1: User Permission Settings**"
 msgstr ""
 
-#: ../../helpsupport.rst:1118
+#: ../../helpsupport.rst:1119
 msgid "**Example 2: Root Permission Settings**"
 msgstr ""
 
-#: ../../helpsupport.rst:1125
+#: ../../helpsupport.rst:1126
 msgid "Developers will also find these resources helpful:"
 msgstr ""
 
-#: ../../helpsupport.rst:1127
+#: ../../helpsupport.rst:1128
 msgid ""
 "`Commits Mailing List <http://lists.pcbsd.org/mailman/listinfo/commits>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1129
+#: ../../helpsupport.rst:1130
 msgid "`Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1131
+#: ../../helpsupport.rst:1132
 msgid "`C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1137
+#: ../../helpsupport.rst:1138
 msgid "Advocacy"
 msgstr ""
 
-#: ../../helpsupport.rst:1139
+#: ../../helpsupport.rst:1140
 msgid ""
 "Love |trueos|? Why not tell your family, friends, fellow students and "
 "colleagues about it? You will not be the only one who prefers a virus-free, "
@@ -945,21 +901,21 @@ msgid ""
 "getting started:"
 msgstr ""
 
-#: ../../helpsupport.rst:1144
+#: ../../helpsupport.rst:1145
 msgid ""
 "Burn a couple of DVDs and pass them out. If your school or user group has an"
 " upcoming event where you can promote |trueos|, you can request additional "
 "DVDs from sales@pcbsd.com."
 msgstr ""
 
-#: ../../helpsupport.rst:1148
+#: ../../helpsupport.rst:1149
 msgid ""
 "Consider giving a presentation about |trueos| at a local community event, "
 "conference, or online. Let us know about it and we will help you spread the "
 "word."
 msgstr ""
 
-#: ../../helpsupport.rst:1152
+#: ../../helpsupport.rst:1153
 msgid ""
 "Write a personal blog detailing your journey from your first |trueos| "
 "install experience to your most recent accomplishment. The blog could also "
@@ -968,21 +924,21 @@ msgid ""
 "with similar interests."
 msgstr ""
 
-#: ../../helpsupport.rst:1162
+#: ../../helpsupport.rst:1163
 msgid "Additional Resources"
 msgstr ""
 
-#: ../../helpsupport.rst:1164
+#: ../../helpsupport.rst:1165
 msgid ""
 "Need more information? A number of useful resources that may aid in using "
 "|trueos| are available."
 msgstr ""
 
-#: ../../helpsupport.rst:1171
+#: ../../helpsupport.rst:1172
 msgid "FreeBSD Handbook and FAQ"
 msgstr ""
 
-#: ../../helpsupport.rst:1173
+#: ../../helpsupport.rst:1174
 msgid ""
 "|trueos| uses FreeBSD as its underlying operating system, so everything in "
 "the `FreeBSD Handbook "
@@ -993,7 +949,7 @@ msgid ""
 "learning how things work under the hood of a |trueos| system."
 msgstr ""
 
-#: ../../helpsupport.rst:1183
+#: ../../helpsupport.rst:1184
 msgid ""
 "Some configurations described in the FreeBSD Handbook already \"just work\" "
 "on a |trueos| system as they have been pre-configured. In these instances, "
@@ -1001,102 +957,102 @@ msgid ""
 "configured and why it works."
 msgstr ""
 
-#: ../../helpsupport.rst:1192
+#: ../../helpsupport.rst:1193
 msgid "Search and Portals"
 msgstr ""
 
-#: ../../helpsupport.rst:1194
+#: ../../helpsupport.rst:1195
 msgid ""
 "Many BSD related search portals exist. If unable to find an answer from the "
 "forums or mailing lists, try searching these websites:"
 msgstr ""
 
-#: ../../helpsupport.rst:1197
+#: ../../helpsupport.rst:1198
 msgid ""
 "`The OpenDirectory "
 "<http://www.dmoz.org/Computers/Software/Operating_Systems/Unix/BSD/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1199
+#: ../../helpsupport.rst:1200
 msgid ""
 "`FreeBSD Search <http://www.freebsd.org/search/index.html>`_ (includes "
 "mailing list archives, man pages, and web pages)"
 msgstr ""
 
-#: ../../helpsupport.rst:1202
+#: ../../helpsupport.rst:1203
 msgid "`FreeBSD News <https://www.freebsdnews.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1204
+#: ../../helpsupport.rst:1205
 msgid "`About BSD <http://aboutbsd.net/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1206
+#: ../../helpsupport.rst:1207
 msgid "`BSD Guides <http://www.bsdguides.org/guides/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1208
+#: ../../helpsupport.rst:1209
 msgid "`Slashdot BSD <https://bsd.slashdot.org/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1210
+#: ../../helpsupport.rst:1211
 msgid "`DistroWatch <http://distrowatch.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1212
+#: ../../helpsupport.rst:1213
 msgid "`LinuxBSDos <http://linuxbsdos.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1218
+#: ../../helpsupport.rst:1219
 msgid "More Resources"
 msgstr ""
 
-#: ../../helpsupport.rst:1220
+#: ../../helpsupport.rst:1221
 msgid "Many BSD sites and resources may also contain useful information:"
 msgstr ""
 
-#: ../../helpsupport.rst:1222
+#: ../../helpsupport.rst:1223
 msgid "`The FreeBSD Diary <http://www.freebsddiary.org/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1224
+#: ../../helpsupport.rst:1225
 msgid ""
 "`TrueOS® YouTube channel <https://www.youtube.com/channel/UCyd7MaPVUpa-"
 "ueUsGjUujag>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1226
+#: ../../helpsupport.rst:1227
 msgid "`BSD YouTube channel <https://www.youtube.com/user/bsdconferences>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1228
+#: ../../helpsupport.rst:1229
 msgid "`BSD Talk <http://bsdtalk.blogspot.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1230
+#: ../../helpsupport.rst:1231
 msgid "`BSD Now <http://www.bsdnow.tv/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1232
+#: ../../helpsupport.rst:1233
 msgid "`BSD Magazine <https://bsdmag.org/>`_ (free, monthly download)"
 msgstr ""
 
-#: ../../helpsupport.rst:1234
+#: ../../helpsupport.rst:1235
 msgid ""
 "`FreeBSD Journal <http://www.freebsdjournal.com/>`_ (bi-monthly magazine)"
 msgstr ""
 
-#: ../../helpsupport.rst:1236
+#: ../../helpsupport.rst:1237
 msgid "`BSD Hacks <http://shop.oreilly.com/product/9780596006792.do>`_ (book)"
 msgstr ""
 
-#: ../../helpsupport.rst:1238
+#: ../../helpsupport.rst:1239
 msgid ""
 "`The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ "
 "(book)"
 msgstr ""
 
-#: ../../helpsupport.rst:1240
+#: ../../helpsupport.rst:1241
 msgid ""
 "`Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)"
 msgstr ""
@@ -1545,3 +1501,91 @@ msgid ""
 "determine what help resources are available. If/when reporting the issue, be"
 " sure to include both the version of |trueos| and name of the sound card."
 msgstr ""
+
+#: ../../helpsupport.rst:777
+msgid ""
+"The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
+"repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
+"handbook>`_. This allows the documentation and its translations to be built "
+"with the operating system. Documentation updates are automatically pushed to"
+" the |trueos| website and, when the system is updated using the |sysadm| "
+"`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
+"manager>`_, the doc updates are installed to a local copy named "
+":file:`/usr/local/share/trueos/handbook/trueos.html`. This ensures the "
+"installed version of the Handbook always matches the operating system and "
+"new features are documented as they are added, appearing as a local copy on "
+"the user's system."
+msgstr ""
+
+#: ../../helpsupport.rst:971
+msgid ""
+"If you plan to make source changes, several Qt IDEs are available in the "
+"|sysadm| `AppCafe "
+"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_. The "
+"`QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a "
+"full-featured IDE designed to help new Qt users get up and running faster "
+"while boosting the productivity of experienced Qt developers. `Qt Designer "
+"<http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is "
+"only a :file:`.ui` file editor and does not provide any other IDE "
+"functionality."
+msgstr ""
+
+#: ../../helpsupport.rst:1006
+msgid ""
+"Any graphical program that is a full-featured utility, such as `Life "
+"Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-"
+"preserver>`_, should have a *File* menu. However, file menus are not "
+"necessary for small widget programs or dialogue boxes. When making a file "
+"menu, a good rule of thumb is keep it simple. Most |trueos| utilities do not"
+" need more than two or three items on the file menu."
+msgstr ""
+
+#: ../../helpsupport.rst:1047
+msgid ""
+"Fully functional programs like `Life Preserver "
+"<https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_ do "
+"not use close buttons on the front of the application. Basically, whenever "
+"there is a *File* menu, that and an :guilabel:`x` in the top right corner of"
+" the application are used instead. Dialogues and widget programs are "
+"exceptions to this rule."
+msgstr ""
+
+#~ msgid ""
+#~ "The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
+#~ "repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
+#~ "handbook>`_. This allows the documentation and its translations to be built "
+#~ "with the operating system. Documentation updates are automatically pushed to"
+#~ " the |trueos| website and, when the system is updated using :ref:`Update "
+#~ "Manager`, the doc updates are installed to a local copy named "
+#~ ":file:`/usr/local/share/trueos/handbook/trueos.html`. This ensures the "
+#~ "installed version of the Handbook always matches the operating system and "
+#~ "new features are documented as they are added, appearing as a local copy on "
+#~ "the user's system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you plan to make source changes, several Qt IDEs are available in "
+#~ ":ref:`AppCafe®`. The `QtCreator "
+#~ "<http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a full-"
+#~ "featured IDE designed to help new Qt users get up and running faster while "
+#~ "boosting the productivity of experienced Qt developers. `Qt Designer "
+#~ "<http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is "
+#~ "only a :file:`.ui` file editor and does not provide any other IDE "
+#~ "functionality."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Any graphical program that is a full-featured utility, such as :ref:`Life "
+#~ "Preserver`, should have a **File** menu. However, file menus are not "
+#~ "necessary for small widget programs or dialogue boxes. When making a file "
+#~ "menu, a good rule of thumb is keep it simple. Most |trueos| utilities do not"
+#~ " need more than two or three items on the file menu."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fully functional programs like :ref:`Life Preserver` do not use close "
+#~ "buttons on the front of the application. Basically, whenever there is a "
+#~ "**File** menu, that and an :guilabel:`x` in the top right corner of the "
+#~ "application are used instead. Dialogues and widget programs are exceptions "
+#~ "to this rule."
+#~ msgstr ""

@@ -19,393 +19,389 @@ msgstr ""
 msgid "Goals and Features"
 msgstr ""
 
-#: ../../introduction.rst:120
+#: ../../introduction.rst:121
 msgid "What's New"
 msgstr ""
 
-#: ../../introduction.rst:124
+#: ../../introduction.rst:125
 msgid "Based on FreeBSD-CURRENT."
 msgstr ""
 
-#: ../../introduction.rst:162
+#: ../../introduction.rst:171
 msgid ""
 "The Active Directory & LDAP utility (:command:`pc-adsldap`) has been "
 "deprecated."
 msgstr ""
 
-#: ../../introduction.rst:165
+#: ../../introduction.rst:174
 msgid ""
 "Login Manager (:command:`pc-dmconf`) has been replaced by :command:`pcdm-"
 "config`)."
 msgstr ""
 
-#: ../../introduction.rst:168
+#: ../../introduction.rst:177
 msgid "System Manager (:command:`pc-sysmanager`) has been deprecated."
 msgstr ""
 
-#: ../../introduction.rst:170
+#: ../../introduction.rst:179
 msgid ""
 ":command:`freebsd-update` has been retired in favor of using :command:`pkg` "
 "for system updates."
 msgstr ""
 
-#: ../../introduction.rst:196
+#: ../../introduction.rst:207
 msgid ""
 "The graphical and command line versions of PBI Manager and Warden have been "
 "removed."
 msgstr ""
 
-#: ../../introduction.rst:199
-msgid "**pc-thinclient** has been removed as it is deprecated."
-msgstr ""
-
-#: ../../introduction.rst:233
+#: ../../introduction.rst:244
 msgid "Filesystem"
 msgstr ""
 
-#: ../../introduction.rst:233
+#: ../../introduction.rst:244
 msgid "Native to"
 msgstr ""
 
-#: ../../introduction.rst:235
+#: ../../introduction.rst:246
 msgid "Btrfs"
 msgstr ""
 
-#: ../../introduction.rst:235 ../../introduction.rst:239
-#: ../../introduction.rst:242 ../../introduction.rst:248
-#: ../../introduction.rst:262 ../../introduction.rst:270
-#: ../../introduction.rst:307
+#: ../../introduction.rst:246 ../../introduction.rst:250
+#: ../../introduction.rst:253 ../../introduction.rst:259
+#: ../../introduction.rst:273 ../../introduction.rst:281
+#: ../../introduction.rst:318
 msgid "Linux"
 msgstr ""
 
-#: ../../introduction.rst:235 ../../introduction.rst:237
-#: ../../introduction.rst:259 ../../introduction.rst:262
+#: ../../introduction.rst:246 ../../introduction.rst:248
+#: ../../introduction.rst:270 ../../introduction.rst:273
 msgid "none"
 msgstr ""
 
-#: ../../introduction.rst:237
+#: ../../introduction.rst:248
 msgid "exFAT"
 msgstr ""
 
-#: ../../introduction.rst:237 ../../introduction.rst:253
-#: ../../introduction.rst:256 ../../introduction.rst:264
-#: ../../introduction.rst:267
+#: ../../introduction.rst:248 ../../introduction.rst:264
+#: ../../introduction.rst:267 ../../introduction.rst:275
+#: ../../introduction.rst:278
 msgid "Windows"
 msgstr ""
 
-#: ../../introduction.rst:237
+#: ../../introduction.rst:248
 msgid "requires a license from Microsoft"
 msgstr ""
 
-#: ../../introduction.rst:239
+#: ../../introduction.rst:250
 msgid "EXT2"
 msgstr ""
 
-#: ../../introduction.rst:239 ../../introduction.rst:242
-#: ../../introduction.rst:253 ../../introduction.rst:256
-#: ../../introduction.rst:267
+#: ../../introduction.rst:250 ../../introduction.rst:253
+#: ../../introduction.rst:264 ../../introduction.rst:267
+#: ../../introduction.rst:278
 msgid "r/w support loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:242
+#: ../../introduction.rst:253
 msgid "EXT3"
 msgstr ""
 
-#: ../../introduction.rst:242
+#: ../../introduction.rst:253
 msgid ""
 "since EXT3 journaling is not supported, you will not be able to mount a "
 "filesystem requiring a journal replay unless you :command:`fsck` it using an"
 " external utility such as `e2fsprogs <http://e2fsprogs.sourceforge.net>`_"
 msgstr ""
 
-#: ../../introduction.rst:248
+#: ../../introduction.rst:259
 msgid "EXT4"
 msgstr ""
 
-#: ../../introduction.rst:248
+#: ../../introduction.rst:259
 msgid "r/o support loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:248
+#: ../../introduction.rst:259
 msgid ""
 "EXT3 journaling, extended attributes, and inodes greater than 128 bytes are "
 "not supported; EXT3 filesystems converted to EXT4 may have better "
 "performance"
 msgstr ""
 
-#: ../../introduction.rst:253
+#: ../../introduction.rst:264
 msgid "FAT16"
 msgstr ""
 
-#: ../../introduction.rst:256
+#: ../../introduction.rst:267
 msgid "FAT32"
 msgstr ""
 
-#: ../../introduction.rst:259
+#: ../../introduction.rst:270
 msgid "HFS+"
 msgstr ""
 
-#: ../../introduction.rst:259
+#: ../../introduction.rst:270
 msgid "Mac OS X"
 msgstr ""
 
-#: ../../introduction.rst:259
+#: ../../introduction.rst:270
 msgid ""
 "older Mac versions might work with `hfsexplorer "
 "<http://www.catacombae.org/hfsexplorer>`_"
 msgstr ""
 
-#: ../../introduction.rst:262
+#: ../../introduction.rst:273
 msgid "JFS"
 msgstr ""
 
-#: ../../introduction.rst:264
+#: ../../introduction.rst:275
 msgid "NTFS5"
 msgstr ""
 
-#: ../../introduction.rst:264
+#: ../../introduction.rst:275
 msgid "full r/w support loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:267
+#: ../../introduction.rst:278
 msgid "NTFS6"
 msgstr ""
 
-#: ../../introduction.rst:270
+#: ../../introduction.rst:281
 msgid "ReiserFS"
 msgstr ""
 
-#: ../../introduction.rst:270
+#: ../../introduction.rst:281
 msgid "r/o support is loaded by default"
 msgstr ""
 
-#: ../../introduction.rst:273
+#: ../../introduction.rst:284
 msgid "UFS2"
 msgstr ""
 
-#: ../../introduction.rst:273
+#: ../../introduction.rst:284
 msgid "FreeBSD"
 msgstr ""
 
-#: ../../introduction.rst:273
+#: ../../introduction.rst:284
 msgid "changed to r/o support in Mac Lion"
 msgstr ""
 
-#: ../../introduction.rst:279
+#: ../../introduction.rst:290
 msgid "ZFS"
 msgstr ""
 
-#: ../../introduction.rst:285
+#: ../../introduction.rst:296
 msgid ""
 "Linux and BSD use different naming conventions for devices. For example:"
 msgstr ""
 
-#: ../../introduction.rst:295
+#: ../../introduction.rst:306
 msgid ""
 "BSD disk names differ from Linux. IDE drives begin with :file:`ad` and SCSI "
 "and USB drives begin with :file:`da`."
 msgstr ""
 
-#: ../../introduction.rst:307
+#: ../../introduction.rst:318
 msgid "TrueOS"
 msgstr ""
 
-#: ../../introduction.rst:307
+#: ../../introduction.rst:318
 msgid "**Description**"
 msgstr ""
 
-#: ../../introduction.rst:309
+#: ../../introduction.rst:320
 msgid "IPFW"
 msgstr ""
 
-#: ../../introduction.rst:309
+#: ../../introduction.rst:320
 msgid "iptables"
 msgstr ""
 
-#: ../../introduction.rst:309
+#: ../../introduction.rst:320
 msgid "default firewall"
 msgstr ""
 
-#: ../../introduction.rst:311
+#: ../../introduction.rst:322
 msgid ""
 ":file:`/etc/rc.d/` for operating system and :file:`/usr/local/etc/rc.d/` for"
 " applications"
 msgstr ""
 
-#: ../../introduction.rst:311
+#: ../../introduction.rst:322
 msgid ":file:`rc0.d/`, :file:`rc1.d/`, etc."
 msgstr ""
 
-#: ../../introduction.rst:319
+#: ../../introduction.rst:330
 msgid ":file:`/etc/ttys` and :file:`/etc/rc.conf`"
 msgstr ""
 
-#: ../../introduction.rst:319
+#: ../../introduction.rst:330
 msgid ":command:`telinit`, :file:`init.d/`"
 msgstr ""
 
-#: ../../introduction.rst:319
+#: ../../introduction.rst:330
 msgid ""
 "terminals are configured in *ttys* and *rc.conf* indicates which services "
 "will start at boot time"
 msgstr ""
 
-#: ../../introduction.rst:335
+#: ../../introduction.rst:346
 msgid "Command"
 msgstr ""
 
-#: ../../introduction.rst:335
+#: ../../introduction.rst:346
 msgid "**Used to:**"
 msgstr ""
 
-#: ../../introduction.rst:337
+#: ../../introduction.rst:348
 msgid ":command:`dmesg`"
 msgstr ""
 
-#: ../../introduction.rst:337
+#: ../../introduction.rst:348
 msgid "discover what hardware was detected by the kernel"
 msgstr ""
 
-#: ../../introduction.rst:340
+#: ../../introduction.rst:351
 msgid ":command:`sysctl dev`"
 msgstr ""
 
-#: ../../introduction.rst:340
+#: ../../introduction.rst:351
 msgid "display configured devices"
 msgstr ""
 
-#: ../../introduction.rst:342
+#: ../../introduction.rst:353
 msgid ":command:`pciconf -l -cv`"
 msgstr ""
 
-#: ../../introduction.rst:342
+#: ../../introduction.rst:353
 msgid "show PCI devices"
 msgstr ""
 
-#: ../../introduction.rst:344
+#: ../../introduction.rst:355
 msgid ":command:`dmesg | grep usb`"
 msgstr ""
 
-#: ../../introduction.rst:344
+#: ../../introduction.rst:355
 msgid "show USB devices"
 msgstr ""
 
-#: ../../introduction.rst:346
+#: ../../introduction.rst:357
 msgid ":command:`kldstat`"
 msgstr ""
 
-#: ../../introduction.rst:346
+#: ../../introduction.rst:357
 msgid "list all modules loaded in the kernel"
 msgstr ""
 
-#: ../../introduction.rst:349
+#: ../../introduction.rst:360
 msgid ":command:`kldload <module>`"
 msgstr ""
 
-#: ../../introduction.rst:349
+#: ../../introduction.rst:360
 msgid "load a kernel module for the current session"
 msgstr ""
 
-#: ../../introduction.rst:352
+#: ../../introduction.rst:363
 msgid ":command:`pkg install <pkgname>`"
 msgstr ""
 
-#: ../../introduction.rst:352
+#: ../../introduction.rst:363
 msgid "install software from the command line"
 msgstr ""
 
-#: ../../introduction.rst:355
+#: ../../introduction.rst:366
 msgid ":command:`sysctl hw.realmem`"
 msgstr ""
 
-#: ../../introduction.rst:355
+#: ../../introduction.rst:366
 msgid "display hardware memory"
 msgstr ""
 
-#: ../../introduction.rst:357
+#: ../../introduction.rst:368
 msgid ":command:`sysctl hw.model`"
 msgstr ""
 
-#: ../../introduction.rst:357
+#: ../../introduction.rst:368
 msgid "display CPU model"
 msgstr ""
 
-#: ../../introduction.rst:359
+#: ../../introduction.rst:370
 msgid ":command:`sysctl hw.machine_arch`"
 msgstr ""
 
-#: ../../introduction.rst:359
+#: ../../introduction.rst:370
 msgid "display CPU Architecture"
 msgstr ""
 
-#: ../../introduction.rst:361
+#: ../../introduction.rst:372
 msgid ":command:`sysctl hw.ncpu`"
 msgstr ""
 
-#: ../../introduction.rst:361
+#: ../../introduction.rst:372
 msgid "display number of CPUs"
 msgstr ""
 
-#: ../../introduction.rst:363
+#: ../../introduction.rst:374
 msgid ":command:`uname -vm`"
 msgstr ""
 
-#: ../../introduction.rst:363
+#: ../../introduction.rst:374
 msgid "get release version information"
 msgstr ""
 
-#: ../../introduction.rst:366
+#: ../../introduction.rst:377
 msgid ":command:`gpart show`"
 msgstr ""
 
-#: ../../introduction.rst:366
+#: ../../introduction.rst:377
 msgid "show device partition information"
 msgstr ""
 
-#: ../../introduction.rst:369
+#: ../../introduction.rst:380
 msgid ":command:`fuser`"
 msgstr ""
 
-#: ../../introduction.rst:376
+#: ../../introduction.rst:387
 msgid ""
 "`Comparing BSD and Linux <http://www.freebsd.org/doc/en/articles/explaining-"
 "bsd/comparing-bsd-and-linux.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:378
+#: ../../introduction.rst:389
 msgid ""
 "`FreeBSD Quickstart Guide for Linux® Users "
 "<http://www.freebsd.org/doc/en/articles/linux-users/index.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:380
+#: ../../introduction.rst:391
 msgid ""
 "`BSD vs Linux <http://www.over-yonder.net/~fullermd/rants/bsd4linux/01>`_"
 msgstr ""
 
-#: ../../introduction.rst:382
+#: ../../introduction.rst:393
 msgid ""
 "`Why Choose FreeBSD? <http://www.freebsd.org/advocacy/whyusefreebsd.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:384
+#: ../../introduction.rst:395
 msgid ""
 "`Interview: BSD for Human Beings <http://www.unixmen.com/bsd-for-human-"
 "beings-interview/>`_"
 msgstr ""
 
-#: ../../introduction.rst:386
+#: ../../introduction.rst:397
 msgid ""
 "`Video: BSD 4 Linux Users <https://www.youtube.com/watch?v=xk6ouxX51NI>`_"
 msgstr ""
 
-#: ../../introduction.rst:388
+#: ../../introduction.rst:399
 msgid ""
 "`Why you should use a BSD style license for your Open Source Project "
 "<http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_"
 msgstr ""
 
-#: ../../introduction.rst:390
+#: ../../introduction.rst:401
 msgid ""
 "`A Sysadmin's Unixersal Translator (ROSETTA STONE) "
 "<http://bhami.com/rosetta.html>`_"
@@ -485,72 +481,51 @@ msgid ""
 "computing needs."
 msgstr ""
 
-#: ../../introduction.rst:84
-msgid ""
-"**Easy software management:** With :ref:`AppCafe®`, installing, upgrading, "
-"and uninstalling software is safe and easy."
-msgstr ""
-
-#: ../../introduction.rst:87
-msgid ""
-"**Lots of software available:** :ref:`AppCafe®` can be used to install "
-"software ported to FreeBSD (currently over 26,100 applications)."
-msgstr ""
-
-#: ../../introduction.rst:90
-msgid ""
-"**Easy to update:** |trueos| provides a built-in :ref:`Update Manager` which"
-" provides notifications of available updates. This utility makes it easy to "
-"apply operating system security fixes, bug fixes, and system enhancements, "
-"as well as upgrade to newer versions of the operating system or installed "
-"software."
-msgstr ""
-
-#: ../../introduction.rst:96
+#: ../../introduction.rst:97
 msgid ""
 "**Virus-free:** |trueos| is unaffected by viruses, spyware, or other "
 "malware."
 msgstr ""
 
-#: ../../introduction.rst:99
+#: ../../introduction.rst:100
 msgid ""
 "**No defragmentation:** |trueos| hard drives do not need to be defragmented "
 "and are formatted with OpenZFS, a self-healing filesystem."
 msgstr ""
 
-#: ../../introduction.rst:102
+#: ../../introduction.rst:103
 msgid ""
 "**Laptop support:** Provides power saving, swap space encryption, and "
 "automatic switching between wired and wifi network connections."
 msgstr ""
 
-#: ../../introduction.rst:105
+#: ../../introduction.rst:106
 msgid ""
 "**Secure environment:** |trueos| provides a pre-configured firewall and a "
 "built-in host-based Intrusion Detection System."
 msgstr ""
 
-#: ../../introduction.rst:108
+#: ../../introduction.rst:109
 msgid ""
 "**Easy system administration:** |trueos| provides many graphical tools for "
 "performing system administration tasks."
 msgstr ""
 
-#: ../../introduction.rst:111
+#: ../../introduction.rst:112
 msgid ""
 "**Localization:** |trueos| supports a variety of native languages and "
 "locales."
 msgstr ""
 
-#: ../../introduction.rst:114
+#: ../../introduction.rst:115
 msgid "**Vibrant community:** |trueos| has a friendly and helpful community."
 msgstr ""
 
-#: ../../introduction.rst:122
+#: ../../introduction.rst:123
 msgid "The following features or enhancements were introduced for |trueos|:"
 msgstr ""
 
-#: ../../introduction.rst:126
+#: ../../introduction.rst:127
 msgid ""
 "The GRUB bootloader has been replaced by the FreeBSD bootloader which now "
 "provides both GELI and boot environment support. The :guilabel:`Use GRUB "
@@ -559,49 +534,14 @@ msgid ""
 " boot loader."
 msgstr ""
 
-#: ../../introduction.rst:140
-msgid ""
-"A |trueos| installation installs the |lumina| Desktop. Additional window "
-"managers can be installed using :ref:`AppCafe®`."
-msgstr ""
-
-#: ../../introduction.rst:143
-msgid ""
-"The :ref:`SysAdm™ Client` and server has replaced Control Panel. Most of the"
-" utilities that were in the Control Panel have been rewritten to use the "
-"|sysadm| middleware. Under the hood, |sysadm| provides REST and WebSocket "
-"APIs for securely managing local and remote FreeBSD and |trueos| systems."
-msgstr ""
-
-#: ../../introduction.rst:149
-msgid ""
-"Many utilities have been converted to the |sysadm| API and are available in "
-"the :ref:`SysAdm™ client`: :ref:`AppCafe®`, :ref:`Update Manager`, "
-":ref:`Boot Environment Manager`, :ref:`Life Preserver`, :ref:`Firewall "
-"Manager`, :ref:`User Manager`, :ref:`Network Manager`, and :ref:`Mount "
-"Tray`."
-msgstr ""
-
-#: ../../introduction.rst:155
-msgid ""
-"The functionality provided by the *About* utility has been incorporated into"
-" :ref:`Lumina Information`."
-msgstr ""
-
-#: ../../introduction.rst:158
-msgid ""
-"The functionality provided by *Service Manager* (:command:`pc-"
-"servicemanager`) has been integrated into :ref:`Task Manager`."
-msgstr ""
-
-#: ../../introduction.rst:173
+#: ../../introduction.rst:182
 msgid ""
 "The binary for :ref:`Disk Manager` (:command:`pc-zmanager`) has been renamed"
 " to :command:`pc-diskmanager` and the graphical version has been moved to "
 "the :guilabel:`Browse Applications` menu."
 msgstr ""
 
-#: ../../introduction.rst:177
+#: ../../introduction.rst:186
 msgid ""
 "The option to use the SCFB display driver has been added to the installer. "
 "This driver is suitable for newer UEFI laptops as it automatically detects "
@@ -612,20 +552,13 @@ msgid ""
 "and resume."
 msgstr ""
 
-#: ../../introduction.rst:185
-msgid ""
-":guilabel:`Customize` has been removed from the :ref:`System Selection "
-"Screen` in order to reduce the size of the installation media. Additional "
-"software can be installed post-installation using :ref:`AppCafe®`."
-msgstr ""
-
-#: ../../introduction.rst:190
+#: ../../introduction.rst:199
 msgid ""
 "The :guilabel:`Boot to console (Disable X)` option has been added to the "
 "graphical boot menu."
 msgstr ""
 
-#: ../../introduction.rst:207
+#: ../../introduction.rst:218
 msgid ""
 "|trueos| is based on FreeBSD, meaning it is not a Linux distribution. If you"
 " have used Linux before, you will find some features you are used to have "
@@ -633,7 +566,7 @@ msgid ""
 "section covers some of these differences."
 msgstr ""
 
-#: ../../introduction.rst:215
+#: ../../introduction.rst:226
 msgid ""
 "BSD and Linux use different filesystems during installation. Many Linux "
 "distros use EXT2, EXT3, EXT4, or ReiserFS, while |trueos| uses OpenZFS. This"
@@ -642,7 +575,7 @@ msgid ""
 "data will be accessible to both operating systems."
 msgstr ""
 
-#: ../../introduction.rst:221
+#: ../../introduction.rst:232
 msgid ""
 ":numref:`Table %s <filesys support>` summarizes the various filesystems "
 "commonly used by desktop systems. |trueos| will automatically mount several "
@@ -655,14 +588,14 @@ msgstr ""
 msgid ": Filesystem Support on |trueos|"
 msgstr ""
 
-#: ../../introduction.rst:298
+#: ../../introduction.rst:309
 msgid ""
 "Some of the features used by BSD have similar counterparts to Linux, but the"
 " name of the feature is different. :numref:`Table %s <feature names>` "
 "provides some common examples:"
 msgstr ""
 
-#: ../../introduction.rst:325
+#: ../../introduction.rst:336
 msgid ""
 "Users comfortable with the command line may find some of the common Linux "
 "commands have different names on BSD. :numref:`Table %s <common commands>` "
@@ -673,23 +606,23 @@ msgstr ""
 msgid ": Common BSD and Linux Commands"
 msgstr ""
 
-#: ../../introduction.rst:373
+#: ../../introduction.rst:384
 msgid ""
 "There are many articles and videos which provide additional information "
 "about some of the differences between BSD and Linux:"
 msgstr ""
 
-#: ../../introduction.rst:273
+#: ../../introduction.rst:284
 msgid ""
 "check if a Linux distro provides ufsutils; r/w support on Mac; UFS Explorer "
 "can be used on Windows"
 msgstr ""
 
-#: ../../introduction.rst:279
+#: ../../introduction.rst:290
 msgid "|trueos|, FreeBSD"
 msgstr ""
 
-#: ../../introduction.rst:287
+#: ../../introduction.rst:298
 msgid ""
 "In Linux, Ethernet interfaces begin with :file:`eth`. With BSD, interface "
 "names indicate the name of the driver. For example, an Ethernet interface "
@@ -703,14 +636,14 @@ msgstr ""
 msgid ": BSD and Linux Feature Names"
 msgstr ""
 
-#: ../../introduction.rst:311
+#: ../../introduction.rst:322
 msgid ""
 "in |trueos|, the directories containing the startup scripts do not link to "
 "runlevels as there are no runlevels; system startup scripts are separated "
 "from third-party application scripts"
 msgstr ""
 
-#: ../../introduction.rst:369
+#: ../../introduction.rst:380
 msgid "list IDs of all processes with one or more files open"
 msgstr ""
 
@@ -724,7 +657,7 @@ msgid ""
 "alike."
 msgstr ""
 
-#: ../../introduction.rst:205
+#: ../../introduction.rst:216
 msgid "|trueos| for Linux Users"
 msgstr ""
 
@@ -740,7 +673,7 @@ msgstr ""
 msgid "|trueos| provides these features:"
 msgstr ""
 
-#: ../../introduction.rst:132
+#: ../../introduction.rst:133
 msgid ""
 "**Quick boot times with OpenRC:** |trueos| is using `OpenRC "
 "<https://github.com/OpenRC/openrc>`_ as part of the init process to start "
@@ -751,19 +684,184 @@ msgid ""
 "ethernet cable."
 msgstr ""
 
-#: ../../introduction.rst:233
+#: ../../introduction.rst:244
 msgid "Non-native support type"
 msgstr ""
 
-#: ../../introduction.rst:233
+#: ../../introduction.rst:244
 msgid "Usage notes"
 msgstr ""
 
-#: ../../introduction.rst:193
+#: ../../introduction.rst:84
 msgid ""
-"These new utilites are available in the :ref:`SysAdm™ Client`: "
-":ref:`Managing Remote Connections` and :ref:`Task Manager`."
+"**Easy software management:** With `AppCafe "
+"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_, installing,"
+" upgrading, and uninstalling software is safe and easy."
 msgstr ""
+
+#: ../../introduction.rst:87
+msgid ""
+"**Lots of software available:** |appcafe| can be used to install software "
+"ported to FreeBSD (currently over 26,100 applications)."
+msgstr ""
+
+#: ../../introduction.rst:90
+msgid ""
+"**Easy to update:** |trueos| (with |sysadm|) provides a built-in `Update "
+"Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
+"manager>`_ which provides notifications of available updates. This utility "
+"makes it easy to apply operating system security fixes, bug fixes, and "
+"system enhancements, as well as upgrade to newer versions of the operating "
+"system or installed software."
+msgstr ""
+
+#: ../../introduction.rst:141
+msgid ""
+"A |trueos| installation installs the |lumina| Desktop. Additional window "
+"managers can be installed using |appcafe|."
+msgstr ""
+
+#: ../../introduction.rst:144
+msgid ""
+"The `SysAdm™ Client <https://sysadm.us/handbook/client/>`_ and `Server "
+"<https://sysadm.us/handbook/server/>`_ has replaced Control Panel. Most of "
+"the utilities from the Control Panel have been rewritten to use the |sysadm|"
+" middleware. Under the hood, |sysadm| provides REST and WebSocket APIs for "
+"securely managing local and remote FreeBSD and |trueos| systems."
+msgstr ""
+
+#: ../../introduction.rst:151
+msgid ""
+"Many utilities have been converted to the |sysadm| API and are available "
+"through `SysAdm <https://sysadm.us/handbook/client/>`_:"
+msgstr ""
+
+#: ../../introduction.rst:154
+msgid "AppCafe"
+msgstr ""
+
+#: ../../introduction.rst:155
+msgid "Update Manager"
+msgstr ""
+
+#: ../../introduction.rst:156
+msgid "Boot Environment Manager"
+msgstr ""
+
+#: ../../introduction.rst:157
+msgid "Life Preserver"
+msgstr ""
+
+#: ../../introduction.rst:158
+msgid "Firewall Manager"
+msgstr ""
+
+#: ../../introduction.rst:159
+msgid "User Manager"
+msgstr ""
+
+#: ../../introduction.rst:160
+msgid "Network Manager"
+msgstr ""
+
+#: ../../introduction.rst:161
+msgid "Mount Tray"
+msgstr ""
+
+#: ../../introduction.rst:163
+msgid ""
+"The functionality provided by the *About* utility has been incorporated into"
+" `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html"
+"#lumina-information>`_."
+msgstr ""
+
+#: ../../introduction.rst:167
+msgid ""
+"The functionality provided by `Service Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
+"(:command:`pc-servicemanager`) has been integrated into |sysadm|."
+msgstr ""
+
+#: ../../introduction.rst:194
+msgid ""
+":guilabel:`Customize` has been removed from the :ref:`System Selection "
+"Screen` in order to reduce the size of the installation media. Additional "
+"software can be installed post-installation using |appcafe|."
+msgstr ""
+
+#: ../../introduction.rst:202
+msgid ""
+"These new utilites are available in the *SysAdm Client* `Managing Remote "
+"Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-"
+"remote-connections>`_ and `Task Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_."
+msgstr ""
+
+#: ../../introduction.rst:210
+msgid ":command:`pc-thinclient` has been removed as it is deprecated."
+msgstr ""
+
+#~ msgid "**pc-thinclient** has been removed as it is deprecated."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Easy software management:** With :ref:`AppCafe®`, installing, upgrading, "
+#~ "and uninstalling software is safe and easy."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Lots of software available:** :ref:`AppCafe®` can be used to install "
+#~ "software ported to FreeBSD (currently over 26,100 applications)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Easy to update:** |trueos| provides a built-in :ref:`Update Manager` which"
+#~ " provides notifications of available updates. This utility makes it easy to "
+#~ "apply operating system security fixes, bug fixes, and system enhancements, "
+#~ "as well as upgrade to newer versions of the operating system or installed "
+#~ "software."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A |trueos| installation installs the |lumina| Desktop. Additional window "
+#~ "managers can be installed using :ref:`AppCafe®`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :ref:`SysAdm™ Client` and server has replaced Control Panel. Most of the"
+#~ " utilities that were in the Control Panel have been rewritten to use the "
+#~ "|sysadm| middleware. Under the hood, |sysadm| provides REST and WebSocket "
+#~ "APIs for securely managing local and remote FreeBSD and |trueos| systems."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Many utilities have been converted to the |sysadm| API and are available in "
+#~ "the :ref:`SysAdm™ client`: :ref:`AppCafe®`, :ref:`Update Manager`, "
+#~ ":ref:`Boot Environment Manager`, :ref:`Life Preserver`, :ref:`Firewall "
+#~ "Manager`, :ref:`User Manager`, :ref:`Network Manager`, and :ref:`Mount "
+#~ "Tray`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The functionality provided by the *About* utility has been incorporated into"
+#~ " :ref:`Lumina Information`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The functionality provided by *Service Manager* (:command:`pc-"
+#~ "servicemanager`) has been integrated into :ref:`Task Manager`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`Customize` has been removed from the :ref:`System Selection "
+#~ "Screen` in order to reduce the size of the installation media. Additional "
+#~ "software can be installed post-installation using :ref:`AppCafe®`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "These new utilites are available in the :ref:`SysAdm™ Client`: "
+#~ ":ref:`Managing Remote Connections` and :ref:`Task Manager`."
+#~ msgstr ""
 
 #~ msgid "Ongoing |trueos| issues"
 #~ msgstr ""

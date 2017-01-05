@@ -70,25 +70,25 @@ msgid ""
 "capabilities. Change **true** to **false** to disable all audio."
 msgstr ""
 
-#: ../../pico.rst:194
+#: ../../pico.rst:195
 msgid "Insert the microSD card into the thin client."
 msgstr ""
 
-#: ../../pico.rst:197
+#: ../../pico.rst:198
 msgid "Plug in the USB Mouse and Keyboard."
 msgstr ""
 
-#: ../../pico.rst:198
+#: ../../pico.rst:199
 msgid "Attach the monitor's HDMI cable."
 msgstr ""
 
-#: ../../pico.rst:199
+#: ../../pico.rst:200
 msgid ""
 "Plug in the ARM device's power cable. This should always be the **last** "
 "step."
 msgstr ""
 
-#: ../../pico.rst:214
+#: ../../pico.rst:215
 msgid ""
 "If the server uses the |lumina| Desktop Environment, hovering over the "
 ":guilabel:`Network Status Icon` in the System Tray displays the client's IP "
@@ -98,51 +98,51 @@ msgid ""
 "server administration."
 msgstr ""
 
-#: ../../pico.rst:237
+#: ../../pico.rst:238
 msgid "VGL Graphics Acceleration"
 msgstr ""
 
-#: ../../pico.rst:259
+#: ../../pico.rst:260
 msgid ": VirtualGL Gears Test"
 msgstr ""
 
-#: ../../pico.rst:264
+#: ../../pico.rst:265
 msgid "Pulse Audio"
 msgstr ""
 
-#: ../../pico.rst:290
+#: ../../pico.rst:291
 msgid "Command"
 msgstr ""
 
-#: ../../pico.rst:290
+#: ../../pico.rst:291
 msgid "Description"
 msgstr ""
 
-#: ../../pico.rst:292
+#: ../../pico.rst:293
 msgid "pico-server"
 msgstr ""
 
-#: ../../pico.rst:292
+#: ../../pico.rst:293
 msgid ""
 "Primary Pico command. All commands begin with :command:`pico-server` and a "
 "space."
 msgstr ""
 
-#: ../../pico.rst:295
+#: ../../pico.rst:296
 msgid "-list"
 msgstr ""
 
-#: ../../pico.rst:295
+#: ../../pico.rst:296
 msgid ""
 "Displays all connected clients, as either \"pico_auth <#>\" or the specific "
 "logins (\"testuser_pico\")"
 msgstr ""
 
-#: ../../pico.rst:299
+#: ../../pico.rst:300
 msgid "-kill pico_auth <#>"
 msgstr ""
 
-#: ../../pico.rst:299
+#: ../../pico.rst:300
 msgid "Immediately reboots the specified client."
 msgstr ""
 
@@ -177,11 +177,11 @@ msgid ""
 "recommended at this time."
 msgstr ""
 
-#: ../../pico.rst:171
+#: ../../pico.rst:172
 msgid "It may take a few moments for the system to decompress the file."
 msgstr ""
 
-#: ../../pico.rst:173
+#: ../../pico.rst:174
 msgid ""
 "Once the file is decompressed to a :file:`.img` file, insert a microSD card "
 "into the system. An adapter might be necessary if the system has no microSD "
@@ -189,11 +189,11 @@ msgid ""
 "write the :file:`.img` file to the card:"
 msgstr ""
 
-#: ../../pico.rst:189
+#: ../../pico.rst:190
 msgid "This command may take some time to process."
 msgstr ""
 
-#: ../../pico.rst:245
+#: ../../pico.rst:246
 msgid ""
 "VirtualGL also has an extensive `user guide "
 "<http://www.virtualgl.org/Documentation/Documentation>`_ to help guide new "
@@ -327,25 +327,17 @@ msgid ""
 "and change :command:`enablevgl=` to **false**."
 msgstr ""
 
-#: ../../pico.rst:145
-msgid ""
-"Once satisfied with the settings in :file:`picoserver.ini`, new user "
-"accounts/logins may need to be created for the client systems. See "
-":ref:`User Manager` for detailed instructions on creating new users on a "
-"|trueos| system."
-msgstr ""
-
-#: ../../pico.rst:150
+#: ../../pico.rst:151
 msgid ""
 "After any necessary accounts are created, the next step is to initialize the"
 " client."
 msgstr ""
 
-#: ../../pico.rst:156
+#: ../../pico.rst:157
 msgid "Starting the |picl|"
 msgstr ""
 
-#: ../../pico.rst:158
+#: ../../pico.rst:159
 msgid ""
 "The process of initializing a |picl| begins on a separate |trueos| system. "
 "On this system, navigate to the |trueos| website's `download page "
@@ -355,26 +347,26 @@ msgid ""
 "navigate to the file's location to use :command:`unxz` to unpack the file:"
 msgstr ""
 
-#: ../../pico.rst:178
+#: ../../pico.rst:179
 msgid ""
 "Be sure the :command:`dd if=` command points to the correct storage device. "
 "In the example below, the microSD card is connected to a USB adapter, "
 "identified as *da0* on the system."
 msgstr ""
 
-#: ../../pico.rst:191
+#: ../../pico.rst:192
 msgid ""
 "After the :file:`.img` file is written to the microSD card; connect the "
 "|picl| to the |pise|:"
 msgstr ""
 
-#: ../../pico.rst:195
+#: ../../pico.rst:196
 msgid ""
 "Attach the network cable. Be sure the client is wired into the same network "
 "as the |pise|."
 msgstr ""
 
-#: ../../pico.rst:202
+#: ../../pico.rst:203
 msgid ""
 "For the Raspberry Pi, inserting the power cable will generally turn on the "
 "client device. The |picl| then searches for and connects to any |pise| on "
@@ -382,19 +374,19 @@ msgid ""
 "now ready for use."
 msgstr ""
 
-#: ../../pico.rst:210
+#: ../../pico.rst:211
 msgid "Using the |picl|"
 msgstr ""
 
-#: ../../pico.rst:212
+#: ../../pico.rst:213
 msgid "There are a few differences in |trueos| when using a |picl|."
 msgstr ""
 
-#: ../../pico.rst:225
+#: ../../pico.rst:226
 msgid ": |picl| IP display"
 msgstr ""
 
-#: ../../pico.rst:227
+#: ../../pico.rst:228
 msgid ""
 "When logging out with the |picl|, several processes begin. The client clears"
 " the session, then restarts the discovery and connection processes. The "
@@ -403,7 +395,7 @@ msgid ""
 "a new connection and user login from the same |picl|."
 msgstr ""
 
-#: ../../pico.rst:239
+#: ../../pico.rst:240
 msgid ""
 "VirtualGL (VGL) is the toolkit used by the |trpi| to provide 3D hardware "
 "acceleration to the |picl|. VGL redirects OpenGL commands and data to the "
@@ -412,7 +404,7 @@ msgid ""
 "`VirtualGL website <virtualgl.org>`_"
 msgstr ""
 
-#: ../../pico.rst:249
+#: ../../pico.rst:250
 msgid ""
 "On a |picl|, test VGL functionality by opening the command line and typing "
 ":command:`/usr/local/VirtualGL/bin/vglrun glxgears`. A window will popup, "
@@ -421,7 +413,7 @@ msgid ""
 "periodically."
 msgstr ""
 
-#: ../../pico.rst:266
+#: ../../pico.rst:267
 msgid ""
 "`Pulse Audio <https://www.freedesktop.org/wiki/Software/PulseAudio>`_ is the"
 " preferred audio solution for the |picl|. Pulse Audio allows a |picl| play "
@@ -433,11 +425,11 @@ msgid ""
 "application."
 msgstr ""
 
-#: ../../pico.rst:278
+#: ../../pico.rst:279
 msgid "|pise| Administration"
 msgstr ""
 
-#: ../../pico.rst:280
+#: ../../pico.rst:281
 msgid ""
 "Once the |pise| and thin clients are installed and ready to use, there are a"
 " number of administrative commands available, seen in :numref:`Table %s "
@@ -454,6 +446,22 @@ msgid ""
 "server software before downloading the client software or initializing the "
 "|picl|."
 msgstr ""
+
+#: ../../pico.rst:145
+msgid ""
+"Once satisfied with the settings in :file:`picoserver.ini`, new user "
+"accounts/logins may need to be created for the client systems. See the `User"
+" Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-"
+"manager>`_ section of the |sysadm| handbook for detailed instructions on "
+"creating new users on a |trueos| system."
+msgstr ""
+
+#~ msgid ""
+#~ "Once satisfied with the settings in :file:`picoserver.ini`, new user "
+#~ "accounts/logins may need to be created for the client systems. See "
+#~ ":ref:`User Manager` for detailed instructions on creating new users on a "
+#~ "|trueos| system."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "**Audio:** Pulse Audio has an intermittent issue with freezing upon *client*"
