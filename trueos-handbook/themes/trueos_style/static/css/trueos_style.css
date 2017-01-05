@@ -2890,24 +2890,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
     padding: 4px 6px;
     margin-bottom: 0.809em
 }
-#wy-menu\ rst-imagebox2 {
-	margin-top: 15px;
-	margin-left: 20px;
-	margin-right: 20px;
-	border: 3px solid gray;
-	border-radius: 8px;
-	background: #bbbbbb !important; 
-	font-size: 75%;
-	margin-left: auto;
-    margin-right: auto;
-   }
-
-   
-#wy-menu\ rst-imagebox2 > a:nth-child(4) > img:nth-child(1) {
-	width: 75%;
-	margin: 0 auto;
-	display: block;
-}
    
 .wy-side-nav-search>a:hover,
 .wy-side-nav-search .wy-dropdown>a:hover {
@@ -4101,6 +4083,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
     }
 }
 
+/*"""""""""""""""""""""""""""""""""""""""""""""""*
+ |    Allow for printing from browser            | 
+ |    with reasonable appearance                    | 
+ *"""""""""""""""""""""""""""""""""""""""""""""""*/
+
 #gsc-iw-id1 {
 	background: #bbbbbb !important;
 	border: solid 1px #A8A8A8 !important;
@@ -4111,7 +4098,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 
 #gsc-i-id1 {
 	border: solid 1px #A8A8A8 !important;
-	background: white url("https://www.trueos.org/handbook/_static/searchdocs.png") no-repeat scroll left center !important;
+	background: white !important;
 }
 
 .gsc-search-box-tools .gsc-search-box .gsc-input {
@@ -4132,6 +4119,27 @@ input.gsc-search-button {
 }
 
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
- |    Allow for printing from browser            | 
- |    with reasonable appearance         (END)   | 
+ |   ^^  Google Search Appearance CSS ^^
+ *"""""""""""""""""""""""""""""""""""""""""""""""*/
+ 
+ #wy-menu\ rst-imagebox2 {
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 3px solid gray;
+	border-radius: 8px;
+	background: #bbbbbb !important; 
+	font-size: 75%;
+	margin-left: auto;
+    margin-right: auto;
+   }
+
+#wy-menu\ rst-imagebox2 > a:nth-child(4) > img:nth-child(1) {
+	width: 75%;
+	margin: 0 auto;
+	display: block;
+}
+
+/*"""""""""""""""""""""""""""""""""""""""""""""""*
+ |   ^^  Ad Docs Appearance CSS  (END)  ^^ 
  *"""""""""""""""""""""""""""""""""""""""""""""""*/
