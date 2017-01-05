@@ -23,8 +23,8 @@ To determine if the chosen hardware is detected by |trueos|, start an
 installation and click :guilabel:`Hardware Compatibility` in the
 :ref:`Language Selection Screen`.
 
-If any problems arise with the installation, refer to
-:ref:`Installation Troubleshooting`.
+If any problems arise with the installation, refer to the
+Troubleshooting :ref:`Installation` section of this handbook.
 
 This section discusses the |trueos| hardware requirements, how to
 prepare the system for installation, and how to obtain and prepare the

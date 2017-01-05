@@ -17,6 +17,398 @@ important to follow certain protocols when requesting help:
 
 * `How To Ask Questions The Smart Way <http://catb.org/~esr/faqs/smart-questions.html>`_
 
+.. index:: help, ongoing issues
+.. _Ongoing Issues:
+
+Ongoing Issues
+==============
+
+This section is intended to list all known/longstanding issues with
+aspects of the |trueos| project.
+
+.. index:: help, TrueOS
+.. _TrueOS issues:
+
+|trueos|
+--------
+
+* **Older AMD/ATI cards:** These are not supported in |trueos| yet.
+  There are several ongoing investigations, but no consistent solutions
+  have been found yet. There are experimental drivers
+  `available <https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_,
+  but their effectiveness is (so far) inconsistent.
+
+* **Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from
+  this range need to be installed manually. The |trueos| installer only
+  contains the latest nvidia driver in order to prevent installation
+  conflicts. These drivers are available through :command:`pkg`.
+
+* **Translation issues:** |trueos| began using Weblate as its
+  translation system, but it is currently nonfunctional. The system is
+  being reviewed and should be back online soon.
+
+* **4k desktop wallpapers:** There is an issue with 4k desktop
+  backgrounds not being displayed properly (always displays as "tiled").
+  This is a bug with Qt, and will be fixed with the next version of Qt.
+
+* **Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues
+  with older Broadcom wifi chipsets. Please browse the FreeBSD
+  `hardware notes <https://www.freebsd.org/relnotes/CURRENT/hardware/index.html>`_
+  to see detailed notes about supported hardware in FreeBSD/|trueos|.
+
+* **Install with Encryption:** A |trueos| installation using the FreeBSD
+  loader with both GPT and GELI encryption is currently nonfunctional,
+  due to a FreeBSD
+  `regression <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=213491>`_.
+  Currently, it is best to avoid using GPT and GELI together with the
+  BSD bootloader for fresh installs while the FreeBSD contributors fix
+  the issue.
+
+.. index:: help, pico
+.. _Pico:
+
+Pico
+----
+
+This section lists the currently known bugs with |trpi| use:
+
+* **Audio:** Pulse Audio has an intermittent issue with freezing upon
+  *client* initialization. A workaround has been implemented, but please
+  refer to :ref:`Report a bug` if any additional audio issues are
+  encountered.
+
+.. index:: help, troubleshooting
+.. _Troubleshooting:
+
+Troubleshooting
+===============
+
+
+
+.. index:: help, troubleshooting, display
+.. _Display:
+
+Display
+-------
+
+If problems exist with the display settings and manually editing
+:file:`/etc/X11/xorg.conf` or running :command:`Xorg --config` is
+necessary, first tell the |trueos| system to not automatically start X.
+To do this, add :command:`pcdm_enable="NO"` temporarily to
+:file:`/etc/rc.conf`, then reboot the system.
+
+The system will reboot to a login prompt. After logging in, follow the
+instructions in the FreeBSD
+`Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_
+to manually configure and test Xorg. Once a working configuration is
+found, save it to :file:`/etc/X11/xorg.conf`. Then, remove the
+temporary line shown above from :file:`/etc/rc.conf` and start PCDM with
+:command:`service pcdm start`.
+
+If the graphics white-out after a suspend or resume, run
+:command:`sysctl hw.acpi.reset_video=1` as the superuser.
+
+If the problem is fixed, carefully add :command:`hw.acpi.reset_video=1`
+to :file:`/etc/sysctl.conf`.
+
+If the monitor goes blank and does not come back, run
+:command:`xset -dpms` as the regular user account.
+
+If the problem is fixed, add :command:`xset -dpms` to the
+:file:`.xprofile` file in the user's home directory.
+
+If any display settings change, click :guilabel:`Apply` for the settings
+to be tested. If anything goes wrong during testing, the system will
+return to the :guilabel:`Display Settings` screen for the user to try
+another setting. Once satisfied with the tested setting, click
+:guilabel:`"Yes` to save the setting and proceed. Alternately, click
+:guilabel:`Skip` to configure the display settings later.
+
+.. index:: help, troubleshooting, installation
+.. _installation:
+
+Installation
+------------
+
+Installing |trueos| is usually very simple. However, sometimes problems
+occur. This section examines solutions to the most common installation
+problems.
+
+The |trueos| installer creates a log which keeps a record of all the
+completed steps, as well as any errors. When an installation error
+occurs, the |trueos| installer asks to generate an error report. If
+:guilabel:`Yes` is chosen, a pop-up message asks to save the error log
+to a USB stick. Type :kbd:`y` and insert a FAT formatted USB thumb drive
+to copy the log.
+
+While in the installer, read this log to see what went wrong. Click the
+black :guilabel:`Emergency Shell and Utilities` icon, then select
+:guilabel:`shell` from the :guilabel:`|trueos| Utility Menu`. Read the
+log by typing :command:`more /tmp/.SysInstall.log`.
+
+If the error can not be fixed or believe an installation bug exists,
+send the log saved on the USB stick using the instructions in
+:ref:`Report a Bug`.
+
+If the installer does not arrive at the initial GUI installer screen,
+try unplugging as many devices as possible, such as webcams, scanners,
+printers, USB mice and keyboards. If this solves the problem, plug in
+one piece of hardware at a time, then reboot. This will help pinpoint
+which device is causing the problem.
+
+If the computer freezes while probing hardware and unplugging extra
+devices does not fix the problem, it is possible that the installation
+media is corrupt. If the :ref:`Data Integrity check` on the downloaded
+file is correct, try burning the file again at a lower speed.
+
+If the system freezes and the video card is suspected to be the cause,
+review the system's BIOS settings. If there is a setting for video
+memory, set it to its highest value. Also check to see if the BIOS is
+set to prefer built-in graphics or a non-existent graphics card. On some
+systems this is determined by the order of the devices listed; in this
+case, be sure the preferred device is listed first. If the BIOS settings
+are invisible, move a jumper or remove a battery to make it revert to
+the default built-in graphics; check the manual or contact the card
+manufacturer for details.
+
+A common cause for problems is the *LBA* (Logical Block Addressing)
+setting in the BIOS. If the PC is not booting before or after
+installation, check the BIOS and turn *LBA* off (do not leave it on
+automatic).
+
+If the SATA settings in the BIOS are set to *compatibility* mode, try
+changing this setting to *AHCI*. If the system hangs with a BTX error,
+try turning off *AHCI* in the BIOS.
+
+If the USB keyboard is non-functional, check if there is an option in
+the BIOS for *legacy support* in relation to the keyboard, USB,
+or both. Enabling this feature in the BIOS may solve this issue.
+
+If the installer boots and a *mountroot>* command prompt appears, this
+may be due to a change in the location of the boot device. This can
+occur when the enumeration of a card reader changes. The solution is
+to enter :command:`ufs:/dev/da1` at the prompt. Depending on the exact
+location of the boot media, it may be different from :file:`da1`. Type
+:kbd:`?` at the prompt to display the available devices.
+
+If none of the above has fixed the problem, the :ref:`TrueOS Community`
+is a valuable resource to assist in tracking down and solving the issue.
+
+.. index:: help, troubleshooting, network
+.. _Network:
+
+Network
+-------
+
+While networking usually "just works" on a |trueos| system, users
+sometimes encounter problems, especially when connecting to wireless
+networks. Sometimes the problem is due to a configuration error and
+sometimes a driver is buggy or is not yet available. This section is
+meant to help pinpoint the problem so you can either personally fix it
+or give the developers the information they need to fix or create a
+driver.
+
+When troubleshooting the network configuration, use these files and
+commands.
+
+The :file:`/etc/rc.conf` file is read when the system boots up. In
+order for the system to configure an interface at boot time, an entry
+must exist for it in this file. Entries are automatically created
+during installation for each active interface. An entry will be added
+(if it does not exist) or modified (if it already exists) when
+configuring an interface using Network Manager.
+
+Here is an example of the :file:`rc.conf` entries for an ethernet driver
+(**em0**) and a wireless driver (**run0**):
+
+.. code-block:: none
+
+ ifconfig_em0="DHCP"
+ wlans_iwm0="wlan0"
+ ifconfig_wlan0="WPA SYNCDHCP"
+
+When reading your own file, look for lines beginning with **ifconfig**.
+For a wireless interface, also look for lines containing **wlans**.
+
+.. note:: Unlike Linux interface driver names, FreeBSD/|trueos|
+   interface driver names indicate the type of chipset. Each driver
+   name has an associated man page where you can learn which devices
+   use that chipset and if there are any configuration options or
+   limitations for the driver. When reading the man page, do not
+   include the interface number. For the above example, read
+   :command:`man em` and :command:`man iwm`.
+
+:file:`/etc/wpa_supplicant.conf` is used by wireless interfaces and
+contains the information needed to connect to a WPA network. If this
+file does not already exist, it is created when entering the
+:guilabel:`Configuration` screen of a wireless interface.
+
+The :command:`ifconfig` command shows the current state of the
+interfaces. When reading through its output, ensure the desired
+interface is listed, has a status of **active**, and has an IP address.
+Here is a sample :command:`ifconfig` output showing the entries for an
+*re0* Ethernet interface and a *run0* wireless interface:
+
+.. code-block:: none
+
+ re0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500 options=389b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,WOL_UCAST,WOL_MCAST,WOL_MAGIC>
+ ether 60:eb:69:0b:dd:4d
+ inet 192.168.1.3 netmask 0xffffff00 broadcast 192.168.1.255
+ media: Ethernet autoselect (100baseTX <full-duplex>)
+ status: active
+
+ run0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 2290
+ ether 00:25:9c:9f:a2:30
+ media: IEEE 802.11 Wireless Ethernet autoselect mode 11g
+ status: associated
+
+ wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+ ether 00:25:9c:9f:a2:30
+ media: IEEE 802.11 Wireless Ethernet autoselect (autoselect)
+ status: no carrier
+ ssid "" channel 10 (2457 MHz 11g)
+ country US authmode WPA1+WPA2/802.11i privacy ON deftxkey UNDEF
+ txpower 0 bmiss 7 scanvalid 60 protmode CTS wme roaming MANUAL bintval 0
+
+In this example, the ethernet interface (*re0*) is active and has an IP
+address. However, the wireless interface (*run0*, which is associated
+with *wlan0*) has a status of **no carrier** and does not have an IP
+address. In other words, it has not yet successfully connected to the
+wireless network.
+
+The :command:`dmesg` command lists the hardware probed during boot time
+and will indicate if the associated driver was loaded. To search the
+output of this command for specific information, pipe it to
+:command:`grep` as seen in this example:
+
+.. code-block:: none
+
+ dmesg | grep Ethernet
+ re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
+ re0: Ethernet address: 60:eb:69:0b:dd:4d
+
+ dmesg |grep re0
+ re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
+ re0: Using 1 MSI messages
+ re0: Chip rev. 0x28000000
+ re0: MAC rev. 0x00000000 miibus0: <MII bus> on re0
+ re0: Ethernet address: 60:eb:69:0b:dd:4d
+ re0: [FILTER]
+ re0: link state changed to DOWN
+ re0: link state changed to UP
+
+ dmesg | grep run0
+ run0: <1.0> on usbus3
+ run0: MAC/BBP RT3070 (rev 0x0201), RF RT2020 (MIMO 1T1R), address 00:25:9c:9f:a2:30
+ run0: firmware RT2870 loaded
+
+If the desired interface does not show up in :command:`ifconfig` or
+:command:`dmesg`, it is possible a driver for this card is not provided
+with the operating system. If the interface is built into the
+motherboard of the computer, use the :command:`pciconf` command to find
+out the type of card:
+
+.. code-block:: none
+
+ pciconf -lv | grep Ethernet
+ device = 'Gigabit Ethernet NIC(NDIS 6.0) (RTL8168/8111/8111c)'
+
+ pciconf -lv | grep wireless
+ device = 'Realtek RTL8191SE wireless LAN 802.11N PCI-E NIC (RTL8191SE?)'
+
+In this example, there is a built-in Ethernet device using a driver
+which supports the *RTL8168/8111/8111c* chipsets. As we saw earlier, the
+driver is *re0*. The built-in wireless device was also found but the *?*
+indicates a driver for the *RTL8191SE* chipset was not found. A web
+search for **FreeBSD RTL8191SE** will give an indication if a driver
+existsor is being developed.
+
+The FreeBSD Handbook chapter on
+`Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_
+provides a good overview of how wireless works and offers additional
+troubleshooting suggestions.
+
+.. index:: help, troubleshooting, printer
+.. _printer:
+
+Printer
+-------
+
+Here are some solutions to common printing problems:
+
+* **A test page prints but it is all garbled:** This typically means
+  the system is using the wrong driver. If your specific model was not
+  listed, click :menuselection:`Adminstration --> Modify Printer` for
+  the printer in the :guilabel:`Printers` tab. In the screen shown in
+  :ref:`print7`, try choosing another driver close to your model
+  number. If trial and error does not fix the problem, see if there are
+  any suggestions for your model in the
+  `Open Printing database <http://www.openprinting.org/printers>`_. A
+  web search for the word "freebsd" followed by the printer model name
+  may also help you find the correct driver to use.
+
+* **Nothing happens when you try to print:** In this case, type
+  :command:`tail -f /var/log/cups/error_log` in a console and then try
+  to print a test page. The error messages should appear in the console.
+  If the solution is not obvious from the error messages, try a web
+  search for the error message. If still stuck, post the error, the
+  model of your printer, and your version of |trueos| as you
+  :ref:`Report a Bug`.
+
+.. index:: help, troubleshooting, sound
+.. _sound:
+
+Sound
+-----
+
+Type :command:`mixer` from the command line to see the current sound
+settings
+
+.. code-block:: none
+
+ mixer
+ Mixer vol      is currently set to   0:0
+ Mixer pcm      is currently set to 100:100
+ Mixer speaker  is currently set to 100:100
+ Mixer mic      is currently set to  50:50
+ Mixer rec      is currently set to   1:1
+ Mixer monitor  is currently set to  42:42
+ Recording source: monitor
+
+If any of these settings are set to *0*, set them to a higher value by
+specifying the name of the mixer setting and a percentage value up to
+*100*
+
+.. code-block:: none
+
+ mixer vol 100
+ Setting the mixer vol from 0:0 to 100:100.
+
+To make the change permanent, create a file named :file:`.xprofile` in
+the home directory the containing the corrected mixer setting.
+
+If only one or two mixer settings are available, the default mixer
+channel will need to change. As the superuser, try
+:command:`sysctl -w hw.snd.default_unit=1` to alter the mixer channel.
+
+To see if the mixer has changed to the correct channel, type
+:command:`mixer` again. If there are still only have one or two mixer
+settings, try setting the :command:`sysctl` value to *2*, and, if
+necessary, *3*.
+
+Once all of the mixer settings appear and none are set to *0*, sound
+should now work. If it still does not, these resources may help pinpoint
+the problem:
+
+* `Sound Section of FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
+
+* `FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_
+
+If sound issues persist, check the :ref:`Help and Support` chapter to
+determine what help resources are available. If/when reporting the
+issue, be sure to include both the version of |trueos| and name of
+the sound card.
+
 .. index:: community, chat
 .. _TrueOS Community:
 

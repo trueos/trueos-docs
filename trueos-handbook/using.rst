@@ -155,60 +155,6 @@ utilities as well as for restarting PulseAudio. |trueos| provides full
 support and these utilities can be used to configure discoverable
 network sound devices and mixer levels.
 
-.. index:: troubleshooting
-.. _Troubleshooting Sound:
-
-Troubleshooting Sound
----------------------
-
-Type :command:`mixer` from the command line to see the current sound
-settings
-
-.. code-block:: none
-
- mixer
- Mixer vol      is currently set to   0:0
- Mixer pcm      is currently set to 100:100
- Mixer speaker  is currently set to 100:100
- Mixer mic      is currently set to  50:50
- Mixer rec      is currently set to   1:1
- Mixer monitor  is currently set to  42:42
- Recording source: monitor
-
-If any of these settings are set to *0*, set them to a higher value by
-specifying the name of the mixer setting and a percentage value up to
-*100*
-
-.. code-block:: none
-
- mixer vol 100
- Setting the mixer vol from 0:0 to 100:100.
-
-To make the change permanent, create a file named :file:`.xprofile` in
-the home directory the containing the corrected mixer setting.
-
-If only one or two mixer settings are available, the default mixer
-channel will need to change. As the superuser, try
-:command:`sysctl -w hw.snd.default_unit=1` to alter the mixer channel.
-
-To see if the mixer has changed to the correct channel, type
-:command:`mixer` again. If there are still only have one or two mixer
-settings, try setting the :command:`sysctl` value to *2*, and, if
-necessary, *3*.
-
-Once all of the mixer settings appear and none are set to *0*, sound
-should now work. If it still does not, these resources may help pinpoint
-the problem:
-
-* `Sound Section of FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
-
-* `FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_
-
-If sound issues persist, check the :ref:`Help and Support` chapter to
-determine what help resources are available. If/when reporting the
-issue, be sure to include both the version of |trueos| and name of
-the sound card.
-
 .. index:: multimedia
 .. _Multimedia:
 
@@ -1054,8 +1000,8 @@ the list. When finished, click :guilabel:`Apply`. A pop-up message will
 indicate |trueos| is restarting the network. If all went well, there
 should be an IP address and status of **associated** when hovering over
 the wireless icon in the system tray. If this is not the case,
-double-check for errors in the configuration values and read the section
-on :ref:`Troubleshooting Network Settings`.
+double-check for errors in the configuration values and read the
+Troubleshooting section on :ref:`Network`.
 
 |trueos| supports the types of authentication shown in
 :numref:`Figure %s <network7>`. Access this screen and change
@@ -1339,140 +1285,6 @@ access point's configuration:
 * **Channel:** Select the channel to use.
 
 * **Country Code:** The two letter country code of operation.
-
-.. index:: network
-.. _Troubleshooting Network Settings:
-
-Troubleshooting Network Settings
---------------------------------
-
-While networking usually "just works" on a |trueos| system, users
-sometimes encounter problems, especially when connecting to wireless
-networks. Sometimes the problem is due to a configuration error and
-sometimes a driver is buggy or is not yet available. This section is
-meant to help pinpoint the problem so you can either personally fix it
-or give the developers the information they need to fix or create a
-driver.
-
-When troubleshooting the network configuration, use these files and
-commands.
-
-The :file:`/etc/rc.conf` file is read when the system boots up. In
-order for the system to configure an interface at boot time, an entry
-must exist for it in this file. Entries are automatically created
-during installation for each active interface. An entry will be added
-(if it does not exist) or modified (if it already exists) when
-configuring an interface using Network Manager.
-
-Here is an example of the :file:`rc.conf` entries for an ethernet driver
-(**em0**) and a wireless driver (**run0**):
-
-.. code-block:: none
-
- ifconfig_em0="DHCP"
- wlans_iwm0="wlan0"
- ifconfig_wlan0="WPA SYNCDHCP"
-
-When reading your own file, look for lines beginning with **ifconfig**.
-For a wireless interface, also look for lines containing **wlans**.
-
-.. note:: Unlike Linux interface driver names, FreeBSD/|trueos|
-   interface driver names indicate the type of chipset. Each driver
-   name has an associated man page where you can learn which devices
-   use that chipset and if there are any configuration options or
-   limitations for the driver. When reading the man page, do not
-   include the interface number. For the above example, read
-   :command:`man em` and :command:`man iwm`.
-
-:file:`/etc/wpa_supplicant.conf` is used by wireless interfaces and
-contains the information needed to connect to a WPA network. If this
-file does not already exist, it is created when entering the
-:guilabel:`Configuration` screen of a wireless interface.
-
-The :command:`ifconfig` command shows the current state of the
-interfaces. When reading through its output, ensure the desired
-interface is listed, has a status of **active**, and has an IP address.
-Here is a sample :command:`ifconfig` output showing the entries for an
-*re0* Ethernet interface and a *run0* wireless interface:
-
-.. code-block:: none
-
- re0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500 options=389b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,WOL_UCAST,WOL_MCAST,WOL_MAGIC>
- ether 60:eb:69:0b:dd:4d
- inet 192.168.1.3 netmask 0xffffff00 broadcast 192.168.1.255
- media: Ethernet autoselect (100baseTX <full-duplex>)
- status: active
-
- run0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 2290
- ether 00:25:9c:9f:a2:30
- media: IEEE 802.11 Wireless Ethernet autoselect mode 11g
- status: associated
-
- wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
- ether 00:25:9c:9f:a2:30
- media: IEEE 802.11 Wireless Ethernet autoselect (autoselect)
- status: no carrier
- ssid "" channel 10 (2457 MHz 11g)
- country US authmode WPA1+WPA2/802.11i privacy ON deftxkey UNDEF
- txpower 0 bmiss 7 scanvalid 60 protmode CTS wme roaming MANUAL bintval 0
-
-In this example, the ethernet interface (*re0*) is active and has an IP
-address. However, the wireless interface (*run0*, which is associated
-with *wlan0*) has a status of **no carrier** and does not have an IP
-address. In other words, it has not yet successfully connected to the
-wireless network.
-
-The :command:`dmesg` command lists the hardware probed during boot time
-and will indicate if the associated driver was loaded. To search the
-output of this command for specific information, pipe it to
-:command:`grep` as seen in this example:
-
-.. code-block:: none
-
- dmesg | grep Ethernet
- re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
- re0: Ethernet address: 60:eb:69:0b:dd:4d
-
- dmesg |grep re0
- re0: <RealTek 8168/8111 B/C/CP/D/DP/E PCIe Gigabit Ethernet> port 0xc000-0xc0ff mem 0xd0204000-0xd0204fff,0xd0200000-0xd0203fff irq 17 at device 0.0 on pci8
- re0: Using 1 MSI messages
- re0: Chip rev. 0x28000000
- re0: MAC rev. 0x00000000 miibus0: <MII bus> on re0
- re0: Ethernet address: 60:eb:69:0b:dd:4d
- re0: [FILTER]
- re0: link state changed to DOWN
- re0: link state changed to UP
-
- dmesg | grep run0
- run0: <1.0> on usbus3
- run0: MAC/BBP RT3070 (rev 0x0201), RF RT2020 (MIMO 1T1R), address 00:25:9c:9f:a2:30
- run0: firmware RT2870 loaded
-
-If the desired interface does not show up in :command:`ifconfig` or
-:command:`dmesg`, it is possible a driver for this card is not provided
-with the operating system. If the interface is built into the
-motherboard of the computer, use the :command:`pciconf` command to find
-out the type of card:
-
-.. code-block:: none
-
- pciconf -lv | grep Ethernet
- device = 'Gigabit Ethernet NIC(NDIS 6.0) (RTL8168/8111/8111c)'
-
- pciconf -lv | grep wireless
- device = 'Realtek RTL8191SE wireless LAN 802.11N PCI-E NIC (RTL8191SE?)'
-
-In this example, there is a built-in Ethernet device using a driver
-which supports the *RTL8168/8111/8111c* chipsets. As we saw earlier, the
-driver is *re0*. The built-in wireless device was also found but the *?*
-indicates a driver for the *RTL8191SE* chipset was not found. A web
-search for **FreeBSD RTL8191SE** will give an indication if a driver
-existsor is being developed.
-
-The FreeBSD Handbook chapter on
-`Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_
-provides a good overview of how wireless works and offers additional
-troubleshooting suggestions.
 
 .. index:: security
 .. _Tor Mode:
@@ -1785,9 +1597,9 @@ Once you click :guilabel:`Continue`, the next screen, shown in
 :numref:`Figure %s <print7>`, will show a summary of the selected
 options and offer the ability to select another driver. For now, leave
 the detected driver and click :guilabel:`Add Printer`. If the printer
-does not work using the default driver, read the section on
-:ref:`Printer Troubleshooting`, which describes how to use this screen
-in more detail.
+does not work using the default driver, read the Troubleshooting
+:ref:`Printer` section, which describes how to use this screen in more
+detail.
 
 .. _print7:
 
@@ -1825,7 +1637,8 @@ new printer displayed. An example is shown in
 
 Print a test page to ensure the printer is working. Ensure the printer
 has paper and click :menuselection:`Maintenance -> Print Test Page`. If
-a test page will not print, refer to :ref:`Printer Troubleshooting`.
+a test page will not print, refer to the Troubleshooting
+:ref:`Printer` of this handbook.
 
 .. index:: printing
 .. _Manually Adding a Driver:
@@ -1882,33 +1695,6 @@ to browse to the location of the PPD file. PPD (PostScript Printer
 Description) is a driver created by the manufacturer ending in a
 :file:`.ppd` extension. Sometimes the file will end with a
 :file:`.ppd.gz` extension, indicating it has been compressed.
-
-.. index:: printing
-.. _Printer Troubleshooting:
-
-Printer Troubleshooting
------------------------
-
-Here are some solutions to common printing problems:
-
-* **A test page prints but it is all garbled:** This typically means
-  the system is using the wrong driver. If your specific model was not
-  listed, click :menuselection:`Adminstration --> Modify Printer` for
-  the printer in the :guilabel:`Printers` tab. In the screen shown in
-  :ref:`print7`, try choosing another driver close to your model
-  number. If trial and error does not fix the problem, see if there are
-  any suggestions for your model in the
-  `Open Printing database <http://www.openprinting.org/printers>`_. A
-  web search for the word "freebsd" followed by the printer model name
-  may also help you find the correct driver to use.
-
-* **Nothing happens when you try to print:** In this case, type
-  :command:`tail -f /var/log/cups/error_log` in a console and then try
-  to print a test page. The error messages should appear in the console.
-  If the solution is not obvious from the error messages, try a web
-  search for the error message. If still stuck, post the error, the
-  model of your printer, and your version of |trueos| as you
-  :ref:`Report a Bug`.
 
 .. index:: scanner
 .. _Scanner:

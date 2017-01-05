@@ -286,15 +286,3 @@ table:
    +---------------------+-------------------------------------------+
    | -kill pico_auth <#> | Immediately reboots the specified client. |
    +---------------------+-------------------------------------------+
-
-.. _Pico Current Issues:
-
-|trpi| Current Issues
-=====================
-
-This section lists the currently known bugs with |trpi| use:
-
-* **Audio:** Pulse Audio has an intermittent issue with freezing upon
-  *client* initialization. A workaround has been implemented, but please
-  refer to :ref:`Report a bug` if any additional audio issues are
-  encountered.

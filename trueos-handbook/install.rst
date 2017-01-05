@@ -73,7 +73,8 @@ Use the arrow keys to highlight a desired option, then press
 
 The rest of this chapter describes the screens of the graphical
 installer. If any problems arise with booting into the graphical
-installer, please refer to :ref:`Installation Troubleshooting`.
+installer, please refer to the :ref:`Installation` Troubleshooting
+section of this handbook.
 
 .. index:: installation
 .. _Language Selection Screen:
