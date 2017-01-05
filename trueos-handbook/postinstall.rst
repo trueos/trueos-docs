@@ -695,4 +695,5 @@ If none of the above has fixed the problem, search the
 `TrueOS® sub-Reddit <https://www.reddit.com/r/TrueOS/>`_ or ask a
 question on the
 `TrueOS Gitter Channel <https://gitter.im/trueos>`_. For additional
-communications options, check the section on :ref:`Finding Help`.
+communications options, check the section on the
+:ref:`TrueOS Community`.

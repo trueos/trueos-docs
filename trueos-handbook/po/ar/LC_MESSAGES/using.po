@@ -630,14 +630,6 @@ msgid ""
 "problem:"
 msgstr ""
 
-#: ../../using.rst:219
-msgid ""
-"If you still have problems with sound, see the section on :ref:`Finding "
-"Help` to determine which help resources are available. When reporting the "
-"problem, include both your version of |trueos| and the name of your sound "
-"card."
-msgstr ""
-
 #: ../../using.rst:230
 msgid ""
 "|trueos| has been pre-configured to support most multimedia formats and "
@@ -2598,6 +2590,20 @@ msgid ""
 "search for the word \"freebsd\" followed by the printer model name may also "
 "help you find the correct driver to use."
 msgstr ""
+
+#: ../../using.rst:219
+msgid ""
+"If sound issues persist, check the :ref:`Help and Support` chapter to "
+"determine what help resources are available. If/when reporting the issue, be"
+" sure to include both the version of |trueos| and name of the sound card."
+msgstr ""
+
+#~ msgid ""
+#~ "If you still have problems with sound, see the section on :ref:`Finding "
+#~ "Help` to determine which help resources are available. When reporting the "
+#~ "problem, include both your version of |trueos| and the name of your sound "
+#~ "card."
+#~ msgstr ""
 
 #~ msgid "**Application**"
 #~ msgstr ""

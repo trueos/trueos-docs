@@ -54,7 +54,7 @@ master_doc = 'trueos'
 
 # General information about the project.
 project = u'TrueOS® User Guide'
-copyright = u'2011-2016, iXsystems'
+copyright = u'2011-2017, iXsystems'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

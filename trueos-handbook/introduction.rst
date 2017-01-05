@@ -417,6 +417,5 @@ This section is intended to list all known/longstanding issues with the
   BSD bootloader for fresh installs while the FreeBSD contributors fix
   the issue.
 
-Additional information about these issues can be viewed in the various
-communication channels listed in :ref:`Finding Help` section of this
-handbook.
+Additional information about these issues can be found in the various
+communication channels listed in the :ref:`Help and Support` chapter.
