@@ -28,43 +28,35 @@ msgid "Display Detection"
 msgstr ""
 
 #: ../../postinstall.rst:253
-msgid "Display Troubleshooting"
-msgstr ""
-
-#: ../../postinstall.rst:292
 msgid "Language Screen"
 msgstr ""
 
-#: ../../postinstall.rst:320
+#: ../../postinstall.rst:281
 msgid "Time Zone Selection Screen"
 msgstr ""
 
-#: ../../postinstall.rst:350
+#: ../../postinstall.rst:311
 msgid "Set Root Password Screen"
 msgstr ""
 
-#: ../../postinstall.rst:369
+#: ../../postinstall.rst:330
 msgid "Create a User Screen"
 msgstr ""
 
-#: ../../postinstall.rst:457
+#: ../../postinstall.rst:418
 msgid "Configure Audio Output"
 msgstr ""
 
-#: ../../postinstall.rst:483
+#: ../../postinstall.rst:444
 msgid "Connect to a Wireless Network"
 msgstr ""
 
-#: ../../postinstall.rst:514
+#: ../../postinstall.rst:475
 msgid "Enable Optional Services"
 msgstr ""
 
-#: ../../postinstall.rst:555
+#: ../../postinstall.rst:516
 msgid "Logging In"
-msgstr ""
-
-#: ../../postinstall.rst:643
-msgid "Installation Troubleshooting"
 msgstr ""
 
 #: ../../postinstall.rst:19
@@ -275,129 +267,81 @@ msgid ""
 "prompted to accept them."
 msgstr ""
 
-#: ../../postinstall.rst:255
-msgid ""
-"If problems exist with the display settings and manually editing "
-":file:`/etc/X11/xorg.conf` or running :command:`Xorg --config` is necessary,"
-" first tell the |trueos| system to not automatically start X. To do this, "
-"add :command:`pcdm_enable=\"NO\"` temporarily to :file:`/etc/rc.conf`, then "
-"reboot the system."
-msgstr ""
-
-#: ../../postinstall.rst:261
-msgid ""
-"The system will reboot to a login prompt. After logging in, follow the "
-"instructions in the `FreeBSD Handbook "
-"<http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_ "
-"to manually configure and test Xorg. Once a working configuration is found, "
-"save it to :file:`/etc/X11/xorg.conf`. Then, remove the temporary line shown"
-" above from :file:`/etc/rc.conf` and start PCDM with :command:`service pcdm "
-"start`."
-msgstr ""
-
-#: ../../postinstall.rst:269
-msgid ""
-"If the graphics white-out after a suspend or resume, run :command:`sysctl "
-"hw.acpi.reset_video=1` as the superuser."
-msgstr ""
-
-#: ../../postinstall.rst:272
-msgid ""
-"If the problem is fixed, carefully add :command:`hw.acpi.reset_video=1` to "
-":file:`/etc/sysctl.conf`."
-msgstr ""
-
-#: ../../postinstall.rst:278
-msgid ""
-"If the problem is fixed, add :command:`xset -dpms` to the :file:`.xprofile` "
-"file in the user's home directory."
-msgstr ""
-
-#: ../../postinstall.rst:281
-msgid ""
-"If any display settings change, click :guilabel:`Apply` for the settings to "
-"be tested. If anything goes wrong during testing, the system will return to "
-"the :guilabel:`Display Settings` screen for the user to try another setting."
-" Once satisfied with the tested setting, click :guilabel:`\"Yes` to save the"
-" setting and proceed. Alternately, click :guilabel:`Skip` to configure the "
-"display settings later."
-msgstr ""
-
-#: ../../postinstall.rst:303
+#: ../../postinstall.rst:264
 msgid ""
 "This allows for the selection of the language used to access the installed "
 "system. It also contains three icons from the installer screens to enable:"
 msgstr ""
 
-#: ../../postinstall.rst:309
+#: ../../postinstall.rst:270
 msgid "Using the onscreen keyboard."
 msgstr ""
 
-#: ../../postinstall.rst:311
+#: ../../postinstall.rst:272
 msgid "Switching between the US keyboard layout and a user selected layout."
 msgstr ""
 
-#: ../../postinstall.rst:313
+#: ../../postinstall.rst:274
 msgid ""
 "Once the selection is made, click :guilabel:`Next` to move to the next "
 "configuration screen."
 msgstr ""
 
-#: ../../postinstall.rst:336
+#: ../../postinstall.rst:297
 msgid ""
 "If the system is dual booting and the other operating system expects the "
 "BIOS to use UTC, also check :guilabel:`Set BIOS to UTC time`."
 msgstr ""
 
-#: ../../postinstall.rst:344
+#: ../../postinstall.rst:305
 msgid "When finished, click :guilabel:`Next` to proceed to the next screen."
 msgstr ""
 
-#: ../../postinstall.rst:371
+#: ../../postinstall.rst:332
 msgid ""
 "This screen is used to create the primary user account used to login to the "
 "system. Create a strong password as the password is used whenever the system"
 " indicates administrative access is required."
 msgstr ""
 
-#: ../../postinstall.rst:385
+#: ../../postinstall.rst:346
 msgid ""
 "The :guilabel:`User Details` tab is used to create a login user. This screen"
 " requires completing several fields:"
 msgstr ""
 
-#: ../../postinstall.rst:388
+#: ../../postinstall.rst:349
 msgid ""
 "**Name:** This value displays in the login screen. It can be the user's full"
 " name and can contain both capital letters and spaces."
 msgstr ""
 
-#: ../../postinstall.rst:391
+#: ../../postinstall.rst:352
 msgid ""
 "**Username:** This is the name used when logging in. It can **not** contain "
 "spaces and **is** case sensitive (e.g. *Kris* is a different username from "
 "*kris*)."
 msgstr ""
 
-#: ../../postinstall.rst:395
+#: ../../postinstall.rst:356
 msgid ""
 "**Password:** This is the password to use when logging in. It must be typed "
 "twice to confirm it."
 msgstr ""
 
-#: ../../postinstall.rst:398
+#: ../../postinstall.rst:359
 msgid ""
 "**Specify UID:** By default, the user will be assigned the next available "
 "User ID (UID). If a specific UID is required, it can be set here."
 msgstr ""
 
-#: ../../postinstall.rst:402
+#: ../../postinstall.rst:363
 msgid ""
 "A UID can not be set lower than 1001, and a UID already in use by another "
 "account will also be unavailable."
 msgstr ""
 
-#: ../../postinstall.rst:414
+#: ../../postinstall.rst:375
 msgid ""
 "When a user is configured to use a PersonaCrypt device, that user can not "
 "login using an unencrypted session on the same system. In other words, the "
@@ -406,32 +350,32 @@ msgid ""
 "two different user accounts; one for each type of session."
 msgstr ""
 
-#: ../../postinstall.rst:436
+#: ../../postinstall.rst:397
 msgid ""
 "Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable media "
 "large enough to hold the files to store in the home directory, and click "
 ":guilabel:`Select`."
 msgstr ""
 
-#: ../../postinstall.rst:440
+#: ../../postinstall.rst:401
 msgid ""
 "Ensure there are no desired files on the removable media. Initializing the "
 "media for PersonaCrypt will format the device with ZFS and encrypt it with "
 "GELI, deleting any existing data."
 msgstr ""
 
-#: ../../postinstall.rst:448
+#: ../../postinstall.rst:409
 msgid ""
 "To share the computer with other users, create additional login and "
 ":ref:`PersonaCrypt` accounts using :ref:`User Manager`. After creating at "
 "least one user, click :guilabel:`Next` to continue to the next screen."
 msgstr ""
 
-#: ../../postinstall.rst:468
+#: ../../postinstall.rst:429
 msgid ": Configure Audio Output"
 msgstr ""
 
-#: ../../postinstall.rst:470
+#: ../../postinstall.rst:431
 msgid ""
 "Click the :guilabel:`Output Device` drop-down menu to select the desired "
 "sound device. Click :guilabel:`Test` to verify the setting as a working "
@@ -439,69 +383,69 @@ msgid ""
 "slider can also be used to set the default volume level."
 msgstr ""
 
-#: ../../postinstall.rst:476
+#: ../../postinstall.rst:437
 msgid ""
 "All these settings can be viewed and edited at any time using the "
 "instructions in :ref:`Sound Mixer Tray`."
 msgstr ""
 
-#: ../../postinstall.rst:516
+#: ../../postinstall.rst:477
 msgid ":numref:`Figure %s <config6>` shows the next screen in the process."
 msgstr ""
 
-#: ../../postinstall.rst:523
+#: ../../postinstall.rst:484
 msgid ": Optional Services"
 msgstr ""
 
-#: ../../postinstall.rst:525
+#: ../../postinstall.rst:486
 msgid ""
 "Check :guilabel:`Disable IPV6 (Requires Reboot)` and the system will be "
 "configured to only support IPv4 addresses. The default is to support both "
 "IPv4 and IPv6 and prefer IPv6 over IPv4."
 msgstr ""
 
-#: ../../postinstall.rst:529
+#: ../../postinstall.rst:490
 msgid ""
 "Altering this setting will not take affect until the next system reboot."
 msgstr ""
 
-#: ../../postinstall.rst:537
+#: ../../postinstall.rst:498
 msgid ""
 "**Do not** check this box if SSH connections to the system are undesired."
 msgstr ""
 
-#: ../../postinstall.rst:540
+#: ../../postinstall.rst:501
 msgid ""
 "When finished, click :guilabel:`Next`. The screen in :numref:`Figure %s "
 "<config7>` indicates the post-installation setup is complete. Click "
 ":guilabel:`Finish` to access the login menu."
 msgstr ""
 
-#: ../../postinstall.rst:557
+#: ../../postinstall.rst:518
 msgid ""
 "Once finished setting up the system, the PCDM (|pcbsd| Display Manager) "
 "graphical login screen will display. An example is seen in :numref:`Figure "
 "%s <login1>`."
 msgstr ""
 
-#: ../../postinstall.rst:568
+#: ../../postinstall.rst:529
 msgid ""
 "The hostname of the system will be displayed at the top of the login window."
 " In this example, it is *trueos-5320*. This login screen lets has several "
 "configuration options:"
 msgstr ""
 
-#: ../../postinstall.rst:580
+#: ../../postinstall.rst:541
 msgid "**password:** Input the password associated with the selected user."
 msgstr ""
 
-#: ../../postinstall.rst:582
+#: ../../postinstall.rst:543
 msgid ""
 "**desktop:** If any additional desktops are installed using :ref:`AppCafe®`,"
 " use the drop-down menu to select the desktop to log into."
 msgstr ""
 
-#: ../../postinstall.rst:586
+#: ../../postinstall.rst:547
 msgid ""
 "If a PersonaCrypt user is active, insert the PersonaCrypt device in order to"
 " login. As seen in :numref:`Figure %s <login5>`, this will add an extra "
@@ -509,118 +453,50 @@ msgid ""
 "device can be typed."
 msgstr ""
 
-#: ../../postinstall.rst:598
+#: ../../postinstall.rst:559
 msgid ""
 "The toolbar at the bottom of the screen allows several options to be "
 "selected on a per-login basis:"
 msgstr ""
 
-#: ../../postinstall.rst:601
+#: ../../postinstall.rst:562
 msgid ""
 "**Locale:** If the localization was not set during installation, or needs to"
 " be changed, click this icon to set the locale for this login session."
 msgstr ""
 
-#: ../../postinstall.rst:605
+#: ../../postinstall.rst:566
 msgid ""
 "**Keyboard Layout:** Click this icon to change the keyboard layout for this "
 "login session. This will open the window seen in :numref:`Figure %s "
 "<keyboard1>`."
 msgstr ""
 
-#: ../../postinstall.rst:616
+#: ../../postinstall.rst:577
 msgid ""
 "Click the :guilabel:`Keyboard model` drop-down menu to select the type of "
 "keyboard."
 msgstr ""
 
-#: ../../postinstall.rst:623
+#: ../../postinstall.rst:584
 msgid ""
 "This screen also allows selection of the :guilabel:`Key Layout` and "
 ":guilabel:`Variant`. After making any selections, test them by typing some "
 "text into the :guilabel:`you may type into the space below...` field."
 msgstr ""
 
-#: ../../postinstall.rst:628
+#: ../../postinstall.rst:589
 msgid ""
 "**Restart/Shut Down:** To restart or shutdown the system without logging in,"
 " click the icon in the lower-right corner. This icon also allows to "
 ":guilabel:`Change DPI` and to :guilabel:`Refresh PCDM`."
 msgstr ""
 
-#: ../../postinstall.rst:632
+#: ../../postinstall.rst:593
 msgid ""
 "Once any selections are made, input the password associated with the "
 "selected user and press :kbd:`Enter` or click the :guilabel:`blue arrow` to "
 "login."
-msgstr ""
-
-#: ../../postinstall.rst:656
-msgid ""
-"While in the installer, read this log to see what went wrong. Click the "
-"black :guilabel:`Emergency Shell and Utilities` icon, then select "
-":guilabel:`shell` from the :guilabel:`|trueos| Utility Menu`. Read the log "
-"by typing :command:`more /tmp/.SysInstall.log`."
-msgstr ""
-
-#: ../../postinstall.rst:661
-msgid ""
-"If the error can not be fixed or believe an installation bug exists, send "
-"the log saved on the USB stick using the instructions in :ref:`Report a "
-"Bug`."
-msgstr ""
-
-#: ../../postinstall.rst:665
-msgid ""
-"If the installer does not arrive at the initial GUI installer screen, try "
-"unplugging as many devices as possible, such as webcams, scanners, printers,"
-" USB mice and keyboards. If this solves the problem, plug in one piece of "
-"hardware at a time, then reboot. This will help pinpoint which device is "
-"causing the problem."
-msgstr ""
-
-#: ../../postinstall.rst:671
-msgid ""
-"If the computer freezes while probing hardware and unplugging extra devices "
-"does not fix the problem, it is possible that the installation media is "
-"corrupt. If the :ref:`Data Integrity check` on the downloaded file is "
-"correct, try burning the file again at a lower speed."
-msgstr ""
-
-#: ../../postinstall.rst:676
-msgid ""
-"If the system freezes and the video card is suspected to be the cause, "
-"review the system's BIOS settings. If there is a setting for video memory, "
-"set it to its highest value. Also check to see if the BIOS is set to prefer "
-"built-in graphics or a non-existent graphics card. On some systems this is "
-"determined by the order of the devices listed; in this case, be sure the "
-"preferred device is listed first. If the BIOS settings are invisible, move a"
-" jumper or remove a battery to make it revert to the default built-in "
-"graphics; check the manual or contact the card manufacturer for details."
-msgstr ""
-
-#: ../../postinstall.rst:691
-msgid ""
-"If the SATA settings in the BIOS are set to *compatibility* mode, try "
-"changing this setting to *AHCI*. If the system hangs with a BTX error, try "
-"turning off *AHCI* in the BIOS."
-msgstr ""
-
-#: ../../postinstall.rst:695
-msgid ""
-"If the USB keyboard is non-functional, check if there is an option in the "
-"BIOS for *legacy support* in relation to the keyboard, USB, or both. "
-"Enabling this feature in the BIOS may solve this issue."
-msgstr ""
-
-#: ../../postinstall.rst:699
-msgid ""
-"If the installer boots and a *mountroot>* command prompt appears, this may "
-"be due to a change in the location of the boot device. This can occur when "
-"the enumeration of a card reader changes. The solution is to enter "
-":command:`ufs:/dev/da1` at the prompt. Depending on the exact location of "
-"the boot media, it may be different from :file:`da1`. Type :kbd:`?` at the "
-"prompt to display the available devices."
 msgstr ""
 
 #: ../../postinstall.rst:164
@@ -629,7 +505,7 @@ msgid ""
 "using the highlighted option."
 msgstr ""
 
-#: ../../postinstall.rst:489
+#: ../../postinstall.rst:450
 msgid ""
 "If the system has an active wireless interface, a screen similar to "
 ":numref:`Figure %s <config5>` will indicate the wireless networks "
@@ -649,60 +525,60 @@ msgstr ""
 msgid ": Advanced Display Settings"
 msgstr ""
 
-#: ../../postinstall.rst:301
+#: ../../postinstall.rst:262
 msgid ": Language Selection"
 msgstr ""
 
-#: ../../postinstall.rst:330
+#: ../../postinstall.rst:291
 msgid ": Time Zone Selection"
 msgstr ""
 
-#: ../../postinstall.rst:360
+#: ../../postinstall.rst:321
 msgid ": Root Password Creation"
 msgstr ""
 
-#: ../../postinstall.rst:383
+#: ../../postinstall.rst:344
 msgid ": User Creation"
 msgstr ""
 
-#: ../../postinstall.rst:434
+#: ../../postinstall.rst:395
 msgid ": User's PersonaCrypt Initialization"
 msgstr ""
 
-#: ../../postinstall.rst:499
+#: ../../postinstall.rst:460
 msgid ": Wireless Network Connections"
 msgstr ""
 
-#: ../../postinstall.rst:549
+#: ../../postinstall.rst:510
 msgid ": Setup Complete"
 msgstr ""
 
-#: ../../postinstall.rst:566
+#: ../../postinstall.rst:527
 msgid ": |trueos| Login"
 msgstr ""
 
-#: ../../postinstall.rst:596
+#: ../../postinstall.rst:557
 msgid ": |trueos| PersonaCrypt Login"
 msgstr ""
 
-#: ../../postinstall.rst:614
+#: ../../postinstall.rst:575
 msgid ": Keyboard Settings"
 msgstr ""
 
-#: ../../postinstall.rst:619
+#: ../../postinstall.rst:580
 msgid ""
 "The default model of :guilabel:`Generic 104-key PC` does **not** support "
 "special keys such as multimedia or Windows keys. This default will need to "
 "change to enable support for hot keys."
 msgstr ""
 
-#: ../../postinstall.rst:636
+#: ../../postinstall.rst:597
 msgid ""
 "It is possible to change keyboard layouts during an active desktop session "
 "using the included :guilabel:`fcitx` utility"
 msgstr ""
 
-#: ../../postinstall.rst:485
+#: ../../postinstall.rst:446
 msgid ""
 "Be sure the network card is supported by FreeBSD. Refer to :ref:`Supported "
 "Hardware` for links to FreeBSD support and a list of known issues with "
@@ -780,60 +656,54 @@ msgid ""
 " entry then press :kbd:`Enter`."
 msgstr ""
 
-#: ../../postinstall.rst:275
-msgid ""
-"If the monitor goes blank and does not come back, run :command:`xset -dpms` "
-"as the regular user account."
-msgstr ""
-
-#: ../../postinstall.rst:294
+#: ../../postinstall.rst:255
 msgid ""
 "The language selection screen is seen in :numref:`Figure %s <config1>`."
 msgstr ""
 
-#: ../../postinstall.rst:307
+#: ../../postinstall.rst:268
 msgid "Reading the screen's *Help* text."
 msgstr ""
 
-#: ../../postinstall.rst:322
+#: ../../postinstall.rst:283
 msgid ""
 "The next configuration screen, shown in :numref:`Figure %s <config2>`, "
 "allows selection of the timezone."
 msgstr ""
 
-#: ../../postinstall.rst:332
+#: ../../postinstall.rst:293
 msgid ""
 "Use the drop-down menu to select the city closest to the system's location. "
 "If the system is connected to the Internet, the installer automatically "
 "attempts to detect the correct timezone."
 msgstr ""
 
-#: ../../postinstall.rst:339
+#: ../../postinstall.rst:300
 msgid ""
 "A default system hostname will be created. To change the name, type the "
 "desired hostname in the :guilabel:`System Hostname` field. If the computer "
 "is a member of a DNS domain, the *Domain Name* is also an option."
 msgstr ""
 
-#: ../../postinstall.rst:352
+#: ../../postinstall.rst:313
 msgid ""
 "This configuration screen, seen in :numref:`Figure %s <config3>`, requires "
 "the root (administrative) password to be set."
 msgstr ""
 
-#: ../../postinstall.rst:362
+#: ../../postinstall.rst:323
 msgid ""
 "The password must be a minimum of **4** characters and must be typed twice "
 "to confirm the password. Click :guilabel:`Next` when finished."
 msgstr ""
 
-#: ../../postinstall.rst:375
+#: ../../postinstall.rst:336
 msgid ""
 ":numref:`Figure %s <config4>` shows the configuration screen used to create "
 "the initial user account."
 msgstr ""
 
-#: ../../postinstall.rst:405
+#: ../../postinstall.rst:366
 msgid ""
 "|trueos| provides the ability to use a removable device, such as a USB "
 "stick, as the user's encrypted home directory. This is useful in a multi-"
@@ -845,33 +715,33 @@ msgid ""
 "login."
 msgstr ""
 
-#: ../../postinstall.rst:421
+#: ../../postinstall.rst:382
 msgid ""
 "Encryption is also possible without requiring removable devices using "
 "*PEFS*. Refer to the section on :ref:`PEFS Encryption` for more detailed "
 "instructions to initialize a user with *PEFS*."
 msgstr ""
 
-#: ../../postinstall.rst:425
+#: ../../postinstall.rst:386
 msgid ""
 "The :guilabel:`PersonaCrypt` tab, shown in :numref:`Figure %s <persona1>`, "
 "is used to initialize PersonaCrypt for the user."
 msgstr ""
 
-#: ../../postinstall.rst:444
+#: ../../postinstall.rst:405
 msgid ""
 "Input and repeat the :guilabel:`Device Password` to associate with the "
 "device. A pop-up window indicates the current contents of the device will be"
 " wiped. Click :guilabel:`Yes` to initialize the device."
 msgstr ""
 
-#: ../../postinstall.rst:459
+#: ../../postinstall.rst:420
 msgid ""
 "The next screen, seen in :numref:`Figure %s <audio1>`, is used to configure "
 "the default audio output."
 msgstr ""
 
-#: ../../postinstall.rst:501
+#: ../../postinstall.rst:462
 msgid ""
 "To set the default wireless connection, click the desired network in the "
 ":guilabel:`Available Wireless Networks` area, then click :guilabel:`Add "
@@ -883,14 +753,14 @@ msgid ""
 "detailed instructions."
 msgstr ""
 
-#: ../../postinstall.rst:532
+#: ../../postinstall.rst:493
 msgid ""
 "If :guilabel:`Enable SSH` is checked, the SSH service will start and be "
 "configured to start whenever the system boots. It also creates the firewall "
 "rules needed to allow incoming SSH connections to the |trueos| system."
 msgstr ""
 
-#: ../../postinstall.rst:572
+#: ../../postinstall.rst:533
 msgid ""
 "**user:** Upon first login, the created **username** (from :ref:`Create a "
 "User Screen`) is the only available login user. If additional users are "
@@ -900,36 +770,145 @@ msgid ""
 "first ask for the password of the login account."
 msgstr ""
 
-#: ../../postinstall.rst:645
-msgid ""
-"Installing |trueos| is usually very simple. However, sometimes problems "
-"occur. This section examines solutions to the most common installation "
-"problems."
-msgstr ""
+#~ msgid "Display Troubleshooting"
+#~ msgstr ""
 
-#: ../../postinstall.rst:649
-msgid ""
-"The |trueos| installer creates a log which keeps a record of all the "
-"completed steps, as well as any errors. When an installation error occurs, "
-"the |trueos| installer asks to generate an error report. If :guilabel:`Yes` "
-"is chosen, a pop-up message asks to save the error log to a USB stick. Type "
-":kbd:`y` and insert a FAT formatted USB thumb drive to copy the log."
-msgstr ""
+#~ msgid "Installation Troubleshooting"
+#~ msgstr ""
 
-#: ../../postinstall.rst:686
-msgid ""
-"A common cause for problems is the *LBA* (Logical Block Addressing) setting "
-"in the BIOS. If the PC is not booting before or after installation, check "
-"the BIOS and turn *LBA* off (do not leave it on automatic)."
-msgstr ""
+#~ msgid ""
+#~ "If problems exist with the display settings and manually editing "
+#~ ":file:`/etc/X11/xorg.conf` or running :command:`Xorg --config` is necessary,"
+#~ " first tell the |trueos| system to not automatically start X. To do this, "
+#~ "add :command:`pcdm_enable=\"NO\"` temporarily to :file:`/etc/rc.conf`, then "
+#~ "reboot the system."
+#~ msgstr ""
 
-#: ../../postinstall.rst:706
-msgid ""
-"If none of the above has fixed the problem, search the `TrueOS® sub-Reddit "
-"<https://www.reddit.com/r/TrueOS/>`_ or ask a question on the `TrueOS Gitter"
-" Channel <https://gitter.im/trueos>`_. For additional communications "
-"options, check the section on the :ref:`TrueOS Community`."
-msgstr ""
+#~ msgid ""
+#~ "The system will reboot to a login prompt. After logging in, follow the "
+#~ "instructions in the `FreeBSD Handbook "
+#~ "<http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_ "
+#~ "to manually configure and test Xorg. Once a working configuration is found, "
+#~ "save it to :file:`/etc/X11/xorg.conf`. Then, remove the temporary line shown"
+#~ " above from :file:`/etc/rc.conf` and start PCDM with :command:`service pcdm "
+#~ "start`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the graphics white-out after a suspend or resume, run :command:`sysctl "
+#~ "hw.acpi.reset_video=1` as the superuser."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the problem is fixed, carefully add :command:`hw.acpi.reset_video=1` to "
+#~ ":file:`/etc/sysctl.conf`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the problem is fixed, add :command:`xset -dpms` to the :file:`.xprofile` "
+#~ "file in the user's home directory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If any display settings change, click :guilabel:`Apply` for the settings to "
+#~ "be tested. If anything goes wrong during testing, the system will return to "
+#~ "the :guilabel:`Display Settings` screen for the user to try another setting."
+#~ " Once satisfied with the tested setting, click :guilabel:`\"Yes` to save the"
+#~ " setting and proceed. Alternately, click :guilabel:`Skip` to configure the "
+#~ "display settings later."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "While in the installer, read this log to see what went wrong. Click the "
+#~ "black :guilabel:`Emergency Shell and Utilities` icon, then select "
+#~ ":guilabel:`shell` from the :guilabel:`|trueos| Utility Menu`. Read the log "
+#~ "by typing :command:`more /tmp/.SysInstall.log`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the error can not be fixed or believe an installation bug exists, send "
+#~ "the log saved on the USB stick using the instructions in :ref:`Report a "
+#~ "Bug`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the installer does not arrive at the initial GUI installer screen, try "
+#~ "unplugging as many devices as possible, such as webcams, scanners, printers,"
+#~ " USB mice and keyboards. If this solves the problem, plug in one piece of "
+#~ "hardware at a time, then reboot. This will help pinpoint which device is "
+#~ "causing the problem."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the computer freezes while probing hardware and unplugging extra devices "
+#~ "does not fix the problem, it is possible that the installation media is "
+#~ "corrupt. If the :ref:`Data Integrity check` on the downloaded file is "
+#~ "correct, try burning the file again at a lower speed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the system freezes and the video card is suspected to be the cause, "
+#~ "review the system's BIOS settings. If there is a setting for video memory, "
+#~ "set it to its highest value. Also check to see if the BIOS is set to prefer "
+#~ "built-in graphics or a non-existent graphics card. On some systems this is "
+#~ "determined by the order of the devices listed; in this case, be sure the "
+#~ "preferred device is listed first. If the BIOS settings are invisible, move a"
+#~ " jumper or remove a battery to make it revert to the default built-in "
+#~ "graphics; check the manual or contact the card manufacturer for details."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the SATA settings in the BIOS are set to *compatibility* mode, try "
+#~ "changing this setting to *AHCI*. If the system hangs with a BTX error, try "
+#~ "turning off *AHCI* in the BIOS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the USB keyboard is non-functional, check if there is an option in the "
+#~ "BIOS for *legacy support* in relation to the keyboard, USB, or both. "
+#~ "Enabling this feature in the BIOS may solve this issue."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the installer boots and a *mountroot>* command prompt appears, this may "
+#~ "be due to a change in the location of the boot device. This can occur when "
+#~ "the enumeration of a card reader changes. The solution is to enter "
+#~ ":command:`ufs:/dev/da1` at the prompt. Depending on the exact location of "
+#~ "the boot media, it may be different from :file:`da1`. Type :kbd:`?` at the "
+#~ "prompt to display the available devices."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the monitor goes blank and does not come back, run :command:`xset -dpms` "
+#~ "as the regular user account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Installing |trueos| is usually very simple. However, sometimes problems "
+#~ "occur. This section examines solutions to the most common installation "
+#~ "problems."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The |trueos| installer creates a log which keeps a record of all the "
+#~ "completed steps, as well as any errors. When an installation error occurs, "
+#~ "the |trueos| installer asks to generate an error report. If :guilabel:`Yes` "
+#~ "is chosen, a pop-up message asks to save the error log to a USB stick. Type "
+#~ ":kbd:`y` and insert a FAT formatted USB thumb drive to copy the log."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A common cause for problems is the *LBA* (Logical Block Addressing) setting "
+#~ "in the BIOS. If the PC is not booting before or after installation, check "
+#~ "the BIOS and turn *LBA* off (do not leave it on automatic)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If none of the above has fixed the problem, search the `TrueOS® sub-Reddit "
+#~ "<https://www.reddit.com/r/TrueOS/>`_ or ask a question on the `TrueOS Gitter"
+#~ " Channel <https://gitter.im/trueos>`_. For additional communications "
+#~ "options, check the section on the :ref:`TrueOS Community`."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "If none of the above has fixed the problem, search the `TrueOS® sub-Reddit "
