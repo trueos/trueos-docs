@@ -1,10 +1,85 @@
-.. _Using TrueOS®:
+.. index:: using
+.. _Using TrueOS:
 
 Using |trueos|
 **************
 
-This section discusses how to perform common tasks that were not
-discussed in the :ref:`SysAdm™ Client` section.
+This chapter discusses using |trueos| for many common tasks, in addition
+to linking to resources for the |lumina| desktop environment and
+|sysadm|.
+
+.. index:: using, lumina
+.. _Lumina:
+
+|lumina|
+========
+
+The Lumina Desktop Environment (|lumina| for short) is a lightweight,
+XDG-compliant, BSD-licensed desktop environment focused on streamlining
+work efficiency with minimal system overhead. It is specifically
+designed for |trueos| and FreeBSD, but has also been ported to many
+other BSD and Linux operating systems. It is based on the Qt graphical
+toolkit and the Fluxbox window manager, and uses a small number of X
+utilities for various tasks, such as :command:`numlockx` and
+:command:`xscreensaver`.
+
+|lumina|'s features include:
+
+* Very little system overhead.
+
+* Does not require any of the desktop implementation frameworks such as
+  DBUS, policykit, consolekit, systemd, or HALD.
+
+* Provides many utilities for configuring the desktop environment.
+
+* Provides a plugin-based interface design. The user can make their
+  desktop as light or heavy as they wish by choosing which plugins to
+  have running on their desktop and panels. This plugin-based system is
+  similar to Android or other modern operating systems.
+
+* A single, easy-to-use
+  `Lumina Configuration <https://lumina-desktop.org/handbook/luminaconfig.html>`_
+  utility controls all the different configuration options for the
+  desktop in one location.
+
+* Intelligent *favorites* system for creating quick shortcuts to
+  applications, files, and directories.
+
+* ZFS file restore functionality with *Insight File Manager*.
+
+* Multi-monitor support includes the *Lumina Xconfig* graphical
+  utility for adding or removing monitors from the |lumina| session.
+
+* Simple system controls through the system menu for configuring audio
+  volume, screen brightness, battery status/notifications, and workspace
+  switching.
+
+* Total system search capabilities through the resource friendly
+  *Lumina Search* utility.
+
+* Screenshot functionality through *Lumina Screenshot*, which is
+  tied to the :kbd:`Print Screen` key by default.
+
+Refer to the `Lumina Handbook <https://lumina-desktop.org/handbook/>`_
+for detailed descriptions of every element of |lumina|.
+
+.. index:: using, sysadm
+.. _SysAdm:
+
+|sysadm|
+========
+
+Beginning with |trueos| 11, most of the system management utilities
+previously available in the |pcbsd| Control Panel have been
+rewritten to use the |sysadm| API. This API is designed to simplify
+managing any FreeBSD, |trueos| desktop, or |trueos| server system over
+a secure connection from any operating system with the |sysadm|
+application installed. |sysadm| is built into |trueos|, but downloadable
+packages for other operating systems are available from the
+`SysAdm Website <https://sysadm.us/>`_. SysAdm documentation is split
+into three primary documents, with the
+`Client Handbook <https://sysadm.us/handbook/client/>`_ recommended for
+new users of |trueos|.
 
 .. index:: configuration
 .. _Java and Flash:
@@ -15,10 +90,11 @@ Java and Flash
 **IcedTea-Web** provides an open source Java browser plugin which
 automatically works with the FireFox, Chromium, and Opera web browsers
 without any additional configuration. To install this software, search
-for "icedtea" within :ref:`AppCafe®`.
+for "icedtea" within the |sysadm|
+`AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
 
-Version 11 of the **Adobe Flash player** is available for installation
-through :ref:`AppCafe®`. To install Flash as a browser plugin, search
+Version 11 of the *Adobe Flash player* is available for installation
+through *AppCafe*. To install *Flash* as a browser plugin, search
 for and install both the **flashplugin** and **nspluginwrapper**
 packages. Once installed, flash should "just work" when browsing the
 web. If Adobe Flash does not seem to be working, running
@@ -66,7 +142,7 @@ Fonts
 
 |trueos| installs with `Google Noto <http://www.google.com/get/noto/>`_
 which provides multi-lingual Sans and Serif fonts. Many other fonts
-are available from :ref:`AppCafe®`. Any font installed using |appcafe|
+are available from |appcafe|. Any font installed using |appcafe|
 should not require any additional configuration to "just work".
 
 If you have a collection of fonts that you have downloaded or purchased,
@@ -163,18 +239,18 @@ Multimedia
 
 |trueos| has been pre-configured to support most multimedia formats and
 makes it easy to install most open source media applications using
-:ref:`AppCafe®`.
+|appcafe|.
 
-When installing a web browser using |appcafe|, you should be able to
-play most media formats, including YouTube™ videos, Internet radio, and
-many trailer and movie sites.
+After installing a web browser, most media formats become playable,
+including YouTube™ videos, Internet radio, and many trailer and movie
+sites.
 
 If people are blue in YouTube™ videos, this is due to an unresolved issue
 in Flash which Adobe hasn't fixed for open source players. To fix this
 issue, right-click an area in the video, select :guilabel:`Settings`,
 then uncheck :guilabel:`Enable hardware acceleration`. Alternately,
 install `Minitube <http://flavio.tordini.org/minitube>`_ using
-:ref:`AppCafe®` and use it to watch YouTube™.
+|appcafe| and use it to watch YouTube™.
 
 .. note:: When encountering a file you can not play in a web browser or
    media player, it is probably because it is in a proprietary format
@@ -225,8 +301,8 @@ file, and even files inside ZIP and RAR archives. It can scan all of
 your media and automatically create a personalized library with album
 covers, descriptions, and fan art.
 
-Kodi can be installed using :ref:`AppCafe®`. Once installed, an entry
-for :guilabel:`Kodi media center` will be added to
+Kodi can be installed using |appcafe|. Once installed, an entry for
+:guilabel:`Kodi media center` is added to
 :guilabel:`Browse Applications`. Kodi can also be started by typing
 :command:`kodi` from a command prompt.
 
@@ -479,13 +555,13 @@ Files and File Sharing
 ======================
 
 Several file managers are available for installation using
-:ref:`AppCafe®`. :numref:`Table %s <filemanagers>` provides an overview
+|appcafe|. :numref:`Table %s <filemanagers>` provides an overview
 of several popular file managers. To launch an installed file manager,
 type its name as it appears in the :guilabel:`Application` column. To
-install the file manager, use :ref:`AppCafe®` to install the package
-name listed in the :guilabel:`Install` column. To research a
-file manager's capabilities, start with the URL listed in its
-:guilabel:`Screenshot` column.
+install the file manager, use |appcafe| to install the package name
+listed in the :guilabel:`Install` column. To research a file manager's
+capabilities, start with the URL listed in its :guilabel:`Screenshot`
+column.
 
 .. _filemanagers:
 
@@ -1357,7 +1433,7 @@ the required application is supported, search for it in the
 started and to later refer if problems are encountered with a Windows
 application.
 
-Wine can be installed using :ref:`AppCafe®`. Once installed, it can be
+Wine can be installed using |appcafe|. Once installed, it can be
 started by typing :command:`winecfg` in the command line. The first
 time running this utility, it may prompt to install needed packages.
 If prompted, click :guilabel:`Install` in the pop-up menu.
@@ -1431,7 +1507,7 @@ The security features built into |trueos| include:
 * **Naturally immune to viruses and other malware:** Most viruses are
   written to exploit Windows systems and do not understand the binaries
   or paths found on a |trueos| system. Antivirus software is still
-  available in the Security section of :ref:`AppCafe®` as this can be
+  available in the Security section of |appcafe| as this can be
   useful if sending or forwarding email attachments to users running
   other operating systems.
 
@@ -1455,8 +1531,9 @@ The security features built into |trueos| include:
   access your system. If SSH is needed, add :command:`sshd_enable=YES`
   to :file:`/etc/rc.conf`. Start the service by typing
   :command:`service sshd start`. A firewall rule also needs to be added
-  using :ref:`Firewall Manager` to allow SSH connections over TCP port
-  22.
+  using the |sysadm|
+  `Firewall Manager <https://sysadm.us/handbook/client/sysadmclient.html#firewall-manager>`_
+  to allow SSH connections over TCP port 22.
 
 * **SSH root logins are disabled by default:** If SSH is enabled, login
   as a regular user and use :command:`su` or :command:`sudo` when
@@ -1467,17 +1544,20 @@ The security features built into |trueos| include:
 * **sudo is installed:** It is configured to allow users in the *wheel*
   group permission to run an administrative command after typing their
   password. By default, the first user created during installation
-  is added to the *wheel* group. Use :ref:`User Manager` to add other
-  users to this group. Change the default :command:`sudo` configuration
-  using :command:`visudo` as the superuser.
+  is added to the *wheel* group. Use the |sysadm|
+  `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_
+  to add other users to this group. Change the default :command:`sudo`
+  configuration using :command:`visudo` as the superuser.
 
 * :wikipedia:`AES instruction set` (AESNI) support is loaded by
   default for the Intel Core i5/i7 processors that support this
   encryption set. This support speeds up AES encryption and decryption.
 
 * **Automatic notification of security advisories:**
-  :ref:`Update Manager` will automatically notify you if an update is
-  available as the result of a
+  The |sysadm|
+  `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
+  automatically notifies you if an update is available as the result of
+  a
   `security advisory <http://www.freebsd.org/security/advisories.html>`_
   affecting |trueos|. This allows you to keep your operating system
   fully patched with just the click of a mouse.
@@ -1486,8 +1566,9 @@ The security features built into |trueos| include:
   built with `LibreSSL <http://www.libressl.org/>`_, which has fewer
   vulnerabilities than OpenSSL.
 
-* :ref:`PersonaCrypt` allows a user to use a removable, encrypted
-  device as their home directory.
+* `PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_
+  allows a user to use a removable, encrypted device as their home
+  directory.
   
 * :ref:`Tor Mode` can be used to anonymously access Internet sites as
   this mode automatically forwards all Internet traffic through the
@@ -1540,8 +1621,8 @@ with the print driver. Once the model is selected, click
 
 For the HP DeskJet model example, the HPLIP driver is recommended. In
 |trueos|, the HPLIP driver is available as an optional package called
-"hplip". Use :ref:`AppCafe®` to search if the driver is installed, and
-install it if not.
+"hplip". Use |appcafe| to search if the driver is installed, and install
+it if not.
 
 .. index:: printing
 .. _Adding a Printer:
@@ -1552,8 +1633,8 @@ Adding a Printer
 Once printer support is determined, be sure the printer is plugged into
 your computer or, if the printer is a network printer, both your
 computer and the printer are connected to the network. Then, open a web
-browser and enter the address "127.0.0.1:631/admin". This will open the
-CUPS configuration, shown in:numref:`Figure %s <print4>`.
+browser and enter the address :command:`127.0.0.1:631/admin`. This opens
+the CUPS configuration, shown in:numref:`Figure %s <print4>`.
 
 .. _print4:
 
@@ -1714,8 +1795,8 @@ search for your device at the
 `list of supported scanners <http://www.sane-project.org/sane-backends.html>`_.
 
 .. note:: If the scanner is part of an HP All-in-One device, make sure
-   the "hplip" package is installed. Use :ref:`AppCafe®` to see if the
-   driver is installed, and install it if not.
+   the "hplip" package is installed. Use |appcafe| to see if the driver
+   is installed, and install it if not.
 
 :numref:`Figure %s <sane1>` shows the XSane interface running on a
 |trueos| system attached to an HP DeskJet Printer/Scanner.

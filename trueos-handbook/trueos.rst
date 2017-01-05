@@ -14,11 +14,6 @@ Contents:
    postinstall
    advanced
    openrc
-   luminaintro
-   luminaconfig
-   luminaplugins
-   luminautl
-   sysadmclient
    using
    pico
    helpsupport

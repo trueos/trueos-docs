@@ -69,13 +69,14 @@ Goals and Features
   desktop, but additional desktop environments can be installed to
   support day-to-day computing needs.
 
-* **Easy software management:** With :ref:`AppCafe®`, installing,
-  upgrading, and uninstalling software is safe and easy.
+* **Easy software management:** With `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
+  installing, upgrading, and uninstalling software is safe and easy.
 
-* **Lots of software available:** :ref:`AppCafe®` can be used to install
+* **Lots of software available:** |appcafe| can be used to install
   software ported to FreeBSD (currently over 26,100 applications).
 
-* **Easy to update:** |trueos| provides a built-in :ref:`Update Manager`
+* **Easy to update:** |trueos| (with |sysadm|) provides a built-in
+  `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
   which provides notifications of available updates. This utility makes
   it easy to apply operating system security fixes, bug fixes, and
   system enhancements, as well as upgrade to newer versions of the
@@ -126,26 +127,34 @@ The following features or enhancements were introduced for |trueos|:
   the system, such as plugging in an ethernet cable.
 
 * A |trueos| installation installs the |lumina| Desktop. Additional
-  window managers can be installed using :ref:`AppCafe®`.
+  window managers can be installed using |appcafe|.
 
-* The :ref:`SysAdm™ Client` and server has replaced Control Panel.
-  Most of the utilities that were in the Control Panel have been
+* The `SysAdm™ Client <https://sysadm.us/handbook/client/>`_
+  and `Server <https://sysadm.us/handbook/server/>`_ has replaced
+  Control Panel. Most of the utilities from the Control Panel have been
   rewritten to use the |sysadm| middleware. Under the hood, |sysadm|
   provides REST and WebSocket APIs for securely managing local and
   remote FreeBSD and |trueos| systems.
-  
+
 * Many utilities have been converted to the |sysadm| API and are
-  available in the :ref:`SysAdm™ client`: :ref:`AppCafe®`,
-  :ref:`Update Manager`, :ref:`Boot Environment Manager`,
-  :ref:`Life Preserver`, :ref:`Firewall Manager`, :ref:`User Manager`,
-  :ref:`Network Manager`, and :ref:`Mount Tray`.
+  available through `SysAdm <https://sysadm.us/handbook/client/>`_:
+
+  * AppCafe
+  * Update Manager
+  * Boot Environment Manager
+  * Life Preserver
+  * Firewall Manager
+  * User Manager
+  * Network Manager
+  * Mount Tray
   
 * The functionality provided by the *About* utility has been
-  incorporated into :ref:`Lumina Information`.
+  incorporated into
+  `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html#lumina-information>`_.
   
-* The functionality provided by *Service Manager*
-  (:command:`pc-servicemanager`) has been integrated into
-  :ref:`Task Manager`.
+* The functionality provided by
+  `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
+  (:command:`pc-servicemanager`) has been integrated into |sysadm|.
 
 * The Active Directory & LDAP utility (:command:`pc-adsldap`) has been
   deprecated.
@@ -173,21 +182,23 @@ The following features or enhancements were introduced for |trueos|:
 * :guilabel:`Customize` has been removed from the
   :ref:`System Selection Screen` in order to reduce the size of the
   installation media. Additional software can be installed
-  post-installation using :ref:`AppCafe®`.
+  post-installation using |appcafe|.
 
 * The :guilabel:`Boot to console (Disable X)` option has been added to
   the graphical boot menu.
 
-* These new utilites are available in the :ref:`SysAdm™ Client`:
-  :ref:`Managing Remote Connections` and :ref:`Task Manager`.
+* These new utilites are available in the *SysAdm Client*
+  `Managing Remote Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-remote-connections>`_
+  and
+  `Task Manager <https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_.
 
 * The graphical and command line versions of PBI Manager and Warden have
   been removed.
 
-* **pc-thinclient** has been removed as it is deprecated.
+* :command:`pc-thinclient` has been removed as it is deprecated.
 
 .. index:: Linux
-.. _TrueOS® for Linux Users:
+.. _TrueOS for Linux Users:
 
 |trueos| for Linux Users
 ========================

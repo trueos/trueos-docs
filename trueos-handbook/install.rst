@@ -153,9 +153,10 @@ System Selection Screen
 The :guilabel:`System Selection` screen installs a graphical desktop or
 a console-based server operating system, as seen in
 :numref:`Figure %s <install3>`. It also can be used for
-:ref:`Restoring the Operating System`. This chapter concentrates on a
-desktop installation. Refer to :ref:`Install a Server` for instructions
-on installing a command-line only server.
+`Restoring the Operating System <https://sysadm.us/handbook/client/sysadmclient.html#restoring-the-operating-system>`_.
+This chapter concentrates on a desktop installation. Refer to
+:ref:`Install a Server` for instructions on installing a command-line
+only server.
 
 .. _install3:
 
@@ -166,7 +167,8 @@ on installing a command-line only server.
 
 By default, :guilabel:`TrueOS (Graphical desktop)` will be selected
 and the |lumina| Desktop will be installed. Additional software can be
-added post-installation using :ref:`AppCafe®`.
+added post-installation using
+`AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
 
 To install the desktop, click :guilabel:`Next`.
 
@@ -174,7 +176,8 @@ To install the desktop, click :guilabel:`Next`.
    pop-up window will ask to install to the existing pool without
    reformatting it. Press :guilabel:`OK` to keep the existing pool.
    Clicking :guilabel:`Cancel` will format the existing pool and all of
-   its data. Refer to the :ref:`Upgrading from PCBSD 10.x to TrueOS`
+   its data. Refer to the
+   `Upgrading from PCBSD 10.x to TrueOS <https://sysadm.us/handbook/client/sysadmclient.html#upgrading-from-pcbsd-10-x-to-trueos>`_
    section for more information about this option.
 
 .. index:: installation
@@ -198,7 +201,8 @@ This screen provides a drop-down :guilabel:`Boot-Loader` menu with boot
 manager options:
 
 **BSD:** Uses the FreeBSD boot loader. This is recommended as it
-supports the ZFS boot environments used by :ref:`Update Manager`.
+supports the ZFS boot environments used by
+`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_.
 
 **GRUB:** Select this option when dual-booting the system and the GRUB
 bootloader is preferred.

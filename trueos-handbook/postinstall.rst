@@ -11,7 +11,7 @@ configuration screens, and provides troubleshooting tips for failed
 installations.
 
 .. index:: boot
-.. _Booting Into TrueOS®:
+.. _Booting Into TrueOS:
 
 Booting Into |trueos|
 =====================
@@ -68,8 +68,9 @@ made, press :kbd:`Enter` to boot using the selected options.
 
 * **7. Select Boot Environment:** In |trueos|, boot environments are
   automatically created when the system updates and can also be
-  manually created using the :ref:`Boot Environment Manager`. This
-  allows the system to boot to the point of time before an update
+  manually created using the
+  `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_.
+  This allows the system to boot to the point of time before an update
   occurred and can be used to recover from a failed update. Press
   either :kbd:`7` or :kbd:`e` to view the available boot environments.
 
@@ -119,8 +120,9 @@ the boot loader, it will instead load the menu shown in
 This boot menu is used to display the entry for |trueos|, an entry for
 the screen which lists the available boot environments (these are
 automatically created when the system updates and can also be manually
-created using :ref:`Boot Environment Manager`), and any other operating
-systems installed on the system.
+created using the |sysadm|
+`Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_),
+and any other operating systems installed on the system.
 
 By default, this menu displays for a few seconds before continuing to
 boot into |trueos|. To pause this screen to review its items, press any
@@ -355,7 +357,9 @@ screen requires completing several fields:
 stick, as the user's encrypted home directory. This is useful in a
 multi-user or multi-computer environment, as it provides the user with
 secure access to their encrypted files.  When a user is configured to
-use :ref:`PersonaCrypt`, their username will only appear in the login
+use
+`PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_,
+their username will only appear in the login
 menu if the removable media associated with that |trueos| system is
 inserted. They must input the password associated with the removable
 device in order to login.
@@ -368,8 +372,9 @@ device in order to login.
    accounts; one for each type of session.
 
 Encryption is also possible without requiring removable devices using
-*PEFS*. Refer to the section on :ref:`PEFS Encryption` for more detailed
-instructions to initialize a user with *PEFS*.
+*PEFS*. Refer to the |sysadm| section on
+`PEFS Encryption <https://sysadm.us/handbook/client/sysadmclient.html#pefs>`_
+for more detailed instructions to initialize a user with *PEFS*.
 
 The :guilabel:`PersonaCrypt` tab, shown in
 :numref:`Figure %s <persona1>`, is used to initialize PersonaCrypt for
@@ -395,9 +400,10 @@ device. A pop-up window indicates the current contents of the device
 will be wiped. Click :guilabel:`Yes` to initialize the device.
 
 To share the computer with other users, create additional login and
-:ref:`PersonaCrypt` accounts using :ref:`User Manager`. After creating
-at least one user, click :guilabel:`Next` to continue to the next
-screen.
+*PersonaCrypt* accounts using the |sysadm|
+`User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_.
+After creating at least one user, click :guilabel:`Next` to continue to
+the next screen.
 
 .. index:: sound
 .. _Configure Audio Output:
@@ -520,17 +526,18 @@ has several configuration options:
 
 * **user:** Upon first login, the created **username** (from
   :ref:`Create a User Screen`) is the only available login user. If
-  additional users are created using :ref:`User Manager`, they will
-  be added to the drop-down menu for more login choices. PCDM will not
-  allow logging in as the *root* user. Instead, whenever a utility
-  requires administrative access, |trueos| will first ask for the
-  password of the login account.
+  additional users are created using the |sysadm|
+  `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_,
+  they will be added to the drop-down menu for more login choices. PCDM
+  does not allow logging in as the *root* user. Instead, whenever a
+  utility requires administrative access, |trueos| asks for the password
+  of the login account.
 
 * **password:** Input the password associated with the selected user.
 
 * **desktop:** If any additional desktops are installed using
-  :ref:`AppCafe®`, use the drop-down menu to select the desktop to log
-  into.
+  `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
+  use the drop-down menu to select the desktop to log into.
 
 .. note:: If a PersonaCrypt user is active, insert the PersonaCrypt
    device in order to login. As seen in :numref:`Figure %s <login5>`,

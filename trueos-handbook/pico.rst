@@ -131,9 +131,10 @@ Raspberry Pi, meaning audio will only work on monitors with built-in
 audio capabilities. Change **true** to **false** to disable all audio.
 
 Once satisfied with the settings in :file:`picoserver.ini`, new user
-accounts/logins may need to be created for the client systems. See
-:ref:`User Manager` for detailed instructions on creating new users on
-a |trueos| system.
+accounts/logins may need to be created for the client systems. See the
+`User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_
+section of the |sysadm| handbook for detailed instructions on creating
+new users on a |trueos| system.
 
 After any necessary accounts are created, the next step is to initialize
 the client.

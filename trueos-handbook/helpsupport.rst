@@ -766,9 +766,9 @@ The source for the |trueos| Users Handbook is stored in the
 `TrueOS® github repository <https://github.com/trueos/trueos-docs/tree/master/trueos-handbook>`_.
 This allows the documentation and its translations to be built with
 the operating system. Documentation updates are automatically pushed
-to the |trueos| website and, when the system is updated using
-:ref:`Update Manager`, the doc updates are installed to a local copy
-named
+to the |trueos| website and, when the system is updated using the
+|sysadm| `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_,
+the doc updates are installed to a local copy named
 :file:`/usr/local/share/trueos/handbook/trueos.html`. This ensures the
 installed version of the Handbook always matches the operating system
 and new features are documented as they are added, appearing as a local
@@ -957,10 +957,10 @@ system is already running the |trueos| graphical utilities,
  make reinstall
  
 If you plan to make source changes, several Qt IDEs are available in
-:ref:`AppCafe®`. The
-`QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_ application
-is a full-featured IDE designed to help new Qt users get up and
-running faster while boosting the productivity of experienced Qt
+the |sysadm| `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
+The `QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_
+application is a full-featured IDE designed to help new Qt users get up
+and running faster while boosting the productivity of experienced Qt
 developers.
 `Qt Designer <http://doc.qt.io/qt-4.8/designer-manual.html>`_ is
 lighter weight as it is only a :file:`.ui` file editor and does not
@@ -992,11 +992,11 @@ This section describes a small list of guidelines for menu and program
 design in |trueos|.
 
 Any graphical program that is a full-featured utility, such as
-:ref:`Life Preserver`, should have a **File** menu. However, file menus
-are not necessary for small widget programs or dialogue boxes. When
-making a file menu, a good rule of thumb is keep it simple. Most
-|trueos| utilities do not need more than two or three items on the file
-menu.
+`Life Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_,
+should have a *File* menu. However, file menus are not necessary for
+small widget programs or dialogue boxes. When making a file menu, a good
+rule of thumb is keep it simple. Most |trueos| utilities do not need
+more than two or three items on the file menu.
 
 **Configure** is our adopted standard for the category containing
 settings or configuration-related settings. If additional categories
@@ -1032,11 +1032,12 @@ their default file names.
 
 * **Save:** Keeps the current settings and closes window.
 
-Fully functional programs like :ref:`Life Preserver` do not use close
-buttons on the front of the application. Basically, whenever there is
-a **File** menu, that and an :guilabel:`x` in the top right corner of
-the application are used instead. Dialogues and widget programs are
-exceptions to this rule.
+Fully functional programs like
+`Life Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_
+do not use close buttons on the front of the application. Basically,
+whenever there is a *File* menu, that and an :guilabel:`x` in the top
+right corner of the application are used instead. Dialogues and widget
+programs are exceptions to this rule.
 
 Many users benefit from keyboard shortcuts and we aim to make them
 available in every |trueos| utility. Qt makes it easy to assign

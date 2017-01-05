@@ -359,7 +359,8 @@ The :ref:`System Selection Screen` of the |trueos| installer can be
 used to install a FreeBSD-based command-line server operating system
 rather than a graphical desktop operating system. A |trueos|
 installation includes the `SysAdm™ API <https://api.sysadm.us/>`_ and
-:ref:`SysAdm™ Client` for managing the server locally or remotely.
+`SysAdm™ Client <https://sysadm.us/handbook/client/>`_ for managing the
+server locally or remotely.
 
 For a server installation, using the |trueos| installer rather than the
 FreeBSD installer offers several benefits:

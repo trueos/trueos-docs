@@ -34,9 +34,11 @@ Managing Bootup Services
    
 OpenRC has a variety of options to *start*, *stop*, *add*, or *delete*
 services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of
-these actions can be accomplished using the :ref:`Service Manager` built
-into |sysadm|. Individuals familiar with the FreeBSD :command:`service`
-command may notice some similarities between some of these commands:
+these actions can be accomplished using the
+`Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
+built into |sysadm|. Individuals familiar with the FreeBSD
+:command:`service` command may notice some similarities between some of
+these commands:
 
 .. _rcbootserv:
 

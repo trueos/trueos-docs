@@ -315,11 +315,13 @@ Obtaining |trueos|
 
 |trueos| uses a rolling release model rather than versioned releases.
 
-Periodically, the :ref:`Update Manager` will provide a patch which
-updates the operating system to include all of the new features and
-drivers. To have or test the latest features and drivers as they become
-available, and you can tolerate possible breakage caused by new features
-being available before the next RELEASE, use the STABLE version.
+Periodically, the |sysadm|
+`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
+provides a patch which updates the operating system to include all of
+the new features and drivers. To have or test the latest features and
+drivers as they become available, and you can tolerate possible breakage
+caused by new features being available before the next RELEASE, use the
+STABLE version.
 
 Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_ or the
@@ -582,7 +584,9 @@ computer slows down, try closing other applications running on the
 computer to free up some RAM.
 
 To run virtualization software on a |trueos| system, search for
-*virtualbox* within :ref:`AppCafe®` and install the
+*virtualbox* within the |sysadm|
+`AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_
+and install the
 `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization
 program and the
 `VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_.
