@@ -714,47 +714,6 @@ msgstr ""
 msgid "list IDs of all processes with one or more files open"
 msgstr ""
 
-#: ../../introduction.rst:396
-msgid "Ongoing |trueos| issues"
-msgstr ""
-
-#: ../../introduction.rst:398
-msgid ""
-"This section is intended to list all known/longstanding issues with the "
-"|trueos| project:"
-msgstr ""
-
-#: ../../introduction.rst:407
-msgid ""
-"**Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from this "
-"range need to be installed manually. The |trueos| installer only contains "
-"the latest nvidia driver in order to prevent installation conflicts. These "
-"drivers are available through :command:`pkg`."
-msgstr ""
-
-#: ../../introduction.rst:412
-msgid ""
-"**Translation issues:** |trueos| began using Weblate as its translation "
-"system, but it is currently nonfunctional. The system is being reviewed and "
-"should be back online soon."
-msgstr ""
-
-#: ../../introduction.rst:416
-msgid ""
-"**4k desktop wallpapers:** There is an issue with 4k desktop backgrounds not"
-" being displayed properly (always displays as \"tiled\"). This is a bug with"
-" Qt, and will be fixed with the next version of Qt."
-msgstr ""
-
-#: ../../introduction.rst:401
-msgid ""
-"**Older AMD/ATI cards:** These are not supported in |trueos| yet. There are "
-"several ongoing investigations, but no consistent solutions have been found "
-"yet. There are experimental drivers `available "
-"<https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_, but their "
-"effectiveness is (so far) inconsistent."
-msgstr ""
-
 #: ../../introduction.rst:20
 msgid ""
 "`TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in 2005"
@@ -806,28 +765,60 @@ msgid ""
 ":ref:`Managing Remote Connections` and :ref:`Task Manager`."
 msgstr ""
 
-#: ../../introduction.rst:425
-msgid ""
-"A |trueos| installation using the FreeBSD loader with both GPT and GELI "
-"encryption is currently nonfunctional, due to a FreeBSD `regression "
-"<https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=213491>`_. Currently, it "
-"is best to avoid using GPT and GELI together with the BSD bootloader for "
-"fresh installs while the FreeBSD contributors fix the issue."
-msgstr ""
+#~ msgid "Ongoing |trueos| issues"
+#~ msgstr ""
 
-#: ../../introduction.rst:420
-msgid ""
-"**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
-" Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
-"<https://www.freebsd.org/relnotes/CURRENT/hardware/index.html>`_ to see "
-"detailed notes about supported hardware in FreeBSD/|trueos|."
-msgstr ""
+#~ msgid ""
+#~ "This section is intended to list all known/longstanding issues with the "
+#~ "|trueos| project:"
+#~ msgstr ""
 
-#: ../../introduction.rst:432
-msgid ""
-"Additional information about these issues can be found in the various "
-"communication channels listed in the :ref:`Help and Support` chapter."
-msgstr ""
+#~ msgid ""
+#~ "**Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from this "
+#~ "range need to be installed manually. The |trueos| installer only contains "
+#~ "the latest nvidia driver in order to prevent installation conflicts. These "
+#~ "drivers are available through :command:`pkg`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Translation issues:** |trueos| began using Weblate as its translation "
+#~ "system, but it is currently nonfunctional. The system is being reviewed and "
+#~ "should be back online soon."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**4k desktop wallpapers:** There is an issue with 4k desktop backgrounds not"
+#~ " being displayed properly (always displays as \"tiled\"). This is a bug with"
+#~ " Qt, and will be fixed with the next version of Qt."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Older AMD/ATI cards:** These are not supported in |trueos| yet. There are "
+#~ "several ongoing investigations, but no consistent solutions have been found "
+#~ "yet. There are experimental drivers `available "
+#~ "<https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_, but their "
+#~ "effectiveness is (so far) inconsistent."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A |trueos| installation using the FreeBSD loader with both GPT and GELI "
+#~ "encryption is currently nonfunctional, due to a FreeBSD `regression "
+#~ "<https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=213491>`_. Currently, it "
+#~ "is best to avoid using GPT and GELI together with the BSD bootloader for "
+#~ "fresh installs while the FreeBSD contributors fix the issue."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
+#~ " Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
+#~ "<https://www.freebsd.org/relnotes/CURRENT/hardware/index.html>`_ to see "
+#~ "detailed notes about supported hardware in FreeBSD/|trueos|."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional information about these issues can be found in the various "
+#~ "communication channels listed in the :ref:`Help and Support` chapter."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Additional information about these issues can be viewed in the various "

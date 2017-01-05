@@ -200,13 +200,6 @@ msgid ""
 "users through the various features of this useful toolkit."
 msgstr ""
 
-#: ../../pico.rst:309
-msgid ""
-"**Audio:** Pulse Audio has an intermittent issue with freezing upon *client*"
-" initialization. A workaround has been implemented, but please refer to "
-":ref:`Report a bug` if any additional audio issues are encountered."
-msgstr ""
-
 #: ../../pico.rst:17
 msgid "|trpi|"
 msgstr ""
@@ -455,20 +448,24 @@ msgstr ""
 msgid ": |pise| Administration Commands"
 msgstr ""
 
-#: ../../pico.rst:305
-msgid "|trpi| Current Issues"
-msgstr ""
-
-#: ../../pico.rst:307
-msgid "This section lists the currently known bugs with |trpi| use:"
-msgstr ""
-
 #: ../../pico.rst:32
 msgid ""
 "|pise| is available through :command:`pkg` and in |appcafe|. Configure the "
 "server software before downloading the client software or initializing the "
 "|picl|."
 msgstr ""
+
+#~ msgid ""
+#~ "**Audio:** Pulse Audio has an intermittent issue with freezing upon *client*"
+#~ " initialization. A workaround has been implemented, but please refer to "
+#~ ":ref:`Report a bug` if any additional audio issues are encountered."
+#~ msgstr ""
+
+#~ msgid "|trpi| Current Issues"
+#~ msgstr ""
+
+#~ msgid "This section lists the currently known bugs with |trpi| use:"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "|pise| is available both `online <https://www.trueos.org/downloads/>`_ and "

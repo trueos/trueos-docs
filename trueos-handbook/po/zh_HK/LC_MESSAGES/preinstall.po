@@ -225,12 +225,6 @@ msgid ""
 ":ref:`Language Selection Screen`."
 msgstr ""
 
-#: ../../preinstall.rst:38
-msgid ""
-"If any problems arise with the installation, refer to :ref:`Installation "
-"Troubleshooting`."
-msgstr ""
-
 #: ../../preinstall.rst:41
 msgid ""
 "This section discusses the |trueos| hardware requirements, how to prepare "
@@ -993,6 +987,17 @@ msgid ""
 "booth, contact us `on Gitter <https://gitter.im/trueos>`_ to arrange for "
 "DVDs."
 msgstr ""
+
+#: ../../preinstall.rst:38
+msgid ""
+"If any problems arise with the installation, refer to the Troubleshooting "
+":ref:`Installation` section of this handbook."
+msgstr ""
+
+#~ msgid ""
+#~ "If any problems arise with the installation, refer to :ref:`Installation "
+#~ "Troubleshooting`."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Members of the |trueos| project attend many IT conferences across the globe "
