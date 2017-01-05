@@ -37,8 +37,6 @@ share/trueos/handbook/_images/install7b.png
 share/trueos/handbook/_images/install8c.png
 share/trueos/handbook/_images/install9b.png
 share/trueos/handbook/_images/keyboard1.png
-share/trueos/handbook/_images/lcalc1a.png
-share/trueos/handbook/_images/lcalc2.png
 share/trueos/handbook/_images/login1.png
 share/trueos/handbook/_images/login5.png
 share/trueos/handbook/_images/mount1.png
@@ -73,8 +71,6 @@ share/trueos/handbook/_images/print6a.png
 share/trueos/handbook/_images/print7a.png
 share/trueos/handbook/_images/print8a.png
 share/trueos/handbook/_images/print9a.png
-share/trueos/handbook/_images/restore1.png
-share/trueos/handbook/_images/restore2.png
 share/trueos/handbook/_images/sane1.png
 share/trueos/handbook/_images/server2a.png
 share/trueos/handbook/_images/server3a.png
@@ -125,15 +121,10 @@ share/trueos/handbook/_sources/advanced.txt
 share/trueos/handbook/_sources/helpsupport.txt
 share/trueos/handbook/_sources/install.txt
 share/trueos/handbook/_sources/introduction.txt
-share/trueos/handbook/_sources/luminaconfig.txt
-share/trueos/handbook/_sources/luminaintro.txt
-share/trueos/handbook/_sources/luminaplugins.txt
-share/trueos/handbook/_sources/luminautl.txt
 share/trueos/handbook/_sources/pico.txt
 share/trueos/handbook/_sources/postinstall.txt
 share/trueos/handbook/_sources/preface.txt
 share/trueos/handbook/_sources/preinstall.txt
-share/trueos/handbook/_sources/sysadmclient.txt
 share/trueos/handbook/_sources/trueos.txt
 share/trueos/handbook/_sources/using.txt
 share/trueos/handbook/_static/ajax-loader.gif
@@ -185,10 +176,6 @@ share/trueos/handbook/genindex.html
 share/trueos/handbook/helpsupport.html
 share/trueos/handbook/install.html
 share/trueos/handbook/introduction.html
-share/trueos/handbook/luminaconfig.html
-share/trueos/handbook/luminaintro.html
-share/trueos/handbook/luminaplugins.html
-share/trueos/handbook/luminautl.html
 share/trueos/handbook/preface.html
 share/trueos/handbook/pico.html
 share/trueos/handbook/objects.inv
@@ -196,7 +183,6 @@ share/trueos/handbook/postinstall.html
 share/trueos/handbook/preinstall.html
 share/trueos/handbook/search.html
 share/trueos/handbook/searchindex.js
-share/trueos/handbook/sysadmclient.html
 share/trueos/handbook/trueos.html
 share/trueos/handbook/using.html
 share/trueos/handbook/_sources/openrc.txt
