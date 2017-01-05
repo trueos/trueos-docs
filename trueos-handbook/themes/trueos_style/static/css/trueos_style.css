@@ -2896,7 +2896,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', end
 	margin-right: 20px;
 	border: 3px solid gray;
 	border-radius: 8px;
-	background: gray; 
+	background: #bbbbbb !important; 
 	font-size: 75%;
 	margin-left: auto;
     margin-right: auto;
@@ -4102,14 +4102,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 }
 
 #gsc-iw-id1 {
-	background: #CECECE !important;
-	border: solid 1px #666666;
+	background: #bbbbbb !important;
+	border: solid 1px #A8A8A8 !important;
 	margin-top: 2px;
 	border-radius: 2px;
+	height: 29px !important;
+}
+
+#gsc-i-id1 {
+	border: solid 1px #A8A8A8 !important;
+	background: white url("https://www.trueos.org/handbook/_static/searchdocs.png") no-repeat scroll left center !important;
 }
 
 .gsc-search-box-tools .gsc-search-box .gsc-input {
 	padding-left: 4px !important;
+}
+
+input.gsc-search-button {
+	background-color: #bbbbbb !important;
+}
+
+ input.gsc-search-button:hover, input.gsc-search-button:focus {
+	 background-color: gray !important;
+}
+
+.gsc-search-box .gsc-input > input:focus, .gsc-input-box-focus, .gsc-search-box {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
 }
 
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
