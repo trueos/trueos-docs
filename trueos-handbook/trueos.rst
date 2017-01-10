@@ -7,8 +7,7 @@ Contents:
    :numbered:
    :maxdepth: 4
 
-   preface
-   introduction
+   introducing
    preinstall
    install
    postinstall

@@ -119,11 +119,10 @@ share/trueos/handbook/_images/wine3.png
 share/trueos/handbook/_images/writer1.png
 share/trueos/handbook/_sources/advanced.txt
 share/trueos/handbook/_sources/helpsupport.txt
+share/trueos/handbook/_sources/introducing.txt
 share/trueos/handbook/_sources/install.txt
-share/trueos/handbook/_sources/introduction.txt
 share/trueos/handbook/_sources/pico.txt
 share/trueos/handbook/_sources/postinstall.txt
-share/trueos/handbook/_sources/preface.txt
 share/trueos/handbook/_sources/preinstall.txt
 share/trueos/handbook/_sources/trueos.txt
 share/trueos/handbook/_sources/using.txt
@@ -175,8 +174,7 @@ share/trueos/handbook/advanced.html
 share/trueos/handbook/genindex.html
 share/trueos/handbook/helpsupport.html
 share/trueos/handbook/install.html
-share/trueos/handbook/introduction.html
-share/trueos/handbook/preface.html
+share/trueos/handbook/introducing.html
 share/trueos/handbook/pico.html
 share/trueos/handbook/objects.inv
 share/trueos/handbook/postinstall.html

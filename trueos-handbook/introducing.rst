@@ -1,9 +1,20 @@
-.. _TrueOS Introduction:
+.. index:: introduction
+.. _Introducing TrueOS:
 
-Introduction
-************
+Introducing |trueos|
+********************
+
+Written by users of the |trueos| operating system.
 
 Welcome to |trueos|!
+
+This Handbook covers the installation and use of |trueos|. This Handbook
+is a work in progress and relies on the contributions of many
+individuals. To assist with the Handbook, refer to the documentation
+`README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
+If using IRC Freenode, join the #trueos channel and converse with many
+other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is
+another popular option for users.
 
 `TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in
 2005 when Kris Moore presented the first beta version of a FreeBSD
@@ -49,7 +60,45 @@ While it began as an independent project, since October 2006 |trueos| is
 financially backed and supported by the enterprise-class hardware
 solutions provider `iXsystems <https://www.ixsystems.com/>`_.
 
-.. index:: features
+.. index:: introduction, typographic
+.. _Typographic Conventions:
+
+Typographic Conventions
+=======================
+
+The |trueos| User Guide uses several typographic conventions, seen here
+in :numref:`Table %s <typconv>`:
+
+.. _typconv:
+
+.. table:: : Text Formatting Examples
+
+   +-------------------------+------------------------------------------------+
+   | Item                    | Visual Example                                 |
+   +=========================+================================================+
+   | Graphical elements:     | Click the :guilabel:`Import CA` button.        |
+   | buttons, icons, fields, |                                                |
+   | columns and boxes       |                                                |
+   +-------------------------+------------------------------------------------+
+   | Menu selections         | Click :menuselection:`System --> Information`. |
+   +-------------------------+------------------------------------------------+
+   | CLI Command name        | Use :command:`scp`.                            |
+   +-------------------------+------------------------------------------------+
+   | A command line example  | :samp:`[tmoore@example] ls /etc`               |
+   +-------------------------+------------------------------------------------+
+   | Files, volume and       | Locate the :file:`/etc/rc.conf` file.          |
+   | dataset names, and      |                                                |
+   | directories             |                                                |
+   +-------------------------+------------------------------------------------+
+   | Keyboard keys           | Press the :kbd:`Enter` key.                    |
+   +-------------------------+------------------------------------------------+
+   | Important points        | **This is important.**                         |
+   +-------------------------+------------------------------------------------+
+   | Values entered into     | Enter *127.0.0.1* in the address field.        |
+   | fields, or device names |                                                |
+   +-------------------------+------------------------------------------------+
+
+.. index:: introduction, features
 .. _Goals and Features:
 
 Goals and Features
@@ -102,13 +151,149 @@ Goals and Features
 
 * **Vibrant community:** |trueos| has a friendly and helpful community.
 
-.. index:: What's New
-.. _What's New:
+.. index:: introduction, legal
+.. _Legal:
 
-What's New
-==========
+Legal
+=====
 
-The following features or enhancements were introduced for |trueos|:
+This section covers the required legal elements to the handbook,
+including the Copyright notice, Trademarks used in the document, and the
+|trueos| ethical advertising policy.
+
+.. index:: introduction, legal, copyright
+.. _Copyright:
+
+Copyright & Trademarks
+----------------------
+
+Copyright © 2005-2016 iXsystems
+
+The |trueos| User Guide is freely available for sharing and
+redistribution under the terms of the
+`Creative Commons Attribution License <https://creativecommons.org/licenses/by/3.0/>`_.
+This means you have permission to copy, distribute, translate, and
+adapt the work, as long as you attribute the |trueos| Project as the
+original source of the Handbook.
+
+|trueos| and the |trueos| logo are registered trademarks of
+`iXsystems <https://www.ixsystems.com/>`_. To use the |trueos| logo in
+your own works, please ask for permission first from
+marketing@ixsystems.com.
+
+|lumina| and the |lumina| logo are registered trademarks of
+`iXsystems <https://www.ixsystems.com/>`_. To use the |lumina| logo in
+your own works, please ask for permission first from
+marketing@ixsystems.com.
+
+|sysadm| is a trademark of `iXsystems <https://www.ixsystems.com/>`_.
+
+|trpi|, |pise|, and |picl| are trademarks of
+`iXsystems <https://www.ixsystems.com/>`_.
+
+AMD is a trademark of Advanced Micro Devices, Inc.
+
+Apache is a trademark of The Apache Software Foundation.
+
+|appcafe| is a registered trademark of
+`iXsystems <https://www.ixsystems.com/>`_.
+
+Asus® and Eee PC® are registered trademarks of ASUSTeK® Computer Inc.
+
+Facebook® is a registered trademark of Facebook Inc.
+
+Flash® is a registered trademark of Adobe Systems Incorporated in the
+United States and/or other countries.
+
+FreeBSD® is a registered trademark of the
+`FreeBSD Foundation <https://www.freebsdfoundation.org/>`_.
+
+|freenas| is a registered trademark of
+`iXsystems <https://www.ixsystems.com/>`_.
+
+Intel, the Intel logo, Pentium Inside, and Pentium are trademarks of
+Intel Corporation in the U.S. and/or other countries.
+
+Java™ is a trademark of Oracle America and/or its affiliates in the
+United States and other countries.
+
+LinkedIn® is a registered trademark of LinkedIn Corporation.
+
+Linux® is a registered trademark of Linus Torvalds.
+
+Mac and Mac OS are trademarks of Apple Inc., registered in the U.S. and
+other countries.
+
+NVIDIA® is a trademark and/or registered trademark of NVIDIA Corporation
+in the U.S. and other countries.
+
+ThinkPad® is a registered trademark of Lenovo.
+
+Twitter is a trademark of Twitter, Inc. in the United States and other
+countries.
+
+UNIX® is a registered trademark of The Open Group.
+
+VirtualBox® is a registered trademark of Oracle.
+
+VMWare® is a registered trademark of VMWare, Inc.
+
+Windows® is a registered trademark of Microsoft Corporation in the
+United States and other countries.
+
+.. index:: introduction, legal, advertising
+.. _Ad policy:
+
+Ethical Advertising Policy
+--------------------------
+
+For many years, users have wanted to give back to the |trueos| project.
+Generally, we encouraged users to donate or actively contribute to the
+FreeBSD project to ensure FreeBSD continues to be successful in the
+future. Because |trueos| is open source software, we have included a
+minimal number of ads as a simple method for users to give back to the
+project, if they wish. 
+
+The primary consideration for these ads is to avoid detracting from the
+user experience as much as possible. To this end, any ads in the
+Handbook will be limited to the navigation sidebar, and only in a
+predefined space underneath all other navigation options. We are
+resolved to protect user privacy and security, and do not collect user
+information, with the exception of click throughs. Furthermore, we do
+not collect any data for targeted ads, and are committed to only show
+high quality ads pertaining to our user base.  
+
+**Cookie Policy**
+
+Clicking on a Newegg ad directs users through an affiliate link that
+gives the |trueos| project a modest commission based on any items
+purchased within 24 hours. This is a simple time tracking cookie used to
+ensure the |trueos| project is afforded its commission. To ask questions
+about our Ethical Advertising policy, please contact joshms@trueos.org
+for more information.
+
+.. index:: introduction, comparing
+.. _Comparing TrueOS:
+
+Comparing |trueos|
+==================
+
+As |trueos| grows and evolves, many users appreciate comparisons with
+other operating systems. These comparisons are intended to help new
+users decide to install and try |trueos|, with accuracy being
+the chief concern.
+
+.. index:: introduction, comparing, PC-BSD
+.. _PCBSD:
+
+PC-BSD
+------
+
+The following features or enhancements were introduced for |trueos| and
+now separate |trueos| from |pcbsd|:
+
+.. note:: A |pcbsd| user with the current version of |lumina| installed
+   may have some of these elements available.
 
 * Based on FreeBSD-CURRENT.
 
@@ -197,19 +382,16 @@ The following features or enhancements were introduced for |trueos|:
 
 * :command:`pc-thinclient` has been removed as it is deprecated.
 
-.. index:: Linux
-.. _TrueOS for Linux Users:
+.. index:: introduction, comparing, Linux
+.. _Linux and TrueOS:
 
-|trueos| for Linux Users
-========================
+Linux and |trueos|
+------------------
 
 |trueos| is based on FreeBSD, meaning it is not a Linux distribution.
 If you have used Linux before, you will find some features you are used
 to have different names on a BSD system and some commands are different.
 This section covers some of these differences.
-
-.. index:: filesystems
-.. _Filesystems:
 
 BSD and Linux use different filesystems during installation. Many Linux
 distros use EXT2, EXT3, EXT4, or ReiserFS, while |trueos| uses OpenZFS.
@@ -279,8 +461,6 @@ some graphical file manager utilities.
    |            | FreeBSD   |                         |                                                        |
    +------------+-----------+-------------------------+--------------------------------------------------------+
 
-.. index:: devices
-
 Linux and BSD use different naming conventions for devices. For example:
 
 * In Linux, Ethernet interfaces begin with :file:`eth`. With BSD,
@@ -303,22 +483,21 @@ provides some common examples:
 .. table:: : BSD and Linux Feature Names
 
    +------------------------------+---------------------+--------------------------------+
-   | TrueOS                       | Linux               | **Description**                |
+   | TrueOS                       | Linux               | Description                    |
    +==============================+=====================+================================+
-   | IPFW                         | iptables            | default firewall               |
+   | IPFW                         | iptables            | Default firewall               |
    +------------------------------+---------------------+--------------------------------+
-   | :file:`/etc/rc.d/` for       | :file:`rc0.d/`,     | in |trueos|, the directories   |
+   | :file:`/etc/rc.d/` for       | :file:`rc0.d/`,     | In |trueos|, the directories   |
    | operating system and         | :file:`rc1.d/`,     | containing the startup scripts |
    | :file:`/usr/local/etc/rc.d/` | etc.                | do not link to runlevels as    |
-   | for applications             |                     | there are no runlevels; system |
+   | for applications             |                     | there are no runlevels. System |
    |                              |                     | startup scripts are separated  |
    |                              |                     | from third-party application   |
-   |                              |                     | scripts                        |
+   |                              |                     | scripts.                       |
    +------------------------------+---------------------+--------------------------------+
-   | :file:`/etc/ttys` and        | :command:`telinit`, | terminals are configured in    |
-   | :file:`/etc/rc.conf`         | :file:`init.d/`     | *ttys* and *rc.conf* indicates |
-   |                              |                     | which services will start at   |
-   |                              |                     | boot time                      |
+   | :file:`/etc/ttys` and        | :command:`telinit`, | Terminals configured in *ttys* |
+   | :file:`/etc/rc.conf`         | :file:`init.d/`     | and *rc.conf* indicate which   |
+   |                              |                     | services start at boot time.   |
    +------------------------------+---------------------+--------------------------------+
 
 Users comfortable with the command line may find some of the common
@@ -331,7 +510,7 @@ what they are used for.
 .. table:: : Common BSD and Linux Commands
 
    +-----------------------------------+-----------------------------+
-   | Command                           | **Used to:**                |
+   | Command                           | Used                        |
    +===================================+=============================+
    | :command:`dmesg`                  | discover what hardware was  |
    |                                   | detected by the kernel      |
@@ -387,3 +566,16 @@ about some of the differences between BSD and Linux:
 * `Why you should use a BSD style license for your Open Source Project <http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_
 
 * `A Sysadmin's Unixersal Translator (ROSETTA STONE) <http://bhami.com/rosetta.html>`_
+
+.. TODO Work in comparison sections with Windows and Mac OSX:
+   .. index:: introduction, comparing, Windows
+   .. _Windows:
+
+   Windows
+   -------
+
+   .. index:: introduction, comparing, Mac
+   .. _Mac OS:
+
+   Mac OS
+   ------
