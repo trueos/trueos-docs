@@ -549,8 +549,8 @@ Report a bug
 
 One of the most effective ways to assist the |trueos| Project is by
 reporting problems or bugs encountered while using |trueos|. Anyone can
-report a |trueos| bug. However, a few guidelines should be followed to
-ensure a speedy response:
+report a |trueos| bug. Here is a rundown of the |trueos| bug
+reporting tools:
 
 * |trueos| uses `GitHub <https://github.com/trueos/>`_, to manage bugs.
   A GitHub account is required before bugs can be reported. Navigate
@@ -564,9 +564,9 @@ ensure a speedy response:
 
 * The |trueos| code has been organized into repositories representing
   the |lumina| desktop, the graphical utilities, |sysadm|, and various
-  other applications. When reporting a bug, select the "trueos-core"
+  other applications. When reporting a bug, select the *trueos-core*"
   repository. If the bug is specific to |lumina|, instead select the
-  "lumina" repository.
+  *lumina* repository.
 
 * After clicking a repostitory name, use the :guilabel:`Search` bar on
   its page to confirm no similar bug report exists. If a similar
@@ -586,26 +586,105 @@ ensure a speedy response:
    :scale: 100%
 
    : Creating a Bug Report
-   
-* Write a brief but descriptive title which includes the error. Ideally,
-  the title is short (8 words or less) and contains key words about the
-  error so the bug report is easily found with the search tool.
 
-* In the :guilabel:`Leave a Comment` field, write about the
-  circumstance of the error, including instructions how to recreate it.
-  If an error message is generated, paste the error in its entirety.
-  Attaching a screenshot to the report can greatly aid the developer in
-  visualizing the problem. Remember to include the output of
-  :command:`uname -a`.
+Here are some guidelines for creating solid bug reports:
 
-* If the problem appears to be hardware related, attach a copy of
-  :file:`/var/run/dmesg.boot` as this file shows the hardware probed the
-  last time the |trueos| system booted.
+**Title Area**
 
-* After describing the issue, click :guilabel:`Submit new issue` to
-  create the issue. The bug tracker will attach a unique number to the
-  report and send update messages to the the registered email address
-  whenever activity occurs with the bug report.
+The ideal title is clear, concise, and informative. Here are some
+recommendations for creating a title:
+
+* Be objective and clear (and refrain from using idioms or slang).
+* Include the application name if the issue is related to an application.
+* Include keywords from any error messages you receive.
+* Avoid using vague language such as "failed", "useless", or "crashed".
+
+Here are some examples to show the difference between a helpful title
+and a non-helpful title:
+
+.. code-block:: none
+
+   Example 1:
+
+   Non-Helpful:
+   Lumina-FM crashed.
+   Helpful:
+   Lumina-FM crashed after clicking on a directory name.
+
+   Example 2:
+
+   Non-Helpful:
+   Extracting an archive doesn't work.
+   Helpful:
+   Lumina-Archiver shows the error "file not supported" when opening a .cab file.
+
+
+**Comment Area**
+
+Like with the *title*, being clear and concise is extremely helpful.
+Many people feel they must fill this area with lots of information.
+While listing a lot of information seems helpful, specific details are
+often more useful in issue resolution.
+
+The most important pieces of information to include are:
+
+A) What happened.
+
+B) What you expected to happen.
+
+C) (**Critical**) Steps to reproduce the issue. Please provide the exact
+   steps you can take to produce this issue from a fresh boot. If the
+   issue is application specific, provide the exact steps from a fresh
+   start of the application.
+
+D) List any changes you may have made to your system from its initial
+   install. In most cases, this does not need to be extremely detailed.
+   We simply need to know if you have installed or removed any major
+   applications or if you have changed any OS settings. If you are
+   unsure of every change you have made, list what comes to mind.
+
+E) List the hardware of the system where the issue occurred. If you are
+   using an OEM laptop/Desktop, telling us the brand/model is usually
+   sufficient. If the issue is wireless related, please check the
+   system manufacturer's website for your brand/model and let us know
+   what wireless cards may be shipped in your laptop. If you are using
+   a custom built desktop, all we primarily need to know is CPU, RAM,
+   and GPU. If you happen to know the motherboard model, please include
+   that as well. Attaching a copy of :file:`/var/run/dmesg.boot` may be
+   helpful, as this file shows the hardware probed the last time the
+   |trueos| system booted. Finally, including the output of
+   :command:`uname -a` is helpful.
+
+Being clear and direct with your answers is very helpful. Since we are
+not watching you use your computer and do not see what you see, we are
+totally dependent on your clear explanation. We only know what you tell
+us. Some users worry they have not provided enough information when they
+file a ticket. In most cases, providing the information for these five
+items is sufficient. If we need additional information, we will request
+it.
+
+**Additional Information**
+
+Please do not think you are unable to file your bug ticket without
+additional information. Providing the listed information above is the
+most important information for contributors to know. Providing logs does
+not help as much as those five pieces of information. In some cases,
+providing logs without providing those five items may mean we are unable
+to resolve the issue you are having.
+
+Additionally useful information may include: 
+
+* Screen captures of the error.
+  `Lumina Screenshot <https://lumina-desktop.org/handbook/luminautl.html#screenshot>`_
+  may be useful.
+* Command Line Output Logs
+* Truss Logs
+* Debugger Backtrace Logs
+
+After describing the issue, click :guilabel:`Submit new issue` to create
+the issue. The bug tracker will attach a unique number to the report and
+send update messages to the the registered email address whenever
+activity occurs with the bug report.
 
 .. index:: contributing, testing
 .. _Become a Beta Tester:
