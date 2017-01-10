@@ -280,20 +280,21 @@ Comparing |trueos|
 
 As |trueos| grows and evolves, many users appreciate comparisons with
 other operating systems. These comparisons are intended to help new
-users decide to install and try |trueos|, with accuracy being
+users deciding to install and try |trueos|, with accuracy being
 the chief concern.
 
-.. index:: introduction, comparing, PC-BSD
-.. _PCBSD:
+.. index:: introduction, comparing, FreeBSD/PC-BSD
+.. _FreeBSD and PCBSD:
 
-PC-BSD
-------
+FreeBSD and PC-BSD
+------------------
 
 The following features or enhancements were introduced for |trueos| and
 now separate |trueos| from |pcbsd|:
 
-.. note:: A |pcbsd| user with the current version of |lumina| installed
-   may have some of these elements available.
+.. note:: |pcbsd| and FreeBSD are placed together as both are very
+   similar "under the hood". Differences for either OS to |trueos| are
+   listed here.
 
 * Based on FreeBSD-CURRENT.
 
@@ -309,7 +310,31 @@ now separate |trueos| from |pcbsd|:
   improved system boot times for |trueos|. OpenRC is also used to
   improve general service management, in addition to adding the
   functionality to automatically run when new elements are introduced to
-  the system, such as plugging in an ethernet cable.
+  the system, such as plugging in an ethernet cable. Use of OpenRC
+  introduces a new level of differentiation from FreeBSD as |trueos| now
+  uses some different system services. These differences are listed in
+  :numref:`Table %s <sysserv>`
+  
+  .. _sysserv:
+  
+  .. table:: : Different system services between |trueos| and FreeBSD
+
+     +------------------+--------------+-----------------+
+     | |trueos| Service | Started From | FreeBSD Service | 
+     +==================+==============+=================+
+     | openntpd         | Ports        | ntpd            |
+     +------------------+--------------+-----------------+
+     | network          | Base         | netif           | 
+     +------------------+--------------+-----------------+
+     | wpa_supplicant   | Ports; Start | wpa_supplicant  |
+     |                  | with network | (from Base)     |
+     +------------------+--------------+-----------------+
+     | dhcpcd           | Ports        | dhclient        |
+     +------------------+--------------+-----------------+
+     
+  .. note:: :ref:`sysserv` will be updated as development continues on
+     the |trueos| implementation of OpenRC. For a complete list of all
+     available services through OpenRC, see :ref:`rcuprnlvl`.
 
 * A |trueos| installation installs the |lumina| Desktop. Additional
   window managers can be installed using |appcafe|.
