@@ -202,14 +202,6 @@ msgstr ""
 msgid "Report a bug"
 msgstr ""
 
-#: ../../helpsupport.rst:562
-msgid ""
-"One of the most effective ways to assist the |trueos| Project is by "
-"reporting problems or bugs encountered while using |trueos|. Anyone can "
-"report a |trueos| bug. However, a few guidelines should be followed to "
-"ensure a speedy response:"
-msgstr ""
-
 #: ../../helpsupport.rst:567
 msgid ""
 "|trueos| uses `GitHub <https://github.com/trueos/>`_, to manage bugs. A "
@@ -223,15 +215,6 @@ msgid ""
 "The GitHub issues tracker uses email to update contributors on the status of"
 " bugs. Please use a valid and frequently used email address when creating a "
 "GitHub account for the efficient resolution of issues."
-msgstr ""
-
-#: ../../helpsupport.rst:577
-msgid ""
-"The |trueos| code has been organized into repositories representing the "
-"|lumina| desktop, the graphical utilities, |sysadm|, and various other "
-"applications. When reporting a bug, select the \"trueos-core\" repository. "
-"If the bug is specific to |lumina|, instead select the \"lumina\" "
-"repository."
 msgstr ""
 
 #: ../../helpsupport.rst:583
@@ -255,30 +238,7 @@ msgstr ""
 msgid ": Creating a Bug Report"
 msgstr ""
 
-#: ../../helpsupport.rst:602
-msgid ""
-"Write a brief but descriptive title which includes the error. Ideally, the "
-"title is short (8 words or less) and contains key words about the error so "
-"the bug report is easily found with the search tool."
-msgstr ""
-
-#: ../../helpsupport.rst:606
-msgid ""
-"In the :guilabel:`Leave a Comment` field, write about the circumstance of "
-"the error, including instructions how to recreate it. If an error message is"
-" generated, paste the error in its entirety. Attaching a screenshot to the "
-"report can greatly aid the developer in visualizing the problem. Remember to"
-" include the output of :command:`uname -a`."
-msgstr ""
-
-#: ../../helpsupport.rst:613
-msgid ""
-"If the problem appears to be hardware related, attach a copy of "
-":file:`/var/run/dmesg.boot` as this file shows the hardware probed the last "
-"time the |trueos| system booted."
-msgstr ""
-
-#: ../../helpsupport.rst:617
+#: ../../helpsupport.rst:696
 msgid ""
 "After describing the issue, click :guilabel:`Submit new issue` to create the"
 " issue. The bug tracker will attach a unique number to the report and send "
@@ -286,18 +246,18 @@ msgid ""
 " with the bug report."
 msgstr ""
 
-#: ../../helpsupport.rst:626
+#: ../../helpsupport.rst:705
 msgid "Become a Beta Tester"
 msgstr ""
 
-#: ../../helpsupport.rst:628
+#: ../../helpsupport.rst:707
 msgid ""
 "If you enjoy tinkering with operating systems and have a bit of spare time, "
 "one of the most effective ways to can assist the |trueos| community is by "
 "reporting any encountered problems while using |trueos|."
 msgstr ""
 
-#: ../../helpsupport.rst:632
+#: ../../helpsupport.rst:711
 msgid ""
 "If a spare system or virtual machine is available, you can also download and"
 " try out the latest testing snapshots. Having as many people as possible "
@@ -305,7 +265,7 @@ msgid ""
 " in finding and fixing bugs. This makes using |trueos| better for everyone."
 msgstr ""
 
-#: ../../helpsupport.rst:638
+#: ../../helpsupport.rst:717
 msgid ""
 "If becoming a tester is tempting, join the `TrueOS® Lobby "
 "<https://gitter.im/trueos/Lobby>`_. New testing versions, once available, "
@@ -314,42 +274,42 @@ msgid ""
 "hardware as well."
 msgstr ""
 
-#: ../../helpsupport.rst:644
+#: ../../helpsupport.rst:723
 msgid ""
 "Anyone can become a beta tester. If you find a bug while testing, accurately"
 " describe the situation when :ref:`Reporting a bug <Report a bug>` so it can"
 " be fixed as soon as possible."
 msgstr ""
 
-#: ../../helpsupport.rst:653
+#: ../../helpsupport.rst:732
 msgid "Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:655
+#: ../../helpsupport.rst:734
 msgid ""
 "If interested in translating |trueos| into your native language, start by "
 "choosing which of the three translation areas to work in:"
 msgstr ""
 
-#: ../../helpsupport.rst:658
+#: ../../helpsupport.rst:737
 msgid "Translate the graphical menus within the |trueos| operating system."
 msgstr ""
 
-#: ../../helpsupport.rst:660
+#: ../../helpsupport.rst:739
 msgid "Translate the documentation published with |trueos|."
 msgstr ""
 
-#: ../../helpsupport.rst:662
+#: ../../helpsupport.rst:741
 msgid "Translate the |trueos| website."
 msgstr ""
 
-#: ../../helpsupport.rst:664
+#: ../../helpsupport.rst:743
 msgid ""
 "This section describes each of these translation areas in more detail and "
 "how to begin as a translator."
 msgstr ""
 
-#: ../../helpsupport.rst:667
+#: ../../helpsupport.rst:746
 msgid ""
 "Regardless of the type of desired translation, you should first join the "
 "`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. The first time joining "
@@ -359,11 +319,11 @@ msgid ""
 "translators."
 msgstr ""
 
-#: ../../helpsupport.rst:678
+#: ../../helpsupport.rst:757
 msgid "Interface Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:680
+#: ../../helpsupport.rst:759
 msgid ""
 "|trueos| uses `Weblate <https://weblate.org>`_ for managing localization of "
 "the menu screens used by the installer and the |trueos| utilities. Weblate "
@@ -374,29 +334,29 @@ msgid ""
 "to use a translation tool."
 msgstr ""
 
-#: ../../helpsupport.rst:689
+#: ../../helpsupport.rst:768
 msgid ""
 "To assist with a localization, open the `TrueOS® translation website "
 "<http://weblate.trueos.org/>`_ in a web browser. An example is seen in "
 ":numref:`Figure %s <translate1>`."
 msgstr ""
 
-#: ../../helpsupport.rst:698
+#: ../../helpsupport.rst:777
 msgid ": |trueos| Weblate Translation System"
 msgstr ""
 
-#: ../../helpsupport.rst:700
+#: ../../helpsupport.rst:779
 msgid ""
 "Before editing a translation, first create a a login account and verify the "
 "activation email. Once logged in, click :guilabel:`Manage your languages`, "
 "shown in :numref:`Figure %s <translate2>`."
 msgstr ""
 
-#: ../../helpsupport.rst:710
+#: ../../helpsupport.rst:789
 msgid ": Weblate Dashboard"
 msgstr ""
 
-#: ../../helpsupport.rst:712
+#: ../../helpsupport.rst:791
 msgid ""
 "In the screen shown in :numref:`Figure %s <translate3>`, use the "
 ":guilabel:`Interface Language` drop-down menu to select the language for the"
@@ -405,18 +365,18 @@ msgid ""
 "Once any selections are made, click :guilabel:`Save`."
 msgstr ""
 
-#: ../../helpsupport.rst:723
+#: ../../helpsupport.rst:802
 msgid ": Manage Languages"
 msgstr ""
 
-#: ../../helpsupport.rst:725
+#: ../../helpsupport.rst:804
 msgid ""
 "If the language you wish to translate is missing from the \"Translated "
 "languages\" menu, request its addition in the `TrueOS® Lobby "
 "<https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../helpsupport.rst:729
+#: ../../helpsupport.rst:808
 msgid ""
 "Next, click :guilabel:`Projects` at the top of the screen to select a "
 "localization project. In the example shown in :numref:`Figure %s "
@@ -428,22 +388,22 @@ msgid ""
 " will instead appear in English."
 msgstr ""
 
-#: ../../helpsupport.rst:744
+#: ../../helpsupport.rst:823
 msgid ": Project Selection"
 msgstr ""
 
-#: ../../helpsupport.rst:746
+#: ../../helpsupport.rst:825
 msgid ""
 "To start translating, click a component name. In the screen shown in "
 ":numref:`Figure %s <translate5>`, select a language and click "
 ":guilabel:`Translate`."
 msgstr ""
 
-#: ../../helpsupport.rst:755
+#: ../../helpsupport.rst:834
 msgid ": Translation Languages"
 msgstr ""
 
-#: ../../helpsupport.rst:757
+#: ../../helpsupport.rst:836
 msgid ""
 "In the example shown in :numref:`Figure %s <translate6>`, the user has "
 "selected to translate the *pc-installgui* component into the Spanish "
@@ -454,21 +414,21 @@ msgid ""
 "translate."
 msgstr ""
 
-#: ../../helpsupport.rst:770
+#: ../../helpsupport.rst:849
 msgid ": Translation Editor"
 msgstr ""
 
-#: ../../helpsupport.rst:772
+#: ../../helpsupport.rst:851
 msgid ""
 "If assistance is needed with either a translation or the Weblate system, ask"
 " for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../helpsupport.rst:779
+#: ../../helpsupport.rst:858
 msgid "Documentation Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:796
+#: ../../helpsupport.rst:875
 msgid ""
 "The |trueos| build server provides the HTML version of the |trueos| Users "
 "Handbook. Instructions for building your own HTML, PDF, or EPUB version can "
@@ -476,7 +436,7 @@ msgid ""
 "docs/blob/master/trueos-handbook/README.md>`_."
 msgstr ""
 
-#: ../../helpsupport.rst:801
+#: ../../helpsupport.rst:880
 msgid ""
 "The documentation source files have been integrated into the Weblate "
 "translation system so the |trueos| documentation can be translated using a "
@@ -485,26 +445,26 @@ msgid ""
 "menu shown in :ref:`translate4`."
 msgstr ""
 
-#: ../../helpsupport.rst:807
+#: ../../helpsupport.rst:886
 msgid ""
 "It is important to be aware of a few elements when translating the "
 "documentation:"
 msgstr ""
 
-#: ../../helpsupport.rst:810
+#: ../../helpsupport.rst:889
 msgid ""
 "At this time, some formatting tags are still displayed in raw text, as seen "
 "in the examples in :numref:`Figure %s <translate7>` and :numref:`Figure %s "
 "<translate8>`."
 msgstr ""
 
-#: ../../helpsupport.rst:814
+#: ../../helpsupport.rst:893
 msgid ""
 "Do not remove the formatting as this can break the documentation build for "
 "that language."
 msgstr ""
 
-#: ../../helpsupport.rst:817
+#: ../../helpsupport.rst:896
 msgid ""
 "In :ref:`translate7`, it is fine to translate the phrase \"Using the Text "
 "Installer\", but care must be taken to avoid removing any of the surrounding"
@@ -514,26 +474,26 @@ msgid ""
 "the asterisks."
 msgstr ""
 
-#: ../../helpsupport.rst:829
+#: ../../helpsupport.rst:908
 msgid ": Formatting Characters - Do Not Remove"
 msgstr ""
 
-#: ../../helpsupport.rst:836
+#: ../../helpsupport.rst:915
 msgid ": More Formatting Characters"
 msgstr ""
 
-#: ../../helpsupport.rst:838
+#: ../../helpsupport.rst:917
 msgid ""
 "To build a local HTML copy that includes the latest translations, either for"
 " personal use or to visualize the translated Guide, type these commands from"
 " the command line:"
 msgstr ""
 
-#: ../../helpsupport.rst:842
+#: ../../helpsupport.rst:921
 msgid "These instructions are for a |trueos| system."
 msgstr ""
 
-#: ../../helpsupport.rst:859
+#: ../../helpsupport.rst:938
 msgid ""
 "This will make an HTML version of the Guide for each of the available "
 "translations. In this example, translations are available for English (in "
@@ -541,27 +501,27 @@ msgid ""
 "Portuguese, Turkish, and UK English. To update the HTML at a later time"
 msgstr ""
 
-#: ../../helpsupport.rst:877
+#: ../../helpsupport.rst:956
 msgid "Website Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:879
+#: ../../helpsupport.rst:958
 msgid ""
 "If you are interested in translating the |trueos| website, introduce "
 "yourself in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../helpsupport.rst:882
+#: ../../helpsupport.rst:961
 msgid ""
 "Currently, the website is being translated to several languages, including: "
 "Dutch, French, German, Polish, Spanish, Swedish, and Turkish."
 msgstr ""
 
-#: ../../helpsupport.rst:889
+#: ../../helpsupport.rst:968
 msgid "Development"
 msgstr ""
 
-#: ../../helpsupport.rst:891
+#: ../../helpsupport.rst:970
 msgid ""
 "If you like programming, and especially coding on FreeBSD, we would love to "
 "see you join the |trueos| team as a |trueos| committer. Developers who want "
@@ -574,7 +534,7 @@ msgid ""
 "will be happy to help you get started."
 msgstr ""
 
-#: ../../helpsupport.rst:902
+#: ../../helpsupport.rst:981
 msgid ""
 "Most of the |trueos| specific GUI tools are developed in C++ using Qt "
 "libraries and other non-GUI development is done using standard Bourne shell "
@@ -582,11 +542,11 @@ msgid ""
 "but those will be evaluated on a case-by-case basis."
 msgstr ""
 
-#: ../../helpsupport.rst:911
+#: ../../helpsupport.rst:990
 msgid "Getting the Source Code"
 msgstr ""
 
-#: ../../helpsupport.rst:913
+#: ../../helpsupport.rst:992
 msgid ""
 "The |trueos| source code is available from `GitHub "
 "<https://github.com/trueos/>`_. The code has been organized into "
@@ -596,46 +556,46 @@ msgid ""
 ":command:`git` is included in the base install."
 msgstr ""
 
-#: ../../helpsupport.rst:920
+#: ../../helpsupport.rst:999
 msgid ""
 "To download the source code, :command:`cd` to the directory to store the "
 "source code and specify the name of the desired repository. In this example,"
 " the user wishes to download the source for the graphical utilities:"
 msgstr ""
 
-#: ../../helpsupport.rst:929
+#: ../../helpsupport.rst:1008
 msgid "This will create a directory with the same name as the repository."
 msgstr ""
 
-#: ../../helpsupport.rst:931
+#: ../../helpsupport.rst:1010
 msgid ""
 "To keep the local copy in sync with the official repository, periodically "
 "run :command:`git pull` within the directory."
 msgstr ""
 
-#: ../../helpsupport.rst:937
+#: ../../helpsupport.rst:1016
 msgid ""
 "Before compiling any source, ensure the Ports Collection is installed. At "
 "this time, **git** is used to fetch and update ports (see :ref:`FreeBSD "
 "Ports`)."
 msgstr ""
 
-#: ../../helpsupport.rst:941
+#: ../../helpsupport.rst:1020
 msgid "Fetching ports for the first time (as root):"
 msgstr ""
 
-#: ../../helpsupport.rst:947
+#: ../../helpsupport.rst:1026
 msgid "Update an existing :file:`ports` directory (as root):"
 msgstr ""
 
-#: ../../helpsupport.rst:955
+#: ../../helpsupport.rst:1034
 msgid ""
 "Then, :command:`cd` to the directory containing the source to build and run "
 "the :command:`mkport.sh` script. In this example, the developer wants to "
 "compile the graphical utilities:"
 msgstr ""
 
-#: ../../helpsupport.rst:965
+#: ../../helpsupport.rst:1044
 msgid ""
 "This will create a port which can be installed. The name of the port is "
 "located in :file:`mkport.sh`. This example determines the name of the port "
@@ -644,7 +604,7 @@ msgid ""
 "used to overwrite the current utilities:"
 msgstr ""
 
-#: ../../helpsupport.rst:988
+#: ../../helpsupport.rst:1067
 msgid ""
 "If planning to submit changes to be included in |trueos|, fork the "
 "repository using the instructions in `fork a repo "
@@ -655,11 +615,11 @@ msgid ""
 " improvement."
 msgstr ""
 
-#: ../../helpsupport.rst:1000
+#: ../../helpsupport.rst:1079
 msgid "Design Guidelines"
 msgstr ""
 
-#: ../../helpsupport.rst:1002
+#: ../../helpsupport.rst:1081
 msgid ""
 "|trueos| is a community driven project that relies on the support of "
 "developers in the community to help in the design and implementation of new "
@@ -670,20 +630,20 @@ msgid ""
 "on the menu bar."
 msgstr ""
 
-#: ../../helpsupport.rst:1010
+#: ../../helpsupport.rst:1089
 msgid ""
 "This section describes a small list of guidelines for menu and program "
 "design in |trueos|."
 msgstr ""
 
-#: ../../helpsupport.rst:1020
+#: ../../helpsupport.rst:1099
 msgid ""
 "**Configure** is our adopted standard for the category containing settings "
 "or configuration-related settings. If additional categories are needed, "
 "check to see what other |trueos| utilities are using."
 msgstr ""
 
-#: ../../helpsupport.rst:1024
+#: ../../helpsupport.rst:1103
 msgid ""
 "File menu icons are taken from the KDE Oxygen theme located in "
 ":file:`/usr/local/share/icons/oxygen`. Use these file menu icons so we do "
@@ -695,68 +655,68 @@ msgstr ""
 msgid ": Commonly Used File Menu Icons"
 msgstr ""
 
-#: ../../helpsupport.rst:1035
+#: ../../helpsupport.rst:1114
 msgid "Function"
 msgstr ""
 
-#: ../../helpsupport.rst:1035
+#: ../../helpsupport.rst:1114
 msgid "File Menu Icon"
 msgstr ""
 
-#: ../../helpsupport.rst:1035
+#: ../../helpsupport.rst:1114
 msgid "File Name"
 msgstr ""
 
-#: ../../helpsupport.rst:1037 ../../helpsupport.rst:1081
-#: ../../helpsupport.rst:1093
+#: ../../helpsupport.rst:1116 ../../helpsupport.rst:1160
+#: ../../helpsupport.rst:1172
 msgid "Quit"
 msgstr ""
 
-#: ../../helpsupport.rst:1037
+#: ../../helpsupport.rst:1116
 msgid "row 1, cell 2"
 msgstr ""
 
-#: ../../helpsupport.rst:1037
+#: ../../helpsupport.rst:1116
 msgid "window-close.png"
 msgstr ""
 
-#: ../../helpsupport.rst:1039 ../../helpsupport.rst:1095
+#: ../../helpsupport.rst:1118 ../../helpsupport.rst:1174
 msgid "Settings"
 msgstr ""
 
-#: ../../helpsupport.rst:1039
+#: ../../helpsupport.rst:1118
 msgid "row 2, cell 2"
 msgstr ""
 
-#: ../../helpsupport.rst:1039
+#: ../../helpsupport.rst:1118
 msgid "configure.png"
 msgstr ""
 
-#: ../../helpsupport.rst:1042
+#: ../../helpsupport.rst:1121
 msgid "|trueos| utilities use these buttons:"
 msgstr ""
 
-#: ../../helpsupport.rst:1044
+#: ../../helpsupport.rst:1123
 msgid "**Apply:** Executes settings changes and leaves the window open."
 msgstr ""
 
-#: ../../helpsupport.rst:1046
+#: ../../helpsupport.rst:1125
 msgid "**Close:** Exits program without applying settings."
 msgstr ""
 
-#: ../../helpsupport.rst:1048
+#: ../../helpsupport.rst:1127
 msgid "**OK:** Closes dialogue window and saves settings."
 msgstr ""
 
-#: ../../helpsupport.rst:1050
+#: ../../helpsupport.rst:1129
 msgid "**Cancel:** Closes dialog window without applying settings."
 msgstr ""
 
-#: ../../helpsupport.rst:1052
+#: ../../helpsupport.rst:1131
 msgid "**Save:** Keeps the current settings and closes window."
 msgstr ""
 
-#: ../../helpsupport.rst:1061
+#: ../../helpsupport.rst:1140
 msgid ""
 "Many users benefit from keyboard shortcuts and we aim to make them available"
 " in every |trueos| utility. Qt makes it easy to assign keyboard shortcuts. "
@@ -775,23 +735,23 @@ msgstr ""
 msgid ": Shortcut Keys"
 msgstr ""
 
-#: ../../helpsupport.rst:1079
+#: ../../helpsupport.rst:1158
 msgid "Shortcut Key"
 msgstr ""
 
-#: ../../helpsupport.rst:1079 ../../helpsupport.rst:1091
+#: ../../helpsupport.rst:1158 ../../helpsupport.rst:1170
 msgid "Action"
 msgstr ""
 
-#: ../../helpsupport.rst:1081
+#: ../../helpsupport.rst:1160
 msgid "CTRL + Q"
 msgstr ""
 
-#: ../../helpsupport.rst:1083
+#: ../../helpsupport.rst:1162
 msgid "F1"
 msgstr ""
 
-#: ../../helpsupport.rst:1083
+#: ../../helpsupport.rst:1162
 msgid "Help"
 msgstr ""
 
@@ -799,59 +759,59 @@ msgstr ""
 msgid ": Hot Keys"
 msgstr ""
 
-#: ../../helpsupport.rst:1091
+#: ../../helpsupport.rst:1170
 msgid "Hot Key"
 msgstr ""
 
-#: ../../helpsupport.rst:1093
+#: ../../helpsupport.rst:1172
 msgid "Alt + Q"
 msgstr ""
 
-#: ../../helpsupport.rst:1095
+#: ../../helpsupport.rst:1174
 msgid "Alt + S"
 msgstr ""
 
-#: ../../helpsupport.rst:1097
+#: ../../helpsupport.rst:1176
 msgid "Alt + I"
 msgstr ""
 
-#: ../../helpsupport.rst:1097
+#: ../../helpsupport.rst:1176
 msgid "Import"
 msgstr ""
 
-#: ../../helpsupport.rst:1099
+#: ../../helpsupport.rst:1178
 msgid "Alt + E"
 msgstr ""
 
-#: ../../helpsupport.rst:1099
+#: ../../helpsupport.rst:1178
 msgid "Export"
 msgstr ""
 
-#: ../../helpsupport.rst:1101
+#: ../../helpsupport.rst:1180
 msgid "ALT + F"
 msgstr ""
 
-#: ../../helpsupport.rst:1101
+#: ../../helpsupport.rst:1180
 msgid "File Menu"
 msgstr ""
 
-#: ../../helpsupport.rst:1103
+#: ../../helpsupport.rst:1182
 msgid "ALT + C"
 msgstr ""
 
-#: ../../helpsupport.rst:1103
+#: ../../helpsupport.rst:1182
 msgid "Configure Menu"
 msgstr ""
 
-#: ../../helpsupport.rst:1105
+#: ../../helpsupport.rst:1184
 msgid "ALT + H"
 msgstr ""
 
-#: ../../helpsupport.rst:1105
+#: ../../helpsupport.rst:1184
 msgid "Help Menu"
 msgstr ""
 
-#: ../../helpsupport.rst:1108
+#: ../../helpsupport.rst:1187
 msgid ""
 "When saving an application's settings, the QSettings class should be used if"
 " possible. There are two different *organizations*, depending on whether the"
@@ -864,36 +824,36 @@ msgid ""
 " demonstrate how to use the QSettings class for each type of permission."
 msgstr ""
 
-#: ../../helpsupport.rst:1119
+#: ../../helpsupport.rst:1198
 msgid "**Example 1: User Permission Settings**"
 msgstr ""
 
-#: ../../helpsupport.rst:1126
+#: ../../helpsupport.rst:1205
 msgid "**Example 2: Root Permission Settings**"
 msgstr ""
 
-#: ../../helpsupport.rst:1133
+#: ../../helpsupport.rst:1212
 msgid "Developers will also find these resources helpful:"
 msgstr ""
 
-#: ../../helpsupport.rst:1135
+#: ../../helpsupport.rst:1214
 msgid ""
 "`Commits Mailing List <http://lists.pcbsd.org/mailman/listinfo/commits>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1137
+#: ../../helpsupport.rst:1216
 msgid "`Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1139
+#: ../../helpsupport.rst:1218
 msgid "`C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1145
+#: ../../helpsupport.rst:1224
 msgid "Advocacy"
 msgstr ""
 
-#: ../../helpsupport.rst:1147
+#: ../../helpsupport.rst:1226
 msgid ""
 "Love |trueos|? Why not tell your family, friends, fellow students and "
 "colleagues about it? You will not be the only one who prefers a virus-free, "
@@ -901,21 +861,21 @@ msgid ""
 "getting started:"
 msgstr ""
 
-#: ../../helpsupport.rst:1152
+#: ../../helpsupport.rst:1231
 msgid ""
 "Burn a couple of DVDs and pass them out. If your school or user group has an"
 " upcoming event where you can promote |trueos|, you can request additional "
 "DVDs from sales@pcbsd.com."
 msgstr ""
 
-#: ../../helpsupport.rst:1156
+#: ../../helpsupport.rst:1235
 msgid ""
 "Consider giving a presentation about |trueos| at a local community event, "
 "conference, or online. Let us know about it and we will help you spread the "
 "word."
 msgstr ""
 
-#: ../../helpsupport.rst:1160
+#: ../../helpsupport.rst:1239
 msgid ""
 "Write a personal blog detailing your journey from your first |trueos| "
 "install experience to your most recent accomplishment. The blog could also "
@@ -924,21 +884,21 @@ msgid ""
 "with similar interests."
 msgstr ""
 
-#: ../../helpsupport.rst:1170
+#: ../../helpsupport.rst:1249
 msgid "Additional Resources"
 msgstr ""
 
-#: ../../helpsupport.rst:1172
+#: ../../helpsupport.rst:1251
 msgid ""
 "Need more information? A number of useful resources that may aid in using "
 "|trueos| are available."
 msgstr ""
 
-#: ../../helpsupport.rst:1179
+#: ../../helpsupport.rst:1258
 msgid "FreeBSD Handbook and FAQ"
 msgstr ""
 
-#: ../../helpsupport.rst:1181
+#: ../../helpsupport.rst:1260
 msgid ""
 "|trueos| uses FreeBSD as its underlying operating system, so everything in "
 "the `FreeBSD Handbook "
@@ -949,7 +909,7 @@ msgid ""
 "learning how things work under the hood of a |trueos| system."
 msgstr ""
 
-#: ../../helpsupport.rst:1191
+#: ../../helpsupport.rst:1270
 msgid ""
 "Some configurations described in the FreeBSD Handbook already \"just work\" "
 "on a |trueos| system as they have been pre-configured. In these instances, "
@@ -957,102 +917,102 @@ msgid ""
 "configured and why it works."
 msgstr ""
 
-#: ../../helpsupport.rst:1200
+#: ../../helpsupport.rst:1279
 msgid "Search and Portals"
 msgstr ""
 
-#: ../../helpsupport.rst:1202
+#: ../../helpsupport.rst:1281
 msgid ""
 "Many BSD related search portals exist. If unable to find an answer from the "
 "forums or mailing lists, try searching these websites:"
 msgstr ""
 
-#: ../../helpsupport.rst:1205
+#: ../../helpsupport.rst:1284
 msgid ""
 "`The OpenDirectory "
 "<http://www.dmoz.org/Computers/Software/Operating_Systems/Unix/BSD/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1207
+#: ../../helpsupport.rst:1286
 msgid ""
 "`FreeBSD Search <http://www.freebsd.org/search/index.html>`_ (includes "
 "mailing list archives, man pages, and web pages)"
 msgstr ""
 
-#: ../../helpsupport.rst:1210
+#: ../../helpsupport.rst:1289
 msgid "`FreeBSD News <https://www.freebsdnews.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1212
+#: ../../helpsupport.rst:1291
 msgid "`About BSD <http://aboutbsd.net/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1214
+#: ../../helpsupport.rst:1293
 msgid "`BSD Guides <http://www.bsdguides.org/guides/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1216
+#: ../../helpsupport.rst:1295
 msgid "`Slashdot BSD <https://bsd.slashdot.org/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1218
+#: ../../helpsupport.rst:1297
 msgid "`DistroWatch <http://distrowatch.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1220
+#: ../../helpsupport.rst:1299
 msgid "`LinuxBSDos <http://linuxbsdos.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1226
+#: ../../helpsupport.rst:1305
 msgid "More Resources"
 msgstr ""
 
-#: ../../helpsupport.rst:1228
+#: ../../helpsupport.rst:1307
 msgid "Many BSD sites and resources may also contain useful information:"
 msgstr ""
 
-#: ../../helpsupport.rst:1230
+#: ../../helpsupport.rst:1309
 msgid "`The FreeBSD Diary <http://www.freebsddiary.org/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1232
+#: ../../helpsupport.rst:1311
 msgid ""
 "`TrueOS® YouTube channel <https://www.youtube.com/channel/UCyd7MaPVUpa-"
 "ueUsGjUujag>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1234
+#: ../../helpsupport.rst:1313
 msgid "`BSD YouTube channel <https://www.youtube.com/user/bsdconferences>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1236
+#: ../../helpsupport.rst:1315
 msgid "`BSD Talk <http://bsdtalk.blogspot.com/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1238
+#: ../../helpsupport.rst:1317
 msgid "`BSD Now <http://www.bsdnow.tv/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1240
+#: ../../helpsupport.rst:1319
 msgid "`BSD Magazine <https://bsdmag.org/>`_ (free, monthly download)"
 msgstr ""
 
-#: ../../helpsupport.rst:1242
+#: ../../helpsupport.rst:1321
 msgid ""
 "`FreeBSD Journal <http://www.freebsdjournal.com/>`_ (bi-monthly magazine)"
 msgstr ""
 
-#: ../../helpsupport.rst:1244
+#: ../../helpsupport.rst:1323
 msgid "`BSD Hacks <http://shop.oreilly.com/product/9780596006792.do>`_ (book)"
 msgstr ""
 
-#: ../../helpsupport.rst:1246
+#: ../../helpsupport.rst:1325
 msgid ""
 "`The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ "
 "(book)"
 msgstr ""
 
-#: ../../helpsupport.rst:1248
+#: ../../helpsupport.rst:1327
 msgid ""
 "`Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)"
 msgstr ""
@@ -1502,7 +1462,7 @@ msgid ""
 " sure to include both the version of |trueos| and name of the sound card."
 msgstr ""
 
-#: ../../helpsupport.rst:784
+#: ../../helpsupport.rst:863
 msgid ""
 "The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
 "repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
@@ -1517,7 +1477,7 @@ msgid ""
 "the user's system."
 msgstr ""
 
-#: ../../helpsupport.rst:978
+#: ../../helpsupport.rst:1057
 msgid ""
 "If you plan to make source changes, several Qt IDEs are available in the "
 "|sysadm| `AppCafe "
@@ -1530,7 +1490,7 @@ msgid ""
 "functionality."
 msgstr ""
 
-#: ../../helpsupport.rst:1013
+#: ../../helpsupport.rst:1092
 msgid ""
 "Any graphical program that is a full-featured utility, such as `Life "
 "Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-"
@@ -1540,7 +1500,7 @@ msgid ""
 " need more than two or three items on the file menu."
 msgstr ""
 
-#: ../../helpsupport.rst:1054
+#: ../../helpsupport.rst:1133
 msgid ""
 "Fully functional programs like `Life Preserver "
 "<https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_ do "
@@ -1559,6 +1519,195 @@ msgid ""
 "directory/501/16>`_ for updates and help installing flash on |trueos|, "
 "respectively."
 msgstr ""
+
+#: ../../helpsupport.rst:562
+msgid ""
+"One of the most effective ways to assist the |trueos| Project is by "
+"reporting problems or bugs encountered while using |trueos|. Anyone can "
+"report a |trueos| bug. Here is a rundown of the |trueos| bug reporting "
+"tools:"
+msgstr ""
+
+#: ../../helpsupport.rst:577
+msgid ""
+"The |trueos| code has been organized into repositories representing the "
+"|lumina| desktop, the graphical utilities, |sysadm|, and various other "
+"applications. When reporting a bug, select the *trueos-core*\" repository. "
+"If the bug is specific to |lumina|, instead select the *lumina* repository."
+msgstr ""
+
+#: ../../helpsupport.rst:602
+msgid "Here are some guidelines for creating solid bug reports:"
+msgstr ""
+
+#: ../../helpsupport.rst:604
+msgid "**Title Area**"
+msgstr ""
+
+#: ../../helpsupport.rst:606
+msgid ""
+"The ideal title is clear, concise, and informative. Here are some "
+"recommendations for creating a title:"
+msgstr ""
+
+#: ../../helpsupport.rst:609
+msgid "Be objective and clear (and refrain from using idioms or slang)."
+msgstr ""
+
+#: ../../helpsupport.rst:610
+msgid ""
+"Include the application name if the issue is related to an application."
+msgstr ""
+
+#: ../../helpsupport.rst:611
+msgid "Include keywords from any error messages you receive."
+msgstr ""
+
+#: ../../helpsupport.rst:612
+msgid "Avoid using vague language such as \"failed\", \"useless\", or \"crashed\"."
+msgstr ""
+
+#: ../../helpsupport.rst:614
+msgid ""
+"Here are some examples to show the difference between a helpful title and a "
+"non-helpful title:"
+msgstr ""
+
+#: ../../helpsupport.rst:634
+msgid "**Comment Area**"
+msgstr ""
+
+#: ../../helpsupport.rst:636
+msgid ""
+"Like with the *title*, being clear and concise is extremely helpful. Many "
+"people feel they must fill this area with lots of information. While listing"
+" a lot of information seems helpful, specific details are often more useful "
+"in issue resolution."
+msgstr ""
+
+#: ../../helpsupport.rst:641
+msgid "The most important pieces of information to include are:"
+msgstr ""
+
+#: ../../helpsupport.rst:643
+msgid "What happened."
+msgstr ""
+
+#: ../../helpsupport.rst:645
+msgid "What you expected to happen."
+msgstr ""
+
+#: ../../helpsupport.rst:647
+msgid ""
+"(**Critical**) Steps to reproduce the issue. Please provide the exact steps "
+"you can take to produce this issue from a fresh boot. If the issue is "
+"application specific, provide the exact steps from a fresh start of the "
+"application."
+msgstr ""
+
+#: ../../helpsupport.rst:652
+msgid ""
+"List any changes you may have made to your system from its initial install. "
+"In most cases, this does not need to be extremely detailed. We simply need "
+"to know if you have installed or removed any major applications or if you "
+"have changed any OS settings. If you are unsure of every change you have "
+"made, list what comes to mind."
+msgstr ""
+
+#: ../../helpsupport.rst:658
+msgid ""
+"List the hardware of the system where the issue occurred. If you are using "
+"an OEM laptop/Desktop, telling us the brand/model is usually sufficient. If "
+"the issue is wireless related, please check the system manufacturer's "
+"website for your brand/model and let us know what wireless cards may be "
+"shipped in your laptop. If you are using a custom built desktop, all we "
+"primarily need to know is CPU, RAM, and GPU. If you happen to know the "
+"motherboard model, please include that as well. Attaching a copy of "
+":file:`/var/run/dmesg.boot` may be helpful, as this file shows the hardware "
+"probed the last time the |trueos| system booted. Finally, including the "
+"output of :command:`uname -a` is helpful."
+msgstr ""
+
+#: ../../helpsupport.rst:670
+msgid ""
+"Being clear and direct with your answers is very helpful. Since we are not "
+"watching you use your computer and do not see what you see, we are totally "
+"dependent on your clear explanation. We only know what you tell us. Some "
+"users worry they have not provided enough information when they file a "
+"ticket. In most cases, providing the information for these five items is "
+"sufficient. If we need additional information, we will request it."
+msgstr ""
+
+#: ../../helpsupport.rst:678
+msgid "**Additional Information**"
+msgstr ""
+
+#: ../../helpsupport.rst:680
+msgid ""
+"Please do not think you are unable to file your bug ticket without "
+"additional information. Providing the listed information above is the most "
+"important information for contributors to know. Providing logs does not help"
+" as much as those five pieces of information. In some cases, providing logs "
+"without providing those five items may mean we are unable to resolve the "
+"issue you are having."
+msgstr ""
+
+#: ../../helpsupport.rst:687
+msgid "Additionally useful information may include:"
+msgstr ""
+
+#: ../../helpsupport.rst:689
+msgid ""
+"Screen captures of the error. `Lumina Screenshot <https://lumina-"
+"desktop.org/handbook/luminautl.html#screenshot>`_ may be useful."
+msgstr ""
+
+#: ../../helpsupport.rst:692
+msgid "Command Line Output Logs"
+msgstr ""
+
+#: ../../helpsupport.rst:693
+msgid "Truss Logs"
+msgstr ""
+
+#: ../../helpsupport.rst:694
+msgid "Debugger Backtrace Logs"
+msgstr ""
+
+#~ msgid ""
+#~ "One of the most effective ways to assist the |trueos| Project is by "
+#~ "reporting problems or bugs encountered while using |trueos|. Anyone can "
+#~ "report a |trueos| bug. However, a few guidelines should be followed to "
+#~ "ensure a speedy response:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The |trueos| code has been organized into repositories representing the "
+#~ "|lumina| desktop, the graphical utilities, |sysadm|, and various other "
+#~ "applications. When reporting a bug, select the \"trueos-core\" repository. "
+#~ "If the bug is specific to |lumina|, instead select the \"lumina\" "
+#~ "repository."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Write a brief but descriptive title which includes the error. Ideally, the "
+#~ "title is short (8 words or less) and contains key words about the error so "
+#~ "the bug report is easily found with the search tool."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the :guilabel:`Leave a Comment` field, write about the circumstance of "
+#~ "the error, including instructions how to recreate it. If an error message is"
+#~ " generated, paste the error in its entirety. Attaching a screenshot to the "
+#~ "report can greatly aid the developer in visualizing the problem. Remember to"
+#~ " include the output of :command:`uname -a`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the problem appears to be hardware related, attach a copy of "
+#~ ":file:`/var/run/dmesg.boot` as this file shows the hardware probed the last "
+#~ "time the |trueos| system booted."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
