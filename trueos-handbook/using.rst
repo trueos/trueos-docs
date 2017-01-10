@@ -87,6 +87,14 @@ new users of |trueos|.
 Java and Flash
 ==============
 
+.. warning:: This section is outdated as Flash support is in a state
+   of flux with the current development (Jan 2017). Refer to
+   `trueos-docs issue #28 <https://github.com/trueos/trueos-docs/issues/28>`_
+   or the
+   `flash discussion thread <https://discourse.trueos.org/t/flashpluginctl-on-looking-for-wrong-directory/501/16>`_
+   for updates and help installing flash on |trueos|, respectively. This
+   section will be updated once development on this issue stabilizes.
+
 **IcedTea-Web** provides an open source Java browser plugin which
 automatically works with the FireFox, Chromium, and Opera web browsers
 without any additional configuration. To install this software, search

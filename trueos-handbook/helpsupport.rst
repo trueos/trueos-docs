@@ -64,6 +64,13 @@ aspects of the |trueos| project.
   BSD bootloader for fresh installs while the FreeBSD contributors fix
   the issue.
 
+* **Flash Support:** Flash support is in a state of flux with the
+  current development (Jan 2017). Refer to
+  `trueos-docs issue #28 <https://github.com/trueos/trueos-docs/issues/28>`_
+  or the
+  `flash discussion thread <https://discourse.trueos.org/t/flashpluginctl-on-looking-for-wrong-directory/501/16>`_
+  for updates and help installing flash on |trueos|, respectively.
+
 .. index:: help, pico
 .. _Pico:
 
