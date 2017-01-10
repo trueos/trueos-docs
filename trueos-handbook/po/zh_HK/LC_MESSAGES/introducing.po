@@ -1,0 +1,1113 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-10 11:08-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../introducing.rst:17
+msgid "Introducing |trueos|"
+msgstr ""
+
+#: ../../introducing.rst:19
+msgid "Written by users of the |trueos| operating system."
+msgstr ""
+
+#: ../../introducing.rst:21
+msgid "Welcome to |trueos|!"
+msgstr ""
+
+#: ../../introducing.rst:23
+msgid ""
+"This Handbook covers the installation and use of |trueos|. This Handbook is "
+"a work in progress and relies on the contributions of many individuals. To "
+"assist with the Handbook, refer to the documentation `README "
+"<https://github.com/trueos/trueos-docs/blob/master/trueos-"
+"handbook/README.md>`_. If using IRC Freenode, join the #trueos channel and "
+"converse with many other |trueos| users. `Gitter "
+"<https://gitter.im/trueos>`_ is another popular option for users."
+msgstr ""
+
+#: ../../introducing.rst:31
+msgid ""
+"`TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in 2005"
+" when Kris Moore presented the first beta version of a FreeBSD operating "
+"system pre-configured for desktop use. Since then, |trueos| has matured into"
+" a polished, feature-rich, free-of-charge, open source operating system that"
+" meets the desktop or server needs of the beginner to the advanced user "
+"alike."
+msgstr ""
+
+#: ../../introducing.rst:38
+msgid ""
+"|trueos| is essentially a customized installation of FreeBSD, not a forked "
+"derivative. Since the underlying FreeBSD system has been kept intact, you "
+"have a fully functional FreeBSD system under the hood. |trueos| provides an "
+"easy-to-use installer which can be used to install a desktop or a server "
+"version of FreeBSD. Other differences from FreeBSD include:"
+msgstr ""
+
+#: ../../introducing.rst:45
+msgid ""
+"|trueos| pre-configures the BSD-licensed, |lumina| desktop environment "
+"during a desktop installation. Additional desktop environments can be "
+"installed and will appear in the login menu, allowing the user to select "
+"which environment to log into."
+msgstr ""
+
+#: ../../introducing.rst:50
+msgid ""
+"The |trueos| installer supports configuring ZFS and encryption during "
+"installation."
+msgstr ""
+
+#: ../../introducing.rst:53
+msgid ""
+"|trueos| provides both a graphical and command line software management "
+"system."
+msgstr ""
+
+#: ../../introducing.rst:56
+msgid ""
+"|trueos| provides many graphical utilities for configuring and managing the "
+"system. These utilities have both a command line equivalent and a REST and "
+"WebSocket API so that they can also be used to manage multiple systems."
+msgstr ""
+
+#: ../../introducing.rst:61
+msgid ""
+"|trueos| comes pre-configured with a number of automatic scripts to perform "
+"tasks such as connecting digital cameras or USB memory sticks."
+msgstr ""
+
+#: ../../introducing.rst:64
+msgid ""
+"The |trueos| boot menu supports boot environments, or snapshots of the "
+"operating system, and the |trueos| Update Manager automatically adds a new "
+"boot environment to the boot menu before updating the operating system or "
+"software. This means that if an update fails, the system can reboot into the"
+" previous version of the operating system, before the update occurred."
+msgstr ""
+
+#: ../../introducing.rst:71
+msgid ""
+"While it began as an independent project, since October 2006 |trueos| is "
+"financially backed and supported by the enterprise-class hardware solutions "
+"provider `iXsystems <https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../introducing.rst:79
+msgid "Typographic Conventions"
+msgstr ""
+
+#: ../../introducing.rst:81
+msgid ""
+"The |trueos| User Guide uses several typographic conventions, seen here in "
+":numref:`Table %s <typconv>`:"
+msgstr ""
+
+#: ../../introducing.rst:0
+msgid ": Text Formatting Examples"
+msgstr ""
+
+#: ../../introducing.rst:89
+msgid "Item"
+msgstr ""
+
+#: ../../introducing.rst:89
+msgid "Visual Example"
+msgstr ""
+
+#: ../../introducing.rst:91
+msgid "Graphical elements: buttons, icons, fields, columns and boxes"
+msgstr ""
+
+#: ../../introducing.rst:91
+msgid "Click the :guilabel:`Import CA` button."
+msgstr ""
+
+#: ../../introducing.rst:95
+msgid "Menu selections"
+msgstr ""
+
+#: ../../introducing.rst:95
+msgid "Click :menuselection:`System --> Information`."
+msgstr ""
+
+#: ../../introducing.rst:97
+msgid "CLI Command name"
+msgstr ""
+
+#: ../../introducing.rst:97
+msgid "Use :command:`scp`."
+msgstr ""
+
+#: ../../introducing.rst:99
+msgid "A command line example"
+msgstr ""
+
+#: ../../introducing.rst:99
+msgid ":samp:`[tmoore@example] ls /etc`"
+msgstr ""
+
+#: ../../introducing.rst:101
+msgid "Files, volume and dataset names, and directories"
+msgstr ""
+
+#: ../../introducing.rst:101
+msgid "Locate the :file:`/etc/rc.conf` file."
+msgstr ""
+
+#: ../../introducing.rst:105
+msgid "Keyboard keys"
+msgstr ""
+
+#: ../../introducing.rst:105
+msgid "Press the :kbd:`Enter` key."
+msgstr ""
+
+#: ../../introducing.rst:107
+msgid "Important points"
+msgstr ""
+
+#: ../../introducing.rst:107
+msgid "**This is important.**"
+msgstr ""
+
+#: ../../introducing.rst:109
+msgid "Values entered into fields, or device names"
+msgstr ""
+
+#: ../../introducing.rst:109
+msgid "Enter *127.0.0.1* in the address field."
+msgstr ""
+
+#: ../../introducing.rst:117
+msgid "Goals and Features"
+msgstr ""
+
+#: ../../introducing.rst:119
+msgid "|trueos| provides these features:"
+msgstr ""
+
+#: ../../introducing.rst:121
+msgid ""
+"**Easy installation:** To install either a graphical desktop or command-line"
+" server, simply insert the installation media, reboot the system to start "
+"the installer, and answer a few questions in the installation menus."
+msgstr ""
+
+#: ../../introducing.rst:126
+msgid ""
+"**Automatically configured hardware:** Video, sound, network, and other "
+"devices are configured automatically during installation."
+msgstr ""
+
+#: ../../introducing.rst:129
+msgid ""
+"**Intuitive desktop interface:** |trueos| installs the |lumina| desktop, but"
+" additional desktop environments can be installed to support day-to-day "
+"computing needs."
+msgstr ""
+
+#: ../../introducing.rst:133
+msgid ""
+"**Easy software management:** With `AppCafe "
+"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_, installing,"
+" upgrading, and uninstalling software is safe and easy."
+msgstr ""
+
+#: ../../introducing.rst:136
+msgid ""
+"**Lots of software available:** |appcafe| can be used to install software "
+"ported to FreeBSD (currently over 26,100 applications)."
+msgstr ""
+
+#: ../../introducing.rst:139
+msgid ""
+"**Easy to update:** |trueos| (with |sysadm|) provides a built-in `Update "
+"Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
+"manager>`_ which provides notifications of available updates. This utility "
+"makes it easy to apply operating system security fixes, bug fixes, and "
+"system enhancements, as well as upgrade to newer versions of the operating "
+"system or installed software."
+msgstr ""
+
+#: ../../introducing.rst:146
+msgid ""
+"**Virus-free:** |trueos| is unaffected by viruses, spyware, or other "
+"malware."
+msgstr ""
+
+#: ../../introducing.rst:149
+msgid ""
+"**No defragmentation:** |trueos| hard drives do not need to be defragmented "
+"and are formatted with OpenZFS, a self-healing filesystem."
+msgstr ""
+
+#: ../../introducing.rst:152
+msgid ""
+"**Laptop support:** Provides power saving, swap space encryption, and "
+"automatic switching between wired and wifi network connections."
+msgstr ""
+
+#: ../../introducing.rst:155
+msgid ""
+"**Secure environment:** |trueos| provides a pre-configured firewall and a "
+"built-in host-based Intrusion Detection System."
+msgstr ""
+
+#: ../../introducing.rst:158
+msgid ""
+"**Easy system administration:** |trueos| provides many graphical tools for "
+"performing system administration tasks."
+msgstr ""
+
+#: ../../introducing.rst:161
+msgid ""
+"**Localization:** |trueos| supports a variety of native languages and "
+"locales."
+msgstr ""
+
+#: ../../introducing.rst:164
+msgid "**Vibrant community:** |trueos| has a friendly and helpful community."
+msgstr ""
+
+#: ../../introducing.rst:170
+msgid "Legal"
+msgstr ""
+
+#: ../../introducing.rst:172
+msgid ""
+"This section covers the required legal elements to the handbook, including "
+"the Copyright notice, Trademarks used in the document, and the |trueos| "
+"ethical advertising policy."
+msgstr ""
+
+#: ../../introducing.rst:180
+msgid "Copyright & Trademarks"
+msgstr ""
+
+#: ../../introducing.rst:182
+msgid "Copyright © 2005-2016 iXsystems"
+msgstr ""
+
+#: ../../introducing.rst:184
+msgid ""
+"The |trueos| User Guide is freely available for sharing and redistribution "
+"under the terms of the `Creative Commons Attribution License "
+"<https://creativecommons.org/licenses/by/3.0/>`_. This means you have "
+"permission to copy, distribute, translate, and adapt the work, as long as "
+"you attribute the |trueos| Project as the original source of the Handbook."
+msgstr ""
+
+#: ../../introducing.rst:191
+msgid ""
+"|trueos| and the |trueos| logo are registered trademarks of `iXsystems "
+"<https://www.ixsystems.com/>`_. To use the |trueos| logo in your own works, "
+"please ask for permission first from marketing@ixsystems.com."
+msgstr ""
+
+#: ../../introducing.rst:196
+msgid ""
+"|lumina| and the |lumina| logo are registered trademarks of `iXsystems "
+"<https://www.ixsystems.com/>`_. To use the |lumina| logo in your own works, "
+"please ask for permission first from marketing@ixsystems.com."
+msgstr ""
+
+#: ../../introducing.rst:201
+msgid "|sysadm| is a trademark of `iXsystems <https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../introducing.rst:203
+msgid ""
+"|trpi|, |pise|, and |picl| are trademarks of `iXsystems "
+"<https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../introducing.rst:206
+msgid "AMD is a trademark of Advanced Micro Devices, Inc."
+msgstr ""
+
+#: ../../introducing.rst:208
+msgid "Apache is a trademark of The Apache Software Foundation."
+msgstr ""
+
+#: ../../introducing.rst:210
+msgid ""
+"|appcafe| is a registered trademark of `iXsystems "
+"<https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../introducing.rst:213
+msgid "Asus® and Eee PC® are registered trademarks of ASUSTeK® Computer Inc."
+msgstr ""
+
+#: ../../introducing.rst:215
+msgid "Facebook® is a registered trademark of Facebook Inc."
+msgstr ""
+
+#: ../../introducing.rst:217
+msgid ""
+"Flash® is a registered trademark of Adobe Systems Incorporated in the United"
+" States and/or other countries."
+msgstr ""
+
+#: ../../introducing.rst:220
+msgid ""
+"FreeBSD® is a registered trademark of the `FreeBSD Foundation "
+"<https://www.freebsdfoundation.org/>`_."
+msgstr ""
+
+#: ../../introducing.rst:223
+msgid ""
+"|freenas| is a registered trademark of `iXsystems "
+"<https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../introducing.rst:226
+msgid ""
+"Intel, the Intel logo, Pentium Inside, and Pentium are trademarks of Intel "
+"Corporation in the U.S. and/or other countries."
+msgstr ""
+
+#: ../../introducing.rst:229
+msgid ""
+"Java™ is a trademark of Oracle America and/or its affiliates in the United "
+"States and other countries."
+msgstr ""
+
+#: ../../introducing.rst:232
+msgid "LinkedIn® is a registered trademark of LinkedIn Corporation."
+msgstr ""
+
+#: ../../introducing.rst:234
+msgid "Linux® is a registered trademark of Linus Torvalds."
+msgstr ""
+
+#: ../../introducing.rst:236
+msgid ""
+"Mac and Mac OS are trademarks of Apple Inc., registered in the U.S. and "
+"other countries."
+msgstr ""
+
+#: ../../introducing.rst:239
+msgid ""
+"NVIDIA® is a trademark and/or registered trademark of NVIDIA Corporation in "
+"the U.S. and other countries."
+msgstr ""
+
+#: ../../introducing.rst:242
+msgid "ThinkPad® is a registered trademark of Lenovo."
+msgstr ""
+
+#: ../../introducing.rst:244
+msgid ""
+"Twitter is a trademark of Twitter, Inc. in the United States and other "
+"countries."
+msgstr ""
+
+#: ../../introducing.rst:247
+msgid "UNIX® is a registered trademark of The Open Group."
+msgstr ""
+
+#: ../../introducing.rst:249
+msgid "VirtualBox® is a registered trademark of Oracle."
+msgstr ""
+
+#: ../../introducing.rst:251
+msgid "VMWare® is a registered trademark of VMWare, Inc."
+msgstr ""
+
+#: ../../introducing.rst:253
+msgid ""
+"Windows® is a registered trademark of Microsoft Corporation in the United "
+"States and other countries."
+msgstr ""
+
+#: ../../introducing.rst:260
+msgid "Ethical Advertising Policy"
+msgstr ""
+
+#: ../../introducing.rst:262
+msgid ""
+"For many years, users have wanted to give back to the |trueos| project. "
+"Generally, we encouraged users to donate or actively contribute to the "
+"FreeBSD project to ensure FreeBSD continues to be successful in the future. "
+"Because |trueos| is open source software, we have included a minimal number "
+"of ads as a simple method for users to give back to the project, if they "
+"wish."
+msgstr ""
+
+#: ../../introducing.rst:269
+msgid ""
+"The primary consideration for these ads is to avoid detracting from the user"
+" experience as much as possible. To this end, any ads in the Handbook will "
+"be limited to the navigation sidebar, and only in a predefined space "
+"underneath all other navigation options. We are resolved to protect user "
+"privacy and security, and do not collect user information, with the "
+"exception of click throughs. Furthermore, we do not collect any data for "
+"targeted ads, and are committed to only show high quality ads pertaining to "
+"our user base."
+msgstr ""
+
+#: ../../introducing.rst:278
+msgid "**Cookie Policy**"
+msgstr ""
+
+#: ../../introducing.rst:280
+msgid ""
+"Clicking on a Newegg ad directs users through an affiliate link that gives "
+"the |trueos| project a modest commission based on any items purchased within"
+" 24 hours. This is a simple time tracking cookie used to ensure the |trueos|"
+" project is afforded its commission. To ask questions about our Ethical "
+"Advertising policy, please contact joshms@trueos.org for more information."
+msgstr ""
+
+#: ../../introducing.rst:291
+msgid "Comparing |trueos|"
+msgstr ""
+
+#: ../../introducing.rst:293
+msgid ""
+"As |trueos| grows and evolves, many users appreciate comparisons with other "
+"operating systems. These comparisons are intended to help new users decide "
+"to install and try |trueos|, with accuracy being the chief concern."
+msgstr ""
+
+#: ../../introducing.rst:302
+msgid "PC-BSD"
+msgstr ""
+
+#: ../../introducing.rst:304
+msgid ""
+"The following features or enhancements were introduced for |trueos| and now "
+"separate |trueos| from |pcbsd|:"
+msgstr ""
+
+#: ../../introducing.rst:307
+msgid ""
+"A |pcbsd| user with the current version of |lumina| installed may have some "
+"of these elements available."
+msgstr ""
+
+#: ../../introducing.rst:310
+msgid "Based on FreeBSD-CURRENT."
+msgstr ""
+
+#: ../../introducing.rst:312
+msgid ""
+"The GRUB bootloader has been replaced by the FreeBSD bootloader which now "
+"provides both GELI and boot environment support. The :guilabel:`Use GRUB "
+"bootloader` checkbox has been added to the :guilabel:`Customize Disk "
+"Selection` screens for users of dual-boot systems who prefer to use the GRUB"
+" boot loader."
+msgstr ""
+
+#: ../../introducing.rst:318
+msgid ""
+"**Quick boot times with OpenRC:** |trueos| is using `OpenRC "
+"<https://github.com/OpenRC/openrc>`_ as part of the init process to start "
+"services in parallel. This results in dramatically improved system boot "
+"times for |trueos|. OpenRC is also used to improve general service "
+"management, in addition to adding the functionality to automatically run "
+"when new elements are introduced to the system, such as plugging in an "
+"ethernet cable."
+msgstr ""
+
+#: ../../introducing.rst:326
+msgid ""
+"A |trueos| installation installs the |lumina| Desktop. Additional window "
+"managers can be installed using |appcafe|."
+msgstr ""
+
+#: ../../introducing.rst:329
+msgid ""
+"The `SysAdm™ Client <https://sysadm.us/handbook/client/>`_ and `Server "
+"<https://sysadm.us/handbook/server/>`_ has replaced Control Panel. Most of "
+"the utilities from the Control Panel have been rewritten to use the |sysadm|"
+" middleware. Under the hood, |sysadm| provides REST and WebSocket APIs for "
+"securely managing local and remote FreeBSD and |trueos| systems."
+msgstr ""
+
+#: ../../introducing.rst:336
+msgid ""
+"Many utilities have been converted to the |sysadm| API and are available "
+"through `SysAdm <https://sysadm.us/handbook/client/>`_:"
+msgstr ""
+
+#: ../../introducing.rst:339
+msgid "AppCafe"
+msgstr ""
+
+#: ../../introducing.rst:340
+msgid "Update Manager"
+msgstr ""
+
+#: ../../introducing.rst:341
+msgid "Boot Environment Manager"
+msgstr ""
+
+#: ../../introducing.rst:342
+msgid "Life Preserver"
+msgstr ""
+
+#: ../../introducing.rst:343
+msgid "Firewall Manager"
+msgstr ""
+
+#: ../../introducing.rst:344
+msgid "User Manager"
+msgstr ""
+
+#: ../../introducing.rst:345
+msgid "Network Manager"
+msgstr ""
+
+#: ../../introducing.rst:346
+msgid "Mount Tray"
+msgstr ""
+
+#: ../../introducing.rst:348
+msgid ""
+"The functionality provided by the *About* utility has been incorporated into"
+" `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html"
+"#lumina-information>`_."
+msgstr ""
+
+#: ../../introducing.rst:352
+msgid ""
+"The functionality provided by `Service Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
+"(:command:`pc-servicemanager`) has been integrated into |sysadm|."
+msgstr ""
+
+#: ../../introducing.rst:356
+msgid ""
+"The Active Directory & LDAP utility (:command:`pc-adsldap`) has been "
+"deprecated."
+msgstr ""
+
+#: ../../introducing.rst:359
+msgid ""
+"Login Manager (:command:`pc-dmconf`) has been replaced by :command:`pcdm-"
+"config`)."
+msgstr ""
+
+#: ../../introducing.rst:362
+msgid "System Manager (:command:`pc-sysmanager`) has been deprecated."
+msgstr ""
+
+#: ../../introducing.rst:364
+msgid ""
+":command:`freebsd-update` has been retired in favor of using :command:`pkg` "
+"for system updates."
+msgstr ""
+
+#: ../../introducing.rst:367
+msgid ""
+"The binary for :ref:`Disk Manager` (:command:`pc-zmanager`) has been renamed"
+" to :command:`pc-diskmanager` and the graphical version has been moved to "
+"the :guilabel:`Browse Applications` menu."
+msgstr ""
+
+#: ../../introducing.rst:371
+msgid ""
+"The option to use the SCFB display driver has been added to the installer. "
+"This driver is suitable for newer UEFI laptops as it automatically detects "
+"native resolution and is a good solution for newer Intel drivers that have "
+"not been ported yet to FreeBSD. Before selecting this driver, check the BIOS"
+" and ensure the CSM module is disabled. This driver does not support a dual-"
+"head configuration, such as an external port for presentations, or suspend "
+"and resume."
+msgstr ""
+
+#: ../../introducing.rst:379
+msgid ""
+":guilabel:`Customize` has been removed from the :ref:`System Selection "
+"Screen` in order to reduce the size of the installation media. Additional "
+"software can be installed post-installation using |appcafe|."
+msgstr ""
+
+#: ../../introducing.rst:384
+msgid ""
+"The :guilabel:`Boot to console (Disable X)` option has been added to the "
+"graphical boot menu."
+msgstr ""
+
+#: ../../introducing.rst:387
+msgid ""
+"These new utilites are available in the *SysAdm Client* `Managing Remote "
+"Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-"
+"remote-connections>`_ and `Task Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_."
+msgstr ""
+
+#: ../../introducing.rst:392
+msgid ""
+"The graphical and command line versions of PBI Manager and Warden have been "
+"removed."
+msgstr ""
+
+#: ../../introducing.rst:395
+msgid ":command:`pc-thinclient` has been removed as it is deprecated."
+msgstr ""
+
+#: ../../introducing.rst:401
+msgid "Linux and |trueos|"
+msgstr ""
+
+#: ../../introducing.rst:403
+msgid ""
+"|trueos| is based on FreeBSD, meaning it is not a Linux distribution. If you"
+" have used Linux before, you will find some features you are used to have "
+"different names on a BSD system and some commands are different. This "
+"section covers some of these differences."
+msgstr ""
+
+#: ../../introducing.rst:408
+msgid ""
+"BSD and Linux use different filesystems during installation. Many Linux "
+"distros use EXT2, EXT3, EXT4, or ReiserFS, while |trueos| uses OpenZFS. This"
+" means if you wish to dual-boot with Linux or access data on an external "
+"drive formatted with another filesystem, you will want to research if the "
+"data will be accessible to both operating systems."
+msgstr ""
+
+#: ../../introducing.rst:414
+msgid ""
+":numref:`Table %s <filesys support>` summarizes the various filesystems "
+"commonly used by desktop systems. |trueos| will automatically mount several "
+"filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling), *EXT4* "
+"(read-only), *NTFS5*, *NTFS6*, and *XFS*. See the section on :ref:`Files and"
+" File Sharing` for a comparison of some graphical file manager utilities."
+msgstr ""
+
+#: ../../introducing.rst:0
+msgid ": Filesystem Support on |trueos|"
+msgstr ""
+
+#: ../../introducing.rst:426
+msgid "Filesystem"
+msgstr ""
+
+#: ../../introducing.rst:426
+msgid "Native to"
+msgstr ""
+
+#: ../../introducing.rst:426
+msgid "Non-native support type"
+msgstr ""
+
+#: ../../introducing.rst:426
+msgid "Usage notes"
+msgstr ""
+
+#: ../../introducing.rst:428
+msgid "Btrfs"
+msgstr ""
+
+#: ../../introducing.rst:428 ../../introducing.rst:432
+#: ../../introducing.rst:435 ../../introducing.rst:441
+#: ../../introducing.rst:455 ../../introducing.rst:463
+#: ../../introducing.rst:498
+msgid "Linux"
+msgstr ""
+
+#: ../../introducing.rst:428 ../../introducing.rst:430
+#: ../../introducing.rst:452 ../../introducing.rst:455
+msgid "none"
+msgstr ""
+
+#: ../../introducing.rst:430
+msgid "exFAT"
+msgstr ""
+
+#: ../../introducing.rst:430 ../../introducing.rst:446
+#: ../../introducing.rst:449 ../../introducing.rst:457
+#: ../../introducing.rst:460
+msgid "Windows"
+msgstr ""
+
+#: ../../introducing.rst:430
+msgid "requires a license from Microsoft"
+msgstr ""
+
+#: ../../introducing.rst:432
+msgid "EXT2"
+msgstr ""
+
+#: ../../introducing.rst:432 ../../introducing.rst:435
+#: ../../introducing.rst:446 ../../introducing.rst:449
+#: ../../introducing.rst:460
+msgid "r/w support loaded by default"
+msgstr ""
+
+#: ../../introducing.rst:435
+msgid "EXT3"
+msgstr ""
+
+#: ../../introducing.rst:435
+msgid ""
+"since EXT3 journaling is not supported, you will not be able to mount a "
+"filesystem requiring a journal replay unless you :command:`fsck` it using an"
+" external utility such as `e2fsprogs <http://e2fsprogs.sourceforge.net>`_"
+msgstr ""
+
+#: ../../introducing.rst:441
+msgid "EXT4"
+msgstr ""
+
+#: ../../introducing.rst:441
+msgid "r/o support loaded by default"
+msgstr ""
+
+#: ../../introducing.rst:441
+msgid ""
+"EXT3 journaling, extended attributes, and inodes greater than 128 bytes are "
+"not supported; EXT3 filesystems converted to EXT4 may have better "
+"performance"
+msgstr ""
+
+#: ../../introducing.rst:446
+msgid "FAT16"
+msgstr ""
+
+#: ../../introducing.rst:449
+msgid "FAT32"
+msgstr ""
+
+#: ../../introducing.rst:452
+msgid "HFS+"
+msgstr ""
+
+#: ../../introducing.rst:452
+msgid "Mac OS X"
+msgstr ""
+
+#: ../../introducing.rst:452
+msgid ""
+"older Mac versions might work with `hfsexplorer "
+"<http://www.catacombae.org/hfsexplorer>`_"
+msgstr ""
+
+#: ../../introducing.rst:455
+msgid "JFS"
+msgstr ""
+
+#: ../../introducing.rst:457
+msgid "NTFS5"
+msgstr ""
+
+#: ../../introducing.rst:457
+msgid "full r/w support loaded by default"
+msgstr ""
+
+#: ../../introducing.rst:460
+msgid "NTFS6"
+msgstr ""
+
+#: ../../introducing.rst:463
+msgid "ReiserFS"
+msgstr ""
+
+#: ../../introducing.rst:463
+msgid "r/o support is loaded by default"
+msgstr ""
+
+#: ../../introducing.rst:466
+msgid "UFS2"
+msgstr ""
+
+#: ../../introducing.rst:466
+msgid "FreeBSD"
+msgstr ""
+
+#: ../../introducing.rst:466
+msgid ""
+"check if a Linux distro provides ufsutils; r/w support on Mac; UFS Explorer "
+"can be used on Windows"
+msgstr ""
+
+#: ../../introducing.rst:466
+msgid "changed to r/o support in Mac Lion"
+msgstr ""
+
+#: ../../introducing.rst:472
+msgid "ZFS"
+msgstr ""
+
+#: ../../introducing.rst:472
+msgid "|trueos|, FreeBSD"
+msgstr ""
+
+#: ../../introducing.rst:476
+msgid ""
+"Linux and BSD use different naming conventions for devices. For example:"
+msgstr ""
+
+#: ../../introducing.rst:478
+msgid ""
+"In Linux, Ethernet interfaces begin with :file:`eth`. With BSD, interface "
+"names indicate the name of the driver. For example, an Ethernet interface "
+"may be listed as :file:`re0`, indicating it uses the Realtek :file:`re` "
+"driver. The advantage of this convention is you can read the **man 4** page "
+"for the driver (e.g. type :command:`man 4 re`) to see which models and "
+"features are provided by the driver."
+msgstr ""
+
+#: ../../introducing.rst:486
+msgid ""
+"BSD disk names differ from Linux. IDE drives begin with :file:`ad` and SCSI "
+"and USB drives begin with :file:`da`."
+msgstr ""
+
+#: ../../introducing.rst:489
+msgid ""
+"Some of the features used by BSD have similar counterparts to Linux, but the"
+" name of the feature is different. :numref:`Table %s <feature names>` "
+"provides some common examples:"
+msgstr ""
+
+#: ../../introducing.rst:0
+msgid ": BSD and Linux Feature Names"
+msgstr ""
+
+#: ../../introducing.rst:498
+msgid "TrueOS"
+msgstr ""
+
+#: ../../introducing.rst:498
+msgid "Description"
+msgstr ""
+
+#: ../../introducing.rst:500
+msgid "IPFW"
+msgstr ""
+
+#: ../../introducing.rst:500
+msgid "iptables"
+msgstr ""
+
+#: ../../introducing.rst:500
+msgid "Default firewall"
+msgstr ""
+
+#: ../../introducing.rst:502
+msgid ""
+":file:`/etc/rc.d/` for operating system and :file:`/usr/local/etc/rc.d/` for"
+" applications"
+msgstr ""
+
+#: ../../introducing.rst:502
+msgid ":file:`rc0.d/`, :file:`rc1.d/`, etc."
+msgstr ""
+
+#: ../../introducing.rst:502
+msgid ""
+"In |trueos|, the directories containing the startup scripts do not link to "
+"runlevels as there are no runlevels. System startup scripts are separated "
+"from third-party application scripts."
+msgstr ""
+
+#: ../../introducing.rst:510
+msgid ":file:`/etc/ttys` and :file:`/etc/rc.conf`"
+msgstr ""
+
+#: ../../introducing.rst:510
+msgid ":command:`telinit`, :file:`init.d/`"
+msgstr ""
+
+#: ../../introducing.rst:510
+msgid ""
+"Terminals configured in *ttys* and *rc.conf* indicate which services start "
+"at boot time."
+msgstr ""
+
+#: ../../introducing.rst:515
+msgid ""
+"Users comfortable with the command line may find some of the common Linux "
+"commands have different names on BSD. :numref:`Table %s <common commands>` "
+"lists some common commands and what they are used for."
+msgstr ""
+
+#: ../../introducing.rst:0
+msgid ": Common BSD and Linux Commands"
+msgstr ""
+
+#: ../../introducing.rst:525
+msgid "Command"
+msgstr ""
+
+#: ../../introducing.rst:525
+msgid "Used"
+msgstr ""
+
+#: ../../introducing.rst:527
+msgid ":command:`dmesg`"
+msgstr ""
+
+#: ../../introducing.rst:527
+msgid "discover what hardware was detected by the kernel"
+msgstr ""
+
+#: ../../introducing.rst:530
+msgid ":command:`sysctl dev`"
+msgstr ""
+
+#: ../../introducing.rst:530
+msgid "display configured devices"
+msgstr ""
+
+#: ../../introducing.rst:532
+msgid ":command:`pciconf -l -cv`"
+msgstr ""
+
+#: ../../introducing.rst:532
+msgid "show PCI devices"
+msgstr ""
+
+#: ../../introducing.rst:534
+msgid ":command:`dmesg | grep usb`"
+msgstr ""
+
+#: ../../introducing.rst:534
+msgid "show USB devices"
+msgstr ""
+
+#: ../../introducing.rst:536
+msgid ":command:`kldstat`"
+msgstr ""
+
+#: ../../introducing.rst:536
+msgid "list all modules loaded in the kernel"
+msgstr ""
+
+#: ../../introducing.rst:539
+msgid ":command:`kldload <module>`"
+msgstr ""
+
+#: ../../introducing.rst:539
+msgid "load a kernel module for the current session"
+msgstr ""
+
+#: ../../introducing.rst:542
+msgid ":command:`pkg install <pkgname>`"
+msgstr ""
+
+#: ../../introducing.rst:542
+msgid "install software from the command line"
+msgstr ""
+
+#: ../../introducing.rst:545
+msgid ":command:`sysctl hw.realmem`"
+msgstr ""
+
+#: ../../introducing.rst:545
+msgid "display hardware memory"
+msgstr ""
+
+#: ../../introducing.rst:547
+msgid ":command:`sysctl hw.model`"
+msgstr ""
+
+#: ../../introducing.rst:547
+msgid "display CPU model"
+msgstr ""
+
+#: ../../introducing.rst:549
+msgid ":command:`sysctl hw.machine_arch`"
+msgstr ""
+
+#: ../../introducing.rst:549
+msgid "display CPU Architecture"
+msgstr ""
+
+#: ../../introducing.rst:551
+msgid ":command:`sysctl hw.ncpu`"
+msgstr ""
+
+#: ../../introducing.rst:551
+msgid "display number of CPUs"
+msgstr ""
+
+#: ../../introducing.rst:553
+msgid ":command:`uname -vm`"
+msgstr ""
+
+#: ../../introducing.rst:553
+msgid "get release version information"
+msgstr ""
+
+#: ../../introducing.rst:556
+msgid ":command:`gpart show`"
+msgstr ""
+
+#: ../../introducing.rst:556
+msgid "show device partition information"
+msgstr ""
+
+#: ../../introducing.rst:559
+msgid ":command:`fuser`"
+msgstr ""
+
+#: ../../introducing.rst:559
+msgid "list IDs of all processes with one or more files open"
+msgstr ""
+
+#: ../../introducing.rst:563
+msgid ""
+"There are many articles and videos which provide additional information "
+"about some of the differences between BSD and Linux:"
+msgstr ""
+
+#: ../../introducing.rst:566
+msgid ""
+"`Comparing BSD and Linux <http://www.freebsd.org/doc/en/articles/explaining-"
+"bsd/comparing-bsd-and-linux.html>`_"
+msgstr ""
+
+#: ../../introducing.rst:568
+msgid ""
+"`FreeBSD Quickstart Guide for Linux® Users "
+"<http://www.freebsd.org/doc/en/articles/linux-users/index.html>`_"
+msgstr ""
+
+#: ../../introducing.rst:570
+msgid ""
+"`BSD vs Linux <http://www.over-yonder.net/~fullermd/rants/bsd4linux/01>`_"
+msgstr ""
+
+#: ../../introducing.rst:572
+msgid ""
+"`Why Choose FreeBSD? <http://www.freebsd.org/advocacy/whyusefreebsd.html>`_"
+msgstr ""
+
+#: ../../introducing.rst:574
+msgid ""
+"`Interview: BSD for Human Beings <http://www.unixmen.com/bsd-for-human-"
+"beings-interview/>`_"
+msgstr ""
+
+#: ../../introducing.rst:576
+msgid ""
+"`Video: BSD 4 Linux Users <https://www.youtube.com/watch?v=xk6ouxX51NI>`_"
+msgstr ""
+
+#: ../../introducing.rst:578
+msgid ""
+"`Why you should use a BSD style license for your Open Source Project "
+"<http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_"
+msgstr ""
+
+#: ../../introducing.rst:580
+msgid ""
+"`A Sysadmin's Unixersal Translator (ROSETTA STONE) "
+"<http://bhami.com/rosetta.html>`_"
+msgstr ""
