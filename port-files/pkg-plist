@@ -117,7 +117,6 @@ share/trueos/handbook/_images/wine1.png
 share/trueos/handbook/_images/wine2.png
 share/trueos/handbook/_images/wine3.png
 share/trueos/handbook/_images/writer1.png
-share/trueos/handbook/_sources/advanced.txt
 share/trueos/handbook/_sources/helpsupport.txt
 share/trueos/handbook/_sources/introducing.txt
 share/trueos/handbook/_sources/install.txt
@@ -170,7 +169,6 @@ share/trueos/handbook/_static/newegg.jpg
 share/trueos/handbook/_static/transparentfireball.png
 share/trueos/handbook/_static/freenas2.png
 share/trueos/handbook/_static/information-icon.png
-share/trueos/handbook/advanced.html
 share/trueos/handbook/genindex.html
 share/trueos/handbook/helpsupport.html
 share/trueos/handbook/install.html
@@ -183,6 +181,4 @@ share/trueos/handbook/search.html
 share/trueos/handbook/searchindex.js
 share/trueos/handbook/trueos.html
 share/trueos/handbook/using.html
-share/trueos/handbook/_sources/openrc.txt
-share/trueos/handbook/openrc.html
 share/trueos/handbook/searchresults.html

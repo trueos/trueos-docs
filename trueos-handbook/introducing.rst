@@ -390,7 +390,7 @@ now separate |trueos| from |pcbsd|:
   as an external port for presentations, or suspend and resume.
 
 * :guilabel:`Customize` has been removed from the
-  :ref:`System Selection Screen` in order to reduce the size of the
+  :ref:`System Selection` screen in order to reduce the size of the
   installation media. Additional software can be installed
   post-installation using |appcafe|.
 

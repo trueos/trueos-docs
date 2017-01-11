@@ -11,8 +11,6 @@ Contents:
    preinstall
    install
    postinstall
-   advanced
-   openrc
    using
    pico
    helpsupport

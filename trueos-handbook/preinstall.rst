@@ -21,7 +21,7 @@ is ready to install |trueos|.
 
 To determine if the chosen hardware is detected by |trueos|, start an
 installation and click :guilabel:`Hardware Compatibility` in the
-:ref:`Language Selection Screen`.
+:ref:`Language Selection` screen.
 
 If any problems arise with the installation, refer to the
 Troubleshooting :ref:`Installation` section of this handbook.
@@ -211,7 +211,7 @@ typically deal with:
 
 To test the laptop's hardware, use the
 :guilabel:`Hardware Compatibility` icon in the
-:ref:`Language Selection Screen` before continuing with the
+:ref:`Language Selection` screen before continuing with the
 installation.
 
 To install |trueos| onto an Asus Eee PC, review the
@@ -229,7 +229,7 @@ install. If it does, go into the BIOS and set the video mode to
 Thinkpads have a BIOS bug preventing them from booting from
 GPT-labeled disks. If unable to boot into a new installation, restart
 the installer and go into :guilabel:`Advanced Mode` in the
-:ref:`Disk Selection Screen`. Make sure
+:ref:`Disk Selection` screen. Make sure
 :guilabel:`GPT (Best for new hardware)` is unchecked. If it was
 checked previously, redo the installation with the box unchecked.
 
@@ -303,7 +303,7 @@ space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
 
 .. warning:: It is important to **not** choose to install |trueos| into
    any of the three Windows partitions at the
-   :ref:`Disk Selection Screen` of the installer. It is a good idea to
+   :ref:`Disk Selection` screen of the installer. It is a good idea to
    write down the sizes of all of the partitions so the free space is
    recognizable when the |trueos| installer displays the current
    partitions.
@@ -788,4 +788,4 @@ boot into the installation program. If it does not or if using an ISO
 stored on the hard disk, press :kbd:`F12` to select the boot device
 when the message to do so appears, then press :kbd:`c` to boot from
 CD-ROM. Proceed through the installation as described in
-:ref:`Installing TrueOS®`.
+:ref:`Installing TrueOS`.
