@@ -600,13 +600,6 @@ msgid ""
 "and resume."
 msgstr ""
 
-#: ../../introducing.rst:404
-msgid ""
-":guilabel:`Customize` has been removed from the :ref:`System Selection "
-"Screen` in order to reduce the size of the installation media. Additional "
-"software can be installed post-installation using |appcafe|."
-msgstr ""
-
 #: ../../introducing.rst:409
 msgid ""
 "The :guilabel:`Boot to console (Disable X)` option has been added to the "
@@ -1180,6 +1173,19 @@ msgid ""
 "implementation of OpenRC. For a complete list of all available services "
 "through OpenRC, see :ref:`rcuprnlvl`."
 msgstr ""
+
+#: ../../introducing.rst:404
+msgid ""
+":guilabel:`Customize` has been removed from the :ref:`System Selection` "
+"screen in order to reduce the size of the installation media. Additional "
+"software can be installed post-installation using |appcafe|."
+msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`Customize` has been removed from the :ref:`System Selection "
+#~ "Screen` in order to reduce the size of the installation media. Additional "
+#~ "software can be installed post-installation using |appcafe|."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "As |trueos| grows and evolves, many users appreciate comparisons with other "

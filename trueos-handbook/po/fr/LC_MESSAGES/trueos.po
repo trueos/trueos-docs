@@ -15,11 +15,11 @@ msgstr ""
 msgid "Contents:"
 msgstr ""
 
-#: ../../trueos.rst:35
+#: ../../trueos.rst:33
 msgid "Index"
 msgstr ""
 
-#: ../../trueos.rst:37
+#: ../../trueos.rst:35
 msgid ":ref:`genindex`"
 msgstr ""
 
