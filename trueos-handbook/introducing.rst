@@ -4,7 +4,8 @@
 Introducing |trueos|
 ********************
 
-Written by users of the |trueos| operating system.
+Written by users of the |trueos| operating system. Maintained and edited
+by Dru Lavigne and Tim Moore.
 
 Welcome to |trueos|!
 
