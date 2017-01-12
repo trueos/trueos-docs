@@ -76,10 +76,13 @@ managing any FreeBSD, |trueos| desktop, or |trueos| server system over
 a secure connection from any operating system with the |sysadm|
 application installed. |sysadm| is built into |trueos|, but downloadable
 packages for other operating systems are available from the
-`SysAdm Website <https://sysadm.us/>`_. SysAdm documentation is split
-into three primary documents, with the
-`Client Handbook <https://sysadm.us/handbook/client/>`_ recommended for
-new users of |trueos|.
+`SysAdm Website <https://sysadm.us/>`_.
+
+The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_ 
+is recommended for new |trueos| users, while the
+`Server <https://sysadm.us/handbook/server/>`_ and
+`API Reference <https://api.sysadm.us/>`_ guides are available for
+advanced users.
 
 .. index:: configuration
 .. _Java and Flash:
