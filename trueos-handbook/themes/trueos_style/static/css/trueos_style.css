@@ -4118,6 +4118,15 @@ input.gsc-search-button {
 	box-shadow: none !important;
 }
 
+.gsib_a {
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+}
+
+.gsib_a, .gsib_b {
+	padding-right: 2px !important;
+}
+
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
  |   ^^  Google Search Appearance CSS ^^
  *"""""""""""""""""""""""""""""""""""""""""""""""*/
