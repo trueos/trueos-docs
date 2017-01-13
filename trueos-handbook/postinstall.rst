@@ -20,7 +20,13 @@ system. This is a major point of difference between |trueos| and
 FreeBSD, and this section is intended to provide detailed information
 about the |trueos| implementation for more advanced users.
 
-.. table:: : Brief comparison between |trueos| and traditional FreeBSD RC files
+:numref:`Table %s <trfbsdrc>` offers a quick look at the differences
+between the |trueos| and FreeBSD RC files:
+
+.. _trfbsdrc:
+
+.. table:: : Brief comparison between |trueos| and traditional FreeBSD
+           RC files
 
    +--------------------------------+-----------------------------------+-----------------------------------------------+
    | Component or action            | FreeBSD                           | |trueos|                                      |
