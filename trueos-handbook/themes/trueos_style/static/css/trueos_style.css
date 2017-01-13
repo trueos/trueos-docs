@@ -4118,6 +4118,10 @@ input.gsc-search-button {
 	box-shadow: none !important;
 }
 
+.gsib_a {
+	padding-left: 0px;
+}
+
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
  |   ^^  Google Search Appearance CSS ^^
  *"""""""""""""""""""""""""""""""""""""""""""""""*/
