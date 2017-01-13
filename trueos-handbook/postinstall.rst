@@ -20,15 +20,33 @@ system. This is a major point of difference between |trueos| and
 FreeBSD, and this section is intended to provide detailed information
 about the |trueos| implementation for more advanced users.
 
-Location of RC scripts for starting and stopping services:
+.. table:: : Brief comparison between |trueos| and traditional FreeBSD RC files
 
-* |trueos| base system new rc script location is :file:`/etc/init.d/`.
-
-* FreeBSD base system legacy rc script location is :file:`/etc/rc.d/`.
-
-* |trueos| ports rc script location is :file:`/usr/local/etc/init.d/`.
-
-* FreeBSD ports rc script location is :file:`/usr/local/etc/rc.d/`.
+   +--------------------------------+-----------------------------------+-----------------------------------------------+
+   | Component or action            | FreeBSD                           | |trueos|                                      |
+   +================================+===================================+===============================================+
+   | Base system rc script location | :file:`/etc/rc.d`                 | :file:`/etc/init.d`                           |
+   +--------------------------------+-----------------------------------+-----------------------------------------------+
+   | Ports rc script location       | :file:`/usr/local/etc/rc.d`       | :file:`/usr/local/etc/init.d`                 |
+   +--------------------------------+-----------------------------------+-----------------------------------------------+
+   | Service configuration          | :file:`/etc/rc.conf` or           | :file:`/etc/conf.d/servicename`               |
+   |                                | :file:`/etc/rc.conf.local`        |                                               |
+   |                                |                                   |                                               |
+   |                                | *(all services are configured*    | *(each service has*                           |
+   |                                | *in a central location)*          | *its own configuration file)*                 |
+   +--------------------------------+-----------------------------------+-----------------------------------------------+
+   | Starting e.g. *nginx* service  | :command:`# service nginx start`  | :command:`# service nginx start`              |
+   +--------------------------------+-----------------------------------+-----------------------------------------------+
+   | Configuring e.g. *nginx* to    | Edit :file:`/etc/rc.conf` and add | :command:`# rc-update add nginx default`      |
+   | run in the default runlevel    |     :command:`nginx_enable="YES"` |                                               |
+   +--------------------------------+-----------------------------------+-----------------------------------------------+
+   | Check to see if a service      | :samp:`# service nginx rcvar`     | :samp:`# rc-update show default | grep nginx` |
+   | is enabled                     |                                   |                                               |
+   |                                | *If the service is enabled,*      | *If the service is enabled,*                  |
+   |                                | *the result is:*                  | *the result is:*                              |
+   |                                |                                   |                                               |
+   |                                | :samp:`nginx_enable="YES"`        | :samp:`nginx | default`                       |
+   +--------------------------------+-----------------------------------+-----------------------------------------------+
 
 .. warning:: The user may find leftover RC files during the |trueos|
    migration to OpenRC. These files do not work with OpenRC and are
