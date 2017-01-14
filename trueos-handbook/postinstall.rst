@@ -608,10 +608,11 @@ information about system service management in |trueos|.
 Use of OpenRC in |trueos| versus FreeBSD :command:`rc`
 ------------------------------------------------------
 
-The following table serves as a quick summary and series of working
-examples contrasting FreeBSD :command:`rc` system and OpenRC in
+:numref:`Table %s <trfbsdrc>` serves as a quick summary and series of
+working examples contrasting the FreeBSD :command:`rc` system and OpenRC in
 |trueos|.
 
+.. _trfbsdrc:
 .. table:: : Brief comparison between traditional FreeBSD :command:`rc` and |trueos| OpenRC service management
 
    +--------------------------------+-----------------------------------+-----------------------------------------------+
@@ -866,7 +867,7 @@ The |trueos| :file:`rc.conf` file is much smaller because
 default, |trueos| uses 3 elements, documented in
 :numref:`Table %s <orcpritun>`
 
-The following table lists services and their default runlevels in
+:numref:`Table %s <rcuprnlvl>` lists services and their default runlevels in
 |trueos|.
 
 .. _rcuprnlvl:
