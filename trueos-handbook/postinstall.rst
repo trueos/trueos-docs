@@ -8,7 +8,6 @@ After the |trueos| system has finished booting for the first time,
 |trueos| will present additional screens that assist in configuring
 the system.
 
-
 .. index:: boot
 .. _Booting Into TrueOS:
 
@@ -599,7 +598,7 @@ Managing System Services
 .. index:: init
 .. _OpenRC:
 
-|trueos| now uses `OpenRC <https://wiki.gentoo.org/wiki/Project:OpenRC>`_ 
+|trueos| now uses `OpenRC <https://wiki.gentoo.org/wiki/Project:OpenRC>`__
 to manage system services.  OpenRC is an integral component of the
 |trueos| operating system, and is a major point of difference between
 |trueos| and FreeBSD. This section is intended to provide detailed
@@ -666,11 +665,12 @@ Runlevels
 Traditionally, FreeBSD operates in single- and multi-user modes.
 OpenRC, however, offers the ability to define **runlevels**.
 Any number of system services can be associated with a given runlevel.
-In |trueos|, the :samp:`default` runlevel is analogous with FreeBSD
+In |trueos|, the :samp:`default` runlevel is analogous to the FreeBSD
 multi-user mode, and is associated with the "Normal Bootup" option of
-the |trueos| bootloader; the :samp:`boot` is associated with single-
-user operation and is associated with "Single User Mode" in the
-bootloader.
+the |trueos| bootloader.
+
+.. note:: No OpenRC runlevels will be executed if the system is booted
+          into single-user mode (see :numref:`Figure %s <install1(2)>`.)
 
 Runlevels are defined by subdirectories of :file:`/etc/runlevels`; all
 associations between services and runlevels can be shown by running
@@ -743,7 +743,7 @@ of these commands.
    | rc-update delete nginx default | Removes the nginx service from the default runlevel.       |
    +--------------------------------+------------------------------------------------------------+
 
-.. index:: openrc, writing
+.. index:: services, authoring, writing
 .. _Writing OpenRC Services:
 
 Writing OpenRC Services
@@ -959,7 +959,7 @@ default, |trueos| uses 3 elements, documented in
    | zvol        | boot              |
    +-------------+-------------------+
 
-.. index:: tuneables, openrc
+.. index:: tuneables
 .. _Tuneables:
 
 Tuneables
