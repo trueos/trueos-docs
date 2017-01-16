@@ -188,8 +188,8 @@ The first time the boot completes, the post-installer configuration
 script will attempt to set the optimal display settings. A pop-up menu
 will either ask to accept the settings or indicate it could not find the
 optimal settings. Click :guilabel:`Yes` to accept the settings and
-|trueos| will proceed to the :ref:`Language Screen` so the system's
-initial configuration can continue.
+|trueos| proceeds to the :ref:`Choose a Language` screen so the initial
+configuration can continue.
 
 If the optimal display settings could not be determined, or if
 :guilabel:`No` is selected in the :guilabel:`Confirm Resolution` screen,
@@ -235,10 +235,10 @@ another setting. Once satisfied with the settings, click :guilabel:`Yes`
 when prompted to accept them.
 
 .. index:: language
-.. _Language Screen:
+.. _Choose a Language:
 
-Language Screen
-===============
+Choose a Language
+=================
 
 The language selection screen is seen in :numref:`Figure %s <config1>`.
 
@@ -263,10 +263,10 @@ Once the selection is made, click :guilabel:`Next` to move to the next
 configuration screen.
 
 .. index:: time
-.. _Time Zone Selection Screen:
+.. _Time Zone Selection:
 
-Time Zone Selection Screen
-==========================
+Time Zone Selection
+===================
 
 The next configuration screen, shown in :numref:`Figure %s <config2>`,
 allows selection of the timezone.
@@ -293,10 +293,10 @@ option.
 When finished, click :guilabel:`Next` to proceed to the next screen.
 
 .. index:: password
-.. _Set Root Password Screen:
+.. _Set the Root Password:
 
-Set Root Password Screen
-========================
+Set the Root Password
+=====================
 
 This configuration screen, seen in :numref:`Figure %s <config3>`,
 requires the root (administrative) password to be set.
@@ -312,10 +312,10 @@ The password must be a minimum of **4** characters and must be typed
 twice to confirm the password. Click :guilabel:`Next` when finished.
 
 .. index:: users
-.. _Create a User Screen:
+.. _Create a User:
 
-Create a User Screen
-====================
+Create a User
+=============
 
 This screen is used to create the primary user account used to login to
 the system. Create a strong password as the password is used whenever
@@ -523,8 +523,8 @@ window. In this example, it is *trueos-5320*. This login screen lets
 has several configuration options:
 
 * **user:** Upon first login, the created **username** (from
-  :ref:`Create a User Screen`) is the only available login user. If
-  additional users are created using the |sysadm|
+  :ref:`Create a User`) is the only available login user. If additional
+  users are created using the |sysadm|
   `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_,
   they will be added to the drop-down menu for more login choices. PCDM
   does not allow logging in as the *root* user. Instead, whenever a

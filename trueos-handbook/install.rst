@@ -117,7 +117,7 @@ Hover over an icon to view its description in the tip bar at the
 bottom of the screen.
 
 .. note:: The default keyboard layout can be changed now, during the
-   post-installation :ref:`Language Screen`, when
+   post-installation :ref:`Choose a Language` screen, when
    :ref:`Logging In`, or during an active session using the included
    :guilabel:`fcitx` utility.
 
