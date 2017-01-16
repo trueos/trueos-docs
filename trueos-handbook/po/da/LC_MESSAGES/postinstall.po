@@ -23,22 +23,6 @@ msgstr ""
 msgid "Display Detection"
 msgstr ""
 
-#: ../../postinstall.rst:253
-msgid "Language Screen"
-msgstr ""
-
-#: ../../postinstall.rst:281
-msgid "Time Zone Selection Screen"
-msgstr ""
-
-#: ../../postinstall.rst:311
-msgid "Set Root Password Screen"
-msgstr ""
-
-#: ../../postinstall.rst:330
-msgid "Create a User Screen"
-msgstr ""
-
 #: ../../postinstall.rst:422
 msgid "Configure Audio Output"
 msgstr ""
@@ -168,16 +152,6 @@ msgid ""
 "physical access to the |trueos| system when it boots is required. As the "
 "system starts to boot, it will display a message similar to the one shown in"
 " :numref:`Figure %s <encrypt1>`."
-msgstr ""
-
-#: ../../postinstall.rst:199
-msgid ""
-"The first time the boot completes, the post-installer configuration script "
-"will attempt to set the optimal display settings. A pop-up menu will either "
-"ask to accept the settings or indicate it could not find the optimal "
-"settings. Click :guilabel:`Yes` to accept the settings and |trueos| will "
-"proceed to the :ref:`Language Screen` so the system's initial configuration "
-"can continue."
 msgstr ""
 
 #: ../../postinstall.rst:206
@@ -746,17 +720,6 @@ msgid ""
 "<https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_. After "
 "creating at least one user, click :guilabel:`Next` to continue to the next "
 "screen."
-msgstr ""
-
-#: ../../postinstall.rst:537
-msgid ""
-"**user:** Upon first login, the created **username** (from :ref:`Create a "
-"User Screen`) is the only available login user. If additional users are "
-"created using the |sysadm| `User Manager "
-"<https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_, they "
-"will be added to the drop-down menu for more login choices. PCDM does not "
-"allow logging in as the *root* user. Instead, whenever a utility requires "
-"administrative access, |trueos| asks for the password of the login account."
 msgstr ""
 
 #: ../../postinstall.rst:548
@@ -1644,6 +1607,74 @@ msgstr ""
 #: ../../postinstall.rst:978
 msgid "Tuneables"
 msgstr ""
+
+#: ../../postinstall.rst:199
+msgid ""
+"The first time the boot completes, the post-installer configuration script "
+"will attempt to set the optimal display settings. A pop-up menu will either "
+"ask to accept the settings or indicate it could not find the optimal "
+"settings. Click :guilabel:`Yes` to accept the settings and |trueos| proceeds"
+" to the :ref:`Choose a Language` screen so the initial configuration can "
+"continue."
+msgstr ""
+
+#: ../../postinstall.rst:253
+msgid "Choose a Language"
+msgstr ""
+
+#: ../../postinstall.rst:281
+msgid "Time Zone Selection"
+msgstr ""
+
+#: ../../postinstall.rst:311
+msgid "Set the Root Password"
+msgstr ""
+
+#: ../../postinstall.rst:330
+msgid "Create a User"
+msgstr ""
+
+#: ../../postinstall.rst:537
+msgid ""
+"**user:** Upon first login, the created **username** (from :ref:`Create a "
+"User`) is the only available login user. If additional users are created "
+"using the |sysadm| `User Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_, they "
+"will be added to the drop-down menu for more login choices. PCDM does not "
+"allow logging in as the *root* user. Instead, whenever a utility requires "
+"administrative access, |trueos| asks for the password of the login account."
+msgstr ""
+
+#~ msgid "Language Screen"
+#~ msgstr ""
+
+#~ msgid "Time Zone Selection Screen"
+#~ msgstr ""
+
+#~ msgid "Set Root Password Screen"
+#~ msgstr ""
+
+#~ msgid "Create a User Screen"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first time the boot completes, the post-installer configuration script "
+#~ "will attempt to set the optimal display settings. A pop-up menu will either "
+#~ "ask to accept the settings or indicate it could not find the optimal "
+#~ "settings. Click :guilabel:`Yes` to accept the settings and |trueos| will "
+#~ "proceed to the :ref:`Language Screen` so the system's initial configuration "
+#~ "can continue."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**user:** Upon first login, the created **username** (from :ref:`Create a "
+#~ "User Screen`) is the only available login user. If additional users are "
+#~ "created using the |sysadm| `User Manager "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_, they "
+#~ "will be added to the drop-down menu for more login choices. PCDM does not "
+#~ "allow logging in as the *root* user. Instead, whenever a utility requires "
+#~ "administrative access, |trueos| asks for the password of the login account."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Once the |trueos| system has finished booting for the first time, the "

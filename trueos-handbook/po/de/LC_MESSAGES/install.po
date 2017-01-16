@@ -707,13 +707,6 @@ msgid ""
 "15 minutes."
 msgstr ""
 
-#: ../../install.rst:131
-msgid ""
-"The default keyboard layout can be changed now, during the post-installation"
-" :ref:`Language Screen`, when :ref:`Logging In`, or during an active session"
-" using the included :guilabel:`fcitx` utility."
-msgstr ""
-
 #: ../../install.rst:239
 msgid ": |trueos| Disk Wizard"
 msgstr ""
@@ -2795,6 +2788,19 @@ msgid ""
 " sure to configure the server so installation files are accessible to the "
 "systems to install."
 msgstr ""
+
+#: ../../install.rst:131
+msgid ""
+"The default keyboard layout can be changed now, during the post-installation"
+" :ref:`Choose a Language` screen, when :ref:`Logging In`, or during an "
+"active session using the included :guilabel:`fcitx` utility."
+msgstr ""
+
+#~ msgid ""
+#~ "The default keyboard layout can be changed now, during the post-installation"
+#~ " :ref:`Language Screen`, when :ref:`Logging In`, or during an active session"
+#~ " using the included :guilabel:`fcitx` utility."
+#~ msgstr ""
 
 #~ msgid "Language Selection Screen"
 #~ msgstr ""
