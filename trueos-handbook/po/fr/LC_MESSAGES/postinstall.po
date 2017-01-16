@@ -11,58 +11,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../postinstall.rst:631
+#: ../../postinstall.rst:36
 msgid "BSD Boot Loader"
 msgstr ""
 
-#: ../../postinstall.rst:713
+#: ../../postinstall.rst:118
 msgid "GRUB Boot Loader"
 msgstr ""
 
-#: ../../postinstall.rst:792
+#: ../../postinstall.rst:197
 msgid "Display Detection"
 msgstr ""
 
-#: ../../postinstall.rst:848
+#: ../../postinstall.rst:253
 msgid "Language Screen"
 msgstr ""
 
-#: ../../postinstall.rst:876
+#: ../../postinstall.rst:281
 msgid "Time Zone Selection Screen"
 msgstr ""
 
-#: ../../postinstall.rst:906
+#: ../../postinstall.rst:311
 msgid "Set Root Password Screen"
 msgstr ""
 
-#: ../../postinstall.rst:925
+#: ../../postinstall.rst:330
 msgid "Create a User Screen"
 msgstr ""
 
-#: ../../postinstall.rst:1017
+#: ../../postinstall.rst:422
 msgid "Configure Audio Output"
 msgstr ""
 
-#: ../../postinstall.rst:1043
+#: ../../postinstall.rst:448
 msgid "Connect to a Wireless Network"
 msgstr ""
 
-#: ../../postinstall.rst:1074
+#: ../../postinstall.rst:479
 msgid "Enable Optional Services"
 msgstr ""
 
-#: ../../postinstall.rst:1115
+#: ../../postinstall.rst:520
 msgid "Logging In"
 msgstr ""
 
-#: ../../postinstall.rst:624
+#: ../../postinstall.rst:29
 msgid ""
 "After installation, |trueos| will reboot and display a boot menu. The menu "
 "displayed depends upon the boot loader selection chosen during the "
 "installation."
 msgstr ""
 
-#: ../../postinstall.rst:643
+#: ../../postinstall.rst:48
 msgid ""
 "This menu provides several options. To pause this menu, press any key except"
 " for :kbd:`Enter`. To select an option, press either the bolded number or "
@@ -70,99 +70,99 @@ msgid ""
 "to boot using the selected options."
 msgstr ""
 
-#: ../../postinstall.rst:653
+#: ../../postinstall.rst:58
 msgid ""
 "**2. Boot Single User:** Advanced users can select this option to fix "
 "critical system failures."
 msgstr ""
 
-#: ../../postinstall.rst:656
+#: ../../postinstall.rst:61
 msgid ""
 "**3. Escape to loader prompt:** Advanced users can select this option to "
 "perform advanced operations, such as loading kernel modules."
 msgstr ""
 
-#: ../../postinstall.rst:659
+#: ../../postinstall.rst:64
 msgid "**4. Reboot:** Reboots the system."
 msgstr ""
 
-#: ../../postinstall.rst:682
+#: ../../postinstall.rst:87
 msgid ""
 "The first time the system boots, no additional boot environments are "
 "available. Over time, this menu will populate as boot environments are "
 "created."
 msgstr ""
 
-#: ../../postinstall.rst:690
+#: ../../postinstall.rst:95
 msgid ": Boot Options Menu"
 msgstr ""
 
-#: ../../postinstall.rst:692
+#: ../../postinstall.rst:97
 msgid "Several boot options are available in the Boot Options Menu:"
 msgstr ""
 
-#: ../../postinstall.rst:703
+#: ../../postinstall.rst:108
 msgid ""
 "**5. Single User:** Advanced users can select this option to fix critical "
 "system failures."
 msgstr ""
 
-#: ../../postinstall.rst:706
+#: ../../postinstall.rst:111
 msgid ""
 "**6. Verbose:** Select this option to see more detailed messages during the "
 "boot process. This can be useful when troubleshooting a piece of hardware."
 msgstr ""
 
-#: ../../postinstall.rst:715
+#: ../../postinstall.rst:120
 msgid ""
 "If the installation was customized with the :guilabel:`GRUB` option for the "
 "boot loader, it will instead load the menu shown in :numref:`Figure %s "
 "<boot2>`."
 msgstr ""
 
-#: ../../postinstall.rst:723
+#: ../../postinstall.rst:128
 msgid ": GRUB Boot Menu"
 msgstr ""
 
-#: ../../postinstall.rst:738
+#: ../../postinstall.rst:143
 msgid ""
 "Press :kbd:`Enter` when the :guilabel:`TrueOS` entry is highlighted to see "
 "the |trueos| boot options screen, shown in :numref:`Figure %s <boot3>`."
 msgstr ""
 
-#: ../../postinstall.rst:748
+#: ../../postinstall.rst:153
 msgid "Several boot options are available:"
 msgstr ""
 
-#: ../../postinstall.rst:750
+#: ../../postinstall.rst:155
 msgid "**Normal Bootup:** Continues to boot |trueos|."
 msgstr ""
 
-#: ../../postinstall.rst:752
+#: ../../postinstall.rst:157
 msgid ""
 "**Single User Mode:** Advanced users can select this option to fix critical "
 "system failures."
 msgstr ""
 
-#: ../../postinstall.rst:755
+#: ../../postinstall.rst:160
 msgid ""
 "**Verbose Mode:** Select this option to see more detailed messages during "
 "the boot process. This can be useful when troubleshooting a piece of "
 "hardware."
 msgstr ""
 
-#: ../../postinstall.rst:762
+#: ../../postinstall.rst:167
 msgid ""
 "This menu is provided by GRUB. Press :kbd:`e` to access the GRUB editor or "
 ":kbd:`c` to access the GRUB command line. Familiarity with GRUB is "
 "recommended."
 msgstr ""
 
-#: ../../postinstall.rst:770
+#: ../../postinstall.rst:175
 msgid "Encrypted Disks"
 msgstr ""
 
-#: ../../postinstall.rst:772
+#: ../../postinstall.rst:177
 msgid ""
 "If :guilabel:`Encrypt disk with GELI` was selected during installation, "
 "physical access to the |trueos| system when it boots is required. As the "
@@ -170,7 +170,7 @@ msgid ""
 " :numref:`Figure %s <encrypt1>`."
 msgstr ""
 
-#: ../../postinstall.rst:794
+#: ../../postinstall.rst:199
 msgid ""
 "The first time the boot completes, the post-installer configuration script "
 "will attempt to set the optimal display settings. A pop-up menu will either "
@@ -180,7 +180,7 @@ msgid ""
 "can continue."
 msgstr ""
 
-#: ../../postinstall.rst:801
+#: ../../postinstall.rst:206
 msgid ""
 "If the optimal display settings could not be determined, or if "
 ":guilabel:`No` is selected in the :guilabel:`Confirm Resolution` screen, the"
@@ -188,11 +188,11 @@ msgid ""
 " will launch."
 msgstr ""
 
-#: ../../postinstall.rst:810
+#: ../../postinstall.rst:215
 msgid ": Display Settings Wizard"
 msgstr ""
 
-#: ../../postinstall.rst:812
+#: ../../postinstall.rst:217
 msgid ""
 "This screen can be used to select the desired screen resolution, color "
 "depth, and video driver. The :guilabel:`vesa` driver will always work but "
@@ -200,34 +200,34 @@ msgid ""
 "the driver that most closely matches your video card name."
 msgstr ""
 
-#: ../../postinstall.rst:817
+#: ../../postinstall.rst:222
 msgid ""
 "The drop-down menus can also be used to change the screen resolution and "
 "color depth values. If the desired value is not listed, the selected driver "
 "may not support that resolution or depth."
 msgstr ""
 
-#: ../../postinstall.rst:821
+#: ../../postinstall.rst:226
 msgid ""
 "Advanced users can select their monitor's horizontal sync and vertical "
 "refresh rate in the :guilabel:`Advanced` tab, seen in :numref:`Figure %s "
 "<display4>`."
 msgstr ""
 
-#: ../../postinstall.rst:831
+#: ../../postinstall.rst:236
 msgid ""
 "Use caution and refer to the connected monitor's documentation while making "
 "changes. If unsure what settings are required, it is recommended to leave "
 "the default values."
 msgstr ""
 
-#: ../../postinstall.rst:835
+#: ../../postinstall.rst:240
 msgid ""
 "If the computer is connected to two monitors, check :guilabel:`Enable Dual-"
 "Head support`."
 msgstr ""
 
-#: ../../postinstall.rst:838
+#: ../../postinstall.rst:243
 msgid ""
 "When finished, click :guilabel:`Apply` for the settings to be tested. If "
 "anything goes wrong during testing, the system will return to the "
@@ -236,81 +236,81 @@ msgid ""
 "prompted to accept them."
 msgstr ""
 
-#: ../../postinstall.rst:859
+#: ../../postinstall.rst:264
 msgid ""
 "This allows for the selection of the language used to access the installed "
 "system. It also contains three icons from the installer screens to enable:"
 msgstr ""
 
-#: ../../postinstall.rst:865
+#: ../../postinstall.rst:270
 msgid "Using the onscreen keyboard."
 msgstr ""
 
-#: ../../postinstall.rst:867
+#: ../../postinstall.rst:272
 msgid "Switching between the US keyboard layout and a user selected layout."
 msgstr ""
 
-#: ../../postinstall.rst:869
+#: ../../postinstall.rst:274
 msgid ""
 "Once the selection is made, click :guilabel:`Next` to move to the next "
 "configuration screen."
 msgstr ""
 
-#: ../../postinstall.rst:892
+#: ../../postinstall.rst:297
 msgid ""
 "If the system is dual booting and the other operating system expects the "
 "BIOS to use UTC, also check :guilabel:`Set BIOS to UTC time`."
 msgstr ""
 
-#: ../../postinstall.rst:900
+#: ../../postinstall.rst:305
 msgid "When finished, click :guilabel:`Next` to proceed to the next screen."
 msgstr ""
 
-#: ../../postinstall.rst:927
+#: ../../postinstall.rst:332
 msgid ""
 "This screen is used to create the primary user account used to login to the "
 "system. Create a strong password as the password is used whenever the system"
 " indicates administrative access is required."
 msgstr ""
 
-#: ../../postinstall.rst:941
+#: ../../postinstall.rst:346
 msgid ""
 "The :guilabel:`User Details` tab is used to create a login user. This screen"
 " requires completing several fields:"
 msgstr ""
 
-#: ../../postinstall.rst:944
+#: ../../postinstall.rst:349
 msgid ""
 "**Name:** This value displays in the login screen. It can be the user's full"
 " name and can contain both capital letters and spaces."
 msgstr ""
 
-#: ../../postinstall.rst:947
+#: ../../postinstall.rst:352
 msgid ""
 "**Username:** This is the name used when logging in. It can **not** contain "
 "spaces and **is** case sensitive (e.g. *Kris* is a different username from "
 "*kris*)."
 msgstr ""
 
-#: ../../postinstall.rst:951
+#: ../../postinstall.rst:356
 msgid ""
 "**Password:** This is the password to use when logging in. It must be typed "
 "twice to confirm it."
 msgstr ""
 
-#: ../../postinstall.rst:954
+#: ../../postinstall.rst:359
 msgid ""
 "**Specify UID:** By default, the user will be assigned the next available "
 "User ID (UID). If a specific UID is required, it can be set here."
 msgstr ""
 
-#: ../../postinstall.rst:958
+#: ../../postinstall.rst:363
 msgid ""
 "A UID can not be set lower than 1001, and a UID already in use by another "
 "account will also be unavailable."
 msgstr ""
 
-#: ../../postinstall.rst:972
+#: ../../postinstall.rst:377
 msgid ""
 "When a user is configured to use a PersonaCrypt device, that user can not "
 "login using an unencrypted session on the same system. In other words, the "
@@ -319,25 +319,25 @@ msgid ""
 "two different user accounts; one for each type of session."
 msgstr ""
 
-#: ../../postinstall.rst:995
+#: ../../postinstall.rst:400
 msgid ""
 "Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable media "
 "large enough to hold the files to store in the home directory, and click "
 ":guilabel:`Select`."
 msgstr ""
 
-#: ../../postinstall.rst:999
+#: ../../postinstall.rst:404
 msgid ""
 "Ensure there are no desired files on the removable media. Initializing the "
 "media for PersonaCrypt will format the device with ZFS and encrypt it with "
 "GELI, deleting any existing data."
 msgstr ""
 
-#: ../../postinstall.rst:1028
+#: ../../postinstall.rst:433
 msgid ": Configure Audio Output"
 msgstr ""
 
-#: ../../postinstall.rst:1030
+#: ../../postinstall.rst:435
 msgid ""
 "Click the :guilabel:`Output Device` drop-down menu to select the desired "
 "sound device. Click :guilabel:`Test` to verify the setting as a working "
@@ -345,63 +345,63 @@ msgid ""
 "slider can also be used to set the default volume level."
 msgstr ""
 
-#: ../../postinstall.rst:1036
+#: ../../postinstall.rst:441
 msgid ""
 "All these settings can be viewed and edited at any time using the "
 "instructions in :ref:`Sound Mixer Tray`."
 msgstr ""
 
-#: ../../postinstall.rst:1076
+#: ../../postinstall.rst:481
 msgid ":numref:`Figure %s <config6>` shows the next screen in the process."
 msgstr ""
 
-#: ../../postinstall.rst:1083
+#: ../../postinstall.rst:488
 msgid ": Optional Services"
 msgstr ""
 
-#: ../../postinstall.rst:1085
+#: ../../postinstall.rst:490
 msgid ""
 "Check :guilabel:`Disable IPV6 (Requires Reboot)` and the system will be "
 "configured to only support IPv4 addresses. The default is to support both "
 "IPv4 and IPv6 and prefer IPv6 over IPv4."
 msgstr ""
 
-#: ../../postinstall.rst:1089
+#: ../../postinstall.rst:494
 msgid ""
 "Altering this setting will not take affect until the next system reboot."
 msgstr ""
 
-#: ../../postinstall.rst:1097
+#: ../../postinstall.rst:502
 msgid ""
 "**Do not** check this box if SSH connections to the system are undesired."
 msgstr ""
 
-#: ../../postinstall.rst:1100
+#: ../../postinstall.rst:505
 msgid ""
 "When finished, click :guilabel:`Next`. The screen in :numref:`Figure %s "
 "<config7>` indicates the post-installation setup is complete. Click "
 ":guilabel:`Finish` to access the login menu."
 msgstr ""
 
-#: ../../postinstall.rst:1117
+#: ../../postinstall.rst:522
 msgid ""
 "Once finished setting up the system, the PCDM (|pcbsd| Display Manager) "
 "graphical login screen will display. An example is seen in :numref:`Figure "
 "%s <login1>`."
 msgstr ""
 
-#: ../../postinstall.rst:1128
+#: ../../postinstall.rst:533
 msgid ""
 "The hostname of the system will be displayed at the top of the login window."
 " In this example, it is *trueos-5320*. This login screen lets has several "
 "configuration options:"
 msgstr ""
 
-#: ../../postinstall.rst:1141
+#: ../../postinstall.rst:546
 msgid "**password:** Input the password associated with the selected user."
 msgstr ""
 
-#: ../../postinstall.rst:1147
+#: ../../postinstall.rst:552
 msgid ""
 "If a PersonaCrypt user is active, insert the PersonaCrypt device in order to"
 " login. As seen in :numref:`Figure %s <login5>`, this will add an extra "
@@ -409,59 +409,59 @@ msgid ""
 "device can be typed."
 msgstr ""
 
-#: ../../postinstall.rst:1159
+#: ../../postinstall.rst:564
 msgid ""
 "The toolbar at the bottom of the screen allows several options to be "
 "selected on a per-login basis:"
 msgstr ""
 
-#: ../../postinstall.rst:1162
+#: ../../postinstall.rst:567
 msgid ""
 "**Locale:** If the localization was not set during installation, or needs to"
 " be changed, click this icon to set the locale for this login session."
 msgstr ""
 
-#: ../../postinstall.rst:1166
+#: ../../postinstall.rst:571
 msgid ""
 "**Keyboard Layout:** Click this icon to change the keyboard layout for this "
 "login session. This will open the window seen in :numref:`Figure %s "
 "<keyboard1>`."
 msgstr ""
 
-#: ../../postinstall.rst:1177
+#: ../../postinstall.rst:582
 msgid ""
 "Click the :guilabel:`Keyboard model` drop-down menu to select the type of "
 "keyboard."
 msgstr ""
 
-#: ../../postinstall.rst:1184
+#: ../../postinstall.rst:589
 msgid ""
 "This screen also allows selection of the :guilabel:`Key Layout` and "
 ":guilabel:`Variant`. After making any selections, test them by typing some "
 "text into the :guilabel:`you may type into the space below...` field."
 msgstr ""
 
-#: ../../postinstall.rst:1189
+#: ../../postinstall.rst:594
 msgid ""
 "**Restart/Shut Down:** To restart or shutdown the system without logging in,"
 " click the icon in the lower-right corner. This icon also allows to "
 ":guilabel:`Change DPI` and to :guilabel:`Refresh PCDM`."
 msgstr ""
 
-#: ../../postinstall.rst:1193
+#: ../../postinstall.rst:598
 msgid ""
 "Once any selections are made, input the password associated with the "
 "selected user and press :kbd:`Enter` or click the :guilabel:`blue arrow` to "
 "login."
 msgstr ""
 
-#: ../../postinstall.rst:759
+#: ../../postinstall.rst:164
 msgid ""
 "Use the arrow keys to select an option, then press :kbd:`Enter` to boot "
 "using the highlighted option."
 msgstr ""
 
-#: ../../postinstall.rst:1049
+#: ../../postinstall.rst:454
 msgid ""
 "If the system has an active wireless interface, a screen similar to "
 ":numref:`Figure %s <config5>` will indicate the wireless networks "
@@ -469,87 +469,87 @@ msgid ""
 "strength."
 msgstr ""
 
-#: ../../postinstall.rst:746
+#: ../../postinstall.rst:151
 msgid ": |trueos| Graphical Boot Menu Options"
 msgstr ""
 
-#: ../../postinstall.rst:781
+#: ../../postinstall.rst:186
 msgid ": Master Key Decryption"
 msgstr ""
 
-#: ../../postinstall.rst:829
+#: ../../postinstall.rst:234
 msgid ": Advanced Display Settings"
 msgstr ""
 
-#: ../../postinstall.rst:857
+#: ../../postinstall.rst:262
 msgid ": Language Selection"
 msgstr ""
 
-#: ../../postinstall.rst:886
+#: ../../postinstall.rst:291
 msgid ": Time Zone Selection"
 msgstr ""
 
-#: ../../postinstall.rst:916
+#: ../../postinstall.rst:321
 msgid ": Root Password Creation"
 msgstr ""
 
-#: ../../postinstall.rst:939
+#: ../../postinstall.rst:344
 msgid ": User Creation"
 msgstr ""
 
-#: ../../postinstall.rst:993
+#: ../../postinstall.rst:398
 msgid ": User's PersonaCrypt Initialization"
 msgstr ""
 
-#: ../../postinstall.rst:1059
+#: ../../postinstall.rst:464
 msgid ": Wireless Network Connections"
 msgstr ""
 
-#: ../../postinstall.rst:1109
+#: ../../postinstall.rst:514
 msgid ": Setup Complete"
 msgstr ""
 
-#: ../../postinstall.rst:1126
+#: ../../postinstall.rst:531
 msgid ": |trueos| Login"
 msgstr ""
 
-#: ../../postinstall.rst:1157
+#: ../../postinstall.rst:562
 msgid ": |trueos| PersonaCrypt Login"
 msgstr ""
 
-#: ../../postinstall.rst:1175
+#: ../../postinstall.rst:580
 msgid ": Keyboard Settings"
 msgstr ""
 
-#: ../../postinstall.rst:1180
+#: ../../postinstall.rst:585
 msgid ""
 "The default model of :guilabel:`Generic 104-key PC` does **not** support "
 "special keys such as multimedia or Windows keys. This default will need to "
 "change to enable support for hot keys."
 msgstr ""
 
-#: ../../postinstall.rst:1197
+#: ../../postinstall.rst:602
 msgid ""
 "It is possible to change keyboard layouts during an active desktop session "
 "using the included :guilabel:`fcitx` utility"
 msgstr ""
 
-#: ../../postinstall.rst:1045
+#: ../../postinstall.rst:450
 msgid ""
 "Be sure the network card is supported by FreeBSD. Refer to :ref:`Supported "
 "Hardware` for links to FreeBSD support and a list of known issues with "
 "different hardware."
 msgstr ""
 
-#: ../../postinstall.rst:622
+#: ../../postinstall.rst:27
 msgid "Booting Into |trueos|"
 msgstr ""
 
-#: ../../postinstall.rst:641
+#: ../../postinstall.rst:46
 msgid ": |trueos| Boot Menu"
 msgstr ""
 
-#: ../../postinstall.rst:783
+#: ../../postinstall.rst:188
 msgid ""
 "The boot process will wait for the password created in the installation "
 "screen shown in :ref:`Configure Encryption <install11>`. If the correct "
@@ -557,20 +557,20 @@ msgid ""
 "continue to boot."
 msgstr ""
 
-#: ../../postinstall.rst:633
+#: ../../postinstall.rst:38
 msgid ""
 "A system with a default install or the \"BSD\" option for the boot loader, "
 "will load the boot menu, seen in :numref:`Figure %s <install1(2)>`."
 msgstr ""
 
-#: ../../postinstall.rst:648
+#: ../../postinstall.rst:53
 msgid ""
 "**1. Boot Multi User:** This is the default option for booting |trueos|. The"
 " system automatically uses this option either after pausing for a few "
 "moments or if :kbd:`Enter` is pressed while the boot menu is displayed."
 msgstr ""
 
-#: ../../postinstall.rst:661
+#: ../../postinstall.rst:66
 msgid ""
 "**5. Kernel:** This option indicates how many kernels are available. Press "
 "either :kbd:`5` or :kbd:`k` to toggle between available kernels. This option"
@@ -579,7 +579,7 @@ msgid ""
 "kernel fails."
 msgstr ""
 
-#: ../../postinstall.rst:667
+#: ../../postinstall.rst:72
 msgid ""
 "**6. Configure Boot Options:** Press either :kbd:`6` or :kbd:`o` to see the "
 "boot options screen, shown in :numref:`Figure %s <boot1>`. To change an "
@@ -588,13 +588,13 @@ msgid ""
 ":kbd:`Backspace` to return to the |trueos| boot menu."
 msgstr ""
 
-#: ../../postinstall.rst:694
+#: ../../postinstall.rst:99
 msgid ""
 "**3. ACPI Support:** Toggles  power  management support. This may be useful "
 "for some BIOS's and laptops."
 msgstr ""
 
-#: ../../postinstall.rst:697
+#: ../../postinstall.rst:102
 msgid ""
 "**4. Safe Mode:** Select this option if the installation hangs when probing "
 "hardware and :guilabel:`3 ACPI Support` did not help. It will boot with a "
@@ -603,7 +603,7 @@ msgid ""
 " very few systems have them)."
 msgstr ""
 
-#: ../../postinstall.rst:732
+#: ../../postinstall.rst:137
 msgid ""
 "By default, this menu displays for a few seconds before continuing to boot "
 "into |trueos|. To pause this screen to review its items, press any key "
@@ -612,73 +612,73 @@ msgid ""
 " entry then press :kbd:`Enter`."
 msgstr ""
 
-#: ../../postinstall.rst:850
+#: ../../postinstall.rst:255
 msgid ""
 "The language selection screen is seen in :numref:`Figure %s <config1>`."
 msgstr ""
 
-#: ../../postinstall.rst:863
+#: ../../postinstall.rst:268
 msgid "Reading the screen's *Help* text."
 msgstr ""
 
-#: ../../postinstall.rst:878
+#: ../../postinstall.rst:283
 msgid ""
 "The next configuration screen, shown in :numref:`Figure %s <config2>`, "
 "allows selection of the timezone."
 msgstr ""
 
-#: ../../postinstall.rst:888
+#: ../../postinstall.rst:293
 msgid ""
 "Use the drop-down menu to select the city closest to the system's location. "
 "If the system is connected to the Internet, the installer automatically "
 "attempts to detect the correct timezone."
 msgstr ""
 
-#: ../../postinstall.rst:895
+#: ../../postinstall.rst:300
 msgid ""
 "A default system hostname will be created. To change the name, type the "
 "desired hostname in the :guilabel:`System Hostname` field. If the computer "
 "is a member of a DNS domain, the *Domain Name* is also an option."
 msgstr ""
 
-#: ../../postinstall.rst:908
+#: ../../postinstall.rst:313
 msgid ""
 "This configuration screen, seen in :numref:`Figure %s <config3>`, requires "
 "the root (administrative) password to be set."
 msgstr ""
 
-#: ../../postinstall.rst:918
+#: ../../postinstall.rst:323
 msgid ""
 "The password must be a minimum of **4** characters and must be typed twice "
 "to confirm the password. Click :guilabel:`Next` when finished."
 msgstr ""
 
-#: ../../postinstall.rst:931
+#: ../../postinstall.rst:336
 msgid ""
 ":numref:`Figure %s <config4>` shows the configuration screen used to create "
 "the initial user account."
 msgstr ""
 
-#: ../../postinstall.rst:984
+#: ../../postinstall.rst:389
 msgid ""
 "The :guilabel:`PersonaCrypt` tab, shown in :numref:`Figure %s <persona1>`, "
 "is used to initialize PersonaCrypt for the user."
 msgstr ""
 
-#: ../../postinstall.rst:1003
+#: ../../postinstall.rst:408
 msgid ""
 "Input and repeat the :guilabel:`Device Password` to associate with the "
 "device. A pop-up window indicates the current contents of the device will be"
 " wiped. Click :guilabel:`Yes` to initialize the device."
 msgstr ""
 
-#: ../../postinstall.rst:1019
+#: ../../postinstall.rst:424
 msgid ""
 "The next screen, seen in :numref:`Figure %s <audio1>`, is used to configure "
 "the default audio output."
 msgstr ""
 
-#: ../../postinstall.rst:1061
+#: ../../postinstall.rst:466
 msgid ""
 "To set the default wireless connection, click the desired network in the "
 ":guilabel:`Available Wireless Networks` area, then click :guilabel:`Add "
@@ -690,14 +690,14 @@ msgid ""
 "detailed instructions."
 msgstr ""
 
-#: ../../postinstall.rst:1092
+#: ../../postinstall.rst:497
 msgid ""
 "If :guilabel:`Enable SSH` is checked, the SSH service will start and be "
 "configured to start whenever the system boots. It also creates the firewall "
 "rules needed to allow incoming SSH connections to the |trueos| system."
 msgstr ""
 
-#: ../../postinstall.rst:674
+#: ../../postinstall.rst:79
 msgid ""
 "**7. Select Boot Environment:** In |trueos|, boot environments are "
 "automatically created when the system updates and can also be manually "
@@ -708,7 +708,7 @@ msgid ""
 "either :kbd:`7` or :kbd:`e` to view the available boot environments."
 msgstr ""
 
-#: ../../postinstall.rst:725
+#: ../../postinstall.rst:130
 msgid ""
 "This boot menu is used to display the entry for |trueos|, an entry for the "
 "screen which lists the available boot environments (these are automatically "
@@ -718,7 +718,7 @@ msgid ""
 "manager>`_), and any other operating systems installed on the system."
 msgstr ""
 
-#: ../../postinstall.rst:961
+#: ../../postinstall.rst:366
 msgid ""
 "|trueos| provides the ability to use a removable device, such as a USB "
 "stick, as the user's encrypted home directory. This is useful in a multi-"
@@ -731,7 +731,7 @@ msgid ""
 "password associated with the removable device in order to login."
 msgstr ""
 
-#: ../../postinstall.rst:979
+#: ../../postinstall.rst:384
 msgid ""
 "Encryption is also possible without requiring removable devices using "
 "*PEFS*. Refer to the |sysadm| section on `PEFS Encryption "
@@ -739,7 +739,7 @@ msgid ""
 "detailed instructions to initialize a user with *PEFS*."
 msgstr ""
 
-#: ../../postinstall.rst:1007
+#: ../../postinstall.rst:412
 msgid ""
 "To share the computer with other users, create additional login and "
 "*PersonaCrypt* accounts using the |sysadm| `User Manager "
@@ -748,7 +748,7 @@ msgid ""
 "screen."
 msgstr ""
 
-#: ../../postinstall.rst:1132
+#: ../../postinstall.rst:537
 msgid ""
 "**user:** Upon first login, the created **username** (from :ref:`Create a "
 "User Screen`) is the only available login user. If additional users are "
@@ -759,7 +759,7 @@ msgid ""
 "administrative access, |trueos| asks for the password of the login account."
 msgstr ""
 
-#: ../../postinstall.rst:1143
+#: ../../postinstall.rst:548
 msgid ""
 "**desktop:** If any additional desktops are installed using `AppCafe "
 "<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_, use the "
@@ -770,27 +770,7 @@ msgstr ""
 msgid "Post Installation Configuration"
 msgstr ""
 
-#: ../../postinstall.rst:19
-msgid ""
-"Once the |trueos| system has finished booting for the first time, the "
-"installer will present some additional screens to configure the system. This"
-" section describes OpenRC, the boot process, and the post-installation "
-"configuration screens."
-msgstr ""
-
-#: ../../postinstall.rst:28
-msgid "OpenRC and |trueos|"
-msgstr ""
-
-#: ../../postinstall.rst:30
-msgid ""
-"|trueos| now uses OpenRC as an integral component of the operating system. "
-"This is a major point of difference between |trueos| and FreeBSD, and this "
-"section is intended to provide detailed information about the |trueos| "
-"implementation for more advanced users."
-msgstr ""
-
-#: ../../postinstall.rst:71
+#: ../../postinstall.rst:657
 msgid ""
 "The user may find leftover RC files during the |trueos| migration to OpenRC."
 " These files do not work with OpenRC and are intended to be removed both "
@@ -799,362 +779,303 @@ msgid ""
 " use these leftover files."
 msgstr ""
 
-#: ../../postinstall.rst:82
-msgid "Managing Bootup Services"
-msgstr ""
-
-#: ../../postinstall.rst:84
-msgid ""
-"OpenRC has a variety of options to *start*, *stop*, *add*, or *delete* "
-"services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
-" actions can be accomplished using the `Service Manager "
-"<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
-"built into |sysadm|. Individuals familiar with the FreeBSD "
-":command:`service` command may notice some similarities between some of "
-"these commands:"
-msgstr ""
-
-#: ../../postinstall.rst:0
-msgid ": Bootup Service Commands"
-msgstr ""
-
-#: ../../postinstall.rst:97
+#: ../../postinstall.rst:738
 msgid "Command"
 msgstr ""
 
-#: ../../postinstall.rst:97 ../../postinstall.rst:359
-#: ../../postinstall.rst:383
+#: ../../postinstall.rst:738 ../../postinstall.rst:984
+#: ../../postinstall.rst:1008
 msgid "Description"
 msgstr ""
 
-#: ../../postinstall.rst:99
+#: ../../postinstall.rst:740
 msgid "service nginx start"
 msgstr ""
 
-#: ../../postinstall.rst:99
+#: ../../postinstall.rst:740
 msgid "Start nginx from :file:`usr/local/etc/init.d/nginx`."
 msgstr ""
 
-#: ../../postinstall.rst:101
+#: ../../postinstall.rst:742
 msgid "service nginx restart"
 msgstr ""
 
-#: ../../postinstall.rst:101
+#: ../../postinstall.rst:742
 msgid "Restart nginx from :file:`/usr/local/etc/init.d/nginx`."
 msgstr ""
 
-#: ../../postinstall.rst:103
+#: ../../postinstall.rst:744
 msgid "service nginx stop"
 msgstr ""
 
-#: ../../postinstall.rst:103
+#: ../../postinstall.rst:744
 msgid "Stop nginx from :file:`/usr/local/etc/init.d/nginx`."
 msgstr ""
 
-#: ../../postinstall.rst:105
+#: ../../postinstall.rst:746
 msgid "service nginx status"
 msgstr ""
 
-#: ../../postinstall.rst:105
+#: ../../postinstall.rst:746
 msgid "View the status of the nginx service."
 msgstr ""
 
-#: ../../postinstall.rst:107
+#: ../../postinstall.rst:748
 msgid "rc-status"
 msgstr ""
 
-#: ../../postinstall.rst:107
+#: ../../postinstall.rst:748
 msgid "View the status of all running services."
 msgstr ""
 
-#: ../../postinstall.rst:109
+#: ../../postinstall.rst:750
 msgid "rc-update"
 msgstr ""
 
-#: ../../postinstall.rst:109
+#: ../../postinstall.rst:750
 msgid ""
 "Views all runlevels. Used in conjunction with service names to add or delete"
 " services from the default runlevel."
 msgstr ""
 
-#: ../../postinstall.rst:112
+#: ../../postinstall.rst:753
 msgid "rc-update add nginx default"
 msgstr ""
 
-#: ../../postinstall.rst:112
+#: ../../postinstall.rst:753
 msgid "Adds the nginx service to the default runlevel."
 msgstr ""
 
-#: ../../postinstall.rst:114
+#: ../../postinstall.rst:755
 msgid "rc-update delete nginx default"
 msgstr ""
 
-#: ../../postinstall.rst:114
+#: ../../postinstall.rst:755
 msgid "Removes the nginx service from the default runlevel."
-msgstr ""
-
-#: ../../postinstall.rst:117
-msgid ""
-":command:`rc-update` displays all runlevels. The full list of available "
-"runlevels is seen here in :numref:`Table %s <rcuprnlvl>`"
 msgstr ""
 
 #: ../../postinstall.rst:0
 msgid ": Services and runlevels"
 msgstr ""
 
-#: ../../postinstall.rst:125
+#: ../../postinstall.rst:889
 msgid "Service"
 msgstr ""
 
-#: ../../postinstall.rst:125
+#: ../../postinstall.rst:889
 msgid "Runlevel"
 msgstr ""
 
-#: ../../postinstall.rst:127
+#: ../../postinstall.rst:891
 msgid "abi"
 msgstr ""
 
-#: ../../postinstall.rst:127 ../../postinstall.rst:129
-#: ../../postinstall.rst:133 ../../postinstall.rst:135
-#: ../../postinstall.rst:137 ../../postinstall.rst:143
-#: ../../postinstall.rst:145 ../../postinstall.rst:147
-#: ../../postinstall.rst:149 ../../postinstall.rst:151
-#: ../../postinstall.rst:153 ../../postinstall.rst:157
-#: ../../postinstall.rst:161 ../../postinstall.rst:163
-#: ../../postinstall.rst:165 ../../postinstall.rst:171
-#: ../../postinstall.rst:173 ../../postinstall.rst:179
-#: ../../postinstall.rst:185 ../../postinstall.rst:189
-#: ../../postinstall.rst:191 ../../postinstall.rst:195
-#: ../../postinstall.rst:197 ../../postinstall.rst:199
-#: ../../postinstall.rst:203 ../../postinstall.rst:205
-#: ../../postinstall.rst:207
+#: ../../postinstall.rst:891 ../../postinstall.rst:893
+#: ../../postinstall.rst:897 ../../postinstall.rst:899
+#: ../../postinstall.rst:901 ../../postinstall.rst:907
+#: ../../postinstall.rst:909 ../../postinstall.rst:911
+#: ../../postinstall.rst:913 ../../postinstall.rst:915
+#: ../../postinstall.rst:917 ../../postinstall.rst:921
+#: ../../postinstall.rst:925 ../../postinstall.rst:927
+#: ../../postinstall.rst:929 ../../postinstall.rst:935
+#: ../../postinstall.rst:937 ../../postinstall.rst:943
+#: ../../postinstall.rst:949 ../../postinstall.rst:953
+#: ../../postinstall.rst:955 ../../postinstall.rst:959
+#: ../../postinstall.rst:961 ../../postinstall.rst:963
+#: ../../postinstall.rst:967 ../../postinstall.rst:969
+#: ../../postinstall.rst:971
 msgid "boot"
 msgstr ""
 
-#: ../../postinstall.rst:129
+#: ../../postinstall.rst:893
 msgid "adjkerntz"
 msgstr ""
 
-#: ../../postinstall.rst:131
+#: ../../postinstall.rst:895
 msgid "automount"
 msgstr ""
 
-#: ../../postinstall.rst:131 ../../postinstall.rst:139
-#: ../../postinstall.rst:141 ../../postinstall.rst:159
-#: ../../postinstall.rst:167 ../../postinstall.rst:169
-#: ../../postinstall.rst:175 ../../postinstall.rst:177
-#: ../../postinstall.rst:181 ../../postinstall.rst:187
-#: ../../postinstall.rst:193 ../../postinstall.rst:201
+#: ../../postinstall.rst:895 ../../postinstall.rst:903
+#: ../../postinstall.rst:905 ../../postinstall.rst:923
+#: ../../postinstall.rst:931 ../../postinstall.rst:933
+#: ../../postinstall.rst:939 ../../postinstall.rst:941
+#: ../../postinstall.rst:945 ../../postinstall.rst:951
+#: ../../postinstall.rst:957 ../../postinstall.rst:965
 msgid "default"
 msgstr ""
 
-#: ../../postinstall.rst:133
+#: ../../postinstall.rst:897
 msgid "bootmisc"
 msgstr ""
 
-#: ../../postinstall.rst:135
+#: ../../postinstall.rst:899
 msgid "bridge"
 msgstr ""
 
-#: ../../postinstall.rst:137
+#: ../../postinstall.rst:901
 msgid "cron"
 msgstr ""
 
-#: ../../postinstall.rst:139
+#: ../../postinstall.rst:903
 msgid "cupsd"
 msgstr ""
 
-#: ../../postinstall.rst:141
+#: ../../postinstall.rst:905
 msgid "dbus"
 msgstr ""
 
-#: ../../postinstall.rst:143
+#: ../../postinstall.rst:907
 msgid "devd"
 msgstr ""
 
-#: ../../postinstall.rst:145
+#: ../../postinstall.rst:909
 msgid "dumpon"
 msgstr ""
 
-#: ../../postinstall.rst:147
+#: ../../postinstall.rst:911
 msgid "fsck"
 msgstr ""
 
-#: ../../postinstall.rst:149
+#: ../../postinstall.rst:913
 msgid "hostid"
 msgstr ""
 
-#: ../../postinstall.rst:151
+#: ../../postinstall.rst:915
 msgid "hostname"
 msgstr ""
 
-#: ../../postinstall.rst:153
+#: ../../postinstall.rst:917
 msgid "ipfw"
 msgstr ""
 
-#: ../../postinstall.rst:155
+#: ../../postinstall.rst:919
 msgid "local"
 msgstr ""
 
-#: ../../postinstall.rst:155
+#: ../../postinstall.rst:919
 msgid "default nonetwork"
 msgstr ""
 
-#: ../../postinstall.rst:157
+#: ../../postinstall.rst:921
 msgid "localmount"
 msgstr ""
 
-#: ../../postinstall.rst:159
+#: ../../postinstall.rst:923
 msgid "lockd"
 msgstr ""
 
-#: ../../postinstall.rst:161
+#: ../../postinstall.rst:925
 msgid "loopback"
 msgstr ""
 
-#: ../../postinstall.rst:163
+#: ../../postinstall.rst:927
 msgid "modules"
 msgstr ""
 
-#: ../../postinstall.rst:165
+#: ../../postinstall.rst:929
 msgid "motd"
 msgstr ""
 
-#: ../../postinstall.rst:167
+#: ../../postinstall.rst:931
 msgid "moused"
 msgstr ""
 
-#: ../../postinstall.rst:169
+#: ../../postinstall.rst:933
 msgid "netmount"
 msgstr ""
 
-#: ../../postinstall.rst:171
+#: ../../postinstall.rst:935
 msgid "network"
 msgstr ""
 
-#: ../../postinstall.rst:173
+#: ../../postinstall.rst:937
 msgid "newsyslog"
 msgstr ""
 
-#: ../../postinstall.rst:175
+#: ../../postinstall.rst:939
 msgid "openntpd"
 msgstr ""
 
-#: ../../postinstall.rst:177
+#: ../../postinstall.rst:941
 msgid "pcdm"
 msgstr ""
 
-#: ../../postinstall.rst:179
+#: ../../postinstall.rst:943
 msgid "root"
 msgstr ""
 
-#: ../../postinstall.rst:181
+#: ../../postinstall.rst:945
 msgid "rpcbind"
 msgstr ""
 
-#: ../../postinstall.rst:183
+#: ../../postinstall.rst:947
 msgid "savecache"
 msgstr ""
 
-#: ../../postinstall.rst:183
+#: ../../postinstall.rst:947
 msgid "shutdown"
 msgstr ""
 
-#: ../../postinstall.rst:185
+#: ../../postinstall.rst:949
 msgid "savecore"
 msgstr ""
 
-#: ../../postinstall.rst:187
+#: ../../postinstall.rst:951
 msgid "statd"
 msgstr ""
 
-#: ../../postinstall.rst:189
+#: ../../postinstall.rst:953
 msgid "staticroute"
 msgstr ""
 
-#: ../../postinstall.rst:191
+#: ../../postinstall.rst:955
 msgid "swap"
 msgstr ""
 
-#: ../../postinstall.rst:193
+#: ../../postinstall.rst:957
 msgid "sysadm"
 msgstr ""
 
-#: ../../postinstall.rst:195
+#: ../../postinstall.rst:959
 msgid "syscons"
 msgstr ""
 
-#: ../../postinstall.rst:197
+#: ../../postinstall.rst:961
 msgid "sysctl"
 msgstr ""
 
-#: ../../postinstall.rst:199
+#: ../../postinstall.rst:963
 msgid "syslogd"
 msgstr ""
 
-#: ../../postinstall.rst:201
+#: ../../postinstall.rst:965
 msgid "trueosinit"
 msgstr ""
 
-#: ../../postinstall.rst:203
+#: ../../postinstall.rst:967
 msgid "urandom"
 msgstr ""
 
-#: ../../postinstall.rst:205
+#: ../../postinstall.rst:969
 msgid "zfs"
 msgstr ""
 
-#: ../../postinstall.rst:207
+#: ../../postinstall.rst:971
 msgid "zvol"
 msgstr ""
 
-#: ../../postinstall.rst:210
-msgid ""
-"OpenRC has a few ordered runlevels in |trueos|. First is the *sysinit* "
-"runlevel which is used for OpenRC to initialize itself. Second is the *boot*"
-" runlevel, which starts most base services from :file:`/etc/init.d/`. Third "
-"is the *default* runlevel, which is where services started by ports are "
-"added."
-msgstr ""
-
-#: ../../postinstall.rst:216
+#: ../../postinstall.rst:698
 msgid "Services added by ports cannot be added to *boot* or *sysinit*."
 msgstr ""
 
-#: ../../postinstall.rst:219
-msgid ""
-"OpenRC allows users to add a service in the prefix location to the *boot* "
-"runlevel, which happens before the :file:`/usr` filesystem is mounted. "
-"Finally, there is a *shutdown* runlevel reserved for a few services like "
-":command:`savecore` or :command:`pc-updatemanager` installing updates at "
-"shutdown."
-msgstr ""
-
-#: ../../postinstall.rst:225
-msgid ""
-"When a service is added to a runlevel a symlink is created in "
-":file:`/etc/runlevels`. When a service is started, stopped, or changed to "
-"another state a symlink is added to :file:`/libexec/rc/init.d/`, as seen in "
-"this example:"
-msgstr ""
-
-#: ../../postinstall.rst:237
-msgid ""
-"Also under :file:`/libexec/rc` exists a cache directory which keeps a "
-"dependancies cache that is only updated when dependencies change. "
-"Additionally, several directories exist for other binaries and special "
-"binaries used by OpenRC functions."
-msgstr ""
-
-#: ../../postinstall.rst:242
+#: ../../postinstall.rst:764
 msgid ""
 "OpenRC has a dependency based init system. As an example, let’s examine a "
 "service which needs *network* such as SysAdm. Here are the contents of the "
 ":file:`/usr/local/etc/init.d/sysadm` *depend* section:"
 msgstr ""
 
-#: ../../postinstall.rst:254
+#: ../../postinstall.rst:776
 msgid ""
 "We can define that SysAdm needs *network*, which is the nickname of the "
 ":file:`/etc/init.d/network` service defined by *provide in network*. We also"
@@ -1164,11 +1085,11 @@ msgid ""
 "script in *after bootmisc*."
 msgstr ""
 
-#: ../../postinstall.rst:261
+#: ../../postinstall.rst:783
 msgid "Here are the contents of :file:`/etc/init.d/network`:"
 msgstr ""
 
-#: ../../postinstall.rst:273
+#: ../../postinstall.rst:795
 msgid ""
 "The *provide* option will set the service nickname to *net*. *Need* "
 "indicates restarting *localmount* will restart *network*. *After* defines "
@@ -1177,40 +1098,40 @@ msgid ""
 "other options shown."
 msgstr ""
 
-#: ../../postinstall.rst:283
+#: ../../postinstall.rst:810
 msgid "RC Defaults"
 msgstr ""
 
-#: ../../postinstall.rst:288
+#: ../../postinstall.rst:815
 msgid "RC Defaults are subject to change during development."
 msgstr ""
 
-#: ../../postinstall.rst:290
+#: ../../postinstall.rst:817
 msgid "|trueos| and FreeBSD now have very different rc defaults."
 msgstr ""
 
-#: ../../postinstall.rst:292
+#: ../../postinstall.rst:819
 msgid "**TrueOS OpenRC Defaults**"
 msgstr ""
 
-#: ../../postinstall.rst:294
+#: ../../postinstall.rst:821
 msgid ""
 "The entire `TrueOS rc.conf file <https://github.com/trueos/freebsd/blob/drm-"
 "next-4.7/etc/defaults/rc.conf>`_ is viewable on GitHub."
 msgstr ""
 
-#: ../../postinstall.rst:321
+#: ../../postinstall.rst:848
 msgid "**FreeBSD RC Defaults**"
 msgstr ""
 
-#: ../../postinstall.rst:323
+#: ../../postinstall.rst:850
 msgid ""
 "The entire `FreeBSD rc.conf file "
 "<https://github.com/freebsd/freebsd/blob/master/etc/defaults/rc.conf>`_ is "
 "available online."
 msgstr ""
 
-#: ../../postinstall.rst:350
+#: ../../postinstall.rst:877
 msgid ""
 "The |trueos| :file:`rc.conf` file is much smaller because :file:`rc.conf` is"
 " now primarily used for tuning OpenRC behavior. By default, |trueos| uses 3 "
@@ -1221,35 +1142,35 @@ msgstr ""
 msgid ": OpenRC Primary Tunables"
 msgstr ""
 
-#: ../../postinstall.rst:359 ../../postinstall.rst:383
+#: ../../postinstall.rst:984 ../../postinstall.rst:1008
 msgid "Tunable"
 msgstr ""
 
-#: ../../postinstall.rst:361
+#: ../../postinstall.rst:986
 msgid "rc_parallel=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:361
+#: ../../postinstall.rst:986
 msgid "Starts all services in parallel"
 msgstr ""
 
-#: ../../postinstall.rst:363
+#: ../../postinstall.rst:988
 msgid "rc_logger=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:363
+#: ../../postinstall.rst:988
 msgid "Enables logging"
 msgstr ""
 
-#: ../../postinstall.rst:365
+#: ../../postinstall.rst:990
 msgid "rc_log_path=\"/var/log/rc.log\""
 msgstr ""
 
-#: ../../postinstall.rst:365
+#: ../../postinstall.rst:990
 msgid "Defines the location for logging rc activity"
 msgstr ""
 
-#: ../../postinstall.rst:369
+#: ../../postinstall.rst:994
 msgid ""
 ":numref:`Table %s <orcalltun>` shows all other tunables enabled on a clean "
 "|trueos| installation. Many of these tunables continue to work in "
@@ -1257,7 +1178,7 @@ msgid ""
 "upgrade. The eventual target locations for these services are also listed."
 msgstr ""
 
-#: ../../postinstall.rst:375
+#: ../../postinstall.rst:1000
 msgid "These migration targets are estimates and subject to change."
 msgstr ""
 
@@ -1265,127 +1186,127 @@ msgstr ""
 msgid ": OpenRC Other Tunables"
 msgstr ""
 
-#: ../../postinstall.rst:383
+#: ../../postinstall.rst:1008
 msgid "Migration Target"
 msgstr ""
 
-#: ../../postinstall.rst:385
+#: ../../postinstall.rst:1010
 msgid "linux_enable=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:385
+#: ../../postinstall.rst:1010
 msgid ""
 "Notifies :file:`/etc/init.d/abi` service to enable the Linux compatability "
 "during boot"
 msgstr ""
 
-#: ../../postinstall.rst:385
+#: ../../postinstall.rst:1010
 msgid ":file:`/etc/conf.d/abi`"
 msgstr ""
 
-#: ../../postinstall.rst:389
+#: ../../postinstall.rst:1014
 msgid "ifconfig_re0=\"DHCP\""
 msgstr ""
 
-#: ../../postinstall.rst:389 ../../postinstall.rst:391
-#: ../../postinstall.rst:394 ../../postinstall.rst:402
-#: ../../postinstall.rst:404 ../../postinstall.rst:406
+#: ../../postinstall.rst:1014 ../../postinstall.rst:1016
+#: ../../postinstall.rst:1019 ../../postinstall.rst:1027
+#: ../../postinstall.rst:1029 ../../postinstall.rst:1031
 msgid "TBD"
 msgstr ""
 
-#: ../../postinstall.rst:389 ../../postinstall.rst:391
+#: ../../postinstall.rst:1014 ../../postinstall.rst:1016
 msgid ":file:`/etc/conf.d/network`"
 msgstr ""
 
-#: ../../postinstall.rst:391
+#: ../../postinstall.rst:1016
 msgid "ifconfig_re0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../postinstall.rst:394
+#: ../../postinstall.rst:1019
 msgid "hostname=\"trueos-4843\""
 msgstr ""
 
-#: ../../postinstall.rst:394
+#: ../../postinstall.rst:1019
 msgid ":file:`/etc/conf.d/hostname`"
 msgstr ""
 
-#: ../../postinstall.rst:396
+#: ../../postinstall.rst:1021
 msgid "kldload_i915kms=\"i915kms\""
 msgstr ""
 
-#: ../../postinstall.rst:396
+#: ../../postinstall.rst:1021
 msgid ""
 "TrueOS specific. Allows loading an individual module via the installer post "
 "installation."
 msgstr ""
 
-#: ../../postinstall.rst:396
+#: ../../postinstall.rst:1021
 msgid ":file:`etc/conf.d/modules`"
 msgstr ""
 
-#: ../../postinstall.rst:400
+#: ../../postinstall.rst:1025
 msgid "zfs_enable=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:400
+#: ../../postinstall.rst:1025
 msgid "Obsolete, marked for removal"
 msgstr ""
 
-#: ../../postinstall.rst:400
+#: ../../postinstall.rst:1025
 msgid "None"
 msgstr ""
 
-#: ../../postinstall.rst:402
+#: ../../postinstall.rst:1027
 msgid "wlans_iwm0=\"wlan0\""
 msgstr ""
 
-#: ../../postinstall.rst:402 ../../postinstall.rst:404
-#: ../../postinstall.rst:406
+#: ../../postinstall.rst:1027 ../../postinstall.rst:1029
+#: ../../postinstall.rst:1031
 msgid ":file:`/etc.conf.d.network`"
 msgstr ""
 
-#: ../../postinstall.rst:404
+#: ../../postinstall.rst:1029
 msgid "wlans_iwm0=\"wlan 0 DHCP\""
 msgstr ""
 
-#: ../../postinstall.rst:406
+#: ../../postinstall.rst:1031
 msgid "ifconfig_wlan0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../postinstall.rst:413
+#: ../../postinstall.rst:1038
 msgid "OpenRC Install Scripts"
 msgstr ""
 
-#: ../../postinstall.rst:415
+#: ../../postinstall.rst:1040
 msgid ""
 "There are number of scripts used for older |trueos| systems and new "
 "installations, listed below."
 msgstr ""
 
-#: ../../postinstall.rst:422
+#: ../../postinstall.rst:1047
 msgid "One-time Migration Script"
 msgstr ""
 
-#: ../../postinstall.rst:424
+#: ../../postinstall.rst:1049
 msgid ""
 "A one time migration script is available for |trueos| installations dated "
 "10-28-16 or older that are still using the legacy FreeBSD rc system:"
 msgstr ""
 
-#: ../../postinstall.rst:428
+#: ../../postinstall.rst:1053
 msgid ""
 "This block is truncated from the `original file <https://github.com/trueos"
 "/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_"
 msgstr ""
 
-#: ../../postinstall.rst:454
+#: ../../postinstall.rst:1079
 msgid ""
 "With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`, has "
 "been phased out of |trueos| and is automatically removed from legacy "
 "installs dated 10-28-16 and older by :command:`pc-updatemanger`:"
 msgstr ""
 
-#: ../../postinstall.rst:458
+#: ../../postinstall.rst:1083
 msgid ""
 "This script is used to define a list of services such as *PCDM* designated "
 "to boot by default on a desktop. It also defines what drivers to load on a "
@@ -1394,29 +1315,29 @@ msgid ""
 "there is no need to keep an extra overlay file to accomplish this behaviour."
 msgstr ""
 
-#: ../../postinstall.rst:469
+#: ../../postinstall.rst:1094
 msgid "|trueos| Desktop pkg-install Script"
 msgstr ""
 
-#: ../../postinstall.rst:471
+#: ../../postinstall.rst:1096
 msgid ""
 "This is an excerpt from the |trueos| Desktop :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-desktop/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../postinstall.rst:502
+#: ../../postinstall.rst:1127
 msgid "TrueOS Server pkg-install script"
 msgstr ""
 
-#: ../../postinstall.rst:504
+#: ../../postinstall.rst:1129
 msgid ""
 "This is an excerpt from the |trueos| Server :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-server/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../postinstall.rst:530
+#: ../../postinstall.rst:1155
 msgid ""
 "The typical :command:`nginx_enable=”YES”` is no longer used to enable "
 "services. Instead, :command:`rc-update` is used to add or delete services "
@@ -1425,11 +1346,11 @@ msgid ""
 "removed after migration."
 msgstr ""
 
-#: ../../postinstall.rst:540
+#: ../../postinstall.rst:1165
 msgid "Updating a Port's Makefile"
 msgstr ""
 
-#: ../../postinstall.rst:542
+#: ../../postinstall.rst:1167
 msgid ""
 "There is still quite a bit of work to do updating each port's "
 ":file:`Makefile` to the new format, :command:`USE_OPENRC_SUBR=`. However, "
@@ -1437,26 +1358,26 @@ msgid ""
 " format:"
 msgstr ""
 
-#: ../../postinstall.rst:547
+#: ../../postinstall.rst:1172
 msgid ""
 "This is an excerpt from the |trueos| :file:`dbus.in` file, which is "
 "available online: https://github.com/trueos/freebsd-ports/blob/xserver-"
 "next/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../postinstall.rst:575
+#: ../../postinstall.rst:1200
 msgid ""
 "Here is an example from FreeBSD of *dbus* using the legacy rc script format:"
 msgstr ""
 
-#: ../../postinstall.rst:578
+#: ../../postinstall.rst:1203
 msgid ""
 "This is an excerpt from the legacy FreeBSD :file:`dbus.in` file, which is "
 "available online: https://github.com/freebsd/freebsd-"
 "ports/blob/master/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../postinstall.rst:605
+#: ../../postinstall.rst:1230
 msgid ""
 "Several developers are working on the thousands of instances as quickly as "
 "possible. Anyone can begin transitioning to defining all service "
@@ -1466,7 +1387,7 @@ msgid ""
 ":file:`/etc/conf.d/nginx`."
 msgstr ""
 
-#: ../../postinstall.rst:612
+#: ../../postinstall.rst:1237
 msgid ""
 "Generally, usage of :file:`/etc/rc.conf` is minimized. Tweaking the default "
 "OpenRC configuration parameters is recommended only for advanced users. It "
@@ -1475,120 +1396,331 @@ msgid ""
 "services for startup."
 msgstr ""
 
-#: ../../postinstall.rst:35
+#: ../../postinstall.rst:630
+msgid "Component or action"
+msgstr ""
+
+#: ../../postinstall.rst:630
+msgid "FreeBSD"
+msgstr ""
+
+#: ../../postinstall.rst:630
+msgid "|trueos|"
+msgstr ""
+
+#: ../../postinstall.rst:632
+msgid "Base system rc script location"
+msgstr ""
+
+#: ../../postinstall.rst:632
+msgid ":file:`/etc/rc.d`"
+msgstr ""
+
+#: ../../postinstall.rst:632
+msgid ":file:`/etc/init.d`"
+msgstr ""
+
+#: ../../postinstall.rst:634
+msgid "Ports rc script location"
+msgstr ""
+
+#: ../../postinstall.rst:634
+msgid ":file:`/usr/local/etc/rc.d`"
+msgstr ""
+
+#: ../../postinstall.rst:634
+msgid ":file:`/usr/local/etc/init.d`"
+msgstr ""
+
+#: ../../postinstall.rst:636
+msgid "Service configuration"
+msgstr ""
+
+#: ../../postinstall.rst:636
+msgid ":file:`/etc/rc.conf` or :file:`/etc/rc.conf.local`"
+msgstr ""
+
+#: ../../postinstall.rst:639
+msgid "All services are configured in a central location"
+msgstr ""
+
+#: ../../postinstall.rst:636
+msgid ":file:`/etc/conf.d/servicename`"
+msgstr ""
+
+#: ../../postinstall.rst:639
+msgid "Each service has its own configuration file"
+msgstr ""
+
+#: ../../postinstall.rst:642
+msgid "Starting e.g. the :command:`nginx` service"
+msgstr ""
+
+#: ../../postinstall.rst:642 ../../postinstall.rst:642
+msgid ":command:`$ service nginx start` :command:`$ service nginx start`"
+msgstr ""
+
+#: ../../postinstall.rst:645
+msgid "Configuring e.g. :command:`nginx` to run in the default runlevel"
+msgstr ""
+
+#: ../../postinstall.rst:646
+msgid "Edit :file:`/etc/rc.conf` and add"
+msgstr ""
+
+#: ../../postinstall.rst:646
+msgid ":command:`nginx_enable=\"YES\"`"
+msgstr ""
+
+#: ../../postinstall.rst:645
+msgid ":command:`$ rc-update add nginx default`"
+msgstr ""
+
+#: ../../postinstall.rst:649
+msgid "Check to see if a service is enabled"
+msgstr ""
+
+#: ../../postinstall.rst:649
+msgid ":samp:`$ service nginx rcvar`"
+msgstr ""
+
+#: ../../postinstall.rst:651 ../../postinstall.rst:651
+msgid "If the service is enabled, the result is:"
+msgstr ""
+
+#: ../../postinstall.rst:654
+msgid ":samp:`nginx_enable=\"YES\"`"
+msgstr ""
+
+#: ../../postinstall.rst:649
+msgid ":samp:`$ rc-update show default | grep nginx`"
+msgstr ""
+
+#: ../../postinstall.rst:654
+msgid ":samp:`nginx | default`"
+msgstr ""
+
+#: ../../postinstall.rst:19
 msgid ""
-":numref:`Table %s <trfbsdrc>` offers a quick look at the differences between"
-" the |trueos| and FreeBSD RC files:"
+"After the |trueos| system has finished booting for the first time, |trueos| "
+"will present additional screens that assist in configuring the system."
+msgstr ""
+
+#: ../../postinstall.rst:609
+msgid "Managing System Services"
+msgstr ""
+
+#: ../../postinstall.rst:613
+msgid ""
+"|trueos| now uses `OpenRC <https://wiki.gentoo.org/wiki/Project:OpenRC>`__ "
+"to manage system services.  OpenRC is an integral component of the |trueos| "
+"operating system, and is a major point of difference between |trueos| and "
+"FreeBSD. This section is intended to provide detailed information about "
+"system service management in |trueos|."
+msgstr ""
+
+#: ../../postinstall.rst:620
+msgid "Use of OpenRC in |trueos| versus FreeBSD :command:`rc`"
+msgstr ""
+
+#: ../../postinstall.rst:622
+msgid ""
+":numref:`Table %s <trfbsdrc>` serves as a quick summary and series of "
+"working examples contrasting the FreeBSD :command:`rc` system and OpenRC in "
+"|trueos|."
 msgstr ""
 
 #: ../../postinstall.rst:0
 msgid ""
-": Brief comparison between |trueos| and traditional FreeBSD         RC files"
+": Brief comparison between traditional FreeBSD :command:`rc` and |trueos| "
+"OpenRC service management"
 msgstr ""
 
-#: ../../postinstall.rst:44
-msgid "Component or action"
+#: ../../postinstall.rst:668
+msgid "Service Management in OpenRC"
 msgstr ""
 
-#: ../../postinstall.rst:44
-msgid "FreeBSD"
+#: ../../postinstall.rst:675
+msgid "Runlevels"
 msgstr ""
 
-#: ../../postinstall.rst:44
-msgid "|trueos|"
+#: ../../postinstall.rst:677
+msgid ""
+"Traditionally, FreeBSD operates in single- and multi-user modes. OpenRC, "
+"however, offers the ability to define **runlevels**. Any number of system "
+"services can be associated with a given runlevel. In |trueos|, the "
+":samp:`default` runlevel is analogous to the FreeBSD multi-user mode, and is"
+" associated with the \"Normal Bootup\" option of the |trueos| bootloader."
 msgstr ""
 
-#: ../../postinstall.rst:46
-msgid "Base system rc script location"
+#: ../../postinstall.rst:684
+msgid ""
+"No OpenRC runlevels will be executed if the system is booted into single-"
+"user mode (see :numref:`Figure %s <install1(2)>`.)"
 msgstr ""
 
-#: ../../postinstall.rst:46
-msgid ":file:`/etc/rc.d`"
+#: ../../postinstall.rst:687
+msgid ""
+"Runlevels are defined by subdirectories of :file:`/etc/runlevels`; all "
+"associations between services and runlevels can be shown by running the "
+"command:"
 msgstr ""
 
-#: ../../postinstall.rst:46
-msgid ":file:`/etc/init.d`"
+#: ../../postinstall.rst:691
+msgid ":samp:`$ rc-update show -v`"
 msgstr ""
 
-#: ../../postinstall.rst:48
-msgid "Ports rc script location"
+#: ../../postinstall.rst:696
+msgid "OpenRC has a few ordered runlevels in |trueos|. In order of execution:"
 msgstr ""
 
-#: ../../postinstall.rst:48
-msgid ":file:`/usr/local/etc/rc.d`"
+#: ../../postinstall.rst:694
+msgid "*sysinit* runlevel: used for OpenRC to initialize itself."
 msgstr ""
 
-#: ../../postinstall.rst:48
-msgid ":file:`/usr/local/etc/init.d`"
+#: ../../postinstall.rst:695
+msgid "*boot* runlevel: starts most base services from :file:`/etc/init.d/`."
 msgstr ""
 
-#: ../../postinstall.rst:50
-msgid "Service configuration"
+#: ../../postinstall.rst:696
+msgid ""
+"*default* runlevel, which is where services started by ports are added."
 msgstr ""
 
-#: ../../postinstall.rst:50
-msgid ":file:`/etc/rc.conf` or :file:`/etc/rc.conf.local`"
+#: ../../postinstall.rst:701
+msgid ""
+"OpenRC allows users to add services in the prefix location to the *boot* "
+"runlevel. These services are started before the :file:`/usr` filesystem is "
+"mounted. Finally, there is a *shutdown* runlevel reserved for a few services"
+" like :command:`savecore` or :command:`pc-updatemanager`, which installs "
+"updates at shutdown."
 msgstr ""
 
-#: ../../postinstall.rst:53
-msgid "All services are configured in a central location"
+#: ../../postinstall.rst:707
+msgid ""
+"When a service is added to a runlevel, a symlink is created in "
+":file:`/etc/runlevels`. When a service is started, stopped, or changed to "
+"another state, a symlink is added to :file:`/libexec/rc/init.d/`, as seen in"
+" this example:"
 msgstr ""
 
-#: ../../postinstall.rst:50
-msgid ":file:`/etc/conf.d/servicename`"
+#: ../../postinstall.rst:723
+msgid "Services and Runlevels"
 msgstr ""
 
-#: ../../postinstall.rst:53
-msgid "Each service has its own configuration file"
+#: ../../postinstall.rst:725
+msgid ""
+"OpenRC includes options to *start*, *stop*, *add*, or *delete* services from"
+" runlevels as seen in :numref:`Table %s <rcbootserv>`. Most of these actions"
+" can be accomplished using the `Service Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
+"built into |sysadm|. Individuals familiar with the FreeBSD "
+":command:`service` command may notice some similarities between some of "
+"these commands."
 msgstr ""
 
-#: ../../postinstall.rst:56
-msgid "Starting e.g. the :command:`nginx` service"
+#: ../../postinstall.rst:0
+msgid ": Service and Runlevel Management Commands"
 msgstr ""
 
-#: ../../postinstall.rst:56 ../../postinstall.rst:56
-msgid ":command:`$ service nginx start` :command:`$ service nginx start`"
+#: ../../postinstall.rst:762
+msgid "Writing OpenRC Services"
 msgstr ""
 
-#: ../../postinstall.rst:59
-msgid "Configuring e.g. :command:`nginx` to run in the default runlevel"
+#: ../../postinstall.rst:801
+msgid ""
+"Also under :file:`/libexec/rc` exists a cache directory which keeps a "
+"dependencies cache that is only updated when dependencies change. Several "
+"other directories exist for other binaries and special binaries used by "
+"OpenRC functions."
 msgstr ""
 
-#: ../../postinstall.rst:60
-msgid "Edit :file:`/etc/rc.conf` and add"
+#: ../../postinstall.rst:882
+msgid ""
+":numref:`Table %s <rcuprnlvl>` lists services and their default runlevels in"
+" |trueos|."
 msgstr ""
 
-#: ../../postinstall.rst:60
-msgid ":command:`nginx_enable=\"YES\"`"
+#: ../../postinstall.rst:978
+msgid "Tuneables"
 msgstr ""
 
-#: ../../postinstall.rst:59
-msgid ":command:`$ rc-update add nginx default`"
-msgstr ""
+#~ msgid ""
+#~ "Once the |trueos| system has finished booting for the first time, the "
+#~ "installer will present some additional screens to configure the system. This"
+#~ " section describes OpenRC, the boot process, and the post-installation "
+#~ "configuration screens."
+#~ msgstr ""
 
-#: ../../postinstall.rst:63
-msgid "Check to see if a service is enabled"
-msgstr ""
+#~ msgid "OpenRC and |trueos|"
+#~ msgstr ""
 
-#: ../../postinstall.rst:63
-msgid ":samp:`$ service nginx rcvar`"
-msgstr ""
+#~ msgid ""
+#~ "|trueos| now uses OpenRC as an integral component of the operating system. "
+#~ "This is a major point of difference between |trueos| and FreeBSD, and this "
+#~ "section is intended to provide detailed information about the |trueos| "
+#~ "implementation for more advanced users."
+#~ msgstr ""
 
-#: ../../postinstall.rst:65 ../../postinstall.rst:65
-msgid "If the service is enabled, the result is:"
-msgstr ""
+#~ msgid "Managing Bootup Services"
+#~ msgstr ""
 
-#: ../../postinstall.rst:68
-msgid ":samp:`nginx_enable=\"YES\"`"
-msgstr ""
+#~ msgid ""
+#~ "OpenRC has a variety of options to *start*, *stop*, *add*, or *delete* "
+#~ "services from bootup, seen in :numref:`Table %s <rcbootserv>`. Most of these"
+#~ " actions can be accomplished using the `Service Manager "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
+#~ "built into |sysadm|. Individuals familiar with the FreeBSD "
+#~ ":command:`service` command may notice some similarities between some of "
+#~ "these commands:"
+#~ msgstr ""
 
-#: ../../postinstall.rst:63
-msgid ":samp:`$ rc-update show default | grep nginx`"
-msgstr ""
+#~ msgid ": Bootup Service Commands"
+#~ msgstr ""
 
-#: ../../postinstall.rst:68
-msgid ":samp:`nginx | default`"
-msgstr ""
+#~ msgid ""
+#~ ":command:`rc-update` displays all runlevels. The full list of available "
+#~ "runlevels is seen here in :numref:`Table %s <rcuprnlvl>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OpenRC has a few ordered runlevels in |trueos|. First is the *sysinit* "
+#~ "runlevel which is used for OpenRC to initialize itself. Second is the *boot*"
+#~ " runlevel, which starts most base services from :file:`/etc/init.d/`. Third "
+#~ "is the *default* runlevel, which is where services started by ports are "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OpenRC allows users to add a service in the prefix location to the *boot* "
+#~ "runlevel, which happens before the :file:`/usr` filesystem is mounted. "
+#~ "Finally, there is a *shutdown* runlevel reserved for a few services like "
+#~ ":command:`savecore` or :command:`pc-updatemanager` installing updates at "
+#~ "shutdown."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When a service is added to a runlevel a symlink is created in "
+#~ ":file:`/etc/runlevels`. When a service is started, stopped, or changed to "
+#~ "another state a symlink is added to :file:`/libexec/rc/init.d/`, as seen in "
+#~ "this example:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Also under :file:`/libexec/rc` exists a cache directory which keeps a "
+#~ "dependancies cache that is only updated when dependencies change. "
+#~ "Additionally, several directories exist for other binaries and special "
+#~ "binaries used by OpenRC functions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":numref:`Table %s <trfbsdrc>` offers a quick look at the differences between"
+#~ " the |trueos| and FreeBSD RC files:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ": Brief comparison between |trueos| and traditional FreeBSD         RC files"
+#~ msgstr ""
 
 #~ msgid "Location of RC scripts for starting and stopping services:"
 #~ msgstr ""
