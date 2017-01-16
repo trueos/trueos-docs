@@ -535,18 +535,11 @@ For example, to see a listed of the supported filesystems, use:
 FreeBSD Ports
 =============
 
-It is possible to pull in ports from the FreeBSD project using
-:command:`portsnap`, but this is currently **not** recommended for
-|trueos|. Current development efforts are being made to offer an
-alternative to :command:`portsnap` for |trueos| users, with this section
-being updated when progress is made.
+Use :command:`git` to fetch the FreeBSD ports tree on a local system.
+Specifically, the |trueos| branch of the FreeBSD ports tree is pulled,
+which is regularly updated against the base FreeBSD ports tree.
 
-For now, it is recommended to use :command:`git` to fetch the FreeBSD
-ports tree on a local system. Specifically, the |trueos| branch of the
-FreeBSD ports tree will be pulled, which is regularly updated against
-the base FreeBSD ports tree.
-
-.. warning:: These commands must be run as the superuser or **root**.
+.. note:: These commands must be run as the superuser or **root**.
 
 When fetching ports for the first time:
 
