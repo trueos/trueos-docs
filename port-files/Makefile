@@ -34,5 +34,7 @@ do-install:
 	@cd ${WRKSRC} && make html
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/trueos
 	@cp -r ${WRKSRC}/_build/html ${STAGEDIR}${PREFIX}/share/trueos/handbook
+	@cp -r ${WRKSRC}/xtrafiles/handbook.desktop ${STAGEDIR}${PREFIX}/share/applications/handbook.desktop
+	@cp -r ${WRKSRC}/xtrafiles/trueos-handbook.png ${STAGEDIR}${PREFIX}/share/pixmaps/trueos-handbook.png
 
 .include <bsd.port.mk>

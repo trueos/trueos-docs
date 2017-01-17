@@ -1,3 +1,5 @@
+share/applications/handbook.desktop
+share/pixmaps/trueos-handbook.png
 share/trueos/handbook/.buildinfo
 share/trueos/handbook/_images/audio1a.png
 share/trueos/handbook/_images/boot1b.png
