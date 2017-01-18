@@ -2777,7 +2777,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00000', end
 }
 .wy-menu-vertical li.toctree-l3 {
     font-size: 0.9em;
-	background: #28343b
 }
 .wy-menu-vertical li.toctree-l3.current>a {
     background: rgba(176,0,0,1);
