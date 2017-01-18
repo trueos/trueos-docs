@@ -31,35 +31,35 @@ intact, you have a fully functional FreeBSD system under the hood.
 a desktop or a server version of FreeBSD. Other differences from FreeBSD
 include: 
 
-* |trueos| pre-configures the BSD-licensed, |lumina| desktop
+* |trueos| pre-configures the BSD-licensed |lumina| desktop
   environment during a desktop installation. Additional desktop
-  environments can be installed and will appear in the login menu,
-  allowing the user to select which environment to log into.
+  environments can be installed and appear in the login menu,
+  allowing the user to select the environment to log into.
 
 * The |trueos| installer supports configuring ZFS and encryption during
   installation.
 
-* |trueos| provides both a graphical and command line software management
-  system.
+* |trueos| provides both a graphical and command line software
+  management system.
 
-* |trueos| provides many graphical utilities for configuring and managing
-  the system. These utilities have both a command line equivalent and
-  a REST and WebSocket API so that they can also be used to manage
-  multiple systems.
+* |trueos| provides many graphical utilities for configuration and
+  management. These utilities have both a command line equivalent and
+  a REST and WebSocket API so they can also be used to manage multiple
+  systems.
 
-* |trueos| comes pre-configured with a number of automatic scripts to
-  perform tasks such as connecting digital cameras or USB memory sticks.
+* |trueos| comes pre-configured with a number of automatic scripts for
+  performing tasks like connecting digital cameras or USB memory sticks.
 
-* The |trueos| boot menu supports boot environments, or snapshots of the
+* The |trueos| boot menu supports boot environments or snapshots of the
   operating system, and the |trueos| Update Manager automatically adds a
   new boot environment to the boot menu before updating the operating
-  system or software. This means that if an update fails, the system can
-  reboot into the previous version of the operating system, before the
-  update occurred.
+  system or software. With this functionality, if an update fails the
+  system can reboot into the previous version of the operating system,
+  before the update installed.
 
-While it began as an independent project, since October 2006 |trueos| is
-financially backed and supported by the enterprise-class hardware
-solutions provider `iXsystems <https://www.ixsystems.com/>`_.
+While it began as an independent project, |trueos| is financially backed
+and supported by the enterprise-class hardware solutions provider
+`iXsystems <https://www.ixsystems.com/>`_ since October 2006.
 
 .. index:: introduction, typographic
 .. _Typographic Conventions:
@@ -67,8 +67,9 @@ solutions provider `iXsystems <https://www.ixsystems.com/>`_.
 Typographic Conventions
 =======================
 
-The |trueos| User Guide uses several typographic conventions, seen here
-in :numref:`Table %s <typconv>`:
+The |trueos| User Guide uses several typographic conventions.
+:numref:`Table %s <typconv>` provides a simple reference for these
+conventions:
 
 .. _typconv:
 
@@ -105,7 +106,7 @@ in :numref:`Table %s <typconv>`:
 Goals and Features
 ==================
 
-|trueos| provides these features:
+|trueos| provides many features:
 
 * **Easy installation:** To install either a graphical desktop or
   command-line server, simply insert the installation media, reboot the
@@ -113,46 +114,50 @@ Goals and Features
   installation menus.
 
 * **Automatically configured hardware:** Video, sound, network, and
-  other devices are configured automatically during installation.
+  other devices configure automatically during installation.
 
 * **Intuitive desktop interface:** |trueos| installs the |lumina|
   desktop, but additional desktop environments can be installed to
   support day-to-day computing needs.
 
-* **Easy software management:** With `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
+* **Easy software management:** With
+  `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
   installing, upgrading, and uninstalling software is safe and easy.
 
-* **Lots of software available:** |appcafe| can be used to install
-  software ported to FreeBSD (currently over 26,100 applications).
+* **Lots of software available:** |appcafe| is used to install software
+  ported to FreeBSD (currently over 26,100 applications).
 
 * **Easy to update:** |trueos| (with |sysadm|) provides a built-in
   `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
   which provides notifications of available updates. This utility makes
   it easy to apply operating system security fixes, bug fixes, and
-  system enhancements, as well as upgrade to newer versions of the
-  operating system or installed software.
+  system enhancements. Additionally, the Update Manager is used to
+  upgrade the operating system or update installed software.
 
 * **Virus-free:** |trueos| is unaffected by viruses, spyware, or other
-  malware.
+  malware (see :ref:`Security`).
 
-* **No defragmentation:** |trueos| hard drives do not need to be
+* **No defragmentation:** |trueos| hard drives never need to be
   defragmented and are formatted with OpenZFS, a self-healing filesystem.
 
 * **Laptop support:** Provides power saving, swap space encryption, and
-  automatic switching between wired and wifi network connections.
+  automatic switching between wired and wifi network connections. The
+  rolling release model of |trueos| provides an environment to quickly
+  add support for new hardware.
 
 * **Secure environment:** |trueos| provides a pre-configured firewall
   and a built-in host-based Intrusion Detection System.
 
 * **Easy system administration:** |trueos| provides many graphical tools
-  for performing system administration tasks.
+  for performing system administration.
 
 * **Localization:** |trueos| supports a variety of native languages and
   locales.
 
-* **Vibrant community:** |trueos| has a friendly and helpful community.
+* **Vibrant community:** |trueos| has a friendly and helpful
+  :ref:`community <TrueOS Community>`.
 
-.. index:: introduction, legal
+.. index:: legal
 .. _Legal:
 
 Legal
@@ -162,20 +167,20 @@ This section covers the required legal elements to the handbook,
 including the Copyright notice, Trademarks used in the document, and the
 |trueos| ethical advertising policy.
 
-.. index:: introduction, legal, copyright
+.. index:: copyright, trademarks
 .. _Copyright:
 
 Copyright & Trademarks
 ----------------------
 
-Copyright © 2005-2016 iXsystems
+Copyright © 2005-2017, iXsystems
 
 The |trueos| User Guide is freely available for sharing and
 redistribution under the terms of the
 `Creative Commons Attribution License <https://creativecommons.org/licenses/by/3.0/>`_.
 This means you have permission to copy, distribute, translate, and
 adapt the work, as long as you attribute the |trueos| Project as the
-original source of the Handbook.
+original source of the Guide.
 
 |trueos| and the |trueos| logo are registered trademarks of
 `iXsystems <https://www.ixsystems.com/>`_. To use the |trueos| logo in
@@ -242,7 +247,7 @@ VMWare® is a registered trademark of VMWare, Inc.
 Windows® is a registered trademark of Microsoft Corporation in the
 United States and other countries.
 
-.. index:: introduction, legal, advertising
+.. index:: ethical advertising
 .. _Ad policy:
 
 Ethical Advertising Policy
@@ -273,7 +278,7 @@ ensure the |trueos| project is afforded its commission. To ask questions
 about our Ethical Advertising policy, please contact joshms@trueos.org
 for more information.
 
-.. index:: introduction, comparing
+.. index:: comparisons
 .. _Comparing TrueOS:
 
 Comparing |trueos|
@@ -284,7 +289,7 @@ other operating systems. These comparisons are intended to help new
 users deciding to install and try |trueos|, with accuracy being
 the chief concern.
 
-.. index:: introduction, comparing, FreeBSD/PC-BSD
+.. index:: FreeBSD/PC-BSD comparison
 .. _FreeBSD and PCBSD:
 
 FreeBSD and PC-BSD
@@ -363,7 +368,7 @@ now separate |trueos| from |pcbsd|:
   incorporated into
   `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html#lumina-information>`_.
   
-* The functionality provided by
+* The functionality provided by the
   `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
   (:command:`pc-servicemanager`) has been integrated into |sysadm|.
 
@@ -408,7 +413,7 @@ now separate |trueos| from |pcbsd|:
 
 * :command:`pc-thinclient` has been removed as it is deprecated.
 
-.. index:: introduction, comparing, Linux
+.. index:: Linux comparison
 .. _Linux and TrueOS:
 
 Linux and |trueos|
