@@ -20,11 +20,11 @@ is ready to install |trueos|.
   operating system.
 
 To determine if the chosen hardware is detected by |trueos|, start an
-installation and click :guilabel:`Hardware Compatibility` in the
-:ref:`Language Selection` screen.
+installation and click the :guilabel:`Hardware Compatibility` icon in
+the lower left corner of the :ref:`Language Selection` screen.
 
 If any problems arise with the installation, refer to the
-Troubleshooting :ref:`Installation` section of this handbook.
+:ref:`Troubleshooting` section of this handbook.
 
 This section discusses the |trueos| hardware requirements, how to
 prepare the system for installation, and how to obtain and prepare the
@@ -45,6 +45,8 @@ system that meets the recommended system requirements.
 At **bare minimum**, these requirements must be met in order to install
 |trueos|:
 
+**Minimum**
+
 * 64-bit processor
 
 * 1 GB RAM
@@ -56,6 +58,8 @@ At **bare minimum**, these requirements must be met in order to install
 
 Here are the minimum **recommended** requirements. More RAM and
 available disk space will improve the computing experience:
+
+**Recommended**
 
 * 64-bit processor
 
@@ -81,7 +85,7 @@ More RAM is always recommended, so install as much as you can afford.
 To play modern video games, use a fast CPU. To create a collection of
 music and movies on the computer, sufficient disk space is required.
 
-.. index:: hardware
+.. index:: supported hardware
 .. _Supported Hardware:
 
 Supported Hardware
@@ -90,15 +94,15 @@ Supported Hardware
 To check your hardware before installing |trueos|, a good place to start
 is the
 `FreeBSD Hardware Notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_.
-Another good resource is to start the installer and click
-:guilabel:`Hardware Compatibility`. This handbook also has a
+Another good resource is to start the installer and click the
+:guilabel:`Hardware Compatibility` icon. This handbook also has a
 :ref:`Ongoing issues` section to list any ongoing issues with hardware.
 
 While most hardware "just works" with |trueos|, it is possible to run
 across a piece of hardware which does not. Since |trueos| is essentially
-FreeBSD, any hardware that works on FreeBSD will work on |trueos|. If
-problems are occurring with a device, start with a web search for the
-term "FreeBSD" plus the type and model of the hardware. This will show
+FreeBSD, any hardware that works on FreeBSD works on |trueos|. If
+problems occur with a device, begin with a web search for the term
+"FreeBSD" plus the type and model of the hardware. This search shows
 if there is a known issue with the device. If there are too many search
 results, concentrate on the most recent ones as oftentimes hardware
 previously problematic has since been fixed or the missing driver will
@@ -108,9 +112,10 @@ reports for your hardware, please help improve hardware support for all
 FreeBSD and |trueos| users by :ref:`Reporting a bug <Report a bug>` so
 the issue can be addressed by the developers.
 
-The rest of this section provides an overview of the various supported
+The rest of this section provides an overview of the different supported
 hardware.
 
+.. index:: supported processors
 .. _Processor:
 
 Processor
@@ -122,6 +127,7 @@ need to be manufactured by AMD in order to be supported. The
 `FreeBSD Hardware Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_
 lists the *amd64* processors known to work.
 
+.. index:: supported graphics solutions
 .. _Graphics:
 
 Graphics
@@ -131,9 +137,10 @@ Like many open source operating systems, |trueos| uses
 `X.org <https://www.x.org/wiki/>`_ drivers for graphics support.
 |trueos| will automatically detect the optimal video settings for
 supported video drivers. Verify the graphics hardware is supported by
-clicking :guilabel:`Hardware Compatibility` within the installer.
+clicking the :guilabel:`Hardware Compatibility` icon within the
+installer.
 
-Here is the support for the major graphic vendors:
+Here is the major graphic vendor support:
 
 **NVIDIA:** 3D acceleration on NVIDIA is provided by native FreeBSD
 drivers. If an NVIDIA video card is detected, an
@@ -154,28 +161,29 @@ graphics adapters provided by Optimus. Optimus implementations vary, so
 |trueos| may or may not be able to successfully load a graphics driver
 on hardware. If a blank screen shows after installation, check the BIOS
 to see if it has an option to disable one of the graphics adapters
-or to set "discrete" mode. If the BIOS does not provide a discrete mode,
-|trueos| will default to the 3D Intel driver and disable NVIDIA. This
+or to set *discrete* mode. If the BIOS does not provide a *discrete*
+mode, |trueos| defaults to the 3D Intel driver and disables NVIDIA. This
 will change in the future when the NVIDIA driver supports Optimus.
 
+.. index:: supported wireless cards
 .. _Wireless:
 
 Wireless
 --------
 
 |trueos| has built-in support for most wireless networking cards.
-|trueos| will automatically detect available wireless networks for
-supported wireless devices. Verify the device is supported by clicking
-:guilabel:`Hardware Compatibility` within the installer. If it is an
-external wireless device, insert it before running the installer.
+|trueos| automatically detects available wireless networks for supported
+wireless devices. Verify the device is supported by clicking the
+:guilabel:`Hardware Compatibility` icon within the installer. If it is
+an external wireless device, insert it before running the installer.
 
-Certain Broadcom devices, typically found in cheaper laptops, are buggy
-and can have lockups when in DMA mode. If the device freezes, try
-switching to *PIO* mode in the BIOS. Alternately, add
+Certain Broadcom devices, typically found in less expensive laptops, are
+buggy and can have lockups when in *DMA* mode. If the device freezes,
+try switching to *PIO* mode in the BIOS. Alternately, add
 :command:`hw.bwn.usedma=0` to :file:`/boot/loader.conf` and reboot to
 see if anything changes.
 
-.. index:: laptops
+.. index:: supported laptops
 .. _Laptops:
 
 Laptops
@@ -188,7 +196,7 @@ typically deal with:
 * **Sleep/suspend:** Unfortunately,
   :wikipedia:`Advanced Configuration and Power Interface` (ACPI) is not
   an exact science, meaning experimentation with various
-  :command:`sysctl` variables may be in order to achieve successful
+  :command:`sysctl` variables may be required to achieve successful
   sleep and suspend states on your particular laptop model. If the
   laptop is a ThinkPad,
   `ThinkWiki <http://www.thinkwiki.org/wiki/ThinkWiki>`_ is an
@@ -196,18 +204,20 @@ typically deal with:
   *SYSCTL VARIABLES* section of :command:`man 4 acpi` and check to see
   if there is an ACPI man page specific to the laptop's vendor by typing
   :command:`apropos acpi.` The
-  `Tuning with sysctl(8) <http://www.freebsd.org/doc/en/books/handbook/configtuning-sysctl.html>`_
+  `Tuning with sysctl(8) <https://www.freebsd.org/doc/en/books/handbook/configtuning-sysctl.html>`_
   section of the FreeBSD Handbook demonstrates how to determine the
   current :command:`sysctl` values, modify a value, and make a modified
-  value persist after a reboot. If the battery reading is incorrect, try
-  the workaround in this
-  `PR <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=160838>`_.
+  value persist after a reboot.
 
 * **Synaptics:** Disabling the system's touchpad may be dependant upon
   the hardware. This
   `forum post <https://forums.freebsd.org/threads/17370/#post-100670>`_
   describes how to enable Synaptics and some of the :command:`sysctl`
   options this feature provides.
+
+  .. TODO add in when mouse manager is live: The
+     `SysAdm Mouse Manager <https://sysadm.us/handbook/client/>`_ also
+     has options for disabling a system's touchpad.
 
 To test the laptop's hardware, use the
 :guilabel:`Hardware Compatibility` icon in the
@@ -308,10 +318,11 @@ space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
    recognizable when the |trueos| installer displays the current
    partitions.
 
-.. _Obtaining TrueOS®:
+.. index:: installation options
+.. _Installation Options:
 
-Obtaining |trueos|
-==================
+Installation Options
+====================
 
 |trueos| uses a rolling release model rather than versioned releases.
 
@@ -362,7 +373,7 @@ write it to a removable USB device.
 If installing a command-line only server is preferred, either download
 a file beginning with :file:`TrueOS-Desktop` (to use the graphical
 installer) or :file:`TrueOS-Server` (to use the command-line installer).
-The :file:`TrueOS-Server` files are smaller and can fit on CD.
+The :file:`TrueOS-Server` files are smaller and can fit on a CD.
 
 Refer to :ref:`Burning the Installation Media` for instructions on how
 to burn the downloaded file to bootable media.
@@ -392,12 +403,11 @@ checksum verification utility.
 
 .. note:: Only one of the checksums needs to be verified. The
    `PC-BSD® website <http://www.pcbsd.org/download/>`_  lists the
-   SHA256 while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
+   *SHA256* while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
    both the :file:`.md5` and the :file:`.sha256` checksum files. This
    section demonstrates how to verify an SHA256 checksum.
 
-If currently using a Windows system, download and install a utility
-such as
+If using a Windows system, download and install a utility such as
 `Raymond's MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html>`_.
 This utility can be used to simultaneously check the MD5, SHA-1,
 SHA-256, and SHA-512 checksums of any file. Once installed, launch the
@@ -422,11 +432,11 @@ example, the file is located in the :file:`Downloads` directory. Using
 :command:`md5 Downloads/TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5`,
 substitute the name and location of the downloaded file.
 
-.. index:: burn
+.. index:: burn installation media
 .. _Burning the Installation Media:
 
 Burning the Installation Media
-==============================
+------------------------------
 
 Once the installation file is downloaded and its checksum verified, burn
 it to a media. Which media depends upon the file downloaded:
@@ -443,6 +453,8 @@ To burn to a CD or DVD, use either a burning utility packaged with the
 operating system on the system with the burner or a separate burning
 application. :numref:`Table %s <burn utils>` lists some freely available
 burning utilities.
+
+.. TODO replace Brasero recommendation? gnome no longer recommended?
 
 .. _burn utils:
 
@@ -464,7 +476,7 @@ burning utilities.
    | Mac OS X              | `Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_                            |
    +-----------------------+------------------------------------------------------------------------------------------------+
 
-.. index:: burn
+.. index:: burn to usb
 .. _Writing to a USB Device:
 
 Writing to a USB Device
@@ -490,7 +502,7 @@ the first plugged in USB device:
 
 .. code-block:: none
 
- dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1M
+ [user@example] dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1M
  1415+1 records in
  1415+1 records out
  1483990016 bytes transferred in 238.552250 secs (6220818 bytes/sec)
@@ -577,11 +589,11 @@ way to practice installation, determine whether the hardware is
 supported, or to try multiple versions of different operating systems.
 Virtualization software effectively creates windows (known as virtual
 machines) to install and use an operating system. The only limitation to
-virtualization is the hardware as each virtual machine uses CPU and RAM.
-Depending upon the amount of CPU and RAM in the computer, the installed
-operating system using virtualization software may run slowly. If the
-computer slows down, try closing other applications running on the
-computer to free up some RAM.
+virtualization is the hardware, as each virtual machine uses CPU and
+RAM. Depending upon the amount of CPU and RAM in the computer, the
+installed operating system using virtualization software may run slowly.
+If the computer slows down, try closing other applications running on
+the computer to free up some RAM.
 
 To run virtualization software on a |trueos| system, search for
 *virtualbox* within the |sysadm|
@@ -634,7 +646,7 @@ in :numref:`Figure %s <vbox1>`.
 
 .. _vbox1:
 
-.. figure:: images/vbox1.png
+.. figure:: images/vbox1a.png
    :scale: 100%
 
    : VirtualBox Menu
@@ -644,7 +656,7 @@ display the screen in :numref:`Figure %s <vbox2>`.
 
 .. _vbox2:
 
-.. figure:: images/vbox2.png
+.. figure:: images/vbox2a.png
    :scale: 100%
 
    : Create Virtual Machine - Name, Type, and Version
@@ -657,7 +669,7 @@ screen in :numref:`Figure %s <vbox3>`.
 
 .. _vbox3:
 
-.. figure:: images/vbox3.png
+.. figure:: images/vbox3a.png
    :scale: 100%
 
    : Virtual Machine Reserved Memory
@@ -670,7 +682,7 @@ screen in :numref:`Figure %s <vbox4>`.
 
 .. _vbox4:
 
-.. figure:: images/vbox4.png
+.. figure:: images/vbox4a.png
    :scale: 100%
 
    : Virtual Hard Drive - New or Existing
@@ -690,7 +702,7 @@ virtual machines.
 
 .. _vbox5:
 
-.. figure:: images/vbox5.png
+.. figure:: images/vbox5a.png
    :scale: 100%
 
    : Hard Drive Type
@@ -700,7 +712,7 @@ Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
 
 .. _vbox6:
 
-.. figure:: images/vbox6.png
+.. figure:: images/vbox6a.png
    :scale: 100%
 
    : Storage Type
@@ -712,11 +724,11 @@ second option creates a disk the same size as that specified amount of
 disk space, whether it is used or not. Choose the first option if disk
 space is a concern; otherwise choose the second option as it allows
 VirtualBox to run slightly faster. Once :guilabel:`Next` is selected,
-the screen in :numref:`Figure %s <vbox7>` will display.
+the screen in :numref:`Figure %s <vbox7>` displays.
 
 .. _vbox7:
 
-.. figure:: images/vbox7.png
+.. figure:: images/vbox7a.png
    :scale: 100%
 
    : Virtual Disk - File Name and Size
@@ -726,9 +738,10 @@ machine. If planning to install |trueos| into the virtual machine,
 **increase the size to at least 20 GB** or an error will display during
 the |trueos| installation. If planning to install KDE, GNOME, multiple
 desktop managers, or applications within the virtual machine, choose at
-least 50 GB. Whatever size is set, be sure the computer has enough free
-disk space to support it. Use the :guilabel:`folder` icon to browse to
-a directory on disk with sufficient space to hold the virtual machine.
+least **50 GB**. Whatever size is set, be sure the computer has enough
+free disk space to support it. Use the :guilabel:`folder` icon to browse
+to a directory on disk with sufficient space to hold the virtual
+machine.
 
 Once the selections are made, press :guilabel:`Create` to finish using
 the wizard. The virtual machine will now show up in the left box, as
@@ -736,10 +749,10 @@ seen in the example in :numref:`Figure %s <vbox8>`.
 
 .. _vbox8:
 
-.. figure:: images/vbox8.png
+.. figure:: images/vbox8a.png
    :scale: 100%
 
-   : New Virtual Machine "Test"
+   : New Virtual Machine "test"
 
 In order to use the network card, configure bridging on the virtual
 machine. To do this, go to :menuselection:`Settings --> Network`. In
@@ -752,7 +765,7 @@ of :file:`re0`.
 
 .. _vbox9:
 
-.. figure:: images/vbox9.png
+.. figure:: images/vbox9a.png
    :scale: 100%
 
    : VirtualBox Bridged Adapter Configuration
@@ -763,7 +776,7 @@ frame to access the storage screen seen in :numref:`Figure %s <vbox10>`.
 
 .. _vbox10:
 
-.. figure:: images/vbox10.png
+.. figure:: images/vbox10a.png
    :scale: 100%
 
    : Virtual Machine Storage Settings
