@@ -746,8 +746,8 @@ msgstr ""
 msgid "Command"
 msgstr ""
 
-#: ../../postinstall.rst:738 ../../postinstall.rst:984
-#: ../../postinstall.rst:1008
+#: ../../postinstall.rst:738 ../../postinstall.rst:987
+#: ../../postinstall.rst:1011
 msgid "Description"
 msgstr ""
 
@@ -821,209 +821,209 @@ msgstr ""
 msgid ": Services and runlevels"
 msgstr ""
 
-#: ../../postinstall.rst:889
+#: ../../postinstall.rst:892
 msgid "Service"
 msgstr ""
 
-#: ../../postinstall.rst:889
+#: ../../postinstall.rst:892
 msgid "Runlevel"
 msgstr ""
 
-#: ../../postinstall.rst:891
+#: ../../postinstall.rst:894
 msgid "abi"
 msgstr ""
 
-#: ../../postinstall.rst:891 ../../postinstall.rst:893
-#: ../../postinstall.rst:897 ../../postinstall.rst:899
-#: ../../postinstall.rst:901 ../../postinstall.rst:907
-#: ../../postinstall.rst:909 ../../postinstall.rst:911
-#: ../../postinstall.rst:913 ../../postinstall.rst:915
-#: ../../postinstall.rst:917 ../../postinstall.rst:921
-#: ../../postinstall.rst:925 ../../postinstall.rst:927
-#: ../../postinstall.rst:929 ../../postinstall.rst:935
-#: ../../postinstall.rst:937 ../../postinstall.rst:943
-#: ../../postinstall.rst:949 ../../postinstall.rst:953
-#: ../../postinstall.rst:955 ../../postinstall.rst:959
-#: ../../postinstall.rst:961 ../../postinstall.rst:963
-#: ../../postinstall.rst:967 ../../postinstall.rst:969
-#: ../../postinstall.rst:971
+#: ../../postinstall.rst:894 ../../postinstall.rst:896
+#: ../../postinstall.rst:900 ../../postinstall.rst:902
+#: ../../postinstall.rst:904 ../../postinstall.rst:910
+#: ../../postinstall.rst:912 ../../postinstall.rst:914
+#: ../../postinstall.rst:916 ../../postinstall.rst:918
+#: ../../postinstall.rst:920 ../../postinstall.rst:924
+#: ../../postinstall.rst:928 ../../postinstall.rst:930
+#: ../../postinstall.rst:932 ../../postinstall.rst:938
+#: ../../postinstall.rst:940 ../../postinstall.rst:946
+#: ../../postinstall.rst:952 ../../postinstall.rst:956
+#: ../../postinstall.rst:958 ../../postinstall.rst:962
+#: ../../postinstall.rst:964 ../../postinstall.rst:966
+#: ../../postinstall.rst:970 ../../postinstall.rst:972
+#: ../../postinstall.rst:974
 msgid "boot"
 msgstr ""
 
-#: ../../postinstall.rst:893
+#: ../../postinstall.rst:896
 msgid "adjkerntz"
 msgstr ""
 
-#: ../../postinstall.rst:895
+#: ../../postinstall.rst:898
 msgid "automount"
 msgstr ""
 
-#: ../../postinstall.rst:895 ../../postinstall.rst:903
-#: ../../postinstall.rst:905 ../../postinstall.rst:923
-#: ../../postinstall.rst:931 ../../postinstall.rst:933
-#: ../../postinstall.rst:939 ../../postinstall.rst:941
-#: ../../postinstall.rst:945 ../../postinstall.rst:951
-#: ../../postinstall.rst:957 ../../postinstall.rst:965
+#: ../../postinstall.rst:898 ../../postinstall.rst:906
+#: ../../postinstall.rst:908 ../../postinstall.rst:926
+#: ../../postinstall.rst:934 ../../postinstall.rst:936
+#: ../../postinstall.rst:942 ../../postinstall.rst:944
+#: ../../postinstall.rst:948 ../../postinstall.rst:954
+#: ../../postinstall.rst:960 ../../postinstall.rst:968
 msgid "default"
 msgstr ""
 
-#: ../../postinstall.rst:897
+#: ../../postinstall.rst:900
 msgid "bootmisc"
 msgstr ""
 
-#: ../../postinstall.rst:899
+#: ../../postinstall.rst:902
 msgid "bridge"
 msgstr ""
 
-#: ../../postinstall.rst:901
+#: ../../postinstall.rst:904
 msgid "cron"
 msgstr ""
 
-#: ../../postinstall.rst:903
+#: ../../postinstall.rst:906
 msgid "cupsd"
 msgstr ""
 
-#: ../../postinstall.rst:905
+#: ../../postinstall.rst:908
 msgid "dbus"
 msgstr ""
 
-#: ../../postinstall.rst:907
+#: ../../postinstall.rst:910
 msgid "devd"
 msgstr ""
 
-#: ../../postinstall.rst:909
+#: ../../postinstall.rst:912
 msgid "dumpon"
 msgstr ""
 
-#: ../../postinstall.rst:911
+#: ../../postinstall.rst:914
 msgid "fsck"
 msgstr ""
 
-#: ../../postinstall.rst:913
+#: ../../postinstall.rst:916
 msgid "hostid"
 msgstr ""
 
-#: ../../postinstall.rst:915
+#: ../../postinstall.rst:918
 msgid "hostname"
 msgstr ""
 
-#: ../../postinstall.rst:917
+#: ../../postinstall.rst:920
 msgid "ipfw"
 msgstr ""
 
-#: ../../postinstall.rst:919
+#: ../../postinstall.rst:922
 msgid "local"
 msgstr ""
 
-#: ../../postinstall.rst:919
+#: ../../postinstall.rst:922
 msgid "default nonetwork"
 msgstr ""
 
-#: ../../postinstall.rst:921
+#: ../../postinstall.rst:924
 msgid "localmount"
 msgstr ""
 
-#: ../../postinstall.rst:923
+#: ../../postinstall.rst:926
 msgid "lockd"
 msgstr ""
 
-#: ../../postinstall.rst:925
+#: ../../postinstall.rst:928
 msgid "loopback"
 msgstr ""
 
-#: ../../postinstall.rst:927
+#: ../../postinstall.rst:930
 msgid "modules"
 msgstr ""
 
-#: ../../postinstall.rst:929
+#: ../../postinstall.rst:932
 msgid "motd"
 msgstr ""
 
-#: ../../postinstall.rst:931
+#: ../../postinstall.rst:934
 msgid "moused"
 msgstr ""
 
-#: ../../postinstall.rst:933
+#: ../../postinstall.rst:936
 msgid "netmount"
 msgstr ""
 
-#: ../../postinstall.rst:935
+#: ../../postinstall.rst:938
 msgid "network"
 msgstr ""
 
-#: ../../postinstall.rst:937
+#: ../../postinstall.rst:940
 msgid "newsyslog"
 msgstr ""
 
-#: ../../postinstall.rst:939
+#: ../../postinstall.rst:942
 msgid "openntpd"
 msgstr ""
 
-#: ../../postinstall.rst:941
+#: ../../postinstall.rst:944
 msgid "pcdm"
 msgstr ""
 
-#: ../../postinstall.rst:943
+#: ../../postinstall.rst:946
 msgid "root"
 msgstr ""
 
-#: ../../postinstall.rst:945
+#: ../../postinstall.rst:948
 msgid "rpcbind"
 msgstr ""
 
-#: ../../postinstall.rst:947
+#: ../../postinstall.rst:950
 msgid "savecache"
 msgstr ""
 
-#: ../../postinstall.rst:947
+#: ../../postinstall.rst:950
 msgid "shutdown"
 msgstr ""
 
-#: ../../postinstall.rst:949
+#: ../../postinstall.rst:952
 msgid "savecore"
 msgstr ""
 
-#: ../../postinstall.rst:951
+#: ../../postinstall.rst:954
 msgid "statd"
 msgstr ""
 
-#: ../../postinstall.rst:953
+#: ../../postinstall.rst:956
 msgid "staticroute"
 msgstr ""
 
-#: ../../postinstall.rst:955
+#: ../../postinstall.rst:958
 msgid "swap"
 msgstr ""
 
-#: ../../postinstall.rst:957
+#: ../../postinstall.rst:960
 msgid "sysadm"
 msgstr ""
 
-#: ../../postinstall.rst:959
+#: ../../postinstall.rst:962
 msgid "syscons"
 msgstr ""
 
-#: ../../postinstall.rst:961
+#: ../../postinstall.rst:964
 msgid "sysctl"
 msgstr ""
 
-#: ../../postinstall.rst:963
+#: ../../postinstall.rst:966
 msgid "syslogd"
 msgstr ""
 
-#: ../../postinstall.rst:965
+#: ../../postinstall.rst:968
 msgid "trueosinit"
 msgstr ""
 
-#: ../../postinstall.rst:967
+#: ../../postinstall.rst:970
 msgid "urandom"
 msgstr ""
 
-#: ../../postinstall.rst:969
+#: ../../postinstall.rst:972
 msgid "zfs"
 msgstr ""
 
-#: ../../postinstall.rst:971
+#: ../../postinstall.rst:974
 msgid "zvol"
 msgstr ""
 
@@ -1061,40 +1061,40 @@ msgid ""
 "other options shown."
 msgstr ""
 
-#: ../../postinstall.rst:810
+#: ../../postinstall.rst:813
 msgid "RC Defaults"
 msgstr ""
 
-#: ../../postinstall.rst:815
+#: ../../postinstall.rst:818
 msgid "RC Defaults are subject to change during development."
 msgstr ""
 
-#: ../../postinstall.rst:817
+#: ../../postinstall.rst:820
 msgid "|trueos| and FreeBSD now have very different rc defaults."
 msgstr ""
 
-#: ../../postinstall.rst:819
+#: ../../postinstall.rst:822
 msgid "**TrueOS OpenRC Defaults**"
 msgstr ""
 
-#: ../../postinstall.rst:821
+#: ../../postinstall.rst:824
 msgid ""
 "The entire `TrueOS rc.conf file <https://github.com/trueos/freebsd/blob/drm-"
 "next-4.7/etc/defaults/rc.conf>`_ is viewable on GitHub."
 msgstr ""
 
-#: ../../postinstall.rst:848
+#: ../../postinstall.rst:851
 msgid "**FreeBSD RC Defaults**"
 msgstr ""
 
-#: ../../postinstall.rst:850
+#: ../../postinstall.rst:853
 msgid ""
 "The entire `FreeBSD rc.conf file "
 "<https://github.com/freebsd/freebsd/blob/master/etc/defaults/rc.conf>`_ is "
 "available online."
 msgstr ""
 
-#: ../../postinstall.rst:877
+#: ../../postinstall.rst:880
 msgid ""
 "The |trueos| :file:`rc.conf` file is much smaller because :file:`rc.conf` is"
 " now primarily used for tuning OpenRC behavior. By default, |trueos| uses 3 "
@@ -1105,35 +1105,35 @@ msgstr ""
 msgid ": OpenRC Primary Tunables"
 msgstr ""
 
-#: ../../postinstall.rst:984 ../../postinstall.rst:1008
+#: ../../postinstall.rst:987 ../../postinstall.rst:1011
 msgid "Tunable"
 msgstr ""
 
-#: ../../postinstall.rst:986
+#: ../../postinstall.rst:989
 msgid "rc_parallel=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:986
+#: ../../postinstall.rst:989
 msgid "Starts all services in parallel"
 msgstr ""
 
-#: ../../postinstall.rst:988
+#: ../../postinstall.rst:991
 msgid "rc_logger=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:988
+#: ../../postinstall.rst:991
 msgid "Enables logging"
 msgstr ""
 
-#: ../../postinstall.rst:990
+#: ../../postinstall.rst:993
 msgid "rc_log_path=\"/var/log/rc.log\""
 msgstr ""
 
-#: ../../postinstall.rst:990
+#: ../../postinstall.rst:993
 msgid "Defines the location for logging rc activity"
 msgstr ""
 
-#: ../../postinstall.rst:994
+#: ../../postinstall.rst:997
 msgid ""
 ":numref:`Table %s <orcalltun>` shows all other tunables enabled on a clean "
 "|trueos| installation. Many of these tunables continue to work in "
@@ -1141,7 +1141,7 @@ msgid ""
 "upgrade. The eventual target locations for these services are also listed."
 msgstr ""
 
-#: ../../postinstall.rst:1000
+#: ../../postinstall.rst:1003
 msgid "These migration targets are estimates and subject to change."
 msgstr ""
 
@@ -1149,127 +1149,127 @@ msgstr ""
 msgid ": OpenRC Other Tunables"
 msgstr ""
 
-#: ../../postinstall.rst:1008
+#: ../../postinstall.rst:1011
 msgid "Migration Target"
 msgstr ""
 
-#: ../../postinstall.rst:1010
+#: ../../postinstall.rst:1013
 msgid "linux_enable=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:1010
+#: ../../postinstall.rst:1013
 msgid ""
 "Notifies :file:`/etc/init.d/abi` service to enable the Linux compatability "
 "during boot"
 msgstr ""
 
-#: ../../postinstall.rst:1010
+#: ../../postinstall.rst:1013
 msgid ":file:`/etc/conf.d/abi`"
 msgstr ""
 
-#: ../../postinstall.rst:1014
+#: ../../postinstall.rst:1017
 msgid "ifconfig_re0=\"DHCP\""
 msgstr ""
 
-#: ../../postinstall.rst:1014 ../../postinstall.rst:1016
-#: ../../postinstall.rst:1019 ../../postinstall.rst:1027
-#: ../../postinstall.rst:1029 ../../postinstall.rst:1031
+#: ../../postinstall.rst:1017 ../../postinstall.rst:1019
+#: ../../postinstall.rst:1022 ../../postinstall.rst:1030
+#: ../../postinstall.rst:1032 ../../postinstall.rst:1034
 msgid "TBD"
 msgstr ""
 
-#: ../../postinstall.rst:1014 ../../postinstall.rst:1016
+#: ../../postinstall.rst:1017 ../../postinstall.rst:1019
 msgid ":file:`/etc/conf.d/network`"
 msgstr ""
 
-#: ../../postinstall.rst:1016
+#: ../../postinstall.rst:1019
 msgid "ifconfig_re0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../postinstall.rst:1019
+#: ../../postinstall.rst:1022
 msgid "hostname=\"trueos-4843\""
 msgstr ""
 
-#: ../../postinstall.rst:1019
+#: ../../postinstall.rst:1022
 msgid ":file:`/etc/conf.d/hostname`"
 msgstr ""
 
-#: ../../postinstall.rst:1021
+#: ../../postinstall.rst:1024
 msgid "kldload_i915kms=\"i915kms\""
 msgstr ""
 
-#: ../../postinstall.rst:1021
+#: ../../postinstall.rst:1024
 msgid ""
 "TrueOS specific. Allows loading an individual module via the installer post "
 "installation."
 msgstr ""
 
-#: ../../postinstall.rst:1021
+#: ../../postinstall.rst:1024
 msgid ":file:`etc/conf.d/modules`"
 msgstr ""
 
-#: ../../postinstall.rst:1025
+#: ../../postinstall.rst:1028
 msgid "zfs_enable=\"YES\""
 msgstr ""
 
-#: ../../postinstall.rst:1025
+#: ../../postinstall.rst:1028
 msgid "Obsolete, marked for removal"
 msgstr ""
 
-#: ../../postinstall.rst:1025
+#: ../../postinstall.rst:1028
 msgid "None"
 msgstr ""
 
-#: ../../postinstall.rst:1027
+#: ../../postinstall.rst:1030
 msgid "wlans_iwm0=\"wlan0\""
 msgstr ""
 
-#: ../../postinstall.rst:1027 ../../postinstall.rst:1029
-#: ../../postinstall.rst:1031
+#: ../../postinstall.rst:1030 ../../postinstall.rst:1032
+#: ../../postinstall.rst:1034
 msgid ":file:`/etc.conf.d.network`"
 msgstr ""
 
-#: ../../postinstall.rst:1029
+#: ../../postinstall.rst:1032
 msgid "wlans_iwm0=\"wlan 0 DHCP\""
 msgstr ""
 
-#: ../../postinstall.rst:1031
+#: ../../postinstall.rst:1034
 msgid "ifconfig_wlan0_ipv6=\"inet6 accept_rtadv\""
 msgstr ""
 
-#: ../../postinstall.rst:1038
+#: ../../postinstall.rst:1041
 msgid "OpenRC Install Scripts"
 msgstr ""
 
-#: ../../postinstall.rst:1040
+#: ../../postinstall.rst:1043
 msgid ""
 "There are number of scripts used for older |trueos| systems and new "
 "installations, listed below."
 msgstr ""
 
-#: ../../postinstall.rst:1047
+#: ../../postinstall.rst:1050
 msgid "One-time Migration Script"
 msgstr ""
 
-#: ../../postinstall.rst:1049
+#: ../../postinstall.rst:1052
 msgid ""
 "A one time migration script is available for |trueos| installations dated "
 "10-28-16 or older that are still using the legacy FreeBSD rc system:"
 msgstr ""
 
-#: ../../postinstall.rst:1053
+#: ../../postinstall.rst:1056
 msgid ""
 "This block is truncated from the `original file <https://github.com/trueos"
 "/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_"
 msgstr ""
 
-#: ../../postinstall.rst:1079
+#: ../../postinstall.rst:1082
 msgid ""
 "With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`, has "
 "been phased out of |trueos| and is automatically removed from legacy "
 "installs dated 10-28-16 and older by :command:`pc-updatemanger`:"
 msgstr ""
 
-#: ../../postinstall.rst:1083
+#: ../../postinstall.rst:1086
 msgid ""
 "This script is used to define a list of services such as *PCDM* designated "
 "to boot by default on a desktop. It also defines what drivers to load on a "
@@ -1278,29 +1278,29 @@ msgid ""
 "there is no need to keep an extra overlay file to accomplish this behaviour."
 msgstr ""
 
-#: ../../postinstall.rst:1094
+#: ../../postinstall.rst:1097
 msgid "|trueos| Desktop pkg-install Script"
 msgstr ""
 
-#: ../../postinstall.rst:1096
+#: ../../postinstall.rst:1099
 msgid ""
 "This is an excerpt from the |trueos| Desktop :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-desktop/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../postinstall.rst:1127
+#: ../../postinstall.rst:1130
 msgid "TrueOS Server pkg-install script"
 msgstr ""
 
-#: ../../postinstall.rst:1129
+#: ../../postinstall.rst:1132
 msgid ""
 "This is an excerpt from the |trueos| Server :file:`pkg-install` file, "
 "available online: https://github.com/trueos/trueos-server/blob/master/port-"
 "files/pkg-install"
 msgstr ""
 
-#: ../../postinstall.rst:1155
+#: ../../postinstall.rst:1158
 msgid ""
 "The typical :command:`nginx_enable=”YES”` is no longer used to enable "
 "services. Instead, :command:`rc-update` is used to add or delete services "
@@ -1309,11 +1309,11 @@ msgid ""
 "removed after migration."
 msgstr ""
 
-#: ../../postinstall.rst:1165
+#: ../../postinstall.rst:1168
 msgid "Updating a Port's Makefile"
 msgstr ""
 
-#: ../../postinstall.rst:1167
+#: ../../postinstall.rst:1170
 msgid ""
 "There is still quite a bit of work to do updating each port's "
 ":file:`Makefile` to the new format, :command:`USE_OPENRC_SUBR=`. However, "
@@ -1321,26 +1321,26 @@ msgid ""
 " format:"
 msgstr ""
 
-#: ../../postinstall.rst:1172
+#: ../../postinstall.rst:1175
 msgid ""
 "This is an excerpt from the |trueos| :file:`dbus.in` file, which is "
 "available online: https://github.com/trueos/freebsd-ports/blob/xserver-"
 "next/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../postinstall.rst:1200
+#: ../../postinstall.rst:1203
 msgid ""
 "Here is an example from FreeBSD of *dbus* using the legacy rc script format:"
 msgstr ""
 
-#: ../../postinstall.rst:1203
+#: ../../postinstall.rst:1206
 msgid ""
 "This is an excerpt from the legacy FreeBSD :file:`dbus.in` file, which is "
 "available online: https://github.com/freebsd/freebsd-"
 "ports/blob/master/devel/dbus/files/dbus.in"
 msgstr ""
 
-#: ../../postinstall.rst:1230
+#: ../../postinstall.rst:1233
 msgid ""
 "Several developers are working on the thousands of instances as quickly as "
 "possible. Anyone can begin transitioning to defining all service "
@@ -1350,7 +1350,7 @@ msgid ""
 ":file:`/etc/conf.d/nginx`."
 msgstr ""
 
-#: ../../postinstall.rst:1237
+#: ../../postinstall.rst:1240
 msgid ""
 "Generally, usage of :file:`/etc/rc.conf` is minimized. Tweaking the default "
 "OpenRC configuration parameters is recommended only for advanced users. It "
@@ -1598,13 +1598,13 @@ msgid ""
 "OpenRC functions."
 msgstr ""
 
-#: ../../postinstall.rst:882
+#: ../../postinstall.rst:885
 msgid ""
 ":numref:`Table %s <rcuprnlvl>` lists services and their default runlevels in"
 " |trueos|."
 msgstr ""
 
-#: ../../postinstall.rst:978
+#: ../../postinstall.rst:981
 msgid "Tuneables"
 msgstr ""
 
@@ -1643,6 +1643,12 @@ msgid ""
 "will be added to the drop-down menu for more login choices. PCDM does not "
 "allow logging in as the *root* user. Instead, whenever a utility requires "
 "administrative access, |trueos| asks for the password of the login account."
+msgstr ""
+
+#: ../../postinstall.rst:806
+msgid ""
+"For more creation options for OpenRC compatible init scripts, type "
+":command:`man openrc-run` in a CLI."
 msgstr ""
 
 #~ msgid "Language Screen"
