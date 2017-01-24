@@ -791,6 +791,9 @@ dependencies cache that is only updated when dependencies change.
 Several other directories exist for other binaries and special
 binaries used by OpenRC functions.
 
+For more creation options for OpenRC compatible init scripts, type
+:command:`man openrc-run` in a CLI.
+
 .. index:: init, rcdefault
 .. _RC Defaults:
 
@@ -1183,7 +1186,7 @@ OpenRC ready format:
    {
            need localmount
            after bootmisc
-
+   }
 
 Here is an example from FreeBSD of *dbus* using the legacy rc script
 format:
