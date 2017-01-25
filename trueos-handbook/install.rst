@@ -1183,7 +1183,7 @@ will then display the screen shown in
 :ref:`Select Installation Disk <text3>` and proceed as
 described in :ref:`Using the Text Installer`.
 
-.. index:: installation, advanced, dualboot
+.. index:: install with dualboot
 .. _Dual Booting:
 
 Dual Booting
@@ -1240,7 +1240,7 @@ an entry can be manually added to
 the syntax used, refer to the
 `GRUB Manual <http://www.gnu.org/software/grub/manual/grub.html>`_.
 
-.. index:: installation, advanced, automation
+.. index:: auto installations
 .. _Automated Installations:
 
 Automated Installations
@@ -1292,14 +1292,14 @@ This section discusses the steps needed to create a custom installation.
 First, determine which variables to customize. A list of possible
 variables can be found in
 :file:`/usr/local/share/pc-sysinstall/examples/README` and are
-summarized in :numref:`Table %s <installvariables>`.
+summarized in :numref:`Table %s <insvars>`.
 
 .. note:: This table is meant as a quick reference to determine which
    variables are available. The :file:`README` in
    :file:`/usr/local/share/pc-sysinstall/examples/` contains more
    complete descriptions for each variable.
 
-.. _installvariables:
+.. _insvars:
 
 .. table:: : Customizing a |trueos| Installation
 
@@ -1571,17 +1571,17 @@ user input, review
 and place a customized copy of the file into
 :file:`/boot/pc-autoinstall.conf` on the installation media.
 
-:numref:`Table %s <Automated Variables>` summarizes the additional
-variables available for fully automatic installations. More detailed
-descriptions can be found in the
+:numref:`Table %s <autovars>` summarizes the additional variables
+available for fully automatic installations. More detailed descriptions
+can be found in the
 :file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf`
 file.
 
 .. note:: The variables in this file use a different syntax than those
-   in :ref:`Available Variables for Customizing a TrueOS® Installation <installvariables>`
-   as the values follow a colon and a space rather than the equals sign.
+   in :ref:`Customizing a TrueOS® Installation <insvars>` as the values
+   follow a colon (:kbd:`:`) and a space rather than an :kbd:`=` sign.
 
-.. _Automated Variables:
+.. _autovars:
 
 .. table:: : Automated Installation Variables
 
@@ -1612,9 +1612,9 @@ file.
 Finally, create a custom installation media or installation server.
 :command:`pc-sysinstall` supports two installation methods:
 
-* From CD, DVD, or USB media.
+1. From CD, DVD, or USB media.
 
-* From an installation directory on an HTTP, FTP, or SSH+rsync server.
+2. From an installation directory on an HTTP, FTP, or SSH+rsync server.
 
 The easiest way to create a custom installation media is to modify an
 existing installation image. For example, if an ISO for the |trueos|
@@ -1623,9 +1623,9 @@ contents of the ISO with a few commands:
 
 .. code-block:: none
 
- mdconfig -a -t vnode -f TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5 -u 1
+ [name@example] mdconfig -a -t vnode -f TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5 -u 1
 
- mount -t cd9660 /dev/md1 /mnt
+ [name@example] mount -t cd9660 /dev/md1 /mnt
 
 Make sure to :command:`cd` into the desired destination directory for
 the copied ISO contents. In the next examples,
@@ -1633,22 +1633,22 @@ the copied ISO contents. In the next examples,
 
 .. code-block:: none
 
- cd /tmp/custominstall
+ [name@example] cd /tmp/custominstall
 
- tar -C /mnt -cf - . | tar -xvf -
+ [name@example] tar -C /mnt -cf - . | tar -xvf -
 
- umount /mnt
+ [name@example] umount /mnt
 
 Alternately, if an installation CD or DVD is inserted, mount the media
 and copy its contents to the desired directory
 
 .. code-block:: none
 
- mount -t cd9660 /dev/cd0 /mnt
+ [name@example] mount -t cd9660 /dev/cd0 /mnt
 
- cp -R /mnt/* /tmp/custominstall/
+ [name@example] cp -R /mnt/* /tmp/custominstall/
 
- umount /mnt
+ [name@example] umount /mnt
 
 If creating an automated installation, copy the customized
 :file:`pc-autoinstall.conf` to :file:`/tmp/custominstall/boot/`.
@@ -1660,14 +1660,14 @@ configuration file is set to the correct installation media.
 Adding extra files may be necessary if certain variables are set in the
 custom configuration file:
 
-* **installComponents=** Make sure any extra components to install exist
-  in :file:`extras/components/`
+* **installComponents=** Any extra components to install must exist in
+  :file:`extras/components/`.
 
-* **runCommand=** Make sure the command exists in the specified path.
+* **runCommand=** The command must exist in the specified path.
 
 * **runScript=** Make sure the script exists in the specified path.
 
-* **runExtCommand=** Make sure the command exists in the specified
+* **runExtCommand=** Ensure the command exists in the specified
   path.
 
 If the installation media is a CD or DVD, create a bootable media
@@ -1675,9 +1675,9 @@ containing the files in the directory. To create a bootable ISO:
 
 .. code-block:: none
 
- cd /tmp/custominstall
+ [name@example] cd /tmp/custominstall
 
- mkisofs -V mycustominstall -J -R -b boot/cdboot -no-emul-boot -o myinstall.iso
+ [name@example] mkisofs -V mycustominstall -J -R -b boot/cdboot -no-emul-boot -o myinstall.iso
 
 Use a preferred burning utility to burn the ISO to the media.
 
