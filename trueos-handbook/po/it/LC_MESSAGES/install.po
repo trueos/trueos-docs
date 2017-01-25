@@ -1472,13 +1472,6 @@ msgid ""
 "This section discusses the steps needed to create a custom installation."
 msgstr ""
 
-#: ../../install.rst:1304
-msgid ""
-"First, determine which variables to customize. A list of possible variables "
-"can be found in :file:`/usr/local/share/pc-sysinstall/examples/README` and "
-"are summarized in :numref:`Table %s <installvariables>`."
-msgstr ""
-
 #: ../../install.rst:1309
 msgid ""
 "This table is meant as a quick reference to determine which variables are "
@@ -2323,22 +2316,6 @@ msgid ""
 "/pc-autoinstall.conf` on the installation media."
 msgstr ""
 
-#: ../../install.rst:1586
-msgid ""
-":numref:`Table %s <Automated Variables>` summarizes the additional variables"
-" available for fully automatic installations. More detailed descriptions can"
-" be found in the :file:`/usr/local/share/pc-sysinstall/examples/pc-"
-"autoinstall.conf` file."
-msgstr ""
-
-#: ../../install.rst:1592
-msgid ""
-"The variables in this file use a different syntax than those in "
-":ref:`Available Variables for Customizing a TrueOS® Installation "
-"<installvariables>` as the values follow a colon and a space rather than the"
-" equals sign."
-msgstr ""
-
 #: ../../install.rst:0
 msgid ": Automated Installation Variables"
 msgstr ""
@@ -2467,22 +2444,8 @@ msgid ""
 "custom configuration file:"
 msgstr ""
 
-#: ../../install.rst:1675
-msgid ""
-"**installComponents=** Make sure any extra components to install exist in "
-":file:`extras/components/`"
-msgstr ""
-
-#: ../../install.rst:1678
-msgid "**runCommand=** Make sure the command exists in the specified path."
-msgstr ""
-
 #: ../../install.rst:1680
 msgid "**runScript=** Make sure the script exists in the specified path."
-msgstr ""
-
-#: ../../install.rst:1682
-msgid "**runExtCommand=** Make sure the command exists in the specified path."
 msgstr ""
 
 #: ../../install.rst:1685
@@ -2895,6 +2858,73 @@ msgid ""
 "While ZFS allows using disks of different sizes, this is discouraged as it "
 "decreases storage capacity and ZFS performance."
 msgstr ""
+
+#: ../../install.rst:1304
+msgid ""
+"First, determine which variables to customize. A list of possible variables "
+"can be found in :file:`/usr/local/share/pc-sysinstall/examples/README` and "
+"are summarized in :numref:`Table %s <insvars>`."
+msgstr ""
+
+#: ../../install.rst:1586
+msgid ""
+":numref:`Table %s <autovars>` summarizes the additional variables available "
+"for fully automatic installations. More detailed descriptions can be found "
+"in the :file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf` "
+"file."
+msgstr ""
+
+#: ../../install.rst:1592
+msgid ""
+"The variables in this file use a different syntax than those in "
+":ref:`Customizing a TrueOS® Installation <insvars>` as the values follow a "
+"colon (:kbd:`:`) and a space rather than an :kbd:`=` sign."
+msgstr ""
+
+#: ../../install.rst:1675
+msgid ""
+"**installComponents=** Any extra components to install must exist in "
+":file:`extras/components/`."
+msgstr ""
+
+#: ../../install.rst:1678
+msgid "**runCommand=** The command must exist in the specified path."
+msgstr ""
+
+#: ../../install.rst:1682
+msgid "**runExtCommand=** Ensure the command exists in the specified path."
+msgstr ""
+
+#~ msgid ""
+#~ "First, determine which variables to customize. A list of possible variables "
+#~ "can be found in :file:`/usr/local/share/pc-sysinstall/examples/README` and "
+#~ "are summarized in :numref:`Table %s <installvariables>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":numref:`Table %s <Automated Variables>` summarizes the additional variables"
+#~ " available for fully automatic installations. More detailed descriptions can"
+#~ " be found in the :file:`/usr/local/share/pc-sysinstall/examples/pc-"
+#~ "autoinstall.conf` file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The variables in this file use a different syntax than those in "
+#~ ":ref:`Available Variables for Customizing a TrueOS® Installation "
+#~ "<installvariables>` as the values follow a colon and a space rather than the"
+#~ " equals sign."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**installComponents=** Make sure any extra components to install exist in "
+#~ ":file:`extras/components/`"
+#~ msgstr ""
+
+#~ msgid "**runCommand=** Make sure the command exists in the specified path."
+#~ msgstr ""
+
+#~ msgid "**runExtCommand=** Make sure the command exists in the specified path."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Starting on the left side, the icons in the bottom navigation area allow to:"
