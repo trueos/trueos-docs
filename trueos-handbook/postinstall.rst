@@ -1,4 +1,4 @@
-.. index:: configuration
+.. index:: postinstall config
 .. _Post Installation Configuration:
 
 Post Installation Configuration
@@ -8,23 +8,24 @@ After the |trueos| system has finished booting for the first time,
 |trueos| will present additional screens that assist in configuring
 the system.
 
-.. index:: boot
+.. index:: TrueOS boot
 .. _Booting Into TrueOS:
 
 Booting Into |trueos|
 =====================
 
-After installation, |trueos| will reboot and display a boot menu. The
-menu displayed depends upon the boot loader selection chosen during the
+After installation, |trueos| reboots and displays a boot menu. The menu
+displayed depends upon the boot loader selection chosen during the
 installation.
 
+.. index:: bsd boot loader
 .. _BSD Boot Loader:
 
 BSD Boot Loader
 ---------------
 
-A system with a default install or the "BSD" option for the boot loader,
-will load the boot menu, seen in :numref:`Figure %s <install1(2)>`.
+A system with a default or "BSD" install option for the boot loader
+loads the boot menu seen in :numref:`Figure %s <install1(2)>`.
 
 .. _install1(2):
 
@@ -33,10 +34,10 @@ will load the boot menu, seen in :numref:`Figure %s <install1(2)>`.
 
    : |trueos| Boot Menu
 
-This menu provides several options. To pause this menu, press
-any key except for :kbd:`Enter`. To select an option, press either the
-bolded number or key for that option. Once any selections have been
-made, press :kbd:`Enter` to boot using the selected options.
+This menu provides several options. To pause this menu, press any key
+except for :kbd:`Enter`. To select an option, press either the bolded
+number or key for that option. Once any selections are made, press
+:kbd:`Enter` to boot using the specified options.
 
 * **1. Boot Multi User:** This is the default option for booting
   |trueos|. The system automatically uses this option either after
@@ -79,6 +80,7 @@ made, press :kbd:`Enter` to boot using the selected options.
 .. _boot1:
 
 .. figure:: images/boot1b.png
+   :scale: 100%
 
    : Boot Options Menu
 
@@ -100,6 +102,7 @@ Several boot options are available in the Boot Options Menu:
   during the boot process. This can be useful when troubleshooting a
   piece of hardware.
 
+.. index:: grub boot loader
 .. _GRUB Boot Loader:
 
 GRUB Boot Loader
@@ -112,6 +115,7 @@ the boot loader, it will instead load the menu shown in
 .. _boot2:
 
 .. figure:: images/boot2.png
+   :scale: 100%
 
    : GRUB Boot Menu
 
@@ -135,6 +139,7 @@ see the |trueos| boot options screen, shown in
 .. _boot3:
 
 .. figure:: images/boot3.png
+   :scale: 100%
 
    : |trueos| Graphical Boot Menu Options
 
@@ -156,7 +161,7 @@ This menu is provided by GRUB. Press :kbd:`e` to access the GRUB editor
 or :kbd:`c` to access the GRUB command line. Familiarity with GRUB is
 recommended.
 
-.. index:: encryption
+.. index:: encrypted disks
 .. _Encrypted Disks:
 
 Encrypted Disks
@@ -170,6 +175,7 @@ shown in :numref:`Figure %s <encrypt1>`.
 .. _encrypt1:
 
 .. figure:: images/encrypt1.png
+   :scale: 100%
 
    : Master Key Decryption
 
@@ -178,7 +184,7 @@ screen shown in :ref:`Configure Encryption <install11>`. If the
 correct password is typed, the system will calculate the GELI encryption
 key, then continue to boot.
 
-.. index:: video
+.. index:: detect display
 .. _Display Detection:
 
 Display Detection
@@ -186,10 +192,10 @@ Display Detection
 
 The first time the boot completes, the post-installer configuration
 script will attempt to set the optimal display settings. A pop-up menu
-will either ask to accept the settings or indicate it could not find the
-optimal settings. Click :guilabel:`Yes` to accept the settings and
-|trueos| proceeds to the :ref:`Choose a Language` screen so the initial
-configuration can continue.
+either asks to accept the settings or indicates the system could not
+find the optimal settings. Click :guilabel:`Yes` to accept the settings
+and |trueos| proceeds to the :ref:`Choose a Language` screen so the
+initial configuration can continue.
 
 If the optimal display settings could not be determined, or if
 :guilabel:`No` is selected in the :guilabel:`Confirm Resolution` screen,
@@ -199,6 +205,7 @@ the :guilabel:`Display Settings` screen shown in
 .. _display3:
 
 .. figure:: images/display3.png
+   :scale: 100%
 
    : Display Settings Wizard
 
@@ -218,6 +225,7 @@ refresh rate in the :guilabel:`Advanced` tab, seen in
 .. _display4:
 
 .. figure:: images/display4.png
+   :scale: 100%
 
    : Advanced Display Settings
 
@@ -234,7 +242,7 @@ anything goes wrong during testing, the system will return to the
 another setting. Once satisfied with the settings, click :guilabel:`Yes`
 when prompted to accept them.
 
-.. index:: language
+.. index:: choose language
 .. _Choose a Language:
 
 Choose a Language
@@ -262,7 +270,7 @@ screens to enable:
 Once the selection is made, click :guilabel:`Next` to move to the next
 configuration screen.
 
-.. index:: time
+.. index:: time zone select
 .. _Time Zone Selection:
 
 Time Zone Selection
@@ -292,7 +300,7 @@ option.
 
 When finished, click :guilabel:`Next` to proceed to the next screen.
 
-.. index:: password
+.. index:: set root password
 .. _Set the Root Password:
 
 Set the Root Password
@@ -311,7 +319,7 @@ requires the root (administrative) password to be set.
 The password must be a minimum of **4** characters and must be typed
 twice to confirm the password. Click :guilabel:`Next` when finished.
 
-.. index:: users
+.. index:: create new users
 .. _Create a User:
 
 Create a User
@@ -403,14 +411,13 @@ To share the computer with other users, create additional login and
 After creating at least one user, click :guilabel:`Next` to continue to
 the next screen.
 
-.. index:: sound
+.. index:: configure audio
 .. _Configure Audio Output:
 
 Configure Audio Output
 ======================
 
-The next screen, seen in
-:numref:`Figure %s <audio1>`, is used to
+The next screen, seen in :numref:`Figure %s <audio1>`, is used to
 configure the default audio output.
 
 .. _audio1:
@@ -429,7 +436,7 @@ volume level.
 All these settings can be viewed and edited at any time using the
 instructions in :ref:`Sound Mixer Tray`.
 
-.. index:: wireless
+.. index:: wireless network connection
 .. _Connect to a Wireless Network:
 
 Connect to a Wireless Network
@@ -460,7 +467,7 @@ by the desired network. If the desired network is not visible in the
 unable to connect or to configure the connection later, refer to
 :ref:`Network Manager` for more detailed instructions.
 
-.. index:: SSH, IPv6
+.. index:: optional services, SSH, IPv6
 .. _Enable Optional Services:
 
 Enable Optional Services
@@ -593,9 +600,9 @@ to login.
 .. index:: init, services, daemons
 .. _Managing System Services and Daemons:
 
-Managing System Services
-========================
-.. index:: init
+Managing System Services and Daemons
+====================================
+
 .. _OpenRC:
 
 |trueos| now uses `OpenRC <https://wiki.gentoo.org/wiki/Project:OpenRC>`__
@@ -604,15 +611,18 @@ to manage system services.  OpenRC is an integral component of the
 |trueos| and FreeBSD. This section is intended to provide detailed
 information about system service management in |trueos|.
 
-Use of OpenRC in |trueos| versus FreeBSD :command:`rc`
-------------------------------------------------------
+.. index:: openrc vs rc
+.. _comparing openrc to RC:
+
+OpenRC in |trueos| compared with :command:`rc`
+----------------------------------------------
 
 :numref:`Table %s <trfbsdrc>` serves as a quick summary and series of
 working examples contrasting the FreeBSD :command:`rc` system and OpenRC in
 |trueos|.
 
 .. _trfbsdrc:
-.. table:: : Brief comparison between traditional FreeBSD :command:`rc` and |trueos| OpenRC service management
+.. table:: : Comparison between the traditional FreeBSD :command:`rc` and |trueos| OpenRC service management
 
    +--------------------------------+-----------------------------------+-----------------------------------------------+
    | Component or action            | FreeBSD                           | |trueos|                                      |
@@ -649,15 +659,14 @@ working examples contrasting the FreeBSD :command:`rc` system and OpenRC in
    migrated. If discovered, **do not** attempt to use these leftover
    files.
 
-.. index:: init, services
-.. _Managing Bootup Services:
+.. index:: openrc service management
+.. _Service Management in OpenRC:
 
 Service Management in OpenRC
 ----------------------------
    
-
-.. index:: runlevels
-.. _OpenRC Runlevels:
+.. index:: openrc runlevels
+.. _Runlevels:
 
 Runlevels
 ^^^^^^^^^
@@ -704,7 +713,7 @@ as seen in this example:
    depconfig failed options softlevel stopping
    deptree hotplugged prefix.lock started tmp
 
-.. index:: services, runlevels
+.. index:: services and runlevels
 .. _Services and Runlevels:
 
 Services and Runlevels
@@ -743,7 +752,7 @@ of these commands.
    | rc-update delete nginx default | Removes the nginx service from the default runlevel.       |
    +--------------------------------+------------------------------------------------------------+
 
-.. index:: services, authoring, writing
+.. index:: writing openrc services
 .. _Writing OpenRC Services:
 
 Writing OpenRC Services
@@ -794,7 +803,7 @@ binaries used by OpenRC functions.
 For more creation options for OpenRC compatible init scripts, type
 :command:`man openrc-run` in a CLI.
 
-.. index:: init, rcdefault
+.. index:: rc defaults
 .. _RC Defaults:
 
 RC Defaults
@@ -870,8 +879,8 @@ The |trueos| :file:`rc.conf` file is much smaller because
 default, |trueos| uses 3 elements, documented in
 :numref:`Table %s <orcpritun>`
 
-:numref:`Table %s <rcuprnlvl>` lists services and their default runlevels in
-|trueos|.
+:numref:`Table %s <rcuprnlvl>` lists services and their default
+runlevels in |trueos|.
 
 .. _rcuprnlvl:
 .. table:: : Services and runlevels
@@ -1022,7 +1031,7 @@ listed.
    | ifconfig_wlan0_ipv6="inet6 accept_rtadv" | TBD                                 | :file:`/etc.conf.d.network`  |
    +------------------------------------------+-------------------------------------+------------------------------+
 
-.. index:: init, script
+.. index:: openrc install scripts
 .. _OpenRC Install Scripts:
 
 OpenRC Install Scripts
@@ -1031,7 +1040,7 @@ OpenRC Install Scripts
 There are number of scripts used for older |trueos| systems and new
 installations, listed below.
 
-.. index:: init, scripts, onetime
+.. index:: onetime migration
 .. _One time migration:
 
 One-time Migration Script
@@ -1078,7 +1087,7 @@ to load on a desktop. This is now accomplished when the
 :command:`sysrc` or other methods. Now there is no need to keep an extra
 overlay file to accomplish this behaviour.
 
-.. index:: init, scripts, desktop pkginstall
+.. index:: desktop pkginstall
 .. _TrueOS desktop pkginstall script:
 
 |trueos| Desktop pkg-install Script
@@ -1111,7 +1120,7 @@ overlay file to accomplish this behaviour.
      set +e
      grep -q "i915kms" /etc/rc.conf.trueos
 
-.. index:: init, scripts, server pkginstall
+.. index:: server pkginstall
 .. _TrueOS server pkginstall script:
 
 TrueOS Server pkg-install script
@@ -1149,7 +1158,7 @@ services from runlevels. The one time migration script automatically
 adds previously defined user services to the OpenRC default runlevel.
 Leftover lines can be removed after migration.
 
-.. index:: init, update makefile
+.. index:: update port makefile
 .. _Update Port Makefile:
 
 Updating a Port's Makefile
