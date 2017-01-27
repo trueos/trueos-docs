@@ -124,6 +124,7 @@ or type :command:`flash-player-properties`.
 .. _flash1:
 
 .. figure:: images/flash1.png
+   :scale: 100%
 
    : Flash Player Configuration
 
@@ -182,6 +183,7 @@ in :guilabel:`Output`.
 .. _sound1:
 
 .. figure:: images/sound1.png
+   :scale: 100%
 
    : Mixer Icon
 
@@ -191,6 +193,7 @@ click :guilabel:`Mixer` button shown in :ref:`sound1`.
 .. _sound2:
 
 .. figure:: images/sound2.png
+   :scale: 100%
 
    : Mixer Controls
 
@@ -207,6 +210,7 @@ tab.
 .. _sound3:
 
 .. figure:: images/sound3.png
+   :scale: 100%
 
    : System Sound Configuration
 
@@ -363,7 +367,7 @@ by default. If the icon is removed from the system tray, it can be
 re-added by typing :command:`pc-mounttray &`.
 
 .. note:: If mounting devices from the command line is preferred, see
-   the section on :ref:`pc-sysconfig`.
+   the section on :ref:`pcsysconfig`.
 
 In the example shown in :numref:`Figure %s <mount1>`, a USB device and
 a music CD are currently inserted and the user has hovered over
@@ -372,6 +376,7 @@ a music CD are currently inserted and the user has hovered over
 .. _mount1:
 
 .. figure:: images/mount1.png
+   :scale: 100%
 
    : Mount Tray
 
@@ -389,6 +394,7 @@ An example is shown in :numref:`Figure %s <mount2>`.
 .. _mount2:
 
 .. figure:: images/mount2.png
+   :scale: 100%
 
    : Mounted USB Device
 
@@ -431,11 +437,12 @@ Many options are available in the :guilabel:`More Options` menu:
   internal disk drives are partitioned with any other filesystems, these
   will also appear in the Mount Tray.
 
-  .. _mount3:
+.. _mount3:
 
-  .. figure:: images/mount3.png
+.. figure:: images/mount3.png
+   :scale: 100%
 
-  : Using Mount Tray to View Disk Usage
+   : Using Mount Tray to View Disk Usage
 
 * **Rescan Devices:** Click this option if an entry for a newly inserted
   device does not automatically appear.
@@ -455,17 +462,18 @@ Many options are available in the :guilabel:`More Options` menu:
   perform the check, and whether or not Mount Tray checks disk space
   when a disk is mounted.
 
-  .. _mount4:
+.. _mount4:
 
-  .. figure:: images/mount4.png
+.. figure:: images/mount4.png
+   :scale: 100%
 
-  : Configuring Disk Space Checks
+   : Configuring Disk Space Checks
 
 * **Close Tray:** Click this option to remove Mount Tray from the system
   tray.
 
 .. index:: mount
-.. _pc-sysconfig:
+.. _pcsysconfig:
 
 pc-sysconfig
 ------------
@@ -961,11 +969,11 @@ for both Ethernet and wireless devices. It will then present some common
 troubleshooting scenarios, known issues, and suggestions for when a
 device does not have a built-in driver.
 
-.. index:: network
-.. _Ethernet Adapters:
+.. index:: network devices tab
+.. _Network Devices:
 
-Ethernet Adapters
------------------
+Network Devices
+---------------
 
 If you highlight an Ethernet interface in the :guilabel:`Devices` tab
 and either click :guilabel:`Configure` or double-click the interface
@@ -1306,7 +1314,7 @@ configuration utility.
 If you apply any changes to this tab, a pop-up message will warn you may
 have to logout and back in for the proxy settings to take effect.
 
-.. index:: network
+.. index:: configure wireless access
 .. _Configuring a Wireless Access Point:
 
 Configuring a Wireless Access Point
@@ -1366,7 +1374,7 @@ access point's configuration:
 
 * **Country Code:** The two letter country code of operation.
 
-.. index:: security
+.. index:: Tor
 .. _Tor Mode:
 
 Tor Mode
@@ -1418,7 +1426,7 @@ with no system tray, use these commands:
 
 * :command:`sudo disable-tor-mode` disables tor mode.
 
-.. index:: windows
+.. index:: windows emulation
 .. _Windows Emulation:
 
 Windows Emulation
@@ -1590,7 +1598,7 @@ systems:
 
 * `Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_
 
-.. index:: printing
+.. index:: print and scan
 .. _Printing:
 
 Printing and Scanning
@@ -1608,7 +1616,7 @@ this process immensely. If your printer configuration does not work,
 read this section more closely for hints to locate the correct driver
 for your printer.
 
-.. index:: printing
+.. index:: research printer
 .. _Researching Your Printer:
 
 Researching your Printer
@@ -1628,7 +1636,7 @@ For the HP DeskJet model example, the HPLIP driver is recommended. In
 "hplip". Use |appcafe| to search if the driver is installed, and install
 it if not.
 
-.. index:: printing
+.. index:: add printer
 .. _Adding a Printer:
 
 Adding a Printer
@@ -1725,7 +1733,7 @@ has paper and click :menuselection:`Maintenance -> Print Test Page`. If
 a test page will not print, refer to the Troubleshooting
 :ref:`Printer` of this handbook.
 
-.. index:: printing
+.. index:: manual printer addition
 .. _Manually Adding a Driver:
 
 Manually Adding a Driver
