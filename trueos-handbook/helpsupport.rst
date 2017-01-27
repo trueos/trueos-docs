@@ -506,8 +506,39 @@ account.
 IRC
 ---
 
-.. TODO fill this in with traditional IRC text (check archived trueos
-   handbooks).
+Like many open source projects, |trueos| has an Internet Relay Chat
+(IRC) channel so users can chat and get help in real time. To get
+connected, use this information in your IRC client:
+
+* Server name: irc.freenode.net
+* Channel name: #trueos (note the :kbd:`#` is required)
+
+|appcafe| has an IRC category where you can find IRC client software.
+If you do not wish to install an IRC client, you can use the web
+interface to view #trueos.
+
+IRC is a great way to chat with other users and get answers to your
+questions. Here are a few things to keep in mind if you ask a question
+on IRC:
+
+* Most of the regular users are always logged in, even when they are
+  away from their computer or are busy doing other things. If you do not
+  get an answer right away, do not get mad, leave the channel, and never
+  come back again. Stick around for a while to see if anyone responds.
+* IRC users represent many different time zones. It possibly late at
+  night or very early in the morning for some users when you ask a
+  question.
+* Do not post error messages in the channel as the IRC software will
+  probably kick you out for flooding and it is considered to be bad
+  etiquette. Instead, use a pasting service such as
+  `pastebin <http://pastebin.com/>`_ and refer to the URL on channel.
+* Be polite and do not demand that others answer your question.
+* It is considered rude to DM (direct message) someone who does not know
+  you. If no one answers your question, do not start DMing people you do
+  not know.
+* The first time you join a channel, it is okay to say hi and introduce
+  yourself.
+
 
 .. index:: community, social
 .. _Social Media:
