@@ -536,7 +536,7 @@ or 7zip to unzip the executable.
 
 Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager
 utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse`
-to browse to the location of the :file:`.iso` file. Insert a USB thumb
+to browse to the location of the :file:`.img` file. Insert a USB thumb
 drive and select its drive letter (in this example, drive **D**). Click
 :guilabel:`Write` and the image will be written to the USB thumb drive.
 
