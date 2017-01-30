@@ -495,15 +495,6 @@ msgid ""
 "unzip the executable."
 msgstr ""
 
-#: ../../preinstall.rst:549
-msgid ""
-"Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager "
-"utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse` to "
-"browse to the location of the :file:`.iso` file. Insert a USB thumb drive "
-"and select its drive letter (in this example, drive **D**). Click "
-":guilabel:`Write` and the image will be written to the USB thumb drive."
-msgstr ""
-
 #: ../../preinstall.rst:621
 msgid ""
 "The first time running VirtualBox on a |trueos| system, a background script "
@@ -732,16 +723,6 @@ msgstr ""
 
 #: ../../preinstall.rst:476
 msgid "Utility"
-msgstr ""
-
-#: ../../preinstall.rst:562
-msgid ""
-"To burn the :file:`.iso` file on Mac OS X, insert a USB stick and open "
-"*Terminal*. Run :command:`diskutil list` to discover the device name of the "
-"USB disk, unmount the USB disk, then use :command:`dd` to write the image to"
-" the raw disk (:file:`rdisk`). In this example, an 8 GB USB stick has a "
-"device name of :file:`/dev/disk1` and a raw device name of "
-":file:`/dev/rdisk1`:"
 msgstr ""
 
 #: ../../preinstall.rst:393
@@ -1004,6 +985,42 @@ msgstr ""
 #: ../../preinstall.rst:767
 msgid ": New Virtual Machine \"test\""
 msgstr ""
+
+#: ../../preinstall.rst:549
+msgid ""
+"Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager "
+"utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse` to "
+"browse to the location of the :file:`.img` file. Insert a USB thumb drive "
+"and select its drive letter (in this example, drive **D**). Click "
+":guilabel:`Write` and the image will be written to the USB thumb drive."
+msgstr ""
+
+#: ../../preinstall.rst:562
+msgid ""
+"To burn the :file:`.img` file on Mac OS X, insert a USB stick and open "
+"*Terminal*. Run :command:`diskutil list` to discover the device name of the "
+"USB disk, unmount the USB disk, then use :command:`dd` to write the image to"
+" the raw disk (:file:`rdisk`). In this example, an 8 GB USB stick has a "
+"device name of :file:`/dev/disk1` and a raw device name of "
+":file:`/dev/rdisk1`:"
+msgstr ""
+
+#~ msgid ""
+#~ "Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager "
+#~ "utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse` to "
+#~ "browse to the location of the :file:`.iso` file. Insert a USB thumb drive "
+#~ "and select its drive letter (in this example, drive **D**). Click "
+#~ ":guilabel:`Write` and the image will be written to the USB thumb drive."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To burn the :file:`.iso` file on Mac OS X, insert a USB stick and open "
+#~ "*Terminal*. Run :command:`diskutil list` to discover the device name of the "
+#~ "USB disk, unmount the USB disk, then use :command:`dd` to write the image to"
+#~ " the raw disk (:file:`rdisk`). In this example, an 8 GB USB stick has a "
+#~ "device name of :file:`/dev/disk1` and a raw device name of "
+#~ ":file:`/dev/rdisk1`:"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "While most hardware \"just works\" with |trueos|, it is possible to run "
