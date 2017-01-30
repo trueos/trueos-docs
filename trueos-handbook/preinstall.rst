@@ -547,7 +547,7 @@ drive and select its drive letter (in this example, drive **D**). Click
 
    : Write an Image using Win32 Disk Imager
 
-To burn the :file:`.iso` file on Mac OS X, insert a USB stick and open
+To burn the :file:`.img` file on Mac OS X, insert a USB stick and open
 *Terminal*. Run :command:`diskutil list` to discover the device name of
 the USB disk, unmount the USB disk, then use :command:`dd` to write the
 image to the raw disk (:file:`rdisk`). In this example, an 8 GB USB

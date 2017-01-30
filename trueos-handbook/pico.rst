@@ -4,6 +4,9 @@
 |trpi|
 ******
 
+.. warning:: As a result to TrueOS using OpenRC, an update to these
+   instructions, especially server initialization, is forthcoming.
+
 |trpi| is an initiative to connect multiple small ARM device thin
 clients to a single |trueos| system. Similar to the |sysadm| project,
 |trpi| utilizes two primary pieces of software: |pise| and |picl|.
