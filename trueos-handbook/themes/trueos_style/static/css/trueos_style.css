@@ -4091,8 +4091,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 	background: #bbbbbb !important;
 	border: solid 1px #A8A8A8 !important;
 	margin-top: 2px;
-	border-radius: 2px;
-	height: 29px !important;
+	border-radius: 1px;
 }
 
 #gsc-i-id1 {
@@ -4118,12 +4117,12 @@ input.gsc-search-button {
 }
 
 .gsib_a {
-	padding-left: 4px !important;
+	padding: 2px 2px !important;
 	padding-right: 4px !important;
 }
 
-.gsib_a, .gsib_b {
-	padding-right: 2px !important;
+.gsst_a .gscb_a {
+	color: #5785e9 !important;
 }
 
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
