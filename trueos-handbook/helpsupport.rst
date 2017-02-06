@@ -439,13 +439,14 @@ chat and collaboration with |trueos| users and developers. Gitter does
 not require an application to use, but does require a login using
 either an existing GitHub or Twitter account.
 
-To access the Gitter channel, point a web browser to the
-`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
+To access the TrueOS Gitter community, point a web browser to
+`https://gitter.im/trueos`_.
 
 Gitter also maintains a full archive of the chat history. This means
-lengthy conversations about hardware issues or workarounds will always
-be available for reference. To access the Gitter archive, navigate to
-the |trueos| `archive <https://gitter.im/trueos/Lobby/archives>`_.
+lengthy conversations about hardware issues or workarounds are always
+available for reference. To access the Gitter archive, navigate to
+the desired |trueos| room's archive. For example, here is the address of
+the TrueOS Lobby archive: `https://gitter.im/trueos/Lobby/archives`_.
 
 .. note:: It is not required to log in to Gitter to browse the archive.
 
@@ -477,7 +478,7 @@ on the Gitter channel:
   and to make them feel welcome.
 
 .. index:: community, reddit
-.. _TrueOS® Subreddit:
+.. _TrueOS Subreddit:
 
 |trueos| Subreddit
 ------------------
@@ -733,7 +734,7 @@ possible using |trueos| on many different hardware configurations
 assists the Project in finding and fixing bugs. This makes using
 |trueos| better for everyone.
 
-If becoming a tester is tempting, join the
+If becoming a tester is tempting, join the Gitter
 `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. New testing versions,
 once available, will be announced here. You will also be able to see
 any problems other testers are finding and can check to see if the
