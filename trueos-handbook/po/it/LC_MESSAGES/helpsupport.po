@@ -1718,21 +1718,6 @@ msgid ""
 "yourself."
 msgstr ""
 
-#: ../../helpsupport.rst:454
-msgid ""
-"To access the TrueOS Gitter community, point a web browser to "
-"`https://gitter.im/trueos`_."
-msgstr ""
-
-#: ../../helpsupport.rst:457
-msgid ""
-"Gitter also maintains a full archive of the chat history. This means lengthy"
-" conversations about hardware issues or workarounds are always available for"
-" reference. To access the Gitter archive, navigate to the desired |trueos| "
-"room's archive. For example, here is the address of the TrueOS Lobby "
-"archive: `https://gitter.im/trueos/Lobby/archives`_."
-msgstr ""
-
 #: ../../helpsupport.rst:749
 msgid ""
 "If becoming a tester is tempting, join the Gitter `TrueOS® Lobby "
@@ -1741,6 +1726,34 @@ msgid ""
 "testers are finding and can check to see if the problem exists on your "
 "hardware as well."
 msgstr ""
+
+#: ../../helpsupport.rst:454
+msgid ""
+"To access the TrueOS Gitter community, point a web browser to "
+"https://gitter.im/trueos."
+msgstr ""
+
+#: ../../helpsupport.rst:457
+msgid ""
+"Gitter also maintains a full archive of the chat history. This means lengthy"
+" conversations about hardware issues or workarounds are always available for"
+" reference. To access the Gitter archive, navigate to the desired |trueos| "
+"room's archive. For example, here is the address of the TrueOS Lobby "
+"archive: https://gitter.im/trueos/Lobby/archives."
+msgstr ""
+
+#~ msgid ""
+#~ "To access the TrueOS Gitter community, point a web browser to "
+#~ "`https://gitter.im/trueos`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Gitter also maintains a full archive of the chat history. This means lengthy"
+#~ " conversations about hardware issues or workarounds are always available for"
+#~ " reference. To access the Gitter archive, navigate to the desired |trueos| "
+#~ "room's archive. For example, here is the address of the TrueOS Lobby "
+#~ "archive: `https://gitter.im/trueos/Lobby/archives`_."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "To access the Gitter channel, point a web browser to the `TrueOS® Lobby "
