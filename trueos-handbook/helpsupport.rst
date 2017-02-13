@@ -440,13 +440,13 @@ not require an application to use, but does require a login using
 either an existing GitHub or Twitter account.
 
 To access the TrueOS Gitter community, point a web browser to
-`https://gitter.im/trueos`_.
+https://gitter.im/trueos.
 
 Gitter also maintains a full archive of the chat history. This means
 lengthy conversations about hardware issues or workarounds are always
 available for reference. To access the Gitter archive, navigate to
 the desired |trueos| room's archive. For example, here is the address of
-the TrueOS Lobby archive: `https://gitter.im/trueos/Lobby/archives`_.
+the TrueOS Lobby archive: https://gitter.im/trueos/Lobby/archives.
 
 .. note:: It is not required to log in to Gitter to browse the archive.
 
