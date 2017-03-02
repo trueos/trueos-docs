@@ -31,24 +31,22 @@ continue to boot.
    :scale: 100%
 
    : Initial Boot Menu
-
-Next, the :guilabel:`TrueOS® Installation Menu`, shown in
-:numref:`Figure %s <install15>`, will be displayed. 
+   
+If a key other than :kbd:`Enter` is pressed, this screen pauses
+to provide additional time to review the options. If this screen is not
+paused, it automatically boots into the :guilabel:`Boot Multi User`
+option, displaying the :guilabel:`TrueOS® Installation Menu`, shown in
+:numref:`Figure %s <install15>`.
 
 .. _install15:
 
-.. figure:: images/install15.png
+.. figure:: images/install15a.png
    :scale: 100%
 
    : |trueos| Installer Boot Menu
 
-If a key other than :kbd:`Enter` is pressed, this screen will pause
-to provide additional time to review its options. If this screen is not
-paused, it will automatically boot into the **xorg** option after a few
-seconds, providing a number of new options:
-
-* **xorg:** Starts a graphical installer which will auto-detect the
-  driver required by the video hardware.
+* **xorg:** Starts a graphical installer which auto-detects the driver
+  required by the video hardware.
 
 * **vesa:** Starts the graphical installer with the VESA driver loaded.
   Select this option if :guilabel:`xorg` hangs when loading the graphics
@@ -59,6 +57,11 @@ seconds, providing a number of new options:
   driver, as it provides a nicer display than the :guilabel:`vesa`
   driver. Before selecting this option, double-check CSM has been
   disabled in the BIOS.
+
+* **intel:** Start a graphical install with Legacy Intel drivers loaded.
+
+* **amd:** Start a graphical installation with legacy Radeon drivers
+  loaded.
 
 * **install:** Starts the text-based installer as described in
   :ref:`Using the Text Installer`.
@@ -88,13 +91,13 @@ loaded and is ready to present its options.
 
 .. _install2:
 
-.. figure:: images/install2b.png
+.. figure:: images/install2c.png
    :scale: 100%
 
    : Welcome and Language Selection Screen
 
 On the bottom-left side of the screen are several icons and buttons to
-help with the installation, charted in :numref:`Table %s <insico>`:
+help with the installation, explained in :numref:`Table %s <insico>`:
 
 .. _insico:
 
@@ -115,6 +118,12 @@ help with the installation, charted in :numref:`Table %s <insico>`:
    +-----------------------+-------------------------------------------+
    | "L" key and U.S. Flag | Switch between the US keyboard layout and |
    |                       | a user selected layout.                   |
+   +-----------------------+-------------------------------------------+
+   | Blue and White Orb    | Opens the *Network Manager* in order to   |
+   |                       | configure system networking during the    |
+   |                       | installation process.                     |
+   +-----------------------+-------------------------------------------+
+   | Pie Chart             | Launches the *Disk Manager* utility.      |
    +-----------------------+-------------------------------------------+
    | Command Prompt Window | Access the emergency shell described in   |
    |                       | :ref:`Using the System Utilities Menu`.   |
@@ -170,7 +179,7 @@ only server.
 
 .. _install3:
 
-.. figure:: images/install3b.png
+.. figure:: images/install3c.png
    :scale: 100%
 
    : System Selection Screen
@@ -202,7 +211,7 @@ configuration.
 
 .. _install5:
 
-.. figure:: images/install5b.png
+.. figure:: images/install5c.png
    :scale: 100%
 
    : Disk Selection Screen
@@ -217,6 +226,10 @@ supports the ZFS boot environments used by
 **GRUB:** Select this option when dual-booting the system and the GRUB
 bootloader is preferred.
 
+.. warning:: |trueos| is currently experiencing issues with the GRUB
+   bootloater. It is recommended to avoid using GRUB while the issue is
+   resolved. See :ref:`Ongoing Issues` for more details.
+
 .. warning:: By default, |trueos| assumes the user wants to install
    on the entire first disk. When installing |trueos| as the only
    operating system on the computer, click :guilabel:`Next` to start the
@@ -226,8 +239,8 @@ bootloader is preferred.
    on :ref:`Dual Booting`.
 
 To select the disk or partition to install |trueos|, click
-:guilabel:`Customize` to start the |trueos| Disk Wizard, shown in
-:numref:`Figure %s <install6>`.
+:guilabel:`Customize Disk Settings` to start the |trueos| Disk Wizard,
+shown in :numref:`Figure %s <install6>`.
 
 .. _install6:
 
@@ -622,8 +635,6 @@ wizard and return to the :guilabel:`Disk Selection` screen.
 Installation Progress
 =====================
 
-.. TODO Update screens and check text once new .isos are available.
-
 Once :guilabel:`Yes` is selected to start the installation, a progress
 screen, seen in :numref:`Figure %s <install13>`, provides a progress
 bar and messages so the user can watch the installation's progress.
@@ -651,7 +662,7 @@ complete.
 
 .. _install14:
 
-.. figure:: images/install14a.png
+.. figure:: images/install14b.png
    :scale: 100%
 
    : |trueos| Installation Complete
@@ -1232,7 +1243,7 @@ default changed during installation, the installer will use a customized
 version of the GRUB boot loader which provides limited ZFS boot
 environment support.
 
-The |trueos| version of GRUB will attempt to identify other installed
+The |trueos| version of GRUB attempts to identify other installed
 operating systems, such as Windows and Linux, and add them to the GRUB
 boot menu. If an operating system is not automatically detected,
 an entry can be manually added to

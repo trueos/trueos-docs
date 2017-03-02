@@ -29,8 +29,14 @@ aspects of the |trueos| project.
 .. index:: help, TrueOS
 .. _TrueOS issues:
 
-|trueos|
---------
+|trueos| issues
+---------------
+
+* **GRUB:** GRUB is currently broken in |trueos|. The developers are
+  aware EFI setups using GELI require GRUB, and they are working on a
+  solution for this in a future release. It is also recommended that
+  users who installed with the GRUB bootloader avoid upgrading, as the
+  developers are working towards replacing GRUB in the installer.
 
 * **Older AMD/ATI cards:** These are not supported in |trueos| yet.
   There are several ongoing investigations, but no consistent solutions
@@ -46,10 +52,6 @@ aspects of the |trueos| project.
 * **Translation issues:** |trueos| began using Weblate as its
   translation system, but it is currently nonfunctional. The system is
   being reviewed and should be back online soon.
-
-* **4k desktop wallpapers:** There is an issue with 4k desktop
-  backgrounds not being displayed properly (always displays as "tiled").
-  This is a bug with Qt, and will be fixed with the next version of Qt.
 
 * **Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues
   with older Broadcom wifi chipsets. Please browse the FreeBSD
@@ -565,8 +567,6 @@ join.
 
 Contributing to |trueos|
 ========================
-
-.. TODO clean up and expand, maybe work in some of the contributor rules
 
 Many in the |trueos| community have assisted in its development,
 providing valuable contributions to the project. |trueos| is a large
@@ -1345,3 +1345,17 @@ Many BSD sites and resources may also contain useful information:
 * `The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ (book)
 
 * `Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)
+
+**ZFS Resources**
+
+* `ZFS Evil Tuning Guide <http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_
+
+* `FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_
+
+* `ZFS Best Practices Guide <http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide>`_
+
+* `ZFS Administration Guide <http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
+
+* `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/entry/becoming_a_zfs_ninja>`_
+
+* `Blog post explaining how ZFS simplifies the storage stack <https://blogs.oracle.com/bonwick/entry/rampant_layering_violation>`_
