@@ -708,7 +708,7 @@ installer, start the installation as usual and select
 
 .. _install15repro:
 
-.. figure:: images/install15.png
+.. figure:: images/install15a.png
    :scale: 100%
 
    : |trueos| Installation Menu
