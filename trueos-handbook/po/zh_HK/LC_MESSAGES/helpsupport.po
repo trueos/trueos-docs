@@ -42,11 +42,11 @@ msgid ""
 "questions.html>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:435
+#: ../../helpsupport.rst:437
 msgid "The |trueos| Community"
 msgstr ""
 
-#: ../../helpsupport.rst:437
+#: ../../helpsupport.rst:439
 msgid ""
 "The |trueos| community has grown and evolved since the project's inception. "
 "A wide variety of chat channels and forum options are now available for "
@@ -54,11 +54,11 @@ msgid ""
 " development team."
 msgstr ""
 
-#: ../../helpsupport.rst:446
+#: ../../helpsupport.rst:448
 msgid "Gitter Chat"
 msgstr ""
 
-#: ../../helpsupport.rst:448
+#: ../../helpsupport.rst:450
 msgid ""
 "The |trueos| Project uses `Gitter <https://en.wikipedia.org/wiki/Gitter>`_ "
 "to provide real-time chat and collaboration with |trueos| users and "
@@ -66,18 +66,18 @@ msgid ""
 "a login using either an existing GitHub or Twitter account."
 msgstr ""
 
-#: ../../helpsupport.rst:463
+#: ../../helpsupport.rst:465
 msgid "It is not required to log in to Gitter to browse the archive."
 msgstr ""
 
-#: ../../helpsupport.rst:465
+#: ../../helpsupport.rst:467
 msgid ""
 "Gitter is a great way to chat with other users and get answers to questions."
 " Here are few things to keep in mind when asking a question on the Gitter "
 "channel:"
 msgstr ""
 
-#: ../../helpsupport.rst:469
+#: ../../helpsupport.rst:471
 msgid ""
 "Most of the regular users are always logged in, even when they are away from"
 " their computer or are busy doing other things. If no one responds "
@@ -85,41 +85,41 @@ msgid ""
 "Stick around for a while to see if anyone responds."
 msgstr ""
 
-#: ../../helpsupport.rst:474
+#: ../../helpsupport.rst:476
 msgid ""
 "Users represent many different time zones. It is quite possible it is late "
 "at night or very early in the morning for some users when asking a question."
 msgstr ""
 
-#: ../../helpsupport.rst:478
+#: ../../helpsupport.rst:480
 msgid ""
 "Do not post large error messages in the channel. Instead, use a pasting "
 "service such as pastebin.com and refer to the URL on channel."
 msgstr ""
 
-#: ../../helpsupport.rst:481
+#: ../../helpsupport.rst:483
 msgid "Be polite and do not demand a response from others."
 msgstr ""
 
-#: ../../helpsupport.rst:483
+#: ../../helpsupport.rst:485
 msgid ""
 "It is considered rude to \"Chat Privately\" with someone who does not know "
 "you without first asking their permission. If no one answers the question, "
 "do not start chatting privately with unkown people in the room."
 msgstr ""
 
-#: ../../helpsupport.rst:488
+#: ../../helpsupport.rst:490
 msgid ""
 "The first time joining the channel, it is okay to say hi and introduce "
 "yourself. If a new person joins the channel, feel free to welcome them and "
 "to make them feel welcome."
 msgstr ""
 
-#: ../../helpsupport.rst:496
+#: ../../helpsupport.rst:498
 msgid "|trueos| Subreddit"
 msgstr ""
 
-#: ../../helpsupport.rst:498
+#: ../../helpsupport.rst:500
 msgid ""
 "The |trueos| Project also has a `Subreddit "
 "<https://www.reddit.com/r/TrueOS/>`_ for users who prefer to use Reddit to "
@@ -128,11 +128,11 @@ msgid ""
 "login account to submit or comment on posts."
 msgstr ""
 
-#: ../../helpsupport.rst:508
+#: ../../helpsupport.rst:510
 msgid "Discourse"
 msgstr ""
 
-#: ../../helpsupport.rst:510
+#: ../../helpsupport.rst:512
 msgid ""
 "|trueos| also has a discourse `channel <https://discourse.trueos.org/>`_ "
 "managed concurrently with the Subreddit. Functionally similar to the "
@@ -140,39 +140,39 @@ msgid ""
 " posts, but it is possible to view the current posts without an account."
 msgstr ""
 
-#: ../../helpsupport.rst:520
+#: ../../helpsupport.rst:522
 msgid "IRC"
 msgstr ""
 
-#: ../../helpsupport.rst:560
+#: ../../helpsupport.rst:562
 msgid "Social Media"
 msgstr ""
 
-#: ../../helpsupport.rst:562
+#: ../../helpsupport.rst:564
 msgid ""
 "The |trueos| project maintains several social media sites to help users keep"
 " up-to-date with what is happening and to provide venues for developers and "
 "users to network with each other. Anyone is welcome to join."
 msgstr ""
 
-#: ../../helpsupport.rst:567
+#: ../../helpsupport.rst:569
 msgid "`Official TrueOS® Blog <https://www.trueos.org/blog/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:569
+#: ../../helpsupport.rst:571
 msgid "`TrueOS® Project on Twitter <https://twitter.com/TrueOS_Project/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:571
+#: ../../helpsupport.rst:573
 msgid ""
 "`TrueOSD® Facebook Group <https://www.facebook.com/groups/4210443834/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:573
+#: ../../helpsupport.rst:575
 msgid "`TrueOS® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:579
+#: ../../helpsupport.rst:581
 msgid "Contributing to |trueos|"
 msgstr ""
 
@@ -1004,11 +1004,7 @@ msgid ""
 "of the |trueos| project."
 msgstr ""
 
-#: ../../helpsupport.rst:45
-msgid "|trueos|"
-msgstr ""
-
-#: ../../helpsupport.rst:47
+#: ../../helpsupport.rst:53
 msgid ""
 "**Older AMD/ATI cards:** These are not supported in |trueos| yet. There are "
 "several ongoing investigations, but no consistent solutions have been found "
@@ -1017,7 +1013,7 @@ msgid ""
 "effectiveness is (so far) inconsistent."
 msgstr ""
 
-#: ../../helpsupport.rst:53
+#: ../../helpsupport.rst:59
 msgid ""
 "**Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from this "
 "range need to be installed manually. The |trueos| installer only contains "
@@ -1025,21 +1021,14 @@ msgid ""
 "drivers are available through :command:`pkg`."
 msgstr ""
 
-#: ../../helpsupport.rst:58
+#: ../../helpsupport.rst:64
 msgid ""
 "**Translation issues:** |trueos| began using Weblate as its translation "
 "system, but it is currently nonfunctional. The system is being reviewed and "
 "should be back online soon."
 msgstr ""
 
-#: ../../helpsupport.rst:62
-msgid ""
-"**4k desktop wallpapers:** There is an issue with 4k desktop backgrounds not"
-" being displayed properly (always displays as \"tiled\"). This is a bug with"
-" Qt, and will be fixed with the next version of Qt."
-msgstr ""
-
-#: ../../helpsupport.rst:66
+#: ../../helpsupport.rst:68
 msgid ""
 "**Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues with older"
 " Broadcom wifi chipsets. Please browse the FreeBSD `hardware notes "
@@ -1047,7 +1036,7 @@ msgid ""
 "detailed notes about supported hardware in FreeBSD/|trueos|."
 msgstr ""
 
-#: ../../helpsupport.rst:71
+#: ../../helpsupport.rst:73
 msgid ""
 "**Install with Encryption:** A |trueos| installation using the FreeBSD "
 "loader with both GPT and GELI encryption is currently nonfunctional, due to "
@@ -1057,30 +1046,30 @@ msgid ""
 "fresh installs while the FreeBSD contributors fix the issue."
 msgstr ""
 
-#: ../../helpsupport.rst:90
+#: ../../helpsupport.rst:92
 msgid "Pico"
 msgstr ""
 
-#: ../../helpsupport.rst:92
+#: ../../helpsupport.rst:94
 msgid "This section lists the currently known bugs with |trpi| use:"
 msgstr ""
 
-#: ../../helpsupport.rst:94
+#: ../../helpsupport.rst:96
 msgid ""
 "**Audio:** Pulse Audio has an intermittent issue with freezing upon *client*"
 " initialization. A workaround has been implemented, but please refer to "
 ":ref:`Report a bug` if any additional audio issues are encountered."
 msgstr ""
 
-#: ../../helpsupport.rst:103
+#: ../../helpsupport.rst:105
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../helpsupport.rst:111
+#: ../../helpsupport.rst:113
 msgid "Display"
 msgstr ""
 
-#: ../../helpsupport.rst:113
+#: ../../helpsupport.rst:115
 msgid ""
 "If problems exist with the display settings and manually editing "
 ":file:`/etc/X11/xorg.conf` or running :command:`Xorg --config` is necessary,"
@@ -1089,7 +1078,7 @@ msgid ""
 "reboot the system."
 msgstr ""
 
-#: ../../helpsupport.rst:119
+#: ../../helpsupport.rst:121
 msgid ""
 "The system will reboot to a login prompt. After logging in, follow the "
 "instructions in the FreeBSD `Handbook "
@@ -1100,31 +1089,31 @@ msgid ""
 "start`."
 msgstr ""
 
-#: ../../helpsupport.rst:127
+#: ../../helpsupport.rst:129
 msgid ""
 "If the graphics white-out after a suspend or resume, run :command:`sysctl "
 "hw.acpi.reset_video=1` as the superuser."
 msgstr ""
 
-#: ../../helpsupport.rst:130
+#: ../../helpsupport.rst:132
 msgid ""
 "If the problem is fixed, carefully add :command:`hw.acpi.reset_video=1` to "
 ":file:`/etc/sysctl.conf`."
 msgstr ""
 
-#: ../../helpsupport.rst:133
+#: ../../helpsupport.rst:135
 msgid ""
 "If the monitor goes blank and does not come back, run :command:`xset -dpms` "
 "as the regular user account."
 msgstr ""
 
-#: ../../helpsupport.rst:136
+#: ../../helpsupport.rst:138
 msgid ""
 "If the problem is fixed, add :command:`xset -dpms` to the :file:`.xprofile` "
 "file in the user's home directory."
 msgstr ""
 
-#: ../../helpsupport.rst:139
+#: ../../helpsupport.rst:141
 msgid ""
 "If any display settings change, click :guilabel:`Apply` for the settings to "
 "be tested. If anything goes wrong during testing, the system will return to "
@@ -1134,18 +1123,18 @@ msgid ""
 "display settings later."
 msgstr ""
 
-#: ../../helpsupport.rst:150
+#: ../../helpsupport.rst:152
 msgid "Installation"
 msgstr ""
 
-#: ../../helpsupport.rst:152
+#: ../../helpsupport.rst:154
 msgid ""
 "Installing |trueos| is usually very simple. However, sometimes problems "
 "occur. This section examines solutions to the most common installation "
 "problems."
 msgstr ""
 
-#: ../../helpsupport.rst:156
+#: ../../helpsupport.rst:158
 msgid ""
 "The |trueos| installer creates a log which keeps a record of all the "
 "completed steps, as well as any errors. When an installation error occurs, "
@@ -1154,7 +1143,7 @@ msgid ""
 ":kbd:`y` and insert a FAT formatted USB thumb drive to copy the log."
 msgstr ""
 
-#: ../../helpsupport.rst:163
+#: ../../helpsupport.rst:165
 msgid ""
 "While in the installer, read this log to see what went wrong. Click the "
 "black :guilabel:`Emergency Shell and Utilities` icon, then select "
@@ -1162,14 +1151,14 @@ msgid ""
 "by typing :command:`more /tmp/.SysInstall.log`."
 msgstr ""
 
-#: ../../helpsupport.rst:168
+#: ../../helpsupport.rst:170
 msgid ""
 "If the error can not be fixed or believe an installation bug exists, send "
 "the log saved on the USB stick using the instructions in :ref:`Report a "
 "Bug`."
 msgstr ""
 
-#: ../../helpsupport.rst:172
+#: ../../helpsupport.rst:174
 msgid ""
 "If the installer does not arrive at the initial GUI installer screen, try "
 "unplugging as many devices as possible, such as webcams, scanners, printers,"
@@ -1178,7 +1167,7 @@ msgid ""
 "causing the problem."
 msgstr ""
 
-#: ../../helpsupport.rst:178
+#: ../../helpsupport.rst:180
 msgid ""
 "If the computer freezes while probing hardware and unplugging extra devices "
 "does not fix the problem, it is possible that the installation media is "
@@ -1186,7 +1175,7 @@ msgid ""
 "correct, try burning the file again at a lower speed."
 msgstr ""
 
-#: ../../helpsupport.rst:183
+#: ../../helpsupport.rst:185
 msgid ""
 "If the system freezes and the video card is suspected to be the cause, "
 "review the system's BIOS settings. If there is a setting for video memory, "
@@ -1198,28 +1187,28 @@ msgid ""
 "graphics; check the manual or contact the card manufacturer for details."
 msgstr ""
 
-#: ../../helpsupport.rst:193
+#: ../../helpsupport.rst:195
 msgid ""
 "A common cause for problems is the *LBA* (Logical Block Addressing) setting "
 "in the BIOS. If the PC is not booting before or after installation, check "
 "the BIOS and turn *LBA* off (do not leave it on automatic)."
 msgstr ""
 
-#: ../../helpsupport.rst:198
+#: ../../helpsupport.rst:200
 msgid ""
 "If the SATA settings in the BIOS are set to *compatibility* mode, try "
 "changing this setting to *AHCI*. If the system hangs with a BTX error, try "
 "turning off *AHCI* in the BIOS."
 msgstr ""
 
-#: ../../helpsupport.rst:202
+#: ../../helpsupport.rst:204
 msgid ""
 "If the USB keyboard is non-functional, check if there is an option in the "
 "BIOS for *legacy support* in relation to the keyboard, USB, or both. "
 "Enabling this feature in the BIOS may solve this issue."
 msgstr ""
 
-#: ../../helpsupport.rst:206
+#: ../../helpsupport.rst:208
 msgid ""
 "If the installer boots and a *mountroot>* command prompt appears, this may "
 "be due to a change in the location of the boot device. This can occur when "
@@ -1229,17 +1218,17 @@ msgid ""
 "prompt to display the available devices."
 msgstr ""
 
-#: ../../helpsupport.rst:213
+#: ../../helpsupport.rst:215
 msgid ""
 "If none of the above has fixed the problem, the :ref:`TrueOS Community` is a"
 " valuable resource to assist in tracking down and solving the issue."
 msgstr ""
 
-#: ../../helpsupport.rst:220
+#: ../../helpsupport.rst:222
 msgid "Network"
 msgstr ""
 
-#: ../../helpsupport.rst:222
+#: ../../helpsupport.rst:224
 msgid ""
 "While networking usually \"just works\" on a |trueos| system, users "
 "sometimes encounter problems, especially when connecting to wireless "
@@ -1249,13 +1238,13 @@ msgid ""
 " developers the information they need to fix or create a driver."
 msgstr ""
 
-#: ../../helpsupport.rst:230
+#: ../../helpsupport.rst:232
 msgid ""
 "When troubleshooting the network configuration, use these files and "
 "commands."
 msgstr ""
 
-#: ../../helpsupport.rst:233
+#: ../../helpsupport.rst:235
 msgid ""
 "The :file:`/etc/rc.conf` file is read when the system boots up. In order for"
 " the system to configure an interface at boot time, an entry must exist for "
@@ -1265,19 +1254,19 @@ msgid ""
 "Manager."
 msgstr ""
 
-#: ../../helpsupport.rst:240
+#: ../../helpsupport.rst:242
 msgid ""
 "Here is an example of the :file:`rc.conf` entries for an ethernet driver "
 "(**em0**) and a wireless driver (**run0**):"
 msgstr ""
 
-#: ../../helpsupport.rst:249
+#: ../../helpsupport.rst:251
 msgid ""
 "When reading your own file, look for lines beginning with **ifconfig**. For "
 "a wireless interface, also look for lines containing **wlans**."
 msgstr ""
 
-#: ../../helpsupport.rst:252
+#: ../../helpsupport.rst:254
 msgid ""
 "Unlike Linux interface driver names, FreeBSD/|trueos| interface driver names"
 " indicate the type of chipset. Each driver name has an associated man page "
@@ -1287,7 +1276,7 @@ msgid ""
 ":command:`man em` and :command:`man iwm`."
 msgstr ""
 
-#: ../../helpsupport.rst:260
+#: ../../helpsupport.rst:262
 msgid ""
 ":file:`/etc/wpa_supplicant.conf` is used by wireless interfaces and contains"
 " the information needed to connect to a WPA network. If this file does not "
@@ -1295,7 +1284,7 @@ msgid ""
 "screen of a wireless interface."
 msgstr ""
 
-#: ../../helpsupport.rst:265
+#: ../../helpsupport.rst:267
 msgid ""
 "The :command:`ifconfig` command shows the current state of the interfaces. "
 "When reading through its output, ensure the desired interface is listed, has"
@@ -1304,7 +1293,7 @@ msgid ""
 "interface and a *run0* wireless interface:"
 msgstr ""
 
-#: ../../helpsupport.rst:292
+#: ../../helpsupport.rst:294
 msgid ""
 "In this example, the ethernet interface (*re0*) is active and has an IP "
 "address. However, the wireless interface (*run0*, which is associated with "
@@ -1312,7 +1301,7 @@ msgid ""
 "other words, it has not yet successfully connected to the wireless network."
 msgstr ""
 
-#: ../../helpsupport.rst:298
+#: ../../helpsupport.rst:300
 msgid ""
 "The :command:`dmesg` command lists the hardware probed during boot time and "
 "will indicate if the associated driver was loaded. To search the output of "
@@ -1320,7 +1309,7 @@ msgid ""
 " this example:"
 msgstr ""
 
-#: ../../helpsupport.rst:324
+#: ../../helpsupport.rst:326
 msgid ""
 "If the desired interface does not show up in :command:`ifconfig` or "
 ":command:`dmesg`, it is possible a driver for this card is not provided with"
@@ -1328,7 +1317,7 @@ msgid ""
 " computer, use the :command:`pciconf` command to find out the type of card:"
 msgstr ""
 
-#: ../../helpsupport.rst:338
+#: ../../helpsupport.rst:340
 msgid ""
 "In this example, there is a built-in Ethernet device using a driver which "
 "supports the *RTL8168/8111/8111c* chipsets. As we saw earlier, the driver is"
@@ -1338,7 +1327,7 @@ msgid ""
 "developed."
 msgstr ""
 
-#: ../../helpsupport.rst:345
+#: ../../helpsupport.rst:347
 msgid ""
 "The FreeBSD Handbook chapter on `Wireless Networking "
 "<http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-"
@@ -1346,15 +1335,15 @@ msgid ""
 "additional troubleshooting suggestions."
 msgstr ""
 
-#: ../../helpsupport.rst:354
+#: ../../helpsupport.rst:356
 msgid "Printer"
 msgstr ""
 
-#: ../../helpsupport.rst:356
+#: ../../helpsupport.rst:358
 msgid "Here are some solutions to common printing problems:"
 msgstr ""
 
-#: ../../helpsupport.rst:358
+#: ../../helpsupport.rst:360
 msgid ""
 "**A test page prints but it is all garbled:** This typically means the "
 "system is using the wrong driver. If your specific model was not listed, "
@@ -1367,7 +1356,7 @@ msgid ""
 "help you find the correct driver to use."
 msgstr ""
 
-#: ../../helpsupport.rst:369
+#: ../../helpsupport.rst:371
 msgid ""
 "**Nothing happens when you try to print:** In this case, type :command:`tail"
 " -f /var/log/cups/error_log` in a console and then try to print a test page."
@@ -1377,36 +1366,36 @@ msgid ""
 "|trueos| as you :ref:`Report a Bug`."
 msgstr ""
 
-#: ../../helpsupport.rst:381
+#: ../../helpsupport.rst:383
 msgid "Sound"
 msgstr ""
 
-#: ../../helpsupport.rst:383
+#: ../../helpsupport.rst:385
 msgid ""
 "Type :command:`mixer` from the command line to see the current sound "
 "settings"
 msgstr ""
 
-#: ../../helpsupport.rst:397
+#: ../../helpsupport.rst:399
 msgid ""
 "If any of these settings are set to *0*, set them to a higher value by "
 "specifying the name of the mixer setting and a percentage value up to *100*"
 msgstr ""
 
-#: ../../helpsupport.rst:406
+#: ../../helpsupport.rst:408
 msgid ""
 "To make the change permanent, create a file named :file:`.xprofile` in the "
 "home directory the containing the corrected mixer setting."
 msgstr ""
 
-#: ../../helpsupport.rst:409
+#: ../../helpsupport.rst:411
 msgid ""
 "If only one or two mixer settings are available, the default mixer channel "
 "will need to change. As the superuser, try :command:`sysctl -w "
 "hw.snd.default_unit=1` to alter the mixer channel."
 msgstr ""
 
-#: ../../helpsupport.rst:413
+#: ../../helpsupport.rst:415
 msgid ""
 "To see if the mixer has changed to the correct channel, type "
 ":command:`mixer` again. If there are still only have one or two mixer "
@@ -1414,25 +1403,25 @@ msgid ""
 " *3*."
 msgstr ""
 
-#: ../../helpsupport.rst:418
+#: ../../helpsupport.rst:420
 msgid ""
 "Once all of the mixer settings appear and none are set to *0*, sound should "
 "now work. If it still does not, these resources may help pinpoint the "
 "problem:"
 msgstr ""
 
-#: ../../helpsupport.rst:422
+#: ../../helpsupport.rst:424
 msgid ""
 "`Sound Section of FreeBSD Handbook "
 "<http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-"
 "setup.html>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:424
+#: ../../helpsupport.rst:426
 msgid "`FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:426
+#: ../../helpsupport.rst:428
 msgid ""
 "If sound issues persist, check the :ref:`Help and Support` chapter to "
 "determine what help resources are available. If/when reporting the issue, be"
@@ -1487,7 +1476,7 @@ msgid ""
 "exceptions to this rule."
 msgstr ""
 
-#: ../../helpsupport.rst:79
+#: ../../helpsupport.rst:81
 msgid ""
 "**Flash Support:** Flash support is in a state of flux with the current "
 "development (Jan 2017). Refer to `trueos-docs issue #28 "
@@ -1651,36 +1640,36 @@ msgstr ""
 msgid "Debugger Backtrace Logs"
 msgstr ""
 
-#: ../../helpsupport.rst:522
+#: ../../helpsupport.rst:524
 msgid ""
 "Like many open source projects, |trueos| has an Internet Relay Chat (IRC) "
 "channel so users can chat and get help in real time. To get connected, use "
 "this information in your IRC client:"
 msgstr ""
 
-#: ../../helpsupport.rst:526
+#: ../../helpsupport.rst:528
 msgid "Server name: irc.freenode.net"
 msgstr ""
 
-#: ../../helpsupport.rst:527
+#: ../../helpsupport.rst:529
 msgid "Channel name: #trueos (note the :kbd:`#` is required)"
 msgstr ""
 
-#: ../../helpsupport.rst:529
+#: ../../helpsupport.rst:531
 msgid ""
 "|appcafe| has an IRC category where you can find IRC client software. If you"
 " do not wish to install an IRC client, you can use the web interface to view"
 " #trueos."
 msgstr ""
 
-#: ../../helpsupport.rst:533
+#: ../../helpsupport.rst:535
 msgid ""
 "IRC is a great way to chat with other users and get answers to your "
 "questions. Here are a few things to keep in mind if you ask a question on "
 "IRC:"
 msgstr ""
 
-#: ../../helpsupport.rst:537
+#: ../../helpsupport.rst:539
 msgid ""
 "Most of the regular users are always logged in, even when they are away from"
 " their computer or are busy doing other things. If you do not get an answer "
@@ -1688,13 +1677,13 @@ msgid ""
 "Stick around for a while to see if anyone responds."
 msgstr ""
 
-#: ../../helpsupport.rst:541
+#: ../../helpsupport.rst:543
 msgid ""
 "IRC users represent many different time zones. It possibly late at night or "
 "very early in the morning for some users when you ask a question."
 msgstr ""
 
-#: ../../helpsupport.rst:544
+#: ../../helpsupport.rst:546
 msgid ""
 "Do not post error messages in the channel as the IRC software will probably "
 "kick you out for flooding and it is considered to be bad etiquette. Instead,"
@@ -1702,17 +1691,17 @@ msgid ""
 "to the URL on channel."
 msgstr ""
 
-#: ../../helpsupport.rst:548
+#: ../../helpsupport.rst:550
 msgid "Be polite and do not demand that others answer your question."
 msgstr ""
 
-#: ../../helpsupport.rst:549
+#: ../../helpsupport.rst:551
 msgid ""
 "It is considered rude to DM (direct message) someone who does not know you. "
 "If no one answers your question, do not start DMing people you do not know."
 msgstr ""
 
-#: ../../helpsupport.rst:552
+#: ../../helpsupport.rst:554
 msgid ""
 "The first time you join a channel, it is okay to say hi and introduce "
 "yourself."
@@ -1727,13 +1716,13 @@ msgid ""
 "hardware as well."
 msgstr ""
 
-#: ../../helpsupport.rst:454
+#: ../../helpsupport.rst:456
 msgid ""
 "To access the TrueOS Gitter community, point a web browser to "
 "https://gitter.im/trueos."
 msgstr ""
 
-#: ../../helpsupport.rst:457
+#: ../../helpsupport.rst:459
 msgid ""
 "Gitter also maintains a full archive of the chat history. This means lengthy"
 " conversations about hardware issues or workarounds are always available for"
@@ -1741,6 +1730,66 @@ msgid ""
 "room's archive. For example, here is the address of the TrueOS Lobby "
 "archive: https://gitter.im/trueos/Lobby/archives."
 msgstr ""
+
+#: ../../helpsupport.rst:45
+msgid "|trueos| issues"
+msgstr ""
+
+#: ../../helpsupport.rst:47
+msgid ""
+"**GRUB:** GRUB is currently broken in |trueos|. The developers are aware EFI"
+" setups using GELI require GRUB, and they are working on a solution for this"
+" in a future release. It is also recommended that users who installed with "
+"the GRUB bootloader avoid upgrading, as the developers are working towards "
+"replacing GRUB in the installer."
+msgstr ""
+
+#: ../../helpsupport.rst:1361
+msgid "**ZFS Resources**"
+msgstr ""
+
+#: ../../helpsupport.rst:1363
+msgid ""
+"`ZFS Evil Tuning Guide "
+"<http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_"
+msgstr ""
+
+#: ../../helpsupport.rst:1365
+msgid "`FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_"
+msgstr ""
+
+#: ../../helpsupport.rst:1367
+msgid ""
+"`ZFS Best Practices Guide "
+"<http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide>`_"
+msgstr ""
+
+#: ../../helpsupport.rst:1369
+msgid ""
+"`ZFS Administration Guide "
+"<http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_"
+msgstr ""
+
+#: ../../helpsupport.rst:1371
+msgid ""
+"`Becoming a ZFS Ninja (video) "
+"<https://blogs.oracle.com/video/entry/becoming_a_zfs_ninja>`_"
+msgstr ""
+
+#: ../../helpsupport.rst:1373
+msgid ""
+"`Blog post explaining how ZFS simplifies the storage stack "
+"<https://blogs.oracle.com/bonwick/entry/rampant_layering_violation>`_"
+msgstr ""
+
+#~ msgid "|trueos|"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**4k desktop wallpapers:** There is an issue with 4k desktop backgrounds not"
+#~ " being displayed properly (always displays as \"tiled\"). This is a bug with"
+#~ " Qt, and will be fixed with the next version of Qt."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "To access the TrueOS Gitter community, point a web browser to "
