@@ -32,6 +32,11 @@ aspects of the |trueos| project.
 |trueos| issues
 ---------------
 
+* **Text Installer:** The text installer is out of sync with the
+  graphical install options, which leads to instability when using the
+  text installer. A brief review of the installer has been accomplished,
+  with an update/slight rework in progress.
+
 * **GRUB:** GRUB is currently broken in |trueos|. The developers are
   aware EFI setups using GELI require GRUB, and they are working on a
   solution for this in a future release. It is also recommended that
@@ -91,8 +96,6 @@ This section lists the currently known bugs with |trpi| use:
 
 Troubleshooting
 ===============
-
-
 
 .. index:: help, troubleshooting, display
 .. _Display:

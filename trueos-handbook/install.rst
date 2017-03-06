@@ -11,19 +11,21 @@ using virtualization software such as
 version of |trueos| or a text based installer, please refer to the
 instructions in :ref:`Using the Text Installer`.
 
+.. warning:: The |trueos| text-based installer is experiencing some
+   irregular functionality. It is currently (3/6/17) recommended to
+   use a graphical install option. See :ref:`Ongoing Issues` for more
+   information.
+
 To begin the |trueos| installation, insert the prepared boot media and
 boot the system. If the computer boots into an existing operating
 system instead of the installer, reboot and check the computer's BIOS
 program to ensure the drive containing the installation media is listed
 first in the boot order. Save any BIOS changes and reboot.
 
-As the system boots it will display the menu shown in
-:numref:`Figure %s <install1>`. Typically, press
-:kbd:`Enter` or wait for this menu to go by and the system will
-continue to boot.
-
-.. note:: See :ref:`BSD Boot Loader` for a detailed description of this
-   menu.
+Once the system boots it displays the menu shown in
+:numref:`Figure %s <install1>`. Press :kbd:`Enter` or simply wait a few
+moments and this menu automatically prompts the system to continue
+booting.
 
 .. _install1:
 
@@ -31,7 +33,10 @@ continue to boot.
    :scale: 100%
 
    : Initial Boot Menu
-   
+
+.. note:: See :ref:`BSD Boot Loader` for a detailed description of this
+   menu.
+
 If a key other than :kbd:`Enter` is pressed, this screen pauses
 to provide additional time to review the options. If this screen is not
 paused, it automatically boots into the :guilabel:`Boot Multi User`
@@ -701,6 +706,11 @@ installer, instead refer to :ref:`Installing TrueOS`.
 
 Using the Text Installer
 ------------------------
+
+.. warning:: The |trueos| text-based installer is experiencing some
+   irregular functionality. It is currently (3/6/17) recommended to
+   use a graphical install option. See :ref:`Ongoing Issues` for more
+   information.
 
 If an **ncurses** menu installation is preferred over a full graphical
 installer, start the installation as usual and select
