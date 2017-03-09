@@ -103,6 +103,8 @@ Troubleshooting
 Display
 -------
 
+.. TODO review these options and update as necessary with openrc options.
+
 If problems exist with the display settings and manually editing
 :file:`/etc/X11/xorg.conf` or running :command:`Xorg --config` is
 necessary, first tell the |trueos| system to not automatically start X.
@@ -167,6 +169,10 @@ try unplugging as many devices as possible, such as webcams, scanners,
 printers, USB mice and keyboards. If this solves the problem, plug in
 one piece of hardware at a time, then reboot. This will help pinpoint
 which device is causing the problem.
+
+Additionally, you may need to enable **EFI** in Virtualbox by navigating
+:menuselection:`Settings --> System --> Motherboard` and checking
+:guilabel:`Enable EFI (special OSes only)`.
 
 If the computer freezes while probing hardware and unplugging extra
 devices does not fix the problem, it is possible that the installation

@@ -1237,21 +1237,22 @@ operating systems, care must be taken to select the **correct**
 partition in the :ref:`Disk Selection` screen. On a system containing
 multiple partitions, each partition will be listed.
 
-.. danger:: Be sure to avoid selecting a partition containing a needed
-   operating system or data.
+.. danger:: Avoid selecting a partition containing an operating system
+   or essential data.
 
 Highlight the desired partition and click :guilabel:`Customize`.
-
-.. warning:: Be sure to click :guilabel:`Customize` while in the
-   :ref:`Disk Selection` screen. Clicking :guilabel:`Next` without
-   customizing the disk layout will result in the installer will
-   overwrite the contents of the primary disk.
+Clicking :guilabel:`Next` without customizing the disk layout results
+in the installer overwriting the contents of the primary disk.
 
 In |trueos|, the BSD boot loader is the preferred and default boot
 loader, as it provides native support for ZFS boot environments. If the
-default changed during installation, the installer will use a customized
+default changed during installation, the installer uses a customized
 version of the GRUB boot loader which provides limited ZFS boot
 environment support.
+
+.. warning:: The GRUB boot loader is currently experiencing inconsistent
+   behavior, and it is recommended to use the BSD boot loader at this
+   time. See :ref:`Ongoing Issues` for more details.
 
 The |trueos| version of GRUB attempts to identify other installed
 operating systems, such as Windows and Linux, and add them to the GRUB

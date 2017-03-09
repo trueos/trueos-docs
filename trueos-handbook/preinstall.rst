@@ -454,8 +454,6 @@ operating system on the system with the burner or a separate burning
 application. :numref:`Table %s <burn utils>` lists some freely available
 burning utilities.
 
-.. TODO replace Brasero recommendation? gnome no longer recommended?
-
 .. _burn utils:
 
 .. table:: : Free Burning Utilities
@@ -802,3 +800,8 @@ stored on the hard disk, press :kbd:`F12` to select the boot device
 when the message to do so appears, then press :kbd:`c` to boot from
 CD-ROM. Proceed through the installation as described in
 :ref:`Installing TrueOS`.
+
+.. note:: If the installer GUI doesn't appear to load after configuring
+   your virtual machine, you may need to enable **EFI** in Virtualbox by
+   navigating :menuselection:`Settings --> System --> Motherboard` and
+   checking :guilabel:`Enable EFI (special OSes only)`.
