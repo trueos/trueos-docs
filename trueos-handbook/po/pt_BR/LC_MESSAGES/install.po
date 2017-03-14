@@ -17,19 +17,19 @@ msgid ""
 "the screen."
 msgstr ""
 
-#: ../../install.rst:298
+#: ../../install.rst:297
 msgid "Basic Mode"
 msgstr ""
 
-#: ../../install.rst:335
+#: ../../install.rst:334
 msgid "Advanced Mode"
 msgstr ""
 
-#: ../../install.rst:388
+#: ../../install.rst:387
 msgid "ZFS Overview"
 msgstr ""
 
-#: ../../install.rst:390
+#: ../../install.rst:389
 msgid ""
 "ZFS is an enterprise grade file-system, which provides many features "
 "including: support for high storage capacities, high reliability, the "
@@ -38,39 +38,39 @@ msgid ""
 "limitations of hardware RAID, and native NFSv4 ACLs."
 msgstr ""
 
-#: ../../install.rst:402
+#: ../../install.rst:401
 msgid "These resources are also useful to bookmark and refer to as needed:"
 msgstr ""
 
-#: ../../install.rst:404
+#: ../../install.rst:403
 msgid ""
 "`ZFS Evil Tuning Guide "
 "<http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_"
 msgstr ""
 
-#: ../../install.rst:406
+#: ../../install.rst:405
 msgid "`FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_"
 msgstr ""
 
-#: ../../install.rst:408
+#: ../../install.rst:407
 msgid ""
 "`ZFS Best Practices Guide "
 "<http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide>`_"
 msgstr ""
 
-#: ../../install.rst:410
+#: ../../install.rst:409
 msgid ""
 "`ZFS Administration Guide "
 "<http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_"
 msgstr ""
 
-#: ../../install.rst:412
+#: ../../install.rst:411
 msgid ""
 "`Becoming a ZFS Ninja (video) "
 "<https://blogs.oracle.com/video/entry/becoming_a_zfs_ninja>`_"
 msgstr ""
 
-#: ../../install.rst:477
+#: ../../install.rst:476
 msgid "ZFS Layout"
 msgstr ""
 
@@ -197,33 +197,33 @@ msgstr ""
 msgid "To install the desktop, click :guilabel:`Next`."
 msgstr ""
 
-#: ../../install.rst:234
+#: ../../install.rst:233
 msgid ": Disk Selection Screen"
 msgstr ""
 
-#: ../../install.rst:236
+#: ../../install.rst:235
 msgid ""
 "This screen provides a drop-down :guilabel:`Boot-Loader` menu with boot "
 "manager options:"
 msgstr ""
 
-#: ../../install.rst:243
+#: ../../install.rst:242
 msgid ""
 "**GRUB:** Select this option when dual-booting the system and the GRUB "
 "bootloader is preferred."
 msgstr ""
 
-#: ../../install.rst:269
+#: ../../install.rst:268
 msgid "The wizard provides two modes of operation:"
 msgstr ""
 
-#: ../../install.rst:271
+#: ../../install.rst:270
 msgid ""
 "**Basic:** (default) Select this mode if to specify the installation "
 "partition or disk."
 msgstr ""
 
-#: ../../install.rst:274
+#: ../../install.rst:273
 msgid ""
 "**Advanced:** Select this mode to specify the installation partition or "
 "disk, use MBR partitioning, change the default ZFS pool name, force the "
@@ -231,7 +231,7 @@ msgid ""
 "cache device, encrypt the disk, or specify the filesystem layout."
 msgstr ""
 
-#: ../../install.rst:280
+#: ../../install.rst:279
 msgid ""
 "Regardless of the selected mode, once the disk wizard completes and "
 ":guilabel:`Next` is chosen at the disk :guilabel:`Summary` screen, a pop-up "
@@ -242,38 +242,38 @@ msgid ""
 "drive or partition will be formatted and any data it contains will be lost."
 msgstr ""
 
-#: ../../install.rst:290
+#: ../../install.rst:289
 msgid ""
 "Once the disk configuration is finished, the finished configuration can be "
 "saved for later reuse. Insert a FAT-formatted USB stick and click "
 ":guilabel:`Save Config to USB`."
 msgstr ""
 
-#: ../../install.rst:345
+#: ../../install.rst:344
 msgid ": Advanced Mode Options"
 msgstr ""
 
-#: ../../install.rst:347
+#: ../../install.rst:346
 msgid "This screen has several options:"
 msgstr ""
 
-#: ../../install.rst:349
+#: ../../install.rst:348
 msgid "**Selected Disk:** Select the disk to install into."
 msgstr ""
 
-#: ../../install.rst:351
+#: ../../install.rst:350
 msgid ""
 "**Selected Partition:** Select the desired partition or area of free space."
 msgstr ""
 
-#: ../../install.rst:380
+#: ../../install.rst:379
 msgid ""
 "After making any selections, click :guilabel:`Next` to access the ZFS "
 "configuration screens. The rest of this section provides a ZFS overview and "
 "then demonstrates how to customize the ZFS layout."
 msgstr ""
 
-#: ../../install.rst:396
+#: ../../install.rst:395
 msgid ""
 "If new to ZFS, the Wikipedia entry on :wikipedia:`ZFS` provides an excellent"
 " starting point to learn about its features. Additionally, `FreeBSD Mastery:"
@@ -282,53 +282,53 @@ msgid ""
 "is implemented in FreeBSD."
 msgstr ""
 
-#: ../../install.rst:414
+#: ../../install.rst:413
 msgid ""
 "`Blog post explaining how ZFS simplifies the storage stack "
 "<https://blogs.oracle.com/bonwick/entry/rampant_layering_violation>`_"
 msgstr ""
 
-#: ../../install.rst:488
+#: ../../install.rst:487
 msgid ": ZFS Configuration"
 msgstr ""
 
-#: ../../install.rst:504
+#: ../../install.rst:503
 msgid "The |trueos| installer supports multiple ZFS configurations:"
 msgstr ""
 
-#: ../../install.rst:506
+#: ../../install.rst:505
 msgid "**mirror:** Requires a minimum of 2 disks."
 msgstr ""
 
-#: ../../install.rst:508
+#: ../../install.rst:507
 msgid ""
 "**RAIDZ1:** Requires a minimum of 3 disks. For best performance, a maximum "
 "of 9 disks is recommended."
 msgstr ""
 
-#: ../../install.rst:511
+#: ../../install.rst:510
 msgid ""
 "**RAIDZ2:** Requires a minimum of 4 disks. For best performance, a maximum "
 "of 10 disks is recommended."
 msgstr ""
 
-#: ../../install.rst:514
+#: ../../install.rst:513
 msgid ""
 "**RAIDZ3:** Requires a minimum of 5 disks. For best performance, a maximum "
 "of 11 disks is recommended."
 msgstr ""
 
-#: ../../install.rst:517
+#: ../../install.rst:516
 msgid "**stripe:** Requires a minimum of 2 disks."
 msgstr ""
 
-#: ../../install.rst:519
+#: ../../install.rst:518
 msgid ""
 "A stripe does NOT provide ANY redundancy. If any disk fails in a stripe, all"
 " data in the pool is lost!"
 msgstr ""
 
-#: ../../install.rst:522
+#: ../../install.rst:521
 msgid ""
 "The installer will not allow a configuration choice in which the system does"
 " not meet the minimum number of disks required by the configuration. When "
@@ -336,18 +336,18 @@ msgid ""
 "required."
 msgstr ""
 
-#: ../../install.rst:537
+#: ../../install.rst:536
 msgid ""
 "This screen can be used to specify an SSD to use as an L2ARC read cache or "
 "as a secondary log device (ZIL). Any available devices will be listed in the"
 " boxes in this screen."
 msgstr ""
 
-#: ../../install.rst:541
+#: ../../install.rst:540
 msgid "A separate SSD is needed for each type of device."
 msgstr ""
 
-#: ../../install.rst:562
+#: ../../install.rst:561
 msgid ""
 "This screen can be used to configure full-disk encryption which is meant to "
 "protect the data on the disks should the system itself be lost or stolen. "
@@ -357,7 +357,7 @@ msgid ""
 "read from disk."
 msgstr ""
 
-#: ../../install.rst:569
+#: ../../install.rst:568
 msgid ""
 "To configure full-disk encryption, check :guilabel:`Encrypt disk with GELI`."
 " This option will be greyed out if :guilabel:`GPT (Best for new hardware)` "
@@ -369,17 +369,17 @@ msgid ""
 "remember, but hard for others to guess."
 msgstr ""
 
-#: ../../install.rst:579
+#: ../../install.rst:578
 msgid ""
 "This passphrase is required to decrypt the disks. If the passphrase is lost "
 "or forgotten, all access will be lost to the encrypted data!"
 msgstr ""
 
-#: ../../install.rst:591
+#: ../../install.rst:590
 msgid ": Default ZFS Layout"
 msgstr ""
 
-#: ../../install.rst:593
+#: ../../install.rst:592
 msgid ""
 "Regardless of how many disks are selected for the ZFS configuration, the "
 "default layout will be the same. ZFS does not require separate partitions "
@@ -389,12 +389,12 @@ msgid ""
 "partition at the beginning of the drive."
 msgstr ""
 
-#: ../../install.rst:600
+#: ../../install.rst:599
 msgid ""
 "Do not remove any of the default mount points as they are used by |trueos|."
 msgstr ""
 
-#: ../../install.rst:603
+#: ../../install.rst:602
 msgid ""
 "Use :guilabel:`Add` to add additional mount points. The system will ask for "
 "the name of the mount point as size is not limited at creation time. "
@@ -402,7 +402,7 @@ msgid ""
 "remains within the ZFS pool."
 msgstr ""
 
-#: ../../install.rst:608
+#: ../../install.rst:607
 msgid ""
 "To set the swap size, click :guilabel:`Swap Size`. This will prompt to enter"
 " a size in MB. If a RAIDZ* or mirror exists, a swap partition of the "
@@ -412,13 +412,13 @@ msgid ""
 "be 2GB, due to redundancy."
 msgstr ""
 
-#: ../../install.rst:615
+#: ../../install.rst:614
 msgid ""
 "Right-click any mount point to toggle between enabling or disabling many ZFS"
 " properties:"
 msgstr ""
 
-#: ../../install.rst:618
+#: ../../install.rst:617
 msgid ""
 "**atime:** When set to :guilabel:`on`, controls whether the access time for "
 "files is updated when they are read. When set to :guilabel:`off`, this "
@@ -427,12 +427,12 @@ msgid ""
 "other utilities."
 msgstr ""
 
-#: ../../install.rst:624
+#: ../../install.rst:623
 msgid ""
 "**canmount:** If set to :guilabel:`off`, the filesystem can not be mounted."
 msgstr ""
 
-#: ../../install.rst:627
+#: ../../install.rst:626
 msgid ""
 "**casesensitivity:** The default is :guilabel:`sensitive`, as UNIX "
 "filesystems use case-sensitive file names. For example, \"kris\" is "
@@ -440,29 +440,29 @@ msgid ""
 ":guilabel:`insensitive`."
 msgstr ""
 
-#: ../../install.rst:632
+#: ../../install.rst:631
 msgid ""
 "**checksum:** Automatically verifies the integrity of the data stored on "
 "disks. Turning this property :guilabel:`off` is highly discouraged."
 msgstr ""
 
-#: ../../install.rst:636
+#: ../../install.rst:635
 msgid ""
 "**compression:** If set to :guilabel:`on`, automatically compresses stored "
 "data to conserve disk space."
 msgstr ""
 
-#: ../../install.rst:639
+#: ../../install.rst:638
 msgid ""
 "**exec:** If set to :guilabel:`off`, processes can not be executed from "
 "within this filesystem."
 msgstr ""
 
-#: ../../install.rst:642
+#: ../../install.rst:641
 msgid "**setuid:** If set to :guilabel:`on`, the set-UID bit is respected."
 msgstr ""
 
-#: ../../install.rst:644
+#: ../../install.rst:643
 msgid ""
 "After clicking :guilabel:`Next`, the wizard will show a summary of the "
 "selections. To make further changes, use :guilabel:`Back` to return to a "
@@ -470,34 +470,34 @@ msgid ""
 " return to the :guilabel:`Disk Selection` screen."
 msgstr ""
 
-#: ../../install.rst:666
+#: ../../install.rst:665
 msgid ""
 "How long the installation takes depends upon the speed of the hardware and "
 "the installation type selected. A typical installation takes between 5 and "
 "15 minutes."
 msgstr ""
 
-#: ../../install.rst:267
+#: ../../install.rst:266
 msgid ": |trueos| Disk Wizard"
 msgstr ""
 
-#: ../../install.rst:308
+#: ../../install.rst:307
 msgid ": Disk or Partition Selection"
 msgstr ""
 
-#: ../../install.rst:535
+#: ../../install.rst:534
 msgid ": L2ARC and ZIL"
 msgstr ""
 
-#: ../../install.rst:553
+#: ../../install.rst:552
 msgid ": Encryption"
 msgstr ""
 
-#: ../../install.rst:664
+#: ../../install.rst:663
 msgid ": Installation Progress"
 msgstr ""
 
-#: ../../install.rst:685
+#: ../../install.rst:684
 msgid ": |trueos| Installation Complete"
 msgstr ""
 
@@ -512,26 +512,26 @@ msgid ""
 "present its options."
 msgstr ""
 
-#: ../../install.rst:225
+#: ../../install.rst:224
 msgid ""
 "The :guilabel:`Disk Selection\" screen`, seen in :numref:`Figure %s "
 "<install5>`, summarizes the default disk configuration."
 msgstr ""
 
-#: ../../install.rst:479
+#: ../../install.rst:478
 msgid ""
 "In :guilabel:`Advanced Mode`, the disk setup wizard allows configuring the "
 "ZFS layout. The initial ZFS configuration screen is seen in :numref:`Figure "
 "%s <install9>`."
 msgstr ""
 
-#: ../../install.rst:527
+#: ../../install.rst:526
 msgid ""
 "When finished, click :guilabel:`Next` to see the screen shown in "
 ":numref:`Figure %s <install10>`."
 msgstr ""
 
-#: ../../install.rst:543
+#: ../../install.rst:542
 msgid ""
 "Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS Overview` to "
 "determine if the system would benefit from any of these devices before "
@@ -539,26 +539,26 @@ msgid ""
 " screen shown in :numref:`Figure %s <install11>`."
 msgstr ""
 
-#: ../../install.rst:583
+#: ../../install.rst:582
 msgid ""
 "When finished, click :guilabel:`Next` to move to the screen shown in "
 ":numref:`Figure %s <install12>`."
 msgstr ""
 
-#: ../../install.rst:655
+#: ../../install.rst:654
 msgid ""
 "Once :guilabel:`Yes` is selected to start the installation, a progress "
 "screen, seen in :numref:`Figure %s <install13>`, provides a progress bar and"
 " messages so the user can watch the installation's progress."
 msgstr ""
 
-#: ../../install.rst:676
+#: ../../install.rst:675
 msgid ""
 "The screen shown in :numref:`Figure %s <install14>` appears once the "
 "installation is complete."
 msgstr ""
 
-#: ../../install.rst:687
+#: ../../install.rst:686
 msgid ""
 "Click :guilabel:`Finish` to complete the |trueos| installation. It will "
 "return to the :numref:`Figure %s: TrueOS® Installer Boot Menu <install15>`. "
@@ -568,7 +568,7 @@ msgid ""
 " exits before removing the installation media."
 msgstr ""
 
-#: ../../install.rst:557
+#: ../../install.rst:556
 msgid ""
 "Due to a FreeBSD regression, do not use the FreeBSD bootloader with GELI and"
 " GPT encryption for fresh installations of |trueos|. Please see "
@@ -582,7 +582,7 @@ msgid ""
 "refer to the :ref:`Installation` Troubleshooting section of this handbook."
 msgstr ""
 
-#: ../../install.rst:239
+#: ../../install.rst:238
 msgid ""
 "**BSD:** Uses the FreeBSD boot loader. This is recommended as it supports "
 "the ZFS boot environments used by `Update Manager "
@@ -597,85 +597,85 @@ msgstr ""
 msgid "System Selection"
 msgstr ""
 
-#: ../../install.rst:223
+#: ../../install.rst:222
 msgid "Disk Selection"
 msgstr ""
 
-#: ../../install.rst:653
+#: ../../install.rst:652
 msgid "Installation Progress"
 msgstr ""
 
-#: ../../install.rst:674
+#: ../../install.rst:673
 msgid "Installation Finished"
 msgstr ""
 
-#: ../../install.rst:699
+#: ../../install.rst:698
 msgid "Advanced Installation Topics"
 msgstr ""
 
-#: ../../install.rst:701
+#: ../../install.rst:700
 msgid "This section covers these advanced installation topics:"
 msgstr ""
 
-#: ../../install.rst:703
+#: ../../install.rst:702
 msgid ":ref:`Using the Text Installer`"
 msgstr ""
 
-#: ../../install.rst:705
+#: ../../install.rst:704
 msgid ":ref:`Server Installation`"
 msgstr ""
 
-#: ../../install.rst:707
+#: ../../install.rst:706
 msgid ":ref:`Using the TrueOS CD`"
 msgstr ""
 
-#: ../../install.rst:709
+#: ../../install.rst:708
 msgid ":ref:`Dual Booting`"
 msgstr ""
 
-#: ../../install.rst:711
+#: ../../install.rst:712
 msgid ":ref:`Automated Installations`"
 msgstr ""
 
-#: ../../install.rst:713
+#: ../../install.rst:714
 msgid ""
 "If your intent is to install a graphical desktop using a graphical "
 "installer, instead refer to :ref:`Installing TrueOS`."
 msgstr ""
 
-#: ../../install.rst:720
+#: ../../install.rst:721
 msgid "Using the Text Installer"
 msgstr ""
 
-#: ../../install.rst:727
+#: ../../install.rst:728
 msgid ""
 "If an **ncurses** menu installation is preferred over a full graphical "
 "installer, start the installation as usual and select :guilabel:`install`, "
 "seen in :numref:`Figure %s <install15repro>`."
 msgstr ""
 
-#: ../../install.rst:736 ../../install.rst:1212
+#: ../../install.rst:737 ../../install.rst:1213
 msgid ": |trueos| Installation Menu"
 msgstr ""
 
-#: ../../install.rst:738
+#: ../../install.rst:739
 msgid ""
 "The next screen will prompt to install a desktop or a server, as seen in "
 ":numref:`Figure %s <text2>`."
 msgstr ""
 
-#: ../../install.rst:746
+#: ../../install.rst:747
 msgid ": Desktop or Server"
 msgstr ""
 
-#: ../../install.rst:748
+#: ../../install.rst:749
 msgid ""
 "After choosing to install a desktop, the |lumina| desktop will be installed "
 "and configured. After the desktop installation is complete, the system will "
 "boot into the usual post-installation configuration screens."
 msgstr ""
 
-#: ../../install.rst:753
+#: ../../install.rst:754
 msgid ""
 "If a server installation is chosen, neither **X** nor a window manager will "
 "be installed, resulting in a command-line only |trueos| installation. Once "
@@ -684,18 +684,18 @@ msgid ""
 "need to be entered."
 msgstr ""
 
-#: ../../install.rst:759
+#: ../../install.rst:760
 msgid ""
 "After making a selection and pressing :kbd:`Enter`, the next screen will "
 "display the available disks on the system. In the example shown in "
 ":numref:`Figure %s <text3>`, one disk is available."
 msgstr ""
 
-#: ../../install.rst:768
+#: ../../install.rst:769
 msgid ": Installation Disk"
 msgstr ""
 
-#: ../../install.rst:770
+#: ../../install.rst:771
 msgid ""
 "Select the disk to install into and press :kbd:`Enter`. In the next screen, "
 "the installer will display all available primary or GPT partitions. In the "
@@ -703,17 +703,17 @@ msgid ""
 "and the installer has selected the default of installing to the entire disk."
 msgstr ""
 
-#: ../../install.rst:776
+#: ../../install.rst:777
 msgid ""
 "If the system has multiple partitions and disks, be careful in selecting the"
 " disk and partition targets for installation."
 msgstr ""
 
-#: ../../install.rst:784
+#: ../../install.rst:785
 msgid ": Partition"
 msgstr ""
 
-#: ../../install.rst:786
+#: ../../install.rst:787
 msgid ""
 "The next screen, shown in :numref:`Figure %s <text5>`, is used to select the"
 " type of disk format. If the installation disk or partition is larger than 2"
@@ -723,21 +723,21 @@ msgid ""
 "selecting :guilabel:`GPT`, select :guilabel:`MBR` instead."
 msgstr ""
 
-#: ../../install.rst:798
+#: ../../install.rst:799
 msgid ": Disk Format"
 msgstr ""
 
-#: ../../install.rst:800
+#: ../../install.rst:801
 msgid ""
 "The next screen, shown in :numref:`Figure %s <text6>`, is used to select the"
 " boot manager."
 msgstr ""
 
-#: ../../install.rst:808
+#: ../../install.rst:809
 msgid ": Boot Manager"
 msgstr ""
 
-#: ../../install.rst:810
+#: ../../install.rst:811
 msgid ""
 "The default is to use :guilabel:`BSD` as it provides native support for boot"
 " environments. While :guilabel:`GRUB` provides some boot environment "
@@ -748,15 +748,15 @@ msgid ""
 "available."
 msgstr ""
 
-#: ../../install.rst:818
+#: ../../install.rst:819
 msgid "The next screen is shown in :numref:`Figure %s <text7>`."
 msgstr ""
 
-#: ../../install.rst:825
+#: ../../install.rst:826
 msgid ": Full Disk Encryption"
 msgstr ""
 
-#: ../../install.rst:827
+#: ../../install.rst:828
 msgid ""
 "This screen provides the option to encrypt the selected disk(s) with the "
 "FreeBSD `GELI "
@@ -768,13 +768,13 @@ msgid ""
 "not know the passphrase."
 msgstr ""
 
-#: ../../install.rst:836
+#: ../../install.rst:837
 msgid ""
 "If the passphrase is lost or forgotten, no one will be able to access "
 "|trueos| on the system."
 msgstr ""
 
-#: ../../install.rst:839
+#: ../../install.rst:840
 msgid ""
 "For these reasons, it is important to choose a good passphrase other users "
 "will not guess and which the user can remember. Passphrases are case-"
@@ -783,7 +783,7 @@ msgid ""
 "so people who know the user can not guess the passphrase."
 msgstr ""
 
-#: ../../install.rst:846
+#: ../../install.rst:847
 msgid ""
 "Be careful if the keyboard variant and layout are changed. The GELI "
 "encryption framework only supports QWERTY passphrases, so do not use any "
@@ -794,49 +794,49 @@ msgid ""
 "encrypted disks inaccessible."
 msgstr ""
 
-#: ../../install.rst:855
+#: ../../install.rst:856
 msgid ""
 "If server installation is chosen in the screen shown in :ref:`Select Desktop"
 " or Server <text2>`, the installer will provide more menus. These will "
 "prompt for additional information:"
 msgstr ""
 
-#: ../../install.rst:859
+#: ../../install.rst:860
 msgid "The *root* password."
 msgstr ""
 
-#: ../../install.rst:861
+#: ../../install.rst:862
 msgid "Confirm the *root* password (enter the same value)."
 msgstr ""
 
-#: ../../install.rst:863
+#: ../../install.rst:864
 msgid ""
 "The username to use when logging into the server (*root* logins are "
 "discouraged)."
 msgstr ""
 
-#: ../../install.rst:866
+#: ../../install.rst:867
 msgid "The password to use when logging into the server."
 msgstr ""
 
-#: ../../install.rst:868
+#: ../../install.rst:869
 msgid "Confirm the password to use when logging into the server."
 msgstr ""
 
-#: ../../install.rst:870
+#: ../../install.rst:871
 msgid ""
 "The real name for the user who logs into the server (can contain spaces)."
 msgstr ""
 
-#: ../../install.rst:873
+#: ../../install.rst:874
 msgid "The default shell for the user's login."
 msgstr ""
 
-#: ../../install.rst:875
+#: ../../install.rst:876
 msgid "The hostname for the server."
 msgstr ""
 
-#: ../../install.rst:877
+#: ../../install.rst:878
 msgid ""
 "Whether or not to enable networking. Select :guilabel:`Yes`, to either "
 "select :guilabel:`auto` to enable *DHCP* on all interfaces or select an "
@@ -845,74 +845,74 @@ msgid ""
 "server, and the IP address of the default gateway."
 msgstr ""
 
-#: ../../install.rst:883
+#: ../../install.rst:884
 msgid "Whether or not to enable SSH access to the server."
 msgstr ""
 
-#: ../../install.rst:885
+#: ../../install.rst:886
 msgid ""
 "The next screen, for both a desktop and server installation, is shown in "
 ":numref:`Figure %s <text9>`."
 msgstr ""
 
-#: ../../install.rst:893
+#: ../../install.rst:894
 msgid ": Review Installation Options"
 msgstr ""
 
-#: ../../install.rst:895
+#: ../../install.rst:896
 msgid "This menu provides several options:"
 msgstr ""
 
-#: ../../install.rst:897
+#: ../../install.rst:898
 msgid ""
 "**install:** To start the installation, select this option and press "
 ":kbd:`Enter`."
 msgstr ""
 
-#: ../../install.rst:900
+#: ../../install.rst:901
 msgid ""
 "**wizard:** Select this option to re-run the text installer and re-input any"
 " selections."
 msgstr ""
 
-#: ../../install.rst:903
+#: ../../install.rst:904
 msgid ""
 "**edit:** Use this option to review, and possibly change, any of the "
 "installation parameters."
 msgstr ""
 
-#: ../../install.rst:906
+#: ../../install.rst:907
 msgid ""
 "**hardware:** Select this option to display a summary of the system's "
 "hardware. The example shown in :numref:`Figure %s <text10>` is from a system"
 " with a disabled sound card and no wireless card."
 msgstr ""
 
-#: ../../install.rst:910
+#: ../../install.rst:911
 msgid ""
 "**quit:** Select this option to return to the screen shown in the "
 ":ref:`TrueOS Installation Menu <install1>`."
 msgstr ""
 
-#: ../../install.rst:918
+#: ../../install.rst:919
 msgid ": Hardware Summary"
 msgstr ""
 
-#: ../../install.rst:920
+#: ../../install.rst:921
 msgid ""
 "If select :guilabel:`edit`, the menu shown in :numref:`Figure %s <text11>` "
 "will open."
 msgstr ""
 
-#: ../../install.rst:928
+#: ../../install.rst:929
 msgid ": Edit Menu"
 msgstr ""
 
-#: ../../install.rst:930
+#: ../../install.rst:931
 msgid "This screen contains several options:"
 msgstr ""
 
-#: ../../install.rst:932
+#: ../../install.rst:933
 msgid ""
 "**disk:** Used to change the disk to install into. Selecting this option "
 "will re-open the screens shown in :ref:`Select Installation Disk <text3>` "
@@ -921,7 +921,7 @@ msgid ""
 "targets using this option, and then select **pool** (see below)."
 msgstr ""
 
-#: ../../install.rst:939
+#: ../../install.rst:940
 msgid ""
 "**pool:** Select this option if the system contains multiple disks and "
 "changing the disk layout to a mirror or RAIDZ is desired. The allowable "
@@ -929,17 +929,17 @@ msgid ""
 "select the desired layout."
 msgstr ""
 
-#: ../../install.rst:944
+#: ../../install.rst:945
 msgid ""
 "**datasets:** Used to modify the default ZFS dataset layout. Selecting this "
 "option will open the screen shown in :numref:`Figure %s <text12>`."
 msgstr ""
 
-#: ../../install.rst:953
+#: ../../install.rst:954
 msgid ": ZFS Layout"
 msgstr ""
 
-#: ../../install.rst:955
+#: ../../install.rst:956
 msgid ""
 "To edit the properties of an existing dataset, highlight the dataset's name "
 "and press :kbd:`Enter`. This will show the list of available ZFS properties "
@@ -947,11 +947,11 @@ msgid ""
 "<text13>`:"
 msgstr ""
 
-#: ../../install.rst:965
+#: ../../install.rst:966
 msgid ": ZFS Properties for a Dataset"
 msgstr ""
 
-#: ../../install.rst:967
+#: ../../install.rst:968
 msgid ""
 "To change the value of a ZFS property, highlight it and press :kbd:`Enter`. "
 "The available values will vary, depending upon the selected property. To add"
@@ -963,7 +963,7 @@ msgid ""
 ":guilabel:`done`."
 msgstr ""
 
-#: ../../install.rst:976
+#: ../../install.rst:977
 msgid ""
 "While a dataset can be deleted, the default datasets are needed for boot "
 "environments. For this reason, it is **not** recommended to delete any "
@@ -972,7 +972,7 @@ msgid ""
 "only be changed by experienced users."
 msgstr ""
 
-#: ../../install.rst:982
+#: ../../install.rst:983
 msgid ""
 "**network:** Used to configure networking. Selecting this option will first "
 "prompt to enter a hostname, then select either automatic DHCP configuration "
@@ -980,51 +980,51 @@ msgid ""
 "whether or not to enable SSH."
 msgstr ""
 
-#: ../../install.rst:987
+#: ../../install.rst:988
 msgid ""
 "**view:** Select this option to view a read-only copy of the ASCII text file"
 " containing the configuration script."
 msgstr ""
 
-#: ../../install.rst:990
+#: ../../install.rst:991
 msgid ""
 "**edit:** Select this option to open the configuration script in the "
 ":command:`ee` editor, allowing for changes. The parameters supported by the "
 "installation script are described in :ref:`Automated Installations`."
 msgstr ""
 
-#: ../../install.rst:995
+#: ../../install.rst:996
 msgid ""
 "**back:** Select this option to return to the menu shown in :ref:`Review "
 "Installation Options <text9>`."
 msgstr ""
 
-#: ../../install.rst:1002
+#: ../../install.rst:1003
 msgid "Using the System Utilities Menu"
 msgstr ""
 
-#: ../../install.rst:1004
+#: ../../install.rst:1005
 msgid ""
 "The text installer contains some handy tools for troubleshooting and fixing "
 "an existing |trueos| installation."
 msgstr ""
 
-#: ../../install.rst:1007
+#: ../../install.rst:1008
 msgid ""
 "Choose the :guilabel:`utility` option in the main menu of the graphical or "
 "text based installer shown in the :ref:`TrueOS® Installation Menu "
 "<install15>` to open the screen shown in :numref:`Figure %s <util1>`."
 msgstr ""
 
-#: ../../install.rst:1017
+#: ../../install.rst:1018
 msgid ": System Utilities Menu"
 msgstr ""
 
-#: ../../install.rst:1019
+#: ../../install.rst:1020
 msgid "This screen provides several options:"
 msgstr ""
 
-#: ../../install.rst:1021
+#: ../../install.rst:1022
 msgid ""
 "**shell:** This option is useful when troubleshooting a |trueos| system that"
 " no longer boots. It will open a shell with administrative access, including"
@@ -1036,7 +1036,7 @@ msgid ""
 " in :ref:`System Utilities Menu <util1>`."
 msgstr ""
 
-#: ../../install.rst:1031
+#: ../../install.rst:1032
 msgid ""
 "**zimport** This option will display the names of available ZFS pools. Type "
 "the name of an available pool and it will import the pool then display the "
@@ -1048,7 +1048,7 @@ msgid ""
 "<util1>`."
 msgstr ""
 
-#: ../../install.rst:1040
+#: ../../install.rst:1041
 msgid ""
 "**fixgrub:** This option can be used to restamp the GRUB boot loader should "
 "the installed system no longer boot from GRUB. When this option is selected,"
@@ -1056,23 +1056,23 @@ msgid ""
 "pool to import."
 msgstr ""
 
-#: ../../install.rst:1045
+#: ../../install.rst:1046
 msgid ""
 "The :command:`fixgrub` action will fail on systems using the default BSD "
 "boot loader."
 msgstr ""
 
-#: ../../install.rst:1048
+#: ../../install.rst:1049
 msgid ""
 "**exit:** This option will return to the main :ref:`TrueOS® Installation "
 "Menu <install1>`."
 msgstr ""
 
-#: ../../install.rst:1055
+#: ../../install.rst:1056
 msgid "Server Installation"
 msgstr ""
 
-#: ../../install.rst:1057
+#: ../../install.rst:1058
 msgid ""
 "The :ref:`System Selection` screen of the |trueos| installer can be used to "
 "install a FreeBSD-based command-line server operating system rather than a "
@@ -1082,62 +1082,62 @@ msgid ""
 "remotely."
 msgstr ""
 
-#: ../../install.rst:1064
+#: ../../install.rst:1065
 msgid ""
 "For a server installation, using the |trueos| installer rather than the "
 "FreeBSD installer offers several benefits:"
 msgstr ""
 
-#: ../../install.rst:1067
+#: ../../install.rst:1068
 msgid "The ability to easily configure ZFS during installation."
 msgstr ""
 
-#: ../../install.rst:1069
+#: ../../install.rst:1070
 msgid "The ability to configure multiple boot environments."
 msgstr ""
 
-#: ../../install.rst:1071
+#: ../../install.rst:1072
 msgid ""
 "A wizard (described in this section) is provided during installation to "
 "configure the server for first use."
 msgstr ""
 
-#: ../../install.rst:1074
+#: ../../install.rst:1075
 msgid ""
 "This section describes how to install a command-line only server using the "
 "graphical installer. Alternately, a server can be installed :ref:`Using the "
 "TrueOS CD` or :ref:`Using the Text Installer`."
 msgstr ""
 
-#: ../../install.rst:1079
+#: ../../install.rst:1080
 msgid ""
 "To perform a graphical server installation, start the |trueos| installation "
 "as usual. At the :ref:`System Selection` screen of the installer, select "
 ":guilabel:`TrueOS Server (console interface only)`."
 msgstr ""
 
-#: ../../install.rst:1083
+#: ../../install.rst:1084
 msgid ""
 "Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`, then "
 "click :guilabel:`Next` again to see the screen shown in :numref:`Figure %s "
 "<server2>`."
 msgstr ""
 
-#: ../../install.rst:1092
+#: ../../install.rst:1093
 msgid ": Root Password Creation"
 msgstr ""
 
-#: ../../install.rst:1094
+#: ../../install.rst:1095
 msgid ""
 "Input and confirm the root password then click :guilabel:`Next` to proceed "
 "to the screen shown in :numref:`Figure %s <server3>`."
 msgstr ""
 
-#: ../../install.rst:1102
+#: ../../install.rst:1103
 msgid ": Primary User Account Creation"
 msgstr ""
 
-#: ../../install.rst:1104
+#: ../../install.rst:1105
 msgid ""
 "For security reasons, do not login as the *root* user. The wizard requires "
 "creating a primary user account used to login to the server. This account "
@@ -1145,43 +1145,43 @@ msgid ""
 ":command:`su` to the *root* account when administrative access is required."
 msgstr ""
 
-#: ../../install.rst:1110
+#: ../../install.rst:1111
 msgid "Create an account by filling in the fields:"
 msgstr ""
 
-#: ../../install.rst:1112
+#: ../../install.rst:1113
 msgid "**Name:** Can contain capital letters and spaces."
 msgstr ""
 
-#: ../../install.rst:1114
+#: ../../install.rst:1115
 msgid ""
 "**Username:** The name used when logging in. Can not contain spaces and is "
 "case sensitive (e.g. *Kris* is a different username than *kris*)."
 msgstr ""
 
-#: ../../install.rst:1118
+#: ../../install.rst:1119
 msgid ""
 "**Password:** The password used when logging in. Type it twice in order to "
 "confirm it."
 msgstr ""
 
-#: ../../install.rst:1121
+#: ../../install.rst:1122
 msgid ""
 "**Default shell:** Use the drop-down menu to select the **csh**, **tcsh**, "
 "**sh**, or **bash** login shell."
 msgstr ""
 
-#: ../../install.rst:1124
+#: ../../install.rst:1125
 msgid ""
 "When finished, click :guilabel:`Next` to proceed to the screen shown in "
 ":numref:`Figure %s <server4>`."
 msgstr ""
 
-#: ../../install.rst:1132
+#: ../../install.rst:1133
 msgid ": Hostname Creation"
 msgstr ""
 
-#: ../../install.rst:1134
+#: ../../install.rst:1135
 msgid ""
 "Input the system's hostname. If using :command:`ssh` to connect to the "
 "system, check :guilabel:`Enable remote SSH login`. Click :guilabel:`Next` to"
@@ -1189,33 +1189,33 @@ msgid ""
 "<server5>`."
 msgstr ""
 
-#: ../../install.rst:1144
+#: ../../install.rst:1145
 msgid ": Network Configuration"
 msgstr ""
 
-#: ../../install.rst:1146
+#: ../../install.rst:1147
 msgid ""
 "Use the :guilabel:`Network Interface` drop-down menu to choose the desired "
 "interface:"
 msgstr ""
 
-#: ../../install.rst:1149
+#: ../../install.rst:1150
 msgid ""
 "**AUTO-DHCP-SLAAC:** (default) Will configure every active interface for "
 "DHCP and for both IPv4 and IPv6."
 msgstr ""
 
-#: ../../install.rst:1152
+#: ../../install.rst:1153
 msgid ""
 "**AUTO-DHCP:** Will configure every active interface for DHCP and for IPv4."
 msgstr ""
 
-#: ../../install.rst:1155
+#: ../../install.rst:1156
 msgid ""
 "**IPv6-SLAAC:** Will configure every active interface for DHCP and for IPv6."
 msgstr ""
 
-#: ../../install.rst:1158
+#: ../../install.rst:1159
 msgid ""
 "Alternately, use the drop-down menu to select the device name for the "
 "interface and manually configure and input the IPv4 and/or IPv6 addressing "
@@ -1223,34 +1223,34 @@ msgid ""
 "shown in :numref:`Figure %s <server6>`."
 msgstr ""
 
-#: ../../install.rst:1168
+#: ../../install.rst:1169
 msgid ": Ports Installation"
 msgstr ""
 
-#: ../../install.rst:1170
+#: ../../install.rst:1171
 msgid ""
 "To install the FreeBSD ports collection, check :guilabel:`Install ports "
 "tree` then click :guilabel:`Finish` to exit the wizard and access the "
 "summary screen shown in :ref:`Disk Selection`."
 msgstr ""
 
-#: ../../install.rst:1174
+#: ../../install.rst:1175
 msgid "Click :guilabel:`Customize` to configure the system's disk(s)."
 msgstr ""
 
-#: ../../install.rst:1176
+#: ../../install.rst:1177
 msgid ""
 "To save the finished configuration for re-use at a later time, insert a FAT-"
 "formatted USB stick and click :guilabel:`Save Config to USB`."
 msgstr ""
 
-#: ../../install.rst:1179
+#: ../../install.rst:1180
 msgid ""
 "Once ready to start the installation, click :guilabel:`Next`. A pop-up menu "
 "will ask to start the installation immediately."
 msgstr ""
 
-#: ../../install.rst:1182
+#: ../../install.rst:1183
 msgid ""
 "Once the system is installed, it will boot to a command-line login prompt. "
 "Login using the primary user account configured during installation. Now the"
@@ -1260,11 +1260,11 @@ msgid ""
 "excellent reference for performing common FreeBSD server tasks."
 msgstr ""
 
-#: ../../install.rst:1193
+#: ../../install.rst:1194
 msgid "Using the |trueos| CD"
 msgstr ""
 
-#: ../../install.rst:1195
+#: ../../install.rst:1196
 msgid ""
 "The CD-sized |trueos| ISO provides an *ncurses* installer for installing a "
 "command-line version of |trueos|. If the intent is to only install servers "
@@ -1274,25 +1274,25 @@ msgid ""
 "Menu`."
 msgstr ""
 
-#: ../../install.rst:1202
+#: ../../install.rst:1203
 msgid ""
 "To start a server installation using the |trueos| ISO, insert the prepared "
 "boot media. Once the system has finished booting into the installer, it will"
 " display the installation menu shown in :numref:`Figure %s <cd2>`."
 msgstr ""
 
-#: ../../install.rst:1214
+#: ../../install.rst:1215
 msgid ""
 "To begin the installation, press :kbd:`Enter`. The server installation will "
 "then display the screen shown in :ref:`Select Installation Disk <text3>` and"
 " proceed as described in :ref:`Using the Text Installer`."
 msgstr ""
 
-#: ../../install.rst:1223
+#: ../../install.rst:1224
 msgid "Dual Booting"
 msgstr ""
 
-#: ../../install.rst:1225
+#: ../../install.rst:1226
 msgid ""
 "A |trueos| installation assumes there is an existing GPT or primary "
 "partition to install into. If the computer has only one disk and |trueos| "
@@ -1302,13 +1302,13 @@ msgid ""
 "or an existing operating system may be inadvertently overwritten."
 msgstr ""
 
-#: ../../install.rst:1233
+#: ../../install.rst:1234
 msgid ""
 "There are several required elements to install multiple operating systems on"
 " the computer:"
 msgstr ""
 
-#: ../../install.rst:1236
+#: ../../install.rst:1237
 msgid ""
 "A partition for each operating system. Many operating systems, including "
 "|trueos|, can only be installed into a primary or GPT partition. This means "
@@ -1316,7 +1316,7 @@ msgid ""
 "Space`."
 msgstr ""
 
-#: ../../install.rst:1241
+#: ../../install.rst:1242
 msgid ""
 "A backup of any existing data. This backup should not be stored on the "
 "computer's hard drive but on another computer, removable media such as a USB"
@@ -1325,7 +1325,7 @@ msgid ""
 "unexpected."
 msgstr ""
 
-#: ../../install.rst:1247
+#: ../../install.rst:1248
 msgid ""
 "When installing |trueos| onto a computer that is to contain multiple "
 "operating systems, care must be taken to select the **correct** partition in"
@@ -1333,11 +1333,11 @@ msgid ""
 "partitions, each partition will be listed."
 msgstr ""
 
-#: ../../install.rst:1281
+#: ../../install.rst:1352
 msgid "Automated Installations"
 msgstr ""
 
-#: ../../install.rst:1283
+#: ../../install.rst:1354
 msgid ""
 "|trueos| provides a set of Bourne shell scripts which allow advanced users "
 "to create automatic or customized |trueos| installations. :command:`pc-"
@@ -1347,12 +1347,12 @@ msgid ""
 ":command:`man pc-sysinstall`."
 msgstr ""
 
-#: ../../install.rst:1290
+#: ../../install.rst:1361
 msgid ""
 "Here is a quick overview of the components used by :command:`pc-sysinstall`:"
 msgstr ""
 
-#: ../../install.rst:1293
+#: ../../install.rst:1364
 msgid ""
 ":file:`/usr/local/share/pc-sysinstall/backend/` contains the scripts used by"
 " the |trueos| installer. Scripts have been divided by function, such as "
@@ -1363,13 +1363,13 @@ msgid ""
 "parse the configuration file and begin the installation."
 msgstr ""
 
-#: ../../install.rst:1302
+#: ../../install.rst:1373
 msgid ""
 ":file:`/usr/local/share/pc-sysinstall/backend-query/` contains the scripts "
 "used by the installer to detect and configure hardware."
 msgstr ""
 
-#: ../../install.rst:1305
+#: ../../install.rst:1376
 msgid ""
 ":file:`/usr/local/share/pc-sysinstall/conf/` contains the configuration file"
 " :file:`pc-sysinstall.conf`. It also contains a file indicating which "
@@ -1378,13 +1378,13 @@ msgid ""
 " applicable licenses."
 msgstr ""
 
-#: ../../install.rst:1312
+#: ../../install.rst:1383
 msgid ""
 ":file:`/usr/local/share/pc-sysinstall/doc/` contains the help text seen if "
 ":command:`pc-sysinstall` is run without any arguments."
 msgstr ""
 
-#: ../../install.rst:1315
+#: ../../install.rst:1386
 msgid ""
 ":file:`/usr/local/share/pc-sysinstall/examples/` contains several example "
 "configuration files for different scenarios (e.g. :file:`upgrade` and :file"
@@ -1392,18 +1392,18 @@ msgid ""
 "considered as **mandatory** reading before using :command:`pc-sysinstall`."
 msgstr ""
 
-#: ../../install.rst:1321
+#: ../../install.rst:1392
 msgid ""
 ":file:`/usr/sbin/pc-sysinstall` is the script used to perform a customized "
 "installation."
 msgstr ""
 
-#: ../../install.rst:1324
+#: ../../install.rst:1395
 msgid ""
 "This section discusses the steps needed to create a custom installation."
 msgstr ""
 
-#: ../../install.rst:1331
+#: ../../install.rst:1402
 msgid ""
 "This table is meant as a quick reference to determine which variables are "
 "available. The :file:`README` in :file:`/usr/local/share/pc-"
@@ -1414,814 +1414,814 @@ msgstr ""
 msgid ": Customizing a |trueos| Installation"
 msgstr ""
 
-#: ../../install.rst:1341 ../../install.rst:1623
+#: ../../install.rst:1412 ../../install.rst:1694
 msgid "Variable"
 msgstr ""
 
-#: ../../install.rst:1341 ../../install.rst:1623
+#: ../../install.rst:1412 ../../install.rst:1694
 msgid "Options"
 msgstr ""
 
-#: ../../install.rst:423 ../../install.rst:1341 ../../install.rst:1623
+#: ../../install.rst:422 ../../install.rst:1412 ../../install.rst:1694
 msgid "Description"
 msgstr ""
 
-#: ../../install.rst:1343
+#: ../../install.rst:1414
 msgid "hostname="
 msgstr ""
 
-#: ../../install.rst:1343
+#: ../../install.rst:1414
 msgid "should be unique for the network"
 msgstr ""
 
-#: ../../install.rst:1343
+#: ../../install.rst:1414
 msgid "optional as installer will auto\\-generate a hostname if empty"
 msgstr ""
 
-#: ../../install.rst:1346
+#: ../../install.rst:1417
 msgid "installMode="
 msgstr ""
 
-#: ../../install.rst:1346
+#: ../../install.rst:1417
 msgid "\"fresh\", \"upgrade\", \"extract\", or \"zfsrestore\""
 msgstr ""
 
-#: ../../install.rst:1346
+#: ../../install.rst:1417
 msgid "sets the installation type"
 msgstr ""
 
-#: ../../install.rst:1349
+#: ../../install.rst:1420
 msgid "installLocation="
 msgstr ""
 
-#: ../../install.rst:1349
+#: ../../install.rst:1420
 msgid "/path/to/location"
 msgstr ""
 
-#: ../../install.rst:1349
+#: ../../install.rst:1420
 msgid ""
 "used only when *installMode* is extract and should point to an already "
 "mounted location"
 msgstr ""
 
-#: ../../install.rst:1353
+#: ../../install.rst:1424
 msgid "installInteractive="
 msgstr ""
 
-#: ../../install.rst:1353 ../../install.rst:1444 ../../install.rst:1484
-#: ../../install.rst:1548 ../../install.rst:1628
+#: ../../install.rst:1424 ../../install.rst:1515 ../../install.rst:1555
+#: ../../install.rst:1619 ../../install.rst:1699
 msgid "\"yes\" or \"no\""
 msgstr ""
 
-#: ../../install.rst:1353
+#: ../../install.rst:1424
 msgid "set to \"no\" for automated installs without user input"
 msgstr ""
 
-#: ../../install.rst:1357
+#: ../../install.rst:1428
 msgid "netDev="
 msgstr ""
 
-#: ../../install.rst:1357
+#: ../../install.rst:1428
 msgid "\"AUTO-DHCP\" or FreeBSD interface name"
 msgstr ""
 
-#: ../../install.rst:1357
+#: ../../install.rst:1428
 msgid "type of network connection to use during the installation"
 msgstr ""
 
-#: ../../install.rst:1360
+#: ../../install.rst:1431
 msgid "netIP="
 msgstr ""
 
-#: ../../install.rst:1360
+#: ../../install.rst:1431
 msgid "IP address of interface used during installation"
 msgstr ""
 
-#: ../../install.rst:1360 ../../install.rst:1363 ../../install.rst:1366
-#: ../../install.rst:1369
+#: ../../install.rst:1431 ../../install.rst:1434 ../../install.rst:1437
+#: ../../install.rst:1440
 msgid "only use if *netDev* is set to an interface name"
 msgstr ""
 
-#: ../../install.rst:1363
+#: ../../install.rst:1434
 msgid "netMask="
 msgstr ""
 
-#: ../../install.rst:1363 ../../install.rst:1382
+#: ../../install.rst:1434 ../../install.rst:1453
 msgid "subnet mask of interface"
 msgstr ""
 
-#: ../../install.rst:1366
+#: ../../install.rst:1437
 msgid "netNameServer="
 msgstr ""
 
-#: ../../install.rst:1366
+#: ../../install.rst:1437
 msgid "IP address of DNS server"
 msgstr ""
 
-#: ../../install.rst:1369
+#: ../../install.rst:1440
 msgid "netDefaultRouter="
 msgstr ""
 
-#: ../../install.rst:1369 ../../install.rst:1392
+#: ../../install.rst:1440 ../../install.rst:1463
 msgid "IP address of default gateway"
 msgstr ""
 
-#: ../../install.rst:1372
+#: ../../install.rst:1443
 msgid "netSaveDev="
 msgstr ""
 
-#: ../../install.rst:1372
+#: ../../install.rst:1443
 msgid ""
 "AUTO-DHCP or FreeBSD interface name(s) (multiple allowed separated by "
 "spaces)"
 msgstr ""
 
-#: ../../install.rst:1372
+#: ../../install.rst:1443
 msgid ""
 "type of network configuration to enable on the installed system; can set "
 "multiple interfaces"
 msgstr ""
 
-#: ../../install.rst:1377
+#: ../../install.rst:1448
 msgid "netSaveIP="
 msgstr ""
 
-#: ../../install.rst:1377
+#: ../../install.rst:1448
 msgid "IP address of interface or \"DHCP\""
 msgstr ""
 
-#: ../../install.rst:1377 ../../install.rst:1382
+#: ../../install.rst:1448 ../../install.rst:1453
 msgid ""
 "only use if *netSaveDev* is set to an interface name or a list of interface "
 "names (repeat for each interface)"
 msgstr ""
 
-#: ../../install.rst:1382
+#: ../../install.rst:1453
 msgid "netSaveMask="
 msgstr ""
 
-#: ../../install.rst:1387
+#: ../../install.rst:1458
 msgid "netSaveNameServer="
 msgstr ""
 
-#: ../../install.rst:1387
+#: ../../install.rst:1458
 msgid "IP address of DNS server (multiple allowed separated by spaces)"
 msgstr ""
 
-#: ../../install.rst:1387 ../../install.rst:1392
+#: ../../install.rst:1458 ../../install.rst:1463
 msgid ""
 "only use if *netSaveDev* is set to an interface name or a list of interface "
 "names (do not repeat for each interface)"
 msgstr ""
 
-#: ../../install.rst:1392
+#: ../../install.rst:1463
 msgid "netSaveDefaultRouter="
 msgstr ""
 
-#: ../../install.rst:1397
+#: ../../install.rst:1468
 msgid "disk0="
 msgstr ""
 
-#: ../../install.rst:1397
+#: ../../install.rst:1468
 msgid "FreeBSD disk device name, (e.g. *ad0*)"
 msgstr ""
 
-#: ../../install.rst:1397 ../../install.rst:1400
+#: ../../install.rst:1468 ../../install.rst:1471
 msgid "see *README* for examples"
 msgstr ""
 
-#: ../../install.rst:1400
+#: ../../install.rst:1471
 msgid "partition="
 msgstr ""
 
-#: ../../install.rst:1400
+#: ../../install.rst:1471
 msgid "\"all\", \"free\", \"s1\", \"s2\", \"s3\", \"s4\", or \"image\""
 msgstr ""
 
-#: ../../install.rst:1403
+#: ../../install.rst:1474
 msgid "partscheme="
 msgstr ""
 
-#: ../../install.rst:1403
+#: ../../install.rst:1474
 msgid "\"MBR\" or \"GPT\""
 msgstr ""
 
-#: ../../install.rst:1403
+#: ../../install.rst:1474
 msgid "partition scheme type"
 msgstr ""
 
-#: ../../install.rst:1406
+#: ../../install.rst:1477
 msgid "mirror="
 msgstr ""
 
-#: ../../install.rst:1406
+#: ../../install.rst:1477
 msgid "FreeBSD disk device name (e.g. *ad1*)"
 msgstr ""
 
-#: ../../install.rst:1406
+#: ../../install.rst:1477
 msgid "sets the target disk for the mirror (i.e. the second disk)"
 msgstr ""
 
-#: ../../install.rst:1409
+#: ../../install.rst:1480
 msgid "mirrorbal="
 msgstr ""
 
-#: ../../install.rst:1409
+#: ../../install.rst:1480
 msgid "\"load\", \"prefer\", \"round-robin\", or \"split\""
 msgstr ""
 
-#: ../../install.rst:1409
+#: ../../install.rst:1480
 msgid "defaults to \"round-robin\" if the *mirrorbal* method is not specified"
 msgstr ""
 
-#: ../../install.rst:1412
+#: ../../install.rst:1483
 msgid "bootManager="
 msgstr ""
 
-#: ../../install.rst:1412
+#: ../../install.rst:1483
 msgid "\"none\", \"bsd\", or \"GRUB\""
 msgstr ""
 
-#: ../../install.rst:1412
+#: ../../install.rst:1483
 msgid "when using \"GRUB\", include its package in *installPackages=*"
 msgstr ""
 
-#: ../../install.rst:1415
+#: ../../install.rst:1486
 msgid "image="
 msgstr ""
 
-#: ../../install.rst:1415
+#: ../../install.rst:1486
 msgid "/path/to/image /mountpoint"
 msgstr ""
 
-#: ../../install.rst:1415
+#: ../../install.rst:1486
 msgid "will write specified image file"
 msgstr ""
 
-#: ../../install.rst:1417
+#: ../../install.rst:1488
 msgid "commitDiskPart"
 msgstr ""
 
-#: ../../install.rst:1417
+#: ../../install.rst:1488
 msgid ""
 "this variable is mandatory and must be placed at the end of each *diskX* "
 "section; create a *diskX* section for each disk you wish to configure."
 msgstr ""
 
-#: ../../install.rst:1423
+#: ../../install.rst:1494
 msgid "encpass="
 msgstr ""
 
-#: ../../install.rst:1423
+#: ../../install.rst:1494
 msgid "password value"
 msgstr ""
 
-#: ../../install.rst:1423
+#: ../../install.rst:1494
 msgid ""
 "at boot time, system will prompt for this password in order to mount the "
 "associated GELI encrypted partition"
 msgstr ""
 
-#: ../../install.rst:1428
+#: ../../install.rst:1499
 msgid "commitDiskLabel"
 msgstr ""
 
-#: ../../install.rst:1428
+#: ../../install.rst:1499
 msgid ""
 "this variable is mandatory and must be placed at the end of disk's "
 "partitioning settings; see the *README* for examples on how to set the <File"
 " System Type> <Size> <Mountpoint> entries for each disk"
 msgstr ""
 
-#: ../../install.rst:1435
+#: ../../install.rst:1506
 msgid "installMedium="
 msgstr ""
 
-#: ../../install.rst:1435
+#: ../../install.rst:1506
 msgid "\"dvd\", \"usb\", \"ftp\", \"rsync\", or \"image\""
 msgstr ""
 
-#: ../../install.rst:1435
+#: ../../install.rst:1506
 msgid "source to be used for installation"
 msgstr ""
 
-#: ../../install.rst:1438
+#: ../../install.rst:1509
 msgid "localPath="
 msgstr ""
 
-#: ../../install.rst:1438
+#: ../../install.rst:1509
 msgid "/path/to/files"
 msgstr ""
 
-#: ../../install.rst:1438
+#: ../../install.rst:1509
 msgid "location of directory containing installation files"
 msgstr ""
 
-#: ../../install.rst:1441
+#: ../../install.rst:1512
 msgid "installType="
 msgstr ""
 
-#: ../../install.rst:1441
+#: ../../install.rst:1512
 msgid "\"PCBSD\" or \"FreeBSD\""
 msgstr ""
 
-#: ../../install.rst:1441
+#: ../../install.rst:1512
 msgid "determines whether this is a desktop or a server install"
 msgstr ""
 
-#: ../../install.rst:1444
+#: ../../install.rst:1515
 msgid "installQuiet"
 msgstr ""
 
-#: ../../install.rst:1444
+#: ../../install.rst:1515
 msgid "set to \"yes\" for automatic installations"
 msgstr ""
 
-#: ../../install.rst:1447
+#: ../../install.rst:1518
 msgid "installFile="
 msgstr ""
 
-#: ../../install.rst:1447
+#: ../../install.rst:1518
 msgid "e.g. \"fbsd-release.tbz\""
 msgstr ""
 
-#: ../../install.rst:1447
+#: ../../install.rst:1518
 msgid "only set if using a customized installer archive"
 msgstr ""
 
-#: ../../install.rst:1450
+#: ../../install.rst:1521
 msgid "packageType="
 msgstr ""
 
-#: ../../install.rst:1450
+#: ../../install.rst:1521
 msgid "\"tar\", \"uzip\", \"split\", \"dist\", or \"pkg\""
 msgstr ""
 
-#: ../../install.rst:1450
+#: ../../install.rst:1521
 msgid "the archive type on the installation media"
 msgstr ""
 
-#: ../../install.rst:1453
+#: ../../install.rst:1524
 msgid "distFiles="
 msgstr ""
 
-#: ../../install.rst:1453
+#: ../../install.rst:1524
 msgid "e.g. \"base src kernel\""
 msgstr ""
 
-#: ../../install.rst:1453
+#: ../../install.rst:1524
 msgid ""
 "list of FreeBSD distribution files to install when using *packageType=dist*"
 msgstr ""
 
-#: ../../install.rst:1457
+#: ../../install.rst:1528
 msgid "ftpPath="
 msgstr ""
 
-#: ../../install.rst:1457
+#: ../../install.rst:1528
 msgid "ftp://ftp_path"
 msgstr ""
 
-#: ../../install.rst:1457
+#: ../../install.rst:1528
 msgid "location of the installer archive when using *installMedium=ftp*"
 msgstr ""
 
-#: ../../install.rst:1460
+#: ../../install.rst:1531
 msgid "rsyncPath="
 msgstr ""
 
-#: ../../install.rst:1460
+#: ../../install.rst:1531
 msgid "e.g. \"life-preserver /back-2011-09-12T14_53_14\""
 msgstr ""
 
-#: ../../install.rst:1460
+#: ../../install.rst:1531
 msgid ""
 "location of the rsync data on the remote server when using "
 "*installMedium=rsync*"
 msgstr ""
 
-#: ../../install.rst:1464
+#: ../../install.rst:1535
 msgid "rsyncUser="
 msgstr ""
 
-#: ../../install.rst:1464 ../../install.rst:1562 ../../install.rst:1572
+#: ../../install.rst:1535 ../../install.rst:1633 ../../install.rst:1643
 msgid "username"
 msgstr ""
 
-#: ../../install.rst:1464 ../../install.rst:1467 ../../install.rst:1470
+#: ../../install.rst:1535 ../../install.rst:1538 ../../install.rst:1541
 msgid "set when using *installMedium=rsync*"
 msgstr ""
 
-#: ../../install.rst:1467
+#: ../../install.rst:1538
 msgid "rsyncHost="
 msgstr ""
 
-#: ../../install.rst:1467
+#: ../../install.rst:1538
 msgid "IP address of rsync server"
 msgstr ""
 
-#: ../../install.rst:1470
+#: ../../install.rst:1541
 msgid "rsyncPort="
 msgstr ""
 
-#: ../../install.rst:1470
+#: ../../install.rst:1541
 msgid "port number"
 msgstr ""
 
-#: ../../install.rst:1473
+#: ../../install.rst:1544
 msgid "installComponents="
 msgstr ""
 
-#: ../../install.rst:1473
+#: ../../install.rst:1544
 msgid "e.g. \"amarok, firefox, ports\""
 msgstr ""
 
-#: ../../install.rst:1473
+#: ../../install.rst:1544
 msgid ""
 "components must exist in */PCBSD/pc-sysinstall/components/*; typically, "
 "*installPackages=* is used instead"
 msgstr ""
 
-#: ../../install.rst:1478
+#: ../../install.rst:1549
 msgid "installPackages="
 msgstr ""
 
-#: ../../install.rst:1478
+#: ../../install.rst:1549
 msgid "e.g. \"Xorg cabextract"
 msgstr ""
 
-#: ../../install.rst:1478
+#: ../../install.rst:1549
 msgid "list of traditional or pkg packages to install; requires *pkgExt=*"
 msgstr ""
 
-#: ../../install.rst:1481
+#: ../../install.rst:1552
 msgid "pkgExt="
 msgstr ""
 
-#: ../../install.rst:1481
+#: ../../install.rst:1552
 msgid "\".txz\""
 msgstr ""
 
-#: ../../install.rst:1481
+#: ../../install.rst:1552
 msgid "specify the extension used by the type of package to be installed"
 msgstr ""
 
-#: ../../install.rst:1484
+#: ../../install.rst:1555
 msgid "upgradeKeepDesktopProfile="
 msgstr ""
 
-#: ../../install.rst:1484
+#: ../../install.rst:1555
 msgid ""
 "specify if you wish to keep your existing user's desktop profile data during"
 " an upgrade"
 msgstr ""
 
-#: ../../install.rst:1488
+#: ../../install.rst:1559
 msgid "rootPass="
 msgstr ""
 
-#: ../../install.rst:1488
+#: ../../install.rst:1559
 msgid "password"
 msgstr ""
 
-#: ../../install.rst:1488
+#: ../../install.rst:1559
 msgid "set the root password of the installed system to the specified string"
 msgstr ""
 
-#: ../../install.rst:1492
+#: ../../install.rst:1563
 msgid "rootEncPass="
 msgstr ""
 
-#: ../../install.rst:1492 ../../install.rst:1502
+#: ../../install.rst:1563 ../../install.rst:1573
 msgid "encrypted string"
 msgstr ""
 
-#: ../../install.rst:1492
+#: ../../install.rst:1563
 msgid "set root password to specified encrypted string"
 msgstr ""
 
-#: ../../install.rst:1495
+#: ../../install.rst:1566
 msgid "userName="
 msgstr ""
 
-#: ../../install.rst:1495
+#: ../../install.rst:1566
 msgid "case sensitive value"
 msgstr ""
 
-#: ../../install.rst:1495
+#: ../../install.rst:1566
 msgid "create a separate block of user values for each new user"
 msgstr ""
 
-#: ../../install.rst:1498
+#: ../../install.rst:1569
 msgid "userComment="
 msgstr ""
 
-#: ../../install.rst:1498
+#: ../../install.rst:1569
 msgid "description"
 msgstr ""
 
-#: ../../install.rst:1498
+#: ../../install.rst:1569
 msgid "description text can include spaces"
 msgstr ""
 
-#: ../../install.rst:1500
+#: ../../install.rst:1571
 msgid "userPass="
 msgstr ""
 
-#: ../../install.rst:1500
+#: ../../install.rst:1571
 msgid "password of user"
 msgstr ""
 
-#: ../../install.rst:1502
+#: ../../install.rst:1573
 msgid "userEncPass"
 msgstr ""
 
-#: ../../install.rst:1502
+#: ../../install.rst:1573
 msgid "set user password to specified encrypted string"
 msgstr ""
 
-#: ../../install.rst:1505
+#: ../../install.rst:1576
 msgid "userShell="
 msgstr ""
 
-#: ../../install.rst:1505
+#: ../../install.rst:1576
 msgid "e.g. \"/bin/csh\""
 msgstr ""
 
-#: ../../install.rst:1505
+#: ../../install.rst:1576
 msgid "path to default shell"
 msgstr ""
 
-#: ../../install.rst:1507
+#: ../../install.rst:1578
 msgid "userHome="
 msgstr ""
 
-#: ../../install.rst:1507
+#: ../../install.rst:1578
 msgid "e.g. \"/home/username\""
 msgstr ""
 
-#: ../../install.rst:1507
+#: ../../install.rst:1578
 msgid "path to home directory"
 msgstr ""
 
-#: ../../install.rst:1509
+#: ../../install.rst:1580
 msgid "defaultGroup="
 msgstr ""
 
-#: ../../install.rst:1509
+#: ../../install.rst:1580
 msgid "e.g. \"wheel\""
 msgstr ""
 
-#: ../../install.rst:1509
+#: ../../install.rst:1580
 msgid "default group"
 msgstr ""
 
-#: ../../install.rst:1511
+#: ../../install.rst:1582
 msgid "userGroups="
 msgstr ""
 
-#: ../../install.rst:1511
+#: ../../install.rst:1582
 msgid "e.g. \"wheel, operator\""
 msgstr ""
 
-#: ../../install.rst:1511
+#: ../../install.rst:1582
 msgid "comma separated (no spaces) list of additional groups"
 msgstr ""
 
-#: ../../install.rst:1514
+#: ../../install.rst:1585
 msgid "commitUser"
 msgstr ""
 
-#: ../../install.rst:1514
+#: ../../install.rst:1585
 msgid "mandatory, must be last line in each user block"
 msgstr ""
 
-#: ../../install.rst:1517
+#: ../../install.rst:1588
 msgid "runCommand="
 msgstr ""
 
-#: ../../install.rst:1517 ../../install.rst:1525 ../../install.rst:1527
-#: ../../install.rst:1530 ../../install.rst:1533 ../../install.rst:1536
-#: ../../install.rst:1539 ../../install.rst:1542
+#: ../../install.rst:1588 ../../install.rst:1596 ../../install.rst:1598
+#: ../../install.rst:1601 ../../install.rst:1604 ../../install.rst:1607
+#: ../../install.rst:1610 ../../install.rst:1613
 msgid "full path to command"
 msgstr ""
 
-#: ../../install.rst:1517
+#: ../../install.rst:1588
 msgid ""
 "run the specified command within chroot of the installed system, after the "
 "installation is complete"
 msgstr ""
 
-#: ../../install.rst:1521
+#: ../../install.rst:1592
 msgid "runScript="
 msgstr ""
 
-#: ../../install.rst:1521
+#: ../../install.rst:1592
 msgid "full path to script"
 msgstr ""
 
-#: ../../install.rst:1521
+#: ../../install.rst:1592
 msgid ""
 "runs specified script within chroot of the installed system, after the "
 "installation is complete"
 msgstr ""
 
-#: ../../install.rst:1525
+#: ../../install.rst:1596
 msgid "runExtCommand="
 msgstr ""
 
-#: ../../install.rst:1525
+#: ../../install.rst:1596
 msgid "runs a command outside the chroot"
 msgstr ""
 
-#: ../../install.rst:1527
+#: ../../install.rst:1598
 msgid "runPrePkgCommand="
 msgstr ""
 
-#: ../../install.rst:1527 ../../install.rst:1539 ../../install.rst:1542
+#: ../../install.rst:1598 ../../install.rst:1610 ../../install.rst:1613
 msgid "runs the specified command before starting the pkg installation"
 msgstr ""
 
-#: ../../install.rst:1530
+#: ../../install.rst:1601
 msgid "runPrePkgScript="
 msgstr ""
 
-#: ../../install.rst:1530
+#: ../../install.rst:1601
 msgid "runs the specified sript before starting the pkg installation"
 msgstr ""
 
-#: ../../install.rst:1533
+#: ../../install.rst:1604
 msgid "runPrePkgExtCommand="
 msgstr ""
 
-#: ../../install.rst:1533
+#: ../../install.rst:1604
 msgid "runs the specified command before extracting the pkg"
 msgstr ""
 
-#: ../../install.rst:1536
+#: ../../install.rst:1607
 msgid "runPreExtractCommand="
 msgstr ""
 
-#: ../../install.rst:1536
+#: ../../install.rst:1607
 msgid "runs the specified command before extracting"
 msgstr ""
 
-#: ../../install.rst:1539
+#: ../../install.rst:1610
 msgid "runPreExtractScript="
 msgstr ""
 
-#: ../../install.rst:1542
+#: ../../install.rst:1613
 msgid "runPreExtractExtCommand="
 msgstr ""
 
-#: ../../install.rst:1545
+#: ../../install.rst:1616
 msgid "timeZone="
 msgstr ""
 
-#: ../../install.rst:1545
+#: ../../install.rst:1616
 msgid "e.g. \"America/New_York\""
 msgstr ""
 
-#: ../../install.rst:1545
+#: ../../install.rst:1616
 msgid "location must exist in :file:`/usr/share/zoneinfo/`"
 msgstr ""
 
-#: ../../install.rst:1548
+#: ../../install.rst:1619
 msgid "enableNTP="
 msgstr ""
 
-#: ../../install.rst:1548
+#: ../../install.rst:1619
 msgid "enable/disable NTP"
 msgstr ""
 
-#: ../../install.rst:1550
+#: ../../install.rst:1621
 msgid "localizeLang="
 msgstr ""
 
-#: ../../install.rst:1550 ../../install.rst:1553
+#: ../../install.rst:1621 ../../install.rst:1624
 msgid "e.g. \"en\""
 msgstr ""
 
-#: ../../install.rst:1550
+#: ../../install.rst:1621
 msgid "sets the system console and Desktop to the target language"
 msgstr ""
 
-#: ../../install.rst:1553
+#: ../../install.rst:1624
 msgid "localizeKeyLayout="
 msgstr ""
 
-#: ../../install.rst:1553
+#: ../../install.rst:1624
 msgid "updates the system's Xorg config to set the keyboard layout"
 msgstr ""
 
-#: ../../install.rst:1556
+#: ../../install.rst:1627
 msgid "localizeKeyModel="
 msgstr ""
 
-#: ../../install.rst:1556
+#: ../../install.rst:1627
 msgid "e.g. \"pc104\""
 msgstr ""
 
-#: ../../install.rst:1556
+#: ../../install.rst:1627
 msgid "updates the system's Xorg config to set the keyboard model"
 msgstr ""
 
-#: ../../install.rst:1559
+#: ../../install.rst:1630
 msgid "localizeKeyVariant="
 msgstr ""
 
-#: ../../install.rst:1559
+#: ../../install.rst:1630
 msgid "e.g. \"intl\""
 msgstr ""
 
-#: ../../install.rst:1559
+#: ../../install.rst:1630
 msgid "updates the Xorg config to set the keyboard variant"
 msgstr ""
 
-#: ../../install.rst:1562
+#: ../../install.rst:1633
 msgid "autoLoginUser="
 msgstr ""
 
-#: ../../install.rst:1562
+#: ../../install.rst:1633
 msgid "user will log in automatically without entering a password"
 msgstr ""
 
-#: ../../install.rst:1565
+#: ../../install.rst:1636
 msgid "sshHost="
 msgstr ""
 
-#: ../../install.rst:1565
+#: ../../install.rst:1636
 msgid "hostname or IP address"
 msgstr ""
 
-#: ../../install.rst:1565
+#: ../../install.rst:1636
 msgid "the address of the remote server when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../install.rst:1568
+#: ../../install.rst:1639
 msgid "sshPort="
 msgstr ""
 
-#: ../../install.rst:1568
+#: ../../install.rst:1639
 msgid "e.g \"22\""
 msgstr ""
 
-#: ../../install.rst:1568
+#: ../../install.rst:1639
 msgid ""
 "the SSH port number of the remote server when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../install.rst:1572
+#: ../../install.rst:1643
 msgid "sshUser="
 msgstr ""
 
-#: ../../install.rst:1572
+#: ../../install.rst:1643
 msgid "the username on the remote server when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../install.rst:1575
+#: ../../install.rst:1646
 msgid "sshKey="
 msgstr ""
 
-#: ../../install.rst:1575
+#: ../../install.rst:1646
 msgid "e.g. \"/root/id_rsa\""
 msgstr ""
 
-#: ../../install.rst:1575
+#: ../../install.rst:1646
 msgid ""
 "path to the SSH key file on the remote server when using "
 "*installMode=zfsrestore*"
 msgstr ""
 
-#: ../../install.rst:1579
+#: ../../install.rst:1650
 msgid "zfsProps="
 msgstr ""
 
-#: ../../install.rst:1579
+#: ../../install.rst:1650
 msgid "e.g. \".lp-props -tank#backups#mybackup\""
 msgstr ""
 
-#: ../../install.rst:1579
+#: ../../install.rst:1650
 msgid ""
 "location of dataset properties file created by Life Preserver during "
 "replication when using *installMode=zfsrestore*"
 msgstr ""
 
-#: ../../install.rst:1584
+#: ../../install.rst:1655
 msgid "zfsRemoteDataset="
 msgstr ""
 
-#: ../../install.rst:1584
+#: ../../install.rst:1655
 msgid "e.g. \"tank/backups/ mybackup\""
 msgstr ""
 
-#: ../../install.rst:1584
+#: ../../install.rst:1655
 msgid ""
 "location of remote dataset to restore from when using "
 "*installMode=zfsrestore*"
 msgstr ""
 
-#: ../../install.rst:1589
+#: ../../install.rst:1660
 msgid ""
 "Next, create a customized configuration. One way to create a customized "
 "configuration file is to read through the configuration examples in "
@@ -2230,7 +2230,7 @@ msgid ""
 "includes the desired variables and values in the installation."
 msgstr ""
 
-#: ../../install.rst:1595
+#: ../../install.rst:1666
 msgid ""
 "An alternate way to create this file is to start an installation, configure "
 "the system as desired, and save the configuration to a USB stick (with or "
@@ -2239,7 +2239,7 @@ msgid ""
 " prove easier when performing complex disk layouts."
 msgstr ""
 
-#: ../../install.rst:1602
+#: ../../install.rst:1673
 msgid ""
 "To perform a fully automated installation which does not prompt for any user"
 " input, review :file:`/usr/local/share/pc-sysinstall/examples/pc-"
@@ -2251,91 +2251,91 @@ msgstr ""
 msgid ": Automated Installation Variables"
 msgstr ""
 
-#: ../../install.rst:1625
+#: ../../install.rst:1696
 msgid "pc_config"
 msgstr ""
 
-#: ../../install.rst:1625
+#: ../../install.rst:1696
 msgid "URL or /path/to/file"
 msgstr ""
 
-#: ../../install.rst:1625
+#: ../../install.rst:1696
 msgid "location of customized :file:`pc-sysinstall.conf`"
 msgstr ""
 
-#: ../../install.rst:1628
+#: ../../install.rst:1699
 msgid "confirm_install"
 msgstr ""
 
-#: ../../install.rst:1628
+#: ../../install.rst:1699
 msgid ""
 "should be set to \"yes\", or booting the wrong disk will result in a system "
 "wipe"
 msgstr ""
 
-#: ../../install.rst:1632
+#: ../../install.rst:1703
 msgid "shutdown_cmd"
 msgstr ""
 
-#: ../../install.rst:1632
+#: ../../install.rst:1703
 msgid "e.g. :command:`shutdown -p now`"
 msgstr ""
 
-#: ../../install.rst:1632
+#: ../../install.rst:1703
 msgid ""
 "running a shutdown is recommended, but this can be any command/script to "
 "execute post-install"
 msgstr ""
 
-#: ../../install.rst:1636
+#: ../../install.rst:1707
 msgid "nic_config"
 msgstr ""
 
-#: ../../install.rst:1636
+#: ../../install.rst:1707
 msgid "\"dhcp-all\" or <interface name> <IP address> <subnet mask>"
 msgstr ""
 
-#: ../../install.rst:1636
+#: ../../install.rst:1707
 msgid ""
 "attempts DHCP on all found NICs until the installation file is fetched or "
 "will setup a specified interface"
 msgstr ""
 
-#: ../../install.rst:1641
+#: ../../install.rst:1712
 msgid "nic_dns"
 msgstr ""
 
-#: ../../install.rst:1641 ../../install.rst:1643
+#: ../../install.rst:1712 ../../install.rst:1714
 msgid "IP address"
 msgstr ""
 
-#: ../../install.rst:1641
+#: ../../install.rst:1712
 msgid "DNS server to use"
 msgstr ""
 
-#: ../../install.rst:1643
+#: ../../install.rst:1714
 msgid "nic_gateway"
 msgstr ""
 
-#: ../../install.rst:1643
+#: ../../install.rst:1714
 msgid "default gateway to use"
 msgstr ""
 
-#: ../../install.rst:1646
+#: ../../install.rst:1717
 msgid ""
 "Finally, create a custom installation media or installation server. :command"
 ":`pc-sysinstall` supports two installation methods:"
 msgstr ""
 
-#: ../../install.rst:1649
+#: ../../install.rst:1720
 msgid "From CD, DVD, or USB media."
 msgstr ""
 
-#: ../../install.rst:1651
+#: ../../install.rst:1722
 msgid "From an installation directory on an HTTP, FTP, or SSH+rsync server."
 msgstr ""
 
-#: ../../install.rst:1653
+#: ../../install.rst:1724
 msgid ""
 "The easiest way to create a custom installation media is to modify an "
 "existing installation image. For example, if an ISO for the |trueos| version"
@@ -2343,65 +2343,65 @@ msgid ""
 "ISO with a few commands:"
 msgstr ""
 
-#: ../../install.rst:1664
+#: ../../install.rst:1735
 msgid ""
 "Make sure to :command:`cd` into the desired destination directory for the "
 "copied ISO contents. In the next examples, :file:`/tmp/custominstall/` was "
 "created for this purpose:"
 msgstr ""
 
-#: ../../install.rst:1676
+#: ../../install.rst:1747
 msgid ""
 "Alternately, if an installation CD or DVD is inserted, mount the media and "
 "copy its contents to the desired directory"
 msgstr ""
 
-#: ../../install.rst:1687
+#: ../../install.rst:1758
 msgid ""
 "If creating an automated installation, copy the customized :file:`pc-"
 "autoinstall.conf` to :file:`/tmp/custominstall/boot/`."
 msgstr ""
 
-#: ../../install.rst:1690
+#: ../../install.rst:1761
 msgid ""
 "Copy the customized configuration file to :file:`/tmp/custominstall/`. "
 "Double-check the :command:`installMedium=` variable in the customized "
 "configuration file is set to the correct installation media."
 msgstr ""
 
-#: ../../install.rst:1694
+#: ../../install.rst:1765
 msgid ""
 "Adding extra files may be necessary if certain variables are set in the "
 "custom configuration file:"
 msgstr ""
 
-#: ../../install.rst:1702
+#: ../../install.rst:1773
 msgid "**runScript=** Make sure the script exists in the specified path."
 msgstr ""
 
-#: ../../install.rst:1707
+#: ../../install.rst:1778
 msgid ""
 "If the installation media is a CD or DVD, create a bootable media containing"
 " the files in the directory. To create a bootable ISO:"
 msgstr ""
 
-#: ../../install.rst:1716
+#: ../../install.rst:1787
 msgid "Use a preferred burning utility to burn the ISO to the media."
 msgstr ""
 
-#: ../../install.rst:1718
+#: ../../install.rst:1789
 msgid ""
 "To begin an installation that requires user interaction, type :command:`pc-"
 "sysinstall -c /path_to_your_config_file`"
 msgstr ""
 
-#: ../../install.rst:1721
+#: ../../install.rst:1792
 msgid ""
 "To begin a fully automated installation, insert the installation media and "
 "reboot."
 msgstr ""
 
-#: ../../install.rst:1724
+#: ../../install.rst:1795
 msgid ""
 "If using an HTTP, FTP, or SSH server as the installation media, untar or "
 "copy the required files to a directory on the server accessible to users. Be"
@@ -2497,18 +2497,7 @@ msgid ""
 "<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_."
 msgstr ""
 
-#: ../../install.rst:211
-msgid ""
-"When installing to an existing |pcbsd| or |trueos| system, a pop-up window "
-"asks to install to the existing pool without reformatting it. Press "
-":guilabel:`OK` to keep the existing pool. Clicking :guilabel:`Cancel` "
-"formats the existing pool and all of its data. Refer to the `Upgrading from "
-"PCBSD 10.x to TrueOS <https://sysadm.us/handbook/client/sysadmclient.html"
-"#upgrading-from-pcbsd-10-x-to-trueos>`_ section for more information about "
-"this option."
-msgstr ""
-
-#: ../../install.rst:250
+#: ../../install.rst:249
 msgid ""
 "By default, |trueos| assumes the user wants to install on the entire first "
 "disk. When installing |trueos| as the only operating system on the computer,"
@@ -2518,20 +2507,20 @@ msgid ""
 "review the section on :ref:`Dual Booting`."
 msgstr ""
 
-#: ../../install.rst:300
+#: ../../install.rst:299
 msgid ""
 "Select :guilabel:`Basic` and the wizard displays the screen shown in "
 ":numref:`Figure %s <install7>`."
 msgstr ""
 
-#: ../../install.rst:310
+#: ../../install.rst:309
 msgid ""
 "The first hard disk is typically selected. To install on a different disk, "
 "use the :guilabel:`Selected Disk` drop-down menu to select the disk to "
 "install into."
 msgstr ""
 
-#: ../../install.rst:314
+#: ../../install.rst:313
 msgid ""
 "By default, the entirety of the selected disk is formatted. If the disk is "
 "divided into partitions or there is an area of free space, use the "
@@ -2539,7 +2528,7 @@ msgid ""
 "partition."
 msgstr ""
 
-#: ../../install.rst:319
+#: ../../install.rst:318
 msgid ""
 "|trueos| only installs into a primary MBR partition, a GPT partition, or an "
 "area of free space. That is, |trueos| cannot install into a secondary or an "
@@ -2547,7 +2536,7 @@ msgid ""
 "to :ref:`Creating Free Space`."
 msgstr ""
 
-#: ../../install.rst:324
+#: ../../install.rst:323
 msgid ""
 "Once the disk and partition are selected, click :guilabel:`Next` to return "
 "to the disk :guilabel:`Summary` screen to review the selections. To make "
@@ -2556,13 +2545,13 @@ msgid ""
 ":guilabel:`Next` then :guilabel:`Yes` to start the installation."
 msgstr ""
 
-#: ../../install.rst:337
+#: ../../install.rst:336
 msgid ""
 "After selecting advanced mode, the wizard displays the screen shown in "
 ":numref:`Figure %s <install8>`."
 msgstr ""
 
-#: ../../install.rst:354
+#: ../../install.rst:353
 msgid ""
 "|trueos| onlys install into a primary MBR partition, a GPT partition, or an "
 "area of free space. That is, |trueos| cannot install into a secondary or an "
@@ -2570,7 +2559,7 @@ msgid ""
 "to :ref:`Creating Free Space`."
 msgstr ""
 
-#: ../../install.rst:359
+#: ../../install.rst:358
 msgid ""
 "**Partition Scheme:**  The default of :guilabel:`GPT (Best for new "
 "hardware)` is a partition table layout that supports larger partition sizes "
@@ -2581,27 +2570,27 @@ msgid ""
 "default selection first."
 msgstr ""
 
-#: ../../install.rst:368
+#: ../../install.rst:367
 msgid ""
 "This section does not appear if a partition other than :guilabel:`Use entire"
 " disk` is chosen in the :guilabel:`Selected Partition` drop-down menu."
 msgstr ""
 
-#: ../../install.rst:372
+#: ../../install.rst:371
 msgid ""
 "**ZFS pool name:** To use a pool name other than the default of *tank*, "
 "check this box and input the name of the pool. *Root* is reserved and can "
 "not be used as a pool name."
 msgstr ""
 
-#: ../../install.rst:376
+#: ../../install.rst:375
 msgid ""
 "**Force ZFS 4k block size:** This option is only used if the disk supports "
 "4k, even though it lies and reports its size as 512b. Use with caution as it"
 " may cause the installation to fail."
 msgstr ""
 
-#: ../../install.rst:416
+#: ../../install.rst:415
 msgid ""
 ":numref:`Table %s <zfsterms>` is a brief glossary of terms used by ZFS:"
 msgstr ""
@@ -2610,15 +2599,15 @@ msgstr ""
 msgid ": ZFS Terms"
 msgstr ""
 
-#: ../../install.rst:423
+#: ../../install.rst:422
 msgid "Term"
 msgstr ""
 
-#: ../../install.rst:425
+#: ../../install.rst:424
 msgid "Pool"
 msgstr ""
 
-#: ../../install.rst:425
+#: ../../install.rst:424
 msgid ""
 "A collection of devices that provides physical storage and data replication "
 "managed by ZFS. This pooled storage model eliminates the concept of volumes "
@@ -2632,63 +2621,63 @@ msgid ""
 "creating the storage pool."
 msgstr ""
 
-#: ../../install.rst:432
+#: ../../install.rst:431
 msgid "Mirror"
 msgstr ""
 
-#: ../../install.rst:432
+#: ../../install.rst:431
 msgid ""
 "A form of RAID where all data is mirrored onto two or more disks, creating a"
 " redundant copy should a disk fail."
 msgstr ""
 
-#: ../../install.rst:434
+#: ../../install.rst:433
 msgid "RAIDZ"
 msgstr ""
 
-#: ../../install.rst:434
+#: ../../install.rst:433
 msgid ""
 "ZFS software solution equivalent to RAID5 as it allows one disk to fail "
 "without losing data. Requires at least **3** disks."
 msgstr ""
 
-#: ../../install.rst:436
+#: ../../install.rst:435
 msgid "RAIDZ2"
 msgstr ""
 
-#: ../../install.rst:436
+#: ../../install.rst:435
 msgid ""
 "Double-parity ZFS software solution similar to RAID6 as it allows two disks "
 "to fail without losing data. Requires a minimum of 4 disks."
 msgstr ""
 
-#: ../../install.rst:438
+#: ../../install.rst:437
 msgid "RAIDZ3"
 msgstr ""
 
-#: ../../install.rst:438
+#: ../../install.rst:437
 msgid ""
 "Triple-parity ZFS software solution. RAIDZ3 offers three parity drives and "
 "can operate in degraded mode if up to three drives fail with no restrictions"
 " on which drives can fail."
 msgstr ""
 
-#: ../../install.rst:441
+#: ../../install.rst:440
 msgid "Dataset"
 msgstr ""
 
-#: ../../install.rst:441
+#: ../../install.rst:440
 msgid ""
 "Once a pool is created, it can be divided into datasets. A dataset is "
 "similar to a folder as it supports permissions. A dataset is also similar to"
 " a filesystem since properties such as quotas and compression can be set."
 msgstr ""
 
-#: ../../install.rst:444
+#: ../../install.rst:443
 msgid "Snapshot"
 msgstr ""
 
-#: ../../install.rst:444
+#: ../../install.rst:443
 msgid ""
 "A read-only, point-in-time copy of a filesystem. Snapshots can be created "
 "quickly and, if little data changes, new snapshots take up very little "
@@ -2706,11 +2695,11 @@ msgid ""
 "independently."
 msgstr ""
 
-#: ../../install.rst:452
+#: ../../install.rst:451
 msgid "Clone"
 msgstr ""
 
-#: ../../install.rst:452
+#: ../../install.rst:451
 msgid ""
 "A writable copy of a snapshot which can only be created on the same ZFS "
 "volume. Clones provide an extremely space-efficient way to store many copies"
@@ -2722,11 +2711,11 @@ msgid ""
 " are made to the clone, it uses more space."
 msgstr ""
 
-#: ../../install.rst:457
+#: ../../install.rst:456
 msgid "ZIL"
 msgstr ""
 
-#: ../../install.rst:457
+#: ../../install.rst:456
 msgid ""
 "A filesystem journal that manages writes. The ZIL is a temporary storage "
 "area for sync writes until they are written asynchronously to the ZFS pool. "
@@ -2742,11 +2731,11 @@ msgid ""
 "device."
 msgstr ""
 
-#: ../../install.rst:464
+#: ../../install.rst:463
 msgid "L2ARC"
 msgstr ""
 
-#: ../../install.rst:464
+#: ../../install.rst:463
 msgid ""
 "ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a "
 "cache device, it is known as an L2ARC and ZFS uses it to store more reads "
@@ -2762,7 +2751,7 @@ msgid ""
 " dedicated L2ARC device can not be shared between ZFS pools."
 msgstr ""
 
-#: ../../install.rst:490
+#: ../../install.rst:489
 msgid ""
 "If the system contains multiple drives to be used to create a ZFS mirror or "
 "RAIDZ*, check :guilabel:`Add additional disks to storage pool`, which "
@@ -2772,26 +2761,26 @@ msgid ""
 "then check the box for each disk to add to the configuration."
 msgstr ""
 
-#: ../../install.rst:498
+#: ../../install.rst:497
 msgid ""
 "The |trueos| installer requires entire disks (not partitions) when adding "
 "more disks to the pool."
 msgstr ""
 
-#: ../../install.rst:501
+#: ../../install.rst:500
 msgid ""
 "While ZFS allows using disks of different sizes, this is discouraged as it "
 "decreases storage capacity and ZFS performance."
 msgstr ""
 
-#: ../../install.rst:1326
+#: ../../install.rst:1397
 msgid ""
 "First, determine which variables to customize. A list of possible variables "
 "can be found in :file:`/usr/local/share/pc-sysinstall/examples/README` and "
 "are summarized in :numref:`Table %s <insvars>`."
 msgstr ""
 
-#: ../../install.rst:1608
+#: ../../install.rst:1679
 msgid ""
 ":numref:`Table %s <autovars>` summarizes the additional variables available "
 "for fully automatic installations. More detailed descriptions can be found "
@@ -2799,24 +2788,24 @@ msgid ""
 "file."
 msgstr ""
 
-#: ../../install.rst:1614
+#: ../../install.rst:1685
 msgid ""
 "The variables in this file use a different syntax than those in "
 ":ref:`Customizing a TrueOS® Installation <insvars>` as the values follow a "
 "colon (:kbd:`:`) and a space rather than an :kbd:`=` sign."
 msgstr ""
 
-#: ../../install.rst:1697
+#: ../../install.rst:1768
 msgid ""
 "**installComponents=** Any extra components to install must exist in "
 ":file:`extras/components/`."
 msgstr ""
 
-#: ../../install.rst:1700
+#: ../../install.rst:1771
 msgid "**runCommand=** The command must exist in the specified path."
 msgstr ""
 
-#: ../../install.rst:1704
+#: ../../install.rst:1775
 msgid "**runExtCommand=** Ensure the command exists in the specified path."
 msgstr ""
 
@@ -2868,21 +2857,21 @@ msgstr ""
 msgid "Launches the *Disk Manager* utility."
 msgstr ""
 
-#: ../../install.rst:246
+#: ../../install.rst:245
 msgid ""
 "|trueos| is currently experiencing issues with the GRUB bootloater. It is "
 "recommended to avoid using GRUB while the issue is resolved. See "
 ":ref:`Ongoing Issues` for more details."
 msgstr ""
 
-#: ../../install.rst:258
+#: ../../install.rst:257
 msgid ""
 "To select the disk or partition to install |trueos|, click "
 ":guilabel:`Customize Disk Settings` to start the |trueos| Disk Wizard, shown"
 " in :numref:`Figure %s <install6>`."
 msgstr ""
 
-#: ../../install.rst:1269
+#: ../../install.rst:1270
 msgid ""
 "The |trueos| version of GRUB attempts to identify other installed operating "
 "systems, such as Windows and Linux, and add them to the GRUB boot menu. If "
@@ -2892,7 +2881,7 @@ msgid ""
 "<http://www.gnu.org/software/grub/manual/grub.html>`_."
 msgstr ""
 
-#: ../../install.rst:26 ../../install.rst:722
+#: ../../install.rst:26 ../../install.rst:723
 msgid ""
 "The |trueos| text-based installer is experiencing some irregular "
 "functionality. It is currently (3/6/17) recommended to use a graphical "
@@ -2906,20 +2895,20 @@ msgid ""
 "automatically prompts the system to continue booting."
 msgstr ""
 
-#: ../../install.rst:1252
+#: ../../install.rst:1253
 msgid ""
 "Avoid selecting a partition containing an operating system or essential "
 "data."
 msgstr ""
 
-#: ../../install.rst:1255
+#: ../../install.rst:1256
 msgid ""
 "Highlight the desired partition and click :guilabel:`Customize`. Clicking "
 ":guilabel:`Next` without customizing the disk layout results in the "
 "installer overwriting the contents of the primary disk."
 msgstr ""
 
-#: ../../install.rst:1259
+#: ../../install.rst:1260
 msgid ""
 "In |trueos|, the BSD boot loader is the preferred and default boot loader, "
 "as it provides native support for ZFS boot environments. If the default "
@@ -2927,12 +2916,125 @@ msgid ""
 "GRUB boot loader which provides limited ZFS boot environment support."
 msgstr ""
 
-#: ../../install.rst:1265
+#: ../../install.rst:1266
 msgid ""
 "The GRUB boot loader is currently experiencing inconsistent behavior, and it"
 " is recommended to use the BSD boot loader at this time. See :ref:`Ongoing "
 "Issues` for more details."
 msgstr ""
+
+#: ../../install.rst:211
+msgid ""
+"When installing to an existing |pcbsd| or |trueos| system, a pop-up window "
+"asks to install to the existing pool without reformatting it. Press "
+":guilabel:`OK` to keep the existing pool. Clicking :guilabel:`Cancel` "
+"formats the existing pool and all of its data. Refer to the :ref:`Upgrading "
+"from PCBSD 10.x to TrueOS` section for more information about this option."
+msgstr ""
+
+#: ../../install.rst:710
+msgid ":ref:`Upgrading from PCBSD 10.x to TrueOS`"
+msgstr ""
+
+#: ../../install.rst:1282
+msgid "Upgrading from |pcbsd| 10.x to |trueos|"
+msgstr ""
+
+#: ../../install.rst:1284
+msgid ""
+"If any user account uses PersonaCrypt, please be sure to save any encryption"
+" keys to a safe place (e.g. a thumb drive) before beginning the upgrade "
+"process. Loss of encryption keys may result in being unable to import the "
+"home directory after the upgrade is complete."
+msgstr ""
+
+#: ../../install.rst:1290
+msgid ""
+"If the system is using |pcbsd| 10.x, the option to update to |trueos| does "
+"not appear in the Control Panel version of Update Manager. This is because a"
+" new installation is required in order to migrate to |trueos|. However, the "
+"|trueos| installer allows the user to keep all their existing data and home "
+"directories, as it provides the ability to install |trueos| into a new boot "
+"environment. In other words, the new operating system and updated "
+"applications are installed while the ZFS pool and any existing boot "
+"environments are preserved. Since the new install is in a boot environment, "
+"the option to boot back into the previous |pcbsd| installation remains."
+msgstr ""
+
+#: ../../install.rst:1301
+msgid ""
+"This option overwrites the contents of :file:`/etc`. If any custom "
+"configurations exist, save them to a backup or the home directory first. "
+"Alternately, use the |sysadm| `Boot Environment Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-"
+"manager>`_ post-installation to mount the previous |pcbsd| boot environment "
+"to copy over any configuration files which may not have been backed up."
+msgstr ""
+
+#: ../../install.rst:1308
+msgid ""
+"To perform the installation to a new boot environment, start the |trueos| "
+"installation as described earlier in the chapter. In the :ref:`System "
+"Selection` screen, choose to install either a desktop or a server. Press "
+":guilabel:`Next` to view the :guilabel:`Disk Selection` screen, shown in "
+":numref:`Figure %s <upgrade1>`."
+msgstr ""
+
+#: ../../install.rst:1318
+msgid ": Disk Selection"
+msgstr ""
+
+#: ../../install.rst:1320
+msgid ""
+"|trueos| automatically detects if the drive has an existing boot "
+"environment, filling in the data as necessary. If no boot environments are "
+"detected, :guilabel:`Install into Boot Environment` will be greyed out. To "
+"upgrade, select :guilabel:`Install into Boot Environment` and choose which "
+"existing pool to install into from the drop-down menu. In the :ref:`Disk "
+"Selection Screen <upgrade1>`, the user is installing into the existing "
+"**tank** pool. Press :guilabel:`Next` when ready."
+msgstr ""
+
+#: ../../install.rst:1328
+msgid ""
+"Be sure :guilabel:`Install into Boot Environment` is checked before "
+"proceeding, or data can be lost."
+msgstr ""
+
+#: ../../install.rst:1331
+msgid ""
+"A pop-up will appear, asking to start the default Full-Disk installation. "
+"Click :guilabel:`Yes` to start the installation."
+msgstr ""
+
+#: ../../install.rst:1334
+msgid ""
+"Once the installation is complete, reboot the system and remove the "
+"installation media. The post-installation screens run as described in the "
+":ref:`Post Installation Configuration` section to help you configure the new"
+" installation."
+msgstr ""
+
+#: ../../install.rst:1339
+msgid ""
+"During the :ref:`Create a User` process, recreate the primary user account "
+"using the same name user name and user id (UID) from the previous |pcbsd| "
+"system. This allows |trueos| to associate the existing home directory with "
+"that user. Once logged in, use the |sysadm| `User Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_ to "
+"recreate any other user accounts or to reassociate any PersonaCrypt "
+"accounts."
+msgstr ""
+
+#~ msgid ""
+#~ "When installing to an existing |pcbsd| or |trueos| system, a pop-up window "
+#~ "asks to install to the existing pool without reformatting it. Press "
+#~ ":guilabel:`OK` to keep the existing pool. Clicking :guilabel:`Cancel` "
+#~ "formats the existing pool and all of its data. Refer to the `Upgrading from "
+#~ "PCBSD 10.x to TrueOS <https://sysadm.us/handbook/client/sysadmclient.html"
+#~ "#upgrading-from-pcbsd-10-x-to-trueos>`_ section for more information about "
+#~ "this option."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Be sure to avoid selecting a partition containing a needed operating system "
