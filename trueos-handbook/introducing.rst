@@ -513,23 +513,23 @@ provides some common examples:
 
 .. table:: : BSD and Linux Feature Names
 
-   +------------------------------+---------------------+--------------------------------+
-   | TrueOS                       | Linux               | Description                    |
-   +==============================+=====================+================================+
-   | IPFW                         | iptables            | Default firewall               |
-   +------------------------------+---------------------+--------------------------------+
-   | :file:`/etc/rc.d/` for       | :file:`rc0.d/`,     | In |trueos|, the directories   |
-   | operating system and         | :file:`rc1.d/`,     | containing the startup scripts |
-   | :file:`/usr/local/etc/rc.d/` | etc.                | do not link to runlevels as    |
-   | for applications             |                     | there are no runlevels. System |
-   |                              |                     | startup scripts are separated  |
-   |                              |                     | from third-party application   |
-   |                              |                     | scripts.                       |
-   +------------------------------+---------------------+--------------------------------+
-   | :file:`/etc/ttys` and        | :command:`telinit`, | Terminals configured in *ttys* |
-   | :file:`/etc/rc.conf`         | :file:`init.d/`     | and *rc.conf* indicate which   |
-   |                              |                     | services start at boot time.   |
-   +------------------------------+---------------------+--------------------------------+
+   +--------------------------------+---------------------+--------------------------------+
+   | TrueOS                         | Linux               | Description                    |
+   +================================+=====================+================================+
+   | IPFW                           | iptables            | Default firewall               |
+   +--------------------------------+---------------------+--------------------------------+
+   | :file:`/etc/init.d/` for       | :file:`rc0.d/`,     | In |trueos|, the directories   |
+   | operating system and           | :file:`rc1.d/`,     | containing the startup scripts |
+   | :file:`/usr/local/etc/init.d/` | etc.                | do not link to runlevels as    |
+   | for applications               |                     | there are no runlevels. System |
+   |                                |                     | startup scripts are separated  |
+   |                                |                     | from third-party application   |
+   |                                |                     | scripts.                       |
+   +--------------------------------+---------------------+--------------------------------+
+   | :file:`/etc/ttys` and          | :command:`telinit`, | Terminals configured in *ttys* |
+   | :file:`/etc/rc.conf`           | :file:`init.d/`     | and *rc.conf* indicate which   |
+   |                                |                     | services start at boot time.   |
+   +--------------------------------+---------------------+--------------------------------+
 
 Users comfortable with the command line may find some of the common
 Linux commands have different names on BSD.
