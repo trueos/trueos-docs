@@ -200,8 +200,7 @@ To install the desktop, click :guilabel:`Next`.
    pop-up window asks to install to the existing pool without
    reformatting it. Press :guilabel:`OK` to keep the existing pool.
    Clicking :guilabel:`Cancel` formats the existing pool and all of
-   its data. Refer to the
-   `Upgrading from PCBSD 10.x to TrueOS <https://sysadm.us/handbook/client/sysadmclient.html#upgrading-from-pcbsd-10-x-to-trueos>`_
+   its data. Refer to the :ref:`Upgrading from PCBSD 10.x to TrueOS`
    section for more information about this option.
 
 .. index:: disk config screen
@@ -695,6 +694,8 @@ This section covers these advanced installation topics:
 * :ref:`Using the TrueOS CD`
 
 * :ref:`Dual Booting`
+
+* :ref:`Upgrading from PCBSD 10.x to TrueOS`
 
 * :ref:`Automated Installations`
 
@@ -1261,6 +1262,76 @@ an entry can be manually added to
 :file:`/usr/local/etc/grub.d/40_custom.dist`. For more information on
 the syntax used, refer to the
 `GRUB Manual <http://www.gnu.org/software/grub/manual/grub.html>`_.
+
+.. index:: upgrade from PCBSD
+.. _Upgrading from PCBSD 10.x to TrueOS:
+
+Upgrading from |pcbsd| 10.x to |trueos|
+---------------------------------------
+
+.. warning:: If any user account uses PersonaCrypt, please be sure to
+   save any encryption keys to a safe place (e.g. a thumb drive) before
+   beginning the upgrade process. Loss of encryption keys may result in
+   being unable to import the home directory after the upgrade is
+   complete.
+
+If the system is using |pcbsd| 10.x, the option to update to |trueos|
+does not appear in the Control Panel version of Update Manager. This is
+because a new installation is required in order to migrate to |trueos|.
+However, the |trueos| installer allows the user to keep all their
+existing data and home directories, as it provides the ability to
+install |trueos| into a new boot environment. In other words, the new
+operating system and updated applications are installed while the ZFS
+pool and any existing boot environments are preserved. Since the new
+install is in a boot environment, the option to boot back into the
+previous |pcbsd| installation remains.
+
+.. note:: This option overwrites the contents of :file:`/etc`. If any
+   custom configurations exist, save them to a backup or the home
+   directory first. Alternately, use the |sysadm|
+   `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_
+   post-installation to mount the previous |pcbsd| boot environment to
+   copy over any configuration files which may not have been backed up.
+
+To perform the installation to a new boot environment, start the
+|trueos| installation as described earlier in the chapter. In the
+:ref:`System Selection` screen, choose to install either a desktop or
+a server. Press :guilabel:`Next` to view the :guilabel:`Disk Selection`
+screen, shown in :numref:`Figure %s <upgrade1>`.
+
+.. _upgrade1:
+
+.. figure:: images/upgrade1b.png
+
+   : Disk Selection
+
+|trueos| automatically detects if the drive has an existing boot
+environment, filling in the data as necessary. If no boot environments
+are detected, :guilabel:`Install into Boot Environment` will be greyed
+out. To upgrade, select :guilabel:`Install into Boot Environment` and
+choose which existing pool to install into from the drop-down menu. In
+the :ref:`Disk Selection Screen <upgrade1>`, the user is installing into
+the existing **tank** pool. Press :guilabel:`Next` when ready.
+
+.. warning:: Be sure :guilabel:`Install into Boot Environment` is
+   checked before proceeding, or data can be lost.
+
+A pop-up will appear, asking to start the default Full-Disk
+installation. Click :guilabel:`Yes` to start the installation.
+
+Once the installation is complete, reboot the system and remove the
+installation media. The post-installation screens run as described in
+the :ref:`Post Installation Configuration` section to help you configure
+the new installation.
+
+.. note:: During the :ref:`Create a User` process, recreate the primary
+   user account using the same name user name and user id (UID) from the
+   previous |pcbsd| system. This allows |trueos| to associate the
+   existing home directory with that user. Once logged in, use the
+   |sysadm|
+   `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_
+   to recreate any other user accounts or to reassociate any
+   PersonaCrypt accounts.
 
 .. index:: auto installations
 .. _Automated Installations:
