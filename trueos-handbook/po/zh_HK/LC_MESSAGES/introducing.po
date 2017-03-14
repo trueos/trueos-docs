@@ -744,12 +744,6 @@ msgid "Default firewall"
 msgstr ""
 
 #: ../../introducing.rst:533
-msgid ""
-":file:`/etc/rc.d/` for operating system and :file:`/usr/local/etc/rc.d/` for"
-" applications"
-msgstr ""
-
-#: ../../introducing.rst:533
 msgid ":file:`rc0.d/`, :file:`rc1.d/`, etc."
 msgstr ""
 
@@ -1187,6 +1181,17 @@ msgid ""
 "<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
 "(:command:`pc-servicemanager`) has been integrated into |sysadm|."
 msgstr ""
+
+#: ../../introducing.rst:533
+msgid ""
+":file:`/etc/init.d/` for operating system and :file:`/usr/local/etc/init.d/`"
+" for applications"
+msgstr ""
+
+#~ msgid ""
+#~ ":file:`/etc/rc.d/` for operating system and :file:`/usr/local/etc/rc.d/` for"
+#~ " applications"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "|trueos| pre-configures the BSD-licensed, |lumina| desktop environment "
