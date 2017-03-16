@@ -624,33 +624,33 @@ working examples contrasting the FreeBSD :command:`rc` system and OpenRC in
 .. _trfbsdrc:
 .. table:: : Comparison between the traditional FreeBSD :command:`rc` and |trueos| OpenRC service management
 
-   +--------------------------------+-----------------------------------+-----------------------------------------------+
-   | Component or action            | FreeBSD                           | |trueos|                                      |
-   +================================+===================================+===============================================+
-   | Base system rc script location | :file:`/etc/rc.d`                 | :file:`/etc/init.d`                           |
-   +--------------------------------+-----------------------------------+-----------------------------------------------+
-   | Ports rc script location       | :file:`/usr/local/etc/rc.d`       | :file:`/usr/local/etc/init.d`                 |
-   +--------------------------------+-----------------------------------+-----------------------------------------------+
-   | Service configuration          | :file:`/etc/rc.conf` or           | :file:`/etc/conf.d/servicename`               |
-   |                                | :file:`/etc/rc.conf.local`        |                                               |
-   |                                |                                   |                                               |
-   |                                | All services are configured       | Each service has                              |
-   |                                | in a central location             | its own configuration file                    |
-   +--------------------------------+-----------------------------------+-----------------------------------------------+
-   | Starting e.g. the              | :command:`$ service nginx start`  | :command:`$ service nginx start`              |
-   | :command:`nginx` service       | :command:`$ service nginx start`  | :command:`$ service nginx start`              |
-   +--------------------------------+-----------------------------------+-----------------------------------------------+
-   | Configuring e.g.               | Edit :file:`/etc/rc.conf` and add | :command:`$ rc-update add nginx default`      |
-   | :command:`nginx` to run in the |     :command:`nginx_enable="YES"` |                                               |
-   | default runlevel               |                                   |                                               |
-   +--------------------------------+-----------------------------------+-----------------------------------------------+
-   | Check to see if a service      | :samp:`$ service nginx rcvar`     | :samp:`$ rc-update show default | grep nginx` |
-   | is enabled                     |                                   |                                               |
-   |                                | If the service is enabled,        | If the service is enabled,                    |
-   |                                | the result is:                    | the result is:                                |
-   |                                |                                   |                                               |
-   |                                | :samp:`nginx_enable="YES"`        | :samp:`nginx | default`                       |
-   +--------------------------------+-----------------------------------+-----------------------------------------------+
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Component or action            | FreeBSD                           | |trueos|                                        |
+   +================================+===================================+=================================================+
+   | Base system rc script location | :file:`/etc/rc.d`                 | :file:`/etc/init.d`                             |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Ports rc script location       | :file:`/usr/local/etc/rc.d`       | :file:`/usr/local/etc/init.d`                   |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Service configuration          | :file:`/etc/rc.conf` or           | OpenRC prefers :file:`/etc/conf.d/servicename`, |
+   |                                | :file:`/etc/rc.conf.local`        | but can use :file:`/etc/rc.conf` or             |
+   |                                |                                   | :file:`/etc/rc.conf.local`                      |
+   |                                | All services are configured       | Each service has its own configuration file.    |
+   |                                | in a central location.            |                                                 |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Starting e.g. the              | :samp:`$ service nginx start`     | :samp:`$ service nginx start`                   |
+   | :command:`nginx` service       |                                   |                                                 |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Configuring e.g.               | Edit :file:`/etc/rc.conf` and add | :samp:`$ rc-update add nginx default`           |
+   | :command:`nginx` to start on   | :command:`nginx_enable="YES"`     |                                                 |
+   | bootup.                        |                                   |                                                 |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Check to see if a service      | :samp:`$ service nginx rcvar`     | :samp:`$ rc-update show default | grep nginx`   |
+   | is enabled.                    |                                   |                                                 |
+   |                                | If the service is enabled,        | If the service is enabled,                      |
+   |                                | the result is:                    | the result is:                                  |
+   |                                |                                   |                                                 |
+   |                                | :samp:`nginx_enable="YES"`        | :samp:`nginx | default`                         |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
 
 .. warning:: The user may find leftover RC files during the |trueos|
    migration to OpenRC. These files do not work with OpenRC and are
@@ -672,13 +672,15 @@ Runlevels
 ^^^^^^^^^
 
 Traditionally, FreeBSD operates in single- and multi-user modes.
-OpenRC, however, offers the ability to define **runlevels**.
-Any number of system services can be associated with a given runlevel.
-In |trueos|, the :samp:`default` runlevel is analogous to the FreeBSD
-multi-user mode, and is associated with the "Normal Bootup" option of
-the |trueos| bootloader.
+However, OpenRC offers the ability to define **runlevels**. An OpenRC
+**runlevel** is a grouping of services, nothing more. Any number of
+system services can be associated with a given runlevel. In |trueos|,
+there are two main preconfigured runlevels: **boot** and **default**.
+The **default** runlevel is analogous to the FreeBSD multi-user mode,
+and is associated with the *Normal Bootup* option of the |trueos|
+bootloader.
 
-.. note:: No OpenRC runlevels will be executed if the system is booted
+.. note:: No OpenRC runlevels are executed if the system is booted
           into single-user mode (see :numref:`Figure %s <install1(2)>`.)
 
 Runlevels are defined by subdirectories of :file:`/etc/runlevels`; all
@@ -689,8 +691,10 @@ the command:
 
 OpenRC has a few ordered runlevels in |trueos|. In order of execution:
   1. *sysinit* runlevel: used for OpenRC to initialize itself.
-  2. *boot* runlevel: starts most base services from :file:`/etc/init.d/`. 
-  3. *default* runlevel, which is where services started by ports are added.
+  2. *boot* runlevel: starts most base services from
+     :file:`/etc/init.d/`.
+  3. *default* runlevel, which is where services started by ports are
+     added.
 
 .. note:: Services added by ports cannot be added to *boot* or
    *sysinit*.
@@ -809,9 +813,6 @@ For more creation options for OpenRC compatible init scripts, type
 RC Defaults
 -----------
 
-.. TODO periodically check with Joe if RC defaults are changing/have
-   changed. Last check 1/3/16.
-   
 .. note:: RC Defaults are subject to change during development.
 
 |trueos| and FreeBSD now have very different rc defaults.
@@ -984,6 +985,7 @@ Tuneables
    | Tunable                       | Description                         |
    +===============================+=====================================+
    | rc_parallel="YES"             | Starts all services in parallel     |
+   |                               | (experimental).                     |
    +-------------------------------+-------------------------------------+
    | rc_logger="YES"               | Enables logging                     |
    +-------------------------------+-------------------------------------+
@@ -999,8 +1001,6 @@ listed.
 
 .. note:: These migration targets are estimates and subject to change.
 
-.. TODO fill gaps in table with Joe's input.
-
 .. _orcalltun:
 .. table:: : OpenRC Other Tunables
 
@@ -1011,12 +1011,13 @@ listed.
    |                                          | service to enable the Linux         |                              |
    |                                          | compatability during boot           |                              |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | ifconfig_re0="DHCP"                      | TBD                                 | :file:`/etc/conf.d/network`  |
+   | ifconfig_re0="DHCP"                      | Auto-obtain IP address on the *re0* | :file:`/etc/conf.d/network`  |
+   |                                          | device.                             |                              |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | ifconfig_re0_ipv6="inet6 accept_rtadv"   | TBD                                 | :file:`/etc/conf.d/network`  |
+   | ifconfig_re0_ipv6="inet6 accept_rtadv"   | Configure IPv6.                     | :file:`/etc/conf.d/network`  |
    |                                          |                                     |                              |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | hostname="trueos-4843"                   | TBD                                 | :file:`/etc/conf.d/hostname` |
+   | hostname="trueos-4843"                   | Set the system hostname.            | :file:`/etc/conf.d/hostname` |
    +------------------------------------------+-------------------------------------+------------------------------+
    | kldload_i915kms="i915kms"                | TrueOS specific. Allows loading an  | :file:`etc/conf.d/modules`   |
    |                                          | individual module via the installer |                              |
@@ -1024,11 +1025,9 @@ listed.
    +------------------------------------------+-------------------------------------+------------------------------+
    | zfs_enable="YES"                         | Obsolete, marked for removal        | None                         |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | wlans_iwm0="wlan0"                       | TBD                                 | :file:`/etc.conf.d.network`  |
+   | wlans_iwm0="wlan 0 DHCP"                 | Configure iwm wireless with DHCP.   | :file:`/etc.conf.d.network`  |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | wlans_iwm0="wlan 0 DHCP"                 | TBD                                 | :file:`/etc.conf.d.network`  |
-   +------------------------------------------+-------------------------------------+------------------------------+
-   | ifconfig_wlan0_ipv6="inet6 accept_rtadv" | TBD                                 | :file:`/etc.conf.d.network`  |
+   | ifconfig_wlan0_ipv6="inet6 accept_rtadv" | Configure iwm wireless with IPv6.   | :file:`/etc.conf.d.network`  |
    +------------------------------------------+-------------------------------------+------------------------------+
 
 .. index:: openrc install scripts
