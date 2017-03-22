@@ -360,6 +360,12 @@ search for and watch media. To exit Plex, click :guilabel:`<` then
 Mount Tray
 ==========
 
+.. note:: The mount tray and its associated utility, **pc-mounttray**
+   is retired, replaced by the new **automounter** utility. This
+   section of the handbook is being reworked, but a description of the
+   automounter utility is available on the
+   `TrueOS Blog <https://www.trueos.org/blog/new-automounting-unmounting-functionality-announced-trueos/>`_.
+
 The :guilabel:`Mount Tray` graphical application is used to facilitate
 the mounting and unmounting of internal disks, USB storage devices,
 optical media, and network shares. It is included in the system tray
