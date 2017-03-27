@@ -362,7 +362,6 @@ now separate |trueos| from |pcbsd|:
   * Firewall Manager
   * User Manager
   * Network Manager
-  * Mount Tray
   
 * The functionality provided by the *About* utility has been
   incorporated into

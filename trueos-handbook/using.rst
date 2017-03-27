@@ -300,8 +300,7 @@ view screenshots):
 
 * `SMPlayer <http://smplayer.sourceforge.net/>`_: Universal media
   player which can handle any media format and play audio CDs, DVDs,
-  (S)VCDs, TV/radio cards, YouTube™ and SHOUTcast™ streams. This is
-  the default player used by :ref:`Mount Tray`.
+  (S)VCDs, TV/radio cards, YouTube™ and SHOUTcast™ streams.
 
 .. index:: multimedia
 .. _Kodi:
@@ -354,123 +353,119 @@ entered, the wizard will connect and sign you in. Now it is possible to
 search for and watch media. To exit Plex, click :guilabel:`<` then
 :guilabel:`Quit`.
 
-.. index:: mount
-.. _Mount Tray:
+.. index:: automount
+.. _Automounter:
 
-Mount Tray
-==========
+Automounter
+===========
 
-The :guilabel:`Mount Tray` graphical application is used to facilitate
-the mounting and unmounting of internal disks, USB storage devices,
-optical media, and network shares. It is included in the system tray
-by default. If the icon is removed from the system tray, it can be
-re-added by typing :command:`pc-mounttray &`.
+.. tip:: The *Mount Tray* has been replaced by the new **Automounter**.
 
-.. note:: If mounting devices from the command line is preferred, see
-   the section on :ref:`pcsysconfig`.
+The automounter, based on the :command:`devd` and :command:`automount`
+utilities, facilitates mounting and unmounting USB storage devices and
+optical media. It also conforms to an **XDG** standard to allow the
+addition of new features. The automounter is part of the default
+|trueos| installation, but is generally invisible until a new device is
+attached to the system.
 
-In the example shown in :numref:`Figure %s <mount1>`, a USB device and
-a music CD are currently inserted and the user has hovered over
-:guilabel:`More Options` to view the available options.
+Currently, the automounter ignores internal hard drives (sata, ide) and
+networking shares. It does support many different filesystems:
 
-.. _mount1:
+* cd9660
 
-.. figure:: images/mount1.png
-   :scale: 100%
+* exFAT (Requires :file:`mount.exfat-fuse`. Possible intermittent
+  detection issues.)
+  
+* ext2
 
-   : Mount Tray
+* ext4 (Requires :file:`ext4fuse`)
 
-When first inserting a USB drive, a :guilabel:`New Device` message will
-appear in the system tray. Click the :guilabel:`Mount Tray` icon, then
-:guilabel:`Mount` for the device. Mount Tray will try to determine the
-filesystem on the device and then to mount it. If it is not sure, a
-pop-up menu will prompt to select the correct filesystem. A list of
-supported filesystems can be found in :ref:`filesys support`. Once
-mounted, :guilabel:`Mount` changes to :guilabel:`Unmount`, and if the
-device contains files, an indicator of the drive's used capacity and a
-button to :guilabel:`Browse` the contents of the device will be added.
-An example is shown in :numref:`Figure %s <mount2>`.
+* FAT32
 
-.. _mount2:
+* MSDOSFS
 
-.. figure:: images/mount2.png
-   :scale: 100%
+* MTPfs (Requires :file:`simple-mtpfs`)
 
-   : Mounted USB Device
+* NTFS (Requires :file:`ntfs-3g`)
 
-If the device will be mounted often, it can be configured to mount
-automatically when inserted by checking :guilabel:`Auto-Run`.
+* ReiserFS
 
-When finished using the device, press :guilabel:`Unmount`. This will
-safely unmount the device and toggle the button back to
-:guilabel:`Mount`. When attempting to unmount, if the file manager is
-still open to the device's contents, a "Device Busy" message will be
-generated. If this message appears, press :guilabel:`No` to close the
-pop-up. Close the file manager, then press :guilabel:`Unmount` again.
-This will ensure the device is unmounted cleanly.
+* UDF
 
-.. note:: Mount Tray does allow for the USB device to be physically
-   removed without unmounting it first. However, it is recommended to
-   always :guilabel:`Unmount` the drive first.
+* UFS
 
-When first inserting an optical media, such as a music CD or DVD video,
-a message will indicate an optical disk is available and, by default,
-the default player application will open to play the contents of the
-disk. The default player used depends upon which applications have been
-installed, where `VLC <http://www.videolan.org/vlc/>`_ takes precedence,
-followed by `SMPlayer <http://smplayer.sourceforge.net/>`_. When closing
-the player, you can click :guilabel:`Play`, shown in :ref:`mount1`, to
-restart it.
+* XFS
 
-If any network shares are available, :guilabel:`Network Shares` can be
-hovered over to see more options to browse, share, and view types of
-available shares.
+.. warning:: Linux based filesystems may have some limitations. See
+   :numref:`Table %s <filesys support>` for more details.
 
-Many options are available in the :guilabel:`More Options` menu:
+To engage the automounter, attach a USB storage device or insert optical
+media to the system. The automounter detects the device by ID and adds
+icons to the desktop, as seen in :numref:`Figure %s <automnt1>`:
 
-* **View Disk Usage:** In the example shown in
-  :numref:`Figure %s <mount3>`, an MSDOSFS-formatted USB device is
-  mounted at :file:`/media/lexar`. The amount of disk space used by the
-  system hard drive and the USB drive is shown in both GB and as a
-  percentage of available disk space. The Mount Tray will turn yellow
-  if disk space is over 70% and red if disk space is over 90%. If the
-  internal disk drives are partitioned with any other filesystems, these
-  will also appear in the Mount Tray.
+.. _automnt1:
 
-.. _mount3:
+.. figure:: images/automnt1.png
+   :scale: 65%
 
-.. figure:: images/mount3.png
-   :scale: 100%
+   : USB icons added to desktop via the automounter. Hovering over the
+   icon displays the actual device name and filesystem type.
 
-   : Using Mount Tray to View Disk Usage
+.. tip:: The appearance of these icons do **not** mean the device is
+   mounted. Devices are only mounted when the user begins to interact
+   with the device.
 
-* **Rescan Devices:** Click this option if an entry for a newly inserted
-  device does not automatically appear.
+When either navigating to a device or beginning copy operations, the
+device is mounted. The device is unmounted by the **autounmountd**
+service after the user navigates away and/or file copy operations stop.
 
-* **Load ISO File:** Used to mount an ISO to a memory disk. It will open
-  a browse menu so you can browse to the location of the :file:`.iso`.
-  Once the file is selected and mounted, its contents will be displayed
-  in the default file manager. When finished browsing the contents,
-  close the file manager and click :guilabel:`Eject` for the memory
-  device in Mount Tray and enter your password when prompted. As the ISO
-  is unmounted, the memory disk is also detached from the system.
+For example, the above image shows USB drive "FreeNAS" attached to
+the system. After double-clicking the desktop icon,
+"Insight File Manager" opens to the device's location,
+:file:`autofs/da0`. While :guilabel:`Insight` opens, the automounter
+mounts the device. After closing :guilabel:`Insight`, the device is also
+unmounted and safe to remove from the system.
 
-* **Change Settings:** As seen in :numref:`Figure %s <mount4>`, this
-  screen allows configuring whether or not optical disks automatically
-  open using the default player, whether or not Mount Tray automatically
-  rechecks the disk space used by mounted devices and how often to
-  perform the check, and whether or not Mount Tray checks disk space
-  when a disk is mounted.
+In the CLI, the automounter adds a :file:`.desktop` file to
+:file:`/media` when a new USB/Optical device is added. Open the
+:file:`.desktop` file with :command:`xdg-open` or :command:`lumina-open`.
+When the device is removed, the symlink is immediately removed from
+:file:`/media`.
 
-.. _mount4:
+.. note:: The :file:`/autofs/*` directories are not cleaned when the
+   device is removed. However, after device removal the directories are
+   no longer associated with the device in the backend. For this reason,
+   :file:`/media` is more useful to identify which devices are attached
+   to the system.
 
-.. figure:: images/mount4.png
-   :scale: 100%
+Alternately, all device names are added to the :file:`/autofs` directory.
+Attached devices are also accessed by navigating to
+:file:`/autofs/<devicename>`.
 
-   : Configuring Disk Space Checks
+Known limitations:
 
-* **Close Tray:** Click this option to remove Mount Tray from the system
-  tray.
+* UFS permissions. These permissions are preserved on USB media. To
+  allow multiple users access to files from a UFS stick, those files'
+  permissions need to be set to *read/write by any user* (777).
+
+* ZFS pools are not yet supported. This is under investigation to
+  ascertain if it can ever work with :command:`automount`.
+
+* Optical Media links are not yet created on the desktop. Optical media
+  is accessible by navigating to :file:`/autofs`.
+
+* Any file system with limited FreeBSD support (HFS or EXT) remain at
+  the same level of limited support.
+
+* exFAT detection issues are being investigated.
+
+Coming soon:
+
+* Optical media support for the desktop
+
+* Android device support
+
+* Possible support for ZFS pools
 
 .. index:: mount
 .. _pcsysconfig:
@@ -478,13 +473,18 @@ Many options are available in the :guilabel:`More Options` menu:
 pc-sysconfig
 ------------
 
-The previous section described |trueos|'s graphical mount utility. This
-graphical utility has a command-line backend, :command:`pc-sysconfig`,
-which can be used directly from the command line on |trueos| systems,
-window managers without a system tray, or by users who prefer to use the
-command line.
+.. warning:: This utility is scheduled to be retired soon, and may not
+   work as intended.
 
-For usage information, run the command without any options:
+The previous section described the |trueos| automounter.
+:command:`pc-sysconfig` is another utility that is used directly from
+the command line on |trueos| systems, by window managers without a
+system tray, or by users who prefer to use the command line.
+
+Here is the full usage of :command:`pc-sysconfig`:
+
+.. note:: Mounting related commands are no longer used in pc-sysconfig
+   and should be ignored.
 
 .. code-block:: none
 

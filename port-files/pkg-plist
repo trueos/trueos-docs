@@ -2,6 +2,7 @@ share/applications/handbook.desktop
 share/pixmaps/trueos-handbook.png
 share/trueos/handbook/.buildinfo
 share/trueos/handbook/_images/audio1a.png
+share/trueos/handbook/_images/automnt1.png
 share/trueos/handbook/_images/boot1b.png
 share/trueos/handbook/_images/boot2.png
 share/trueos/handbook/_images/boot3.png
@@ -41,10 +42,6 @@ share/trueos/handbook/_images/install9b.png
 share/trueos/handbook/_images/keyboard1.png
 share/trueos/handbook/_images/login1.png
 share/trueos/handbook/_images/login5.png
-share/trueos/handbook/_images/mount1.png
-share/trueos/handbook/_images/mount2.png
-share/trueos/handbook/_images/mount3.png
-share/trueos/handbook/_images/mount4.png
 share/trueos/handbook/_images/network1.png
 share/trueos/handbook/_images/network10.png
 share/trueos/handbook/_images/network11.png
