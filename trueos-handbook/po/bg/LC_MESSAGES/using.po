@@ -65,11 +65,11 @@ msgstr ""
 msgid "Multimedia"
 msgstr ""
 
-#: ../../using.rst:322
+#: ../../using.rst:321
 msgid "Kodi"
 msgstr ""
 
-#: ../../using.rst:324
+#: ../../using.rst:323
 msgid ""
 "`Kodi, formerly known as XBMC, <https://kodi.tv/>`_ is a GPL-licensed "
 "software media player and entertainment hub for digital media. It can play "
@@ -79,7 +79,7 @@ msgid ""
 " and fan art."
 msgstr ""
 
-#: ../../using.rst:336
+#: ../../using.rst:335
 msgid ""
 "If you have never used Kodi before, take some time to skim through the `Kodi"
 " Wiki Manual <http://kodi.wiki/>`_. The `Turn PC-BSD into a home theater "
@@ -87,22 +87,18 @@ msgid ""
 "how-to for configuring Kodi."
 msgstr ""
 
-#: ../../using.rst:345
+#: ../../using.rst:344
 msgid "PlexHome Theater"
 msgstr ""
 
-#: ../../using.rst:347
+#: ../../using.rst:346
 msgid ""
 "`Plex Home Theater <https://plex.tv/>`_ is a centralized media playback "
 "system. The central Plex Media Server streams media to many Plex player Apps"
 " which are used to view your media library and watch shows."
 msgstr ""
 
-#: ../../using.rst:373
-msgid "Mount Tray"
-msgstr ""
-
-#: ../../using.rst:491
+#: ../../using.rst:486
 msgid "pc-sysconfig"
 msgstr ""
 
@@ -575,15 +571,7 @@ msgid ""
 "shows and video podcasts."
 msgstr ""
 
-#: ../../using.rst:313
-msgid ""
-"`SMPlayer <http://smplayer.sourceforge.net/>`_: Universal media player which"
-" can handle any media format and play audio CDs, DVDs, (S)VCDs, TV/radio "
-"cards, YouTube™ and SHOUTcast™ streams. This is the default player used by "
-":ref:`Mount Tray`."
-msgstr ""
-
-#: ../../using.rst:352
+#: ../../using.rst:351
 msgid ""
 "To install PlexHome Theater, use |appcafe|. Once installed, an entry should "
 "be added to the :guilabel:`Multimedia` section of the application menu of "
@@ -591,14 +579,14 @@ msgid ""
 ":command:`plexhometheater` from a command prompt."
 msgstr ""
 
-#: ../../using.rst:357
+#: ../../using.rst:356
 msgid ""
 "Once installed, an entry for :guilabel:`Plex Home Theater` will also be "
 "added to the login manager so you can login directly to the home theater "
 "instead of a desktop."
 msgstr ""
 
-#: ../../using.rst:361
+#: ../../using.rst:360
 msgid ""
 "The first time running or logging into Plex Home Theater, a wizard will "
 "check the audio settings and sign into your Plex account. If you have no "
@@ -606,116 +594,6 @@ msgid ""
 "provide a PIN code and an URL to enter the code. Once the PIN is entered, "
 "the wizard will connect and sign you in. Now it is possible to search for "
 "and watch media. To exit Plex, click :guilabel:`<` then :guilabel:`Quit`."
-msgstr ""
-
-#: ../../using.rst:375
-msgid ""
-"The :guilabel:`Mount Tray` graphical application is used to facilitate the "
-"mounting and unmounting of internal disks, USB storage devices, optical "
-"media, and network shares. It is included in the system tray by default. If "
-"the icon is removed from the system tray, it can be re-added by typing "
-":command:`pc-mounttray &`."
-msgstr ""
-
-#: ../../using.rst:395
-msgid ""
-"When first inserting a USB drive, a :guilabel:`New Device` message will "
-"appear in the system tray. Click the :guilabel:`Mount Tray` icon, then "
-":guilabel:`Mount` for the device. Mount Tray will try to determine the "
-"filesystem on the device and then to mount it. If it is not sure, a pop-up "
-"menu will prompt to select the correct filesystem. A list of supported "
-"filesystems can be found in :ref:`filesys support`. Once mounted, "
-":guilabel:`Mount` changes to :guilabel:`Unmount`, and if the device contains"
-" files, an indicator of the drive's used capacity and a button to "
-":guilabel:`Browse` the contents of the device will be added. An example is "
-"shown in :numref:`Figure %s <mount2>`."
-msgstr ""
-
-#: ../../using.rst:411
-msgid ": Mounted USB Device"
-msgstr ""
-
-#: ../../using.rst:413
-msgid ""
-"If the device will be mounted often, it can be configured to mount "
-"automatically when inserted by checking :guilabel:`Auto-Run`."
-msgstr ""
-
-#: ../../using.rst:416
-msgid ""
-"When finished using the device, press :guilabel:`Unmount`. This will safely "
-"unmount the device and toggle the button back to :guilabel:`Mount`. When "
-"attempting to unmount, if the file manager is still open to the device's "
-"contents, a \"Device Busy\" message will be generated. If this message "
-"appears, press :guilabel:`No` to close the pop-up. Close the file manager, "
-"then press :guilabel:`Unmount` again. This will ensure the device is "
-"unmounted cleanly."
-msgstr ""
-
-#: ../../using.rst:424
-msgid ""
-"Mount Tray does allow for the USB device to be physically removed without "
-"unmounting it first. However, it is recommended to always "
-":guilabel:`Unmount` the drive first."
-msgstr ""
-
-#: ../../using.rst:428
-msgid ""
-"When first inserting an optical media, such as a music CD or DVD video, a "
-"message will indicate an optical disk is available and, by default, the "
-"default player application will open to play the contents of the disk. The "
-"default player used depends upon which applications have been installed, "
-"where `VLC <http://www.videolan.org/vlc/>`_ takes precedence, followed by "
-"`SMPlayer <http://smplayer.sourceforge.net/>`_. When closing the player, you"
-" can click :guilabel:`Play`, shown in :ref:`mount1`, to restart it."
-msgstr ""
-
-#: ../../using.rst:441
-msgid "Many options are available in the :guilabel:`More Options` menu:"
-msgstr ""
-
-#: ../../using.rst:459
-msgid ""
-"**Rescan Devices:** Click this option if an entry for a newly inserted "
-"device does not automatically appear."
-msgstr ""
-
-#: ../../using.rst:462
-msgid ""
-"**Load ISO File:** Used to mount an ISO to a memory disk. It will open a "
-"browse menu so you can browse to the location of the :file:`.iso`. Once the "
-"file is selected and mounted, its contents will be displayed in the default "
-"file manager. When finished browsing the contents, close the file manager "
-"and click :guilabel:`Eject` for the memory device in Mount Tray and enter "
-"your password when prompted. As the ISO is unmounted, the memory disk is "
-"also detached from the system."
-msgstr ""
-
-#: ../../using.rst:470
-msgid ""
-"**Change Settings:** As seen in :numref:`Figure %s <mount4>`, this screen "
-"allows configuring whether or not optical disks automatically open using the"
-" default player, whether or not Mount Tray automatically rechecks the disk "
-"space used by mounted devices and how often to perform the check, and "
-"whether or not Mount Tray checks disk space when a disk is mounted."
-msgstr ""
-
-#: ../../using.rst:484
-msgid ""
-"**Close Tray:** Click this option to remove Mount Tray from the system tray."
-msgstr ""
-
-#: ../../using.rst:493
-msgid ""
-"The previous section described |trueos|'s graphical mount utility. This "
-"graphical utility has a command-line backend, :command:`pc-sysconfig`, which"
-" can be used directly from the command line on |trueos| systems, window "
-"managers without a system tray, or by users who prefer to use the command "
-"line."
-msgstr ""
-
-#: ../../using.rst:499
-msgid "For usage information, run the command without any options:"
 msgstr ""
 
 #: ../../using.rst:545
@@ -1821,31 +1699,6 @@ msgid ""
 "browser setting."
 msgstr ""
 
-#: ../../using.rst:384
-msgid ""
-"In the example shown in :numref:`Figure %s <mount1>`, a USB device and a "
-"music CD are currently inserted and the user has hovered over "
-":guilabel:`More Options` to view the available options."
-msgstr ""
-
-#: ../../using.rst:437
-msgid ""
-"If any network shares are available, :guilabel:`Network Shares` can be "
-"hovered over to see more options to browse, share, and view types of "
-"available shares."
-msgstr ""
-
-#: ../../using.rst:443
-msgid ""
-"**View Disk Usage:** In the example shown in :numref:`Figure %s <mount3>`, "
-"an MSDOSFS-formatted USB device is mounted at :file:`/media/lexar`. The "
-"amount of disk space used by the system hard drive and the USB drive is "
-"shown in both GB and as a percentage of available disk space. The Mount Tray"
-" will turn yellow if disk space is over 70% and red if disk space is over "
-"90%. If the internal disk drives are partitioned with any other filesystems,"
-" these will also appear in the Mount Tray."
-msgstr ""
-
 #: ../../using.rst:1402
 msgid ""
 "To start tor mode, right-click the network icon in the system tray and check"
@@ -1870,18 +1723,6 @@ msgstr ""
 
 #: ../../using.rst:141
 msgid ": Flash Player Configuration"
-msgstr ""
-
-#: ../../using.rst:393
-msgid ": Mount Tray"
-msgstr ""
-
-#: ../../using.rst:457
-msgid ": Using Mount Tray to View Disk Usage"
-msgstr ""
-
-#: ../../using.rst:482
-msgid ": Configuring Disk Space Checks"
 msgstr ""
 
 #: ../../using.rst:0
@@ -2364,7 +2205,7 @@ msgid ""
 "YouTube™."
 msgstr ""
 
-#: ../../using.rst:331
+#: ../../using.rst:330
 msgid ""
 "Kodi can be installed using |appcafe|. Once installed, an entry for "
 ":guilabel:`Kodi media center` is added to :guilabel:`Browse Applications`. "
@@ -2500,15 +2341,369 @@ msgid ""
 " is regularly updated against the base FreeBSD ports tree."
 msgstr ""
 
-#: ../../using.rst:381
-msgid ""
-"If mounting devices from the command line is preferred, see the section on "
-":ref:`pcsysconfig`."
-msgstr ""
-
 #: ../../using.rst:988
 msgid "Network Devices"
 msgstr ""
+
+#: ../../using.rst:313
+msgid ""
+"`SMPlayer <http://smplayer.sourceforge.net/>`_: Universal media player which"
+" can handle any media format and play audio CDs, DVDs, (S)VCDs, TV/radio "
+"cards, YouTube™ and SHOUTcast™ streams."
+msgstr ""
+
+#: ../../using.rst:372
+msgid "Automounter"
+msgstr ""
+
+#: ../../using.rst:374
+msgid "The *Mount Tray* has been replaced by the new **Automounter**."
+msgstr ""
+
+#: ../../using.rst:376
+msgid ""
+"The automounter, based on the :command:`devd` and :command:`automount` "
+"utilities, facilitates mounting and unmounting USB storage devices and "
+"optical media. It also conforms to an **XDG** standard to allow the addition"
+" of new features. The automounter is part of the default |trueos| "
+"installation, but is generally invisible until a new device is attached to "
+"the system."
+msgstr ""
+
+#: ../../using.rst:383
+msgid ""
+"Currently, the automounter ignores internal hard drives (sata, ide) and "
+"networking shares. It does support many different filesystems:"
+msgstr ""
+
+#: ../../using.rst:386
+msgid "cd9660"
+msgstr ""
+
+#: ../../using.rst:388
+msgid ""
+"exFAT (Requires :file:`mount.exfat-fuse`. Possible intermittent detection "
+"issues.)"
+msgstr ""
+
+#: ../../using.rst:391
+msgid "ext2"
+msgstr ""
+
+#: ../../using.rst:393
+msgid "ext4 (Requires :file:`ext4fuse`)"
+msgstr ""
+
+#: ../../using.rst:395
+msgid "FAT32"
+msgstr ""
+
+#: ../../using.rst:397
+msgid "MSDOSFS"
+msgstr ""
+
+#: ../../using.rst:399
+msgid "MTPfs (Requires :file:`simple-mtpfs`)"
+msgstr ""
+
+#: ../../using.rst:401
+msgid "NTFS (Requires :file:`ntfs-3g`)"
+msgstr ""
+
+#: ../../using.rst:403
+msgid "ReiserFS"
+msgstr ""
+
+#: ../../using.rst:405
+msgid "UDF"
+msgstr ""
+
+#: ../../using.rst:407
+msgid "UFS"
+msgstr ""
+
+#: ../../using.rst:409
+msgid "XFS"
+msgstr ""
+
+#: ../../using.rst:411
+msgid ""
+"Linux based filesystems may have some limitations. See :numref:`Table %s "
+"<filesys support>` for more details."
+msgstr ""
+
+#: ../../using.rst:414
+msgid ""
+"To engage the automounter, attach a USB storage device or insert optical "
+"media to the system. The automounter detects the device by ID and adds icons"
+" to the desktop, as seen in :numref:`Figure %s <automnt1>`:"
+msgstr ""
+
+#: ../../using.rst:423
+msgid ""
+": USB icons added to desktop via the automounter. Hovering over the icon "
+"displays the actual device name and filesystem type."
+msgstr ""
+
+#: ../../using.rst:426
+msgid ""
+"The appearance of these icons do **not** mean the device is mounted. Devices"
+" are only mounted when the user begins to interact with the device."
+msgstr ""
+
+#: ../../using.rst:430
+msgid ""
+"When either navigating to a device or beginning copy operations, the device "
+"is mounted. The device is unmounted by the **autounmountd** service after "
+"the user navigates away and/or file copy operations stop."
+msgstr ""
+
+#: ../../using.rst:434
+msgid ""
+"For example, the above image shows USB drive \"FreeNAS\" attached to the "
+"system. After double-clicking the desktop icon, \"Insight File Manager\" "
+"opens to the device's location, :file:`autofs/da0`. While "
+":guilabel:`Insight` opens, the automounter mounts the device. After closing "
+":guilabel:`Insight`, the device is also unmounted and safe to remove from "
+"the system."
+msgstr ""
+
+#: ../../using.rst:441
+msgid ""
+"In the CLI, the automounter adds a :file:`.desktop` file to :file:`/media` "
+"when a new USB/Optical device is added. Open the :file:`.desktop` file with "
+":command:`xdg-open` or :command:`lumina-open`. When the device is removed, "
+"the symlink is immediately removed from :file:`/media`."
+msgstr ""
+
+#: ../../using.rst:447
+msgid ""
+"The :file:`/autofs/*` directories are not cleaned when the device is "
+"removed. However, after device removal the directories are no longer "
+"associated with the device in the backend. For this reason, :file:`/media` "
+"is more useful to identify which devices are attached to the system."
+msgstr ""
+
+#: ../../using.rst:453
+msgid ""
+"Alternately, all device names are added to the :file:`/autofs` directory. "
+"Attached devices are also accessed by navigating to "
+":file:`/autofs/<devicename>`."
+msgstr ""
+
+#: ../../using.rst:457
+msgid "Known limitations:"
+msgstr ""
+
+#: ../../using.rst:459
+msgid ""
+"UFS permissions. These permissions are preserved on USB media. To allow "
+"multiple users access to files from a UFS stick, those files' permissions "
+"need to be set to *read/write by any user* (777)."
+msgstr ""
+
+#: ../../using.rst:463
+msgid ""
+"ZFS pools are not yet supported. This is under investigation to ascertain if"
+" it can ever work with :command:`automount`."
+msgstr ""
+
+#: ../../using.rst:466
+msgid ""
+"Optical Media links are not yet created on the desktop. Optical media is "
+"accessible by navigating to :file:`/autofs`."
+msgstr ""
+
+#: ../../using.rst:469
+msgid ""
+"Any file system with limited FreeBSD support (HFS or EXT) remain at the same"
+" level of limited support."
+msgstr ""
+
+#: ../../using.rst:472
+msgid "exFAT detection issues are being investigated."
+msgstr ""
+
+#: ../../using.rst:474
+msgid "Coming soon:"
+msgstr ""
+
+#: ../../using.rst:476
+msgid "Optical media support for the desktop"
+msgstr ""
+
+#: ../../using.rst:478
+msgid "Android device support"
+msgstr ""
+
+#: ../../using.rst:480
+msgid "Possible support for ZFS pools"
+msgstr ""
+
+#: ../../using.rst:488
+msgid ""
+"This utility is scheduled to be retired soon, and may not work as intended."
+msgstr ""
+
+#: ../../using.rst:491
+msgid ""
+"The previous section described the |trueos| automounter. :command:`pc-"
+"sysconfig` is another utility that is used directly from the command line on"
+" |trueos| systems, by window managers without a system tray, or by users who"
+" prefer to use the command line."
+msgstr ""
+
+#: ../../using.rst:496
+msgid "Here is the full usage of :command:`pc-sysconfig`:"
+msgstr ""
+
+#: ../../using.rst:498
+msgid ""
+"Mounting related commands are no longer used in pc-sysconfig and should be "
+"ignored."
+msgstr ""
+
+#~ msgid "Mount Tray"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`SMPlayer <http://smplayer.sourceforge.net/>`_: Universal media player which"
+#~ " can handle any media format and play audio CDs, DVDs, (S)VCDs, TV/radio "
+#~ "cards, YouTube™ and SHOUTcast™ streams. This is the default player used by "
+#~ ":ref:`Mount Tray`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :guilabel:`Mount Tray` graphical application is used to facilitate the "
+#~ "mounting and unmounting of internal disks, USB storage devices, optical "
+#~ "media, and network shares. It is included in the system tray by default. If "
+#~ "the icon is removed from the system tray, it can be re-added by typing "
+#~ ":command:`pc-mounttray &`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When first inserting a USB drive, a :guilabel:`New Device` message will "
+#~ "appear in the system tray. Click the :guilabel:`Mount Tray` icon, then "
+#~ ":guilabel:`Mount` for the device. Mount Tray will try to determine the "
+#~ "filesystem on the device and then to mount it. If it is not sure, a pop-up "
+#~ "menu will prompt to select the correct filesystem. A list of supported "
+#~ "filesystems can be found in :ref:`filesys support`. Once mounted, "
+#~ ":guilabel:`Mount` changes to :guilabel:`Unmount`, and if the device contains"
+#~ " files, an indicator of the drive's used capacity and a button to "
+#~ ":guilabel:`Browse` the contents of the device will be added. An example is "
+#~ "shown in :numref:`Figure %s <mount2>`."
+#~ msgstr ""
+
+#~ msgid ": Mounted USB Device"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the device will be mounted often, it can be configured to mount "
+#~ "automatically when inserted by checking :guilabel:`Auto-Run`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When finished using the device, press :guilabel:`Unmount`. This will safely "
+#~ "unmount the device and toggle the button back to :guilabel:`Mount`. When "
+#~ "attempting to unmount, if the file manager is still open to the device's "
+#~ "contents, a \"Device Busy\" message will be generated. If this message "
+#~ "appears, press :guilabel:`No` to close the pop-up. Close the file manager, "
+#~ "then press :guilabel:`Unmount` again. This will ensure the device is "
+#~ "unmounted cleanly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Mount Tray does allow for the USB device to be physically removed without "
+#~ "unmounting it first. However, it is recommended to always "
+#~ ":guilabel:`Unmount` the drive first."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When first inserting an optical media, such as a music CD or DVD video, a "
+#~ "message will indicate an optical disk is available and, by default, the "
+#~ "default player application will open to play the contents of the disk. The "
+#~ "default player used depends upon which applications have been installed, "
+#~ "where `VLC <http://www.videolan.org/vlc/>`_ takes precedence, followed by "
+#~ "`SMPlayer <http://smplayer.sourceforge.net/>`_. When closing the player, you"
+#~ " can click :guilabel:`Play`, shown in :ref:`mount1`, to restart it."
+#~ msgstr ""
+
+#~ msgid "Many options are available in the :guilabel:`More Options` menu:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Rescan Devices:** Click this option if an entry for a newly inserted "
+#~ "device does not automatically appear."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Load ISO File:** Used to mount an ISO to a memory disk. It will open a "
+#~ "browse menu so you can browse to the location of the :file:`.iso`. Once the "
+#~ "file is selected and mounted, its contents will be displayed in the default "
+#~ "file manager. When finished browsing the contents, close the file manager "
+#~ "and click :guilabel:`Eject` for the memory device in Mount Tray and enter "
+#~ "your password when prompted. As the ISO is unmounted, the memory disk is "
+#~ "also detached from the system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Change Settings:** As seen in :numref:`Figure %s <mount4>`, this screen "
+#~ "allows configuring whether or not optical disks automatically open using the"
+#~ " default player, whether or not Mount Tray automatically rechecks the disk "
+#~ "space used by mounted devices and how often to perform the check, and "
+#~ "whether or not Mount Tray checks disk space when a disk is mounted."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Close Tray:** Click this option to remove Mount Tray from the system tray."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The previous section described |trueos|'s graphical mount utility. This "
+#~ "graphical utility has a command-line backend, :command:`pc-sysconfig`, which"
+#~ " can be used directly from the command line on |trueos| systems, window "
+#~ "managers without a system tray, or by users who prefer to use the command "
+#~ "line."
+#~ msgstr ""
+
+#~ msgid "For usage information, run the command without any options:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the example shown in :numref:`Figure %s <mount1>`, a USB device and a "
+#~ "music CD are currently inserted and the user has hovered over "
+#~ ":guilabel:`More Options` to view the available options."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If any network shares are available, :guilabel:`Network Shares` can be "
+#~ "hovered over to see more options to browse, share, and view types of "
+#~ "available shares."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**View Disk Usage:** In the example shown in :numref:`Figure %s <mount3>`, "
+#~ "an MSDOSFS-formatted USB device is mounted at :file:`/media/lexar`. The "
+#~ "amount of disk space used by the system hard drive and the USB drive is "
+#~ "shown in both GB and as a percentage of available disk space. The Mount Tray"
+#~ " will turn yellow if disk space is over 70% and red if disk space is over "
+#~ "90%. If the internal disk drives are partitioned with any other filesystems,"
+#~ " these will also appear in the Mount Tray."
+#~ msgstr ""
+
+#~ msgid ": Mount Tray"
+#~ msgstr ""
+
+#~ msgid ": Using Mount Tray to View Disk Usage"
+#~ msgstr ""
+
+#~ msgid ": Configuring Disk Space Checks"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If mounting devices from the command line is preferred, see the section on "
+#~ ":ref:`pcsysconfig`."
+#~ msgstr ""
 
 #~ msgid "Ethernet Adapters"
 #~ msgstr ""
