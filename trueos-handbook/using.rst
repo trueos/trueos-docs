@@ -415,9 +415,9 @@ icons to the desktop, as seen in :numref:`Figure %s <automnt1>`:
    mounted. Devices are only mounted when the user begins to interact
    with the device.
 
-When either navigating to a device or beginning copy operations, the
-device is mounted. The device is unmounted by the **autounmountd**
-service after the user navigates away and/or file copy operations stop.
+Either navigating to a device or beginning copy operations mounts the
+device. The device is unmounted by the **autounmountd** service after
+the user navigates away and/or file copy operations stop.
 
 For example, the above image shows USB drive "FreeNAS" attached to
 the system. After double-clicking the desktop icon,
