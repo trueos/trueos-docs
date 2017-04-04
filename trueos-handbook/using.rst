@@ -551,7 +551,7 @@ which is regularly updated against the base FreeBSD ports tree.
 
 When fetching ports for the first time:
 
-:command:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`.
+:command:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`
 
 To update an existing local ports directory:
 
