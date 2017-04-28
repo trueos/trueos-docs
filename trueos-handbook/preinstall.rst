@@ -1,3 +1,4 @@
+.. index:: Preinstallation tasks
 .. _PreInstallation Tasks:
 
 Pre-Installation Tasks
@@ -30,7 +31,7 @@ This section discusses the |trueos| hardware requirements, how to
 prepare the system for installation, and how to obtain and prepare the
 installation media.
 
-.. index:: hardware
+.. index:: Minimum Requirements
 .. _Minimum Requirements:
 
 Minimum Requirements
@@ -57,7 +58,7 @@ At **bare minimum**, these requirements must be met in order to install
 * Network card
 
 Here are the minimum **recommended** requirements. More RAM and
-available disk space will improve the computing experience:
+available disk space improves the computing experience:
 
 **Recommended**
 
@@ -100,34 +101,34 @@ Another good resource is to start the installer and click the
 
 While most hardware "just works" with |trueos|, it is possible to run
 across a piece of hardware which does not. Since |trueos| is essentially
-FreeBSD, any hardware that works on FreeBSD works on |trueos|. If
+FreeBSD, any hardware that works on FreeBSD also works on |trueos|. If
 problems occur with a device, begin with a web search for the term
 "FreeBSD" plus the type and model of the hardware. This search shows
-if there is a known issue with the device. If there are too many search
-results, concentrate on the most recent ones as oftentimes hardware
-previously problematic has since been fixed or the missing driver will
-be available in an upcoming release of FreeBSD. If a problem occurs with
-a device thought to work but does not, or there are no existing problem
-reports for your hardware, please help improve hardware support for all
-FreeBSD and |trueos| users by :ref:`Reporting a bug <Report a bug>` so
-the issue can be addressed by the developers.
+any known issues with the device. If there are too many search results,
+concentrate on the most recent hits, as oftentimes previously problematic
+hardware has since been fixed or the missing driver will be available in
+an upcoming release of FreeBSD. If a problem occurs with a device thought
+to work but does not, or there are no existing problem reports for your
+hardware, please help improve hardware support for all FreeBSD and
+|trueos| users by :ref:`Reporting a bug <Report a bug>` so the issue can
+be addressed by the developers.
 
 The rest of this section provides an overview of the different supported
 hardware.
 
-.. index:: supported processors
+.. index:: Supported Processors
 .. _Processor:
 
 Processor
 ---------
 
-|trueos| should install on any system containing a 64-bit (also called
+|trueos| installs on any system containing a 64-bit (also called
 *amd64*) processor. Despite the name, a 64-bit processor does **not**
 need to be manufactured by AMD in order to be supported. The
 `FreeBSD Hardware Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_
 lists the *amd64* processors known to work.
 
-.. index:: supported graphics solutions
+.. index:: Supported Graphics
 .. _Graphics:
 
 Graphics
@@ -135,7 +136,7 @@ Graphics
 
 Like many open source operating systems, |trueos| uses
 `X.org <https://www.x.org/wiki/>`_ drivers for graphics support.
-|trueos| will automatically detect the optimal video settings for
+|trueos| automatically detects the optimal video settings for
 supported video drivers. Verify the graphics hardware is supported by
 clicking the :guilabel:`Hardware Compatibility` icon within the
 installer.
@@ -215,9 +216,8 @@ typically deal with:
   describes how to enable Synaptics and some of the :command:`sysctl`
   options this feature provides.
 
-  .. TODO add in when mouse manager is live: The
-     `SysAdm Mouse Manager <https://sysadm.us/handbook/client/>`_ also
-     has options for disabling a system's touchpad.
+  The `SysAdm Mouse Settings <https://sysadm.us/handbook/client/>`_
+  also has options for disabling a system's touchpad, if one is detected.
 
 To test the laptop's hardware, use the
 :guilabel:`Hardware Compatibility` icon in the
@@ -243,7 +243,7 @@ the installer and go into :guilabel:`Advanced Mode` in the
 :guilabel:`GPT (Best for new hardware)` is unchecked. If it was
 checked previously, redo the installation with the box unchecked.
 
-.. index:: partition
+.. index:: Create free space
 .. _Creating Free Space:
 
 Creating Free Space
@@ -253,8 +253,8 @@ To dual-boot |trueos| with an existing operating system, first make sure
 there is either a free partition or an area of free space to use. For
 example, if the system is currently running a Windows operating system,
 it usually occupies the entire hard drive. The partition with the
-current operating system will need to shrink to make room to install
-|trueos|. Shrinking is an operation that retains the current operating
+current operating system needs to shrink to make room to install
+|trueos|. Shrinking is an operation which retains the current operating
 system while reducing the size of its partition. This section
 demonstrates how to create free space within Windows 10.
 
@@ -272,7 +272,7 @@ a 100 MB system partition.
 .. figure:: images/partition1.png
    :scale: 100%
 
-   : Disk Layout in Disk Management
+   Disk Layout in Disk Management
 
 Since the three Windows partitions fill the entire disk, the data
 partition must be shrunk to create space to install |trueos|.
@@ -285,7 +285,7 @@ and select :guilabel:`Shrink Volume`, as shown in
 .. figure:: images/partition2.png
    :scale: 100%
 
-   : Shrink Volume Menu Selection
+   Shrink Volume Menu Selection
 
 Wait as the volume is queried for available shrink space. The results
 are shown in :numref:`Figure %s <shrink1>`.
@@ -295,7 +295,7 @@ are shown in :numref:`Figure %s <shrink1>`.
 .. figure:: images/shrink1.png
    :scale: 100%
 
-   : Available Shrink Space
+   Available Shrink Space
 
 Here, 119307 MB of space is available. This is the maximum amount
 Windows can shrink this particular partition. Accept that number, or
@@ -309,7 +309,7 @@ space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
 .. figure:: images/shrink2.png
    :scale: 100%
 
-   : Disk with Free Space
+   Disk with Free Space
 
 .. warning:: It is important to **not** choose to install |trueos| into
    any of the three Windows partitions at the
@@ -331,15 +331,15 @@ Periodically, the |sysadm|
 provides a patch which updates the operating system to include all of
 the new features and drivers. To have or test the latest features and
 drivers as they become available, and you can tolerate possible breakage
-caused by new features being available before the next RELEASE, use the
-STABLE version.
+caused by new features being available before the next STABLE release,
+use the UNSTABLE version.
 
 Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_ or the
 `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_.
 
 Several types of files are available for download. Before downloading
-a file, review these descriptions to see which one best suits the need:
+a file, review these descriptions to see which one best suits your need:
 
 * Files beginning with :file:`TrueOS-Desktop` contain all of the
   information needed to install either a graphical desktop or
@@ -386,7 +386,7 @@ users and get any questions answered. Check the
 are happening near you. If organizing a |trueos| booth, contact us
 `on Gitter <https://gitter.im/trueos>`_ to arrange for DVDs.
 
-.. index:: checksum
+.. index:: data integrity check
 .. _Data Integrity Check:
 
 Data Integrity Check
@@ -396,12 +396,14 @@ After downloading the desired file, it is a good idea to check the file
 is exactly the same as the one on the |trueos| download server. While
 downloading, a portion of the file may get damaged or lost, making the
 installation file unusable. Each |trueos| installation file has an
-associated MD5 and SHA256 checksum. If a checksum of the file downloaded
-matches, the download was successful. If a checksum does not match, try
-downloading the file again. In order to verify a checksum, use a
+associated *MD5* and *SHA256* checksum. If a checksum of the downloaded
+file matches, the download was successful. If a checksum does not match,
+try downloading the file again. In order to verify a checksum, use a
 checksum verification utility.
 
 .. note:: Only one of the checksums needs to be verified. The
+   `TrueOS website <http://download.trueos.org/master/amd64/>`_ lists
+   both the *.MD5* and *SHA256* files. The
    `PC-BSD® website <http://www.pcbsd.org/download/>`_  lists the
    *SHA256* while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
    both the :file:`.md5` and the :file:`.sha256` checksum files. This
@@ -409,9 +411,9 @@ checksum verification utility.
 
 If using a Windows system, download and install a utility such as
 `Raymond's MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html>`_.
-This utility can be used to simultaneously check the MD5, SHA-1,
-SHA-256, and SHA-512 checksums of any file. Once installed, launch the
-program and use :guilabel:`Browse`, shown in
+This utility can be used to simultaneously check the *MD5*, *SHA-1*,
+*SHA-256*, and *SHA-512* checksums of any file. Once installed, launch
+the program and use :guilabel:`Browse`, shown in
 :numref:`Figure %s <fastsum1>`, to browse to the location of the
 downloaded file.
 
@@ -420,7 +422,7 @@ downloaded file.
 .. figure:: images/checksum.png
    :scale: 100%
 
-   : Checksum Verification
+   Checksum Verification
 
 Once the file is selected, click :guilabel:`Open` to calculate the
 checksums. It may take a minute or so, depending upon the size of the
@@ -429,7 +431,7 @@ downloaded file.
 On Linux and BSD systems, use the built-in :command:`md5` or
 :command:`md5sum` command line tool to check the MD5 checksum. In this
 example, the file is located in the :file:`Downloads` directory. Using
-:command:`md5 Downloads/TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5`,
+:samp:`md5 Downloads/TrueOS-2017-04-21-x64-DVD.iso.md5`,
 substitute the name and location of the downloaded file.
 
 .. index:: burn installation media
@@ -439,24 +441,20 @@ Burning the Installation Media
 ------------------------------
 
 Once the installation file is downloaded and its checksum verified, burn
-it to a media. Which media depends upon the file downloaded:
+it to a media. The media you use depends upon the file downloaded:
 
-* Files beginning with :file:`TrueOS-Desktop` and ending with
-  :file:`.iso` must be burned to a DVD.
-
-* Files beginning with :file:`TrueOS-Server` and ending with
-  :file:`.iso` should be burned to a CD.
+* Files ending with :file:`.iso` must be burned to a DVD.
 
 * Files ending in :file:`img` must be burned to a USB stick.
 
-To burn to a CD or DVD, use either a burning utility packaged with the
+To burn to a DVD, use either a burning utility packaged with the
 operating system on the system with the burner or a separate burning
 application. :numref:`Table %s <burn utils>` lists some freely available
 burning utilities.
 
 .. _burn utils:
 
-.. table:: : Free Burning Utilities
+.. table:: Free Burning Utilities
 
    +-----------------------+------------------------------------------------------------------------------------------------+
    | Operating System      | Utility                                                                                        |
@@ -581,7 +579,7 @@ stick has a device name of :file:`/dev/disk1` and a raw device name of
 Virtualization
 ==============
 
-A virtualized environment allows to test drive an operating system
+A virtualized environment allows a user to test drive an operating system
 without overwriting the current operating system. This is an excellent
 way to practice installation, determine whether the hardware is
 supported, or to try multiple versions of different operating systems.
@@ -647,7 +645,7 @@ in :numref:`Figure %s <vbox1>`.
 .. figure:: images/vbox1a.png
    :scale: 100%
 
-   : VirtualBox Menu
+   VirtualBox Menu
 
 Click :guilabel:`New` to start the new virtual machine wizard and
 display the screen in :numref:`Figure %s <vbox2>`.
@@ -657,7 +655,7 @@ display the screen in :numref:`Figure %s <vbox2>`.
 .. figure:: images/vbox2a.png
    :scale: 100%
 
-   : Create Virtual Machine - Name, Type, and Version
+   Create Virtual Machine - Name, Type, and Version
 
 Enter a name for the virtual machine; it can be anything which makes
 sense to you. Click the :guilabel:`Operating System` drop-down menu and
@@ -670,7 +668,7 @@ screen in :numref:`Figure %s <vbox3>`.
 .. figure:: images/vbox3a.png
    :scale: 100%
 
-   : Virtual Machine Reserved Memory
+   Virtual Machine Reserved Memory
 
 The base memory size must be changed to **at least 1024 MB.** If the
 system has a lot of RAM, use more. Any number within the green area is
@@ -683,7 +681,7 @@ screen in :numref:`Figure %s <vbox4>`.
 .. figure:: images/vbox4a.png
    :scale: 100%
 
-   : Virtual Hard Drive - New or Existing
+   Virtual Hard Drive - New or Existing
 
 This screen is used to create the virtual hard drive, or the amount of
 disk space available to the virtual machine. If this is your first
@@ -703,7 +701,7 @@ virtual machines.
 .. figure:: images/vbox5a.png
    :scale: 100%
 
-   : Hard Drive Type
+   Hard Drive Type
 
 Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
 :numref:`Figure %s <vbox6>`.
@@ -713,7 +711,7 @@ Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
 .. figure:: images/vbox6a.png
    :scale: 100%
 
-   : Storage Type
+   Storage Type
 
 Now choose whether to have :guilabel:`Dynamically allocated` or
 :guilabel:`Fixed size` storage. The first option uses disk space as
@@ -729,7 +727,7 @@ the screen in :numref:`Figure %s <vbox7>` displays.
 .. figure:: images/vbox7a.png
    :scale: 100%
 
-   : Virtual Disk - File Name and Size
+   Virtual Disk - File Name and Size
 
 This screen is used to set the size (or upper limit) of the virtual
 machine. If planning to install |trueos| into the virtual machine,
@@ -750,7 +748,7 @@ seen in the example in :numref:`Figure %s <vbox8>`.
 .. figure:: images/vbox8a.png
    :scale: 100%
 
-   : New Virtual Machine "test"
+   New Virtual Machine "test"
 
 In order to use the network card, configure bridging on the virtual
 machine. To do this, go to :menuselection:`Settings --> Network`. In
@@ -766,7 +764,7 @@ of :file:`re0`.
 .. figure:: images/vbox9a.png
    :scale: 100%
 
-   : VirtualBox Bridged Adapter Configuration
+   VirtualBox Bridged Adapter Configuration
 
 Before starting the virtual machine, configure it to use the
 installation media. Click the :guilabel:`Storage` hyperlink in the right
@@ -777,7 +775,7 @@ frame to access the storage screen seen in :numref:`Figure %s <vbox10>`.
 .. figure:: images/vbox10a.png
    :scale: 100%
 
-   : Virtual Machine Storage Settings
+   Virtual Machine Storage Settings
 
 Double-click the word :guilabel:`Empty`, which represents the DVD
 reader. To access the |trueos| installer from the DVD reader,

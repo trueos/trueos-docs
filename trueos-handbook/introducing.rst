@@ -25,16 +25,16 @@ operating system that meets the desktop or server needs of the beginner
 to the advanced user alike.
 
 |trueos| is essentially a customized installation of FreeBSD, not a
-forked derivative. Since the underlying FreeBSD system has been kept
-intact, you have a fully functional FreeBSD system under the hood.
-|trueos| provides an easy-to-use installer which can be used to install
-a desktop or a server version of FreeBSD. Other differences from FreeBSD
+forked derivative. Since the underlying FreeBSD system is kept intact,
+you have a fully functional FreeBSD system under the hood. |trueos|
+provides an easy-to-use installer which can be used to install a
+desktop or a server version of FreeBSD. Other differences from FreeBSD
 include: 
 
 * |trueos| pre-configures the BSD-licensed |lumina| desktop
   environment during a desktop installation. Additional desktop
   environments can be installed and appear in the login menu,
-  allowing the user to select the environment to log into.
+  allowing the user to select their environment.
 
 * The |trueos| installer supports configuring ZFS and encryption during
   installation.
@@ -61,7 +61,7 @@ While it began as an independent project, |trueos| is financially backed
 and supported by the enterprise-class hardware solutions provider
 `iXsystems <https://www.ixsystems.com/>`_ since October 2006.
 
-.. index:: introduction, typographic
+.. index:: typographic conventions
 .. _Typographic Conventions:
 
 Typographic Conventions
@@ -73,7 +73,7 @@ conventions:
 
 .. _typconv:
 
-.. table:: : Text Formatting Examples
+.. table:: Text Formatting Examples
 
    +-------------------------+------------------------------------------------+
    | Item                    | Visual Example                                 |
@@ -100,11 +100,11 @@ conventions:
    | fields, or device names |                                                |
    +-------------------------+------------------------------------------------+
 
-.. index:: introduction, features
+.. index:: features
 .. _Goals and Features:
 
-Goals and Features
-==================
+Features
+========
 
 |trueos| provides many features:
 
@@ -116,7 +116,7 @@ Goals and Features
 * **Automatically configured hardware:** Video, sound, network, and
   other devices configure automatically during installation.
 
-* **Intuitive desktop interface:** |trueos| installs the |lumina|
+* **Customizable desktop interface:** |trueos| installs the |lumina|
   desktop, but additional desktop environments can be installed to
   support day-to-day computing needs.
 
@@ -134,11 +134,19 @@ Goals and Features
   system enhancements. Additionally, the Update Manager is used to
   upgrade the operating system or update installed software.
 
+  Currently, users can choose to follow one of two "tracks" for updates:
+  UNSTABLE and STABLE. UNSTABLE updates are the "bleeding edge" of
+  TrueOS development, for those users who want to test bugfixes and
+  new features. STABLE updates are less frequent, but more reliable.
+  These updates benefit from the testing and patches submitted by our
+  UNSTABLE testers.
+
 * **Virus-free:** |trueos| is unaffected by viruses, spyware, or other
   malware (see :ref:`Security`).
 
 * **No defragmentation:** |trueos| hard drives never need to be
-  defragmented and are formatted with OpenZFS, a self-healing filesystem.
+  defragmented and are formatted with OpenZFS, a self-healing
+  filesystem.
 
 * **Laptop support:** Provides power saving, swap space encryption, and
   automatic switching between wired and wifi network connections. The
@@ -247,7 +255,7 @@ VMWare® is a registered trademark of VMWare, Inc.
 Windows® is a registered trademark of Microsoft Corporation in the
 United States and other countries.
 
-.. index:: ethical advertising
+.. index:: advertising policy
 .. _Ad policy:
 
 Ethical Advertising Policy
@@ -258,7 +266,7 @@ Generally, we encouraged users to donate or actively contribute to the
 FreeBSD project to ensure FreeBSD continues to be successful in the
 future. Because |trueos| is open source software, we have included a
 minimal number of ads as a simple method for users to give back to the
-project, if they wish. 
+project, if they wish.
 
 The primary consideration for these ads is to avoid detracting from the
 user experience as much as possible. To this end, any ads in the
@@ -267,7 +275,7 @@ predefined space underneath all other navigation options. We are
 resolved to protect user privacy and security, and do not collect user
 information, with the exception of click throughs. Furthermore, we do
 not collect any data for targeted ads, and are committed to only show
-high quality ads pertaining to our user base.  
+high quality ads pertaining to our user base.
 
 **Cookie Policy**
 
@@ -278,7 +286,7 @@ ensure the |trueos| project is afforded its commission. To ask questions
 about our Ethical Advertising policy, please contact joshms@trueos.org
 for more information.
 
-.. index:: comparisons
+.. index:: comparing TrueOS
 .. _Comparing TrueOS:
 
 Comparing |trueos|
@@ -304,7 +312,7 @@ now separate |trueos| from |pcbsd|:
 
 * Based on FreeBSD-CURRENT.
 
-* The GRUB bootloader has been replaced by the FreeBSD bootloader which
+* The GRUB bootloader has been replaced by the FreeBSD bootloader, which
   now provides both GELI and boot environment support. The
   :guilabel:`Use GRUB bootloader` checkbox has been added to the
   :guilabel:`Customize Disk Selection` screens for users of dual-boot
@@ -320,10 +328,10 @@ now separate |trueos| from |pcbsd|:
   introduces a new level of differentiation from FreeBSD as |trueos| now
   uses some different system services. These differences are listed in
   :numref:`Table %s <sysserv>`
-  
+
   .. _sysserv:
-  
-  .. table:: : Different system services between |trueos| and FreeBSD
+
+  .. table:: Different system services between |trueos| and FreeBSD
 
      +------------------+--------------+-----------------+
      | |trueos| Service | Started From | FreeBSD Service | 
@@ -337,7 +345,7 @@ now separate |trueos| from |pcbsd|:
      +------------------+--------------+-----------------+
      | dhcpcd           | Ports        | dhclient        |
      +------------------+--------------+-----------------+
-     
+
   .. note:: :ref:`sysserv` will be updated as development continues on
      the |trueos| implementation of OpenRC. For a complete list of all
      available services through OpenRC, see :ref:`rcuprnlvl`.
@@ -362,11 +370,11 @@ now separate |trueos| from |pcbsd|:
   * Firewall Manager
   * User Manager
   * Network Manager
-  
+
 * The functionality provided by the *About* utility has been
   incorporated into
   `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html#lumina-information>`_.
-  
+
 * The functionality provided by the
   `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
   (:command:`pc-servicemanager`) has been integrated into |sysadm|.
@@ -402,7 +410,7 @@ now separate |trueos| from |pcbsd|:
 * The :guilabel:`Boot to console (Disable X)` option has been added to
   the graphical boot menu.
 
-* These new utilites are available in the *SysAdm Client*
+* These new utilites are available in the *SysAdm Client*:
   `Managing Remote Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-remote-connections>`_
   and
   `Task Manager <https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_.
@@ -438,7 +446,7 @@ some graphical file manager utilities.
 
 .. _filesys support:
 
-.. table:: : Filesystem Support on |trueos|
+.. table:: Filesystem Support on |trueos|
 
    +------------+-----------+-------------------------+--------------------------------------------------------+
    | Filesystem | Native to | Non-native support type | Usage notes                                            |
@@ -510,7 +518,7 @@ provides some common examples:
 
 .. _feature names:
 
-.. table:: : BSD and Linux Feature Names
+.. table:: BSD and Linux Feature Names
 
    +--------------------------------+---------------------+--------------------------------+
    | TrueOS                         | Linux               | Description                    |
@@ -537,7 +545,7 @@ what they are used for.
 
 .. _common commands:
 
-.. table:: : Common BSD and Linux Commands
+.. table:: Common BSD and Linux Commands
 
    +-----------------------------------+-----------------------------+
    | Command                           | Used                        |
@@ -598,14 +606,28 @@ about some of the differences between BSD and Linux:
 * `A Sysadmin's Unixersal Translator (ROSETTA STONE) <http://bhami.com/rosetta.html>`_
 
 .. TODO Work in comparison sections with Windows and Mac OSX:
-   .. index:: introduction, comparing, Windows
-   .. _Windows:
+   .. index:: TrueOS and Windows
+   .. _compareWindows:
 
-   Windows
-   -------
+   TrueOS and Windows
+   ------------------
+   
+   There are a large number of differences between TrueOS and Windows:
+   * exFAT/NTFS
+   * Microsoft Office/OpenOffice/LibreOffice
+   * Photoshop/GIMP
+   * Acrobat/Okular
+   * background services/user control
+   * application support/WINE
+   * Windows Media/VLC
 
-   .. index:: introduction, comparing, Mac
-   .. _Mac OS:
+   .. index:: MacOSX and TrueOS
+   .. _compareMacOSX:
 
-   Mac OS
-   ------
+   Mac OS X and TrueOS
+   -------------------
+
+   Mac OS X is actually related to FreeBSD, resulting in some system level
+   similarities. However, application development has diverged pretty strongly,
+   so here are some suggestions for TrueOS/FreeBSD applications which may
+   "fill the void" from your Mac system.
