@@ -126,7 +126,7 @@ or type :command:`flash-player-properties`.
 .. figure:: images/flash1.png
    :scale: 100%
 
-   : Flash Player Configuration
+   Flash Player Configuration
 
 The options available in each tab and when to use them are described on
 the Adobe website:
@@ -185,7 +185,7 @@ in :guilabel:`Output`.
 .. figure:: images/sound1.png
    :scale: 100%
 
-   : Mixer Icon
+   Mixer Icon
 
 :numref:`Figure %s <sound2>` shows the menu which opens when you instead
 click :guilabel:`Mixer` button shown in :ref:`sound1`.
@@ -195,7 +195,7 @@ click :guilabel:`Mixer` button shown in :ref:`sound1`.
 .. figure:: images/sound2.png
    :scale: 100%
 
-   : Mixer Controls
+   Mixer Controls
 
 The :guilabel:`Mixer Controls` screen provides sliders to modify the
 left and right channels that control volume, pcm (the sound driver),
@@ -212,7 +212,7 @@ tab.
 .. figure:: images/sound3.png
    :scale: 100%
 
-   : System Sound Configuration
+   System Sound Configuration
 
 This tab contains several options:
 
@@ -408,7 +408,7 @@ icons to the desktop, as seen in :numref:`Figure %s <automnt1>`:
 .. figure:: images/automnt1.png
    :scale: 65%
 
-   : USB icons added to desktop via the automounter. Hovering over the
+   USB icons added to desktop via the automounter. Hovering over the
    icon displays the actual device name and filesystem type.
 
 .. tip:: The appearance of these icons do **not** mean the device is
@@ -575,9 +575,14 @@ listed in the :guilabel:`Install` column. To research a file manager's
 capabilities, start with the URL listed in its :guilabel:`Screenshot`
 column.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}|
+
 .. _filemanagers:
 
-.. table:: : Available File Managers
+.. table:: Available File Managers
+   :class: longtable
 
    +-------------+--------------+-------------------------------------------------------------+
    | Application | Install      | Screenshots                                                 |
@@ -609,9 +614,13 @@ you are doing.
 found on a |trueos| system. :command:`man hier` explains this directory
 structure in more detail.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
 .. _dirstructure:
 
-.. table:: : |TrueOS| Directory Structure
+.. table:: |TrueOS| Directory Structure
+   :class: longtable
 
    +-------------------------+------------------------------------------+
    | Directory               | Contents                                 |
@@ -701,9 +710,14 @@ Windows shares on your network.
 :numref:`Table %s <windows shares utils>` summarizes some of the
 available utilities.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}|
+
 .. _windows shares utils:
 
-.. table:: : Utilities that Support Windows Shares
+.. table:: Utilities that Support Windows Shares
+   :class: longtable
 
    +-------------+--------------+-----------------------------------------------------+
    | Application | Install      | How to Access Existing Shares                       |
@@ -753,7 +767,7 @@ available, right-click the device to start formatting.
 .. figure:: images/disk1.png
    :scale: 100%
 
-   : Managing Disks
+   Managing Disks
 
 To view the status of the ZFS pool(s) and the disk(s) in each pool,
 click the :guilabel:`ZFS Pools` tab. In the example
@@ -765,7 +779,7 @@ from one disk. :guilabel:`Online` indicates the pool is healthy.
 .. figure:: images/disk2.png
    :scale: 100%
 
-   : ZFS Pool Status
+   ZFS Pool Status
 
 Right-click the pool name to view a number of options:
 
@@ -820,7 +834,7 @@ dataset is using.
 .. figure:: images/disk3.png
    :scale: 100%
 
-   : ZFS Datasets
+   ZFS Datasets
 
 The name of the pool in this example is *tank1*. If the system has
 multiple pools, click the :guilabel:`green arrow` to select the desired
@@ -840,7 +854,7 @@ options:
   .. figure:: images/disk4.png
      :scale: 100%
 
-     : Creating New ZFS Dataset
+     Creating New ZFS Dataset
 
 * **Create a clone dataset:** Creates a copy of the dataset.
 
@@ -869,7 +883,7 @@ options:
   .. figure:: images/disk5.png
      :scale: 100%
 
-     : Editing the Pool's ZFS Properties
+     Editing the Pool's ZFS Properties
 
 When creating a new dataset or clone, several options are available.
 Again, these options are described in :command:`man zfs` with changes
@@ -935,7 +949,7 @@ connection speed, MAC address, and type of wireless device.
 .. figure:: images/network1.png
    :scale: 100%
 
-   : System Tray Wireless Information
+   System Tray Wireless Information
 
 If you right-click the wireless icon, a list of detected wireless
 networks will appear. Click the name of a network to associate with it.
@@ -961,7 +975,7 @@ an Intel wireless interface that uses the **wlan** driver.
 .. figure:: images/network2.png
    :scale: 100%
 
-   : Network Manager
+   Network Manager
 
 The rest of this section describes each tab of the Network Manager
 utility and demonstrates how to view and configure the network settings
@@ -984,7 +998,7 @@ name, the screen shown in :numref:`Figure %s <network3>` will appear.
 .. figure:: images/network3.png
    :scale: 100%
 
-   : Network Settings for an Ethernet Interface
+   Network Settings for an Ethernet Interface
 
 There are two ways to configure an Ethernet interface:
 
@@ -1028,7 +1042,7 @@ understanding of how to input an appropriate replacement address.
 .. figure:: images/network4.png
    :scale: 100%
 
-   : Ethernet Interface Network Settings - Advanced
+   Ethernet Interface Network Settings - Advanced
 
 The :guilabel:`Info` tab, seen in :numref:`Figure %s <network5>`,
 displays the current network address settings and some traffic
@@ -1039,7 +1053,7 @@ statistics.
 .. figure:: images/network5.png
    :scale: 100%
 
-   : Ethernet Interface Network Settings - Info
+   Ethernet Interface Network Settings - Info
 
 If any changes are made within any of the tabs, click :guilabel:`Apply`
 to activate them. Click :guilabel:`OK` when finished to return to the
@@ -1068,7 +1082,7 @@ with the wireless network listed in the
 .. figure:: images/network6.png
    :scale: 100%
 
-   : Wireless Configuration
+   Wireless Configuration
 
 To associate with a wireless network, click :guilabel:`Scan` to receive
 a list of connectable wireless networks. Highlight the desired network
@@ -1102,7 +1116,7 @@ authentication settings by highlighting an entry in the
 .. figure:: images/network7.png
    :scale: 100%
 
-   : Configuring Wireless Authentication Settings
+   Configuring Wireless Authentication Settings
 
 This screen provides configuration of different types of wireless
 security:
@@ -1126,7 +1140,7 @@ security:
   .. figure:: images/network8.png
      :scale: 100%
 
-     : WEP Security Settings
+     WEP Security Settings
 
 * **WPA Personal:** This type of network uses a plaintext key. If you
   click :guilabel:`WPA Personal` then :guilabel:`Configure`, the screen
@@ -1139,7 +1153,7 @@ security:
   .. figure:: images/network9.png
      :scale: 100%
 
-     : WPA Personal Security Settings
+     WPA Personal Security Settings
 
 * **WPA Enterprise:** If you click :guilabel:`WPA Enterprise` then
   :guilabel:`Configure`, the screen shown in
@@ -1153,7 +1167,7 @@ security:
   .. figure:: images/network10.png
      :scale: 100%
 
-     : WPA Enterprise Security Settings
+     WPA Enterprise Security Settings
 
 .. note:: If unsure which type of encryption is being used, ask the
    person who setup the wireless router. They should also be able to
@@ -1185,7 +1199,7 @@ allows configuring several options:
 .. figure:: images/network11.png
    :scale: 100%
 
-   : Wireless Interface - Advanced
+   Wireless Interface - Advanced
 
 The :guilabel:`Info` tab, seen in :numref:`Figure %s <network12>`, shows
 the current network status and statistics for the wireless interface.
@@ -1195,7 +1209,7 @@ the current network status and statistics for the wireless interface.
 .. figure:: images/network12.png
    :scale: 100%
 
-   : Wireless Interface - Info
+   Wireless Interface - Info
 
 .. index:: network
 .. _Network Configuration (Advanced):
@@ -1214,7 +1228,7 @@ highlighted in the :guilabel:`Devices` tab.
 .. figure:: images/network13.png
    :scale: 100%
 
-   : Network Configuration - Advanced
+   Network Configuration - Advanced
 
 If the interface receives its IP address information from a DHCP
 server, this screen allows viewing of the received DNS information. To
@@ -1283,7 +1297,7 @@ the Internet.
 .. figure:: images/network14.png
    :scale: 100%
 
-   : Proxy Settings Configuration
+   Proxy Settings Configuration
 
 Check :guilabel:`Proxy Configuration` to activate the settings. Some
 settings can be configured in this screen:
@@ -1329,7 +1343,7 @@ Right-click the entry for a wireless device, as seen in
 .. figure:: images/network15.png
    :scale: 100%
 
-   : Setup Access Point
+   Setup Access Point
 
 :numref:`Figure %s <network16>` shows the configuration screen if
 :guilabel:`Setup Access Point` is selected.
@@ -1339,7 +1353,7 @@ Right-click the entry for a wireless device, as seen in
 .. figure:: images/network16.png
    :scale: 100%
 
-   : Access Point Basic Setup
+   Access Point Basic Setup
 
 The :guilabel:`Basic Setup` tab of this screen contains two options:
 
@@ -1358,7 +1372,7 @@ The :guilabel:`Basic Setup` tab of this screen contains two options:
 .. figure:: images/network17.png
    :scale: 100%
 
-   : Access Point Advanced Setup
+   Access Point Advanced Setup
 
 The settings in this screen are optional and allow for fine-tuning the
 access point's configuration:
@@ -1398,7 +1412,7 @@ https://check.torproject.org
 .. figure:: images/tor1.png
    :scale: 100%
 
-   : Enabling Tor Mode
+   Enabling Tor Mode
 
 If you have never used the Tor network before, it is recommended to
 read the link for the Tor FAQ. Click :guilabel:`Yes` to enable tor mode
@@ -1458,7 +1472,7 @@ The initial Wine configuration menu is shown in
 .. figure:: images/wine1.png
    :scale: 100%
 
-   : Wine Configuration Menu
+   Wine Configuration Menu
 
 Click :guilabel:`Add application` to browse to the application's
 installer file. By default, the contents of the hard drive will be
@@ -1482,7 +1496,7 @@ shown in :numref:`Figure %s <wine2>`.
 .. figure:: images/wine2.png
    :scale: 100%
 
-   : Installing the Application Using :command:`winefile`
+   Installing the Application Using :command:`winefile`
 
 Click the button representing the drive containing the installer and
 double-click on the installation file (e.g. :file:`setup.exe`). The
@@ -1501,7 +1515,7 @@ Explorer within :command:`winefile`.
 .. figure:: images/wine3.png
    :scale: 100%
 
-   : Running the Installed Application
+   Running the Installed Application
 
 .. index:: security
 .. _Security:
@@ -1653,7 +1667,7 @@ the CUPS configuration, shown in:numref:`Figure %s <print4>`.
 .. figure:: images/print4a.png
    :scale: 100%
 
-   : Printer Configuration
+   Printer Configuration
 
 To add a new printer, click :guilabel:`Add Printer`. CUPS will pause
 for a few seconds as it searches for available printers. When it is
@@ -1665,7 +1679,7 @@ finished it will display a screen similar to
 .. figure:: images/print5a.png
    :scale: 100%
 
-   : Print Device Selection
+   Print Device Selection
 
 In this example, the wizard has found the HP DeskJet 3630 printer on
 both the USB port (first entry) and the wireless network (second entry).
@@ -1679,7 +1693,7 @@ successful, it will display the screen shown in
 .. figure:: images/print6a.png
    :scale: 100%
 
-   : Describe Printer
+   Describe Printer
 
 This screen automatically fills out the printer model series, a
 description, and the type of connection. If desired, add a descriptive
@@ -1699,7 +1713,7 @@ detail.
 .. figure:: images/print7a.png
    :scale: 100%
 
-   : Viewing the Default Driver
+   Viewing the Default Driver
 
 The next screen, shown in :numref:`Figure %s <print8>`, can be used to
 modify the properties of the printer.
@@ -1709,7 +1723,7 @@ modify the properties of the printer.
 .. figure:: images/print8a.png
    :scale: 100%
 
-   : Modify Print Properties
+   Modify Print Properties
 
 It is recommended to take a few minutes to review the settings in the
 :guilabel:`General`, :guilabel:`Banners`, and :guilabel:`Policies` tabs
@@ -1726,7 +1740,7 @@ new printer displayed. An example is shown in
 .. figure:: images/print9a.png
    :scale: 100%
 
-   : Manage Printer
+   Manage Printer
 
 Print a test page to ensure the printer is working. Ensure the printer
 has paper and click :menuselection:`Maintenance -> Print Test Page`. If
@@ -1818,7 +1832,7 @@ search for your device at the
 .. figure:: images/sane1.png
    :scale: 100%
 
-   : XSane Interface
+   XSane Interface
 
 The
 `XSane documentation <http://www.xsane.org/doc/sane-xsane-doc.html>`_

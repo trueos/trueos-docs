@@ -452,9 +452,13 @@ operating system on the system with the burner or a separate burning
 application. :numref:`Table %s <burn utils>` lists some freely available
 burning utilities.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.65\linewidth-2\tabcolsep}|
+
 .. _burn utils:
 
 .. table:: Free Burning Utilities
+   :class: longtable
 
    +-----------------------+------------------------------------------------------------------------------------------------+
    | Operating System      | Utility                                                                                        |
@@ -541,7 +545,7 @@ drive and select its drive letter (in this example, drive **D**). Click
 .. figure:: images/writer1.png
    :scale: 100%
 
-   : Write an Image using Win32 Disk Imager
+   Write an Image using Win32 Disk Imager
 
 To burn the :file:`.img` file on Mac OS X, insert a USB stick and open
 *Terminal*. Run :command:`diskutil list` to discover the device name of

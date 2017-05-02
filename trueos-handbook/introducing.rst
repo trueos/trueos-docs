@@ -29,7 +29,7 @@ forked derivative. Since the underlying FreeBSD system is kept intact,
 you have a fully functional FreeBSD system under the hood. |trueos|
 provides an easy-to-use installer which can be used to install a
 desktop or a server version of FreeBSD. Other differences from FreeBSD
-include: 
+include:
 
 * |trueos| pre-configures the BSD-licensed |lumina| desktop
   environment during a desktop installation. Additional desktop
@@ -71,34 +71,42 @@ The |trueos| User Guide uses several typographic conventions.
 :numref:`Table %s <typconv>` provides a simple reference for these
 conventions:
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
 .. _typconv:
 
 .. table:: Text Formatting Examples
+   :class: longtable
 
-   +-------------------------+------------------------------------------------+
-   | Item                    | Visual Example                                 |
-   +=========================+================================================+
-   | Graphical elements:     | Click the :guilabel:`Import CA` button.        |
-   | buttons, icons, fields, |                                                |
-   | columns and boxes       |                                                |
-   +-------------------------+------------------------------------------------+
-   | Menu selections         | Click :menuselection:`System --> Information`. |
-   +-------------------------+------------------------------------------------+
-   | CLI Command name        | Use :command:`scp`.                            |
-   +-------------------------+------------------------------------------------+
-   | A command line example  | :samp:`[tmoore@example] ls /etc`               |
-   +-------------------------+------------------------------------------------+
-   | Files, volume and       | Locate the :file:`/etc/rc.conf` file.          |
-   | dataset names, and      |                                                |
-   | directories             |                                                |
-   +-------------------------+------------------------------------------------+
-   | Keyboard keys           | Press the :kbd:`Enter` key.                    |
-   +-------------------------+------------------------------------------------+
-   | Important points        | **This is important.**                         |
-   +-------------------------+------------------------------------------------+
-   | Values entered into     | Enter *127.0.0.1* in the address field.        |
-   | fields, or device names |                                                |
-   +-------------------------+------------------------------------------------+
+   +---------------------+------------------------------------------+
+   | Item                | Visual Example                           |
+   +=====================+==========================================+
+   | Graphical elements: | Click the :guilabel:`Import CA` button.  |
+   | buttons, icons,     |                                          |
+   | fields, columns and |                                          |
+   | boxes               |                                          |
+   +---------------------+------------------------------------------+
+   | Menu selections     | Click                                    |
+   |                     | :menuselection:`System --> Information`. |
+   +---------------------+------------------------------------------+
+   | CLI Command name    | Use :command:`scp`.                      |
+   +---------------------+------------------------------------------+
+   | A command line      | :samp:`[tmoore@example] ls /etc`         |
+   | example             |                                          |
+   +---------------------+------------------------------------------+
+   | Files, volume and   | Locate the :file:`/etc/rc.conf` file.    |
+   | dataset names, and  |                                          |
+   | directories         |                                          |
+   +---------------------+------------------------------------------+
+   | Keyboard keys       | Press the :kbd:`Enter` key.              |
+   +---------------------+------------------------------------------+
+   | Important points    | **This is important.**                   |
+   +---------------------+------------------------------------------+
+   | Values entered into | Enter *127.0.0.1* in the address field.  |
+   | fields, or device   |                                          |
+   | names               |                                          |
+   +---------------------+------------------------------------------+
 
 .. index:: features
 .. _Goals and Features:
@@ -329,9 +337,14 @@ now separate |trueos| from |pcbsd|:
   uses some different system services. These differences are listed in
   :numref:`Table %s <sysserv>`
 
+  .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                      |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                      |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}|
+
   .. _sysserv:
 
   .. table:: Different system services between |trueos| and FreeBSD
+     :class: longtable
 
      +------------------+--------------+-----------------+
      | |trueos| Service | Started From | FreeBSD Service | 
@@ -444,60 +457,78 @@ several filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3*
 See the section on :ref:`Files and File Sharing` for a comparison of
 some graphical file manager utilities.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.15\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.15\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.15\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.55\linewidth-2\tabcolsep}|
+
 .. _filesys support:
 
 .. table:: Filesystem Support on |trueos|
+   :class: longtable
 
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | Filesystem | Native to | Non-native support type | Usage notes                                            |
-   +============+===========+=========================+========================================================+
-   | Btrfs      | Linux     | none                    |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | exFAT      | Windows   | none                    | requires a license from Microsoft                      |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | EXT2       | Linux     | r/w support loaded      |                                                        |
-   |            |           | by default              |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | EXT3       | Linux     | r/w support loaded      | since EXT3 journaling is not supported, you will not   |
-   |            |           | by default              | be able to mount a filesystem requiring a journal      |
-   |            |           |                         | replay unless you :command:`fsck` it using an          |
-   |            |           |                         | external utility such as                               |
-   |            |           |                         | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | EXT4       | Linux     | r/o support loaded      | EXT3 journaling, extended attributes, and inodes       |
-   |            |           | by default              | greater than 128 bytes are not supported; EXT3         |
-   |            |           |                         | filesystems converted to EXT4 may have better          |
-   |            |           |                         | performance                                            |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | FAT16      | Windows   | r/w support loaded      |                                                        |
-   |            |           | by default              |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | FAT32      | Windows   | r/w support loaded      |                                                        |
-   |            |           | by default              |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | HFS+       | Mac OS X  | none                    | older Mac versions might work with                     |
-   |            |           |                         | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | JFS        | Linux     | none                    |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | NTFS5      | Windows   | full r/w support loaded |                                                        |
-   |            |           | by default              |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | NTFS6      | Windows   | r/w support loaded      |                                                        |
-   |            |           | by default              |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | ReiserFS   | Linux     | r/o support is loaded   |                                                        |
-   |            |           | by default              |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | UFS2       | FreeBSD   | check if a Linux distro | changed to r/o support in Mac Lion                     |
-   |            |           | provides ufsutils;      |                                                        |
-   |            |           | r/w support on Mac;     |                                                        |
-   |            |           | UFS Explorer can be     |                                                        |
-   |            |           | used on Windows         |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
-   | ZFS        | |trueos|, |                         |                                                        |
-   |            | FreeBSD   |                         |                                                        |
-   +------------+-----------+-------------------------+--------------------------------------------------------+
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | Filesystem | Native to | Non-native   | Usage notes                                            |
+   |            |           | support type |                                                        |
+   +============+===========+==============+========================================================+
+   | Btrfs      | Linux     | none         |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | exFAT      | Windows   | none         | requires a license from Microsoft                      |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | EXT2       | Linux     | r/w support  |                                                        |
+   |            |           | loaded by    |                                                        |
+   |            |           | default      |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | EXT3       | Linux     | r/w support  | since EXT3 journaling is not supported, you will not   |
+   |            |           | loaded by    | be able to mount a filesystem requiring a journal      |
+   |            |           | default      | replay unless you :command:`fsck` it using an          |
+   |            |           |              | external utility such as                               |
+   |            |           |              | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | EXT4       | Linux     | r/o support  | EXT3 journaling, extended attributes, and inodes       |
+   |            |           | loaded by    | greater than 128 bytes are not supported; EXT3         |
+   |            |           | default      | filesystems converted to EXT4 may have better          |
+   |            |           |              | performance                                            |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | FAT16      | Windows   | r/w support  |                                                        |
+   |            |           | loaded by    |                                                        |
+   |            |           | default      |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | FAT32      | Windows   | r/w support  |                                                        |
+   |            |           | loaded by    |                                                        |
+   |            |           | default      |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | HFS+       | Mac OS X  | none         | older Mac versions might work with                     |
+   |            |           |              | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | JFS        | Linux     | none         |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | NTFS5      | Windows   | full r/w     |                                                        |
+   |            |           | support      |                                                        |
+   |            |           | loaded       |                                                        |
+   |            |           | by default   |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | NTFS6      | Windows   | r/w support  |                                                        |
+   |            |           | loaded by    |                                                        |
+   |            |           | default      |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | ReiserFS   | Linux     | r/o support  |                                                        |
+   |            |           | is loaded by |                                                        |
+   |            |           | default      |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | UFS2       | FreeBSD   | check if a   | changed to r/o support in Mac Lion                     |
+   |            |           | Linux distro |                                                        |
+   |            |           | provides     |                                                        |
+   |            |           | ufsutils;    |                                                        |
+   |            |           | r/w support  |                                                        |
+   |            |           | on Mac; UFS  |                                                        |
+   |            |           | Explorer can |                                                        |
+   |            |           | be used on   |                                                        |
+   |            |           | Windows      |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | ZFS        | |trueos|, |              |                                                        |
+   |            | FreeBSD   |              |                                                        |
+   +------------+-----------+--------------+--------------------------------------------------------+
 
 Linux and BSD use different naming conventions for devices. For example:
 
@@ -516,9 +547,14 @@ Some of the features used by BSD have similar counterparts to Linux, but
 the name of the feature is different. :numref:`Table %s <feature names>`
 provides some common examples:
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.25\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.45\linewidth-2\tabcolsep}|
+
 .. _feature names:
 
 .. table:: BSD and Linux Feature Names
+   :class: longtable
 
    +--------------------------------+---------------------+--------------------------------+
    | TrueOS                         | Linux               | Description                    |
@@ -543,9 +579,13 @@ Linux commands have different names on BSD.
 :numref:`Table %s <common commands>` lists some common commands and
 what they are used for.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.45\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.55\linewidth-2\tabcolsep}|
+
 .. _common commands:
 
 .. table:: Common BSD and Linux Commands
+   :class: longtable
 
    +-----------------------------------+-----------------------------+
    | Command                           | Used                        |

@@ -626,7 +626,7 @@ reporting tools:
 .. figure:: images/bug1.png
    :scale: 100%
 
-   : Creating a Bug Report
+   Creating a Bug Report
 
 Here are some guidelines for creating solid bug reports:
 
@@ -803,7 +803,7 @@ browser. An example is seen in :numref:`Figure %s <translate1>`.
 .. figure:: images/translate1.png
    :scale: 100%
 
-   : |trueos| Weblate Translation System
+   |trueos| Weblate Translation System
 
 Before editing a translation, first create a a login account and verify
 the activation email. Once logged in, click 
@@ -815,7 +815,7 @@ the activation email. Once logged in, click
 .. figure:: images/translate2.png
    :scale: 100%
 
-   : Weblate Dashboard
+   Weblate Dashboard
 
 In the screen shown in :numref:`Figure %s <translate3>`, use the
 :guilabel:`Interface Language` drop-down menu to select the language for
@@ -828,7 +828,7 @@ translate. Once any selections are made, click :guilabel:`Save`.
 .. figure:: images/translate3.png
    :scale: 100%
 
-   : Manage Languages
+   Manage Languages
 
 .. note:: If the language you wish to translate is missing from the
    "Translated languages" menu, request its addition in the
@@ -849,7 +849,7 @@ English.
 .. figure:: images/translate4.png
    :scale: 100%
 
-   : Project Selection
+   Project Selection
 
 To start translating, click a component name. In the screen shown in
 :numref:`Figure %s <translate5>`, select a language and click
@@ -860,7 +860,7 @@ To start translating, click a component name. In the screen shown in
 .. figure:: images/translate5.png  
    :scale: 100%
 
-   : Translation Languages
+   Translation Languages
 
 In the example shown in :numref:`Figure %s <translate6>`, the user has
 selected to translate the *pc-installgui* component into the Spanish
@@ -875,7 +875,7 @@ to translate.
 .. figure:: images/translate6.png
    :scale: 100%
 
-   : Translation Editor
+   Translation Editor
 
 If assistance is needed with either a translation or the Weblate system,
 ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. 
@@ -934,14 +934,14 @@ remove the asterisks.
 .. figure:: images/translate7.png
    :scale: 100%
 
-   : Formatting Characters - Do Not Remove
+   Formatting Characters - Do Not Remove
 
 .. _translate8:
 
 .. figure:: images/translate8.png
    :scale: 100%
 
-   : More Formatting Characters
+   More Formatting Characters
 
 To build a local HTML copy that includes the latest translations, either
 for personal use or to visualize the translated Guide, type these
@@ -1118,7 +1118,7 @@ first category on the menu bar.
 This section describes a small list of guidelines for menu and program
 design in |trueos|.
 
-Any graphical program that is a full-featured utility, such as
+Any graphical program that is a fully featured utility, such as
 `Life Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_,
 should have a *File* menu. However, file menus are not necessary for
 small widget programs or dialogue boxes. When making a file menu, a good
@@ -1135,9 +1135,14 @@ do not have many different icons used for the same function.
 :numref:`Table %s <common icons>` lists the commonly used icons and
 their default file names.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.32\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.32\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.36\linewidth-2\tabcolsep}|
+
 .. _common icons:
 
-.. table:: : Commonly Used File Menu Icons
+.. table:: Commonly Used File Menu Icons
+   :class: longtable
 
    +-----------+-----------------+--------------------+
    | Function  | File Menu Icon  | File Name          |
@@ -1179,9 +1184,13 @@ use and accessibility. :numref:`Table %s <shortcuts>` and
 :numref:`Table %s <hotkeys>` summarize the commonly used shortcut and
 hot keys.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.50\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.50\linewidth-2\tabcolsep}|
+
 .. _shortcuts:
 
-.. table:: : Shortcut Keys
+.. table:: Shortcut Keys
+   :class: longtable
 
    +---------------+---------+
    | Shortcut Key  | Action  |
@@ -1191,9 +1200,13 @@ hot keys.
    | F1            | Help    |
    +---------------+---------+
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.50\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.50\linewidth-2\tabcolsep}|
+
 .. _hotkeys:
 
-.. table:: : Hot Keys
+.. table:: Hot Keys
+   :class: longtable
 
    +-----------+-----------------+
    | Hot Key   | Action          |

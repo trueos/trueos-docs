@@ -32,7 +32,7 @@ loads the boot menu seen in :numref:`Figure %s <install1(2)>`.
 .. figure:: images/install1b.png
    :scale: 100%
 
-   : |trueos| Boot Menu
+   |trueos| Boot Menu
 
 This menu provides several options. To pause this menu, press any key
 except for :kbd:`Enter`. To select an option, press either the bolded
@@ -82,7 +82,7 @@ number or key for that option. Once any selections are made, press
 .. figure:: images/boot1b.png
    :scale: 100%
 
-   : Boot Options Menu
+   Boot Options Menu
 
 Several boot options are available in the Boot Options Menu:
 
@@ -117,7 +117,7 @@ the boot loader, it will instead load the menu shown in
 .. figure:: images/boot2.png
    :scale: 100%
 
-   : GRUB Boot Menu
+   GRUB Boot Menu
 
 This boot menu is used to display the entry for |trueos|, an entry for
 the screen which lists the available boot environments (these are
@@ -141,7 +141,7 @@ see the |trueos| boot options screen, shown in
 .. figure:: images/boot3.png
    :scale: 100%
 
-   : |trueos| Graphical Boot Menu Options
+   |trueos| Graphical Boot Menu Options
 
 Several boot options are available:
 
@@ -177,7 +177,7 @@ shown in :numref:`Figure %s <encrypt1>`.
 .. figure:: images/encrypt1.png
    :scale: 100%
 
-   : Master Key Decryption
+   Master Key Decryption
 
 The boot process will wait for the password created in the installation
 screen shown in :ref:`Configure Encryption <install11>`. If the
@@ -207,7 +207,7 @@ the :guilabel:`Display Settings` screen shown in
 .. figure:: images/display3.png
    :scale: 100%
 
-   : Display Settings Wizard
+   Display Settings Wizard
 
 This screen can be used to select the desired screen resolution, color
 depth, and video driver. The :guilabel:`vesa` driver will always work
@@ -227,7 +227,7 @@ refresh rate in the :guilabel:`Advanced` tab, seen in
 .. figure:: images/display4.png
    :scale: 100%
 
-   : Advanced Display Settings
+   Advanced Display Settings
 
 Use caution and refer to the connected monitor's documentation while
 making changes. If unsure what settings are required, it is recommended
@@ -255,7 +255,7 @@ The language selection screen is seen in :numref:`Figure %s <config1>`.
 .. figure:: images/config1a.png
    :scale: 100%
 
-   : Language Selection
+   Language Selection
 
 This allows for the selection of the language used to access the
 installed system. It also contains three icons from the installer
@@ -284,7 +284,7 @@ allows selection of the timezone.
 .. figure:: images/config2b.png
    :scale: 100%
 
-   : Time Zone Selection
+   Time Zone Selection
 
 Use the drop-down menu to select the city closest to the system's
 location. If the system is connected to the Internet, the installer
@@ -314,7 +314,7 @@ requires the root (administrative) password to be set.
 .. figure:: images/config3a.png
    :scale: 100%
 
-   : Root Password Creation
+   Root Password Creation
 
 The password must be a minimum of **4** characters and must be typed
 twice to confirm the password. Click :guilabel:`Next` when finished.
@@ -337,7 +337,7 @@ create the initial user account.
 .. figure:: images/config4a.png
    :scale: 100%
 
-   : User Creation
+   User Creation
 
 The :guilabel:`User Details` tab is used to create a login user. This
 screen requires completing several fields:
@@ -391,7 +391,7 @@ the user.
 .. figure:: images/persona1a.png
    :scale: 100%
 
-   : User's PersonaCrypt Initialization
+   User's PersonaCrypt Initialization
 
 Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable
 media large enough to hold the files to store in the home directory,
@@ -425,7 +425,7 @@ configure the default audio output.
 .. figure:: images/audio1a.png
    :scale: 100%
 
-   : Configure Audio Output
+   Configure Audio Output
 
 Click the :guilabel:`Output Device` drop-down menu to select the
 desired sound device. Click :guilabel:`Test` to verify the setting as a
@@ -456,7 +456,7 @@ strength.
 .. figure:: images/config5.png
    :scale: 100%
 
-   : Wireless Network Connections
+   Wireless Network Connections
 
 To set the default wireless connection, click the desired network in the
 :guilabel:`Available Wireless Networks` area, then click
@@ -480,7 +480,7 @@ Enable Optional Services
 .. figure:: images/config6.png
    :scale: 100%
 
-   : Optional Services
+   Optional Services
 
 Check :guilabel:`Disable IPV6 (Requires Reboot)` and the system will be
 configured to only support IPv4 addresses. The default is to support
@@ -506,7 +506,7 @@ complete. Click :guilabel:`Finish` to access the login menu.
 .. figure:: images/config7.png
    :scale: 100%
 
-   : Setup Complete
+   Setup Complete
 
 .. index:: login
 .. _Logging In:
@@ -523,7 +523,7 @@ graphical login screen will display. An example is seen in
 .. figure:: images/login1.png
    :scale: 100%
 
-   : |trueos| Login
+   |trueos| Login
 
 The hostname of the system will be displayed at the top of the login
 window. In this example, it is *trueos-5320*. This login screen lets
@@ -554,7 +554,7 @@ has several configuration options:
 .. figure:: images/login5.png
    :scale: 100%
 
-   : |trueos| PersonaCrypt Login
+   |trueos| PersonaCrypt Login
 
 The toolbar at the bottom of the screen allows several options to be
 selected on a per-login basis:
@@ -572,7 +572,7 @@ selected on a per-login basis:
 .. figure:: images/keyboard1.png
    :scale: 100%
 
-   : Keyboard Settings
+   Keyboard Settings
 
 Click the :guilabel:`Keyboard model` drop-down menu to select the type
 of keyboard.
@@ -621,8 +621,14 @@ OpenRC in |trueos| compared with :command:`rc`
 working examples contrasting the FreeBSD :command:`rc` system and OpenRC in
 |trueos|.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.33\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.33\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.34\linewidth-2\tabcolsep}|
+
 .. _trfbsdrc:
-.. table:: : Comparison between the traditional FreeBSD :command:`rc` and |trueos| OpenRC service management
+
+.. table:: Comparison between the traditional FreeBSD :command:`rc` and |trueos| OpenRC service management
+   :class: longtable
 
    +--------------------------------+-----------------------------------+-------------------------------------------------+
    | Component or action            | FreeBSD                           | |trueos|                                        |
@@ -731,9 +737,13 @@ built into |sysadm|. Individuals familiar with the FreeBSD
 :command:`service` command may notice some similarities between some
 of these commands.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
 .. _rcbootserv:
 
-.. table:: : Service and Runlevel Management Commands
+.. table:: Service and Runlevel Management Commands
+   :class: longtable
 
    +--------------------------------+------------------------------------------------------------+
    | Command                        | Description                                                |
@@ -883,8 +893,13 @@ default, |trueos| uses 3 elements, documented in
 :numref:`Table %s <rcuprnlvl>` lists services and their default
 runlevels in |trueos|.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
 .. _rcuprnlvl:
-.. table:: : Services and runlevels
+
+.. table:: Services and runlevels
+   :class: longtable
 
    +-------------+-------------------+
    | Service     | Runlevel          |
@@ -978,8 +993,13 @@ runlevels in |trueos|.
 Tuneables
 ---------
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
 .. _orcpritun:
-.. table:: : OpenRC Primary Tunables
+
+.. table:: OpenRC Primary Tunables
+   :class: longtable
 
    +-------------------------------+-------------------------------------+
    | Tunable                       | Description                         |
@@ -1001,8 +1021,14 @@ listed.
 
 .. note:: These migration targets are estimates and subject to change.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.25\linewidth-2\tabcolsep}|
+
 .. _orcalltun:
-.. table:: : OpenRC Other Tunables
+
+.. table:: OpenRC Other Tunables
+   :class: longtable
 
    +------------------------------------------+-------------------------------------+------------------------------+
    | Tunable                                  | Description                         | Migration Target             |

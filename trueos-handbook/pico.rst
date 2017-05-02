@@ -99,9 +99,14 @@ the system, found in :file:`/usr/local/etc`. This :file:`.ini` file
 holds the initialization settings for the |pise| and has three sections,
 seen in :numref:`Table %s <inisett>`:
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.33\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.33\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.34\linewidth-2\tabcolsep}|
+
 .. _inisett:
 
-.. table:: : Pico Server Configuration Settings
+.. table:: Pico Server Configuration Settings
+   :class: longtable
 
    +-------------------+----------------+------------------+
    | SSH               | Video          | Audio            |
@@ -214,7 +219,7 @@ simplified server administration.
 
 .. figure:: images/picoip.png
 
-    : |picl| IP display
+    |picl| IP display
 
 When logging out with the |picl|, several processes begin. The client
 clears the session, then restarts the discovery and connection
@@ -248,7 +253,7 @@ of the gears, and updates periodically.
 
 .. figure:: images/picovglgears.png
 
-    : VirtualGL Gears Test
+    VirtualGL Gears Test
 
 .. _pulseaud:
 
@@ -274,9 +279,13 @@ are a number of administrative commands available, seen in
 :numref:`Table %s <picoadmin>`. Any new commands will be added to this
 table:
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
 .. _picoadmin:
 
-.. Table:: : |pise| Administration Commands
+.. Table:: |pise| Administration Commands
+   :class: longtable
 
    +---------------------+-------------------------------------------+
    | Command             | Description                               |

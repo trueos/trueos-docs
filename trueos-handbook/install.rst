@@ -32,7 +32,7 @@ booting.
 .. figure:: images/install1b.png
    :scale: 100%
 
-   : Initial Boot Menu
+   Initial Boot Menu
 
 .. note:: See :ref:`BSD Boot Loader` for a detailed description of this
    menu.
@@ -48,7 +48,7 @@ option, displaying the :guilabel:`TrueOS® Installation Menu`, shown in
 .. figure:: images/install15a.png
    :scale: 100%
 
-   : |trueos| Installer Boot Menu
+   |trueos| Installer Boot Menu
 
 * **xorg:** Starts a graphical installer which auto-detects the driver
   required by the video hardware.
@@ -99,14 +99,18 @@ loaded and is ready to present its options.
 .. figure:: images/install2c.png
    :scale: 100%
 
-   : Welcome and Language Selection Screen
+   Welcome and Language Selection Screen
 
 On the bottom-left side of the screen are several icons and buttons to
 help with the installation, explained in :numref:`Table %s <insico>`:
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.65\linewidth-2\tabcolsep}|
+
 .. _insico:
 
-.. table:: : Installer icons
+.. table:: Installer icons
+   :class: longtable
 
    +-----------------------+-------------------------------------------+
    | Icon                  | Function                                  |
@@ -187,7 +191,7 @@ only server.
 .. figure:: images/install3c.png
    :scale: 100%
 
-   : System Selection Screen
+   System Selection Screen
 
 By default, :guilabel:`TrueOS Desktop (graphical interface)` is selected
 and the |lumina| Desktop will be installed. Additional software can be
@@ -218,7 +222,7 @@ configuration.
 .. figure:: images/install5c.png
    :scale: 100%
 
-   : Disk Selection Screen
+   Disk Selection Screen
 
 This screen provides a drop-down :guilabel:`Boot-Loader` menu with boot
 manager options:
@@ -251,7 +255,7 @@ shown in :numref:`Figure %s <install6>`.
 .. figure:: images/install6b.png
    :scale: 100%
 
-   : |trueos| Disk Wizard
+   |trueos| Disk Wizard
 
 The wizard provides two modes of operation:
 
@@ -292,7 +296,7 @@ in :numref:`Figure %s <install7>`.
 .. figure:: images/install7b.png
    :scale: 100%
 
-   : Disk or Partition Selection
+   Disk or Partition Selection
 
 The first hard disk is typically selected. To install on a different
 disk, use the :guilabel:`Selected Disk` drop-down menu to
@@ -329,7 +333,7 @@ After selecting advanced mode, the wizard displays the screen shown in
 .. figure:: images/install8c.png
    :scale: 100%
 
-   : Advanced Mode Options
+   Advanced Mode Options
 
 This screen has several options:
 
@@ -402,9 +406,13 @@ These resources are also useful to bookmark and refer to as needed:
 
 :numref:`Table %s <zfsterms>` is a brief glossary of terms used by ZFS:
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.20\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.80\linewidth-2\tabcolsep}|
+
 .. _zfsterms:
 
-.. table:: : ZFS Terms
+.. table:: ZFS Terms
+   :class: longtable
 
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Term     | Description                                                                                                                                  |
@@ -472,7 +480,7 @@ the ZFS layout. The initial ZFS configuration screen is seen in
 .. figure:: images/install9b.png
    :scale: 100%
 
-   : ZFS Configuration
+   ZFS Configuration
 
 If the system contains multiple drives to be used to create a ZFS mirror
 or RAIDZ*, check :guilabel:`Add additional disks to storage pool`, which
@@ -519,7 +527,7 @@ When finished, click :guilabel:`Next` to see the screen shown in
 .. figure:: images/install10b.png
    :scale: 100%
 
-   : L2ARC and ZIL
+   L2ARC and ZIL
 
 This screen can be used to specify an SSD to use as an L2ARC read
 cache or as a secondary log device (ZIL). Any available devices will
@@ -537,7 +545,7 @@ to see the screen shown in :numref:`Figure %s <install11>`.
 .. figure:: images/install11c.png
    :scale: 100%
 
-   : Encryption
+   Encryption
 
 .. TODO remove warning box once FreeBSD regression is fixed.
 
@@ -575,7 +583,7 @@ When finished, click :guilabel:`Next` to move to the screen shown in
 .. figure:: images/install12b.png
    :scale: 100%
 
-   : Default ZFS Layout
+   Default ZFS Layout
 
 Regardless of how many disks are selected for the ZFS configuration, the
 default layout will be the same. ZFS does not require separate
@@ -648,7 +656,7 @@ bar and messages so the user can watch the installation's progress.
 .. figure:: images/install13b.png
    :scale: 100%
 
-   : Installation Progress
+   Installation Progress
 
 How long the installation takes depends upon the speed of the hardware
 and the installation type selected. A typical installation takes between
@@ -669,7 +677,7 @@ complete.
 .. figure:: images/install14b.png
    :scale: 100%
 
-   : |trueos| Installation Complete
+   |trueos| Installation Complete
 
 Click :guilabel:`Finish` to complete the |trueos| installation. It will
 return to the
@@ -722,7 +730,7 @@ installer, start the installation as usual and select
 .. figure:: images/install15a.png
    :scale: 100%
 
-   : |trueos| Installation Menu
+   |trueos| Installation Menu
 
 The next screen will prompt to install a desktop or a server, as seen
 in :numref:`Figure %s <text2>`.
@@ -732,7 +740,7 @@ in :numref:`Figure %s <text2>`.
 .. figure:: images/text2a.png
    :scale: 100%
 
-   : Desktop or Server
+   Desktop or Server
 
 After choosing to install a desktop, the |lumina| desktop will be
 installed and configured. After the desktop installation is complete,
@@ -754,7 +762,7 @@ display the available disks on the system. In the example shown in
 .. figure:: images/text3a.png
    :scale: 100%
 
-   : Installation Disk
+   Installation Disk
 
 Select the disk to install into and press :kbd:`Enter`. In the next
 screen, the installer will display all available primary or GPT
@@ -770,7 +778,7 @@ installing to the entire disk.
 .. figure:: images/text4a.png
    :scale: 100%
 
-   : Partition
+   Partition
 
 The next screen, shown in :numref:`Figure %s <text5>`, is used to
 select the type of disk format. If the installation disk or partition is
@@ -784,7 +792,7 @@ boot after selecting :guilabel:`GPT`, select :guilabel:`MBR` instead.
 .. figure:: images/text5a.png
    :scale: 100%
 
-   : Disk Format
+   Disk Format
 
 The next screen, shown in :numref:`Figure %s <text6>`, is used to
 select the boot manager.
@@ -794,7 +802,7 @@ select the boot manager.
 .. figure:: images/text6a.png
    :scale: 100%
 
-   : Boot Manager
+   Boot Manager
 
 The default is to use :guilabel:`BSD` as it provides native support for
 boot environments. While :guilabel:`GRUB` provides some boot environment
@@ -811,7 +819,7 @@ The next screen is shown in :numref:`Figure %s <text7>`.
 .. figure:: images/text7a.png
    :scale: 100%
 
-   : Full Disk Encryption
+   Full Disk Encryption
 
 This screen provides the option to encrypt the selected disk(s) with
 the FreeBSD
@@ -879,7 +887,7 @@ in :numref:`Figure %s <text9>`.
 .. figure:: images/text9a.png
    :scale: 100%
 
-   : Review Installation Options
+   Review Installation Options
 
 This menu provides several options:
 
@@ -904,17 +912,17 @@ This menu provides several options:
 .. figure:: images/text10.png
    :scale: 100%
 
-   : Hardware Summary
+   Hardware Summary
 
 If select :guilabel:`edit`, the menu shown in
-:numref:`Figure %s <text11>` will open.
+:numref:`Figure %s <text11>` opens.
 
 .. _text11:
 
 .. figure:: images/text11a.png
    :scale: 100%
 
-   : Edit Menu
+   Edit Menu
 
 This screen contains several options:
 
@@ -939,7 +947,7 @@ This screen contains several options:
   .. figure:: images/text12a.png
      :scale: 100%
 
-     : ZFS Layout
+     ZFS Layout
 
   To edit the properties of an existing dataset, highlight the dataset's
   name and press :kbd:`Enter`. This will show the list of available ZFS
@@ -951,7 +959,7 @@ This screen contains several options:
   .. figure:: images/text13a.png
      :scale: 100%
 
-     : ZFS Properties for a Dataset
+     ZFS Properties for a Dataset
 
   To change the value of a ZFS property, highlight it and press
   :kbd:`Enter`. The available values will vary, depending upon the
@@ -1003,7 +1011,7 @@ in :numref:`Figure %s <util1>`.
 .. figure:: images/util1a.png
    :scale: 100%
 
-   : System Utilities Menu
+   System Utilities Menu
 
 This screen provides several options:
 
@@ -1078,7 +1086,7 @@ then click :guilabel:`Next` again to see the screen shown in
 .. figure:: images/server2a.png
    :scale: 100%
 
-   : Root Password Creation
+   Root Password Creation
 
 Input and confirm the root password then click :guilabel:`Next` to
 proceed to the screen shown in :numref:`Figure %s <server3>`.
@@ -1088,7 +1096,7 @@ proceed to the screen shown in :numref:`Figure %s <server3>`.
 .. figure:: images/server3a.png
    :scale: 100%
 
-   : Primary User Account Creation
+   Primary User Account Creation
 
 For security reasons, do not login as the *root* user. The wizard
 requires creating a primary user account used to login to the server.
@@ -1118,7 +1126,7 @@ When finished, click :guilabel:`Next` to proceed to the screen shown in
 .. figure:: images/server4a.png
    :scale: 100%
 
-   : Hostname Creation
+   Hostname Creation
 
 Input the system's hostname. If using :command:`ssh` to connect to the
 system, check :guilabel:`Enable remote SSH login`. Click
@@ -1130,7 +1138,7 @@ system, check :guilabel:`Enable remote SSH login`. Click
 .. figure:: images/server5a.png
    :scale: 100%
 
-   : Network Configuration
+   Network Configuration
 
 Use the :guilabel:`Network Interface` drop-down menu to choose the
 desired interface:
@@ -1154,7 +1162,7 @@ the screen shown in :numref:`Figure %s <server6>`.
 .. figure:: images/server6a.png
    :scale: 100%
 
-   : Ports Installation
+   Ports Installation
 
 To install the FreeBSD ports collection, check
 :guilabel:`Install ports tree` then click :guilabel:`Finish` to exit the
@@ -1198,7 +1206,7 @@ installer, it will display the installation menu shown in
 .. figure:: images/cd2a.png
    :scale: 100%
 
-   : |trueos| Installation Menu
+   |trueos| Installation Menu
 
 To begin the installation, press :kbd:`Enter`. The server installation
 will then display the screen shown in
@@ -1303,7 +1311,7 @@ screen, shown in :numref:`Figure %s <upgrade1>`.
 
 .. figure:: images/upgrade1b.png
 
-   : Disk Selection
+   Disk Selection
 
 |trueos| automatically detects if the drive has an existing boot
 environment, filling in the data as necessary. If no boot environments
@@ -1392,9 +1400,14 @@ summarized in :numref:`Table %s <insvars>`.
    :file:`/usr/local/share/pc-sysinstall/examples/` contains more
    complete descriptions for each variable.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.25\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.45\linewidth-2\tabcolsep}|
+
 .. _insvars:
 
-.. table:: : Customizing a |trueos| Installation
+.. table:: Customizing a |trueos| Installation
+   :class: longtable
 
    +----------------------------+----------------------------+-------------------------------------+
    | Variable                   | Options                    | Description                         |
@@ -1674,9 +1687,14 @@ file.
    in :ref:`Customizing a TrueOS® Installation <insvars>` as the values
    follow a colon (:kbd:`:`) and a space rather than an :kbd:`=` sign.
 
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.25\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.45\linewidth-2\tabcolsep}|
+
 .. _autovars:
 
-.. table:: : Automated Installation Variables
+.. table:: Automated Installation Variables
+   :class: longtable
 
    +-----------------+----------------------------+------------------------------------+
    | Variable        | Options                    | Description                        |
