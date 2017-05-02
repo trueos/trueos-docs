@@ -1208,23 +1208,23 @@ hot keys.
 .. table:: Hot Keys
    :class: longtable
 
-   +-----------+-----------------+
-   | Hot Key   | Action          |
-   +===========+=================+
-   | Alt + Q   | Quit            |
-   +-----------+-----------------+
-   | Alt + S   | Settings        |
-   +-----------+-----------------+
-   | Alt + I   | Import          |
-   +-----------+-----------------+
-   | Alt + E   | Export          |
-   +-----------+-----------------+
-   | ALT + F   | File Menu       |
-   +-----------+-----------------+
-   | ALT + C   | Configure Menu  |
-   +-----------+-----------------+
-   | ALT + H   | Help Menu       |
-   +-----------+-----------------+
+   +---------+----------------+
+   | Hot Key | Action         |
+   +=========+================+
+   | Alt + Q | Quit           |
+   +---------+----------------+
+   | Alt + S | Settings       |
+   +---------+----------------+
+   | Alt + I | Import         |
+   +---------+----------------+
+   | Alt + E | Export         |
+   +---------+----------------+
+   | ALT + F | File Menu      |
+   +---------+----------------+
+   | ALT + C | Configure Menu |
+   +---------+----------------+
+   | ALT + H | Help Menu      |
+   +---------+----------------+
 
 When saving an application's settings, the QSettings class should be
 used if possible. There are two different *organizations*, depending
