@@ -7,14 +7,7 @@ Installing |trueos|
 This chapter describes how to use the graphical installer to install a
 graphical desktop directly onto a hard drive or into a virtual machine
 using virtualization software such as
-`VirtualBox <https://www.virtualbox.org/>`_. If using a downloaded CD
-version of |trueos| or a text based installer, please refer to the
-instructions in :ref:`Using the Text Installer`.
-
-.. warning:: The |trueos| text-based installer is experiencing some
-   irregular functionality. It is currently (3/6/17) recommended to
-   use a graphical install option. See :ref:`Ongoing Issues` for more
-   information.
+`VirtualBox <https://www.virtualbox.org/>`_.
 
 To begin the |trueos| installation, insert the prepared boot media and
 boot the system. If the computer boots into an existing operating
@@ -67,9 +60,6 @@ option, displaying the :guilabel:`TrueOS® Installation Menu`, shown in
 
 * **amd:** Start a graphical installation with legacy Radeon drivers
   loaded.
-
-* **install:** Starts the text-based installer as described in
-  :ref:`Using the Text Installer`.
 
 * **utility:** Starts the system utilities as described in
   :ref:`Using the System Utilities Menu`.
@@ -688,343 +678,18 @@ Advanced Installation Topics
 
 This section covers these advanced installation topics:
 
-* :ref:`Using the Text Installer`
-
 * :ref:`Server Installation`
 
-* :ref:`Using the TrueOS CD`
-
 * :ref:`Dual Booting`
+
+* :ref:`Using the System Utilities Menu`
 
 * :ref:`Upgrading from PCBSD 10.x to TrueOS`
 
 * :ref:`Automated Installations`
 
-If your intent is to install a graphical desktop using a graphical
+If your intent is to install a graphical desktop using the graphical
 installer, instead refer to :ref:`Installing TrueOS`.
-
-.. index:: text installer
-.. _Using the Text Installer:
-
-Using the Text Installer
-------------------------
-
-.. warning:: The |trueos| text-based installer is experiencing some
-   irregular functionality. It is currently (3/6/17) recommended to
-   use a graphical install option. See :ref:`Ongoing Issues` for more
-   information.
-
-If an **ncurses** menu installation is preferred over a full graphical
-installer, start the installation as usual and select
-:guilabel:`install`, seen in :numref:`Figure %s <install15repro>`.
-
-.. _install15repro:
-
-.. figure:: images/install15a.png
-   :scale: 100%
-
-   |trueos| Installation Menu
-
-The next screen will prompt to install a desktop or a server, as seen
-in :numref:`Figure %s <text2>`.
-
-.. _text2:
-
-.. figure:: images/text2a.png
-   :scale: 100%
-
-   Desktop or Server
-
-After choosing to install a desktop, the |lumina| desktop will be
-installed and configured. After the desktop installation is complete,
-the system will boot into the usual post-installation configuration
-screens.
-
-If a server installation is chosen, neither **X** nor a window manager
-will be installed, resulting in a command-line only |trueos|
-installation. Once the server installation is complete, the system will
-boot into a command prompt where the username and password created
-during the installation will need to be entered.
-
-After making a selection and pressing :kbd:`Enter`, the next screen will
-display the available disks on the system. In the example shown in
-:numref:`Figure %s <text3>`, one disk is available.
-
-.. _text3:
-
-.. figure:: images/text3a.png
-   :scale: 100%
-
-   Installation Disk
-
-Select the disk to install into and press :kbd:`Enter`. In the next
-screen, the installer will display all available primary or GPT
-partitions. In the example shown in :numref:`Figure %s <text4>`, there
-is only one partition and the installer has selected the default of
-installing to the entire disk.
-
-.. warning:: If the system has multiple partitions and disks, be
-   careful in selecting the disk and partition targets for installation.
-
-.. _text4:
-
-.. figure:: images/text4a.png
-   :scale: 100%
-
-   Partition
-
-The next screen, shown in :numref:`Figure %s <text5>`, is used to
-select the type of disk format. If the installation disk or partition is
-larger than 2 TB, :guilabel:`GPT` **must** be selected. Otherwise,
-selecting :guilabel:`GPT` should work for most modern hardware. When
-installing on older hardware, or if the newly installed system will not
-boot after selecting :guilabel:`GPT`, select :guilabel:`MBR` instead.
-
-.. _text5:
-
-.. figure:: images/text5a.png
-   :scale: 100%
-
-   Disk Format
-
-The next screen, shown in :numref:`Figure %s <text6>`, is used to
-select the boot manager.
-
-.. _text6:
-
-.. figure:: images/text6a.png
-   :scale: 100%
-
-   Boot Manager
-
-The default is to use :guilabel:`BSD` as it provides native support for
-boot environments. If :guilabel:`none` is selected, no boot manager is
-installed and boot environments will not be available.
-
-The next screen is shown in :numref:`Figure %s <text7>`.
-
-.. _text7:
-
-.. figure:: images/text7a.png
-   :scale: 100%
-
-   Full Disk Encryption
-
-This screen provides the option to encrypt the selected disk(s) with
-the FreeBSD
-`GELI <https://www.freebsd.org/cgi/man.cgi?query=geli&sektion=8&manpath=FreeBSD>`_
-framework. If the default of :guilabel:`Yes` is kept, press
-:kbd:`Enter` and the system will prompt for a passphrase. This
-passphrase will be required whenever booting into |trueos|. This means
-if someone else boots into the computer, they will not be able to boot
-into |trueos| if they do not know the passphrase.
-
-.. danger:: If the passphrase is lost or forgotten, no one will be able
-  to access |trueos| on the system.
-
-For these reasons, it is important to choose a good passphrase other
-users will not guess and which the user can remember. Passphrases
-are case-sensitive and can contain spaces. The passphrase should be
-memorable to the user, such as a line from a song or piece of
-literature, but hard to guess so people who know the user can not guess
-the passphrase.
-
-.. warning:: Be careful if the keyboard variant and layout are changed.
-   The GELI encryption framework only supports QWERTY passphrases, so do
-   not use any characters not found on a QWERTY keyboard in the
-   passphrase. **DO NOT** set a passphrase with accents or special
-   characters which are not found on a US keyboard. This is a limitation
-   in FreeBSD as the keymap is not loaded until after the passphrase is
-   entered, meaning such a passphrase will render the encrypted disks
-   inaccessible.
-
-If server installation is chosen in the screen shown in
-:ref:`Select Desktop or Server <text2>`, the installer will provide
-more menus. These will prompt for additional information:
-
-* The *root* password.
-
-* Confirm the *root* password (enter the same value).
-
-* The username to use when logging into the server (*root* logins
-  are discouraged).
-
-* The password to use when logging into the server.
-
-* Confirm the password to use when logging into the server.
-
-* The real name for the user who logs into the server (can contain
-  spaces).
-
-* The default shell for the user's login.
-
-* The hostname for the server.
-
-* Whether or not to enable networking. Select :guilabel:`Yes`, to either
-  select :guilabel:`auto` to enable *DHCP* on all interfaces or select
-  an interface to statically configure. When selecting an interface,
-  the system will prompt to enter the IP address, subnet mask, IP
-  address of the DNS server, and the IP address of the default gateway.
-
-* Whether or not to enable SSH access to the server.
-
-The next screen, for both a desktop and server installation, is shown
-in :numref:`Figure %s <text9>`.
-
-.. _text9:
-
-.. figure:: images/text9a.png
-   :scale: 100%
-
-   Review Installation Options
-
-This menu provides several options:
-
-* **install:** To start the installation, select this option and press
-  :kbd:`Enter`.
-
-* **wizard:** Select this option to re-run the text installer and
-  re-input any selections.
-
-* **edit:** Use this option to review, and possibly change, any of the
-  installation parameters.
-
-* **hardware:** Select this option to display a summary of the system's
-  hardware. The example shown in :numref:`Figure %s <text10>` is from a
-  system with a disabled sound card and no wireless card.
-
-* **quit:** Select this option to return to the screen shown in the
-  :ref:`TrueOS Installation Menu <install1>`.
-
-.. _text10:
-
-.. figure:: images/text10.png
-   :scale: 100%
-
-   Hardware Summary
-
-If select :guilabel:`edit`, the menu shown in
-:numref:`Figure %s <text11>` opens.
-
-.. _text11:
-
-.. figure:: images/text11a.png
-   :scale: 100%
-
-   Edit Menu
-
-This screen contains several options:
-
-* **disk:** Used to change the disk to install into. Selecting this
-  option will re-open the screens shown in
-  :ref:`Select Installation Disk <text3>` through
-  :ref:`Full Disk Encryption <text7>`, and then return to this menu.
-  If you want to install into a mirrored or RAIDZ pool, select one of the
-  targets using this option, and then select **pool** (see below).
-
-* **pool:** Select this option if the system contains multiple
-  disks and changing the disk layout to a mirror or RAIDZ is desired.
-  The allowable layouts for the number of available disks will be
-  displayed so the user can select the desired layout.
-
-* **datasets:** Used to modify the default ZFS dataset layout. Selecting
-  this option will open the screen shown in
-  :numref:`Figure %s <text12>`.
-
-  .. _text12:
-
-  .. figure:: images/text12a.png
-     :scale: 100%
-
-     ZFS Layout
-
-  To edit the properties of an existing dataset, highlight the dataset's
-  name and press :kbd:`Enter`. This will show the list of available ZFS
-  properties for that dataset, as seen in the example shown in
-  :numref:`Figure %s <text13>`:
-
-  .. _text13:
-
-  .. figure:: images/text13a.png
-     :scale: 100%
-
-     ZFS Properties for a Dataset
-
-  To change the value of a ZFS property, highlight it and press
-  :kbd:`Enter`. The available values will vary, depending upon the
-  selected property. To add additional datasets, select :guilabel:`add`.
-  This will prompt for the full path of the mountpoint to create. For
-  example, a dataset named :file:`/usr/shares` can be created. The
-  dataset created will be added to the bottom of the list. If the
-  dataset is selected, press :kbd:`Enter` to set its ZFS properties.
-  Once finished customizing the ZFS layout, select :guilabel:`done`.
-
-.. warning:: While a dataset can be deleted, the default datasets are
-   needed for boot environments. For this reason, it is **not**
-   recommended to delete any default datasets. ZFS options are described
-   in `zfs(8) <http://www.freebsd.org/cgi/man.cgi?query=zfs>`_, but any
-   options should only be changed by experienced users.
-
-* **network:** Used to configure networking. Selecting this option
-  will first prompt to enter a hostname, then select either automatic
-  DHCP configuration on all interfaces or to specify the interface to
-  configure, and finally whether or not to enable SSH.
-
-* **view:** Select this option to view a read-only copy of the ASCII
-  text file containing the configuration script.
-
-* **edit:** Select this option to open the configuration script in the
-  :command:`ee` editor, allowing for changes. The parameters supported
-  by the installation script are described in
-  :ref:`Automated Installations`.
-
-* **back:** Select this option to return to the menu shown in
-  :ref:`Review Installation Options <text9>`.
-
-.. index:: using system utilities menu
-.. _Using the System Utilities Menu:
-
-Using the System Utilities Menu
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The text installer contains some handy tools for troubleshooting and
-fixing an existing |trueos| installation.
-
-Choose the :guilabel:`utility` option in the main menu of the graphical
-or text based installer shown in the
-:ref:`TrueOS® Installation Menu <install15>` to open the screen shown
-in :numref:`Figure %s <util1>`.
-
-.. _util1:
-
-.. figure:: images/util1a.png
-   :scale: 100%
-
-   System Utilities Menu
-
-This screen provides several options:
-
-* **shell:** This option is useful when troubleshooting a |trueos|
-  system that no longer boots. It will open a shell with administrative
-  access, including the base FreeBSD utilities. Advanced users can use
-  this shell to identify a problem, create a backup of or copy essential
-  files to another system, or edit configuration files with an editor
-  such as `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or
-  :command:`vi`. When finished using the shell, type :command:`exit` to
-  return to the screen shown in
-  :ref:`System Utilities Menu <util1>`.
-
-* **zimport** This option will display the names of available ZFS pools.
-  Type the name of an available pool and it will import the pool then
-  display the available boot environments (BEs). Type the name of the
-  desired BE and this option will mount the BE then offer to open a
-  chroot shell so its contents can be viewed and manipulated as needed
-  in order to perform maintenance on the boot environment. When
-  finished, type :command:`exit` to leave the boot environment and
-  return to the screen shown in :ref:`System Utilities Menu <util1>`.
-
-* **exit:** This option will return to the main
-  :ref:`TrueOS® Installation Menu <install1>`.
 
 .. index:: install a server
 .. _Server Installation:
@@ -1049,14 +714,9 @@ FreeBSD installer offers several benefits:
 * A wizard (described in this section) is provided during installation
   to configure the server for first use.
 
-.. note:: This section describes how to install a command-line only
-   server using the graphical installer. Alternately, a server can be
-   installed :ref:`Using the TrueOS CD` or
-   :ref:`Using the Text Installer`.
-
-To perform a graphical server installation, start the |trueos|
-installation as usual. At the :ref:`System Selection` screen of the
-installer, select :guilabel:`TrueOS Server (console interface only)`.
+To perform a server installation, start the |trueos| installation as
+usual. At the :ref:`System Selection` screen of the installer, select
+:guilabel:`TrueOS Server (console interface only)`.
 
 Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`,
 then click :guilabel:`Next` again to see the screen shown in
@@ -1164,36 +824,6 @@ server installation. The
 `FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
 is an excellent reference for performing common FreeBSD server tasks.
 
-.. index:: using the install cd
-.. _Using the TrueOS CD:
-
-Using the |trueos| CD
----------------------
-
-The CD-sized |trueos| ISO provides an *ncurses* installer for installing
-a command-line version of |trueos|. If the intent is to only install
-servers and a graphical installer is unnecessary, this ISO is convenient
-to use and quick to download. The |trueos| CD can also be used to repair
-an existing installation, using the instructions in
-:ref:`Using the System Utilities Menu`.
-
-To start a server installation using the |trueos| ISO, insert the
-prepared boot media. Once the system has finished booting into the
-installer, it will display the installation menu shown in
-:numref:`Figure %s <cd2>`.
-
-.. _cd2:
-
-.. figure:: images/cd2a.png
-   :scale: 100%
-
-   |trueos| Installation Menu
-
-To begin the installation, press :kbd:`Enter`. The server installation
-will then display the screen shown in
-:ref:`Select Installation Disk <text3>` and proceed as
-described in :ref:`Using the Text Installer`.
-
 .. index:: install with dualboot
 .. _Dual Booting:
 
@@ -1236,6 +866,47 @@ in the installer overwriting the contents of the primary disk.
 
 In |trueos|, the BSD boot loader is the preferred and default boot
 loader, as it provides native support for ZFS boot environments.
+
+.. index:: using system utilities menu
+.. _Using the System Utilities Menu:
+
+Using the System Utilities Menu
+-------------------------------
+
+Choose the :guilabel:`utility` option in the main menu of the graphical
+installer shown in the :ref:`TrueOS® Installation Menu <install15>` to
+open the screen shown in :numref:`Figure %s <util1>`.
+
+.. _util1:
+
+.. figure:: images/util1a.png
+   :scale: 100%
+
+   System Utilities Menu
+
+This screen provides several options:
+
+* **shell:** This option is useful when troubleshooting a |trueos|
+  system that no longer boots. It will open a shell with administrative
+  access, including the base FreeBSD utilities. Advanced users can use
+  this shell to identify a problem, create a backup of or copy essential
+  files to another system, or edit configuration files with an editor
+  such as `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or
+  :command:`vi`. When finished using the shell, type :command:`exit` to
+  return to the screen shown in
+  :ref:`System Utilities Menu <util1>`.
+
+* **zimport** This option will display the names of available ZFS pools.
+  Type the name of an available pool and it will import the pool then
+  display the available boot environments (BEs). Type the name of the
+  desired BE and this option will mount the BE then offer to open a
+  chroot shell so its contents can be viewed and manipulated as needed
+  in order to perform maintenance on the boot environment. When
+  finished, type :command:`exit` to leave the boot environment and
+  return to the screen shown in :ref:`System Utilities Menu <util1>`.
+
+* **exit:** This option returns the user to the main
+  :ref:`TrueOS® Installation Menu <install1>`.
 
 .. index:: upgrade from PCBSD
 .. _Upgrading from PCBSD 10.x to TrueOS:
