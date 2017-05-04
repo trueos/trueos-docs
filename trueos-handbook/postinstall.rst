@@ -538,6 +538,93 @@ to login.
 .. tip:: It is possible to change keyboard layouts during an active
    desktop session using the included :guilabel:`fcitx` utility
 
+.. index:: Updating TrueOS
+.. _Updating TrueOS:
+
+Updating TrueOS
+===============
+
+The TrueOS project is organized around two update tracks: STABLE and
+UNSTABLE. Updating is handled through the |sysadm| Update Manager; refer
+to the SysAdm Client Handbook
+`Update Manager documentation <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
+for more details about using the Update Manager. This section only
+contains simple instructions to switch between update tracks.
+
+To view or adjust the current update track for TrueOS, click
+:menuselection:`Start Menu --> Control Panel --> Update Manager --> Settings`.
+The :guilabel:`Settings` tab, seen in :numref:`Figure %s <update1>`, allows
+you to adjust *when* and *where* to perform system updates.
+
+.. _update1:
+
+.. figure:: images/update1.png
+   :scale: 100%
+
+   Update Manager Settings
+
+While both STABLE and UNSTABLE tracks are rolling releases based on
+FreeBSD-CURRENT, there are a few key differences between them.
+
+.. index:: TrueOS STABLE updates
+.. _TrueOS STABLE:
+
+TrueOS STABLE
+-------------
+
+As its name implies, STABLE refers to the more solid version of TrueOS.
+STABLE updates are released infrequently, but are much more tested
+and polished. All TrueOS installation files are created from the
+STABLE track, and fresh TrueOS installations only look to the STABLE
+track for updates.
+
+The STABLE track is recommended for those users who want a more
+predictable experience with fewer regressions, and are willing to
+wait longer for bugfixes and new utilities or ports.
+
+.. index:: TrueOS UNSTABLE updates
+.. _TrueOS UNSTABLE:
+
+TrueOS UNSTABLE
+---------------
+
+The UNSTABLE track is the bleeding edge of TrueOS development.
+Experimental fixes, upstream patches from the FreeBSD project,
+and testing new utilities and applications all happen first with
+the UNSTABLE track.
+
+UNSTABLE is recommended for power users, those with custom hardware
+unsupported with STABLE, and project contributors who wish to help
+test patches committed to TrueOS and/or FreeBSD-CURRENT.
+
+To switch to the UNSTABLE track, open the SysAdm Update Manager and
+navigate to the *Settings* tab, seen in :ref:`update1`. Check
+:guilabel:`UNSTABLE Repository`, then click :guilabel:`Save Settings`.
+
+Alternately, you can edit :file:`usr/local/etc/trueos.conf` to change
+update tracks without using SysAdm. Here is an example
+:file:`trueos.conf`:
+
+.. code-block:: none
+
+ # TrueOS Configuration Defaults
+
+ # Default package set to pull updates from
+ PACKAGE_SET: <STABLE, UNSTABLE, or CUSTOM>
+ PACKAGE_URL: <CUSTOM url>
+
+ # Default type of CDN to use
+ # IPFS - Use IPFS
+ # HTTP - Use a standard HTTP connection (default)
+ # CDN_TYPE: HTTP
+
+ # Set the number of automatic boot-environments to create / keep
+ MAXBE: 5
+ AUTO_UPDATE: disabled
+ AUTO_UPDATE_REBOOT: disabled
+
+.. TODO Add rollback instructions from UNSTABLE to STABLE
+
 .. index:: Managing system services and Daemons
 .. _Managing System Services and Daemons:
 

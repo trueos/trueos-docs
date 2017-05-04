@@ -334,6 +334,13 @@ Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_ or the
 `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_.
 
+.. note:: All installation files are based off STABLE releases to
+   TrueOS. By default, fresh TrueOS installs **only** obtain updates
+   from the STABLE repository, but users can switch to the
+   experimental UNSTABLE repository to test updates and bug fixes
+   early. See the :ref:`Updating TrueOS` section for instructions on
+   switching to the UNSTABLE update repository.
+
 Several types of files are available for download. Before downloading
 a file, review these descriptions to see which one best suits your need:
 
