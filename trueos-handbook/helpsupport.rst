@@ -1,4 +1,4 @@
-.. index:: help
+.. index:: help and support
 .. _Help and Support:
 
 Help and Support
@@ -17,35 +17,13 @@ important to follow certain protocols when requesting help:
 
 * `How To Ask Questions The Smart Way <http://catb.org/~esr/faqs/smart-questions.html>`_
 
-.. index:: help, ongoing issues
-.. _Ongoing Issues:
-
-Ongoing Issues
-==============
-
-This section is intended to list all known/longstanding issues with
-aspects of the |trueos| project.
-
-.. index:: help, pico
-.. _Pico:
-
-Pico
-----
-
-This section lists the currently known bugs with |trpi| use:
-
-* **Audio:** Pulse Audio has an intermittent issue with freezing upon
-  *client* initialization. A workaround has been implemented, but please
-  refer to :ref:`Report a bug` if any additional audio issues are
-  encountered.
-
-.. index:: help, troubleshooting
+.. index:: troubleshooting
 .. _Troubleshooting:
 
 Troubleshooting
 ===============
 
-.. index:: help, troubleshooting, display
+.. index:: troubleshooting display
 .. _Display:
 
 Display
@@ -86,7 +64,7 @@ another setting. Once satisfied with the tested setting, click
 :guilabel:`"Yes` to save the setting and proceed. Alternately, click
 :guilabel:`Skip` to configure the display settings later.
 
-.. index:: help, troubleshooting, installation
+.. index:: troubleshooting installation
 .. _installation:
 
 Installation
@@ -160,7 +138,7 @@ location of the boot media, it may be different from :file:`da1`. Type
 If none of the above has fixed the problem, the :ref:`TrueOS Community`
 is a valuable resource to assist in tracking down and solving the issue.
 
-.. index:: help, troubleshooting, network
+.. index:: troubleshooting network
 .. _Network:
 
 Network
@@ -294,7 +272,7 @@ The FreeBSD Handbook chapter on
 provides a good overview of how wireless works and offers additional
 troubleshooting suggestions.
 
-.. index:: help, troubleshooting, printer
+.. index:: troubleshooting printer
 .. _printer:
 
 Printer
@@ -321,7 +299,7 @@ Here are some solutions to common printing problems:
   model of your printer, and your version of |trueos| as you
   :ref:`Report a Bug`.
 
-.. index:: help, troubleshooting, sound
+.. index:: troubleshooting sound
 .. _sound:
 
 Sound
@@ -375,7 +353,7 @@ determine what help resources are available. If/when reporting the
 issue, be sure to include both the version of |trueos| and name of
 the sound card.
 
-.. index:: community, chat
+.. index:: trueos community
 .. _TrueOS Community:
 
 The |trueos| Community
@@ -386,7 +364,7 @@ inception. A wide variety of chat channels and forum options are now
 available for users to interact with each other, contributors to the
 project, and the core development team.
 
-.. index:: community, gitter
+.. index:: gitter chat
 .. _Gitter Chat:
 
 Gitter Chat
@@ -436,7 +414,7 @@ on the Gitter channel:
   yourself. If a new person joins the channel, feel free to welcome them
   and to make them feel welcome.
 
-.. index:: community, reddit
+.. index:: TrueOS Subreddit
 .. _TrueOS Subreddit:
 
 |trueos| Subreddit
@@ -448,7 +426,7 @@ to use Reddit to ask questions and to search for or post how-tos. A
 Reddit account is not required in order to read the Subreddit, but will
 be necessary to create a login account to submit or comment on posts.
 
-.. index:: community, discourse
+.. index:: Discourse
 .. _Discourse:
 
 Discourse
@@ -460,7 +438,7 @@ Subreddit, a new user will need to sign up with Discourse in order to
 create posts, but it is possible to view the current posts without an
 account.
 
-.. index:: community, IRC
+.. index:: IRC
 .. _IRC:
 
 IRC
@@ -500,7 +478,7 @@ on IRC:
   yourself.
 
 
-.. index:: community, social
+.. index:: TrueOS Social Media
 .. _Social Media:
 
 Social Media
@@ -519,7 +497,7 @@ join.
 
 * `TrueOS® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_
 
-.. index:: contributing
+.. index:: contributing to TrueOS
 .. _Get Involved:
 
 Contributing to |trueos|
@@ -530,7 +508,7 @@ providing valuable contributions to the project. |trueos| is a large
 project with many facets, meaning there is ample opportunity for a wide
 variety of skill sets to easily improve the project.
 
-.. index:: contributing, bug
+.. index:: bug reporting
 .. _Report a bug:
 
 Report a bug
@@ -675,7 +653,7 @@ the issue. The bug tracker will attach a unique number to the report and
 send update messages to the the registered email address whenever
 activity occurs with the bug report.
 
-.. index:: contributing, testing
+.. index:: beta testing
 .. _Become a Beta Tester:
 
 Become a Beta Tester
@@ -702,7 +680,7 @@ accurately describe the situation when
 :ref:`Reporting a bug <Report a bug>` so it can be fixed as soon as
 possible.
 
-.. index:: contributing, translations
+.. index:: translations
 .. _Become a Translator:
 
 Translation
@@ -727,7 +705,7 @@ and which type(s) of translations you can assist with. This allows you
 to meet other volunteers as well as stay informed of any notices or
 updates affecting translators.
 
-.. index:: contributing, translations, interface
+.. index:: interface translation
 .. _Interface Translation:
 
 Interface Translation
@@ -828,7 +806,7 @@ to translate.
 If assistance is needed with either a translation or the Weblate system,
 ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. 
 
-.. index:: contributing, translations, documentation
+.. index:: documentation translation
 .. _Documentation Translation:
 
 Documentation Translation
@@ -926,7 +904,7 @@ later time
  sudo make i18n
  sudo make html
 
-.. index:: contributing, translations, website
+.. index:: website translation
 .. _Website Translation:
 
 Website Translation
@@ -938,7 +916,7 @@ yourself in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
 Currently, the website is being translated to several languages,
 including: Dutch, French, German, Polish, Spanish, Swedish, and Turkish.
 
-.. index:: contributing, development
+.. index:: become a developer
 .. _Development:
 
 Development
@@ -960,7 +938,7 @@ libraries and other non-GUI development is done using standard Bourne
 shell scripts. There may be cases where other languages or libraries
 are needed, but those will be evaluated on a case-by-case basis.
 
-.. index:: contributing, development, source code
+.. index:: get the source code
 .. _Getting the Source Code:
 
 Getting the Source Code
@@ -1049,7 +1027,7 @@ changes to the fork, then submit them by issuing a
 Once your changes have been reviewed, they will be committed or sent
 back with suggestions for improvement.
 
-.. index:: contributing, development, guidelines
+.. index:: design guidelines
 .. _Design Guidelines:
 
 Design Guidelines
@@ -1207,7 +1185,7 @@ Developers will also find these resources helpful:
 
 * `C++ Tutorials <http://www.cplusplus.com/doc/tutorial/>`_
 
-.. index:: contributing, advocacy
+.. index:: advocacy
 .. _Advocacy:
 
 Advocacy
@@ -1241,7 +1219,7 @@ Additional Resources
 Need more information? A number of useful resources that may aid in
 using |trueos| are available.
 
-.. index:: additional resources, freebsd handbook
+.. index:: Freebsd Handbook
 .. _FreeBSD Handbook and FAQ:
 
 FreeBSD Handbook and FAQ
@@ -1262,7 +1240,7 @@ excellent resource for learning how things work under the hood of a
    these instances, reading the FreeBSD Handbook section can help to
    learn how the system is configured and why it works.
 
-.. index:: additional resources, search portals
+.. index:: Search and Portals
 .. _Search and Portals:
 
 Search and Portals
@@ -1288,7 +1266,7 @@ from the forums or mailing lists, try searching these websites:
 
 * `LinuxBSDos <http://linuxbsdos.com/>`_
 
-.. index:: additional resources, more
+.. index:: more resources
 .. _More Resources:
 
 More Resources

@@ -472,7 +472,7 @@ burning utilities.
    | Mac OS X              | `Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_                            |
    +-----------------------+------------------------------------------------------------------------------------------------+
 
-.. index:: burn to usb
+.. index:: writing to usb
 .. _Writing to a USB Device:
 
 Writing to a USB Device
@@ -618,7 +618,7 @@ systems.
 This section describes how to prepare VirtualBox for an installation of
 |trueos| using an :file:`.iso` file.
 
-.. index:: virtualization
+.. index:: create virtual machine for an iso
 .. _Creating a Virtual Machine for an ISO File:
 
 Creating a Virtual Machine for an ISO File

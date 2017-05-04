@@ -36,6 +36,7 @@ development goals include supporting a wider variety of ARM devices and
 potential thin clients, and building cross-platform support for the
 server software.
 
+.. index:: initialize a pico device
 .. _picoinit:
 
 |trpi| Initialization
@@ -76,6 +77,7 @@ Each thin client will need:
 Once all these components are assembled, it's time to configure the
 |pise|.
 
+.. index:: start pico server
 .. _picoserver:
 
 |pise|
@@ -147,6 +149,7 @@ new users on a |trueos| system.
 After any necessary accounts are created, the next step is to initialize
 the client.
 
+.. index:: start pico client
 .. _startpicoclient:
 
 Starting the |picl|
@@ -201,6 +204,7 @@ the client device. The |picl| then searches for and connects to any
 |pise| on the network, bringing the user to the |trueos| login screen.
 The |picl| is now ready for use.
 
+.. index:: using a pico client
 .. _usepicoclient:
 
 Using the |picl|
@@ -228,6 +232,7 @@ file, along with the previously assigned **pico_auth #**. These
 processes prepare the server for a new connection and user login from
 the same |picl|.
 
+.. index:: VGL graphics
 .. _vglaccel:
 
 VGL Graphics Acceleration
@@ -255,6 +260,7 @@ of the gears, and updates periodically.
 
     VirtualGL Gears Test
 
+.. index:: Pulse Audio
 .. _pulseaud:
 
 Pulse Audio
@@ -268,7 +274,8 @@ provides a wealth of information on configuring Pulse Audio, including
 streaming audio over the network. Advanced controls for Pulse Audio are
 available in |appcafe| with the :command:`pavucontrol` multimedia
 application.
-   
+
+.. index:: Pico Server administration
 .. _Pico Server Administration:
 
 |pise| Administration

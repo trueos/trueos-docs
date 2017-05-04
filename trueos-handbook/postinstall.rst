@@ -1,4 +1,4 @@
-.. index:: postinstall config
+.. index:: postinstall configuration
 .. _Post Installation Configuration:
 
 Post Installation Configuration
@@ -8,7 +8,7 @@ After the |trueos| system has finished booting for the first time,
 |trueos| will present additional screens that assist in configuring
 the system.
 
-.. index:: TrueOS boot
+.. index:: booting into TrueOS
 .. _Booting Into TrueOS:
 
 Booting Into |trueos|
@@ -125,7 +125,7 @@ screen shown in :ref:`Configure Encryption <install11>`. If the
 correct password is typed, the system will calculate the GELI encryption
 key, then continue to boot.
 
-.. index:: detect display
+.. index:: display detection
 .. _Display Detection:
 
 Display Detection
@@ -241,7 +241,7 @@ option.
 
 When finished, click :guilabel:`Next` to proceed to the next screen.
 
-.. index:: set root password
+.. index:: setting a root password
 .. _Set the Root Password:
 
 Set the Root Password
@@ -260,7 +260,7 @@ requires the root (administrative) password to be set.
 The password must be a minimum of **4** characters and must be typed
 twice to confirm the password. Click :guilabel:`Next` when finished.
 
-.. index:: create new users
+.. index:: create a user
 .. _Create a User:
 
 Create a User
@@ -352,7 +352,7 @@ To share the computer with other users, create additional login and
 After creating at least one user, click :guilabel:`Next` to continue to
 the next screen.
 
-.. index:: configure audio
+.. index:: configure audio output
 .. _Configure Audio Output:
 
 Configure Audio Output
@@ -377,7 +377,7 @@ volume level.
 All these settings can be viewed and edited at any time using the
 instructions in :ref:`Sound Mixer Tray`.
 
-.. index:: wireless network connection
+.. index:: connect to a wireless network
 .. _Connect to a Wireless Network:
 
 Connect to a Wireless Network
@@ -408,7 +408,7 @@ by the desired network. If the desired network is not visible in the
 unable to connect or to configure the connection later, refer to
 :ref:`Network Manager` for more detailed instructions.
 
-.. index:: optional services, SSH, IPv6
+.. index:: enable optional services, SSH, IPv6
 .. _Enable Optional Services:
 
 Enable Optional Services
@@ -449,7 +449,7 @@ complete. Click :guilabel:`Finish` to access the login menu.
 
    Setup Complete
 
-.. index:: login
+.. index:: logging in
 .. _Logging In:
 
 Logging In
@@ -538,7 +538,7 @@ to login.
 .. tip:: It is possible to change keyboard layouts during an active
    desktop session using the included :guilabel:`fcitx` utility
 
-.. index:: init, services, daemons
+.. index:: Managing system services and Daemons
 .. _Managing System Services and Daemons:
 
 Managing System Services and Daemons
@@ -1053,7 +1053,7 @@ to load on a desktop. This is now accomplished when the
 :command:`sysrc` or other methods. Now there is no need to keep an extra
 overlay file to accomplish this behaviour.
 
-.. index:: desktop pkginstall
+.. index:: desktop pkginstall script
 .. _TrueOS desktop pkginstall script:
 
 |trueos| Desktop pkg-install Script
@@ -1086,7 +1086,7 @@ overlay file to accomplish this behaviour.
      set +e
      grep -q "i915kms" /etc/rc.conf.trueos
 
-.. index:: server pkginstall
+.. index:: server pkginstall script
 .. _TrueOS server pkginstall script:
 
 TrueOS Server pkg-install script

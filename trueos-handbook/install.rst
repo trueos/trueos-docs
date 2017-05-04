@@ -1,4 +1,4 @@
-.. index:: graphical install
+.. index:: install trueos
 .. _Installing TrueOS:
 
 Installing |trueos|
@@ -74,7 +74,7 @@ installer. If any problems arise with booting into the graphical
 installer, please refer to the :ref:`Installation` Troubleshooting
 section of this handbook.
 
-.. index:: language select screen
+.. index:: installer language selection screen
 .. _Language Selection:
 
 Language Selection
@@ -162,7 +162,7 @@ translated. Any untranslated menus are displayed in English. Refer to
 When finished reviewing this screen, click :guilabel:`Next` to move on
 to the next installation screen.
 
-.. index:: installation type
+.. index:: installer system selection screen
 .. _System Selection:
 
 System Selection
@@ -197,7 +197,7 @@ To install the desktop, click :guilabel:`Next`.
    its data. Refer to the :ref:`Upgrading from PCBSD 10.x to TrueOS`
    section for more information about this option.
 
-.. index:: disk config screen
+.. index:: installer disk config screen
 .. _Disk Selection:
 
 Disk Selection
@@ -265,7 +265,7 @@ Once the disk configuration is finished, the finished configuration can
 be saved for later reuse. Insert a FAT-formatted USB stick and click
 :guilabel:`Save Config to USB`.
 
-.. index:: basic customization of the disk
+.. index:: basic disk customization
 .. _Basic Mode:
 
 Basic Mode
@@ -971,7 +971,7 @@ the new installation.
    to recreate any other user accounts or to reassociate any
    PersonaCrypt accounts.
 
-.. index:: auto installations
+.. index:: automated installations
 .. _Automated Installations:
 
 Automated Installations

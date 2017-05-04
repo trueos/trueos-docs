@@ -1,4 +1,4 @@
-.. index:: introduction
+.. index:: introducing trueos
 .. _Introducing TrueOS:
 
 Introducing |trueos|
@@ -430,7 +430,7 @@ now separate |trueos| from |pcbsd|:
 
 * :command:`pc-thinclient` has been removed as it is deprecated.
 
-.. index:: Linux comparison
+.. index:: Linux and TrueOS
 .. _Linux and TrueOS:
 
 Linux and |trueos|

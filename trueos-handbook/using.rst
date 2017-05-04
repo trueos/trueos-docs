@@ -8,7 +8,7 @@ This chapter discusses using |trueos| for many common tasks, in addition
 to linking to resources for the |lumina| desktop environment and
 |sysadm|.
 
-.. index:: using, lumina
+.. index:: Lumina
 .. _Lumina:
 
 |lumina|
@@ -63,7 +63,7 @@ utilities for various tasks, such as :command:`numlockx` and
 Refer to the `Lumina Handbook <https://lumina-desktop.org/handbook/>`_
 for detailed descriptions of every element of |lumina|.
 
-.. index:: using, sysadm
+.. index:: Sysadm
 .. _SysAdm:
 
 |sysadm|
@@ -84,7 +84,7 @@ is recommended for new |trueos| users, while the
 `API Reference <https://api.sysadm.us/>`_ guides are available for
 advanced users.
 
-.. .. index:: configuration
+.. .. index:: Java and Flash
  .. _Java and Flash:
 
  Java and Flash
@@ -164,7 +164,7 @@ superuser and copy the downloaded font to the
 :command:`fc-cache -f -v /usr/local/share/fonts/name_of_font` to refresh
 the fonts cache.
 
-.. index:: sound
+.. index:: sound mixer tray
 .. _Sound Mixer Tray:
 
 Sound Mixer Tray
@@ -302,7 +302,7 @@ view screenshots):
   player which can handle any media format and play audio CDs, DVDs,
   (S)VCDs, TV/radio cards, YouTube™ and SHOUTcast™ streams.
 
-.. index:: multimedia
+.. index:: Kodi
 .. _Kodi:
 
 Kodi
@@ -325,7 +325,7 @@ If you have never used Kodi before, take some time to skim through the
 `Turn PC-BSD into a home theater forum post <https://forums.pcbsd.org/thread-19799.html>`_
 contains a quick how-to for configuring Kodi.
 
-.. index:: multimedia
+.. index:: Plex
 .. _PlexHome Theater:
 
 PlexHome Theater
@@ -353,7 +353,7 @@ entered, the wizard will connect and sign you in. Now it is possible to
 search for and watch media. To exit Plex, click :guilabel:`<` then
 :guilabel:`Quit`.
 
-.. index:: automount
+.. index:: usb automounter
 .. _Automounter:
 
 Automounter
@@ -467,7 +467,7 @@ Coming soon:
 
 * Possible support for ZFS pools
 
-.. index:: mount
+.. index:: pcsysconfig
 .. _pcsysconfig:
 
 pc-sysconfig
@@ -537,7 +537,7 @@ For example, to see a listed of the supported filesystems, use:
  pc-sysconfig supportedfilesystems
  FAT, NTFS, EXT, CD9660, UFS, REISERFS, XFS, UDF, ZFS
 
-.. index:: freebsdports
+.. index:: Freebsd ports
 .. _FreeBSD Ports:
 
 FreeBSD Ports
@@ -560,7 +560,7 @@ To update an existing local ports directory:
  # cd /usr/ports
  # git pull
 
-.. index:: files
+.. index:: files, file sharing
 .. _Files and File Sharing:
 
 Files and File Sharing
@@ -745,7 +745,7 @@ available utilities.
    |             |              | :menuselection:`Network --> Windows Network`        |
    +-------------+--------------+-----------------------------------------------------+
 
-.. index:: configuration
+.. index:: disk manager
 .. _Disk Manager:
 
 Disk Manager
@@ -925,7 +925,7 @@ not recommended unless familiar with the ramifications.
   recommended as it provides very good compression at near real-time
   speed.
 
-.. index:: network
+.. index:: network manager
 .. _Network Manager:
 
 Network Manager
@@ -1061,7 +1061,7 @@ main Network Manager window.
 
 Repeat this procedure for each network interface to view or configure.
 
-.. index:: network
+.. index:: wireless adapters
 .. _Wireless Adapters:
 
 Wireless Adapters
@@ -1211,7 +1211,7 @@ the current network status and statistics for the wireless interface.
 
    Wireless Interface - Info
 
-.. index:: network
+.. index:: advanced network configuration
 .. _Network Configuration (Advanced):
 
 Network Configuration (Advanced)
@@ -1282,7 +1282,7 @@ The :guilabel:`Misc` section has more options to configure:
 If any changes are made within this window, click :guilabel:`Apply` to
 apply them.
 
-.. index:: network
+.. index:: proxy settings
 .. _Proxy Settings:
 
 Proxy Settings
@@ -1328,7 +1328,7 @@ configuration utility.
 If you apply any changes to this tab, a pop-up message will warn you may
 have to logout and back in for the proxy settings to take effect.
 
-.. index:: configure wireless access
+.. index:: configure wireless access point
 .. _Configuring a Wireless Access Point:
 
 Configuring a Wireless Access Point
@@ -1612,7 +1612,7 @@ systems:
 
 * `Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_
 
-.. index:: print and scan
+.. index:: printing, scanning
 .. _Printing:
 
 Printing and Scanning
@@ -1630,7 +1630,7 @@ this process immensely. If your printer configuration does not work,
 read this section more closely for hints to locate the correct driver
 for your printer.
 
-.. index:: research printer
+.. index:: researching your printer
 .. _Researching Your Printer:
 
 Researching your Printer
@@ -1650,7 +1650,7 @@ For the HP DeskJet model example, the HPLIP driver is recommended. In
 "hplip". Use |appcafe| to search if the driver is installed, and install
 it if not.
 
-.. index:: add printer
+.. index:: adding a printer
 .. _Adding a Printer:
 
 Adding a Printer
@@ -1747,7 +1747,7 @@ has paper and click :menuselection:`Maintenance -> Print Test Page`. If
 a test page will not print, refer to the Troubleshooting
 :ref:`Printer` of this handbook.
 
-.. index:: manual printer addition
+.. index:: manually adding printer drivers
 .. _Manually Adding a Driver:
 
 Manually Adding a Driver
@@ -1803,7 +1803,7 @@ Description) is a driver created by the manufacturer ending in a
 :file:`.ppd` extension. Sometimes the file will end with a
 :file:`.ppd.gz` extension, indicating it has been compressed.
 
-.. index:: scanner
+.. index:: scanners
 .. _Scanner:
 
 Scanning
