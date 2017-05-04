@@ -231,13 +231,6 @@ manager options:
 supports the ZFS boot environments used by
 `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_.
 
-**GRUB:** Select this option when dual-booting the system and the GRUB
-bootloader is preferred.
-
-.. warning:: |trueos| is currently experiencing issues with the GRUB
-   bootloater. It is recommended to avoid using GRUB while the issue is
-   resolved. See :ref:`Ongoing Issues` for more details.
-
 .. warning:: By default, |trueos| assumes the user wants to install
    on the entire first disk. When installing |trueos| as the only
    operating system on the computer, click :guilabel:`Next` to start the
@@ -805,12 +798,8 @@ select the boot manager.
    Boot Manager
 
 The default is to use :guilabel:`BSD` as it provides native support for
-boot environments. While :guilabel:`GRUB` provides some boot environment
-support, it may not be as up-to-date as the BSD support. It is
-recommended to only select :guilabel:`GRUB` if dual booting and the BSD
-boot manager does not find the other operating systems. If
-:guilabel:`none` is selected, no boot manager will be installed and boot
-environments will not be available.
+boot environments. If :guilabel:`none` is selected, no boot manager is
+installed and boot environments will not be available.
 
 The next screen is shown in :numref:`Figure %s <text7>`.
 
@@ -1034,14 +1023,6 @@ This screen provides several options:
   finished, type :command:`exit` to leave the boot environment and
   return to the screen shown in :ref:`System Utilities Menu <util1>`.
 
-* **fixgrub:** This option can be used to restamp the GRUB boot loader
-  should the installed system no longer boot from GRUB. When this option
-  is selected, it will first show the available ZFS pools and prompt for
-  the name of the pool to import.
-
-.. note:: The :command:`fixgrub` action will fail on systems using the
-   default BSD boot loader.
-
 * **exit:** This option will return to the main
   :ref:`TrueOS® Installation Menu <install1>`.
 
@@ -1254,22 +1235,7 @@ Clicking :guilabel:`Next` without customizing the disk layout results
 in the installer overwriting the contents of the primary disk.
 
 In |trueos|, the BSD boot loader is the preferred and default boot
-loader, as it provides native support for ZFS boot environments. If the
-default changed during installation, the installer uses a customized
-version of the GRUB boot loader which provides limited ZFS boot
-environment support.
-
-.. warning:: The GRUB boot loader is currently experiencing inconsistent
-   behavior, and it is recommended to use the BSD boot loader at this
-   time. See :ref:`Ongoing Issues` for more details.
-
-The |trueos| version of GRUB attempts to identify other installed
-operating systems, such as Windows and Linux, and add them to the GRUB
-boot menu. If an operating system is not automatically detected,
-an entry can be manually added to
-:file:`/usr/local/etc/grub.d/40_custom.dist`. For more information on
-the syntax used, refer to the
-`GRUB Manual <http://www.gnu.org/software/grub/manual/grub.html>`_.
+loader, as it provides native support for ZFS boot environments.
 
 .. index:: upgrade from PCBSD
 .. _Upgrading from PCBSD 10.x to TrueOS:
@@ -1481,8 +1447,8 @@ summarized in :numref:`Table %s <insvars>`.
    | mirrorbal=                 | "load", "prefer",          | defaults to "round-robin" if the    |
    |                            | "round-robin", or "split"  | *mirrorbal* method is not specified |
    +----------------------------+----------------------------+-------------------------------------+
-   | bootManager=               | "none", "bsd", or "GRUB"   | when using "GRUB", include its      |
-   |                            |                            | package in *installPackages=*       |
+   | bootManager=               | "none" or "bsd"            |                                     |
+   |                            |                            |                                     |
    +----------------------------+----------------------------+-------------------------------------+
    | image=                     | /path/to/image /mountpoint | will write specified image file     |
    +----------------------------+----------------------------+-------------------------------------+

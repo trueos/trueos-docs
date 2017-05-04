@@ -74,8 +74,8 @@ number or key for that option. Once any selections are made, press
   either :kbd:`7` or :kbd:`e` to view the available boot environments.
 
 .. tip:: The first time the system boots, no additional boot
-   environments are available. Over time, this menu will populate as
-   boot environments are created.
+   environments are available. This menu populates as boot
+   environments are created.
 
 .. _boot1:
 
@@ -101,65 +101,6 @@ Several boot options are available in the Boot Options Menu:
 * **6. Verbose:** Select this option to see more detailed messages
   during the boot process. This can be useful when troubleshooting a
   piece of hardware.
-
-.. index:: grub boot loader
-.. _GRUB Boot Loader:
-
-GRUB Boot Loader
-----------------
-
-If the installation was customized with the :guilabel:`GRUB` option for
-the boot loader, it will instead load the menu shown in
-:numref:`Figure %s <boot2>`.
-
-.. _boot2:
-
-.. figure:: images/boot2.png
-   :scale: 100%
-
-   GRUB Boot Menu
-
-This boot menu is used to display the entry for |trueos|, an entry for
-the screen which lists the available boot environments (these are
-automatically created when the system updates and can also be manually
-created using the |sysadm|
-`Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_),
-and any other operating systems installed on the system.
-
-By default, this menu displays for a few seconds before continuing to
-boot into |trueos|. To pause this screen to review its items, press any
-key (other than :kbd:`Enter`). To boot into a different operating
-system or boot environment, use the :kbd:`up` and :kbd:`down`
-arrows to select the desired entry then press :kbd:`Enter`.
-
-Press :kbd:`Enter` when the :guilabel:`TrueOS` entry is highlighted to
-see the |trueos| boot options screen, shown in
-:numref:`Figure %s <boot3>`.
-
-.. _boot3:
-
-.. figure:: images/boot3.png
-   :scale: 100%
-
-   |trueos| Graphical Boot Menu Options
-
-Several boot options are available:
-
-* **Normal Bootup:** Continues to boot |trueos|.
-
-* **Single User Mode:** Advanced users can select this option to fix
-  critical system failures.
-
-* **Verbose Mode:** Select this option to see more detailed messages
-  during the boot process. This can be useful when troubleshooting a
-  piece of hardware.
-
-Use the arrow keys to select an option, then press :kbd:`Enter` to boot
-using the highlighted option.
-
-This menu is provided by GRUB. Press :kbd:`e` to access the GRUB editor
-or :kbd:`c` to access the GRUB command line. Familiarity with GRUB is
-recommended.
 
 .. index:: encrypted disks
 .. _Encrypted Disks:

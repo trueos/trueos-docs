@@ -321,10 +321,7 @@ now separate |trueos| from |pcbsd|:
 * Based on FreeBSD-CURRENT.
 
 * The GRUB bootloader has been replaced by the FreeBSD bootloader, which
-  now provides both GELI and boot environment support. The
-  :guilabel:`Use GRUB bootloader` checkbox has been added to the
-  :guilabel:`Customize Disk Selection` screens for users of dual-boot
-  systems who prefer to use the GRUB boot loader.
+  now provides both GELI and boot environment support.
 
 * **Quick boot times with OpenRC:** |trueos| is using
   `OpenRC <https://github.com/OpenRC/openrc>`_ as part of the init

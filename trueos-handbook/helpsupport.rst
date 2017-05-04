@@ -32,17 +32,6 @@ aspects of the |trueos| project.
 |trueos| issues
 ---------------
 
-* **Text Installer:** The text installer is out of sync with the
-  graphical install options, which leads to instability when using the
-  text installer. A brief review of the installer has been accomplished,
-  with an update/slight rework in progress.
-
-* **GRUB:** GRUB is currently broken in |trueos|. The developers are
-  aware EFI setups using GELI require GRUB, and they are working on a
-  solution for this in a future release. It is also recommended that
-  users who installed with the GRUB bootloader avoid upgrading, as the
-  developers are working towards replacing GRUB in the installer.
-
 * **Older AMD/ATI cards:** These are not supported in |trueos| yet.
   There are several ongoing investigations, but no consistent solutions
   have been found yet. There are experimental drivers
