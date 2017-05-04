@@ -96,8 +96,7 @@ To check your hardware before installing |trueos|, a good place to start
 is the
 `FreeBSD Hardware Notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_.
 Another good resource is to start the installer and click the
-:guilabel:`Hardware Compatibility` icon. This handbook also has a
-:ref:`Ongoing issues` section to list any ongoing issues with hardware.
+:guilabel:`Hardware Compatibility` icon.
 
 While most hardware "just works" with |trueos|, it is possible to run
 across a piece of hardware which does not. Since |trueos| is essentially
@@ -153,9 +152,6 @@ includes Skylake, Haswell, Broadwell, and ValleyView.
 
 **ATI/Radeon:** 3D acceleration on most ATI and Radeon cards is
 supported.
-
-.. note:: Currently, |trueos| is experiencing difficulties supporting
-   AMD graphics cards. Please refer to :ref:`Ongoing issues`.
 
 **Optimus:** At this time there is no switching support between the two
 graphics adapters provided by Optimus. Optimus implementations vary, so

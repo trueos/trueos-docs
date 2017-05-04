@@ -84,65 +84,65 @@ is recommended for new |trueos| users, while the
 `API Reference <https://api.sysadm.us/>`_ guides are available for
 advanced users.
 
-.. index:: configuration
-.. _Java and Flash:
+.. .. index:: configuration
+ .. _Java and Flash:
 
-Java and Flash
-==============
+ Java and Flash
+ ==============
 
-.. warning:: This section is outdated as Flash support is in a state
+ .. warning:: This section is outdated as Flash support is in a state
    of flux with the current development (Jan 2017). Refer to
    `trueos-docs issue #28 <https://github.com/trueos/trueos-docs/issues/28>`_
    or the
    `flash discussion thread <https://discourse.trueos.org/t/flashpluginctl-on-looking-for-wrong-directory/501/16>`_
-   for updates and help installing flash on |trueos|, respectively. This
-   section will be updated once development on this issue stabilizes.
+   for updates and help installing flash on |trueos|. This section
+   will be updated once development on this issue stabilizes.
 
-**IcedTea-Web** provides an open source Java browser plugin which
-automatically works with the FireFox, Chromium, and Opera web browsers
-without any additional configuration. To install this software, search
-for "icedtea" within the |sysadm|
-`AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
+ **IcedTea-Web** provides an open source Java browser plugin which
+ automatically works with the FireFox, Chromium, and Opera web browsers
+ without any additional configuration. To install this software, search
+ for "icedtea" within the |sysadm|
+ `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
 
-Version 11 of the *Adobe Flash player* is available for installation
-through *AppCafe*. To install *Flash* as a browser plugin, search
-for and install both the **flashplugin** and **nspluginwrapper**
-packages. Once installed, flash should "just work" when browsing the
-web. If Adobe Flash does not seem to be working, running
-:command:`flashpluginctl on` as the regular user account should fix
-the problem.
+ Version 11 of the *Adobe Flash player* is available for installation
+ through *AppCafe*. To install *Flash* as a browser plugin, search
+ for and install both the **flashplugin** and **nspluginwrapper**
+ packages. Once installed, flash should "just work" when browsing the
+ web. If Adobe Flash does not seem to be working, running
+ :command:`flashpluginctl on` as the regular user account should fix
+ the problem.
 
-The Adobe Flash Player preferences utility can be used to modify how
-websites interact with your browser using Adobe Flash. Many of the
-same configurations can be done via right-click within an active flash
-object in a web browser.
+ The Adobe Flash Player preferences utility can be used to modify how
+ websites interact with your browser using Adobe Flash. Many of the
+ same configurations can be done via right-click within an active flash
+ object in a web browser.
 
-To access the utility shown in :numref:`Figure %s <flash1>`, use
-:menuselection:`Browse Applications --> Adobe Flash Player preferences`
-or type :command:`flash-player-properties`.
+ To access the utility shown in :numref:`Figure %s <flash1>`, use
+ :menuselection:`Browse Applications --> Adobe Flash Player preferences`
+ or type :command:`flash-player-properties`.
 
-.. _flash1:
+ .. _flash1:
 
-.. figure:: images/flash1.png
+ .. figure:: images/flash1.png
    :scale: 100%
 
    Flash Player Configuration
 
-The options available in each tab and when to use them are described on
-the Adobe website:
+ The options available in each tab and when to use them are described on
+ the Adobe website:
 
-* `Storage <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7fff.html>`_
+ * `Storage <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7fff.html>`_
   describes private browsing support and the privacy issues associated
   with local storage of flash information.
 
-* `Camera and Mic <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff8.html>`_
+ * `Camera and Mic <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff8.html>`_
   controls how websites can use the computer's camera and microphone.
 
-* `Playback <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff5.html>`_
+ * `Playback <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff5.html>`_
   describes how to configure peer-assisted networking to improve
   bandwidth.
 
-* `Advanced <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff0.html>`_
+ * `Advanced <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff0.html>`_
   controls how Flash Player handles browsing data, updates, trusted
   locations, and protected content.
 

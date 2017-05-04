@@ -26,47 +26,6 @@ Ongoing Issues
 This section is intended to list all known/longstanding issues with
 aspects of the |trueos| project.
 
-.. index:: help, TrueOS
-.. _TrueOS issues:
-
-|trueos| issues
----------------
-
-* **Older AMD/ATI cards:** These are not supported in |trueos| yet.
-  There are several ongoing investigations, but no consistent solutions
-  have been found yet. There are experimental drivers
-  `available <https://www.freebsd.org/cgi/man.cgi?query=radeon&sektion=4>`_,
-  but their effectiveness is (so far) inconsistent.
-
-* **Legacy Nvidia drivers, version range 304.x - 340.x:** Drivers from
-  this range need to be installed manually. The |trueos| installer only
-  contains the latest nvidia driver in order to prevent installation
-  conflicts. These drivers are available through :command:`pkg`.
-
-* **Translation issues:** |trueos| began using Weblate as its
-  translation system, but it is currently nonfunctional. The system is
-  being reviewed and should be back online soon.
-
-* **Broadcom wifi chips:** FreeBSD/|trueos| has longstanding issues
-  with older Broadcom wifi chipsets. Please browse the FreeBSD
-  `hardware notes <https://www.freebsd.org/relnotes/CURRENT/hardware/index.html>`_
-  to see detailed notes about supported hardware in FreeBSD/|trueos|.
-
-* **Install with Encryption:** A |trueos| installation using the FreeBSD
-  loader with both GPT and GELI encryption is currently nonfunctional,
-  due to a FreeBSD
-  `regression <https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=213491>`_.
-  Currently, it is best to avoid using GPT and GELI together with the
-  BSD bootloader for fresh installs while the FreeBSD contributors fix
-  the issue.
-
-* **Flash Support:** Flash support is in a state of flux with the
-  current development (Jan 2017). Refer to
-  `trueos-docs issue #28 <https://github.com/trueos/trueos-docs/issues/28>`_
-  or the
-  `flash discussion thread <https://discourse.trueos.org/t/flashpluginctl-on-looking-for-wrong-directory/501/16>`_
-  for updates and help installing flash on |trueos|, respectively.
-
 .. index:: help, pico
 .. _Pico:
 
