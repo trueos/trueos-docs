@@ -324,59 +324,52 @@ Installation Options
 
 Periodically, the |sysadm|
 `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
-provides a patch which updates the operating system to include all of
-the new features and drivers. To have or test the latest features and
-drivers as they become available, and you can tolerate possible breakage
-caused by new features being available before the next STABLE release,
-use the UNSTABLE version.
+provides patches to update the operating system. To have or test the
+latest features and drivers as they become available, and you can
+tolerate possible breakage caused by new features being available
+before the next STABLE release, use the UNSTABLE update track.
+
+.. note:: All installation files are based off STABLE releases to
+   TrueOS. By default, freshly installed TrueOS systems **only**
+   obtain updates from the STABLE repository, but users can switch
+   to the experimental UNSTABLE repository to test updates and bug
+   fixes early. See the :ref:`Updating TrueOS` section for
+   instructions on switching to the UNSTABLE update repository.
 
 Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_ or the
 `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_.
 
-.. note:: All installation files are based off STABLE releases to
-   TrueOS. By default, fresh TrueOS installs **only** obtain updates
-   from the STABLE repository, but users can switch to the
-   experimental UNSTABLE repository to test updates and bug fixes
-   early. See the :ref:`Updating TrueOS` section for instructions on
-   switching to the UNSTABLE update repository.
+Several types of files are available for download:
 
-Several types of files are available for download. Before downloading
-a file, review these descriptions to see which one best suits your need:
+* **STABLE Install**: Any file with the naming convention
+  *TrueOS-<year>-<month>-<day>-x64-<DVD/USB>.<iso/img>* are installation
+  files based on the STABLE version of |trueos| created on the specific
+  date.
+* **"latest" files**: These entries are symlinks to the latest TrueOS
+  install files and should be ignored.
 
-* Files beginning with :file:`TrueOS-Desktop` contain all of the
-  information needed to install either a graphical desktop or
-  command-line server using a graphical installer. If the file has an
-  :file:`.iso` extension, it should be burned to a DVD media. If it
-  has a :file:`img` extension, it should be burned to a USB stick.
-  There will also be associated files with the same name but ending in
-  an :file:`.md5` or :file:`.sha256` extension. Depending upon the
-  current operating system and its tools, use the value in either one
-  of those files to determine the integrity of the download, as
-  described in :ref:`Data Integrity Check`. If a torrent is available,
-  there will also be a file with the same name and a :file:`.torrent`
-  extension.
+Install files following the above naming conventions can also end with
+a variety of extensions:
 
-* Files beginning with :file:`TrueOS-Server` contain a command-line
-  installer and are used to install a command-line version of a
-  server. If the file has an :file:`.iso`  extension, it should be
-  burned to a CD media. If it has an :file:`img` extension, it should
-  be burned to a USB stick. There will also be associated files with
-  the same name but ending in an :file:`.md5` or :file:`.sha256`
-  extension. Depending upon the current operating system and its tools,
-  use the value in either one of those files to determine the integrity
-  of the download, as described in :ref:`Data Integrity Check`. If a
-  torrent is available, there will also be a file with the same name and
-  a :file:`.torrent` extension.
+* **.iso**: If the file has an *.iso* extension, it should be burned to
+  a DVD media or USB stick.
+* **.img**: If it has a *img* extension, it should be burned to a USB
+  stick.
+* **.md5, .sha256, and .sig**: Depending upon the current operating
+  system and its tools, use the value in any of these files to
+  determine the integrity of the download, as described in
+  :ref:`Data Integrity Check`.
+* **.torrent**: If a torrent is available, a file with the same name
+  and a *.torrent* extension will be visible.
 
-If planning to install a graphical desktop, download the file with
-:file:`TrueOS-Desktop` in its name and either burn it to a DVD media or
-write it to a removable USB device.
+To install a graphical desktop, download the file ending in *DVD.iso*
+or *USB.img*. Then, depending on the file type, either burn it to a
+DVD media or write it to a removable USB device.
 
-If installing a command-line only server is preferred, either download
-a file beginning with :file:`TrueOS-Desktop` (to use the graphical
-installer) or :file:`TrueOS-Server` (to use the command-line installer).
-The :file:`TrueOS-Server` files are smaller and can fit on a CD.
+If installing a command-line only server is preferred, download and
+begin installing |trueos| in the same manner as the desktop, but choose
+the :guilabel:`Server` option in the installer.
 
 Refer to :ref:`Burning the Installation Media` for instructions on how
 to burn the downloaded file to bootable media.
@@ -406,9 +399,9 @@ checksum verification utility.
 
 .. note:: Only one of the checksums needs to be verified. The
    `TrueOS website <http://download.trueos.org/master/amd64/>`_ lists
-   both the *.MD5* and *SHA256* files. The
-   `PC-BSD® website <http://www.pcbsd.org/download/>`_  lists the
-   *SHA256* while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
+   *.MD5*, *SHA256*, and *.SIG* files. The
+   `TrueOS website <http://download.trueos.org/master/amd64/>`_ has all
+   file types while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
    both the :file:`.md5` and the :file:`.sha256` checksum files. This
    section demonstrates how to verify an SHA256 checksum.
 
@@ -437,6 +430,11 @@ example, the file is located in the :file:`Downloads` directory. Using
 :samp:`md5 Downloads/TrueOS-2017-04-21-x64-DVD.iso.md5`,
 substitute the name and location of the downloaded file.
 
+If you prefer using the **OpenPGP** *.sig* file, use your preferred
+utility to verify the signature. The
+`OpenPGP website <http://openpgp.org/>`_ has numerous recommendations
+for verification utilities.
+
 .. index:: burn installation media
 .. _Burning the Installation Media:
 
@@ -446,7 +444,7 @@ Burning the Installation Media
 Once the installation file is downloaded and its checksum verified, burn
 it to a media. The media you use depends upon the file downloaded:
 
-* Files ending with :file:`.iso` must be burned to a DVD.
+* Files ending with :file:`.iso` can be burned to a DVD or a USB stick.
 
 * Files ending in :file:`img` must be burned to a USB stick.
 
@@ -512,24 +510,23 @@ the first plugged in USB device:
 
 When using the :command:`dd` command:
 
-* **if=** refers to the input file to be written.
+* **if=** designates the *input file* to be written.
 
-* **of=** refers to the output file (the device name of the flash card
-  or removable USB drive); increment the number in the name if it is not
+* **of=** refers to the *output file* (the device name of the flash card
+  or removable USB drive). Increment the number in the name if it is not
   the first USB device.
 
-* **bs=** refers to the block size.
+* **bs=** refers to the *block size*.
 
 .. note:: On Linux, type :command:`mount` with the USB stick inserted to
    see two or more device nodes corresponding to the USB stick. For
    example, :file:`/dev/sdc` and :file:`/dev/sdc1`, where
    :file:`/dev/sdc1` corresponds to the primary partition of the USB
-   stick. Before using the :command:`dd` command, ensure the USB stick
-   is first unmounted. Then, remember to use :file:`/dev/sdc` (the
-   device node without the number) as the option for the output file
-   **of=**. Once the :command:`dd` completes, the USB stick may not be
-   mountable on Linux as Linux has very limited support for UFS, the BSD
-   filesystem created on the USB stick.
+   stick. Before using :command:`dd`, ensure the USB stick is unmounted.
+   Then, remember to use :file:`/dev/sdc` (the device node without the
+   number) as the option for the output file **of=**. Once :command:`dd`
+   completes, the USB stick may not be mountable on Linux as it has very
+   limited support for UFS (BSD filesystem created on the USB stick).
 
 To burn the image file on a Windows system, use
 `win32-image-writer <https://sourceforge.net/projects/win32diskimager/>`_.
@@ -559,13 +556,13 @@ stick has a device name of :file:`/dev/disk1` and a raw device name of
 
 .. code-block:: none
 
- diskutil list 
+ diskutil list
  /dev/disk0
  #: TYPE NAME SIZE IDENTIFIER
  0: GUID_partition_scheme *500.1 GB disk0
  1: EFI 209.7 MB disk0s1
  2: Apple_HFS Macintosh HD 499.2 GB disk0s2
- 3: Apple_Boot Recovery HD 650.0 MB disk0s3 
+ 3: Apple_Boot Recovery HD 650.0 MB disk0s3
  /dev/disk1
  #: TYPE NAME SIZE IDENTIFIER
  0: FDisk_partition_scheme *8.0 GB disk1
