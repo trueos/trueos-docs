@@ -137,10 +137,9 @@ System Selection
 The **System Selection** screen installs a graphical desktop or
 a console-based server operating system, as seen in
 :numref:`Figure %s <install3>`. It also can be used for
-`Restoring the Operating System <https://sysadm.us/handbook/client/sysadmclient.html#restoring-the-operating-system>`_.
-This chapter concentrates on a desktop installation. Refer to the
-:ref:`Server Installation` instructions for installing a command-line
-only server.
+:ref:`Restoring the Operating System`. This chapter concentrates on a
+desktop installation. Refer to the :ref:`Server Installation`
+instructions for installing a command-line only server.
 
 .. _install3:
 
@@ -624,6 +623,8 @@ This section covers these advanced installation topics:
 
 * :ref:`Server Installation`
 
+* :ref:`Restoring the Operating System`
+
 * :ref:`Dual Booting`
 
 * :ref:`Using the System Utilities Menu`
@@ -631,8 +632,6 @@ This section covers these advanced installation topics:
 * :ref:`Upgrading from PCBSD 10.x to TrueOS`
 
 * :ref:`Automated Installations`
-
-.. TODO * add ref to restore from backup after moving from sysadm client handbook.
 
 If your intent is to install a graphical desktop using the graphical
 installer, instead refer to :ref:`Installing TrueOS`.
@@ -770,6 +769,56 @@ server installation. The
 `FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
 is an excellent reference for performing common FreeBSD server tasks.
 
+.. index:: Restore from Life Preserver backup
+.. _Restoring the Operating System:
+
+Restore from Life Preserver backup
+----------------------------------
+
+If you have replicated the system's snapshots to a remote backup
+server, you can use a |trueos| installation media to perform an
+operating system restore or to clone another system. Start the
+installation as usual and select to
+:guilabel:`Restore from Life Preserver backup` in the
+:ref:`System Selection Screen <install3>`.
+
+Before you can perform a restore, the network interface must be
+configured. Click the :guilabel:`Network Connectivity` (blue circle)
+icon in order to determine if the network connection was automatically
+detected. If not, refer to the instructions in the
+:ref:`Network Manager` section of this handbook and ensure networking is
+functional before continuing.
+
+Once you are ready, click :guilabel:`Restore from Life Preserver backup`
+and :guilabel:`Next`. This starts the Restore Wizard. In the
+**SSH Restore** shown in :numref:`Figure %s <restore2>`, type the IP
+address of the backup server and the name of the user account that
+replicated the snapshots. If the server is listening on a non-standard
+SSH port, change the :guilabel:`SSH port` number.
+
+.. _restore2:
+
+.. figure:: images/restore2.png
+   :scale: 100%
+
+   : Beginning a SSH Restore
+
+Click :guilabel:`Next` and the wizard provides a summary of your
+selections. If correct, click :guilabel:`Finish`. Otherwise, click
+:guilabel:`Back` to correct them.
+
+Once the connection to the backup server succeeds, you can select which
+host to restore. After making your selection, click :guilabel:`Next`.
+The restore wizard provides a summary of which host it restores from,
+the name of the user account associated with the replication, and
+the hostname of the target system. Click :guilabel:`Finish` and the
+installer proceeds to the :ref:`Disk Selection Screen <install5>`. At
+this point, you can click :guilabel:`Customize` to customize the disk
+options. However, any ZFS datasets will be greyed out as they are to be
+recreated from the backup during the restore. Once you are finished
+with any further customizations, click :guilabel:`Next` to perform the
+restore.
+
 .. index:: install with dualboot
 .. _Dual Booting:
 
@@ -813,15 +862,20 @@ in the installer overwriting the contents of the primary disk.
 In |trueos|, the BSD boot loader is the preferred and default boot
 loader, as it provides native support for ZFS boot environments.
 
+.. TODO confirm if the system utilities menu is still used in the
+   TrueOS installer.
+
 .. index:: using system utilities menu
 .. _Using the System Utilities Menu:
 
 Using the System Utilities Menu
 -------------------------------
 
-Choose the :guilabel:`utility` option in the main menu of the graphical
-installer shown in the :ref:`TrueOS® Installation Menu <install15>` to
-open the screen shown in :numref:`Figure %s <util1>`.
+The System Utilities menu is available from the "Emergency Shell" icon
+(see :ref:`insico`) in the various |trueos| installer screens. Once
+opened, you'll see the menu shown in :numref:`Figure %s <util1>`.
+
+.. TODO update screenshot once fixgrub option is removed.
 
 .. _util1:
 
@@ -833,23 +887,22 @@ open the screen shown in :numref:`Figure %s <util1>`.
 This screen provides several options:
 
 * **shell:** This option is useful when troubleshooting a |trueos|
-  system that no longer boots. It will open a shell with administrative
+  system that no longer boots. It opens a shell with administrative
   access, including the base FreeBSD utilities. Advanced users can use
-  this shell to identify a problem, create a backup of or copy essential
-  files to another system, or edit configuration files with an editor
-  such as `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or
+  this shell to identify a problem, create a backup or copy essential
+  files to another system, or alter configuration files with an editor
+  like `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or
   :command:`vi`. When finished using the shell, type :command:`exit` to
-  return to the screen shown in
-  :ref:`System Utilities Menu <util1>`.
+  return to the :ref:`System Utilities Menu <util1>`.
 
-* **zimport** This option will display the names of available ZFS pools.
-  Type the name of an available pool and it will import the pool then
-  display the available boot environments (BEs). Type the name of the
-  desired BE and this option will mount the BE then offer to open a
-  chroot shell so its contents can be viewed and manipulated as needed
-  in order to perform maintenance on the boot environment. When
-  finished, type :command:`exit` to leave the boot environment and
-  return to the screen shown in :ref:`System Utilities Menu <util1>`.
+* **zimport** This option displays the names of available ZFS pools.
+  Type the name of an available pool and the utility imports the pool
+  then displays the available boot environments (BEs). Type the name of
+  the desired BE and **zimport** mounts the BE then offers to open a
+  chroot shell so the environment's contents can be viewed and edited
+  as needed in order to perform maintenance on the boot environment.
+  When finished, type :command:`exit` to leave the boot environment and
+  return to the :ref:`System Utilities Menu <util1>`.
 
 * **exit:** This option returns the user to the main
   :ref:`TrueOS® Installation Menu <install1>`.
