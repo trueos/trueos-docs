@@ -33,46 +33,14 @@ booting.
 If a key other than :kbd:`Enter` is pressed, this screen pauses
 to provide additional time to review the options. If this screen is not
 paused, it automatically boots into the :guilabel:`Boot Multi User`
-option, displaying the :guilabel:`TrueOS® Installation Menu`, shown in
-:numref:`Figure %s <install15>`.
-
-.. _install15:
-
-.. figure:: images/install15a.png
-   :scale: 100%
-
-   |trueos| Installer Boot Menu
-
-* **xorg:** Starts a graphical installer which auto-detects the driver
-  required by the video hardware.
-
-* **vesa:** Starts the graphical installer with the VESA driver loaded.
-  Select this option if :guilabel:`xorg` hangs when loading the graphics
-  driver.
-
-* **scfb:** Starts the graphical installer with the SCFB driver loaded.
-  Select this option if a UEFI system hangs when loading the graphics
-  driver, as it provides a nicer display than the :guilabel:`vesa`
-  driver. Before selecting this option, double-check CSM has been
-  disabled in the BIOS.
-
-* **intel:** Start a graphical install with Legacy Intel drivers loaded.
-
-* **amd:** Start a graphical installation with legacy Radeon drivers
-  loaded.
-
-* **utility:** Starts the system utilities as described in
-  :ref:`Using the System Utilities Menu`.
-
-* **reboot:** Exits the installer and reboots the system.
-
-Use the arrow keys to highlight a desired option, then press
-:kbd:`Enter` to continue to boot into the option.
+option, displaying the first graphical installer screen, shown in the
+:ref:`Language Selection` section.
 
 The rest of this chapter describes the screens of the graphical
 installer. If any problems arise with booting into the graphical
-installer, please refer to the :ref:`Installation` Troubleshooting
-section of this handbook.
+installer, please refer to the
+:ref:`Installation Troubleshooting <Installation Help>` section of
+this handbook.
 
 .. index:: installer language selection screen
 .. _Language Selection:
@@ -86,7 +54,7 @@ loaded and is ready to present its options.
 
 .. _install2:
 
-.. figure:: images/install2c.png
+.. figure:: images/install2d.png
    :scale: 100%
 
    Welcome and Language Selection Screen
@@ -122,12 +90,10 @@ help with the installation, explained in :numref:`Table %s <insico>`:
    |                       | configure system networking during the    |
    |                       | installation process.                     |
    +-----------------------+-------------------------------------------+
-   | Pie Chart             | Launches the *Disk Manager* utility.      |
-   +-----------------------+-------------------------------------------+
    | Command Prompt Window | Access the emergency shell described in   |
    |                       | :ref:`Using the System Utilities Menu`.   |
    +-----------------------+-------------------------------------------+
-   | Abort                 | Abort the installation.                   |
+   | Abort                 | Cancel the installation.                  |
    +-----------------------+-------------------------------------------+
    | Next                  | Navigate to the next or previous screen.  |
    +-----------------------+-------------------------------------------+
@@ -142,7 +108,7 @@ bottom of the screen.
 
 There is also an option to :guilabel:`Load config from USB`. If the
 configuration from a previous installation has been saved, it can be
-loaded at this time from a FAT-formatted USB stick.
+loaded at this time from a *FAT* formatted USB stick.
 
 By default, |trueos| menus display in English, unless another language
 is selected in the drop-down menu in this screen. The menus in |trueos|
@@ -168,7 +134,7 @@ to the next installation screen.
 System Selection
 ================
 
-The :guilabel:`System Selection` screen installs a graphical desktop or
+The **System Selection** screen installs a graphical desktop or
 a console-based server operating system, as seen in
 :numref:`Figure %s <install3>`. It also can be used for
 `Restoring the Operating System <https://sysadm.us/handbook/client/sysadmclient.html#restoring-the-operating-system>`_.
@@ -178,14 +144,14 @@ only server.
 
 .. _install3:
 
-.. figure:: images/install3c.png
+.. figure:: images/install3d.png
    :scale: 100%
 
    System Selection Screen
 
-By default, :guilabel:`TrueOS Desktop (graphical interface)` is selected
-and the |lumina| Desktop will be installed. Additional software can be
-installed later using
+By default, :guilabel:`TrueOS Desktop (graphical interface)` is
+selected. The |lumina| Desktop is installed with TrueOS, but
+additional software can be installed later using
 `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
 
 To install the desktop, click :guilabel:`Next`.
@@ -203,23 +169,15 @@ To install the desktop, click :guilabel:`Next`.
 Disk Selection
 ==============
 
-The :guilabel:`Disk Selection" screen`, seen in
-:numref:`Figure %s <install5>`, summarizes the default disk
-configuration.
+The **Disk Selection** screen, seen in :numref:`Figure %s <install5>`,
+summarizes the default disk configuration.
 
 .. _install5:
 
-.. figure:: images/install5c.png
+.. figure:: images/install5d.png
    :scale: 100%
 
    Disk Selection Screen
-
-This screen provides a drop-down :guilabel:`Boot-Loader` menu with boot
-manager options:
-
-**BSD:** Uses the FreeBSD boot loader. This is recommended as it
-supports the ZFS boot environments used by
-`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_.
 
 .. warning:: By default, |trueos| assumes the user wants to install
    on the entire first disk. When installing |trueos| as the only
@@ -252,17 +210,16 @@ The wizard provides two modes of operation:
   layout.
 
 .. warning:: Regardless of the selected mode, once the disk wizard
-   completes and :guilabel:`Next` is chosen at the disk
-   :guilabel:`Summary` screen, a pop-up window will ask to start the
-   installation. Be sure to review the disk summary before clicking
-   :guilabel:`Yes` and starting the installation. The 
-   :guilabel:`Summary` screen is the **very last chance** to ensure the
-   system is correctly configured. After clicking :guilabel:`Yes`, the
-   selected hard drive or partition will be formatted and any data it
-   contains will be lost.
+   completes and :guilabel:`Next` is chosen at the **Disk Selection**
+   screen, a pop-up window asks to start the installation. Be sure to
+   review the **Summary** area before clicking :guilabel:`Yes` and
+   starting the installation. The **Disk Selection** screen is the
+   **very last chance** to ensure the system is correctly configured.
+   After clicking :guilabel:`Yes`, the selected hard drive or
+   partition is formatted, losing any existing data.
 
-Once the disk configuration is finished, the finished configuration can
-be saved for later reuse. Insert a FAT-formatted USB stick and click
+Once finished configuring the disk, you can save your choices for
+later use. Insert a FAT32 or MSDOSFS formatted USB stick and click
 :guilabel:`Save Config to USB`.
 
 .. index:: basic disk customization
@@ -282,25 +239,23 @@ in :numref:`Figure %s <install7>`.
    Disk or Partition Selection
 
 The first hard disk is typically selected. To install on a different
-disk, use the :guilabel:`Selected Disk` drop-down menu to
-select the disk to install into.
+disk, use the :guilabel:`Disk` drop-down menu to select the install
+disk.
 
 By default, the entirety of the selected disk is formatted. If the disk
 is divided into partitions or there is an area of free space, use the
-:guilabel:`Selected Partition` drop-down menu to choose the desired
-partition.
+:guilabel:`Partition` drop-down menu to choose the desired partition.
 
 .. note:: |trueos| only installs into a primary MBR partition, a GPT
-   partition, or an area of free space. That is, |trueos| cannot install
-   into a secondary or an extended partition. To create an area of free
-   space to install into, refer to :ref:`Creating Free Space`.
+   partition, or an area of free space. |trueos| cannot install into
+   a secondary or an extended partition. To create an area of free
+   space for installation, refer to :ref:`Creating Free Space`.
 
 Once the disk and partition are selected, click :guilabel:`Next` to
-return to the disk :guilabel:`Summary` screen to review the selections.
-To make additional changes, press :guilabel:`Back` to return to a
-previous screen. Otherwise, click :guilabel:`Finish` to leave the
-wizard. Click :guilabel:`Next` then :guilabel:`Yes` to start the
-installation.
+view a **Summary** screen to review your choices. To make additional
+changes, press :guilabel:`Back` to return to a previous screen.
+Otherwise, click :guilabel:`Finish` to leave the wizard. Click
+:guilabel:`Next` then :guilabel:`Yes` to start the installation.
 
 .. index:: advanced disk customization
 .. _Advanced Mode:
@@ -320,35 +275,34 @@ After selecting advanced mode, the wizard displays the screen shown in
 
 This screen has several options:
 
-* **Selected Disk:** Select the disk to install into.
+* **Disk:** Choose the install disk.
 
-* **Selected Partition:** Select the desired partition or area of free
-  space.
+* **Partition:** Select the desired partition or area of free space.
 
 .. note:: |trueos| onlys install into a primary MBR partition, a GPT
-   partition, or an area of free space. That is, |trueos| cannot install
-   into a secondary or an extended partition. To create an area of free
-   space to install into, refer to :ref:`Creating Free Space`.
+   partition, or an area of free space. |trueos| cannot install into
+   a secondary or an extended partition. To create an area of free
+   space for installation, refer to :ref:`Creating Free Space`.
 
-* **Partition Scheme:**  The default of
+* **Partition Scheme:**  The default
   :guilabel:`GPT (Best for new hardware)` is a partition table layout
-  that supports larger partition sizes than the traditional
+  supporting larger partition sizes than the traditional
   :guilabel:`MBR (Legacy)` layout. **If the installation disk or
   partition is larger than 2 TB, the GPT option must be selected**.
   Since some older motherboards do not support GPT, if the installation
   fails, try again with :guilabel:`MBR (Legacy)` selected. When in
-  doubt, try the default selection first.
+  doubt, use the default selection.
 
-.. note:: This section does not appear if a partition other than
-   :guilabel:`Use entire disk` is chosen in the
-   :guilabel:`Selected Partition` drop-down menu.
+.. note:: The **Partition Scheme** section does not appear if a
+   partition other than :guilabel:`Use entire disk` is chosen in the
+   :guilabel:`Partition` drop-down menu.
 
-* **ZFS pool name:** To use a pool name other than the default of
-  *tank*, check this box and input the name of the pool. *Root*
-  is reserved and can not be used as a pool name.
+* **ZFS pool name:** To use a pool name other than *tank* (default),
+  check this box and type the name of the pool in the text window.
+  *Root* is reserved and can not be used as a pool name.
 
 * **Force ZFS 4k block size:** This option is only used if the disk
-  supports 4k, even though it lies and reports its size as
+  supports 4k, even though the disk may lie and report its size as
   512b. Use with caution as it may cause the installation to fail.
 
 After making any selections, click :guilabel:`Next` to access the ZFS
@@ -361,19 +315,19 @@ and then demonstrates how to customize the ZFS layout.
 ZFS Overview
 ^^^^^^^^^^^^
 
-ZFS is an enterprise grade file-system, which provides many features
-including: support for high storage capacities, high reliability, the
-ability to quickly take snapshots, boot environments, continuous
+ZFS is an enterprise grade file-system, which provides many features.
+These include: support for high storage capacities, high reliability,
+the ability to quickly take snapshots, boot environments, continuous
 integrity checking and automatic repair, RAIDZ which was designed to
 overcome the limitations of hardware RAID, and native NFSv4 ACLs.
 
 If new to ZFS, the Wikipedia entry on :wikipedia:`ZFS` provides an
 excellent starting point to learn about its features. Additionally,
 `FreeBSD Mastery: ZFS <https://www.michaelwlucas.com/nonfiction/freebsd-mastery-zfs>`_
-by Michael W Lucas and Allan Jude is a helpful resource specific to ZFS
-as it is implemented in FreeBSD.
+by Michael W Lucas and Allan Jude is a helpful ZFS resource as it
+is implemented in FreeBSD.
 
-These resources are also useful to bookmark and refer to as needed:
+These resources are also useful to bookmark and peruse as needed:
 
 * `ZFS Evil Tuning Guide <http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_
 
@@ -400,18 +354,18 @@ These resources are also useful to bookmark and refer to as needed:
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Term     | Description                                                                                                                                  |
    +==========+==============================================================================================================================================+
-   | Pool     | A collection of devices that provides physical storage and data replication managed by ZFS. This pooled storage model eliminates the concept |
-   |          | of volumes and the associated problems of partitions, provisioning, wasted bandwidth, and stranded storage. Thousands of filesystems can     |
-   |          | draw from a common storage pool, each one consuming only as much space as it actually needs. The combined I/O bandwidth of all devices in    |
-   |          | the pool is available to all filesystems at all times. The                                                                                   |
+   | Pool     | A collection of devices providing physical storage and data replication managed by ZFS. This pooled storage model eliminates the concept of  |
+   |          | volumes and the associated problems of partitions, provisioning, wasted bandwidth, and stranded storage. Thousands of filesystems can draw   |
+   |          | from a common storage pool, each one consuming only its required space. The combined I/O bandwidth of all devices in the pool is available   |
+   |          | at all times to all filesystems. The                                                                                                         |
    |          | `Storage Pools Recommendations <http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide#ZFS_Storage_Pools_Recommendations>`_ |
    |          | of the ZFS Best Practices Guide provides detailed recommendations for creating the storage pool.                                             |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Mirror   | A form of RAID where all data is mirrored onto two or more disks, creating a redundant copy should a disk fail.                              |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | RAIDZ    | ZFS software solution equivalent to RAID5 as it allows one disk to fail without losing data. Requires at least **3** disks.                  |
+   | RAIDZ    | ZFS software solution equivalent to RAID5, as it allows one disk to fail without losing data. Requires at least *3* disks.                   |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | RAIDZ2   | Double-parity ZFS software solution similar to RAID6 as it allows two disks to fail without losing data. Requires a minimum of 4 disks.      |
+   | RAIDZ2   | Double-parity ZFS software solution similar to RAID6, as it allows two disks to fail without losing data. Requires a minimum of *4* disks.   |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | RAIDZ3   | Triple-parity ZFS software solution. RAIDZ3 offers three parity drives and can operate in degraded mode if up to three drives fail with no   |
    |          | restrictions on which drives can fail.                                                                                                       |
@@ -419,15 +373,15 @@ These resources are also useful to bookmark and refer to as needed:
    | Dataset  | Once a pool is created, it can be divided into datasets. A dataset is similar to a folder as it supports permissions. A dataset is also      |
    |          | similar to a filesystem since properties such as quotas and compression can be set.                                                          |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Snapshot | A read-only, point-in-time copy of a filesystem. Snapshots can be created quickly and, if little data changes, new snapshots take up very    |
-   |          | little space. For example, a snapshot where no files have changed takes 0 MB of storage, but if a 10 GB file is changed, it will keep a copy |
-   |          | of both the old and the new 10 GB version. Snapshots provide a clever way of keeping a history of files, should an older copy or even a      |
-   |          | deleted file need to be recovered. For this reason, many administrators take snapshots often (e.g. every 15 minutes), store them for a       |
-   |          | period of time (e.g. for a month), and store them on another system. Such a strategy allows the administrator to roll the system back to a   |
-   |          | specific time or, if there is a catastrophic loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within |
-   |          | 15 minutes of the data loss). Snapshots can be cloned or rolled back, but the files on the snapshot can not be accessed independently.       |
+   | Snapshot | A read-only, point-in-time copy of a filesystem. Snapshots can be created quickly and, if little data changes, new snapshots take very       |
+   |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both old and new      |
+   |          | versions. Snapshots provide a clever way of keeping a history of files, should an older copy or even a deleted file need to be recovered.    |
+   |          | For this reason, many administrators snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and store   |
+   |          | them on another system. Such a strategy allows the administrator to roll the system back to a specific time, or if there is a catastrophic   |
+   |          | loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within 15 minutes of the data loss). Snapshots can  |
+   |          | be cloned or rolled back, but the files on the snapshot can not be accessed independently.                                                   |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Clone    | A writable copy of a snapshot which can only be created on the same ZFS volume. Clones provide an extremely space-efficient way to store     |
+   | Clone    | A writable copy of a snapshot which can only be created on the same ZFS volume. Clones provide an extremely space efficient way to store     |
    |          | many copies of mostly-shared data such as workspaces, software installations, and diskless clients. Clones do not inherit the properties of  |
    |          | the parent dataset, but rather inherit the properties based on where the clone is created in the ZFS pool. Because a clone initially shares  |
    |          | all its disk space with the original snapshot, its used property is initially zero. As changes are made to the clone, it uses more space.    |
@@ -435,9 +389,9 @@ These resources are also useful to bookmark and refer to as needed:
    | ZIL      | A filesystem journal that manages writes. The ZIL is a temporary storage area for sync writes until they are written asynchronously to the   |
    |          | ZFS pool. If the system has many sync writes, such as from a database server, performance can be increased by adding a dedicated log device  |
    |          | known as a SLOG (Secondary LOG). If the system has few sync writes, a SLOG will not speed up writes. When creating a dedicated log device,   |
-   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors that can handle writing the contents of the SSD's RAM to   |
+   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors able to handle writing the contents of the SSD's RAM to    |
    |          | the SSD. If a dedicated log device is needed, the SSD should be half the size of system RAM, as anything larger is unused capacity. Note a   |
-   |          | dedicated log device can not be shared between ZFS pools and the same device cannot hold both a log and a cache device.                      |
+   |          | dedicated log device can not be shared between ZFS pools, and the same device cannot hold both a log and a cache device.                     |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is known as an L2ARC and ZFS uses it to store more |
    |          | reads which can increase random read performance. However, adding a cache device will not improve a system with too little RAM and actually  |
@@ -494,16 +448,15 @@ The |trueos| installer supports multiple ZFS configurations:
 
 * **stripe:** Requires a minimum of 2 disks.
 
-.. note:: A stripe does NOT provide ANY redundancy. If any disk fails in
-   a stripe, all data in the pool is lost!
+.. danger:: A stripe does NOT provide ANY redundancy. If any disk fails
+   in a stripe, all data in the pool is lost!
 
-The installer will not allow a configuration choice in which the system
-does not meet the minimum number of disks required by the configuration.
-When selecting a configuration, a message will indicate how many more
-disks are required.
+The installer does not allow a configuration choice in which the system
+does not meet the required number of disks. When selecting a
+configuration, a message indicates how many more disks are required.
 
-When finished, click :guilabel:`Next` to see the screen shown in
-:numref:`Figure %s <install10>`.
+When finished, click :guilabel:`Next` to choose cache and log devices,
+shown in :numref:`Figure %s <install10>`.
 
 .. _install10:
 
@@ -512,16 +465,17 @@ When finished, click :guilabel:`Next` to see the screen shown in
 
    L2ARC and ZIL
 
-This screen can be used to specify an SSD to use as an L2ARC read
-cache or as a secondary log device (ZIL). Any available devices will
-be listed in the boxes in this screen.
+This screen can be used to specify an SSD as an L2ARC read cache or as a
+secondary log device (ZIL). Any available devices are listed in the
+boxes in this screen.
 
 .. note:: A separate SSD is needed for each type of device.
 
 Refer to the descriptions for ZIL and L2ARC in the :ref:`ZFS Overview`
 to determine if the system would benefit from any of these devices
 before adding them in this screen. When finished, click :guilabel:`Next`
-to see the screen shown in :numref:`Figure %s <install11>`.
+to move to the encryption options, shown in
+:numref:`Figure %s <install11>`.
 
 .. _install11:
 
@@ -530,7 +484,7 @@ to see the screen shown in :numref:`Figure %s <install11>`.
 
    Encryption
 
-This screen can be used to configure full-disk encryption which is
+This screen can be used to configure full-disk encryption. This is
 meant to protect the data on the disks should the system itself be
 lost or stolen. This type of encryption prevents the data on the disks
 from being available during bootup unless the correct passphrase is
@@ -542,17 +496,17 @@ To configure full-disk encryption, check
 :guilabel:`GPT (Best for new hardware)` is not selected as GELI does not
 support MBR partitioning. If needed, use :guilabel:`Back` to go back to
 the :ref:`Advanced Mode` screen and select
-:guilabel:`GPT (Best for new hardware)`. Once
-:guilabel:`Encrypt disk with GELI` is checked, input a strong passphrase
-twice into the :guilabel:`Password` fields. This password should be long
-and easy to remember, but hard for others to guess.
+:guilabel:`GPT (Best for new hardware)`. Once that box is checked, input
+a strong passphrase twice into the :guilabel:`Password` fields. It is
+recommended to create a long and memorable password, but something
+difficult to guess.
 
-.. warning:: This passphrase is required to decrypt the disks. If the
+.. danger:: This passphrase is required to decrypt the disks. If the
    passphrase is lost or forgotten, all access will be lost to the
    encrypted data!
 
-When finished, click :guilabel:`Next` to move to the screen shown in
-:numref:`Figure %s <install12>`.
+When finished, click :guilabel:`Next` to move to the mount point screen
+shown in :numref:`Figure %s <install12>`.
 
 .. _install12:
 
@@ -562,26 +516,26 @@ When finished, click :guilabel:`Next` to move to the screen shown in
    Default ZFS Layout
 
 Regardless of how many disks are selected for the ZFS configuration, the
-default layout will be the same. ZFS does not require separate
-partitions for :file:`/usr`, :file:`/tmp`, or :file:`/var`. Instead,
-create one ZFS partition (pool) and specify a mount for each
-dataset. A :file:`/boot` partition is not mandatory with ZFS as the
-|trueos| installer puts a 64k partition at the beginning of the drive.
+default layout is the same. ZFS does not require separate partitions for
+:file:`/usr`, :file:`/tmp`, or :file:`/var`. Instead, create one ZFS
+partition (pool) and specify a mount for each dataset. A :file:`/boot`
+partition is not mandatory with ZFS as the |trueos| installer puts a
+64k partition at the beginning of the drive.
 
-.. warning:: Do not remove any of the default mount points as they are
-   used by |trueos|.
+.. warning:: Do not remove any of the default mount points. These are
+   all used by |trueos|.
 
 Use :guilabel:`Add` to add additional mount points. The system will ask
 for the name of the mount point as size is not limited at creation time.
 Instead, the data on any mount point can continue to grow as long as
 space remains within the ZFS pool.
 
-To set the swap size, click :guilabel:`Swap Size`. This will prompt to
+To set the swap size, click :guilabel:`Swap Size`. This prompts you to
 enter a size in MB. If a RAIDZ* or mirror exists, a swap partition
-of the specified size will be created on each disk and mirrored between
-the drives. For example, if a 2048 MB swap size is specified, a 2 GB
-swap partition will be created on all of the specified disks, yet the
-total swap size will be 2GB, due to redundancy.
+of the specified size is created on each disk and mirrored between the
+drives. For example, if a 2048 MB swap size is specified, a 2 GB swap
+partition is created on all the specified disks, but the total swap
+size is 2GB because of redundancy.
 
 Right-click any mount point to toggle between enabling or disabling many
 ZFS properties:
@@ -589,12 +543,12 @@ ZFS properties:
 * **atime:** When set to :guilabel:`on`, controls whether the access
   time for files is updated when they are read. When set to
   :guilabel:`off`, this property avoids producing write traffic when
-  reading files and can result in significant performance gains, though
-  it might confuse mailers and some other utilities.
+  reading files. This can result in significant performance gains,
+  though it may confuse mailers and other utilities.
 
-* **canmount:** If set to :guilabel:`off`, the filesystem can not be
-  mounted.
-  
+* **canmount:** If set to :guilabel:`off`, the filesystem is
+  unmountable.
+
 * **casesensitivity:** The default is :guilabel:`sensitive`, as UNIX
   filesystems use case-sensitive file names. For example, "kris" is
   different from "Kris". To tell the dataset to ignore case, select
@@ -612,7 +566,7 @@ ZFS properties:
 
 * **setuid:** If set to :guilabel:`on`, the set-UID bit is respected.
 
-After clicking :guilabel:`Next`, the wizard will show a summary of the
+After clicking :guilabel:`Next`, the wizard shows a summary of the
 selections. To make further changes, use :guilabel:`Back` to return to
 a previous screen. Otherwise, click :guilabel:`Finish` to leave the
 wizard and return to the :guilabel:`Disk Selection` screen.
@@ -624,12 +578,12 @@ Installation Progress
 =====================
 
 Once :guilabel:`Yes` is selected to start the installation, a progress
-screen, seen in :numref:`Figure %s <install13>`, provides a progress
-bar and messages so the user can watch the installation's progress.
+screen, seen in :numref:`Figure %s <install13>`, updates the user on
+the installation progress.
 
 .. _install13:
 
-.. figure:: images/install13b.png
+.. figure:: images/install13c.png
    :scale: 100%
 
    Installation Progress
@@ -644,24 +598,21 @@ and the installation type selected. A typical installation takes between
 Installation Finished
 =====================
 
-The screen shown in
-:numref:`Figure %s <install14>` appears once the installation is
+The **Installation Finished** screen, shown in
+:numref:`Figure %s <install14>`, appears once the installation is
 complete.
 
 .. _install14:
 
-.. figure:: images/install14b.png
+.. figure:: images/install14c.png
    :scale: 100%
 
    |trueos| Installation Complete
 
-Click :guilabel:`Finish` to complete the |trueos| installation. It will
-return to the
-:numref:`Figure %s: TrueOS® Installer Boot Menu <install15>`. To
-manually configure the system before booting into it, select
-:guilabel:`utility` to open a *root* shell. Otherwise, select
-:guilabel:`reboot` to reboot into the new installation. Wait until this
-menu exits before removing the installation media.
+Click :guilabel:`Finish` to complete the |trueos| installation. The
+system immediately begins the reboot process. Once the system is
+fully shut down, remove the installation media to ensure the system
+boots from the freshly installed local drive.
 
 .. index:: advanced install topics
 .. _Advanced Installation:
@@ -680,6 +631,8 @@ This section covers these advanced installation topics:
 * :ref:`Upgrading from PCBSD 10.x to TrueOS`
 
 * :ref:`Automated Installations`
+
+.. TODO * add ref to restore from backup after moving from sysadm client handbook.
 
 If your intent is to install a graphical desktop using the graphical
 installer, instead refer to :ref:`Installing TrueOS`.

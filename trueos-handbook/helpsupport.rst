@@ -24,7 +24,7 @@ Troubleshooting
 ===============
 
 .. index:: troubleshooting display
-.. _Display:
+.. _Display Help:
 
 Display
 -------
@@ -65,7 +65,7 @@ another setting. Once satisfied with the tested setting, click
 :guilabel:`Skip` to configure the display settings later.
 
 .. index:: troubleshooting installation
-.. _installation:
+.. _Installation Help:
 
 Installation
 ------------
@@ -139,7 +139,7 @@ If none of the above has fixed the problem, the :ref:`TrueOS Community`
 is a valuable resource to assist in tracking down and solving the issue.
 
 .. index:: troubleshooting network
-.. _Network:
+.. _Network Help:
 
 Network
 -------
@@ -273,7 +273,7 @@ provides a good overview of how wireless works and offers additional
 troubleshooting suggestions.
 
 .. index:: troubleshooting printer
-.. _printer:
+.. _Printer Help:
 
 Printer
 -------
@@ -300,7 +300,7 @@ Here are some solutions to common printing problems:
   :ref:`Report a Bug`.
 
 .. index:: troubleshooting sound
-.. _sound:
+.. _Sound Help:
 
 Sound
 -----
