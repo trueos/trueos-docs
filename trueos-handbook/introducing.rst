@@ -14,8 +14,8 @@ is a work in progress and relies on the contributions of many
 individuals. To assist with the Handbook, refer to the documentation
 `README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
 If using IRC Freenode, join the #trueos channel and converse with many
-other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is
-another popular option for users.
+other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is another
+popular option for users.
 
 `TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in
 2005 when Kris Moore presented the first beta version of a FreeBSD
@@ -31,10 +31,10 @@ provides an easy-to-use installer which can be used to install a
 desktop or a server version of FreeBSD. Other differences from FreeBSD
 include:
 
-* |trueos| pre-configures the BSD-licensed |lumina| desktop
-  environment during a desktop installation. Additional desktop
-  environments can be installed and appear in the login menu,
-  allowing the user to select their environment.
+* |trueos| pre-configures the BSD-licensed |lumina| desktop environment
+  during a desktop installation. Additional desktop environments can be
+  installed and appear in the login menu, allowing the user to select
+  their environment.
 
 * The |trueos| installer supports configuring ZFS and encryption during
   installation.
@@ -51,8 +51,8 @@ include:
   performing tasks like connecting digital cameras or USB memory sticks.
 
 * The |trueos| boot menu supports boot environments or snapshots of the
-  operating system, and the |trueos| Update Manager automatically adds a
-  new boot environment to the boot menu before updating the operating
+  operating system, and the |trueos| Update Manager automatically adds
+  a new boot environment to the boot menu before updating the operating
   system or software. With this functionality, if an update fails the
   system can reboot into the previous version of the operating system,
   before the update installed.
@@ -128,7 +128,7 @@ Features
   desktop, but additional desktop environments can be installed to
   support day-to-day computing needs.
 
-* **Easy software management:** With
+* **Easy software management:** With the |sysadm|
   `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
   installing, upgrading, and uninstalling software is safe and easy.
 
@@ -144,25 +144,24 @@ Features
 
   Currently, users can choose to follow one of two "tracks" for updates:
   UNSTABLE and STABLE. UNSTABLE updates are the "bleeding edge" of
-  TrueOS development, for those users who want to test bugfixes and
-  new features. STABLE updates are less frequent, but more reliable.
-  These updates benefit from the testing and patches submitted by our
-  UNSTABLE testers.
+  TrueOS development, for those users who want to test bugfixes and new
+  features. STABLE updates are less frequent, but more reliable. These
+  updates benefit from the testing and patches submitted by our UNSTABLE
+  testers.
 
 * **Virus-free:** |trueos| is unaffected by viruses, spyware, or other
   malware (see :ref:`Security`).
 
-* **No defragmentation:** |trueos| hard drives never need to be
-  defragmented and are formatted with OpenZFS, a self-healing
-  filesystem.
+* **No defragmentation:** |trueos| hard drives never need defragmenting
+  and are formatted with OpenZFS, a self-healing filesystem.
 
 * **Laptop support:** Provides power saving, swap space encryption, and
-  automatic switching between wired and wifi network connections. The
-  rolling release model of |trueos| provides an environment to quickly
-  add support for new hardware.
+  automatic switching between wired and wifi network connections. Also,
+  the rolling release model of |trueos| provides an environment to
+  quickly add support for new hardware.
 
 * **Secure environment:** |trueos| provides a pre-configured firewall
-  and a built-in host-based Intrusion Detection System.
+  and an inbuilt host-based Intrusion Detection System.
 
 * **Easy system administration:** |trueos| provides many graphical tools
   for performing system administration.
@@ -179,9 +178,9 @@ Features
 Legal
 =====
 
-This section covers the required legal elements to the handbook,
-including the Copyright notice, Trademarks used in the document, and the
-|trueos| ethical advertising policy.
+This section covers the required legal elements of the handbook,
+including the Copyright notice, used Trademarks, and the |trueos|
+ethical advertising policy.
 
 .. index:: copyright, trademarks
 .. _Copyright:
@@ -311,8 +310,8 @@ the chief concern.
 FreeBSD and PC-BSD
 ------------------
 
-The following features or enhancements were introduced for |trueos| and
-now separate |trueos| from |pcbsd|:
+These features or enhancements were introduced for |trueos| and now
+separate |trueos| from |pcbsd|:
 
 .. note:: |pcbsd| and FreeBSD are placed together as both are very
    similar "under the hood". Differences for either OS to |trueos| are
@@ -344,11 +343,11 @@ now separate |trueos| from |pcbsd|:
      :class: longtable
 
      +------------------+--------------+-----------------+
-     | |trueos| Service | Started From | FreeBSD Service | 
+     | |trueos| Service | Started From | FreeBSD Service |
      +==================+==============+=================+
      | openntpd         | Ports        | ntpd            |
      +------------------+--------------+-----------------+
-     | network          | Base         | netif           | 
+     | network          | Base         | netif           |
      +------------------+--------------+-----------------+
      | wpa_supplicant   | Ports; Start | wpa_supplicant  |
      |                  | with network | (from Base)     |
@@ -356,8 +355,8 @@ now separate |trueos| from |pcbsd|:
      | dhcpcd           | Ports        | dhclient        |
      +------------------+--------------+-----------------+
 
-  .. note:: :ref:`sysserv` will be updated as development continues on
-     the |trueos| implementation of OpenRC. For a complete list of all
+  .. note:: :ref:`sysserv` is updated as development continues on the
+     |trueos| implementation of OpenRC. For a complete list of all
      available services through OpenRC, see :ref:`rcuprnlvl`.
 
 * A |trueos| installation installs the |lumina| Desktop. Additional
@@ -365,7 +364,7 @@ now separate |trueos| from |pcbsd|:
 
 * The `SysAdm™ Client <https://sysadm.us/handbook/client/>`_
   and `Server <https://sysadm.us/handbook/server/>`_ has replaced
-  Control Panel. Most of the utilities from the Control Panel have been
+  Control Panel. Most of the utilities from the Control Panel are
   rewritten to use the |sysadm| middleware. Under the hood, |sysadm|
   provides REST and WebSocket APIs for securely managing local and
   remote FreeBSD and |trueos| systems.
@@ -381,41 +380,40 @@ now separate |trueos| from |pcbsd|:
   * User Manager
   * Network Manager
 
-* The functionality provided by the *About* utility has been
-  incorporated into
+* The functionality provided by the *About* utility is incorporated into
   `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html#lumina-information>`_.
 
 * The functionality provided by the
   `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
   (:command:`pc-servicemanager`) has been integrated into |sysadm|.
 
-* The Active Directory & LDAP utility (:command:`pc-adsldap`) has been
+* The Active Directory & LDAP utility (:command:`pc-adsldap`) is
   deprecated.
 
-* Login Manager (:command:`pc-dmconf`) has been replaced by
+* Login Manager (:command:`pc-dmconf`) is replaced by
   :command:`pcdm-config`).
 
-* System Manager (:command:`pc-sysmanager`) has been deprecated.
+* System Manager (:command:`pc-sysmanager`) is deprecated.
 
-* :command:`freebsd-update` has been retired in favor of using
-  :command:`pkg` for system updates.
+* :command:`freebsd-update` is retired in favor of using :command:`pkg`
+  for system updates.
 
-* The binary for :ref:`Disk Manager` (:command:`pc-zmanager`) has been
-  renamed to :command:`pc-diskmanager` and the graphical version has
-  been moved to the :guilabel:`Browse Applications` menu.
+* The binary for :ref:`Disk Manager` (:command:`pc-zmanager`) is renamed
+  to :command:`pc-diskmanager` and the graphical version moved to the
+  :guilabel:`Browse Applications` menu.
 
-* The option to use the SCFB display driver has been added to the
-  installer. This driver is suitable for newer UEFI laptops as it
-  automatically detects native resolution and is a good solution for
-  newer Intel drivers that have not been ported yet to FreeBSD. Before
-  selecting this driver, check the BIOS and ensure the CSM module is
-  disabled. This driver does not support a dual-head configuration, such
-  as an external port for presentations, or suspend and resume.
+* The option to use the SCFB display driver is added to the installer.
+  This driver is suitable for newer UEFI laptops as it automatically
+  detects native resolution and is a good solution for newer Intel
+  drivers that have not been ported yet to FreeBSD. Before selecting
+  this driver, check the BIOS and ensure the CSM module is disabled.
+  This driver does not support a dual-head configuration, such as an
+  external port for presentations, or suspend and resume.
 
-* :guilabel:`Customize` has been removed from the
-  :ref:`System Selection` screen in order to reduce the size of the
-  installation media. Additional software can be installed
-  post-installation using |appcafe|.
+* :guilabel:`Customize` is removed from the :ref:`System Selection`
+  screen in order to reduce the size of the installation media.
+  Additional software can be installed post-installation using
+  |appcafe|.
 
 * The :guilabel:`Boot to console (Disable X)` option has been added to
   the graphical boot menu.
@@ -425,10 +423,10 @@ now separate |trueos| from |pcbsd|:
   and
   `Task Manager <https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_.
 
-* The graphical and command line versions of PBI Manager and Warden have
-  been removed.
+* The graphical and command line versions of PBI Manager and Warden are
+  removed.
 
-* :command:`pc-thinclient` has been removed as it is deprecated.
+* :command:`pc-thinclient` is removed as it is deprecated.
 
 .. index:: Linux and TrueOS
 .. _Linux and TrueOS:
@@ -436,23 +434,23 @@ now separate |trueos| from |pcbsd|:
 Linux and |trueos|
 ------------------
 
-|trueos| is based on FreeBSD, meaning it is not a Linux distribution.
-If you have used Linux before, you will find some features you are used
-to have different names on a BSD system and some commands are different.
+|trueos| is based on FreeBSD, meaning it is not a Linux distribution. If
+you have used Linux before, you may find some features you are used to
+have different names on a BSD system and some commands are different.
 This section covers some of these differences.
 
 BSD and Linux use different filesystems during installation. Many Linux
 distros use EXT2, EXT3, EXT4, or ReiserFS, while |trueos| uses OpenZFS.
 This means if you wish to dual-boot with Linux or access data on an
 external drive formatted with another filesystem, you will want to
-research if the data will be accessible to both operating systems.
+research if the data is accessible to both operating systems.
 
 :numref:`Table %s <filesys support>` summarizes the various filesystems
-commonly used by desktop systems. |trueos| will automatically mount
-several filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3*
-(without journaling), *EXT4* (read-only), *NTFS5*, *NTFS6*, and *XFS*.
-See the section on :ref:`Files and File Sharing` for a comparison of
-some graphical file manager utilities.
+commonly used by desktop systems. |trueos| automatically mounts several
+filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
+*EXT4* (read-only), *NTFS5*, *NTFS6*, and *XFS*. See the section on
+:ref:`Files and File Sharing` for a comparison of some graphical file
+manager utilities.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.15\linewidth-2\tabcolsep}
                     |>{\RaggedRight}p{\dimexpr 0.15\linewidth-2\tabcolsep}
@@ -642,22 +640,51 @@ about some of the differences between BSD and Linux:
 
 * `A Sysadmin's Unixersal Translator (ROSETTA STONE) <http://bhami.com/rosetta.html>`_
 
-.. TODO Work in comparison sections with Windows and Mac OSX:
-   .. index:: TrueOS and Windows
-   .. _compareWindows:
+.. index:: TrueOS and Windows
+.. _compareWindows:
 
-   TrueOS and Windows
-   ------------------
+TrueOS and Windows
+------------------
    
-   There are a large number of differences between TrueOS and Windows:
-   * exFAT/NTFS
-   * Microsoft Office/OpenOffice/LibreOffice
-   * Photoshop/GIMP
-   * Acrobat/Okular
-   * background services/user control
-   * application support/WINE
-   * Windows Media/VLC
+|trueos| uses several similar, but different elements to their
+counterparts on Windows. :numref:`Table %s <troswinapps>` highlights a
+few of these:
 
+.. note:: This table isn't meant to be an exhaustive listing of
+   applications, but simply provide a few TrueOS/FreeBSD
+   equivalents for users familiar with their previous operating
+   system.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}|
+
+.. _troswinapps:
+.. table:: TrueOS/Windows equivalents
+
+   +---------------------+-------------------+-------------------+
+   | Element             | Windows           | TrueOS            |
+   +=====================+===================+===================+
+   | Office Applications | Microsoft Office  | LibreOffice       |
+   +---------------------+-------------------+-------------------+
+   | Image editing       | Photoshop         | GIMP              |
+   +---------------------+-------------------+-------------------+
+   | PDF viewing         | Acrobat           | Okular            |
+   +---------------------+-------------------+-------------------+
+   | Media Player        | Windows Media     | VLC Media Player  |
+   +---------------------+-------------------+-------------------+
+   | Internet Browsing   | Internet Explorer | Chromium, Firefox |
+   |                     | and many options  | and many options  |
+   +---------------------+-------------------+-------------------+
+
+Here are a few resources that go into greater detail examining the
+differences between Windows and BSD:
+
+* `FreeBSD is NOT Windows <http://vtbsd.net/notwindows.html>`_
+* General `Comparison of Operating Systems <https://en.wikipedia.org/wiki/Comparison_of_operating_systems>`_
+* `Open Source Alternatives <https://opensource.com/alternatives>`_
+
+.. TODO: Expand this section
    .. index:: MacOSX and TrueOS
    .. _compareMacOSX:
 
