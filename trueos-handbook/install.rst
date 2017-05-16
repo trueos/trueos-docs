@@ -835,10 +835,10 @@ Dual Booting
 
 A |trueos| installation assumes there is an existing GPT or primary
 partition to install into. If the computer has only one disk and
-|trueos| will be the only operating system, it is fine to accept the
-default partitioning scheme. However, if |trueos| will be sharing space
-with other operating systems, ensure |trueos| is installed into the
-correct partition or an existing operating system may be inadvertently
+|trueos| is the only operating system, it is fine to accept the default
+partitioning scheme. However, if |trueos| will be sharing space with
+other operating systems, ensure |trueos| is installed into the correct
+partition or an existing operating system may be inadvertently
 overwritten.
 
 There are several required elements to install multiple operating
@@ -849,16 +849,15 @@ systems on the computer:
   partition. This means partitioning software is required, as described
   in :ref:`Creating Free Space`.
 
-* A backup of any existing data. This backup should not be stored on
-  the computer's hard drive but on another computer, removable media
-  such as a USB drive, or burnt onto a DVD media. While most
-  installations will progress smoothly, it is always recommended to have
-  a backup prepared in case of the unexpected.
+* A backup of any existing data. It is recommended to store this backup
+  on a different computer, removable media such as a USB drive, or burnt
+  onto a DVD media. While most installations progress smoothly, it is
+  always recommended to have a backup prepared.
 
 When installing |trueos| onto a computer that is to contain multiple
-operating systems, care must be taken to select the **correct**
-partition in the :ref:`Disk Selection` screen. On a system containing
-multiple partitions, each partition will be listed.
+operating systems, carefully select the **correct** partition in the
+:ref:`Disk Selection` screen. On a system containing multiple
+partitions, each partition is listed.
 
 .. danger:: Avoid selecting a partition containing an operating system
    or essential data.
@@ -867,11 +866,8 @@ Highlight the desired partition and click :guilabel:`Customize`.
 Clicking :guilabel:`Next` without customizing the disk layout results
 in the installer overwriting the contents of the primary disk.
 
-In |trueos|, the BSD boot loader is the preferred and default boot
-loader, as it provides native support for ZFS boot environments.
-
-.. TODO confirm if the system utilities menu is still used in the
-   TrueOS installer.
+In |trueos|, the BSD boot loader is the default boot loader, as it
+provides native support for ZFS boot environments.
 
 .. index:: using system utilities menu
 .. _Using the System Utilities Menu:
@@ -931,7 +927,7 @@ If the system is using |pcbsd| 10.x, the option to update to |trueos|
 does not appear in the Control Panel version of Update Manager. This is
 because a new installation is required in order to migrate to |trueos|.
 However, the |trueos| installer allows the user to keep all their
-existing data and home directories, as it provides the ability to
+existing data and home directories as it provides the ability to
 install |trueos| into a new boot environment. In other words, the new
 operating system and updated applications are installed while the ZFS
 pool and any existing boot environments are preserved. Since the new
@@ -959,8 +955,8 @@ screen, shown in :numref:`Figure %s <upgrade1>`.
 
 |trueos| automatically detects if the drive has an existing boot
 environment, filling in the data as necessary. If no boot environments
-are detected, :guilabel:`Install into Boot Environment` will be greyed
-out. To upgrade, select :guilabel:`Install into Boot Environment` and
+are detected, :guilabel:`Install into Boot Environment` is invisible.
+To upgrade, select :guilabel:`Install into Boot Environment` and
 choose which existing pool to install into from the drop-down menu. In
 the :ref:`Disk Selection Screen <upgrade1>`, the user is installing into
 the existing **tank** pool. Press :guilabel:`Next` when ready.
@@ -969,15 +965,15 @@ the existing **tank** pool. Press :guilabel:`Next` when ready.
    checked before proceeding, or data can be lost.
 
 A pop-up will appear, asking to start the default Full-Disk
-installation. Click :guilabel:`Yes` to start the installation.
+installation. Click :guilabel:`Yes` to begin the installation.
 
 Once the installation is complete, reboot the system and remove the
 installation media. The post-installation screens run as described in
 the :ref:`Post Installation Configuration` section to help you configure
 the new installation.
 
-.. note:: During the :ref:`Create a User` process, recreate the primary
-   user account using the same name user name and user id (UID) from the
+.. warning:: During the :ref:`Create a User` process, recreate the primary
+   user account using the same user name and user id (UID) from the
    previous |pcbsd| system. This allows |trueos| to associate the
    existing home directory with that user. Once logged in, use the
    |sysadm|
@@ -991,7 +987,7 @@ the new installation.
 Automated Installations
 -----------------------
 
-|trueos| provides a set of Bourne shell scripts which allow advanced
+|trueos| provides a set of Bourne shell scripts to allow advanced
 users to create automatic or customized |trueos| installations.
 :command:`pc-sysinstall` is the name of the master script. The script
 reads a customizable configuration file and uses dozens of backend
@@ -1442,7 +1438,7 @@ To begin an installation that requires user interaction, type
 To begin a fully automated installation, insert the installation media
 and reboot.
 
-If using an HTTP, FTP, or SSH server as the installation media, untar
-or copy the required files to a directory on the server accessible to
-users. Be sure to configure the server so installation files are
-accessible to the systems to install.
+If using an HTTP, FTP, or SSH server as the installation media,
+:command:`untar` or copy the required files to a directory on the
+server accessible to users. Be sure to configure the server so
+installation files are accessible to the systems to install.
