@@ -644,7 +644,7 @@ Server Installation
 
 The :ref:`System Selection` screen of the |trueos| installer can be
 used to install a FreeBSD-based command-line server operating system
-rather than a graphical desktop operating system. A |trueos|
+rather than a graphical desktop operating system. A |trueos| server
 installation includes the `SysAdm™ API <https://api.sysadm.us/>`_ and
 `SysAdm™ Client <https://sysadm.us/handbook/client/>`_ for managing the
 server locally or remotely.
@@ -684,27 +684,27 @@ proceed to the screen shown in :numref:`Figure %s <server3>`.
 
    Primary User Account Creation
 
-For security reasons, do not login as the *root* user. The wizard
-requires creating a primary user account used to login to the server.
-This account will automatically be added to the *wheel* group, allowing
-the user to :command:`su` to the *root* account when administrative
+For security reasons, do not login as the **root** user. The wizard
+requires creating a primary user account for logging into the server.
+This account is automatically added to the *wheel* group, allowing
+the user to :command:`su` to the **root** account when administrative
 access is required.
 
-Create an account by filling in the fields:
+Create an account by filling in these fields:
 
 * **Name:** Can contain capital letters and spaces.
 
-* **Username:** The name used when logging in. Can not contain spaces
-  and is case sensitive (e.g. *Kris* is a different username than
-  *kris*).
+* **Username:** The name to use for logging in. It cannot contain
+  spaces and is case sensitive (e.g. *Kris* is a different username
+  than *kris*).
 
-* **Password:** The password used when logging in. Type it twice in
-  order to confirm it.
-  
+* **Password:** The password to use for logging in. Type it twice to
+  confirm it.
+
 * **Default shell:** Use the drop-down menu to select the **csh**,
   **tcsh**, **sh**, or **bash** login shell.
 
-When finished, click :guilabel:`Next` to proceed to the screen shown in
+When finished, click :guilabel:`Next` to proceed to
 :numref:`Figure %s <server4>`.
 
 .. _server4:
@@ -748,21 +748,29 @@ the screen shown in :numref:`Figure %s <server6>`.
 .. figure:: images/server6a.png
    :scale: 100%
 
-   Ports Installation
+   Optional Install Features
 
 To install the FreeBSD ports collection, check
 :guilabel:`Install ports tree` then click :guilabel:`Finish` to exit the
 wizard and access the summary screen shown in :ref:`Disk Selection`.
 
-Click :guilabel:`Customize` to configure the system's disk(s).
+If installing the server to a system with ZFS already installed, you can
+choose to :guilabel:`Install to disk` or
+:guilabel:`Install into boot Environment`.
 
-To save the finished configuration for re-use at a later time, insert a
-FAT-formatted USB stick and click :guilabel:`Save Config to USB`.
+When installing to disk, click :guilabel:`Customize Disk Settings` to
+configure the system's disk(s). When installing into a Boot Environment,
+you can select the ZFS Pool for installation using the drop-down menu.
 
-Once ready to start the installation, click :guilabel:`Next`. A pop-up
-menu will ask to start the installation immediately.
+To save the install configuration for re-use at a later time, insert a
+MSDOSFS or FAT32 formatted USB stick and click
+:guilabel:`Save Config to USB`.
 
-Once the system is installed, it will boot to a command-line login
+When ready to continue, click :guilabel:`Next`. A new window asks if you
+are ready to begin the installation. Click :guilabel:`Yes` to continue
+or :guilabel:`No` to continue modifying the install configuration.
+
+Once the system is installed, it boots to a command-line login
 prompt. Login using the primary user account configured during
 installation. Now the server can be configured like any other FreeBSD
 server installation. The
