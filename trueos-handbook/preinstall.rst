@@ -10,19 +10,19 @@ operating system can sometimes be a daunting task.
 Before beginning, there are a few things to check to ensure the system
 is ready to install |trueos|.
 
-* **Are you dual-booting or installing over the entire drive?** If
-  dual-booting please ensure a primary partition is available. Refer to
-  the section on :ref:`Dual Booting`.
+* **Dual-booting or installing over the entire drive?** If dual-booting,
+  please ensure a primary partition is available. Refer to the section
+  on :ref:`Dual Booting`.
 
-* **Have you backed up your important data?** Any irreplaceable data,
-  such as emails, bookmarks, or important files and documents should
-  **always** be backed up to an external media, such as a removable
-  drive or another system, **before** installing or upgrading any
-  operating system.
+* **Is your important data backed up?** Any irreplaceable data, such as
+  emails, bookmarks, or important files and documents should **always**
+  be backed up to an external media, such as a removable drive or
+  another system, **before** installing or upgrading any operating
+  system.
 
-To determine if the chosen hardware is detected by |trueos|, start an
-installation and click the :guilabel:`Hardware Compatibility` icon in
-the lower left corner of the :ref:`Language Selection` screen.
+To determine if the chosen hardware is detected by |trueos|, start a
+new installation and click the :guilabel:`Hardware Compatibility` icon
+in the lower left corner of the :ref:`Language Selection` screen.
 
 If any problems arise with the installation, refer to the
 :ref:`Troubleshooting` section of this handbook.
@@ -37,11 +37,11 @@ installation media.
 Minimum Requirements
 ====================
 
-|trueos| has moderate hardware requirements and commonly uses less
+|trueos| has moderate hardware requirements and typically uses less
 resources than its commercial counterparts. Before installing |trueos|,
-make sure the hardware or virtual machine at least meets the minimum
+make sure the hardware or virtual machine meets at least the minimum
 requirements. To get the most out of your |trueos| experience, use a
-system that meets the recommended system requirements.
+system exceeding the minimum or recommended system requirements.
 
 At **bare minimum**, these requirements must be met in order to install
 |trueos|:
@@ -53,12 +53,12 @@ At **bare minimum**, these requirements must be met in order to install
 * 1 GB RAM
 
 * 20 GB of free hard drive space on a primary partition for a
-  command-line server installation
+  command-line server installation.
 
 * Network card
 
-Here are the minimum **recommended** requirements. More RAM and
-available disk space improves the computing experience:
+Here are the **recommended** requirements. More RAM and available disk
+space improves the computing experience:
 
 **Recommended**
 
@@ -67,7 +67,7 @@ available disk space improves the computing experience:
 * 4 GB of RAM
 
 * 50 GB of free hard drive space on a primary partition for a graphical
-  desktop installation
+  desktop installation.
 
 * Network card
 
@@ -75,12 +75,12 @@ available disk space improves the computing experience:
 
 * 3D-accelerated video card
 
-|trueos| does not require 50 GB for its installation. Instead, the
-minimum recommendation is to provide sufficient room for the
-installation of applications and to store local ZFS snapshots and boot
-environments. These can be used to retrieve earlier versions of files,
-rollback the operating system to an earlier point in time, or clone
-the operating system.
+|trueos| does not require 50 GB for its installation. The minimum
+recommendation is to provide sufficient room for the installation of
+applications and to store local ZFS snapshots and boot environments.
+These can be used to retrieve earlier versions of files, rollback the
+operating system to an earlier point in time, or clone the operating
+system.
 
 More RAM is always recommended, so install as much as you can afford.
 To play modern video games, use a fast CPU. To create a collection of
@@ -92,10 +92,10 @@ music and movies on the computer, sufficient disk space is required.
 Supported Hardware
 ==================
 
-To check your hardware before installing |trueos|, a good place to start
-is the
-`FreeBSD Hardware Notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_.
-Another good resource is to start the installer and click the
+Check the
+`FreeBSD Hardware Notes <https://www.freebsd.org/releases/11.0R/hardware.html>`_
+to ensure your system hardware is supported before installing |trueos|.
+Another good option is to start the installer and click the
 :guilabel:`Hardware Compatibility` icon.
 
 While most hardware "just works" with |trueos|, it is possible to run
@@ -104,15 +104,15 @@ FreeBSD, any hardware that works on FreeBSD also works on |trueos|. If
 problems occur with a device, begin with a web search for the term
 "FreeBSD" plus the type and model of the hardware. This search shows
 any known issues with the device. If there are too many search results,
-concentrate on the most recent hits, as oftentimes previously problematic
-hardware has since been fixed or the missing driver will be available in
-an upcoming release of FreeBSD. If a problem occurs with a device thought
-to work but does not, or there are no existing problem reports for your
-hardware, please help improve hardware support for all FreeBSD and
-|trueos| users by :ref:`Reporting a bug <Report a bug>` so the issue can
-be addressed by the developers.
+concentrate on the most recent hits, as oftentimes previously
+problematic hardware has since been fixed or the missing driver will be
+available in an upcoming release of FreeBSD. If a problem occurs with a
+device thought to work but does not, or there are no existing problem
+reports for your hardware, please help improve hardware support for all
+FreeBSD and |trueos| users by :ref:`reporting the bug <Report a bug>` so
+the issue can be addressed by the developers.
 
-The rest of this section provides an overview of the different supported
+The rest of this section is a brief overview of the different supported
 hardware.
 
 .. index:: Supported Processors
@@ -231,7 +231,7 @@ has some tips for reducing power consumption.
 
 With regards to specific hardware, the ThinkPad T420 may panic during
 install. If it does, go into the BIOS and set the video mode to
-"discrete" which should allow the installation to complete. Some
+"discrete", which should allow the installation to complete. Some
 Thinkpads have a BIOS bug preventing them from booting from
 GPT-labeled disks. If unable to boot into a new installation, restart
 the installer and go into :guilabel:`Advanced Mode` in the
@@ -254,8 +254,8 @@ current operating system needs to shrink to make room to install
 system while reducing the size of its partition. This section
 demonstrates how to create free space within Windows 10.
 
-.. warning:: **Before** shrinking a partition, be sure to back up
-   any valuable data to an external media such as a removable USB drive!
+.. warning:: **Before** shrinking a partition, be sure to back up any
+   valuable data to an external media such as a removable USB drive!
 
 To shrink the drive, right-click the :guilabel:`Start` menu and click
 :guilabel:`Disk Management`. In the example shown in
@@ -298,7 +298,7 @@ Windows can shrink this particular partition. Accept that number, or
 choose a smaller number for a smaller |trueos| partition.  Click
 :guilabel:`Shrink` to begin the shrinking process.  This procedure can
 take several minutes to complete. When finished, the newly created free
-space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
+space is displayed as seen in :numref:`Figure %s <shrink2>`.
 
 .. _shrink2:
 
@@ -308,11 +308,10 @@ space will be displayed, as seen in :numref:`Figure %s <shrink2>`.
    Disk with Free Space
 
 .. warning:: It is important to **not** choose to install |trueos| into
-   any of the three Windows partitions at the
-   :ref:`Disk Selection` screen of the installer. It is a good idea to
-   write down the sizes of all of the partitions so the free space is
-   recognizable when the |trueos| installer displays the current
-   partitions.
+   any of the three Windows partitions at the :ref:`Disk Selection`
+   screen of the installer. It is a good idea to write down the sizes of
+   all of the partitions so the free space is recognizable when the
+   |trueos| installer displays the current partitions.
 
 .. index:: installation options
 .. _Installation Options:
@@ -326,15 +325,15 @@ Periodically, the |sysadm|
 `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
 provides patches to update the operating system. To have or test the
 latest features and drivers as they become available, and you can
-tolerate possible breakage caused by new features being available
-before the next STABLE release, use the UNSTABLE update track.
+tolerate possible breakage caused by new features being available before
+the next STABLE release, use the UNSTABLE update track.
 
 .. note:: All installation files are based off STABLE releases to
-   TrueOS. By default, freshly installed TrueOS systems **only**
-   obtain updates from the STABLE repository, but users can switch
-   to the experimental UNSTABLE repository to test updates and bug
-   fixes early. See the :ref:`Updating TrueOS` section for
-   instructions on switching to the UNSTABLE update repository.
+   TrueOS. By default, freshly installed TrueOS systems **only** obtain
+   updates from the STABLE repository, but users can switch to the
+   experimental UNSTABLE repository to test updates and bug fixes early.
+   See the :ref:`Updating TrueOS` section for instructions on switching
+   to the UNSTABLE update repository.
 
 Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_ or the
@@ -349,8 +348,8 @@ Several types of files are available for download:
 * **"latest" files**: These entries are symlinks to the latest TrueOS
   install files and should be ignored.
 
-Install files following the above naming conventions can also end with
-a variety of extensions:
+Install files following the above naming conventions can also end with a
+variety of extensions:
 
 * **.iso**: If the file has an *.iso* extension, it should be burned to
   a DVD media or USB stick.
@@ -363,9 +362,9 @@ a variety of extensions:
 * **.torrent**: If a torrent is available, a file with the same name
   and a *.torrent* extension will be visible.
 
-To install a graphical desktop, download the file ending in *DVD.iso*
-or *USB.img*. Then, depending on the file type, either burn it to a
-DVD media or write it to a removable USB device.
+To install a graphical desktop, download the file ending in *DVD.iso* or
+*USB.img*. Then, depending on the file type, either burn it to a DVD
+media or write it to a removable USB device.
 
 If installing a command-line only server is preferred, download and
 begin installing |trueos| in the same manner as the desktop, but choose
@@ -378,8 +377,8 @@ Members of the |trueos| project attend many IT conferences across the
 globe and give out |trueos| DVDs at the FreeBSD booth. Visiting a
 FreeBSD booth is an excellent way to meet other |trueos| and FreeBSD
 users and get any questions answered. Check the
-`TrueOS® Blog <https://www.trueos.org/blog/>`_ to see if any events
-are happening near you. If organizing a |trueos| booth, contact us
+`TrueOS® Blog <https://www.trueos.org/blog/>`_ to see if any events are
+happening near you. If organizing a |trueos| booth, contact us
 `on Gitter <https://gitter.im/trueos>`_ to arrange for DVDs.
 
 .. index:: data integrity check
@@ -583,20 +582,20 @@ stick has a device name of :file:`/dev/disk1` and a raw device name of
 Virtualization
 ==============
 
-A virtualized environment allows a user to test drive an operating system
-without overwriting the current operating system. This is an excellent
-way to practice installation, determine whether the hardware is
-supported, or to try multiple versions of different operating systems.
-Virtualization software effectively creates windows (known as virtual
-machines) to install and use an operating system. The only limitation to
-virtualization is the hardware, as each virtual machine uses CPU and
-RAM. Depending upon the amount of CPU and RAM in the computer, the
-installed operating system using virtualization software may run slowly.
-If the computer slows down, try closing other applications running on
-the computer to free up some RAM.
+A virtualized environment allows a user to test drive an operating
+system without overwriting the current operating system. This is an
+excellent way to practice installation, determine whether the hardware
+is supported, or to try multiple versions of different operating
+systems. Virtualization software effectively creates windows (known as
+virtual machines) to install and use an operating system. The only
+limitation to virtualization is the hardware, as each virtual machine
+uses CPU and RAM. Depending upon the amount of CPU and RAM in the
+computer, the installed operating system using virtualization software
+may run slowly. If the computer slows down, try closing other
+applications running on the computer to free up some RAM.
 
-To run virtualization software on a |trueos| system, search for
-*virtualbox* within the |sysadm|
+To run virtualization software on |trueos|, search for *virtualbox*
+within the |sysadm|
 `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_
 and install the
 `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization
@@ -607,13 +606,13 @@ between the host and guest, better video support, and a shared
 clipboard.
 
 .. note:: The first time running VirtualBox on a |trueos| system, a
-   background script will automatically give the user account the
+   background script automatically gives the user account the
    permissions required to run this application. This might break any
-   existing shortcuts to VirtualBox. To fix the shortcut, logout and
-   in again.
+   existing shortcuts to VirtualBox. To fix the shortcut, logout and in
+   again.
 
-If the computer is running another operating system, download the
-binary for the specific operating system from the
+If the computer is running another operating system, download the binary
+for the specific operating system from the
 `VirtualBox Downloads page <https://www.virtualbox.org/wiki/Downloads>`_.
 VirtualBox runs on Windows, Linux, Macintosh, and OpenSolaris. It
 supports a large number of virtual machine installable operating
@@ -755,13 +754,12 @@ seen in the example in :numref:`Figure %s <vbox8>`.
    New Virtual Machine "test"
 
 In order to use the network card, configure bridging on the virtual
-machine. To do this, go to :menuselection:`Settings --> Network`. In
-the :guilabel:`Attached to` drop-down menu select
-:guilabel:`Bridged Adapter`, then select
-the name of the physical interface from the :guilabel:`Name` drop-down
-menu. In the example shown in :numref:`Figure %s <vbox9>`, the Intel
-Pro/1000 Ethernet card is attached to the network and has a device name
-of :file:`re0`.
+machine. To do this, go to :menuselection:`Settings --> Network`. In the
+:guilabel:`Attached to` drop-down menu select
+:guilabel:`Bridged Adapter`, then select the name of the physical
+interface from the :guilabel:`Name` drop-down menu. In the example shown
+in :numref:`Figure %s <vbox9>`, the Intel Pro/1000 Ethernet card is
+attached to the network and has a device name of :file:`re0`.
 
 .. _vbox9:
 
@@ -795,8 +793,8 @@ appear in the :guilabel:`Storage Tree` section.
 
 |trueos| is now ready to be installed into the virtual machine.
 Highlight the virtual machine and click on the green :guilabel:`Start`
-icon. A window will open indicating the virtual machine is starting. If
-a DVD is inserted, it should audibly spin and the machine will start to
+icon. A window opens, indicating the virtual machine is starting. If a
+DVD is inserted, it should audibly spin and the machine will start to
 boot into the installation program. If it does not or if using an ISO
 stored on the hard disk, press :kbd:`F12` to select the boot device
 when the message to do so appears, then press :kbd:`c` to boot from
