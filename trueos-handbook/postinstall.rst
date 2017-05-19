@@ -25,11 +25,11 @@ BSD Boot Loader
 ---------------
 
 A system with a default or "BSD" install option for the boot loader
-loads the boot menu seen in :numref:`Figure %s <install1(2)>`.
+loads the boot menu seen in :numref:`Figure %s <install4>`.
 
-.. _install1(2):
+.. _install4:
 
-.. figure:: images/install1c.png
+.. figure:: images/install4.png
    :scale: 100%
 
    |trueos| Boot Menu
@@ -719,7 +719,7 @@ and is associated with the *Normal Bootup* option of the |trueos|
 bootloader.
 
 .. note:: No OpenRC runlevels are executed if the system is booted into
-   single-user mode (see :numref:`Figure %s <install1(2)>`.)
+   single-user mode (see :numref:`Figure %s <boot1>`.)
 
 Runlevels are defined by subdirectories of :file:`/etc/runlevels`; all
 associations between services and runlevels can be shown by running
