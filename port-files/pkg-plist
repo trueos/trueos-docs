@@ -3,7 +3,7 @@ share/pixmaps/trueos-handbook.png
 share/trueos/handbook/.buildinfo
 share/trueos/handbook/_images/audio1a.png
 share/trueos/handbook/_images/automnt1.png
-share/trueos/handbook/_images/boot1b.png
+share/trueos/handbook/_images/boot1c.png
 share/trueos/handbook/_images/bug1.png
 share/trueos/handbook/_images/checksum.png
 share/trueos/handbook/_images/config1a.png
@@ -11,7 +11,7 @@ share/trueos/handbook/_images/config2b.png
 share/trueos/handbook/_images/config3a.png
 share/trueos/handbook/_images/config4a.png
 share/trueos/handbook/_images/config5.png
-share/trueos/handbook/_images/config6.png
+share/trueos/handbook/_images/config6a.png
 share/trueos/handbook/_images/config7.png
 share/trueos/handbook/_images/disk1.png
 share/trueos/handbook/_images/disk2.png
@@ -26,7 +26,7 @@ share/trueos/handbook/_images/install11c.png
 share/trueos/handbook/_images/install12b.png
 share/trueos/handbook/_images/install13c.png
 share/trueos/handbook/_images/install14c.png
-share/trueos/handbook/_images/install1b.png
+share/trueos/handbook/_images/install1c.png
 share/trueos/handbook/_images/install2d.png
 share/trueos/handbook/_images/install3d.png
 share/trueos/handbook/_images/install5d.png

@@ -29,7 +29,7 @@ loads the boot menu seen in :numref:`Figure %s <install1(2)>`.
 
 .. _install1(2):
 
-.. figure:: images/install1b.png
+.. figure:: images/install1c.png
    :scale: 100%
 
    |trueos| Boot Menu
@@ -39,18 +39,44 @@ except for :kbd:`Enter`. To select an option, press either the bolded
 number or key for that option. Once any selections are made, press
 :kbd:`Enter` to boot using the specified options.
 
-* :guilabel:`1. Boot Multi User`: This is the default option for booting
-  |trueos|. The system automatically uses this option either after
-  pausing for a few moments or if :kbd:`Enter` is pressed while the
+* :guilabel:`1. Boot TrueOS [Enter]`: This is the default option for
+  booting |trueos|. The system automatically uses this option either
+  after pausing for a moment or if :kbd:`Enter` is pressed while the
   boot menu is displayed.
 
-* :guilabel:`2. Boot Single User`: Advanced users can select this option
+* :guilabel:`2. Configure Boot Options`: Press either :kbd:`2` or
+  :kbd:`o` to see the boot options screen, shown in
+  :numref:`Figure %s <boot1>`. To change an option, press either the
+  bolded number or key for the option to toggle through its available
+  settings. When finished, press either :kbd:`1` or :kbd:`Backspace` to
+  return to the |trueos| boot menu.
+
+* :guilabel:`3. Select Boot Environment`: In |trueos|, boot environments
+  are automatically created when the system updates. They can also be
+  manually created using the
+  `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_.
+  This allows the system to boot to the point of time before an update
+  occurred and can be used to recover from a failed update. Press either
+  :kbd:`3` or :kbd:`e` to view the available boot environments.
+
+.. tip:: The first time the system boots, no additional environments are
+   available. This menu populates as boot environments are created.
+
+.. _boot1:
+
+.. figure:: images/boot1c.png
+   :scale: 100%
+
+   Boot Options Menu
+
+Several boot options are available in the Boot Options Menu:
+
+* :guilabel:`3. Boot Single User`: Advanced users can select this option
   to fix critical system failures.
 
-* :guilabel:`3. Escape to loader prompt`: Advanced users can select this
-  option to perform advanced operations, such as loading kernel modules.
-
-* :guilabel:`4. Reboot`: Reboots the system.
+* :guilabel:`4. Verbose`: Select this option to see more detailed
+  messages during the boot process. This can be useful when
+  troubleshooting a piece of hardware.
 
 * :guilabel:`5. Kernel`: This option indicates how many kernels are
   available. Press either :kbd:`5` or :kbd:`k` to toggle between
@@ -58,49 +84,8 @@ number or key for that option. Once any selections are made, press
   created a custom kernel, but wish to have a :file:`kernel.old` boot
   option available in case the custom primary kernel fails.
 
-* :guilabel:`6. Configure Boot Options`: Press either :kbd:`6` or
-  :kbd:`o` to see the boot options screen, shown in
-  :numref:`Figure %s <boot1>`. To change an option, press either the
-  bolded number or key for the option to toggle through its available
-  settings. When finished, press either :kbd:`1` or :kbd:`Backspace` to
-  return to the |trueos| boot menu.
-
-* :guilabel:`7. Select Boot Environment`: In |trueos|, boot environments
-  are automatically created when the system updates and can also be
-  manually created using the
-  `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_.
-  This allows the system to boot to the point of time before an update
-  occurred and can be used to recover from a failed update. Press either
-  :kbd:`7` or :kbd:`e` to view the available boot environments.
-
-.. tip:: The first time the system boots, no additional environments
-   will be available. This menu populates as boot environments are
-   created.
-
-.. _boot1:
-
-.. figure:: images/boot1b.png
-   :scale: 100%
-
-   Boot Options Menu
-
-Several boot options are available in the Boot Options Menu:
-
-* :guilabel:`3. ACPI Support`: Toggles  power  management support. This
-  may be useful for some BIOS's and laptops.
-
-* :guilabel:`4. Safe Mode`: Select this option if the installation hangs
-  when probing hardware and :guilabel:`3 ACPI Support` did not help. It
-  boots with a forced PIO mode (disabling the use of DMA), disable write
-  caching for all IDE hard drives and CD-ROM drives, and disable the
-  probing of EISA slots (as very few systems have them).
-
-* :guilabel:`5. Single User`: Advanced users can select this option to
-  fix critical system failures.
-
-* :guilabel:`6. Verbose`: Select this option to see more detailed
-  messages during the boot process. This can be useful when
-  troubleshooting a piece of hardware.
+* :guilabel:`6. Escape to loader prompt`: Advanced users can select this
+  option to perform advanced operations, such as loading kernel modules.
 
 .. index:: encrypted disks
 .. _Encrypted Disks:
@@ -110,8 +95,8 @@ Encrypted Disks
 
 If :guilabel:`Encrypt disk with GELI` was selected during installation,
 physical access to the |trueos| system when it boots is required. As the
-system starts to boot, it will display a message similar to the one
-shown in :numref:`Figure %s <encrypt1>`.
+system starts to boot, it displays a message similar to the one shown in
+:numref:`Figure %s <encrypt1>`.
 
 .. _encrypt1:
 
@@ -130,6 +115,9 @@ continues to boot.
 
 Display Detection
 -----------------
+
+.. TODO this section needs a complete rework (text and screenshots) once
+ next STABLE update is is released (sometime after 5/18).
 
 The first time the boot completes, the post-installer configuration
 script attempts to set the optimal display settings. A pop-up menu
@@ -189,7 +177,7 @@ when prompted to accept them.
 Choose a Language
 =================
 
-The language selection screen is seen in :numref:`Figure %s <config1>`.
+:numref:`Figure %s <config1>` shows the language selection screen.
 
 .. _config1:
 
@@ -202,11 +190,12 @@ This allows for the selection of the language used to access the
 installed system. It also contains three icons from the installer
 screens to enable:
 
-* Reading the screen's *Help* text.
+* **Light Bulb**: Reading the screen's *Help* text.
 
-* Using the onscreen keyboard.
+* **Keyboard**: Use the onscreen keyboard.
 
-* Switching between the US keyboard layout and a user selected layout.
+* **Key with US and Brazilian Flag**: Choose a different keyboard layout
+  other than the default US style.
 
 Once the selection is made, click :guilabel:`Next` to move to the next
 configuration screen.
@@ -218,7 +207,8 @@ Time Zone Selection
 ===================
 
 The next configuration screen, shown in :numref:`Figure %s <config2>`,
-allows selection of the timezone.
+allows selection of the timezone and configuring the system's host and
+domain names.
 
 .. _config2:
 
@@ -234,10 +224,10 @@ automatically attempts to detect the correct timezone.
 If the system is dual booting and the other operating system expects the
 BIOS to use UTC, also check :guilabel:`Set BIOS to UTC time`.
 
-A default system hostname will be created. To change the name, type the
+A default system hostname is created. Change the name by typing the
 desired hostname in the :guilabel:`System Hostname` field. If the
-computer is a member of a DNS domain, the *Domain Name* is also an
-option.
+computer is a member of a DNS domain, the :guilabel:`Domain Name` is
+also an option.
 
 When finished, click :guilabel:`Next` to proceed to the next screen.
 
@@ -248,7 +238,7 @@ Set the Root Password
 =====================
 
 This configuration screen, seen in :numref:`Figure %s <config3>`,
-requires the root (administrative) password to be set.
+**requires** the root (administrative) password to be set.
 
 .. _config3:
 
@@ -267,8 +257,8 @@ Create a User
 =============
 
 This screen is used to create the primary user account used to login to
-the system. Create a strong password as the password is used whenever
-the system indicates administrative access is required.
+the system. Try to create a complex and memorable password, as this one
+is used whenever the system indicates administrative access is required.
 
 :numref:`Figure %s <config4>` shows the configuration screen used to
 create the initial user account.
@@ -293,27 +283,24 @@ screen requires completing several fields:
 * **Password:** This is the password to use when logging in. It must
   be typed twice to confirm it.
 
-* **Specify UID:** By default, the user will be assigned the next
-  available User ID (UID). If a specific UID is required, it can be set
-  here.
-
-.. note:: A UID can not be set lower than 1001, and a UID already in use
-   by another account will also be unavailable.
+* **Specify UID:** By default, the user is assigned the next available
+  User ID (UID). If a specific UID is required, it can be set here. A
+  UID can not be set lower than 1001, and a UID already in use by
+  another account is also unavailable.
 
 |trueos| provides the ability to use a removable device, such as a USB
 stick, as the user's encrypted home directory. This is useful in a
 multi-user or multi-computer environment, as it provides the user with
-secure access to their encrypted files.  When a user is configured to
-use
-`PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_,
-their username will only appear in the login
-menu if the removable media associated with that |trueos| system is
-inserted. They must input the password associated with the removable
-device in order to login.
+secure access to their encrypted files.  When a user initializes
+`PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_
+with their account, their username only appears in the login menu if the
+removable media associated with that |trueos| system is inserted. They
+must input the password associated with the removable device in order to
+login.
 
 .. note:: When a user is configured to use a PersonaCrypt device, that
-   user can not login using an unencrypted session on the same system.
-   In other words, the PersonaCrypt username is reserved for
+   user cannot log in using an unencrypted session on the same system.
+   In other words, the PersonaCrypt username is reserved only for
    PersonaCrypt use. If necessary to login to both encrypted and
    unencrypted sessions on the same system, create two different user
    accounts; one for each type of session.
@@ -323,9 +310,8 @@ Encryption is also possible without requiring removable devices using
 `PEFS Encryption <https://sysadm.us/handbook/client/sysadmclient.html#pefs>`_
 for more detailed instructions to initialize a user with *PEFS*.
 
-The :guilabel:`PersonaCrypt` tab, shown in
-:numref:`Figure %s <persona1>`, is used to initialize PersonaCrypt for
-the user.
+:numref:`Figure %s <persona1>` shows the :guilabel:`PersonaCrypt` tab.
+This tab is used to initialize PersonaCrypt for the user.
 
 .. _persona1:
 
@@ -335,12 +321,12 @@ the user.
    User's PersonaCrypt Initialization
 
 Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable
-media large enough to hold the files to store in the home directory,
-and click :guilabel:`Select`.
+media large enough to hold all necessary files to store in the home
+directory, then click :guilabel:`Select`.
 
 .. warning:: Ensure there are no desired files on the removable media.
-   Initializing the media for PersonaCrypt will format the device with
-   ZFS and encrypt it with GELI, deleting any existing data.
+   Initializing the media for PersonaCrypt formats the device with ZFS
+   and then encrypts it with GELI, deleting any existing data.
 
 Input and repeat the :guilabel:`Device Password` to associate with the
 device. A pop-up window indicates the current contents of the device
@@ -349,8 +335,7 @@ will be wiped. Click :guilabel:`Yes` to initialize the device.
 To share the computer with other users, create additional login and
 *PersonaCrypt* accounts using the |sysadm|
 `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_.
-After creating at least one user, click :guilabel:`Next` to continue to
-the next screen.
+After creating at least one user, click :guilabel:`Next` to continue.
 
 .. index:: configure audio output
 .. _Configure Audio Output:
@@ -358,8 +343,8 @@ the next screen.
 Configure Audio Output
 ======================
 
-The next screen, seen in :numref:`Figure %s <audio1>`, is used to
-configure the default audio output.
+:numref:`Figure %s <audio1>` shows the Audio Output screen, where you
+can choose the output device and test it.
 
 .. _audio1:
 
@@ -369,10 +354,9 @@ configure the default audio output.
    Configure Audio Output
 
 Click the :guilabel:`Output Device` drop-down menu to select the
-desired sound device. Click :guilabel:`Test` to verify the setting as a
-working configuration will result in a test sound. The
-:guilabel:`Testing Volume` slider can also be used to set the default
-volume level.
+desired sound device. Click :guilabel:`Test` to verify the setting. If
+the device works, a test sound plays. The :guilabel:`Testing Volume`
+slider is also used to set the default system volume level.
 
 All these settings can be viewed and edited at any time using the
 instructions in :ref:`Sound Mixer Tray`.
@@ -383,13 +367,13 @@ instructions in :ref:`Sound Mixer Tray`.
 Connect to a Wireless Network
 =============================
 
-.. note:: Be sure the network card is supported by FreeBSD. Refer to
+.. note:: The network card must be supported by FreeBSD. Refer to
    :ref:`Supported Hardware` for links to FreeBSD support and a list of
    known issues with different hardware.
 
 If the system has an active wireless interface, a screen similar to
-:numref:`Figure %s <config5>` will indicate the wireless networks
-automatically detected. Available networks will be ordered by signal
+:numref:`Figure %s <config5>` indicates which wireless networks are
+automatically detected. Available networks are ordered by signal
 strength.
 
 .. _config5:
@@ -414,33 +398,49 @@ unable to connect or to configure the connection later, refer to
 Enable Optional Services
 ========================
 
-:numref:`Figure %s <config6>` shows the next screen in the process.
+:numref:`Figure %s <config6>` shows a few optional system services you
+can toggle.
 
 .. _config6:
 
-.. figure:: images/config6.png
+.. figure:: images/config6a.png
    :scale: 100%
 
    Optional Services
 
-Check :guilabel:`Disable IPV6 (Requires Reboot)` and the system will be
-configured to only support IPv4 addresses. The default is to support
-both IPv4 and IPv6 and prefer IPv6 over IPv4. 
+Check :guilabel:`Disable IPV6 (Requires Reboot)` to reconfigure the
+system to only support IPv4 addresses. By default, the system supports
+both IPv4 and IPv6, and IPv6 is preferred over IPv4. 
 
-.. tip:: Altering this setting will not take affect until the next
+.. tip:: Altering this setting does not take affect until the next
    system reboot.
 
-If :guilabel:`Enable SSH` is checked, the SSH service will start and be
-configured to start whenever the system boots. It also creates the
-firewall rules needed to allow incoming SSH connections to the |trueos|
-system.
+:guilabel:`Enable Intel HDA polling` enables the audio driver polling
+mode. It is used in |trueos| to support additional Intel audio devices
+that would not function without polling. However, it is recommended to
+**not** enable unless you are having extensive audio device issues, or
+your Intel device requires polling mode enabled. See the
+`FreeBSD Manual Page <https://www.freebsd.org/cgi/man.cgi?query=snd_hda&apropos=0&sektion=4&manpath=FreeBSD+12-current&arch=default&format=html>`_
+for more details.
+
+:guilabel:`Enable Realtek Wireless` activates the Realtek wireless
+networking drivers. 
+
+If :guilabel:`Enable SSH` is checked, the SSH service both starts
+immediately and is configured to start on system boot. This option also
+creates the firewall rules needed to allow incoming SSH connections to
+the |trueos| system.
 
 .. danger:: **Do not** check this box if SSH connections to the system
    are undesired.
 
-When finished, click :guilabel:`Next`. The screen in
-:numref:`Figure %s <config7>` indicates the post-installation setup is
-complete. Click :guilabel:`Finish` to access the login menu.
+:guilabel:`Enable Verbose Boot` is the same option as in :ref:`boot1`.
+Select this option to see more detailed messages during the boot
+process. This can be useful when troubleshooting a piece of hardware.
+
+When finished choosing optional services, click :guilabel:`Next`. The
+screen in :numref:`Figure %s <config7>` indicates the post-installation
+setup is complete. Click :guilabel:`Finish` to access the login menu.
 
 .. _config7:
 
@@ -456,7 +456,7 @@ Logging In
 ==========
 
 Once finished setting up the system, the PCDM (|pcbsd| Display Manager)
-graphical login screen will display. An example is seen in
+graphical login screen displays. An example is seen in
 :numref:`Figure %s <login1>`.
 
 .. _login1:
@@ -466,28 +466,28 @@ graphical login screen will display. An example is seen in
 
    |trueos| Login
 
-The hostname of the system will be displayed at the top of the login
-window. In this example, it is *trueos-5320*. This login screen lets
-has several configuration options:
+The hostname of the system is displayed at the top of the login window.
+In this example, it is *trueos-5026*. This login screen has several
+configuration options:
 
-* **user:** Upon first login, the created **username** (from
+* **User:** Upon first login, the created **username** (from
   :ref:`Create a User`) is the only available login user. If additional
   users are created using the |sysadm|
   `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_,
-  they will be added to the drop-down menu for more login choices. PCDM
-  does not allow logging in as the *root* user. Instead, whenever a
-  utility requires administrative access, |trueos| asks for the password
-  of the login account.
+  they are added to the drop-down menu for more login choices. PCDM does
+  not allow logging in as the *root* user. Instead, whenever a utility
+  requires administrative access, |trueos| asks for the password of the
+  login account.
 
-* **password:** Input the password associated with the selected user.
+* **Password:** Input the password associated with the selected user.
 
-* **desktop:** If any additional desktops are installed using
+* **Desktop:** If any additional desktops are installed using
   `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
   use the drop-down menu to select the desktop to log into.
 
 .. note:: If a PersonaCrypt user is active, insert the PersonaCrypt
-   device in order to login. As seen in :numref:`Figure %s <login5>`,
-   this will add an extra field to the login screen so the password
+   device in order to log in. As seen in :numref:`Figure %s <login5>`,
+   this adds an extra field to the login screen so the password
    associated with the PersonaCrypt device can be typed.
 
 .. _login5:
@@ -497,7 +497,7 @@ has several configuration options:
 
    |trueos| PersonaCrypt Login
 
-The toolbar at the bottom of the screen allows several options to be
+The toolbar across the bottom of the screen allows several options to be
 selected on a per-login basis:
 
 * **Locale:** If the localization was not set during installation, or
@@ -505,7 +505,7 @@ selected on a per-login basis:
   session.
 
 * **Keyboard Layout:** Click this icon to change the keyboard layout
-  for this login session. This will open the window seen in
+  for this login session. This opens the window seen in
   :numref:`Figure %s <keyboard1>`.
 
 .. _keyboard1:
@@ -519,24 +519,26 @@ Click the :guilabel:`Keyboard model` drop-down menu to select the type
 of keyboard.
 
 .. note:: The default model of :guilabel:`Generic 104-key PC` does
-   **not** support special keys such as multimedia or Windows keys. This
-   default will need to change to enable support for hot keys.
+   **not** support special keys such as multimedia or Windows keys.
+   Choose another model to enable support for hot keys.
 
 This screen also allows selection of the :guilabel:`Key Layout` and
 :guilabel:`Variant`. After making any selections, test them by typing
 some text into the :guilabel:`you may type into the space below...`
 field.
 
+.. tip:: It is possible to change keyboard layouts during an active
+   desktop session using the included :command:`fcitx` utility
+
 * **Restart/Shut Down:** To restart or shutdown the system without
-  logging in, click the icon in the lower-right corner. This icon also
-  allows to :guilabel:`Change DPI` and to :guilabel:`Refresh PCDM`.
+  logging in, click the :guilabel:`Power Button` icon in the
+  lower-right corner of the screen. This icon also allows you to
+  :guilabel:`Change DPI`, :guilabel:`Refresh PCDM`, and
+  :guilabel:`Change Video Driver`.
 
 Once any selections are made, input the password associated with the
 selected user and press :kbd:`Enter` or click the :guilabel:`blue arrow`
 to login.
-
-.. tip:: It is possible to change keyboard layouts during an active
-   desktop session using the included :guilabel:`fcitx` utility
 
 .. index:: Updating TrueOS
 .. _Updating TrueOS:
@@ -763,8 +765,8 @@ from runlevels as seen in :numref:`Table %s <rcbootserv>`. Most of these
 actions can be accomplished using the
 `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
 built into |sysadm|. Individuals familiar with the FreeBSD
-:command:`service` command may notice some similarities between some
-of these commands.
+:command:`service` command may notice some similarities between some of
+these commands.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
                     |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
@@ -801,9 +803,9 @@ of these commands.
 Writing OpenRC Services
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-OpenRC has a dependency based init system. As an example, let’s examine
-a service which needs *network* such as SysAdm. Here are the contents of
-the :file:`/usr/local/etc/init.d/sysadm` *depend* section:
+OpenRC has a dependency based init system. As an example, examine the
+SysAdm service, which needs *network*. Here are the contents of the
+:file:`/usr/local/etc/init.d/sysadm` *depend* section:
 
 .. code-block:: none
 
@@ -813,12 +815,12 @@ the :file:`/usr/local/etc/init.d/sysadm` *depend* section:
  keyword -shutdown
  }
 
-We can define that SysAdm needs *network*, which is the nickname of the
-:file:`/etc/init.d/network` service defined by *provide in network*. We
-also see that it starts after *bootmisc*. If we don’t want restarting
-*network* to restart SysAdm then we don’t need *net* for SysAdm. If we
-just want SysAdm to start after network then we add *network* the actual
-name of the script in *after bootmisc*.
+SysAdm requires *network* (**need net**), which is the nickname of the
+:file:`/etc/init.d/network` service defined by *provide in network*.
+SysAdm also starts **after** *bootmisc*. If you don’t want the
+restarting *network* to restart SysAdm, then *net* is unnecessary. To
+start SysAdm after *network*, then add *network to the actual name of
+the script in **after bootmisc**.
 
 Here are the contents of :file:`/etc/init.d/network`:
 
@@ -832,19 +834,19 @@ Here are the contents of :file:`/etc/init.d/network`:
  keyword -jail -prefix -vserver -stop
  }
 
-The *provide* option will set the service nickname to *net*. *Need*
-indicates restarting *localmount* will restart *network*. *After*
-defines that we start after *bootmisc* and *modules*. For example, the
-keyword *-jail* option says this service doesn't run in a jail, prefix,
-any of the other options shown.
+The *provide* option sets the service nickname to *net*. *Need* means
+restarting *localmount* restarts *network*. *After* indicates the
+service starts after *bootmisc* and *modules*. For example, the keyword
+*-jail* option says this service doesn't run in a jail, prefix, or any
+of the other options shown.
 
-Also under :file:`/libexec/rc` exists a cache directory which keeps a
-dependencies cache that is only updated when dependencies change.
-Several other directories exist for other binaries and special
-binaries used by OpenRC functions.
+There is also a cache directory under :file:`/libexec/rc`. This keeps a
+dependencies cache that is only updated when those dependencies change.
+Several other directories exist for other binaries and special binaries
+used by OpenRC functions.
 
 For more creation options for OpenRC compatible init scripts, type
-:command:`man openrc-run` in a CLI.
+:samp:`man openrc-run` in a CLI.
 
 .. index:: rc defaults
 .. _RC Defaults:
@@ -898,8 +900,8 @@ is available online.
  # This is rc.conf - a file full of useful variables that you can set
  # to change the default startup behavior of your system.  You should
  # not edit this file!  Put any overrides into one of the
- # ${rc_conf_files} instead and you will be able to update these defaults
- # later without spamming your local configuration information.
+ # ${rc_conf_files} instead and you will be able to update these
+ # defaults later without spamming your local configuration information.
  #
  # The ${rc_conf_files} files should only contain values which override
  # values set in this file.  This eases the upgrade path when defaults
@@ -914,10 +916,9 @@ is available online.
 
  ##############################################################
 
-The |trueos| :file:`rc.conf` file is much smaller because
-:file:`rc.conf` is now primarily used for tuning OpenRC behavior. By
-default, |trueos| uses 3 elements, documented in
-:numref:`Table %s <orcpritun>`
+The |trueos| :file:`rc.conf` file is smaller because :file:`rc.conf` is
+now primarily used for tuning OpenRC behavior. By default, |trueos| uses
+3 elements, documented in :numref:`Table %s <orcpritun>`.
 
 :numref:`Table %s <rcuprnlvl>` lists services and their default
 runlevels in |trueos|.
@@ -1030,17 +1031,17 @@ Tuneables
 .. table:: OpenRC Primary Tunables
    :class: longtable
 
-   +-------------------------------+-------------------------------------+
-   | Tunable                       | Description                         |
-   +===============================+=====================================+
-   | rc_parallel="YES"             | Starts all services in parallel     |
-   |                               | (experimental).                     |
-   +-------------------------------+-------------------------------------+
-   | rc_logger="YES"               | Enables logging                     |
-   +-------------------------------+-------------------------------------+
-   | rc_log_path="/var/log/rc.log" | Defines the location for logging rc |
-   |                               | activity                            |
-   +-------------------------------+-------------------------------------+
+   +-------------------------------+----------------------------------+
+   | Tunable                       | Description                      |
+   +===============================+==================================+
+   | rc_parallel="YES"             | Starts all services in parallel  |
+   |                               | (experimental).                  |
+   +-------------------------------+----------------------------------+
+   | rc_logger="YES"               | Enables logging                  |
+   +-------------------------------+----------------------------------+
+   | rc_log_path="/var/log/rc.log" | Defines the location for logging |
+   |                               | rc activity                      |
+   +-------------------------------+----------------------------------+
 
 :numref:`Table %s <orcalltun>` shows all other tunables enabled on a
 clean |trueos| installation. Many of these tunables continue to work in
@@ -1092,7 +1093,7 @@ OpenRC Install Scripts
 ----------------------
 
 There are number of scripts used for older |trueos| systems and new
-installations, listed below.
+installations. These are listed below.
 
 .. index:: onetime migration
 .. _One time migration:
@@ -1100,9 +1101,8 @@ installations, listed below.
 One-time Migration Script
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A one time migration script is available for |trueos| installations 
-dated 10-28-16 or older that are still using the legacy FreeBSD rc
-system:
+A one time migration script is available for |trueos| installations
+dated 10-28-16 or older still using the legacy FreeBSD *rc* system:
 
 .. note:: This block is truncated from the
    `original file <https://github.com/trueos/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_
@@ -1134,12 +1134,12 @@ With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`,
 has been phased out of |trueos| and is automatically removed from legacy
 installs dated 10-28-16 and older by :command:`pc-updatemanger`:
 
-This script is used to define a list of services such as *PCDM*
-designated to boot by default on a desktop. It also defines what drivers
-to load on a desktop. This is now accomplished when the
-*trueos-desktop* or *trueos-server* package is installed using
-:command:`sysrc` or other methods. Now there is no need to keep an extra
-overlay file to accomplish this behaviour.
+This script defines a list of services such as *PCDM* designated to boot
+by default on a desktop. It also defines what drivers to load on a
+desktop. This is now accomplished when the *trueos-desktop* or
+*trueos-server* package is installed using :command:`sysrc` or other
+methods. Now there is no need to keep an extra overlay file to
+accomplish this behaviour.
 
 .. index:: desktop pkginstall script
 .. _TrueOS desktop pkginstall script:
@@ -1207,10 +1207,10 @@ TrueOS Server pkg-install script
    install -m 644 ${PREFIX}/share/trueos/server-defaults/etc/conf.d/modules /etc/conf.d/modules/
 
 The typical :command:`nginx_enable=”YES”` is no longer used to enable
-services. Instead, :command:`rc-update` is used to add or delete
-services from runlevels. The one time migration script automatically
-adds previously defined user services to the OpenRC default runlevel.
-Leftover lines can be removed after migration.
+services. Instead, :command:`rc-update` adds or deletes services from
+runlevels. The one time migration script automatically adds previously
+defined user services to the OpenRC default runlevel. Leftover lines can
+be removed after migration.
 
 .. index:: update port makefile
 .. _Update Port Makefile:
@@ -1218,14 +1218,13 @@ Leftover lines can be removed after migration.
 Updating a Port's Makefile
 --------------------------
 
-There is still quite a bit of work to do updating each port's
-:file:`Makefile` to the new format, :command:`USE_OPENRC_SUBR=`.
-However, these are to be changed only when each service file has the new
-OpenRC ready format:
+There are many required updates to adjust each port's :file:`Makefile`
+to the new format, **USE_OPENRC_SUBR=**. However, these are to be
+changed only when each service file has the new OpenRC ready format:
 
 .. note:: This is an excerpt from the |trueos| :file:`dbus.in` file,
-   which is available online:
-   https://github.com/trueos/freebsd-ports/blob/xserver-next/devel/dbus/files/dbus.in
+   which is available on the |trueos|
+   `freebsd-ports GitHub repository <https://github.com/trueos/freebsd-ports/blob/xserver-next/devel/dbus/files/dbus.in>`_
 
 .. code-block:: none
 
