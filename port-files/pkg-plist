@@ -13,11 +13,6 @@ share/trueos/handbook/_images/config4a.png
 share/trueos/handbook/_images/config5.png
 share/trueos/handbook/_images/config6a.png
 share/trueos/handbook/_images/config7.png
-share/trueos/handbook/_images/disk1.png
-share/trueos/handbook/_images/disk2.png
-share/trueos/handbook/_images/disk3.png
-share/trueos/handbook/_images/disk4.png
-share/trueos/handbook/_images/disk5.png
 share/trueos/handbook/_images/display3.png
 share/trueos/handbook/_images/display4.png
 share/trueos/handbook/_images/encrypt1.png
@@ -100,8 +95,8 @@ share/trueos/handbook/_images/vbox6a.png
 share/trueos/handbook/_images/vbox7a.png
 share/trueos/handbook/_images/vbox8a.png
 share/trueos/handbook/_images/vbox9a.png
-share/trueos/handbook/_images/wine1.png
-share/trueos/handbook/_images/wine2.png
+share/trueos/handbook/_images/wine1a.png
+share/trueos/handbook/_images/wine2a.png
 share/trueos/handbook/_images/wine3.png
 share/trueos/handbook/_images/writer1.png
 share/trueos/handbook/_sources/helpsupport.txt

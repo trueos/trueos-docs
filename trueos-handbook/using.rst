@@ -30,12 +30,16 @@ utilities for various tasks, such as :command:`numlockx` and
 * Does not require any of the desktop implementation frameworks such as
   DBUS, policykit, consolekit, systemd, or HALD.
 
-* Provides many utilities for configuring the desktop environment.
+* Provides many
+  `utilities <https://lumina-desktop.org/handbook/luminautl.html>`_
+  for configuring the desktop environment.
 
-* Provides a plugin-based interface design. The user can make their
-  desktop as light or heavy as they wish by choosing which plugins to
-  have running on their desktop and panels. This plugin-based system is
-  similar to Android or other modern operating systems.
+* Provides a
+  `plugin-based interface design <https://lumina-desktop.org/handbook/luminaplugins.html>`_.
+  The user can make their desktop as light or heavy as they wish by
+  choosing which plugins to have running on their desktop and panels.
+  This plugin-based system is similar to Android or other modern
+  operating systems.
 
 * A single, easy-to-use
   `Lumina Configuration <https://lumina-desktop.org/handbook/luminaconfig.html>`_
@@ -45,20 +49,26 @@ utilities for various tasks, such as :command:`numlockx` and
 * Intelligent *favorites* system for creating quick shortcuts to
   applications, files, and directories.
 
-* ZFS file restore functionality with *Insight File Manager*.
+* ZFS file restore functionality with
+  `Insight File Manager <https://lumina-desktop.org/handbook/luminautl.html#insight-file-manager>`_.
 
-* Multi-monitor support includes the *Lumina Xconfig* graphical
-  utility for adding or removing monitors from the |lumina| session.
+* Multi-monitor support includes the
+  `Lumina Xconfig <https://lumina-desktop.org/handbook/luminautl.html#xconfig>`_
+  graphical utility for adding or removing monitors from the |lumina|
+  session.
 
-* Simple system controls through the system menu for configuring audio
-  volume, screen brightness, battery status/notifications, and workspace
-  switching.
+* Simple 
+  `system controls <https://lumina-desktop.org/handbook/luminaintro.html#initial-settings>`_
+  through the system tray for configuring audio volume, screen
+  brightness, battery status/notifications, and workspace switching.
 
 * Total system search capabilities through the resource friendly
-  *Lumina Search* utility.
+  `Lumina Search <https://lumina-desktop.org/handbook/luminautl.html#lumina-search>`_
+  utility.
 
-* Screenshot functionality through *Lumina Screenshot*, which is
-  tied to the :kbd:`Print Screen` key by default.
+* Screenshot functionality through
+  `Lumina Screenshot <https://lumina-desktop.org/handbook/luminautl.html#screenshot>`_,
+  which is tied to the :kbd:`Print Screen` key by default.
 
 Refer to the `Lumina Handbook <https://lumina-desktop.org/handbook/>`_
 for detailed descriptions of every element of |lumina|.
@@ -71,11 +81,12 @@ for detailed descriptions of every element of |lumina|.
 
 Beginning with |trueos| 11, most of the system management utilities
 previously available in the |pcbsd| Control Panel have been
-rewritten to use the |sysadm| API. This API is designed to simplify
-managing any FreeBSD, |trueos| desktop, or |trueos| server system over
-a secure connection from any operating system with the |sysadm|
-application installed. |sysadm| is built into |trueos|, but downloadable
-packages for other operating systems are available from the
+rewritten to use the |sysadm|
+`API <https://api.sysadm.us/getstarted.html>`_. This API is designed to
+simplify managing any FreeBSD, |trueos| desktop, or |trueos| server
+system over a secure connection from any operating system with the
+|sysadm| application installed. |sysadm| is built into |trueos|, but
+downloadable packages for other operating systems are available from the
 `SysAdm Website <https://sysadm.us/>`_.
 
 The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_ 
@@ -84,85 +95,70 @@ is recommended for new |trueos| users, while the
 `API Reference <https://api.sysadm.us/>`_ guides are available for
 advanced users.
 
-.. .. index:: Java and Flash
- .. _Java and Flash:
+Here is an overview of the different elements controlled by |sysadm|:
 
- Java and Flash
- ==============
+**Application Management**
 
- .. warning:: This section is outdated as Flash support is in a state
-   of flux with the current development (Jan 2017). Refer to
-   `trueos-docs issue #28 <https://github.com/trueos/trueos-docs/issues/28>`_
-   or the
-   `flash discussion thread <https://discourse.trueos.org/t/flashpluginctl-on-looking-for-wrong-directory/501/16>`_
-   for updates and help installing flash on |trueos|. This section
-   will be updated once development on this issue stabilizes.
+* `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_:
+  A graphical interface for installing and managing FreeBSD packages.
 
- **IcedTea-Web** provides an open source Java browser plugin which
- automatically works with the FireFox, Chromium, and Opera web browsers
- without any additional configuration. To install this software, search
- for "icedtea" within the |sysadm|
- `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
+* `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_:
+  A graphical interface for keeping both |trueos| and its installed
+  applications up to date.
 
- Version 11 of the *Adobe Flash player* is available for installation
- through *AppCafe*. To install *Flash* as a browser plugin, search
- for and install both the **flashplugin** and **nspluginwrapper**
- packages. Once installed, flash should "just work" when browsing the
- web. If Adobe Flash does not seem to be working, running
- :command:`flashpluginctl on` as the regular user account should fix
- the problem.
+**SysAdm Server Settings**
 
- The Adobe Flash Player preferences utility can be used to modify how
- websites interact with your browser using Adobe Flash. Many of the
- same configurations can be done via right-click within an active flash
- object in a web browser.
+* `Managing Remote Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-remote-connections>`_:
+  This includes creating and managing SSL keys or certificate bundles.
 
- To access the utility shown in :numref:`Figure %s <flash1>`, use
- :menuselection:`Browse Applications --> Adobe Flash Player preferences`
- or type :command:`flash-player-properties`.
+**System Management**
 
- .. _flash1:
+* `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_:
+  Create and manage ZFS Boot Environments (BEs). Options to *activate*,
+  *clone*, *mount*, and *unmount* BEs are available in this simple
+  screen.
 
- .. figure:: images/flash1.png
-   :scale: 100%
+* `Mouse Settings <https://sysadm.us/handbook/client/sysadmclient.html#mouse-settings>`_:
+   Tool for adjusting the settings of a connected mouse.
 
-   Flash Player Configuration
+* `Firewall Manager <https://sysadm.us/handbook/client/sysadmclient.html#firewall-manager>`_:
+  This is used to configure all ports and firewalls for |trueos|.
 
- The options available in each tab and when to use them are described on
- the Adobe website:
+* `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_:
+  This allows you to view and configure all the system's installed
+  services.
 
- * `Storage <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7fff.html>`_
-  describes private browsing support and the privacy issues associated
-  with local storage of flash information.
+* `Task Manager <https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_:
+  A graphical window into system resource usage and a list of all
+  running applications.
 
- * `Camera and Mic <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff8.html>`_
-  controls how websites can use the computer's camera and microphone.
+* `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_:
+  This utility is used to users and groups. This includes adding
+  `PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_
+  encryption to specific users.
 
- * `Playback <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff5.html>`_
-  describes how to configure peer-assisted networking to improve
-  bandwidth.
+**Utilities**
 
- * `Advanced <http://help.adobe.com/en_US/FlashPlayer/LSM/WS6aa5ec234ff3f285139dc56112e3786b68c-7ff0.html>`_
-  controls how Flash Player handles browsing data, updates, trusted
-  locations, and protected content.
+* `Life Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_:
+  This utility is used for system backups with ZFS snapshots. Life
+  Preserver provides easy management, replication, and scheduling of ZFS snapshots.
 
 .. index:: fonts
 .. _Fonts:
 
-Fonts 
+Fonts
 =====
 
 |trueos| installs with `Google Noto <http://www.google.com/get/noto/>`_
-which provides multi-lingual Sans and Serif fonts. Many other fonts
-are available from |appcafe|. Any font installed using |appcafe|
-should not require any additional configuration to "just work".
+which provides multi-lingual Sans and Serif fonts. Many other fonts are
+available from |appcafe|. Typically, fonts installed using |appcafe| do
+not require any additional configuration to "just work".
 
-If you have a collection of fonts that you have downloaded or purchased,
-you can configure a |trueos| system to also use those fonts. Become the
-superuser and copy the downloaded font to the
-:file:`/usr/local/share/fonts/` directory. Then, run
-:command:`fc-cache -f -v /usr/local/share/fonts/name_of_font` to refresh
-the fonts cache.
+If you have downloaded or purchased a collection of font, |trueos| can
+be configured to also use those fonts. Become the superuser and copy
+the downloaded font to the :file:`/usr/local/share/fonts/` directory.
+Then, run :samp:`fc-cache -f -v /usr/local/share/fonts/name_of_font`
+to refresh the fonts cache.
 
 .. index:: sound mixer tray
 .. _Sound Mixer Tray:
@@ -171,24 +167,23 @@ Sound Mixer Tray
 ================
 
 |trueos| includes a graphical utility for managing the sound card's
-mixer settings. The utility can be accessed using the speaker icon in
-the system tray.
+mixer settings. The utility is accessed by clicking the
+:guilabel:`speaker` icon in the system tray.
 
-:numref:`Figure %s <sound1>` shows an example of clicking the mixer icon
-in the system tray on a system with multiple audio outputs. If the
-system only has one audio output, the :guilabel:`Outputs` submenu will
-not be displayed. To change the default audio output, click its entry
-in :guilabel:`Output`.
+:numref:`Figure %s <sound1>` shows an example of highlighting the
+:guilabel:`Output` option after opening the Sound Mixer. If the
+system has one audio output, the :guilabel:`Output` submenu is not
+displayed. To change the default audio output, click its entry in
+:guilabel:`Output`.
 
 .. _sound1:
 
 .. figure:: images/sound1.png
    :scale: 100%
 
-   Mixer Icon
+   Output Options
 
-:numref:`Figure %s <sound2>` shows the menu which opens when you instead
-click :guilabel:`Mixer` button shown in :ref:`sound1`.
+:numref:`Figure %s <sound2>` shows the :guilabel:`Mixer` menu:
 
 .. _sound2:
 
@@ -200,12 +195,12 @@ click :guilabel:`Mixer` button shown in :ref:`sound1`.
 The :guilabel:`Mixer Controls` screen provides sliders to modify the
 left and right channels that control volume, pcm (the sound driver),
 the speaker, the microphone, the recording level, the input level, and
-the output level. Each control can be muted/unmuted individually by
-clicking :guilabel:`Mute` or :guilabel:`Unmute`, depending upon its
-current mute state.
+the output level. Each control can be muted or unmuted by clicking
+:guilabel:`Mute` or :guilabel:`Unmute`, depending on its current mute
+state.
 
 :numref:`Figure %s <sound3>` shows the :guilabel:`System Configuration`
-tab.
+tab of the :guilabel:`Mixer`.
 
 .. _sound3:
 
@@ -223,28 +218,28 @@ This tab contains several options:
   slider to display in the system tray.
 
 * **Audio Output Channel:** Use the drop-down menu to change the sound
-  device and use :guilabel:`Test` to determine that sound is working.
+  device and use :guilabel:`Test` to determine if sound is working.
   This is sometimes necessary when changing audio devices. For example,
-  when connecting a USB headset, |trueos| will detect the new device and
-  will automatically change the audio device to the USB input. However,
-  when inserting a headset into an audio jack, the system may not detect
-  the new input so the default device will have to be manually
-  configured.
+  when connecting a USB headset, |trueos| detects the new device and
+  automatically changes the audio device to the USB input. However, when
+  inserting a headset into an audio jack, the system may not detect this
+  new input, meaning the default device has changed manually.
 
 The :guilabel:`File` menu can be used to quit this mixer screen or to
 close both this screen and remove the icon from the system tray.
 
-.. note:: To re-add the mixer icon after removing it, type
-   :command:`pc-mixer &`. Alternately, to open this application
-   without adding it back to the system tray, type
-   :command:`pc-mixer -notray`.
+.. note:: To re-add the mixer icon after removing it,
+   type :samp:`pc-mixer &` in a command line. Alternately, open this
+   application without adding it back to the system tray by typing
+   :samp:`pc-mixer -notray`.
 
-The :guilabel:`Configuration` menu provides options for accessing the
-:guilabel:`PulseAudio Mixer` and :guilabel:`PulseAudio Settings`
-utilities as well as for restarting PulseAudio. |trueos| provides full
+|trueos| provides full
 `PulseAudio <https://www.freedesktop.org/wiki/Software/PulseAudio/>`_
-support and these utilities can be used to configure discoverable
-network sound devices and mixer levels.
+support, which can be configured using the :guilabel:`Configuration`
+menu in the :guilabel:`Mixer`. There are options for accessing the
+:guilabel:`PulseAudio Mixer` and :guilabel:`PulseAudio Settings`, as
+well as an option for restarting PulseAudio. These utilities can be
+used to configure discoverable network sound devices and mixer levels.
 
 .. index:: multimedia
 .. _Multimedia:
@@ -252,25 +247,21 @@ network sound devices and mixer levels.
 Multimedia
 ==========
 
-|trueos| has been pre-configured to support most multimedia formats and
-makes it easy to install most open source media applications using
-|appcafe|.
+|trueos| is pre-configured to support most multimedia formats and makes
+it easy to install most open source media applications using |appcafe|.
 
 After installing a web browser, most media formats become playable,
 including YouTube™ videos, Internet radio, and many trailer and movie
-sites.
+sites. When encountering a file unplayable in a web browser or media
+player, it is likely in a proprietary format which requires a
+licensing fee or restricts distribution of the codec required to play
+the media format.
 
-If people are blue in YouTube™ videos, this is due to an unresolved issue
-in Flash which Adobe hasn't fixed for open source players. To fix this
-issue, right-click an area in the video, select :guilabel:`Settings`,
-then uncheck :guilabel:`Enable hardware acceleration`. Alternately,
-install `Minitube <http://flavio.tordini.org/minitube>`_ using
-|appcafe| and use it to watch YouTube™.
-
-.. note:: When encountering a file you can not play in a web browser or
-   media player, it is probably because it is in a proprietary format
-   which requires a licensing fee or restricts distribution of the codec
-   required to play the media format.
+.. note:: When troubleshooting Java™ or Flash® for your browser, please
+   refer to the
+   `FreeBSD browser <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/desktop-browsers.html>`_
+   documentation, which has more complete instructions for installing
+   Java™ and Flash® plugins with specific browsers.
 
 |appcafe| contains several dozen applications for playing and editing
 multimedia. It includes these popular applications (click the links to
@@ -302,6 +293,10 @@ view screenshots):
   player which can handle any media format and play audio CDs, DVDs,
   (S)VCDs, TV/radio cards, YouTube™ and SHOUTcast™ streams.
 
+* `VLC media player <http://www.videolan.org/vlc/>`_: Open Source
+  cross-platform multimedia player capable of playing most multimedia
+  files, DVD and CD formats, and some streaming protocols.
+
 .. index:: Kodi
 .. _Kodi:
 
@@ -317,13 +312,13 @@ covers, descriptions, and fan art.
 
 Kodi can be installed using |appcafe|. Once installed, an entry for
 :guilabel:`Kodi media center` is added to
-:guilabel:`Browse Applications`. Kodi can also be started by typing
+:guilabel:`Browse Applications`. Kodi is also started by typing
 :command:`kodi` from a command prompt.
 
 If you have never used Kodi before, take some time to skim through the
 `Kodi Wiki Manual <http://kodi.wiki/>`_. The
 `Turn PC-BSD into a home theater forum post <https://forums.pcbsd.org/thread-19799.html>`_
-contains a quick how-to for configuring Kodi.
+contains a useful how-to for configuring Kodi.
 
 .. index:: Plex
 .. _PlexHome Theater:
@@ -375,7 +370,7 @@ networking shares. It does support many different filesystems:
 
 * exFAT (Requires :file:`mount.exfat-fuse`. Possible intermittent
   detection issues.)
-  
+
 * ext2
 
 * ext4 (Requires :file:`ext4fuse`)
@@ -467,76 +462,6 @@ Coming soon:
 
 * Possible support for ZFS pools
 
-.. index:: pcsysconfig
-.. _pcsysconfig:
-
-pc-sysconfig
-------------
-
-.. warning:: This utility is scheduled to be retired soon, and may not
-   work as intended.
-
-The previous section described the |trueos| automounter.
-:command:`pc-sysconfig` is another utility that is used directly from
-the command line on |trueos| systems, by window managers without a
-system tray, or by users who prefer to use the command line.
-
-Here is the full usage of :command:`pc-sysconfig`:
-
-.. note:: Mounting related commands are no longer used in pc-sysconfig
-   and should be ignored.
-
-.. code-block:: none
-
- pc-sysconfig
- pc-sysconfig: Simple system configuration utility
- Usage: "pc-sysconfig <command 1> <command 2> ..."
- Available Information Commands:
- "list-remdev": List all removable devices attached to the system.
- "list-mounteddev": List all removable devices that are currently mounted
- "list-audiodev": List all available audio devices
- "probe-netdrives": List all the available shared drives on the local network
- "list-mountednetdrives": List all the available shared drives which can currently be browsed (assuming the remote system is running properly)
- "supportedfilesystems": List all the filesystems that are currently detected/supported by pc-sysconfig
- "devinfo <device> [skiplabel]": Fetch device information (Filesystem, Label, Type)
- "devsize <device>": Fetch device space (must be mounted)
- "usingtormode": [TRUE/FALSE] Returns whether the system is routing all traffic through TOR
- "getscreenbrightness": Returns the brightness of the first controllable screen as a percentage (0-100) or "[ERROR]" otherwise
- "systemcansuspend": [TRUE/FALSE] Returns whether the system supports the S3 suspend state
-
- Available Action Commands:
-  "mount <device> [<filesystem>] [<mountpoint>]":
-   -- This will mount the removable device on the system (with user-accessible permissions if the mountpoint needs to be created)
-   -- If there is no filesystem set (or "auto" is used), it will try to use the one that is auto-detected for the device
-   -- If there is no mountpoint set, it will assign a new mountpoint within the "/media/" directory based on the device label
-  "unmount <device or mountpoint> [force]":
-   -- This will unmount the removable device from the system
-   -- This may be forced by using the "force" flag as well (not recommended for all cases)
-   -- If the input device is a memory disk (/dev/md*), then it will automatically remove the memory disk from the system as well
-  "mountnet <IP of remote host> <Name of remote host>":
-   -- This will setup the remote host to be browsable on the local system with the given name
-   -- Note that the remote host is automatically mounted/unmounted based on local user activity
-   -- To see where these network drives are mounted and can be browsed, see the output of "list-mountednetdrives"
-  "unmountnet <IP of remote host>":
-   -- This will remove the remote host from being browsable on the local system
-  "load-iso <absolute path to the *.iso file>":
-   -- This will load the ISO file as a memory disk on the system (making it available for mounting/browsing)
-  "setdefaultaudiodevice <pcm device>":
-   -- This will set the given pcm device (I.E. "pcm3") as the default audio output device
-  "setscreenbrightness <percentage>":
-   -- This will set the brightness of all the available screens to the given percentage
-   -- It is also possible to adjust the current value by supplying a [+/-] before the number
-   -- For example: using "+5" as the percentage will increase the brightness by 5% for each screen
-   -- This returns "[ERROR]" or "[SUCCESS]" based on whether the change could be performed
-  "suspendsystem": Puts the system into the suspended state (S3)
-
-For example, to see a listed of the supported filesystems, use:
-
-.. code-block:: none
-
- pc-sysconfig supportedfilesystems
- FAT, NTFS, EXT, CD9660, UFS, REISERFS, XFS, UDF, ZFS
-
 .. index:: Freebsd ports
 .. _FreeBSD Ports:
 
@@ -551,7 +476,7 @@ which is regularly updated against the base FreeBSD ports tree.
 
 When fetching ports for the first time:
 
-:command:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`
+:samp:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`
 
 To update an existing local ports directory:
 
@@ -745,186 +670,6 @@ available utilities.
    |             |              | :menuselection:`Network --> Windows Network`        |
    +-------------+--------------+-----------------------------------------------------+
 
-.. index:: disk manager
-.. _Disk Manager:
-
-Disk Manager
-============
-
-The |trueos| Disk Manager can be used to manage ZFS pools and datasets
-as well as the disks attached to the system. To access this utility, use
-:menuselection:`Browse Applications --> Disk Manager` or type
-:command:`pc-su pc-diskmanager` from within an xterm. The user password
-is required in order to access this utility.
-
-As seen in :numref:`Figure %s <disk1>`, the utility will open in the
-:guilabel:`Disks` tab which shows the size of each disk as well as its
-partitioning scheme. If an unformatted disk or free disk space is
-available, right-click the device to start formatting.
-
-.. _disk1:
-
-.. figure:: images/disk1.png
-   :scale: 100%
-
-   Managing Disks
-
-To view the status of the ZFS pool(s) and the disk(s) in each pool,
-click the :guilabel:`ZFS Pools` tab. In the example
-:numref:`Figure %s <disk2>`, the ZFS pool named *tank1* was created
-from one disk. :guilabel:`Online` indicates the pool is healthy.
-
-.. _disk2: 
-
-.. figure:: images/disk2.png
-   :scale: 100%
-
-   ZFS Pool Status
-
-Right-click the pool name to view a number of options:
-
-* **Create new pool:** Use this option if additional disks are available
-  and you want to create another pool instead of adding them to an
-  existing pool. This will open a screen which allows naming the new
-  pool, selecting which additional disks will go into it, and
-  selecting how to configure the disks.
-
-* **Rename pool:** Will prompt to input the new name for the pool.
-
-* **Destroy pool:** **Do not select** this option unless the intent is
-  to destroy all data on the disks!
-
-* **Add devices:** Depending upon the type of disk configuration, the
-  pool size may be extendable by adding an equal number of disks.
-
-* **Add log devices:** Used to add an SSD or disk as a secondary ZIL.
-
-* **Add cache devices:** Used to add an SSD or disk as an L2ARC.
-
-* **Add spare devices:** At this time, FreeBSD does not support hot
-  spares.
-
-* **Scrub:** Will immediately start a ZFS scrub. This option can be I/O
-  intensive so it isn't recommended while the system is in use.
-
-* **Export pool:** This action should be performed if you will be
-  physically moving the disks from one system to another.
-
-* **Properties:** Used to manage the default properties of the pool.
-  Datasets inherit the default properties, unless a property is set to
-  a different value on the dataset.
-
-When right-clicking a disk entry, such as *ada0p5*, several options are
-available:
-
-* **Attach (mirror) device:** If you wish to mirror additional disk(s),
-  this option will open a screen which allows specifying the disk(s) to
-  add.
-
-* **Take offline:** If a bad disk needs to be replaced, select this
-  option before physically removing the disk.
-
-As seen in :numref:`Figure %s <disk3>`, the :guilabel:`ZFS Filesystems`
-tab will display the system's ZFS datasets and their snapshots, the
-amount of space available to each dataset, and the amount of space each
-dataset is using.
-
-.. _disk3:
-
-.. figure:: images/disk3.png
-   :scale: 100%
-
-   ZFS Datasets
-
-The name of the pool in this example is *tank1*. If the system has
-multiple pools, click the :guilabel:`green arrow` to select the desired
-pool.
-
-Right-click the pool name under :guilabel:`Filesystems` to see more
-options:
-
-* **Mount:** Whether or not the filesystem can be mounted depends upon
-  the value of the :command:`canmount` property of the dataset.
-
-* **Create new dataset:** :numref:`Figure %s <disk4>` shows the
-  available options when creating a new dataset.
-
-  .. _disk4:
-
-  .. figure:: images/disk4.png
-     :scale: 100%
-
-     Creating New ZFS Dataset
-
-* **Create a clone dataset:** Creates a copy of the dataset.
-
-* **Take a snapshot:** Will prompt for the name of the snapshot. The
-  field is pink to remind you to type the snapshot name immediately
-  after the pool name and *@* symbol. In this example, *tank1@* will be
-  displayed in the name field. An example snapshot name could be
-  *tan1k@snapshot1* or *tank1@201505181353* to denote the date and time
-  the snapshot was created. The snapshot creation will be instantaneous
-  and the new snapshot will be added to the list of datasets and will
-  have a camera icon. Click the entry for the snapshot to rename it,
-  clone it, destroy it, rollback the system to a specific point in time,
-  or edit its properties. If you forget when the snapshot was made, pick
-  :guilabel:`Edit properties` from the snapshot's right-click menu as it
-  will show its :command:`creation` property.
-
-* **Edit properties:** Allows modification of the ZFS properties for the
-  pool, as seen in :numref:`Figure %s <disk5>`. The available options
-  depend upon the property being modified. The options which are
-  read-only will have a :guilabel:`red minus sign` next to them. ZFS
-  options are described in :command:`man zfs` and are recommended to be
-  left unchanged unless familiar with the ramifications.
-
-  .. _disk5:
-
-  .. figure:: images/disk5.png
-     :scale: 100%
-
-     Editing the Pool's ZFS Properties
-
-When creating a new dataset or clone, several options are available.
-Again, these options are described in :command:`man zfs` with changes
-not recommended unless familiar with the ramifications.
-
-* **Name:** This field is pink as a reminder to type in the dataset
-  name immediately after the trailing **/** of the displayed pool name.
-
-* **Prevent auto mount:** If the box is checked, the dataset will not
-  be mounted at boot time and instead must be manually mounted as
-  needed.
-
-* **Mountpoint:** Choices are **none**, **legacy**, or **[path]**. If
-  you select **[path]**, input the full path for the mountpoint.
-
-* **Force UTF-8 only:** If checked, filenames not in the UTF-8 character
-  code set will be unsavable.
-
-* **Unicode normalization:** If checked, indicate whether unicode
-  normalization should occur when comparing filenames, and if so, which
-  normalization algorithm to use. Choices are **none**, **formD**, or
-  **formKCF**.
-
-* **Copies:** If checked, indicates the number of copies (**1 to 3**) of
-  data to store in the dataset. The copies are in addition to any
-  redundancy and stored on different disks when possible.
-
-* **Deduplication:** Enables deduplication.
-
-.. warning:: **Do not** enable this option if the system has less than
-   the minimum recommended 5 GB of RAM per TB of storage to be
-   deduplicated.
-
-* **Compression:** If checked and a compression algorithm is selected
-  in the drop-down menu, data will automatically be compressed as it
-  is written and uncompressed as it is read. The algorithm determines
-  the amount and speed of compression, where typically increased
-  compression results in decreased speed. The **lz4** algorithm is
-  recommended as it provides very good compression at near real-time
-  speed.
-
 .. index:: network manager
 .. _Network Manager:
 
@@ -937,10 +682,10 @@ interfaces to use DHCP and provides a screen to
 connected interfaces should "just work" whenever using a |trueos|
 system.
 
-After installation, a wireless configuration icon will appear in the
-system tray if |trueos| detects a supported wireless card. Hover
-over the wireless icon, shown in :numref:`Figure %s <network1>`, to see
-it indicate if the interface is associated and provide information
+After installation, a wireless configuration icon appears in the system
+tray if |trueos| detects a supported wireless card. Hover over the
+wireless icon shown in :numref:`Figure %s <network1>` to see an
+indication if the interface is associated and more information
 regarding the IP address, IPv6 address, SSID, connection strength,
 connection speed, MAC address, and type of wireless device.
 
@@ -952,7 +697,7 @@ connection speed, MAC address, and type of wireless device.
    System Tray Wireless Information
 
 If you right-click the wireless icon, a list of detected wireless
-networks will appear. Click the name of a network to associate with it.
+networks displays. Click the name of a network to associate with it.
 The right-click menu also provides options to configure the wireless
 device, start the Network Manager, restart the network (useful to renew
 your DHCP address), route the network connection through Tor (to browse
@@ -961,11 +706,11 @@ Network Monitor so the icon no longer shows in the system tray.
 
 To view or manually configure a network interface, click
 :guilabel:`Start the Network Manager` within |sysadm| or type
-:command:`sudo pc-netmanager`. If a new device has been inserted, such
-as a USB wireless interface, a pop-up message will open when Network
-Manager starts, indicating the name of the new device, and asking if you
-would like to enable it. Click :guilabel:`Yes` and the new device will
-be displayed with the list of network interfaces that |trueos|
+:samp:`sudo pc-netmanager`. If a new device has been inserted, such as a
+USB wireless interface, a pop-up message opens when Network
+Manager starts. This message indicates the name of the new device and
+asks if you want to enable it. Click :guilabel:`Yes` and the new device
+is displayed with the list of network interfaces that |trueos|
 recognizes. In the example seen in :numref:`Figure %s <network2>`, the
 system has one Intel Ethernet interface that uses the **em** driver and
 an Intel wireless interface that uses the **wlan** driver.
@@ -979,9 +724,7 @@ an Intel wireless interface that uses the **wlan** driver.
 
 The rest of this section describes each tab of the Network Manager
 utility and demonstrates how to view and configure the network settings
-for both Ethernet and wireless devices. It will then present some common
-troubleshooting scenarios, known issues, and suggestions for when a
-device does not have a built-in driver.
+for both Ethernet and wireless devices.
 
 .. index:: network devices tab
 .. _Network Devices:
@@ -991,7 +734,7 @@ Network Devices
 
 If you highlight an Ethernet interface in the :guilabel:`Devices` tab
 and either click :guilabel:`Configure` or double-click the interface
-name, the screen shown in :numref:`Figure %s <network3>` will appear.
+name, the screen shown in :numref:`Figure %s <network3>` appears.
 
 .. _network3:
 
@@ -1021,13 +764,13 @@ the subnet mask (**Netmask**) is the correct value. If not, change it
 again.
 
 If the Ethernet network uses 802.1x authentication, check
-:guilabel:`Enable WPA authentication`, which will enable
-:guilabel:`Configure WPA`. Click this button to select the network and
-input the authentication values required by the network.
+:guilabel:`Enable WPA authentication`, which enable the
+:guilabel:`Configure WPA` button. Click this button to select the
+network and input the authentication values required by the network.
 
 By default, :guilabel:`Disable this network device` is unchecked. If
-this checkbox is marked, |trueos| will immediately stop the interface
-from using the network. The interface will remain inactive until this
+this checkbox is filled, |trueos| immediately stops the interface
+from using the network. The interface remains inactive until this
 checkbox is unchecked.
 
 The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network4>`,
@@ -1059,7 +802,7 @@ If any changes are made within any of the tabs, click :guilabel:`Apply`
 to activate them. Click :guilabel:`OK` when finished to return to the
 main Network Manager window.
 
-Repeat this procedure for each network interface to view or configure.
+Repeat this procedure for each desired network interface.
 
 .. index:: wireless adapters
 .. _Wireless Adapters:
@@ -1069,13 +812,12 @@ Wireless Adapters
 
 If the wireless interface does not automatically associate with a
 wireless network, the wireless profile containing the security settings
-required by the network will need to be configured.
-Double-click the wireless icon in the system tray or highlight the
-wireless interface displayed in the :guilabel:`Devices` tab of Network
-Manager and click :guilabel:`Configure`. :numref:`Figure %s <network6>`
-demonstrates this system's wireless interface is currently associated
-with the wireless network listed in the
-:guilabel:`Configured Network Profiles` section.
+required by the network will need to be configured. Double-click the
+wireless icon in the system tray or highlight the wireless interface
+displayed in the :guilabel:`Devices` tab of Network Manager and click
+:guilabel:`Configure`. :numref:`Figure %s <network6>` demonstrates this
+system's wireless interface is currently associated with the wireless
+network listed in the :guilabel:`Configured Network Profiles` section.
 
 .. _network6:
 
@@ -1084,26 +826,26 @@ with the wireless network listed in the
 
    Wireless Configuration
 
-To associate with a wireless network, click :guilabel:`Scan` to receive
-a list of connectable wireless networks. Highlight the desired network
-to associate with and click :guilabel:`+Add Selected`. If the network
-requires authentication, a pop-up window will prompt you for the
-authentication details. Input the values required by the network then
-click :guilabel:`Close`. |trueos| will add an entry for the network in
+To associate with a wireless network, click :guilabel:`Scan` to view a
+list of connectable wireless networks. Highlight the desired network to
+associate with and click :guilabel:`+Add Selected`. If the network
+requires authentication, a pop-up window prompts you for the
+authentication details. Input the values required by the network, then
+click :guilabel:`Close`. |trueos| then adds an entry for the network in
 the :guilabel:`Configured Network Profiles` section.
 
 If the network is hidden, click :guilabel:`+Add Hidden`, input the name
 of the network in the pop-up window, and click :guilabel:`OK`.
 
 If multiple networks are added, use the arrow keys to place them in the
-desired connection order. |trueos| will try to connect to the first
-profile in the list, and if unable to connect, move sequentially down
-the list. When finished, click :guilabel:`Apply`. A pop-up message will
-indicate |trueos| is restarting the network. If all went well, there
-should be an IP address and status of **associated** when hovering over
-the wireless icon in the system tray. If this is not the case,
-double-check for errors in the configuration values and read the
-Troubleshooting section on :ref:`Network`.
+desired connection order. |trueos| attempts to connect to networks in
+order from first to last in the connection list. When prioritizing
+connections, click :guilabel:`Apply`. A pop-up message then indicates
+|trueos| is restarting the network. Next, an an IP address and status of
+**associated** appears when hovering over the wireless icon in the
+system tray. If this does not happen, double-check for errors in the
+configuration values and read the Troubleshooting section on
+:ref:`Network Help`.
 
 |trueos| supports the types of authentication shown in
 :numref:`Figure %s <network7>`. Access this screen and change
@@ -1128,7 +870,7 @@ security:
   or a plaintext key and Network Manager will automatically select the
   type of detected key. If :guilabel:`WEP` is pressed, then
   :guilabel:`Configure`, the screen in :numref:`Figure %s <network8>`
-  will appear. Type the key into both :guilabel:`Network Key` boxes. If
+  appears. Type the key into both :guilabel:`Network Key` boxes. If
   the key is complex, check :guilabel:`Show Key` to ensure the passwords
   are matching and correct. Uncheck this box when finished to replace
   the characters in the key with bullets. A wireless access point using
@@ -1157,7 +899,7 @@ security:
 
 * **WPA Enterprise:** If you click :guilabel:`WPA Enterprise` then
   :guilabel:`Configure`, the screen shown in
-  :numref:`Figure %s <network10>` will appear. Select the
+  :numref:`Figure %s <network10>` appears. Select the
   :guilabel:`EAP Authentication Method`, input the EAP identity, browse
   for the CA certificate, client certificate and private key file, and
   input and verify the password.
@@ -1176,7 +918,7 @@ security:
 
 To disable this wireless interface, check
 :guilabel:`Disable this wireless device` in the :guilabel:`General` tab
-for the device. This setting can be useful to temporarily prevent the
+for the device. This setting is helpful when temporarily preventing the
 wireless interface from connecting to untrusted wireless networks.
 
 The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network11>`,
@@ -1220,8 +962,8 @@ Network Configuration (Advanced)
 The :guilabel:`Network Configuration (Advanced)` tab of the Network
 Manager is seen in :numref:`Figure %s <network13>`.
 The displayed information is for the currently highlighted interface.
-To edit these settings, make sure that the interface to configure is
-highlighted in the :guilabel:`Devices` tab.
+To edit these settings, ensure the interface to configure is highlighted
+in the :guilabel:`Devices` tab.
 
 .. _network13:
 
@@ -1245,7 +987,7 @@ override the default DNS settings or set them manually, check
 
 To change or set the default gateway, check
 :guilabel:`Enable Custom Gateway` box and input the IP address of the
-default gateway.
+desired gateway.
 
 Several settings can be modified in the IPv6 section:
 
@@ -1280,7 +1022,7 @@ The :guilabel:`Misc` section has more options to configure:
    from :file:`/etc/rc.conf`.
 
 If any changes are made within this window, click :guilabel:`Apply` to
-apply them.
+save them.
 
 .. index:: proxy settings
 .. _Proxy Settings:
@@ -1318,15 +1060,15 @@ settings can be configured in this screen:
   and password if they are required to connect to the proxy server.
 
 Proxy settings are saved to the :file:`/etc/profile` and
-:file:`/etc/csh.cshrc` files so they are available to the |trueos|
-utilities as well as any application using :command:`fetch`.
+:file:`/etc/csh.cshrc` files so they are available to both the |trueos|
+utilities and any application using :command:`fetch`.
 
 Applications not packaged with the operating system, such as web
-browsers, may require configuring proxy support using an application's
+browsers, may require configuring proxy support using that application's
 configuration utility.
 
-If you apply any changes to this tab, a pop-up message will warn you may
-have to logout and back in for the proxy settings to take effect.
+If you apply any changes to this tab, a pop-up message warns the user
+may have to log out and back in for the proxy settings to take effect.
 
 .. index:: configure wireless access point
 .. _Configuring a Wireless Access Point:
@@ -1398,14 +1140,13 @@ Tor mode uses `Tor <https://www.torproject.org/>`_,
 `socat <http://www.dest-unreach.org/socat/>`_, and a built-in script
 which automatically creates the necessary firewall rules to enable and
 disable Tor mode at the user's request. While in Tor mode, the firewall
-will redirect all outgoing *port 80* (HTTP), *443* (HTTPS), and DNS
-traffic through the Tor transparent proxy network.
+redirects all outgoing *port 80* (HTTP), *443* (HTTPS), and DNS traffic
+through the Tor transparent proxy network.
 
-To start tor mode, right-click the network icon in the system tray and
-check :guilabel:`Route through TOR`. You will be prompted to enter your
-password via a pop-up shown in :numref:`Figure %s <tor1>`. If activated
-correctly, |trueos| will open a new browser window directed to
-https://check.torproject.org
+To start Tor mode, right-click the network icon in the system tray and
+check :guilabel:`Route through TOR`. Enter your password via the pop-up
+shown in :numref:`Figure %s <tor1>`. If activated correctly, |trueos|
+opens a new browser window directed to https://check.torproject.org
 
 .. _tor1:
 
@@ -1415,30 +1156,18 @@ https://check.torproject.org
    Enabling Tor Mode
 
 If you have never used the Tor network before, it is recommended to
-read the link for the Tor FAQ. Click :guilabel:`Yes` to enable tor mode
-and enter your password when prompted so the firewall rules can be
-updated.
+review the `Tor FAQ <https://www.torproject.org/docs/faq.html.en>`_.
 
-While in tor mode, a small :guilabel:`onion` will be added to the Update
-Manager icon and, when hovering over the icon, it will show
-"(Routing through Tor)". You can verify you are connected to the Tor
-network by right-clicking Update Manager and clicking
-:guilabel:`Check Tor connection`. It will take a few moments, but a
-pop-up message should indicate the connection to
-`<https://check.torproject.org/>`_ succeeded.
+The system remains in Tor mode until manually disabled. To disable Tor
+mode, right-click the network icon and uncheck
+:guilabel:`Route through Tor`.
 
-.. note:: The system will remain in tor mode, even after a reboot, until
-   it is disabled. To disable tor mode, right-click Update Manager and
-   uncheck :guilabel:`Routing through Tor`. Now when
-   :guilabel:`Check Tor connection` is pressed, it should indicate you
-   are not using Tor.
-
-To enable and disable tor mode from the command line or on a desktop
+To enable and disable Tor mode from the command line or on a desktop
 with no system tray, use these commands:
 
-* :command:`sudo enable-tor-mode` enables tor mode.
+* :samp:`sudo enable-tor-mode` enables tor mode.
 
-* :command:`sudo disable-tor-mode` disables tor mode.
+* :samp:`sudo disable-tor-mode` disables tor mode.
 
 .. index:: windows emulation
 .. _Windows Emulation:
@@ -1451,25 +1180,24 @@ allows the creation of a Windows environment for installing Windows
 software. This can be useful if your favorite Windows game or
 productivity application has not yet been ported to Linux or BSD.
 
-Wine is not guaranteed to work with every Windows application. If unsure
-the required application is supported, search for it in the
-:guilabel:`Browse Apps` section of the
-`Wine application database <https://appdb.winehq.org/>`_. The
-`Wine wiki <http://wiki.winehq.org/>`_ contains many resources to get
-started and to later refer if problems are encountered with a Windows
-application.
+Wine is not guaranteed to work with every Windows application. You can
+search for desired applications in the :guilabel:`Browse Apps` section
+of the `Wine application database <https://appdb.winehq.org/>`_. The
+`Wine wiki <http://wiki.winehq.org/>`_ contains resources to get
+started and troubleshooting reference material if problems are
+encountered with a Windows application.
 
-Wine can be installed using |appcafe|. Once installed, it can be
-started by typing :command:`winecfg` in the command line. The first
-time running this utility, it may prompt to install needed packages.
-If prompted, click :guilabel:`Install` in the pop-up menu.
+Wine can be installed using |appcafe|. After installing, it can be
+started by typing :command:`winecfg` in the command line. The first time
+running this utility, it may prompt to install additional required
+packages. If prompted, click :guilabel:`Install` in the pop-up menu.
 
 The initial Wine configuration menu is shown in
 :numref:`Figure %s <wine1>`.
 
 .. _wine1:
 
-.. figure:: images/wine1.png
+.. figure:: images/wine1a.png
    :scale: 100%
 
    Wine Configuration Menu
@@ -1482,29 +1210,29 @@ drop-down menu to browse to the
 contents of the CD/DVD should be listed under *d:*. If they are not,
 the most likely reason is your CD/DVD was not automatically mounted by
 the desktop. To mount the media, type
-:command:`mount -t cd9660 /dev/cd0 /cdrom` as the superuser:
+:samp:`mount -t cd9660 /dev/cd0 /cdrom` as the superuser.
 
-The media should spin and able to select the installer file. Once
-selected, press :guilabel:`Apply` then :guilabel:`OK` to exit the
-configuration utility.
+The system then accesses the media and you can now select the installer
+file. Once selected, click :guilabel:`Apply` then :guilabel:`OK` to exit
+the configuration utility.
 
 To install the application, type :command:`winefile` to see the screen
 shown in :numref:`Figure %s <wine2>`.
 
 .. _wine2:
 
-.. figure:: images/wine2.png
+.. figure:: images/wine2a.png
    :scale: 100%
 
    Installing the Application Using :command:`winefile`
 
-Click the button representing the drive containing the installer and
+Click the button representing the drive which contains the installer and
 double-click on the installation file (e.g. :file:`setup.exe`). The
-installer will launch to allow installing the application as on a
+installer then launches to allow installing the application as on a
 Windows system.
 
-.. note:: To manually mount the CD/DVD, you need to unmount it before
-   it ejects. As the superuser, use the command :command:`umount /mnt`.
+.. note:: You may need need to unmount a CD/DVD before it ejects. As the
+   superuser, type :samp:`umount /mnt`.
 
 Once the installation is complete, browse to the application's location.
 :numref:`Figure %s <wine3>` shows an example of running Internet
@@ -1524,33 +1252,33 @@ Security
 ========
 
 Your |trueos| system is secure by default. This section provides an
-overview of the built-in security features and additional resources,
-if you want to know more about increasing the security of your system
-beyond its current level.
+overview of the built-in security features. If you want to know more
+about increasing the security of your system beyond its current level,
+additional resources are also provided in this section.
 
 The security features built into |trueos| include:
 
 * **Naturally immune to viruses and other malware:** Most viruses are
   written to exploit Windows systems and do not understand the binaries
   or paths found on a |trueos| system. Antivirus software is still
-  available in the Security section of |appcafe| as this can be
-  useful if sending or forwarding email attachments to users running
-  other operating systems.
+  available in the Security section of |appcafe|, as this is useful when
+  sending or forwarding email attachments to users running other
+  operating systems.
 
 * **Potential for serious damage is limited:** File and directory
-  ownership and permissions along with separate user and group
-  functions mean, as an ordinary user, any program executed will only be
-  granted the abilities and access of the user. A user not a member of
-  the *wheel* group can not switch to administrative access and can not
-  enter or list the contents of a directory not been set for universal
-  access.
+  ownership and permissions along with separate user and group functions
+  mean, as an ordinary user, any program executed is only granted the
+  abilities and access of the user. A user not a member of the *wheel*
+  group can not switch to administrative access and can not enter or
+  list the contents of a directory not been set for universal access.
 
 * **Built-in firewall:** The default firewall ruleset allows accessing
   the Internet and the shares available on your network, but does not
   allow any inbound connections to your computer.
 
 * **Very few services are enabled by default:** View which services are
-  started at boot time by reading through :file:`/etc/rc.conf.trueos`.
+  started at boot time by reading through the output of
+  :command:`rc-update`.
 
 * **SSH is disabled by default:** SSH can only be enabled by the
   superuser. This setting prevents bots and other users from trying to
@@ -1563,9 +1291,8 @@ The security features built into |trueos| include:
 
 * **SSH root logins are disabled by default:** If SSH is enabled, login
   as a regular user and use :command:`su` or :command:`sudo` when
-  administrative actions are required. You should not change this
-  default as this prevents an unwanted user from having complete access
-  to the system.
+  administrative actions are required. Do not change this setting, as it
+  prevents an unwanted user from having complete access to the system.
 
 * **sudo is installed:** It is configured to allow users in the *wheel*
   group permission to run an administrative command after typing their
@@ -1575,9 +1302,9 @@ The security features built into |trueos| include:
   to add other users to this group. Change the default :command:`sudo`
   configuration using :command:`visudo` as the superuser.
 
-* :wikipedia:`AES instruction set` (AESNI) support is loaded by
-  default for the Intel Core i5/i7 processors that support this
-  encryption set. This support speeds up AES encryption and decryption.
+* :wikipedia:`AES instruction set` (AESNI) support is loaded by default
+  for the Intel Core i5/i7 processors that support this encryption set.
+  This support speeds up AES encryption and decryption.
 
 * **Automatic notification of security advisories:**
   The |sysadm|
@@ -1595,9 +1322,9 @@ The security features built into |trueos| include:
 * `PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_
   allows a user to use a removable, encrypted device as their home
   directory.
-  
-* :ref:`Tor Mode` can be used to anonymously access Internet sites as
-  this mode automatically forwards all Internet traffic through the
+
+* :ref:`Tor Mode` can be used to anonymously access Internet sites as it
+  automatically forwards all Internet traffic through the
   `Tor Project's <https://www.torproject.org/>`_ transparent proxy
   service.
 
@@ -1624,11 +1351,11 @@ Printing System (`CUPS <http://cups.org/>`_) to manage printing.
 CUPS provides an easy-to-use utility for adding and managing printers.
 Whether or not it automatically detects a printer depends upon how well
 the printer is supported by an open source print driver. This section
-will walk you through a sample configuration for a HP DeskJet 36xx
-series printer. Your specific printer may "just work", which simplifies
-this process immensely. If your printer configuration does not work,
-read this section more closely for hints to locate the correct driver
-for your printer.
+walks you through a sample configuration for a HP DeskJet 36xx series
+printer. Your specific printer may "just work", which simplifies this
+process immensely. If your printer configuration does not work, read
+this section more closely for ideas on locating correct drivers for your
+printer.
 
 .. index:: researching your printer
 .. _Researching Your Printer:
@@ -1636,10 +1363,10 @@ for your printer.
 Researching your Printer
 ------------------------
 
-Before configuring your printer, see if a print driver exists for your
-particular model already, and if so, which driver is recommended. If you
-are planning to purchase a printer, this is definitely good information
-to know beforehand. Look up the vendor and model of the printer in the
+Before configuring your printer, see if a driver already exists for your
+particular model, and if so, which driver is recommended. If you are
+planning to purchase a printer, this is definitely good information to
+know beforehand. Look up the vendor and model of the printer in the
 `Open Printing Database <http://www.openprinting.org/printers>`_, which
 indicates if the model is supported and if there are any known caveats
 with the print driver. Once the model is selected, click
@@ -1647,7 +1374,7 @@ with the print driver. Once the model is selected, click
 
 For the HP DeskJet model example, the HPLIP driver is recommended. In
 |trueos|, the HPLIP driver is available as an optional package called
-"hplip". Use |appcafe| to search if the driver is installed, and install
+*hplip*. Use |appcafe| to search if the driver is installed, and install
 it if not.
 
 .. index:: adding a printer
@@ -1656,11 +1383,11 @@ it if not.
 Adding a Printer
 ----------------
 
-Once printer support is determined, be sure the printer is plugged into
+Once printer support is determined, ensure the printer is plugged into
 your computer or, if the printer is a network printer, both your
 computer and the printer are connected to the network. Then, open a web
 browser and enter the address :command:`127.0.0.1:631/admin`. This opens
-the CUPS configuration, shown in:numref:`Figure %s <print4>`.
+the CUPS configuration, shown in :numref:`Figure %s <print4>`.
 
 .. _print4:
 
@@ -1670,9 +1397,8 @@ the CUPS configuration, shown in:numref:`Figure %s <print4>`.
    Printer Configuration
 
 To add a new printer, click :guilabel:`Add Printer`. CUPS will pause
-for a few seconds as it searches for available printers. When it is
-finished it will display a screen similar to
-:numref:`Figure %s <print5>`.
+for a few seconds as it searches for available printers. When finished,
+a screen similar to :numref:`Figure %s <print5>` is shown.
 
 .. _print5:
 
@@ -1684,9 +1410,8 @@ finished it will display a screen similar to
 In this example, the wizard has found the HP DeskJet 3630 printer on
 both the USB port (first entry) and the wireless network (second entry).
 Click the desired connection method then click :guilabel:`Continue`.
-CUPS will attempt to load the correct driver for the device. If it is
-successful, it will display the screen shown in
-:numref:`Figure %s <print6>`.
+CUPS then attempts to load the correct driver for the device. If
+successful, a screen shown in :numref:`Figure %s <print6>` is shown.
 
 .. _print6:
 
@@ -1701,11 +1426,11 @@ description, and the type of connection. If desired, add a descriptive
 :guilabel:`Sharing`.
 
 Once you click :guilabel:`Continue`, the next screen, shown in
-:numref:`Figure %s <print7>`, will show a summary of the selected
-options and offer the ability to select another driver. For now, leave
-the detected driver and click :guilabel:`Add Printer`. If the printer
-does not work using the default driver, read the Troubleshooting
-:ref:`Printer` section, which describes how to use this screen in more
+:numref:`Figure %s <print7>`, displays a summary of the selected options
+and offers the ability to select another driver. For now, leave the
+detected driver and click :guilabel:`Add Printer`. If the printer does
+not work using the default driver, read the Troubleshooting
+:ref:`Printer Help` section, which describes how to use this screen in more
 detail.
 
 .. _print7:
@@ -1726,14 +1451,13 @@ modify the properties of the printer.
    Modify Print Properties
 
 It is recommended to take a few minutes to review the settings in the
-:guilabel:`General`, :guilabel:`Banners`, and :guilabel:`Policies` tabs
-, as these allow configuration options such as print banners,
-permissions, the default paper size, and double-sided printing. The
-available settings will vary, depending upon the capabilities of the
-print driver. When finished, click :guilabel:`Set Default Options` to
-save the options. This will open the :guilabel:`Printers` tab, with the
-new printer displayed. An example is shown in
-:numref:`Figure %s <print9>`.
+:guilabel:`General`, :guilabel:`Banners`, and :guilabel:`Policies` tabs,
+as these allow configuration options such as print banners, permissions,
+the default paper size, and double-sided printing. The available
+settings can vary depending on the capabilities of the print driver.
+When finished, click :guilabel:`Set Default Options` to save the
+options. This opens the :guilabel:`Printers` tab with the new printer
+displayed. An example is shown in :numref:`Figure %s <print9>`.
 
 .. _print9:
 
@@ -1742,10 +1466,10 @@ new printer displayed. An example is shown in
 
    Manage Printer
 
-Print a test page to ensure the printer is working. Ensure the printer
+Print a test page to ensure the printer is working. Verify the printer
 has paper and click :menuselection:`Maintenance -> Print Test Page`. If
-a test page will not print, refer to the Troubleshooting
-:ref:`Printer` of this handbook.
+a test page does not print, refer to the :ref:`Printer Help` of this
+handbook.
 
 .. index:: manually adding printer drivers
 .. _Manually Adding a Driver:
@@ -1760,14 +1484,14 @@ on.
 
 If the wizard is unable to even detect the device, try to manually add
 the information for the print device. In the :guilabel:`Select Device`
-screen (:ref:`print5`), select the type of connection to the printer
-and input all necessary information. The type of information depends
-upon the type of connection:
+screen (:ref:`print5`), select the type of connection to the printer and
+input all necessary information. The type of information depends upon
+the type of connection:
 
-**USB:** This entry will only appear if a printer is plugged into a
-USB port and the number of entries will vary depending upon the number
-of USB ports on the system. If there are multiple USB entries, highlight
-the one representing the USB port your printer is plugged into.
+**USB:** This entry only appears if a printer is plugged into a USB port
+and the number of entries vary depending on the number of USB ports on
+the system. If there are multiple USB entries, highlight the one
+representing the USB port your printer is plugged into.
 
 **IPP:** Select this option if connecting to a printer cabled to another
 computer (typically running a Microsoft operating system) sharing the
@@ -1777,13 +1501,13 @@ instead.
 
 **HTTP:** This option allows you to manually type in the URI to the
 printer. A list of possible URIs is available on the
-`cups site <http://www.cups.org/documentation.php/network.html>`_. To
-use HTTP over an encrypted connection, select "https" instead.
+`CUPS site <http://www.cups.org/documentation.php/network.html>`_. To
+use HTTP over an encrypted connection, select :guilabel:`https` instead.
 
 **AppSocket/HP JetDirect:** Select this option if connecting to an HP
 network printer. Input the IP address of the printer. Only change the
 port number if the printer is using a port other than the default of
-9100.
+*9100*.
 
 **LPD/LPR:** Select this option if connecting to a printer which is
 cabled to a Unix computer using LPD to share the printer. Input the
@@ -1800,8 +1524,8 @@ Alternately, if you have a PPD driver from the manufacturer's website
 or on the CD packed in with the printer, click :guilabel:`Choose File`
 to browse to the location of the PPD file. PPD (PostScript Printer
 Description) is a driver created by the manufacturer ending in a
-:file:`.ppd` extension. Sometimes the file will end with a
-:file:`.ppd.gz` extension, indicating it has been compressed.
+:file:`.ppd` extension. Sometimes the file ends with a :file:`.ppd.gz`
+extension, indicating it is compressed.
 
 .. index:: scanners
 .. _Scanner:
@@ -1809,13 +1533,15 @@ Description) is a driver created by the manufacturer ending in a
 Scanning
 --------
 
-|trueos| includes `XSane <http://www.xsane.org/>`_, a graphical utility
-for managing scanners.
+While no scanning applications are included with |trueos|, there are a
+few options available via |appcafe|. One good option is
+`XSane <http://www.xsane.org/>`_, a graphical utility for managing
+scanners. The rest of this section describes using *XSane* for scanning.
 
 To use your scanner, make sure the device is plugged into the |trueos|
 system and click :menuselection:`Browse Applications --> Scanner` or
-type :command:`xsane` from the command line. A pop-up message will
-indicate XSane is detecting devices and will prompt you to accept the
+type :command:`xsane` from the command line. A pop-up message indicates
+XSane is detecting devices and prompts you to accept the
 XSane license if a device is detected. If a device is not detected,
 search for your device at the
 `list of supported scanners <http://www.sane-project.org/sane-backends.html>`_.

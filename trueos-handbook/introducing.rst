@@ -398,10 +398,6 @@ separate |trueos| from |pcbsd|:
 * :command:`freebsd-update` is retired in favor of using :command:`pkg`
   for system updates.
 
-* The binary for :ref:`Disk Manager` (:command:`pc-zmanager`) is renamed
-  to :command:`pc-diskmanager` and the graphical version moved to the
-  :guilabel:`Browse Applications` menu.
-
 * The option to use the SCFB display driver is added to the installer.
   This driver is suitable for newer UEFI laptops as it automatically
   detects native resolution and is a good solution for newer Intel
