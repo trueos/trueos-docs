@@ -17,7 +17,7 @@ If using IRC Freenode, join the #trueos channel and converse with many
 other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is another
 popular option for users.
 
-`TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in
+`TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in
 2005 when Kris Moore presented the first beta version of a FreeBSD
 operating system pre-configured for desktop use. Since then, |trueos|
 has matured into a polished, feature-rich, free-of-charge, open source
@@ -381,7 +381,7 @@ separate |trueos| from |pcbsd|:
   * Network Manager
 
 * The functionality provided by the *About* utility is incorporated into
-  `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html#lumina-information>`_.
+  `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html#information>`_.
 
 * The functionality provided by the
   `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
@@ -620,19 +620,19 @@ what they are used for.
 There are many articles and videos which provide additional information
 about some of the differences between BSD and Linux:
 
-* `Comparing BSD and Linux <http://www.freebsd.org/doc/en/articles/explaining-bsd/comparing-bsd-and-linux.html>`_
+* `Comparing BSD and Linux <https://www.freebsd.org/doc/en/articles/explaining-bsd/comparing-bsd-and-linux.html>`_
 
-* `FreeBSD Quickstart Guide for Linux® Users <http://www.freebsd.org/doc/en/articles/linux-users/index.html>`_
+* `FreeBSD Quickstart Guide for Linux® Users <https://www.freebsd.org/doc/en/articles/linux-users/index.html>`_
 
 * `BSD vs Linux <http://www.over-yonder.net/~fullermd/rants/bsd4linux/01>`_
 
-* `Why Choose FreeBSD? <http://www.freebsd.org/advocacy/whyusefreebsd.html>`_
+* `Why Choose FreeBSD? <https://www.freebsd.org/advocacy/whyusefreebsd.html>`_
 
 * `Interview: BSD for Human Beings <http://www.unixmen.com/bsd-for-human-beings-interview/>`_
 
 * `Video: BSD 4 Linux Users <https://www.youtube.com/watch?v=xk6ouxX51NI>`_
 
-* `Why you should use a BSD style license for your Open Source Project <http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_
+* `Why you should use a BSD style license for your Open Source Project <https://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_
 
 * `A Sysadmin's Unixersal Translator (ROSETTA STONE) <http://bhami.com/rosetta.html>`_
 

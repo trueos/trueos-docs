@@ -1222,9 +1222,9 @@ There are many required updates to adjust each port's :file:`Makefile`
 to the new format, **USE_OPENRC_SUBR=**. However, these are to be
 changed only when each service file has the new OpenRC ready format:
 
-.. note:: This is an excerpt from the |trueos| :file:`dbus.in` file,
-   which is available on the |trueos|
-   `freebsd-ports GitHub repository <https://github.com/trueos/freebsd-ports/blob/xserver-next/devel/dbus/files/dbus.in>`_
+.. note:: This is an excerpt from the |trueos| :file:`openrc-dbus.in`
+   file, which is available on the |trueos|
+   `freebsd-ports GitHub repository <https://github.com/trueos/freebsd-ports/blob/trueos-master/devel/dbus/files/openrc-dbus.in>`_
 
 .. code-block:: none
 
@@ -1240,14 +1240,14 @@ changed only when each service file has the new OpenRC ready format:
  # except according to the terms contained in the LICENSE file.
 
  command=/usr/local/bin/dbus-daemon
- pidfile=/var/run/dbus/dbus.pid
+ pidfile=/var/run/dbus/pid
  command_args="${dbusd_args---system}"
  name="Message Bus Daemon"
 
  depend()
  {
-         need localmount
-         after bootmisc
+	 need localmount
+	 after bootmisc
  }
 
 Here is an example from FreeBSD of *dbus* using the legacy rc script

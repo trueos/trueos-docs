@@ -320,25 +320,25 @@ the ability to quickly take snapshots, boot environments, continuous
 integrity checking and automatic repair, RAIDZ which was designed to
 overcome the limitations of hardware RAID, and native NFSv4 ACLs.
 
-If new to ZFS, the Wikipedia entry on :wikipedia:`ZFS` provides an
+If new to ZFS, the Wikipedia entry on :wiki:`ZFS` provides an
 excellent starting point to learn about its features. Additionally,
-`FreeBSD Mastery: ZFS <https://www.michaelwlucas.com/nonfiction/freebsd-mastery-zfs>`_
+`FreeBSD Mastery: ZFS <https://www.michaelwlucas.com/os/fmzfs>`_
 by Michael W Lucas and Allan Jude is a helpful ZFS resource as it
 is implemented in FreeBSD.
 
 These resources are also useful to bookmark and peruse as needed:
 
-* `ZFS Evil Tuning Guide <http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_
+* `ZFS Evil Tuning Guide <https://www.solaris-cookbook.eu/solaris/solaris-10-zfs-evil-tuning-guide/>`_
 
 * `FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_
 
-* `ZFS Best Practices Guide <http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide>`_
+* `ZFS Best Practices Guide <https://documents.irf.se/get_document.php?group=Computer&docid=311>`_
 
 * `ZFS Administration Guide <http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
 
-* `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/entry/becoming_a_zfs_ninja>`_
+* `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/becoming-a-zfs-ninja>`_
 
-* `Blog post explaining how ZFS simplifies the storage stack <https://blogs.oracle.com/bonwick/entry/rampant_layering_violation>`_
+* `Blog post explaining how ZFS simplifies the storage stack <https://blogs.oracle.com/bonwick/rampant-layering-violation>`_
 
 :numref:`Table %s <zfsterms>` is a brief glossary of terms used by ZFS:
 
@@ -356,9 +356,8 @@ These resources are also useful to bookmark and peruse as needed:
    | Pool     | A collection of devices providing physical storage and data replication managed by ZFS. This pooled storage model eliminates the concept of  |
    |          | volumes and the associated problems of partitions, provisioning, wasted bandwidth, and stranded storage. Thousands of filesystems can draw   |
    |          | from a common storage pool, each one consuming only its required space. The combined I/O bandwidth of all devices in the pool is available   |
-   |          | at all times to all filesystems. The                                                                                                         |
-   |          | `Storage Pools Recommendations <http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide#ZFS_Storage_Pools_Recommendations>`_ |
-   |          | of the ZFS Best Practices Guide provides detailed recommendations for creating the storage pool.                                             |
+   |          | at all times to all filesystems. The `Storage Pools Recommendations <http://zqscm.qiniucdn.com/data/20091118230710/index.html>`_ of the ZFS  |
+   |          | Best Practices Guide provides detailed recommendations for creating the storage pool.                                                        |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Mirror   | A form of RAID where all data is mirrored onto two or more disks, creating a redundant copy should a disk fail.                              |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -774,7 +773,7 @@ Once the system is installed, it boots to a command-line login
 prompt. Login using the primary user account configured during
 installation. Now the server can be configured like any other FreeBSD
 server installation. The
-`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
+`FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
 is an excellent reference for performing common FreeBSD server tasks.
 
 .. index:: Restore from Life Preserver backup

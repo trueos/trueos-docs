@@ -29,8 +29,12 @@ sys.path.append(os.path.abspath('/usr/local/lib/python2.7/site-packages/sphinx/e
 extensions = [
     'sphinx.ext.ifconfig',
     'sphinxcontrib.httpdomain',
-    'wikipedia',
+    'sphinx.ext.extlinks',
 ]
+# -- External Link Shortening
+extlinks = {'wiki': ('https://en.wikipedia.org/wiki/%s',
+                     ' ')}
+
 # -- Options for automatic Figure numbering
 numfig = True
 numfig_secnum_depth = (2)

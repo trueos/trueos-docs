@@ -191,7 +191,7 @@ some issues may occur, depending upon the model of laptop. These
 typically deal with:
 
 * **Sleep/suspend:** Unfortunately,
-  :wikipedia:`Advanced Configuration and Power Interface` (ACPI) is not
+  :wiki:`Advanced Configuration and Power Interface` (ACPI) is not
   an exact science, meaning experimentation with various
   :command:`sysctl` variables may be required to achieve successful
   sleep and suspend states on your particular laptop model. If the
@@ -460,21 +460,21 @@ burning utilities.
 .. table:: Free Burning Utilities
    :class: longtable
 
-   +-----------------------+------------------------------------------------------------------------------------------------+
-   | Operating System      | Utility                                                                                        |
-   +=======================+================================================================================================+
-   | Windows               | `InfraRecorder utility <http://infrarecorder.org/>`_                                           |
-   +-----------------------+------------------------------------------------------------------------------------------------+
-   | Windows               | `Disk Burner <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-from-an-ISO-file>`_ |
-   +-----------------------+------------------------------------------------------------------------------------------------+
-   | Linux or \*BSD        | `K3B <https://www.kde.org/applications/multimedia/k3b/>`_                                      |
-   +-----------------------+------------------------------------------------------------------------------------------------+
-   | Linux or \*BSD        | `Brasero <https://wiki.gnome.org/Apps/Brasero>`_                                               |
-   +-----------------------+------------------------------------------------------------------------------------------------+
-   | FreeBSD/PC-BSD/TrueOS | `growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/creating-dvds.html>`_   |
-   +-----------------------+------------------------------------------------------------------------------------------------+
-   | Mac OS X              | `Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_                            |
-   +-----------------------+------------------------------------------------------------------------------------------------+
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Operating System      | Utility                                                                                           |
+   +=======================+===================================================================================================+
+   | Windows               | `InfraRecorder utility <http://infrarecorder.org/>`_                                              |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Windows               | `Disk Burner <https://support.microsoft.com/en-us/help/15088/windows-create-installation-media>`_ |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Linux or \*BSD        | `K3B <https://www.kde.org/applications/multimedia/k3b/>`_                                         |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Linux or \*BSD        | `Brasero <https://wiki.gnome.org/Apps/Brasero>`_                                                  |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | FreeBSD/PC-BSD/TrueOS | `growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/creating-dvds.html>`_      |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Mac OS X              | `Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_                               |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
 
 .. index:: writing to usb
 .. _Writing to a USB Device:

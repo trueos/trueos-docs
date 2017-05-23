@@ -38,7 +38,7 @@ To do this, add :samp:`pcdm_enable="NO"` temporarily to
 
 The system reboots to a login prompt. After logging in, follow the
 instructions in the FreeBSD
-`Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_
+`Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/x-config.html>`_
 to manually configure and test Xorg. Once a working configuration is
 found, save it to :file:`/etc/X11/xorg.conf`. Then, remove the temporary
 line shown above from :file:`/etc/rc.conf` and start PCDM with
@@ -266,7 +266,7 @@ search for **FreeBSD RTL8191SE** gives an indication if a driver exists
 or is being developed.
 
 The FreeBSD Handbook chapter on
-`Wireless Networking <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_
+`Wireless Networking <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html>`_
 provides a good overview of how wireless works and offers additional
 troubleshooting suggestions.
 
@@ -342,7 +342,7 @@ Once all of the mixer settings appear and none are set to *0*, sound
 typically works. If it still does not, these resources will help
 pinpoint the problem:
 
-* `Sound Section of FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
+* `Sound Section of FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
 
 * `FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_
 
@@ -398,7 +398,8 @@ on the Gitter channel:
   a question.
 
 * Do not post large error messages in the channel. Instead, use a
-  pasting service such as pastebin.com and refer to the URL on channel.
+  pasting service such as https://pastebin.com/ and refer to the URL on
+  channel.
 
 * Be polite and do not demand a response from others.
 
@@ -467,7 +468,7 @@ on IRC:
 * Do not post error messages in the channel as the IRC software can
   kick you out for flooding and it is considered to be bad etiquette.
   Instead, use a pasting service such as
-  `pastebin <http://pastebin.com/>`_ and refer to the URL on channel.
+  `pastebin <https://pastebin.com/>`_ and refer to the URL on channel.
 
 * Be polite and do not demand that others answer your question.
 
@@ -712,7 +713,7 @@ affecting translators.
 Interface Translation
 ^^^^^^^^^^^^^^^^^^^^^
 
-|trueos| uses `Weblate <https://weblate.org>`_ for managing
+|trueos| uses `Weblate <https://weblate.org/en/>`_ for managing
 localization of the menu screens used by the installer and the |trueos|
 utilities. Weblate makes it easy to find out if your native language
 has been fully localized for |trueos|. It also makes it easy to verify
@@ -1220,9 +1221,9 @@ FreeBSD Handbook and FAQ
 
 |trueos| uses FreeBSD as its underlying operating system, so nearly
 everything in the
-`FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
+`FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
 and
-`FreeBSD FAQ <http://www.freebsd.org/doc/en/books/faq/>`_ applies to
+`FreeBSD FAQ <https://www.freebsd.org/doc/en/books/faq/>`_ applies to
 |trueos| as well. Both documents are comprehensive and cover nearly
 every possible task to accomplish on a FreeBSD system. They are also an
 excellent resource for learning how things work under the hood of a
@@ -1242,9 +1243,9 @@ Search and Portals
 Many BSD related search portals exist. If unable to find an answer
 from the forums or mailing lists, try searching these websites:
 
-* `The OpenDirectory <http://www.dmoz.org/Computers/Software/Operating_Systems/Unix/BSD/>`_
+* `The OpenDirectory <http://dmoztools.net/Computers/Software/Operating_Systems/Unix/BSD/FreeBSD/>`_
 
-* `FreeBSD Search <http://www.freebsd.org/search/index.html>`_
+* `FreeBSD Search <https://www.freebsd.org/search/index.html>`_
   (includes mailing list archives, man pages, and web pages) 
 
 * `FreeBSD News <https://www.freebsdnews.com/>`_
@@ -1285,18 +1286,18 @@ Many BSD sites and resources may also contain useful information:
 
 * `The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ (book)
 
-* `Definitive Guide to PC-BSD® <http://www.apress.com/9781430226413>`_ (book)
+* `Definitive Guide to PC-BSD® <http://www.apress.com/us/book/9781430226413>`_ (book)
 
 **ZFS Resources**
 
-* `ZFS Evil Tuning Guide <http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>`_
+* `ZFS Evil Tuning Guide <https://www.solaris-cookbook.eu/solaris/solaris-10-zfs-evil-tuning-guide/>`_
 
 * `FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_
 
-* `ZFS Best Practices Guide <http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide>`_
+* `ZFS Best Practices Guide <https://documents.irf.se/get_document.php?group=Computer&docid=311>`_
 
 * `ZFS Administration Guide <http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
 
-* `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/entry/becoming_a_zfs_ninja>`_
+* `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/becoming-a-zfs-ninja>`_
 
-* `Blog post explaining how ZFS simplifies the storage stack <https://blogs.oracle.com/bonwick/entry/rampant_layering_violation>`_
+* `Blog post explaining how ZFS simplifies the storage stack <https://blogs.oracle.com/bonwick/rampant-layering-violation>`_

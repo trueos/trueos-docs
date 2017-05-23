@@ -264,8 +264,7 @@ the media format.
    Java™ and Flash® plugins with specific browsers.
 
 |appcafe| contains several dozen applications for playing and editing
-multimedia. It includes these popular applications (click the links to
-view screenshots):
+multimedia. It includes these popular applications:
 
 * `aTunes <http://www.atunes.org/?page_id=5>`_: Full-featured audio
   player and manager which can play mp3, ogg, wma, wav, flac, mp4 and
@@ -282,16 +281,16 @@ view screenshots):
   Audio player built around a highly modular structure which lets the
   user completely disable unneeded features. Able to play CDs directly.
 
-* `gtkpod <http://www.gtkpod.org/index.php?title=Screenshots>`_:
-  Graphical user interface for the Apple iPod.
+* `gtkpod <http://gtkpod.org/libgpod/>`_: Graphical user interface for
+  the Apple iPod.
 
 * `Miro <http://www.getmiro.com/download/screenshots/>`_: HD video
   player which can play almost any video file and offers over 6,000
   free Internet TV shows and video podcasts.
 
-* `SMPlayer <http://smplayer.sourceforge.net/>`_: Universal media
-  player which can handle any media format and play audio CDs, DVDs,
-  (S)VCDs, TV/radio cards, YouTube™ and SHOUTcast™ streams.
+* `SMPlayer <http://www.smplayer.info/>`_: Universal media player which
+  can handle any media format and play audio CDs, DVDs, (S)VCDs,
+  TV/radio cards, YouTube™ and SHOUTcast™ streams.
 
 * `VLC media player <http://www.videolan.org/vlc/>`_: Open Source
   cross-platform multimedia player capable of playing most multimedia
@@ -326,7 +325,7 @@ contains a useful how-to for configuring Kodi.
 PlexHome Theater
 ----------------
 
-`Plex Home Theater <https://plex.tv/>`_ is a centralized media
+`Plex Home Theater <https://www.plex.tv/>`_ is a centralized media
 playback system. The central Plex Media Server streams media to many
 Plex player Apps which are used to view your media library and watch
 shows.
@@ -336,15 +335,15 @@ should be added to the :guilabel:`Multimedia` section of the application
 menu of your desktop. PlexHome Theater can also be started by typing
 :command:`plexhometheater` from a command prompt.
 
-Once installed, an entry for :guilabel:`Plex Home Theater` will also be
-added to the login manager so you can login directly to the home theater
+Once installed, an entry for :guilabel:`Plex Home Theater` is also added
+to the login manager so you can login directly to the home theater
 instead of a desktop.
 
-The first time running or logging into Plex Home Theater, a wizard will
-check the audio settings and sign into your Plex account. If you have no
-Plex account, create one at `plex.tv <https://plex.tv/>`_. The wizard
-will provide a PIN code and an URL to enter the code. Once the PIN is
-entered, the wizard will connect and sign you in. Now it is possible to
+The first time running or logging into Plex Home Theater, a wizard
+checks the audio settings and signs into your Plex account. If you have
+no Plex account, create one at `plex.tv <https://www.plex.tv/>`_. The
+wizard provides a PIN code and an URL to enter the code. Once the PIN is
+entered, the wizard connects and signs you in. Now it is possible to
 search for and watch media. To exit Plex, click :guilabel:`<` then
 :guilabel:`Quit`.
 
@@ -518,11 +517,11 @@ column.
    +-------------+--------------+-------------------------------------------------------------+
    | caja        | caja         | `<http://mate-desktop.org/gallery/1.6/>`_                   |
    +-------------+--------------+-------------------------------------------------------------+
-   | mucommander | mucommander  | `<http://www.mucommander.com/screenshots.php>`_             |
+   | mucommander | mucommander  | `<http://www.mucommander.com/index.html>`_                  |
    +-------------+--------------+-------------------------------------------------------------+
    | nautilus    | nautilus     | `<https://projects.gnome.org/nautilus/screenshots.html>`_   |
    +-------------+--------------+-------------------------------------------------------------+
-   | pcmanfm     | pcmanfm      | `<http://lxde.org/easy_fast_file_management_pcmanfm>`_      |
+   | pcmanfm     | pcmanfm      | `<https://wiki.lxde.org/en/PCManFM>`_                       |
    +-------------+--------------+-------------------------------------------------------------+
    | thunar      | thunar       | `<http://docs.xfce.org/xfce/thunar/start>`_                 |
    +-------------+--------------+-------------------------------------------------------------+
@@ -774,8 +773,8 @@ from using the network. The interface remains inactive until this
 checkbox is unchecked.
 
 The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network4>`,
-allows advanced users to manually input a :wikipedia:`MAC address` or
-:wikipedia:`IPv6 address`. Both boxes should remain checked in order
+allows advanced users to manually input a :wiki:`MAC address` or
+:wiki:`IPv6 address`. Both boxes should remain checked in order
 to automatically receive these addresses, unless you are an advanced
 user with reason to change the default MAC or IPv6 address and an
 understanding of how to input an appropriate replacement address.
@@ -1183,7 +1182,7 @@ productivity application has not yet been ported to Linux or BSD.
 Wine is not guaranteed to work with every Windows application. You can
 search for desired applications in the :guilabel:`Browse Apps` section
 of the `Wine application database <https://appdb.winehq.org/>`_. The
-`Wine wiki <http://wiki.winehq.org/>`_ contains resources to get
+`Wine wiki <https://wiki.winehq.org/>`_ contains resources to get
 started and troubleshooting reference material if problems are
 encountered with a Windows application.
 
@@ -1302,16 +1301,16 @@ The security features built into |trueos| include:
   to add other users to this group. Change the default :command:`sudo`
   configuration using :command:`visudo` as the superuser.
 
-* :wikipedia:`AES instruction set` (AESNI) support is loaded by default
-  for the Intel Core i5/i7 processors that support this encryption set.
-  This support speeds up AES encryption and decryption.
+* :wiki:`AES instruction set` (AESNI) support is loaded by default for
+  the Intel Core i5/i7 processors that support this encryption set. This
+  support speeds up AES encryption and decryption.
 
 * **Automatic notification of security advisories:**
   The |sysadm|
   `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
   automatically notifies you if an update is available as the result of
   a
-  `security advisory <http://www.freebsd.org/security/advisories.html>`_
+  `security advisory <https://www.freebsd.org/security/advisories.html>`_
   affecting |trueos|. This allows you to keep your operating system
   fully patched with just the click of a mouse.
 
@@ -1333,9 +1332,9 @@ To learn more about security on FreeBSD and |trueos| systems,
 provide more information about security on FreeBSD-based operating
 systems:
 
-* `FreeBSD Security Information <http://www.freebsd.org/security/>`_
+* `FreeBSD Security Information <https://www.freebsd.org/security/>`_
 
-* `Security Section of FreeBSD Handbook <http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_
+* `Security Section of FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_
 
 * `Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_
 
@@ -1346,7 +1345,7 @@ Printing and Scanning
 =====================
 
 Like many open source operating systems, |trueos| uses the Common Unix
-Printing System (`CUPS <http://cups.org/>`_) to manage printing.
+Printing System (`CUPS <https://www.cups.org/>`_) to manage printing.
 
 CUPS provides an easy-to-use utility for adding and managing printers.
 Whether or not it automatically detects a printer depends upon how well
@@ -1501,8 +1500,8 @@ instead.
 
 **HTTP:** This option allows you to manually type in the URI to the
 printer. A list of possible URIs is available on the
-`CUPS site <http://www.cups.org/documentation.php/network.html>`_. To
-use HTTP over an encrypted connection, select :guilabel:`https` instead.
+`CUPS site <https://www.cups.org/doc/network.html#TABLE1>`_. To use HTTP
+over an encrypted connection, select :guilabel:`https` instead.
 
 **AppSocket/HP JetDirect:** Select this option if connecting to an HP
 network printer. Input the IP address of the printer. Only change the
