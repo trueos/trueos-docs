@@ -1652,11 +1652,18 @@ msgstr ""
 
 #: ../../postinstall.rst:1237
 msgid ""
-"This is an excerpt from the |trueos| :file:`dbus.in` file, which is "
+"This is an excerpt from the |trueos| :file:`openrc-dbus.in` file, which is "
 "available on the |trueos| `freebsd-ports GitHub repository "
-"<https://github.com/trueos/freebsd-ports/blob/xserver-"
-"next/devel/dbus/files/dbus.in>`_"
+"<https://github.com/trueos/freebsd-ports/blob/trueos-master/devel/dbus/files"
+"/openrc-dbus.in>`_"
 msgstr ""
+
+#~ msgid ""
+#~ "This is an excerpt from the |trueos| :file:`dbus.in` file, which is "
+#~ "available on the |trueos| `freebsd-ports GitHub repository "
+#~ "<https://github.com/trueos/freebsd-ports/blob/xserver-"
+#~ "next/devel/dbus/files/dbus.in>`_"
+#~ msgstr ""
 
 #~ msgid "GRUB Boot Loader"
 #~ msgstr ""

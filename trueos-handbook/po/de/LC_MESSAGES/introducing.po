@@ -30,16 +30,6 @@ msgid ""
 "<https://gitter.im/trueos>`_ is another popular option for users."
 msgstr ""
 
-#: ../../introducing.rst:32
-msgid ""
-"`TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in 2005"
-" when Kris Moore presented the first beta version of a FreeBSD operating "
-"system pre-configured for desktop use. Since then, |trueos| has matured into"
-" a polished, feature-rich, free-of-charge, open source operating system that"
-" meets the desktop or server needs of the beginner to the advanced user "
-"alike."
-msgstr ""
-
 #: ../../introducing.rst:51
 msgid ""
 "The |trueos| installer supports configuring ZFS and encryption during "
@@ -730,26 +720,9 @@ msgid ""
 "about some of the differences between BSD and Linux:"
 msgstr ""
 
-#: ../../introducing.rst:635
-msgid ""
-"`Comparing BSD and Linux <http://www.freebsd.org/doc/en/articles/explaining-"
-"bsd/comparing-bsd-and-linux.html>`_"
-msgstr ""
-
-#: ../../introducing.rst:637
-msgid ""
-"`FreeBSD Quickstart Guide for Linux® Users "
-"<http://www.freebsd.org/doc/en/articles/linux-users/index.html>`_"
-msgstr ""
-
 #: ../../introducing.rst:639
 msgid ""
 "`BSD vs Linux <http://www.over-yonder.net/~fullermd/rants/bsd4linux/01>`_"
-msgstr ""
-
-#: ../../introducing.rst:641
-msgid ""
-"`Why Choose FreeBSD? <http://www.freebsd.org/advocacy/whyusefreebsd.html>`_"
 msgstr ""
 
 #: ../../introducing.rst:643
@@ -761,12 +734,6 @@ msgstr ""
 #: ../../introducing.rst:645
 msgid ""
 "`Video: BSD 4 Linux Users <https://www.youtube.com/watch?v=xk6ouxX51NI>`_"
-msgstr ""
-
-#: ../../introducing.rst:647
-msgid ""
-"`Why you should use a BSD style license for your Open Source Project "
-"<http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_"
 msgstr ""
 
 #: ../../introducing.rst:649
@@ -1079,13 +1046,6 @@ msgid ""
 "securely managing local and remote FreeBSD and |trueos| systems."
 msgstr ""
 
-#: ../../introducing.rst:395
-msgid ""
-"The functionality provided by the *About* utility is incorporated into "
-"`Lumina Information <https://lumina-desktop.org/handbook/luminautl.html"
-"#lumina-information>`_."
-msgstr ""
-
 #: ../../introducing.rst:402
 msgid ""
 "The Active Directory & LDAP utility (:command:`pc-adsldap`) is deprecated."
@@ -1284,6 +1244,80 @@ msgstr ""
 #: ../../introducing.rst:693
 msgid "`Open Source Alternatives <https://opensource.com/alternatives>`_"
 msgstr ""
+
+#: ../../introducing.rst:32
+msgid ""
+"`TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in "
+"2005 when Kris Moore presented the first beta version of a FreeBSD operating"
+" system pre-configured for desktop use. Since then, |trueos| has matured "
+"into a polished, feature-rich, free-of-charge, open source operating system "
+"that meets the desktop or server needs of the beginner to the advanced user "
+"alike."
+msgstr ""
+
+#: ../../introducing.rst:395
+msgid ""
+"The functionality provided by the *About* utility is incorporated into "
+"`Lumina Information <https://lumina-"
+"desktop.org/handbook/luminautl.html#information>`_."
+msgstr ""
+
+#: ../../introducing.rst:635
+msgid ""
+"`Comparing BSD and Linux <https://www.freebsd.org/doc/en/articles"
+"/explaining-bsd/comparing-bsd-and-linux.html>`_"
+msgstr ""
+
+#: ../../introducing.rst:637
+msgid ""
+"`FreeBSD Quickstart Guide for Linux® Users "
+"<https://www.freebsd.org/doc/en/articles/linux-users/index.html>`_"
+msgstr ""
+
+#: ../../introducing.rst:641
+msgid ""
+"`Why Choose FreeBSD? <https://www.freebsd.org/advocacy/whyusefreebsd.html>`_"
+msgstr ""
+
+#: ../../introducing.rst:647
+msgid ""
+"`Why you should use a BSD style license for your Open Source Project "
+"<https://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_"
+msgstr ""
+
+#~ msgid ""
+#~ "`TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in 2005"
+#~ " when Kris Moore presented the first beta version of a FreeBSD operating "
+#~ "system pre-configured for desktop use. Since then, |trueos| has matured into"
+#~ " a polished, feature-rich, free-of-charge, open source operating system that"
+#~ " meets the desktop or server needs of the beginner to the advanced user "
+#~ "alike."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Comparing BSD and Linux <http://www.freebsd.org/doc/en/articles/explaining-"
+#~ "bsd/comparing-bsd-and-linux.html>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`FreeBSD Quickstart Guide for Linux® Users "
+#~ "<http://www.freebsd.org/doc/en/articles/linux-users/index.html>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Why Choose FreeBSD? <http://www.freebsd.org/advocacy/whyusefreebsd.html>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Why you should use a BSD style license for your Open Source Project "
+#~ "<http://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The functionality provided by the *About* utility is incorporated into "
+#~ "`Lumina Information <https://lumina-desktop.org/handbook/luminautl.html"
+#~ "#lumina-information>`_."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "|trueos| is essentially a customized installation of FreeBSD, not a forked "
