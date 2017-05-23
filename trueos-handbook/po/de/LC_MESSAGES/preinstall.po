@@ -11,47 +11,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../preinstall.rst:16
+#: ../../preinstall.rst:17
 msgid "Pre-Installation Tasks"
 msgstr ""
 
-#: ../../preinstall.rst:28
-msgid ""
-"**Have you backed up your important data?** Any irreplaceable data, such as "
-"emails, bookmarks, or important files and documents should **always** be "
-"backed up to an external media, such as a removable drive or another system,"
-" **before** installing or upgrading any operating system."
-msgstr ""
-
-#: ../../preinstall.rst:49
+#: ../../preinstall.rst:50
 msgid "Minimum Requirements"
 msgstr ""
 
-#: ../../preinstall.rst:62 ../../preinstall.rst:76
+#: ../../preinstall.rst:63 ../../preinstall.rst:77
 msgid "64-bit processor"
 msgstr ""
 
-#: ../../preinstall.rst:64
+#: ../../preinstall.rst:65
 msgid "1 GB RAM"
 msgstr ""
 
-#: ../../preinstall.rst:69 ../../preinstall.rst:83
+#: ../../preinstall.rst:70 ../../preinstall.rst:84
 msgid "Network card"
 msgstr ""
 
-#: ../../preinstall.rst:78
+#: ../../preinstall.rst:79
 msgid "4 GB of RAM"
 msgstr ""
 
-#: ../../preinstall.rst:85
+#: ../../preinstall.rst:86
 msgid "Sound card"
 msgstr ""
 
-#: ../../preinstall.rst:87
+#: ../../preinstall.rst:88
 msgid "3D-accelerated video card"
 msgstr ""
 
-#: ../../preinstall.rst:104
+#: ../../preinstall.rst:105
 msgid "Supported Hardware"
 msgstr ""
 
@@ -74,104 +66,92 @@ msgid ""
 "**ATI/Radeon:** 3D acceleration on most ATI and Radeon cards is supported."
 msgstr ""
 
-#: ../../preinstall.rst:184
+#: ../../preinstall.rst:181
 msgid "Wireless"
 msgstr ""
 
-#: ../../preinstall.rst:202
+#: ../../preinstall.rst:199
 msgid "Laptops"
 msgstr ""
 
-#: ../../preinstall.rst:262
+#: ../../preinstall.rst:258
 msgid "Creating Free Space"
 msgstr ""
 
-#: ../../preinstall.rst:349
+#: ../../preinstall.rst:350
 msgid ""
 "Installation files can be downloaded from the `TrueOS® website "
 "<https://www.trueos.org/downloads/>`_ or the `PC-BSD® CDN "
 "<http://iso.cdn.pcbsd.org/>`_."
 msgstr ""
 
-#: ../../preinstall.rst:390
+#: ../../preinstall.rst:385
 msgid ""
 "Refer to :ref:`Burning the Installation Media` for instructions on how to "
 "burn the downloaded file to bootable media."
 msgstr ""
 
-#: ../../preinstall.rst:405
+#: ../../preinstall.rst:400
 msgid "Data Integrity Check"
 msgstr ""
 
-#: ../../preinstall.rst:451
+#: ../../preinstall.rst:453
 msgid "Burning the Installation Media"
 msgstr ""
 
-#: ../../preinstall.rst:456
-msgid ""
-"Files beginning with :file:`TrueOS-Desktop` and ending with :file:`.iso` "
-"must be burned to a DVD."
-msgstr ""
-
-#: ../../preinstall.rst:459
-msgid ""
-"Files beginning with :file:`TrueOS-Server` and ending with :file:`.iso` "
-"should be burned to a CD."
-msgstr ""
-
-#: ../../preinstall.rst:462
+#: ../../preinstall.rst:460
 msgid "Files ending in :file:`img` must be burned to a USB stick."
 msgstr ""
 
-#: ../../preinstall.rst:476 ../../preinstall.rst:478
+#: ../../preinstall.rst:478 ../../preinstall.rst:480
 msgid "Windows"
 msgstr ""
 
-#: ../../preinstall.rst:476
+#: ../../preinstall.rst:478
 msgid "`InfraRecorder utility <http://infrarecorder.org/>`_"
 msgstr ""
 
-#: ../../preinstall.rst:478
+#: ../../preinstall.rst:480
 msgid ""
 "`Disk Burner <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-"
 "from-an-ISO-file>`_"
 msgstr ""
 
-#: ../../preinstall.rst:480 ../../preinstall.rst:482
+#: ../../preinstall.rst:482 ../../preinstall.rst:484
 msgid "Linux or \\*BSD"
 msgstr ""
 
-#: ../../preinstall.rst:480
+#: ../../preinstall.rst:482
 msgid "`K3B <https://www.kde.org/applications/multimedia/k3b/>`_"
 msgstr ""
 
-#: ../../preinstall.rst:482
+#: ../../preinstall.rst:484
 msgid "`Brasero <https://wiki.gnome.org/Apps/Brasero>`_"
 msgstr ""
 
-#: ../../preinstall.rst:484
+#: ../../preinstall.rst:486
 msgid "FreeBSD/PC-BSD/TrueOS"
 msgstr ""
 
-#: ../../preinstall.rst:484
+#: ../../preinstall.rst:486
 msgid ""
 "`growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
 "/creating-dvds.html>`_"
 msgstr ""
 
-#: ../../preinstall.rst:486
+#: ../../preinstall.rst:488
 msgid "Mac OS X"
 msgstr ""
 
-#: ../../preinstall.rst:486
+#: ../../preinstall.rst:488
 msgid "`Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_"
 msgstr ""
 
-#: ../../preinstall.rst:493
+#: ../../preinstall.rst:495
 msgid "Writing to a USB Device"
 msgstr ""
 
-#: ../../preinstall.rst:503
+#: ../../preinstall.rst:505
 msgid ""
 "If there is a card reader on the system or the USB drive is connected using "
 "a USB dongle, device enumeration may be affected. For example, with the USB "
@@ -179,7 +159,7 @@ msgid ""
 ":file:`/dev/da1` instead of :file:`/dev/da0`."
 msgstr ""
 
-#: ../../preinstall.rst:508
+#: ../../preinstall.rst:510
 msgid ""
 "To write the :file:`.img` file to a flash card or removable USB drive on a "
 "BSD or Linux system, use the :command:`dd` command line utility. On a "
@@ -187,100 +167,48 @@ msgid ""
 "first plugged in USB device:"
 msgstr ""
 
-#: ../../preinstall.rst:520
+#: ../../preinstall.rst:522
 msgid "When using the :command:`dd` command:"
 msgstr ""
 
-#: ../../preinstall.rst:594
+#: ../../preinstall.rst:595
 msgid "Virtualization"
 msgstr ""
 
-#: ../../preinstall.rst:639
+#: ../../preinstall.rst:640
 msgid "Creating a Virtual Machine for an ISO File"
 msgstr ""
 
-#: ../../preinstall.rst:18
+#: ../../preinstall.rst:19
 msgid ""
 "While the |trueos| installer is very easy to use, installing a brand new "
 "operating system can sometimes be a daunting task."
 msgstr ""
 
-#: ../../preinstall.rst:21
+#: ../../preinstall.rst:22
 msgid ""
 "Before beginning, there are a few things to check to ensure the system is "
 "ready to install |trueos|."
 msgstr ""
 
-#: ../../preinstall.rst:24
-msgid ""
-"**Are you dual-booting or installing over the entire drive?** If dual-"
-"booting please ensure a primary partition is available. Refer to the section"
-" on :ref:`Dual Booting`."
-msgstr ""
-
-#: ../../preinstall.rst:41
+#: ../../preinstall.rst:42
 msgid ""
 "This section discusses the |trueos| hardware requirements, how to prepare "
 "the system for installation, and how to obtain and prepare the installation "
 "media."
 msgstr ""
 
-#: ../../preinstall.rst:51
-msgid ""
-"|trueos| has moderate hardware requirements and commonly uses less resources"
-" than its commercial counterparts. Before installing |trueos|, make sure the"
-" hardware or virtual machine at least meets the minimum requirements. To get"
-" the most out of your |trueos| experience, use a system that meets the "
-"recommended system requirements."
-msgstr ""
-
-#: ../../preinstall.rst:57
+#: ../../preinstall.rst:58
 msgid ""
 "At **bare minimum**, these requirements must be met in order to install "
 "|trueos|:"
 msgstr ""
 
-#: ../../preinstall.rst:66
-msgid ""
-"20 GB of free hard drive space on a primary partition for a command-line "
-"server installation"
-msgstr ""
-
-#: ../../preinstall.rst:71
-msgid ""
-"Here are the minimum **recommended** requirements. More RAM and available "
-"disk space will improve the computing experience:"
-msgstr ""
-
-#: ../../preinstall.rst:80
-msgid ""
-"50 GB of free hard drive space on a primary partition for a graphical "
-"desktop installation"
-msgstr ""
-
-#: ../../preinstall.rst:89
-msgid ""
-"|trueos| does not require 50 GB for its installation. Instead, the minimum "
-"recommendation is to provide sufficient room for the installation of "
-"applications and to store local ZFS snapshots and boot environments. These "
-"can be used to retrieve earlier versions of files, rollback the operating "
-"system to an earlier point in time, or clone the operating system."
-msgstr ""
-
-#: ../../preinstall.rst:96
+#: ../../preinstall.rst:97
 msgid ""
 "More RAM is always recommended, so install as much as you can afford. To "
 "play modern video games, use a fast CPU. To create a collection of music and"
 " movies on the computer, sufficient disk space is required."
-msgstr ""
-
-#: ../../preinstall.rst:136
-msgid ""
-"|trueos| should install on any system containing a 64-bit (also called "
-"*amd64*) processor. Despite the name, a 64-bit processor does **not** need "
-"to be manufactured by AMD in order to be supported. The `FreeBSD Hardware "
-"Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-"
-"amd64>`_ lists the *amd64* processors known to work."
 msgstr ""
 
 #: ../../preinstall.rst:157
@@ -291,14 +219,14 @@ msgid ""
 "settings."
 msgstr ""
 
-#: ../../preinstall.rst:204
+#: ../../preinstall.rst:201
 msgid ""
 "Many |trueos| users successfully run |trueos| on their laptops. However, "
 "some issues may occur, depending upon the model of laptop. These typically "
 "deal with:"
 msgstr ""
 
-#: ../../preinstall.rst:224
+#: ../../preinstall.rst:221
 msgid ""
 "**Synaptics:** Disabling the system's touchpad may be dependant upon the "
 "hardware. This `forum post "
@@ -307,31 +235,19 @@ msgid ""
 "provides."
 msgstr ""
 
-#: ../../preinstall.rst:239
+#: ../../preinstall.rst:235
 msgid ""
 "To install |trueos| onto an Asus Eee PC, review the `FreeBSD Eee page "
 "<https://wiki.FreeBSD.org/AsusEee>`_ first."
 msgstr ""
 
-#: ../../preinstall.rst:264
-msgid ""
-"To dual-boot |trueos| with an existing operating system, first make sure "
-"there is either a free partition or an area of free space to use. For "
-"example, if the system is currently running a Windows operating system, it "
-"usually occupies the entire hard drive. The partition with the current "
-"operating system will need to shrink to make room to install |trueos|. "
-"Shrinking is an operation that retains the current operating system while "
-"reducing the size of its partition. This section demonstrates how to create "
-"free space within Windows 10."
-msgstr ""
-
-#: ../../preinstall.rst:273
+#: ../../preinstall.rst:269
 msgid ""
 "**Before** shrinking a partition, be sure to back up any valuable data to an"
 " external media such as a removable USB drive!"
 msgstr ""
 
-#: ../../preinstall.rst:276
+#: ../../preinstall.rst:272
 msgid ""
 "To shrink the drive, right-click the :guilabel:`Start` menu and click "
 ":guilabel:`Disk Management`. In the example shown in :numref:`Figure %s "
@@ -339,7 +255,7 @@ msgid ""
 "partition, a 237.93 GB data partition, and a 100 MB system partition."
 msgstr ""
 
-#: ../../preinstall.rst:289
+#: ../../preinstall.rst:285
 msgid ""
 "Since the three Windows partitions fill the entire disk, the data partition "
 "must be shrunk to create space to install |trueos|. Right-click the data "
@@ -347,146 +263,39 @@ msgid ""
 ":guilabel:`Shrink Volume`, as shown in :numref:`Figure %s <partition2>`."
 msgstr ""
 
-#: ../../preinstall.rst:300
-msgid ": Shrink Volume Menu Selection"
-msgstr ""
-
-#: ../../preinstall.rst:302
+#: ../../preinstall.rst:298
 msgid ""
 "Wait as the volume is queried for available shrink space. The results are "
 "shown in :numref:`Figure %s <shrink1>`."
 msgstr ""
 
-#: ../../preinstall.rst:310
-msgid ": Available Shrink Space"
-msgstr ""
-
-#: ../../preinstall.rst:312
-msgid ""
-"Here, 119307 MB of space is available. This is the maximum amount Windows "
-"can shrink this particular partition. Accept that number, or choose a "
-"smaller number for a smaller |trueos| partition.  Click :guilabel:`Shrink` "
-"to begin the shrinking process.  This procedure can take several minutes to "
-"complete. When finished, the newly created free space will be displayed, as "
-"seen in :numref:`Figure %s <shrink2>`."
-msgstr ""
-
-#: ../../preinstall.rst:339
+#: ../../preinstall.rst:334
 msgid "|trueos| uses a rolling release model rather than versioned releases."
 msgstr ""
 
-#: ../../preinstall.rst:356
-msgid ""
-"Files beginning with :file:`TrueOS-Desktop` contain all of the information "
-"needed to install either a graphical desktop or command-line server using a "
-"graphical installer. If the file has an :file:`.iso` extension, it should be"
-" burned to a DVD media. If it has a :file:`img` extension, it should be "
-"burned to a USB stick. There will also be associated files with the same "
-"name but ending in an :file:`.md5` or :file:`.sha256` extension. Depending "
-"upon the current operating system and its tools, use the value in either one"
-" of those files to determine the integrity of the download, as described in "
-":ref:`Data Integrity Check`. If a torrent is available, there will also be a"
-" file with the same name and a :file:`.torrent` extension."
-msgstr ""
-
-#: ../../preinstall.rst:369
-msgid ""
-"Files beginning with :file:`TrueOS-Server` contain a command-line installer "
-"and are used to install a command-line version of a server. If the file has "
-"an :file:`.iso`  extension, it should be burned to a CD media. If it has an "
-":file:`img` extension, it should be burned to a USB stick. There will also "
-"be associated files with the same name but ending in an :file:`.md5` or "
-":file:`.sha256` extension. Depending upon the current operating system and "
-"its tools, use the value in either one of those files to determine the "
-"integrity of the download, as described in :ref:`Data Integrity Check`. If a"
-" torrent is available, there will also be a file with the same name and a "
-":file:`.torrent` extension."
-msgstr ""
-
-#: ../../preinstall.rst:381
-msgid ""
-"If planning to install a graphical desktop, download the file with :file"
-":`TrueOS-Desktop` in its name and either burn it to a DVD media or write it "
-"to a removable USB device."
-msgstr ""
-
-#: ../../preinstall.rst:407
-msgid ""
-"After downloading the desired file, it is a good idea to check the file is "
-"exactly the same as the one on the |trueos| download server. While "
-"downloading, a portion of the file may get damaged or lost, making the "
-"installation file unusable. Each |trueos| installation file has an "
-"associated MD5 and SHA256 checksum. If a checksum of the file downloaded "
-"matches, the download was successful. If a checksum does not match, try "
-"downloading the file again. In order to verify a checksum, use a checksum "
-"verification utility."
-msgstr ""
-
-#: ../../preinstall.rst:437
+#: ../../preinstall.rst:434
 msgid ""
 "Once the file is selected, click :guilabel:`Open` to calculate the "
 "checksums. It may take a minute or so, depending upon the size of the "
 "downloaded file."
 msgstr ""
 
-#: ../../preinstall.rst:453
-msgid ""
-"Once the installation file is downloaded and its checksum verified, burn it "
-"to a media. Which media depends upon the file downloaded:"
-msgstr ""
-
-#: ../../preinstall.rst:464
-msgid ""
-"To burn to a CD or DVD, use either a burning utility packaged with the "
-"operating system on the system with the burner or a separate burning "
-"application. :numref:`Table %s <burn utils>` lists some freely available "
-"burning utilities."
-msgstr ""
-
-#: ../../preinstall.rst:495
+#: ../../preinstall.rst:497
 msgid ""
 "There are a few requirements to write the :file:`img` file to a USB device:"
 msgstr ""
 
-#: ../../preinstall.rst:498
+#: ../../preinstall.rst:500
 msgid ""
 "A utility capable of writing the image to a USB media; the available "
 "utilities will depend upon the installed operating system."
 msgstr ""
 
-#: ../../preinstall.rst:501
+#: ../../preinstall.rst:503
 msgid "A USB thumb drive or hard drive large enough to hold the image."
 msgstr ""
 
-#: ../../preinstall.rst:522
-msgid "**if=** refers to the input file to be written."
-msgstr ""
-
-#: ../../preinstall.rst:524
-msgid ""
-"**of=** refers to the output file (the device name of the flash card or "
-"removable USB drive); increment the number in the name if it is not the "
-"first USB device."
-msgstr ""
-
-#: ../../preinstall.rst:528
-msgid "**bs=** refers to the block size."
-msgstr ""
-
-#: ../../preinstall.rst:530
-msgid ""
-"On Linux, type :command:`mount` with the USB stick inserted to see two or "
-"more device nodes corresponding to the USB stick. For example, "
-":file:`/dev/sdc` and :file:`/dev/sdc1`, where :file:`/dev/sdc1` corresponds "
-"to the primary partition of the USB stick. Before using the :command:`dd` "
-"command, ensure the USB stick is first unmounted. Then, remember to use "
-":file:`/dev/sdc` (the device node without the number) as the option for the "
-"output file **of=**. Once the :command:`dd` completes, the USB stick may not"
-" be mountable on Linux as Linux has very limited support for UFS, the BSD "
-"filesystem created on the USB stick."
-msgstr ""
-
-#: ../../preinstall.rst:541
+#: ../../preinstall.rst:542
 msgid ""
 "To burn the image file on a Windows system, use `win32-image-writer "
 "<https://sourceforge.net/projects/win32diskimager/>`_. When downloading "
@@ -495,15 +304,7 @@ msgid ""
 "unzip the executable."
 msgstr ""
 
-#: ../../preinstall.rst:619
-msgid ""
-"The first time running VirtualBox on a |trueos| system, a background script "
-"will automatically give the user account the permissions required to run "
-"this application. This might break any existing shortcuts to VirtualBox. To "
-"fix the shortcut, logout and in again."
-msgstr ""
-
-#: ../../preinstall.rst:625
+#: ../../preinstall.rst:626
 msgid ""
 "If the computer is running another operating system, download the binary for"
 " the specific operating system from the `VirtualBox Downloads page "
@@ -512,13 +313,13 @@ msgid ""
 "machine installable operating systems."
 msgstr ""
 
-#: ../../preinstall.rst:632
+#: ../../preinstall.rst:633
 msgid ""
 "This section describes how to prepare VirtualBox for an installation of "
 "|trueos| using an :file:`.iso` file."
 msgstr ""
 
-#: ../../preinstall.rst:641
+#: ../../preinstall.rst:642
 msgid ""
 "Once the |trueos| ISO is downloaded and VirtualBox installed on the current "
 "system, create a virtual machine and use the ISO to install |trueos| into "
@@ -526,33 +327,33 @@ msgid ""
 "requirements and this section will demonstrate how to configure these:"
 msgstr ""
 
-#: ../../preinstall.rst:647
+#: ../../preinstall.rst:648
 msgid "1024 MB base memory size."
 msgstr ""
 
-#: ../../preinstall.rst:649
+#: ../../preinstall.rst:650
 msgid ""
 "A virtual disk **at least 20 GB in size** for a server installation or **at "
 "least 50 GB in size** for a desktop installation."
 msgstr ""
 
-#: ../../preinstall.rst:652
+#: ../../preinstall.rst:653
 msgid "A bridged adapter."
 msgstr ""
 
-#: ../../preinstall.rst:654
+#: ../../preinstall.rst:655
 msgid ""
 "To create the virtual machine, start VirtualBox to see the screen shown in "
 ":numref:`Figure %s <vbox1>`."
 msgstr ""
 
-#: ../../preinstall.rst:664
+#: ../../preinstall.rst:665
 msgid ""
 "Click :guilabel:`New` to start the new virtual machine wizard and display "
 "the screen in :numref:`Figure %s <vbox2>`."
 msgstr ""
 
-#: ../../preinstall.rst:674
+#: ../../preinstall.rst:675
 msgid ""
 "Enter a name for the virtual machine; it can be anything which makes sense "
 "to you. Click the :guilabel:`Operating System` drop-down menu and select "
@@ -561,7 +362,7 @@ msgid ""
 ":numref:`Figure %s <vbox3>`."
 msgstr ""
 
-#: ../../preinstall.rst:687
+#: ../../preinstall.rst:688
 msgid ""
 "The base memory size must be changed to **at least 1024 MB.** If the system "
 "has a lot of RAM, use more. Any number within the green area is considered a"
@@ -570,7 +371,7 @@ msgid ""
 ":numref:`Figure %s <vbox4>`."
 msgstr ""
 
-#: ../../preinstall.rst:700
+#: ../../preinstall.rst:701
 msgid ""
 "This screen is used to create the virtual hard drive, or the amount of disk "
 "space available to the virtual machine. If this is your first virtual "
@@ -584,20 +385,20 @@ msgid ""
 "used up by old virtual machines."
 msgstr ""
 
-#: ../../preinstall.rst:720
+#: ../../preinstall.rst:721
 msgid ""
 "Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in "
 ":numref:`Figure %s <vbox6>`."
 msgstr ""
 
-#: ../../preinstall.rst:756
+#: ../../preinstall.rst:757
 msgid ""
 "Once the selections are made, press :guilabel:`Create` to finish using the "
 "wizard. The virtual machine will now show up in the left box, as seen in the"
 " example in :numref:`Figure %s <vbox8>`."
 msgstr ""
 
-#: ../../preinstall.rst:767
+#: ../../preinstall.rst:768
 msgid ""
 "In order to use the network card, configure bridging on the virtual machine."
 " To do this, go to :menuselection:`Settings --> Network`. In the "
@@ -633,99 +434,22 @@ msgid ""
 "in the :guilabel:`Storage Tree` section."
 msgstr ""
 
-#: ../../preinstall.rst:287
-msgid ": Disk Layout in Disk Management"
-msgstr ""
-
-#: ../../preinstall.rst:324
-msgid ": Disk with Free Space"
-msgstr ""
-
-#: ../../preinstall.rst:435
-msgid ": Checksum Verification"
-msgstr ""
-
-#: ../../preinstall.rst:558
-msgid ": Write an Image using Win32 Disk Imager"
-msgstr ""
-
-#: ../../preinstall.rst:662
-msgid ": VirtualBox Menu"
-msgstr ""
-
-#: ../../preinstall.rst:672
-msgid ": Create Virtual Machine - Name, Type, and Version"
-msgstr ""
-
-#: ../../preinstall.rst:685
-msgid ": Virtual Machine Reserved Memory"
-msgstr ""
-
-#: ../../preinstall.rst:698
-msgid ": Virtual Hard Drive - New or Existing"
-msgstr ""
-
-#: ../../preinstall.rst:718
-msgid ": Hard Drive Type"
-msgstr ""
-
-#: ../../preinstall.rst:728
-msgid ": Storage Type"
-msgstr ""
-
-#: ../../preinstall.rst:744
-msgid ": Virtual Disk - File Name and Size"
-msgstr ""
-
-#: ../../preinstall.rst:781
-msgid ": VirtualBox Bridged Adapter Configuration"
-msgstr ""
-
-#: ../../preinstall.rst:792
-msgid ": Virtual Machine Storage Settings"
-msgstr ""
-
-#: ../../preinstall.rst:168
-msgid ""
-"Currently, |trueos| is experiencing difficulties supporting AMD graphics "
-"cards. Please refer to :ref:`Ongoing issues`."
-msgstr ""
-
-#: ../../preinstall.rst:242
+#: ../../preinstall.rst:238
 msgid ""
 "The FreeBSD `Tuning Power Consumption page "
 "<https://wiki.FreeBSD.org/TuningPowerConsumption>`_ has some tips for "
 "reducing power consumption."
 msgstr ""
 
-#: ../../preinstall.rst:353
-msgid ""
-"Several types of files are available for download. Before downloading a "
-"file, review these descriptions to see which one best suits the need:"
-msgstr ""
-
-#: ../../preinstall.rst:441
-msgid ""
-"On Linux and BSD systems, use the built-in :command:`md5` or "
-":command:`md5sum` command line tool to check the MD5 checksum. In this "
-"example, the file is located in the :file:`Downloads` directory. Using "
-":command:`md5 Downloads/TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5`, "
-"substitute the name and location of the downloaded file."
-msgstr ""
-
-#: ../../preinstall.rst:0
-msgid ": Free Burning Utilities"
-msgstr ""
-
-#: ../../preinstall.rst:474
+#: ../../preinstall.rst:476
 msgid "Operating System"
 msgstr ""
 
-#: ../../preinstall.rst:474
+#: ../../preinstall.rst:476
 msgid "Utility"
 msgstr ""
 
-#: ../../preinstall.rst:393
+#: ../../preinstall.rst:388
 msgid ""
 "Members of the |trueos| project attend many IT conferences across the globe "
 "and give out |trueos| DVDs at the FreeBSD booth. Visiting a FreeBSD booth is"
@@ -736,48 +460,14 @@ msgid ""
 "DVDs."
 msgstr ""
 
-#: ../../preinstall.rst:341
-msgid ""
-"Periodically, the |sysadm| `Update Manager "
-"<https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_ "
-"provides a patch which updates the operating system to include all of the "
-"new features and drivers. To have or test the latest features and drivers as"
-" they become available, and you can tolerate possible breakage caused by new"
-" features being available before the next RELEASE, use the STABLE version."
-msgstr ""
-
-#: ../../preinstall.rst:608
-msgid ""
-"To run virtualization software on a |trueos| system, search for *virtualbox*"
-" within the |sysadm| `AppCafe "
-"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_ and install "
-"the `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization "
-"program and the `VirtualBox Guest Additions "
-"<http://www.virtualbox.org/manual/ch04.html>`_. The guest additions add "
-"mouse pointer integration, shared folders between the host and guest, better"
-" video support, and a shared clipboard."
-msgstr ""
-
-#: ../../preinstall.rst:234
+#: ../../preinstall.rst:230
 msgid ""
 "To test the laptop's hardware, use the :guilabel:`Hardware Compatibility` "
 "icon in the :ref:`Language Selection` screen before continuing with the "
 "installation."
 msgstr ""
 
-#: ../../preinstall.rst:248
-msgid ""
-"With regards to specific hardware, the ThinkPad T420 may panic during "
-"install. If it does, go into the BIOS and set the video mode to \"discrete\""
-" which should allow the installation to complete. Some Thinkpads have a BIOS"
-" bug preventing them from booting from GPT-labeled disks. If unable to boot "
-"into a new installation, restart the installer and go into "
-":guilabel:`Advanced Mode` in the :ref:`Disk Selection` screen. Make sure "
-":guilabel:`GPT (Best for new hardware)` is unchecked. If it was checked "
-"previously, redo the installation with the box unchecked."
-msgstr ""
-
-#: ../../preinstall.rst:326
+#: ../../preinstall.rst:322
 msgid ""
 "It is important to **not** choose to install |trueos| into any of the three "
 "Windows partitions at the :ref:`Disk Selection` screen of the installer. It "
@@ -786,86 +476,25 @@ msgid ""
 "partitions."
 msgstr ""
 
-#: ../../preinstall.rst:806
-msgid ""
-"|trueos| is now ready to be installed into the virtual machine. Highlight "
-"the virtual machine and click on the green :guilabel:`Start` icon. A window "
-"will open indicating the virtual machine is starting. If a DVD is inserted, "
-"it should audibly spin and the machine will start to boot into the "
-"installation program. If it does not or if using an ISO stored on the hard "
-"disk, press :kbd:`F12` to select the boot device when the message to do so "
-"appears, then press :kbd:`c` to boot from CD-ROM. Proceed through the "
-"installation as described in :ref:`Installing TrueOS`."
-msgstr ""
-
-#: ../../preinstall.rst:34
-msgid ""
-"To determine if the chosen hardware is detected by |trueos|, start an "
-"installation and click the :guilabel:`Hardware Compatibility` icon in the "
-"lower left corner of the :ref:`Language Selection` screen."
-msgstr ""
-
-#: ../../preinstall.rst:38
+#: ../../preinstall.rst:39
 msgid ""
 "If any problems arise with the installation, refer to the "
 ":ref:`Troubleshooting` section of this handbook."
 msgstr ""
 
-#: ../../preinstall.rst:60
+#: ../../preinstall.rst:61
 msgid "**Minimum**"
 msgstr ""
 
-#: ../../preinstall.rst:74
+#: ../../preinstall.rst:75
 msgid "**Recommended**"
-msgstr ""
-
-#: ../../preinstall.rst:106
-msgid ""
-"To check your hardware before installing |trueos|, a good place to start is "
-"the `FreeBSD Hardware Notes "
-"<https://www.freebsd.org/releases/11.0R/hardware.html>`_. Another good "
-"resource is to start the installer and click the :guilabel:`Hardware "
-"Compatibility` icon. This handbook also has a :ref:`Ongoing issues` section "
-"to list any ongoing issues with hardware."
-msgstr ""
-
-#: ../../preinstall.rst:113
-msgid ""
-"While most hardware \"just works\" with |trueos|, it is possible to run "
-"across a piece of hardware which does not. Since |trueos| is essentially "
-"FreeBSD, any hardware that works on FreeBSD works on |trueos|. If problems "
-"occur with a device, begin with a web search for the term \"FreeBSD\" plus "
-"the type and model of the hardware. This search shows if there is a known "
-"issue with the device. If there are too many search results, concentrate on "
-"the most recent ones as oftentimes hardware previously problematic has since"
-" been fixed or the missing driver will be available in an upcoming release "
-"of FreeBSD. If a problem occurs with a device thought to work but does not, "
-"or there are no existing problem reports for your hardware, please help "
-"improve hardware support for all FreeBSD and |trueos| users by "
-":ref:`Reporting a bug <Report a bug>` so the issue can be addressed by the "
-"developers."
-msgstr ""
-
-#: ../../preinstall.rst:127
-msgid ""
-"The rest of this section provides an overview of the different supported "
-"hardware."
-msgstr ""
-
-#: ../../preinstall.rst:148
-msgid ""
-"Like many open source operating systems, |trueos| uses `X.org "
-"<https://www.x.org/wiki/>`_ drivers for graphics support. |trueos| will "
-"automatically detect the optimal video settings for supported video drivers."
-" Verify the graphics hardware is supported by clicking the "
-":guilabel:`Hardware Compatibility` icon within the installer."
 msgstr ""
 
 #: ../../preinstall.rst:155
 msgid "Here is the major graphic vendor support:"
 msgstr ""
 
-#: ../../preinstall.rst:171
+#: ../../preinstall.rst:168
 msgid ""
 "**Optimus:** At this time there is no switching support between the two "
 "graphics adapters provided by Optimus. Optimus implementations vary, so "
@@ -877,7 +506,7 @@ msgid ""
 " future when the NVIDIA driver supports Optimus."
 msgstr ""
 
-#: ../../preinstall.rst:186
+#: ../../preinstall.rst:183
 msgid ""
 "|trueos| has built-in support for most wireless networking cards. |trueos| "
 "automatically detects available wireless networks for supported wireless "
@@ -886,7 +515,7 @@ msgid ""
 "device, insert it before running the installer."
 msgstr ""
 
-#: ../../preinstall.rst:192
+#: ../../preinstall.rst:189
 msgid ""
 "Certain Broadcom devices, typically found in less expensive laptops, are "
 "buggy and can have lockups when in *DMA* mode. If the device freezes, try "
@@ -895,7 +524,7 @@ msgid ""
 " anything changes."
 msgstr ""
 
-#: ../../preinstall.rst:208
+#: ../../preinstall.rst:205
 msgid ""
 "**Sleep/suspend:** Unfortunately, :wikipedia:`Advanced Configuration and "
 "Power Interface` (ACPI) is not an exact science, meaning experimentation "
@@ -912,53 +541,11 @@ msgid ""
 "after a reboot."
 msgstr ""
 
-#: ../../preinstall.rst:337
+#: ../../preinstall.rst:332
 msgid "Installation Options"
 msgstr ""
 
-#: ../../preinstall.rst:385
-msgid ""
-"If installing a command-line only server is preferred, either download a "
-"file beginning with :file:`TrueOS-Desktop` (to use the graphical installer) "
-"or :file:`TrueOS-Server` (to use the command-line installer). The :file"
-":`TrueOS-Server` files are smaller and can fit on a CD."
-msgstr ""
-
-#: ../../preinstall.rst:416
-msgid ""
-"Only one of the checksums needs to be verified. The `PC-BSD® website "
-"<http://www.pcbsd.org/download/>`_  lists the *SHA256* while the `PC-BSD® "
-"CDN <http://iso.cdn.pcbsd.org/>`_ lists both the :file:`.md5` and the "
-":file:`.sha256` checksum files. This section demonstrates how to verify an "
-"SHA256 checksum."
-msgstr ""
-
-#: ../../preinstall.rst:422
-msgid ""
-"If using a Windows system, download and install a utility such as `Raymond's"
-" MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-"
-"Utility/3000-2092_4-10911445.html>`_. This utility can be used to "
-"simultaneously check the MD5, SHA-1, SHA-256, and SHA-512 checksums of any "
-"file. Once installed, launch the program and use :guilabel:`Browse`, shown "
-"in :numref:`Figure %s <fastsum1>`, to browse to the location of the "
-"downloaded file."
-msgstr ""
-
-#: ../../preinstall.rst:596
-msgid ""
-"A virtualized environment allows to test drive an operating system without "
-"overwriting the current operating system. This is an excellent way to "
-"practice installation, determine whether the hardware is supported, or to "
-"try multiple versions of different operating systems. Virtualization "
-"software effectively creates windows (known as virtual machines) to install "
-"and use an operating system. The only limitation to virtualization is the "
-"hardware, as each virtual machine uses CPU and RAM. Depending upon the "
-"amount of CPU and RAM in the computer, the installed operating system using "
-"virtualization software may run slowly. If the computer slows down, try "
-"closing other applications running on the computer to free up some RAM."
-msgstr ""
-
-#: ../../preinstall.rst:730
+#: ../../preinstall.rst:731
 msgid ""
 "Now choose whether to have :guilabel:`Dynamically allocated` or "
 ":guilabel:`Fixed size` storage. The first option uses disk space as needed "
@@ -970,7 +557,7 @@ msgid ""
 "<vbox7>` displays."
 msgstr ""
 
-#: ../../preinstall.rst:746
+#: ../../preinstall.rst:747
 msgid ""
 "This screen is used to set the size (or upper limit) of the virtual machine."
 " If planning to install |trueos| into the virtual machine, **increase the "
@@ -982,11 +569,7 @@ msgid ""
 " with sufficient space to hold the virtual machine."
 msgstr ""
 
-#: ../../preinstall.rst:765
-msgid ": New Virtual Machine \"test\""
-msgstr ""
-
-#: ../../preinstall.rst:547
+#: ../../preinstall.rst:548
 msgid ""
 "Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager "
 "utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse` to "
@@ -995,7 +578,7 @@ msgid ""
 ":guilabel:`Write` and the image will be written to the USB thumb drive."
 msgstr ""
 
-#: ../../preinstall.rst:560
+#: ../../preinstall.rst:561
 msgid ""
 "To burn the :file:`.img` file on Mac OS X, insert a USB stick and open "
 "*Terminal*. Run :command:`diskutil list` to discover the device name of the "
@@ -1012,6 +595,805 @@ msgid ""
 ":menuselection:`Settings --> System --> Motherboard` and checking "
 ":guilabel:`Enable EFI (special OSes only)`."
 msgstr ""
+
+#: ../../preinstall.rst:0
+msgid "Free Burning Utilities"
+msgstr ""
+
+#: ../../preinstall.rst:25
+msgid ""
+"**Dual-booting or installing over the entire drive?** If dual-booting, "
+"please ensure a primary partition is available. Refer to the section on "
+":ref:`Dual Booting`."
+msgstr ""
+
+#: ../../preinstall.rst:29
+msgid ""
+"**Is your important data backed up?** Any irreplaceable data, such as "
+"emails, bookmarks, or important files and documents should **always** be "
+"backed up to an external media, such as a removable drive or another system,"
+" **before** installing or upgrading any operating system."
+msgstr ""
+
+#: ../../preinstall.rst:35
+msgid ""
+"To determine if the chosen hardware is detected by |trueos|, start a new "
+"installation and click the :guilabel:`Hardware Compatibility` icon in the "
+"lower left corner of the :ref:`Language Selection` screen."
+msgstr ""
+
+#: ../../preinstall.rst:52
+msgid ""
+"|trueos| has moderate hardware requirements and typically uses less "
+"resources than its commercial counterparts. Before installing |trueos|, make"
+" sure the hardware or virtual machine meets at least the minimum "
+"requirements. To get the most out of your |trueos| experience, use a system "
+"exceeding the minimum or recommended system requirements."
+msgstr ""
+
+#: ../../preinstall.rst:67
+msgid ""
+"20 GB of free hard drive space on a primary partition for a command-line "
+"server installation."
+msgstr ""
+
+#: ../../preinstall.rst:72
+msgid ""
+"Here are the **recommended** requirements. More RAM and available disk space"
+" improves the computing experience:"
+msgstr ""
+
+#: ../../preinstall.rst:81
+msgid ""
+"50 GB of free hard drive space on a primary partition for a graphical "
+"desktop installation."
+msgstr ""
+
+#: ../../preinstall.rst:90
+msgid ""
+"|trueos| does not require 50 GB for its installation. The minimum "
+"recommendation is to provide sufficient room for the installation of "
+"applications and to store local ZFS snapshots and boot environments. These "
+"can be used to retrieve earlier versions of files, rollback the operating "
+"system to an earlier point in time, or clone the operating system."
+msgstr ""
+
+#: ../../preinstall.rst:107
+msgid ""
+"Check the `FreeBSD Hardware Notes "
+"<https://www.freebsd.org/releases/11.0R/hardware.html>`_ to ensure your "
+"system hardware is supported before installing |trueos|. Another good option"
+" is to start the installer and click the :guilabel:`Hardware Compatibility` "
+"icon."
+msgstr ""
+
+#: ../../preinstall.rst:113
+msgid ""
+"While most hardware \"just works\" with |trueos|, it is possible to run "
+"across a piece of hardware which does not. Since |trueos| is essentially "
+"FreeBSD, any hardware that works on FreeBSD also works on |trueos|. If "
+"problems occur with a device, begin with a web search for the term "
+"\"FreeBSD\" plus the type and model of the hardware. This search shows any "
+"known issues with the device. If there are too many search results, "
+"concentrate on the most recent hits, as oftentimes previously problematic "
+"hardware has since been fixed or the missing driver will be available in an "
+"upcoming release of FreeBSD. If a problem occurs with a device thought to "
+"work but does not, or there are no existing problem reports for your "
+"hardware, please help improve hardware support for all FreeBSD and |trueos| "
+"users by :ref:`reporting the bug <Report a bug>` so the issue can be "
+"addressed by the developers."
+msgstr ""
+
+#: ../../preinstall.rst:127
+msgid ""
+"The rest of this section is a brief overview of the different supported "
+"hardware."
+msgstr ""
+
+#: ../../preinstall.rst:136
+msgid ""
+"|trueos| installs on any system containing a 64-bit (also called *amd64*) "
+"processor. Despite the name, a 64-bit processor does **not** need to be "
+"manufactured by AMD in order to be supported. The `FreeBSD Hardware Notes - "
+"amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_ "
+"lists the *amd64* processors known to work."
+msgstr ""
+
+#: ../../preinstall.rst:148
+msgid ""
+"Like many open source operating systems, |trueos| uses `X.org "
+"<https://www.x.org/wiki/>`_ drivers for graphics support. |trueos| "
+"automatically detects the optimal video settings for supported video "
+"drivers. Verify the graphics hardware is supported by clicking the "
+":guilabel:`Hardware Compatibility` icon within the installer."
+msgstr ""
+
+#: ../../preinstall.rst:227
+msgid ""
+"The `SysAdm Mouse Settings <https://sysadm.us/handbook/client/>`_ also has "
+"options for disabling a system's touchpad, if one is detected."
+msgstr ""
+
+#: ../../preinstall.rst:244
+msgid ""
+"With regards to specific hardware, the ThinkPad T420 may panic during "
+"install. If it does, go into the BIOS and set the video mode to "
+"\"discrete\", which should allow the installation to complete. Some "
+"Thinkpads have a BIOS bug preventing them from booting from GPT-labeled "
+"disks. If unable to boot into a new installation, restart the installer and "
+"go into :guilabel:`Advanced Mode` in the :ref:`Disk Selection` screen. Make "
+"sure :guilabel:`GPT (Best for new hardware)` is unchecked. If it was checked"
+" previously, redo the installation with the box unchecked."
+msgstr ""
+
+#: ../../preinstall.rst:260
+msgid ""
+"To dual-boot |trueos| with an existing operating system, first make sure "
+"there is either a free partition or an area of free space to use. For "
+"example, if the system is currently running a Windows operating system, it "
+"usually occupies the entire hard drive. The partition with the current "
+"operating system needs to shrink to make room to install |trueos|. Shrinking"
+" is an operation which retains the current operating system while reducing "
+"the size of its partition. This section demonstrates how to create free "
+"space within Windows 10."
+msgstr ""
+
+#: ../../preinstall.rst:283
+msgid "Disk Layout in Disk Management"
+msgstr ""
+
+#: ../../preinstall.rst:296
+msgid "Shrink Volume Menu Selection"
+msgstr ""
+
+#: ../../preinstall.rst:306
+msgid "Available Shrink Space"
+msgstr ""
+
+#: ../../preinstall.rst:308
+msgid ""
+"Here, 119307 MB of space is available. This is the maximum amount Windows "
+"can shrink this particular partition. Accept that number, or choose a "
+"smaller number for a smaller |trueos| partition.  Click :guilabel:`Shrink` "
+"to begin the shrinking process.  This procedure can take several minutes to "
+"complete. When finished, the newly created free space is displayed as seen "
+"in :numref:`Figure %s <shrink2>`."
+msgstr ""
+
+#: ../../preinstall.rst:320
+msgid "Disk with Free Space"
+msgstr ""
+
+#: ../../preinstall.rst:336
+msgid ""
+"Periodically, the |sysadm| `Update Manager "
+"<https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_ "
+"provides patches to update the operating system. To have or test the latest "
+"features and drivers as they become available, and you can tolerate possible"
+" breakage caused by new features being available before the next STABLE "
+"release, use the UNSTABLE update track."
+msgstr ""
+
+#: ../../preinstall.rst:343
+msgid ""
+"All installation files are based off STABLE releases to TrueOS. By default, "
+"freshly installed TrueOS systems **only** obtain updates from the STABLE "
+"repository, but users can switch to the experimental UNSTABLE repository to "
+"test updates and bug fixes early. See the :ref:`Updating TrueOS` section for"
+" instructions on switching to the UNSTABLE update repository."
+msgstr ""
+
+#: ../../preinstall.rst:354
+msgid "Several types of files are available for download:"
+msgstr ""
+
+#: ../../preinstall.rst:356
+msgid ""
+"**STABLE Install**: Any file with the naming convention "
+"*TrueOS-<year>-<month>-<day>-x64-<DVD/USB>.<iso/img>* are installation files"
+" based on the STABLE version of |trueos| created on the specific date."
+msgstr ""
+
+#: ../../preinstall.rst:360
+msgid ""
+"**\"latest\" files**: These entries are symlinks to the latest TrueOS "
+"install files and should be ignored."
+msgstr ""
+
+#: ../../preinstall.rst:363
+msgid ""
+"Install files following the above naming conventions can also end with a "
+"variety of extensions:"
+msgstr ""
+
+#: ../../preinstall.rst:366
+msgid ""
+"**.iso**: If the file has an *.iso* extension, it should be burned to a DVD "
+"media or USB stick."
+msgstr ""
+
+#: ../../preinstall.rst:368
+msgid ""
+"**.img**: If it has a *img* extension, it should be burned to a USB stick."
+msgstr ""
+
+#: ../../preinstall.rst:370
+msgid ""
+"**.md5, .sha256, and .sig**: Depending upon the current operating system and"
+" its tools, use the value in any of these files to determine the integrity "
+"of the download, as described in :ref:`Data Integrity Check`."
+msgstr ""
+
+#: ../../preinstall.rst:374
+msgid ""
+"**.torrent**: If a torrent is available, a file with the same name and a "
+"*.torrent* extension will be visible."
+msgstr ""
+
+#: ../../preinstall.rst:377
+msgid ""
+"To install a graphical desktop, download the file ending in *DVD.iso* or "
+"*USB.img*. Then, depending on the file type, either burn it to a DVD media "
+"or write it to a removable USB device."
+msgstr ""
+
+#: ../../preinstall.rst:381
+msgid ""
+"If installing a command-line only server is preferred, download and begin "
+"installing |trueos| in the same manner as the desktop, but choose the "
+":guilabel:`Server` option in the installer."
+msgstr ""
+
+#: ../../preinstall.rst:402
+msgid ""
+"After downloading the desired file, it is a good idea to check the file is "
+"exactly the same as the one on the |trueos| download server. While "
+"downloading, a portion of the file may get damaged or lost, making the "
+"installation file unusable. Each |trueos| installation file has an "
+"associated *MD5* and *SHA256* checksum. If a checksum of the downloaded file"
+" matches, the download was successful. If a checksum does not match, try "
+"downloading the file again. In order to verify a checksum, use a checksum "
+"verification utility."
+msgstr ""
+
+#: ../../preinstall.rst:411
+msgid ""
+"Only one of the checksums needs to be verified. The `TrueOS website "
+"<http://download.trueos.org/master/amd64/>`_ lists *.MD5*, *SHA256*, and "
+"*.SIG* files. The `TrueOS website "
+"<http://download.trueos.org/master/amd64/>`_ has all file types while the "
+"`PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists both the :file:`.md5` and "
+"the :file:`.sha256` checksum files. This section demonstrates how to verify "
+"an SHA256 checksum."
+msgstr ""
+
+#: ../../preinstall.rst:419
+msgid ""
+"If using a Windows system, download and install a utility such as `Raymond's"
+" MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-"
+"Utility/3000-2092_4-10911445.html>`_. This utility can be used to "
+"simultaneously check the *MD5*, *SHA-1*, *SHA-256*, and *SHA-512* checksums "
+"of any file. Once installed, launch the program and use :guilabel:`Browse`, "
+"shown in :numref:`Figure %s <fastsum1>`, to browse to the location of the "
+"downloaded file."
+msgstr ""
+
+#: ../../preinstall.rst:432
+msgid "Checksum Verification"
+msgstr ""
+
+#: ../../preinstall.rst:438
+msgid ""
+"On Linux and BSD systems, use the built-in :command:`md5` or "
+":command:`md5sum` command line tool to check the MD5 checksum. In this "
+"example, the file is located in the :file:`Downloads` directory. Using "
+":samp:`md5 Downloads/TrueOS-2017-04-21-x64-DVD.iso.md5`, substitute the name"
+" and location of the downloaded file."
+msgstr ""
+
+#: ../../preinstall.rst:444
+msgid ""
+"If you prefer using the **OpenPGP** *.sig* file, use your preferred utility "
+"to verify the signature. The `OpenPGP website <http://openpgp.org/>`_ has "
+"numerous recommendations for verification utilities."
+msgstr ""
+
+#: ../../preinstall.rst:455
+msgid ""
+"Once the installation file is downloaded and its checksum verified, burn it "
+"to a media. The media you use depends upon the file downloaded:"
+msgstr ""
+
+#: ../../preinstall.rst:458
+msgid "Files ending with :file:`.iso` can be burned to a DVD or a USB stick."
+msgstr ""
+
+#: ../../preinstall.rst:462
+msgid ""
+"To burn to a DVD, use either a burning utility packaged with the operating "
+"system on the system with the burner or a separate burning application. "
+":numref:`Table %s <burn utils>` lists some freely available burning "
+"utilities."
+msgstr ""
+
+#: ../../preinstall.rst:524
+msgid "**if=** designates the *input file* to be written."
+msgstr ""
+
+#: ../../preinstall.rst:526
+msgid ""
+"**of=** refers to the *output file* (the device name of the flash card or "
+"removable USB drive). Increment the number in the name if it is not the "
+"first USB device."
+msgstr ""
+
+#: ../../preinstall.rst:530
+msgid "**bs=** refers to the *block size*."
+msgstr ""
+
+#: ../../preinstall.rst:532
+msgid ""
+"On Linux, type :command:`mount` with the USB stick inserted to see two or "
+"more device nodes corresponding to the USB stick. For example, "
+":file:`/dev/sdc` and :file:`/dev/sdc1`, where :file:`/dev/sdc1` corresponds "
+"to the primary partition of the USB stick. Before using :command:`dd`, "
+"ensure the USB stick is unmounted. Then, remember to use :file:`/dev/sdc` "
+"(the device node without the number) as the option for the output file "
+"**of=**. Once :command:`dd` completes, the USB stick may not be mountable on"
+" Linux as it has very limited support for UFS (BSD filesystem created on the"
+" USB stick)."
+msgstr ""
+
+#: ../../preinstall.rst:559
+msgid "Write an Image using Win32 Disk Imager"
+msgstr ""
+
+#: ../../preinstall.rst:597
+msgid ""
+"A virtualized environment allows a user to test drive an operating system "
+"without overwriting the current operating system. This is an excellent way "
+"to practice installation, determine whether the hardware is supported, or to"
+" try multiple versions of different operating systems. Virtualization "
+"software effectively creates windows (known as virtual machines) to install "
+"and use an operating system. The only limitation to virtualization is the "
+"hardware, as each virtual machine uses CPU and RAM. Depending upon the "
+"amount of CPU and RAM in the computer, the installed operating system using "
+"virtualization software may run slowly. If the computer slows down, try "
+"closing other applications running on the computer to free up some RAM."
+msgstr ""
+
+#: ../../preinstall.rst:609
+msgid ""
+"To run virtualization software on |trueos|, search for *virtualbox* within "
+"the |sysadm| `AppCafe "
+"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_ and install "
+"the `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization "
+"program and the `VirtualBox Guest Additions "
+"<http://www.virtualbox.org/manual/ch04.html>`_. The guest additions add "
+"mouse pointer integration, shared folders between the host and guest, better"
+" video support, and a shared clipboard."
+msgstr ""
+
+#: ../../preinstall.rst:620
+msgid ""
+"The first time running VirtualBox on a |trueos| system, a background script "
+"automatically gives the user account the permissions required to run this "
+"application. This might break any existing shortcuts to VirtualBox. To fix "
+"the shortcut, logout and in again."
+msgstr ""
+
+#: ../../preinstall.rst:663
+msgid "VirtualBox Menu"
+msgstr ""
+
+#: ../../preinstall.rst:673
+msgid "Create Virtual Machine - Name, Type, and Version"
+msgstr ""
+
+#: ../../preinstall.rst:686
+msgid "Virtual Machine Reserved Memory"
+msgstr ""
+
+#: ../../preinstall.rst:699
+msgid "Virtual Hard Drive - New or Existing"
+msgstr ""
+
+#: ../../preinstall.rst:719
+msgid "Hard Drive Type"
+msgstr ""
+
+#: ../../preinstall.rst:729
+msgid "Storage Type"
+msgstr ""
+
+#: ../../preinstall.rst:745
+msgid "Virtual Disk - File Name and Size"
+msgstr ""
+
+#: ../../preinstall.rst:766
+msgid "New Virtual Machine \"test\""
+msgstr ""
+
+#: ../../preinstall.rst:781
+msgid "VirtualBox Bridged Adapter Configuration"
+msgstr ""
+
+#: ../../preinstall.rst:792
+msgid "Virtual Machine Storage Settings"
+msgstr ""
+
+#: ../../preinstall.rst:806
+msgid ""
+"|trueos| is now ready to be installed into the virtual machine. Highlight "
+"the virtual machine and click on the green :guilabel:`Start` icon. A window "
+"opens, indicating the virtual machine is starting. If a DVD is inserted, it "
+"should audibly spin and the machine will start to boot into the installation"
+" program. If it does not or if using an ISO stored on the hard disk, press "
+":kbd:`F12` to select the boot device when the message to do so appears, then"
+" press :kbd:`c` to boot from CD-ROM. Proceed through the installation as "
+"described in :ref:`Installing TrueOS`."
+msgstr ""
+
+#~ msgid ""
+#~ "**Have you backed up your important data?** Any irreplaceable data, such as "
+#~ "emails, bookmarks, or important files and documents should **always** be "
+#~ "backed up to an external media, such as a removable drive or another system,"
+#~ " **before** installing or upgrading any operating system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Files beginning with :file:`TrueOS-Desktop` and ending with :file:`.iso` "
+#~ "must be burned to a DVD."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Files beginning with :file:`TrueOS-Server` and ending with :file:`.iso` "
+#~ "should be burned to a CD."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Are you dual-booting or installing over the entire drive?** If dual-"
+#~ "booting please ensure a primary partition is available. Refer to the section"
+#~ " on :ref:`Dual Booting`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|trueos| has moderate hardware requirements and commonly uses less resources"
+#~ " than its commercial counterparts. Before installing |trueos|, make sure the"
+#~ " hardware or virtual machine at least meets the minimum requirements. To get"
+#~ " the most out of your |trueos| experience, use a system that meets the "
+#~ "recommended system requirements."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "20 GB of free hard drive space on a primary partition for a command-line "
+#~ "server installation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here are the minimum **recommended** requirements. More RAM and available "
+#~ "disk space will improve the computing experience:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "50 GB of free hard drive space on a primary partition for a graphical "
+#~ "desktop installation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|trueos| does not require 50 GB for its installation. Instead, the minimum "
+#~ "recommendation is to provide sufficient room for the installation of "
+#~ "applications and to store local ZFS snapshots and boot environments. These "
+#~ "can be used to retrieve earlier versions of files, rollback the operating "
+#~ "system to an earlier point in time, or clone the operating system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|trueos| should install on any system containing a 64-bit (also called "
+#~ "*amd64*) processor. Despite the name, a 64-bit processor does **not** need "
+#~ "to be manufactured by AMD in order to be supported. The `FreeBSD Hardware "
+#~ "Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-"
+#~ "amd64>`_ lists the *amd64* processors known to work."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To dual-boot |trueos| with an existing operating system, first make sure "
+#~ "there is either a free partition or an area of free space to use. For "
+#~ "example, if the system is currently running a Windows operating system, it "
+#~ "usually occupies the entire hard drive. The partition with the current "
+#~ "operating system will need to shrink to make room to install |trueos|. "
+#~ "Shrinking is an operation that retains the current operating system while "
+#~ "reducing the size of its partition. This section demonstrates how to create "
+#~ "free space within Windows 10."
+#~ msgstr ""
+
+#~ msgid ": Shrink Volume Menu Selection"
+#~ msgstr ""
+
+#~ msgid ": Available Shrink Space"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here, 119307 MB of space is available. This is the maximum amount Windows "
+#~ "can shrink this particular partition. Accept that number, or choose a "
+#~ "smaller number for a smaller |trueos| partition.  Click :guilabel:`Shrink` "
+#~ "to begin the shrinking process.  This procedure can take several minutes to "
+#~ "complete. When finished, the newly created free space will be displayed, as "
+#~ "seen in :numref:`Figure %s <shrink2>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Files beginning with :file:`TrueOS-Desktop` contain all of the information "
+#~ "needed to install either a graphical desktop or command-line server using a "
+#~ "graphical installer. If the file has an :file:`.iso` extension, it should be"
+#~ " burned to a DVD media. If it has a :file:`img` extension, it should be "
+#~ "burned to a USB stick. There will also be associated files with the same "
+#~ "name but ending in an :file:`.md5` or :file:`.sha256` extension. Depending "
+#~ "upon the current operating system and its tools, use the value in either one"
+#~ " of those files to determine the integrity of the download, as described in "
+#~ ":ref:`Data Integrity Check`. If a torrent is available, there will also be a"
+#~ " file with the same name and a :file:`.torrent` extension."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Files beginning with :file:`TrueOS-Server` contain a command-line installer "
+#~ "and are used to install a command-line version of a server. If the file has "
+#~ "an :file:`.iso`  extension, it should be burned to a CD media. If it has an "
+#~ ":file:`img` extension, it should be burned to a USB stick. There will also "
+#~ "be associated files with the same name but ending in an :file:`.md5` or "
+#~ ":file:`.sha256` extension. Depending upon the current operating system and "
+#~ "its tools, use the value in either one of those files to determine the "
+#~ "integrity of the download, as described in :ref:`Data Integrity Check`. If a"
+#~ " torrent is available, there will also be a file with the same name and a "
+#~ ":file:`.torrent` extension."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If planning to install a graphical desktop, download the file with :file"
+#~ ":`TrueOS-Desktop` in its name and either burn it to a DVD media or write it "
+#~ "to a removable USB device."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After downloading the desired file, it is a good idea to check the file is "
+#~ "exactly the same as the one on the |trueos| download server. While "
+#~ "downloading, a portion of the file may get damaged or lost, making the "
+#~ "installation file unusable. Each |trueos| installation file has an "
+#~ "associated MD5 and SHA256 checksum. If a checksum of the file downloaded "
+#~ "matches, the download was successful. If a checksum does not match, try "
+#~ "downloading the file again. In order to verify a checksum, use a checksum "
+#~ "verification utility."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the installation file is downloaded and its checksum verified, burn it "
+#~ "to a media. Which media depends upon the file downloaded:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To burn to a CD or DVD, use either a burning utility packaged with the "
+#~ "operating system on the system with the burner or a separate burning "
+#~ "application. :numref:`Table %s <burn utils>` lists some freely available "
+#~ "burning utilities."
+#~ msgstr ""
+
+#~ msgid "**if=** refers to the input file to be written."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**of=** refers to the output file (the device name of the flash card or "
+#~ "removable USB drive); increment the number in the name if it is not the "
+#~ "first USB device."
+#~ msgstr ""
+
+#~ msgid "**bs=** refers to the block size."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On Linux, type :command:`mount` with the USB stick inserted to see two or "
+#~ "more device nodes corresponding to the USB stick. For example, "
+#~ ":file:`/dev/sdc` and :file:`/dev/sdc1`, where :file:`/dev/sdc1` corresponds "
+#~ "to the primary partition of the USB stick. Before using the :command:`dd` "
+#~ "command, ensure the USB stick is first unmounted. Then, remember to use "
+#~ ":file:`/dev/sdc` (the device node without the number) as the option for the "
+#~ "output file **of=**. Once the :command:`dd` completes, the USB stick may not"
+#~ " be mountable on Linux as Linux has very limited support for UFS, the BSD "
+#~ "filesystem created on the USB stick."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first time running VirtualBox on a |trueos| system, a background script "
+#~ "will automatically give the user account the permissions required to run "
+#~ "this application. This might break any existing shortcuts to VirtualBox. To "
+#~ "fix the shortcut, logout and in again."
+#~ msgstr ""
+
+#~ msgid ": Disk Layout in Disk Management"
+#~ msgstr ""
+
+#~ msgid ": Disk with Free Space"
+#~ msgstr ""
+
+#~ msgid ": Checksum Verification"
+#~ msgstr ""
+
+#~ msgid ": Write an Image using Win32 Disk Imager"
+#~ msgstr ""
+
+#~ msgid ": VirtualBox Menu"
+#~ msgstr ""
+
+#~ msgid ": Create Virtual Machine - Name, Type, and Version"
+#~ msgstr ""
+
+#~ msgid ": Virtual Machine Reserved Memory"
+#~ msgstr ""
+
+#~ msgid ": Virtual Hard Drive - New or Existing"
+#~ msgstr ""
+
+#~ msgid ": Hard Drive Type"
+#~ msgstr ""
+
+#~ msgid ": Storage Type"
+#~ msgstr ""
+
+#~ msgid ": Virtual Disk - File Name and Size"
+#~ msgstr ""
+
+#~ msgid ": VirtualBox Bridged Adapter Configuration"
+#~ msgstr ""
+
+#~ msgid ": Virtual Machine Storage Settings"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Currently, |trueos| is experiencing difficulties supporting AMD graphics "
+#~ "cards. Please refer to :ref:`Ongoing issues`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Several types of files are available for download. Before downloading a "
+#~ "file, review these descriptions to see which one best suits the need:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On Linux and BSD systems, use the built-in :command:`md5` or "
+#~ ":command:`md5sum` command line tool to check the MD5 checksum. In this "
+#~ "example, the file is located in the :file:`Downloads` directory. Using "
+#~ ":command:`md5 Downloads/TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5`, "
+#~ "substitute the name and location of the downloaded file."
+#~ msgstr ""
+
+#~ msgid ": Free Burning Utilities"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Periodically, the |sysadm| `Update Manager "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_ "
+#~ "provides a patch which updates the operating system to include all of the "
+#~ "new features and drivers. To have or test the latest features and drivers as"
+#~ " they become available, and you can tolerate possible breakage caused by new"
+#~ " features being available before the next RELEASE, use the STABLE version."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To run virtualization software on a |trueos| system, search for *virtualbox*"
+#~ " within the |sysadm| `AppCafe "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_ and install "
+#~ "the `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization "
+#~ "program and the `VirtualBox Guest Additions "
+#~ "<http://www.virtualbox.org/manual/ch04.html>`_. The guest additions add "
+#~ "mouse pointer integration, shared folders between the host and guest, better"
+#~ " video support, and a shared clipboard."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "With regards to specific hardware, the ThinkPad T420 may panic during "
+#~ "install. If it does, go into the BIOS and set the video mode to \"discrete\""
+#~ " which should allow the installation to complete. Some Thinkpads have a BIOS"
+#~ " bug preventing them from booting from GPT-labeled disks. If unable to boot "
+#~ "into a new installation, restart the installer and go into "
+#~ ":guilabel:`Advanced Mode` in the :ref:`Disk Selection` screen. Make sure "
+#~ ":guilabel:`GPT (Best for new hardware)` is unchecked. If it was checked "
+#~ "previously, redo the installation with the box unchecked."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|trueos| is now ready to be installed into the virtual machine. Highlight "
+#~ "the virtual machine and click on the green :guilabel:`Start` icon. A window "
+#~ "will open indicating the virtual machine is starting. If a DVD is inserted, "
+#~ "it should audibly spin and the machine will start to boot into the "
+#~ "installation program. If it does not or if using an ISO stored on the hard "
+#~ "disk, press :kbd:`F12` to select the boot device when the message to do so "
+#~ "appears, then press :kbd:`c` to boot from CD-ROM. Proceed through the "
+#~ "installation as described in :ref:`Installing TrueOS`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To determine if the chosen hardware is detected by |trueos|, start an "
+#~ "installation and click the :guilabel:`Hardware Compatibility` icon in the "
+#~ "lower left corner of the :ref:`Language Selection` screen."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To check your hardware before installing |trueos|, a good place to start is "
+#~ "the `FreeBSD Hardware Notes "
+#~ "<https://www.freebsd.org/releases/11.0R/hardware.html>`_. Another good "
+#~ "resource is to start the installer and click the :guilabel:`Hardware "
+#~ "Compatibility` icon. This handbook also has a :ref:`Ongoing issues` section "
+#~ "to list any ongoing issues with hardware."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "While most hardware \"just works\" with |trueos|, it is possible to run "
+#~ "across a piece of hardware which does not. Since |trueos| is essentially "
+#~ "FreeBSD, any hardware that works on FreeBSD works on |trueos|. If problems "
+#~ "occur with a device, begin with a web search for the term \"FreeBSD\" plus "
+#~ "the type and model of the hardware. This search shows if there is a known "
+#~ "issue with the device. If there are too many search results, concentrate on "
+#~ "the most recent ones as oftentimes hardware previously problematic has since"
+#~ " been fixed or the missing driver will be available in an upcoming release "
+#~ "of FreeBSD. If a problem occurs with a device thought to work but does not, "
+#~ "or there are no existing problem reports for your hardware, please help "
+#~ "improve hardware support for all FreeBSD and |trueos| users by "
+#~ ":ref:`Reporting a bug <Report a bug>` so the issue can be addressed by the "
+#~ "developers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The rest of this section provides an overview of the different supported "
+#~ "hardware."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Like many open source operating systems, |trueos| uses `X.org "
+#~ "<https://www.x.org/wiki/>`_ drivers for graphics support. |trueos| will "
+#~ "automatically detect the optimal video settings for supported video drivers."
+#~ " Verify the graphics hardware is supported by clicking the "
+#~ ":guilabel:`Hardware Compatibility` icon within the installer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If installing a command-line only server is preferred, either download a "
+#~ "file beginning with :file:`TrueOS-Desktop` (to use the graphical installer) "
+#~ "or :file:`TrueOS-Server` (to use the command-line installer). The :file"
+#~ ":`TrueOS-Server` files are smaller and can fit on a CD."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only one of the checksums needs to be verified. The `PC-BSD® website "
+#~ "<http://www.pcbsd.org/download/>`_  lists the *SHA256* while the `PC-BSD® "
+#~ "CDN <http://iso.cdn.pcbsd.org/>`_ lists both the :file:`.md5` and the "
+#~ ":file:`.sha256` checksum files. This section demonstrates how to verify an "
+#~ "SHA256 checksum."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If using a Windows system, download and install a utility such as `Raymond's"
+#~ " MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-"
+#~ "Utility/3000-2092_4-10911445.html>`_. This utility can be used to "
+#~ "simultaneously check the MD5, SHA-1, SHA-256, and SHA-512 checksums of any "
+#~ "file. Once installed, launch the program and use :guilabel:`Browse`, shown "
+#~ "in :numref:`Figure %s <fastsum1>`, to browse to the location of the "
+#~ "downloaded file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A virtualized environment allows to test drive an operating system without "
+#~ "overwriting the current operating system. This is an excellent way to "
+#~ "practice installation, determine whether the hardware is supported, or to "
+#~ "try multiple versions of different operating systems. Virtualization "
+#~ "software effectively creates windows (known as virtual machines) to install "
+#~ "and use an operating system. The only limitation to virtualization is the "
+#~ "hardware, as each virtual machine uses CPU and RAM. Depending upon the "
+#~ "amount of CPU and RAM in the computer, the installed operating system using "
+#~ "virtualization software may run slowly. If the computer slows down, try "
+#~ "closing other applications running on the computer to free up some RAM."
+#~ msgstr ""
+
+#~ msgid ": New Virtual Machine \"test\""
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager "
@@ -1323,9 +1705,6 @@ msgstr ""
 #~ "example, the file is located in the :file:`Downloads` directory. Using "
 #~ "command :command:`md5 Downloads/TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5`, "
 #~ "substitute the name and location of the downloaded file."
-#~ msgstr ""
-
-#~ msgid "Free Burning Utilities"
 #~ msgstr ""
 
 #~ msgid ""
