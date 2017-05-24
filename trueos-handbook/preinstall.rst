@@ -191,8 +191,8 @@ some issues may occur, depending upon the model of laptop. These
 typically deal with:
 
 * **Sleep/suspend:** Unfortunately,
-  :wiki:`Advanced Configuration and Power Interface` (ACPI) is not
-  an exact science, meaning experimentation with various
+  :wiki:`Advanced Configuration and Power Interface <Advanced_Configuration_and_Power_Interface>`
+  (ACPI) is not an exact science, meaning experimentation with various
   :command:`sysctl` variables may be required to achieve successful
   sleep and suspend states on your particular laptop model. If the
   laptop is a ThinkPad,

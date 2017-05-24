@@ -773,11 +773,12 @@ from using the network. The interface remains inactive until this
 checkbox is unchecked.
 
 The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network4>`,
-allows advanced users to manually input a :wiki:`MAC address` or
-:wiki:`IPv6 address`. Both boxes should remain checked in order
-to automatically receive these addresses, unless you are an advanced
-user with reason to change the default MAC or IPv6 address and an
-understanding of how to input an appropriate replacement address.
+allows advanced users to manually input a
+:wiki:`MAC address <MAC_address>` or
+:wiki:`IPv6 address <IPv6_address>`. Both boxes should remain checked in
+order to automatically receive these addresses, unless you are an
+advanced user with reason to change the default MAC or IPv6 address and
+an understanding of how to input an appropriate replacement address.
 
 .. _network4:
 
@@ -1182,7 +1183,7 @@ productivity application has not yet been ported to Linux or BSD.
 Wine is not guaranteed to work with every Windows application. You can
 search for desired applications in the :guilabel:`Browse Apps` section
 of the `Wine application database <https://appdb.winehq.org/>`_. The
-`Wine wiki <https://wiki.winehq.org/>`_ contains resources to get
+`Wine wiki <https://wiki.winehq.org/Main_Page>`_ contains resources to get
 started and troubleshooting reference material if problems are
 encountered with a Windows application.
 
@@ -1301,9 +1302,10 @@ The security features built into |trueos| include:
   to add other users to this group. Change the default :command:`sudo`
   configuration using :command:`visudo` as the superuser.
 
-* :wiki:`AES instruction set` (AESNI) support is loaded by default for
-  the Intel Core i5/i7 processors that support this encryption set. This
-  support speeds up AES encryption and decryption.
+* :wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is
+  loaded by default for the Intel Core i5/i7 processors that support
+  this encryption set. This support speeds up AES encryption and
+  decryption.
 
 * **Automatic notification of security advisories:**
   The |sysadm|
