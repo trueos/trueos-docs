@@ -555,8 +555,8 @@ contains simple instructions to switch between update tracks.
 
 To view or adjust the current update track for TrueOS, click
 :menuselection:`Start Menu --> Control Panel --> Update Manager --> Settings`.
-The :guilabel:`Settings` tab, seen in :numref:`Figure %s <update1>`, allows
-you to adjust *when* and *where* to perform system updates.
+The :guilabel:`Settings` tab, seen in :numref:`Figure %s <update1>`,
+allows you to adjust *when* and *where* to perform system updates.
 
 .. _update1:
 
@@ -1181,7 +1181,7 @@ TrueOS Server pkg-install script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note:: This is an excerpt from the |trueos| Server
-   :file:`pkg-install` file, available online:
+   :file:`pkg-install` file, available on GitHub:
    https://github.com/trueos/trueos-server/blob/master/port-files/pkg-install
 
 .. code-block:: none
@@ -1230,12 +1230,13 @@ changed only when each service file has the new OpenRC ready format:
 
  #!/sbin/openrc-run
  # Copyright (c) 2007-2015 The OpenRC Authors.
- # See the Authors file at the top-level directory of this distribution and
- # https://github.com/OpenRC/openrc/blob/master/AUTHORS
+ # See the Authors file at the top-level directory of this distribution
+ # and https://github.com/OpenRC/openrc/blob/master/AUTHORS
  #
  # This file is part of OpenRC. It is subject to the license terms in
  # the LICENSE file found in the top-level directory of this
- # distribution and at https://github.com/OpenRC/openrc/blob/master/LICENSE
+ # distribution and at
+ # https://github.com/OpenRC/openrc/blob/master/LICENSE.
  # This file may not be copied, modified, propagated, or distributed
  # except according to the terms contained in the LICENSE file.
 
@@ -1266,7 +1267,7 @@ format:
  # PROVIDE: dbus
  # REQUIRE: DAEMON ldconfig
  #
- # Add the following lines to /etc/rc.conf to enable the D-BUS messaging system:
+ # Add these lines to /etc/rc.conf to enable the D-BUS messaging system:
  #
  # dbus_enable="YES"
  #

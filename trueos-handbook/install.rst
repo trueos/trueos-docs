@@ -971,9 +971,9 @@ installation media. The post-installation screens run as described in
 the :ref:`Post Installation Configuration` section to help you configure
 the new installation.
 
-.. warning:: During the :ref:`Create a User` process, recreate the primary
-   user account using the same user name and user id (UID) from the
-   previous |pcbsd| system. This allows |trueos| to associate the
+.. warning:: During the :ref:`Create a User` process, recreate the
+   primary user account using the same user name and user id (UID) from
+   the previous |pcbsd| system. This allows |trueos| to associate the
    existing home directory with that user. Once logged in, use the
    |sysadm|
    `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_

@@ -246,7 +246,8 @@ refer to the `VirtualGL website <virtualgl.org>`_
 
 VirtualGL also has an extensive
 `user guide <http://www.virtualgl.org/Documentation/Documentation>`_ to
-help guide new users through the various features of this useful toolkit.
+help guide new users through the various features of this useful
+toolkit.
 
 On a |picl|, test VGL functionality by opening the command line and
 typing :command:`/usr/local/VirtualGL/bin/vglrun glxgears`. A window

@@ -687,7 +687,7 @@ differences between Windows and BSD:
    Mac OS X and TrueOS
    -------------------
 
-   Mac OS X is actually related to FreeBSD, resulting in some system level
-   similarities. However, application development has diverged pretty strongly,
-   so here are some suggestions for TrueOS/FreeBSD applications which may
-   "fill the void" from your Mac system.
+   Mac OS X is actually related to FreeBSD, resulting in some system
+   level similarities. However, application development has diverged
+   pretty strongly, so here are some suggestions for TrueOS/FreeBSD
+   applications which may "fill the void" from your Mac system.

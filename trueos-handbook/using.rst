@@ -34,8 +34,8 @@ utilities for various tasks, such as :command:`numlockx` and
   `utilities <https://lumina-desktop.org/handbook/luminautl.html>`_
   for configuring the desktop environment.
 
-* Provides a
-  `plugin-based interface design <https://lumina-desktop.org/handbook/luminaplugins.html>`_.
+* Provides an interface design based on
+  `plugins <https://lumina-desktop.org/handbook/luminaplugins.html>`_.
   The user can make their desktop as light or heavy as they wish by
   choosing which plugins to have running on their desktop and panels.
   This plugin-based system is similar to Android or other modern
@@ -141,7 +141,8 @@ Here is an overview of the different elements controlled by |sysadm|:
 
 * `Life Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_:
   This utility is used for system backups with ZFS snapshots. Life
-  Preserver provides easy management, replication, and scheduling of ZFS snapshots.
+  Preserver provides easy management, replication, and scheduling of ZFS
+  snapshots.
 
 .. index:: fonts
 .. _Fonts:
@@ -315,8 +316,8 @@ Kodi can be installed using |appcafe|. Once installed, an entry for
 :command:`kodi` from a command prompt.
 
 If you have never used Kodi before, take some time to skim through the
-`Kodi Wiki Manual <http://kodi.wiki/>`_. The
-`Turn PC-BSD into a home theater forum post <https://forums.pcbsd.org/thread-19799.html>`_
+`Kodi Wiki Manual <http://kodi.wiki/>`_. This post about using PC-BSD as
+a `home theater <https://forums.pcbsd.org/thread-19799.html>`_
 contains a useful how-to for configuring Kodi.
 
 .. index:: Plex
@@ -344,7 +345,7 @@ checks the audio settings and signs into your Plex account. If you have
 no Plex account, create one at `plex.tv <https://www.plex.tv/>`_. The
 wizard provides a PIN code and an URL to enter the code. Once the PIN is
 entered, the wizard connects and signs you in. Now it is possible to
-search for and watch media. To exit Plex, click :guilabel:`<` then
+search for and watch media. To exit Plex, click :guilabel:`<` and
 :guilabel:`Quit`.
 
 .. index:: usb automounter
@@ -422,9 +423,9 @@ unmounted and safe to remove from the system.
 
 In the CLI, the automounter adds a :file:`.desktop` file to
 :file:`/media` when a new USB/Optical device is added. Open the
-:file:`.desktop` file with :command:`xdg-open` or :command:`lumina-open`.
-When the device is removed, the symlink is immediately removed from
-:file:`/media`.
+:file:`.desktop` file with :command:`xdg-open` or
+:command:`lumina-open`. When the device is removed, the symlink is
+immediately removed from :file:`/media`.
 
 .. note:: The :file:`/autofs/*` directories are not cleaned when the
    device is removed. However, after device removal the directories are
@@ -432,8 +433,8 @@ When the device is removed, the symlink is immediately removed from
    :file:`/media` is more useful to identify which devices are attached
    to the system.
 
-Alternately, all device names are added to the :file:`/autofs` directory.
-Attached devices are also accessed by navigating to
+Alternately, all device names are added to the :file:`/autofs`
+directory. Attached devices are also accessed by navigating to
 :file:`/autofs/<devicename>`.
 
 Known limitations:
@@ -1183,8 +1184,8 @@ productivity application has not yet been ported to Linux or BSD.
 Wine is not guaranteed to work with every Windows application. You can
 search for desired applications in the :guilabel:`Browse Apps` section
 of the `Wine application database <https://appdb.winehq.org/>`_. The
-`Wine wiki <https://wiki.winehq.org/Main_Page>`_ contains resources to get
-started and troubleshooting reference material if problems are
+`Wine wiki <https://wiki.winehq.org/Main_Page>`_ contains resources to
+get started and troubleshooting reference material if problems are
 encountered with a Windows application.
 
 Wine can be installed using |appcafe|. After installing, it can be
@@ -1431,8 +1432,8 @@ Once you click :guilabel:`Continue`, the next screen, shown in
 and offers the ability to select another driver. For now, leave the
 detected driver and click :guilabel:`Add Printer`. If the printer does
 not work using the default driver, read the Troubleshooting
-:ref:`Printer Help` section, which describes how to use this screen in more
-detail.
+:ref:`Printer Help` section, which describes how to use this screen in
+more detail.
 
 .. _print7:
 
@@ -1544,8 +1545,8 @@ system and click :menuselection:`Browse Applications --> Scanner` or
 type :command:`xsane` from the command line. A pop-up message indicates
 XSane is detecting devices and prompts you to accept the
 XSane license if a device is detected. If a device is not detected,
-search for your device at the
-`list of supported scanners <http://www.sane-project.org/sane-backends.html>`_.
+search for your device at the list of
+`supported scanners <http://www.sane-project.org/sane-backends.html>`_.
 
 .. note:: If the scanner is part of an HP All-in-One device, make sure
    the "hplip" package is installed. Use |appcafe| to see if the driver

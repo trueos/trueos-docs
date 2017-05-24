@@ -339,10 +339,10 @@ settings, try setting the :command:`sysctl` value to *2*, and, if
 necessary, *3*.
 
 Once all of the mixer settings appear and none are set to *0*, sound
-typically works. If it still does not, these resources will help
+typically works. If it still does not, these resources can help
 pinpoint the problem:
 
-* `Sound Section of FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
+* `FreeBSD Handbook Sound Section <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-setup.html>`_
 
 * `FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_
 
@@ -564,7 +564,8 @@ The ideal title is clear, concise, and informative. Here are some
 recommendations for creating a title:
 
 * Be objective and clear (and refrain from using idioms or slang).
-* Include the application name if the issue is related to an application.
+* Include the application name if the issue is related to an
+  application.
 * Include keywords from any error messages you receive.
 * Avoid using vague language such as "failed", "useless", or "crashed".
 
@@ -585,7 +586,8 @@ and a non-helpful title:
  Non-Helpful:
  Extracting an archive doesn't work.
  Helpful:
- Lumina-Archiver shows the error "file not supported" when opening a .cab file.
+ Lumina-Archiver shows the error "file not supported" when opening a
+ .cab file.
 
 **Comment Area**
 
@@ -822,7 +824,8 @@ The source for the |trueos| Users Handbook is stored in the
 This allows the documentation and its translations to be built with
 the operating system. Documentation updates are automatically pushed
 to the |trueos| website and, when the system is updated using the
-|sysadm| `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_,
+|sysadm|
+`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_,
 the doc updates are installed to a local copy named
 :file:`/usr/local/share/trueos/handbook/trueos.html`. This keeps an
 updated local copy of the handbook available on every user's system.
@@ -1056,8 +1059,8 @@ are needed, check to see what other |trueos| utilities are using.
 File menu icons are taken from the *KDE Oxygen* or *material-design*
 themes located in :file:`/usr/local/share/icons/oxygen`. Use these file
 menu icons so there are not too many different icons for the same
-function. :numref:`Table %s <common icons>` lists some commonly used icons
-and their default file names.
+function. :numref:`Table %s <common icons>` lists some commonly used
+icons and their default file names.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.32\linewidth-2\tabcolsep}
                     |>{\RaggedRight}p{\dimexpr 0.32\linewidth-2\tabcolsep}

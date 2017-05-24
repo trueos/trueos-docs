@@ -213,7 +213,8 @@ typically deal with:
   options this feature provides.
 
   The `SysAdm Mouse Settings <https://sysadm.us/handbook/client/>`_
-  also has options for disabling a system's touchpad, if one is detected.
+  also has options for disabling a system's touchpad, if one is
+  detected.
 
 To test the laptop's hardware, use the
 :guilabel:`Hardware Compatibility` icon in the
@@ -432,7 +433,8 @@ the contents of the related :file:`.md5` file:
 .. code-block:: none
 
  ~% md5 Downloads/TrueOS-2017-04-21-x64-USB.img
- MD5 (Downloads/TrueOS-2017-04-21-x64-USB.img) = 3eb6adef0ad171f6c5825f0f820557f5
+ MD5 (Downloads/TrueOS-2017-04-21-x64-USB.img) =
+ 3eb6adef0ad171f6c5825f0f820557f5
 
  ~& cat Downloads/TrueOS-2017-04-21-x64-USB.img.md5
  3eb6adef0ad171f6c5825f0f820557f5
@@ -509,7 +511,7 @@ the first plugged in USB device:
 
 .. code-block:: none
 
- [user@example] dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1m
+ [user@exmpl] dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1m
  1415+1 records in
  1415+1 records out
  1483990016 bytes transferred in 238.552250 secs (6220818 bytes/sec)
