@@ -322,8 +322,7 @@ Installation Options
 
 |trueos| uses a rolling release model rather than versioned releases.
 
-Periodically, the |sysadm|
-`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
+Periodically, the |sysadm| :sysclbk:`Update Manager <update-manager>`
 provides patches to update the operating system. To have or test the
 latest features and drivers as they become available, and you can
 tolerate possible breakage caused by new features being available before
@@ -604,9 +603,7 @@ may run slowly. If the computer slows down, try closing other
 applications running on the computer to free up some RAM.
 
 To run virtualization software on |trueos|, search for *virtualbox*
-within the |sysadm|
-`AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_
-and install the
+within the |sysadm| :sysclbk:`AppCafe <appcafe>` and install the
 `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization
 program and the
 `VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_.

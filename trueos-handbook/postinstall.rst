@@ -54,8 +54,8 @@ number or key for that option. Once any selections are made, press
 * :guilabel:`3. Select Boot Environment`: In |trueos|, boot environments
   are automatically created when the system updates. They can also be
   manually created using the
-  `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_.
-  This allows the system to boot to the point of time before an update
+  :sysclbk:`Boot Environment Manager <boot-environment-manager>`. This
+  allows the system to boot to the point of time before an update
   occurred and can be used to recover from a failed update. Press either
   :kbd:`3` or :kbd:`e` to view the available boot environments.
 
@@ -292,11 +292,10 @@ screen requires completing several fields:
 stick, as the user's encrypted home directory. This is useful in a
 multi-user or multi-computer environment, as it provides the user with
 secure access to their encrypted files.  When a user initializes
-`PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_
-with their account, their username only appears in the login menu if the
-removable media associated with that |trueos| system is inserted. They
-must input the password associated with the removable device in order to
-login.
+:sysclbk:`PersonaCrypt <personacrypt>` with their account, their
+username only appears in the login menu if the removable media
+associated with that |trueos| system is inserted. They must input the
+password associated with the removable device in order to log in.
 
 .. note:: When a user is configured to use a PersonaCrypt device, that
    user cannot log in using an unencrypted session on the same system.
@@ -307,8 +306,8 @@ login.
 
 Encryption is also possible without requiring removable devices using
 *PEFS*. Refer to the |sysadm| section on
-`PEFS Encryption <https://sysadm.us/handbook/client/sysadmclient.html#pefs>`_
-for more detailed instructions to initialize a user with *PEFS*.
+:sysclbk:`PEFS Encryption <pefs>` for more detailed instructions to
+initialize a user with *PEFS*.
 
 :numref:`Figure %s <persona1>` shows the :guilabel:`PersonaCrypt` tab.
 This tab is used to initialize PersonaCrypt for the user.
@@ -334,8 +333,8 @@ will be wiped. Click :guilabel:`Yes` to initialize the device.
 
 To share the computer with other users, create additional login and
 *PersonaCrypt* accounts using the |sysadm|
-`User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_.
-After creating at least one user, click :guilabel:`Next` to continue.
+:sysclbk:`User Manager <user-manager>`. After creating at least one
+user, click :guilabel:`Next` to continue.
 
 .. index:: configure audio output
 .. _Configure Audio Output:
@@ -473,17 +472,17 @@ configuration options:
 * **User:** Upon first login, the created **username** (from
   :ref:`Create a User`) is the only available login user. If additional
   users are created using the |sysadm|
-  `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_,
-  they are added to the drop-down menu for more login choices. PCDM does
-  not allow logging in as the *root* user. Instead, whenever a utility
-  requires administrative access, |trueos| asks for the password of the
-  login account.
+  :sysclbk:`User Manager <user-manager>`, they are added to the
+  drop-down menu for more login choices. PCDM does not allow logging in
+  as the *root* user. Instead, whenever a utility requires
+  administrative access, |trueos| asks for the password of the login
+  account.
 
 * **Password:** Input the password associated with the selected user.
 
 * **Desktop:** If any additional desktops are installed using
-  `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
-  use the drop-down menu to select the desktop to log into.
+  :sysclbk:`AppCafe <appcafe>`, use the drop-down menu to select the
+  desktop to log into.
 
 .. note:: If a PersonaCrypt user is active, insert the PersonaCrypt
    device in order to log in. As seen in :numref:`Figure %s <login5>`,
@@ -548,8 +547,7 @@ Updating TrueOS
 
 The TrueOS project is organized around two update tracks: STABLE and
 UNSTABLE. Updating is handled through the |sysadm| Update Manager; refer
-to the SysAdm Client Handbook
-`Update Manager documentation <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
+to the SysAdm :sysclbk:`Update Manager <update-manager>` documentation
 for more details about using the Update Manager. This section only
 contains simple instructions to switch between update tracks.
 
@@ -763,10 +761,9 @@ Services and Runlevels
 OpenRC includes options to *start*, *stop*, *add*, or *delete* services
 from runlevels as seen in :numref:`Table %s <rcbootserv>`. Most of these
 actions can be accomplished using the
-`Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
-built into |sysadm|. Individuals familiar with the FreeBSD
-:command:`service` command may notice some similarities between some of
-these commands.
+:sysclbk:`Service Manager <service-manager>` built into |sysadm|.
+Individuals familiar with the FreeBSD :command:`service` command may
+notice some similarities between some of these commands.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
                     |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|

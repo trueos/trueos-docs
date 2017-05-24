@@ -129,18 +129,18 @@ Features
   support day-to-day computing needs.
 
 * **Easy software management:** With the |sysadm|
-  `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_,
-  installing, upgrading, and uninstalling software is safe and easy.
+  :sysclbk:`AppCafe <appcafe>`, installing, upgrading, and uninstalling
+  software is safe and easy.
 
 * **Lots of software available:** |appcafe| is used to install software
   ported to FreeBSD (currently over 26,100 applications).
 
 * **Easy to update:** |trueos| (with |sysadm|) provides a built-in
-  `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
-  which provides notifications of available updates. This utility makes
-  it easy to apply operating system security fixes, bug fixes, and
-  system enhancements. Additionally, the Update Manager is used to
-  upgrade the operating system or update installed software.
+  :sysclbk:`Update Manager <update-manager>` which provides
+  notifications of available updates. This utility makes it easy to
+  apply operating system security fixes, bug fixes, and system
+  enhancements. Additionally, the Update Manager is used to upgrade the
+  operating system or update installed software.
 
   Currently, users can choose to follow one of two "tracks" for updates:
   UNSTABLE and STABLE. UNSTABLE updates are the "bleeding edge" of
@@ -355,9 +355,10 @@ separate |trueos| from |pcbsd|:
      | dhcpcd           | Ports        | dhclient        |
      +------------------+--------------+-----------------+
 
-  .. note:: :ref:`sysserv` is updated as development continues on the
-     |trueos| implementation of OpenRC. For a complete list of all
-     available services through OpenRC, see :ref:`rcuprnlvl`.
+  .. note:: The :ref:`sysserv` table is updated as development
+     continues on the |trueos| implementation of OpenRC. For a
+     complete list of all available services through OpenRC, see
+     :ref:`rcuprnlvl`.
 
 * A |trueos| installation installs the |lumina| Desktop. Additional
   window managers can be installed using |appcafe|.
@@ -381,11 +382,11 @@ separate |trueos| from |pcbsd|:
   * Network Manager
 
 * The functionality provided by the *About* utility is incorporated into
-  `Lumina Information <https://lumina-desktop.org/handbook/luminautl.html#information>`_.
+  :lumbk:`Lumina Information <luminautl.html#information>`.
 
 * The functionality provided by the
-  `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_
-  (:command:`pc-servicemanager`) has been integrated into |sysadm|.
+  :sysclbk:`Service Manager <service-manager>`
+  (:command:`pc-servicemanager`) is integrated into |sysadm|.
 
 * The Active Directory & LDAP utility (:command:`pc-adsldap`) is
   deprecated.
@@ -415,9 +416,8 @@ separate |trueos| from |pcbsd|:
   the graphical boot menu.
 
 * These new utilites are available in the *SysAdm Client*:
-  `Managing Remote Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-remote-connections>`_
-  and
-  `Task Manager <https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_.
+  :sysclbk:`Managing Remote Connections <managing-remote-connections>`
+  and :sysclbk:`Task Manager <task-manager>`.
 
 * The graphical and command line versions of PBI Manager and Warden are
   removed.

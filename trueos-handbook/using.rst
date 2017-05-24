@@ -30,45 +30,39 @@ utilities for various tasks, such as :command:`numlockx` and
 * Does not require any of the desktop implementation frameworks such as
   DBUS, policykit, consolekit, systemd, or HALD.
 
-* Provides many
-  `utilities <https://lumina-desktop.org/handbook/luminautl.html>`_
-  for configuring the desktop environment.
+* Provides many :lumbk:`utilities <luminautl.html>` for configuring the
+  desktop environment.
 
 * Provides an interface design based on
-  `plugins <https://lumina-desktop.org/handbook/luminaplugins.html>`_.
-  The user can make their desktop as light or heavy as they wish by
-  choosing which plugins to have running on their desktop and panels.
-  This plugin-based system is similar to Android or other modern
-  operating systems.
+  :lumbk:`plugins <luminaplugins.html>`. The user can make their desktop
+  as light or heavy as they wish by choosing which plugins to have
+  running on their desktop and panels. This plugin-based system is
+  similar to Android or other modern operating systems.
 
 * A single, easy-to-use
-  `Lumina Configuration <https://lumina-desktop.org/handbook/luminaconfig.html>`_
-  utility controls all the different configuration options for the
-  desktop in one location.
+  :lumbk:`Lumina Configuration <luminaconfig.html>` utility controls all
+  the different configuration options for the desktop in one location.
 
 * Intelligent *favorites* system for creating quick shortcuts to
   applications, files, and directories.
 
 * ZFS file restore functionality with
-  `Insight File Manager <https://lumina-desktop.org/handbook/luminautl.html#insight-file-manager>`_.
+  :lumbk:`Insight File Manager <luminautl.html#insight-file-manager>`.
 
 * Multi-monitor support includes the
-  `Lumina Xconfig <https://lumina-desktop.org/handbook/luminautl.html#xconfig>`_
-  graphical utility for adding or removing monitors from the |lumina|
-  session.
+  :lumbk:`Lumina Xconfig <luminautl.html#xconfig>` graphical utility for
+  adding or removing monitors from the |lumina| session.
 
-* Simple
-  `system controls <https://lumina-desktop.org/handbook/luminaintro.html#initial-settings>`_
+* Simple :lumbk:`system controls <luminaintro.html#initial-settings>`
   through the system tray for configuring audio volume, screen
   brightness, battery status/notifications, and workspace switching.
 
 * Total system search capabilities through the resource friendly
-  `Lumina Search <https://lumina-desktop.org/handbook/luminautl.html#lumina-search>`_
-  utility.
+  :lumbk:`Lumina Search <luminautl.html#lumina-search>` utility.
 
 * Screenshot functionality through
-  `Lumina Screenshot <https://lumina-desktop.org/handbook/luminautl.html#screenshot>`_,
-  which is tied to the :kbd:`Print Screen` key by default.
+  :lumbk:`Lumina Screenshot <luminautl.html#screenshot>`, which is tied
+  to the :kbd:`Print Screen` key by default.
 
 Refer to the `Lumina Handbook <https://lumina-desktop.org/handbook/>`_
 for detailed descriptions of every element of |lumina|.
@@ -99,50 +93,44 @@ Here is an overview of the different elements controlled by |sysadm|:
 
 **Application Management**
 
-* `AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_:
-  A graphical interface for installing and managing FreeBSD packages.
+* :sysclbk:`AppCafe <appcafe>`: A graphical interface for installing and
+  managing FreeBSD packages.
 
-* `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_:
-  A graphical interface for keeping both |trueos| and its installed
-  applications up to date.
+* :sysclbk:`Update Manager <update-manager>`: A graphical interface for
+  keeping both |trueos| and its installed applications up to date.
 
 **SysAdm Server Settings**
 
-* `Managing Remote Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-remote-connections>`_:
+* :sysclbk:`Managing Remote Connections <managing-remote-connections>`:
   This includes creating and managing SSL keys or certificate bundles.
 
 **System Management**
 
-* `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_:
-  Create and manage ZFS Boot Environments (BEs). Options to *activate*,
-  *clone*, *mount*, and *unmount* BEs are available in this simple
-  screen.
+* :sysclbk:`Boot Environment Manager <boot-environment-manager>`: Create
+  and manage ZFS Boot Environments (BEs). Options to *activate*,
+  *clone*, *mount*, and *unmount* BEs are available in this screen.
 
-* `Mouse Settings <https://sysadm.us/handbook/client/sysadmclient.html#mouse-settings>`_:
-   Tool for adjusting the settings of a connected mouse.
+* :sysclbk:`Mouse Settings <mouse-settings>`: Tool for adjusting the
+  settings of a connected mouse.
 
-* `Firewall Manager <https://sysadm.us/handbook/client/sysadmclient.html#firewall-manager>`_:
-  This is used to configure all ports and firewalls for |trueos|.
+* :sysclbk:`Firewall Manager <firewall-manager>`: This is used to
+  configure all ports and firewalls for |trueos|.
 
-* `Service Manager <https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_:
-  This allows you to view and configure all the system's installed
-  services.
+* :sysclbk:`Service Manager <service-manager>`: This allows you to view
+  and configure all the system's installed services.
 
-* `Task Manager <https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_:
-  A graphical window into system resource usage and a list of all
-  running applications.
+* :sysclbk:`Task Manager <task-manager>`: A graphical window into system
+  resource usage and a list of all running applications.
 
-* `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_:
-  This utility is used to users and groups. This includes adding
-  `PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_
-  encryption to specific users.
+* :sysclbk:`User Manager <user-manager>`: This utility is used to users
+  and groups. This includes adding
+  :sysclbk:`PersonaCrypt <personacrypt>` encryption to specific users.
 
 **Utilities**
 
-* `Life Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_:
-  This utility is used for system backups with ZFS snapshots. Life
-  Preserver provides easy management, replication, and scheduling of ZFS
-  snapshots.
+* :sysclbk:`Life Preserver <life-preserver>`: This utility is used for
+  system backups with ZFS snapshots. Life Preserver provides easy
+  management, replication, and scheduling of ZFS snapshots.
 
 .. index:: fonts
 .. _Fonts:
@@ -1286,9 +1274,8 @@ The security features built into |trueos| include:
   access your system. If SSH is needed, add :command:`sshd_enable=YES`
   to :file:`/etc/rc.conf`. Start the service by typing
   :command:`service sshd start`. A firewall rule also needs to be added
-  using the |sysadm|
-  `Firewall Manager <https://sysadm.us/handbook/client/sysadmclient.html#firewall-manager>`_
-  to allow SSH connections over TCP port 22.
+  using the |sysadm| :sysclbk:`Firewall Manager <firewall-manager>` to
+  allow SSH connections over TCP port 22.
 
 * **SSH root logins are disabled by default:** If SSH is enabled, login
   as a regular user and use :command:`su` or :command:`sudo` when
@@ -1299,9 +1286,9 @@ The security features built into |trueos| include:
   group permission to run an administrative command after typing their
   password. By default, the first user created during installation
   is added to the *wheel* group. Use the |sysadm|
-  `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_
-  to add other users to this group. Change the default :command:`sudo`
-  configuration using :command:`visudo` as the superuser.
+  :sysclbk:`User Manager <user-manager>` to add other users to this
+  group. Change the default :command:`sudo` configuration using
+  :command:`visudo` as the superuser.
 
 * :wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is
   loaded by default for the Intel Core i5/i7 processors that support
@@ -1309,10 +1296,8 @@ The security features built into |trueos| include:
   decryption.
 
 * **Automatic notification of security advisories:**
-  The |sysadm|
-  `Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_
-  automatically notifies you if an update is available as the result of
-  a
+  The |sysadm| :sysclbk:`Update Manager <update-manager>` automatically
+  notifies you if an update is available as the result of a
   `security advisory <https://www.freebsd.org/security/advisories.html>`_
   affecting |trueos|. This allows you to keep your operating system
   fully patched with just the click of a mouse.
@@ -1321,9 +1306,8 @@ The security features built into |trueos| include:
   built with `LibreSSL <http://www.libressl.org/>`_, which has fewer
   vulnerabilities than OpenSSL.
 
-* `PersonaCrypt <https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_
-  allows a user to use a removable, encrypted device as their home
-  directory.
+* :sysclbk:`PersonaCrypt <personacrypt>` allows a user to use a
+  removable, encrypted device as their home directory.
 
 * :ref:`Tor Mode` can be used to anonymously access Internet sites as it
   automatically forwards all Internet traffic through the

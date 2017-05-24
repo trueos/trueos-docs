@@ -151,7 +151,7 @@ instructions for installing a command-line only server.
 By default, :guilabel:`TrueOS Desktop (graphical interface)` is
 selected. The |lumina| Desktop is installed with TrueOS, but
 additional software can be installed later using
-`AppCafe <https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_.
+:sysclbk:`AppCafe <appcafe>`.
 
 To install the desktop, click :guilabel:`Next`.
 
@@ -936,7 +936,7 @@ previous |pcbsd| installation remains.
 .. note:: This option overwrites the contents of :file:`/etc`. If any
    custom configurations exist, save them to a backup or the home
    directory first. Alternately, use the |sysadm|
-   `Boot Environment Manager <https://sysadm.us/handbook/client/sysadmclient.html#boot-environment-manager>`_
+   :sysclbk:`Boot Environment Manager <boot-environment-manager>`
    post-installation to mount the previous |pcbsd| boot environment to
    copy over any configuration files which may not have been backed up.
 
@@ -975,10 +975,8 @@ the new installation.
    primary user account using the same user name and user id (UID) from
    the previous |pcbsd| system. This allows |trueos| to associate the
    existing home directory with that user. Once logged in, use the
-   |sysadm|
-   `User Manager <https://sysadm.us/handbook/client/sysadmclient.html#user-manager>`_
-   to recreate any other user accounts or to reassociate any
-   PersonaCrypt accounts.
+   |sysadm| :sysclbk:`User Manager <user-manager>` to recreate any other
+   user accounts or to reassociate any PersonaCrypt accounts.
 
 .. index:: automated installations
 .. _Automated Installations:

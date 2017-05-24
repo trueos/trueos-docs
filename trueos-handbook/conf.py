@@ -33,8 +33,14 @@ extensions = [
 ]
 
 # -- External Link Shortening
-extlinks = {'wiki': ('https://en.wikipedia.org/wiki/%s',
-            ' ')}
+extlinks = {
+ 'wiki': ('https://en.wikipedia.org/wiki/%s',
+          ' '),
+ 'lumbk': ('https://lumina-desktop.org/handbook/%s',
+           ' '),
+ 'sysclbk': ('https://sysadm.us/handbook/client/sysadmclient.html#%s',
+             ' '),
+}
 
 # -- Options for automatic Figure numbering
 numfig = True
