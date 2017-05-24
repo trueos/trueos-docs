@@ -74,7 +74,7 @@ msgstr ""
 msgid "Laptops"
 msgstr ""
 
-#: ../../preinstall.rst:258
+#: ../../preinstall.rst:259
 msgid "Creating Free Space"
 msgstr ""
 
@@ -95,57 +95,57 @@ msgstr ""
 msgid "Data Integrity Check"
 msgstr ""
 
-#: ../../preinstall.rst:460
+#: ../../preinstall.rst:461
 msgid "Burning the Installation Media"
 msgstr ""
 
-#: ../../preinstall.rst:467
+#: ../../preinstall.rst:468
 msgid "Files ending in :file:`img` must be burned to a USB stick."
 msgstr ""
 
-#: ../../preinstall.rst:485 ../../preinstall.rst:487
+#: ../../preinstall.rst:486 ../../preinstall.rst:488
 msgid "Windows"
 msgstr ""
 
-#: ../../preinstall.rst:485
+#: ../../preinstall.rst:486
 msgid "`InfraRecorder utility <http://infrarecorder.org/>`_"
 msgstr ""
 
-#: ../../preinstall.rst:489 ../../preinstall.rst:491
+#: ../../preinstall.rst:490 ../../preinstall.rst:492
 msgid "Linux or \\*BSD"
 msgstr ""
 
-#: ../../preinstall.rst:489
+#: ../../preinstall.rst:490
 msgid "`K3B <https://www.kde.org/applications/multimedia/k3b/>`_"
 msgstr ""
 
-#: ../../preinstall.rst:491
+#: ../../preinstall.rst:492
 msgid "`Brasero <https://wiki.gnome.org/Apps/Brasero>`_"
 msgstr ""
 
-#: ../../preinstall.rst:493
+#: ../../preinstall.rst:494
 msgid "FreeBSD/PC-BSD/TrueOS"
 msgstr ""
 
-#: ../../preinstall.rst:493
+#: ../../preinstall.rst:494
 msgid ""
 "`growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
 "/creating-dvds.html>`_"
 msgstr ""
 
-#: ../../preinstall.rst:495
+#: ../../preinstall.rst:496
 msgid "Mac OS X"
 msgstr ""
 
-#: ../../preinstall.rst:495
+#: ../../preinstall.rst:496
 msgid "`Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_"
 msgstr ""
 
-#: ../../preinstall.rst:502
+#: ../../preinstall.rst:503
 msgid "Writing to a USB Device"
 msgstr ""
 
-#: ../../preinstall.rst:512
+#: ../../preinstall.rst:513
 msgid ""
 "If there is a card reader on the system or the USB drive is connected using "
 "a USB dongle, device enumeration may be affected. For example, with the USB "
@@ -153,7 +153,7 @@ msgid ""
 ":file:`/dev/da1` instead of :file:`/dev/da0`."
 msgstr ""
 
-#: ../../preinstall.rst:517
+#: ../../preinstall.rst:518
 msgid ""
 "To write the :file:`.img` file to a flash card or removable USB drive on a "
 "BSD or Linux system, use the :command:`dd` command line utility. On a "
@@ -161,15 +161,15 @@ msgid ""
 "first plugged in USB device:"
 msgstr ""
 
-#: ../../preinstall.rst:529
+#: ../../preinstall.rst:530
 msgid "When using the :command:`dd` command:"
 msgstr ""
 
-#: ../../preinstall.rst:602
+#: ../../preinstall.rst:603
 msgid "Virtualization"
 msgstr ""
 
-#: ../../preinstall.rst:647
+#: ../../preinstall.rst:646
 msgid "Creating a Virtual Machine for an ISO File"
 msgstr ""
 
@@ -229,19 +229,19 @@ msgid ""
 "provides."
 msgstr ""
 
-#: ../../preinstall.rst:235
+#: ../../preinstall.rst:236
 msgid ""
 "To install |trueos| onto an Asus Eee PC, review the `FreeBSD Eee page "
 "<https://wiki.FreeBSD.org/AsusEee>`_ first."
 msgstr ""
 
-#: ../../preinstall.rst:269
+#: ../../preinstall.rst:270
 msgid ""
 "**Before** shrinking a partition, be sure to back up any valuable data to an"
 " external media such as a removable USB drive!"
 msgstr ""
 
-#: ../../preinstall.rst:272
+#: ../../preinstall.rst:273
 msgid ""
 "To shrink the drive, right-click the :guilabel:`Start` menu and click "
 ":guilabel:`Disk Management`. In the example shown in :numref:`Figure %s "
@@ -249,7 +249,7 @@ msgid ""
 "partition, a 237.93 GB data partition, and a 100 MB system partition."
 msgstr ""
 
-#: ../../preinstall.rst:285
+#: ../../preinstall.rst:286
 msgid ""
 "Since the three Windows partitions fill the entire disk, the data partition "
 "must be shrunk to create space to install |trueos|. Right-click the data "
@@ -257,13 +257,13 @@ msgid ""
 ":guilabel:`Shrink Volume`, as shown in :numref:`Figure %s <partition2>`."
 msgstr ""
 
-#: ../../preinstall.rst:298
+#: ../../preinstall.rst:299
 msgid ""
 "Wait as the volume is queried for available shrink space. The results are "
 "shown in :numref:`Figure %s <shrink1>`."
 msgstr ""
 
-#: ../../preinstall.rst:334
+#: ../../preinstall.rst:335
 msgid "|trueos| uses a rolling release model rather than versioned releases."
 msgstr ""
 
@@ -274,22 +274,22 @@ msgid ""
 "downloaded file."
 msgstr ""
 
-#: ../../preinstall.rst:504
+#: ../../preinstall.rst:505
 msgid ""
 "There are a few requirements to write the :file:`img` file to a USB device:"
 msgstr ""
 
-#: ../../preinstall.rst:507
+#: ../../preinstall.rst:508
 msgid ""
 "A utility capable of writing the image to a USB media; the available "
 "utilities will depend upon the installed operating system."
 msgstr ""
 
-#: ../../preinstall.rst:510
+#: ../../preinstall.rst:511
 msgid "A USB thumb drive or hard drive large enough to hold the image."
 msgstr ""
 
-#: ../../preinstall.rst:549
+#: ../../preinstall.rst:550
 msgid ""
 "To burn the image file on a Windows system, use `win32-image-writer "
 "<https://sourceforge.net/projects/win32diskimager/>`_. When downloading "
@@ -298,7 +298,7 @@ msgid ""
 "unzip the executable."
 msgstr ""
 
-#: ../../preinstall.rst:633
+#: ../../preinstall.rst:632
 msgid ""
 "If the computer is running another operating system, download the binary for"
 " the specific operating system from the `VirtualBox Downloads page "
@@ -307,13 +307,13 @@ msgid ""
 "machine installable operating systems."
 msgstr ""
 
-#: ../../preinstall.rst:640
+#: ../../preinstall.rst:639
 msgid ""
 "This section describes how to prepare VirtualBox for an installation of "
 "|trueos| using an :file:`.iso` file."
 msgstr ""
 
-#: ../../preinstall.rst:649
+#: ../../preinstall.rst:648
 msgid ""
 "Once the |trueos| ISO is downloaded and VirtualBox installed on the current "
 "system, create a virtual machine and use the ISO to install |trueos| into "
@@ -321,33 +321,33 @@ msgid ""
 "requirements and this section will demonstrate how to configure these:"
 msgstr ""
 
-#: ../../preinstall.rst:655
+#: ../../preinstall.rst:654
 msgid "1024 MB base memory size."
 msgstr ""
 
-#: ../../preinstall.rst:657
+#: ../../preinstall.rst:656
 msgid ""
 "A virtual disk **at least 20 GB in size** for a server installation or **at "
 "least 50 GB in size** for a desktop installation."
 msgstr ""
 
-#: ../../preinstall.rst:660
+#: ../../preinstall.rst:659
 msgid "A bridged adapter."
 msgstr ""
 
-#: ../../preinstall.rst:662
+#: ../../preinstall.rst:661
 msgid ""
 "To create the virtual machine, start VirtualBox to see the screen shown in "
 ":numref:`Figure %s <vbox1>`."
 msgstr ""
 
-#: ../../preinstall.rst:672
+#: ../../preinstall.rst:671
 msgid ""
 "Click :guilabel:`New` to start the new virtual machine wizard and display "
 "the screen in :numref:`Figure %s <vbox2>`."
 msgstr ""
 
-#: ../../preinstall.rst:682
+#: ../../preinstall.rst:681
 msgid ""
 "Enter a name for the virtual machine; it can be anything which makes sense "
 "to you. Click the :guilabel:`Operating System` drop-down menu and select "
@@ -356,7 +356,7 @@ msgid ""
 ":numref:`Figure %s <vbox3>`."
 msgstr ""
 
-#: ../../preinstall.rst:695
+#: ../../preinstall.rst:694
 msgid ""
 "The base memory size must be changed to **at least 1024 MB.** If the system "
 "has a lot of RAM, use more. Any number within the green area is considered a"
@@ -365,7 +365,7 @@ msgid ""
 ":numref:`Figure %s <vbox4>`."
 msgstr ""
 
-#: ../../preinstall.rst:708
+#: ../../preinstall.rst:707
 msgid ""
 "This screen is used to create the virtual hard drive, or the amount of disk "
 "space available to the virtual machine. If this is your first virtual "
@@ -379,20 +379,20 @@ msgid ""
 "used up by old virtual machines."
 msgstr ""
 
-#: ../../preinstall.rst:728
+#: ../../preinstall.rst:727
 msgid ""
 "Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in "
 ":numref:`Figure %s <vbox6>`."
 msgstr ""
 
-#: ../../preinstall.rst:764
+#: ../../preinstall.rst:763
 msgid ""
 "Once the selections are made, press :guilabel:`Create` to finish using the "
 "wizard. The virtual machine will now show up in the left box, as seen in the"
 " example in :numref:`Figure %s <vbox8>`."
 msgstr ""
 
-#: ../../preinstall.rst:775
+#: ../../preinstall.rst:774
 msgid ""
 "In order to use the network card, configure bridging on the virtual machine."
 " To do this, go to :menuselection:`Settings --> Network`. In the "
@@ -403,14 +403,14 @@ msgid ""
 "name of :file:`re0`."
 msgstr ""
 
-#: ../../preinstall.rst:790
+#: ../../preinstall.rst:789
 msgid ""
 "Before starting the virtual machine, configure it to use the installation "
 "media. Click the :guilabel:`Storage` hyperlink in the right frame to access "
 "the storage screen seen in :numref:`Figure %s <vbox10>`."
 msgstr ""
 
-#: ../../preinstall.rst:801
+#: ../../preinstall.rst:800
 msgid ""
 "Double-click the word :guilabel:`Empty`, which represents the DVD reader. To"
 " access the |trueos| installer from the DVD reader, double-check the "
@@ -419,7 +419,7 @@ msgid ""
 "is incorrect."
 msgstr ""
 
-#: ../../preinstall.rst:807
+#: ../../preinstall.rst:806
 msgid ""
 "If using an ISO stored on the hard disk is preferred, click the "
 ":guilabel:`DVD` icon then :guilabel:`Choose a virtual CD/DVD disk file` to "
@@ -428,18 +428,18 @@ msgid ""
 "in the :guilabel:`Storage Tree` section."
 msgstr ""
 
-#: ../../preinstall.rst:238
+#: ../../preinstall.rst:239
 msgid ""
 "The FreeBSD `Tuning Power Consumption page "
 "<https://wiki.FreeBSD.org/TuningPowerConsumption>`_ has some tips for "
 "reducing power consumption."
 msgstr ""
 
-#: ../../preinstall.rst:483
+#: ../../preinstall.rst:484
 msgid "Operating System"
 msgstr ""
 
-#: ../../preinstall.rst:483
+#: ../../preinstall.rst:484
 msgid "Utility"
 msgstr ""
 
@@ -454,14 +454,14 @@ msgid ""
 "DVDs."
 msgstr ""
 
-#: ../../preinstall.rst:230
+#: ../../preinstall.rst:231
 msgid ""
 "To test the laptop's hardware, use the :guilabel:`Hardware Compatibility` "
 "icon in the :ref:`Language Selection` screen before continuing with the "
 "installation."
 msgstr ""
 
-#: ../../preinstall.rst:322
+#: ../../preinstall.rst:323
 msgid ""
 "It is important to **not** choose to install |trueos| into any of the three "
 "Windows partitions at the :ref:`Disk Selection` screen of the installer. It "
@@ -518,11 +518,11 @@ msgid ""
 " anything changes."
 msgstr ""
 
-#: ../../preinstall.rst:332
+#: ../../preinstall.rst:333
 msgid "Installation Options"
 msgstr ""
 
-#: ../../preinstall.rst:738
+#: ../../preinstall.rst:737
 msgid ""
 "Now choose whether to have :guilabel:`Dynamically allocated` or "
 ":guilabel:`Fixed size` storage. The first option uses disk space as needed "
@@ -534,7 +534,7 @@ msgid ""
 "<vbox7>` displays."
 msgstr ""
 
-#: ../../preinstall.rst:754
+#: ../../preinstall.rst:753
 msgid ""
 "This screen is used to set the size (or upper limit) of the virtual machine."
 " If planning to install |trueos| into the virtual machine, **increase the "
@@ -546,7 +546,7 @@ msgid ""
 " with sufficient space to hold the virtual machine."
 msgstr ""
 
-#: ../../preinstall.rst:555
+#: ../../preinstall.rst:556
 msgid ""
 "Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager "
 "utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse` to "
@@ -555,7 +555,7 @@ msgid ""
 ":guilabel:`Write` and the image will be written to the USB thumb drive."
 msgstr ""
 
-#: ../../preinstall.rst:568
+#: ../../preinstall.rst:569
 msgid ""
 "To burn the :file:`.img` file on Mac OS X, insert a USB stick and open "
 "*Terminal*. Run :command:`diskutil list` to discover the device name of the "
@@ -565,7 +565,7 @@ msgid ""
 ":file:`/dev/rdisk1`:"
 msgstr ""
 
-#: ../../preinstall.rst:823
+#: ../../preinstall.rst:822
 msgid ""
 "If the installer GUI doesn't appear to load after configuring your virtual "
 "machine, you may need to enable **EFI** in Virtualbox by navigating "
@@ -691,7 +691,7 @@ msgid ""
 "options for disabling a system's touchpad, if one is detected."
 msgstr ""
 
-#: ../../preinstall.rst:244
+#: ../../preinstall.rst:245
 msgid ""
 "With regards to specific hardware, the ThinkPad T420 may panic during "
 "install. If it does, go into the BIOS and set the video mode to "
@@ -703,7 +703,7 @@ msgid ""
 " previously, redo the installation with the box unchecked."
 msgstr ""
 
-#: ../../preinstall.rst:260
+#: ../../preinstall.rst:261
 msgid ""
 "To dual-boot |trueos| with an existing operating system, first make sure "
 "there is either a free partition or an area of free space to use. For "
@@ -715,19 +715,19 @@ msgid ""
 "space within Windows 10."
 msgstr ""
 
-#: ../../preinstall.rst:283
+#: ../../preinstall.rst:284
 msgid "Disk Layout in Disk Management"
 msgstr ""
 
-#: ../../preinstall.rst:296
+#: ../../preinstall.rst:297
 msgid "Shrink Volume Menu Selection"
 msgstr ""
 
-#: ../../preinstall.rst:306
+#: ../../preinstall.rst:307
 msgid "Available Shrink Space"
 msgstr ""
 
-#: ../../preinstall.rst:308
+#: ../../preinstall.rst:309
 msgid ""
 "Here, 119307 MB of space is available. This is the maximum amount Windows "
 "can shrink this particular partition. Accept that number, or choose a "
@@ -737,18 +737,8 @@ msgid ""
 "in :numref:`Figure %s <shrink2>`."
 msgstr ""
 
-#: ../../preinstall.rst:320
+#: ../../preinstall.rst:321
 msgid "Disk with Free Space"
-msgstr ""
-
-#: ../../preinstall.rst:336
-msgid ""
-"Periodically, the |sysadm| `Update Manager "
-"<https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_ "
-"provides patches to update the operating system. To have or test the latest "
-"features and drivers as they become available, and you can tolerate possible"
-" breakage caused by new features being available before the next STABLE "
-"release, use the UNSTABLE update track."
 msgstr ""
 
 #: ../../preinstall.rst:343
@@ -848,17 +838,17 @@ msgstr ""
 msgid "Checksum Verification"
 msgstr ""
 
-#: ../../preinstall.rst:462
+#: ../../preinstall.rst:463
 msgid ""
 "Once the installation file is downloaded and its checksum verified, burn it "
 "to a media. The media you use depends upon the file downloaded:"
 msgstr ""
 
-#: ../../preinstall.rst:465
+#: ../../preinstall.rst:466
 msgid "Files ending with :file:`.iso` can be burned to a DVD or a USB stick."
 msgstr ""
 
-#: ../../preinstall.rst:469
+#: ../../preinstall.rst:470
 msgid ""
 "To burn to a DVD, use either a burning utility packaged with the operating "
 "system on the system with the burner or a separate burning application. "
@@ -866,22 +856,22 @@ msgid ""
 "utilities."
 msgstr ""
 
-#: ../../preinstall.rst:531
+#: ../../preinstall.rst:532
 msgid "**if=** designates the *input file* to be written."
 msgstr ""
 
-#: ../../preinstall.rst:533
+#: ../../preinstall.rst:534
 msgid ""
 "**of=** refers to the *output file* (the device name of the flash card or "
 "removable USB drive). Increment the number in the name if it is not the "
 "first USB device."
 msgstr ""
 
-#: ../../preinstall.rst:537
+#: ../../preinstall.rst:538
 msgid "**bs=** refers to the *block size*."
 msgstr ""
 
-#: ../../preinstall.rst:539
+#: ../../preinstall.rst:540
 msgid ""
 "On Linux, type :command:`mount` with the USB stick inserted to see two or "
 "more device nodes corresponding to the USB stick. For example, "
@@ -894,11 +884,11 @@ msgid ""
 " USB stick)."
 msgstr ""
 
-#: ../../preinstall.rst:566
+#: ../../preinstall.rst:567
 msgid "Write an Image using Win32 Disk Imager"
 msgstr ""
 
-#: ../../preinstall.rst:604
+#: ../../preinstall.rst:605
 msgid ""
 "A virtualized environment allows a user to test drive an operating system "
 "without overwriting the current operating system. This is an excellent way "
@@ -912,19 +902,7 @@ msgid ""
 "closing other applications running on the computer to free up some RAM."
 msgstr ""
 
-#: ../../preinstall.rst:616
-msgid ""
-"To run virtualization software on |trueos|, search for *virtualbox* within "
-"the |sysadm| `AppCafe "
-"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_ and install "
-"the `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization "
-"program and the `VirtualBox Guest Additions "
-"<http://www.virtualbox.org/manual/ch04.html>`_. The guest additions add "
-"mouse pointer integration, shared folders between the host and guest, better"
-" video support, and a shared clipboard."
-msgstr ""
-
-#: ../../preinstall.rst:627
+#: ../../preinstall.rst:626
 msgid ""
 "The first time running VirtualBox on a |trueos| system, a background script "
 "automatically gives the user account the permissions required to run this "
@@ -932,47 +910,47 @@ msgid ""
 "the shortcut, logout and in again."
 msgstr ""
 
-#: ../../preinstall.rst:670
+#: ../../preinstall.rst:669
 msgid "VirtualBox Menu"
 msgstr ""
 
-#: ../../preinstall.rst:680
+#: ../../preinstall.rst:679
 msgid "Create Virtual Machine - Name, Type, and Version"
 msgstr ""
 
-#: ../../preinstall.rst:693
+#: ../../preinstall.rst:692
 msgid "Virtual Machine Reserved Memory"
 msgstr ""
 
-#: ../../preinstall.rst:706
+#: ../../preinstall.rst:705
 msgid "Virtual Hard Drive - New or Existing"
 msgstr ""
 
-#: ../../preinstall.rst:726
+#: ../../preinstall.rst:725
 msgid "Hard Drive Type"
 msgstr ""
 
-#: ../../preinstall.rst:736
+#: ../../preinstall.rst:735
 msgid "Storage Type"
 msgstr ""
 
-#: ../../preinstall.rst:752
+#: ../../preinstall.rst:751
 msgid "Virtual Disk - File Name and Size"
 msgstr ""
 
-#: ../../preinstall.rst:773
+#: ../../preinstall.rst:772
 msgid "New Virtual Machine \"test\""
 msgstr ""
 
-#: ../../preinstall.rst:788
+#: ../../preinstall.rst:787
 msgid "VirtualBox Bridged Adapter Configuration"
 msgstr ""
 
-#: ../../preinstall.rst:799
+#: ../../preinstall.rst:798
 msgid "Virtual Machine Storage Settings"
 msgstr ""
 
-#: ../../preinstall.rst:813
+#: ../../preinstall.rst:812
 msgid ""
 "|trueos| is now ready to be installed into the virtual machine. Highlight "
 "the virtual machine and click on the green :guilabel:`Start` icon. A window "
@@ -984,7 +962,7 @@ msgid ""
 "described in :ref:`Installing TrueOS`."
 msgstr ""
 
-#: ../../preinstall.rst:487
+#: ../../preinstall.rst:488
 msgid ""
 "`Disk Burner <https://support.microsoft.com/en-us/help/15088/windows-create-"
 "installation-media>`_"
@@ -1027,12 +1005,51 @@ msgid ""
 "of the related :file:`.md5` file:"
 msgstr ""
 
-#: ../../preinstall.rst:452
+#: ../../preinstall.rst:453
 msgid ""
 "To use the *OpenPGP* :file:`.sig` file, use your preferred utility to verify"
 " the signature. The `OpenPGP website <http://openpgp.org/>`_ has numerous "
 "recommendations for verification utilities."
 msgstr ""
+
+#: ../../preinstall.rst:337
+msgid ""
+"Periodically, the |sysadm| :sysclbk:`Update Manager <update-manager>` "
+"provides patches to update the operating system. To have or test the latest "
+"features and drivers as they become available, and you can tolerate possible"
+" breakage caused by new features being available before the next STABLE "
+"release, use the UNSTABLE update track."
+msgstr ""
+
+#: ../../preinstall.rst:617
+msgid ""
+"To run virtualization software on |trueos|, search for *virtualbox* within "
+"the |sysadm| :sysclbk:`AppCafe <appcafe>` and install the `VirtualBox "
+"<https://www.virtualbox.org/>`_ open source virtualization program and the "
+"`VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_. "
+"The guest additions add mouse pointer integration, shared folders between "
+"the host and guest, better video support, and a shared clipboard."
+msgstr ""
+
+#~ msgid ""
+#~ "Periodically, the |sysadm| `Update Manager "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#update-manager>`_ "
+#~ "provides patches to update the operating system. To have or test the latest "
+#~ "features and drivers as they become available, and you can tolerate possible"
+#~ " breakage caused by new features being available before the next STABLE "
+#~ "release, use the UNSTABLE update track."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To run virtualization software on |trueos|, search for *virtualbox* within "
+#~ "the |sysadm| `AppCafe "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_ and install "
+#~ "the `VirtualBox <https://www.virtualbox.org/>`_ open source virtualization "
+#~ "program and the `VirtualBox Guest Additions "
+#~ "<http://www.virtualbox.org/manual/ch04.html>`_. The guest additions add "
+#~ "mouse pointer integration, shared folders between the host and guest, better"
+#~ " video support, and a shared clipboard."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Only one of the checksums needs to be verified. The `TrueOS website "

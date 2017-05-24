@@ -154,57 +154,57 @@ msgid ""
 "up for GitHub` to create a new github account."
 msgstr ""
 
-#: ../../helpsupport.rst:674
+#: ../../helpsupport.rst:676
 msgid "Become a Beta Tester"
 msgstr ""
 
-#: ../../helpsupport.rst:701
+#: ../../helpsupport.rst:703
 msgid "Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:703
+#: ../../helpsupport.rst:705
 msgid ""
 "If interested in translating |trueos| into your native language, start by "
 "choosing which of the three translation areas to work in:"
 msgstr ""
 
-#: ../../helpsupport.rst:706
+#: ../../helpsupport.rst:708
 msgid "Translate the graphical menus within the |trueos| operating system."
 msgstr ""
 
-#: ../../helpsupport.rst:708
+#: ../../helpsupport.rst:710
 msgid "Translate the documentation published with |trueos|."
 msgstr ""
 
-#: ../../helpsupport.rst:710
+#: ../../helpsupport.rst:712
 msgid "Translate the |trueos| website."
 msgstr ""
 
-#: ../../helpsupport.rst:712
+#: ../../helpsupport.rst:714
 msgid ""
 "This section describes each of these translation areas in more detail and "
 "how to begin as a translator."
 msgstr ""
 
-#: ../../helpsupport.rst:726
+#: ../../helpsupport.rst:728
 msgid "Interface Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:737
+#: ../../helpsupport.rst:739
 msgid ""
 "To assist with a localization, open the `TrueOS® translation website "
 "<http://weblate.trueos.org/>`_ in a web browser. An example is seen in "
 ":numref:`Figure %s <translate1>`."
 msgstr ""
 
-#: ../../helpsupport.rst:748
+#: ../../helpsupport.rst:750
 msgid ""
 "Before editing a translation, first create a a login account and verify the "
 "activation email. Once logged in, click :guilabel:`Manage your languages`, "
 "shown in :numref:`Figure %s <translate2>`."
 msgstr ""
 
-#: ../../helpsupport.rst:760
+#: ../../helpsupport.rst:762
 msgid ""
 "In the screen shown in :numref:`Figure %s <translate3>`, use the "
 ":guilabel:`Interface Language` drop-down menu to select the language for the"
@@ -213,14 +213,14 @@ msgid ""
 "Once any selections are made, click :guilabel:`Save`."
 msgstr ""
 
-#: ../../helpsupport.rst:773
+#: ../../helpsupport.rst:775
 msgid ""
 "If the language you wish to translate is missing from the \"Translated "
 "languages\" menu, request its addition in the `TrueOS® Lobby "
 "<https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../helpsupport.rst:777
+#: ../../helpsupport.rst:779
 msgid ""
 "Next, click :guilabel:`Projects` at the top of the screen to select a "
 "localization project. In the example shown in :numref:`Figure %s "
@@ -232,14 +232,14 @@ msgid ""
 " will instead appear in English."
 msgstr ""
 
-#: ../../helpsupport.rst:794
+#: ../../helpsupport.rst:796
 msgid ""
 "To start translating, click a component name. In the screen shown in "
 ":numref:`Figure %s <translate5>`, select a language and click "
 ":guilabel:`Translate`."
 msgstr ""
 
-#: ../../helpsupport.rst:805
+#: ../../helpsupport.rst:807
 msgid ""
 "In the example shown in :numref:`Figure %s <translate6>`, the user has "
 "selected to translate the *pc-installgui* component into the Spanish "
@@ -250,17 +250,17 @@ msgid ""
 "translate."
 msgstr ""
 
-#: ../../helpsupport.rst:820
+#: ../../helpsupport.rst:822
 msgid ""
 "If assistance is needed with either a translation or the Weblate system, ask"
 " for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_."
 msgstr ""
 
-#: ../../helpsupport.rst:827
+#: ../../helpsupport.rst:829
 msgid "Documentation Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:842
+#: ../../helpsupport.rst:844
 msgid ""
 "The |trueos| build server provides the HTML version of the |trueos| Users "
 "Handbook. Instructions for building your own HTML, PDF, or EPUB version can "
@@ -268,49 +268,49 @@ msgid ""
 "docs/blob/master/trueos-handbook/README.md>`_."
 msgstr ""
 
-#: ../../helpsupport.rst:853
+#: ../../helpsupport.rst:855
 msgid ""
 "It is important to be aware of a few elements when translating the "
 "documentation:"
 msgstr ""
 
-#: ../../helpsupport.rst:856
+#: ../../helpsupport.rst:858
 msgid ""
 "At this time, some formatting tags are still displayed in raw text, as seen "
 "in the examples in :numref:`Figure %s <translate7>` and :numref:`Figure %s "
 "<translate8>`."
 msgstr ""
 
-#: ../../helpsupport.rst:860
+#: ../../helpsupport.rst:862
 msgid ""
 "Do not remove the formatting as this can break the documentation build for "
 "that language."
 msgstr ""
 
-#: ../../helpsupport.rst:920
+#: ../../helpsupport.rst:922
 msgid "Website Translation"
 msgstr ""
 
-#: ../../helpsupport.rst:934
+#: ../../helpsupport.rst:936
 msgid "Development"
 msgstr ""
 
-#: ../../helpsupport.rst:956
+#: ../../helpsupport.rst:958
 msgid "Getting the Source Code"
 msgstr ""
 
-#: ../../helpsupport.rst:980
+#: ../../helpsupport.rst:982
 msgid ""
 "Before compiling any source, ensure the Ports Collection is installed. At "
 "this time, **git** is used to fetch and update ports (see :ref:`FreeBSD "
 "Ports`)."
 msgstr ""
 
-#: ../../helpsupport.rst:984
+#: ../../helpsupport.rst:986
 msgid "Fetching ports for the first time (as root):"
 msgstr ""
 
-#: ../../helpsupport.rst:990
+#: ../../helpsupport.rst:992
 msgid "Update an existing :file:`ports` directory (as root):"
 msgstr ""
 
@@ -717,29 +717,6 @@ msgstr ""
 msgid "`FreeBSD Sound Wiki <https://wiki.FreeBSD.org/Sound>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:1021
-msgid ""
-"If you plan to make source changes, several Qt IDEs are available in the "
-"|sysadm| `AppCafe "
-"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_. The "
-"`QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a "
-"full-featured IDE designed to help new Qt users get up and running faster "
-"while boosting the productivity of experienced Qt developers. `Qt Designer "
-"<http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is "
-"only a :file:`.ui` file editor and does not provide any other IDE "
-"functionality."
-msgstr ""
-
-#: ../../helpsupport.rst:1103
-msgid ""
-"Fully functional programs like `Life Preserver "
-"<https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_ do "
-"not use close buttons on the front of the application. Basically, whenever "
-"there is a *File* menu, that and an :guilabel:`x` in the top right corner of"
-" the application are used instead. Dialogues and widget programs are "
-"exceptions to this rule."
-msgstr ""
-
 #: ../../helpsupport.rst:530
 msgid ""
 "One of the most effective ways to assist the |trueos| Project is by "
@@ -767,25 +744,25 @@ msgid ""
 "Include the application name if the issue is related to an application."
 msgstr ""
 
-#: ../../helpsupport.rst:580
+#: ../../helpsupport.rst:581
 msgid "Include keywords from any error messages you receive."
 msgstr ""
 
-#: ../../helpsupport.rst:581
+#: ../../helpsupport.rst:582
 msgid "Avoid using vague language such as \"failed\", \"useless\", or \"crashed\"."
 msgstr ""
 
-#: ../../helpsupport.rst:583
+#: ../../helpsupport.rst:584
 msgid ""
 "Here are some examples to show the difference between a helpful title and a "
 "non-helpful title:"
 msgstr ""
 
-#: ../../helpsupport.rst:602
+#: ../../helpsupport.rst:604
 msgid "**Comment Area**"
 msgstr ""
 
-#: ../../helpsupport.rst:604
+#: ../../helpsupport.rst:606
 msgid ""
 "Like with the *title*, being clear and concise is extremely helpful. Many "
 "people feel they must fill this area with lots of information. While listing"
@@ -793,19 +770,19 @@ msgid ""
 "in issue resolution."
 msgstr ""
 
-#: ../../helpsupport.rst:609
+#: ../../helpsupport.rst:611
 msgid "The most important pieces of information to include are:"
 msgstr ""
 
-#: ../../helpsupport.rst:611
+#: ../../helpsupport.rst:613
 msgid "What happened."
 msgstr ""
 
-#: ../../helpsupport.rst:613
+#: ../../helpsupport.rst:615
 msgid "What you expected to happen."
 msgstr ""
 
-#: ../../helpsupport.rst:615
+#: ../../helpsupport.rst:617
 msgid ""
 "(**Critical**) Steps to reproduce the issue. Please provide the exact steps "
 "you can take to produce this issue from a fresh boot. If the issue is "
@@ -813,23 +790,23 @@ msgid ""
 "application."
 msgstr ""
 
-#: ../../helpsupport.rst:647
+#: ../../helpsupport.rst:649
 msgid "**Additional Information**"
 msgstr ""
 
-#: ../../helpsupport.rst:656
+#: ../../helpsupport.rst:658
 msgid "Additionally useful information may include:"
 msgstr ""
 
-#: ../../helpsupport.rst:661
+#: ../../helpsupport.rst:663
 msgid "Command Line Output Logs"
 msgstr ""
 
-#: ../../helpsupport.rst:662
+#: ../../helpsupport.rst:664
 msgid "Truss Logs"
 msgstr ""
 
-#: ../../helpsupport.rst:663
+#: ../../helpsupport.rst:665
 msgid "Debugger Backtrace Logs"
 msgstr ""
 
@@ -1125,13 +1102,6 @@ msgid ""
 "try setting the :command:`sysctl` value to *2*, and, if necessary, *3*."
 msgstr ""
 
-#: ../../helpsupport.rst:353
-msgid ""
-"Once all of the mixer settings appear and none are set to *0*, sound "
-"typically works. If it still does not, these resources will help pinpoint "
-"the problem:"
-msgstr ""
-
 #: ../../helpsupport.rst:361
 msgid ""
 "If sound issues persist, consider asking the :ref:`TrueOS Community` for "
@@ -1224,7 +1194,7 @@ msgstr ""
 msgid "Here are some basic guidelines for creating useful bug reports:"
 msgstr ""
 
-#: ../../helpsupport.rst:620
+#: ../../helpsupport.rst:622
 msgid ""
 "List any changes you may have made to your system from its initial install. "
 "In most cases, this does not need to be extremely detailed. It is very "
@@ -1233,7 +1203,7 @@ msgid ""
 "all your changes, list what comes to mind."
 msgstr ""
 
-#: ../../helpsupport.rst:627
+#: ../../helpsupport.rst:629
 msgid ""
 "List the hardware of the system where the issue occurred. If you are using "
 "an OEM laptop or desktop, listing the brand or model is usually sufficient. "
@@ -1247,7 +1217,7 @@ msgid ""
 "output of :samp:`uname -a` is helpful."
 msgstr ""
 
-#: ../../helpsupport.rst:639
+#: ../../helpsupport.rst:641
 msgid ""
 "Being clear and direct with your report and answers is very helpful. As we "
 "are not watching you use your computer and do not see what you see, we are "
@@ -1258,7 +1228,7 @@ msgid ""
 " your bug report."
 msgstr ""
 
-#: ../../helpsupport.rst:649
+#: ../../helpsupport.rst:651
 msgid ""
 "Please do not think you are unable to file your bug ticket without "
 "additional information. Providing the listed information above is the most "
@@ -1268,14 +1238,7 @@ msgid ""
 " your issue."
 msgstr ""
 
-#: ../../helpsupport.rst:658
-msgid ""
-"Screen captures of the error. `Lumina Screenshot <https://lumina-"
-"desktop.org/handbook/luminautl.html#screenshot>`_ is a useful tool to "
-"quickly screenshot any errors in progress."
-msgstr ""
-
-#: ../../helpsupport.rst:665
+#: ../../helpsupport.rst:667
 msgid ""
 "After describing the issue, click :guilabel:`Submit new issue` to create the"
 " issue. The bug tracker attaches a unique number to the report and sends "
@@ -1283,14 +1246,14 @@ msgid ""
 "with the bug report."
 msgstr ""
 
-#: ../../helpsupport.rst:676
+#: ../../helpsupport.rst:678
 msgid ""
 "If you enjoy tinkering with operating systems and have a bit of spare time, "
 "one of the most effective ways to assist the |trueos| community is reporting"
 " problems you encounter while using |trueos|."
 msgstr ""
 
-#: ../../helpsupport.rst:680
+#: ../../helpsupport.rst:682
 msgid ""
 "If a spare system or virtual machine is available, you can also download and"
 " test the latest UNSTABLE patches (see :ref:`Updating TrueOS`). Having as "
@@ -1299,7 +1262,7 @@ msgid ""
 "result is more polished and usable OS for the entire community."
 msgstr ""
 
-#: ../../helpsupport.rst:686
+#: ../../helpsupport.rst:688
 msgid ""
 "If you wish to become a tester, join the Gitter `TrueOS® Lobby "
 "<https://gitter.im/trueos/Lobby>`_. Updates are typically announced "
@@ -1307,14 +1270,14 @@ msgid ""
 "can check to see if the problem exists on your hardware as well."
 msgstr ""
 
-#: ../../helpsupport.rst:692
+#: ../../helpsupport.rst:694
 msgid ""
 "Anyone can become a beta tester. If you find a bug while testing, be sure to"
 " accurately describe the situation when :ref:`Reporting a bug <Report a "
 "bug>` so it can be fixed as soon as possible."
 msgstr ""
 
-#: ../../helpsupport.rst:715
+#: ../../helpsupport.rst:717
 msgid ""
 "Regardless of the type of desired translation, you should first join the "
 "`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. The first time joining "
@@ -1324,44 +1287,31 @@ msgid ""
 "translators."
 msgstr ""
 
-#: ../../helpsupport.rst:746
+#: ../../helpsupport.rst:748
 msgid "|trueos| Weblate Translation System"
 msgstr ""
 
-#: ../../helpsupport.rst:758
+#: ../../helpsupport.rst:760
 msgid "Weblate Dashboard"
 msgstr ""
 
-#: ../../helpsupport.rst:771
+#: ../../helpsupport.rst:773
 msgid "Manage Languages"
 msgstr ""
 
-#: ../../helpsupport.rst:792
+#: ../../helpsupport.rst:794
 msgid "Project Selection"
 msgstr ""
 
-#: ../../helpsupport.rst:803
+#: ../../helpsupport.rst:805
 msgid "Translation Languages"
 msgstr ""
 
-#: ../../helpsupport.rst:818
+#: ../../helpsupport.rst:820
 msgid "Translation Editor"
 msgstr ""
 
-#: ../../helpsupport.rst:832
-msgid ""
-"The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
-"repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
-"handbook>`_. This allows the documentation and its translations to be built "
-"with the operating system. Documentation updates are automatically pushed to"
-" the |trueos| website and, when the system is updated using the |sysadm| "
-"`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
-"manager>`_, the doc updates are installed to a local copy named "
-":file:`/usr/local/share/trueos/handbook/trueos.html`. This keeps an updated "
-"local copy of the handbook available on every user's system."
-msgstr ""
-
-#: ../../helpsupport.rst:847
+#: ../../helpsupport.rst:849
 msgid ""
 "The documentation source files are integrated into the Weblate translation "
 "system so the |trueos| documentation can be translated using a web browser. "
@@ -1370,7 +1320,7 @@ msgid ""
 "in :ref:`translate4`."
 msgstr ""
 
-#: ../../helpsupport.rst:863
+#: ../../helpsupport.rst:865
 msgid ""
 "In :ref:`translate7`, it is fine to translate the phrase \"Using the Text "
 "Installer\", but care must be taken to avoid removing any of the surrounding"
@@ -1379,22 +1329,22 @@ msgid ""
 "It is fine to translate *bare minimum*, but do **not** remove the asterisks."
 msgstr ""
 
-#: ../../helpsupport.rst:875
+#: ../../helpsupport.rst:877
 msgid "Formatting Characters - Do Not Remove"
 msgstr ""
 
-#: ../../helpsupport.rst:882
+#: ../../helpsupport.rst:884
 msgid "More Formatting Characters"
 msgstr ""
 
-#: ../../helpsupport.rst:884
+#: ../../helpsupport.rst:886
 msgid ""
 "To build a local HTML copy that includes the latest translations, either for"
 " personal use or to visualize the translated Guide, type these commands from"
 " the command line in |trueos|:"
 msgstr ""
 
-#: ../../helpsupport.rst:902
+#: ../../helpsupport.rst:904
 msgid ""
 "This makes an HTML version of the Guide for each of the available "
 "translations. In this example, translations are available for English (in "
@@ -1402,20 +1352,20 @@ msgid ""
 "Portuguese, Turkish, and UK English. To update the HTML at a later time:"
 msgstr ""
 
-#: ../../helpsupport.rst:922
+#: ../../helpsupport.rst:924
 msgid ""
 "If you are interested in translating the |trueos| website, introduce "
 "yourself in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_ or open a "
 "new topic in our `Discourse forum <https://discourse.trueos.org/>`_"
 msgstr ""
 
-#: ../../helpsupport.rst:927
+#: ../../helpsupport.rst:929
 msgid ""
 "Currently, the website is being translated into several languages, "
 "including: Dutch, French, German, Polish, Spanish, Swedish, and Turkish."
 msgstr ""
 
-#: ../../helpsupport.rst:936
+#: ../../helpsupport.rst:938
 msgid ""
 "If you like programming, and especially coding on FreeBSD, we would love to "
 "see you join the |trueos| team as a |trueos| contributor. Developers who "
@@ -1428,7 +1378,7 @@ msgid ""
 "will be happy to help you get started."
 msgstr ""
 
-#: ../../helpsupport.rst:947
+#: ../../helpsupport.rst:949
 msgid ""
 "Most of the |trueos| specific GUI tools are developed in C++ using Qt "
 "libraries and other non-GUI development is done using standard Bourne shell "
@@ -1436,7 +1386,7 @@ msgid ""
 "but those are evaluated on a case-by-case basis."
 msgstr ""
 
-#: ../../helpsupport.rst:958
+#: ../../helpsupport.rst:960
 msgid ""
 "The |trueos| source code is available from `GitHub "
 "<https://github.com/trueos/>`_. The code is organized into repositories "
@@ -1446,31 +1396,31 @@ msgid ""
 " in the base install."
 msgstr ""
 
-#: ../../helpsupport.rst:965
+#: ../../helpsupport.rst:967
 msgid ""
 "To download the source code, :command:`cd` to the directory to store the "
 "source code and specify the name of the desired repository. In this example,"
 " the user is downloading the source for the graphical utilities:"
 msgstr ""
 
-#: ../../helpsupport.rst:975
+#: ../../helpsupport.rst:977
 msgid "This creates a directory with the same name as the repository."
 msgstr ""
 
-#: ../../helpsupport.rst:977
+#: ../../helpsupport.rst:979
 msgid ""
 "To keep the local copy in sync with the official repository, periodically "
 "run :samp:`git pull` within the directory."
 msgstr ""
 
-#: ../../helpsupport.rst:998
+#: ../../helpsupport.rst:1000
 msgid ""
 "Then, :command:`cd` to the directory containing the source to build and run "
 "the :file:`mkport.sh` script. In this example, the developer wants to "
 "compile the graphical utilities:"
 msgstr ""
 
-#: ../../helpsupport.rst:1008
+#: ../../helpsupport.rst:1010
 msgid ""
 "This creates a port which can then be installed. The name of the port is "
 "located in :file:`mkport.sh`. This example determines the name of the port "
@@ -1499,16 +1449,6 @@ msgid ""
 "**File**, **Main**, or **System** as their first entry in a menu bar, "
 "**File** is used as the accepted norm for the first category on the menu "
 "bar."
-msgstr ""
-
-#: ../../helpsupport.rst:1057
-msgid ""
-"Any graphical program that is a fully featured utility, such as `Life "
-"Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-"
-"preserver>`_, should have a *File* menu. However, file menus are not "
-"necessary for small widget programs or dialogue boxes. When making a file "
-"menu, a good rule of thumb is *keep it simple*. Most |trueos| utilities do "
-"not need more than two or three items on the file menu."
 msgstr ""
 
 #: ../../helpsupport.rst:1068
@@ -1606,13 +1546,6 @@ msgid ""
 "additional troubleshooting suggestions."
 msgstr ""
 
-#: ../../helpsupport.rst:357
-msgid ""
-"`Sound Section of FreeBSD Handbook "
-"<https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-"
-"setup.html>`_"
-msgstr ""
-
 #: ../../helpsupport.rst:412
 msgid ""
 "Do not post large error messages in the channel. Instead, use a pasting "
@@ -1627,7 +1560,7 @@ msgid ""
 " URL on channel."
 msgstr ""
 
-#: ../../helpsupport.rst:728
+#: ../../helpsupport.rst:730
 msgid ""
 "|trueos| uses `Weblate <https://weblate.org/en/>`_ for managing localization"
 " of the menu screens used by the installer and the |trueos| utilities. "
@@ -1690,6 +1623,131 @@ msgid ""
 "`Blog post explaining how ZFS simplifies the storage stack "
 "<https://blogs.oracle.com/bonwick/rampant-layering-violation>`_"
 msgstr ""
+
+#: ../../helpsupport.rst:353
+msgid ""
+"Once all of the mixer settings appear and none are set to *0*, sound "
+"typically works. If it still does not, these resources can help pinpoint the"
+" problem:"
+msgstr ""
+
+#: ../../helpsupport.rst:357
+msgid ""
+"`FreeBSD Handbook Sound Section "
+"<https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-"
+"setup.html>`_"
+msgstr ""
+
+#: ../../helpsupport.rst:660
+msgid ""
+"Screen captures of the error. :lumbk:`Lumina Screenshot "
+"<luminautl.html#screenshot>` is a useful tool to quickly screenshot any "
+"errors in progress."
+msgstr ""
+
+#: ../../helpsupport.rst:834
+msgid ""
+"The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
+"repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
+"handbook>`_. This allows the documentation and its translations to be built "
+"with the operating system. Documentation updates are automatically pushed to"
+" the |trueos| website and, when the system is updated using the |sysadm| "
+":sysclbk:`Update Manager <update-manager>`, the doc updates are installed to"
+" a local copy named :file:`/usr/local/share/trueos/handbook/trueos.html`. "
+"This keeps an updated local copy of the handbook available on every user's "
+"system."
+msgstr ""
+
+#: ../../helpsupport.rst:1023
+msgid ""
+"If you plan to make source changes, several Qt IDEs are available in the "
+"|sysadm| :sysclbk:`AppCafe <appcafe>`. The `QtCreator "
+"<http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a full-"
+"featured IDE designed to help new Qt users get up and running faster while "
+"boosting the productivity of experienced Qt developers. `Qt Designer "
+"<http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is "
+"only a :file:`.ui` file editor and does not provide any other IDE "
+"functionality."
+msgstr ""
+
+#: ../../helpsupport.rst:1057
+msgid ""
+"Any graphical program that is a fully featured utility, such as "
+":sysclbk:`Life Preserver <life-preserver>`, should have a *File* menu. "
+"However, file menus are not necessary for small widget programs or dialogue "
+"boxes. When making a file menu, a good rule of thumb is *keep it simple*. "
+"Most |trueos| utilities do not need more than two or three items on the file"
+" menu."
+msgstr ""
+
+#: ../../helpsupport.rst:1103
+msgid ""
+"Fully functional programs like :sysclbk:`Life Preserver <life-preserver>` do"
+" not use close buttons on the front of the application. Basically, whenever "
+"there is a *File* menu, that and an :guilabel:`x` in the top right corner of"
+" the application are used instead. Dialogues and widget programs are "
+"exceptions to this rule."
+msgstr ""
+
+#~ msgid ""
+#~ "If you plan to make source changes, several Qt IDEs are available in the "
+#~ "|sysadm| `AppCafe "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_. The "
+#~ "`QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_ application is a "
+#~ "full-featured IDE designed to help new Qt users get up and running faster "
+#~ "while boosting the productivity of experienced Qt developers. `Qt Designer "
+#~ "<http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter weight as it is "
+#~ "only a :file:`.ui` file editor and does not provide any other IDE "
+#~ "functionality."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fully functional programs like `Life Preserver "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#life-preserver>`_ do "
+#~ "not use close buttons on the front of the application. Basically, whenever "
+#~ "there is a *File* menu, that and an :guilabel:`x` in the top right corner of"
+#~ " the application are used instead. Dialogues and widget programs are "
+#~ "exceptions to this rule."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once all of the mixer settings appear and none are set to *0*, sound "
+#~ "typically works. If it still does not, these resources will help pinpoint "
+#~ "the problem:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Screen captures of the error. `Lumina Screenshot <https://lumina-"
+#~ "desktop.org/handbook/luminautl.html#screenshot>`_ is a useful tool to "
+#~ "quickly screenshot any errors in progress."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The source for the |trueos| Users Handbook is stored in the `TrueOS® github "
+#~ "repository <https://github.com/trueos/trueos-docs/tree/master/trueos-"
+#~ "handbook>`_. This allows the documentation and its translations to be built "
+#~ "with the operating system. Documentation updates are automatically pushed to"
+#~ " the |trueos| website and, when the system is updated using the |sysadm| "
+#~ "`Update Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
+#~ "manager>`_, the doc updates are installed to a local copy named "
+#~ ":file:`/usr/local/share/trueos/handbook/trueos.html`. This keeps an updated "
+#~ "local copy of the handbook available on every user's system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Any graphical program that is a fully featured utility, such as `Life "
+#~ "Preserver <https://sysadm.us/handbook/client/sysadmclient.html#life-"
+#~ "preserver>`_, should have a *File* menu. However, file menus are not "
+#~ "necessary for small widget programs or dialogue boxes. When making a file "
+#~ "menu, a good rule of thumb is *keep it simple*. Most |trueos| utilities do "
+#~ "not need more than two or three items on the file menu."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Sound Section of FreeBSD Handbook "
+#~ "<https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/sound-"
+#~ "setup.html>`_"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Do not post large error messages in the channel. Instead, use a pasting "

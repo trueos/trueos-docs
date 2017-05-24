@@ -310,47 +310,47 @@ msgstr ""
 msgid "Based on FreeBSD-CURRENT."
 msgstr ""
 
-#: ../../introducing.rst:374
+#: ../../introducing.rst:375
 msgid ""
 "A |trueos| installation installs the |lumina| Desktop. Additional window "
 "managers can be installed using |appcafe|."
 msgstr ""
 
-#: ../../introducing.rst:384
+#: ../../introducing.rst:385
 msgid ""
 "Many utilities have been converted to the |sysadm| API and are available "
 "through `SysAdm <https://sysadm.us/handbook/client/>`_:"
 msgstr ""
 
-#: ../../introducing.rst:387
+#: ../../introducing.rst:388
 msgid "AppCafe"
 msgstr ""
 
-#: ../../introducing.rst:388
+#: ../../introducing.rst:389
 msgid "Update Manager"
 msgstr ""
 
-#: ../../introducing.rst:389
+#: ../../introducing.rst:390
 msgid "Boot Environment Manager"
 msgstr ""
 
-#: ../../introducing.rst:390
+#: ../../introducing.rst:391
 msgid "Life Preserver"
 msgstr ""
 
-#: ../../introducing.rst:391
+#: ../../introducing.rst:392
 msgid "Firewall Manager"
 msgstr ""
 
-#: ../../introducing.rst:392
+#: ../../introducing.rst:393
 msgid "User Manager"
 msgstr ""
 
-#: ../../introducing.rst:393
+#: ../../introducing.rst:394
 msgid "Network Manager"
 msgstr ""
 
-#: ../../introducing.rst:426
+#: ../../introducing.rst:427
 msgid ""
 "The :guilabel:`Boot to console (Disable X)` option has been added to the "
 "graphical boot menu."
@@ -886,16 +886,6 @@ msgid ""
 " to FreeBSD (currently over 26,100 applications)."
 msgstr ""
 
-#: ../../introducing.rst:150
-msgid ""
-"**Easy to update:** |trueos| (with |sysadm|) provides a built-in `Update "
-"Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
-"manager>`_ which provides notifications of available updates. This utility "
-"makes it easy to apply operating system security fixes, bug fixes, and "
-"system enhancements. Additionally, the Update Manager is used to upgrade the"
-" operating system or update installed software."
-msgstr ""
-
 #: ../../introducing.rst:164
 msgid ""
 "**Virus-free:** |trueos| is unaffected by viruses, spyware, or other malware"
@@ -925,13 +915,6 @@ msgid ""
 "<https://creativecommons.org/licenses/by/3.0/>`_. This means you have "
 "permission to copy, distribute, translate, and adapt the work, as long as "
 "you attribute the |trueos| Project as the original source of the Guide."
-msgstr ""
-
-#: ../../introducing.rst:398
-msgid ""
-"The functionality provided by the `Service Manager "
-"<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
-"(:command:`pc-servicemanager`) has been integrated into |sysadm|."
 msgstr ""
 
 #: ../../introducing.rst:567
@@ -969,13 +952,6 @@ msgid ""
 "**Customizable desktop interface:** |trueos| installs the |lumina| desktop, "
 "but additional desktop environments can be installed to support day-to-day "
 "computing needs."
-msgstr ""
-
-#: ../../introducing.rst:143
-msgid ""
-"**Easy software management:** With the |sysadm| `AppCafe "
-"<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_, installing,"
-" upgrading, and uninstalling software is safe and easy."
 msgstr ""
 
 #: ../../introducing.rst:157
@@ -1030,14 +1006,7 @@ msgstr ""
 msgid "Different system services between |trueos| and FreeBSD"
 msgstr ""
 
-#: ../../introducing.rst:370
-msgid ""
-":ref:`sysserv` is updated as development continues on the |trueos| "
-"implementation of OpenRC. For a complete list of all available services "
-"through OpenRC, see :ref:`rcuprnlvl`."
-msgstr ""
-
-#: ../../introducing.rst:377
+#: ../../introducing.rst:378
 msgid ""
 "The `SysAdm™ Client <https://sysadm.us/handbook/client/>`_ and `Server "
 "<https://sysadm.us/handbook/server/>`_ has replaced Control Panel. Most of "
@@ -1046,27 +1015,27 @@ msgid ""
 "securely managing local and remote FreeBSD and |trueos| systems."
 msgstr ""
 
-#: ../../introducing.rst:402
+#: ../../introducing.rst:403
 msgid ""
 "The Active Directory & LDAP utility (:command:`pc-adsldap`) is deprecated."
 msgstr ""
 
-#: ../../introducing.rst:405
+#: ../../introducing.rst:406
 msgid ""
 "Login Manager (:command:`pc-dmconf`) is replaced by :command:`pcdm-config`)."
 msgstr ""
 
-#: ../../introducing.rst:408
+#: ../../introducing.rst:409
 msgid "System Manager (:command:`pc-sysmanager`) is deprecated."
 msgstr ""
 
-#: ../../introducing.rst:410
+#: ../../introducing.rst:411
 msgid ""
 ":command:`freebsd-update` is retired in favor of using :command:`pkg` for "
 "system updates."
 msgstr ""
 
-#: ../../introducing.rst:413
+#: ../../introducing.rst:414
 msgid ""
 "The option to use the SCFB display driver is added to the installer. This "
 "driver is suitable for newer UEFI laptops as it automatically detects native"
@@ -1077,19 +1046,11 @@ msgid ""
 "resume."
 msgstr ""
 
-#: ../../introducing.rst:421
+#: ../../introducing.rst:422
 msgid ""
 ":guilabel:`Customize` is removed from the :ref:`System Selection` screen in "
 "order to reduce the size of the installation media. Additional software can "
 "be installed post-installation using |appcafe|."
-msgstr ""
-
-#: ../../introducing.rst:429
-msgid ""
-"These new utilites are available in the *SysAdm Client*: `Managing Remote "
-"Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-"
-"remote-connections>`_ and `Task Manager "
-"<https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_."
 msgstr ""
 
 #: ../../introducing.rst:434
@@ -1255,13 +1216,6 @@ msgid ""
 "alike."
 msgstr ""
 
-#: ../../introducing.rst:395
-msgid ""
-"The functionality provided by the *About* utility is incorporated into "
-"`Lumina Information <https://lumina-"
-"desktop.org/handbook/luminautl.html#information>`_."
-msgstr ""
-
 #: ../../introducing.rst:635
 msgid ""
 "`Comparing BSD and Linux <https://www.freebsd.org/doc/en/articles"
@@ -1284,6 +1238,89 @@ msgid ""
 "`Why you should use a BSD style license for your Open Source Project "
 "<https://www.freebsd.org/doc/en/articles/bsdl-gpl/article.html>`_"
 msgstr ""
+
+#: ../../introducing.rst:143
+msgid ""
+"**Easy software management:** With the |sysadm| :sysclbk:`AppCafe "
+"<appcafe>`, installing, upgrading, and uninstalling software is safe and "
+"easy."
+msgstr ""
+
+#: ../../introducing.rst:150
+msgid ""
+"**Easy to update:** |trueos| (with |sysadm|) provides a built-in "
+":sysclbk:`Update Manager <update-manager>` which provides notifications of "
+"available updates. This utility makes it easy to apply operating system "
+"security fixes, bug fixes, and system enhancements. Additionally, the Update"
+" Manager is used to upgrade the operating system or update installed "
+"software."
+msgstr ""
+
+#: ../../introducing.rst:370
+msgid ""
+"The :ref:`sysserv` table is updated as development continues on the |trueos|"
+" implementation of OpenRC. For a complete list of all available services "
+"through OpenRC, see :ref:`rcuprnlvl`."
+msgstr ""
+
+#: ../../introducing.rst:396
+msgid ""
+"The functionality provided by the *About* utility is incorporated into "
+":lumbk:`Lumina Information <luminautl.html#information>`."
+msgstr ""
+
+#: ../../introducing.rst:399
+msgid ""
+"The functionality provided by the :sysclbk:`Service Manager <service-"
+"manager>` (:command:`pc-servicemanager`) is integrated into |sysadm|."
+msgstr ""
+
+#: ../../introducing.rst:430
+msgid ""
+"These new utilites are available in the *SysAdm Client*: :sysclbk:`Managing "
+"Remote Connections <managing-remote-connections>` and :sysclbk:`Task Manager"
+" <task-manager>`."
+msgstr ""
+
+#~ msgid ""
+#~ "**Easy to update:** |trueos| (with |sysadm|) provides a built-in `Update "
+#~ "Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
+#~ "manager>`_ which provides notifications of available updates. This utility "
+#~ "makes it easy to apply operating system security fixes, bug fixes, and "
+#~ "system enhancements. Additionally, the Update Manager is used to upgrade the"
+#~ " operating system or update installed software."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The functionality provided by the `Service Manager "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#service-manager>`_ "
+#~ "(:command:`pc-servicemanager`) has been integrated into |sysadm|."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Easy software management:** With the |sysadm| `AppCafe "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#appcafe>`_, installing,"
+#~ " upgrading, and uninstalling software is safe and easy."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`sysserv` is updated as development continues on the |trueos| "
+#~ "implementation of OpenRC. For a complete list of all available services "
+#~ "through OpenRC, see :ref:`rcuprnlvl`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "These new utilites are available in the *SysAdm Client*: `Managing Remote "
+#~ "Connections <https://sysadm.us/handbook/client/sysadmclient.html#managing-"
+#~ "remote-connections>`_ and `Task Manager "
+#~ "<https://sysadm.us/handbook/client/sysadmclient.html#task-manager>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The functionality provided by the *About* utility is incorporated into "
+#~ "`Lumina Information <https://lumina-"
+#~ "desktop.org/handbook/luminautl.html#information>`_."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "`TrueOS® <http://www.trueos.org>`_ (formerly known as |pcbsd|) began in 2005"
