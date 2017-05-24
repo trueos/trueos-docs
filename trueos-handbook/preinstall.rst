@@ -401,8 +401,7 @@ checksum verification utility.
    *.MD5*, *SHA256*, and *.SIG* files. The
    `TrueOS website <http://download.trueos.org/master/amd64/>`_ has all
    file types while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
-   both the :file:`.md5` and the :file:`.sha256` checksum files. This
-   section demonstrates how to verify an SHA256 checksum.
+   both the :file:`.md5` and the :file:`.sha256` checksum files.
 
 If using a Windows system, download and install a utility such as
 `Raymond's MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html>`_.
@@ -424,15 +423,23 @@ checksums. It may take a minute or so, depending upon the size of the
 downloaded file.
 
 On Linux and BSD systems, use the built-in :command:`md5` or
-:command:`md5sum` command line tool to check the MD5 checksum. In this
-example, the file is located in the :file:`Downloads` directory. Using
-:samp:`md5 Downloads/TrueOS-2017-04-21-x64-DVD.iso.md5`,
-substitute the name and location of the downloaded file.
+:command:`md5sum` command line tool to display the MD5 checksum. In this
+example, the user types :command:`md5` to view the sum of a :file:`.img`
+file located in the :file:`Downloads` directory. Then, using the
+built-in :command:`cat` command line tool, the user compares the sum to
+the contents of the related :file:`.md5` file:
 
-If you prefer using the **OpenPGP** *.sig* file, use your preferred
-utility to verify the signature. The
-`OpenPGP website <http://openpgp.org/>`_ has numerous recommendations
-for verification utilities.
+.. code-block:: none
+
+ ~% md5 Downloads/TrueOS-2017-04-21-x64-USB.img
+ MD5 (Downloads/TrueOS-2017-04-21-x64-USB.img) = 3eb6adef0ad171f6c5825f0f820557f5
+
+ ~& cat Downloads/TrueOS-2017-04-21-x64-USB.img.md5
+ 3eb6adef0ad171f6c5825f0f820557f5
+
+To use the *OpenPGP* :file:`.sig` file, use your preferred utility to
+verify the signature. The `OpenPGP website <http://openpgp.org/>`_ has
+numerous recommendations for verification utilities.
 
 .. index:: burn installation media
 .. _Burning the Installation Media:
