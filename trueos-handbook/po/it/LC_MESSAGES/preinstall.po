@@ -95,57 +95,57 @@ msgstr ""
 msgid "Data Integrity Check"
 msgstr ""
 
-#: ../../preinstall.rst:453
+#: ../../preinstall.rst:460
 msgid "Burning the Installation Media"
 msgstr ""
 
-#: ../../preinstall.rst:460
+#: ../../preinstall.rst:467
 msgid "Files ending in :file:`img` must be burned to a USB stick."
 msgstr ""
 
-#: ../../preinstall.rst:478 ../../preinstall.rst:480
+#: ../../preinstall.rst:485 ../../preinstall.rst:487
 msgid "Windows"
 msgstr ""
 
-#: ../../preinstall.rst:478
+#: ../../preinstall.rst:485
 msgid "`InfraRecorder utility <http://infrarecorder.org/>`_"
 msgstr ""
 
-#: ../../preinstall.rst:482 ../../preinstall.rst:484
+#: ../../preinstall.rst:489 ../../preinstall.rst:491
 msgid "Linux or \\*BSD"
 msgstr ""
 
-#: ../../preinstall.rst:482
+#: ../../preinstall.rst:489
 msgid "`K3B <https://www.kde.org/applications/multimedia/k3b/>`_"
 msgstr ""
 
-#: ../../preinstall.rst:484
+#: ../../preinstall.rst:491
 msgid "`Brasero <https://wiki.gnome.org/Apps/Brasero>`_"
 msgstr ""
 
-#: ../../preinstall.rst:486
+#: ../../preinstall.rst:493
 msgid "FreeBSD/PC-BSD/TrueOS"
 msgstr ""
 
-#: ../../preinstall.rst:486
+#: ../../preinstall.rst:493
 msgid ""
 "`growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
 "/creating-dvds.html>`_"
 msgstr ""
 
-#: ../../preinstall.rst:488
+#: ../../preinstall.rst:495
 msgid "Mac OS X"
 msgstr ""
 
-#: ../../preinstall.rst:488
+#: ../../preinstall.rst:495
 msgid "`Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_"
 msgstr ""
 
-#: ../../preinstall.rst:495
+#: ../../preinstall.rst:502
 msgid "Writing to a USB Device"
 msgstr ""
 
-#: ../../preinstall.rst:505
+#: ../../preinstall.rst:512
 msgid ""
 "If there is a card reader on the system or the USB drive is connected using "
 "a USB dongle, device enumeration may be affected. For example, with the USB "
@@ -153,7 +153,7 @@ msgid ""
 ":file:`/dev/da1` instead of :file:`/dev/da0`."
 msgstr ""
 
-#: ../../preinstall.rst:510
+#: ../../preinstall.rst:517
 msgid ""
 "To write the :file:`.img` file to a flash card or removable USB drive on a "
 "BSD or Linux system, use the :command:`dd` command line utility. On a "
@@ -161,15 +161,15 @@ msgid ""
 "first plugged in USB device:"
 msgstr ""
 
-#: ../../preinstall.rst:522
+#: ../../preinstall.rst:529
 msgid "When using the :command:`dd` command:"
 msgstr ""
 
-#: ../../preinstall.rst:595
+#: ../../preinstall.rst:602
 msgid "Virtualization"
 msgstr ""
 
-#: ../../preinstall.rst:640
+#: ../../preinstall.rst:647
 msgid "Creating a Virtual Machine for an ISO File"
 msgstr ""
 
@@ -267,29 +267,29 @@ msgstr ""
 msgid "|trueos| uses a rolling release model rather than versioned releases."
 msgstr ""
 
-#: ../../preinstall.rst:434
+#: ../../preinstall.rst:433
 msgid ""
 "Once the file is selected, click :guilabel:`Open` to calculate the "
 "checksums. It may take a minute or so, depending upon the size of the "
 "downloaded file."
 msgstr ""
 
-#: ../../preinstall.rst:497
+#: ../../preinstall.rst:504
 msgid ""
 "There are a few requirements to write the :file:`img` file to a USB device:"
 msgstr ""
 
-#: ../../preinstall.rst:500
+#: ../../preinstall.rst:507
 msgid ""
 "A utility capable of writing the image to a USB media; the available "
 "utilities will depend upon the installed operating system."
 msgstr ""
 
-#: ../../preinstall.rst:503
+#: ../../preinstall.rst:510
 msgid "A USB thumb drive or hard drive large enough to hold the image."
 msgstr ""
 
-#: ../../preinstall.rst:542
+#: ../../preinstall.rst:549
 msgid ""
 "To burn the image file on a Windows system, use `win32-image-writer "
 "<https://sourceforge.net/projects/win32diskimager/>`_. When downloading "
@@ -298,7 +298,7 @@ msgid ""
 "unzip the executable."
 msgstr ""
 
-#: ../../preinstall.rst:626
+#: ../../preinstall.rst:633
 msgid ""
 "If the computer is running another operating system, download the binary for"
 " the specific operating system from the `VirtualBox Downloads page "
@@ -307,13 +307,13 @@ msgid ""
 "machine installable operating systems."
 msgstr ""
 
-#: ../../preinstall.rst:633
+#: ../../preinstall.rst:640
 msgid ""
 "This section describes how to prepare VirtualBox for an installation of "
 "|trueos| using an :file:`.iso` file."
 msgstr ""
 
-#: ../../preinstall.rst:642
+#: ../../preinstall.rst:649
 msgid ""
 "Once the |trueos| ISO is downloaded and VirtualBox installed on the current "
 "system, create a virtual machine and use the ISO to install |trueos| into "
@@ -321,33 +321,33 @@ msgid ""
 "requirements and this section will demonstrate how to configure these:"
 msgstr ""
 
-#: ../../preinstall.rst:648
+#: ../../preinstall.rst:655
 msgid "1024 MB base memory size."
 msgstr ""
 
-#: ../../preinstall.rst:650
+#: ../../preinstall.rst:657
 msgid ""
 "A virtual disk **at least 20 GB in size** for a server installation or **at "
 "least 50 GB in size** for a desktop installation."
 msgstr ""
 
-#: ../../preinstall.rst:653
+#: ../../preinstall.rst:660
 msgid "A bridged adapter."
 msgstr ""
 
-#: ../../preinstall.rst:655
+#: ../../preinstall.rst:662
 msgid ""
 "To create the virtual machine, start VirtualBox to see the screen shown in "
 ":numref:`Figure %s <vbox1>`."
 msgstr ""
 
-#: ../../preinstall.rst:665
+#: ../../preinstall.rst:672
 msgid ""
 "Click :guilabel:`New` to start the new virtual machine wizard and display "
 "the screen in :numref:`Figure %s <vbox2>`."
 msgstr ""
 
-#: ../../preinstall.rst:675
+#: ../../preinstall.rst:682
 msgid ""
 "Enter a name for the virtual machine; it can be anything which makes sense "
 "to you. Click the :guilabel:`Operating System` drop-down menu and select "
@@ -356,7 +356,7 @@ msgid ""
 ":numref:`Figure %s <vbox3>`."
 msgstr ""
 
-#: ../../preinstall.rst:688
+#: ../../preinstall.rst:695
 msgid ""
 "The base memory size must be changed to **at least 1024 MB.** If the system "
 "has a lot of RAM, use more. Any number within the green area is considered a"
@@ -365,7 +365,7 @@ msgid ""
 ":numref:`Figure %s <vbox4>`."
 msgstr ""
 
-#: ../../preinstall.rst:701
+#: ../../preinstall.rst:708
 msgid ""
 "This screen is used to create the virtual hard drive, or the amount of disk "
 "space available to the virtual machine. If this is your first virtual "
@@ -379,20 +379,20 @@ msgid ""
 "used up by old virtual machines."
 msgstr ""
 
-#: ../../preinstall.rst:721
+#: ../../preinstall.rst:728
 msgid ""
 "Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in "
 ":numref:`Figure %s <vbox6>`."
 msgstr ""
 
-#: ../../preinstall.rst:757
+#: ../../preinstall.rst:764
 msgid ""
 "Once the selections are made, press :guilabel:`Create` to finish using the "
 "wizard. The virtual machine will now show up in the left box, as seen in the"
 " example in :numref:`Figure %s <vbox8>`."
 msgstr ""
 
-#: ../../preinstall.rst:768
+#: ../../preinstall.rst:775
 msgid ""
 "In order to use the network card, configure bridging on the virtual machine."
 " To do this, go to :menuselection:`Settings --> Network`. In the "
@@ -403,14 +403,14 @@ msgid ""
 "name of :file:`re0`."
 msgstr ""
 
-#: ../../preinstall.rst:783
+#: ../../preinstall.rst:790
 msgid ""
 "Before starting the virtual machine, configure it to use the installation "
 "media. Click the :guilabel:`Storage` hyperlink in the right frame to access "
 "the storage screen seen in :numref:`Figure %s <vbox10>`."
 msgstr ""
 
-#: ../../preinstall.rst:794
+#: ../../preinstall.rst:801
 msgid ""
 "Double-click the word :guilabel:`Empty`, which represents the DVD reader. To"
 " access the |trueos| installer from the DVD reader, double-check the "
@@ -419,7 +419,7 @@ msgid ""
 "is incorrect."
 msgstr ""
 
-#: ../../preinstall.rst:800
+#: ../../preinstall.rst:807
 msgid ""
 "If using an ISO stored on the hard disk is preferred, click the "
 ":guilabel:`DVD` icon then :guilabel:`Choose a virtual CD/DVD disk file` to "
@@ -435,11 +435,11 @@ msgid ""
 "reducing power consumption."
 msgstr ""
 
-#: ../../preinstall.rst:476
+#: ../../preinstall.rst:483
 msgid "Operating System"
 msgstr ""
 
-#: ../../preinstall.rst:476
+#: ../../preinstall.rst:483
 msgid "Utility"
 msgstr ""
 
@@ -522,7 +522,7 @@ msgstr ""
 msgid "Installation Options"
 msgstr ""
 
-#: ../../preinstall.rst:731
+#: ../../preinstall.rst:738
 msgid ""
 "Now choose whether to have :guilabel:`Dynamically allocated` or "
 ":guilabel:`Fixed size` storage. The first option uses disk space as needed "
@@ -534,7 +534,7 @@ msgid ""
 "<vbox7>` displays."
 msgstr ""
 
-#: ../../preinstall.rst:747
+#: ../../preinstall.rst:754
 msgid ""
 "This screen is used to set the size (or upper limit) of the virtual machine."
 " If planning to install |trueos| into the virtual machine, **increase the "
@@ -546,7 +546,7 @@ msgid ""
 " with sufficient space to hold the virtual machine."
 msgstr ""
 
-#: ../../preinstall.rst:548
+#: ../../preinstall.rst:555
 msgid ""
 "Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager "
 "utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse` to "
@@ -555,7 +555,7 @@ msgid ""
 ":guilabel:`Write` and the image will be written to the USB thumb drive."
 msgstr ""
 
-#: ../../preinstall.rst:561
+#: ../../preinstall.rst:568
 msgid ""
 "To burn the :file:`.img` file on Mac OS X, insert a USB stick and open "
 "*Terminal*. Run :command:`diskutil list` to discover the device name of the "
@@ -565,7 +565,7 @@ msgid ""
 ":file:`/dev/rdisk1`:"
 msgstr ""
 
-#: ../../preinstall.rst:816
+#: ../../preinstall.rst:823
 msgid ""
 "If the installer GUI doesn't appear to load after configuring your virtual "
 "machine, you may need to enable **EFI** in Virtualbox by navigating "
@@ -833,18 +833,7 @@ msgid ""
 "verification utility."
 msgstr ""
 
-#: ../../preinstall.rst:411
-msgid ""
-"Only one of the checksums needs to be verified. The `TrueOS website "
-"<http://download.trueos.org/master/amd64/>`_ lists *.MD5*, *SHA256*, and "
-"*.SIG* files. The `TrueOS website "
-"<http://download.trueos.org/master/amd64/>`_ has all file types while the "
-"`PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists both the :file:`.md5` and "
-"the :file:`.sha256` checksum files. This section demonstrates how to verify "
-"an SHA256 checksum."
-msgstr ""
-
-#: ../../preinstall.rst:419
+#: ../../preinstall.rst:418
 msgid ""
 "If using a Windows system, download and install a utility such as `Raymond's"
 " MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-"
@@ -855,37 +844,21 @@ msgid ""
 "downloaded file."
 msgstr ""
 
-#: ../../preinstall.rst:432
+#: ../../preinstall.rst:431
 msgid "Checksum Verification"
 msgstr ""
 
-#: ../../preinstall.rst:438
-msgid ""
-"On Linux and BSD systems, use the built-in :command:`md5` or "
-":command:`md5sum` command line tool to check the MD5 checksum. In this "
-"example, the file is located in the :file:`Downloads` directory. Using "
-":samp:`md5 Downloads/TrueOS-2017-04-21-x64-DVD.iso.md5`, substitute the name"
-" and location of the downloaded file."
-msgstr ""
-
-#: ../../preinstall.rst:444
-msgid ""
-"If you prefer using the **OpenPGP** *.sig* file, use your preferred utility "
-"to verify the signature. The `OpenPGP website <http://openpgp.org/>`_ has "
-"numerous recommendations for verification utilities."
-msgstr ""
-
-#: ../../preinstall.rst:455
+#: ../../preinstall.rst:462
 msgid ""
 "Once the installation file is downloaded and its checksum verified, burn it "
 "to a media. The media you use depends upon the file downloaded:"
 msgstr ""
 
-#: ../../preinstall.rst:458
+#: ../../preinstall.rst:465
 msgid "Files ending with :file:`.iso` can be burned to a DVD or a USB stick."
 msgstr ""
 
-#: ../../preinstall.rst:462
+#: ../../preinstall.rst:469
 msgid ""
 "To burn to a DVD, use either a burning utility packaged with the operating "
 "system on the system with the burner or a separate burning application. "
@@ -893,22 +866,22 @@ msgid ""
 "utilities."
 msgstr ""
 
-#: ../../preinstall.rst:524
+#: ../../preinstall.rst:531
 msgid "**if=** designates the *input file* to be written."
 msgstr ""
 
-#: ../../preinstall.rst:526
+#: ../../preinstall.rst:533
 msgid ""
 "**of=** refers to the *output file* (the device name of the flash card or "
 "removable USB drive). Increment the number in the name if it is not the "
 "first USB device."
 msgstr ""
 
-#: ../../preinstall.rst:530
+#: ../../preinstall.rst:537
 msgid "**bs=** refers to the *block size*."
 msgstr ""
 
-#: ../../preinstall.rst:532
+#: ../../preinstall.rst:539
 msgid ""
 "On Linux, type :command:`mount` with the USB stick inserted to see two or "
 "more device nodes corresponding to the USB stick. For example, "
@@ -921,11 +894,11 @@ msgid ""
 " USB stick)."
 msgstr ""
 
-#: ../../preinstall.rst:559
+#: ../../preinstall.rst:566
 msgid "Write an Image using Win32 Disk Imager"
 msgstr ""
 
-#: ../../preinstall.rst:597
+#: ../../preinstall.rst:604
 msgid ""
 "A virtualized environment allows a user to test drive an operating system "
 "without overwriting the current operating system. This is an excellent way "
@@ -939,7 +912,7 @@ msgid ""
 "closing other applications running on the computer to free up some RAM."
 msgstr ""
 
-#: ../../preinstall.rst:609
+#: ../../preinstall.rst:616
 msgid ""
 "To run virtualization software on |trueos|, search for *virtualbox* within "
 "the |sysadm| `AppCafe "
@@ -951,7 +924,7 @@ msgid ""
 " video support, and a shared clipboard."
 msgstr ""
 
-#: ../../preinstall.rst:620
+#: ../../preinstall.rst:627
 msgid ""
 "The first time running VirtualBox on a |trueos| system, a background script "
 "automatically gives the user account the permissions required to run this "
@@ -959,47 +932,47 @@ msgid ""
 "the shortcut, logout and in again."
 msgstr ""
 
-#: ../../preinstall.rst:663
+#: ../../preinstall.rst:670
 msgid "VirtualBox Menu"
 msgstr ""
 
-#: ../../preinstall.rst:673
+#: ../../preinstall.rst:680
 msgid "Create Virtual Machine - Name, Type, and Version"
 msgstr ""
 
-#: ../../preinstall.rst:686
+#: ../../preinstall.rst:693
 msgid "Virtual Machine Reserved Memory"
 msgstr ""
 
-#: ../../preinstall.rst:699
+#: ../../preinstall.rst:706
 msgid "Virtual Hard Drive - New or Existing"
 msgstr ""
 
-#: ../../preinstall.rst:719
+#: ../../preinstall.rst:726
 msgid "Hard Drive Type"
 msgstr ""
 
-#: ../../preinstall.rst:729
+#: ../../preinstall.rst:736
 msgid "Storage Type"
 msgstr ""
 
-#: ../../preinstall.rst:745
+#: ../../preinstall.rst:752
 msgid "Virtual Disk - File Name and Size"
 msgstr ""
 
-#: ../../preinstall.rst:766
+#: ../../preinstall.rst:773
 msgid "New Virtual Machine \"test\""
 msgstr ""
 
-#: ../../preinstall.rst:781
+#: ../../preinstall.rst:788
 msgid "VirtualBox Bridged Adapter Configuration"
 msgstr ""
 
-#: ../../preinstall.rst:792
+#: ../../preinstall.rst:799
 msgid "Virtual Machine Storage Settings"
 msgstr ""
 
-#: ../../preinstall.rst:806
+#: ../../preinstall.rst:813
 msgid ""
 "|trueos| is now ready to be installed into the virtual machine. Highlight "
 "the virtual machine and click on the green :guilabel:`Start` icon. A window "
@@ -1011,28 +984,95 @@ msgid ""
 "described in :ref:`Installing TrueOS`."
 msgstr ""
 
-#: ../../preinstall.rst:205
-msgid ""
-"**Sleep/suspend:** Unfortunately, :wiki:`Advanced Configuration and Power "
-"Interface` (ACPI) is not an exact science, meaning experimentation with "
-"various :command:`sysctl` variables may be required to achieve successful "
-"sleep and suspend states on your particular laptop model. If the laptop is a"
-" ThinkPad, `ThinkWiki <http://www.thinkwiki.org/wiki/ThinkWiki>`_ is an "
-"excellent resource. For other types of laptops, try reading the *SYSCTL "
-"VARIABLES* section of :command:`man 4 acpi` and check to see if there is an "
-"ACPI man page specific to the laptop's vendor by typing :command:`apropos "
-"acpi.` The `Tuning with sysctl(8) "
-"<https://www.freebsd.org/doc/en/books/handbook/configtuning-sysctl.html>`_ "
-"section of the FreeBSD Handbook demonstrates how to determine the current "
-":command:`sysctl` values, modify a value, and make a modified value persist "
-"after a reboot."
-msgstr ""
-
-#: ../../preinstall.rst:480
+#: ../../preinstall.rst:487
 msgid ""
 "`Disk Burner <https://support.microsoft.com/en-us/help/15088/windows-create-"
 "installation-media>`_"
 msgstr ""
+
+#: ../../preinstall.rst:205
+msgid ""
+"**Sleep/suspend:** Unfortunately, :wiki:`Advanced Configuration and Power "
+"Interface <Advanced_Configuration_and_Power_Interface>` (ACPI) is not an "
+"exact science, meaning experimentation with various :command:`sysctl` "
+"variables may be required to achieve successful sleep and suspend states on "
+"your particular laptop model. If the laptop is a ThinkPad, `ThinkWiki "
+"<http://www.thinkwiki.org/wiki/ThinkWiki>`_ is an excellent resource. For "
+"other types of laptops, try reading the *SYSCTL VARIABLES* section of "
+":command:`man 4 acpi` and check to see if there is an ACPI man page specific"
+" to the laptop's vendor by typing :command:`apropos acpi.` The `Tuning with "
+"sysctl(8) <https://www.freebsd.org/doc/en/books/handbook/configtuning-"
+"sysctl.html>`_ section of the FreeBSD Handbook demonstrates how to determine"
+" the current :command:`sysctl` values, modify a value, and make a modified "
+"value persist after a reboot."
+msgstr ""
+
+#: ../../preinstall.rst:411
+msgid ""
+"Only one of the checksums needs to be verified. The `TrueOS website "
+"<http://download.trueos.org/master/amd64/>`_ lists *.MD5*, *SHA256*, and "
+"*.SIG* files. The `TrueOS website "
+"<http://download.trueos.org/master/amd64/>`_ has all file types while the "
+"`PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists both the :file:`.md5` and "
+"the :file:`.sha256` checksum files."
+msgstr ""
+
+#: ../../preinstall.rst:437
+msgid ""
+"On Linux and BSD systems, use the built-in :command:`md5` or "
+":command:`md5sum` command line tool to display the MD5 checksum. In this "
+"example, the user types :command:`md5` to view the sum of a :file:`.img` "
+"file located in the :file:`Downloads` directory. Then, using the built-in "
+":command:`cat` command line tool, the user compares the sum to the contents "
+"of the related :file:`.md5` file:"
+msgstr ""
+
+#: ../../preinstall.rst:452
+msgid ""
+"To use the *OpenPGP* :file:`.sig` file, use your preferred utility to verify"
+" the signature. The `OpenPGP website <http://openpgp.org/>`_ has numerous "
+"recommendations for verification utilities."
+msgstr ""
+
+#~ msgid ""
+#~ "Only one of the checksums needs to be verified. The `TrueOS website "
+#~ "<http://download.trueos.org/master/amd64/>`_ lists *.MD5*, *SHA256*, and "
+#~ "*.SIG* files. The `TrueOS website "
+#~ "<http://download.trueos.org/master/amd64/>`_ has all file types while the "
+#~ "`PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists both the :file:`.md5` and "
+#~ "the :file:`.sha256` checksum files. This section demonstrates how to verify "
+#~ "an SHA256 checksum."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On Linux and BSD systems, use the built-in :command:`md5` or "
+#~ ":command:`md5sum` command line tool to check the MD5 checksum. In this "
+#~ "example, the file is located in the :file:`Downloads` directory. Using "
+#~ ":samp:`md5 Downloads/TrueOS-2017-04-21-x64-DVD.iso.md5`, substitute the name"
+#~ " and location of the downloaded file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you prefer using the **OpenPGP** *.sig* file, use your preferred utility "
+#~ "to verify the signature. The `OpenPGP website <http://openpgp.org/>`_ has "
+#~ "numerous recommendations for verification utilities."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Sleep/suspend:** Unfortunately, :wiki:`Advanced Configuration and Power "
+#~ "Interface` (ACPI) is not an exact science, meaning experimentation with "
+#~ "various :command:`sysctl` variables may be required to achieve successful "
+#~ "sleep and suspend states on your particular laptop model. If the laptop is a"
+#~ " ThinkPad, `ThinkWiki <http://www.thinkwiki.org/wiki/ThinkWiki>`_ is an "
+#~ "excellent resource. For other types of laptops, try reading the *SYSCTL "
+#~ "VARIABLES* section of :command:`man 4 acpi` and check to see if there is an "
+#~ "ACPI man page specific to the laptop's vendor by typing :command:`apropos "
+#~ "acpi.` The `Tuning with sysctl(8) "
+#~ "<https://www.freebsd.org/doc/en/books/handbook/configtuning-sysctl.html>`_ "
+#~ "section of the FreeBSD Handbook demonstrates how to determine the current "
+#~ ":command:`sysctl` values, modify a value, and make a modified value persist "
+#~ "after a reboot."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "`Disk Burner <http://windows.microsoft.com/en-US/windows7/Burn-a-CD-or-DVD-"

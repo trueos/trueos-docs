@@ -232,67 +232,67 @@ msgstr ""
 msgid "There are two ways to configure an Ethernet interface:"
 msgstr ""
 
-#: ../../using.rst:822
+#: ../../using.rst:823
 msgid "Wireless Adapters"
 msgstr ""
 
-#: ../../using.rst:971
+#: ../../using.rst:972
 msgid "Network Configuration (Advanced)"
 msgstr ""
 
-#: ../../using.rst:1042
+#: ../../using.rst:1043
 msgid "Proxy Settings"
 msgstr ""
 
-#: ../../using.rst:1088
+#: ../../using.rst:1089
 msgid "Configuring a Wireless Access Point"
 msgstr ""
 
-#: ../../using.rst:1148
+#: ../../using.rst:1149
 msgid "Tor Mode"
 msgstr ""
 
-#: ../../using.rst:1187
+#: ../../using.rst:1188
 msgid "Windows Emulation"
 msgstr ""
 
-#: ../../using.rst:1263
+#: ../../using.rst:1264
 msgid "Security"
 msgstr ""
 
-#: ../../using.rst:1351
+#: ../../using.rst:1353
 msgid ""
 "`Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_"
 msgstr ""
 
-#: ../../using.rst:1357
+#: ../../using.rst:1359
 msgid "Printing and Scanning"
 msgstr ""
 
-#: ../../using.rst:1375
+#: ../../using.rst:1377
 msgid "Researching your Printer"
 msgstr ""
 
-#: ../../using.rst:1395
+#: ../../using.rst:1397
 msgid "Adding a Printer"
 msgstr ""
 
-#: ../../using.rst:1489
+#: ../../using.rst:1491
 msgid "Manually Adding a Driver"
 msgstr ""
 
-#: ../../using.rst:1527
+#: ../../using.rst:1529
 msgid ""
 "After inputting the connection information, continue to add the printer and "
 "test the connection by printing a test page as described in :ref:`Adding a "
 "Printer`."
 msgstr ""
 
-#: ../../using.rst:1545
+#: ../../using.rst:1547
 msgid "Scanning"
 msgstr ""
 
-#: ../../using.rst:1574
+#: ../../using.rst:1576
 msgid ""
 "The `XSane documentation <http://www.xsane.org/doc/sane-xsane-doc.html>`_ "
 "contains details on how to perform common tasks such as saving an image to a"
@@ -428,20 +428,20 @@ msgid ""
 " the correct value. If not, change it again."
 msgstr ""
 
-#: ../../using.rst:801
+#: ../../using.rst:802
 msgid ""
 "The :guilabel:`Info` tab, seen in :numref:`Figure %s <network5>`, displays "
 "the current network address settings and some traffic statistics."
 msgstr ""
 
-#: ../../using.rst:812
+#: ../../using.rst:813
 msgid ""
 "If any changes are made within any of the tabs, click :guilabel:`Apply` to "
 "activate them. Click :guilabel:`OK` when finished to return to the main "
 "Network Manager window."
 msgstr ""
 
-#: ../../using.rst:824
+#: ../../using.rst:825
 msgid ""
 "If the wireless interface does not automatically associate with a wireless "
 "network, the wireless profile containing the security settings required by "
@@ -453,13 +453,13 @@ msgid ""
 ":guilabel:`Configured Network Profiles` section."
 msgstr ""
 
-#: ../../using.rst:848
+#: ../../using.rst:849
 msgid ""
 "If the network is hidden, click :guilabel:`+Add Hidden`, input the name of "
 "the network in the pop-up window, and click :guilabel:`OK`."
 msgstr ""
 
-#: ../../using.rst:861
+#: ../../using.rst:862
 msgid ""
 "|trueos| supports the types of authentication shown in :numref:`Figure %s "
 "<network7>`. Access this screen and change authentication settings by "
@@ -467,18 +467,18 @@ msgid ""
 " and clicking :guilabel:`Edit`."
 msgstr ""
 
-#: ../../using.rst:874
+#: ../../using.rst:875
 msgid ""
 "This screen provides configuration of different types of wireless security:"
 msgstr ""
 
-#: ../../using.rst:877
+#: ../../using.rst:878
 msgid ""
 "**Disabled:** If the network is open, no additional configuration is "
 "required."
 msgstr ""
 
-#: ../../using.rst:898
+#: ../../using.rst:899
 msgid ""
 "**WPA Personal:** This type of network uses a plaintext key. If you click "
 ":guilabel:`WPA Personal` then :guilabel:`Configure`, the screen shown in "
@@ -487,46 +487,46 @@ msgid ""
 "match."
 msgstr ""
 
-#: ../../using.rst:925
+#: ../../using.rst:926
 msgid ""
 "If unsure which type of encryption is being used, ask the person who setup "
 "the wireless router. They should also be able to provide the value of any "
 "settings seen in these configuration screens."
 msgstr ""
 
-#: ../../using.rst:935
+#: ../../using.rst:936
 msgid ""
 "The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network11>`, "
 "allows configuring several options:"
 msgstr ""
 
-#: ../../using.rst:938
+#: ../../using.rst:939
 msgid ""
 "**Custom MAC address:** This setting is for advanced users and requires "
 ":guilabel:`Use hardware default MAC address` to be unchecked."
 msgstr ""
 
-#: ../../using.rst:941
+#: ../../using.rst:942
 msgid ""
 "**Interface receiving IP address information:** If the network contains a "
 "DHCP server, check :guilabel:`Obtain IP automatically (DHCP)`. Otherwise, "
 "input the IP address and subnet mask to use on the network."
 msgstr ""
 
-#: ../../using.rst:946
+#: ../../using.rst:947
 msgid ""
 "**Country code:** This setting is not required if in North America. For "
 "other countries, check :guilabel:`Set Country Code` and select your country "
 "from the drop-down menu."
 msgstr ""
 
-#: ../../using.rst:957
+#: ../../using.rst:958
 msgid ""
 "The :guilabel:`Info` tab, seen in :numref:`Figure %s <network12>`, shows the"
 " current network status and statistics for the wireless interface."
 msgstr ""
 
-#: ../../using.rst:986
+#: ../../using.rst:987
 msgid ""
 "If the interface receives its IP address information from a DHCP server, "
 "this screen allows viewing of the received DNS information. To override the "
@@ -534,102 +534,102 @@ msgid ""
 "DNS`. You can then set:"
 msgstr ""
 
-#: ../../using.rst:991
+#: ../../using.rst:992
 msgid ""
 "**DNS 1:** The IP address of the primary DNS server. If unsure which IP "
 "address to use, click :guilabel:`Public servers` to select a public DNS "
 "server."
 msgstr ""
 
-#: ../../using.rst:995
+#: ../../using.rst:996
 msgid "**DNS 2:** The IP address of the secondary DNS server."
 msgstr ""
 
-#: ../../using.rst:997
+#: ../../using.rst:998
 msgid "**Search Domain:** The name of the domain served by the DNS server."
 msgstr ""
 
-#: ../../using.rst:1003
+#: ../../using.rst:1004
 msgid "Several settings can be modified in the IPv6 section:"
 msgstr ""
 
-#: ../../using.rst:1005
+#: ../../using.rst:1006
 msgid ""
 "**Enable IPv6 support:** If this box is checked, the specified interface can"
 " participate in IPv6 networks."
 msgstr ""
 
-#: ../../using.rst:1008
+#: ../../using.rst:1009
 msgid ""
 "**IPv6 gateway:** The IPv6 address of the default gateway used on the IPv6 "
 "network."
 msgstr ""
 
-#: ../../using.rst:1011
+#: ../../using.rst:1012
 msgid ""
 "**IPv6 DNS 1:** The IPv6 address of the primary DNS server used on the IPv6 "
 "network. If unsure which IP address to use, click :guilabel:`Public servers`"
 " to select a public DNS server."
 msgstr ""
 
-#: ../../using.rst:1015
+#: ../../using.rst:1016
 msgid ""
 "**IPv6 DNS 2:** The IPv6 address of the secondary DNS server used on the "
 "IPv6 network."
 msgstr ""
 
-#: ../../using.rst:1018
+#: ../../using.rst:1019
 msgid "The :guilabel:`Misc` section has more options to configure:"
 msgstr ""
 
-#: ../../using.rst:1020
+#: ../../using.rst:1021
 msgid ""
 "**System Hostname:** The name of your computer. It must be unique on your "
 "network."
 msgstr ""
 
-#: ../../using.rst:1023
+#: ../../using.rst:1024
 msgid "**Domain Name:** If the system is in a domain, specify it here."
 msgstr ""
 
-#: ../../using.rst:1025
+#: ../../using.rst:1026
 msgid ""
 "**Enable wireless/wired failover via lagg0 interface:** This interface "
 "allows seamless switching between using an Ethernet interface and a wireless"
 " interface. Check the box to enable this functionality."
 msgstr ""
 
-#: ../../using.rst:1030
+#: ../../using.rst:1031
 msgid ""
 "Some users experience problems using lagg. If you have problems connecting "
 "to a network using an interface which previously worked, uncheck this box "
 "and remove any references to :command:`lagg` from :file:`/etc/rc.conf`."
 msgstr ""
 
-#: ../../using.rst:1044
+#: ../../using.rst:1045
 msgid ""
 "The :guilabel:`Proxy` tab, shown in :numref:`Figure %s <network14>`, is used"
 " when the network requires going through a proxy server to access the "
 "Internet."
 msgstr ""
 
-#: ../../using.rst:1055
+#: ../../using.rst:1056
 msgid ""
 "Check :guilabel:`Proxy Configuration` to activate the settings. Some "
 "settings can be configured in this screen:"
 msgstr ""
 
-#: ../../using.rst:1058
+#: ../../using.rst:1059
 msgid ""
 "**Server Address:** Enter the IP address or hostname of the proxy server."
 msgstr ""
 
-#: ../../using.rst:1061
+#: ../../using.rst:1062
 msgid ""
 "**Port Number:** Enter the port number used to connect to the proxy server."
 msgstr ""
 
-#: ../../using.rst:1064
+#: ../../using.rst:1065
 msgid ""
 "**Proxy Type:** Choices are **Basic** (sends the username and password "
 "unencrypted to the server) and **Digest** (never transfers the actual "
@@ -638,76 +638,76 @@ msgid ""
 "it."
 msgstr ""
 
-#: ../../using.rst:1070
+#: ../../using.rst:1071
 msgid ""
 "**Specify a Username/Password:** Check this box and input the username and "
 "password if they are required to connect to the proxy server."
 msgstr ""
 
-#: ../../using.rst:1090
+#: ../../using.rst:1091
 msgid ""
 "Right-click the entry for a wireless device, as seen in :numref:`Figure %s "
 "<network15>`, and choose :guilabel:`Setup Access Point`."
 msgstr ""
 
-#: ../../using.rst:1101
+#: ../../using.rst:1102
 msgid ""
 ":numref:`Figure %s <network16>` shows the configuration screen if "
 ":guilabel:`Setup Access Point` is selected."
 msgstr ""
 
-#: ../../using.rst:1111
+#: ../../using.rst:1112
 msgid "The :guilabel:`Basic Setup` tab of this screen contains two options:"
 msgstr ""
 
-#: ../../using.rst:1113
+#: ../../using.rst:1114
 msgid ""
 "**Visible Name:** This is the name appearing when users scan for available "
 "access points."
 msgstr ""
 
-#: ../../using.rst:1116
+#: ../../using.rst:1117
 msgid ""
 "**Set Password:** Setting a WPA password is optional, though recommended to "
 "only allow authorized devices to use the access point. If used, the password"
 " must be a minimum of 8 characters."
 msgstr ""
 
-#: ../../using.rst:1120
+#: ../../using.rst:1121
 msgid ""
 ":numref:`Figure %s <network17>` shows the :guilabel:`Advanced Configuration "
 "(optional)` screen."
 msgstr ""
 
-#: ../../using.rst:1130
+#: ../../using.rst:1131
 msgid ""
 "The settings in this screen are optional and allow for fine-tuning the "
 "access point's configuration:"
 msgstr ""
 
-#: ../../using.rst:1133
+#: ../../using.rst:1134
 msgid "**Base IP:** The IP address of the access point."
 msgstr ""
 
-#: ../../using.rst:1135
+#: ../../using.rst:1136
 msgid "**Netmask:** The associated subnet mask for the access point."
 msgstr ""
 
-#: ../../using.rst:1137
+#: ../../using.rst:1138
 msgid ""
 "**Mode:** Available modes are **11g** (for 802.11g), **11ng** (for 802.11n "
 "on the 2.4-GHz band), or **11n** (for 802.11n)."
 msgstr ""
 
-#: ../../using.rst:1140
+#: ../../using.rst:1141
 msgid "**Channel:** Select the channel to use."
 msgstr ""
 
-#: ../../using.rst:1142
+#: ../../using.rst:1143
 msgid "**Country Code:** The two letter country code of operation."
 msgstr ""
 
-#: ../../using.rst:1189
+#: ../../using.rst:1190
 msgid ""
 "`Wine <https://wiki.winehq.org/Main_Page>`_ is an application which allows "
 "the creation of a Windows environment for installing Windows software. This "
@@ -715,50 +715,50 @@ msgid ""
 "not yet been ported to Linux or BSD."
 msgstr ""
 
-#: ../../using.rst:1206
+#: ../../using.rst:1207
 msgid ""
 "The initial Wine configuration menu is shown in :numref:`Figure %s <wine1>`."
 msgstr ""
 
-#: ../../using.rst:1230
+#: ../../using.rst:1231
 msgid ""
 "To install the application, type :command:`winefile` to see the screen shown"
 " in :numref:`Figure %s <wine2>`."
 msgstr ""
 
-#: ../../using.rst:1248
+#: ../../using.rst:1249
 msgid ""
 "Once the installation is complete, browse to the application's location. "
 ":numref:`Figure %s <wine3>` shows an example of running Internet Explorer "
 "within :command:`winefile`."
 msgstr ""
 
-#: ../../using.rst:1270
+#: ../../using.rst:1271
 msgid "The security features built into |trueos| include:"
 msgstr ""
 
-#: ../../using.rst:1286
+#: ../../using.rst:1287
 msgid ""
 "**Built-in firewall:** The default firewall ruleset allows accessing the "
 "Internet and the shares available on your network, but does not allow any "
 "inbound connections to your computer."
 msgstr ""
 
-#: ../../using.rst:1329
+#: ../../using.rst:1331
 msgid ""
 "The |trueos| operating system and its available software packages are built "
 "with `LibreSSL <http://www.libressl.org/>`_, which has fewer vulnerabilities"
 " than OpenSSL."
 msgstr ""
 
-#: ../../using.rst:1342
+#: ../../using.rst:1344
 msgid ""
 "To learn more about security on FreeBSD and |trueos| systems, :command:`man "
 "security` is a good place to start. These resources provide more information"
 " about security on FreeBSD-based operating systems:"
 msgstr ""
 
-#: ../../using.rst:1434
+#: ../../using.rst:1436
 msgid ""
 "This screen automatically fills out the printer model series, a description,"
 " and the type of connection. If desired, add a descriptive "
@@ -766,14 +766,14 @@ msgid ""
 ":guilabel:`Sharing`."
 msgstr ""
 
-#: ../../using.rst:1491
+#: ../../using.rst:1493
 msgid ""
 "If the print configuration fails, double-check the printer is supported as "
 "described in :ref:`Researching your Printer` and HPLIP is installed if it is"
 " a HP printer. Also check the printer is plugged in and powered on."
 msgstr ""
 
-#: ../../using.rst:1507
+#: ../../using.rst:1509
 msgid ""
 "**IPP:** Select this option if connecting to a printer cabled to another "
 "computer (typically running a Microsoft operating system) sharing the "
@@ -782,14 +782,14 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../using.rst:1523
+#: ../../using.rst:1525
 msgid ""
 "**LPD/LPR:** Select this option if connecting to a printer which is cabled "
 "to a Unix computer using LPD to share the printer. Input the hostname and "
 "queue name of the Unix system."
 msgstr ""
 
-#: ../../using.rst:1580
+#: ../../using.rst:1582
 msgid ""
 "By default, XSane uses the default browser when clicking :kbd:`F1` to access"
 " its built-in documentation. Configuring the default browser varies by "
@@ -797,7 +797,7 @@ msgid ""
 "browser setting."
 msgstr ""
 
-#: ../../using.rst:1564
+#: ../../using.rst:1566
 msgid ""
 ":numref:`Figure %s <sane1>` shows the XSane interface running on a |trueos| "
 "system attached to an HP DeskJet Printer/Scanner."
@@ -986,13 +986,13 @@ msgstr ""
 msgid "In the left frame, click :menuselection:`Network --> Windows Network`"
 msgstr ""
 
-#: ../../using.rst:1454
+#: ../../using.rst:1456
 msgid ""
 "The next screen, shown in :numref:`Figure %s <print8>`, can be used to "
 "modify the properties of the printer."
 msgstr ""
 
-#: ../../using.rst:1496
+#: ../../using.rst:1498
 msgid ""
 "If the wizard is unable to even detect the device, try to manually add the "
 "information for the print device. In the :guilabel:`Select Device` screen "
@@ -1001,7 +1001,7 @@ msgid ""
 "connection:"
 msgstr ""
 
-#: ../../using.rst:1531
+#: ../../using.rst:1533
 msgid ""
 "If the default driver is not working, try re-adding the printer. At the "
 ":ref:`print7` screen, try selecting a different driver."
@@ -1076,7 +1076,7 @@ msgid ""
 " in its :guilabel:`Screenshot` column."
 msgstr ""
 
-#: ../../using.rst:1294
+#: ../../using.rst:1295
 msgid ""
 "**SSH is disabled by default:** SSH can only be enabled by the superuser. "
 "This setting prevents bots and other users from trying to access your "
@@ -1087,7 +1087,7 @@ msgid ""
 "manager>`_ to allow SSH connections over TCP port 22."
 msgstr ""
 
-#: ../../using.rst:1308
+#: ../../using.rst:1309
 msgid ""
 "**sudo is installed:** It is configured to allow users in the *wheel* group "
 "permission to run an administrative command after typing their password. By "
@@ -1098,14 +1098,14 @@ msgid ""
 "using :command:`visudo` as the superuser."
 msgstr ""
 
-#: ../../using.rst:1333
+#: ../../using.rst:1335
 msgid ""
 "`PersonaCrypt "
 "<https://sysadm.us/handbook/client/sysadmclient.html#personacrypt>`_ allows "
 "a user to use a removable, encrypted device as their home directory."
 msgstr ""
 
-#: ../../using.rst:1560
+#: ../../using.rst:1562
 msgid ""
 "If the scanner is part of an HP All-in-One device, make sure the \"hplip\" "
 "package is installed. Use |appcafe| to see if the driver is installed, and "
@@ -1705,23 +1705,23 @@ msgid ""
 "network. The interface remains inactive until this checkbox is unchecked."
 msgstr ""
 
-#: ../../using.rst:799
+#: ../../using.rst:800
 msgid "Ethernet Interface Network Settings - Advanced"
 msgstr ""
 
-#: ../../using.rst:810
+#: ../../using.rst:811
 msgid "Ethernet Interface Network Settings - Info"
 msgstr ""
 
-#: ../../using.rst:816
+#: ../../using.rst:817
 msgid "Repeat this procedure for each desired network interface."
 msgstr ""
 
-#: ../../using.rst:838
+#: ../../using.rst:839
 msgid "Wireless Configuration"
 msgstr ""
 
-#: ../../using.rst:840
+#: ../../using.rst:841
 msgid ""
 "To associate with a wireless network, click :guilabel:`Scan` to view a list "
 "of connectable wireless networks. Highlight the desired network to associate"
@@ -1732,7 +1732,7 @@ msgid ""
 "Network Profiles` section."
 msgstr ""
 
-#: ../../using.rst:851
+#: ../../using.rst:852
 msgid ""
 "If multiple networks are added, use the arrow keys to place them in the "
 "desired connection order. |trueos| attempts to connect to networks in order "
@@ -1744,11 +1744,11 @@ msgid ""
 "read the Troubleshooting section on :ref:`Network Help`."
 msgstr ""
 
-#: ../../using.rst:872
+#: ../../using.rst:873
 msgid "Configuring Wireless Authentication Settings"
 msgstr ""
 
-#: ../../using.rst:880
+#: ../../using.rst:881
 msgid ""
 "**WEP:** This type of network can be configured to use either a hex or a "
 "plaintext key and Network Manager will automatically select the type of "
@@ -1761,15 +1761,15 @@ msgid ""
 ":guilabel:`key index` indicates which desired key to use."
 msgstr ""
 
-#: ../../using.rst:896
+#: ../../using.rst:897
 msgid "WEP Security Settings"
 msgstr ""
 
-#: ../../using.rst:909
+#: ../../using.rst:910
 msgid "WPA Personal Security Settings"
 msgstr ""
 
-#: ../../using.rst:911
+#: ../../using.rst:912
 msgid ""
 "**WPA Enterprise:** If you click :guilabel:`WPA Enterprise` then "
 ":guilabel:`Configure`, the screen shown in :numref:`Figure %s <network10>` "
@@ -1778,11 +1778,11 @@ msgid ""
 "file, and input and verify the password."
 msgstr ""
 
-#: ../../using.rst:923
+#: ../../using.rst:924
 msgid "WPA Enterprise Security Settings"
 msgstr ""
 
-#: ../../using.rst:930
+#: ../../using.rst:931
 msgid ""
 "To disable this wireless interface, check :guilabel:`Disable this wireless "
 "device` in the :guilabel:`General` tab for the device. This setting is "
@@ -1790,15 +1790,15 @@ msgid ""
 "to untrusted wireless networks."
 msgstr ""
 
-#: ../../using.rst:955
+#: ../../using.rst:956
 msgid "Wireless Interface - Advanced"
 msgstr ""
 
-#: ../../using.rst:965
+#: ../../using.rst:966
 msgid "Wireless Interface - Info"
 msgstr ""
 
-#: ../../using.rst:973
+#: ../../using.rst:974
 msgid ""
 "The :guilabel:`Network Configuration (Advanced)` tab of the Network Manager "
 "is seen in :numref:`Figure %s <network13>`. The displayed information is for"
@@ -1806,59 +1806,59 @@ msgid ""
 "interface to configure is highlighted in the :guilabel:`Devices` tab."
 msgstr ""
 
-#: ../../using.rst:984
+#: ../../using.rst:985
 msgid "Network Configuration - Advanced"
 msgstr ""
 
-#: ../../using.rst:999
+#: ../../using.rst:1000
 msgid ""
 "To change or set the default gateway, check :guilabel:`Enable Custom "
 "Gateway` box and input the IP address of the desired gateway."
 msgstr ""
 
-#: ../../using.rst:1035
+#: ../../using.rst:1036
 msgid ""
 "If any changes are made within this window, click :guilabel:`Apply` to save "
 "them."
 msgstr ""
 
-#: ../../using.rst:1053
+#: ../../using.rst:1054
 msgid "Proxy Settings Configuration"
 msgstr ""
 
-#: ../../using.rst:1073
+#: ../../using.rst:1074
 msgid ""
 "Proxy settings are saved to the :file:`/etc/profile` and "
 ":file:`/etc/csh.cshrc` files so they are available to both the |trueos| "
 "utilities and any application using :command:`fetch`."
 msgstr ""
 
-#: ../../using.rst:1077
+#: ../../using.rst:1078
 msgid ""
 "Applications not packaged with the operating system, such as web browsers, "
 "may require configuring proxy support using that application's configuration"
 " utility."
 msgstr ""
 
-#: ../../using.rst:1081
+#: ../../using.rst:1082
 msgid ""
 "If you apply any changes to this tab, a pop-up message warns the user may "
 "have to log out and back in for the proxy settings to take effect."
 msgstr ""
 
-#: ../../using.rst:1099
+#: ../../using.rst:1100
 msgid "Setup Access Point"
 msgstr ""
 
-#: ../../using.rst:1109
+#: ../../using.rst:1110
 msgid "Access Point Basic Setup"
 msgstr ""
 
-#: ../../using.rst:1128
+#: ../../using.rst:1129
 msgid "Access Point Advanced Setup"
 msgstr ""
 
-#: ../../using.rst:1150
+#: ../../using.rst:1151
 msgid ""
 "Tor mode uses `Tor <https://www.torproject.org/>`_, `socat <http://www.dest-"
 "unreach.org/socat/>`_, and a built-in script which automatically creates the"
@@ -1868,7 +1868,7 @@ msgid ""
 "network."
 msgstr ""
 
-#: ../../using.rst:1157
+#: ../../using.rst:1158
 msgid ""
 "To start Tor mode, right-click the network icon in the system tray and check"
 " :guilabel:`Route through TOR`. Enter your password via the pop-up shown in "
@@ -1876,37 +1876,37 @@ msgid ""
 "browser window directed to https://check.torproject.org"
 msgstr ""
 
-#: ../../using.rst:1167
+#: ../../using.rst:1168
 msgid "Enabling Tor Mode"
 msgstr ""
 
-#: ../../using.rst:1169
+#: ../../using.rst:1170
 msgid ""
 "If you have never used the Tor network before, it is recommended to review "
 "the `Tor FAQ <https://www.torproject.org/docs/faq.html.en>`_."
 msgstr ""
 
-#: ../../using.rst:1172
+#: ../../using.rst:1173
 msgid ""
 "The system remains in Tor mode until manually disabled. To disable Tor mode,"
 " right-click the network icon and uncheck :guilabel:`Route through Tor`."
 msgstr ""
 
-#: ../../using.rst:1176
+#: ../../using.rst:1177
 msgid ""
 "To enable and disable Tor mode from the command line or on a desktop with no"
 " system tray, use these commands:"
 msgstr ""
 
-#: ../../using.rst:1179
+#: ../../using.rst:1180
 msgid ":samp:`sudo enable-tor-mode` enables tor mode."
 msgstr ""
 
-#: ../../using.rst:1181
+#: ../../using.rst:1182
 msgid ":samp:`sudo disable-tor-mode` disables tor mode."
 msgstr ""
 
-#: ../../using.rst:1201
+#: ../../using.rst:1202
 msgid ""
 "Wine can be installed using |appcafe|. After installing, it can be started "
 "by typing :command:`winecfg` in the command line. The first time running "
@@ -1914,11 +1914,11 @@ msgid ""
 "prompted, click :guilabel:`Install` in the pop-up menu."
 msgstr ""
 
-#: ../../using.rst:1214
+#: ../../using.rst:1215
 msgid "Wine Configuration Menu"
 msgstr ""
 
-#: ../../using.rst:1216
+#: ../../using.rst:1217
 msgid ""
 "Click :guilabel:`Add application` to browse to the application's installer "
 "file. By default, the contents of the hard drive will be listed under "
@@ -1930,18 +1930,18 @@ msgid ""
 " the superuser."
 msgstr ""
 
-#: ../../using.rst:1226
+#: ../../using.rst:1227
 msgid ""
 "The system then accesses the media and you can now select the installer "
 "file. Once selected, click :guilabel:`Apply` then :guilabel:`OK` to exit the"
 " configuration utility."
 msgstr ""
 
-#: ../../using.rst:1238
+#: ../../using.rst:1239
 msgid "Installing the Application Using :command:`winefile`"
 msgstr ""
 
-#: ../../using.rst:1240
+#: ../../using.rst:1241
 msgid ""
 "Click the button representing the drive which contains the installer and "
 "double-click on the installation file (e.g. :file:`setup.exe`). The "
@@ -1949,17 +1949,17 @@ msgid ""
 "system."
 msgstr ""
 
-#: ../../using.rst:1245
+#: ../../using.rst:1246
 msgid ""
 "You may need need to unmount a CD/DVD before it ejects. As the superuser, "
 "type :samp:`umount /mnt`."
 msgstr ""
 
-#: ../../using.rst:1257
+#: ../../using.rst:1258
 msgid "Running the Installed Application"
 msgstr ""
 
-#: ../../using.rst:1265
+#: ../../using.rst:1266
 msgid ""
 "Your |trueos| system is secure by default. This section provides an overview"
 " of the built-in security features. If you want to know more about "
@@ -1967,7 +1967,7 @@ msgid ""
 "resources are also provided in this section."
 msgstr ""
 
-#: ../../using.rst:1272
+#: ../../using.rst:1273
 msgid ""
 "**Naturally immune to viruses and other malware:** Most viruses are written "
 "to exploit Windows systems and do not understand the binaries or paths found"
@@ -1976,7 +1976,7 @@ msgid ""
 "attachments to users running other operating systems."
 msgstr ""
 
-#: ../../using.rst:1279
+#: ../../using.rst:1280
 msgid ""
 "**Potential for serious damage is limited:** File and directory ownership "
 "and permissions along with separate user and group functions mean, as an "
@@ -1986,13 +1986,13 @@ msgid ""
 "not been set for universal access."
 msgstr ""
 
-#: ../../using.rst:1290
+#: ../../using.rst:1291
 msgid ""
 "**Very few services are enabled by default:** View which services are "
 "started at boot time by reading through the output of :command:`rc-update`."
 msgstr ""
 
-#: ../../using.rst:1303
+#: ../../using.rst:1304
 msgid ""
 "**SSH root logins are disabled by default:** If SSH is enabled, login as a "
 "regular user and use :command:`su` or :command:`sudo` when administrative "
@@ -2000,14 +2000,14 @@ msgid ""
 " user from having complete access to the system."
 msgstr ""
 
-#: ../../using.rst:1337
+#: ../../using.rst:1339
 msgid ""
 ":ref:`Tor Mode` can be used to anonymously access Internet sites as it "
 "automatically forwards all Internet traffic through the `Tor Project's "
 "<https://www.torproject.org/>`_ transparent proxy service."
 msgstr ""
 
-#: ../../using.rst:1362
+#: ../../using.rst:1364
 msgid ""
 "CUPS provides an easy-to-use utility for adding and managing printers. "
 "Whether or not it automatically detects a printer depends upon how well the "
@@ -2018,7 +2018,7 @@ msgid ""
 " for ideas on locating correct drivers for your printer."
 msgstr ""
 
-#: ../../using.rst:1377
+#: ../../using.rst:1379
 msgid ""
 "Before configuring your printer, see if a driver already exists for your "
 "particular model, and if so, which driver is recommended. If you are "
@@ -2030,7 +2030,7 @@ msgid ""
 "see the results."
 msgstr ""
 
-#: ../../using.rst:1386
+#: ../../using.rst:1388
 msgid ""
 "For the HP DeskJet model example, the HPLIP driver is recommended. In "
 "|trueos|, the HPLIP driver is available as an optional package called "
@@ -2038,7 +2038,7 @@ msgid ""
 "if not."
 msgstr ""
 
-#: ../../using.rst:1397
+#: ../../using.rst:1399
 msgid ""
 "Once printer support is determined, ensure the printer is plugged into your "
 "computer or, if the printer is a network printer, both your computer and the"
@@ -2047,22 +2047,22 @@ msgid ""
 "configuration, shown in :numref:`Figure %s <print4>`."
 msgstr ""
 
-#: ../../using.rst:1408
+#: ../../using.rst:1410
 msgid "Printer Configuration"
 msgstr ""
 
-#: ../../using.rst:1410
+#: ../../using.rst:1412
 msgid ""
 "To add a new printer, click :guilabel:`Add Printer`. CUPS will pause for a "
 "few seconds as it searches for available printers. When finished, a screen "
 "similar to :numref:`Figure %s <print5>` is shown."
 msgstr ""
 
-#: ../../using.rst:1419
+#: ../../using.rst:1421
 msgid "Print Device Selection"
 msgstr ""
 
-#: ../../using.rst:1421
+#: ../../using.rst:1423
 msgid ""
 "In this example, the wizard has found the HP DeskJet 3630 printer on both "
 "the USB port (first entry) and the wireless network (second entry). Click "
@@ -2071,11 +2071,11 @@ msgid ""
 "shown in :numref:`Figure %s <print6>` is shown."
 msgstr ""
 
-#: ../../using.rst:1432
+#: ../../using.rst:1434
 msgid "Describe Printer"
 msgstr ""
 
-#: ../../using.rst:1439
+#: ../../using.rst:1441
 msgid ""
 "Once you click :guilabel:`Continue`, the next screen, shown in "
 ":numref:`Figure %s <print7>`, displays a summary of the selected options and"
@@ -2085,15 +2085,15 @@ msgid ""
 "which describes how to use this screen in more detail."
 msgstr ""
 
-#: ../../using.rst:1452
+#: ../../using.rst:1454
 msgid "Viewing the Default Driver"
 msgstr ""
 
-#: ../../using.rst:1462
+#: ../../using.rst:1464
 msgid "Modify Print Properties"
 msgstr ""
 
-#: ../../using.rst:1464
+#: ../../using.rst:1466
 msgid ""
 "It is recommended to take a few minutes to review the settings in the "
 ":guilabel:`General`, :guilabel:`Banners`, and :guilabel:`Policies` tabs, as "
@@ -2105,18 +2105,18 @@ msgid ""
 " in :numref:`Figure %s <print9>`."
 msgstr ""
 
-#: ../../using.rst:1478
+#: ../../using.rst:1480
 msgid "Manage Printer"
 msgstr ""
 
-#: ../../using.rst:1480
+#: ../../using.rst:1482
 msgid ""
 "Print a test page to ensure the printer is working. Verify the printer has "
 "paper and click :menuselection:`Maintenance -> Print Test Page`. If a test "
 "page does not print, refer to the :ref:`Printer Help` of this handbook."
 msgstr ""
 
-#: ../../using.rst:1502
+#: ../../using.rst:1504
 msgid ""
 "**USB:** This entry only appears if a printer is plugged into a USB port and"
 " the number of entries vary depending on the number of USB ports on the "
@@ -2124,14 +2124,14 @@ msgid ""
 "the USB port your printer is plugged into."
 msgstr ""
 
-#: ../../using.rst:1518
+#: ../../using.rst:1520
 msgid ""
 "**AppSocket/HP JetDirect:** Select this option if connecting to an HP "
 "network printer. Input the IP address of the printer. Only change the port "
 "number if the printer is using a port other than the default of *9100*."
 msgstr ""
 
-#: ../../using.rst:1534
+#: ../../using.rst:1536
 msgid ""
 "Alternately, if you have a PPD driver from the manufacturer's website or on "
 "the CD packed in with the printer, click :guilabel:`Choose File` to browse "
@@ -2141,7 +2141,7 @@ msgid ""
 "compressed."
 msgstr ""
 
-#: ../../using.rst:1547
+#: ../../using.rst:1549
 msgid ""
 "While no scanning applications are included with |trueos|, there are a few "
 "options available via |appcafe|. One good option is `XSane "
@@ -2149,7 +2149,7 @@ msgid ""
 "rest of this section describes using *XSane* for scanning."
 msgstr ""
 
-#: ../../using.rst:1552
+#: ../../using.rst:1554
 msgid ""
 "To use your scanner, make sure the device is plugged into the |trueos| "
 "system and click :menuselection:`Browse Applications --> Scanner` or type "
@@ -2159,7 +2159,7 @@ msgid ""
 "of supported scanners <http://www.sane-project.org/sane-backends.html>`_."
 msgstr ""
 
-#: ../../using.rst:1572
+#: ../../using.rst:1574
 msgid "XSane Interface"
 msgstr ""
 
@@ -2214,34 +2214,7 @@ msgstr ""
 msgid "`<https://wiki.lxde.org/en/PCManFM>`_"
 msgstr ""
 
-#: ../../using.rst:787
-msgid ""
-"The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network4>`, allows"
-" advanced users to manually input a :wiki:`MAC address` or :wiki:`IPv6 "
-"address`. Both boxes should remain checked in order to automatically receive"
-" these addresses, unless you are an advanced user with reason to change the "
-"default MAC or IPv6 address and an understanding of how to input an "
-"appropriate replacement address."
-msgstr ""
-
-#: ../../using.rst:1194
-msgid ""
-"Wine is not guaranteed to work with every Windows application. You can "
-"search for desired applications in the :guilabel:`Browse Apps` section of "
-"the `Wine application database <https://appdb.winehq.org/>`_. The `Wine wiki"
-" <https://wiki.winehq.org/>`_ contains resources to get started and "
-"troubleshooting reference material if problems are encountered with a "
-"Windows application."
-msgstr ""
-
-#: ../../using.rst:1316
-msgid ""
-":wiki:`AES instruction set` (AESNI) support is loaded by default for the "
-"Intel Core i5/i7 processors that support this encryption set. This support "
-"speeds up AES encryption and decryption."
-msgstr ""
-
-#: ../../using.rst:1320
+#: ../../using.rst:1322
 msgid ""
 "**Automatic notification of security advisories:** The |sysadm| `Update "
 "Manager <https://sysadm.us/handbook/client/sysadmclient.html#update-"
@@ -2252,29 +2225,80 @@ msgid ""
 "click of a mouse."
 msgstr ""
 
-#: ../../using.rst:1347
+#: ../../using.rst:1349
 msgid "`FreeBSD Security Information <https://www.freebsd.org/security/>`_"
 msgstr ""
 
-#: ../../using.rst:1349
+#: ../../using.rst:1351
 msgid ""
 "`Security Section of FreeBSD Handbook "
 "<https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_"
 msgstr ""
 
-#: ../../using.rst:1359
+#: ../../using.rst:1361
 msgid ""
 "Like many open source operating systems, |trueos| uses the Common Unix "
 "Printing System (`CUPS <https://www.cups.org/>`_) to manage printing."
 msgstr ""
 
-#: ../../using.rst:1513
+#: ../../using.rst:1515
 msgid ""
 "**HTTP:** This option allows you to manually type in the URI to the printer."
 " A list of possible URIs is available on the `CUPS site "
 "<https://www.cups.org/doc/network.html#TABLE1>`_. To use HTTP over an "
 "encrypted connection, select :guilabel:`https` instead."
 msgstr ""
+
+#: ../../using.rst:787
+msgid ""
+"The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network4>`, allows"
+" advanced users to manually input a :wiki:`MAC address <MAC_address>` or "
+":wiki:`IPv6 address <IPv6_address>`. Both boxes should remain checked in "
+"order to automatically receive these addresses, unless you are an advanced "
+"user with reason to change the default MAC or IPv6 address and an "
+"understanding of how to input an appropriate replacement address."
+msgstr ""
+
+#: ../../using.rst:1195
+msgid ""
+"Wine is not guaranteed to work with every Windows application. You can "
+"search for desired applications in the :guilabel:`Browse Apps` section of "
+"the `Wine application database <https://appdb.winehq.org/>`_. The `Wine wiki"
+" <https://wiki.winehq.org/Main_Page>`_ contains resources to get started and"
+" troubleshooting reference material if problems are encountered with a "
+"Windows application."
+msgstr ""
+
+#: ../../using.rst:1317
+msgid ""
+":wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is loaded "
+"by default for the Intel Core i5/i7 processors that support this encryption "
+"set. This support speeds up AES encryption and decryption."
+msgstr ""
+
+#~ msgid ""
+#~ "The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network4>`, allows"
+#~ " advanced users to manually input a :wiki:`MAC address` or :wiki:`IPv6 "
+#~ "address`. Both boxes should remain checked in order to automatically receive"
+#~ " these addresses, unless you are an advanced user with reason to change the "
+#~ "default MAC or IPv6 address and an understanding of how to input an "
+#~ "appropriate replacement address."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Wine is not guaranteed to work with every Windows application. You can "
+#~ "search for desired applications in the :guilabel:`Browse Apps` section of "
+#~ "the `Wine application database <https://appdb.winehq.org/>`_. The `Wine wiki"
+#~ " <https://wiki.winehq.org/>`_ contains resources to get started and "
+#~ "troubleshooting reference material if problems are encountered with a "
+#~ "Windows application."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":wiki:`AES instruction set` (AESNI) support is loaded by default for the "
+#~ "Intel Core i5/i7 processors that support this encryption set. This support "
+#~ "speeds up AES encryption and decryption."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "`Plex Home Theater <https://plex.tv/>`_ is a centralized media playback "
