@@ -641,7 +641,7 @@ about some of the differences between BSD and Linux:
 
 TrueOS and Windows
 ------------------
-   
+
 |trueos| uses several similar, but different elements to their
 counterparts on Windows. :numref:`Table %s <troswinapps>` highlights a
 few of these:

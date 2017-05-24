@@ -785,7 +785,7 @@ To start translating, click a component name. In the screen shown in
 
 .. _translate5:
 
-.. figure:: images/translate5.png  
+.. figure:: images/translate5.png
    :scale: 100%
 
    Translation Languages
@@ -806,7 +806,7 @@ to translate.
    Translation Editor
 
 If assistance is needed with either a translation or the Weblate system,
-ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. 
+ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
 
 .. index:: documentation translation
 .. _Documentation Translation:
@@ -1175,7 +1175,7 @@ class for each type of permission.
  (root application - C++ code):
  QSettings settings("TRUEOS-root", "myapplication");
 
-These resources are also helpful for developers: 
+These resources are also helpful for developers:
 
 * `Qt 5.4 Documentation <http://doc.qt.io/qt-5/index.html>`_
 
@@ -1246,7 +1246,7 @@ from the forums or mailing lists, try searching these websites:
 * `The OpenDirectory <http://dmoztools.net/Computers/Software/Operating_Systems/Unix/BSD/FreeBSD/>`_
 
 * `FreeBSD Search <https://www.freebsd.org/search/index.html>`_
-  (includes mailing list archives, man pages, and web pages) 
+  (includes mailing list archives, man pages, and web pages)
 
 * `FreeBSD News <https://www.freebsdnews.com/>`_
 

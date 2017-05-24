@@ -57,7 +57,7 @@ utilities for various tasks, such as :command:`numlockx` and
   graphical utility for adding or removing monitors from the |lumina|
   session.
 
-* Simple 
+* Simple
   `system controls <https://lumina-desktop.org/handbook/luminaintro.html#initial-settings>`_
   through the system tray for configuring audio volume, screen
   brightness, battery status/notifications, and workspace switching.
@@ -89,7 +89,7 @@ system over a secure connection from any operating system with the
 downloadable packages for other operating systems are available from the
 `SysAdm Website <https://sysadm.us/>`_.
 
-The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_ 
+The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_
 is recommended for new |trueos| users, while the
 `Server <https://sysadm.us/handbook/server/>`_ and
 `API Reference <https://api.sysadm.us/>`_ guides are available for
@@ -1008,7 +1008,7 @@ The :guilabel:`Misc` section has more options to configure:
 
 * **System Hostname:** The name of your computer. It must be unique on
   your network.
-  
+
 * **Domain Name:** If the system is in a domain, specify it here.
 
 * **Enable wireless/wired failover via lagg0 interface:** This

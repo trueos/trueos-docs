@@ -410,7 +410,7 @@ can toggle.
 
 Check :guilabel:`Disable IPV6 (Requires Reboot)` to reconfigure the
 system to only support IPv4 addresses. By default, the system supports
-both IPv4 and IPv6, and IPv6 is preferred over IPv4. 
+both IPv4 and IPv6, and IPv6 is preferred over IPv4.
 
 .. tip:: Altering this setting does not take affect until the next
    system reboot.
@@ -424,7 +424,7 @@ your Intel device requires polling mode enabled. See the
 for more details.
 
 :guilabel:`Enable Realtek Wireless` activates the Realtek wireless
-networking drivers. 
+networking drivers.
 
 If :guilabel:`Enable SSH` is checked, the SSH service both starts
 immediately and is configured to start on system boot. This option also
@@ -702,7 +702,7 @@ in |trueos|.
 
 Service Management in OpenRC
 ----------------------------
-   
+
 .. index:: openrc runlevels
 .. _Runlevels:
 

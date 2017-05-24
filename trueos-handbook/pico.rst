@@ -63,7 +63,7 @@ To create a |trpi| network, several elements are required:
 
 * Adapter or connector for microSD cards to connect to the |pise|
   (Ex. a USB to microSD card reader).
-  
+
 Each thin client will need:
 
 * HDMI monitor. Currently, 1920x1080 is the maximum supported
