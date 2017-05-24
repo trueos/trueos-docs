@@ -31,9 +31,10 @@ extensions = [
     'sphinxcontrib.httpdomain',
     'sphinx.ext.extlinks',
 ]
+
 # -- External Link Shortening
 extlinks = {'wiki': ('https://en.wikipedia.org/wiki/%s',
-                     ' ')}
+            ' ')}
 
 # -- Options for automatic Figure numbering
 numfig = True
