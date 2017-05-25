@@ -832,28 +832,35 @@ restore.
 Dual Booting
 ------------
 
-A |trueos| installation assumes there is an existing GPT or primary
-partition to install into. If the computer has only one disk and
+A |trueos| installation assumes there is an existing *GPT* or primary
+partition for installation. If the computer has only one disk and
 |trueos| is the only operating system, it is fine to accept the default
-partitioning scheme. However, if |trueos| will be sharing space with
-other operating systems, ensure |trueos| is installed into the correct
-partition or an existing operating system may be inadvertently
-overwritten.
+partitioning scheme. However, if |trueos| is to share space with other
+operating systems, ensure |trueos| is installed into the correct
+partition, or an existing operating system may be overwritten.
 
-There are several required elements to install multiple operating
-systems on the computer:
+.. note:: As adjusting the partitions/spacing on active disks can be a
+   complicated and difficult process, it is recommended to partition
+   your disk for dual booting before installing any operating systems.
+
+Dual booting with |trueos| has several requirements:
+
+* An *EFI* partitioning scheme. |trueos| does not support the older
+  MBR partition scheme, opting instead to use
+  `rEFInd <http://www.rodsbooks.com/refind/>`_ for managing or loading
+  individual operating systems. Additionally, TrueOS still uses the BSD
+  boot loader, as it provides native support for ZFS boot environments.
 
 * A partition for each operating system. Many operating systems,
-  including |trueos|, can only be installed into a primary or GPT
-  partition. This means partitioning software is required, as described
-  in :ref:`Creating Free Space`.
+  including |trueos|, can only be installed into a primary or *GPT*
+  partition. See :ref:`Creating Free Space` for an example of shrinking
+  a disk in Windows to allow for dual booting with |trueos|.
 
-* A backup of any existing data. It is recommended to store this backup
-  on a different computer, removable media such as a USB drive, or burnt
-  onto a DVD media. While most installations progress smoothly, it is
-  always recommended to have a backup prepared.
+* Back up any existing data! It is recommended to store this backup
+  on a different computer, removable media such as a USB drive or DVD
+  media.
 
-When installing |trueos| onto a computer that is to contain multiple
+When installing |trueos| onto a computer meant to contain multiple
 operating systems, carefully select the **correct** partition in the
 :ref:`Disk Selection` screen. On a system containing multiple
 partitions, each partition is listed.
@@ -864,9 +871,6 @@ partitions, each partition is listed.
 Highlight the desired partition and click :guilabel:`Customize`.
 Clicking :guilabel:`Next` without customizing the disk layout results
 in the installer overwriting the contents of the primary disk.
-
-In |trueos|, the BSD boot loader is the default boot loader, as it
-provides native support for ZFS boot environments.
 
 .. index:: using system utilities menu
 .. _Using the System Utilities Menu:
