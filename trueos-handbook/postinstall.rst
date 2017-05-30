@@ -25,7 +25,12 @@ BSD Boot Loader
 ---------------
 
 A system with a default or "BSD" install option for the boot loader
-loads the boot menu seen in :numref:`Figure %s <install4>`.
+loads the boot menu seen in :ref:`Figure %s <install4>`.
+
+.. note:: This menu is modified from the one seen when booting into
+   the :ref:`installer <install1>`. While the options are the same,
+   they are rearranged slightly to prevent confusion and unnecessary
+   clutter.
 
 .. _install4:
 
@@ -601,7 +606,7 @@ To switch to the UNSTABLE track, open the SysAdm Update Manager and
 navigate to the *Settings* tab, seen in :ref:`update1`. Check
 :guilabel:`UNSTABLE Repository`, then click :guilabel:`Save Settings`.
 
-Alternately, you can edit :file:`usr/local/etc/trueos.conf` to change
+Alternately, you can edit :file:`/usr/local/etc/trueos.conf` to change
 update tracks without using SysAdm. Here is an example
 :file:`trueos.conf`:
 
@@ -632,6 +637,9 @@ previous STABLE update is installed.
 
 Managing System Services and Daemons
 ====================================
+
+.. TODO Add description of switching between OpenRC and RC when that
+   feature is enabled.
 
 |trueos| now uses
 `OpenRC <https://wiki.gentoo.org/wiki/Project:OpenRC>`_ to manage system

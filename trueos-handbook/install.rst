@@ -54,7 +54,7 @@ loaded and is ready to present its options.
 
 .. _install2:
 
-.. figure:: images/install2d.png
+.. figure:: images/install2e.png
    :scale: 100%
 
    Welcome and Language Selection Screen
@@ -141,9 +141,11 @@ a console-based server operating system, as seen in
 desktop installation. Refer to the :ref:`Server Installation`
 instructions for installing a command-line only server.
 
+.. TODO Update when text reworks are pulled into STABLE
+
 .. _install3:
 
-.. figure:: images/install3d.png
+.. figure:: images/install3e.png
    :scale: 100%
 
    System Selection Screen
@@ -162,6 +164,34 @@ To install the desktop, click :guilabel:`Next`.
    its data. Refer to the :ref:`Upgrading from PCBSD 10.x to TrueOS`
    section for more information about this option.
 
+.. index:: Optional Installation Packages
+.. _Optional Packages:
+
+Optional Packages
+=================
+
+By default, |trueos| loads only two graphics drivers during the
+installation: VESA (for MBR) and SCFB (for UEFI). |trueos| provides
+the option to further choose your graphics driver as part of the
+:numref:`Figure %s <install16>` screen.
+
+.. TODO Update when text reworks are pulled into STABLE
+
+.. _install16:
+
+.. figure:: images/install16.png
+   :scale: 100%
+
+   Optional Installation Packages
+
+When installing |trueos|, it detects the onboard graphics solution and
+displays a list of drivers you can use for |trueos|. Additionally,
+VirtualBox is automatically detected, populating the list with
+*Virtual Environment Drivers*.
+
+Expand the desired list of drivers and choose one which is compatible
+with your hardware, then click :guilabel:`Next` to continue.
+
 .. index:: installer disk config screen
 .. _Disk Selection:
 
@@ -170,6 +200,8 @@ Disk Selection
 
 The **Disk Selection** screen, seen in :numref:`Figure %s <install5>`,
 summarizes the default disk configuration.
+
+.. TODO Update when text reworks are pulled into STABLE
 
 .. _install5:
 
@@ -192,7 +224,7 @@ shown in :numref:`Figure %s <install6>`.
 
 .. _install6:
 
-.. figure:: images/install6b.png
+.. figure:: images/install6c.png
    :scale: 100%
 
    |trueos| Disk Wizard
@@ -232,7 +264,7 @@ in :numref:`Figure %s <install7>`.
 
 .. _install7:
 
-.. figure:: images/install7b.png
+.. figure:: images/install7c.png
    :scale: 100%
 
    Disk or Partition Selection
@@ -267,7 +299,7 @@ After selecting advanced mode, the wizard displays the screen shown in
 
 .. _install8:
 
-.. figure:: images/install8c.png
+.. figure:: images/install8d.png
    :scale: 100%
 
    Advanced Mode Options
@@ -412,7 +444,7 @@ the ZFS layout. The initial ZFS configuration screen is seen in
 
 .. _install9:
 
-.. figure:: images/install9b.png
+.. figure:: images/install9c.png
    :scale: 100%
 
    ZFS Configuration
@@ -477,7 +509,7 @@ to move to the encryption options, shown in
 
 .. _install11:
 
-.. figure:: images/install11c.png
+.. figure:: images/install11d.png
    :scale: 100%
 
    Encryption
@@ -508,7 +540,7 @@ shown in :numref:`Figure %s <install12>`.
 
 .. _install12:
 
-.. figure:: images/install12b.png
+.. figure:: images/install12c.png
    :scale: 100%
 
    Default ZFS Layout
@@ -579,6 +611,8 @@ Once :guilabel:`Yes` is selected to start the installation, a progress
 screen, seen in :numref:`Figure %s <install13>`, updates the user on
 the installation progress.
 
+.. TODO Update when text reworks are pulled into STABLE
+
 .. _install13:
 
 .. figure:: images/install13c.png
@@ -599,6 +633,8 @@ Installation Finished
 The **Installation Finished** screen, shown in
 :numref:`Figure %s <install14>`, appears once the installation is
 complete.
+
+.. TODO Update when text reworks are pulled into STABLE
 
 .. _install14:
 
@@ -668,7 +704,7 @@ then click :guilabel:`Next` again to see the screen shown in
 
 .. _server2:
 
-.. figure:: images/server2a.png
+.. figure:: images/server2b.png
    :scale: 100%
 
    Root Password Creation
@@ -678,7 +714,7 @@ proceed to the screen shown in :numref:`Figure %s <server3>`.
 
 .. _server3:
 
-.. figure:: images/server3a.png
+.. figure:: images/server3b.png
    :scale: 100%
 
    Primary User Account Creation
@@ -708,7 +744,7 @@ When finished, click :guilabel:`Next` to proceed to
 
 .. _server4:
 
-.. figure:: images/server4a.png
+.. figure:: images/server4b.png
    :scale: 100%
 
    Hostname Creation
@@ -720,7 +756,7 @@ system, check :guilabel:`Enable remote SSH login`. Click
 
 .. _server5:
 
-.. figure:: images/server5a.png
+.. figure:: images/server5b.png
    :scale: 100%
 
    Network Configuration
@@ -744,7 +780,7 @@ the screen shown in :numref:`Figure %s <server6>`.
 
 .. _server6:
 
-.. figure:: images/server6a.png
+.. figure:: images/server6b.png
    :scale: 100%
 
    Optional Install Features
@@ -805,7 +841,7 @@ SSH port, change the :guilabel:`SSH port` number.
 
 .. _restore2:
 
-.. figure:: images/restore2.png
+.. figure:: images/restore2a.png
    :scale: 100%
 
    : Beginning a SSH Restore
@@ -882,7 +918,7 @@ The System Utilities menu is available from the "Emergency Shell" icon
 (see :ref:`insico`) in the various |trueos| installer screens. Once
 opened, you'll see the menu shown in :numref:`Figure %s <util1>`.
 
-.. TODO update screenshot once fixgrub option is removed.
+.. TODO update screenshot and text once fixgrub option is removed.
 
 .. _util1:
 
@@ -910,6 +946,9 @@ This screen provides several options:
   as needed in order to perform maintenance on the boot environment.
   When finished, type :command:`exit` to leave the boot environment and
   return to the :ref:`System Utilities Menu <util1>`.
+
+* **fixgrub:** This option is scheduled for removal as GRUB is no longer
+  supported by |trueos|.
 
 * **exit:** This option returns the user to the main
   :ref:`TrueOS® Installation Menu <install1>`.
@@ -950,9 +989,12 @@ To perform the installation to a new boot environment, start the
 a server. Press :guilabel:`Next` to view the :guilabel:`Disk Selection`
 screen, shown in :numref:`Figure %s <upgrade1>`.
 
+.. TODO update screen when text reworks are added to STABLE.
+
 .. _upgrade1:
 
 .. figure:: images/upgrade1b.png
+   :scale: 100%
 
    Disk Selection
 
