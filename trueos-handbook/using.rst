@@ -242,12 +242,13 @@ that use Flash. To begin using this plugin, search for and install
 :samp:`[samp@examp] ~% sudo pkg install linux-flashplayer` in a command
 line and enter the root password when requested.
 
-The "nspluginwrapper" is also required when using Flash. Install it with
-|appcafe| or by typing
-:samp:`[samp@examp] ~% sudo pkg install nspluginwrapper` in a command line.
+The "nspluginwrapper" is also required when using Flash. Install it
+with |appcafe| or by typing
+:samp:`[samp@examp] ~% sudo pkg install nspluginwrapper` in a command
+line.
 
-Once *linux-flashplayer* and *nspluginwrapper* are installed, configure them
-by opening a command line and typing this command:
+Once *linux-flashplayer* and *nspluginwrapper* are installed, configure
+them by opening a command line and typing this command:
 
 .. code-block:: none
 
@@ -262,10 +263,12 @@ by opening a command line and typing this command:
  Auto-install plugins from /usr/home/tmoore/.mozilla/plugins
  Looking for plugins in /usr/home/tmoore/.mozilla/plugins
 
-In this example, Flash is configured and ready for use with the Firefox browser.
-To confirm Flash is usable, open Firefox and type *about:plugins* in the address bar.
-An *Installed plugins* page displays, listing *Shockwave Flash* an installed plugin.
-See :numref:`Figure %s <flash1>` for an example.
+In this example, Flash is configured and ready for use with the Firefox
+browser. To confirm Flash is usable, open Firefox and type
+**about:plugins** in the address bar. An *Installed plugins* page
+displays, listing *Shockwave Flash* an installed plugin. See
+:numref:`Figure %s <flash1>` as an example of Firefox with Flash
+installed.
 
 .. _flash1:
 

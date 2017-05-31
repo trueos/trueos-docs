@@ -1468,7 +1468,7 @@ the copied ISO contents. In the next examples,
 Alternately, if an installation CD or DVD is inserted, mount the media
 and copy its contents to the desired directory
 
-.. code-block:: none
+ .. code-block:: none
 
  [name@example] mount -t cd9660 /dev/cd0 /mnt
 

@@ -14,9 +14,9 @@ system.
 Booting Into |trueos|
 =====================
 
-After installation, |trueos| reboots and displays a boot menu. The first
-menu displayed depends on whether or not rEFInd is installed or the user
-customized the boot loader during the installation.
+After installation, |trueos| reboots and displays a boot menu. The
+first menu displayed depends on whether or not rEFInd is installed or
+the user customized the boot loader during the installation.
 
 .. index:: rEFInd
 .. _rEFInd Boot Manager:
@@ -24,8 +24,8 @@ customized the boot loader during the installation.
 rEFInd Boot Manager
 -------------------
 
-For EFI or UEFI systems, the user can choose to install rEFInd. This
-is a boot manager that is useful when :ref:`Dual Booting`.
+For EFI or UEFI systems, the user can choose to install rEFInd. This is
+a boot manager that is useful when :ref:`Dual Booting`.
 :numref:`Figure %s <refind1.2>` shows the initial rEFInd screen.
 
 .. _refind1.2:
@@ -35,13 +35,14 @@ is a boot manager that is useful when :ref:`Dual Booting`.
 
    rEFInd Boot Manager
 
-rEFInd displays any installed operating systems, booting into the default
-choice after a few seconds. Press any key other than :kbd:`Enter` to pause
-automatic booting, then use the arrow keys to select the desired operating
-system. Press :kbd:`Enter` to continue booting.
+rEFInd displays any installed operating systems, booting into the
+default choice after a few seconds. Press any key other than
+:kbd:`Enter` to pause automatic booting, then use the arrow keys to
+select the desired operating system. Press :kbd:`Enter` to continue
+booting.
 
-There are a number of options in rEFInd aside from choosing an operating
-system:
+There are a number of options in rEFInd aside from choosing an
+operating system:
 
 * **About rEFInd:** This option displays the version and copyrights of
   rEFInd. It also shows the EFI Revision, Platform, Firmware, and
@@ -51,14 +52,13 @@ system:
 
 * **Reboot Computer**
 
-* **Reboot to Computer Setup Utility:** May not work with virtual
-  machines.
+* **Reboot to Computer Setup Utility:** Not recommended for use with
+  |trueos|.
 
 Additional boot options for an operating system are available by
 highlighting the OS and pressing :kbd:`F2` or :kbd:`Insert`.
 
-Once |trueos| is chosen in rEFInd, the next initial boot screen
-displays.
+Once |trueos| is chosen in rEFInd, the next boot screen displays.
 
 .. index:: bsd boot loader
 .. _BSD Boot Loader:
