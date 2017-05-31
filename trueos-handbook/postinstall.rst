@@ -51,7 +51,8 @@ system:
 
 * **Reboot Computer**
 
-* **Reboot to Computer Setup Utility:** Not used in |trueos|.
+* **Reboot to Computer Setup Utility:** May not work with virtual
+  machines.
 
 Additional boot options for an operating system are available by
 highlighting the OS and pressing :kbd:`F2` or :kbd:`Insert`.
@@ -66,7 +67,7 @@ BSD Boot Loader
 ---------------
 
 A system with a default or "BSD" install option for the boot loader
-loads the boot menu seen in :ref:`Figure %s <install4>`.
+loads the boot menu seen in :numref:`Figure %s <install4>`.
 
 .. note:: This menu is modified from the one seen when booting into
    the :ref:`installer <install1>`. While the options are the same,

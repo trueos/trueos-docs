@@ -230,6 +230,50 @@ menu in the :guilabel:`Mixer`. There are options for accessing the
 well as an option for restarting PulseAudio. These utilities can be
 used to configure discoverable network sound devices and mixer levels.
 
+.. index:: Flash
+.. _Flash plugin:
+
+Flash Plugin
+============
+
+|trueos| supports using a Flash plugin for those browsers/applications
+that use Flash. To begin using this plugin, search for and install
+"linux-flashplayer" using |appcafe|. Alternately, type
+:samp:`[samp@examp] ~% sudo pkg install linux-flashplayer` in a command
+line and enter the root password when requested.
+
+The "nspluginwrapper" is also required when using Flash. Install it with
+|appcafe| or by typing
+:samp:`[samp@examp] ~% sudo pkg install nspluginwrapper` in a command line.
+
+Once *linux-flashplayer* and *nspluginwrapper* are installed, configure them
+by opening a command line and typing this command:
+
+.. code-block:: none
+
+ % nspluginwrapper -v -a -i
+
+ Auto-install plugins from /usr/local/lib/browser_plugins
+ Looking for plugins in /usr/local/lib/browser_plugins
+ Auto-install plugins from /usr/local/lib/browser_plugins/linux-flashplayer
+ Looking for plugins in /usr/local/lib/browser_plugins/linux-flashplayer
+ Install plugin /usr/local/lib/browser_plugins/linux-flashplayer/libflashplayer.so
+   into /usr/home/tmoore/.mozilla/plugins/npwrapper.libflashplayer.so
+ Auto-install plugins from /usr/home/tmoore/.mozilla/plugins
+ Looking for plugins in /usr/home/tmoore/.mozilla/plugins
+
+In this example, Flash is configured and ready for use with the Firefox browser.
+To confirm Flash is usable, open Firefox and type *about:plugins* in the address bar.
+An *Installed plugins* page displays, listing *Shockwave Flash* an installed plugin.
+See :numref:`Figure %s <flash1>` for an example.
+
+.. _flash1:
+
+.. figure:: images/flash1.png
+   :scale: 100%
+
+   "about:plugins" Example
+
 .. index:: multimedia
 .. _Multimedia:
 

@@ -269,9 +269,6 @@ in :numref:`Figure %s <install7>`.
 
    Disk or Partition Selection
 
-.. note:: When installing without EFI, :guilabel:`Install rEFInd`
-   is not available.
-
 The first hard disk is typically selected. To install on a different
 disk, use the :guilabel:`Disk` drop-down menu to select the install
 disk.
@@ -927,7 +924,7 @@ Highlight the desired partition and click :guilabel:`Customize`.
 Clicking :guilabel:`Next` without customizing the disk layout results
 in the installer overwriting the contents of the primary disk.
 
-Once installed, |trueos| boots into the rEFInd menu seen in
+Once installed, the system boots into the rEFInd menu seen in
 :numref:`Figure %s <refind1>`.
 
 .. _refind1:
