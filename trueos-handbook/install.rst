@@ -269,6 +269,9 @@ in :numref:`Figure %s <install7>`.
 
    Disk or Partition Selection
 
+.. note:: When installing without EFI, :guilabel:`Install rEFInd`
+   is not available.
+
 The first hard disk is typically selected. To install on a different
 disk, use the :guilabel:`Disk` drop-down menu to select the install
 disk.
@@ -281,6 +284,14 @@ is divided into partitions or there is an area of free space, use the
    partition, or an area of free space. |trueos| cannot install into
    a secondary or an extended partition. To create an area of free
    space for installation, refer to :ref:`Creating Free Space`.
+
+For EFI/UEFI systems, you can choose to :guilabel:`Install rEFInd`.
+The `rEFInd boot manager <http://www.rodsbooks.com/refind/>`_ is
+used to provide a menu of boot options to the user when the computer
+boots. It is required by |trueos| when :ref:`Dual Booting`.
+
+.. note:: rEFInd is a boot manager which functions separately from the
+   FreeBSD bootloader.
 
 Once the disk and partition are selected, click :guilabel:`Next` to
 view a **Summary** screen to review your choices. To make additional
@@ -335,6 +346,12 @@ This screen has several options:
 * **Force ZFS 4k block size:** This option is only used if the disk
   supports 4k, even though the disk may lie and report its size as
   512b. Use with caution as it may cause the installation to fail.
+
+* **Install rEFInd:** For EFI/UEFI systems, you can choose to
+  :guilabel:`Install rEFInd`. The
+  `rEFInd boot manager <http://www.rodsbooks.com/refind/>`_ is used to
+  provide a menu of boot options to the user when the computer boots. It
+  is required by |trueos| when :ref:`Dual Booting`.
 
 After making any selections, click :guilabel:`Next` to access the ZFS
 configuration screens. The rest of this section provides a ZFS overview
@@ -881,11 +898,13 @@ partition, or an existing operating system may be overwritten.
 
 Dual booting with |trueos| has several requirements:
 
-* An *EFI* partitioning scheme. |trueos| does not support the older
-  MBR partition scheme, opting instead to use
-  `rEFInd <http://www.rodsbooks.com/refind/>`_ for managing or loading
-  individual operating systems. Additionally, TrueOS still uses the BSD
-  boot loader, as it provides native support for ZFS boot environments.
+* An *EFI* or *UEFI* partitioning scheme. |trueos| does not support the
+  older MBR partition scheme, opting instead to use
+  `rEFInd <http://www.rodsbooks.com/refind/>`_ for managing or booting
+  into operating systems. TrueOS still uses the BSD boot loader, as it
+  provides native support for ZFS boot environments. Be sure to select
+  :guilabel:`Install rEFInd` when installing |trueos| (see
+  :ref:`install7`).
 
 * A partition for each operating system. Many operating systems,
   including |trueos|, can only be installed into a primary or *GPT*
@@ -907,6 +926,22 @@ partitions, each partition is listed.
 Highlight the desired partition and click :guilabel:`Customize`.
 Clicking :guilabel:`Next` without customizing the disk layout results
 in the installer overwriting the contents of the primary disk.
+
+Once installed, |trueos| boots into the rEFInd menu seen in
+:numref:`Figure %s <refind1>`.
+
+.. _refind1:
+
+.. figure:: images/refind1.png
+   :scale: 100%
+
+   rEFInd Boot Manager
+
+rEFInd displays any installed operating systems, booting into the
+default choice after a few seconds. Press any key other than
+:kbd:`Enter` to pause automatic booting, then use the arrow keys to
+select the desired operating system. Press :kbd:`Enter` to continue
+booting.
 
 .. index:: using system utilities menu
 .. _Using the System Utilities Menu:

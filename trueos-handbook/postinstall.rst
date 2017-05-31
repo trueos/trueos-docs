@@ -14,9 +14,50 @@ system.
 Booting Into |trueos|
 =====================
 
-After installation, |trueos| reboots and displays a boot menu. The menu
-displayed depends upon the boot loader selection chosen during the
-installation.
+After installation, |trueos| reboots and displays a boot menu. The first
+menu displayed depends on whether or not rEFInd is installed or the user
+customized the boot loader during the installation.
+
+.. index:: rEFInd
+.. _rEFInd Boot Manager:
+
+rEFInd Boot Manager
+-------------------
+
+For EFI or UEFI systems, the user can choose to install rEFInd. This
+is a boot manager that is useful when :ref:`Dual Booting`.
+:numref:`Figure %s <refind1.2>` shows the initial rEFInd screen.
+
+.. _refind1.2:
+
+.. figure:: images/refind1.png
+   :scale: 100%
+
+   rEFInd Boot Manager
+
+rEFInd displays any installed operating systems, booting into the default
+choice after a few seconds. Press any key other than :kbd:`Enter` to pause
+automatic booting, then use the arrow keys to select the desired operating
+system. Press :kbd:`Enter` to continue booting.
+
+There are a number of options in rEFInd aside from choosing an operating
+system:
+
+* **About rEFInd:** This option displays the version and copyrights of
+  rEFInd. It also shows the EFI Revision, Platform, Firmware, and
+  Screen Output.
+
+* **Shut Down Computer**
+
+* **Reboot Computer**
+
+* **Reboot to Computer Setup Utility:** Not used in |trueos|.
+
+Additional boot options for an operating system are available by
+highlighting the OS and pressing :kbd:`F2` or :kbd:`Insert`.
+
+Once |trueos| is chosen in rEFInd, the next initial boot screen
+displays.
 
 .. index:: bsd boot loader
 .. _BSD Boot Loader:
@@ -119,62 +160,37 @@ continues to boot.
 .. _Display Detection:
 
 Display Detection
------------------
+=================
 
-.. TODO this section needs a complete rework (text and screenshots) once
- next STABLE update is is released (sometime after 5/18).
+.. TODO update screenshot and remove note box when advanced tab is
+   removed.
 
-The first time the boot completes, the post-installer configuration
-script attempts to set the optimal display settings. A pop-up menu
-either asks to accept the settings or indicates the system could not
-find the optimal settings. Click :guilabel:`Yes` to accept the settings
-and |trueos| proceeds to the :ref:`Choose a Language` screen so the
-initial configuration can continue.
-
-If the optimal display settings could not be determined, or if
-:guilabel:`No` is selected in the :guilabel:`Confirm Resolution` screen,
-the :guilabel:`Display Settings` screen shown in
-:numref:`Figure %s <display3>` launches.
+When booting for the first time, |trueos| shows a
+:guilabel:`Display Settings` screen, reproduced in
+:numref:`Figure %s <display3>`.
 
 .. _display3:
 
-.. figure:: images/display3.png
+.. figure:: images/display3a.png
    :scale: 100%
 
-   Display Settings Wizard
+   Display Settings
 
-This screen can be used to select the desired screen resolution, color
-depth, and video driver. The :guilabel:`vesa` driver always works but
-provides sub-optimal performance. Click on the drop-down menu to select
-the driver most closely matching your video card name.
+Use this screen to view the detected video card and choose a graphics
+driver from the expanding menu. |trueos| also suggests a driver.
 
-The drop-down menus can also be used to change the screen resolution and
-color depth values. If the desired value is not listed, the selected
-driver may not support that resolution or depth.
-
-Advanced users can select their monitor's horizontal sync and vertical
-refresh rate in the :guilabel:`Advanced` tab, seen in
-:numref:`Figure %s <display4>`.
-
-.. _display4:
-
-.. figure:: images/display4.png
-   :scale: 100%
-
-   Advanced Display Settings
-
-Use caution and refer to the connected monitor's documentation while
-making changes. If unsure what settings are required, it is recommended
-to leave the default values.
-
-If the computer is connected to two monitors, check
-:guilabel:`Enable Dual-Head support`.
+The :guilabel:`vesa` driver always works but provides sub-optimal
+performance. Click on the drop-down menu to select the driver most
+closely matching your video card name.
 
 When finished, click :guilabel:`Apply` for the settings to be tested. If
 anything goes wrong during testing, the system returns to the
 :guilabel:`Display Settings` screen in order for the user to select
-another setting. Once satisfied with the settings, click :guilabel:`Yes`
+another driver. Once satisfied with the settings, click :guilabel:`Yes`
 when prompted to accept them.
+
+.. note:: The :guilabel:`Advanced` tab is disabled and scheduled for
+   removal.
 
 .. index:: choose language
 .. _Choose a Language:
@@ -211,13 +227,13 @@ configuration screen.
 Time Zone Selection
 ===================
 
-The next configuration screen, shown in :numref:`Figure %s <config2>`,
+The timezone select screen, shown in :numref:`Figure %s <config2>`,
 allows selection of the timezone and configuring the system's host and
 domain names.
 
 .. _config2:
 
-.. figure:: images/config2b.png
+.. figure:: images/config2c.png
    :scale: 100%
 
    Time Zone Selection
@@ -242,18 +258,20 @@ When finished, click :guilabel:`Next` to proceed to the next screen.
 Set the Root Password
 =====================
 
-This configuration screen, seen in :numref:`Figure %s <config3>`,
-**requires** the root (administrative) password to be set.
+This screen, seen in :numref:`Figure %s <config3>`, **requires** setting
+the root (administrative) password.
 
 .. _config3:
 
-.. figure:: images/config3a.png
+.. figure:: images/config3b.png
    :scale: 100%
 
    Root Password Creation
 
-The password must be a minimum of **4** characters and must be typed
-twice to confirm the password. Click :guilabel:`Next` when finished.
+The password must be a minimum of **4** characters and typed twice to
+confirm the password. Try to create a complex, but memorable password,
+as this is used whenever the system indicates administrative access is
+required. Click :guilabel:`Next` when finished.
 
 .. index:: create a user
 .. _Create a User:
@@ -262,15 +280,14 @@ Create a User
 =============
 
 This screen is used to create the primary user account used to login to
-the system. Try to create a complex and memorable password, as this one
-is used whenever the system indicates administrative access is required.
+the system. 
 
 :numref:`Figure %s <config4>` shows the configuration screen used to
 create the initial user account.
 
 .. _config4:
 
-.. figure:: images/config4a.png
+.. figure:: images/config4b.png
    :scale: 100%
 
    User Creation
@@ -286,7 +303,7 @@ screen requires completing several fields:
   username from *kris*).
 
 * **Password:** This is the password to use when logging in. It must
-  be typed twice to confirm it.
+  be typed twice for confirmation.
 
 * **Specify UID:** By default, the user is assigned the next available
   User ID (UID). If a specific UID is required, it can be set here. A
@@ -302,20 +319,20 @@ username only appears in the login menu if the removable media
 associated with that |trueos| system is inserted. They must input the
 password associated with the removable device in order to log in.
 
-.. note:: When a user is configured to use a PersonaCrypt device, that
-   user cannot log in using an unencrypted session on the same system.
-   In other words, the PersonaCrypt username is reserved only for
-   PersonaCrypt use. If necessary to login to both encrypted and
-   unencrypted sessions on the same system, create two different user
-   accounts; one for each type of session.
+When a user is configured to use a PersonaCrypt device, that user cannot
+log in using an unencrypted session on the same system. In other words,
+the PersonaCrypt username is reserved only for PersonaCrypt use. If
+necessary to login to both encrypted and unencrypted sessions on the
+same system, create two different user accounts; one for each type of
+session.
 
-Encryption is also possible without requiring removable devices using
-*PEFS*. Refer to the |sysadm| section on
-:sysclbk:`PEFS Encryption <pefs>` for more detailed instructions to
-initialize a user with *PEFS*.
+.. note:: Encryption is also possible without requiring removable
+   devices using *PEFS*. Refer to the |sysadm| handbook section on
+   :sysclbk:`PEFS Encryption <pefs>` for more detailed instructions to
+   initialize a user with *PEFS*.
 
 :numref:`Figure %s <persona1>` shows the :guilabel:`PersonaCrypt` tab.
-This tab is used to initialize PersonaCrypt for the user.
+This is used to initialize PersonaCrypt for the user.
 
 .. _persona1:
 
@@ -325,8 +342,8 @@ This tab is used to initialize PersonaCrypt for the user.
    User's PersonaCrypt Initialization
 
 Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable
-media large enough to hold all necessary files to store in the home
-directory, then click :guilabel:`Select`.
+media device large enough to hold a user's home directory, then click
+:guilabel:`Select`.
 
 .. warning:: Ensure there are no desired files on the removable media.
    Initializing the media for PersonaCrypt formats the device with ZFS
@@ -352,7 +369,7 @@ can choose the output device and test it.
 
 .. _audio1:
 
-.. figure:: images/audio1a.png
+.. figure:: images/audio1b.png
    :scale: 100%
 
    Configure Audio Output
@@ -382,19 +399,18 @@ strength.
 
 .. _config5:
 
-.. figure:: images/config5.png
+.. figure:: images/config5a.png
    :scale: 100%
 
    Wireless Network Connections
 
 To set the default wireless connection, click the desired network in the
-:guilabel:`Available Wireless Networks` area, then click
-:guilabel:`Add Selected`. If the network requires a password, a window
-will appear requesting the password and indicate the security type used
-by the desired network. If the desired network is not visible in the
-:guilabel:`Available Wireless Networks` area, click :guilabel:`Scan`. If
-unable to connect or to configure the connection later, refer to
-:ref:`Network Manager` for more detailed instructions.
+:guilabel:`Available Wireless Networks` area. If the network requires a
+password, a window appears requesting the password and indicating the
+security type used by the desired network. If the desired network is not
+visible in the :guilabel:`Available Wireless Networks` area, click
+:guilabel:`Rescan`. If unable to connect or to configure the connection
+later, refer to :ref:`Network Manager` for more detailed instructions.
 
 .. index:: enable optional services, SSH, IPv6
 .. _Enable Optional Services:
@@ -448,7 +464,7 @@ setup is complete. Click :guilabel:`Finish` to access the login menu.
 
 .. _config7:
 
-.. figure:: images/config7.png
+.. figure:: images/config7a.png
    :scale: 100%
 
    Setup Complete
