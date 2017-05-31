@@ -2622,6 +2622,18 @@ msgid ""
 "system. Press :kbd:`Enter` to continue booting."
 msgstr ""
 
+#: ../../install.rst:1485
+msgid "[name@example] mount -t cd9660 /dev/cd0 /mnt"
+msgstr ""
+
+#: ../../install.rst:1487
+msgid "[name@example] cp -R /mnt/* /tmp/custominstall/"
+msgstr ""
+
+#: ../../install.rst:1489
+msgid "[name@example] umount /mnt"
+msgstr ""
+
 #~ msgid ""
 #~ "An *EFI* partitioning scheme. |trueos| does not support the older MBR "
 #~ "partition scheme, opting instead to use `rEFInd "

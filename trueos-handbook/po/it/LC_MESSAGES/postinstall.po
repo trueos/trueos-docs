@@ -1545,40 +1545,30 @@ msgid ""
 "system. Press :kbd:`Enter` to continue booting."
 msgstr ""
 
-#: ../../postinstall.rst:55
+#: ../../postinstall.rst:56
 msgid ""
 "There are a number of options in rEFInd aside from choosing an operating "
 "system:"
 msgstr ""
 
-#: ../../postinstall.rst:58
+#: ../../postinstall.rst:59
 msgid ""
 "**About rEFInd:** This option displays the version and copyrights of rEFInd."
 " It also shows the EFI Revision, Platform, Firmware, and Screen Output."
 msgstr ""
 
-#: ../../postinstall.rst:62
+#: ../../postinstall.rst:63
 msgid "**Shut Down Computer**"
 msgstr ""
 
-#: ../../postinstall.rst:64
+#: ../../postinstall.rst:65
 msgid "**Reboot Computer**"
 msgstr ""
 
-#: ../../postinstall.rst:66
-msgid ""
-"**Reboot to Computer Setup Utility:** May not work with virtual machines."
-msgstr ""
-
-#: ../../postinstall.rst:69
+#: ../../postinstall.rst:70
 msgid ""
 "Additional boot options for an operating system are available by "
 "highlighting the OS and pressing :kbd:`F2` or :kbd:`Insert`."
-msgstr ""
-
-#: ../../postinstall.rst:72
-msgid ""
-"Once |trueos| is chosen in rEFInd, the next initial boot screen displays."
 msgstr ""
 
 #: ../../postinstall.rst:181
@@ -1680,6 +1670,23 @@ msgid ""
 ":guilabel:`Rescan`. If unable to connect or to configure the connection "
 "later, refer to :ref:`Network Manager` for more detailed instructions."
 msgstr ""
+
+#: ../../postinstall.rst:67
+msgid ""
+"**Reboot to Computer Setup Utility:** Not recommended for use with |trueos|."
+msgstr ""
+
+#: ../../postinstall.rst:73
+msgid "Once |trueos| is chosen in rEFInd, the next boot screen displays."
+msgstr ""
+
+#~ msgid ""
+#~ "**Reboot to Computer Setup Utility:** May not work with virtual machines."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once |trueos| is chosen in rEFInd, the next initial boot screen displays."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "The drop-down menus can also be used to change the screen resolution and "
