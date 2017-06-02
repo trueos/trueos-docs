@@ -451,7 +451,8 @@ Burning the Installation Media
 Once the installation file is downloaded and its checksum verified, burn
 it to a media. The media you use depends upon the file downloaded:
 
-* Files ending with :file:`.iso` can be burned to a DVD or a USB stick.
+* Files ending with :file:`.iso` can be burned to a DVD or used in a
+  Virtual Machine (VM).
 
 * Files ending in :file:`img` must be burned to a USB stick.
 
