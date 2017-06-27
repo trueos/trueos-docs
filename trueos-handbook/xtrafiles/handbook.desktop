@@ -1,5 +1,5 @@
 [Desktop Entry]
-URL=file://usr/local/share/trueos/handbook/trueos.html
+URL=file:///usr/local/share/trueos/handbook/trueos.html
 GenericName[en_US]=
 GenericName=
 Icon=/usr/local/share/pixmaps/trueos-handbook.png
@@ -7,7 +7,7 @@ StartupNotify=true
 Terminal=false
 TerminalOptions=
 Categories=System;
-Type=Application
+Type=Link
 Name=TrueOS Handbook
 Name[af]=TrueOS Handboek
 Name[ar]=دليل TrueOS
