@@ -801,22 +801,22 @@ notice some similarities between some of these commands.
    +--------------------------------+------------------------------------------------------------+
    | Command                        | Description                                                |
    +================================+============================================================+
-   | service nginx start            | Start nginx from :file:`usr/local/etc/init.d/nginx`.       |
+   | service nginx start            | Start nginx from :file:`/usr/local/etc/init.d/nginx`.      |
    +--------------------------------+------------------------------------------------------------+
    | service nginx restart          | Restart nginx from :file:`/usr/local/etc/init.d/nginx`.    |
    +--------------------------------+------------------------------------------------------------+
    | service nginx stop             | Stop nginx from :file:`/usr/local/etc/init.d/nginx`.       |
    +--------------------------------+------------------------------------------------------------+
-   | service nginx status           | View the status of the nginx service.                      |
+   | service nginx status           | View the status of the :command:`nginx` service.           |
    +--------------------------------+------------------------------------------------------------+
    | rc-status                      | View the status of all running services.                   |
    +--------------------------------+------------------------------------------------------------+
    | rc-update                      | Views all runlevels. Used in conjunction with service      |
    |                                | names to add or delete services from the default runlevel. |
    +--------------------------------+------------------------------------------------------------+
-   | rc-update add nginx default    | Adds the nginx service to the default runlevel.            |
+   | rc-update add nginx default    | Adds the :command:`nginx` service to the default runlevel. |
    +--------------------------------+------------------------------------------------------------+
-   | rc-update delete nginx default | Removes the nginx service from the default runlevel.       |
+   | rc-update delete nginx default | Removes :command:`nginx` from the default runlevel.        |
    +--------------------------------+------------------------------------------------------------+
 
 .. index:: writing openrc services
