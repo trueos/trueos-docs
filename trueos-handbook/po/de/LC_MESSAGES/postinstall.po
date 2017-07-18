@@ -171,10 +171,6 @@ msgstr ""
 msgid "service nginx start"
 msgstr ""
 
-#: ../../postinstall.rst:816
-msgid "Start nginx from :file:`usr/local/etc/init.d/nginx`."
-msgstr ""
-
 #: ../../postinstall.rst:818
 msgid "service nginx restart"
 msgstr ""
@@ -193,10 +189,6 @@ msgstr ""
 
 #: ../../postinstall.rst:822
 msgid "service nginx status"
-msgstr ""
-
-#: ../../postinstall.rst:822
-msgid "View the status of the nginx service."
 msgstr ""
 
 #: ../../postinstall.rst:824
@@ -221,16 +213,8 @@ msgstr ""
 msgid "rc-update add nginx default"
 msgstr ""
 
-#: ../../postinstall.rst:829
-msgid "Adds the nginx service to the default runlevel."
-msgstr ""
-
 #: ../../postinstall.rst:831
 msgid "rc-update delete nginx default"
-msgstr ""
-
-#: ../../postinstall.rst:831
-msgid "Removes the nginx service from the default runlevel."
 msgstr ""
 
 #: ../../postinstall.rst:969
@@ -1679,6 +1663,34 @@ msgstr ""
 #: ../../postinstall.rst:73
 msgid "Once |trueos| is chosen in rEFInd, the next boot screen displays."
 msgstr ""
+
+#: ../../postinstall.rst:816
+msgid "Start nginx from :file:`/usr/local/etc/init.d/nginx`."
+msgstr ""
+
+#: ../../postinstall.rst:822
+msgid "View the status of the :command:`nginx` service."
+msgstr ""
+
+#: ../../postinstall.rst:829
+msgid "Adds the :command:`nginx` service to the default runlevel."
+msgstr ""
+
+#: ../../postinstall.rst:831
+msgid "Removes :command:`nginx` from the default runlevel."
+msgstr ""
+
+#~ msgid "Start nginx from :file:`usr/local/etc/init.d/nginx`."
+#~ msgstr ""
+
+#~ msgid "View the status of the nginx service."
+#~ msgstr ""
+
+#~ msgid "Adds the nginx service to the default runlevel."
+#~ msgstr ""
+
+#~ msgid "Removes the nginx service from the default runlevel."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "**Reboot to Computer Setup Utility:** May not work with virtual machines."
