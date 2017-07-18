@@ -1,8 +1,8 @@
-.. index:: install trueos
-.. _Installing TrueOS:
+.. index:: install
+.. _Install:
 
-Installing |trueos|
-*******************
+Install
+*******
 
 This chapter describes how to use the graphical installer to install a
 graphical desktop directly onto a hard drive or into a virtual machine
@@ -34,7 +34,7 @@ If a key other than :kbd:`Enter` is pressed, this screen pauses
 to provide additional time to review the options. If this screen is not
 paused, it automatically boots into the :guilabel:`Boot Multi User`
 option, displaying the first graphical installer screen, shown in the
-:ref:`Language Selection` section.
+:ref:`Language` install section.
 
 The rest of this chapter describes the screens of the graphical
 installer. If any problems arise with booting into the graphical
@@ -42,11 +42,11 @@ installer, please refer to the
 :ref:`Installation Troubleshooting <Installation Help>` section of
 this handbook.
 
-.. index:: installer language selection screen
-.. _Language Selection:
+.. index:: installer language selection
+.. _Language:
 
-Language Selection
-==================
+Language
+========
 
 The first graphical installer screen, seen in
 :numref:`Figure %s <install2>`, indicates the installer successfully
@@ -128,7 +128,7 @@ translated. Any untranslated menus are displayed in English. Refer to
 When finished reviewing this screen, click :guilabel:`Next` to move on
 to the next installation screen.
 
-.. index:: installer system selection screen
+.. index:: installer system select
 .. _System Selection:
 
 System Selection
@@ -683,7 +683,7 @@ This section covers these advanced installation topics:
 * :ref:`Automated Installations`
 
 If your intent is to install a graphical desktop using the graphical
-installer, instead refer to :ref:`Installing TrueOS`.
+installer, refer instead to the primary :ref:`Install` section.
 
 .. index:: install a server
 .. _Server Installation:
@@ -1046,8 +1046,8 @@ installation. Click :guilabel:`Yes` to begin the installation.
 
 Once the installation is complete, reboot the system and remove the
 installation media. The post-installation screens run as described in
-the :ref:`Post Installation Configuration` section to help you configure
-the new installation.
+the :ref:`Post-Install <PostInstall>` section to help configure the new
+installation.
 
 .. warning:: During the :ref:`Create a User` process, recreate the
    primary user account using the same user name and user id (UID) from

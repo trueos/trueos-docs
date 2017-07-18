@@ -1,8 +1,8 @@
-.. index:: introducing trueos
-.. _Introducing TrueOS:
+.. index:: introduction
+.. _Introduction:
 
-Introducing |trueos|
-********************
+Introduction
+************
 
 Written by users of the |trueos| operating system. Maintained and edited
 by Dru Lavigne and Tim Moore.
@@ -109,7 +109,7 @@ conventions:
    +---------------------+------------------------------------------+
 
 .. index:: features
-.. _Goals and Features:
+.. _Features:
 
 Features
 ========
@@ -293,11 +293,11 @@ ensure the |trueos| project is afforded its commission. To ask questions
 about our Ethical Advertising policy, please contact joshms@trueos.org
 for more information.
 
-.. index:: comparing TrueOS
-.. _Comparing TrueOS:
+.. index:: TrueOS comparisons
+.. _TrueOS Comparisons:
 
-Comparing |trueos|
-==================
+|trueos| Comparisons
+====================
 
 As |trueos| grows and evolves, many users appreciate comparisons with
 other operating systems. These comparisons are intended to help new

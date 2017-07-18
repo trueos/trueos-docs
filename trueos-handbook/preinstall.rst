@@ -1,8 +1,8 @@
-.. index:: Preinstallation tasks
-.. _PreInstallation Tasks:
+.. index:: Preinstall
+.. _PreInstall:
 
-Pre-Installation Tasks
-**********************
+Pre-Install
+***********
 
 While the |trueos| installer is very easy to use, installing a brand new
 operating system can sometimes be a daunting task.
@@ -22,7 +22,7 @@ is ready to install |trueos|.
 
 To determine if the chosen hardware is detected by |trueos|, start a
 new installation and click the :guilabel:`Hardware Compatibility` icon
-in the lower left corner of the :ref:`Language Selection` screen.
+in the lower left corner of the :ref:`Language` screen.
 
 If any problems arise with the installation, refer to the
 :ref:`Troubleshooting` section of this handbook.
@@ -217,9 +217,8 @@ typically deal with:
   detected.
 
 To test the laptop's hardware, use the
-:guilabel:`Hardware Compatibility` icon in the
-:ref:`Language Selection` screen before continuing with the
-installation.
+:guilabel:`Hardware Compatibility` icon in the :ref:`Language` screen
+before continuing with the installation.
 
 To install |trueos| onto an Asus Eee PC, review the
 `FreeBSD Eee page <https://wiki.FreeBSD.org/AsusEee>`_ first.
@@ -314,45 +313,60 @@ space is displayed as seen in :numref:`Figure %s <shrink2>`.
    all of the partitions so the free space is recognizable when the
    |trueos| installer displays the current partitions.
 
-.. index:: installation options
-.. _Installation Options:
+.. index:: Download and Prepare to Install
+.. _Download and Prepare to Install:
 
-Installation Options
-====================
+Download and Prepare to Install
+===============================
 
 |trueos| uses a rolling release model rather than versioned releases.
+There are two primary options of |trueos| install: STABLE and UNSTABLE:
+
+1. STABLE is meant to be less frequently updated and synchronized with
+   FreeBSD. This means users see less experimental work and generally
+   have a smoother experience. However, users on STABLE also typically
+   wait longer for bugfixes and patches to be available. While some
+   |trueos| development may be backported to STABLE early, FreeBSD
+   patches and port synchronization is done on a six-month schedule.
+
+2. UNSTABLE is the full leading edge of TrueOS and FreeBSD development.
+   Patches are very frequent, but can incorporate experimental work from
+   both the |trueos| and FreeBSD projects. UNSTABLE is recommended for
+   users who need the absolute latest work from FreeBSD or |trueos| and
+   are willing to tolerate breakage or less system stability. It is also
+   recommended for users who want to test and contribute patches to
+   FreeBSD or |trueos|.
 
 Periodically, the |sysadm| :sysclbk:`Update Manager <update-manager>`
-provides patches to update the operating system. To have or test the
-latest features and drivers as they become available, and you can
-tolerate possible breakage caused by new features being available before
-the next STABLE release, use the UNSTABLE update track.
-
-.. note:: All installation files are based off STABLE releases to
-   TrueOS. By default, freshly installed TrueOS systems **only** obtain
-   updates from the STABLE repository, but users can switch to the
-   experimental UNSTABLE repository to test updates and bug fixes early.
-   See the :ref:`Updating TrueOS` section for instructions on switching
-   to the UNSTABLE update repository.
+provides patches to update the operating system. By default, users who
+install STABLE receive updates from the STABLE track, and UNSTABLE users
+are on the UNSTABLE track. It is possible to switch update tracks
+post-installation. See the :ref:`Updating TrueOS` section for
+instructions on switching update repositories.
 
 Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_ or the
 `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_.
 
-Several types of files are available for download:
+Several types of files are available for download. Any file with the
+naming convention *TrueOS-<year>-<month>-<day>-x64-[DVD/USB].[iso/img]*
+are STABLE or UNSTABLE installation files, depending on the download
+directory:
 
-* **STABLE Install**: Any file with the naming convention
-  *TrueOS-<year>-<month>-<day>-x64-<DVD/USB>.<iso/img>* are installation
-  files based on the STABLE version of |trueos| created on the specific
-  date.
-* **"latest" files**: These entries are symlinks to the latest TrueOS
-  install files and should be ignored.
+* `STABLE <http://download.trueos.org/master/amd64/>`_: Files in the
+  :file:`master/amd64` directory are the STABLE version of |trueos|.
+
+* `UNSTABLE <http://download.trueos.org/unstable/amd64/>`_: Files in the
+  :file:`unstable/amd64` directory are the UNSTABLE version of |trueos|.
+
+* **"latest" files**: These entries are symlinks to their related
+  install files and are generally ignored.
 
 Install files following the above naming conventions can also end with a
 variety of extensions:
 
 * **.iso**: If the file has an *.iso* extension, it should be burned to
-  a DVD media or USB stick.
+  a DVD media.
 * **.img**: If it has a *img* extension, it should be burned to a USB
   stick.
 * **.md5, .sha256, and .sig**: Depending upon the current operating
@@ -372,14 +386,6 @@ the :guilabel:`Server` option in the installer.
 
 Refer to :ref:`Burning the Installation Media` for instructions on how
 to burn the downloaded file to bootable media.
-
-Members of the |trueos| project attend many IT conferences across the
-globe and give out |trueos| DVDs at the FreeBSD booth. Visiting a
-FreeBSD booth is an excellent way to meet other |trueos| and FreeBSD
-users and get any questions answered. Check the
-`TrueOS® Blog <https://www.trueos.org/blog/>`_ to see if any events are
-happening near you. If organizing a |trueos| booth, contact us
-`on Gitter <https://gitter.im/trueos>`_ to arrange for DVDs.
 
 .. index:: data integrity check
 .. _Data Integrity Check:
@@ -495,7 +501,7 @@ There are a few requirements to write the :file:`img` file to a USB
 device:
 
 * A utility capable of writing the image to a USB media; the available
-  utilities will depend upon the installed operating system.
+  utilities depend on the installed operating system.
 
 * A USB thumb drive or hard drive large enough to hold the image.
 
@@ -805,8 +811,8 @@ DVD is inserted, it should audibly spin and the machine will start to
 boot into the installation program. If it does not or if using an ISO
 stored on the hard disk, press :kbd:`F12` to select the boot device
 when the message to do so appears, then press :kbd:`c` to boot from
-CD-ROM. Proceed through the installation as described in
-:ref:`Installing TrueOS`.
+CD-ROM. Proceed through the installation as described in the
+:ref:`Install` section.
 
 .. note:: If the installer GUI doesn't appear to load after configuring
    your virtual machine, you may need to enable **EFI** in Virtualbox by

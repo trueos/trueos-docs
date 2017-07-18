@@ -1,8 +1,8 @@
-.. index:: postinstall configuration
-.. _Post Installation Configuration:
+.. index:: postinstall
+.. _PostInstall:
 
-Post Installation Configuration
-*******************************
+Post-Install
+************
 
 After the |trueos| system has finished booting for the first time,
 |trueos| presents additional screens to assist in configuring the
@@ -587,6 +587,13 @@ allows you to adjust *when* and *where* to perform system updates.
 
 While both STABLE and UNSTABLE tracks are rolling releases based on
 FreeBSD-CURRENT, there are a few key differences between them.
+
+.. warning:: Users with UNSTABLE installed before 7/14/2017 need to run
+   :command:`pc-updatemanager syncconf` in a command line in order to
+   switch to the new UNSTABLE repository added on that day. Alternately,
+   switch from UNSTABLE to STABLE in the Update Manager and click
+   :guilabel:`Save`. Then, switch back to UNSTABLE and click
+   :guilabel:`Save` again.
 
 .. index:: TrueOS STABLE updates
 .. _TrueOS STABLE:
