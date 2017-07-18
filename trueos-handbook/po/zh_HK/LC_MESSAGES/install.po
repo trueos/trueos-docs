@@ -219,10 +219,6 @@ msgid ""
 "15 minutes."
 msgstr ""
 
-#: ../../install.rst:17
-msgid "Installing |trueos|"
-msgstr ""
-
 #: ../../install.rst:63
 msgid ""
 "The first graphical installer screen, seen in :numref:`Figure %s "
@@ -235,10 +231,6 @@ msgid ""
 "In :guilabel:`Advanced Mode`, the disk setup wizard allows configuring the "
 "ZFS layout. The initial ZFS configuration screen is seen in :numref:`Figure "
 "%s <install9>`."
-msgstr ""
-
-#: ../../install.rst:61
-msgid "Language Selection"
 msgstr ""
 
 #: ../../install.rst:147
@@ -1736,14 +1728,6 @@ msgid ""
 "proceeding, or data can be lost."
 msgstr ""
 
-#: ../../install.rst:1059
-msgid ""
-"Once the installation is complete, reboot the system and remove the "
-"installation media. The post-installation screens run as described in the "
-":ref:`Post Installation Configuration` section to help you configure the new"
-" installation."
-msgstr ""
-
 #: ../../install.rst:163
 msgid "System Selection Screen"
 msgstr ""
@@ -1762,15 +1746,6 @@ msgstr ""
 
 #: ../../install.rst:40
 msgid "Initial Boot Menu"
-msgstr ""
-
-#: ../../install.rst:45
-msgid ""
-"If a key other than :kbd:`Enter` is pressed, this screen pauses to provide "
-"additional time to review the options. If this screen is not paused, it "
-"automatically boots into the :guilabel:`Boot Multi User` option, displaying "
-"the first graphical installer screen, shown in the :ref:`Language Selection`"
-" section."
 msgstr ""
 
 #: ../../install.rst:51
@@ -2147,12 +2122,6 @@ msgstr ""
 
 #: ../../install.rst:691
 msgid ":ref:`Using the System Utilities Menu`"
-msgstr ""
-
-#: ../../install.rst:697
-msgid ""
-"If your intent is to install a graphical desktop using the graphical "
-"installer, instead refer to :ref:`Installing TrueOS`."
 msgstr ""
 
 #: ../../install.rst:706
@@ -2633,6 +2602,63 @@ msgstr ""
 #: ../../install.rst:1489
 msgid "[name@example] umount /mnt"
 msgstr ""
+
+#: ../../install.rst:17
+msgid "Install"
+msgstr ""
+
+#: ../../install.rst:45
+msgid ""
+"If a key other than :kbd:`Enter` is pressed, this screen pauses to provide "
+"additional time to review the options. If this screen is not paused, it "
+"automatically boots into the :guilabel:`Boot Multi User` option, displaying "
+"the first graphical installer screen, shown in the :ref:`Language` install "
+"section."
+msgstr ""
+
+#: ../../install.rst:61
+msgid "Language"
+msgstr ""
+
+#: ../../install.rst:697
+msgid ""
+"If your intent is to install a graphical desktop using the graphical "
+"installer, refer instead to the primary :ref:`Install` section."
+msgstr ""
+
+#: ../../install.rst:1059
+msgid ""
+"Once the installation is complete, reboot the system and remove the "
+"installation media. The post-installation screens run as described in the "
+":ref:`Post-Install <PostInstall>` section to help configure the new "
+"installation."
+msgstr ""
+
+#~ msgid "Installing |trueos|"
+#~ msgstr ""
+
+#~ msgid "Language Selection"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the installation is complete, reboot the system and remove the "
+#~ "installation media. The post-installation screens run as described in the "
+#~ ":ref:`Post Installation Configuration` section to help you configure the new"
+#~ " installation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If a key other than :kbd:`Enter` is pressed, this screen pauses to provide "
+#~ "additional time to review the options. If this screen is not paused, it "
+#~ "automatically boots into the :guilabel:`Boot Multi User` option, displaying "
+#~ "the first graphical installer screen, shown in the :ref:`Language Selection`"
+#~ " section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your intent is to install a graphical desktop using the graphical "
+#~ "installer, instead refer to :ref:`Installing TrueOS`."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "An *EFI* partitioning scheme. |trueos| does not support the older MBR "

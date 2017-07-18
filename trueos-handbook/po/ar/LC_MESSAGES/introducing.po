@@ -11,10 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../introducing.rst:17
-msgid "Introducing |trueos|"
-msgstr ""
-
 #: ../../introducing.rst:22
 msgid "Welcome to |trueos|!"
 msgstr ""
@@ -300,10 +296,6 @@ msgid ""
 " 24 hours. This is a simple time tracking cookie used to ensure the |trueos|"
 " project is afforded its commission. To ask questions about our Ethical "
 "Advertising policy, please contact joshms@trueos.org for more information."
-msgstr ""
-
-#: ../../introducing.rst:312
-msgid "Comparing |trueos|"
 msgstr ""
 
 #: ../../introducing.rst:332
@@ -1281,6 +1273,20 @@ msgid ""
 "Remote Connections <managing-remote-connections>` and :sysclbk:`Task Manager"
 " <task-manager>`."
 msgstr ""
+
+#: ../../introducing.rst:17
+msgid "Introduction"
+msgstr ""
+
+#: ../../introducing.rst:312
+msgid "|trueos| Comparisons"
+msgstr ""
+
+#~ msgid "Introducing |trueos|"
+#~ msgstr ""
+
+#~ msgid "Comparing |trueos|"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "**Easy to update:** |trueos| (with |sysadm|) provides a built-in `Update "
