@@ -24,6 +24,13 @@ important to follow certain protocols when requesting help:
 Troubleshooting
 ===============
 
+This section contains instructions to troubleshoot user discovered
+issues with |trueos|. These instructions are not exhaustive, but can
+serve as a starting point when encountering problems with |trueos|. If
+the particular issue is missing from this section, see the section about
+the :ref:`TrueOS Community` for instructions about asking for help from
+the wider community.
+
 .. index:: troubleshooting display
 .. _Display Help:
 
@@ -296,6 +303,104 @@ Here are some solutions to common printing problems:
   for the error message. If you are still stuck, post the error, the
   model of your printer, and your version of |trueos| as you
   :ref:`Report a Bug`.
+
+.. index:: troubleshooting replication
+.. _Replication Help:
+
+Replication
+-----------
+
+This is a recreation of the user submitted article:
+**Forcibly resetting ZFS replication using the command line**
+**lpreserver**. A special **"thank you!"** to |trueos| user
+**VulcanRidr** for providing this article.
+
+:ref:`ZFS <ZFS Overview>` replication can be somewhat complex, and
+keeping all the fiddly bits aligned can be fraught with danger.
+
+I recently had both of my |trueos| machines start failing to replicate.
+My desktop is called **defiant** and it has two pools: **NX74205** and
+**NCC1764**. My laptop is named **yukon** with a single pool,
+**NCC74602**. I am replicating to my FreeNAS server, named **luna**, to
+the dataset :file:`NX80101/archive/<FQDN>`. I will focus on what I did
+to get **yukon** working again in this document.
+
+.. _Original Indications:
+
+Original Indications
+^^^^^^^^^^^^^^^^^^^^
+
+The |sysadm| client tray icon was pulsing red. Right-clicking on the
+icon and clicking :guilabel:`Messages` showed the message:
+
+.. code-block:: none
+
+   FAILED replication task on NCC74602 -> 192.168.47.20: LOGFILE: /var/log/lpreserver/lpreserver_failed.log
+
+This was lifted from :file:`/var/log/lpreserver/lpreserver.log`.
+:file:`/var/log/lpreserver/lastrep-send.log` shows very little
+information:
+
+.. code-block:: none
+
+   send from @auto-2017-07-12-01-00-00 to NCC74602/ROOT/12.0-CURRENT-up-20170623_120331@auto-2017-07-14-01-00-00
+   total estimated size is 0
+   TIME        SENT    SNAPSHOT
+
+And no useful errors were being written to the
+:file:`lpreserver_failed.log`.
+
+.. _Repairing Replication:
+
+Repairing Replication
+^^^^^^^^^^^^^^^^^^^^^
+
+**First Attempt:**
+
+My first approach was to use the |sysadm| Client (see the
+:sysclbk:`Life Preserver <life-preserver>` section for more details).
+
+:numref:`Figure %s <helprep1>` shows my Life Preserver Replication tab:
+
+.. _helprep1:
+.. figure:: images/helprep1.png
+   :scale: 100%
+
+   Attempt 1: GUI Replication Repair
+
+I clicked on the dataset in question, then clicked
+:guilabel:`Initialize`. I waited for a few minutes, then clicked
+:guilabel:`Start`. I was immediately rewarded with a pulsing red icon
+in the system tray and received the same messages as noted above.
+
+**Second Attempt:**
+
+I was working with and want to give special thanks to :ref:`Gitter Chat`
+users *@RodMyers* and *@NorwegianRockCat*. They suggested I use the
+:command:`lpreserver` command line. So I issued these commands:
+
+.. code-block:: none
+
+   sudo lpreserver replicate init NCC74602 192.168.47.20
+   sudo lpreserver replicate run NCC74602 192.168.47.20
+
+Unfortunately, the replication failed again, with these messages:
+
+.. code-block:: none
+
+   Fri Jul 14 09:03:34 EDT 2017: Removing NX80101/archive/yukon.sonsofthunder.nanobit.org/ROOT - re-created locally
+   cannot unmount '/mnt/NX80101/archive/yukon.sonsofthunder.nanobit.org/ROOT': Operation not permitted
+   Failed creating remote dataset!
+   cannot create 'NX80101/archive/yukon.sonsofthunder.nanobit.org/ROOT': dataset already exists
+
+It turned out there were a number of child sets. I logged into the
+FreeNAS (**luna**) and issued this command as **root**:
+
+:samp:`# zfs destroy -r NX80101/archive/defiant.sonsofthunder.nanobit.org`
+
+Then I ran the :command:`replicate init` and :command:`replicate run`
+commands again from the |trueos| host. Replication now works and
+continues to work, at least until the next fiddly bit breaks.
 
 .. index:: troubleshooting sound
 .. _Sound Help:
