@@ -15,7 +15,7 @@ system instead of the installer, reboot and check the computer's BIOS
 program to ensure the drive containing the installation media is listed
 first in the boot order. Save any BIOS changes and reboot.
 
-Once the system boots it displays the menu shown in
+After booting, the system boots it displays the menu shown in
 :numref:`Figure %s <install1>`. Press :kbd:`Enter` or simply wait a few
 moments and this menu automatically prompts the system to continue
 booting.
