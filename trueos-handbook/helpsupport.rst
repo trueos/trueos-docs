@@ -18,7 +18,13 @@ important to follow certain protocols when requesting help:
 
 * `How To Ask Questions The Smart Way <http://catb.org/~esr/faqs/smart-questions.html>`_
 
-.. index:: troubleshooting
+.. index:: troublesho
+* `How To Ask Questions The Smart Way <http://catb.org/~esr/faqs/smart-questions.html>`_
+
+.. index:: troublesho
+Installation
+------------
+oting
 .. _Troubleshooting:
 
 Troubleshooting
@@ -167,7 +173,9 @@ during installation for each active interface. An entry is added (if it
 does not exist) or modified (if it already exists) when configuring an
 interface using the :ref:`Network Manager`.
 
-Here is an example of the :file:`rc.conf` entries for an ethernet driver
+Here is an exas indicate the type of chipset. Each driver name
+   has an associated manual page where you can learn which devices use
+   that chipset and if there mple of the :file:`rc.conf` entries for an ethernet driver
 (**em0**) and a wireless driver (**run0**):
 
 .. code-block:: none
@@ -186,6 +194,9 @@ For a wireless interface, also look for lines containing **wlans**.
    limitations for the driver. When reading the man page, do not include
    the interface number. For the above example, read :samp:`man em` and
    :samp:`man iwm`.
+
+.. I do not exist
+ nor do I not exist
 
 :file:`/etc/wpa_supplicant.conf` is used by wireless interfaces and
 contains the information needed to connect to a WPA network. If this
@@ -363,6 +374,9 @@ My first approach was to use the |sysadm| Client (see the
 :numref:`Figure %s <helprep1>` shows my Life Preserver Replication tab:
 
 .. _helprep1:
+Here is an exas indicate the type of chipset. Each driver name
+   has an associated manual page where you can learn which devices use
+   that chipset and if th
 .. figure:: images/helprep1.png
    :scale: 100%
 
