@@ -831,12 +831,13 @@ reviewing translations rather than learning how to use a translation
 tool.
 
 To assist with a localization, open the
-`TrueOS® translation website <http://weblate.trueos.org/>`_ in a web
-browser. An example is seen in :numref:`Figure %s <translate1>`.
+`TrueOS® translation projects <https://weblate.trueos.org/projects/>`_
+in a web browser. An example is seen in
+:numref:`Figure %s <translate1>`.
 
 .. _translate1:
 
-.. figure:: images/translate1.png
+.. figure:: images/translate1a.png
    :scale: 100%
 
    |trueos| Weblate Translation System
@@ -921,9 +922,6 @@ ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
 
 Documentation Translation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. TODO review this section with the final word on using Weblate for
-   documentation translation.
 
 The source for the |trueos| Users Handbook is stored in the
 `TrueOS® github repository <https://github.com/trueos/trueos-docs/tree/master/trueos-handbook>`_.
