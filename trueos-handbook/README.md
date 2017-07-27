@@ -1,5 +1,7 @@
-**Note:** Aside from section titles, this file uses the standard
-        reStructuredText markup used in TrueOS project documentation.
+**Note:** Aside from section titles and around code-blocks, this file
+        uses the standard reStructuredText markup used in TrueOS
+	project documentation. Markdown does some light formatting, so
+	be sure to view the "Raw" file to use it as an .rst reference.
 
 # Making Documentation Changes
 
