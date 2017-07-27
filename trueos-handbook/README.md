@@ -8,7 +8,7 @@
 	- [Required Applications](#reaps)
 	- [Prepare a local copy of the GitHub repository](#prlocogire)
 	- [Basic Git Commands](#bagicos)
-	- [Sphinx Structure](#sphst)
+	- [Sphinx Structure](#spst)
 	- [Documentation Workflow](#dowo)
 	- [Update Translation Files](#uptrfis)
 - [Documentation Conventions](#docos)
@@ -156,6 +156,7 @@ Set up the local clone of the **forked** repository to point to the
    and
    `Syncing a fork <https://help.github.com/articles/syncing-a-fork/>`_.
 
+```
 .. code-block:: none
 
    [user@example] ~/trueos-docs% git remote -v
@@ -167,22 +168,27 @@ Set up the local clone of the **forked** repository to point to the
    origin  https://github.com/[github_user]/trueos-docs.git (push)
    upstream    https://github.com/trueos/trueos-docs.git (fetch)
    upstream    https://github.com/trueos/trueos-docs.git (push)
+```
 
 This configuration allows changes made in a fork to be synced to the
 original repository and changes in the original synced to the fork:
 
+```
 .. code-block:: none
 
    [user@example] ~/trueos-docs% git fetch upstream
    [user@example] ~/trueos-docs% git merge upstream/master
    [user@example] ~/trueos-docs% git push origin master
+```
 
 One last element to configure is to set the account identity:
 
+```
 .. code-block:: none
 
    [user@example] ~/trueos-docs% git config --global user.email "[you@example.com]"
    [user@example] ~/trueos-docs% git config --global user.name "[Your Name]"
+```
 
 This sets the *global* user name and email for :command:`git`. Remove
 **--global** from the command to set the value only for the
@@ -340,7 +346,8 @@ provides specific conventions of the |trueos| project:
 
 .. tip:: It is also recommended to open one of the handbook :file:`.rst`
    files for reference.
-
+   
+```
 .. _specdocconv:
 .. table:: |trueos| documentation conventions
 
@@ -395,12 +402,14 @@ provides specific conventions of the |trueos| project:
    | Internal Links  | Hyperlink to an internal     | See :ref:`Documentation`           |
    |                 | section of the documentation |                                    |
    +-----------------+------------------------------+------------------------------------+
+```
 
 :numref:`Table %s <rstmarkup>` provides a basic reference for some of
 the often used elements of the reStructuredText markup language. See the
 `Sphinx reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
 for a more complete reference.
 
+```
 .. _rstmarkup:
 .. table:: reStructuredText Markup Reference
 
@@ -438,12 +447,14 @@ for a more complete reference.
    +-------------+-----------------------------------------------------+
    | Escape      | Use a :kbd:`\\` (backslash).                        |
    +-------------+-----------------------------------------------------+
+```
 
 # Tables <a name="tas"></a>
 
 Tables are all built as grid tables. Here is an example table to copy,
 paste, and rework when necessary:
 
+```
 .. code-block:: none
 
    +------------------------+------------+----------+----------+
@@ -454,11 +465,13 @@ paste, and rework when necessary:
    +------------------------+------------+----------+----------+
    | body row 2             | ...        | ...      |          |
    +------------------------+------------+----------+----------+
+```
 
 # Images <a name="ims"></a>
 
 Images are referenced using the numref role and internal marker:
 
+```
 .. code-block:: none
 
    :numref:`Image %s <example1>` is the example syntax to introduce a
@@ -469,6 +482,7 @@ Images are referenced using the numref role and internal marker:
       :option: [value]
 
       Caption for Example1.png
+```
 
 # Admonition Boxes <a name="adbos"></a>
 
