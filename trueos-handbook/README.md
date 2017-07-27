@@ -10,11 +10,11 @@
 	- [Basic Git Commands](#bagicos)
 	- [Sphinx Structure](#sphst)
 	- [Documentation Workflow](#dowo)
-	- [Update Translation Files](#uptrfi)
-- [Documentation Conventions](#doco)
-	- [Tables](#ta)
-	- [Images](#im)
-	- [Admonition Boxes](#adbo)
+	- [Update Translation Files](#uptrfis)
+- [Documentation Conventions](#docos)
+	- [Tables](#tas)
+	- [Images](#ims)
+	- [Admonition Boxes](#adbos)
 
 # General TrueOS Information <a name="gentrosinfo"></a>
 
@@ -332,7 +332,7 @@ patch to update the translation files:
 * Follow the same :command:`git push` and GitHub website instructions
   listed above to submit the patch to the upstream repository.
 
-# Documentation Conventions <a name="doco"></a>
+# Documentation Conventions <a name="docos"></a>
 
 This section is intended to provide references for the specific
 conventions of |trueos| documentation. :numref:`Table %s <specdocconv>`
