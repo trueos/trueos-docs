@@ -1,7 +1,7 @@
 **Note:** Aside from section titles, this file uses the standard
         reStructuredText markup used in TrueOS project documentation.
 
-**Making Documentation Changes**
+# Making Documentation Changes
 
 - [Make a Simple Documentation Change](#sidoch)
 - [Advanced Documentation Changes](#addochs)
@@ -16,8 +16,6 @@
 	- [Images](#ims)
 	- [Admonition Boxes](#adbos)
 
-# General TrueOS Information <a name="gentrosinfo"></a>
-
 |trueos| is always looking for documentation contributions from its
 users. The project currently has a large amount of documentation, and
 the community is instrumental in keeping the information up to date and
@@ -26,7 +24,7 @@ sheer amount of documentation available coupled with the specific
 documentation tools can make contributing appear daunting. Actually, the
 reverse is true: **contributing to the documentation is easy!**
 
-# Make a Simple Documentation Change <a name="sidoch"></a>
+## Make a Simple Documentation Change <a name="sidoch"></a>
 
 .. tip:: These instructions are for simple modifications of the
    |trueos| handbook, but they also apply to the |lumina| and |sysadm|
@@ -86,7 +84,7 @@ review the changes, merging or asking for more changes as necessary.
 .. tip:: Housekeeping: Once the pull request is merged, delete the now
    obsolete patch branch.
 
-# Advanced Documentation Changes <a name="addochs"></a>
+## Advanced Documentation Changes <a name="addochs"></a>
 
 .. note:: These instructions are designed for users running |trueos|.
    Actual commands and workflow may change when using a different
@@ -100,7 +98,7 @@ Text markup language and some of the specific conventions |trueos| uses
 in its documentation. It is recommended the contributor be familiar with
 using TrueOS and/or FreeBSD before following these instructions.
 
-# Required Applications <a name="reaps"></a>
+### Required Applications <a name="reaps"></a>
 
 There are a few packages to install before making a local copy of the
 documentation. Sphinx and its relevant extensions are the most
@@ -127,7 +125,7 @@ is a simple plaintext editor built in to |trueos| which works very well
 when editing :file:`.rst` files, but other editors like :command:`kate`
 and :command:`scite` also function well.
 
-# Preparing a local copy of the GitHub repository <a name="prlocogire"></a>
+### Preparing a local copy of the GitHub repository <a name="prlocogire"></a>
 
 Once ready with Sphinx and extensions installed, navigate to the
 `trueos-docs <https://github.com/trueos/trueos-docs>`_ repository and
@@ -200,7 +198,7 @@ This sets the *global* user name and email for :command:`git`. Remove
    where the local changes accidentally override brand new patches added
    to the upstream repository.
 
-# Basic Git commands <a name="bagicos"></a>
+### Basic Git commands <a name="bagicos"></a>
 
 Once the local :file:`trueos-docs` copy is configured, there are a few
 general :command:`git` commands to remember when working in the
@@ -226,7 +224,7 @@ GitHub provides a variety of
 its unique workflow. It is recommended to use these guides if confused
 about any stage of the commit/push/pull request process.
 
-# Sphinx Structure <a name="spst"></a>
+### Sphinx Structure <a name="spst"></a>
 
 |trueos| uses the
 `Sphinx Documentation Generator <http://www.sphinx-doc.org/en/stable/#>`_
@@ -270,7 +268,7 @@ directories to handle and build the :file:`.rst` source files:
 * :file:`Makefile`: This file houses all the specific Sphinx
   :command:`make` commands.
 
-# Documentation Workflow <a name="dowo"></a>
+### Documentation Workflow <a name="dowo"></a>
 
 Once all the repository forking and configuration is done, the actual
 workflow to make and submit documentation changes is straightforward:
@@ -319,7 +317,7 @@ workflow to make and submit documentation changes is straightforward:
 * Finished! The patch is submitted for a developer or project maintainer
   to review and merge.
 
-# Update translation files <a name="uptrfis"></a>
+### Update translation files <a name="uptrfis"></a>
 
 Once the initial patch is submitted, it is recommended to submit another
 patch to update the translation files:
@@ -338,7 +336,7 @@ patch to update the translation files:
 * Follow the same :command:`git push` and GitHub website instructions
   listed above to submit the patch to the upstream repository.
 
-# Documentation Conventions <a name="docos"></a>
+## Documentation Conventions <a name="docos"></a>
 
 This section is intended to provide references for the specific
 conventions of |trueos| documentation. :numref:`Table %s <specdocconv>`
@@ -449,7 +447,7 @@ for a more complete reference.
    +-------------+-----------------------------------------------------+
 ```
 
-# Tables <a name="tas"></a>
+### Tables <a name="tas"></a>
 
 Tables are all built as grid tables. Here is an example table to copy,
 paste, and rework when necessary:
@@ -467,7 +465,7 @@ paste, and rework when necessary:
    +------------------------+------------+----------+----------+
 ```
 
-# Images <a name="ims"></a>
+### Images <a name="ims"></a>
 
 Images are referenced using the numref role and internal marker:
 
@@ -484,7 +482,7 @@ Images are referenced using the numref role and internal marker:
       Caption for Example1.png
 ```
 
-# Admonition Boxes <a name="adbos"></a>
+### Admonition Boxes <a name="adbos"></a>
 
 These are the specific admonition boxes used by |trueos| documentation:
 
