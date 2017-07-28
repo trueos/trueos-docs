@@ -1110,9 +1110,9 @@ listed.
    +------------------------------------------+-------------------------------------+------------------------------+
    | zfs_enable="YES"                         | Obsolete, marked for removal        | None                         |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | wlans_iwm0="wlan 0 DHCP"                 | Configure iwm wireless with DHCP.   | :file:`/etc.conf.d.network`  |
+   | wlans_iwm0="wlan 0 DHCP"                 | Configure iwm wireless with DHCP.   | :file:`/etc/conf.d/network`  |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | ifconfig_wlan0_ipv6="inet6 accept_rtadv" | Configure iwm wireless with IPv6.   | :file:`/etc.conf.d.network`  |
+   | ifconfig_wlan0_ipv6="inet6 accept_rtadv" | Configure iwm wireless with IPv6.   | :file:`/etc/conf.d/network`  |
    +------------------------------------------+-------------------------------------+------------------------------+
 
 .. index:: openrc install scripts
