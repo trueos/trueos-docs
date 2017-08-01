@@ -1104,7 +1104,7 @@ listed.
    +------------------------------------------+-------------------------------------+------------------------------+
    | hostname="trueos-4843"                   | Set the system hostname.            | :file:`/etc/conf.d/hostname` |
    +------------------------------------------+-------------------------------------+------------------------------+
-   | kldload_i915kms="i915kms"                | TrueOS specific. Allows loading an  | :file:`etc/conf.d/modules`   |
+   | kldload_i915kms="i915kms"                | TrueOS specific. Allows loading an  | :file:`/etc/conf.d/modules`  |
    |                                          | individual module via the installer |                              |
    |                                          | post installation.                  |                              |
    +------------------------------------------+-------------------------------------+------------------------------+
