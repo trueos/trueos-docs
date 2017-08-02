@@ -4,9 +4,12 @@
 Using |trueos|
 **************
 
-This chapter discusses using |trueos| for many common tasks, in addition
-to linking to resources for the |lumina| desktop environment and
-|sysadm|.
+This chapter discusses using |trueos| for many common tasks. Because
+TrueOS incorporates the |lumina| desktop environment and |sysadm|
+system management utility, those projects are used for a variety of
+user customization tasks such as themeing, user management, and system
+backups. As each of these projects have their own documentation, links
+to the |lumina| and |sysadm| client handbooks are provided.
 
 .. index:: Lumina
 .. _Lumina:
@@ -67,6 +70,95 @@ utilities for various tasks, such as :command:`numlockx` and
 Refer to the `Lumina Handbook <https://lumina-desktop.org/handbook/>`_
 for detailed descriptions of every element of |lumina|.
 
+These next sections describe each element of |trueos| that is managed
+by |lumina| and provides links to the relevant section of the Lumina
+handbook.
+
+.. index:: Lumina Desktop Configuration
+.. _Desktop Configuration:
+
+Desktop Configuration
+---------------------
+
+The :lumbk:`Lumina Configuration <luminaconfig.html>` utility allows the
+user to customize virtually every aspect of the desktop. It is opened by
+right-clicking the desktop, then selecting
+:menuselection:`Preferences --> All Desktop Settings`. These are the
+configurable elements using this utility:
+
+:lumbk:`Appearance <luminaconfig.html#appearance>`: Adjust theming,
+wallpapers, and windows. Theming includes default font and size, theme
+template, color scheme, icon pack, and mouse cursors. There is also an
+option to adjust the application themes, either manually or by applying
+a downloaded theme engine.
+
+Modifying windows includes effects, compositing, and default settings.
+An :guilabel:`Advanced Editor` is also provided for the user to manually
+modify any existing value.
+
+:lumbk:`Desktop Defaults <luminaconfig.html#desktop-defaults>`:
+Customize which applications are associated with specific filetypes, the
+default file manager, virtual terminal, web browser, and e-mail client.
+Choose packages to autostart when the system boots. Also adjust the
+default keyboard shortcuts for the system.
+
+:lumbk:`Interface Configuration <luminaconfig.html#interface-configuration>`:
+Customize widgets for the Desktop, the appearance and options in the
+right-click Menu, and appearance, number, and options for any system
+panels.
+
+:lumbk:`System Settings <luminaconfig.html#system-settings>`: Central
+location for all configurable system utilities. |lumina| updates this
+category as new utilities are added and removed.
+
+:lumbk:`User Settings <luminaconfig.html#user-settings>`: General
+settings for the user's desktop session. Includes adjusting time/date,
+user icons, chime options, and all localization options.
+
+.. index:: Lumina Utilities
+.. _Included Utilties:
+
+Utilities included with TrueOS
+------------------------------
+
+To provide a simple, but fully featured user experience immediately
+"out of box", |trueos| includes several utilities built directly into
+|lumina|.
+
+:lumbk:`Archiver <https://lumina-desktop.org/handbook/luminautl.html#archiver>`:
+Provides file compression and decompression services.
+
+:lumbk:`Calculator <luminautl.html#calculator>`: Basic calculator with
+scientific options and advanced functions.
+
+:lumbk:`Insight File Manager <luminautl.html#insight-file-manager>`:
+Browse and modify files on a per-directory basis.
+
+:lumbk:`File Information <luminautl.html#file-information>`: Displays
+specific information about a specified file or directory, including
+permissions, ownership, size, and date of last modification.
+
+:lumbk:`Information <luminautl.html#information>`: Provides more
+information about the installed version of |lumina|.
+
+:lumbk:`Open <luminautl.html#open>`: This utility assists the user in
+finding programs to open specific files or URLs. It can also be used to
+set the default application for specific file types.
+
+:lumbk:`Screenshot <luminautl.html#screenshot>`: A very simple utility
+to take screenshots of the desktop, single windows, or designated areas
+of a screen. Screenshots can be saved as :file:`.png` files.
+
+:lumbk:`Search <luminautl.html#lumina-search>`: Find and launch
+applications or quickly search for files and directories.
+
+:lumbk:`Text Editor <luminautl.html#text-editor>`: Plain text editor
+with customizable settings and built in rules for specific file types.
+
+:lumbk:`Xconfig <luminautl.html#xconfig>`: Graphical front-end to the
+:command:`xrandr` command line utility. Manages attached monitors,
+allowing the user to add, alter the position, and configure screens.
+
 .. index:: Sysadm
 .. _SysAdm:
 
@@ -79,9 +171,8 @@ rewritten to use the |sysadm|
 `API <https://api.sysadm.us/getstarted.html>`_. This API is designed to
 simplify managing any FreeBSD, |trueos| desktop, or |trueos| server
 system over a secure connection from any operating system with the
-|sysadm| application installed. |sysadm| is built into |trueos|, but
-downloadable packages for other operating systems are available from the
-`SysAdm Website <https://sysadm.us/>`_.
+|sysadm| application installed. |sysadm| is built into |trueos| as the
+:guilabel:`SysAdm: Control Panel`.
 
 The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_
 is recommended for new |trueos| users, while the
@@ -89,48 +180,98 @@ is recommended for new |trueos| users, while the
 `API Reference <https://api.sysadm.us/>`_ guides are available for
 advanced users.
 
-Here is an overview of the different elements controlled by |sysadm|:
+The rest of this section describes the elements of TrueOS controlled by
+SysAdm, providing links to the relevant SysAdm documentation:
 
-**Application Management**
+.. index:: SysAdm Application Management
+.. _Application Management:
 
-* :sysclbk:`AppCafe <appcafe>`: A graphical interface for installing and
-  managing FreeBSD packages.
+Application Management
+----------------------
 
-* :sysclbk:`Update Manager <update-manager>`: A graphical interface for
-  keeping both |trueos| and its installed applications up to date.
+:sysclbk:`AppCafe <appcafe>` is a graphical interface for installing and
+managing FreeBSD packages. These are pre-built applications tested for
+use with a FreeBSD-based operating system. Open |appcafe| by clicking
+the :guilabel:`Start` button (lower-left), then
+:menuselection:`Control Panel --> AppCafe`.
 
-**SysAdm Server Settings**
+|appcafe| breaks popular applications into a few categories and provides
+search functionality for users looking for a specific application. Users
+can also browse through a list of all currently installed applications
+and view more details or delete them from the system.
 
-* :sysclbk:`Managing Remote Connections <managing-remote-connections>`:
-  This includes creating and managing SSL keys or certificate bundles.
+:sysclbk:`Update Manager <update-manager>` is a graphical interface for
+keeping both |trueos| and its installed applications up to date. Users
+can check for updates, switch between the STABLE and UNSTABLE tracks of
+TrueOS, configure automatic updating, and view the log files of previous
+updates.
 
-**System Management**
+See :ref:`Updating TrueOS` for more details about using the
+:guilabel:`Update Manager`.
 
-* :sysclbk:`Boot Environment Manager <boot-environment-manager>`: Create
-  and manage ZFS Boot Environments (BEs). Options to *activate*,
-  *clone*, *mount*, and *unmount* BEs are available in this screen.
+.. index:: SysAdm Server Settings
+.. _Server Settings:
 
-* :sysclbk:`Mouse Settings <mouse-settings>`: Tool for adjusting the
-  settings of a connected mouse.
+SysAdm Server Settings
+----------------------
 
-* :sysclbk:`Firewall Manager <firewall-manager>`: This is used to
-  configure all ports and firewalls for |trueos|.
+:sysclbk:`Managing Remote Connections <managing-remote-connections>`
+provides instructions to create and manage SSL keys or certificate
+bundles.
 
-* :sysclbk:`Service Manager <service-manager>`: This allows you to view
-  and configure all the system's installed services.
+.. index:: SysAdm System Management
+.. _System Management:
 
-* :sysclbk:`Task Manager <task-manager>`: A graphical window into system
-  resource usage and a list of all running applications.
+System Management
+-----------------
 
-* :sysclbk:`User Manager <user-manager>`: This utility is used to users
-  and groups. This includes adding
-  :sysclbk:`PersonaCrypt <personacrypt>` encryption to specific users.
+|sysadm| provides the "core" for managing |trueos|:
 
-**Utilities**
+:sysclbk:`Boot Environment Manager <boot-environment-manager>`: Create
+and manage ZFS Boot Environments (BEs). Boot Environments provide a
+"point-in-time" backup for the system and are highly recommended.
+Options to *create*, *clone*, *delete*, *rename*, *mount*, *unmount*,
+and *activate* a BE are available.
 
-* :sysclbk:`Life Preserver <life-preserver>`: This utility is used for
-  system backups with ZFS snapshots. Life Preserver provides easy
-  management, replication, and scheduling of ZFS snapshots.
+:sysclbk:`Mouse Settings <mouse-settings>`: Tool for adjusting the
+settings of a connected mouse. Acceleration, DPI, right or left hand,
+drift, button emulation, and scrolling are all adjustable.
+
+:sysclbk:`Firewall Manager <firewall-manager>`: This is used to
+configure all ports and firewalls for |trueos|. Options to *open* and
+*close* ports are available, including adjusting the firewall's
+autostart settings.
+
+:sysclbk:`Service Manager <service-manager>`: This allows viewing and
+configuring all the system's installed services. There are options to
+*start*, *stop*, and *restart* services. Additional tunables to adjust
+automatic starting of services are provided.
+
+:sysclbk:`Task Manager <task-manager>`: A graphical window into system
+resource usage and a list of all running applications. This provides
+details about what is currently happening on the system and allows the
+user to stop any currently running process.
+
+:sysclbk:`User Manager <user-manager>`: This utility controls users and
+groups. There are :guilabel:`Standard` and :guilabel:`Advanced` views
+for both users and groups, and all options for creating new users and
+groups are provided.
+
+:sysclbk:`PersonaCrypt <personacrypt>` security can also be added to
+user accounts. This encrypts a user account so it only becomes
+accessible with the proper password or by plugging in an associated USB
+drive.
+
+.. index:: SysAdm Utilities
+.. _SysAdm Utilities:
+
+Utilities
+---------
+
+:sysclbk:`Life Preserver <life-preserver>` is the only utility currently
+included with |trueos|. This utility is used for system backups with
+:ref:`ZFS <ZFS Overview>` snapshots. :guilabel:`Life Preserver` provides
+easy management, replication, and scheduling of ZFS snapshots.
 
 .. index:: fonts
 .. _Fonts:
