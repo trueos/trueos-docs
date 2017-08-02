@@ -519,6 +519,7 @@ msgid "ifconfig_re0=\"DHCP\""
 msgstr ""
 
 #: ../../postinstall.rst:1111 ../../postinstall.rst:1114
+#: ../../postinstall.rst:1125 ../../postinstall.rst:1127
 msgid ":file:`/etc/conf.d/network`"
 msgstr ""
 
@@ -544,10 +545,6 @@ msgid ""
 "installation."
 msgstr ""
 
-#: ../../postinstall.rst:1119
-msgid ":file:`etc/conf.d/modules`"
-msgstr ""
-
 #: ../../postinstall.rst:1123
 msgid "zfs_enable=\"YES\""
 msgstr ""
@@ -558,10 +555,6 @@ msgstr ""
 
 #: ../../postinstall.rst:1123
 msgid "None"
-msgstr ""
-
-#: ../../postinstall.rst:1125 ../../postinstall.rst:1127
-msgid ":file:`/etc.conf.d.network`"
 msgstr ""
 
 #: ../../postinstall.rst:1125
@@ -1688,6 +1681,16 @@ msgid ""
 "STABLE in the Update Manager and click :guilabel:`Save`. Then, switch back "
 "to UNSTABLE and click :guilabel:`Save` again."
 msgstr ""
+
+#: ../../postinstall.rst:1119
+msgid ":file:`/etc/conf.d/modules`"
+msgstr ""
+
+#~ msgid ":file:`etc/conf.d/modules`"
+#~ msgstr ""
+
+#~ msgid ":file:`/etc.conf.d.network`"
+#~ msgstr ""
 
 #~ msgid "Post Installation Configuration"
 #~ msgstr ""
