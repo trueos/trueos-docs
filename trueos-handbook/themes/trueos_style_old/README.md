@@ -4,9 +4,9 @@
 
 **Instructions for using trueos_style:**
 
-* Edit the Sphinx project's conf.py file:
+* Edit the Sphinx project's `conf.py` file:
 
-* Change this value to trueos_style prior to generating docs:
+* Change this value to `trueos_style` prior to generating docs:
 ```
   html_theme = 'trueos_style'
 ```
@@ -16,4 +16,4 @@
 ```
   html_theme_path = ['themes']
 ```
-#trueos_style is intended to be used in many iX Systems sphinx generated handbooks, with small style changes here and there.
+#trueos_style is intended to be used in many different iXsystems Sphinx generated handbooks, with small style changes here and there.
