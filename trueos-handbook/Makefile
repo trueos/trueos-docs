@@ -91,7 +91,8 @@ html:
 	$(SPHINXBUILD) -D language='zh_HK' -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-zh_HK
 .endif
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	@echo "Build finished. The HTML pages are"
+	@ls $(BUILDDIR)/html/*.html
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
@@ -153,7 +154,8 @@ latexpdf pdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	gmake -C $(BUILDDIR)/latex all-pdf
-	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex"
+	@echo "pdflatex finished; the PDF files are in"
+	@ls -1 $(BUILDDIR)/latex/*.pdf
 
 latexpdfja:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
