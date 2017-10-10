@@ -94,9 +94,9 @@ rst_prolog = """
 .. |appcafe| replace:: AppCafe\ :sup:`"""u'\u00AE'"""`
 .. |lumina| replace:: Lumina\ :sup:`"""u'\u00AE'"""`
 .. |sysadm| replace:: SysAdm\ :sup:`"""u'\u2122'"""`
-.. |trpi| replace:: TrueOS Pico\ :sup:`"""u'\u2122'"""`
-.. |pise| replace:: Pico Server\ :sup:`"""u'\u2122'"""`
-.. |picl| replace:: Pico Client\ :sup:`"""u'\u2122'"""`
+.. |trpi| replace:: TrueOS Pico\ :sup:`"""u'\u00AE'"""`
+.. |pise| replace:: Pico Server\ :sup:`"""u'\u00AE'"""`
+.. |picl| replace:: Pico Client\ :sup:`"""u'\u00AE'"""`
 """
 
 # -- Option to change :menuselection: arrow -----------------------------
