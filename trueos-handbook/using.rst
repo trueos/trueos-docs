@@ -303,10 +303,10 @@ mixer settings. The utility is accessed by clicking the
 :numref:`Figure %s <sound1>` shows an example of highlighting the
 :guilabel:`Output` option after opening the Sound Mixer. If the
 system has one audio output, the :guilabel:`Output` submenu is not
-displayed. Clicking an option in the submenu will not set the defualt
-audio device. It will only change it to the selected output until the
-system is shut off. On the next boot up the audio output will revert
-back to the default.
+displayed. Clicking an option in this submenu does not set the default
+audio device. It only changes it to the selected output for the
+current session. The next reboot reverts audio output back to the
+default.
 
 .. _sound1:
 
@@ -357,9 +357,9 @@ This tab contains several options:
   inserting a headset into an audio jack, the system may not detect this
   new input, meaning the default device has changed manually.
   :guilabel:`Set as Default` sets the currently selected audio output
-  channel to the default.
+  channel as the system default.
 
-The :guilabel:`Disable PulseAudio` will disable the PulseAudio support.
+The :guilabel:`Disable PulseAudio` disables all PulseAudio support.
 
 The :guilabel:`File` menu can be used to quit this mixer screen or to
 close both this screen and remove the icon from the system tray.
