@@ -1445,7 +1445,7 @@ msgid ""
 "default file names."
 msgstr ""
 
-#: ../../helpsupport.rst:0
+#: ../../helpsupport.rst:1184
 msgid "Commonly Used File Menu Icons"
 msgstr ""
 
@@ -1468,11 +1468,11 @@ msgid ""
 "hot keys."
 msgstr ""
 
-#: ../../helpsupport.rst:0
+#: ../../helpsupport.rst:1232
 msgid "Shortcut Keys"
 msgstr ""
 
-#: ../../helpsupport.rst:0
+#: ../../helpsupport.rst:1248
 msgid "Hot Keys"
 msgstr ""
 
@@ -2287,7 +2287,7 @@ msgid ""
 "reference."
 msgstr ""
 
-#: ../../helpsupport.rst:0
+#: ../../helpsupport.rst:1642
 msgid "|trueos| documentation conventions"
 msgstr ""
 
@@ -2498,7 +2498,7 @@ msgid ""
 "for a more complete reference."
 msgstr ""
 
-#: ../../helpsupport.rst:0
+#: ../../helpsupport.rst:1702
 msgid "reStructuredText Markup Reference"
 msgstr ""
 

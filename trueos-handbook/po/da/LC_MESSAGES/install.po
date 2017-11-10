@@ -1760,7 +1760,7 @@ msgstr ""
 msgid "Welcome and Language Selection Screen"
 msgstr ""
 
-#: ../../install.rst:0
+#: ../../install.rst:82
 msgid "Installer icons"
 msgstr ""
 
@@ -1911,7 +1911,7 @@ msgstr ""
 msgid "These resources are also useful to bookmark and peruse as needed:"
 msgstr ""
 
-#: ../../install.rst:0
+#: ../../install.rst:408
 msgid "ZFS Terms"
 msgstr ""
 
@@ -2358,7 +2358,7 @@ msgid ""
 ":command:`man pc-sysinstall`."
 msgstr ""
 
-#: ../../install.rst:0
+#: ../../install.rst:1136
 msgid "Customizing a |trueos| Installation"
 msgstr ""
 
@@ -2366,7 +2366,7 @@ msgstr ""
 msgid "\"none\" or \"bsd\""
 msgstr ""
 
-#: ../../install.rst:0
+#: ../../install.rst:1423
 msgid "Automated Installation Variables"
 msgstr ""
 

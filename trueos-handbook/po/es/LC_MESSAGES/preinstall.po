@@ -537,7 +537,7 @@ msgid ""
 ":guilabel:`Enable EFI (special OSes only)`."
 msgstr ""
 
-#: ../../preinstall.rst:0
+#: ../../preinstall.rst:487
 msgid "Free Burning Utilities"
 msgstr ""
 

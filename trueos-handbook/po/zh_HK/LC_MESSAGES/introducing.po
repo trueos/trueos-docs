@@ -931,7 +931,7 @@ msgid ""
 "and appear in the login menu, allowing the user to select their environment."
 msgstr ""
 
-#: ../../introducing.rst:0
+#: ../../introducing.rst:91
 msgid "Text Formatting Examples"
 msgstr ""
 
@@ -994,7 +994,7 @@ msgid ""
 "provides both GELI and boot environment support."
 msgstr ""
 
-#: ../../introducing.rst:0
+#: ../../introducing.rst:354
 msgid "Different system services between |trueos| and FreeBSD"
 msgstr ""
 
@@ -1081,15 +1081,15 @@ msgid ""
 " File Sharing` for a comparison of some graphical file manager utilities."
 msgstr ""
 
-#: ../../introducing.rst:0
+#: ../../introducing.rst:470
 msgid "Filesystem Support on |trueos|"
 msgstr ""
 
-#: ../../introducing.rst:0
+#: ../../introducing.rst:559
 msgid "BSD and Linux Feature Names"
 msgstr ""
 
-#: ../../introducing.rst:0
+#: ../../introducing.rst:590
 msgid "Common BSD and Linux Commands"
 msgstr ""
 
@@ -1110,7 +1110,7 @@ msgid ""
 "their previous operating system."
 msgstr ""
 
-#: ../../introducing.rst:0
+#: ../../introducing.rst:671
 msgid "TrueOS/Windows equivalents"
 msgstr ""
 

@@ -1268,7 +1268,7 @@ msgid ""
 "system service management in |trueos|."
 msgstr ""
 
-#: ../../postinstall.rst:0
+#: ../../postinstall.rst:703
 msgid ""
 "Comparison between the FreeBSD :command:`rc` and |trueos| OpenRC service "
 "management"
@@ -1292,7 +1292,7 @@ msgstr ""
 msgid "**default**: Services started by ports are added here."
 msgstr ""
 
-#: ../../postinstall.rst:0
+#: ../../postinstall.rst:817
 msgid "Service and Runlevel Management Commands"
 msgstr ""
 
@@ -1343,15 +1343,15 @@ msgid ""
 "elements, documented in :numref:`Table %s <orcpritun>`."
 msgstr ""
 
-#: ../../postinstall.rst:0
+#: ../../postinstall.rst:972
 msgid "Services and runlevels"
 msgstr ""
 
-#: ../../postinstall.rst:0
+#: ../../postinstall.rst:1072
 msgid "OpenRC Primary Tunables"
 msgstr ""
 
-#: ../../postinstall.rst:0
+#: ../../postinstall.rst:1101
 msgid "OpenRC Other Tunables"
 msgstr ""
 

@@ -431,7 +431,7 @@ msgid ""
 "|picl|."
 msgstr ""
 
-#: ../../pico.rst:0
+#: ../../pico.rst:123
 msgid "Pico Server Configuration Settings"
 msgstr ""
 
@@ -443,7 +443,7 @@ msgstr ""
 msgid "VirtualGL Gears Test"
 msgstr ""
 
-#: ../../pico.rst:0
+#: ../../pico.rst:307
 msgid "|pise| Administration Commands"
 msgstr ""
 
