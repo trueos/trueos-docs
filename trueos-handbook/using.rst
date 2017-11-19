@@ -7,7 +7,7 @@ Using |trueos|
 This chapter discusses using |trueos| for many common tasks. Because
 TrueOS incorporates the |lumina| desktop environment and |sysadm|
 system management utility, those projects are used for a variety of
-user customization tasks such as themeing, user management, and system
+user customization tasks such as theming, user management, and system
 backups. As each of these projects have their own documentation, links
 to the |lumina| and |sysadm| client handbooks are provided.
 
