@@ -140,7 +140,29 @@
             {% endif %}
           {% endblock %}
         </div>
-      </div>
+	<div id="wy-menu rst-imagebox2" style=width:190px;height:205px; data-spy="affix" role="navigation" aria-label="main navigation" <p>Advertising &nbsp<a href="introducing.html#ethical-advertising-policy"><img src="{{pathto("_static/information-icon.png", 1) }}" border="0" style=width:14px;height:14px; alt="image"/></a></p>
+	  {% block imagecontainer  %}
+
+		   <script type="text/javascript">
+		  function randomImg(){
+		  var myImages = new Array();
+		  myImages[1] = "_static/newegg.jpg";
+		  myImages[2] = "_static/freenas2.png";
+
+		  var myLinks = new Array();
+
+		  myLinks[1] = "https://track.flexlinkspro.com/a.ashx?foid=1095806.1187656&foc=1&fot=9999&fos=1";
+		  myLinks[2] = "https://www.ixsystems.com/freenas-mini/";
+
+		  var rnd = Math.floor((Math.random() * 2) +1);
+
+		  document.write('<a href="'+myLinks[rnd]+'"><img src="'+myImages[rnd]+'" border="0"></a>');
+		  }
+		  randomImg();
+		  </script>
+	  {% endblock %}
+	</div>
+	 &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
