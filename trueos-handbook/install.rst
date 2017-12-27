@@ -18,48 +18,51 @@ Download and Prepare to Install
 |trueos| uses a rolling release model rather than versioned releases.
 There are two primary options of |trueos| install: STABLE and UNSTABLE:
 
-1. STABLE is meant to be less frequently updated and synchronized with
-   FreeBSD. This means users see less experimental work and generally
-   have a smoother experience. However, users on STABLE also typically
-   wait longer for bugfixes and patches to be available. While some
-   |trueos| development may be backported to STABLE early, FreeBSD
-   patches and port synchronization is done on a six-month schedule.
+1. STABLE is synchronized with FreeBSD. This means users see less
+   experimental work and generally have a smoother experience. However,
+   users on STABLE typically wait longer for bugfixes and patches
+   to be available. While some |trueos| development may be backported to
+   STABLE early, FreeBSD patches and port synchronization is done on a
+   six-month schedule.
 
 2. UNSTABLE is the full leading edge of TrueOS and FreeBSD development.
    Patches are very frequent, but can incorporate experimental work from
-   both the |trueos| and FreeBSD projects. UNSTABLE is recommended for
-   users who need the absolute latest work from FreeBSD or |trueos| and
-   are willing to tolerate breakage or less system stability. It is also
-   recommended for users who want to test and contribute patches to
-   FreeBSD or |trueos|.
+   |trueos|, FreeBSD, and other Open Source projects and contributions.
+   UNSTABLE is recommended for users who need the absolute latest work
+   from FreeBSD or |trueos| and are willing to tolerate breakage or less
+   system stability. It is also recommended for users who want to test
+   and contribute patches to FreeBSD or |trueos|.
 
 Periodically, the |sysadm| :sysclbk:`Update Manager <update-manager>`
 provides patches to update the operating system. By default, users who
 install STABLE receive updates from the STABLE track, and UNSTABLE users
-are on the UNSTABLE track. It is possible to switch update tracks
+follow the UNSTABLE track. It is possible to switch update tracks
 post-installation. See the :ref:`Updating TrueOS` section for
 instructions on switching update repositories.
 
 Installation files can be downloaded from the
-`TrueOS® website <https://www.trueos.org/downloads/>`_ or the
-`PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_.
+`TrueOS® website <https://www.trueos.org/downloads/>`_.
 
-Several types of files are available for download. Any file with the
-naming convention *TrueOS-<year>-<month>-<day>-x64-[DVD/USB].[iso/img]*
-are STABLE or UNSTABLE installation files, depending on the download
-directory:
+:numref:`Figure %s <downloadscreen1>` below shows the |trueos| website,
+and how to download a STABLE or UNSTABLE version of |trueos|. It also
+shows a drop down menu containing the different types of install files
+available for download.
 
-* `STABLE <http://download.trueos.org/master/amd64/>`_: Files in the
-  :file:`master/amd64` directory are the STABLE version of |trueos|.
+.. _downloadscreen1:
 
-* `UNSTABLE <http://download.trueos.org/unstable/amd64/>`_: Files in the
-  :file:`unstable/amd64` directory are the UNSTABLE version of |trueos|.
+.. figure:: images/downloadscreen1.png
+   :scale: 100%
 
-* **"latest" files**: These entries are symlinks to their related
-  install files and are generally ignored.
+   UNSTABLE or STABLE Download Screen
 
-Install files following the above naming conventions can also end with a
-variety of extensions:
+To install a graphical desktop, download the |trueos| Desktop option.
+Then, depending on the file chosen, either burn it to a DVD media
+or write it to a removable USB device.
+
+If installing a command-line only server is preferred, download and
+begin installing the |trueos| Server option.
+
+Install files can end with a variety of extensions:
 
 * **.iso**: If the file has an *.iso* extension, it should be burned to
   a DVD media.
@@ -71,14 +74,6 @@ variety of extensions:
   :ref:`Data Integrity Check`.
 * **.torrent**: If a torrent is available, a file with the same name
   and a *.torrent* extension will be visible.
-
-To install a graphical desktop, download the file ending in *DVD.iso* or
-*USB.img*. Then, depending on the file type, either burn it to a DVD
-media or write it to a removable USB device.
-
-If installing a command-line only server is preferred, download and
-begin installing |trueos| in the same manner as the desktop, but choose
-the :guilabel:`Server` option in the installer.
 
 Refer to :ref:`Burning the Installation Media` for instructions on how
 to burn the downloaded file to bootable media.
@@ -425,8 +420,6 @@ a console-based server operating system, as seen in
 desktop installation. Refer to the :ref:`Server Installation`
 instructions for installing a command-line only server.
 
-.. TODO Update when text reworks are pulled into STABLE
-
 .. _install3:
 
 .. figure:: images/install3e.png
@@ -459,8 +452,6 @@ installation: VESA (for MBR) and SCFB (for UEFI). |trueos| provides
 the option to further choose your graphics driver as part of the
 :numref:`Figure %s <install16>` screen.
 
-.. TODO Update when text reworks are pulled into STABLE
-
 .. _install16:
 
 .. figure:: images/install16.png
@@ -484,8 +475,6 @@ Disk Selection
 
 The **Disk Selection** screen, seen in :numref:`Figure %s <install5>`,
 summarizes the default disk configuration.
-
-.. TODO Update when text reworks are pulled into STABLE
 
 .. _install5:
 
@@ -817,8 +806,6 @@ Once :guilabel:`Yes` is selected to start the installation, a progress
 screen, seen in :numref:`Figure %s <install13>`, updates the user on
 the installation progress.
 
-.. TODO Update when text reworks are pulled into STABLE
-
 .. _install13:
 
 .. figure:: images/install13c.png
@@ -839,8 +826,6 @@ Installation Finished
 The **Installation Finished** screen, shown in
 :numref:`Figure %s <install14>`, appears once the installation is
 complete.
-
-.. TODO Update when text reworks are pulled into STABLE
 
 .. _install14:
 

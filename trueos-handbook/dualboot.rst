@@ -4,9 +4,7 @@
 Dual Boot
 *********
 
-In order to dual boot operating systems there are some requirements that
-need to be done before dual booting. This chapter discusses the
-necessary steps to dual boot.
+This chapter discusses the necessary steps to dual boot.
 
 
 .. index:: Create free space
@@ -17,12 +15,12 @@ Creating Free Space
 
 To dual-boot |trueos| with an existing operating system, first make sure
 there is either a free partition or an area of free space to use. For
-example, if the system is currently running a Windows operating system,
-it usually occupies the entire hard drive. The partition with the
-current operating system needs to shrink to make room to install
-|trueos|. Shrinking is an operation which retains the current operating
-system while reducing the size of its partition. This section
-demonstrates how to create free space within Windows 10.
+example, a system running the Winows operating system usually occupies
+the entire hard drive. The partition with the current operating system
+needs to shrink to make room to install |trueos|. Shrinking is an
+operation which retains the current operating system while reducing the
+size of its partition. This section demonstrates how to create free
+space within Windows 10.
 
 .. warning:: **Before** shrinking a partition, be sure to back up any
    valuable data to an external media such as a removable USB drive!
@@ -40,8 +38,8 @@ a 100 MB system partition.
 
    Disk Layout in Disk Management
 
-Since the three Windows partitions fill the entire disk, the data
-partition must be shrunk to create space to install |trueos|.
+This image shows all three Windows partitions filling the enitre disk.
+The data partition must be shrunk to create space to install |trueos|.
 Right-click the data partition (in this example, the *(C:)* partition),
 and select :guilabel:`Shrink Volume`, as shown in
 :numref:`Figure %s <partition2>`.
@@ -70,6 +68,9 @@ choose a smaller number for a smaller |trueos| partition.  Click
 take several minutes to complete. When finished, the newly created free
 space is displayed as seen in :numref:`Figure %s <shrink2>`.
 
+.. note:: The minimum requirement for a |trueos| install is 20 GB. It is
+   recommended to have 50 GB.
+
 .. _shrink2:
 
 .. figure:: images/shrink2.png
@@ -83,22 +84,11 @@ space is displayed as seen in :numref:`Figure %s <shrink2>`.
    all of the partitions so the free space is recognizable when the
    |trueos| installer displays the current partitions.
 
-.. index:: install with dualboot
-.. _Dual Booting:
+.. index:: dual booting requirements
+.. _Requirements for Dual Booting:
 
-Dual Booting
-============
-
-A |trueos| installation assumes there is an existing *GPT* or primary
-partition for installation. If the computer has only one disk and
-|trueos| is the only operating system, it is fine to accept the default
-partitioning scheme. However, if |trueos| is to share space with other
-operating systems, ensure |trueos| is installed into the correct
-partition, or an existing operating system may be overwritten.
-
-.. note:: As adjusting the partitions/spacing on active disks can be a
-   complicated and difficult process, it is recommended to partition
-   your disk for dual booting before installing any operating systems.
+Requirements for Dual Booting
+=============================
 
 Dual booting with |trueos| has several requirements:
 
@@ -118,6 +108,23 @@ Dual booting with |trueos| has several requirements:
 * Back up any existing data! It is recommended to store this backup
   on a different computer, removable media such as a USB drive or DVD
   media.
+
+.. index:: install with dualboot
+.. _Dual Booting:
+
+Dual Booting
+============
+
+A |trueos| installation assumes there is an existing *GPT* or primary
+partition for installation. If the computer has only one disk and
+|trueos| is the only operating system, it is fine to accept the default
+partitioning scheme. However, if |trueos| is to share space with other
+operating systems, ensure |trueos| is installed into the correct
+partition, or an existing operating system may be overwritten.
+
+.. note:: As adjusting the partitions/spacing on active disks can be a
+   complicated and difficult process, it is recommended to partition
+   your disk for dual booting before installing any operating systems.
 
 When installing |trueos| onto a computer meant to contain multiple
 operating systems, carefully select the **correct** partition in the
@@ -141,7 +148,7 @@ Once installed, the system boots into the rEFInd menu seen in
 
    rEFInd Boot Manager
 
-rEFInd displays any installed operating systems, booting into the
+rEFInd displays any installed operating systems and boots into the
 default choice after a few seconds. Press any key other than
 :kbd:`Enter` to pause automatic booting, then use the arrow keys to
 select the desired operating system. Press :kbd:`Enter` to continue

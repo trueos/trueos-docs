@@ -491,8 +491,6 @@ To perform the installation to a new boot environment, start the
 a server. Press :guilabel:`Next` to view the :guilabel:`Disk Selection`
 screen, shown in :numref:`Figure %s <upgrade1>`.
 
-.. TODO update screen when text reworks are added to STABLE.
-
 .. _upgrade1:
 
 .. figure:: images/upgrade1b.png
@@ -501,7 +499,7 @@ screen, shown in :numref:`Figure %s <upgrade1>`.
    Disk Selection
 
 |trueos| automatically detects if the drive has an existing boot
-environment, filling in the data as necessary. If no boot environments
+environment and fills in the data as necessary. If no boot environments
 are detected, :guilabel:`Install into Boot Environment` is invisible.
 To upgrade, select :guilabel:`Install into Boot Environment` and
 choose which existing pool to install into from the drop-down menu. In
@@ -511,10 +509,10 @@ the existing **tank** pool. Press :guilabel:`Next` when ready.
 .. warning:: Be sure :guilabel:`Install into Boot Environment` is
    checked before proceeding, or data can be lost.
 
-A pop-up will appear, asking to start the default Full-Disk
+A pop-up will appear and ask to start the default Full-Disk
 installation. Click :guilabel:`Yes` to begin the installation.
 
-Once the installation is complete, reboot the system and remove the
+When the installation is complete, reboot the system and remove the
 installation media. The post-installation screens run as described in
 the :ref:`Booting Into TrueOS <Booting Into TrueOS>` section to help configure the new
 installation.

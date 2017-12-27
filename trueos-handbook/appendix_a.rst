@@ -4,7 +4,7 @@
 Appendix A: Conventions & Legal
 *******************************
 
-The following section contains the necessary legal information. It also
+This section contains the necessary legal information. It also
 contains a helpful table to understand some of the conventions used
 throughout this document.
 
