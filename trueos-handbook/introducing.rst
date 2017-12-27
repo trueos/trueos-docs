@@ -61,52 +61,6 @@ While it began as an independent project, |trueos| is financially backed
 and supported by the enterprise-class hardware solutions provider
 `iXsystems <https://www.ixsystems.com/>`_ since October 2006.
 
-.. index:: typographic conventions
-.. _Typographic Conventions:
-
-Typographic Conventions
-=======================
-
-The |trueos| User Guide uses several typographic conventions.
-:numref:`Table %s <typconv>` provides a simple reference for these
-conventions:
-
-.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
-
-.. _typconv:
-
-.. table:: Text Formatting Examples
-   :class: longtable
-
-   +---------------------+------------------------------------------+
-   | Item                | Visual Example                           |
-   +=====================+==========================================+
-   | Graphical elements: | Click the :guilabel:`Import CA` button.  |
-   | buttons, icons,     |                                          |
-   | fields, columns and |                                          |
-   | boxes               |                                          |
-   +---------------------+------------------------------------------+
-   | Menu selections     | Click                                    |
-   |                     | :menuselection:`System --> Information`. |
-   +---------------------+------------------------------------------+
-   | CLI Command name    | Use :command:`scp`.                      |
-   +---------------------+------------------------------------------+
-   | A command line      | :samp:`[tmoore@example] ls /etc`         |
-   | example             |                                          |
-   +---------------------+------------------------------------------+
-   | Files, volume and   | Locate the :file:`/etc/rc.conf` file.    |
-   | dataset names, and  |                                          |
-   | directories         |                                          |
-   +---------------------+------------------------------------------+
-   | Keyboard keys       | Press the :kbd:`Enter` key.              |
-   +---------------------+------------------------------------------+
-   | Important points    | **This is important.**                   |
-   +---------------------+------------------------------------------+
-   | Values entered into | Enter *127.0.0.1* in the address field.  |
-   | fields, or device   |                                          |
-   | names               |                                          |
-   +---------------------+------------------------------------------+
 
 .. index:: features
 .. _Features:
@@ -142,16 +96,6 @@ Features
   enhancements. Additionally, the Update Manager is used to upgrade the
   operating system or update installed software.
 
-  Currently, users can choose to follow one of two "tracks" for updates:
-  UNSTABLE and STABLE. UNSTABLE updates are the "bleeding edge" of
-  TrueOS development, for those users who want to test bugfixes and new
-  features. STABLE updates are less frequent, but more reliable. These
-  updates benefit from the testing and patches submitted by our UNSTABLE
-  testers.
-
-* **Virus-free:** |trueos| is unaffected by viruses, spyware, or other
-  malware (see :ref:`Security`).
-
 * **No defragmentation:** |trueos| hard drives never need defragmenting
   and are formatted with OpenZFS, a self-healing filesystem.
 
@@ -159,9 +103,6 @@ Features
   automatic switching between wired and wifi network connections. Also,
   the rolling release model of |trueos| provides an environment to
   quickly add support for new hardware.
-
-* **Secure environment:** |trueos| provides a pre-configured firewall
-  and an inbuilt host-based Intrusion Detection System.
 
 * **Easy system administration:** |trueos| provides many graphical tools
   for performing system administration.
@@ -172,129 +113,188 @@ Features
 * **Vibrant community:** |trueos| has a friendly and helpful
   :ref:`community <TrueOS Community>`.
 
-.. index:: legal
-.. _Legal:
+.. index:: security
+.. _Security:
 
-Legal
-=====
+Security
+--------
 
-This section covers the required legal elements of the handbook,
-including the Copyright notice, used Trademarks, and the |trueos|
-ethical advertising policy.
+Your |trueos| system is secure by default. This section provides an
+overview of the built-in security features. If you want to know more
+about increasing the security of your system beyond its current level,
+additional resources are also provided in this section.
 
-.. index:: copyright, trademarks
-.. _Copyright:
+The security features built into |trueos| include:
 
-Copyright & Trademarks
-----------------------
+* **Naturally immune to viruses and other malware:** Most viruses are
+  written to exploit Windows systems and do not understand the binaries
+  or paths found on a |trueos| system. Antivirus software is still
+  available in the Security section of |appcafe|, as this is useful when
+  sending or forwarding email attachments to users running other
+  operating systems.
 
-Copyright © 2005-2017, iXsystems
+* **Potential for serious damage is limited:** File and directory
+  ownership and permissions along with separate user and group functions
+  mean, as an ordinary user, any program executed is only granted the
+  abilities and access of the user. A user not a member of the *wheel*
+  group can not switch to administrative access and can not enter or
+  list the contents of a directory not been set for universal access.
 
-The |trueos| User Guide is freely available for sharing and
-redistribution under the terms of the
-`Creative Commons Attribution License <https://creativecommons.org/licenses/by/3.0/>`_.
-This means you have permission to copy, distribute, translate, and
-adapt the work, as long as you attribute the |trueos| Project as the
-original source of the Guide.
+* **Built-in firewall:** The default firewall ruleset allows accessing
+  the Internet and the shares available on your network, but does not
+  allow any inbound connections to your computer.
 
-|trueos| and the |trueos| logo are registered trademarks of
-`iXsystems <https://www.ixsystems.com/>`_. To use the |trueos| logo in
-your own works, please ask for permission first from
-marketing@ixsystems.com.
+* **Very few services are enabled by default:** View which services are
+  started at boot time by reading through the output of
+  :command:`rc-update`.
 
-|lumina| and the |lumina| logo are registered trademarks of
-`iXsystems <https://www.ixsystems.com/>`_. To use the |lumina| logo in
-your own works, please ask for permission first from
-marketing@ixsystems.com.
+* **SSH is disabled by default:** SSH can only be enabled by the
+  superuser. This setting prevents bots and other users from trying to
+  access your system. If SSH is needed, add :command:`sshd_enable=YES`
+  to :file:`/etc/rc.conf`. Start the service by typing
+  :command:`service sshd start`. A firewall rule also needs to be added
+  using the |sysadm| :sysclbk:`Firewall Manager <firewall-manager>` to
+  allow SSH connections over TCP port 22.
 
-|sysadm| is a trademark of `iXsystems <https://www.ixsystems.com/>`_.
+* **SSH root logins are disabled by default:** If SSH is enabled, login
+  as a regular user and use :command:`su` or :command:`sudo` when
+  administrative actions are required. Do not change this setting, as it
+  prevents an unwanted user from having complete access to the system.
 
-|trpi|, |pise|, and |picl| are trademarks of
-`iXsystems <https://www.ixsystems.com/>`_.
+* **sudo is installed:** It is configured to allow users in the *wheel*
+  group permission to run an administrative command after typing their
+  password. By default, the first user created during installation
+  is added to the *wheel* group. Use the |sysadm|
+  :sysclbk:`User Manager <user-manager>` to add other users to this
+  group. Change the default :command:`sudo` configuration using
+  :command:`visudo` as the superuser.
 
-AMD is a trademark of Advanced Micro Devices, Inc.
+* :wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is
+  loaded by default for the Intel Core i5/i7 processors that support
+  this encryption set. This support speeds up AES encryption and
+  decryption.
 
-Apache is a trademark of The Apache Software Foundation.
+* **Automatic notification of security advisories:**
+  The |sysadm| :sysclbk:`Update Manager <update-manager>` automatically
+  notifies you if an update is available as the result of a
+  `security advisory <https://www.freebsd.org/security/advisories.html>`_
+  affecting |trueos|. This allows you to keep your operating system
+  fully patched with just the click of a mouse.
 
-|appcafe| is a registered trademark of
-`iXsystems <https://www.ixsystems.com/>`_.
+* The |trueos| operating system and its available software packages are
+  built with `LibreSSL <http://www.libressl.org/>`_, which has fewer
+  vulnerabilities than OpenSSL.
 
-Asus® and Eee PC® are registered trademarks of ASUSTeK® Computer Inc.
+* :sysclbk:`PersonaCrypt <personacrypt>` allows a user to use a
+  removable, encrypted device as their home directory.
 
-Facebook® is a registered trademark of Facebook Inc.
+* :ref:`Tor Mode` can be used to anonymously access Internet sites as it
+  automatically forwards all Internet traffic through the
+  `Tor Project's <https://www.torproject.org/>`_ transparent proxy
+  service.
 
-Flash® is a registered trademark of Adobe Systems Incorporated in the
-United States and/or other countries.
+To learn more about security on FreeBSD and |trueos| systems,
+:command:`man security` is a good place to start. These resources
+provide more information about security on FreeBSD-based operating
+systems:
 
-FreeBSD® is a registered trademark of the
-`FreeBSD Foundation <https://www.freebsdfoundation.org/>`_.
+* `FreeBSD Security Information <https://www.freebsd.org/security/>`_
 
-|freenas| is a registered trademark of
-`iXsystems <https://www.ixsystems.com/>`_.
+* `Security Section of FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_
 
-Intel, the Intel logo, Pentium Inside, and Pentium are trademarks of
-Intel Corporation in the U.S. and/or other countries.
+* `Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_
 
-Java™ is a trademark of Oracle America and/or its affiliates in the
-United States and other countries.
+.. index:: ZFS overview
+.. _ZFS Overview:
 
-LinkedIn® is a registered trademark of LinkedIn Corporation.
+ZFS Overview
+------------
 
-Linux® is a registered trademark of Linus Torvalds.
+ZFS is an enterprise grade file-system, which provides many features.
+These include: support for high storage capacities, high reliability,
+the ability to quickly take snapshots, boot environments, continuous
+integrity checking and automatic repair, RAIDZ which was designed to
+overcome the limitations of hardware RAID, and native NFSv4 ACLs.
 
-Mac and Mac OS are trademarks of Apple Inc., registered in the U.S. and
-other countries.
+If new to ZFS, the Wikipedia entry on :wiki:`ZFS` provides an
+excellent starting point to learn about its features. Additionally,
+`FreeBSD Mastery: ZFS <https://www.michaelwlucas.com/os/fmzfs>`_
+by Michael W Lucas and Allan Jude is a helpful ZFS resource as it
+is implemented in FreeBSD.
 
-NVIDIA® is a trademark and/or registered trademark of NVIDIA Corporation
-in the U.S. and other countries.
+These resources are also useful to bookmark and peruse as needed:
 
-ThinkPad® is a registered trademark of Lenovo.
+* `ZFS Evil Tuning Guide <https://www.solaris-cookbook.eu/solaris/solaris-10-zfs-evil-tuning-guide/>`_
 
-Twitter is a trademark of Twitter, Inc. in the United States and other
-countries.
+* `FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_
 
-UNIX® is a registered trademark of The Open Group.
+* `ZFS Best Practices Guide <https://documents.irf.se/get_document.php?group=Computer&docid=311>`_
 
-VirtualBox® is a registered trademark of Oracle.
+* `ZFS Administration Guide <http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
 
-VMWare® is a registered trademark of VMWare, Inc.
+* `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/becoming-a-zfs-ninja>`_
 
-Windows® is a registered trademark of Microsoft Corporation in the
-United States and other countries.
+* `Blog post explaining how ZFS simplifies the storage stack <https://blogs.oracle.com/bonwick/rampant-layering-violation>`_
 
-.. index:: advertising policy
-.. _Ad policy:
+:numref:`Table %s <zfsterms>` is a brief glossary of terms used by ZFS:
 
-Ethical Advertising Policy
---------------------------
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.20\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.80\linewidth-2\tabcolsep}|
 
-For many years, users have wanted to give back to the |trueos| project.
-Generally, we encouraged users to donate or actively contribute to the
-FreeBSD project to ensure FreeBSD continues to be successful in the
-future. Because |trueos| is open source software, we have included a
-minimal number of ads as a simple method for users to give back to the
-project, if they wish.
+.. _zfsterms:
 
-The primary consideration for these ads is to avoid detracting from the
-user experience as much as possible. To this end, any ads in the
-Handbook will be limited to the navigation sidebar, and only in a
-predefined space underneath all other navigation options. We are
-resolved to protect user privacy and security, and do not collect user
-information, with the exception of click throughs. Furthermore, we do
-not collect any data for targeted ads, and are committed to only show
-high quality ads pertaining to our user base.
+.. table:: ZFS Terms
+   :class: longtable
 
-**Cookie Policy**
-
-Clicking on a Newegg ad directs users through an affiliate link that
-gives the |trueos| project a modest commission based on any items
-purchased within 24 hours. This is a simple time tracking cookie used to
-ensure the |trueos| project is afforded its commission. To ask questions
-about our Ethical Advertising policy, please contact joshms@trueos.org
-for more information.
-
-.. index:: TrueOS comparisons
-.. _TrueOS Comparisons:
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | Term     | Description                                                                                                                                  |
+   +==========+==============================================================================================================================================+
+   | Pool     | A collection of devices providing physical storage and data replication managed by ZFS. This pooled storage model eliminates the concept of  |
+   |          | volumes and the associated problems of partitions, provisioning, wasted bandwidth, and stranded storage. Thousands of filesystems can draw   |
+   |          | from a common storage pool, each one consuming only its required space. The combined I/O bandwidth of all devices in the pool is available   |
+   |          | at all times to all filesystems. The `Storage Pools Recommendations <http://zqscm.qiniucdn.com/data/20091118230710/index.html>`_ of the ZFS  |
+   |          | Best Practices Guide provides detailed recommendations for creating the storage pool.                                                        |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | Mirror   | A form of RAID where all data is mirrored onto two or more disks, creating a redundant copy should a disk fail.                              |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | RAIDZ    | ZFS software solution equivalent to RAID5, as it allows one disk to fail without losing data. Requires at least *3* disks.                   |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | RAIDZ2   | Double-parity ZFS software solution similar to RAID6, as it allows two disks to fail without losing data. Requires a minimum of *4* disks.   |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | RAIDZ3   | Triple-parity ZFS software solution. RAIDZ3 offers three parity drives and can operate in degraded mode if up to three drives fail with no   |
+   |          | restrictions on which drives can fail.                                                                                                       |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | Dataset  | Once a pool is created, it can be divided into datasets. A dataset is similar to a folder as it supports permissions. A dataset is also      |
+   |          | similar to a filesystem since properties such as quotas and compression can be set.                                                          |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | Snapshot | A read-only, point-in-time copy of a filesystem. Snapshots can be created quickly and, if little data changes, new snapshots take very       |
+   |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both old and new      |
+   |          | versions. Snapshots provide a clever way of keeping a history of files, should an older copy or even a deleted file need to be recovered.    |
+   |          | For this reason, many administrators snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and store   |
+   |          | them on another system. Such a strategy allows the administrator to roll the system back to a specific time, or if there is a catastrophic   |
+   |          | loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within 15 minutes of the data loss). Snapshots can  |
+   |          | be cloned or rolled back, but the files on the snapshot can not be accessed independently.                                                   |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | Clone    | A writable copy of a snapshot which can only be created on the same ZFS volume. Clones provide an extremely space efficient way to store     |
+   |          | many copies of mostly-shared data such as workspaces, software installations, and diskless clients. Clones do not inherit the properties of  |
+   |          | the parent dataset, but rather inherit the properties based on where the clone is created in the ZFS pool. Because a clone initially shares  |
+   |          | all its disk space with the original snapshot, its used property is initially zero. As changes are made to the clone, it uses more space.    |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | ZIL      | A filesystem journal that manages writes. The ZIL is a temporary storage area for sync writes until they are written asynchronously to the   |
+   |          | ZFS pool. If the system has many sync writes, such as from a database server, performance can be increased by adding a dedicated log device  |
+   |          | known as a SLOG (Secondary LOG). If the system has few sync writes, a SLOG will not speed up writes. When creating a dedicated log device,   |
+   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors able to handle writing the contents of the SSD's RAM to    |
+   |          | the SSD. If a dedicated log device is needed, the SSD should be half the size of system RAM, as anything larger is unused capacity. Note a   |
+   |          | dedicated log device can not be shared between ZFS pools, and the same device cannot hold both a log and a cache device.                     |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is known as an L2ARC and ZFS uses it to store more |
+   |          | reads which can increase random read performance. However, adding a cache device will not improve a system with too little RAM and actually  |
+   |          | decreases performance, as ZFS uses RAM to track the contents of L2ARC. RAM is always faster than disks, so always add as much RAM as         |
+   |          | possible before determining if the system would benefit from a L2ARC device. If a lot of applications do large amounts of random reads on a  |
+   |          | dataset small enough to fit into the L2ARC, read performance may be increased by adding a dedicated cache device. SSD cache devices only     |
+   |          | help if the working set is larger than system RAM, but small enough that a significant percentage of it fits on the SSD. Note a dedicated    |
+   |          | L2ARC device can not be shared between ZFS pools.                                                                                            |
+   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 |trueos| Comparisons
 ====================
@@ -691,3 +691,442 @@ differences between Windows and BSD:
    level similarities. However, application development has diverged
    pretty strongly, so here are some suggestions for TrueOS/FreeBSD
    applications which may "fill the void" from your Mac system.
+
+.. index:: virtualization
+.. _Virtualization:
+
+Virtualization
+==============
+
+A virtualized environment allows a user to test drive an operating
+system without overwriting the current operating system. This is an
+excellent way to practice installation, determine whether the hardware
+is supported, or to try multiple versions of different operating
+systems. Virtualization software effectively creates windows (known as
+virtual machines) to install and use an operating system. The only
+limitation to virtualization is the hardware, as each virtual machine
+uses CPU and RAM. Depending upon the amount of CPU and RAM in the
+computer, the installed operating system using virtualization software
+may run slowly. If the computer slows down, try closing other
+applications running on the computer to free up some RAM.
+
+To run virtualization software on |trueos|, search for *virtualbox*
+within the |sysadm| :sysclbk:`AppCafe <appcafe>` and install the
+`VirtualBox <https://www.virtualbox.org/>`_ open source virtualization
+program and the
+`VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_.
+The guest additions add mouse pointer integration, shared folders
+between the host and guest, better video support, and a shared
+clipboard.
+
+.. note:: The first time running VirtualBox on a |trueos| system, a
+   background script automatically gives the user account the
+   permissions required to run this application. This might break any
+   existing shortcuts to VirtualBox. To fix the shortcut, logout and in
+   again.
+
+If the computer is running another operating system, download the binary
+for the specific operating system from the
+`VirtualBox Downloads page <https://www.virtualbox.org/wiki/Downloads>`_.
+VirtualBox runs on Windows, Linux, Macintosh, and OpenSolaris. It
+supports a large number of virtual machine installable operating
+systems.
+
+This section describes how to prepare VirtualBox for an installation of
+|trueos| using an :file:`.iso` file.
+
+.. index:: create virtual machine for an iso
+.. _Creating a Virtual Machine for an ISO File:
+
+Creating a Virtual Machine for an ISO File
+------------------------------------------
+
+Once the |trueos| ISO is downloaded and VirtualBox installed on the
+current system, create a virtual machine and use the ISO to install
+|trueos| into the virtual machine. The virtual machine must meet several
+minimum requirements and this section will demonstrate how to configure
+these:
+
+* 1024 MB base memory size.
+
+* A virtual disk **at least 20 GB in size** for a server installation or
+  **at least 50 GB in size** for a desktop installation.
+
+* A bridged adapter.
+
+To create the virtual machine, start VirtualBox to see the screen shown
+in :numref:`Figure %s <vbox1>`.
+
+.. _vbox1:
+
+.. figure:: images/vbox1a.png
+   :scale: 100%
+
+   VirtualBox Menu
+
+Click :guilabel:`New` to start the new virtual machine wizard and
+display the screen in :numref:`Figure %s <vbox2>`.
+
+.. _vbox2:
+
+.. figure:: images/vbox2a.png
+   :scale: 100%
+
+   Create Virtual Machine - Name, Type, and Version
+
+Enter a name for the virtual machine; it can be anything which makes
+sense to you. Click the :guilabel:`Operating System` drop-down menu and
+select :guilabel:`BSD`. In the :guilabel:`Version` drop-down menu,
+select :guilabel:`FreeBSD (64 bit)`. Click :guilabel:`Next` to see the
+screen in :numref:`Figure %s <vbox3>`.
+
+.. _vbox3:
+
+.. figure:: images/vbox3a.png
+   :scale: 100%
+
+   Virtual Machine Reserved Memory
+
+The base memory size must be changed to **at least 1024 MB.** If the
+system has a lot of RAM, use more. Any number within the green area is
+considered a safe value by VirtualBox, meaning it should not slow down
+the computer too much. When finished, click :guilabel:`Next` to see the
+screen in :numref:`Figure %s <vbox4>`.
+
+.. _vbox4:
+
+.. figure:: images/vbox4a.png
+   :scale: 100%
+
+   Virtual Hard Drive - New or Existing
+
+This screen is used to create the virtual hard drive, or the amount of
+disk space available to the virtual machine. If this is your first
+virtual machine, keep the default of
+:guilabel:`Create a virtual hard drive now` and click
+:guilabel:`Create` to go to the screen shown in
+:numref:`Figure %s <vbox5>`. If you have created a virtual machine in
+the past and wish to reuse its disk space, select
+:guilabel:`Use an existing virtual hard drive file` from the drop-down
+menu. Create as many virtual machines as desired. However, if the
+computer is getting low on disk space, consider reusing existing virtual
+hard drives to prevent the physical hard drive from being used up by old
+virtual machines.
+
+.. _vbox5:
+
+.. figure:: images/vbox5a.png
+   :scale: 100%
+
+   Hard Drive Type
+
+Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
+:numref:`Figure %s <vbox6>`.
+
+.. _vbox6:
+
+.. figure:: images/vbox6a.png
+   :scale: 100%
+
+   Storage Type
+
+Now choose whether to have :guilabel:`Dynamically allocated` or
+:guilabel:`Fixed size` storage. The first option uses disk space as
+needed until it reaches the maximum size set in the next screen. The
+second option creates a disk the same size as that specified amount of
+disk space, whether it is used or not. Choose the first option if disk
+space is a concern; otherwise choose the second option as it allows
+VirtualBox to run slightly faster. Once :guilabel:`Next` is selected,
+the screen in :numref:`Figure %s <vbox7>` displays.
+
+.. _vbox7:
+
+.. figure:: images/vbox7a.png
+   :scale: 100%
+
+   Virtual Disk - File Name and Size
+
+This screen is used to set the size (or upper limit) of the virtual
+machine. If planning to install |trueos| into the virtual machine,
+**increase the size to at least 20 GB** or an error will display during
+the |trueos| installation. If planning to install KDE, GNOME, multiple
+desktop managers, or applications within the virtual machine, choose at
+least **50 GB**. Whatever size is set, be sure the computer has enough
+free disk space to support it. Use the :guilabel:`folder` icon to browse
+to a directory on disk with sufficient space to hold the virtual
+machine.
+
+Once the selections are made, press :guilabel:`Create` to finish using
+the wizard. The virtual machine will now show up in the left box, as
+seen in the example in :numref:`Figure %s <vbox8>`.
+
+.. _vbox8:
+
+.. figure:: images/vbox8a.png
+   :scale: 100%
+
+   New Virtual Machine "test"
+
+In order to use the network card, configure bridging on the virtual
+machine. To do this, go to :menuselection:`Settings --> Network`. In the
+:guilabel:`Attached to` drop-down menu select
+:guilabel:`Bridged Adapter`, then select the name of the physical
+interface from the :guilabel:`Name` drop-down menu. In the example shown
+in :numref:`Figure %s <vbox9>`, the Intel Pro/1000 Ethernet card is
+attached to the network and has a device name of :file:`re0`.
+
+.. _vbox9:
+
+.. figure:: images/vbox9a.png
+   :scale: 100%
+
+   VirtualBox Bridged Adapter Configuration
+
+Before starting the virtual machine, configure it to use the
+installation media. Click the :guilabel:`Storage` hyperlink in the right
+frame to access the storage screen seen in :numref:`Figure %s <vbox10>`.
+
+.. _vbox10:
+
+.. figure:: images/vbox10a.png
+   :scale: 100%
+
+   Virtual Machine Storage Settings
+
+Double-click the word :guilabel:`Empty`, which represents the DVD
+reader. To access the |trueos| installer from the DVD reader,
+double-check the :guilabel:`Slot` is pointing to the correct location
+(e.g. :guilabel:`IDE Secondary Master`) and use the drop-down menu to
+change it if the location is incorrect.
+
+If using an ISO stored on the hard disk is preferred, click the
+:guilabel:`DVD` icon then :guilabel:`Choose a virtual CD/DVD disk file`
+to open a browser menu to navigate to the location of the ISO. Highlight
+the desired ISO and click :guilabel:`Open`. The name of the ISO will now
+appear in the :guilabel:`Storage Tree` section.
+
+|trueos| is now ready to be installed into the virtual machine.
+Highlight the virtual machine and click on the green :guilabel:`Start`
+icon. A window opens, indicating the virtual machine is starting. If a
+DVD is inserted, it should audibly spin and the machine will start to
+boot into the installation program. If it does not or if using an ISO
+stored on the hard disk, press :kbd:`F12` to select the boot device
+when the message to do so appears, then press :kbd:`c` to boot from
+CD-ROM. Proceed through the installation as described in the
+:ref:`Install` section.
+
+.. note:: If the installer GUI doesn't appear to load after configuring
+   your virtual machine, you may need to enable **EFI** in Virtualbox by
+   navigating :menuselection:`Settings --> System --> Motherboard` and
+   checking :guilabel:`Enable EFI (special OSes only)`.
+
+.. index:: supported hardware
+.. _Supported Hardware:
+
+Supported Hardware
+==================
+
+While the |trueos| installer is very easy to use, installing a brand new
+operating system can sometimes be a daunting task.
+
+Before beginning, there are a few things to check to ensure the system
+is ready to install |trueos|.
+
+* **Dual-booting or installing over the entire drive?** If dual-booting,
+  please ensure a primary partition is available. Refer to the chapter
+  on :ref:`Dual Booting`.
+
+* **Is your important data backed up?** Any irreplaceable data, such as
+  emails, bookmarks, or important files and documents should **always**
+  be backed up to an external media, such as a removable drive or
+  another system, **before** installing or upgrading any operating
+  system.
+
+To determine if the chosen hardware is detected by |trueos|, start a
+new installation and click the :guilabel:`Hardware Compatibility` icon
+in the lower left corner of the :ref:`Language` screen.
+
+If any problems arise with the installation, refer to the
+:ref:`Troubleshooting` section of this handbook.
+
+This section discusses the |trueos| hardware requirements and some
+supported hardware.
+
+.. index:: Minimum Requirements
+.. _Minimum Requirements:
+
+Minimum Requirements
+--------------------
+
+|trueos| has moderate hardware requirements and typically uses less
+resources than its commercial counterparts. Before installing |trueos|,
+make sure the hardware or virtual machine meets at least the minimum
+requirements. To get the most out of your |trueos| experience, use a
+system exceeding the minimum or recommended system requirements.
+
+At **bare minimum**, these requirements must be met in order to install
+|trueos|:
+
+**Minimum**
+
+* 64-bit processor
+
+* 1 GB RAM
+
+* 20 GB of free hard drive space on a primary partition for a
+  command-line server installation.
+
+* Network card
+
+Here are the **recommended** requirements. More RAM and available disk
+space improves the computing experience:
+
+**Recommended**
+
+* 64-bit processor
+
+* 4 GB of RAM
+
+* 50 GB of free hard drive space on a primary partition for a graphical
+  desktop installation.
+
+* Network card
+
+* Sound card
+
+* 3D-accelerated video card
+
+|trueos| does not require 50 GB for its installation. The minimum
+recommendation is to provide sufficient room for the installation of
+applications and to store local ZFS snapshots and boot environments.
+These can be used to retrieve earlier versions of files, rollback the
+operating system to an earlier point in time, or clone the operating
+system.
+
+More RAM is always recommended, so install as much as you can afford.
+To play modern video games, use a fast CPU. To create a collection of
+music and movies on the computer, sufficient disk space is required.
+
+.. index:: Supported Processors
+.. _Processor:
+
+Processor
+---------
+
+|trueos| installs on any system containing a 64-bit (also called
+*amd64*) processor. Despite the name, a 64-bit processor does **not**
+need to be manufactured by AMD in order to be supported. The
+`FreeBSD Hardware Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_
+lists the *amd64* processors known to work.
+
+.. index:: Supported Graphics
+.. _Graphics:
+
+Graphics
+--------
+
+Like many open source operating systems, |trueos| uses
+`X.org <https://www.x.org/wiki/>`_ drivers for graphics support.
+|trueos| automatically detects the optimal video settings for
+supported video drivers. Verify the graphics hardware is supported by
+clicking the :guilabel:`Hardware Compatibility` icon within the
+installer.
+
+Here is the major graphic vendor support:
+
+**NVIDIA:** 3D acceleration on NVIDIA is provided by native FreeBSD
+drivers. If an NVIDIA video card is detected, an
+:guilabel:`nVidia settings` icon will be added to
+:guilabel:`Browse Applications` for managing NVIDIA settings.
+
+**Intel:** 3D acceleration on most Intel graphics is supported. This
+includes Skylake, Haswell, Broadwell, and ValleyView.
+
+**ATI/Radeon:** 3D acceleration on most ATI and Radeon cards is
+supported.
+
+**Optimus:** At this time there is no switching support between the two
+graphics adapters provided by Optimus. Optimus implementations vary, so
+|trueos| may or may not be able to successfully load a graphics driver
+on hardware. If a blank screen shows after installation, check the BIOS
+to see if it has an option to disable one of the graphics adapters
+or to set *discrete* mode. If the BIOS does not provide a *discrete*
+mode, |trueos| defaults to the 3D Intel driver and disables NVIDIA. This
+will change in the future when the NVIDIA driver supports Optimus.
+
+.. index:: supported wireless cards
+.. _Wireless:
+
+Wireless
+--------
+
+|trueos| has built-in support for most wireless networking cards.
+|trueos| automatically detects available wireless networks for supported
+wireless devices. Verify the device is supported by clicking the
+:guilabel:`Hardware Compatibility` icon within the installer. If it is
+an external wireless device, insert it before running the installer.
+
+Certain Broadcom devices, typically found in less expensive laptops, are
+buggy and can have lockups when in *DMA* mode. If the device freezes,
+try switching to *PIO* mode in the BIOS. Alternately, add
+:command:`hw.bwn.usedma=0` to :file:`/boot/loader.conf` and reboot to
+see if anything changes.
+
+.. index:: supported laptops
+.. _Laptops:
+
+Laptops
+-------
+
+Many |trueos| users successfully run |trueos| on their laptops. However,
+some issues may occur, depending upon the model of laptop. These
+typically deal with:
+
+* **Sleep/suspend:** Unfortunately,
+  :wiki:`Advanced Configuration and Power Interface <Advanced_Configuration_and_Power_Interface>`
+  (ACPI) is not an exact science, meaning experimentation with various
+  :command:`sysctl` variables may be required to achieve successful
+  sleep and suspend states on your particular laptop model. If the
+  laptop is a ThinkPad,
+  `ThinkWiki <http://www.thinkwiki.org/wiki/ThinkWiki>`_ is an
+  excellent resource. For other types of laptops, try reading the
+  *SYSCTL VARIABLES* section of :command:`man 4 acpi` and check to see
+  if there is an ACPI man page specific to the laptop's vendor by typing
+  :command:`apropos acpi.` The
+  `Tuning with sysctl(8) <https://www.freebsd.org/doc/en/books/handbook/configtuning-sysctl.html>`_
+  section of the FreeBSD Handbook demonstrates how to determine the
+  current :command:`sysctl` values, modify a value, and make a modified
+  value persist after a reboot.
+
+* **Synaptics:** Disabling the system's touchpad may be dependant upon
+  the hardware. This
+  `forum post <https://forums.freebsd.org/threads/17370/#post-100670>`_
+  describes how to enable Synaptics and some of the :command:`sysctl`
+  options this feature provides.
+
+  The `SysAdm Mouse Settings <https://sysadm.us/handbook/client/>`_
+  also has options for disabling a system's touchpad, if one is
+  detected.
+
+To test the laptop's hardware, use the
+:guilabel:`Hardware Compatibility` icon in the :ref:`Language` screen
+before continuing with the installation.
+
+To install |trueos| onto an Asus Eee PC, review the
+`FreeBSD Eee page <https://wiki.FreeBSD.org/AsusEee>`_ first.
+
+The FreeBSD
+`Tuning Power Consumption page <https://wiki.FreeBSD.org/TuningPowerConsumption>`_
+has some tips for reducing power consumption.
+
+.. index:: thinkpad
+
+With regards to specific hardware, the ThinkPad T420 may panic during
+install. If it does, go into the BIOS and set the video mode to
+"discrete", which should allow the installation to complete. Some
+Thinkpads have a BIOS bug preventing them from booting from
+GPT-labeled disks. If unable to boot into a new installation, restart
+the installer and go into :guilabel:`Advanced Mode` in the
+:ref:`Disk Selection` screen. Make sure
+:guilabel:`GPT (Best for new hardware)` is unchecked. If it was
+checked previously, redo the installation with the box unchecked.

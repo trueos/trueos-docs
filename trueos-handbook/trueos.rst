@@ -8,12 +8,13 @@ Contents:
    :maxdepth: 4
 
    introducing
-   preinstall
    install
-   postinstall
+   dualboot
+   advanced
    using
    pico
    helpsupport
+   appendix_a
 
 .. only:: html
 
