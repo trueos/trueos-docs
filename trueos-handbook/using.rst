@@ -575,6 +575,7 @@ Right-click the entry for a wireless device, as seen in
 .. figure:: images/network15.png
    :scale: 100%
 
+
    Setup Access Point
 
 :numref:`Figure %s <network16>` shows the configuration screen if
@@ -1744,15 +1745,15 @@ In the CLI, the automounter adds a :file:`.desktop` file to
 :command:`lumina-open`. When the device is removed, the symlink is
 immediately removed from :file:`/media`.
 
-.. note:: The :file:`/autofs/*` directories are not cleaned when the
+.. note:: The :file:`/.autofs/*` directories are not cleaned when the
    device is removed. However, after device removal the directories are
    no longer associated with the device in the backend. For this reason,
    :file:`/media` is more useful to identify which devices are attached
    to the system.
 
-Alternately, all device names are added to the :file:`/autofs`
+Alternately, all device names are added to the :file:`/.autofs`
 directory. Attached devices are also accessed by navigating to
-:file:`/autofs/<devicename>`.
+:file:`/.autofs/<devicename>`.
 
 Known limitations:
 
@@ -1764,7 +1765,7 @@ Known limitations:
   ascertain if it can ever work with :command:`automount`.
 
 * Optical Media links are not yet created on the desktop. Optical media
-  is accessible by navigating to :file:`/autofs`.
+  is accessible by navigating to :file:`/.autofs`.
 
 * Any file system with limited FreeBSD support (HFS or EXT) remain at
   the same level of limited support.
