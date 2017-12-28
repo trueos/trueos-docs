@@ -94,11 +94,10 @@ try downloading the file again. In order to verify a checksum, use a
 checksum verification utility.
 
 .. note:: Only one of the checksums needs to be verified. The
-   `TrueOS website <http://download.trueos.org/master/amd64/>`_ lists
+   `TrueOS website <https://www.trueos.org/downloads/>`_ lists
    *.MD5*, *SHA256*, and *.SIG* files. The
-   `TrueOS website <http://download.trueos.org/master/amd64/>`_ has all
-   file types while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
-   both the :file:`.md5` and the :file:`.sha256` checksum files.
+   `TrueOS website <https://www.trueos.org/downloads/>`_ has all
+   file types.
 
 If using a Windows system, download and install a utility such as
 `Raymond's MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html>`_.
@@ -136,7 +135,7 @@ the contents of the related :file:`.md5` file:
  3eb6adef0ad171f6c5825f0f820557f5
 
 To use the *OpenPGP* :file:`.sig` file, use your preferred utility to
-verify the signature. The `OpenPGP website <http://openpgp.org/>`_ has
+verify the signature. The `OpenPGP website <https://openpgp.org/>`_ has
 numerous recommendations for verification utilities.
 
 .. index:: burn installation media
@@ -393,7 +392,7 @@ By default, |trueos| menus display in English, unless another language
 is selected in the drop-down menu in this screen. The menus in |trueos|
 are being continuously translated to other languages. To view the
 availability of a specific language, navigate to the
-`TrueOS® Translation Site <http://weblate.trueos.org>`_. A language may
+`TrueOS® Translation Site <https://weblate.trueos.org>`_. A language may
 show less than 100% translation, indicating not all of the menus are
 translated. Any untranslated menus are displayed in English. Refer to
 :ref:`Become a Translator` to assist in translating the graphical menus.
