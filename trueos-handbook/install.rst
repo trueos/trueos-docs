@@ -9,6 +9,285 @@ graphical desktop directly onto a hard drive or into a virtual machine
 using virtualization software such as
 `VirtualBox <https://www.virtualbox.org/>`_.
 
+.. index:: Download and Prepare to Install
+.. _Download and Prepare to Install:
+
+Download and Prepare to Install
+===============================
+
+|trueos| uses a rolling release model rather than versioned releases.
+There are two primary options of |trueos| install: STABLE and UNSTABLE:
+
+1. STABLE is synchronized with FreeBSD. This means users see less
+   experimental work and generally have a smoother experience. However,
+   users on STABLE typically wait longer for bugfixes and patches
+   to be available. While some |trueos| development may be backported to
+   STABLE early, FreeBSD patches and port synchronization is done on a
+   six-month schedule.
+
+2. UNSTABLE is the full leading edge of TrueOS and FreeBSD development.
+   Patches are very frequent, but can incorporate experimental work from
+   |trueos|, FreeBSD, and other Open Source projects and contributions.
+   UNSTABLE is recommended for users who need the absolute latest work
+   from FreeBSD or |trueos| and are willing to tolerate breakage or less
+   system stability. It is also recommended for users who want to test
+   and contribute patches to FreeBSD or |trueos|.
+
+Periodically, the |sysadm| :sysclbk:`Update Manager <update-manager>`
+provides patches to update the operating system. By default, users who
+install STABLE receive updates from the STABLE track, and UNSTABLE users
+follow the UNSTABLE track. It is possible to switch update tracks
+post-installation. See the :ref:`Updating TrueOS` section for
+instructions on switching update repositories.
+
+Installation files can be downloaded from the
+`TrueOS® website <https://www.trueos.org/downloads/>`_.
+
+:numref:`Figure %s <downloadscreen1>` below shows the |trueos| website,
+and how to download a STABLE or UNSTABLE version of |trueos|. It also
+shows a drop down menu containing the different types of install files
+available for download.
+
+.. _downloadscreen1:
+
+.. figure:: images/downloadscreen1.png
+   :scale: 100%
+
+   UNSTABLE or STABLE Download Screen
+
+To install a graphical desktop, download the |trueos| Desktop option.
+Then, depending on the file chosen, either burn it to a DVD media
+or write it to a removable USB device.
+
+If installing a command-line only server is preferred, download and
+begin installing the |trueos| Server option.
+
+Install files can end with a variety of extensions:
+
+* **.iso**: If the file has an *.iso* extension, it should be burned to
+  a DVD media.
+* **.img**: If it has a *img* extension, it should be burned to a USB
+  stick.
+* **.md5, .sha256, and .sig**: Depending upon the current operating
+  system and its tools, use the value in any of these files to
+  determine the integrity of the download, as described in
+  :ref:`Data Integrity Check`.
+* **.torrent**: If a torrent is available, a file with the same name
+  and a *.torrent* extension will be visible.
+
+Refer to :ref:`Burning the Installation Media` for instructions on how
+to burn the downloaded file to bootable media.
+
+.. index:: data integrity check
+.. _Data Integrity Check:
+
+Data Integrity Check
+--------------------
+
+After downloading the desired file, it is a good idea to check the file
+is exactly the same as the one on the |trueos| download server. While
+downloading, a portion of the file may get damaged or lost, making the
+installation file unusable. Each |trueos| installation file has an
+associated *MD5* and *SHA256* checksum. If a checksum of the downloaded
+file matches, the download was successful. If a checksum does not match,
+try downloading the file again. In order to verify a checksum, use a
+checksum verification utility.
+
+.. note:: Only one of the checksums needs to be verified. The
+   `TrueOS website <http://download.trueos.org/master/amd64/>`_ lists
+   *.MD5*, *SHA256*, and *.SIG* files. The
+   `TrueOS website <http://download.trueos.org/master/amd64/>`_ has all
+   file types while the `PC-BSD® CDN <http://iso.cdn.pcbsd.org/>`_ lists
+   both the :file:`.md5` and the :file:`.sha256` checksum files.
+
+If using a Windows system, download and install a utility such as
+`Raymond's MD5 & SHA Checksum Utility <http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html>`_.
+This utility can be used to simultaneously check the *MD5*, *SHA-1*,
+*SHA-256*, and *SHA-512* checksums of any file. Once installed, launch
+the program and use :guilabel:`Browse`, shown in
+:numref:`Figure %s <fastsum1>`, to browse to the location of the
+downloaded file.
+
+.. _fastsum1:
+
+.. figure:: images/checksum.png
+   :scale: 100%
+
+   Checksum Verification
+
+Once the file is selected, click :guilabel:`Open` to calculate the
+checksums. It may take a minute or so, depending upon the size of the
+downloaded file.
+
+On Linux and BSD systems, use the built-in :command:`md5` or
+:command:`md5sum` command line tool to display the MD5 checksum. In this
+example, the user types :command:`md5` to view the sum of a :file:`.img`
+file located in the :file:`Downloads` directory. Then, using the
+built-in :command:`cat` command line tool, the user compares the sum to
+the contents of the related :file:`.md5` file:
+
+.. code-block:: none
+
+ ~% md5 Downloads/TrueOS-2017-04-21-x64-USB.img
+ MD5 (Downloads/TrueOS-2017-04-21-x64-USB.img) =
+ 3eb6adef0ad171f6c5825f0f820557f5
+
+ ~& cat Downloads/TrueOS-2017-04-21-x64-USB.img.md5
+ 3eb6adef0ad171f6c5825f0f820557f5
+
+To use the *OpenPGP* :file:`.sig` file, use your preferred utility to
+verify the signature. The `OpenPGP website <http://openpgp.org/>`_ has
+numerous recommendations for verification utilities.
+
+.. index:: burn installation media
+.. _Burning the Installation Media:
+
+Burning the Installation Media
+------------------------------
+
+Once the installation file is downloaded and its checksum verified, burn
+it to a media. The media you use depends upon the file downloaded:
+
+* Files ending with :file:`.iso` can be burned to a DVD or used in a
+  Virtual Machine (VM).
+
+* Files ending in :file:`img` must be burned to a USB stick.
+
+To burn to a DVD, use either a burning utility packaged with the
+operating system on the system with the burner or a separate burning
+application. :numref:`Table %s <burn utils>` lists some freely available
+burning utilities.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.65\linewidth-2\tabcolsep}|
+
+.. _burn utils:
+
+.. table:: Free Burning Utilities
+   :class: longtable
+
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Operating System      | Utility                                                                                           |
+   +=======================+===================================================================================================+
+   | Windows               | `InfraRecorder utility <http://infrarecorder.org/>`_                                              |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Windows               | `Disk Burner <https://support.microsoft.com/en-us/help/15088/windows-create-installation-media>`_ |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Linux or \*BSD        | `K3B <https://www.kde.org/applications/multimedia/k3b/>`_                                         |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Linux or \*BSD        | `Brasero <https://wiki.gnome.org/Apps/Brasero>`_                                                  |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | FreeBSD/PC-BSD/TrueOS | `growisofs <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/creating-dvds.html>`_      |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+   | Mac OS X              | `Disk Utility <https://support.apple.com/kb/PH20577?locale=en_US>`_                               |
+   +-----------------------+---------------------------------------------------------------------------------------------------+
+
+.. index:: writing to usb
+.. _Writing to a USB Device:
+
+Writing to a USB Device
+-----------------------
+
+There are a few requirements to write the :file:`img` file to a USB
+device:
+
+* A utility capable of writing the image to a USB media; the available
+  utilities depend on the installed operating system.
+
+* A USB thumb drive or hard drive large enough to hold the image.
+
+.. warning:: If there is a card reader on the system or the USB drive is
+   connected using a USB dongle, device enumeration may be affected. For
+   example, with the USB card reader dongle as the destination, the
+   device name could be :file:`/dev/da1` instead of :file:`/dev/da0`.
+
+To write the :file:`.img` file to a flash card or removable USB drive on
+a BSD or Linux system, use the :command:`dd` command line utility. On a
+FreeBSD system, the superuser can use this command to write the file to
+the first plugged in USB device:
+
+.. code-block:: none
+
+ [user@exmpl] dd if=TrueOS-Desktop-2016-08-11-x64.img of=/dev/da0 bs=1m
+ 1415+1 records in
+ 1415+1 records out
+ 1483990016 bytes transferred in 238.552250 secs (6220818 bytes/sec)
+
+When using the :command:`dd` command:
+
+* **if=** designates the *input file* to be written.
+
+* **of=** refers to the *output file* (the device name of the flash card
+  or removable USB drive). Increment the number in the name if it is not
+  the first USB device.
+
+* **bs=** refers to the *block size*.
+
+.. note:: On Linux, type :command:`mount` with the USB stick inserted to
+   see two or more device nodes corresponding to the USB stick. For
+   example, :file:`/dev/sdc` and :file:`/dev/sdc1`, where
+   :file:`/dev/sdc1` corresponds to the primary partition of the USB
+   stick. Before using :command:`dd`, ensure the USB stick is unmounted.
+   Then, remember to use :file:`/dev/sdc` (the device node without the
+   number) as the option for the output file **of=**. Once :command:`dd`
+   completes, the USB stick may not be mountable on Linux as it has very
+   limited support for UFS (BSD filesystem created on the USB stick).
+
+To burn the image file on a Windows system, use
+`win32-image-writer <https://sourceforge.net/projects/win32diskimager/>`_.
+When downloading **win32-image-writer**, download the latest version
+ending in :file:`-binary.zip` and use a utility such as Windows Explorer
+or 7zip to unzip the executable.
+
+Launch :command:`win32-image-writer.exe` to start the Win32 Disk Imager
+utility, shown in :numref:`Figure %s <writer1>`. Use :guilabel:`browse`
+to browse to the location of the :file:`.img` file. Insert a USB thumb
+drive and select its drive letter (in this example, drive **D**). Click
+:guilabel:`Write` and the image will be written to the USB thumb drive.
+
+.. _writer1:
+
+.. figure:: images/writer1.png
+   :scale: 100%
+
+   Write an Image using Win32 Disk Imager
+
+To burn the :file:`.img` file on Mac OS X, insert a USB stick and open
+*Terminal*. Run :command:`diskutil list` to discover the device name of
+the USB disk, unmount the USB disk, then use :command:`dd` to write the
+image to the raw disk (:file:`rdisk`). In this example, an 8 GB USB
+stick has a device name of :file:`/dev/disk1` and a raw device name of
+:file:`/dev/rdisk1`:
+
+.. code-block:: none
+
+ diskutil list
+ /dev/disk0
+ #: TYPE NAME SIZE IDENTIFIER
+ 0: GUID_partition_scheme *500.1 GB disk0
+ 1: EFI 209.7 MB disk0s1
+ 2: Apple_HFS Macintosh HD 499.2 GB disk0s2
+ 3: Apple_Boot Recovery HD 650.0 MB disk0s3
+ /dev/disk1
+ #: TYPE NAME SIZE IDENTIFIER
+ 0: FDisk_partition_scheme *8.0 GB disk1
+ 1: DOS_FAT_32 UNTITLED 8.0 GB disk1s1
+
+ diskutil unmountDisk /dev/disk1
+ Unmount of all volumes on disk1 was successful
+
+ sudo dd if=/Users/dru/Downloads/TrueOS-Desktop-2016-08-11-x64.img of=/dev/rdisk1 bs=4m
+ Password:
+ 1415+1 records in
+ 1415+1 records out
+ 1483990016 bytes transferred in 238.552250 secs (6220818 bytes/sec)
+
+.. index:: TrueOS installation
+.. _TrueOS Installation:
+
+|trueos| Installation
+=====================
+
 To begin the |trueos| installation, insert the prepared boot media and
 boot the system. If the computer boots into an existing operating
 system instead of the installer, reboot and check the computer's BIOS
@@ -141,8 +420,6 @@ a console-based server operating system, as seen in
 desktop installation. Refer to the :ref:`Server Installation`
 instructions for installing a command-line only server.
 
-.. TODO Update when text reworks are pulled into STABLE
-
 .. _install3:
 
 .. figure:: images/install3e.png
@@ -175,8 +452,6 @@ installation: VESA (for MBR) and SCFB (for UEFI). |trueos| provides
 the option to further choose your graphics driver as part of the
 :numref:`Figure %s <install16>` screen.
 
-.. TODO Update when text reworks are pulled into STABLE
-
 .. _install16:
 
 .. figure:: images/install16.png
@@ -200,8 +475,6 @@ Disk Selection
 
 The **Disk Selection** screen, seen in :numref:`Figure %s <install5>`,
 summarizes the default disk configuration.
-
-.. TODO Update when text reworks are pulled into STABLE
 
 .. _install5:
 
@@ -353,98 +626,6 @@ This screen has several options:
 After making any selections, click :guilabel:`Next` to access the ZFS
 configuration screens. The rest of this section provides a ZFS overview
 and then demonstrates how to customize the ZFS layout.
-
-.. index:: ZFS overview
-.. _ZFS Overview:
-
-ZFS Overview
-^^^^^^^^^^^^
-
-ZFS is an enterprise grade file-system, which provides many features.
-These include: support for high storage capacities, high reliability,
-the ability to quickly take snapshots, boot environments, continuous
-integrity checking and automatic repair, RAIDZ which was designed to
-overcome the limitations of hardware RAID, and native NFSv4 ACLs.
-
-If new to ZFS, the Wikipedia entry on :wiki:`ZFS` provides an
-excellent starting point to learn about its features. Additionally,
-`FreeBSD Mastery: ZFS <https://www.michaelwlucas.com/os/fmzfs>`_
-by Michael W Lucas and Allan Jude is a helpful ZFS resource as it
-is implemented in FreeBSD.
-
-These resources are also useful to bookmark and peruse as needed:
-
-* `ZFS Evil Tuning Guide <https://www.solaris-cookbook.eu/solaris/solaris-10-zfs-evil-tuning-guide/>`_
-
-* `FreeBSD ZFS Tuning Guide <https://wiki.FreeBSD.org/ZFSTuningGuide>`_
-
-* `ZFS Best Practices Guide <https://documents.irf.se/get_document.php?group=Computer&docid=311>`_
-
-* `ZFS Administration Guide <http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
-
-* `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/becoming-a-zfs-ninja>`_
-
-* `Blog post explaining how ZFS simplifies the storage stack <https://blogs.oracle.com/bonwick/rampant-layering-violation>`_
-
-:numref:`Table %s <zfsterms>` is a brief glossary of terms used by ZFS:
-
-.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.20\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.80\linewidth-2\tabcolsep}|
-
-.. _zfsterms:
-
-.. table:: ZFS Terms
-   :class: longtable
-
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Term     | Description                                                                                                                                  |
-   +==========+==============================================================================================================================================+
-   | Pool     | A collection of devices providing physical storage and data replication managed by ZFS. This pooled storage model eliminates the concept of  |
-   |          | volumes and the associated problems of partitions, provisioning, wasted bandwidth, and stranded storage. Thousands of filesystems can draw   |
-   |          | from a common storage pool, each one consuming only its required space. The combined I/O bandwidth of all devices in the pool is available   |
-   |          | at all times to all filesystems. The `Storage Pools Recommendations <http://zqscm.qiniucdn.com/data/20091118230710/index.html>`_ of the ZFS  |
-   |          | Best Practices Guide provides detailed recommendations for creating the storage pool.                                                        |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Mirror   | A form of RAID where all data is mirrored onto two or more disks, creating a redundant copy should a disk fail.                              |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | RAIDZ    | ZFS software solution equivalent to RAID5, as it allows one disk to fail without losing data. Requires at least *3* disks.                   |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | RAIDZ2   | Double-parity ZFS software solution similar to RAID6, as it allows two disks to fail without losing data. Requires a minimum of *4* disks.   |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | RAIDZ3   | Triple-parity ZFS software solution. RAIDZ3 offers three parity drives and can operate in degraded mode if up to three drives fail with no   |
-   |          | restrictions on which drives can fail.                                                                                                       |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Dataset  | Once a pool is created, it can be divided into datasets. A dataset is similar to a folder as it supports permissions. A dataset is also      |
-   |          | similar to a filesystem since properties such as quotas and compression can be set.                                                          |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Snapshot | A read-only, point-in-time copy of a filesystem. Snapshots can be created quickly and, if little data changes, new snapshots take very       |
-   |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both old and new      |
-   |          | versions. Snapshots provide a clever way of keeping a history of files, should an older copy or even a deleted file need to be recovered.    |
-   |          | For this reason, many administrators snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and store   |
-   |          | them on another system. Such a strategy allows the administrator to roll the system back to a specific time, or if there is a catastrophic   |
-   |          | loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within 15 minutes of the data loss). Snapshots can  |
-   |          | be cloned or rolled back, but the files on the snapshot can not be accessed independently.                                                   |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Clone    | A writable copy of a snapshot which can only be created on the same ZFS volume. Clones provide an extremely space efficient way to store     |
-   |          | many copies of mostly-shared data such as workspaces, software installations, and diskless clients. Clones do not inherit the properties of  |
-   |          | the parent dataset, but rather inherit the properties based on where the clone is created in the ZFS pool. Because a clone initially shares  |
-   |          | all its disk space with the original snapshot, its used property is initially zero. As changes are made to the clone, it uses more space.    |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | ZIL      | A filesystem journal that manages writes. The ZIL is a temporary storage area for sync writes until they are written asynchronously to the   |
-   |          | ZFS pool. If the system has many sync writes, such as from a database server, performance can be increased by adding a dedicated log device  |
-   |          | known as a SLOG (Secondary LOG). If the system has few sync writes, a SLOG will not speed up writes. When creating a dedicated log device,   |
-   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors able to handle writing the contents of the SSD's RAM to    |
-   |          | the SSD. If a dedicated log device is needed, the SSD should be half the size of system RAM, as anything larger is unused capacity. Note a   |
-   |          | dedicated log device can not be shared between ZFS pools, and the same device cannot hold both a log and a cache device.                     |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is known as an L2ARC and ZFS uses it to store more |
-   |          | reads which can increase random read performance. However, adding a cache device will not improve a system with too little RAM and actually  |
-   |          | decreases performance, as ZFS uses RAM to track the contents of L2ARC. RAM is always faster than disks, so always add as much RAM as         |
-   |          | possible before determining if the system would benefit from a L2ARC device. If a lot of applications do large amounts of random reads on a  |
-   |          | dataset small enough to fit into the L2ARC, read performance may be increased by adding a dedicated cache device. SSD cache devices only     |
-   |          | help if the working set is larger than system RAM, but small enough that a significant percentage of it fits on the SSD. Note a dedicated    |
-   |          | L2ARC device can not be shared between ZFS pools.                                                                                            |
-   +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. index:: ZFS layout
 .. _ZFS Layout:
@@ -625,8 +806,6 @@ Once :guilabel:`Yes` is selected to start the installation, a progress
 screen, seen in :numref:`Figure %s <install13>`, updates the user on
 the installation progress.
 
-.. TODO Update when text reworks are pulled into STABLE
-
 .. _install13:
 
 .. figure:: images/install13c.png
@@ -648,8 +827,6 @@ The **Installation Finished** screen, shown in
 :numref:`Figure %s <install14>`, appears once the installation is
 complete.
 
-.. TODO Update when text reworks are pulled into STABLE
-
 .. _install14:
 
 .. figure:: images/install14c.png
@@ -662,272 +839,27 @@ system immediately begins the reboot process. Once the system is
 fully shut down, remove the installation media to ensure the system
 boots from the freshly installed local drive.
 
-.. index:: advanced install topics
-.. _Advanced Installation:
+.. index:: booting into TrueOS
+.. _Booting Into TrueOS:
 
-Advanced Installation Topics
-============================
+Booting Into |trueos|
+=====================
 
-This section covers these advanced installation topics:
+After installation, |trueos| reboots and displays a boot menu. The
+first menu displayed depends on whether or not rEFInd is installed or
+the user customized the boot loader during the installation.
 
-* :ref:`Server Installation`
+.. index:: rEFInd
+.. _rEFInd Boot Manage:
 
-* :ref:`Restoring the Operating System`
-
-* :ref:`Dual Booting`
-
-* :ref:`Using the System Utilities Menu`
-
-* :ref:`Upgrading from PCBSD 10.x to TrueOS`
-
-* :ref:`Automated Installations`
-
-If your intent is to install a graphical desktop using the graphical
-installer, refer instead to the primary :ref:`Install` section.
-
-.. index:: install a server
-.. _Server Installation:
-
-Server Installation
+rEFInd Boot Manager
 -------------------
 
-The :ref:`System Selection` screen of the |trueos| installer can be
-used to install a FreeBSD-based command-line server operating system
-rather than a graphical desktop operating system. A |trueos| server
-installation includes the `SysAdm™ API <https://api.sysadm.us/>`_ and
-`SysAdm™ Client <https://sysadm.us/handbook/client/>`_ for managing the
-server locally or remotely.
-
-For a server installation, using the |trueos| installer rather than the
-FreeBSD installer offers several benefits:
-
-* The ability to easily configure ZFS during installation.
-
-* The ability to configure multiple boot environments.
-
-* A wizard (described in this section) is provided during installation
-  to configure the server for first use.
-
-To perform a server installation, start the |trueos| installation as
-usual. At the :ref:`System Selection` screen of the installer, select
-:guilabel:`TrueOS Server (console interface only)`.
-
-Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`,
-then click :guilabel:`Next` again to see the screen shown in
-:numref:`Figure %s <server2>`.
-
-.. _server2:
-
-.. figure:: images/server2b.png
-   :scale: 100%
-
-   Root Password Creation
-
-Input and confirm the root password then click :guilabel:`Next` to
-proceed to the screen shown in :numref:`Figure %s <server3>`.
-
-.. _server3:
-
-.. figure:: images/server3b.png
-   :scale: 100%
-
-   Primary User Account Creation
-
-For security reasons, do not login as the **root** user. The wizard
-requires creating a primary user account for logging into the server.
-This account is automatically added to the *wheel* group, allowing
-the user to :command:`su` to the **root** account when administrative
-access is required.
-
-Create an account by filling in these fields:
-
-* **Name:** Can contain capital letters and spaces.
-
-* **Username:** The name to use for logging in. It cannot contain
-  spaces and is case sensitive (e.g. *Kris* is a different username
-  than *kris*).
-
-* **Password:** The password to use for logging in. Type it twice to
-  confirm it.
-
-* **Default shell:** Use the drop-down menu to select the **csh**,
-  **tcsh**, **sh**, or **bash** login shell.
-
-When finished, click :guilabel:`Next` to proceed to
-:numref:`Figure %s <server4>`.
-
-.. _server4:
-
-.. figure:: images/server4b.png
-   :scale: 100%
-
-   Hostname Creation
-
-Input the system's hostname. If using :command:`ssh` to connect to the
-system, check :guilabel:`Enable remote SSH login`. Click
-:guilabel:`Next` to proceed to the network configuration screen shown in
-:numref:`Figure %s <server5>`.
-
-.. _server5:
-
-.. figure:: images/server5b.png
-   :scale: 100%
-
-   Network Configuration
-
-Use the :guilabel:`Network Interface` drop-down menu to choose the
-desired interface:
-
-* **AUTO-DHCP-SLAAC:** (default) Will configure every active interface
-  for DHCP and for both IPv4 and IPv6.
-
-* **AUTO-DHCP:** Will configure every active interface for DHCP and
-  for IPv4.
-
-* **IPv6-SLAAC:** Will configure every active interface for DHCP and
-  for IPv6.
-
-Alternately, use the drop-down menu to select the device name for the
-interface and manually configure and input the IPv4 and/or IPv6
-addressing information. When finished, click :guilabel:`Next` to access
-the screen shown in :numref:`Figure %s <server6>`.
-
-.. _server6:
-
-.. figure:: images/server6b.png
-   :scale: 100%
-
-   Optional Install Features
-
-To install the FreeBSD ports collection, check
-:guilabel:`Install ports tree` then click :guilabel:`Finish` to exit the
-wizard and access the summary screen shown in :ref:`Disk Selection`.
-
-If installing the server to a system with ZFS already installed, you can
-choose to :guilabel:`Install to disk` or
-:guilabel:`Install into boot Environment`.
-
-When installing to disk, click :guilabel:`Customize Disk Settings` to
-configure the system's disk(s). When installing into a Boot Environment,
-you can select the ZFS Pool for installation using the drop-down menu.
-
-To save the install configuration for re-use at a later time, insert a
-MSDOSFS or FAT32 formatted USB stick and click
-:guilabel:`Save Config to USB`.
-
-When ready to continue, click :guilabel:`Next`. A new window asks if you
-are ready to begin the installation. Click :guilabel:`Yes` to continue
-or :guilabel:`No` to continue modifying the install configuration.
-
-Once the system is installed, it boots to a command-line login
-prompt. Login using the primary user account configured during
-installation. Now the server can be configured like any other FreeBSD
-server installation. The
-`FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_
-is an excellent reference for performing common FreeBSD server tasks.
-
-.. index:: Restore from Life Preserver backup
-.. _Restoring the Operating System:
-
-Restore from Life Preserver backup
-----------------------------------
-
-If you have replicated the system's snapshots to a remote backup
-server, you can use a |trueos| installation media to perform an
-operating system restore or to clone another system. Start the
-installation as usual and select to
-:guilabel:`Restore from Life Preserver backup` in the
-:ref:`System Selection Screen <install3>`.
-
-Before you can perform a restore, the network interface must be
-configured. Click the :guilabel:`Network Connectivity` (blue circle)
-icon in order to determine if the network connection was automatically
-detected. If not, refer to the instructions in the
-:ref:`Network Manager` section of this handbook and ensure networking is
-functional before continuing.
-
-Once you are ready, click :guilabel:`Restore from Life Preserver backup`
-and :guilabel:`Next`. This starts the Restore Wizard. In the
-**SSH Restore** shown in :numref:`Figure %s <restore2>`, type the IP
-address of the backup server and the name of the user account that
-replicated the snapshots. If the server is listening on a non-standard
-SSH port, change the :guilabel:`SSH port` number.
-
-.. _restore2:
-
-.. figure:: images/restore2a.png
-   :scale: 100%
-
-   : Beginning a SSH Restore
-
-Click :guilabel:`Next` and the wizard provides a summary of your
-selections. If correct, click :guilabel:`Finish`. Otherwise, click
-:guilabel:`Back` to correct them.
-
-Once the connection to the backup server succeeds, you can select which
-host to restore. After making your selection, click :guilabel:`Next`.
-The restore wizard provides a summary of which host it restores from,
-the name of the user account associated with the replication, and
-the hostname of the target system. Click :guilabel:`Finish` and the
-installer proceeds to the :ref:`Disk Selection Screen <install5>`. At
-this point, you can click :guilabel:`Customize` to customize the disk
-options. However, any ZFS datasets will be greyed out as they are to be
-recreated from the backup during the restore. Once you are finished
-with any further customizations, click :guilabel:`Next` to perform the
-restore.
-
-.. index:: install with dualboot
-.. _Dual Booting:
-
-Dual Booting
-------------
-
-A |trueos| installation assumes there is an existing *GPT* or primary
-partition for installation. If the computer has only one disk and
-|trueos| is the only operating system, it is fine to accept the default
-partitioning scheme. However, if |trueos| is to share space with other
-operating systems, ensure |trueos| is installed into the correct
-partition, or an existing operating system may be overwritten.
-
-.. note:: As adjusting the partitions/spacing on active disks can be a
-   complicated and difficult process, it is recommended to partition
-   your disk for dual booting before installing any operating systems.
-
-Dual booting with |trueos| has several requirements:
-
-* An *EFI* or *UEFI* partitioning scheme. |trueos| does not support the
-  older MBR partition scheme, opting instead to use
-  `rEFInd <http://www.rodsbooks.com/refind/>`_ for managing or booting
-  into operating systems. TrueOS still uses the BSD boot loader, as it
-  provides native support for ZFS boot environments. Be sure to select
-  :guilabel:`Install rEFInd` when installing |trueos| (see
-  :ref:`install7`).
-
-* A partition for each operating system. Many operating systems,
-  including |trueos|, can only be installed into a primary or *GPT*
-  partition. See :ref:`Creating Free Space` for an example of shrinking
-  a disk in Windows to allow for dual booting with |trueos|.
-
-* Back up any existing data! It is recommended to store this backup
-  on a different computer, removable media such as a USB drive or DVD
-  media.
-
-When installing |trueos| onto a computer meant to contain multiple
-operating systems, carefully select the **correct** partition in the
-:ref:`Disk Selection` screen. On a system containing multiple
-partitions, each partition is listed.
-
-.. danger:: Avoid selecting a partition containing an operating system
-   or essential data.
-
-Highlight the desired partition and click :guilabel:`Customize`.
-Clicking :guilabel:`Next` without customizing the disk layout results
-in the installer overwriting the contents of the primary disk.
-
-Once installed, the system boots into the rEFInd menu seen in
-:numref:`Figure %s <refind1>`.
-
-.. _refind1:
+For EFI or UEFI systems, the user can choose to install rEFInd. This is
+a boot manager that is useful when :ref:`Dual Booting`.
+:numref:`Figure %s <refind1.2>` shows the initial rEFInd screen.
+
+.. _refind1.2:
 
 .. figure:: images/refind1.png
    :scale: 100%
@@ -940,580 +872,522 @@ default choice after a few seconds. Press any key other than
 select the desired operating system. Press :kbd:`Enter` to continue
 booting.
 
-.. index:: using system utilities menu
-.. _Using the System Utilities Menu:
+There are a number of options in rEFInd aside from choosing an
+operating system:
 
-Using the System Utilities Menu
--------------------------------
+* **About rEFInd:** This option displays the version and copyrights of
+  rEFInd. It also shows the EFI Revision, Platform, Firmware, and
+  Screen Output.
 
-The System Utilities menu is available from the "Emergency Shell" icon
-(see :ref:`insico`) in the various |trueos| installer screens. Once
-opened, you'll see the menu shown in :numref:`Figure %s <util1>`.
+* **Shut Down Computer**
 
-.. TODO update screenshot and text once fixgrub option is removed.
+* **Reboot Computer**
 
-.. _util1:
+* **Reboot to Computer Setup Utility:** Not recommended for use with
+  |trueos|.
 
-.. figure:: images/util1a.png
+Additional boot options for an operating system are available by
+highlighting the OS and pressing :kbd:`F2` or :kbd:`Insert`.
+
+Once |trueos| is chosen in rEFInd, the next boot screen displays.
+
+.. index:: bsd boot loader
+.. _BSD Boot Loader:
+
+BSD Boot Loader
+---------------
+
+A system with a default or "BSD" install option for the boot loader
+loads the boot menu seen in :numref:`Figure %s <install4>`.
+
+.. note:: This menu is modified from the one seen when booting into
+   the :ref:`installer <install1>`. While the options are the same,
+   they are rearranged slightly to prevent confusion and unnecessary
+   clutter.
+
+.. _install4:
+
+.. figure:: images/install4.png
    :scale: 100%
 
-   System Utilities Menu
+   |trueos| Boot Menu
 
-This screen provides several options:
+This menu provides several options. Pause this menu by pressing any key
+except for :kbd:`Enter`. To select an option, press either the bolded
+number or key for that option. Once any selections are made, press
+:kbd:`Enter` to boot using the specified options.
 
-* **shell:** This option is useful when troubleshooting a |trueos|
-  system that no longer boots. It opens a shell with administrative
-  access, including the base FreeBSD utilities. Advanced users can use
-  this shell to identify a problem, create a backup or copy essential
-  files to another system, or alter configuration files with an editor
-  like `ee <https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or
-  :command:`vi`. When finished using the shell, type :command:`exit` to
-  return to the :ref:`System Utilities Menu <util1>`.
+* :guilabel:`1. Boot TrueOS [Enter]`: This is the default option for
+  booting |trueos|. The system automatically uses this option either
+  after pausing for a moment or if :kbd:`Enter` is pressed while the
+  boot menu is displayed.
 
-* **zimport** This option displays the names of available ZFS pools.
-  Type the name of an available pool and the utility imports the pool
-  then displays the available boot environments (BEs). Type the name of
-  the desired BE and **zimport** mounts the BE then offers to open a
-  chroot shell so the environment's contents can be viewed and edited
-  as needed in order to perform maintenance on the boot environment.
-  When finished, type :command:`exit` to leave the boot environment and
-  return to the :ref:`System Utilities Menu <util1>`.
+* :guilabel:`2. Configure Boot Options`: Press either :kbd:`2` or
+  :kbd:`o` to see the boot options screen, shown in
+  :numref:`Figure %s <boot1>`. To change an option, press either the
+  bolded number or key for the option to toggle through its available
+  settings. When finished, press either :kbd:`1` or :kbd:`Backspace` to
+  return to the |trueos| boot menu.
 
-* **fixgrub:** This option is scheduled for removal as GRUB is no longer
-  supported by |trueos|.
+* :guilabel:`3. Select Boot Environment`: In |trueos|, boot environments
+  are automatically created when the system updates. They can also be
+  manually created using the
+  :sysclbk:`Boot Environment Manager <boot-environment-manager>`. This
+  allows the system to boot to the point of time before an update
+  occurred and can be used to recover from a failed update. Press either
+  :kbd:`3` or :kbd:`e` to view the available boot environments.
 
-* **exit:** This option returns the user to the main
-  :ref:`TrueOS® Installation Menu <install1>`.
+.. tip:: The first time the system boots, no additional environments are
+   available. This menu populates as boot environments are created.
 
-.. index:: upgrade from PCBSD
-.. _Upgrading from PCBSD 10.x to TrueOS:
+.. _boot1:
 
-Upgrading from |pcbsd| 10.x to |trueos|
----------------------------------------
-
-.. warning:: If any user account uses PersonaCrypt, please be sure to
-   save any encryption keys to a safe place (e.g. a thumb drive) before
-   beginning the upgrade process. Loss of encryption keys may result in
-   being unable to import the home directory after the upgrade is
-   complete.
-
-If the system is using |pcbsd| 10.x, the option to update to |trueos|
-does not appear in the Control Panel version of Update Manager. This is
-because a new installation is required in order to migrate to |trueos|.
-However, the |trueos| installer allows the user to keep all their
-existing data and home directories as it provides the ability to
-install |trueos| into a new boot environment. In other words, the new
-operating system and updated applications are installed while the ZFS
-pool and any existing boot environments are preserved. Since the new
-install is in a boot environment, the option to boot back into the
-previous |pcbsd| installation remains.
-
-.. note:: This option overwrites the contents of :file:`/etc`. If any
-   custom configurations exist, save them to a backup or the home
-   directory first. Alternately, use the |sysadm|
-   :sysclbk:`Boot Environment Manager <boot-environment-manager>`
-   post-installation to mount the previous |pcbsd| boot environment to
-   copy over any configuration files which may not have been backed up.
-
-To perform the installation to a new boot environment, start the
-|trueos| installation as described earlier in the chapter. In the
-:ref:`System Selection` screen, choose to install either a desktop or
-a server. Press :guilabel:`Next` to view the :guilabel:`Disk Selection`
-screen, shown in :numref:`Figure %s <upgrade1>`.
-
-.. TODO update screen when text reworks are added to STABLE.
-
-.. _upgrade1:
-
-.. figure:: images/upgrade1b.png
+.. figure:: images/boot1c.png
    :scale: 100%
 
-   Disk Selection
+   Boot Options Menu
 
-|trueos| automatically detects if the drive has an existing boot
-environment, filling in the data as necessary. If no boot environments
-are detected, :guilabel:`Install into Boot Environment` is invisible.
-To upgrade, select :guilabel:`Install into Boot Environment` and
-choose which existing pool to install into from the drop-down menu. In
-the :ref:`Disk Selection Screen <upgrade1>`, the user is installing into
-the existing **tank** pool. Press :guilabel:`Next` when ready.
+Several boot options are available in the Boot Options Menu:
 
-.. warning:: Be sure :guilabel:`Install into Boot Environment` is
-   checked before proceeding, or data can be lost.
+* :guilabel:`3. Boot Single User`: Advanced users can select this option
+  to fix critical system failures.
 
-A pop-up will appear, asking to start the default Full-Disk
-installation. Click :guilabel:`Yes` to begin the installation.
+* :guilabel:`4. Verbose`: Select this option to see more detailed
+  messages during the boot process. This can be useful when
+  troubleshooting a piece of hardware.
 
-Once the installation is complete, reboot the system and remove the
-installation media. The post-installation screens run as described in
-the :ref:`Post-Install <PostInstall>` section to help configure the new
-installation.
+* :guilabel:`5. Kernel`: This option indicates how many kernels are
+  available. Press either :kbd:`5` or :kbd:`k` to toggle between
+  available kernels. This option is available to the user if they have
+  created a custom kernel, but wish to have a :file:`kernel.old` boot
+  option available in case the custom primary kernel fails.
 
-.. warning:: During the :ref:`Create a User` process, recreate the
-   primary user account using the same user name and user id (UID) from
-   the previous |pcbsd| system. This allows |trueos| to associate the
-   existing home directory with that user. Once logged in, use the
-   |sysadm| :sysclbk:`User Manager <user-manager>` to recreate any other
-   user accounts or to reassociate any PersonaCrypt accounts.
+* :guilabel:`6. Escape to loader prompt`: Advanced users can select this
+  option to perform advanced operations, such as loading kernel modules.
 
-.. index:: automated installations
-.. _Automated Installations:
+.. index:: encrypted disks
+.. _Encrypted Disks:
 
-Automated Installations
------------------------
+Encrypted Disks
+---------------
 
-|trueos| provides a set of Bourne shell scripts to allow advanced
-users to create automatic or customized |trueos| installations.
-:command:`pc-sysinstall` is the name of the master script. The script
-reads a customizable configuration file and uses dozens of backend
-scripts to perform the installation. Read more about this utility by
-typing :command:`man pc-sysinstall`.
+If :guilabel:`Encrypt disk with GELI` was selected during installation,
+physical access to the |trueos| system when it boots is required. As the
+system starts to boot, it displays a message similar to the one shown in
+:numref:`Figure %s <encrypt1>`.
 
-Here is a quick overview of the components used by
-:command:`pc-sysinstall`:
+.. _encrypt1:
 
-* :file:`/usr/local/share/pc-sysinstall/backend/` contains the scripts
-  used by the |trueos| installer. Scripts have been divided by function,
-  such as :file:`functions-bsdlabel.sh` and
-  :file:`functions-installcomponents.sh`. To learn more about how the
-  |trueos| installer works, read through these scripts. This directory
-  also contains the :file:`parseconfig.sh` and
-  :file:`startautoinstall.sh` scripts which :command:`pc-sysinstall`
-  uses to parse the configuration file and begin the installation.
+.. figure:: images/encrypt1.png
+   :scale: 100%
 
-* :file:`/usr/local/share/pc-sysinstall/backend-query/` contains the
-  scripts used by the installer to detect and configure hardware.
+   Master Key Decryption
 
-* :file:`/usr/local/share/pc-sysinstall/conf/` contains the
-  configuration file :file:`pc-sysinstall.conf`. It also contains a
-  file indicating which localizations are available
-  (:file:`avail-langs`), an :file:`exclude-from-upgrade` file, and a
-  :file:`licenses/` subdirectory containing text files of applicable
-  licenses.
+The boot process will wait for the password created in the installation
+screen shown in :ref:`Configure Encryption <install11>`. If the correct
+password is typed, the system calculates the GELI encryption key then
+continues to boot.
 
-* :file:`/usr/local/share/pc-sysinstall/doc/` contains the help text
-  seen if :command:`pc-sysinstall` is run without any arguments.
+.. index:: display detection
+.. _Display Detection:
 
-* :file:`/usr/local/share/pc-sysinstall/examples/` contains several
-  example configuration files for different scenarios (e.g.
-  :file:`upgrade` and :file:`fbsd-netinstall`). The :file:`README` in
-  this directory should be considered as **mandatory** reading before
-  using :command:`pc-sysinstall`.
+Display Detection
+=================
 
-* :file:`/usr/sbin/pc-sysinstall` is the script used to perform a
-  customized installation.
+.. TODO update screenshot and remove note box when advanced tab is
+   removed.
 
-This section discusses the steps needed to create a custom installation.
+When booting for the first time, |trueos| shows a
+:guilabel:`Display Settings` screen, reproduced in
+:numref:`Figure %s <display3>`.
 
-First, determine which variables to customize. A list of possible
-variables can be found in
-:file:`/usr/local/share/pc-sysinstall/examples/README` and are
-summarized in :numref:`Table %s <insvars>`.
+.. _display3:
 
-.. note:: This table is meant as a quick reference to determine which
-   variables are available. The :file:`README` in
-   :file:`/usr/local/share/pc-sysinstall/examples/` contains more
-   complete descriptions for each variable.
+.. figure:: images/display3a.png
+   :scale: 100%
 
-.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.25\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.45\linewidth-2\tabcolsep}|
+   Display Settings
 
-.. _insvars:
+Use this screen to view the detected video card and choose a graphics
+driver from the expanding menu. |trueos| also suggests a driver.
 
-.. table:: Customizing a |trueos| Installation
-   :class: longtable
+The :guilabel:`vesa` driver always works but provides sub-optimal
+performance. Click on the drop-down menu to select the driver most
+closely matching your video card name.
 
-   +----------------------------+----------------------------+-------------------------------------+
-   | Variable                   | Options                    | Description                         |
-   +============================+============================+=====================================+
-   | hostname=                  | should be unique           | optional as installer will          |
-   |                            | for the network            | auto\-generate a hostname if empty  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installMode=               | "fresh", "upgrade",        | sets the installation type          |
-   |                            | "extract", or "zfsrestore" |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installLocation=           | /path/to/location          | used only when *installMode* is     |
-   |                            |                            | extract and should point            |
-   |                            |                            | to an already mounted location      |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installInteractive=        | "yes" or "no"              | set to "no" for automated           |
-   |                            |                            | installs without user input         |
-   |                            |                            |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netDev=                    | "AUTO-DHCP" or FreeBSD     | type of network connection          |
-   |                            | interface name             | to use during the installation      |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netIP=                     | IP address of interface    | only use if *netDev*                |
-   |                            | used during installation   | is set to an interface name         |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netMask=                   | subnet mask of interface   | only use if *netDev* is set         |
-   |                            |                            | to an interface name                |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netNameServer=             | IP address of DNS server   | only use if *netDev* is set         |
-   |                            |                            | to an interface name                |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netDefaultRouter=          | IP address of              | only use if *netDev* is set         |
-   |                            | default gateway            | to an interface name                |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netSaveDev=                | AUTO-DHCP or FreeBSD       | type of network configuration to    |
-   |                            | interface name(s)          | enable on the installed system;     |
-   |                            | (multiple allowed          | can set multiple interfaces         |
-   |                            | separated by spaces)       |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netSaveIP=                 | IP address of interface    | only use if *netSaveDev* is set to  |
-   |                            | or "DHCP"                  | an interface name or a list of      |
-   |                            |                            | interface names (repeat for each    |
-   |                            |                            | interface)                          |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netSaveMask=               | subnet mask of interface   | only use if *netSaveDev* is set to  |
-   |                            |                            | an interface name or a list of      |
-   |                            |                            | interface names (repeat for each    |
-   |                            |                            | interface)                          |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netSaveNameServer=         | IP address of DNS server   | only use if *netSaveDev* is set to  |
-   |                            | (multiple allowed          | an interface name or a list of      |
-   |                            | separated by spaces)       | interface names (do not repeat for  |
-   |                            |                            | each interface)                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | netSaveDefaultRouter=      | IP address of default      | only use if *netSaveDev* is set to  |
-   |                            | gateway                    | an interface name or a list of      |
-   |                            |                            | interface names (do not repeat for  |
-   |                            |                            | each interface)                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | disk0=                     | FreeBSD disk device name,  | see *README* for examples           |
-   |                            | (e.g. *ad0*)               |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | partition=                 | "all", "free", "s1", "s2", | see *README* for examples           |
-   |                            | "s3", "s4", or "image"     |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | partscheme=                | "MBR" or "GPT"             | partition scheme type               |
-   |                            |                            |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | mirror=                    | FreeBSD disk device name   | sets the target disk for the        |
-   |                            | (e.g. *ad1*)               | mirror (i.e. the second disk)       |
-   +----------------------------+----------------------------+-------------------------------------+
-   | mirrorbal=                 | "load", "prefer",          | defaults to "round-robin" if the    |
-   |                            | "round-robin", or "split"  | *mirrorbal* method is not specified |
-   +----------------------------+----------------------------+-------------------------------------+
-   | bootManager=               | "none" or "bsd"            |                                     |
-   |                            |                            |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | image=                     | /path/to/image /mountpoint | will write specified image file     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | commitDiskPart             |                            | this variable is mandatory and must |
-   |                            |                            | be placed at the end of each        |
-   |                            |                            | *diskX* section; create a *diskX*   |
-   |                            |                            | section for each disk you wish to   |
-   |                            |                            | configure.                          |
-   +----------------------------+----------------------------+-------------------------------------+
-   | encpass=                   | password value             | at boot time, system will prompt    |
-   |                            |                            | for this password in order to mount |
-   |                            |                            | the associated GELI encrypted       |
-   |                            |                            | partition                           |
-   +----------------------------+----------------------------+-------------------------------------+
-   | commitDiskLabel            |                            | this variable is mandatory and must |
-   |                            |                            | be placed at the end of disk's      |
-   |                            |                            | partitioning settings; see the      |
-   |                            |                            | *README* for examples on how to set |
-   |                            |                            | the <File System Type> <Size>       |
-   |                            |                            | <Mountpoint> entries for each disk  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installMedium=             | "dvd", "usb", "ftp",       | source to be used for installation  |
-   |                            | "rsync", or "image"        |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | localPath=                 | /path/to/files             | location of directory containing    |
-   |                            |                            | installation files                  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installType=               | "PCBSD" or "FreeBSD"       | determines whether this is a        |
-   |                            |                            | desktop or a server install         |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installQuiet               | "yes" or "no"              | set to "yes" for automatic          |
-   |                            |                            | installations                       |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installFile=               | e.g. "fbsd-release.tbz"    | only set if using a customized      |
-   |                            |                            | installer archive                   |
-   +----------------------------+----------------------------+-------------------------------------+
-   | packageType=               | "tar", "uzip", "split",    | the archive type on the             |
-   |                            | "dist", or "pkg"           | installation media                  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | distFiles=                 | e.g. "base src kernel"     | list of FreeBSD distribution files  |
-   |                            |                            | to install when using               |
-   |                            |                            | *packageType=dist*                  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | ftpPath=                   | ftp://ftp_path             | location of the installer archive   |
-   |                            |                            | when using *installMedium=ftp*      |
-   +----------------------------+----------------------------+-------------------------------------+
-   | rsyncPath=                 | e.g. "life-preserver       | location of the rsync data on the   |
-   |                            | /back-2011-09-12T14_53_14" | remote server when using            |
-   |                            |                            | *installMedium=rsync*               |
-   +----------------------------+----------------------------+-------------------------------------+
-   | rsyncUser=                 | username                   | set when using                      |
-   |                            |                            | *installMedium=rsync*               |
-   +----------------------------+----------------------------+-------------------------------------+
-   | rsyncHost=                 | IP address of rsync server | set when using                      |
-   |                            |                            | *installMedium=rsync*               |
-   +----------------------------+----------------------------+-------------------------------------+
-   | rsyncPort=                 | port number                | set when using                      |
-   |                            |                            | *installMedium=rsync*               |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installComponents=         | e.g. "amarok, firefox,     | components must exist in            |
-   |                            | ports"                     | */PCBSD/pc-sysinstall/components/*; |
-   |                            |                            | typically, *installPackages=* is    |
-   |                            |                            | used instead                        |
-   +----------------------------+----------------------------+-------------------------------------+
-   | installPackages=           | e.g. "Xorg cabextract      | list of traditional or pkg packages |
-   |                            |                            | to install; requires *pkgExt=*      |
-   +----------------------------+----------------------------+-------------------------------------+
-   | pkgExt=                    | ".txz"                     | specify the extension used by the   |
-   |                            |                            | type of package to be installed     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | upgradeKeepDesktopProfile= | "yes" or "no"              | specify if you wish to keep your    |
-   |                            |                            | existing user's desktop profile     |
-   |                            |                            | data during an upgrade              |
-   +----------------------------+----------------------------+-------------------------------------+
-   | rootPass=                  | password                   | set the root password of the        |
-   |                            |                            | installed system to the specified   |
-   |                            |                            | string                              |
-   +----------------------------+----------------------------+-------------------------------------+
-   | rootEncPass=               | encrypted string           | set root password to specified      |
-   |                            |                            | encrypted string                    |
-   +----------------------------+----------------------------+-------------------------------------+
-   | userName=                  | case sensitive value       | create a separate block of user     |
-   |                            |                            | values for each new user            |
-   +----------------------------+----------------------------+-------------------------------------+
-   | userComment=               | description                | description text can include spaces |
-   +----------------------------+----------------------------+-------------------------------------+
-   | userPass=                  | password of user           |                                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | userEncPass                | encrypted string           | set user password to specified      |
-   |                            |                            | encrypted string                    |
-   +----------------------------+----------------------------+-------------------------------------+
-   | userShell=                 | e.g. "/bin/csh"            | path to default shell               |
-   +----------------------------+----------------------------+-------------------------------------+
-   | userHome=                  | e.g. "/home/username"      | path to home directory              |
-   +----------------------------+----------------------------+-------------------------------------+
-   | defaultGroup=              | e.g. "wheel"               | default group                       |
-   +----------------------------+----------------------------+-------------------------------------+
-   | userGroups=                | e.g. "wheel, operator"     | comma separated (no spaces) list of |
-   |                            |                            | additional groups                   |
-   +----------------------------+----------------------------+-------------------------------------+
-   | commitUser                 |                            | mandatory, must be last line in     |
-   |                            |                            | each user block                     |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runCommand=                | full path to command       | run the specified command within    |
-   |                            |                            | chroot of the installed system,     |
-   |                            |                            | after the installation is complete  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runScript=                 | full path to script        | runs specified script within chroot |
-   |                            |                            | of the installed system, after the  |
-   |                            |                            | installation is complete            |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runExtCommand=             | full path to command       | runs a command outside the chroot   |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runPrePkgCommand=          | full path to command       | runs the specified command before   |
-   |                            |                            | starting the pkg installation       |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runPrePkgScript=           | full path to command       | runs the specified sript before     |
-   |                            |                            | starting the pkg installation       |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runPrePkgExtCommand=       | full path to command       | runs the specified command before   |
-   |                            |                            | extracting the pkg                  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runPreExtractCommand=      | full path to command       | runs the specified command before   |
-   |                            |                            | extracting                          |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runPreExtractScript=       | full path to command       | runs the specified command before   |
-   |                            |                            | starting the pkg installation       |
-   +----------------------------+----------------------------+-------------------------------------+
-   | runPreExtractExtCommand=   | full path to command       | runs the specified command before   |
-   |                            |                            | starting the pkg installation       |
-   +----------------------------+----------------------------+-------------------------------------+
-   | timeZone=                  | e.g. "America/New_York"    | location must exist in              |
-   |                            |                            | :file:`/usr/share/zoneinfo/`        |
-   +----------------------------+----------------------------+-------------------------------------+
-   | enableNTP=                 | "yes" or "no"              | enable/disable NTP                  |
-   +----------------------------+----------------------------+-------------------------------------+
-   | localizeLang=              | e.g. "en"                  | sets the system console and Desktop |
-   |                            |                            | to the target language              |
-   +----------------------------+----------------------------+-------------------------------------+
-   | localizeKeyLayout=         | e.g. "en"                  | updates the system's Xorg config to |
-   |                            |                            | set the keyboard layout             |
-   +----------------------------+----------------------------+-------------------------------------+
-   | localizeKeyModel=          | e.g. "pc104"               | updates the system's Xorg config to |
-   |                            |                            | set the keyboard model              |
-   +----------------------------+----------------------------+-------------------------------------+
-   | localizeKeyVariant=        | e.g. "intl"                | updates the Xorg config to set the  |
-   |                            |                            | keyboard variant                    |
-   +----------------------------+----------------------------+-------------------------------------+
-   | autoLoginUser=             | username                   | user will log in automatically      |
-   |                            |                            | without entering a password         |
-   +----------------------------+----------------------------+-------------------------------------+
-   | sshHost=                   | hostname or IP address     | the address of the remote server    |
-   |                            |                            | when using *installMode=zfsrestore* |
-   +----------------------------+----------------------------+-------------------------------------+
-   | sshPort=                   | e.g "22"                   | the SSH port number of the remote   |
-   |                            |                            | server when using                   |
-   |                            |                            | *installMode=zfsrestore*            |
-   +----------------------------+----------------------------+-------------------------------------+
-   | sshUser=                   | username                   | the username on the remote server   |
-   |                            |                            | when using *installMode=zfsrestore* |
-   +----------------------------+----------------------------+-------------------------------------+
-   | sshKey=                    | e.g. "/root/id_rsa"        | path to the SSH key file on the     |
-   |                            |                            | remote server when using            |
-   |                            |                            | *installMode=zfsrestore*            |
-   +----------------------------+----------------------------+-------------------------------------+
-   | zfsProps=                  | e.g. ".lp-props            | location of dataset properties file |
-   |                            | -tank#backups#mybackup"    | created by Life Preserver during    |
-   |                            |                            | replication when using              |
-   |                            |                            | *installMode=zfsrestore*            |
-   +----------------------------+----------------------------+-------------------------------------+
-   | zfsRemoteDataset=          | e.g. "tank/backups/        | location of remote dataset to       |
-   |                            | mybackup"                  | restore from when using             |
-   |                            |                            | *installMode=zfsrestore*            |
-   +----------------------------+----------------------------+-------------------------------------+
+When finished, click :guilabel:`Apply` for the settings to be tested. If
+anything goes wrong during testing, the system returns to the
+:guilabel:`Display Settings` screen in order for the user to select
+another driver. Once satisfied with the settings, click :guilabel:`Yes`
+when prompted to accept them.
 
-Next, create a customized configuration. One way to create a
-customized configuration file is to read through the configuration
-examples in :file:`/usr/local/share/pc-sysinstall/examples/` and follow
-the most relevant example. Copy the file to any location and customize
-it so it includes the desired variables and values in the installation.
+.. note:: The :guilabel:`Advanced` tab is disabled and scheduled for
+   removal.
 
-An alternate way to create this file is to start an installation,
-configure the system as desired, and save the configuration to a USB
-stick (with or without actually performing the installation). Use the
-saved configuration file as-is, or customize it to meet an
-installation's needs. This method may prove easier when performing
-complex disk layouts.
+.. index:: choose language
+.. _Choose a Language:
 
-To perform a fully automated installation which does not prompt for any
-user input, review
-:file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf`
-and place a customized copy of the file into
-:file:`/boot/pc-autoinstall.conf` on the installation media.
+Choose a Language
+=================
 
-:numref:`Table %s <autovars>` summarizes the additional variables
-available for fully automatic installations. More detailed descriptions
-can be found in the
-:file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf`
-file.
+:numref:`Figure %s <config1>` shows the language selection screen.
 
-.. note:: The variables in this file use a different syntax than those
-   in :ref:`Customizing a TrueOS® Installation <insvars>` as the values
-   follow a colon (:kbd:`:`) and a space rather than an :kbd:`=` sign.
+.. _config1:
 
-.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.25\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.45\linewidth-2\tabcolsep}|
+.. figure:: images/config1a.png
+   :scale: 100%
 
-.. _autovars:
+   Language Selection
 
-.. table:: Automated Installation Variables
-   :class: longtable
+This allows for the selection of the language used to access the
+installed system. It also contains three icons from the installer
+screens to enable:
 
-   +-----------------+----------------------------+------------------------------------+
-   | Variable        | Options                    | Description                        |
-   +=================+============================+====================================+
-   | pc_config       | URL or /path/to/file       | location of customized             |
-   |                 |                            | :file:`pc-sysinstall.conf`         |
-   +-----------------+----------------------------+------------------------------------+
-   | confirm_install | "yes" or "no"              | should be set to "yes", or         |
-   |                 |                            | booting the wrong disk will        |
-   |                 |                            | result in a system wipe            |
-   +-----------------+----------------------------+------------------------------------+
-   | shutdown_cmd    | e.g.                       | running a shutdown is recommended, |
-   |                 | :command:`shutdown -p now` | but this can be any command/script |
-   |                 |                            | to execute post-install            |
-   +-----------------+----------------------------+------------------------------------+
-   | nic_config      | "dhcp-all" or              | attempts DHCP on all found NICs    |
-   |                 | <interface name>           | until the installation file is     |
-   |                 | <IP address>               | fetched or will setup a            |
-   |                 | <subnet mask>              | specified interface                |
-   +-----------------+----------------------------+------------------------------------+
-   | nic_dns         | IP address                 | DNS server to use                  |
-   +-----------------+----------------------------+------------------------------------+
-   | nic_gateway     | IP address                 | default gateway to use             |
-   +-----------------+----------------------------+------------------------------------+
+* **Light Bulb**: Reading the screen's *Help* text.
 
-Finally, create a custom installation media or installation server.
-:command:`pc-sysinstall` supports two installation methods:
+* **Keyboard**: Use the onscreen keyboard.
 
-1. From CD, DVD, or USB media.
+* **Key with US and Brazilian Flag**: Choose a different keyboard layout
+  other than the default US style.
 
-2. From an installation directory on an HTTP, FTP, or SSH+rsync server.
+Once the selection is made, click :guilabel:`Next` to move to the next
+configuration screen.
 
-The easiest way to create a custom installation media is to modify an
-existing installation image. For example, if an ISO for the |trueos|
-version to customize is downloaded, the superuser can access the
-contents of the ISO with a few commands:
+.. index:: time zone select
+.. _Time Zone Selection:
 
-.. code-block:: none
+Time Zone Selection
+===================
 
- [name@example] mdconfig -a -t vnode -f TrueOS-Desktop-2016-08-11-x64-DVD.iso.md5 -u 1
+The timezone select screen, shown in :numref:`Figure %s <config2>`,
+allows selection of the timezone and configuring the system's host and
+domain names.
 
- [name@example] mount -t cd9660 /dev/md1 /mnt
+.. _config2:
 
-Make sure to :command:`cd` into the desired destination directory for
-the copied ISO contents. In the next examples,
-:file:`/tmp/custominstall/` was created for this purpose:
+.. figure:: images/config2c.png
+   :scale: 100%
 
-.. code-block:: none
+   Time Zone Selection
 
- [name@example] cd /tmp/custominstall
+Use the drop-down menu to select the city closest to the system's
+location. If the system is connected to the Internet, the installer
+automatically attempts to detect the correct timezone.
 
- [name@example] tar -C /mnt -cf - . | tar -xvf -
+If the system is dual booting and the other operating system expects the
+BIOS to use UTC, also check :guilabel:`Set BIOS to UTC time`.
 
- [name@example] umount /mnt
+A default system hostname is created. Change the name by typing the
+desired hostname in the :guilabel:`System Hostname` field. If the
+computer is a member of a DNS domain, the :guilabel:`Domain Name` is
+also an option.
 
-Alternately, if an installation CD or DVD is inserted, mount the media
-and copy its contents to the desired directory
+When finished, click :guilabel:`Next` to proceed to the next screen.
 
- .. code-block:: none
+.. index:: setting a root password
+.. _Set the Root Password:
 
- [name@example] mount -t cd9660 /dev/cd0 /mnt
+Set the Root Password
+=====================
 
- [name@example] cp -R /mnt/* /tmp/custominstall/
+This screen, seen in :numref:`Figure %s <config3>`, **requires** setting
+the root (administrative) password.
 
- [name@example] umount /mnt
+.. _config3:
 
-If creating an automated installation, copy the customized
-:file:`pc-autoinstall.conf` to :file:`/tmp/custominstall/boot/`.
+.. figure:: images/config3b.png
+   :scale: 100%
 
-Copy the customized configuration file to :file:`/tmp/custominstall/`.
-Double-check the :command:`installMedium=` variable in the customized
-configuration file is set to the correct installation media.
+   Root Password Creation
 
-Adding extra files may be necessary if certain variables are set in the
-custom configuration file:
+The password must be a minimum of **4** characters and typed twice to
+confirm the password. Try to create a complex, but memorable password,
+as this is used whenever the system indicates administrative access is
+required. Click :guilabel:`Next` when finished.
 
-* **installComponents=** Any extra components to install must exist in
-  :file:`extras/components/`.
+.. index:: create a user
+.. _Create a User:
 
-* **runCommand=** The command must exist in the specified path.
+Create a User
+=============
 
-* **runScript=** Make sure the script exists in the specified path.
+This screen is used to create the primary user account used to login to
+the system.
 
-* **runExtCommand=** Ensure the command exists in the specified
-  path.
+:numref:`Figure %s <config4>` shows the configuration screen used to
+create the initial user account.
 
-If the installation media is a CD or DVD, create a bootable media
-containing the files in the directory. To create a bootable ISO:
+.. _config4:
 
-.. code-block:: none
+.. figure:: images/config4b.png
+   :scale: 100%
 
- [name@example] cd /tmp/custominstall
+   User Creation
 
- [name@example] mkisofs -V mycustominstall -J -R -b boot/cdboot -no-emul-boot -o myinstall.iso
+The :guilabel:`User Details` tab is used to create a login user. This
+screen requires completing several fields:
 
-Use a preferred burning utility to burn the ISO to the media.
+* **Name:** This value displays in the login screen. It can be the
+  user's full name and can contain both capital letters and spaces.
 
-To begin an installation that requires user interaction, type
-:command:`pc-sysinstall -c /path_to_your_config_file`
+* **Username:** This is the name used when logging in. It can **not**
+  contain spaces and **is** case sensitive (e.g. *Kris* is a different
+  username from *kris*).
 
-To begin a fully automated installation, insert the installation media
-and reboot.
+* **Password:** This is the password to use when logging in. It must
+  be typed twice for confirmation.
 
-If using an HTTP, FTP, or SSH server as the installation media,
-:command:`untar` or copy the required files to a directory on the
-server accessible to users. Be sure to configure the server so
-installation files are accessible to the systems to install.
+* **Specify UID:** By default, the user is assigned the next available
+  User ID (UID). If a specific UID is required, it can be set here. A
+  UID can not be set lower than 1001, and a UID already in use by
+  another account is also unavailable.
+
+|trueos| provides the ability to use a removable device, such as a USB
+stick, as the user's encrypted home directory. This is useful in a
+multi-user or multi-computer environment, as it provides the user with
+secure access to their encrypted files.  When a user initializes
+:sysclbk:`PersonaCrypt <personacrypt>` with their account, their
+username only appears in the login menu if the removable media
+associated with that |trueos| system is inserted. They must input the
+password associated with the removable device in order to log in.
+
+When a user is configured to use a PersonaCrypt device, that user cannot
+log in using an unencrypted session on the same system. In other words,
+the PersonaCrypt username is reserved only for PersonaCrypt use. If
+necessary to login to both encrypted and unencrypted sessions on the
+same system, create two different user accounts; one for each type of
+session.
+
+.. note:: Encryption is also possible without requiring removable
+   devices using *PEFS*. Refer to the |sysadm| handbook section on
+   :sysclbk:`PEFS Encryption <pefs>` for more detailed instructions to
+   initialize a user with *PEFS*.
+
+:numref:`Figure %s <persona1>` shows the :guilabel:`PersonaCrypt` tab.
+This is used to initialize PersonaCrypt for the user.
+
+.. _persona1:
+
+.. figure:: images/persona1a.png
+   :scale: 100%
+
+   User's PersonaCrypt Initialization
+
+Check :guilabel:`Initialize PersonaCrypt Device`, insert a removable
+media device large enough to hold a user's home directory, then click
+:guilabel:`Select`.
+
+.. warning:: Ensure there are no desired files on the removable media.
+   Initializing the media for PersonaCrypt formats the device with ZFS
+   and then encrypts it with GELI, deleting any existing data.
+
+Input and repeat the :guilabel:`Device Password` to associate with the
+device. A pop-up window indicates the current contents of the device
+will be wiped. Click :guilabel:`Yes` to initialize the device.
+
+To share the computer with other users, create additional login and
+*PersonaCrypt* accounts using the |sysadm|
+:sysclbk:`User Manager <user-manager>`. After creating at least one
+user, click :guilabel:`Next` to continue.
+
+.. index:: configure audio output
+.. _Configure Audio Output:
+
+Configure Audio Output
+======================
+
+:numref:`Figure %s <audio1>` shows the Audio Output screen, where you
+can choose the output device and test it.
+
+.. _audio1:
+
+.. figure:: images/audio1b.png
+   :scale: 100%
+
+   Configure Audio Output
+
+Click the :guilabel:`Output Device` drop-down menu to select the
+desired sound device. Click :guilabel:`Test` to verify the setting. If
+the device works, a test sound plays. The :guilabel:`Testing Volume`
+slider is also used to set the default system volume level.
+
+All these settings can be viewed and edited at any time using the
+instructions in :ref:`Sound Mixer Tray`.
+
+.. index:: connect to a wireless network
+.. _Connect to a Wireless Network:
+
+Connect to a Wireless Network
+=============================
+
+.. note:: The network card must be supported by FreeBSD. Refer to
+   :ref:`Supported Hardware` for links to FreeBSD support and a list of
+   known issues with different hardware.
+
+If the system has an active wireless interface, a screen similar to
+:numref:`Figure %s <config5>` indicates which wireless networks are
+automatically detected. Available networks are ordered by signal
+strength.
+
+.. _config5:
+
+.. figure:: images/config5a.png
+   :scale: 100%
+
+   Wireless Network Connections
+
+To set the default wireless connection, click the desired network in the
+:guilabel:`Available Wireless Networks` area. If the network requires a
+password, a window appears requesting the password and indicating the
+security type used by the desired network. If the desired network is not
+visible in the :guilabel:`Available Wireless Networks` area, click
+:guilabel:`Rescan`. If unable to connect or to configure the connection
+later, refer to :ref:`Network Manager` for more detailed instructions.
+
+.. index:: enable optional services, SSH, IPv6
+.. _Enable Optional Services:
+
+Enable Optional Services
+========================
+
+:numref:`Figure %s <config6>` shows a few optional system services you
+can toggle.
+
+.. _config6:
+
+.. figure:: images/config6a.png
+   :scale: 100%
+
+   Optional Services
+
+Check :guilabel:`Disable IPV6 (Requires Reboot)` to reconfigure the
+system to only support IPv4 addresses. By default, the system supports
+both IPv4 and IPv6, and IPv6 is preferred over IPv4.
+
+.. tip:: Altering this setting does not take affect until the next
+   system reboot.
+
+:guilabel:`Enable Intel HDA polling` enables the audio driver polling
+mode. It is used in |trueos| to support additional Intel audio devices
+that would not function without polling. However, it is recommended to
+**not** enable unless you are having extensive audio device issues, or
+your Intel device requires polling mode enabled. See the
+`FreeBSD Manual Page <https://www.freebsd.org/cgi/man.cgi?query=snd_hda&apropos=0&sektion=4&manpath=FreeBSD+12-current&arch=default&format=html>`_
+for more details.
+
+:guilabel:`Enable Realtek Wireless` activates the Realtek wireless
+networking drivers.
+
+If :guilabel:`Enable SSH` is checked, the SSH service both starts
+immediately and is configured to start on system boot. This option also
+creates the firewall rules needed to allow incoming SSH connections to
+the |trueos| system.
+
+.. danger:: **Do not** check this box if SSH connections to the system
+   are undesired.
+
+:guilabel:`Enable Verbose Boot` is the same option as in :ref:`boot1`.
+Select this option to see more detailed messages during the boot
+process. This can be useful when troubleshooting a piece of hardware.
+
+When finished choosing optional services, click :guilabel:`Next`. The
+screen in :numref:`Figure %s <config7>` indicates the post-installation
+setup is complete. Click :guilabel:`Finish` to access the login menu.
+
+.. _config7:
+
+.. figure:: images/config7a.png
+   :scale: 100%
+
+   Setup Complete
+
+.. index:: logging in
+.. _Logging In:
+
+Logging In
+==========
+
+Once finished setting up the system, the PCDM (|pcbsd| Display Manager)
+graphical login screen displays. An example is seen in
+:numref:`Figure %s <login1>`.
+
+.. _login1:
+
+.. figure:: images/login1.png
+   :scale: 100%
+
+   |trueos| Login
+
+The hostname of the system is displayed at the top of the login window.
+In this example, it is *trueos-5026*. This login screen has several
+configuration options:
+
+* **User:** Upon first login, the created **username** (from
+  :ref:`Create a User`) is the only available login user. If additional
+  users are created using the |sysadm|
+  :sysclbk:`User Manager <user-manager>`, they are added to the
+  drop-down menu for more login choices. PCDM does not allow logging in
+  as the *root* user. Instead, whenever a utility requires
+  administrative access, |trueos| asks for the password of the login
+  account.
+
+* **Password:** Input the password associated with the selected user.
+
+* **Desktop:** If any additional desktops are installed using
+  :sysclbk:`AppCafe <appcafe>`, use the drop-down menu to select the
+  desktop to log into.
+
+.. note:: If a PersonaCrypt user is active, insert the PersonaCrypt
+   device in order to log in. As seen in :numref:`Figure %s <login5>`,
+   this adds an extra field to the login screen so the password
+   associated with the PersonaCrypt device can be typed.
+
+.. _login5:
+
+.. figure:: images/login5.png
+   :scale: 100%
+
+   |trueos| PersonaCrypt Login
+
+The toolbar across the bottom of the screen allows several options to be
+selected on a per-login basis:
+
+* **Locale:** If the localization was not set during installation, or
+  needs to be changed, click this icon to set the locale for this login
+  session.
+
+* **Keyboard Layout:** Click this icon to change the keyboard layout
+  for this login session. This opens the window seen in
+  :numref:`Figure %s <keyboard1>`.
+
+.. _keyboard1:
+
+.. figure:: images/keyboard1.png
+   :scale: 100%
+
+   Keyboard Settings
+
+Click the :guilabel:`Keyboard model` drop-down menu to select the type
+of keyboard.
+
+.. note:: The default model of :guilabel:`Generic 104-key PC` does
+   **not** support special keys such as multimedia or Windows keys.
+   Choose another model to enable support for hot keys.
+
+This screen also allows selection of the :guilabel:`Key Layout` and
+:guilabel:`Variant`. After making any selections, test them by typing
+some text into the :guilabel:`you may type into the space below...`
+field.
+
+.. tip:: It is possible to change keyboard layouts during an active
+   desktop session using the included :command:`fcitx` utility
+
+* **Restart/Shut Down:** To restart or shutdown the system without
+  logging in, click the :guilabel:`Power Button` icon in the
+  lower-right corner of the screen. This icon also allows you to
+  :guilabel:`Change DPI`, :guilabel:`Refresh PCDM`, and
+  :guilabel:`Change Video Driver`.
+
+Once any selections are made, input the password associated with the
+selected user and press :kbd:`Enter` or click the :guilabel:`blue arrow`
+to login.
