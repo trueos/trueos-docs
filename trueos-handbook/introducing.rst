@@ -230,7 +230,7 @@ These resources are also useful to bookmark and peruse as needed:
 
 * `ZFS Best Practices Guide <https://documents.irf.se/get_document.php?group=Computer&docid=311>`_
 
-* `ZFS Administration Guide <http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
+* `ZFS Administration Guide <https://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
 
 * `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/becoming-a-zfs-ninja>`_
 
@@ -628,7 +628,7 @@ about some of the differences between BSD and Linux:
 
 * `Why Choose FreeBSD? <https://www.freebsd.org/advocacy/whyusefreebsd.html>`_
 
-* `Interview: BSD for Human Beings <http://www.unixmen.com/bsd-for-human-beings-interview/>`_
+* `Interview: BSD for Human Beings <https://www.unixmen.com/bsd-for-human-beings-interview/>`_
 
 * `Video: BSD 4 Linux Users <https://www.youtube.com/watch?v=xk6ouxX51NI>`_
 

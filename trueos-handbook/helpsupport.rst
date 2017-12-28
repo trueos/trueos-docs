@@ -670,7 +670,7 @@ join.
 
 * `TrueOS® Facebook Group <https://www.facebook.com/groups/4210443834/>`_
 
-* `TrueOS® LinkedIn Group <http://www.linkedin.com/groups?gid=1942544>`_
+* `TrueOS® LinkedIn Group <https://www.linkedin.com/start/join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fgroups%2F1942544&trk=login_reg_redirect>`_
 
 .. index:: contributing to TrueOS
 .. _Get Involved:
@@ -1186,7 +1186,7 @@ the |sysadm| :sysclbk:`AppCafe <appcafe>`. The
 `QtCreator <http://wiki.qt.io/Category:Tools::QtCreator>`_ application
 is a full-featured IDE designed to help new Qt users get up and running
 faster while boosting the productivity of experienced Qt developers.
-`Qt Designer <http://doc.qt.io/qt-4.8/designer-manual.html>`_ is lighter
+`Qt Designer <http://doc.qt.io/archives/qt-4.8/designer-manual.html>`_ is lighter
 weight as it is only a :file:`.ui` file editor and does not provide any
 other IDE functionality.
 
@@ -1912,7 +1912,7 @@ from the forums or mailing lists, try searching these websites:
 
 * `Slashdot BSD <https://bsd.slashdot.org/>`_
 
-* `DistroWatch <http://distrowatch.com/>`_
+* `DistroWatch <https://distrowatch.com/>`_
 
 * `LinuxBSDos <http://linuxbsdos.com/>`_
 
@@ -1942,7 +1942,7 @@ Many BSD sites and resources may also contain useful information:
 
 * `The Best of FreeBSD Basics <http://reedmedia.net/books/freebsd-basics/>`_ (book)
 
-* `Definitive Guide to PC-BSD® <http://www.apress.com/us/book/9781430226413>`_ (book)
+* `Definitive Guide to PC-BSD® <https://www.apress.com/us/book/9781430226413>`_ (book)
 
 **ZFS Resources**
 
@@ -1952,7 +1952,7 @@ Many BSD sites and resources may also contain useful information:
 
 * `ZFS Best Practices Guide <https://documents.irf.se/get_document.php?group=Computer&docid=311>`_
 
-* `ZFS Administration Guide <http://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
+* `ZFS Administration Guide <https://docs.oracle.com/cd/E19253-01/819-5461/index.html>`_
 
 * `Becoming a ZFS Ninja (video) <https://blogs.oracle.com/video/becoming-a-zfs-ninja>`_
 

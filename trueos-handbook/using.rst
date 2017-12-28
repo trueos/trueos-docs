@@ -125,7 +125,7 @@ To provide a simple, but fully featured user experience immediately
 "out of box", |trueos| includes several utilities built directly into
 |lumina|.
 
-:lumbk:`Archiver <https://lumina-desktop.org/handbook/luminautl.html#archiver>`:
+:lumbk:`Archiver <luminautl.html#archiver>`:
 Provides file compression and decompression services.
 
 :lumbk:`Calculator <luminautl.html#calculator>`: Basic calculator with
@@ -790,25 +790,25 @@ column.
 .. table:: Available File Managers
    :class: longtable
 
-   +-------------+--------------+-------------------------------------------------------------+
-   | Application | Install      | Screenshots                                                 |
-   +=============+==============+=============================================================+
-   | dolphin     | kde-baseapps | `<https://userbase.kde.org/Dolphin>`_                       |
-   +-------------+--------------+-------------------------------------------------------------+
-   | emelfm2     | emelfm2      | `<http://emelfm2.net/wiki/ScreenShots>`_                    |
-   +-------------+--------------+-------------------------------------------------------------+
-   | caja        | caja         | `<http://mate-desktop.org/gallery/1.6/>`_                   |
-   +-------------+--------------+-------------------------------------------------------------+
-   | mucommander | mucommander  | `<http://www.mucommander.com/index.html>`_                  |
-   +-------------+--------------+-------------------------------------------------------------+
-   | nautilus    | nautilus     | `<https://projects.gnome.org/nautilus/screenshots.html>`_   |
-   +-------------+--------------+-------------------------------------------------------------+
-   | pcmanfm     | pcmanfm      | `<https://wiki.lxde.org/en/PCManFM>`_                       |
-   +-------------+--------------+-------------------------------------------------------------+
-   | thunar      | thunar       | `<http://docs.xfce.org/xfce/thunar/start>`_                 |
-   +-------------+--------------+-------------------------------------------------------------+
-   | xfe         | xfe          | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_ |
-   +-------------+--------------+-------------------------------------------------------------+
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | Application | Install      | Screenshots                                                                                           |
+   +=============+==============+=======================================================================================================+
+   | dolphin     | kde-baseapps | `<https://userbase.kde.org/Dolphin>`_                                                                 |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | emelfm2     | emelfm2      | `<http://linuxg.net/how-to-install-emelfm2-0-8-2-1-on-ubuntu-linux-mint-and-elementary-os/>`_         |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | caja        | caja         | `<http://mate-desktop.org/gallery/1.6/>`_                                                             |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | mucommander | mucommander  | `<http://www.mucommander.com/index.html>`_                                                            |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | nautilus    | nautilus     | `<https://projects.gnome.org/nautilus/screenshots.html>`_                                             |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | pcmanfm     | pcmanfm      | `<https://wiki.lxde.org/en/PCManFM>`_                                                                 |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | thunar      | thunar       | `<http://docs.xfce.org/xfce/thunar/start>`_                                                           |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | xfe         | xfe          | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_                                           |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
 
 When working with files on a |trueos| system, save your files to your
 home directory. Since most of the files outside your home directory are
@@ -1964,7 +1964,7 @@ instead.
 
 **HTTP:** This option allows you to manually type in the URI to the
 printer. A list of possible URIs is available on the
-`CUPS site <https://www.cups.org/doc/network.html#TABLE1>`_. To use HTTP
+`CUPS site <https://www.cups.org/doc/network.html>`_. To use HTTP
 over an encrypted connection, select :guilabel:`https` instead.
 
 **AppSocket/HP JetDirect:** Select this option if connecting to an HP
