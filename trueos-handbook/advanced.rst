@@ -4,8 +4,8 @@
 Advanced Installation Topics
 ****************************
 
-The topics disccussed in this chapter are inteded for users that have a
-sound understanding with installing and manipulating open source
+The topics discussed in this chapter are intended for users that have
+a sound understanding with installing and manipulating open source
 software.
 
 If the intent is to install a graphical desktop using the graphical

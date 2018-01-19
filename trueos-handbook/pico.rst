@@ -126,7 +126,7 @@ Set the *compression* setting to any number from 1 to 9. The default
 setting is recommended as turning up the compression can introduce
 performance issues on the |picl|.
 
-Pico uses *Virtual GL* (vgl) for graphics hardware acceleration. VGL
+Pico uses *Virtual GL* (VGL) for graphics hardware acceleration. VGL
 works with any *OpenGL* supported graphics card, but Nvidia cards are
 generally recommended at this time.
 
