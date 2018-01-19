@@ -1,4 +1,5 @@
-.. index:: Conventions_Legal
+.. indeet spell
+:: Conventions_Legal
 .. _Conventions and legal:
 
 Appendix A: Conventions & Legal
@@ -153,7 +154,7 @@ user experience as much as possible. To this end, any ads in the
 Handbook will be limited to the navigation sidebar, and only in a
 predefined space underneath all other navigation options. We are
 resolved to protect user privacy and security, and do not collect user
-information, with the exception of click throughs. Furthermore, we do
+information, with the exception of click-throughs. Furthermore, we do
 not collect any data for targeted ads, and are committed to only show
 high quality ads pertaining to our user base.
 
