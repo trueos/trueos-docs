@@ -331,7 +331,7 @@ If multiple networks are added, use the arrow keys to place them in the
 desired connection order. |trueos| attempts to connect to networks in
 order from first to last in the connection list. When prioritizing
 connections, click :guilabel:`Apply`. A pop-up message then indicates
-|trueos| is restarting the network. Next, an an IP address and status of
+|trueos| is restarting the network. Next, an IP address and status of
 **associated** appears when hovering over the wireless icon in the
 system tray. If this does not happen, double-check for errors in the
 configuration values and read the Troubleshooting section on
