@@ -15,7 +15,7 @@ Creating Free Space
 
 To dual-boot |trueos| with an existing operating system, first make sure
 there is either a free partition or an area of free space to use. For
-example, a system running the Winows operating system usually occupies
+example, a system running the Windows operating system usually occupies
 the entire hard drive. The partition with the current operating system
 needs to shrink to make room to install |trueos|. Shrinking is an
 operation which retains the current operating system while reducing the
@@ -38,7 +38,7 @@ a 100 MB system partition.
 
    Disk Layout in Disk Management
 
-This image shows all three Windows partitions filling the enitre disk.
+This image shows all three Windows partitions filling the entire disk.
 The data partition must be shrunk to create space to install |trueos|.
 Right-click the data partition (in this example, the *(C:)* partition),
 and select :guilabel:`Shrink Volume`, as shown in
