@@ -13,9 +13,9 @@ This Handbook covers the installation and use of |trueos|. This Handbook
 is a work in progress and relies on the contributions of many
 individuals. To assist with the Handbook, refer to the documentation
 `README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
-If using IRC Freenode, join the #trueos channel and converse with many
-other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is another
-popular option for users.
+If using IRC, join the #trueos channel on the Freenode network to converse 
+with many other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is 
+another popular option for users.
 
 `TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in
 2005 when Kris Moore presented the first beta version of a FreeBSD
@@ -33,17 +33,17 @@ include:
 
 * |trueos| pre-configures the BSD-licensed |lumina| desktop environment
   during a desktop installation. Additional desktop environments can be
-  installed and appear in the login menu, allowing the user to select
-  their environment.
+  installed and appear in the graphical login menu, allowing the user to 
+  select their prefered environment.
 
 * The |trueos| installer supports configuring ZFS and encryption during
   installation.
 
-* |trueos| provides both a graphical and command line software
+* |trueos| provides both a graphical and a command line software
   management system.
 
-* |trueos| provides many graphical utilities for configuration and
-  management. These utilities have both a command line equivalent and
+* |trueos| provides many graphical utilities for system configuration
+  and management. These utilities have both a command line equivalent and
   a REST and WebSocket API so they can also be used to manage multiple
   systems.
 
@@ -51,13 +51,14 @@ include:
   performing tasks like connecting digital cameras or USB memory sticks.
 
 * The |trueos| boot menu supports boot environments or snapshots of the
-  operating system, and the |trueos| Update Manager automatically adds
-  a new boot environment to the boot menu before updating the operating
-  system or software. With this functionality, if an update fails the
-  system can reboot into the previous version of the operating system,
-  before the update installed.
+  operating system. The |trueos| Update Manager automatically adds a new
+  boot environment to the boot menu before updating the operating system.
+  With this functionality, if an update fails, the system can be rebooted 
+  into the previous version of the operating system before the update was
+  installed. This allows for easy recovery if any issues happen during the
+  update process.
 
-While it began as an independent project, |trueos| is financially backed
+While started as an independent project, |trueos| has been financially backed
 and supported by the enterprise-class hardware solutions provider
 `iXsystems <https://www.ixsystems.com/>`_ since October 2006.
 
@@ -76,10 +77,10 @@ Features
   installation menus.
 
 * **Automatically configured hardware:** Video, sound, network, and
-  other devices configure automatically during installation.
+  other devices are configured automatically during installation.
 
 * **Customizable desktop interface:** |trueos| installs the |lumina|
-  desktop, but additional desktop environments can be installed to
+  desktop but additional desktop environments can be installed to
   support day-to-day computing needs.
 
 * **Easy software management:** With the |sysadm|
@@ -96,19 +97,19 @@ Features
   enhancements. Additionally, the Update Manager is used to upgrade the
   operating system or update installed software.
 
-* **No defragmentation:** |trueos| hard drives never need defragmenting
+* **No fragmentation:** |trueos| hard drives never need defragmenting
   and are formatted with OpenZFS, a self-healing filesystem.
 
 * **Laptop support:** Provides power saving, swap space encryption, and
-  automatic switching between wired and wifi network connections. Also,
-  the rolling release model of |trueos| provides an environment to
-  quickly add support for new hardware.
+  automatic switching between wired and wifi network connections. The 
+  rolling release model of |trueos| provides an environment to quickly 
+  add support for new hardware.
 
 * **Easy system administration:** |trueos| provides many graphical tools
   for performing system administration.
 
 * **Localization:** |trueos| supports a variety of native languages and
-  locales.
+  locales out of the box.
 
 * **Vibrant community:** |trueos| has a friendly and helpful
   :ref:`community <TrueOS Community>`.
@@ -119,55 +120,63 @@ Features
 Security
 --------
 
-Your |trueos| system is secure by default. This section provides an
-overview of the built-in security features. If you want to know more
-about increasing the security of your system beyond its current level,
-additional resources are also provided in this section.
+The |trueos| system is secure by default. The following section provides 
+an overview of the built-in security features. Additional information 
+about increasing the security of the installed system beyond the configured
+defaults are also provided in this section.
 
 The security features built into |trueos| include:
 
 * **Naturally immune to viruses and other malware:** Most viruses are
-  written to exploit Windows systems and do not understand the binaries
-  or paths found on a |trueos| system. Antivirus software is still
-  available in the Security section of |appcafe|, as this is useful when
-  sending or forwarding email attachments to users running other
+  written to exploit the Windows operating system and are incompatible 
+  with the binaries and paths found on a |trueos| system. Antivirus software
+  is still available in the Security section of |appcafe|, as this is useful
+  when sending or forwarding email attachments to users running other
   operating systems.
 
-* **Potential for serious damage is limited:** File and directory
-  ownership and permissions along with separate user and group functions
-  mean, as an ordinary user, any program executed is only granted the
-  abilities and access of the user. A user not a member of the *wheel*
-  group can not switch to administrative access and can not enter or
-  list the contents of a directory not been set for universal access.
+* **Potential for serious damage is limited:** Privilege separation between 
+  users and root (the administrator account) are built in to |trueos|. Files
+  and directories owned by a non-privileged can only be modified by that
+  user, and root. Any programs executed are only granted permissions of that.
+  This means that a malicious program will only be able to affect files and 
+  directories owned by that user and not core operating system files. Only 
+  users that are a member of the *wheel* group can gain administrative access,
+  and are not allowed to list the contents of a directory, or access files 
+  outside of that user's set user or group permissions.
 
-* **Built-in firewall:** The default firewall ruleset allows accessing
-  the Internet and the shares available on your network, but does not
-  allow any inbound connections to your computer.
+* **Built-in firewall:** The default firewall ruleset allows access to the
+  Internet and the shares available on the network, but does not allow any
+  inbound connections to the computer.
 
-* **Very few services are enabled by default:** View which services are
-  started at boot time by reading through the output of
-  :command:`rc-update`.
+* **Very few services are enabled by default:** The list of services that
+  are started at boot time can be viewed by reading through the output of
+  :command:`rc-update` via the command line, or by using Service Manager in 
+  the |sysadm| GUI. Service Manager also allows services to be started and 
+  stopped and also allow a service to be enabled or disabled at boot.
 
-* **SSH is disabled by default:** SSH can only be enabled by the
-  superuser. This setting prevents bots and other users from trying to
-  access your system. If SSH is needed, add :command:`sshd_enable=YES`
-  to :file:`/etc/rc.conf`. Start the service by typing
-  :command:`service sshd start`. A firewall rule also needs to be added
-  using the |sysadm| :sysclbk:`Firewall Manager <firewall-manager>` to
-  allow SSH connections over TCP port 22.
+* **SSH is disabled by default:** SSH can only be enabled by the superuser 
+  (also referred to as 'root' or the administrator user). This setting 
+  prevents bots and other users from trying to access the system. If SSH 
+  access is required and was not enabled during installation, add 
+  :command:`sshd_enable=YES` to the :file:`/etc/rc.conf`. The service can 
+  then be started by typing the :command:`service sshd start` on the command
+  line, or via Service Manager in the |sysadm| GUI. A firewall rule will also 
+  need to be added using the |sysadm| :sysclbk:`Firewall Manager <firewall-manager>` to allow SSH connections through the default SSH TCP port 22.
 
 * **SSH root logins are disabled by default:** If SSH is enabled, login
   as a regular user and use :command:`su` or :command:`sudo` when
   administrative actions are required. Do not change this setting, as it
   prevents an unwanted user from having complete access to the system.
 
-* **sudo is installed:** It is configured to allow users in the *wheel*
-  group permission to run an administrative command after typing their
-  password. By default, the first user created during installation
-  is added to the *wheel* group. Use the |sysadm|
-  :sysclbk:`User Manager <user-manager>` to add other users to this
-  group. Change the default :command:`sudo` configuration using
-  :command:`visudo` as the superuser.
+* **sudo is installed:** sudo is configured to allow users in the *wheel*
+  group permission to run an administrative command after typing the user
+  password, not the *root* password. By default, the first user created 
+  during installation is added to the *wheel* group. Use the |sysadm|
+  :sysclbk:`User Manager <user-manager>` to add other users to the wheel
+  group to allow that user administrative access. To change the default 
+  :command:`sudo` configuration, always use the :command:`visudo` as the 
+  superuser. This command verifies there are no syntax errors, which could 
+  prevent root access.
 
 * :wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is
   loaded by default for the Intel Core i5/i7 processors that support
@@ -176,17 +185,17 @@ The security features built into |trueos| include:
 
 * **Automatic notification of security advisories:**
   The |sysadm| :sysclbk:`Update Manager <update-manager>` automatically
-  notifies you if an update is available as the result of a
+  checks for any updates that are available as the result of a
   `security advisory <https://www.freebsd.org/security/advisories.html>`_
-  affecting |trueos|. This allows you to keep your operating system
-  fully patched with just the click of a mouse.
+  affecting |trueos|. This allows the administrator to keep the operating
+  system fully patched against vulnerabilities with just the click of a mouse.
 
 * The |trueos| operating system and its available software packages are
   built with `LibreSSL <http://www.libressl.org/>`_, which has fewer
   vulnerabilities than OpenSSL.
 
 * :sysclbk:`PersonaCrypt <personacrypt>` allows a user to use a
-  removable, encrypted device as their home directory.
+  removable, encrypted device for the users home directory.
 
 * :ref:`Tor Mode` can be used to anonymously access Internet sites as it
   automatically forwards all Internet traffic through the
@@ -195,7 +204,7 @@ The security features built into |trueos| include:
 
 To learn more about security on FreeBSD and |trueos| systems,
 :command:`man security` is a good place to start. These resources
-provide more information about security on FreeBSD-based operating
+provide more information about security on FreeBSD based operating
 systems:
 
 * `FreeBSD Security Information <https://www.freebsd.org/security/>`_
