@@ -34,7 +34,7 @@ include:
 * |trueos| pre-configures the BSD-licensed |lumina| desktop environment
   during a desktop installation. Additional desktop environments can be
   installed and appear in the graphical login menu, allowing the user to 
-  select their prefered environment.
+  select their preferred environment.
 
 * The |trueos| installer supports configuring ZFS and encryption during
   installation.
@@ -120,63 +120,69 @@ Features
 Security
 --------
 
-The |trueos| system is secure by default. The following section provides 
-an overview of the built-in security features. Additional information 
-about increasing the security of the installed system beyond the configured
+The |trueos| system is secure by default. This section describes an 
+overview of the built-in security features. Additional information about
+increasing the security of the installed system beyond the configured
 defaults are also provided in this section.
 
 The security features built into |trueos| include:
 
 * **Naturally immune to viruses and other malware:** Most viruses are
   written to exploit the Windows operating system and are incompatible 
-  with the binaries and paths found on a |trueos| system. Antivirus software
-  is still available in the Security section of |appcafe|, as this is useful
-  when sending or forwarding email attachments to users running other
-  operating systems.
+  with the binaries and paths found on a |trueos| system. Antivirus 
+  software is still available in the Security section of |appcafe|, as
+  this is useful when sending or forwarding email attachments to users
+  running other operating systems.
 
-* **Potential for serious damage is limited:** Privilege separation between 
-  users and root (the administrator account) are built in to |trueos|. Files
-  and directories owned by a non-privileged can only be modified by that
-  user, and root. Any programs executed are only granted permissions of that.
-  This means that a malicious program will only be able to affect files and 
-  directories owned by that user and not core operating system files. Only 
-  users that are a member of the *wheel* group can gain administrative access,
-  and are not allowed to list the contents of a directory, or access files 
-  outside of that user's set user or group permissions.
+* **Potential for serious damage is limited:** Privilege separation 
+  between users and root (the administrator account) are built in to 
+  |trueos|. Files and directories can only be modified by the owning 
+  user, any specified groups, and root (depending on permissions). Any 
+  programs or scripts executed are only granted the permissions of that
+  user. This means that a malicious program will only be able to affect
+  the files and directories owned by that user and not core operating 
+  system files. Only users that are a member of the *wheel* and/or 
+  *operator* groups can gain administrative access and are not allowed 
+  to list the contents of a directory or access files outside of the 
+  "user" and "group" permissions that have been set.
 
-* **Built-in firewall:** The default firewall ruleset allows access to the
-  Internet and the shares available on the network, but does not allow any
-  inbound connections to the computer.
+* **Built-in firewall:** The default firewall ruleset allows access to 
+  the Internet and the shares available on the network, but does not 
+  allow any inbound connections to the computer.
 
-* **Very few services are enabled by default:** The list of services that
-  are started at boot time can be viewed by reading through the output of
-  :command:`rc-update` via the command line, or by using Service Manager in 
-  the |sysadm| GUI. Service Manager also allows services to be started and 
-  stopped and also allow a service to be enabled or disabled at boot.
+* **Very few services are enabled by default:** The list of services 
+  that are started at boot time can be viewed by reading through the 
+  output of :command:`rc-update` via the command line, or by using 
+  Service Manager in the |sysadm| GUI. Service Manager also allows 
+  services to be started and stopped and also allow a service to be 
+  enabled or disabled at boot.
 
-* **SSH is disabled by default:** SSH can only be enabled by the superuser 
-  (also referred to as 'root' or the administrator user). This setting 
-  prevents bots and other users from trying to access the system. If SSH 
-  access is required and was not enabled during installation, add 
-  :command:`sshd_enable=YES` to the :file:`/etc/rc.conf`. The service can 
-  then be started by typing the :command:`service sshd start` on the command
-  line, or via Service Manager in the |sysadm| GUI. A firewall rule will also 
-  need to be added using the |sysadm| :sysclbk:`Firewall Manager <firewall-manager>` to allow SSH connections through the default SSH TCP port 22.
+* **SSH is disabled by default:** SSH can only be enabled by the 
+  superuser (also referred to as 'root' or the administrator user). 
+  This setting prevents bots and other users from trying to access the 
+  system. If SSH access is required and was not enabled during 
+  installation, add :command:`sshd_enable=YES` to the 
+  :file:`/etc/rc.conf`. The service can then be started by typing the 
+  :command:`service sshd start` on the command line, or using the 
+  Service Manager in the |sysadm| GUI. A firewall rule will also need 
+  to be added using the |sysadm| 
+  :sysclbk:`Firewall Manager <firewall-manager>` to allow SSH 
+  connections through the default SSH TCP port 22.
 
 * **SSH root logins are disabled by default:** If SSH is enabled, login
   as a regular user and use :command:`su` or :command:`sudo` when
   administrative actions are required. Do not change this setting, as it
   prevents an unwanted user from having complete access to the system.
 
-* **sudo is installed:** sudo is configured to allow users in the *wheel*
-  group permission to run an administrative command after typing the user
-  password, not the *root* password. By default, the first user created 
-  during installation is added to the *wheel* group. Use the |sysadm|
-  :sysclbk:`User Manager <user-manager>` to add other users to the wheel
-  group to allow that user administrative access. To change the default 
-  :command:`sudo` configuration, always use the :command:`visudo` as the 
-  superuser. This command verifies there are no syntax errors, which could 
-  prevent root access.
+* **sudo is installed:** sudo is configured to allow users in the 
+  *wheel* group permission to run an administrative command after typing
+  the user password, not the *root* password. By default, the first user
+  created during installation is added to the *wheel* group. Use the 
+  |sysadm| :sysclbk:`User Manager <user-manager>` to add other users to
+  the wheel group to allow that user administrative access. To change 
+  the default :command:`sudo` configuration, always use the 
+  :command:`visudo` as root. This command verifies there are no syntax 
+  errors, which could inadvertently prevent root access.
 
 * :wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is
   loaded by default for the Intel Core i5/i7 processors that support
@@ -187,15 +193,16 @@ The security features built into |trueos| include:
   The |sysadm| :sysclbk:`Update Manager <update-manager>` automatically
   checks for any updates that are available as the result of a
   `security advisory <https://www.freebsd.org/security/advisories.html>`_
-  affecting |trueos|. This allows the administrator to keep the operating
-  system fully patched against vulnerabilities with just the click of a mouse.
+  affecting |trueos|. This allows the administrator to keep the 
+  operating system fully patched against vulnerabilities with just the 
+  click of a mouse.
 
 * The |trueos| operating system and its available software packages are
   built with `LibreSSL <http://www.libressl.org/>`_, which has fewer
   vulnerabilities than OpenSSL.
 
 * :sysclbk:`PersonaCrypt <personacrypt>` allows a user to use a
-  removable, encrypted device for the users home directory.
+  removable, encrypted device for the user's home directory.
 
 * :ref:`Tor Mode` can be used to anonymously access Internet sites as it
   automatically forwards all Internet traffic through the
