@@ -216,7 +216,7 @@ systems:
 
 * `FreeBSD Security Information <https://www.freebsd.org/security/>`_
 
-* `Security Section of FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_
+* `Security Section in the FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_
 
 * `Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_
 
