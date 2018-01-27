@@ -13,8 +13,8 @@ This Handbook covers the installation and use of |trueos|. This Handbook
 is a work in progress and relies on the contributions of many
 individuals. To assist with the Handbook, refer to the documentation
 `README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
-If using IRC, join the #trueos channel on the Freenode network to converse 
-with many other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is 
+If using IRC, join the #trueos channel on the Freenode network to converse
+with many other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is
 another popular option for users.
 
 `TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in
@@ -33,7 +33,7 @@ include:
 
 * |trueos| pre-configures the BSD-licensed |lumina| desktop environment
   during a desktop installation. Additional desktop environments can be
-  installed and appear in the graphical login menu, allowing the user to 
+  installed and appear in the graphical login menu, allowing the user to
   select their preferred environment.
 
 * The |trueos| installer supports configuring ZFS and encryption during
@@ -53,7 +53,7 @@ include:
 * The |trueos| boot menu supports boot environments or snapshots of the
   operating system. The |trueos| Update Manager automatically adds a new
   boot environment to the boot menu before updating the operating system.
-  With this functionality, if an update fails, the system can be rebooted 
+  With this functionality, if an update fails, the system can be rebooted
   into the previous version of the operating system before the update was
   installed. This allows for easy recovery if any issues happen during the
   update process.
@@ -101,8 +101,8 @@ Features
   and are formatted with OpenZFS, a self-healing filesystem.
 
 * **Laptop support:** Provides power saving, swap space encryption, and
-  automatic switching between wired and wifi network connections. The 
-  rolling release model of |trueos| provides an environment to quickly 
+  automatic switching between wired and wifi network connections. The
+  rolling release model of |trueos| provides an environment to quickly
   add support for new hardware.
 
 * **Easy system administration:** |trueos| provides many graphical tools
@@ -120,7 +120,7 @@ Features
 Security
 --------
 
-The |trueos| system is secure by default. This section describes an 
+The |trueos| system is secure by default. This section describes an
 overview of the built-in security features. Additional information about
 increasing the security of the installed system beyond the configured
 defaults are also provided in this section.
@@ -128,45 +128,45 @@ defaults are also provided in this section.
 The security features built into |trueos| include:
 
 * **Naturally immune to viruses and other malware:** Most viruses are
-  written to exploit the Windows operating system and are incompatible 
-  with the binaries and paths found on a |trueos| system. Antivirus 
+  written to exploit the Windows operating system and are incompatible
+  with the binaries and paths found on a |trueos| system. Antivirus
   software is still available in the Security section of |appcafe|, as
   this is useful when sending or forwarding email attachments to users
   running other operating systems.
 
-* **Potential for serious damage is limited:** Privilege separation 
-  between users and root (the administrator account) are built in to 
-  |trueos|. Files and directories can only be modified by the owning 
-  user, any specified groups, and root (depending on permissions). Any 
+* **Potential for serious damage is limited:** Privilege separation
+  between users and root (the administrator account) are built in to
+  |trueos|. Files and directories can only be modified by the owning
+  user, any specified groups, and root (depending on permissions). Any
   programs or scripts executed are only granted the permissions of that
   user. This means that a malicious program will only be able to affect
-  the files and directories owned by that user and not core operating 
-  system files. Only users that are a member of the *wheel* and/or 
-  *operator* groups can gain administrative access and are not allowed 
-  to list the contents of a directory or access files outside of the 
+  the files and directories owned by that user and not core operating
+  system files. Only users that are a member of the *wheel* and/or
+  *operator* groups can gain administrative access and are not allowed
+  to list the contents of a directory or access files outside of the
   "user" and "group" permissions that have been set.
 
-* **Built-in firewall:** The default firewall ruleset allows access to 
-  the Internet and the shares available on the network, but does not 
+* **Built-in firewall:** The default firewall ruleset allows access to
+  the Internet and the shares available on the network, but does not
   allow any inbound connections to the computer.
 
-* **Very few services are enabled by default:** The list of services 
-  that are started at boot time can be viewed by reading through the 
-  output of :command:`rc-update` via the command line, or by using 
-  Service Manager in the |sysadm| GUI. Service Manager also allows 
-  services to be started and stopped and also allow a service to be 
+* **Very few services are enabled by default:** The list of services
+  that are started at boot time can be viewed by reading through the
+  output of :command:`rc-update` via the command line, or by using
+  Service Manager in the |sysadm| GUI. Service Manager also allows
+  services to be started and stopped and also allow a service to be
   enabled or disabled at boot.
 
-* **SSH is disabled by default:** SSH can only be enabled by the 
-  superuser (also referred to as 'root' or the administrator user). 
-  This setting prevents bots and other users from trying to access the 
-  system. If SSH access is required and was not enabled during 
-  installation, add :command:`sshd_enable=YES` to the 
-  :file:`/etc/rc.conf`. The service can then be started by typing the 
-  :command:`service sshd start` on the command line, or using the 
-  Service Manager in the |sysadm| GUI. A firewall rule will also need 
-  to be added using the |sysadm| 
-  :sysclbk:`Firewall Manager <firewall-manager>` to allow SSH 
+* **SSH is disabled by default:** SSH can only be enabled by the
+  superuser (also referred to as 'root' or the administrator user).
+  This setting prevents bots and other users from trying to access the
+  system. If SSH access is required and was not enabled during
+  installation, add :command:`sshd_enable=YES` to the
+  :file:`/etc/rc.conf`. The service can then be started by typing the
+  :command:`service sshd start` on the command line, or using the
+  Service Manager in the |sysadm| GUI. A firewall rule will also need
+  to be added using the |sysadm|
+  :sysclbk:`Firewall Manager <firewall-manager>` to allow SSH
   connections through the default SSH TCP port 22.
 
 * **SSH root logins are disabled by default:** If SSH is enabled, login
@@ -174,14 +174,14 @@ The security features built into |trueos| include:
   administrative actions are required. Do not change this setting, as it
   prevents an unwanted user from having complete access to the system.
 
-* **sudo is installed:** sudo is configured to allow users in the 
+* **sudo is installed:** sudo is configured to allow users in the
   *wheel* group permission to run an administrative command after typing
   the user password, not the *root* password. By default, the first user
-  created during installation is added to the *wheel* group. Use the 
+  created during installation is added to the *wheel* group. Use the
   |sysadm| :sysclbk:`User Manager <user-manager>` to add other users to
-  the wheel group to allow that user administrative access. To change 
-  the default :command:`sudo` configuration, always use the 
-  :command:`visudo` as root. This command verifies there are no syntax 
+  the wheel group to allow that user administrative access. To change
+  the default :command:`sudo` configuration, always use the
+  :command:`visudo` as root. This command verifies there are no syntax
   errors, which could inadvertently prevent root access.
 
 * :wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is
@@ -193,8 +193,8 @@ The security features built into |trueos| include:
   The |sysadm| :sysclbk:`Update Manager <update-manager>` automatically
   checks for any updates that are available as the result of a
   `security advisory <https://www.freebsd.org/security/advisories.html>`_
-  affecting |trueos|. This allows the administrator to keep the 
-  operating system fully patched against vulnerabilities with just the 
+  affecting |trueos|. This allows the administrator to keep the
+  operating system fully patched against vulnerabilities with just the
   click of a mouse.
 
 * The |trueos| operating system and its available software packages are
@@ -284,12 +284,12 @@ These resources are also useful to bookmark and peruse as needed:
    |          | similar to a filesystem since properties such as quotas and compression can be set.                                                          |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Snapshot | A read-only, point-in-time copy of a filesystem. Snapshots can be created quickly and, if little data changes, new snapshots take very       |
-   |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both old and new      |
-   |          | versions. Snapshots provide a clever way of keeping a history of files, should an older copy or even a deleted file need to be recovered.    |
-   |          | For this reason, many administrators snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and store   |
-   |          | them on another system. Such a strategy allows the administrator to roll the system back to a specific time, or if there is a catastrophic   |
+   |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both the old and new      |
+   |          | versions. Snapshots provide a clever way of keeping a history of files, which allows an older copy or even a deleted file to be recovered.    |
+   |          | For this reason, many administrators take snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and store   |
+   |          | them on another system. Such a strategy allows an administrator to roll a system back to a specific time, or in the event of a catastrophic   |
    |          | loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within 15 minutes of the data loss). Snapshots can  |
-   |          | be cloned or rolled back, but the files on the snapshot can not be accessed independently.                                                   |
+   |          | be cloned or rolled back, but the files in a snapshot can not be accessed individually.                                                   |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Clone    | A writable copy of a snapshot which can only be created on the same ZFS volume. Clones provide an extremely space efficient way to store     |
    |          | many copies of mostly-shared data such as workspaces, software installations, and diskless clients. Clones do not inherit the properties of  |
@@ -299,16 +299,16 @@ These resources are also useful to bookmark and peruse as needed:
    | ZIL      | A filesystem journal that manages writes. The ZIL is a temporary storage area for sync writes until they are written asynchronously to the   |
    |          | ZFS pool. If the system has many sync writes, such as from a database server, performance can be increased by adding a dedicated log device  |
    |          | known as a SLOG (Secondary LOG). If the system has few sync writes, a SLOG will not speed up writes. When creating a dedicated log device,   |
-   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors able to handle writing the contents of the SSD's RAM to    |
-   |          | the SSD. If a dedicated log device is needed, the SSD should be half the size of system RAM, as anything larger is unused capacity. Note a   |
-   |          | dedicated log device can not be shared between ZFS pools, and the same device cannot hold both a log and a cache device.                     |
+   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors that is able to handle writing the contents of the SSD's RAM to    |
+   |          | the SSD. If a dedicated log device is needed, the SSD should be half the size of available system RAM, as anything larger is unused capacity. Note: A  |
+   |          | dedicated log device can not be shared between ZFS pools, and the same device cannot be used for both a log and a cache device.                     |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is known as an L2ARC and ZFS uses it to store more |
-   |          | reads which can increase random read performance. However, adding a cache device will not improve a system with too little RAM and actually  |
-   |          | decreases performance, as ZFS uses RAM to track the contents of L2ARC. RAM is always faster than disks, so always add as much RAM as         |
-   |          | possible before determining if the system would benefit from a L2ARC device. If a lot of applications do large amounts of random reads on a  |
-   |          | dataset small enough to fit into the L2ARC, read performance may be increased by adding a dedicated cache device. SSD cache devices only     |
-   |          | help if the working set is larger than system RAM, but small enough that a significant percentage of it fits on the SSD. Note a dedicated    |
+   | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is then known as an L2ARC. ZFS will then use the L2ARC to store more |
+   |          | reads which can increase random read performance. With that said, adding a cache device will not improve a system with too little RAM and actually  |
+   |          | decreases performance as ZFS uses RAM to track the contents of the L2ARC. RAM is always faster than disks, so always add as much RAM as         |
+   |          | possible before determining if the system would benefit from an L2ARC device. If a lot of applications do large amounts of random reads on a  |
+   |          | dataset that is small enough to fit into the L2ARC, read performance may be increased by adding a dedicated cache device. SSD cache devices will only   |
+   |          | help if the working set is larger than available system RAM but small enough that a significant percentage of the data fits on the SSD. Note: A dedicated    |
    |          | L2ARC device can not be shared between ZFS pools.                                                                                            |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
