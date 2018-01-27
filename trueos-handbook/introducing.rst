@@ -435,10 +435,6 @@ separate |trueos| from |pcbsd|:
 * The :guilabel:`Boot to console (Disable X)` option has been added to
   the graphical boot menu.
 
-* These new utilities are available in the *SysAdm Client*:
-  :sysclbk:`Managing Remote Connections <managing-remote-connections>`
-  and :sysclbk:`Task Manager <task-manager>`.
-
 * The graphical and command line versions of PBI Manager and Warden are
   removed.
 
