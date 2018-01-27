@@ -317,8 +317,8 @@ These resources are also useful to bookmark and peruse as needed:
 
 As |trueos| grows and evolves, many users appreciate comparisons with
 other operating systems. These comparisons are intended to help new
-users deciding to install and try |trueos|, with accuracy being
-the chief concern.
+users understand the abilities and features available when deciding to
+install |trueos|. Accuracy being the chief concern.
 
 .. index:: FreeBSD/PC-BSD comparison
 .. _FreeBSD and PCBSD:
@@ -326,12 +326,12 @@ the chief concern.
 FreeBSD and PC-BSD
 ------------------
 
-These features or enhancements were introduced for |trueos| and now
+These features or enhancements were introduced with |trueos| and now
 separate |trueos| from |pcbsd|:
 
 .. note:: |pcbsd| and FreeBSD are placed together as both are very
-   similar "under the hood". Differences for either OS to |trueos| are
-   listed here.
+   similar "under the hood". The differences for either OS to |trueos|
+   are listed here.
 
 * Based on FreeBSD-CURRENT.
 
@@ -340,14 +340,13 @@ separate |trueos| from |pcbsd|:
 
 * **Quick boot times with OpenRC:** |trueos| is using
   `OpenRC <https://github.com/OpenRC/openrc>`_ as part of the init
-  process to start services in parallel. This results in dramatically
-  improved system boot times for |trueos|. OpenRC is also used to
-  improve general service management, in addition to adding the
-  functionality to automatically run when new elements are introduced to
-  the system, such as plugging in an ethernet cable. Use of OpenRC
-  introduces a new level of differentiation from FreeBSD as |trueos| now
-  uses some different system services. These differences are listed in
-  :numref:`Table %s <sysserv>`
+  process which allows services to be started in parallel. This results
+  in dramatically improved system boot times for |trueos|. OpenRC also
+  improves general service management. One  example is the ability to
+  automatically run when new elements are introduced to the system, such
+  as plugging in an ethernet cable. Using OpenRC allows |trueos| to use
+  some system services that are different from FreeBSD. These differences
+  are listed in :numref:`Table %s <sysserv>`
 
   .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
                       |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
@@ -355,7 +354,7 @@ separate |trueos| from |pcbsd|:
 
   .. _sysserv:
 
-  .. table:: Different system services between |trueos| and FreeBSD
+  .. table:: Differences between system services in |trueos| and FreeBSD
      :class: longtable
 
      +------------------+--------------+-----------------+
@@ -371,31 +370,36 @@ separate |trueos| from |pcbsd|:
      | dhcpcd           | Ports        | dhclient        |
      +------------------+--------------+-----------------+
 
-  .. note:: The :ref:`sysserv` table is updated as development
-     continues on the |trueos| implementation of OpenRC. For a
-     complete list of all available services through OpenRC, see
-     :ref:`rcuprnlvl`.
+  .. note:: The :ref:`sysserv` table is updated as development continues
+     on the |trueos| implementation of OpenRC. For a complete list of all
+     available services in OpenRC, see :ref:`rcuprnlvl`.
 
-* A |trueos| installation installs the |lumina| Desktop. Additional
-  window managers can be installed using |appcafe|.
+* A |trueos| installation includes the |lumina| Desktop. Additional
+  window managers and desktop environments can be installed using the
+  |appcafe| GUI. Meta packages are available for popular desktop
+  environments to allow easy installation of all required packages.
 
 * The `SysAdm™ Client <https://sysadm.us/handbook/client/>`_
   and `Server <https://sysadm.us/handbook/server/>`_ has replaced
-  Control Panel. Most of the utilities from the Control Panel are
+  Control Panel. Most of the utilities from Control Panel are
   rewritten to use the |sysadm| middleware. Under the hood, |sysadm|
-  provides REST and WebSocket APIs for securely managing local and
+  provides REST and WebSocket APIs for securely managing local or
   remote FreeBSD and |trueos| systems.
 
-* Many utilities have been converted to the |sysadm| API and are
-  available through `SysAdm <https://sysadm.us/handbook/client/>`_:
+* Many utilities have been converted to the |sysadm| API and many more
+  are available through `SysAdm <https://sysadm.us/handbook/client/>`_:
 
   * AppCafe
   * Update Manager
-  * Boot Environment Manager
+  * Boot Environments
+  * Devices
+  * Firewall
+  * Mouse Settings
+  * Services
+  * System Controls
+  * Tasks
+  * Users
   * Life Preserver
-  * Firewall Manager
-  * User Manager
-  * Network Manager
 
 * The functionality provided by the *About* utility is incorporated into
   :lumbk:`Lumina Information <luminautl.html#information>`.
@@ -417,16 +421,16 @@ separate |trueos| from |pcbsd|:
 
 * The option to use the SCFB display driver is added to the installer.
   This driver is suitable for newer UEFI laptops as it automatically
-  detects native resolution and is a good solution for newer Intel
-  drivers that have not been ported yet to FreeBSD. Before selecting
-  this driver, check the BIOS and ensure the CSM module is disabled.
-  This driver does not support a dual-head configuration, such as an
-  external port for presentations, or suspend and resume.
+  detects the native resolution. This is a good solution for newer Intel
+  hardware that would otherwise require drivers that have not been ported
+  to FreeBSD yet. Before selecting this driver, check the BIOS and ensure
+  the CSM module is disabled. Note: This driver does not support a
+  dual-head configuration, such as an external port for presentations, or
+  suspend and resume.
 
 * :guilabel:`Customize` is removed from the :ref:`System Selection`
   screen in order to reduce the size of the installation media.
-  Additional software can be installed post-installation using
-  |appcafe|.
+  Additional software can be installed post-installation using |appcafe|.
 
 * The :guilabel:`Boot to console (Disable X)` option has been added to
   the graphical boot menu.
