@@ -508,11 +508,11 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
    |            |           |              | Converting EXT3 default filesystems to EXT4 may have   |
    |            |           |              | experience better performance. EXT4 increases the      |
    |            |           |              | maximum volume size to 1EB and the maximum file size   |
-   |            |           |              | to 16GB to 16TB.
+   |            |           |              | to 16GB to 16TB.                                       |
    +------------+-----------+--------------+--------------------------------------------------------+
    | JFS        | Linux     | none         | Journaled File System is a 64-bit journaling file      |
    |            |           |              | created by IBM. The maximum volume size is 32 PB and   |
-   |            |           |              | the maximum file size is 4 PB.
+   |            |           |              | the maximum file size is 4PB.                          |
    +------------+-----------+--------------+--------------------------------------------------------+
    | ReiserFS   | Linux     | r/o support  | A general-purpose journaling file system that has      |
    |            |           | is loaded by | fallen out of favor in recent years. The maximum       |
