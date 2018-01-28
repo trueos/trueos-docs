@@ -284,12 +284,12 @@ These resources are also useful to bookmark and peruse as needed:
    |          | similar to a filesystem since properties such as quotas and compression can be set.                                                          |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Snapshot | A read-only, point-in-time copy of a filesystem. Snapshots can be created quickly and, if little data changes, new snapshots take very       |
-   |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both the old and new      |
-   |          | versions. Snapshots provide a clever way of keeping a history of files, which allows an older copy or even a deleted file to be recovered.    |
-   |          | For this reason, many administrators take snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and store   |
-   |          | them on another system. Such a strategy allows an administrator to roll a system back to a specific time, or in the event of a catastrophic   |
-   |          | loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within 15 minutes of the data loss). Snapshots can  |
-   |          | be cloned or rolled back, but the files in a snapshot can not be accessed individually.                                                   |
+   |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both the old and new  |
+   |          | versions. Snapshots provide a clever way of keeping a history of files, which allows an older copy or even a deleted file to be recovered.   |
+   |          | For this reason, many administrators take snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and    |
+   |          | store them on another system. Such a strategy allows an administrator to roll a system back to a specific time, or in the event of a         |
+   |          | catastrophic loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within 15 minutes of the data loss).   |
+   |          | Snapshots can be cloned or rolled back, but the files in a snapshot cannot be accessed individually.                                         |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Clone    | A writable copy of a snapshot which can only be created on the same ZFS volume. Clones provide an extremely space efficient way to store     |
    |          | many copies of mostly-shared data such as workspaces, software installations, and diskless clients. Clones do not inherit the properties of  |
@@ -299,17 +299,18 @@ These resources are also useful to bookmark and peruse as needed:
    | ZIL      | A filesystem journal that manages writes. The ZIL is a temporary storage area for sync writes until they are written asynchronously to the   |
    |          | ZFS pool. If the system has many sync writes, such as from a database server, performance can be increased by adding a dedicated log device  |
    |          | known as a SLOG (Secondary LOG). If the system has few sync writes, a SLOG will not speed up writes. When creating a dedicated log device,   |
-   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors that is able to handle writing the contents of the SSD's RAM to    |
-   |          | the SSD. If a dedicated log device is needed, the SSD should be half the size of available system RAM, as anything larger is unused capacity. Note: A  |
-   |          | dedicated log device can not be shared between ZFS pools, and the same device cannot be used for both a log and a cache device.                     |
+   |          | it is recommended to use a fast SSD with a supercapacitor or a bank of capacitors that is able to handle writing the contents of the SSD's   |
+   |          | RAM to the SSD. If a dedicated log device is needed, the SSD should be half the size of available system RAM, as anything larger is unused   |
+   |          | capacity. Note: A dedicated log device can not be shared between ZFS pools, and the same device cannot be used for both a log and a cache    |
+   |          | device.                                                                                                                                      |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is then known as an L2ARC. ZFS will then use the L2ARC to store more |
-   |          | reads which can increase random read performance. With that said, adding a cache device will not improve a system with too little RAM and actually  |
-   |          | decreases performance as ZFS uses RAM to track the contents of the L2ARC. RAM is always faster than disks, so always add as much RAM as         |
-   |          | possible before determining if the system would benefit from an L2ARC device. If a lot of applications do large amounts of random reads on a  |
-   |          | dataset that is small enough to fit into the L2ARC, read performance may be increased by adding a dedicated cache device. SSD cache devices will only   |
-   |          | help if the working set is larger than available system RAM but small enough that a significant percentage of the data fits on the SSD. Note: A dedicated    |
-   |          | L2ARC device can not be shared between ZFS pools.                                                                                            |
+   | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is then known as an L2ARC. ZFS will then use the   |
+   |          | L2ARC to store more reads which can increase random read performance. With that said, adding a cache device will not improve a system with   |
+   |          | too little RAM and actually decreases performance as ZFS uses RAM to track the contents of the L2ARC. RAM is always faster than disks, so    |
+   |          | always add as much RAM as possible before determining if the system would benefit from an L2ARC device. If a lot of applications do large    |
+   |          | amounts of random reads on a dataset that is small enough to fit into the L2ARC, read performance may be increased by adding a dedicated     |
+   |          | cache device. SSD cache devices will only help if the working set is larger than available system RAM, but small enough that a significant   |
+   |          | percentage of the data fits on the SSD. Note: A dedicated L2ARC device cannot be shared between ZFS pools.                                   |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 |trueos| Comparisons
@@ -446,23 +447,25 @@ separate |trueos| from |pcbsd|:
 Linux and |trueos|
 ------------------
 
-|trueos| is based on FreeBSD, meaning it is not a Linux distribution. If
-you have used Linux before, you may find some features you are used to
-have different names on a BSD system and some commands are different.
-This section covers some of these differences.
+|trueos| is based on FreeBSD, meaning it is not a Linux distribution.
+While there are many similarities with Linux, some features have
+different names and some commands have different flags or output on a
+BSD based system. This section will cover some of these differences.
 
-BSD and Linux use different filesystems during installation. Many Linux
-distros use EXT2, EXT3, EXT4, or ReiserFS, while |trueos| uses OpenZFS.
-This means if you wish to dual-boot with Linux or access data on an
-external drive formatted with another filesystem, you will want to
-research if the data is accessible to both operating systems.
+BSD and Linux use different filesystems. Many Linux distros use EXT2,
+EXT3, EXT4, or BTRFS, while |trueos| uses UFS or OpenZFS. In order to
+dual-boot with Linux, or access data on an external drive formatted with
+another filesystem, it is imperative to research if the filesystem used
+is accessible to both operating systems.
 
 :numref:`Table %s <filesys support>` summarizes the various filesystems
 commonly used by desktop systems. |trueos| automatically mounts several
 filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
-*EXT4* (read-only), *NTFS5*, *NTFS6*, and *XFS*. See the section on
-:ref:`Files and File Sharing` for a comparison of some graphical file
-manager utilities.
+*EXT4* (read-only), *NTFS5*, *NTFS6*, and *XFS*.
+
+  .. note:: A comparison of some popular graphical file management
+	    utilities available in |trueos| can be found in the
+	    :ref:`Files and File Sharing` section.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.15\linewidth-2\tabcolsep}
                     |>{\RaggedRight}p{\dimexpr 0.15\linewidth-2\tabcolsep}
@@ -475,66 +478,101 @@ manager utilities.
    :class: longtable
 
    +------------+-----------+--------------+--------------------------------------------------------+
-   | Filesystem | Native to | Non-native   | Usage notes                                            |
-   |            |           | support type |                                                        |
-   +============+===========+==============+========================================================+
-   | Btrfs      | Linux     | none         |                                                        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | exFAT      | Windows   | none         | requires a license from Microsoft                      |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | EXT2       | Linux     | r/w support  |                                                        |
-   |            |           | loaded by    |                                                        |
-   |            |           | default      |                                                        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | EXT3       | Linux     | r/w support  | since EXT3 journaling is not supported, you will not   |
-   |            |           | loaded by    | be able to mount a filesystem requiring a journal      |
-   |            |           | default      | replay unless you :command:`fsck` it using an          |
-   |            |           |              | external utility such as                               |
-   |            |           |              | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | EXT4       | Linux     | r/o support  | EXT3 journaling, extended attributes, and inodes       |
-   |            |           | loaded by    | greater than 128 bytes are not supported; EXT3         |
-   |            |           | default      | filesystems converted to EXT4 may have better          |
-   |            |           |              | performance                                            |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | FAT16      | Windows   | r/w support  |                                                        |
-   |            |           | loaded by    |                                                        |
-   |            |           | default      |                                                        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | FAT32      | Windows   | r/w support  |                                                        |
-   |            |           | loaded by    |                                                        |
-   |            |           | default      |                                                        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | HFS+       | Mac OS X  | none         | older Mac versions might work with                     |
-   |            |           |              | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | JFS        | Linux     | none         |                                                        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | NTFS5      | Windows   | full r/w     |                                                        |
+   | Filesystem | Native OS | Non-native OS| Usage notes                                            |
    |            |           | support      |                                                        |
-   |            |           | loaded       |                                                        |
+   +============+===========+==============+========================================================+
+   | Btrfs      | Linux     | none         | A modern copy on write (CoW) filesystem for the Linux  |
+   |            |           |              | OS. Btrfs is similar in nature to ZFS, and shares many |
+   |            |           |              | of the same ideas with how a file system should work.  |
+   |            |           |              | The maximum supported volume and file size is 16EB.    |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | EXT2       | Linux     | r/w support  | The successor to EXT. EXT2 was designed following the  |
+   |            |           | loaded by    | principles put forth in BSD's FFS. The first           |
+   |            |           | default      | commercial grade filesystem in Linux. The maximum      |
+   |            |           |              | supported volume size is 2TB to 32TB and the maximum   |
+   |            |                          | file size is 6GB to 2TB.                               |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | EXT3       | Linux     | r/w support  | EXT3 is EXT2 with the added benefit of journaling,     |
+   |            |           | loaded by    | online filesystem growth, and HTree indexing for       |
+   |            |           | default      | larger directories. Journaling is **not** supported in |
+   |            |           |              | BSD. Filesystems requiring a journal replay are unable |
+   |            |           |              | to be mounted in BSD unless a :command:`fsck` is run   |
+   |            |           |              | using an external utility such as the program package  |
+   |            |           |              | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
+   |            |           |                The max volume size and file size is the same as EXT2. |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | EXT4       | Linux     | r/o support  | EXT4 is the succesor to EXT3 including enhancements to |
+   |            |           | loaded by    | journaling, extended attributes, and journal           |
+   |            |           | default      | checksumming (among many others) *on linux*. Using     |
+   |            |           |              | inodes greater than 128 bytes are *not* supported.     |
+   |            |           |              | Converting EXT3 default filesystems to EXT4 may have   |
+   |            |           |              | experience better performance. EXT4 increases the      |
+   |            |           |              | maximum volume size to 1EB and the maximum file size   |
+   |            |           |              | to 16GB to 16TB.
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | JFS        | Linux     | none         | Journaled File System is a 64-bit journaling file      |
+   |            |           |              | created by IBM. The maximum volume size is 32 PB and   |
+   |            |           |              | the maximum file size is 4 PB.
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | ReiserFS   | Linux     | r/o support  | A general-purpose journaling file system that has      |
+   |            |           | is loaded by | fallen out of favor in recent years. The maximum       |
+   |            |           | default      | volume size is 16TB, and maximum file size is 8TB.     |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | FAT16      | Windows   | r/w support  | Max partition sizes up to 4GB. Cluster sizes vary from |
+   |            |           | loaded by    | 2kb to 64kb, depending on partition size. Rarely used  |
+   |            |           | default      | due to partition size limitations.                     |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | FAT32      | Windows   | r/w support  | Replaced FAT16. Maximum partition size of 2TB and a    |
+   |            |           | loaded by    | maximum file size of 4GB. 4KB clusters are used on     |
+   |            |           | default      | partition sizes up to 8GB. For partitions larger than  |
+   |            |           |              | 8GB, the cluster size grows up to 32KB.                |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | NTFS       | Windows   | full r/w     | The maximum volume size is 16EB -1kB and the maximum   |
+   |            |           | support      | file size is 16TB -64kB. Unlike FAT32, the cluster     |
+   |            |           | loaded       | size stays at 4KB regardless of the volume size used.  |
    |            |           | by default   |                                                        |
    +------------+-----------+--------------+--------------------------------------------------------+
-   | NTFS6      | Windows   | r/w support  |                                                        |
-   |            |           | loaded by    |                                                        |
-   |            |           | default      |                                                        |
+   | NTFS5      | Windows   | r/w support  | In addition to the NTFS features, NTFS5 also supports  |
+   |            |           | loaded by    | encryption, disk quotas, and sparse files. Other       |
+   |            |           | default      | features may be available, but are beyond the scope of |
+   |            |           |              | this handbook. Support for advanced features may not   |
+   |            |           |              | be supported in |trueos| and should not be expected or |
+   |            |           |              | relied on to work.                                     |
    +------------+-----------+--------------+--------------------------------------------------------+
-   | ReiserFS   | Linux     | r/o support  |                                                        |
-   |            |           | is loaded by |                                                        |
-   |            |           | default      |                                                        |
+   | exFAT      | Windows   | none         | A file system optimized for flash memory such as USB   |
+   |            |           |              | thumb drives and SD Cards. Use of this file system     |
+   |            |           |              | requires a license from Microsoft. The maximum volume  |
+   |            |           |              | size is 64ZB and the maximum file size is 16EB.        |
    +------------+-----------+--------------+--------------------------------------------------------+
-   | UFS2       | FreeBSD   | check if a   | changed to r/o support in Mac Lion                     |
-   |            |           | Linux distro |                                                        |
-   |            |           | provides     |                                                        |
-   |            |           | ufsutils;    |                                                        |
-   |            |           | r/w support  |                                                        |
-   |            |           | on Mac; UFS  |                                                        |
-   |            |           | Explorer can |                                                        |
-   |            |           | be used on   |                                                        |
-   |            |           | Windows      |                                                        |
+   | HFS+       | Mac OS X  | none         | A file system developed by Apple Inc. HFS+ was         |
+   |            |           |              | developed to replace HFS. The max volume and file size |
+   |            |           |              | is "slightly less" than 8EB. Older Mac versions may    |
+   |            |           |              | work using the GUI application dedicated to HFS called |
+   |            |           |              | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
    +------------+-----------+--------------+--------------------------------------------------------+
-   | ZFS        | |trueos|, |              |                                                        |
-   |            | FreeBSD   |              |                                                        |
+   | UFS2       | FreeBSD   | Linux support| Unix File System, also called Berkley Fast File System |
+   |            |           | through      | or FFS, is used by mnay Unix and Unix like operating   |
+   |            |           | ufsutils.    | systems. UFS is a distant descendant of the original   |
+   |            |           | r/w support  | file system used by Version 7 Unix. UFS2 has a maximum |
+   |            |           | on Mac.      | volume size of 512ZB and a maximum file size of 512GB  |
+   |            |           | UFS Explorer | to 32 PB depending on the implementation.              |
+   |            |           | can be used  |                                                        |
+   |            |           | in Windows   | Note: As of Mac Lion, UFS has r/o support only.        |
+   +------------+-----------+--------------+--------------------------------------------------------+
+   | ZFS        | |trueos|, |              | TrueOS has been using OpenZFS as its exclusive file    |
+   |            | FreeBSD   |              | system for several years, ensuring advanced OpenZFS    |
+   |            |           |              | functionality is heavily tested and 100%               |
+   |            |           |              | production-ready. ZFS was originally designed by Sun   |
+   |            |           |              | Microsystems, and has since been succeded by the Open  |
+   |            |           |              | ZSF project which is jointly developed by developers   |
+   |            |           |              | from illumos, FreeBSD, Linux, and OS X to name a few.  |
+   |            |           |              | See the :ref:`ZFS Overview` section of the handbook    |
+   |            |           |              | for in an in depth list of features and benefits of    |
+   |            |           |              | using ZFS, and why it's the default filesystem used by |
+   |            |           |              | |trueos|. The `Open ZFS <http://open-zfs.org/>`_       |
+   |            |           |              | has additional details on the implementation and use.  |
+   |            |           |              | The maximum volume size is 256ZB and a maximum file    |
+   |            |           |              | size of 16EB.                                          |
    +------------+-----------+--------------+--------------------------------------------------------+
 
 Linux and BSD use different naming conventions for devices. For example:
