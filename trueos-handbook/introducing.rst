@@ -567,7 +567,7 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
    |            |           |              | ZSF project which is jointly developed by developers   |
    |            |           |              | from illumos, FreeBSD, Linux, and OS X to name a few.  |
    |            |           |              | See the :ref:`ZFS Overview` section of the handbook    |
-   |            |           |              | for in an in depth list of features and benefits of    |
+   |            |           |              | for in an in-depth list of features and benefits of    |
    |            |           |              | using ZFS, and why it's the default filesystem used by |
    |            |           |              | |trueos|. The `Open ZFS <http://open-zfs.org/>`_       |
    |            |           |              | has additional details on the implementation and use.  |
@@ -575,21 +575,31 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
    |            |           |              | size of 16EB.                                          |
    +------------+-----------+--------------+--------------------------------------------------------+
 
-Linux and BSD use different naming conventions for devices. For example:
+Linux and BSD use different naming conventions for devices.
+Some examples for illustration;
 
-* In Linux, Ethernet interfaces begin with :file:`eth`. With BSD,
-  interface names indicate the name of the driver. For example, an
-  Ethernet interface may be listed as :file:`re0`, indicating it uses
-  the Realtek :file:`re` driver. The advantage of this convention is
-  you can read the **man 4** page for the driver (e.g. type
-  :command:`man 4 re`) to see which models and features are provided by
-  the driver.
+* Linux ethernet interfaces begin with :file:`eth`, while BSD interface
+  names indicate the name of the driver used to make the device
+  function. An ethernet interface named :file:`re0` indicates it uses
+  the Realtek :file:`re` driver. One advantage of this convention is
+  the easy ability to find the respective man page. For the `re` driver
+  issuing :command:`man 4 re` will open the man page for the `re`
+  driver which will list which models and features are provided by the
+  driver. This convention applies to all drivers. :command:`man 4 wlan`
+  will open the `wlan` man page containing all wlan driver information.
 
 * BSD disk names differ from Linux. IDE drives begin with :file:`ad` and
-  SCSI and USB drives begin with :file:`da`.
+  SCSI and USB drives begin with :file:`da`. Following the convention of
+  informative device names, BSD applies this to disk drives as well.
+  :file:`da0p1` is the 1st partition on the 1st USB/SCSI drive.
+  :file:`da0p2` is the 2nd partition on the 1st USB/SCSI drive. This
+  convention continues with subsequent drives. :file:`da1p3` would be
+  the 3rd partition on the 2nd USB/SCSI drive and :file:`ad4p6` would be
+  the 6th partition on the 3rd IDE drive. Note: physical drive numbering
+  begins at 0, while the partition numbers on the drive start at 1.
 
-Some of the features used by BSD have similar counterparts to Linux, but
-the name of the feature is different. :numref:`Table %s <feature names>`
+Some of the features used by BSD have similar counterparts to Linux but
+the name of the feature may differ. :numref:`Table %s <feature names>`
 provides some common examples:
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
