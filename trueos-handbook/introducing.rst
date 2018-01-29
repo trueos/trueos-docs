@@ -716,9 +716,8 @@ counterparts on Windows. :numref:`Table %s <troswinapps>` highlights a
 few of these:
 
 .. note:: This table isn't meant to be an exhaustive listing of
-   applications, but simply provide a few TrueOS/FreeBSD
-   equivalents for users familiar with their previous operating
-   system.
+   applications, but simply provide a few TrueOS/FreeBSD equivalents
+   for users familiar with their previous operating system.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
                     |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
@@ -771,38 +770,81 @@ A virtualized environment allows a user to test drive an operating
 system without overwriting the current operating system. This is an
 excellent way to practice installation, determine whether the hardware
 is supported, or to try multiple versions of different operating
-systems. Virtualization software effectively creates windows (known as
-virtual machines) to install and use an operating system. The only
+systems. Virtualization software creates a virtual machine, which is
+essentially a computer environment created entirely in software, that
+allows the installation and use of an operating system. The only
 limitation to virtualization is the hardware, as each virtual machine
-uses CPU and RAM. Depending upon the amount of CPU and RAM in the
-computer, the installed operating system using virtualization software
-may run slowly. If the computer slows down, try closing other
-applications running on the computer to free up some RAM.
+uses real resources, the CPU and RAM. Depending on the amount of CPU and
+RAM available on the host computer, the operating system installed as a
+guest in the virtual environment may run slowly. If the host computer
+slows down, closing other non-essential applications to free up CPU/RAM
+may help.
 
-To run virtualization software on |trueos|, search for *virtualbox*
-within the |sysadm| :sysclbk:`AppCafe <appcafe>` and install the
-`VirtualBox <https://www.virtualbox.org/>`_ open source virtualization
-program and the
-`VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_.
+bhyve
+-----
+
+bhyve (pronounced bee hive) is a type-2 hypervisor that runs on
+natively on |trueos| and originally developed on FreeBSD. bhyve runs
+FreeBSD 9+, OpenBSD, NetBSD, Linux and Windows NT guests. Current
+development efforts aim at widening support for other operating systems
+for the x86-64 architecture.
+The `Virtualization <https://www.freebsd.org/doc/handbook/virtualization-host-bhyve.html>`_
+section of the FreeBSD Handbook has in-depth instructions about bhyve
+features and use. bhyve, while very powerful, is not currently very user
+friendly. bhyve is under active development with many great features on
+the way.
+
+For a more user-friendly virtualization experience, many users prefer
+:ref:`VirtualBox`.
+
+.. TODO: Add additional information for using bhyve
+
+VirtualBox
+----------
+
+Virtualbox is a popular virtualization software available in |trueos|.
+Installing Virtualbox through the |sysadm| :sysclbk:`AppCafe <appcafe>`
+GUI, or :command:`pkg install virtualbox-ose`  on the command line, will
+install all required dependencies. If installing |trueos| inside a
+virtual machine, or "guest" installing the virtualbox-ose-additions
+package (also known as VirtualBox Guest Additions) will greatly improve
+the performance of |trueos| or any other guest operating system. The
+guest additions add mouse pointer integration, shared folders between
+the host and guest (depending on the guest), better video support, and
+a shared clipboard.
+  .. note:: VirtualBox does not currently support the shared folders
+	    feature with a |trueos| guest. To share files between the
+	    host, and a |trueos| guest, use NFS share.
+
+Please see the `VirtualBox <https://www.virtualbox.org/>`_ website for
+additional information.
+`VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_
+for more information about what is supported and how to use them.
+
+
 The guest additions add mouse pointer integration, shared folders
 between the host and guest, better video support, and a shared
 clipboard.
 
 .. note:: The first time running VirtualBox on a |trueos| system, a
-   background script automatically gives the user account the
-   permissions required to run this application. This might break any
-   existing shortcuts to VirtualBox. To fix the shortcut, logout and in
-   again.
+   background script automatically gives the user account that started
+   VirtualBox the permissions required to run the application. This
+   might break existing shortcuts to VirtualBox. To fix the shortcut,
+   logout and in again.
 
-If the computer is running another operating system, download the binary
-for the specific operating system from the
-`VirtualBox Downloads page <https://www.virtualbox.org/wiki/Downloads>`_.
-VirtualBox runs on Windows, Linux, Macintosh, and OpenSolaris. It
-supports a large number of virtual machine installable operating
-systems.
+.. TODO: This section about VirtualBox on other OS' should be removed.
+   Information about other host systems is not necessary or even needed
+   here.
+   Original text;
+   If the computer is running another operating system, download the binary
+   for the specific operating system from the
+   `VirtualBox Downloads page <https://www.virtualbox.org/wiki/Downloads>`_.
+   VirtualBox runs on Windows, Linux, Macintosh, and OpenSolaris. It
+   supports a large number of virtual machine installable operating
+   systems.
 
-This section describes how to prepare VirtualBox for an installation of
-|trueos| using an :file:`.iso` file.
+How to prepare VirtualBox for an installation of |trueos| using an
+:file:`.iso` file.
 
 .. index:: create virtual machine for an iso
 .. _Creating a Virtual Machine for an ISO File:
