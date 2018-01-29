@@ -1,4 +1,4 @@
-.. index:: introduction
+.. index:: Introduction
 .. _Introduction:
 
 Introduction
@@ -63,7 +63,7 @@ and supported by the enterprise-class hardware solutions provider
 `iXsystems <https://www.ixsystems.com/>`_ since October 2006.
 
 
-.. index:: features
+.. index:: Features
 .. _Features:
 
 Features
@@ -114,7 +114,7 @@ Features
 * **Vibrant community:** |trueos| has a friendly and helpful
   :ref:`community <TrueOS Community>`.
 
-.. index:: security
+.. index:: Security
 .. _Security:
 
 Security
@@ -780,6 +780,9 @@ guest in the virtual environment may run slowly. If the host computer
 slows down, closing other non-essential applications to free up CPU/RAM
 may help.
 
+.. index:: bhyve
+.. _bhyve:
+
 bhyve
 -----
 
@@ -798,6 +801,9 @@ For a more user-friendly virtualization experience, many users prefer
 :ref:`VirtualBox`.
 
 .. TODO: Add additional information for using bhyve
+
+.. index:: virtualbox
+.. _VirtualBox:
 
 VirtualBox
 ----------
@@ -843,7 +849,7 @@ clipboard.
    supports a large number of virtual machine installable operating
    systems.
 
-.. index:: create virtual machine for a |trueos| install
+.. index:: creating a virtual machine for a |trueos| install
 .. _Creating a Virtual Machine for a |trueos| install:
 
 Creating a Virtual Machine for a |trueos| install
@@ -1064,6 +1070,9 @@ in the lower left corner of the :ref:`Language` screen.
 If any problems arise with the installation, refer to the
 :ref:`Troubleshooting` section of this handbook.
 
+.. index:: Hardware Requirements and Supported Hardware
+.. _Hardware Requirements and Supported Hardware:
+
 Hardware Requirements and Supported Hardware
 ============================================
 
@@ -1243,7 +1252,8 @@ The FreeBSD
 `Tuning Power Consumption page <https://wiki.FreeBSD.org/TuningPowerConsumption>`_
 has some tips for reducing power consumption.
 
-.. index:: thinkpad
+.. index:: Thinkpad
+.. _Thinkpads:
 
 With regards to specific hardware, the ThinkPad T420 may panic during
 install. If it does, enter the BIOS and set the video mode to
