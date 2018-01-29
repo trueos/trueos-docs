@@ -843,25 +843,25 @@ clipboard.
    supports a large number of virtual machine installable operating
    systems.
 
+.. index:: create virtual machine for a |trueos| install
+.. _Creating a Virtual Machine for a |trueos| install:
+
+Creating a Virtual Machine for a |trueos| install
+-------------------------------------------------
+
 How to prepare VirtualBox for an installation of |trueos| using an
 :file:`.iso` file.
 
-.. index:: create virtual machine for an iso
-.. _Creating a Virtual Machine for an ISO File:
+Once a |trueos| ISO is <downloaded `https://www.trueos.org/downloads/downloads>`_
+and VirtualBox installed on the host system, create a new virtual
+machine to install |trueos| as a guest OS. The virtual machine must meet
+several minimum requirements in order to be useable. This section will
+demonstrate how to configure the virtual machine for a |trueos| guest.
 
-Creating a Virtual Machine for an ISO File
-------------------------------------------
+* A minimum of 1024MB of memory.
 
-Once the |trueos| ISO is downloaded and VirtualBox installed on the
-current system, create a virtual machine and use the ISO to install
-|trueos| into the virtual machine. The virtual machine must meet several
-minimum requirements and this section will demonstrate how to configure
-these:
-
-* 1024 MB base memory size.
-
-* A virtual disk **at least 20 GB in size** for a server installation or
-  **at least 50 GB in size** for a desktop installation.
+* A virtual disk of **at least 20 GB in size** for a server installation
+  or **at least 50 GB in size** for a desktop installation.
 
 * A bridged adapter.
 
@@ -885,11 +885,12 @@ display the screen in :numref:`Figure %s <vbox2>`.
 
    Create Virtual Machine - Name, Type, and Version
 
-Enter a name for the virtual machine; it can be anything which makes
-sense to you. Click the :guilabel:`Operating System` drop-down menu and
-select :guilabel:`BSD`. In the :guilabel:`Version` drop-down menu,
-select :guilabel:`FreeBSD (64 bit)`. Click :guilabel:`Next` to see the
-screen in :numref:`Figure %s <vbox3>`.
+Enter a name for the virtual machine; anything can be entered but
+something descriptive is recommended. Click the
+:guilabel:`Operating System` drop-down menu and select :guilabel:`BSD`.
+In the :guilabel:`Version` drop-down menu, select
+:guilabel:`FreeBSD (64 bit)`. Click :guilabel:`Next` to see the screen
+in :numref:`Figure %s <vbox3>`.
 
 .. _vbox3:
 
@@ -899,10 +900,10 @@ screen in :numref:`Figure %s <vbox3>`.
    Virtual Machine Reserved Memory
 
 The base memory size must be changed to **at least 1024 MB.** If the
-system has a lot of RAM, use more. Any number within the green area is
-considered a safe value by VirtualBox, meaning it should not slow down
-the computer too much. When finished, click :guilabel:`Next` to see the
-screen in :numref:`Figure %s <vbox4>`.
+host system has a lot of RAM, use more. Any number within the green area
+is considered a safe value by VirtualBox, meaning it should not affect
+the performance of the host computer too much. When finished, click
+:guilabel:`Next` to see the screen in :numref:`Figure %s <vbox4>`.
 
 .. _vbox4:
 
@@ -911,18 +912,18 @@ screen in :numref:`Figure %s <vbox4>`.
 
    Virtual Hard Drive - New or Existing
 
-This screen is used to create the virtual hard drive, or the amount of
-disk space available to the virtual machine. If this is your first
-virtual machine, keep the default of
-:guilabel:`Create a virtual hard drive now` and click
-:guilabel:`Create` to go to the screen shown in
-:numref:`Figure %s <vbox5>`. If you have created a virtual machine in
-the past and wish to reuse its disk space, select
-:guilabel:`Use an existing virtual hard drive file` from the drop-down
-menu. Create as many virtual machines as desired. However, if the
-computer is getting low on disk space, consider reusing existing virtual
-hard drives to prevent the physical hard drive from being used up by old
-virtual machines.
+This section is used to create the virtual hard drive, or the amount of
+disk space available to the guest OS installed in the virtual machine.
+If this is the first virtual machine, the default offered by the
+:guilabel:`Create a virtual hard drive now` utility should be fine, then
+click :guilabel:`Create` to go to the screen shown in
+:numref:`Figure %s <vbox5>`. If there are existing virtual machines
+already on the host system, reusing an existing virtual disk by
+selecting :guilabel:`Use an existing virtual hard drive file` from the
+drop-down menu. Create as many virtual machines as desired. On thing to
+note, if the host system is getting low on disk space, consider reusing
+existing virtual hard drives to prevent wasting space on the physical
+hard drive by old virtual machines.
 
 .. _vbox5:
 
@@ -941,14 +942,14 @@ Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in
 
    Storage Type
 
-Now choose whether to have :guilabel:`Dynamically allocated` or
-:guilabel:`Fixed size` storage. The first option uses disk space as
+Next, choose whether to have :guilabel:`Dynamically allocated` or
+:guilabel:`Fixed size` storage. Dynamically allocated uses disk space as
 needed until it reaches the maximum size set in the next screen. The
-second option creates a disk the same size as that specified amount of
-disk space, whether it is used or not. Choose the first option if disk
-space is a concern; otherwise choose the second option as it allows
-VirtualBox to run slightly faster. Once :guilabel:`Next` is selected,
-the screen in :numref:`Figure %s <vbox7>` displays.
+Fixed size option creates a virtual disk the same size as that specified
+amount of disk space, whether it is used or not. Choose the first option
+if disk space is a concern; otherwise choose the second option as it
+allows VirtualBox to run slightly faster. Once :guilabel:`Next` is
+selected, the screen in :numref:`Figure %s <vbox7>` displays.
 
 .. _vbox7:
 
@@ -958,16 +959,16 @@ the screen in :numref:`Figure %s <vbox7>` displays.
    Virtual Disk - File Name and Size
 
 This screen is used to set the size (or upper limit) of the virtual
-machine. If planning to install |trueos| into the virtual machine,
-**increase the size to at least 20 GB** or an error will display during
-the |trueos| installation. If planning to install KDE, GNOME, multiple
-desktop managers, or applications within the virtual machine, choose at
-least **50 GB**. Whatever size is set, be sure the computer has enough
-free disk space to support it. Use the :guilabel:`folder` icon to browse
-to a directory on disk with sufficient space to hold the virtual
-machine.
+machine. If planning to install |trueos| as the guest OS on the virtual
+machine, **increase the size to at least 20 GB** or an error will
+display during the |trueos| installation. If planning to install KDE,
+GNOME, multiple desktop managers, or applications within the virtual
+machine, choose at least **50 GB**. Whatever size is set, be sure the
+computer has enough free disk space to accomodate the size chosen. Use
+the :guilabel:`folder` icon to browse to a directory on disk with
+sufficient space to hold the virtual machine.
 
-Once the selections are made, press :guilabel:`Create` to finish using
+Once the selections are made, select :guilabel:`Create` to finish using
 the wizard. The virtual machine will now show up in the left box, as
 seen in the example in :numref:`Figure %s <vbox8>`.
 
@@ -978,13 +979,14 @@ seen in the example in :numref:`Figure %s <vbox8>`.
 
    New Virtual Machine "test"
 
-In order to use the network card, configure bridging on the virtual
-machine. To do this, go to :menuselection:`Settings --> Network`. In the
-:guilabel:`Attached to` drop-down menu select
-:guilabel:`Bridged Adapter`, then select the name of the physical
-interface from the :guilabel:`Name` drop-down menu. In the example shown
-in :numref:`Figure %s <vbox9>`, the Intel Pro/1000 Ethernet card is
-attached to the network and has a device name of :file:`re0`.
+In order to use the network card, configure bridged network on the
+virtual machine. To do this, go to
+:menuselection:`Settings --> Network`. In the :guilabel:`Attached to`
+drop-down menu select :guilabel:`Bridged Adapter`, then select the name
+of the physical network interface from the :guilabel:`Name` drop-down
+menu. In the example shown in :numref:`Figure %s <vbox9>`, the Intel
+Pro/1000 Ethernet card is attached to the network and has a device name
+of :file:`re0`.
 
 .. _vbox9:
 
@@ -993,9 +995,10 @@ attached to the network and has a device name of :file:`re0`.
 
    VirtualBox Bridged Adapter Configuration
 
-Before starting the virtual machine, configure it to use the
-installation media. Click the :guilabel:`Storage` hyperlink in the right
-frame to access the storage screen seen in :numref:`Figure %s <vbox10>`.
+Before starting the virtual machine, configure it to use the ISO
+installation media downloaded previously. Click the :guilabel:`Storage`
+hyperlink in the right frame to access the Storage screen seen in
+:numref:`Figure %s <vbox10>`.
 
 .. _vbox10:
 
@@ -1004,11 +1007,11 @@ frame to access the storage screen seen in :numref:`Figure %s <vbox10>`.
 
    Virtual Machine Storage Settings
 
-Double-click the word :guilabel:`Empty`, which represents the DVD
-reader. To access the |trueos| installer from the DVD reader,
-double-check the :guilabel:`Slot` is pointing to the correct location
-(e.g. :guilabel:`IDE Secondary Master`) and use the drop-down menu to
-change it if the location is incorrect.
+Click the word :guilabel:`Empty`, which represents the DVD reader. To
+access the |trueos| installer from the DVD reader, double-check the
+:guilabel:`Slot` is pointing to the correct location (e.g.
+:guilabel:`IDE Secondary Master`) and use the drop-down menu to change
+the location if incorrect.
 
 If using an ISO stored on the hard disk is preferred, click the
 :guilabel:`DVD` icon then :guilabel:`Choose a virtual CD/DVD disk file`
@@ -1016,18 +1019,18 @@ to open a browser menu to navigate to the location of the ISO. Highlight
 the desired ISO and click :guilabel:`Open`. The name of the ISO will now
 appear in the :guilabel:`Storage Tree` section.
 
-|trueos| is now ready to be installed into the virtual machine.
-Highlight the virtual machine and click on the green :guilabel:`Start`
-icon. A window opens, indicating the virtual machine is starting. If a
-DVD is inserted, it should audibly spin and the machine will start to
-boot into the installation program. If it does not or if using an ISO
-stored on the hard disk, press :kbd:`F12` to select the boot device
-when the message to do so appears, then press :kbd:`c` to boot from
-CD-ROM. Proceed through the installation as described in the
-:ref:`Install` section.
+|trueos| is now ready to be installed into the virtual machine as a
+guest OS. Highlight the virtual machine and click on the green
+:guilabel:`Start` icon. A new window opens, indicating the virtual
+machine is starting. If a DVD is inserted, it should audibly spin and
+the machine will start to boot into the installation program. If it does
+not or if using an ISO stored on the hard disk, press :kbd:`F12` to
+select the boot device when the message to do so appears, then press
+:kbd:`c` to boot from CD-ROM. Proceed through the installation as
+     described in the :ref:`Install` section.
 
 .. note:: If the installer GUI doesn't appear to load after configuring
-   your virtual machine, you may need to enable **EFI** in Virtualbox by
+   the virtual machine, **EFI** may need to be enabled in Virtualbox by
    navigating :menuselection:`Settings --> System --> Motherboard` and
    checking :guilabel:`Enable EFI (special OSes only)`.
 
