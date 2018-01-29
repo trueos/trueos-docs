@@ -1064,6 +1064,9 @@ in the lower left corner of the :ref:`Language` screen.
 If any problems arise with the installation, refer to the
 :ref:`Troubleshooting` section of this handbook.
 
+Hardware Requirements and Supported Hardware
+============================================
+
 This section discusses the |trueos| hardware requirements and some
 supported hardware.
 
@@ -1076,19 +1079,19 @@ Minimum Requirements
 |trueos| has moderate hardware requirements and typically uses less
 resources than its commercial counterparts. Before installing |trueos|,
 make sure the hardware or virtual machine meets at least the minimum
-requirements. To get the most out of your |trueos| experience, use a
+requirements. To get the most out of the |trueos| experience, use a
 system exceeding the minimum or recommended system requirements.
 
-At **bare minimum**, these requirements must be met in order to install
-|trueos|:
+At a **bare minimum**, these requirements must be met in order to
+install |trueos|:
 
-**Minimum**
+**Minimum Requirements**
 
 * 64-bit processor
 
 * 1 GB RAM
 
-* 20 GB of free hard drive space on a primary partition for a
+* 20 GB of free hard drive space on a **primary partition** for a
   command-line server installation.
 
 * Network card
@@ -1096,7 +1099,7 @@ At **bare minimum**, these requirements must be met in order to install
 Here are the **recommended** requirements. More RAM and available disk
 space improves the computing experience:
 
-**Recommended**
+**Recommended Requirements**
 
 * 64-bit processor
 
@@ -1118,9 +1121,10 @@ These can be used to retrieve earlier versions of files, rollback the
 operating system to an earlier point in time, or clone the operating
 system.
 
-More RAM is always recommended, so install as much as you can afford.
-To play modern video games, use a fast CPU. To create a collection of
-music and movies on the computer, sufficient disk space is required.
+There is no such thing as to much RAM. ZFS thrives on systems with lots
+of RAM. To play modern video games, use a fast CPU. To create a
+collection of music and movies on the computer, sufficient disk space
+is required.
 
 .. index:: Supported Processors
 .. _Processor:
@@ -1130,9 +1134,10 @@ Processor
 
 |trueos| installs on any system containing a 64-bit (also called
 *amd64*) processor. Despite the name, a 64-bit processor does **not**
-need to be manufactured by AMD in order to be supported. The
+need to be manufactured by AMD in order to be supported. Even 64-bit
+Intel CPUs are sometimes refered to as amd64. The
 `FreeBSD Hardware Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_
-lists the *amd64* processors known to work.
+lists the *amd64* processors known to be compatible.
 
 .. index:: Supported Graphics
 .. _Graphics:
@@ -1147,7 +1152,7 @@ supported video drivers. Verify the graphics hardware is supported by
 clicking the :guilabel:`Hardware Compatibility` icon within the
 installer.
 
-Here is the major graphic vendor support:
+Here are the major graphic vendors supported in |trueos|:
 
 **NVIDIA:** 3D acceleration on NVIDIA is provided by native FreeBSD
 drivers. If an NVIDIA video card is detected, an
@@ -1155,19 +1160,20 @@ drivers. If an NVIDIA video card is detected, an
 :guilabel:`Browse Applications` for managing NVIDIA settings.
 
 **Intel:** 3D acceleration on most Intel graphics is supported. This
-includes Skylake, Haswell, Broadwell, and ValleyView.
+includes Skylake, Haswell, Broadwell, and ValleyView chipsets.
 
 **ATI/Radeon:** 3D acceleration on most ATI and Radeon cards is
 supported.
 
-**Optimus:** At this time there is no switching support between the two
+**Optimus:** Currently there is no switching support between the two
 graphics adapters provided by Optimus. Optimus implementations vary, so
 |trueos| may or may not be able to successfully load a graphics driver
-on hardware. If a blank screen shows after installation, check the BIOS
-to see if it has an option to disable one of the graphics adapters
-or to set *discrete* mode. If the BIOS does not provide a *discrete*
-mode, |trueos| defaults to the 3D Intel driver and disables NVIDIA. This
-will change in the future when the NVIDIA driver supports Optimus.
+to support this hardware. If a blank screen shows after installation,
+check the BIOS to see if there is an option to disable one of the
+graphics adapters or to set *discrete* mode. If the BIOS does not
+provide a *discrete* mode, |trueos| defaults to the 3D Intel driver and
+disables NVIDIA. This will change in the future when the NVIDIA driver
+supports Optimus.
 
 .. index:: supported wireless cards
 .. _Wireless:
@@ -1182,10 +1188,14 @@ wireless devices. Verify the device is supported by clicking the
 an external wireless device, insert it before running the installer.
 
 Certain Broadcom devices, typically found in less expensive laptops, are
-buggy and can have lockups when in *DMA* mode. If the device freezes,
-try switching to *PIO* mode in the BIOS. Alternately, add
+buggy and lockup unexpectedly while in *DMA* mode. If the device
+freezes, try switching to *PIO* mode in the BIOS. Alternately, add
 :command:`hw.bwn.usedma=0` to :file:`/boot/loader.conf` and reboot to
-see if anything changes.
+see if that resolves the issue.
+
+.. note:: Some wifi adapters are not configured during installation,
+	  but after first boot. Just because an adapter does not show
+	  up during installation does not mean it's not supported.
 
 .. index:: supported laptops
 .. _Laptops:
@@ -1194,15 +1204,14 @@ Laptops
 -------
 
 Many |trueos| users successfully run |trueos| on their laptops. However,
-some issues may occur, depending upon the model of laptop. These
-typically deal with:
+some issues may occur, depending upon the model of laptop. Some typical
+laptop issues;
 
 * **Sleep/suspend:** Unfortunately,
   :wiki:`Advanced Configuration and Power Interface <Advanced_Configuration_and_Power_Interface>`
   (ACPI) is not an exact science, meaning experimentation with various
   :command:`sysctl` variables may be required to achieve successful
-  sleep and suspend states on your particular laptop model. If the
-  laptop is a ThinkPad,
+  sleep and suspend states on some laptops. For ThinkPad laptops, the
   `ThinkWiki <http://www.thinkwiki.org/wiki/ThinkWiki>`_ is an
   excellent resource. For other types of laptops, try reading the
   *SYSCTL VARIABLES* section of :command:`man 4 acpi` and check to see
@@ -1237,7 +1246,7 @@ has some tips for reducing power consumption.
 .. index:: thinkpad
 
 With regards to specific hardware, the ThinkPad T420 may panic during
-install. If it does, go into the BIOS and set the video mode to
+install. If it does, enter the BIOS and set the video mode to
 "discrete", which should allow the installation to complete. Some
 Thinkpads have a BIOS bug preventing them from booting from
 GPT-labeled disks. If unable to boot into a new installation, restart
