@@ -588,15 +588,16 @@ Some examples for illustration;
   driver. This convention applies to all drivers. :command:`man 4 wlan`
   will open the `wlan` man page containing all wlan driver information.
 
-* BSD disk names differ from Linux. IDE drives begin with :file:`ad` and
-  SCSI and USB drives begin with :file:`da`. Following the convention of
-  informative device names, BSD applies this to disk drives as well.
-  :file:`da0p1` is the 1st partition on the 1st USB/SCSI drive.
-  :file:`da0p2` is the 2nd partition on the 1st USB/SCSI drive. This
-  convention continues with subsequent drives. :file:`da1p3` would be
-  the 3rd partition on the 2nd USB/SCSI drive and :file:`ad4p6` would be
-  the 6th partition on the 3rd IDE drive. Note: physical drive numbering
-  begins at 0, while the partition numbers on the drive start at 1.
+* BSD disk names differ from Linux. IDE drives begin with :file:`ada`
+  and SCSI and USB drives begin with :file:`da`. Following the
+  convention of informative device names, BSD applies this to disk
+  drives as well. :file:`da0p1` is the 1st partition on the 1st USB/SCSI
+  drive. :file:`da0p2` is the 2nd partition on the 1st USB/SCSI drive.
+  This convention continues with subsequent drives. :file:`da1p3` would
+  be the 3rd partition on the 2nd USB/SCSI drive and :file:`ada4p6`
+  would be the 6th partition on the 3rd IDE drive. Note: physical drive
+  numbering begins at 0, while the partition numbers on the drive start
+  at 1.
 
 Some of the features used by BSD have similar counterparts to Linux but
 the name of the feature may differ. :numref:`Table %s <feature names>`
