@@ -1050,11 +1050,12 @@ is ready to install |trueos|.
   please ensure a primary partition is available. Refer to the chapter
   on :ref:`Dual Booting`.
 
-* **Is your important data backed up?** Any irreplaceable data, such as
-  emails, bookmarks, or important files and documents should **always**
-  be backed up to an external media, such as a removable drive or
-  another system, **before** installing or upgrading any operating
-  system.
+* **Ensure important data is backed up?** Any irreplaceable data, such
+  as emails, bookmarks, or important files and documents should
+  **always** be backed up to an external media, such as a removable
+  drive or another system, **before** installing or upgrading any
+  operating system. Accidents happen, and losing important data can
+  be avoided.
 
 To determine if the chosen hardware is detected by |trueos|, start a
 new installation and click the :guilabel:`Hardware Compatibility` icon
