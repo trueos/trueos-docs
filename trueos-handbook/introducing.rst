@@ -345,7 +345,7 @@ separate |trueos| from |pcbsd|:
   in dramatically improved system boot times for |trueos|. OpenRC also
   improves general service management. One  example is the ability to
   automatically run when new elements are introduced to the system, such
-  as plugging in an ethernet cable. Using OpenRC allows |trueos| to use
+  as plugging in an Ethernet cable. Using OpenRC allows |trueos| to use
   some system services that are different from FreeBSD. These differences
   are listed in :numref:`Table %s <sysserv>`
 
@@ -578,9 +578,9 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
 Linux and BSD use different naming conventions for devices.
 Some examples for illustration;
 
-* Linux ethernet interfaces begin with :file:`eth`, while BSD interface
+* Linux Ethernet interfaces begin with :file:`eth`, while BSD interface
   names indicate the name of the driver used to make the device
-  function. An ethernet interface named :file:`re0` indicates it uses
+  function. An Ethernet interface named :file:`re0` indicates it uses
   the Realtek :file:`re` driver. One advantage of this convention is
   the easy ability to find the respective man page. For the `re` driver
   issuing :command:`man 4 re` will open the man page for the `re`
@@ -808,8 +808,8 @@ For a more user-friendly virtualization experience, many users prefer
 VirtualBox
 ----------
 
-Virtualbox is a popular virtualization software available in |trueos|.
-Installing Virtualbox through the |sysadm| :sysclbk:`AppCafe <appcafe>`
+VirtualBox is a popular virtualization software available in |trueos|.
+Installing VirtualBox through the |sysadm| :sysclbk:`AppCafe <appcafe>`
 GUI, or :command:`pkg install virtualbox-ose`  on the command line, will
 install all required dependencies. If installing |trueos| inside a
 virtual machine, or "guest" installing the virtualbox-ose-additions
@@ -970,7 +970,7 @@ machine, **increase the size to at least 20 GB** or an error will
 display during the |trueos| installation. If planning to install KDE,
 GNOME, multiple desktop managers, or applications within the virtual
 machine, choose at least **50 GB**. Whatever size is set, be sure the
-computer has enough free disk space to accomodate the size chosen. Use
+computer has enough free disk space to accommodate the size chosen. Use
 the :guilabel:`folder` icon to browse to a directory on disk with
 sufficient space to hold the virtual machine.
 
@@ -1144,7 +1144,7 @@ Processor
 |trueos| installs on any system containing a 64-bit (also called
 *amd64*) processor. Despite the name, a 64-bit processor does **not**
 need to be manufactured by AMD in order to be supported. Even 64-bit
-Intel CPUs are sometimes refered to as amd64. The
+Intel CPUs are sometimes referred to as amd64. The
 `FreeBSD Hardware Notes - amd64 <https://www.freebsd.org/releases/11.0R/hardware.html#proc-amd64>`_
 lists the *amd64* processors known to be compatible.
 
