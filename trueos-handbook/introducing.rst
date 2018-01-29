@@ -632,8 +632,8 @@ provides some common examples:
 
 Users comfortable with the command line may find some of the common
 Linux commands have different names on BSD.
-:numref:`Table %s <common commands>` lists some common commands and
-what they are used for.
+:numref:`Table %s <common commands>` lists some common BSD commands
+and what they are used for.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.45\linewidth-2\tabcolsep}
                     |>{\RaggedRight}p{\dimexpr 0.55\linewidth-2\tabcolsep}|
@@ -646,40 +646,44 @@ what they are used for.
    +-----------------------------------+-----------------------------+
    | Command                           | Used                        |
    +===================================+=============================+
-   | :command:`dmesg`                  | discover what hardware was  |
-   |                                   | detected by the kernel      |
+   | :command:`about`                  | Show useful information     |
+   |                                   | about the |trueos| install. |
+   |                                   | Very useful when trying to  |
+   |                                   | obtain help with issues.    |
+   +-----------------------------------|-----------------------------+
+   | :command:`dmesg`                  | Discover what hardware was  |
+   |                                   | detected by the kernel and  |
+   |                                   | and other system related    |
+   |                                   | information.                |
    +-----------------------------------+-----------------------------+
-   | :command:`sysctl dev`             | display configured devices  |
+   | :command:`sysctl dev`             | Display configured devices. |
    +-----------------------------------+-----------------------------+
-   | :command:`pciconf -l -cv`         | show PCI devices            |
+   | :command:`pciconf -l -cv`         | Show PCI devices.           |
    +-----------------------------------+-----------------------------+
-   | :command:`dmesg | grep usb`       | show USB devices            |
+   | :command:`dmesg | grep usb`       | Show USB devices.           |
    +-----------------------------------+-----------------------------+
-   | :command:`kldstat`                | list all modules loaded in  |
-   |                                   | the kernel                  |
+   | :command:`kldstat`                | List all modules currently  |
+   |                                   | loaded in the kernel        |
    +-----------------------------------+-----------------------------+
-   | :command:`kldload <module>`       | load a kernel module for    |
-   |                                   | the current session         |
+   | :command:`kldload <module>`       | Load a kernel module for    |
+   |                                   | the current session.        |
    +-----------------------------------+-----------------------------+
-   | :command:`pkg install <pkgname>`  | install software from the   |
-   |                                   | command line                |
+   | :command:`pkg install <pkgname>`  | Install software from the   |
+   |                                   | command line.               |
    +-----------------------------------+-----------------------------+
-   | :command:`sysctl hw.realmem`      | display hardware memory     |
+   | :command:`sysctl hw.realmem`      | Display hardware memory.    |
    +-----------------------------------+-----------------------------+
-   | :command:`sysctl hw.model`        | display CPU model           |
+   | :command:`sysctl hw.model`        | Display CPU model.          |
    +-----------------------------------+-----------------------------+
-   | :command:`sysctl hw.machine_arch` | display CPU Architecture    |
+   | :command:`sysctl hw.machine_arch` | Display CPU Architecture.   |
    +-----------------------------------+-----------------------------+
-   | :command:`sysctl hw.ncpu`         | display number of CPUs      |
+   | :command:`sysctl hw.ncpu`         | Display number of CPUs.     |
    +-----------------------------------+-----------------------------+
-   | :command:`uname -vm`              | get release version         |
-   |                                   | information                 |
+   | :command:`uname -vm`              | Get release version         |
+   |                                   | information.                |
    +-----------------------------------+-----------------------------+
-   | :command:`gpart show`             | show device partition       |
-   |                                   | information                 |
-   +-----------------------------------+-----------------------------+
-   | :command:`fuser`                  | list IDs of all processes   |
-   |                                   | with one or more files open |
+   | :command:`gpart show`             | Show device partition       |
+   |                                   | information.                |
    +-----------------------------------+-----------------------------+
 
 There are many articles and videos which provide additional information
