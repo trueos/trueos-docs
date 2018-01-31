@@ -427,7 +427,7 @@ separate |trueos| from |pcbsd|:
 * :command:`freebsd-update` is retired in favor of using :command:`pkg`
   for system updates.
 
-* The option to use the SCFB display driver is added to the installer.
+* The option to use the scfb display driver is added to the installer.
   This driver is suitable for newer UEFI laptops as it automatically
   detects the native resolution. This is a good solution for newer
   Intel hardware that would otherwise require drivers that have not been
@@ -469,7 +469,7 @@ BSD based system. This section will cover some of these differences.
 
 BSD and Linux use different filesystems. Many Linux distros use EXT2,
 EXT3, EXT4, or BTRFS, while |trueos| uses UFS or OpenZFS. In order to
-dual-boot with Linux, or access data on an external drive formatted with
+dual-boot with Linux or access data on an external drive formatted with
 another filesystem, it is imperative to research if the filesystem used
 is accessible to both operating systems.
 
@@ -499,12 +499,12 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
    | Btrfs      | Linux     | none         | A modern copy on write (CoW) filesystem for the Linux  |
    |            |           |              | OS. Btrfs is similar in nature to ZFS, and shares many |
    |            |           |              | of the same ideas with how a file system should work.  |
-   |            |           |              | The maximum supported volume and file size is 16EB.    |
+   |            |           |              | `Btrfs <https://btrfs.wiki.kernel.org/index.php/Main%5FPage>`_ |
    +------------+-----------+--------------+--------------------------------------------------------+
    | EXT2       | Linux     | r/w support  | The successor to EXT. EXT2 was designed following the  |
-   |            |           | loaded by    | principles put forth in BSD's FFS. The first           |
-   |            |           | default      | commercial grade filesystem in Linux. The maximum      |
-   |            |           |              | supported volume size is 2TB to 32TB and the maximum   |
+   |            |           | loaded by    | principles put forth in BSD's Fast File System (FFS).  |
+   |            |           | default      | The first commercial grade filesystem in Linux. The    |
+   |            |           |              | maximum supported volume size is 2TB to 32TB and the   |
    |            |                          | file size is 6GB to 2TB.                               |
    +------------+-----------+--------------+--------------------------------------------------------+
    | EXT3       | Linux     | r/w support  | EXT3 is EXT2 with the added benefit of journaling,     |
@@ -554,10 +554,10 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
    |            |           |              | be supported in |trueos| and should not be expected or |
    |            |           |              | relied on to work.                                     |
    +------------+-----------+--------------+--------------------------------------------------------+
-   | exFAT      | Windows   | none         | A file system optimized for flash memory such as USB   |
-   |            |           |              | thumb drives and SD Cards. Use of this file system     |
-   |            |           |              | requires a license from Microsoft. The maximum volume  |
-   |            |           |              | size is 64ZB and the maximum file size is 16EB.        |
+   | exFAT      | Windows   | r/w support  | A file system optimized for flash memory such as USB   |
+   |            |           | using the    | flash drives and SD Cards. Use of this file system     |
+   |            |           | fusefs-exfat | requires a license from Microsoft. The maximum volume  |
+   |            |           | package      | size is 64ZB and the maximum file size is 16EB.        |
    +------------+-----------+--------------+--------------------------------------------------------+
    | HFS+       | Mac OS X  | none         | A file system developed by Apple Inc. HFS+ was         |
    |            |           |              | developed to replace HFS. The max volume and file size |
@@ -589,6 +589,14 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
    |            |           |              | The maximum volume size is 256ZB and a maximum file    |
    |            |           |              | size of 16EB.                                          |
    +------------+-----------+--------------+--------------------------------------------------------+
+
+.. note:: Technical Note: exFAT partitions can be mounted read/write on FreeBSD
+	  using the "fusefs-exfat package. Due to the Microsoft license used for
+	  exFAT, the package cannot come pre-installed by the OS. The user must
+	  manually install the fusefs-exfat package via |appcafe| or
+	  :command:`pkg install fusefs-exfat` on the command line.
+	  Once installed, the |trueos| automount systems are already aware of
+	  exFAT and are able to automatically mount/access the devices as needed.
 
 Linux and BSD use different naming conventions for devices.
 Some examples for illustration;
