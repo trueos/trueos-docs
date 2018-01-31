@@ -286,10 +286,10 @@ These resources are also useful to bookmark and peruse as needed:
    | Snapshot | A read-only, point-in-time copy of a filesystem. Snapshots can be created quickly and, if little data changes, new snapshots take very       |
    |          | little space. For example, a snapshot with no changed files takes 0 MB of storage, but a changed 10 GB file will store both the old and new  |
    |          | versions. Snapshots provide a clever way of keeping a history of files, which allows an older copy or even a deleted file to be recovered.   |
-   |          | For this reason, many administrators take snapshot often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and    |
+   |          | For this reason, many administrators take snapshots often (e.g. every 15 minutes), store them for a period of time (e.g. for a month), and   |
    |          | store them on another system. Such a strategy allows an administrator to roll a system back to a specific time, or in the event of a         |
    |          | catastrophic loss, an off-site snapshot can restore the system up to the last snapshot interval (e.g. within 15 minutes of the data loss).   |
-   |          | Snapshots can be cloned or rolled back, but the files in a snapshot cannot be accessed individually.                                         |
+   |          | Snapshots can be cloned or rolled back, and individual files within a snapshot may be opened/copied (but unaltered) as needed.               |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Clone    | A writable copy of a snapshot which can only be created on the same ZFS volume. Clones provide an extremely space efficient way to store     |
    |          | many copies of mostly-shared data such as workspaces, software installations, and diskless clients. Clones do not inherit the properties of  |
@@ -312,6 +312,13 @@ These resources are also useful to bookmark and peruse as needed:
    |          | cache device. SSD cache devices will only help if the working set is larger than available system RAM, but small enough that a significant   |
    |          | percentage of the data fits on the SSD. Note: A dedicated L2ARC device cannot be shared between ZFS pools.                                   |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. note:: The Insight file manager has the ability to mount snapshots
+	  and work with individual files in that snapshot. Individual
+	  files within a snapshot cannot be permanently deleted due to
+	  the built-in redundancy of ZFS. To wipe a file completely
+	  from disk, the entirety of every snapshot containing the file
+	  must be pruned.
 
 |trueos| Comparisons
 ====================
