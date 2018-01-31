@@ -305,12 +305,12 @@ These resources are also useful to bookmark and peruse as needed:
    |          | device.                                                                                                                                      |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | L2ARC    | ZFS uses a RAM cache to reduce read latency. If an SSD is dedicated as a cache device, it is then known as an L2ARC. ZFS will then use the   |
-   |          | L2ARC to store more reads which can increase random read performance. With that said, adding a cache device will not improve a system with   |
-   |          | too little RAM and actually decreases performance as ZFS uses RAM to track the contents of the L2ARC. RAM is always faster than disks, so    |
-   |          | always add as much RAM as possible before determining if the system would benefit from an L2ARC device. If a lot of applications do large    |
-   |          | amounts of random reads on a dataset that is small enough to fit into the L2ARC, read performance may be increased by adding a dedicated     |
-   |          | cache device. SSD cache devices will only help if the working set is larger than available system RAM, but small enough that a significant   |
-   |          | percentage of the data fits on the SSD. Note: A dedicated L2ARC device cannot be shared between ZFS pools.                                   |
+   |          | L2ARC to store more reads which can increase random read performance. Adding a cache device will not improve a system with too little RAM    |
+   |          | and actually decreases performance as ZFS uses RAM to track the contents of the L2ARC. RAM is always faster than disks, so always add as     |
+   |          | much RAM as possible before determining if the system would benefit from an L2ARC device. If a lot of applications do large amounts of       |
+   |          | random reads on a dataset that is small enough to fit into the L2ARC, read performance may be increased by adding a dedicated cache device.  |
+   |          | SSD cache devices will only help if the working set is larger than available system RAM, but small enough that a significant percentage of   |
+   |          | the data fits on the SSD. Note: A dedicated L2ARC device cannot be shared between ZFS pools.                                                 |
    +----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note:: The Insight file manager has the ability to mount snapshots
@@ -326,7 +326,7 @@ These resources are also useful to bookmark and peruse as needed:
 As |trueos| grows and evolves, many users appreciate comparisons with
 other operating systems. These comparisons are intended to help new
 users understand the abilities and features available when deciding to
-install |trueos|. Accuracy being the chief concern.
+install |trueos|. Accuracy is a chief concern.
 
 .. index:: FreeBSD/PC-BSD comparison
 .. _FreeBSD and PCBSD:
@@ -384,7 +384,7 @@ separate |trueos| from |pcbsd|:
 
 * A |trueos| installation includes the |lumina| Desktop. Additional
   window managers and desktop environments can be installed using the
-  |appcafe| GUI. Meta packages are available for popular desktop
+  |appcafe|. Meta packages are available for popular desktop
   environments to allow easy installation of all required packages.
 
 * The `SysAdm™ Client <https://sysadm.us/handbook/client/>`_
@@ -429,12 +429,20 @@ separate |trueos| from |pcbsd|:
 
 * The option to use the SCFB display driver is added to the installer.
   This driver is suitable for newer UEFI laptops as it automatically
-  detects the native resolution. This is a good solution for newer Intel
-  hardware that would otherwise require drivers that have not been ported
-  to FreeBSD yet. Before selecting this driver, check the BIOS and ensure
-  the CSM module is disabled. Note: This driver does not support a
-  dual-head configuration, such as an external port for presentations, or
-  suspend and resume.
+  detects the native resolution. This is a good solution for newer
+  Intel hardware that would otherwise require drivers that have not been
+  ported to FreeBSD. Before selecting this driver, check the BIOS and
+  ensure the CSM module is disabled.
+
+.. note:: Depending on the system hardware, the scfb driver may not
+	  support a dual-head configuration, for example, using an
+	  external port for presentations. Some hardware will support
+	  multi-monitors using the scfb driver but is dependant on how
+	  the graphics are embedded onto the hardware and which ports
+	  are attached to which video card(s). Support for suspend and
+	  resume is also dependant on manufacture implemenatation. See
+	  :command:`man 4 scfb` and :command:`man 4 acpi` for additional
+	  information.
 
 * :guilabel:`Customize` is removed from the :ref:`System Selection`
   screen in order to reduce the size of the installation media.
@@ -817,7 +825,7 @@ VirtualBox
 
 VirtualBox is a popular virtualization software available in |trueos|.
 Installing VirtualBox through the |sysadm| :sysclbk:`AppCafe <appcafe>`
-GUI, or :command:`pkg install virtualbox-ose`  on the command line, will
+or :command:`pkg install virtualbox-ose` on the command line, will
 install all required dependencies. If installing |trueos| inside a
 virtual machine, or "guest" installing the virtualbox-ose-additions
 package (also known as VirtualBox Guest Additions) will greatly improve
