@@ -680,14 +680,14 @@ and what they are used for.
    |                                   | and other system related    |
    |                                   | information.                |
    +-----------------------------------+-----------------------------+
-   | :command:`sysctl dev`             | Display configured devices. |
+   | :command:`sysctl dev | less`      | Display configured devices. |
    +-----------------------------------+-----------------------------+
    | :command:`pciconf -l -cv`         | Show PCI devices.           |
    +-----------------------------------+-----------------------------+
    | :command:`dmesg | grep usb`       | Show USB devices.           |
    +-----------------------------------+-----------------------------+
    | :command:`kldstat`                | List all modules currently  |
-   |                                   | loaded in the kernel        |
+   |                                   | loaded in the kernel.       |
    +-----------------------------------+-----------------------------+
    | :command:`kldload <module>`       | Load a kernel module for    |
    |                                   | the current session.        |
@@ -740,7 +740,7 @@ counterparts on Windows. :numref:`Table %s <troswinapps>` highlights a
 few of these:
 
 .. note:: This table isn't meant to be an exhaustive listing of
-   applications, but simply provide a few TrueOS/FreeBSD equivalents
+   applications but simply provides a few TrueOS/FreeBSD equivalents
    for users familiar with their previous operating system.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
@@ -795,7 +795,7 @@ system without overwriting the current operating system. This is an
 excellent way to practice installation, determine whether the hardware
 is supported, or to try multiple versions of different operating
 systems. Virtualization software creates a virtual machine, which is
-essentially a computer environment created entirely in software, that
+essentially a computer environment created entirely in software that
 allows the installation and use of an operating system. The only
 limitation to virtualization is the hardware, as each virtual machine
 uses real resources, the CPU and RAM. Depending on the amount of CPU and
@@ -810,16 +810,14 @@ may help.
 bhyve
 -----
 
-bhyve (pronounced bee hive) is a type-2 hypervisor that runs on
-natively on |trueos| and originally developed on FreeBSD. bhyve runs
-FreeBSD 9+, OpenBSD, NetBSD, Linux and Windows NT guests. Current
-development efforts aim at widening support for other operating systems
-for the x86-64 architecture.
-The `Virtualization <https://www.freebsd.org/doc/handbook/virtualization-host-bhyve.html>`_
+bhyve (pronounced bee hive) is a type-2 hypervisor that runs natively
+on |trueos| and originally developed on FreeBSD. bhyve runs FreeBSD 9+,
+OpenBSD, NetBSD, Linux, and Windows guests. Current development efforts
+aim at widening support for other operating systems for the x86-64
+architecture. The `Virtualization <https://www.freebsd.org/doc/handbook/virtualization-host-bhyve.html>`_
 section of the FreeBSD Handbook has in-depth instructions about bhyve
-features and use. bhyve, while very powerful, is not currently very user
-friendly. bhyve is under active development with many great features on
-the way.
+features and use. bhyve, while very powerful, is still under active
+development and may not have a complete user experience yet.
 
 For a more user-friendly virtualization experience, many users prefer
 :ref:`VirtualBox`.
@@ -834,33 +832,29 @@ VirtualBox
 
 VirtualBox is a popular virtualization software available in |trueos|.
 Installing VirtualBox through the |sysadm| :sysclbk:`AppCafe <appcafe>`
-or :command:`pkg install virtualbox-ose` on the command line, will
-install all required dependencies. If installing |trueos| inside a
-virtual machine, or "guest" installing the virtualbox-ose-additions
-package (also known as VirtualBox Guest Additions) will greatly improve
-the performance of |trueos| or any other guest operating system. The
-guest additions add mouse pointer integration, shared folders between
-the host and guest (depending on the guest), better video support, and
-a shared clipboard.
+or typing :command:`pkg install virtualbox-ose` on the command line
+will install all required dependencies. If installing |trueos| inside a
+virtual machine, referred to as a "guest", installing the
+"virtualbox-ose-additions" package (also known as VirtualBox Guest
+Additions) will greatly improve the performance of |trueos| or any other
+guest operating system. The guest additions add mouse pointer integration,
+shared folders between the host and guest (depending on the guest OS),
+improved video support, and a shared clipboard.
+
   .. note:: VirtualBox does not currently support the shared folders
 	    feature with a |trueos| guest. To share files between the
-	    host, and a |trueos| guest, use NFS share.
+	    host and a |trueos| guest, use an NFS share.
 
 Please see the `VirtualBox <https://www.virtualbox.org/>`_ website for
 additional information.
 `VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_
 for more information about what is supported and how to use them.
 
-
-The guest additions add mouse pointer integration, shared folders
-between the host and guest, better video support, and a shared
-clipboard.
-
 .. note:: The first time running VirtualBox on a |trueos| system, a
    background script automatically gives the user account that started
    VirtualBox the permissions required to run the application. This
    might break existing shortcuts to VirtualBox. To fix the shortcut,
-   logout and in again.
+   log out and in again.
 
 .. TODO: This section about VirtualBox on other OS' should be removed.
    Information about other host systems is not necessary or even needed
@@ -890,8 +884,11 @@ demonstrate how to configure the virtual machine for a |trueos| guest.
 
 * A minimum of 1024MB of memory.
 
-* A virtual disk of **at least 20 GB in size** for a server installation
-  or **at least 50 GB in size** for a desktop installation.
+* A virtual disk of 10-15 GB for a server installation or 20-30 GB for
+  a desktop installation should be a useable starting point. The actual
+  size of a virtual disk depends on the virtual machine's intended use,
+  and what applications need to be installed for example but these sizes
+  should suit the average user's needs.
 
 * A bridged adapter.
 
@@ -950,10 +947,10 @@ click :guilabel:`Create` to go to the screen shown in
 :numref:`Figure %s <vbox5>`. If there are existing virtual machines
 already on the host system, reusing an existing virtual disk by
 selecting :guilabel:`Use an existing virtual hard drive file` from the
-drop-down menu. Create as many virtual machines as desired. On thing to
-note, if the host system is getting low on disk space, consider reusing
-existing virtual hard drives to prevent wasting space on the physical
-hard drive by old virtual machines.
+drop-down menu. Create as many virtual machines as desired. If the host
+system is getting low on disk space, consider reusing existing virtual
+hard drives to prevent wasting space on the physical hard drive by old
+unsed virtual machines.
 
 .. _vbox5:
 
@@ -998,7 +995,7 @@ computer has enough free disk space to accommodate the size chosen. Use
 the :guilabel:`folder` icon to browse to a directory on disk with
 sufficient space to hold the virtual machine.
 
-Once the selections are made, select :guilabel:`Create` to finish using
+Once the selections are made, click :guilabel:`Create` to finish using
 the wizard. The virtual machine will now show up in the left box, as
 seen in the example in :numref:`Figure %s <vbox8>`.
 
@@ -1057,7 +1054,7 @@ the machine will start to boot into the installation program. If it does
 not or if using an ISO stored on the hard disk, press :kbd:`F12` to
 select the boot device when the message to do so appears, then press
 :kbd:`c` to boot from CD-ROM. Proceed through the installation as
-     described in the :ref:`Install` section.
+described in the :ref:`Install` section.
 
 .. note:: If the installer GUI doesn't appear to load after configuring
    the virtual machine, **EFI** may need to be enabled in Virtualbox by
@@ -1124,7 +1121,7 @@ install |trueos|:
 
 * 1 GB RAM
 
-* 20 GB of free hard drive space on a **primary partition** for a
+* 10 - 15 GB of free hard drive space on a **primary partition** for a
   command-line server installation.
 
 * Network card
@@ -1138,8 +1135,8 @@ space improves the computing experience:
 
 * 4 GB of RAM
 
-* 50 GB of free hard drive space on a primary partition for a graphical
-  desktop installation.
+* 20 - 30 GB of free hard drive space on a primary partition for a
+  graphical desktop installation.
 
 * Network card
 
@@ -1154,7 +1151,7 @@ These can be used to retrieve earlier versions of files, rollback the
 operating system to an earlier point in time, or clone the operating
 system.
 
-There is no such thing as to much RAM. ZFS thrives on systems with lots
+There is no such thing as too much RAM. ZFS thrives on systems with lots
 of RAM. To play modern video games, use a fast CPU. To create a
 collection of music and movies on the computer, sufficient disk space
 is required.
@@ -1198,7 +1195,7 @@ includes Skylake, Haswell, Broadwell, and ValleyView chipsets.
 **ATI/Radeon:** 3D acceleration on most ATI and Radeon cards is
 supported.
 
-**Optimus:** Currently there is no switching support between the two
+**Optimus:** Currently, there is no switching support between the two
 graphics adapters provided by Optimus. Optimus implementations vary, so
 |trueos| may or may not be able to successfully load a graphics driver
 to support this hardware. If a blank screen shows after installation,
@@ -1228,7 +1225,7 @@ see if that resolves the issue.
 
 .. note:: Some wifi adapters are not configured during installation,
 	  but after first boot. Just because an adapter does not show
-	  up during installation does not mean it's not supported.
+	  up during installation does not mean it is unsupported.
 
 .. index:: supported laptops
 .. _Laptops:
@@ -1238,7 +1235,7 @@ Laptops
 
 Many |trueos| users successfully run |trueos| on their laptops. However,
 some issues may occur, depending upon the model of laptop. Some typical
-laptop issues;
+laptop issues:
 
 * **Sleep/suspend:** Unfortunately,
   :wiki:`Advanced Configuration and Power Interface <Advanced_Configuration_and_Power_Interface>`
