@@ -1077,7 +1077,7 @@ is ready to install |trueos|.
   please ensure a primary partition is available. Refer to the chapter
   on :ref:`Dual Booting`.
 
-* **Ensure important data is backed up?** Any irreplaceable data, such
+* **Ensure important data is backed up!** Any irreplaceable data, such
   as emails, bookmarks, or important files and documents should
   **always** be backed up to an external media, such as a removable
   drive or another system, **before** installing or upgrading any
