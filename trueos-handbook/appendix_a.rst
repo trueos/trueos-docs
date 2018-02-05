@@ -1,5 +1,4 @@
-.. indeet spell
-:: Conventions_Legal
+.. index:: Conventions and Legal
 .. _Conventions and legal:
 
 Appendix A: Conventions & Legal
@@ -9,7 +8,7 @@ This section contains the necessary legal information. It also
 contains a helpful table to understand some of the conventions used
 throughout this document.
 
-.. index:: typographic conventions
+.. index:: Typographic Conventions
 .. _Typographic Conventions:
 
 Typographic Conventions

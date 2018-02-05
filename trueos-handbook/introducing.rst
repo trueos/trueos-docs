@@ -492,114 +492,126 @@ filesystems: *FAT16*, *FAT32*, *EXT2*, *EXT3* (without journaling),
 .. table:: Filesystem Support on |trueos|
    :class: longtable
 
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | Filesystem | Native OS | Non-native OS| Usage notes                                            |
-   |            |           | support      |                                                        |
-   +============+===========+==============+========================================================+
-   | Btrfs      | Linux     | none         | A modern copy on write (CoW) filesystem for the Linux  |
-   |            |           |              | OS. Btrfs is similar in nature to ZFS, and shares many |
-   |            |           |              | of the same ideas with how a file system should work.  |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | Filesystem | Native OS | Non-native OS| Usage notes                                                    |
+   |            |           | support      |                                                                |
+   +============+===========+==============+================================================================+
+   | Btrfs      | Linux     | none         | A modern copy on write (CoW) filesystem for the Linux OS.      |
+   |            |           |              | Btrfs is similar in nature to ZFS, and shares many of the same |
+   |            |           |              | ideas with how a file system should work.                      |
    |            |           |              | `Btrfs <https://btrfs.wiki.kernel.org/index.php/Main%5FPage>`_ |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | EXT2       | Linux     | r/w support  | The successor to EXT. EXT2 was designed following the  |
-   |            |           | loaded by    | principles put forth in BSD's Fast File System (FFS).  |
-   |            |           | default      | The first commercial grade filesystem in Linux. The    |
-   |            |           |              | maximum supported volume size is 2TB to 32TB and the   |
-   |            |                          | file size is 6GB to 2TB.                               |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | EXT3       | Linux     | r/w support  | EXT3 is EXT2 with the added benefit of journaling,     |
-   |            |           | loaded by    | online filesystem growth, and HTree indexing for       |
-   |            |           | default      | larger directories. Journaling is **not** supported in |
-   |            |           |              | BSD. Filesystems requiring a journal replay are unable |
-   |            |           |              | to be mounted in BSD unless a :command:`fsck` is run   |
-   |            |           |              | using an external utility such as the program package  |
-   |            |           |              | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_        |
-   |            |           |                The max volume size and file size is the same as EXT2. |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | EXT4       | Linux     | r/o support  | EXT4 is the succesor to EXT3 including enhancements to |
-   |            |           | loaded by    | journaling, extended attributes, and journal           |
-   |            |           | default      | checksumming (among many others) *on linux*. Using     |
-   |            |           |              | inodes greater than 128 bytes are *not* supported.     |
-   |            |           |              | Converting EXT3 default filesystems to EXT4 may have   |
-   |            |           |              | experience better performance. EXT4 increases the      |
-   |            |           |              | maximum volume size to 1EB and the maximum file size   |
-   |            |           |              | to 16GB to 16TB.                                       |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | JFS        | Linux     | none         | Journaled File System is a 64-bit journaling file      |
-   |            |           |              | created by IBM. The maximum volume size is 32 PB and   |
-   |            |           |              | the maximum file size is 4PB.                          |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | ReiserFS   | Linux     | r/o support  | A general-purpose journaling file system that has      |
-   |            |           | is loaded by | fallen out of favor in recent years. The maximum       |
-   |            |           | default      | volume size is 16TB, and maximum file size is 8TB.     |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | FAT16      | Windows   | r/w support  | Max partition sizes up to 4GB. Cluster sizes vary from |
-   |            |           | loaded by    | 2kb to 64kb, depending on partition size. Rarely used  |
-   |            |           | default      | due to partition size limitations.                     |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | FAT32      | Windows   | r/w support  | Replaced FAT16. Maximum partition size of 2TB and a    |
-   |            |           | loaded by    | maximum file size of 4GB. 4KB clusters are used on     |
-   |            |           | default      | partition sizes up to 8GB. For partitions larger than  |
-   |            |           |              | 8GB, the cluster size grows up to 32KB.                |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | NTFS       | Windows   | full r/w     | The maximum volume size is 16EB -1kB and the maximum   |
-   |            |           | support      | file size is 16TB -64kB. Unlike FAT32, the cluster     |
-   |            |           | loaded       | size stays at 4KB regardless of the volume size used.  |
-   |            |           | by default   |                                                        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | NTFS5      | Windows   | r/w support  | In addition to the NTFS features, NTFS5 also supports  |
-   |            |           | loaded by    | encryption, disk quotas, and sparse files. Other       |
-   |            |           | default      | features may be available, but are beyond the scope of |
-   |            |           |              | this handbook. Support for advanced features may not   |
-   |            |           |              | be supported in |trueos| and should not be expected or |
-   |            |           |              | relied on to work.                                     |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | exFAT      | Windows   | r/w support  | A file system optimized for flash memory such as USB   |
-   |            |           | using the    | flash drives and SD Cards. Use of this file system     |
-   |            |           | fusefs-exfat | requires a license from Microsoft. The maximum volume  |
-   |            |           | package      | size is 64ZB and the maximum file size is 16EB.        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | HFS+       | Mac OS X  | none         | A file system developed by Apple Inc. HFS+ was         |
-   |            |           |              | developed to replace HFS. The max volume and file size |
-   |            |           |              | is "slightly less" than 8EB. Older Mac versions may    |
-   |            |           |              | work using the GUI application dedicated to HFS called |
-   |            |           |              | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_ |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | UFS2       | FreeBSD   | Linux support| Unix File System, also called Berkley Fast File System |
-   |            |           | through      | or FFS, is used by mnay Unix and Unix like operating   |
-   |            |           | ufsutils.    | systems. UFS is a distant descendant of the original   |
-   |            |           | r/w support  | file system used by Version 7 Unix. UFS2 has a maximum |
-   |            |           | on Mac.      | volume size of 512ZB and a maximum file size of 512GB  |
-   |            |           | UFS Explorer | to 32 PB depending on the implementation.              |
-   |            |           | can be used  |                                                        |
-   |            |           | in Windows   | Note: As of Mac Lion, UFS has r/o support only.        |
-   +------------+-----------+--------------+--------------------------------------------------------+
-   | ZFS        | |trueos|, |              | TrueOS has been using OpenZFS as its exclusive file    |
-   |            | FreeBSD   |              | system for several years, ensuring advanced OpenZFS    |
-   |            |           |              | functionality is heavily tested and 100%               |
-   |            |           |              | production-ready. ZFS was originally designed by Sun   |
-   |            |           |              | Microsystems, and has since been succeded by the Open  |
-   |            |           |              | ZSF project which is jointly developed by developers   |
-   |            |           |              | from illumos, FreeBSD, Linux, and OS X to name a few.  |
-   |            |           |              | See the :ref:`ZFS Overview` section of the handbook    |
-   |            |           |              | for in an in-depth list of features and benefits of    |
-   |            |           |              | using ZFS, and why it's the default filesystem used by |
-   |            |           |              | |trueos|. The `Open ZFS <http://open-zfs.org/>`_       |
-   |            |           |              | has additional details on the implementation and use.  |
-   |            |           |              | The maximum volume size is 256ZB and a maximum file    |
-   |            |           |              | size of 16EB.                                          |
-   +------------+-----------+--------------+--------------------------------------------------------+
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | EXT2       | Linux     | r/w support  | The successor to EXT. EXT2 was designed following the          |
+   |            |           | loaded by    | principles put forth in BSD's Fast File System (FFS).          |
+   |            |           | default      | The first commercial grade filesystem in Linux. The            |
+   |            |           |              | maximum supported volume size is 2TB - 32TB and the            |
+   |            |           |              | file size is 6GB - 2TB.                                        |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | EXT3       | Linux     | r/w support  | EXT3 is EXT2 with the added benefit of journaling,             |
+   |            |           | loaded by    | online filesystem growth, and HTree indexing for               |
+   |            |           | default      | larger directories. Journaling is **not** supported in         |
+   |            |           |              | BSD. Filesystems requiring a journal replay are unable         |
+   |            |           |              | to be mounted in BSD unless a :command:`fsck` is run           |
+   |            |           |              | using an external utility such as the program package          |
+   |            |           |              | `e2fsprogs <http://e2fsprogs.sourceforge.net>`_                |
+   |            |           |              | The max volume size and file size is the same as EXT2.         |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | EXT4       | Linux     | r/o support  | EXT4 is the succesor to EXT3 including enhancements to         |
+   |            |           | loaded by    | journaling, extended attributes, and journal                   |
+   |            |           | default      | checksumming (among many others) *on linux*. Using             |
+   |            |           |              | inodes greater than 128 bytes are *not* supported.             |
+   |            |           |              | Converting EXT3 default filesystems to EXT4 may have           |
+   |            |           |              | experience better performance. EXT4 increases the              |
+   |            |           |              | maximum volume size to 1EB and the maximum file size           |
+   |            |           |              | to 16GB to 16TB.                                               |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | JFS        | Linux     | none         | Journaled File System is a 64-bit journaling file              |
+   |            |           |              | created by IBM. The maximum volume size is 32 PB and           |
+   |            |           |              | the maximum file size is 4PB.                                  |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | ReiserFS   | Linux     | r/o support  | A general-purpose journaling file system that has              |
+   |            |           | is loaded by | fallen out of favor in recent years. The maximum               |
+   |            |           | default      | volume size is 16TB, and maximum file size is 8TB.             |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | FAT16      | Windows   | r/w support  | Max partition sizes up to 4GB. Cluster sizes vary from         |
+   |            |           | loaded by    | 2kb to 64kb, depending on partition size. Rarely used          |
+   |            |           | default      | due to partition size limitations.                             |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | FAT32      | Windows   | r/w support  | Replaced FAT16. Maximum partition size of 2TB and a            |
+   |            |           | loaded by    | maximum file size of 4GB. 4KB clusters are used on             |
+   |            |           | default      | partition sizes up to 8GB. For partitions larger than          |
+   |            |           |              | 8GB, the cluster size grows up to 32KB.                        |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | NTFS       | Windows   | full r/w     | The maximum volume size is 16EB -1kB and the maximum           |
+   |            |           | support      | file size is 16TB -64kB. Unlike FAT32, the cluster             |
+   |            |           | loaded       | size stays at 4KB regardless of the volume size used.          |
+   |            |           | by default   |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | NTFS5      | Windows   | r/w support  | In addition to the NTFS features, NTFS5 also supports          |
+   |            |           | loaded by    | encryption, disk quotas, and sparse files. Other               |
+   |            |           | default      | features may be available, but are beyond the scope of         |
+   |            |           |              | this handbook. Support for advanced features may not           |
+   |            |           |              | be supported in |trueos| and should not be expected or         |
+   |            |           |              | relied on to work.                                             |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | exFAT      | Windows   | r/w support  | A file system optimized for flash memory such as USB           |
+   |            |           | using the    | flash drives and SD Cards. Use of this file system             |
+   |            |           | fusefs-exfat | requires a license from Microsoft. The maximum volume          |
+   |            |           | package      | size is 64ZB and the maximum file size is 16EB.                |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | HFS+       | Mac OS X  | none         | A file system developed by Apple Inc. HFS+ was developed to    |
+   |            |           |              | replace HFS. The max volume and file size is "slightly less"   |
+   |            |           |              | than 8EB. Older Mac versions may work using the GUI            |
+   |            |           |              | GUI application dedicated to HFS called                        |
+   |            |           |              | `hfsexplorer <http://www.catacombae.org/hfsexplorer>`_         |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | UFS2       | FreeBSD   | Linux support| Unix File System, also called Berkley Fast File System or FFS, |
+   |            |           | through      | is used by mnay Unix and Unix-like operating systems. UFS is a |
+   |            |           | ufsutils.    | distant descendant of the original file system used by Version |
+   |            |           | r/w support  | 7 Unix. UFS2 has a maximum volume size of 512ZB and a maximum  |
+   |            |           | on Mac.      | maximum file size of 512GB - 32PB, depending on the            |
+   |            |           | UFS Explorer | implementation.                                                |
+   |            |           | can be used  |                                                                |
+   |            |           | in Windows   | Note: As of Mac Lion, UFS has r/o support only.                |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
+   | ZFS        | |trueos|, |              | TrueOS has been using OpenZFS as its exclusive file system for |
+   |            | FreeBSD   |              | several years, ensuring advanced OpenZFS functionality is      |
+   |            |           |              | heavily tested and 100% production-ready. ZFS was originally   |
+   |            |           |              | designed by Sun Microsystems, and has since been succeeded by  |
+   |            |           |              | the Open ZFS project which is jointly developed by developers  |
+   |            |           |              | from illumos, FreeBSD, Linux, and OS X to name a few.          |
+   |            |           |              |                                                                |
+   |            |           |              | See the :ref:`ZFS Overview` section of the handbook for an     |
+   |            |           |              | in-depth list of features and benefits of using ZFS and why    |
+   |            |           |              | it's the default filesystem used by |trueos|. The              |
+   |            |           |              | `Open ZFS website <http://open-zfs.org/>`_ has additional      |
+   |            |           |              | details on its implementation and use. The maximum volume size |
+   |            |           |              | is 256ZB and maximum file size is 16EB.                        |
+   |            |           |              |                                                                |
+   +------------+-----------+--------------+----------------------------------------------------------------+
 
-.. note:: Technical Note: exFAT partitions can be mounted read/write on FreeBSD
-	  using the "fusefs-exfat package. Due to the Microsoft license used for
-	  exFAT, the package cannot come pre-installed by the OS. The user must
-	  manually install the fusefs-exfat package via |appcafe| or
-	  :command:`pkg install fusefs-exfat` on the command line.
-	  Once installed, the |trueos| automount systems are already aware of
-	  exFAT and are able to automatically mount/access the devices as needed.
+.. note:: exFAT partitions can be mounted read/write on FreeBSD using
+   the *fusefs-exfat* package. Due to the Microsoft license used for
+   exFAT, the package cannot come pre-installed by the OS. The user must
+   manually install the *fusefs-exfat* package using |appcafe| or
+   :command:`pkg install fusefs-exfat` on the command line. When
+   complete, the |trueos| automount systems are already aware of exFAT
+   and are able to automatically mount/access the devices as needed.
 
-Linux and BSD use different naming conventions for devices.
-Some examples for illustration;
+Linux and BSD use different naming conventions for devices. Here are
+some examples:
 
 * Linux Ethernet interfaces begin with :file:`eth`, while BSD interface
   names indicate the name of the driver used to make the device
@@ -617,11 +629,11 @@ Some examples for illustration;
   drives as well. :file:`da0p1` is the 1st partition on the 1st USB/SCSI
   drive. :file:`da0p2` is the 2nd partition on the 1st USB/SCSI drive.
 
-  .. note:: This convention continues with subsequent drives. :file:`da1p3` would
-	    be the 3rd partition on the 2nd USB/SCSI drive and :file:`ada4p6`
-	    would be the 6th partition on the 5th IDE drive. Note: physical drive
-	    numbering begins at 0, while the partition numbers on the drive start
-            at 1.
+.. tip:: This convention continues with subsequent drives.
+   :file:`da1p3` would be the 3rd partition on the 2nd USB/SCSI drive
+   and :file:`ada4p6` would be the 6th partition on the 5th IDE drive.
+   Physical drive numbering begins at 0, while the partition numbers on
+   the drive start at 1.
 
 Some of the features used by BSD have similar counterparts to Linux but
 the name of the feature may differ. :numref:`Table %s <feature names>`
@@ -648,10 +660,12 @@ provides some common examples:
    |                                |                     | startup scripts are separated  |
    |                                |                     | from third-party application   |
    |                                |                     | scripts.                       |
+   |                                |                     |                                |
    +--------------------------------+---------------------+--------------------------------+
    | :file:`/etc/ttys` and          | :command:`telinit`, | Terminals configured in *ttys* |
    | :file:`/etc/rc.conf`           | :file:`init.d/`     | and *rc.conf* indicate which   |
    |                                |                     | services start at boot time.   |
+   |                                |                     |                                |
    +--------------------------------+---------------------+--------------------------------+
 
 Users comfortable with the command line may find some of the common
@@ -674,40 +688,54 @@ and what they are used for.
    |                                   | about the |trueos| install. |
    |                                   | Very useful when trying to  |
    |                                   | obtain help with issues.    |
-   +-----------------------------------|-----------------------------+
+   |                                   |                             |
+   +-----------------------------------+-----------------------------+
    | :command:`dmesg`                  | Discover what hardware was  |
    |                                   | detected by the kernel and  |
    |                                   | and other system related    |
    |                                   | information.                |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`sysctl dev | less`      | Display configured devices. |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`pciconf -l -cv`         | Show PCI devices.           |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`dmesg | grep usb`       | Show USB devices.           |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`kldstat`                | List all modules currently  |
    |                                   | loaded in the kernel.       |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`kldload <module>`       | Load a kernel module for    |
    |                                   | the current session.        |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`pkg install <pkgname>`  | Install software from the   |
    |                                   | command line.               |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`sysctl hw.realmem`      | Display hardware memory.    |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`sysctl hw.model`        | Display CPU model.          |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`sysctl hw.machine_arch` | Display CPU Architecture.   |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`sysctl hw.ncpu`         | Display number of CPUs.     |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`uname -vm`              | Get release version         |
    |                                   | information.                |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
    | :command:`gpart show`             | Show device partition       |
    |                                   | information.                |
+   |                                   |                             |
    +-----------------------------------+-----------------------------+
 
 There are many articles and videos which provide additional information
@@ -814,10 +842,11 @@ bhyve (pronounced bee hive) is a type-2 hypervisor that runs natively
 on |trueos| and originally developed on FreeBSD. bhyve runs FreeBSD 9+,
 OpenBSD, NetBSD, Linux, and Windows guests. Current development efforts
 aim at widening support for other operating systems for the x86-64
-architecture. The `Virtualization <https://www.freebsd.org/doc/handbook/virtualization-host-bhyve.html>`_
-section of the FreeBSD Handbook has in-depth instructions about bhyve
-features and use. bhyve, while very powerful, is still under active
-development and may not have a complete user experience yet.
+architecture. The
+`FreeBSD Handbook Virtualization <https://www.freebsd.org/doc/handbook/virtualization-host-bhyve.html>`_
+section has in-depth instructions about bhyve features and use. bhyve,
+while very powerful, is still under active development and may not have
+a complete user experience yet.
 
 For a more user-friendly virtualization experience, many users prefer
 :ref:`VirtualBox`.
@@ -835,7 +864,7 @@ Installing VirtualBox through the |sysadm| :sysclbk:`AppCafe <appcafe>`
 or typing :command:`pkg install virtualbox-ose` on the command line
 will install all required dependencies. If installing |trueos| inside a
 virtual machine, referred to as a "guest", installing the
-"virtualbox-ose-additions" package (also known as VirtualBox Guest
+*virtualbox-ose-additions* package (also known as VirtualBox Guest
 Additions) will greatly improve the performance of |trueos| or any other
 guest operating system. The guest additions add mouse pointer integration,
 shared folders between the host and guest (depending on the guest OS),
@@ -845,10 +874,11 @@ improved video support, and a shared clipboard.
 	    feature with a |trueos| guest. To share files between the
 	    host and a |trueos| guest, use an NFS share.
 
-Please see the `VirtualBox <https://www.virtualbox.org/>`_ website for
-additional information.
+Please see the `VirtualBox website <https://www.virtualbox.org/>`_ for
+additional information. The
 `VirtualBox Guest Additions <http://www.virtualbox.org/manual/ch04.html>`_
-for more information about what is supported and how to use them.
+page has information about what is supported and how to use these
+additions.
 
 .. note:: The first time running VirtualBox on a |trueos| system, a
    background script automatically gives the user account that started
@@ -876,10 +906,11 @@ Creating a Virtual Machine for a |trueos| install
 How to prepare VirtualBox for an installation of |trueos| using an
 :file:`.iso` file.
 
-Once a |trueos| ISO is <downloaded `https://www.trueos.org/downloads/downloads>`_
-and VirtualBox installed on the host system, create a new virtual
-machine to install |trueos| as a guest OS. The virtual machine must meet
-several minimum requirements in order to be useable. This section will
+Once a |trueos| ISO is
+`downloaded <https://www.trueos.org/downloads/downloads>`_ and
+VirtualBox installed on the host system, create a new virtual machine to
+install |trueos| as a guest OS. The virtual machine must meet several
+minimum requirements in order to be useable. This section will
 demonstrate how to configure the virtual machine for a |trueos| guest.
 
 * A minimum of 1024MB of memory.
