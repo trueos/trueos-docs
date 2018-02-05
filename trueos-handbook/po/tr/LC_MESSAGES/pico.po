@@ -162,13 +162,6 @@ msgid ""
 "options are developed and added to :file:`picoserver.ini`."
 msgstr ""
 
-#: ../../pico.rst:141
-msgid ""
-"Pico uses *Virtual GL* (vgl) for graphics hardware acceleration. VGL works "
-"with any *OpenGL* supported graphics card, but Nvidia cards are generally "
-"recommended at this time."
-msgstr ""
-
 #: ../../pico.rst:183
 msgid "It may take a few moments for the system to decompress the file."
 msgstr ""
@@ -183,13 +176,6 @@ msgstr ""
 
 #: ../../pico.rst:201
 msgid "This command may take some time to process."
-msgstr ""
-
-#: ../../pico.rst:259
-msgid ""
-"VirtualGL also has an extensive `user guide "
-"<http://www.virtualgl.org/Documentation/Documentation>`_ to help guide new "
-"users through the various features of this useful toolkit."
 msgstr ""
 
 #: ../../pico.rst:17
@@ -460,6 +446,32 @@ msgid ""
 "As a result of TrueOS using OpenRC and other changes, an update to these "
 "instructions, especially server initialization, is forthcoming."
 msgstr ""
+
+#: ../../pico.rst:141
+msgid ""
+"Pico uses *Virtual GL* (VGL) for graphics hardware acceleration. VGL works "
+"with any *OpenGL* supported graphics card, but Nvidia cards are generally "
+"recommended at this time."
+msgstr ""
+
+#: ../../pico.rst:259
+msgid ""
+"VirtualGL also has an extensive `user guide "
+"<https://www.virtualgl.org/Documentation/Documentation>`_ to help guide new "
+"users through the various features of this useful toolkit."
+msgstr ""
+
+#~ msgid ""
+#~ "Pico uses *Virtual GL* (vgl) for graphics hardware acceleration. VGL works "
+#~ "with any *OpenGL* supported graphics card, but Nvidia cards are generally "
+#~ "recommended at this time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "VirtualGL also has an extensive `user guide "
+#~ "<http://www.virtualgl.org/Documentation/Documentation>`_ to help guide new "
+#~ "users through the various features of this useful toolkit."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "As a result to TrueOS using OpenRC, an update to these instructions, "

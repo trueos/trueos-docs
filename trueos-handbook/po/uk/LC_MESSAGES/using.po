@@ -11,288 +11,257 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../using.rst:292
+#: ../../using.rst:2054
 msgid "Fonts"
 msgstr ""
 
-#: ../../using.rst:309
+#: ../../using.rst:2071
 msgid "Sound Mixer Tray"
 msgstr ""
 
-#: ../../using.rst:443
+#: ../../using.rst:2158
 msgid "Multimedia"
 msgstr ""
 
-#: ../../using.rst:498
-msgid "Kodi"
-msgstr ""
-
-#: ../../using.rst:500
-msgid ""
-"`Kodi, formerly known as XBMC, <https://kodi.tv/>`_ is a GPL-licensed "
-"software media player and entertainment hub for digital media. It can play "
-"most audio and video formats, CDs and DVDs from a disk or image file, and "
-"even files inside ZIP and RAR archives. It can scan all of your media and "
-"automatically create a personalized library with album covers, descriptions,"
-" and fan art."
-msgstr ""
-
-#: ../../using.rst:521
-msgid "PlexHome Theater"
-msgstr ""
-
-#: ../../using.rst:686
+#: ../../using.rst:786
 msgid "Files and File Sharing"
 msgstr ""
 
-#: ../../using.rst:709 ../../using.rst:844
+#: ../../using.rst:809 ../../using.rst:944
 msgid "dolphin"
 msgstr ""
 
-#: ../../using.rst:709 ../../using.rst:844
+#: ../../using.rst:809 ../../using.rst:944
 msgid "kde-baseapps"
 msgstr ""
 
-#: ../../using.rst:709
+#: ../../using.rst:809
 msgid "`<https://userbase.kde.org/Dolphin>`_"
 msgstr ""
 
-#: ../../using.rst:711 ../../using.rst:711
+#: ../../using.rst:811 ../../using.rst:811
 msgid "emelfm2"
 msgstr ""
 
-#: ../../using.rst:711
-msgid "`<http://emelfm2.net/wiki/ScreenShots>`_"
-msgstr ""
-
-#: ../../using.rst:713 ../../using.rst:713
+#: ../../using.rst:813 ../../using.rst:813
 msgid "caja"
 msgstr ""
 
-#: ../../using.rst:713
+#: ../../using.rst:813
 msgid "`<http://mate-desktop.org/gallery/1.6/>`_"
 msgstr ""
 
-#: ../../using.rst:715 ../../using.rst:715 ../../using.rst:854
-#: ../../using.rst:854
+#: ../../using.rst:815 ../../using.rst:815 ../../using.rst:954
+#: ../../using.rst:954
 msgid "mucommander"
 msgstr ""
 
-#: ../../using.rst:717 ../../using.rst:717 ../../using.rst:860
-#: ../../using.rst:860
+#: ../../using.rst:817 ../../using.rst:817 ../../using.rst:960
+#: ../../using.rst:960
 msgid "nautilus"
 msgstr ""
 
-#: ../../using.rst:717
+#: ../../using.rst:817
 msgid "`<https://projects.gnome.org/nautilus/screenshots.html>`_"
 msgstr ""
 
-#: ../../using.rst:719 ../../using.rst:719
+#: ../../using.rst:819 ../../using.rst:819
 msgid "pcmanfm"
 msgstr ""
 
-#: ../../using.rst:721 ../../using.rst:721 ../../using.rst:863
-#: ../../using.rst:863
+#: ../../using.rst:821 ../../using.rst:821 ../../using.rst:963
+#: ../../using.rst:963
 msgid "thunar"
 msgstr ""
 
-#: ../../using.rst:721
+#: ../../using.rst:821
 msgid "`<http://docs.xfce.org/xfce/thunar/start>`_"
 msgstr ""
 
-#: ../../using.rst:723 ../../using.rst:723
+#: ../../using.rst:823 ../../using.rst:823
 msgid "xfe"
 msgstr ""
 
-#: ../../using.rst:747
+#: ../../using.rst:847
 msgid "/"
 msgstr ""
 
-#: ../../using.rst:750
+#: ../../using.rst:850
 msgid "/bin/"
 msgstr ""
 
-#: ../../using.rst:753
+#: ../../using.rst:853
 msgid "/boot/"
 msgstr ""
 
-#: ../../using.rst:756
+#: ../../using.rst:856
 msgid "/compat/linux/"
 msgstr ""
 
-#: ../../using.rst:756
+#: ../../using.rst:856
 msgid "Linux software compatibility files"
 msgstr ""
 
-#: ../../using.rst:758
+#: ../../using.rst:858
 msgid "/dev/"
 msgstr ""
 
-#: ../../using.rst:761
+#: ../../using.rst:861
 msgid "/etc/"
 msgstr ""
 
-#: ../../using.rst:763
+#: ../../using.rst:863
 msgid "/etc/X11/"
 msgstr ""
 
-#: ../../using.rst:766
+#: ../../using.rst:866
 msgid "/etc/rc.d/"
 msgstr ""
 
-#: ../../using.rst:768
+#: ../../using.rst:868
 msgid "/home/"
 msgstr ""
 
-#: ../../using.rst:773
+#: ../../using.rst:873
 msgid "/lib/"
 msgstr ""
 
-#: ../../using.rst:776
+#: ../../using.rst:876
 msgid "/libexec/"
 msgstr ""
 
-#: ../../using.rst:778
+#: ../../using.rst:878
 msgid "/media/"
 msgstr ""
 
-#: ../../using.rst:781
+#: ../../using.rst:881
 msgid "/mnt/"
 msgstr ""
 
-#: ../../using.rst:783
+#: ../../using.rst:883
 msgid "/proc/"
 msgstr ""
 
-#: ../../using.rst:786
+#: ../../using.rst:886
 msgid "/rescue/"
 msgstr ""
 
-#: ../../using.rst:788
+#: ../../using.rst:888
 msgid "/root/"
 msgstr ""
 
-#: ../../using.rst:790
+#: ../../using.rst:890
 msgid "/sbin/"
 msgstr ""
 
-#: ../../using.rst:794
+#: ../../using.rst:894
 msgid "/tmp/"
 msgstr ""
 
-#: ../../using.rst:798
+#: ../../using.rst:898
 msgid "/usr/bin/"
 msgstr ""
 
-#: ../../using.rst:801
+#: ../../using.rst:901
 msgid "/usr/local/"
 msgstr ""
 
-#: ../../using.rst:806
+#: ../../using.rst:906
 msgid "/usr/local/share/fonts/"
 msgstr ""
 
-#: ../../using.rst:809
+#: ../../using.rst:909
 msgid "/usr/local/share/icons/"
 msgstr ""
 
-#: ../../using.rst:811
+#: ../../using.rst:911
 msgid "/usr/ports/"
 msgstr ""
 
-#: ../../using.rst:814
+#: ../../using.rst:914
 msgid "/usr/share/"
 msgstr ""
 
-#: ../../using.rst:816
+#: ../../using.rst:916
 msgid "/usr/sbin/"
 msgstr ""
 
-#: ../../using.rst:818
+#: ../../using.rst:918
 msgid "/usr/src/"
 msgstr ""
 
-#: ../../using.rst:821
+#: ../../using.rst:921
 msgid "/var/"
 msgstr ""
 
-#: ../../using.rst:852
+#: ../../using.rst:952
 msgid "smb4k"
 msgstr ""
 
-#: ../../using.rst:852
+#: ../../using.rst:952
 msgid "smb4k-kde4"
 msgstr ""
 
-#: ../../using.rst:871 ../../using.rst:917
+#: ../../using.rst:178 ../../using.rst:224
 msgid "Network Manager"
 msgstr ""
 
-#: ../../using.rst:940
+#: ../../using.rst:247
 msgid "There are two ways to configure an Ethernet interface:"
 msgstr ""
 
-#: ../../using.rst:1006
+#: ../../using.rst:313
 msgid "Wireless Adapters"
 msgstr ""
 
-#: ../../using.rst:1155
+#: ../../using.rst:462
 msgid "Network Configuration (Advanced)"
 msgstr ""
 
-#: ../../using.rst:1226
+#: ../../using.rst:533
 msgid "Proxy Settings"
 msgstr ""
 
-#: ../../using.rst:1272
+#: ../../using.rst:579
 msgid "Configuring a Wireless Access Point"
 msgstr ""
 
-#: ../../using.rst:1332
+#: ../../using.rst:640
 msgid "Tor Mode"
 msgstr ""
 
-#: ../../using.rst:1371
+#: ../../using.rst:2223
 msgid "Windows Emulation"
 msgstr ""
 
-#: ../../using.rst:1447
-msgid "Security"
-msgstr ""
-
-#: ../../using.rst:1532
-msgid ""
-"`Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_"
-msgstr ""
-
-#: ../../using.rst:1538
+#: ../../using.rst:1822
 msgid "Printing and Scanning"
 msgstr ""
 
-#: ../../using.rst:1556
+#: ../../using.rst:1840
 msgid "Researching your Printer"
 msgstr ""
 
-#: ../../using.rst:1576
+#: ../../using.rst:1860
 msgid "Adding a Printer"
 msgstr ""
 
-#: ../../using.rst:1670
+#: ../../using.rst:1954
 msgid "Manually Adding a Driver"
 msgstr ""
 
-#: ../../using.rst:1708
+#: ../../using.rst:1992
 msgid ""
 "After inputting the connection information, continue to add the printer and "
 "test the connection by printing a test page as described in :ref:`Adding a "
 "Printer`."
 msgstr ""
 
-#: ../../using.rst:1726
+#: ../../using.rst:2010
 msgid "Scanning"
 msgstr ""
 
-#: ../../using.rst:1755
+#: ../../using.rst:2039
 msgid ""
 "The `XSane documentation <http://www.xsane.org/doc/sane-xsane-doc.html>`_ "
 "contains details on how to perform common tasks such as saving an image to a"
@@ -300,74 +269,66 @@ msgid ""
 "the icons in the interface and how to use them."
 msgstr ""
 
-#: ../../using.rst:356
+#: ../../using.rst:2118
 msgid "This tab contains several options:"
 msgstr ""
 
-#: ../../using.rst:358
+#: ../../using.rst:2120
 msgid ""
 "**Recording Device:** Use the drop-down menu to select the device to use for"
 " recording sound."
 msgstr ""
 
-#: ../../using.rst:361
+#: ../../using.rst:2123
 msgid ""
 "**Default Tray Device:** Use the drop-down menu to set the default slider to"
 " display in the system tray."
 msgstr ""
 
-#: ../../using.rst:376
+#: ../../using.rst:2138
 msgid ""
 "The :guilabel:`File` menu can be used to quit this mixer screen or to close "
 "both this screen and remove the icon from the system tray."
 msgstr ""
 
-#: ../../using.rst:464
+#: ../../using.rst:2179
 msgid ""
 "`aTunes <http://www.atunes.org/?page_id=5>`_: Full-featured audio player and"
 " manager which can play mp3, ogg, wma, wav, flac, mp4 and radio streaming, "
 "allowing users to easily edit tags, organize music and rip audio CDs."
 msgstr ""
 
-#: ../../using.rst:469
+#: ../../using.rst:2184
 msgid ""
 "`Audacity <https://sourceforge.net/projects/audacity/?lang=en>`_: "
 "Multilingual audio editor and recorder."
 msgstr ""
 
-#: ../../using.rst:472
+#: ../../using.rst:2187
 msgid ""
 "`DeaDBeeF <http://deadbeef.sourceforge.net/screenshots.html>`_: Music player"
 " supporting most audio formats."
 msgstr ""
 
-#: ../../using.rst:475
+#: ../../using.rst:2190
 msgid ""
 "`Decibel <http://decibel.silent-blade.org/index.php?n=Main.Screenshots>`_: "
 "Audio player built around a highly modular structure which lets the user "
 "completely disable unneeded features. Able to play CDs directly."
 msgstr ""
 
-#: ../../using.rst:482
+#: ../../using.rst:2197
 msgid ""
 "`Miro <http://www.getmiro.com/download/screenshots/>`_: HD video player "
 "which can play almost any video file and offers over 6,000 free Internet TV "
 "shows and video podcasts."
 msgstr ""
 
-#: ../../using.rst:528
-msgid ""
-"To install PlexHome Theater, use |appcafe|. Once installed, an entry should "
-"be added to the :guilabel:`Multimedia` section of the application menu of "
-"your desktop. PlexHome Theater can also be started by typing "
-":command:`plexhometheater` from a command prompt."
-msgstr ""
-
-#: ../../using.rst:723
+#: ../../using.rst:823
 msgid "`<http://roland65.free.fr/xfe/index.php?page=screenshots>`_"
 msgstr ""
 
-#: ../../using.rst:726
+#: ../../using.rst:826
 msgid ""
 "When working with files on a |trueos| system, save your files to your home "
 "directory. Since most of the files outside your home directory are used by "
@@ -375,27 +336,27 @@ msgid ""
 "files outside of your home directory unless confident in what you are doing."
 msgstr ""
 
-#: ../../using.rst:732
+#: ../../using.rst:832
 msgid ""
 ":numref:`Table %s <dirstructure>` summarizes the directory structure found "
 "on a |trueos| system. :command:`man hier` explains this directory structure "
 "in more detail."
 msgstr ""
 
-#: ../../using.rst:825
+#: ../../using.rst:925
 msgid ""
 "|trueos| provides built-in support for accessing Windows shares, meaning you"
 " only have to decide which utility you prefer to access existing Windows "
 "shares on your network."
 msgstr ""
 
-#: ../../using.rst:829
+#: ../../using.rst:929
 msgid ""
 ":numref:`Table %s <windows shares utils>` summarizes some of the available "
 "utilities."
 msgstr ""
 
-#: ../../using.rst:873
+#: ../../using.rst:180
 msgid ""
 "During installation, |trueos| configures any connected Ethernet interfaces "
 "to use DHCP and provides a screen to :ref:`Connect to a Wireless Network`. "
@@ -403,7 +364,7 @@ msgid ""
 " using a |trueos| system."
 msgstr ""
 
-#: ../../using.rst:942
+#: ../../using.rst:249
 msgid ""
 "**Use DHCP:** This method assumes your Internet provider or network router "
 "assigns addressing information automatically using the DHCP protocol. Most "
@@ -411,7 +372,7 @@ msgid ""
 "\"just work\"."
 msgstr ""
 
-#: ../../using.rst:947
+#: ../../using.rst:254
 msgid ""
 "**Manually type in the IP addressing information:** This method requires an "
 "understanding of the basics of TCP/IP addressing or knowledge of which IP "
@@ -419,7 +380,7 @@ msgid ""
 "subnet mask to use, ask your Internet provider or network administrator."
 msgstr ""
 
-#: ../../using.rst:953
+#: ../../using.rst:260
 msgid ""
 "By default, |trueos| attempts to obtain an address from a DHCP server. If "
 "you wish to manually type in your IP address, check :guilabel:`Assign static"
@@ -428,20 +389,20 @@ msgid ""
 " the correct value. If not, change it again."
 msgstr ""
 
-#: ../../using.rst:985
+#: ../../using.rst:292
 msgid ""
 "The :guilabel:`Info` tab, seen in :numref:`Figure %s <network5>`, displays "
 "the current network address settings and some traffic statistics."
 msgstr ""
 
-#: ../../using.rst:996
+#: ../../using.rst:303
 msgid ""
 "If any changes are made within any of the tabs, click :guilabel:`Apply` to "
 "activate them. Click :guilabel:`OK` when finished to return to the main "
 "Network Manager window."
 msgstr ""
 
-#: ../../using.rst:1008
+#: ../../using.rst:315
 msgid ""
 "If the wireless interface does not automatically associate with a wireless "
 "network, the wireless profile containing the security settings required by "
@@ -453,13 +414,13 @@ msgid ""
 ":guilabel:`Configured Network Profiles` section."
 msgstr ""
 
-#: ../../using.rst:1032
+#: ../../using.rst:339
 msgid ""
 "If the network is hidden, click :guilabel:`+Add Hidden`, input the name of "
 "the network in the pop-up window, and click :guilabel:`OK`."
 msgstr ""
 
-#: ../../using.rst:1045
+#: ../../using.rst:352
 msgid ""
 "|trueos| supports the types of authentication shown in :numref:`Figure %s "
 "<network7>`. Access this screen and change authentication settings by "
@@ -467,18 +428,18 @@ msgid ""
 " and clicking :guilabel:`Edit`."
 msgstr ""
 
-#: ../../using.rst:1058
+#: ../../using.rst:365
 msgid ""
 "This screen provides configuration of different types of wireless security:"
 msgstr ""
 
-#: ../../using.rst:1061
+#: ../../using.rst:368
 msgid ""
 "**Disabled:** If the network is open, no additional configuration is "
 "required."
 msgstr ""
 
-#: ../../using.rst:1082
+#: ../../using.rst:389
 msgid ""
 "**WPA Personal:** This type of network uses a plaintext key. If you click "
 ":guilabel:`WPA Personal` then :guilabel:`Configure`, the screen shown in "
@@ -487,46 +448,46 @@ msgid ""
 "match."
 msgstr ""
 
-#: ../../using.rst:1109
+#: ../../using.rst:416
 msgid ""
 "If unsure which type of encryption is being used, ask the person who setup "
 "the wireless router. They should also be able to provide the value of any "
 "settings seen in these configuration screens."
 msgstr ""
 
-#: ../../using.rst:1119
+#: ../../using.rst:426
 msgid ""
 "The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network11>`, "
 "allows configuring several options:"
 msgstr ""
 
-#: ../../using.rst:1122
+#: ../../using.rst:429
 msgid ""
 "**Custom MAC address:** This setting is for advanced users and requires "
 ":guilabel:`Use hardware default MAC address` to be unchecked."
 msgstr ""
 
-#: ../../using.rst:1125
+#: ../../using.rst:432
 msgid ""
 "**Interface receiving IP address information:** If the network contains a "
 "DHCP server, check :guilabel:`Obtain IP automatically (DHCP)`. Otherwise, "
 "input the IP address and subnet mask to use on the network."
 msgstr ""
 
-#: ../../using.rst:1130
+#: ../../using.rst:437
 msgid ""
 "**Country code:** This setting is not required if in North America. For "
 "other countries, check :guilabel:`Set Country Code` and select your country "
 "from the drop-down menu."
 msgstr ""
 
-#: ../../using.rst:1141
+#: ../../using.rst:448
 msgid ""
 "The :guilabel:`Info` tab, seen in :numref:`Figure %s <network12>`, shows the"
 " current network status and statistics for the wireless interface."
 msgstr ""
 
-#: ../../using.rst:1170
+#: ../../using.rst:477
 msgid ""
 "If the interface receives its IP address information from a DHCP server, "
 "this screen allows viewing of the received DNS information. To override the "
@@ -534,102 +495,102 @@ msgid ""
 "DNS`. You can then set:"
 msgstr ""
 
-#: ../../using.rst:1175
+#: ../../using.rst:482
 msgid ""
 "**DNS 1:** The IP address of the primary DNS server. If unsure which IP "
 "address to use, click :guilabel:`Public servers` to select a public DNS "
 "server."
 msgstr ""
 
-#: ../../using.rst:1179
+#: ../../using.rst:486
 msgid "**DNS 2:** The IP address of the secondary DNS server."
 msgstr ""
 
-#: ../../using.rst:1181
+#: ../../using.rst:488
 msgid "**Search Domain:** The name of the domain served by the DNS server."
 msgstr ""
 
-#: ../../using.rst:1187
+#: ../../using.rst:494
 msgid "Several settings can be modified in the IPv6 section:"
 msgstr ""
 
-#: ../../using.rst:1189
+#: ../../using.rst:496
 msgid ""
 "**Enable IPv6 support:** If this box is checked, the specified interface can"
 " participate in IPv6 networks."
 msgstr ""
 
-#: ../../using.rst:1192
+#: ../../using.rst:499
 msgid ""
 "**IPv6 gateway:** The IPv6 address of the default gateway used on the IPv6 "
 "network."
 msgstr ""
 
-#: ../../using.rst:1195
+#: ../../using.rst:502
 msgid ""
 "**IPv6 DNS 1:** The IPv6 address of the primary DNS server used on the IPv6 "
 "network. If unsure which IP address to use, click :guilabel:`Public servers`"
 " to select a public DNS server."
 msgstr ""
 
-#: ../../using.rst:1199
+#: ../../using.rst:506
 msgid ""
 "**IPv6 DNS 2:** The IPv6 address of the secondary DNS server used on the "
 "IPv6 network."
 msgstr ""
 
-#: ../../using.rst:1202
+#: ../../using.rst:509
 msgid "The :guilabel:`Misc` section has more options to configure:"
 msgstr ""
 
-#: ../../using.rst:1204
+#: ../../using.rst:511
 msgid ""
 "**System Hostname:** The name of your computer. It must be unique on your "
 "network."
 msgstr ""
 
-#: ../../using.rst:1207
+#: ../../using.rst:514
 msgid "**Domain Name:** If the system is in a domain, specify it here."
 msgstr ""
 
-#: ../../using.rst:1209
+#: ../../using.rst:516
 msgid ""
 "**Enable wireless/wired failover via lagg0 interface:** This interface "
 "allows seamless switching between using an Ethernet interface and a wireless"
 " interface. Check the box to enable this functionality."
 msgstr ""
 
-#: ../../using.rst:1214
+#: ../../using.rst:521
 msgid ""
 "Some users experience problems using lagg. If you have problems connecting "
 "to a network using an interface which previously worked, uncheck this box "
 "and remove any references to :command:`lagg` from :file:`/etc/rc.conf`."
 msgstr ""
 
-#: ../../using.rst:1228
+#: ../../using.rst:535
 msgid ""
 "The :guilabel:`Proxy` tab, shown in :numref:`Figure %s <network14>`, is used"
 " when the network requires going through a proxy server to access the "
 "Internet."
 msgstr ""
 
-#: ../../using.rst:1239
+#: ../../using.rst:546
 msgid ""
 "Check :guilabel:`Proxy Configuration` to activate the settings. Some "
 "settings can be configured in this screen:"
 msgstr ""
 
-#: ../../using.rst:1242
+#: ../../using.rst:549
 msgid ""
 "**Server Address:** Enter the IP address or hostname of the proxy server."
 msgstr ""
 
-#: ../../using.rst:1245
+#: ../../using.rst:552
 msgid ""
 "**Port Number:** Enter the port number used to connect to the proxy server."
 msgstr ""
 
-#: ../../using.rst:1248
+#: ../../using.rst:555
 msgid ""
 "**Proxy Type:** Choices are **Basic** (sends the username and password "
 "unencrypted to the server) and **Digest** (never transfers the actual "
@@ -638,76 +599,76 @@ msgid ""
 "it."
 msgstr ""
 
-#: ../../using.rst:1254
+#: ../../using.rst:561
 msgid ""
 "**Specify a Username/Password:** Check this box and input the username and "
 "password if they are required to connect to the proxy server."
 msgstr ""
 
-#: ../../using.rst:1274
+#: ../../using.rst:581
 msgid ""
 "Right-click the entry for a wireless device, as seen in :numref:`Figure %s "
 "<network15>`, and choose :guilabel:`Setup Access Point`."
 msgstr ""
 
-#: ../../using.rst:1285
+#: ../../using.rst:593
 msgid ""
 ":numref:`Figure %s <network16>` shows the configuration screen if "
 ":guilabel:`Setup Access Point` is selected."
 msgstr ""
 
-#: ../../using.rst:1295
+#: ../../using.rst:603
 msgid "The :guilabel:`Basic Setup` tab of this screen contains two options:"
 msgstr ""
 
-#: ../../using.rst:1297
+#: ../../using.rst:605
 msgid ""
 "**Visible Name:** This is the name appearing when users scan for available "
 "access points."
 msgstr ""
 
-#: ../../using.rst:1300
+#: ../../using.rst:608
 msgid ""
 "**Set Password:** Setting a WPA password is optional, though recommended to "
 "only allow authorized devices to use the access point. If used, the password"
 " must be a minimum of 8 characters."
 msgstr ""
 
-#: ../../using.rst:1304
+#: ../../using.rst:612
 msgid ""
 ":numref:`Figure %s <network17>` shows the :guilabel:`Advanced Configuration "
 "(optional)` screen."
 msgstr ""
 
-#: ../../using.rst:1314
+#: ../../using.rst:622
 msgid ""
 "The settings in this screen are optional and allow for fine-tuning the "
 "access point's configuration:"
 msgstr ""
 
-#: ../../using.rst:1317
+#: ../../using.rst:625
 msgid "**Base IP:** The IP address of the access point."
 msgstr ""
 
-#: ../../using.rst:1319
+#: ../../using.rst:627
 msgid "**Netmask:** The associated subnet mask for the access point."
 msgstr ""
 
-#: ../../using.rst:1321
+#: ../../using.rst:629
 msgid ""
 "**Mode:** Available modes are **11g** (for 802.11g), **11ng** (for 802.11n "
 "on the 2.4-GHz band), or **11n** (for 802.11n)."
 msgstr ""
 
-#: ../../using.rst:1324
+#: ../../using.rst:632
 msgid "**Channel:** Select the channel to use."
 msgstr ""
 
-#: ../../using.rst:1326
+#: ../../using.rst:634
 msgid "**Country Code:** The two letter country code of operation."
 msgstr ""
 
-#: ../../using.rst:1373
+#: ../../using.rst:2225
 msgid ""
 "`Wine <https://wiki.winehq.org/Main_Page>`_ is an application which allows "
 "the creation of a Windows environment for installing Windows software. This "
@@ -715,50 +676,25 @@ msgid ""
 "not yet been ported to Linux or BSD."
 msgstr ""
 
-#: ../../using.rst:1390
+#: ../../using.rst:2242
 msgid ""
 "The initial Wine configuration menu is shown in :numref:`Figure %s <wine1>`."
 msgstr ""
 
-#: ../../using.rst:1414
+#: ../../using.rst:2266
 msgid ""
 "To install the application, type :command:`winefile` to see the screen shown"
 " in :numref:`Figure %s <wine2>`."
 msgstr ""
 
-#: ../../using.rst:1432
+#: ../../using.rst:2284
 msgid ""
 "Once the installation is complete, browse to the application's location. "
 ":numref:`Figure %s <wine3>` shows an example of running Internet Explorer "
 "within :command:`winefile`."
 msgstr ""
 
-#: ../../using.rst:1454
-msgid "The security features built into |trueos| include:"
-msgstr ""
-
-#: ../../using.rst:1470
-msgid ""
-"**Built-in firewall:** The default firewall ruleset allows accessing the "
-"Internet and the shares available on your network, but does not allow any "
-"inbound connections to your computer."
-msgstr ""
-
-#: ../../using.rst:1511
-msgid ""
-"The |trueos| operating system and its available software packages are built "
-"with `LibreSSL <http://www.libressl.org/>`_, which has fewer vulnerabilities"
-" than OpenSSL."
-msgstr ""
-
-#: ../../using.rst:1523
-msgid ""
-"To learn more about security on FreeBSD and |trueos| systems, :command:`man "
-"security` is a good place to start. These resources provide more information"
-" about security on FreeBSD-based operating systems:"
-msgstr ""
-
-#: ../../using.rst:1615
+#: ../../using.rst:1899
 msgid ""
 "This screen automatically fills out the printer model series, a description,"
 " and the type of connection. If desired, add a descriptive "
@@ -766,14 +702,14 @@ msgid ""
 ":guilabel:`Sharing`."
 msgstr ""
 
-#: ../../using.rst:1672
+#: ../../using.rst:1956
 msgid ""
 "If the print configuration fails, double-check the printer is supported as "
 "described in :ref:`Researching your Printer` and HPLIP is installed if it is"
 " a HP printer. Also check the printer is plugged in and powered on."
 msgstr ""
 
-#: ../../using.rst:1688
+#: ../../using.rst:1972
 msgid ""
 "**IPP:** Select this option if connecting to a printer cabled to another "
 "computer (typically running a Microsoft operating system) sharing the "
@@ -782,14 +718,14 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../using.rst:1704
+#: ../../using.rst:1988
 msgid ""
 "**LPD/LPR:** Select this option if connecting to a printer which is cabled "
 "to a Unix computer using LPD to share the printer. Input the hostname and "
 "queue name of the Unix system."
 msgstr ""
 
-#: ../../using.rst:1761
+#: ../../using.rst:2045
 msgid ""
 "By default, XSane uses the default browser when clicking :kbd:`F1` to access"
 " its built-in documentation. Configuring the default browser varies by "
@@ -797,25 +733,25 @@ msgid ""
 "browser setting."
 msgstr ""
 
-#: ../../using.rst:1745
+#: ../../using.rst:2029
 msgid ""
 ":numref:`Figure %s <sane1>` shows the XSane interface running on a |trueos| "
 "system attached to an HP DeskJet Printer/Scanner."
 msgstr ""
 
-#: ../../using.rst:663
+#: ../../using.rst:1799
 msgid "FreeBSD Ports"
 msgstr ""
 
-#: ../../using.rst:669
+#: ../../using.rst:1805
 msgid "These commands must be run as the superuser or **root**."
 msgstr ""
 
-#: ../../using.rst:671
+#: ../../using.rst:1807
 msgid "When fetching ports for the first time:"
 msgstr ""
 
-#: ../../using.rst:675
+#: ../../using.rst:1811
 msgid "To update an existing local ports directory:"
 msgstr ""
 
@@ -823,146 +759,146 @@ msgstr ""
 msgid "Using |trueos|"
 msgstr ""
 
-#: ../../using.rst:707 ../../using.rst:842
+#: ../../using.rst:807 ../../using.rst:942
 msgid "Application"
 msgstr ""
 
-#: ../../using.rst:707 ../../using.rst:842
+#: ../../using.rst:807 ../../using.rst:942
 msgid "Install"
 msgstr ""
 
-#: ../../using.rst:707
+#: ../../using.rst:807
 msgid "Screenshots"
 msgstr ""
 
-#: ../../using.rst:745
+#: ../../using.rst:845
 msgid "Directory"
 msgstr ""
 
-#: ../../using.rst:745
+#: ../../using.rst:845
 msgid "Contents"
 msgstr ""
 
-#: ../../using.rst:747
+#: ../../using.rst:847
 msgid ""
 "Pronounced as \"root\" and represents the beginning of the directory "
 "structure"
 msgstr ""
 
-#: ../../using.rst:750
+#: ../../using.rst:850
 msgid "Applications (binaries) that were installed with the operating system"
 msgstr ""
 
-#: ../../using.rst:753
+#: ../../using.rst:853
 msgid ""
 "Stores the startup code, including kernel modules (like hardware drivers)"
 msgstr ""
 
-#: ../../using.rst:758
+#: ../../using.rst:858
 msgid "Files which are used by the operating system to access devices"
 msgstr ""
 
-#: ../../using.rst:761
+#: ../../using.rst:861
 msgid "Operating system configuration files"
 msgstr ""
 
-#: ../../using.rst:763
+#: ../../using.rst:863
 msgid "The :file:`xorg.conf` configuration file"
 msgstr ""
 
-#: ../../using.rst:766
+#: ../../using.rst:866
 msgid "Operating system startup scripts"
 msgstr ""
 
-#: ../../using.rst:768
+#: ../../using.rst:868
 msgid ""
 "Subdirectories for each user account; each user should store their files in "
 "their own home directory"
 msgstr ""
 
-#: ../../using.rst:773
+#: ../../using.rst:873
 msgid "Operating system libraries needed for applications"
 msgstr ""
 
-#: ../../using.rst:776
+#: ../../using.rst:876
 msgid "Operating system libraries and binaries"
 msgstr ""
 
-#: ../../using.rst:778
+#: ../../using.rst:878
 msgid "Mount point for storage media such as DVDs and USB drives"
 msgstr ""
 
-#: ../../using.rst:781
+#: ../../using.rst:881
 msgid "Another mount point"
 msgstr ""
 
-#: ../../using.rst:783
+#: ../../using.rst:883
 msgid "The proc filesystem required by some Linux applications"
 msgstr ""
 
-#: ../../using.rst:786
+#: ../../using.rst:886
 msgid "Emergency recovery programs"
 msgstr ""
 
-#: ../../using.rst:788
+#: ../../using.rst:888
 msgid "Administrative account's home directory"
 msgstr ""
 
-#: ../../using.rst:790
+#: ../../using.rst:890
 msgid ""
 "Operating system applications; typically only the superuser can run these "
 "applications"
 msgstr ""
 
-#: ../../using.rst:794
+#: ../../using.rst:894
 msgid ""
 "Temporary file storage; files stored here may disappear when the system "
 "reboots"
 msgstr ""
 
-#: ../../using.rst:798
+#: ../../using.rst:898
 msgid "Contains most of the command line programs available to users"
 msgstr ""
 
-#: ../../using.rst:801
+#: ../../using.rst:901
 msgid ""
 "Contains the binaries, libraries, startup scripts, documentation, and "
 "configuration files used by applications installed from ports or packages"
 msgstr ""
 
-#: ../../using.rst:806
+#: ../../using.rst:906
 msgid "System wide fonts for graphical applications"
 msgstr ""
 
-#: ../../using.rst:809
+#: ../../using.rst:909
 msgid "System wide icons"
 msgstr ""
 
-#: ../../using.rst:811
+#: ../../using.rst:911
 msgid "Location of system ports tree (if installed)"
 msgstr ""
 
-#: ../../using.rst:814
+#: ../../using.rst:914
 msgid "System documentation and man pages"
 msgstr ""
 
-#: ../../using.rst:816
+#: ../../using.rst:916
 msgid "Command line programs for the superuser"
 msgstr ""
 
-#: ../../using.rst:818
+#: ../../using.rst:918
 msgid "Location of system source code (if installed)"
 msgstr ""
 
-#: ../../using.rst:821
+#: ../../using.rst:921
 msgid "Files that change (vary), such as log files and print jobs"
 msgstr ""
 
-#: ../../using.rst:842
+#: ../../using.rst:942
 msgid "How to Access Existing Shares"
 msgstr ""
 
-#: ../../using.rst:844
+#: ../../using.rst:944
 msgid ""
 "In the left frame, click :menuselection:`Network --> Samba Shares`, then the"
 " Workgroup name; if the network requires a username and password to browse "
@@ -971,28 +907,28 @@ msgid ""
 " in another desktop"
 msgstr ""
 
-#: ../../using.rst:854
+#: ../../using.rst:954
 msgid ""
 "Click :menuselection:`Go --> Connect to server --> SMB`; input the NETBIOS "
 "name of server, name of share, name of domain (or workgroup), and the "
 "share's username and password"
 msgstr ""
 
-#: ../../using.rst:860
+#: ../../using.rst:960
 msgid "Click :menuselection:`Browse Network --> Windows Network`"
 msgstr ""
 
-#: ../../using.rst:863
+#: ../../using.rst:963
 msgid "In the left frame, click :menuselection:`Network --> Windows Network`"
 msgstr ""
 
-#: ../../using.rst:1635
+#: ../../using.rst:1919
 msgid ""
 "The next screen, shown in :numref:`Figure %s <print8>`, can be used to "
 "modify the properties of the printer."
 msgstr ""
 
-#: ../../using.rst:1677
+#: ../../using.rst:1961
 msgid ""
 "If the wizard is unable to even detect the device, try to manually add the "
 "information for the print device. In the :guilabel:`Select Device` screen "
@@ -1001,7 +937,7 @@ msgid ""
 "connection:"
 msgstr ""
 
-#: ../../using.rst:1712
+#: ../../using.rst:1996
 msgid ""
 "If the default driver is not working, try re-adding the printer. At the "
 ":ref:`print7` screen, try selecting a different driver."
@@ -1048,11 +984,11 @@ msgid ""
 "detailed descriptions of every element of |lumina|."
 msgstr ""
 
-#: ../../using.rst:178
+#: ../../using.rst:679
 msgid "|sysadm|"
 msgstr ""
 
-#: ../../using.rst:688
+#: ../../using.rst:788
 msgid ""
 "Several file managers are available for installation using |appcafe|. "
 ":numref:`Table %s <filemanagers>` provides an overview of several popular "
@@ -1063,14 +999,14 @@ msgid ""
 " in its :guilabel:`Screenshot` column."
 msgstr ""
 
-#: ../../using.rst:1741
+#: ../../using.rst:2025
 msgid ""
 "If the scanner is part of an HP All-in-One device, make sure the \"hplip\" "
 "package is installed. Use |appcafe| to see if the driver is installed, and "
 "install it if not."
 msgstr ""
 
-#: ../../using.rst:189
+#: ../../using.rst:690
 msgid ""
 "The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_ is "
 "recommended for new |trueos| users, while the `Server "
@@ -1078,26 +1014,26 @@ msgid ""
 "<https://api.sysadm.us/>`_ guides are available for advanced users."
 msgstr ""
 
-#: ../../using.rst:665
+#: ../../using.rst:1801
 msgid ""
 "Use :command:`git` to fetch the FreeBSD ports tree on a local system. "
 "Specifically, the |trueos| branch of the FreeBSD ports tree is pulled, which"
 " is regularly updated against the base FreeBSD ports tree."
 msgstr ""
 
-#: ../../using.rst:927
+#: ../../using.rst:234
 msgid "Network Devices"
 msgstr ""
 
-#: ../../using.rst:549
+#: ../../using.rst:1685
 msgid "Automounter"
 msgstr ""
 
-#: ../../using.rst:551
+#: ../../using.rst:1687
 msgid "The *Mount Tray* has been replaced by the new **Automounter**."
 msgstr ""
 
-#: ../../using.rst:553
+#: ../../using.rst:1689
 msgid ""
 "The automounter, based on the :command:`devd` and :command:`automount` "
 "utilities, facilitates mounting and unmounting USB storage devices and "
@@ -1107,82 +1043,82 @@ msgid ""
 "the system."
 msgstr ""
 
-#: ../../using.rst:560
+#: ../../using.rst:1696
 msgid ""
 "Currently, the automounter ignores internal hard drives (sata, ide) and "
 "networking shares. It does support many different filesystems:"
 msgstr ""
 
-#: ../../using.rst:563
+#: ../../using.rst:1699
 msgid "cd9660"
 msgstr ""
 
-#: ../../using.rst:565
+#: ../../using.rst:1701
 msgid ""
 "exFAT (Requires :file:`mount.exfat-fuse`. Possible intermittent detection "
 "issues.)"
 msgstr ""
 
-#: ../../using.rst:568
+#: ../../using.rst:1704
 msgid "ext2"
 msgstr ""
 
-#: ../../using.rst:570
+#: ../../using.rst:1706
 msgid "ext4 (Requires :file:`ext4fuse`)"
 msgstr ""
 
-#: ../../using.rst:572
+#: ../../using.rst:1708
 msgid "FAT32"
 msgstr ""
 
-#: ../../using.rst:574
+#: ../../using.rst:1710
 msgid "MSDOSFS"
 msgstr ""
 
-#: ../../using.rst:576
+#: ../../using.rst:1712
 msgid "MTPfs (Requires :file:`simple-mtpfs`)"
 msgstr ""
 
-#: ../../using.rst:578
+#: ../../using.rst:1714
 msgid "NTFS (Requires :file:`ntfs-3g`)"
 msgstr ""
 
-#: ../../using.rst:580
+#: ../../using.rst:1716
 msgid "ReiserFS"
 msgstr ""
 
-#: ../../using.rst:582
+#: ../../using.rst:1718
 msgid "UDF"
 msgstr ""
 
-#: ../../using.rst:584
+#: ../../using.rst:1720
 msgid "UFS"
 msgstr ""
 
-#: ../../using.rst:586
+#: ../../using.rst:1722
 msgid "XFS"
 msgstr ""
 
-#: ../../using.rst:588
+#: ../../using.rst:1724
 msgid ""
 "Linux based filesystems may have some limitations. See :numref:`Table %s "
 "<filesys support>` for more details."
 msgstr ""
 
-#: ../../using.rst:591
+#: ../../using.rst:1727
 msgid ""
 "To engage the automounter, attach a USB storage device or insert optical "
 "media to the system. The automounter detects the device by ID and adds icons"
 " to the desktop, as seen in :numref:`Figure %s <automnt1>`:"
 msgstr ""
 
-#: ../../using.rst:603
+#: ../../using.rst:1739
 msgid ""
 "The appearance of these icons do **not** mean the device is mounted. Devices"
 " are only mounted when the user begins to interact with the device."
 msgstr ""
 
-#: ../../using.rst:611
+#: ../../using.rst:1747
 msgid ""
 "For example, the above image shows USB drive \"FreeNAS\" attached to the "
 "system. After double-clicking the desktop icon, \"Insight File Manager\" "
@@ -1192,7 +1128,7 @@ msgid ""
 "the system."
 msgstr ""
 
-#: ../../using.rst:618
+#: ../../using.rst:1754
 msgid ""
 "In the CLI, the automounter adds a :file:`.desktop` file to :file:`/media` "
 "when a new USB/Optical device is added. Open the :file:`.desktop` file with "
@@ -1200,83 +1136,62 @@ msgid ""
 "the symlink is immediately removed from :file:`/media`."
 msgstr ""
 
-#: ../../using.rst:624
-msgid ""
-"The :file:`/autofs/*` directories are not cleaned when the device is "
-"removed. However, after device removal the directories are no longer "
-"associated with the device in the backend. For this reason, :file:`/media` "
-"is more useful to identify which devices are attached to the system."
-msgstr ""
-
-#: ../../using.rst:630
-msgid ""
-"Alternately, all device names are added to the :file:`/autofs` directory. "
-"Attached devices are also accessed by navigating to "
-":file:`/autofs/<devicename>`."
-msgstr ""
-
-#: ../../using.rst:634
+#: ../../using.rst:1770
 msgid "Known limitations:"
 msgstr ""
 
-#: ../../using.rst:636
+#: ../../using.rst:1772
 msgid ""
 "UFS permissions. These permissions are preserved on USB media. To allow "
 "multiple users access to files from a UFS stick, those files' permissions "
 "need to be set to *read/write by any user* (777)."
 msgstr ""
 
-#: ../../using.rst:640
+#: ../../using.rst:1776
 msgid ""
 "ZFS pools are not yet supported. This is under investigation to ascertain if"
 " it can ever work with :command:`automount`."
 msgstr ""
 
-#: ../../using.rst:643
-msgid ""
-"Optical Media links are not yet created on the desktop. Optical media is "
-"accessible by navigating to :file:`/autofs`."
-msgstr ""
-
-#: ../../using.rst:646
+#: ../../using.rst:1782
 msgid ""
 "Any file system with limited FreeBSD support (HFS or EXT) remain at the same"
 " level of limited support."
 msgstr ""
 
-#: ../../using.rst:649
+#: ../../using.rst:1785
 msgid "exFAT detection issues are being investigated."
 msgstr ""
 
-#: ../../using.rst:651
+#: ../../using.rst:1787
 msgid "Coming soon:"
 msgstr ""
 
-#: ../../using.rst:653
+#: ../../using.rst:1789
 msgid "Optical media support for the desktop"
 msgstr ""
 
-#: ../../using.rst:655
+#: ../../using.rst:1791
 msgid "Android device support"
 msgstr ""
 
-#: ../../using.rst:657
+#: ../../using.rst:1793
 msgid "Possible support for ZFS pools"
 msgstr ""
 
-#: ../../using.rst:703
+#: ../../using.rst:803
 msgid "Available File Managers"
 msgstr ""
 
-#: ../../using.rst:741
+#: ../../using.rst:841
 msgid "|TrueOS| Directory Structure"
 msgstr ""
 
-#: ../../using.rst:838
+#: ../../using.rst:938
 msgid "Utilities that Support Windows Shares"
 msgstr ""
 
-#: ../../using.rst:294
+#: ../../using.rst:2056
 msgid ""
 "|trueos| installs with `Google Noto <http://www.google.com/get/noto/>`_ "
 "which provides multi-lingual Sans and Serif fonts. Many other fonts are "
@@ -1284,7 +1199,7 @@ msgid ""
 "require any additional configuration to \"just work\"."
 msgstr ""
 
-#: ../../using.rst:299
+#: ../../using.rst:2061
 msgid ""
 "If you have downloaded or purchased a collection of font, |trueos| can be "
 "configured to also use those fonts. Become the superuser and copy the "
@@ -1293,26 +1208,26 @@ msgid ""
 "fonts cache."
 msgstr ""
 
-#: ../../using.rst:311
+#: ../../using.rst:2073
 msgid ""
 "|trueos| includes a graphical utility for managing the sound card's mixer "
 "settings. The utility is accessed by clicking the :guilabel:`speaker` icon "
 "in the system tray."
 msgstr ""
 
-#: ../../using.rst:328
+#: ../../using.rst:2090
 msgid "Output Options"
 msgstr ""
 
-#: ../../using.rst:330
+#: ../../using.rst:2092
 msgid ":numref:`Figure %s <sound2>` shows the :guilabel:`Mixer` menu:"
 msgstr ""
 
-#: ../../using.rst:337
+#: ../../using.rst:2099
 msgid "Mixer Controls"
 msgstr ""
 
-#: ../../using.rst:339
+#: ../../using.rst:2101
 msgid ""
 "The :guilabel:`Mixer Controls` screen provides sliders to modify the left "
 "and right channels that control volume, pcm (the sound driver), the speaker,"
@@ -1321,24 +1236,24 @@ msgid ""
 ":guilabel:`Unmute`, depending on its current mute state."
 msgstr ""
 
-#: ../../using.rst:346
+#: ../../using.rst:2108
 msgid ""
 ":numref:`Figure %s <sound3>` shows the :guilabel:`System Configuration` tab "
 "of the :guilabel:`Mixer`."
 msgstr ""
 
-#: ../../using.rst:354
+#: ../../using.rst:2116
 msgid "System Sound Configuration"
 msgstr ""
 
-#: ../../using.rst:379
+#: ../../using.rst:2141
 msgid ""
 "To re-add the mixer icon after removing it, type :samp:`pc-mixer &` in a "
 "command line. Alternately, open this application without adding it back to "
 "the system tray by typing :samp:`pc-mixer -notray`."
 msgstr ""
 
-#: ../../using.rst:384
+#: ../../using.rst:2146
 msgid ""
 "|trueos| provides full `PulseAudio "
 "<https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ support, which can"
@@ -1349,13 +1264,13 @@ msgid ""
 " network sound devices and mixer levels."
 msgstr ""
 
-#: ../../using.rst:445
+#: ../../using.rst:2160
 msgid ""
 "|trueos| is pre-configured to support most multimedia formats and makes it "
 "easy to install most open source media applications using |appcafe|."
 msgstr ""
 
-#: ../../using.rst:448
+#: ../../using.rst:2163
 msgid ""
 "After installing a web browser, most media formats become playable, "
 "including YouTube™ videos, Internet radio, and many trailer and movie sites."
@@ -1364,7 +1279,7 @@ msgid ""
 "distribution of the codec required to play the media format."
 msgstr ""
 
-#: ../../using.rst:455
+#: ../../using.rst:2170
 msgid ""
 "When troubleshooting Java™ or Flash® for your browser, please refer to the "
 "`FreeBSD browser <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
@@ -1372,39 +1287,25 @@ msgid ""
 "instructions for installing Java™ and Flash® plugins with specific browsers."
 msgstr ""
 
-#: ../../using.rst:490
-msgid ""
-"`VLC media player <http://www.videolan.org/vlc/>`_: Open Source cross-"
-"platform multimedia player capable of playing most multimedia files, DVD and"
-" CD formats, and some streaming protocols."
-msgstr ""
-
-#: ../../using.rst:507
-msgid ""
-"Kodi can be installed using |appcafe|. Once installed, an entry for "
-":guilabel:`Kodi media center` is added to :guilabel:`Browse Applications`. "
-"Kodi is also started by typing :command:`kodi` from a command prompt."
-msgstr ""
-
-#: ../../using.rst:600
+#: ../../using.rst:1736
 msgid ""
 "USB icons added to desktop via the automounter. Hovering over the icon "
 "displays the actual device name and filesystem type."
 msgstr ""
 
-#: ../../using.rst:607
+#: ../../using.rst:1743
 msgid ""
 "Either navigating to a device or beginning copy operations mounts the "
 "device. The device is unmounted by the **autounmountd** service after the "
 "user navigates away and/or file copy operations stop."
 msgstr ""
 
-#: ../../using.rst:673
+#: ../../using.rst:1809
 msgid ""
 ":samp:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`"
 msgstr ""
 
-#: ../../using.rst:879
+#: ../../using.rst:186
 msgid ""
 "After installation, a wireless configuration icon appears in the system tray"
 " if |trueos| detects a supported wireless card. Hover over the wireless icon"
@@ -1414,11 +1315,11 @@ msgid ""
 "of wireless device."
 msgstr ""
 
-#: ../../using.rst:891
+#: ../../using.rst:198
 msgid "System Tray Wireless Information"
 msgstr ""
 
-#: ../../using.rst:893
+#: ../../using.rst:200
 msgid ""
 "If you right-click the wireless icon, a list of detected wireless networks "
 "displays. Click the name of a network to associate with it. The right-click "
@@ -1429,7 +1330,7 @@ msgid ""
 " no longer shows in the system tray."
 msgstr ""
 
-#: ../../using.rst:901
+#: ../../using.rst:208
 msgid ""
 "To view or manually configure a network interface, click :guilabel:`Start "
 "the Network Manager` within |sysadm| or type :samp:`sudo pc-netmanager`. If "
@@ -1442,25 +1343,25 @@ msgid ""
 "an Intel wireless interface that uses the **wlan** driver."
 msgstr ""
 
-#: ../../using.rst:919
+#: ../../using.rst:226
 msgid ""
 "The rest of this section describes each tab of the Network Manager utility "
 "and demonstrates how to view and configure the network settings for both "
 "Ethernet and wireless devices."
 msgstr ""
 
-#: ../../using.rst:929
+#: ../../using.rst:236
 msgid ""
 "If you highlight an Ethernet interface in the :guilabel:`Devices` tab and "
 "either click :guilabel:`Configure` or double-click the interface name, the "
 "screen shown in :numref:`Figure %s <network3>` appears."
 msgstr ""
 
-#: ../../using.rst:938
+#: ../../using.rst:245
 msgid "Network Settings for an Ethernet Interface"
 msgstr ""
 
-#: ../../using.rst:960
+#: ../../using.rst:267
 msgid ""
 "If the Ethernet network uses 802.1x authentication, check :guilabel:`Enable "
 "WPA authentication`, which enable the :guilabel:`Configure WPA` button. "
@@ -1468,30 +1369,30 @@ msgid ""
 "required by the network."
 msgstr ""
 
-#: ../../using.rst:965
+#: ../../using.rst:272
 msgid ""
 "By default, :guilabel:`Disable this network device` is unchecked. If this "
 "checkbox is filled, |trueos| immediately stops the interface from using the "
 "network. The interface remains inactive until this checkbox is unchecked."
 msgstr ""
 
-#: ../../using.rst:983
+#: ../../using.rst:290
 msgid "Ethernet Interface Network Settings - Advanced"
 msgstr ""
 
-#: ../../using.rst:994
+#: ../../using.rst:301
 msgid "Ethernet Interface Network Settings - Info"
 msgstr ""
 
-#: ../../using.rst:1000
+#: ../../using.rst:307
 msgid "Repeat this procedure for each desired network interface."
 msgstr ""
 
-#: ../../using.rst:1022
+#: ../../using.rst:329
 msgid "Wireless Configuration"
 msgstr ""
 
-#: ../../using.rst:1024
+#: ../../using.rst:331
 msgid ""
 "To associate with a wireless network, click :guilabel:`Scan` to view a list "
 "of connectable wireless networks. Highlight the desired network to associate"
@@ -1502,23 +1403,11 @@ msgid ""
 "Network Profiles` section."
 msgstr ""
 
-#: ../../using.rst:1035
-msgid ""
-"If multiple networks are added, use the arrow keys to place them in the "
-"desired connection order. |trueos| attempts to connect to networks in order "
-"from first to last in the connection list. When prioritizing connections, "
-"click :guilabel:`Apply`. A pop-up message then indicates |trueos| is "
-"restarting the network. Next, an an IP address and status of **associated** "
-"appears when hovering over the wireless icon in the system tray. If this "
-"does not happen, double-check for errors in the configuration values and "
-"read the Troubleshooting section on :ref:`Network Help`."
-msgstr ""
-
-#: ../../using.rst:1056
+#: ../../using.rst:363
 msgid "Configuring Wireless Authentication Settings"
 msgstr ""
 
-#: ../../using.rst:1064
+#: ../../using.rst:371
 msgid ""
 "**WEP:** This type of network can be configured to use either a hex or a "
 "plaintext key and Network Manager will automatically select the type of "
@@ -1531,15 +1420,15 @@ msgid ""
 ":guilabel:`key index` indicates which desired key to use."
 msgstr ""
 
-#: ../../using.rst:1080
+#: ../../using.rst:387
 msgid "WEP Security Settings"
 msgstr ""
 
-#: ../../using.rst:1093
+#: ../../using.rst:400
 msgid "WPA Personal Security Settings"
 msgstr ""
 
-#: ../../using.rst:1095
+#: ../../using.rst:402
 msgid ""
 "**WPA Enterprise:** If you click :guilabel:`WPA Enterprise` then "
 ":guilabel:`Configure`, the screen shown in :numref:`Figure %s <network10>` "
@@ -1548,11 +1437,11 @@ msgid ""
 "file, and input and verify the password."
 msgstr ""
 
-#: ../../using.rst:1107
+#: ../../using.rst:414
 msgid "WPA Enterprise Security Settings"
 msgstr ""
 
-#: ../../using.rst:1114
+#: ../../using.rst:421
 msgid ""
 "To disable this wireless interface, check :guilabel:`Disable this wireless "
 "device` in the :guilabel:`General` tab for the device. This setting is "
@@ -1560,15 +1449,15 @@ msgid ""
 "to untrusted wireless networks."
 msgstr ""
 
-#: ../../using.rst:1139
+#: ../../using.rst:446
 msgid "Wireless Interface - Advanced"
 msgstr ""
 
-#: ../../using.rst:1149
+#: ../../using.rst:456
 msgid "Wireless Interface - Info"
 msgstr ""
 
-#: ../../using.rst:1157
+#: ../../using.rst:464
 msgid ""
 "The :guilabel:`Network Configuration (Advanced)` tab of the Network Manager "
 "is seen in :numref:`Figure %s <network13>`. The displayed information is for"
@@ -1576,59 +1465,59 @@ msgid ""
 "interface to configure is highlighted in the :guilabel:`Devices` tab."
 msgstr ""
 
-#: ../../using.rst:1168
+#: ../../using.rst:475
 msgid "Network Configuration - Advanced"
 msgstr ""
 
-#: ../../using.rst:1183
+#: ../../using.rst:490
 msgid ""
 "To change or set the default gateway, check :guilabel:`Enable Custom "
 "Gateway` box and input the IP address of the desired gateway."
 msgstr ""
 
-#: ../../using.rst:1219
+#: ../../using.rst:526
 msgid ""
 "If any changes are made within this window, click :guilabel:`Apply` to save "
 "them."
 msgstr ""
 
-#: ../../using.rst:1237
+#: ../../using.rst:544
 msgid "Proxy Settings Configuration"
 msgstr ""
 
-#: ../../using.rst:1257
+#: ../../using.rst:564
 msgid ""
 "Proxy settings are saved to the :file:`/etc/profile` and "
 ":file:`/etc/csh.cshrc` files so they are available to both the |trueos| "
 "utilities and any application using :command:`fetch`."
 msgstr ""
 
-#: ../../using.rst:1261
+#: ../../using.rst:568
 msgid ""
 "Applications not packaged with the operating system, such as web browsers, "
 "may require configuring proxy support using that application's configuration"
 " utility."
 msgstr ""
 
-#: ../../using.rst:1265
+#: ../../using.rst:572
 msgid ""
 "If you apply any changes to this tab, a pop-up message warns the user may "
 "have to log out and back in for the proxy settings to take effect."
 msgstr ""
 
-#: ../../using.rst:1283
+#: ../../using.rst:591
 msgid "Setup Access Point"
 msgstr ""
 
-#: ../../using.rst:1293
+#: ../../using.rst:601
 msgid "Access Point Basic Setup"
 msgstr ""
 
-#: ../../using.rst:1312
+#: ../../using.rst:620
 msgid "Access Point Advanced Setup"
 msgstr ""
 
-#: ../../using.rst:1334
+#: ../../using.rst:642
 msgid ""
 "Tor mode uses `Tor <https://www.torproject.org/>`_, `socat <http://www.dest-"
 "unreach.org/socat/>`_, and a built-in script which automatically creates the"
@@ -1638,7 +1527,7 @@ msgid ""
 "network."
 msgstr ""
 
-#: ../../using.rst:1341
+#: ../../using.rst:649
 msgid ""
 "To start Tor mode, right-click the network icon in the system tray and check"
 " :guilabel:`Route through TOR`. Enter your password via the pop-up shown in "
@@ -1646,37 +1535,37 @@ msgid ""
 "browser window directed to https://check.torproject.org"
 msgstr ""
 
-#: ../../using.rst:1351
+#: ../../using.rst:659
 msgid "Enabling Tor Mode"
 msgstr ""
 
-#: ../../using.rst:1353
+#: ../../using.rst:661
 msgid ""
 "If you have never used the Tor network before, it is recommended to review "
 "the `Tor FAQ <https://www.torproject.org/docs/faq.html.en>`_."
 msgstr ""
 
-#: ../../using.rst:1356
+#: ../../using.rst:664
 msgid ""
 "The system remains in Tor mode until manually disabled. To disable Tor mode,"
 " right-click the network icon and uncheck :guilabel:`Route through Tor`."
 msgstr ""
 
-#: ../../using.rst:1360
+#: ../../using.rst:668
 msgid ""
 "To enable and disable Tor mode from the command line or on a desktop with no"
 " system tray, use these commands:"
 msgstr ""
 
-#: ../../using.rst:1363
+#: ../../using.rst:671
 msgid ":samp:`sudo enable-tor-mode` enables tor mode."
 msgstr ""
 
-#: ../../using.rst:1365
+#: ../../using.rst:673
 msgid ":samp:`sudo disable-tor-mode` disables tor mode."
 msgstr ""
 
-#: ../../using.rst:1385
+#: ../../using.rst:2237
 msgid ""
 "Wine can be installed using |appcafe|. After installing, it can be started "
 "by typing :command:`winecfg` in the command line. The first time running "
@@ -1684,11 +1573,11 @@ msgid ""
 "prompted, click :guilabel:`Install` in the pop-up menu."
 msgstr ""
 
-#: ../../using.rst:1398
+#: ../../using.rst:2250
 msgid "Wine Configuration Menu"
 msgstr ""
 
-#: ../../using.rst:1400
+#: ../../using.rst:2252
 msgid ""
 "Click :guilabel:`Add application` to browse to the application's installer "
 "file. By default, the contents of the hard drive will be listed under "
@@ -1700,18 +1589,18 @@ msgid ""
 " the superuser."
 msgstr ""
 
-#: ../../using.rst:1410
+#: ../../using.rst:2262
 msgid ""
 "The system then accesses the media and you can now select the installer "
 "file. Once selected, click :guilabel:`Apply` then :guilabel:`OK` to exit the"
 " configuration utility."
 msgstr ""
 
-#: ../../using.rst:1422
+#: ../../using.rst:2274
 msgid "Installing the Application Using :command:`winefile`"
 msgstr ""
 
-#: ../../using.rst:1424
+#: ../../using.rst:2276
 msgid ""
 "Click the button representing the drive which contains the installer and "
 "double-click on the installation file (e.g. :file:`setup.exe`). The "
@@ -1719,65 +1608,17 @@ msgid ""
 "system."
 msgstr ""
 
-#: ../../using.rst:1429
+#: ../../using.rst:2281
 msgid ""
 "You may need need to unmount a CD/DVD before it ejects. As the superuser, "
 "type :samp:`umount /mnt`."
 msgstr ""
 
-#: ../../using.rst:1441
+#: ../../using.rst:2293
 msgid "Running the Installed Application"
 msgstr ""
 
-#: ../../using.rst:1449
-msgid ""
-"Your |trueos| system is secure by default. This section provides an overview"
-" of the built-in security features. If you want to know more about "
-"increasing the security of your system beyond its current level, additional "
-"resources are also provided in this section."
-msgstr ""
-
-#: ../../using.rst:1456
-msgid ""
-"**Naturally immune to viruses and other malware:** Most viruses are written "
-"to exploit Windows systems and do not understand the binaries or paths found"
-" on a |trueos| system. Antivirus software is still available in the Security"
-" section of |appcafe|, as this is useful when sending or forwarding email "
-"attachments to users running other operating systems."
-msgstr ""
-
-#: ../../using.rst:1463
-msgid ""
-"**Potential for serious damage is limited:** File and directory ownership "
-"and permissions along with separate user and group functions mean, as an "
-"ordinary user, any program executed is only granted the abilities and access"
-" of the user. A user not a member of the *wheel* group can not switch to "
-"administrative access and can not enter or list the contents of a directory "
-"not been set for universal access."
-msgstr ""
-
-#: ../../using.rst:1474
-msgid ""
-"**Very few services are enabled by default:** View which services are "
-"started at boot time by reading through the output of :command:`rc-update`."
-msgstr ""
-
-#: ../../using.rst:1486
-msgid ""
-"**SSH root logins are disabled by default:** If SSH is enabled, login as a "
-"regular user and use :command:`su` or :command:`sudo` when administrative "
-"actions are required. Do not change this setting, as it prevents an unwanted"
-" user from having complete access to the system."
-msgstr ""
-
-#: ../../using.rst:1518
-msgid ""
-":ref:`Tor Mode` can be used to anonymously access Internet sites as it "
-"automatically forwards all Internet traffic through the `Tor Project's "
-"<https://www.torproject.org/>`_ transparent proxy service."
-msgstr ""
-
-#: ../../using.rst:1543
+#: ../../using.rst:1827
 msgid ""
 "CUPS provides an easy-to-use utility for adding and managing printers. "
 "Whether or not it automatically detects a printer depends upon how well the "
@@ -1788,7 +1629,7 @@ msgid ""
 " for ideas on locating correct drivers for your printer."
 msgstr ""
 
-#: ../../using.rst:1558
+#: ../../using.rst:1842
 msgid ""
 "Before configuring your printer, see if a driver already exists for your "
 "particular model, and if so, which driver is recommended. If you are "
@@ -1800,7 +1641,7 @@ msgid ""
 "see the results."
 msgstr ""
 
-#: ../../using.rst:1567
+#: ../../using.rst:1851
 msgid ""
 "For the HP DeskJet model example, the HPLIP driver is recommended. In "
 "|trueos|, the HPLIP driver is available as an optional package called "
@@ -1808,7 +1649,7 @@ msgid ""
 "if not."
 msgstr ""
 
-#: ../../using.rst:1578
+#: ../../using.rst:1862
 msgid ""
 "Once printer support is determined, ensure the printer is plugged into your "
 "computer or, if the printer is a network printer, both your computer and the"
@@ -1817,22 +1658,22 @@ msgid ""
 "configuration, shown in :numref:`Figure %s <print4>`."
 msgstr ""
 
-#: ../../using.rst:1589
+#: ../../using.rst:1873
 msgid "Printer Configuration"
 msgstr ""
 
-#: ../../using.rst:1591
+#: ../../using.rst:1875
 msgid ""
 "To add a new printer, click :guilabel:`Add Printer`. CUPS will pause for a "
 "few seconds as it searches for available printers. When finished, a screen "
 "similar to :numref:`Figure %s <print5>` is shown."
 msgstr ""
 
-#: ../../using.rst:1600
+#: ../../using.rst:1884
 msgid "Print Device Selection"
 msgstr ""
 
-#: ../../using.rst:1602
+#: ../../using.rst:1886
 msgid ""
 "In this example, the wizard has found the HP DeskJet 3630 printer on both "
 "the USB port (first entry) and the wireless network (second entry). Click "
@@ -1841,11 +1682,11 @@ msgid ""
 "shown in :numref:`Figure %s <print6>` is shown."
 msgstr ""
 
-#: ../../using.rst:1613
+#: ../../using.rst:1897
 msgid "Describe Printer"
 msgstr ""
 
-#: ../../using.rst:1620
+#: ../../using.rst:1904
 msgid ""
 "Once you click :guilabel:`Continue`, the next screen, shown in "
 ":numref:`Figure %s <print7>`, displays a summary of the selected options and"
@@ -1855,15 +1696,15 @@ msgid ""
 "which describes how to use this screen in more detail."
 msgstr ""
 
-#: ../../using.rst:1633
+#: ../../using.rst:1917
 msgid "Viewing the Default Driver"
 msgstr ""
 
-#: ../../using.rst:1643
+#: ../../using.rst:1927
 msgid "Modify Print Properties"
 msgstr ""
 
-#: ../../using.rst:1645
+#: ../../using.rst:1929
 msgid ""
 "It is recommended to take a few minutes to review the settings in the "
 ":guilabel:`General`, :guilabel:`Banners`, and :guilabel:`Policies` tabs, as "
@@ -1875,18 +1716,18 @@ msgid ""
 " in :numref:`Figure %s <print9>`."
 msgstr ""
 
-#: ../../using.rst:1659
+#: ../../using.rst:1943
 msgid "Manage Printer"
 msgstr ""
 
-#: ../../using.rst:1661
+#: ../../using.rst:1945
 msgid ""
 "Print a test page to ensure the printer is working. Verify the printer has "
 "paper and click :menuselection:`Maintenance -> Print Test Page`. If a test "
 "page does not print, refer to the :ref:`Printer Help` of this handbook."
 msgstr ""
 
-#: ../../using.rst:1683
+#: ../../using.rst:1967
 msgid ""
 "**USB:** This entry only appears if a printer is plugged into a USB port and"
 " the number of entries vary depending on the number of USB ports on the "
@@ -1894,14 +1735,14 @@ msgid ""
 "the USB port your printer is plugged into."
 msgstr ""
 
-#: ../../using.rst:1699
+#: ../../using.rst:1983
 msgid ""
 "**AppSocket/HP JetDirect:** Select this option if connecting to an HP "
 "network printer. Input the IP address of the printer. Only change the port "
 "number if the printer is using a port other than the default of *9100*."
 msgstr ""
 
-#: ../../using.rst:1715
+#: ../../using.rst:1999
 msgid ""
 "Alternately, if you have a PPD driver from the manufacturer's website or on "
 "the CD packed in with the printer, click :guilabel:`Choose File` to browse "
@@ -1911,7 +1752,7 @@ msgid ""
 "compressed."
 msgstr ""
 
-#: ../../using.rst:1728
+#: ../../using.rst:2012
 msgid ""
 "While no scanning applications are included with |trueos|, there are a few "
 "options available via |appcafe|. One good option is `XSane "
@@ -1919,76 +1760,44 @@ msgid ""
 "rest of this section describes using *XSane* for scanning."
 msgstr ""
 
-#: ../../using.rst:1753
+#: ../../using.rst:2037
 msgid "XSane Interface"
 msgstr ""
 
-#: ../../using.rst:461
+#: ../../using.rst:2176
 msgid ""
 "|appcafe| contains several dozen applications for playing and editing "
 "multimedia. It includes these popular applications:"
 msgstr ""
 
-#: ../../using.rst:479
+#: ../../using.rst:2194
 msgid ""
 "`gtkpod <http://gtkpod.org/libgpod/>`_: Graphical user interface for the "
 "Apple iPod."
 msgstr ""
 
-#: ../../using.rst:486
+#: ../../using.rst:2201
 msgid ""
 "`SMPlayer <http://www.smplayer.info/>`_: Universal media player which can "
 "handle any media format and play audio CDs, DVDs, (S)VCDs, TV/radio cards, "
 "YouTube™ and SHOUTcast™ streams."
 msgstr ""
 
-#: ../../using.rst:523
-msgid ""
-"`Plex Home Theater <https://www.plex.tv/>`_ is a centralized media playback "
-"system. The central Plex Media Server streams media to many Plex player Apps"
-" which are used to view your media library and watch shows."
-msgstr ""
-
-#: ../../using.rst:533
-msgid ""
-"Once installed, an entry for :guilabel:`Plex Home Theater` is also added to "
-"the login manager so you can login directly to the home theater instead of a"
-" desktop."
-msgstr ""
-
-#: ../../using.rst:715
+#: ../../using.rst:815
 msgid "`<http://www.mucommander.com/index.html>`_"
 msgstr ""
 
-#: ../../using.rst:719
+#: ../../using.rst:819
 msgid "`<https://wiki.lxde.org/en/PCManFM>`_"
 msgstr ""
 
-#: ../../using.rst:1528
-msgid "`FreeBSD Security Information <https://www.freebsd.org/security/>`_"
-msgstr ""
-
-#: ../../using.rst:1530
-msgid ""
-"`Security Section of FreeBSD Handbook "
-"<https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_"
-msgstr ""
-
-#: ../../using.rst:1540
+#: ../../using.rst:1824
 msgid ""
 "Like many open source operating systems, |trueos| uses the Common Unix "
 "Printing System (`CUPS <https://www.cups.org/>`_) to manage printing."
 msgstr ""
 
-#: ../../using.rst:1694
-msgid ""
-"**HTTP:** This option allows you to manually type in the URI to the printer."
-" A list of possible URIs is available on the `CUPS site "
-"<https://www.cups.org/doc/network.html#TABLE1>`_. To use HTTP over an "
-"encrypted connection, select :guilabel:`https` instead."
-msgstr ""
-
-#: ../../using.rst:970
+#: ../../using.rst:277
 msgid ""
 "The :guilabel:`Advanced` tab, seen in :numref:`Figure %s <network4>`, allows"
 " advanced users to manually input a :wiki:`MAC address <MAC_address>` or "
@@ -1998,7 +1807,7 @@ msgid ""
 "understanding of how to input an appropriate replacement address."
 msgstr ""
 
-#: ../../using.rst:1378
+#: ../../using.rst:2230
 msgid ""
 "Wine is not guaranteed to work with every Windows application. You can "
 "search for desired applications in the :guilabel:`Browse Apps` section of "
@@ -2006,13 +1815,6 @@ msgid ""
 " <https://wiki.winehq.org/Main_Page>`_ contains resources to get started and"
 " troubleshooting reference material if problems are encountered with a "
 "Windows application."
-msgstr ""
-
-#: ../../using.rst:1499
-msgid ""
-":wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is loaded "
-"by default for the Intel Core i5/i7 processors that support this encryption "
-"set. This support speeds up AES encryption and decryption."
 msgstr ""
 
 #: ../../using.rst:48
@@ -2069,62 +1871,7 @@ msgid ""
 "by default."
 msgstr ""
 
-#: ../../using.rst:512
-msgid ""
-"If you have never used Kodi before, take some time to skim through the `Kodi"
-" Wiki Manual <http://kodi.wiki/>`_. This post about using PC-BSD as a `home "
-"theater <https://forums.pcbsd.org/thread-19799.html>`_ contains a useful "
-"how-to for configuring Kodi."
-msgstr ""
-
-#: ../../using.rst:537
-msgid ""
-"The first time running or logging into Plex Home Theater, a wizard checks "
-"the audio settings and signs into your Plex account. If you have no Plex "
-"account, create one at `plex.tv <https://www.plex.tv/>`_. The wizard "
-"provides a PIN code and an URL to enter the code. Once the PIN is entered, "
-"the wizard connects and signs you in. Now it is possible to search for and "
-"watch media. To exit Plex, click :guilabel:`<` and :guilabel:`Quit`."
-msgstr ""
-
-#: ../../using.rst:1478
-msgid ""
-"**SSH is disabled by default:** SSH can only be enabled by the superuser. "
-"This setting prevents bots and other users from trying to access your "
-"system. If SSH is needed, add :command:`sshd_enable=YES` to "
-":file:`/etc/rc.conf`. Start the service by typing :command:`service sshd "
-"start`. A firewall rule also needs to be added using the |sysadm| "
-":sysclbk:`Firewall Manager <firewall-manager>` to allow SSH connections over"
-" TCP port 22."
-msgstr ""
-
-#: ../../using.rst:1491
-msgid ""
-"**sudo is installed:** It is configured to allow users in the *wheel* group "
-"permission to run an administrative command after typing their password. By "
-"default, the first user created during installation is added to the *wheel* "
-"group. Use the |sysadm| :sysclbk:`User Manager <user-manager>` to add other "
-"users to this group. Change the default :command:`sudo` configuration using "
-":command:`visudo` as the superuser."
-msgstr ""
-
-#: ../../using.rst:1504
-msgid ""
-"**Automatic notification of security advisories:** The |sysadm| "
-":sysclbk:`Update Manager <update-manager>` automatically notifies you if an "
-"update is available as the result of a `security advisory "
-"<https://www.freebsd.org/security/advisories.html>`_ affecting |trueos|. "
-"This allows you to keep your operating system fully patched with just the "
-"click of a mouse."
-msgstr ""
-
-#: ../../using.rst:1515
-msgid ""
-":sysclbk:`PersonaCrypt <personacrypt>` allows a user to use a removable, "
-"encrypted device as their home directory."
-msgstr ""
-
-#: ../../using.rst:1733
+#: ../../using.rst:2017
 msgid ""
 "To use your scanner, make sure the device is plugged into the |trueos| "
 "system and click :menuselection:`Browse Applications --> Scanner` or type "
@@ -2134,11 +1881,11 @@ msgid ""
 "of `supported scanners <http://www.sane-project.org/sane-backends.html>`_."
 msgstr ""
 
-#: ../../using.rst:396
+#: ../../using.rst:1638
 msgid "Flash Plugin"
 msgstr ""
 
-#: ../../using.rst:398
+#: ../../using.rst:1640
 msgid ""
 "|trueos| supports using a Flash plugin for those browsers/applications that "
 "use Flash. To begin using this plugin, search for and install \"linux-"
@@ -2147,40 +1894,30 @@ msgid ""
 "password when requested."
 msgstr ""
 
-#: ../../using.rst:404
+#: ../../using.rst:1646
 msgid ""
 "The \"nspluginwrapper\" is also required when using Flash. Install it with "
 "|appcafe| or by typing :samp:`[samp@examp] ~% sudo pkg install "
 "nspluginwrapper` in a command line."
 msgstr ""
 
-#: ../../using.rst:409
+#: ../../using.rst:1651
 msgid ""
 "Once *linux-flashplayer* and *nspluginwrapper* are installed, configure them"
 " by opening a command line and typing this command:"
 msgstr ""
 
-#: ../../using.rst:437
+#: ../../using.rst:1679
 msgid "\"about:plugins\" Example"
 msgstr ""
 
-#: ../../using.rst:425
+#: ../../using.rst:1667
 msgid ""
 "In this example, Flash is configured and ready for use with the Firefox "
 "browser. To confirm Flash is usable, open Firefox and type **about:plugins**"
 " in the address bar. An *Installed plugins* page displays, listing "
 "*Shockwave Flash* an installed plugin. See :numref:`Figure %s <flash1>` as "
 "an example of Firefox with Flash installed."
-msgstr ""
-
-#: ../../using.rst:19
-msgid ""
-"This chapter discusses using |trueos| for many common tasks. Because TrueOS "
-"incorporates the |lumina| desktop environment and |sysadm| system management"
-" utility, those projects are used for a variety of user customization tasks "
-"such as themeing, user management, and system backups. As each of these "
-"projects have their own documentation, links to the |lumina| and |sysadm| "
-"client handbooks are provided."
 msgstr ""
 
 #: ../../using.rst:85
@@ -2259,13 +1996,6 @@ msgid ""
 " box\", |trueos| includes several utilities built directly into |lumina|."
 msgstr ""
 
-#: ../../using.rst:140
-msgid ""
-":lumbk:`Archiver <https://lumina-"
-"desktop.org/handbook/luminautl.html#archiver>`: Provides file compression "
-"and decompression services."
-msgstr ""
-
 #: ../../using.rst:143
 msgid ""
 ":lumbk:`Calculator <luminautl.html#calculator>`: Basic calculator with "
@@ -2324,7 +2054,7 @@ msgid ""
 "the user to add, alter the position, and configure screens."
 msgstr ""
 
-#: ../../using.rst:180
+#: ../../using.rst:681
 msgid ""
 "Beginning with |trueos| 11, most of the system management utilities "
 "previously available in the |pcbsd| Control Panel have been rewritten to use"
@@ -2335,17 +2065,13 @@ msgid ""
 ":guilabel:`SysAdm: Control Panel`."
 msgstr ""
 
-#: ../../using.rst:195
+#: ../../using.rst:696
 msgid ""
 "The rest of this section describes the elements of TrueOS controlled by "
 "SysAdm, providing links to the relevant SysAdm documentation:"
 msgstr ""
 
-#: ../../using.rst:202
-msgid "Application Management"
-msgstr ""
-
-#: ../../using.rst:204
+#: ../../using.rst:703
 msgid ""
 ":sysclbk:`AppCafe <appcafe>` is a graphical interface for installing and "
 "managing FreeBSD packages. These are pre-built applications tested for use "
@@ -2354,7 +2080,7 @@ msgid ""
 "--> AppCafe`."
 msgstr ""
 
-#: ../../using.rst:210
+#: ../../using.rst:709
 msgid ""
 "|appcafe| breaks popular applications into a few categories and provides "
 "search functionality for users looking for a specific application. Users can"
@@ -2362,7 +2088,7 @@ msgid ""
 " more details or delete them from the system."
 msgstr ""
 
-#: ../../using.rst:215
+#: ../../using.rst:714
 msgid ""
 ":sysclbk:`Update Manager <update-manager>` is a graphical interface for "
 "keeping both |trueos| and its installed applications up to date. Users can "
@@ -2370,31 +2096,23 @@ msgid ""
 "configure automatic updating, and view the log files of previous updates."
 msgstr ""
 
-#: ../../using.rst:221
+#: ../../using.rst:720
 msgid ""
 "See :ref:`Updating TrueOS` for more details about using the "
 ":guilabel:`Update Manager`."
 msgstr ""
 
-#: ../../using.rst:228
-msgid "SysAdm Server Settings"
-msgstr ""
-
-#: ../../using.rst:230
+#: ../../using.rst:727
 msgid ""
 ":sysclbk:`Managing Remote Connections <managing-remote-connections>` "
 "provides instructions to create and manage SSL keys or certificate bundles."
 msgstr ""
 
-#: ../../using.rst:238
-msgid "System Management"
-msgstr ""
-
-#: ../../using.rst:240
+#: ../../using.rst:736
 msgid "|sysadm| provides the \"core\" for managing |trueos|:"
 msgstr ""
 
-#: ../../using.rst:242
+#: ../../using.rst:738
 msgid ""
 ":sysclbk:`Boot Environment Manager <boot-environment-manager>`: Create and "
 "manage ZFS Boot Environments (BEs). Boot Environments provide a \"point-in-"
@@ -2403,21 +2121,21 @@ msgid ""
 "BE are available."
 msgstr ""
 
-#: ../../using.rst:248
+#: ../../using.rst:744
 msgid ""
 ":sysclbk:`Mouse Settings <mouse-settings>`: Tool for adjusting the settings "
 "of a connected mouse. Acceleration, DPI, right or left hand, drift, button "
 "emulation, and scrolling are all adjustable."
 msgstr ""
 
-#: ../../using.rst:252
+#: ../../using.rst:748
 msgid ""
 ":sysclbk:`Firewall Manager <firewall-manager>`: This is used to configure "
 "all ports and firewalls for |trueos|. Options to *open* and *close* ports "
 "are available, including adjusting the firewall's autostart settings."
 msgstr ""
 
-#: ../../using.rst:257
+#: ../../using.rst:753
 msgid ""
 ":sysclbk:`Service Manager <service-manager>`: This allows viewing and "
 "configuring all the system's installed services. There are options to "
@@ -2425,7 +2143,7 @@ msgid ""
 "automatic starting of services are provided."
 msgstr ""
 
-#: ../../using.rst:262
+#: ../../using.rst:758
 msgid ""
 ":sysclbk:`Task Manager <task-manager>`: A graphical window into system "
 "resource usage and a list of all running applications. This provides details"
@@ -2433,7 +2151,7 @@ msgid ""
 " any currently running process."
 msgstr ""
 
-#: ../../using.rst:267
+#: ../../using.rst:763
 msgid ""
 ":sysclbk:`User Manager <user-manager>`: This utility controls users and "
 "groups. There are :guilabel:`Standard` and :guilabel:`Advanced` views for "
@@ -2441,18 +2159,14 @@ msgid ""
 " provided."
 msgstr ""
 
-#: ../../using.rst:272
+#: ../../using.rst:768
 msgid ""
 ":sysclbk:`PersonaCrypt <personacrypt>` security can also be added to user "
 "accounts. This encrypts a user account so it only becomes accessible with "
 "the proper password or by plugging in an associated USB drive."
 msgstr ""
 
-#: ../../using.rst:281
-msgid "Utilities"
-msgstr ""
-
-#: ../../using.rst:283
+#: ../../using.rst:777
 msgid ""
 ":sysclbk:`Life Preserver <life-preserver>` is the only utility currently "
 "included with |trueos|. This utility is used for system backups with "
@@ -2460,7 +2174,7 @@ msgid ""
 "easy management, replication, and scheduling of ZFS snapshots."
 msgstr ""
 
-#: ../../using.rst:315
+#: ../../using.rst:2077
 msgid ""
 ":numref:`Figure %s <sound1>` shows an example of highlighting the "
 ":guilabel:`Output` option after opening the Sound Mixer. If the system has "
@@ -2470,7 +2184,7 @@ msgid ""
 "reverts audio output back to the default."
 msgstr ""
 
-#: ../../using.rst:364
+#: ../../using.rst:2126
 msgid ""
 "**Audio Output Channel:** Use the drop-down menu to change the sound device "
 "and use :guilabel:`Test` to determine if sound is working. This is sometimes"
@@ -2482,9 +2196,1321 @@ msgid ""
 " audio output channel as the system default."
 msgstr ""
 
-#: ../../using.rst:374
+#: ../../using.rst:2136
 msgid "The :guilabel:`Disable PulseAudio` disables all PulseAudio support."
 msgstr ""
+
+#: ../../using.rst:700
+msgid "**Application Management**"
+msgstr ""
+
+#: ../../using.rst:724
+msgid "**SysAdm Server Settings**"
+msgstr ""
+
+#: ../../using.rst:732
+msgid "**System Management**"
+msgstr ""
+
+#: ../../using.rst:774
+msgid "**Utilities**"
+msgstr ""
+
+#: ../../using.rst:19
+msgid ""
+"This chapter discusses using |trueos| for many common tasks. Because TrueOS "
+"incorporates the |lumina| desktop environment and |sysadm| system management"
+" utility, those projects are used for a variety of user customization tasks "
+"such as theming, user management, and system backups. As each of these "
+"projects have their own documentation, links to the |lumina| and |sysadm| "
+"client handbooks are provided."
+msgstr ""
+
+#: ../../using.rst:140
+msgid ""
+":lumbk:`Archiver <luminautl.html#archiver>`: Provides file compression and "
+"decompression services."
+msgstr ""
+
+#: ../../using.rst:342
+msgid ""
+"If multiple networks are added, use the arrow keys to place them in the "
+"desired connection order. |trueos| attempts to connect to networks in order "
+"from first to last in the connection list. When prioritizing connections, "
+"click :guilabel:`Apply`. A pop-up message then indicates |trueos| is "
+"restarting the network. Next, an IP address and status of **associated** "
+"appears when hovering over the wireless icon in the system tray. If this "
+"does not happen, double-check for errors in the configuration values and "
+"read the Troubleshooting section on :ref:`Network Help`."
+msgstr ""
+
+#: ../../using.rst:811
+msgid ""
+"`<http://linuxg.net/how-to-install-emelfm2-0-8-2-1-on-ubuntu-linux-mint-and-"
+"elementary-os/>`_"
+msgstr ""
+
+#: ../../using.rst:971
+msgid "Managing System Services and Daemons"
+msgstr ""
+
+#: ../../using.rst:976
+msgid ""
+"|trueos| now uses `OpenRC <https://wiki.gentoo.org/wiki/Project:OpenRC>`_ to"
+" manage system services.  OpenRC is an integral component of the |trueos| "
+"operating system, and is a major point of difference between |trueos| and "
+"FreeBSD. This section is intended to provide detailed information about "
+"system service management in |trueos|."
+msgstr ""
+
+#: ../../using.rst:987
+msgid "OpenRC in |trueos| compared with :command:`rc`"
+msgstr ""
+
+#: ../../using.rst:989
+msgid ""
+":numref:`Table %s <trfbsdrc>` serves as a quick summary and series of "
+"working examples contrasting the FreeBSD :command:`rc` system and OpenRC in "
+"|trueos|."
+msgstr ""
+
+#: ../../using.rst:999
+msgid ""
+"Comparison between the FreeBSD :command:`rc` and |trueos| OpenRC service "
+"management"
+msgstr ""
+
+#: ../../using.rst:1004
+msgid "Component or action"
+msgstr ""
+
+#: ../../using.rst:1004
+msgid "FreeBSD"
+msgstr ""
+
+#: ../../using.rst:1004
+msgid "|trueos|"
+msgstr ""
+
+#: ../../using.rst:1006
+msgid "Base system rc script location"
+msgstr ""
+
+#: ../../using.rst:1006
+msgid ":file:`/etc/rc.d`"
+msgstr ""
+
+#: ../../using.rst:1006
+msgid ":file:`/etc/init.d`"
+msgstr ""
+
+#: ../../using.rst:1008
+msgid "Ports rc script location"
+msgstr ""
+
+#: ../../using.rst:1008
+msgid ":file:`/usr/local/etc/rc.d`"
+msgstr ""
+
+#: ../../using.rst:1008
+msgid ":file:`/usr/local/etc/init.d`"
+msgstr ""
+
+#: ../../using.rst:1010
+msgid "Service configuration"
+msgstr ""
+
+#: ../../using.rst:1010
+msgid ":file:`/etc/rc.conf` or :file:`/etc/rc.conf.local`"
+msgstr ""
+
+#: ../../using.rst:1013
+msgid "All services are configured in a central location."
+msgstr ""
+
+#: ../../using.rst:1010
+msgid ""
+"OpenRC prefers :file:`/etc/conf.d/servicename`, but can use "
+":file:`/etc/rc.conf` or :file:`/etc/rc.conf.local` Each service has its own "
+"configuration file."
+msgstr ""
+
+#: ../../using.rst:1016
+msgid "Starting e.g. the :command:`nginx` service"
+msgstr ""
+
+#: ../../using.rst:1016 ../../using.rst:1016
+msgid ":samp:`$ service nginx start`"
+msgstr ""
+
+#: ../../using.rst:1019
+msgid "Configuring e.g. :command:`nginx` to start on bootup."
+msgstr ""
+
+#: ../../using.rst:1019
+msgid "Edit :file:`/etc/rc.conf` and add :command:`nginx_enable=\"YES\"`"
+msgstr ""
+
+#: ../../using.rst:1019
+msgid ":samp:`$ rc-update add nginx default`"
+msgstr ""
+
+#: ../../using.rst:1023
+msgid "Check to see if a service is enabled."
+msgstr ""
+
+#: ../../using.rst:1023
+msgid ":samp:`$ service nginx rcvar`"
+msgstr ""
+
+#: ../../using.rst:1025 ../../using.rst:1025
+msgid "If the service is enabled, the result is:"
+msgstr ""
+
+#: ../../using.rst:1028
+msgid ":samp:`nginx_enable=\"YES\"`"
+msgstr ""
+
+#: ../../using.rst:1023
+msgid ":samp:`$ rc-update show default | grep nginx`"
+msgstr ""
+
+#: ../../using.rst:1028
+msgid ":samp:`nginx | default`"
+msgstr ""
+
+#: ../../using.rst:1031
+msgid ""
+"The user may find leftover RC files during the |trueos| migration to OpenRC."
+" These files do not work with OpenRC and are intended to be removed both "
+"from the source tree and via :command:`pc-updatemanager` when all "
+"functionality is successfully migrated. If discovered, **do not** attempt to"
+" use these leftover files."
+msgstr ""
+
+#: ../../using.rst:1042
+msgid "Service Management in OpenRC"
+msgstr ""
+
+#: ../../using.rst:1048
+msgid "Runlevels"
+msgstr ""
+
+#: ../../using.rst:1050
+msgid ""
+"Traditionally, FreeBSD operates in single- and multi-user modes. However, "
+"OpenRC offers the ability to define **runlevels**. An OpenRC **runlevel** is"
+" a grouping of services, nothing more. Any number of system services can be "
+"associated with a given runlevel. In |trueos|, there are two main "
+"preconfigured runlevels: **boot** and **default**. The **default** runlevel "
+"is analogous to the FreeBSD multi-user mode, and is associated with the "
+"*Normal Bootup* option of the |trueos| bootloader."
+msgstr ""
+
+#: ../../using.rst:1059
+msgid ""
+"No OpenRC runlevels are executed if the system is booted into single-user "
+"mode (see :numref:`Figure %s <boot1>`.)"
+msgstr ""
+
+#: ../../using.rst:1062
+msgid ""
+"Runlevels are defined by subdirectories of :file:`/etc/runlevels`; all "
+"associations between services and runlevels can be shown by running the "
+"command:"
+msgstr ""
+
+#: ../../using.rst:1066
+msgid ":samp:`$ rc-update show -v`"
+msgstr ""
+
+#: ../../using.rst:1068
+msgid "OpenRC has a few ordered runlevels in |trueos|. In order of execution:"
+msgstr ""
+
+#: ../../using.rst:1070
+msgid "**sysinit**: Used for OpenRC to initialize itself."
+msgstr ""
+
+#: ../../using.rst:1071
+msgid "**boot**: Starts most base services from :file:`/etc/init.d/`."
+msgstr ""
+
+#: ../../using.rst:1072
+msgid "**default**: Services started by ports are added here."
+msgstr ""
+
+#: ../../using.rst:1074
+msgid "Services added by ports cannot be added to *boot* or *sysinit*."
+msgstr ""
+
+#: ../../using.rst:1077
+msgid ""
+"OpenRC allows users to add services in the prefix location to the *boot* "
+"runlevel. These services are started before the :file:`/usr` filesystem is "
+"mounted. Finally, there is a *shutdown* runlevel reserved for a few services"
+" like :command:`savecore` or :command:`pc-updatemanager`, which installs "
+"updates at shutdown."
+msgstr ""
+
+#: ../../using.rst:1083
+msgid ""
+"When a service is added to a runlevel, a symlink is created in "
+":file:`/etc/runlevels`. When a service is started, stopped, or changed to "
+"another state, a symlink is added to :file:`/libexec/rc/init.d/`, as seen in"
+" this example:"
+msgstr ""
+
+#: ../../using.rst:1099
+msgid "Services and Runlevels"
+msgstr ""
+
+#: ../../using.rst:1101
+msgid ""
+"OpenRC includes options to *start*, *stop*, *add*, or *delete* services from"
+" runlevels as seen in :numref:`Table %s <rcbootserv>`. Most of these actions"
+" can be accomplished using the :sysclbk:`Service Manager <service-manager>` "
+"built into |sysadm|. Individuals familiar with the FreeBSD "
+":command:`service` command may notice some similarities between some of "
+"these commands."
+msgstr ""
+
+#: ../../using.rst:1113
+msgid "Service and Runlevel Management Commands"
+msgstr ""
+
+#: ../../using.rst:1117
+msgid "Command"
+msgstr ""
+
+#: ../../using.rst:1117 ../../using.rst:1372 ../../using.rst:1401
+msgid "Description"
+msgstr ""
+
+#: ../../using.rst:1119
+msgid "service nginx start"
+msgstr ""
+
+#: ../../using.rst:1119
+msgid "Start nginx from :file:`/usr/local/etc/init.d/nginx`."
+msgstr ""
+
+#: ../../using.rst:1121
+msgid "service nginx restart"
+msgstr ""
+
+#: ../../using.rst:1121
+msgid "Restart nginx from :file:`/usr/local/etc/init.d/nginx`."
+msgstr ""
+
+#: ../../using.rst:1123
+msgid "service nginx stop"
+msgstr ""
+
+#: ../../using.rst:1123
+msgid "Stop nginx from :file:`/usr/local/etc/init.d/nginx`."
+msgstr ""
+
+#: ../../using.rst:1125
+msgid "service nginx status"
+msgstr ""
+
+#: ../../using.rst:1125
+msgid "View the status of the :command:`nginx` service."
+msgstr ""
+
+#: ../../using.rst:1127
+msgid "rc-status"
+msgstr ""
+
+#: ../../using.rst:1127
+msgid "View the status of all running services."
+msgstr ""
+
+#: ../../using.rst:1129
+msgid "rc-update"
+msgstr ""
+
+#: ../../using.rst:1129
+msgid ""
+"Views all runlevels. Used in conjunction with service names to add or delete"
+" services from the default runlevel."
+msgstr ""
+
+#: ../../using.rst:1132
+msgid "rc-update add nginx default"
+msgstr ""
+
+#: ../../using.rst:1132
+msgid "Adds the :command:`nginx` service to the default runlevel."
+msgstr ""
+
+#: ../../using.rst:1134
+msgid "rc-update delete nginx default"
+msgstr ""
+
+#: ../../using.rst:1134
+msgid "Removes :command:`nginx` from the default runlevel."
+msgstr ""
+
+#: ../../using.rst:1141
+msgid "Writing OpenRC Services"
+msgstr ""
+
+#: ../../using.rst:1143
+msgid ""
+"OpenRC has a dependency based init system. As an example, examine the SysAdm"
+" service, which needs *network*. Here are the contents of the "
+":file:`/usr/local/etc/init.d/sysadm` *depend* section:"
+msgstr ""
+
+#: ../../using.rst:1155
+msgid ""
+"SysAdm requires *network* (**need net**), which is the nickname of the "
+":file:`/etc/init.d/network` service defined by *provide in network*. SysAdm "
+"also starts **after** *bootmisc*. If you don’t want the restarting *network*"
+" to restart SysAdm, then *net* is unnecessary. To start SysAdm after "
+"*network*, then add *network to the actual name of the script in **after "
+"bootmisc**."
+msgstr ""
+
+#: ../../using.rst:1162
+msgid "Here are the contents of :file:`/etc/init.d/network`:"
+msgstr ""
+
+#: ../../using.rst:1174
+msgid ""
+"The *provide* option sets the service nickname to *net*. *Need* means "
+"restarting *localmount* restarts *network*. *After* indicates the service "
+"starts after *bootmisc* and *modules*. For example, the keyword *-jail* "
+"option says this service doesn't run in a jail, prefix, or any of the other "
+"options shown."
+msgstr ""
+
+#: ../../using.rst:1180
+msgid ""
+"There is also a cache directory under :file:`/libexec/rc`. This keeps a "
+"dependencies cache that is only updated when those dependencies change. "
+"Several other directories exist for other binaries and special binaries used"
+" by OpenRC functions."
+msgstr ""
+
+#: ../../using.rst:1185
+msgid ""
+"For more creation options for OpenRC compatible init scripts, type "
+":samp:`man openrc-run` in a CLI."
+msgstr ""
+
+#: ../../using.rst:1192
+msgid "RC Defaults"
+msgstr ""
+
+#: ../../using.rst:1194
+msgid "RC Defaults are subject to change during development."
+msgstr ""
+
+#: ../../using.rst:1196
+msgid "|trueos| and FreeBSD now have very different rc defaults."
+msgstr ""
+
+#: ../../using.rst:1198
+msgid "**TrueOS OpenRC Defaults**"
+msgstr ""
+
+#: ../../using.rst:1200
+msgid ""
+"The entire `TrueOS rc.conf file <https://github.com/trueos/freebsd/blob/drm-"
+"next-4.7/etc/defaults/rc.conf>`_ is viewable on GitHub."
+msgstr ""
+
+#: ../../using.rst:1227
+msgid "**FreeBSD RC Defaults**"
+msgstr ""
+
+#: ../../using.rst:1229
+msgid ""
+"The entire `FreeBSD rc.conf file "
+"<https://github.com/freebsd/freebsd/blob/master/etc/defaults/rc.conf>`_ is "
+"available online."
+msgstr ""
+
+#: ../../using.rst:1256
+msgid ""
+"The |trueos| :file:`rc.conf` file is smaller because :file:`rc.conf` is now "
+"primarily used for tuning OpenRC behavior. By default, |trueos| uses 3 "
+"elements, documented in :numref:`Table %s <orcpritun>`."
+msgstr ""
+
+#: ../../using.rst:1260
+msgid ""
+":numref:`Table %s <rcuprnlvl>` lists services and their default runlevels in"
+" |trueos|."
+msgstr ""
+
+#: ../../using.rst:1268
+msgid "Services and runlevels"
+msgstr ""
+
+#: ../../using.rst:1272
+msgid "Service"
+msgstr ""
+
+#: ../../using.rst:1272
+msgid "Runlevel"
+msgstr ""
+
+#: ../../using.rst:1274
+msgid "abi"
+msgstr ""
+
+#: ../../using.rst:1274 ../../using.rst:1276 ../../using.rst:1280
+#: ../../using.rst:1282 ../../using.rst:1284 ../../using.rst:1290
+#: ../../using.rst:1292 ../../using.rst:1294 ../../using.rst:1296
+#: ../../using.rst:1298 ../../using.rst:1300 ../../using.rst:1304
+#: ../../using.rst:1308 ../../using.rst:1310 ../../using.rst:1312
+#: ../../using.rst:1318 ../../using.rst:1320 ../../using.rst:1326
+#: ../../using.rst:1332 ../../using.rst:1336 ../../using.rst:1338
+#: ../../using.rst:1342 ../../using.rst:1344 ../../using.rst:1346
+#: ../../using.rst:1350 ../../using.rst:1352 ../../using.rst:1354
+msgid "boot"
+msgstr ""
+
+#: ../../using.rst:1276
+msgid "adjkerntz"
+msgstr ""
+
+#: ../../using.rst:1278
+msgid "automount"
+msgstr ""
+
+#: ../../using.rst:1278 ../../using.rst:1286 ../../using.rst:1288
+#: ../../using.rst:1306 ../../using.rst:1314 ../../using.rst:1316
+#: ../../using.rst:1322 ../../using.rst:1324 ../../using.rst:1328
+#: ../../using.rst:1334 ../../using.rst:1340 ../../using.rst:1348
+msgid "default"
+msgstr ""
+
+#: ../../using.rst:1280
+msgid "bootmisc"
+msgstr ""
+
+#: ../../using.rst:1282
+msgid "bridge"
+msgstr ""
+
+#: ../../using.rst:1284
+msgid "cron"
+msgstr ""
+
+#: ../../using.rst:1286
+msgid "cupsd"
+msgstr ""
+
+#: ../../using.rst:1288
+msgid "dbus"
+msgstr ""
+
+#: ../../using.rst:1290
+msgid "devd"
+msgstr ""
+
+#: ../../using.rst:1292
+msgid "dumpon"
+msgstr ""
+
+#: ../../using.rst:1294
+msgid "fsck"
+msgstr ""
+
+#: ../../using.rst:1296
+msgid "hostid"
+msgstr ""
+
+#: ../../using.rst:1298
+msgid "hostname"
+msgstr ""
+
+#: ../../using.rst:1300
+msgid "ipfw"
+msgstr ""
+
+#: ../../using.rst:1302
+msgid "local"
+msgstr ""
+
+#: ../../using.rst:1302
+msgid "default nonetwork"
+msgstr ""
+
+#: ../../using.rst:1304
+msgid "localmount"
+msgstr ""
+
+#: ../../using.rst:1306
+msgid "lockd"
+msgstr ""
+
+#: ../../using.rst:1308
+msgid "loopback"
+msgstr ""
+
+#: ../../using.rst:1310
+msgid "modules"
+msgstr ""
+
+#: ../../using.rst:1312
+msgid "motd"
+msgstr ""
+
+#: ../../using.rst:1314
+msgid "moused"
+msgstr ""
+
+#: ../../using.rst:1316
+msgid "netmount"
+msgstr ""
+
+#: ../../using.rst:1318
+msgid "network"
+msgstr ""
+
+#: ../../using.rst:1320
+msgid "newsyslog"
+msgstr ""
+
+#: ../../using.rst:1322
+msgid "openntpd"
+msgstr ""
+
+#: ../../using.rst:1324
+msgid "pcdm"
+msgstr ""
+
+#: ../../using.rst:1326
+msgid "root"
+msgstr ""
+
+#: ../../using.rst:1328
+msgid "rpcbind"
+msgstr ""
+
+#: ../../using.rst:1330
+msgid "savecache"
+msgstr ""
+
+#: ../../using.rst:1330
+msgid "shutdown"
+msgstr ""
+
+#: ../../using.rst:1332
+msgid "savecore"
+msgstr ""
+
+#: ../../using.rst:1334
+msgid "statd"
+msgstr ""
+
+#: ../../using.rst:1336
+msgid "staticroute"
+msgstr ""
+
+#: ../../using.rst:1338
+msgid "swap"
+msgstr ""
+
+#: ../../using.rst:1340
+msgid "sysadm"
+msgstr ""
+
+#: ../../using.rst:1342
+msgid "syscons"
+msgstr ""
+
+#: ../../using.rst:1344
+msgid "sysctl"
+msgstr ""
+
+#: ../../using.rst:1346
+msgid "syslogd"
+msgstr ""
+
+#: ../../using.rst:1348
+msgid "trueosinit"
+msgstr ""
+
+#: ../../using.rst:1350
+msgid "urandom"
+msgstr ""
+
+#: ../../using.rst:1352
+msgid "zfs"
+msgstr ""
+
+#: ../../using.rst:1354
+msgid "zvol"
+msgstr ""
+
+#: ../../using.rst:1361
+msgid "Tuneables"
+msgstr ""
+
+#: ../../using.rst:1368
+msgid "OpenRC Primary Tunables"
+msgstr ""
+
+#: ../../using.rst:1372 ../../using.rst:1401
+msgid "Tunable"
+msgstr ""
+
+#: ../../using.rst:1374
+msgid "rc_parallel=\"YES\""
+msgstr ""
+
+#: ../../using.rst:1374
+msgid "Starts all services in parallel (experimental)."
+msgstr ""
+
+#: ../../using.rst:1377
+msgid "rc_logger=\"YES\""
+msgstr ""
+
+#: ../../using.rst:1377
+msgid "Enables logging"
+msgstr ""
+
+#: ../../using.rst:1379
+msgid "rc_log_path=\"/var/log/rc.log\""
+msgstr ""
+
+#: ../../using.rst:1379
+msgid "Defines the location for logging rc activity"
+msgstr ""
+
+#: ../../using.rst:1383
+msgid ""
+":numref:`Table %s <orcalltun>` shows all other tunables enabled on a clean "
+"|trueos| installation. Many of these tunables continue to work in "
+":file:`/etc/rc.conf` to ensure a smoother migration for existing users to "
+"upgrade. The eventual target locations for these services are also listed."
+msgstr ""
+
+#: ../../using.rst:1389
+msgid "These migration targets are estimates and subject to change."
+msgstr ""
+
+#: ../../using.rst:1397
+msgid "OpenRC Other Tunables"
+msgstr ""
+
+#: ../../using.rst:1401
+msgid "Migration Target"
+msgstr ""
+
+#: ../../using.rst:1403
+msgid "linux_enable=\"YES\""
+msgstr ""
+
+#: ../../using.rst:1403
+msgid ""
+"Notifies :file:`/etc/init.d/abi` service to enable the Linux compatability "
+"during boot"
+msgstr ""
+
+#: ../../using.rst:1403
+msgid ":file:`/etc/conf.d/abi`"
+msgstr ""
+
+#: ../../using.rst:1407
+msgid "ifconfig_re0=\"DHCP\""
+msgstr ""
+
+#: ../../using.rst:1407
+msgid "Auto-obtain IP address on the *re0* device."
+msgstr ""
+
+#: ../../using.rst:1407 ../../using.rst:1410 ../../using.rst:1421
+#: ../../using.rst:1423
+msgid ":file:`/etc/conf.d/network`"
+msgstr ""
+
+#: ../../using.rst:1410
+msgid "ifconfig_re0_ipv6=\"inet6 accept_rtadv\""
+msgstr ""
+
+#: ../../using.rst:1410
+msgid "Configure IPv6."
+msgstr ""
+
+#: ../../using.rst:1413
+msgid "hostname=\"trueos-4843\""
+msgstr ""
+
+#: ../../using.rst:1413
+msgid "Set the system hostname."
+msgstr ""
+
+#: ../../using.rst:1413
+msgid ":file:`/etc/conf.d/hostname`"
+msgstr ""
+
+#: ../../using.rst:1415
+msgid "kldload_i915kms=\"i915kms\""
+msgstr ""
+
+#: ../../using.rst:1415
+msgid ""
+"TrueOS specific. Allows loading an individual module via the installer post "
+"installation."
+msgstr ""
+
+#: ../../using.rst:1415
+msgid ":file:`/etc/conf.d/modules`"
+msgstr ""
+
+#: ../../using.rst:1419
+msgid "zfs_enable=\"YES\""
+msgstr ""
+
+#: ../../using.rst:1419
+msgid "Obsolete, marked for removal"
+msgstr ""
+
+#: ../../using.rst:1419
+msgid "None"
+msgstr ""
+
+#: ../../using.rst:1421
+msgid "wlans_iwm0=\"wlan 0 DHCP\""
+msgstr ""
+
+#: ../../using.rst:1421
+msgid "Configure iwm wireless with DHCP."
+msgstr ""
+
+#: ../../using.rst:1423
+msgid "ifconfig_wlan0_ipv6=\"inet6 accept_rtadv\""
+msgstr ""
+
+#: ../../using.rst:1423
+msgid "Configure iwm wireless with IPv6."
+msgstr ""
+
+#: ../../using.rst:1430
+msgid "OpenRC Install Scripts"
+msgstr ""
+
+#: ../../using.rst:1432
+msgid ""
+"There are number of scripts used for older |trueos| systems and new "
+"installations. These are listed below."
+msgstr ""
+
+#: ../../using.rst:1439
+msgid "One-time Migration Script"
+msgstr ""
+
+#: ../../using.rst:1441
+msgid ""
+"A one time migration script is available for |trueos| installations dated "
+"10-28-16 or older still using the legacy FreeBSD *rc* system:"
+msgstr ""
+
+#: ../../using.rst:1444
+msgid ""
+"This block is truncated from the `original file <https://github.com/trueos"
+"/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_"
+msgstr ""
+
+#: ../../using.rst:1470
+msgid ""
+"With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`, has "
+"been phased out of |trueos| and is automatically removed from legacy "
+"installs dated 10-28-16 and older by :command:`pc-updatemanger`:"
+msgstr ""
+
+#: ../../using.rst:1474
+msgid ""
+"This script defines a list of services such as *PCDM* designated to boot by "
+"default on a desktop. It also defines what drivers to load on a desktop. "
+"This is now accomplished when the *trueos-desktop* or *trueos-server* "
+"package is installed using :command:`sysrc` or other methods. Now there is "
+"no need to keep an extra overlay file to accomplish this behaviour."
+msgstr ""
+
+#: ../../using.rst:1485
+msgid "|trueos| Desktop pkg-install Script"
+msgstr ""
+
+#: ../../using.rst:1487
+msgid ""
+"This is an excerpt from the |trueos| Desktop :file:`pkg-install` file, "
+"available online: https://github.com/trueos/trueos-desktop/blob/master/port-"
+"files/pkg-install"
+msgstr ""
+
+#: ../../using.rst:1518
+msgid "TrueOS Server pkg-install script"
+msgstr ""
+
+#: ../../using.rst:1520
+msgid ""
+"This is an excerpt from the |trueos| Server :file:`pkg-install` file, "
+"available on GitHub: https://github.com/trueos/trueos-server/blob/master"
+"/port-files/pkg-install"
+msgstr ""
+
+#: ../../using.rst:1546
+msgid ""
+"The typical :command:`nginx_enable=”YES”` is no longer used to enable "
+"services. Instead, :command:`rc-update` adds or deletes services from "
+"runlevels. The one time migration script automatically adds previously "
+"defined user services to the OpenRC default runlevel. Leftover lines can be "
+"removed after migration."
+msgstr ""
+
+#: ../../using.rst:1556
+msgid "Updating a Port's Makefile"
+msgstr ""
+
+#: ../../using.rst:1558
+msgid ""
+"There are many required updates to adjust each port's :file:`Makefile` to "
+"the new format, **USE_OPENRC_SUBR=**. However, these are to be changed only "
+"when each service file has the new OpenRC ready format:"
+msgstr ""
+
+#: ../../using.rst:1562
+msgid ""
+"This is an excerpt from the |trueos| :file:`openrc-dbus.in` file, which is "
+"available on the |trueos| `freebsd-ports GitHub repository "
+"<https://github.com/trueos/freebsd-ports/blob/trueos-master/devel/dbus/files"
+"/openrc-dbus.in>`_"
+msgstr ""
+
+#: ../../using.rst:1591
+msgid ""
+"Here is an example from FreeBSD of *dbus* using the legacy rc script format:"
+msgstr ""
+
+#: ../../using.rst:1594
+msgid ""
+"This is an excerpt from the legacy FreeBSD :file:`dbus.in` file, which is "
+"available online: https://github.com/freebsd/freebsd-"
+"ports/blob/master/devel/dbus/files/dbus.in"
+msgstr ""
+
+#: ../../using.rst:1621
+msgid ""
+"Several developers are working on the thousands of instances as quickly as "
+"possible. Anyone can begin transitioning to defining all service "
+"configurations in :file:`/etc/conf.d/`, if desired. All configuration files "
+"should reside in that directory with the name of the service for the "
+"configuration file itself. For example, *nginx* is "
+":file:`/etc/conf.d/nginx`."
+msgstr ""
+
+#: ../../using.rst:1628
+msgid ""
+"Generally, usage of :file:`/etc/rc.conf` is minimized. Tweaking the default "
+"OpenRC configuration parameters is recommended only for advanced users. It "
+"is still possible to use service configurations through "
+":file:`/etc/rc.conf`, but this file is unusable for enabling or disabling "
+"services for startup."
+msgstr ""
+
+#: ../../using.rst:1760
+msgid ""
+"The :file:`/.autofs/*` directories are not cleaned when the device is "
+"removed. However, after device removal the directories are no longer "
+"associated with the device in the backend. For this reason, :file:`/media` "
+"is more useful to identify which devices are attached to the system."
+msgstr ""
+
+#: ../../using.rst:1766
+msgid ""
+"Alternately, all device names are added to the :file:`/.autofs` directory. "
+"Attached devices are also accessed by navigating to "
+":file:`/.autofs/<devicename>`."
+msgstr ""
+
+#: ../../using.rst:1779
+msgid ""
+"Optical Media links are not yet created on the desktop. Optical media is "
+"accessible by navigating to :file:`/.autofs`."
+msgstr ""
+
+#: ../../using.rst:1978
+msgid ""
+"**HTTP:** This option allows you to manually type in the URI to the printer."
+" A list of possible URIs is available on the `CUPS site "
+"<https://www.cups.org/doc/network.html>`_. To use HTTP over an encrypted "
+"connection, select :guilabel:`https` instead."
+msgstr ""
+
+#: ../../using.rst:2205
+msgid ""
+"`VLC media player <http://www.videolan.org/vlc/>`_: Open Source cross-"
+"platform multimedia player capable of playing most multimedia files, DVD and"
+" CD formats, and some streaming protocols.\\"
+msgstr ""
+
+#: ../../using.rst:2209
+msgid ""
+"`Kodi,formerly known as XBMC <https://kodi.tv/>`_: GPL-licensed software "
+"media player and entertainment hub for digital media. It can play most audio"
+" and video formats, CDs and DVDs from a disk or image file, and even files "
+"inside ZIP and RAR archives."
+msgstr ""
+
+#: ../../using.rst:2214
+msgid ""
+"`Plex Home Theater <https://www.plex.tv/>`_: Centralized media playback "
+"system. The central Plex Media Server streams media to many Plex player Apps"
+" which are used to view your media library and watch shows."
+msgstr ""
+
+#: ../../using.rst:2299
+msgid "Updating TrueOS"
+msgstr ""
+
+#: ../../using.rst:2301
+msgid ""
+"The TrueOS project is organized around two update tracks: STABLE and "
+"UNSTABLE. Updating is handled through the |sysadm| Update Manager; refer to "
+"the SysAdm :sysclbk:`Update Manager <update-manager>` documentation for more"
+" details about using the Update Manager. This section only contains simple "
+"instructions to switch between update tracks."
+msgstr ""
+
+#: ../../using.rst:2307
+msgid ""
+"To view or adjust the current update track for TrueOS, click "
+":menuselection:`Start Menu --> Control Panel --> Update Manager --> "
+"Settings`. The :guilabel:`Settings` tab, seen in :numref:`Figure %s "
+"<update1>`, allows you to adjust *when* and *where* to perform system "
+"updates."
+msgstr ""
+
+#: ../../using.rst:2317
+msgid "Update Manager Settings"
+msgstr ""
+
+#: ../../using.rst:2319
+msgid ""
+"While both STABLE and UNSTABLE tracks are rolling releases based on FreeBSD-"
+"CURRENT, there are a few key differences between them."
+msgstr ""
+
+#: ../../using.rst:2322
+msgid ""
+"Users with UNSTABLE installed before 7/14/2017 need to run :command:`pc-"
+"updatemanager syncconf` in a command line in order to switch to the new "
+"UNSTABLE repository added on that day. Alternately, switch from UNSTABLE to "
+"STABLE in the Update Manager and click :guilabel:`Save`. Then, switch back "
+"to UNSTABLE and click :guilabel:`Save` again."
+msgstr ""
+
+#: ../../using.rst:2333
+msgid "TrueOS STABLE"
+msgstr ""
+
+#: ../../using.rst:2335
+msgid ""
+"As its name implies, STABLE refers to the more solid version of TrueOS. "
+"STABLE updates are released infrequently, but are much more tested and "
+"polished. All TrueOS installation files are created from the STABLE track, "
+"and fresh TrueOS installations only look to the STABLE track for updates."
+msgstr ""
+
+#: ../../using.rst:2341
+msgid ""
+"The STABLE track is recommended for those users who want a more predictable "
+"experience with fewer regressions, and are willing to wait longer for "
+"bugfixes and new utilities or ports."
+msgstr ""
+
+#: ../../using.rst:2349
+msgid "TrueOS UNSTABLE"
+msgstr ""
+
+#: ../../using.rst:2351
+msgid ""
+"The UNSTABLE track is the bleeding edge of TrueOS development. Experimental "
+"fixes, upstream patches from the FreeBSD project, and testing new utilities "
+"and applications all happen first with the UNSTABLE track."
+msgstr ""
+
+#: ../../using.rst:2356
+msgid ""
+"UNSTABLE is recommended for power users, those with custom hardware "
+"unsupported with STABLE, and project contributors who wish to help test "
+"patches committed to TrueOS and/or FreeBSD-CURRENT."
+msgstr ""
+
+#: ../../using.rst:2360
+msgid ""
+"To switch to the UNSTABLE track, open the SysAdm Update Manager and navigate"
+" to the *Settings* tab, seen in :ref:`update1`. Check :guilabel:`UNSTABLE "
+"Repository`, then click :guilabel:`Save Settings`."
+msgstr ""
+
+#: ../../using.rst:2364
+msgid ""
+"Alternately, you can edit :file:`/usr/local/etc/trueos.conf` to change "
+"update tracks without using SysAdm. Here is an example :file:`trueos.conf`:"
+msgstr ""
+
+#: ../../using.rst:2386
+msgid ""
+"Rolling back from UNSTABLE to STABLE is done by switching tracks back to the"
+" STABLE branch, checking for updates, and rebooting once the previous STABLE"
+" update is installed."
+msgstr ""
+
+#~ msgid "Kodi"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Kodi, formerly known as XBMC, <https://kodi.tv/>`_ is a GPL-licensed "
+#~ "software media player and entertainment hub for digital media. It can play "
+#~ "most audio and video formats, CDs and DVDs from a disk or image file, and "
+#~ "even files inside ZIP and RAR archives. It can scan all of your media and "
+#~ "automatically create a personalized library with album covers, descriptions,"
+#~ " and fan art."
+#~ msgstr ""
+
+#~ msgid "PlexHome Theater"
+#~ msgstr ""
+
+#~ msgid "`<http://emelfm2.net/wiki/ScreenShots>`_"
+#~ msgstr ""
+
+#~ msgid "Security"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To install PlexHome Theater, use |appcafe|. Once installed, an entry should "
+#~ "be added to the :guilabel:`Multimedia` section of the application menu of "
+#~ "your desktop. PlexHome Theater can also be started by typing "
+#~ ":command:`plexhometheater` from a command prompt."
+#~ msgstr ""
+
+#~ msgid "The security features built into |trueos| include:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Built-in firewall:** The default firewall ruleset allows accessing the "
+#~ "Internet and the shares available on your network, but does not allow any "
+#~ "inbound connections to your computer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The |trueos| operating system and its available software packages are built "
+#~ "with `LibreSSL <http://www.libressl.org/>`_, which has fewer vulnerabilities"
+#~ " than OpenSSL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To learn more about security on FreeBSD and |trueos| systems, :command:`man "
+#~ "security` is a good place to start. These resources provide more information"
+#~ " about security on FreeBSD-based operating systems:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :file:`/autofs/*` directories are not cleaned when the device is "
+#~ "removed. However, after device removal the directories are no longer "
+#~ "associated with the device in the backend. For this reason, :file:`/media` "
+#~ "is more useful to identify which devices are attached to the system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Alternately, all device names are added to the :file:`/autofs` directory. "
+#~ "Attached devices are also accessed by navigating to "
+#~ ":file:`/autofs/<devicename>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Optical Media links are not yet created on the desktop. Optical media is "
+#~ "accessible by navigating to :file:`/autofs`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`VLC media player <http://www.videolan.org/vlc/>`_: Open Source cross-"
+#~ "platform multimedia player capable of playing most multimedia files, DVD and"
+#~ " CD formats, and some streaming protocols."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Kodi can be installed using |appcafe|. Once installed, an entry for "
+#~ ":guilabel:`Kodi media center` is added to :guilabel:`Browse Applications`. "
+#~ "Kodi is also started by typing :command:`kodi` from a command prompt."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If multiple networks are added, use the arrow keys to place them in the "
+#~ "desired connection order. |trueos| attempts to connect to networks in order "
+#~ "from first to last in the connection list. When prioritizing connections, "
+#~ "click :guilabel:`Apply`. A pop-up message then indicates |trueos| is "
+#~ "restarting the network. Next, an an IP address and status of **associated** "
+#~ "appears when hovering over the wireless icon in the system tray. If this "
+#~ "does not happen, double-check for errors in the configuration values and "
+#~ "read the Troubleshooting section on :ref:`Network Help`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your |trueos| system is secure by default. This section provides an overview"
+#~ " of the built-in security features. If you want to know more about "
+#~ "increasing the security of your system beyond its current level, additional "
+#~ "resources are also provided in this section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Naturally immune to viruses and other malware:** Most viruses are written "
+#~ "to exploit Windows systems and do not understand the binaries or paths found"
+#~ " on a |trueos| system. Antivirus software is still available in the Security"
+#~ " section of |appcafe|, as this is useful when sending or forwarding email "
+#~ "attachments to users running other operating systems."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Potential for serious damage is limited:** File and directory ownership "
+#~ "and permissions along with separate user and group functions mean, as an "
+#~ "ordinary user, any program executed is only granted the abilities and access"
+#~ " of the user. A user not a member of the *wheel* group can not switch to "
+#~ "administrative access and can not enter or list the contents of a directory "
+#~ "not been set for universal access."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Very few services are enabled by default:** View which services are "
+#~ "started at boot time by reading through the output of :command:`rc-update`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**SSH root logins are disabled by default:** If SSH is enabled, login as a "
+#~ "regular user and use :command:`su` or :command:`sudo` when administrative "
+#~ "actions are required. Do not change this setting, as it prevents an unwanted"
+#~ " user from having complete access to the system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`Tor Mode` can be used to anonymously access Internet sites as it "
+#~ "automatically forwards all Internet traffic through the `Tor Project's "
+#~ "<https://www.torproject.org/>`_ transparent proxy service."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Plex Home Theater <https://www.plex.tv/>`_ is a centralized media playback "
+#~ "system. The central Plex Media Server streams media to many Plex player Apps"
+#~ " which are used to view your media library and watch shows."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once installed, an entry for :guilabel:`Plex Home Theater` is also added to "
+#~ "the login manager so you can login directly to the home theater instead of a"
+#~ " desktop."
+#~ msgstr ""
+
+#~ msgid "`FreeBSD Security Information <https://www.freebsd.org/security/>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Security Section of FreeBSD Handbook "
+#~ "<https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**HTTP:** This option allows you to manually type in the URI to the printer."
+#~ " A list of possible URIs is available on the `CUPS site "
+#~ "<https://www.cups.org/doc/network.html#TABLE1>`_. To use HTTP over an "
+#~ "encrypted connection, select :guilabel:`https` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is loaded "
+#~ "by default for the Intel Core i5/i7 processors that support this encryption "
+#~ "set. This support speeds up AES encryption and decryption."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you have never used Kodi before, take some time to skim through the `Kodi"
+#~ " Wiki Manual <http://kodi.wiki/>`_. This post about using PC-BSD as a `home "
+#~ "theater <https://forums.pcbsd.org/thread-19799.html>`_ contains a useful "
+#~ "how-to for configuring Kodi."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first time running or logging into Plex Home Theater, a wizard checks "
+#~ "the audio settings and signs into your Plex account. If you have no Plex "
+#~ "account, create one at `plex.tv <https://www.plex.tv/>`_. The wizard "
+#~ "provides a PIN code and an URL to enter the code. Once the PIN is entered, "
+#~ "the wizard connects and signs you in. Now it is possible to search for and "
+#~ "watch media. To exit Plex, click :guilabel:`<` and :guilabel:`Quit`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**SSH is disabled by default:** SSH can only be enabled by the superuser. "
+#~ "This setting prevents bots and other users from trying to access your "
+#~ "system. If SSH is needed, add :command:`sshd_enable=YES` to "
+#~ ":file:`/etc/rc.conf`. Start the service by typing :command:`service sshd "
+#~ "start`. A firewall rule also needs to be added using the |sysadm| "
+#~ ":sysclbk:`Firewall Manager <firewall-manager>` to allow SSH connections over"
+#~ " TCP port 22."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**sudo is installed:** It is configured to allow users in the *wheel* group "
+#~ "permission to run an administrative command after typing their password. By "
+#~ "default, the first user created during installation is added to the *wheel* "
+#~ "group. Use the |sysadm| :sysclbk:`User Manager <user-manager>` to add other "
+#~ "users to this group. Change the default :command:`sudo` configuration using "
+#~ ":command:`visudo` as the superuser."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Automatic notification of security advisories:** The |sysadm| "
+#~ ":sysclbk:`Update Manager <update-manager>` automatically notifies you if an "
+#~ "update is available as the result of a `security advisory "
+#~ "<https://www.freebsd.org/security/advisories.html>`_ affecting |trueos|. "
+#~ "This allows you to keep your operating system fully patched with just the "
+#~ "click of a mouse."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":sysclbk:`PersonaCrypt <personacrypt>` allows a user to use a removable, "
+#~ "encrypted device as their home directory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This chapter discusses using |trueos| for many common tasks. Because TrueOS "
+#~ "incorporates the |lumina| desktop environment and |sysadm| system management"
+#~ " utility, those projects are used for a variety of user customization tasks "
+#~ "such as themeing, user management, and system backups. As each of these "
+#~ "projects have their own documentation, links to the |lumina| and |sysadm| "
+#~ "client handbooks are provided."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":lumbk:`Archiver <https://lumina-"
+#~ "desktop.org/handbook/luminautl.html#archiver>`: Provides file compression "
+#~ "and decompression services."
+#~ msgstr ""
+
+#~ msgid "Application Management"
+#~ msgstr ""
+
+#~ msgid "SysAdm Server Settings"
+#~ msgstr ""
+
+#~ msgid "System Management"
+#~ msgstr ""
+
+#~ msgid "Utilities"
+#~ msgstr ""
 
 #~ msgid ""
 #~ ":numref:`Figure %s <sound1>` shows an example of highlighting the "
@@ -2520,18 +3546,6 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Here is an overview of the different elements controlled by |sysadm|:"
-#~ msgstr ""
-
-#~ msgid "**Application Management**"
-#~ msgstr ""
-
-#~ msgid "**SysAdm Server Settings**"
-#~ msgstr ""
-
-#~ msgid "**System Management**"
-#~ msgstr ""
-
-#~ msgid "**Utilities**"
 #~ msgstr ""
 
 #~ msgid ""
