@@ -7,7 +7,7 @@ Using |trueos|
 This chapter discusses using |trueos| for many common tasks. Because
 TrueOS incorporates the |lumina| desktop environment and |sysadm|
 system management utility, those projects are used for a variety of
-user customization tasks such as themeing, user management, and system
+user customization tasks such as theming, user management, and system
 backups. As each of these projects have their own documentation, links
 to the |lumina| and |sysadm| client handbooks are provided.
 
@@ -125,7 +125,7 @@ To provide a simple, but fully featured user experience immediately
 "out of box", |trueos| includes several utilities built directly into
 |lumina|.
 
-:lumbk:`Archiver <https://lumina-desktop.org/handbook/luminautl.html#archiver>`:
+:lumbk:`Archiver <luminautl.html#archiver>`:
 Provides file compression and decompression services.
 
 :lumbk:`Calculator <luminautl.html#calculator>`: Basic calculator with
@@ -158,699 +158,6 @@ with customizable settings and built in rules for specific file types.
 :lumbk:`Xconfig <luminautl.html#xconfig>`: Graphical front-end to the
 :command:`xrandr` command line utility. Manages attached monitors,
 allowing the user to add, alter the position, and configure screens.
-
-.. index:: Sysadm
-.. _SysAdm:
-
-|sysadm|
-========
-
-Beginning with |trueos| 11, most of the system management utilities
-previously available in the |pcbsd| Control Panel have been
-rewritten to use the |sysadm|
-`API <https://api.sysadm.us/getstarted.html>`_. This API is designed to
-simplify managing any FreeBSD, |trueos| desktop, or |trueos| server
-system over a secure connection from any operating system with the
-|sysadm| application installed. |sysadm| is built into |trueos| as the
-:guilabel:`SysAdm: Control Panel`.
-
-The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_
-is recommended for new |trueos| users, while the
-`Server <https://sysadm.us/handbook/server/>`_ and
-`API Reference <https://api.sysadm.us/>`_ guides are available for
-advanced users.
-
-The rest of this section describes the elements of TrueOS controlled by
-SysAdm, providing links to the relevant SysAdm documentation:
-
-.. index:: SysAdm Application Management
-.. _Application Management:
-
-Application Management
-----------------------
-
-:sysclbk:`AppCafe <appcafe>` is a graphical interface for installing and
-managing FreeBSD packages. These are pre-built applications tested for
-use with a FreeBSD-based operating system. Open |appcafe| by clicking
-the :guilabel:`Start` button (lower-left), then
-:menuselection:`Control Panel --> AppCafe`.
-
-|appcafe| breaks popular applications into a few categories and provides
-search functionality for users looking for a specific application. Users
-can also browse through a list of all currently installed applications
-and view more details or delete them from the system.
-
-:sysclbk:`Update Manager <update-manager>` is a graphical interface for
-keeping both |trueos| and its installed applications up to date. Users
-can check for updates, switch between the STABLE and UNSTABLE tracks of
-TrueOS, configure automatic updating, and view the log files of previous
-updates.
-
-See :ref:`Updating TrueOS` for more details about using the
-:guilabel:`Update Manager`.
-
-.. index:: SysAdm Server Settings
-.. _Server Settings:
-
-SysAdm Server Settings
-----------------------
-
-:sysclbk:`Managing Remote Connections <managing-remote-connections>`
-provides instructions to create and manage SSL keys or certificate
-bundles.
-
-.. index:: SysAdm System Management
-.. _System Management:
-
-System Management
------------------
-
-|sysadm| provides the "core" for managing |trueos|:
-
-:sysclbk:`Boot Environment Manager <boot-environment-manager>`: Create
-and manage ZFS Boot Environments (BEs). Boot Environments provide a
-"point-in-time" backup for the system and are highly recommended.
-Options to *create*, *clone*, *delete*, *rename*, *mount*, *unmount*,
-and *activate* a BE are available.
-
-:sysclbk:`Mouse Settings <mouse-settings>`: Tool for adjusting the
-settings of a connected mouse. Acceleration, DPI, right or left hand,
-drift, button emulation, and scrolling are all adjustable.
-
-:sysclbk:`Firewall Manager <firewall-manager>`: This is used to
-configure all ports and firewalls for |trueos|. Options to *open* and
-*close* ports are available, including adjusting the firewall's
-autostart settings.
-
-:sysclbk:`Service Manager <service-manager>`: This allows viewing and
-configuring all the system's installed services. There are options to
-*start*, *stop*, and *restart* services. Additional tunables to adjust
-automatic starting of services are provided.
-
-:sysclbk:`Task Manager <task-manager>`: A graphical window into system
-resource usage and a list of all running applications. This provides
-details about what is currently happening on the system and allows the
-user to stop any currently running process.
-
-:sysclbk:`User Manager <user-manager>`: This utility controls users and
-groups. There are :guilabel:`Standard` and :guilabel:`Advanced` views
-for both users and groups, and all options for creating new users and
-groups are provided.
-
-:sysclbk:`PersonaCrypt <personacrypt>` security can also be added to
-user accounts. This encrypts a user account so it only becomes
-accessible with the proper password or by plugging in an associated USB
-drive.
-
-.. index:: SysAdm Utilities
-.. _SysAdm Utilities:
-
-Utilities
----------
-
-:sysclbk:`Life Preserver <life-preserver>` is the only utility currently
-included with |trueos|. This utility is used for system backups with
-:ref:`ZFS <ZFS Overview>` snapshots. :guilabel:`Life Preserver` provides
-easy management, replication, and scheduling of ZFS snapshots.
-
-.. index:: fonts
-.. _Fonts:
-
-Fonts
-=====
-
-|trueos| installs with `Google Noto <http://www.google.com/get/noto/>`_
-which provides multi-lingual Sans and Serif fonts. Many other fonts are
-available from |appcafe|. Typically, fonts installed using |appcafe| do
-not require any additional configuration to "just work".
-
-If you have downloaded or purchased a collection of font, |trueos| can
-be configured to also use those fonts. Become the superuser and copy
-the downloaded font to the :file:`/usr/local/share/fonts/` directory.
-Then, run :samp:`fc-cache -f -v /usr/local/share/fonts/name_of_font`
-to refresh the fonts cache.
-
-.. index:: sound mixer tray
-.. _Sound Mixer Tray:
-
-Sound Mixer Tray
-================
-
-|trueos| includes a graphical utility for managing the sound card's
-mixer settings. The utility is accessed by clicking the
-:guilabel:`speaker` icon in the system tray.
-
-:numref:`Figure %s <sound1>` shows an example of highlighting the
-:guilabel:`Output` option after opening the Sound Mixer. If the
-system has one audio output, the :guilabel:`Output` submenu is not
-displayed. Clicking an option in this submenu does not set the default
-audio device. It only changes it to the selected output for the
-current session. The next reboot reverts audio output back to the
-default.
-
-.. _sound1:
-
-.. figure:: images/sound1.png
-   :scale: 100%
-
-   Output Options
-
-:numref:`Figure %s <sound2>` shows the :guilabel:`Mixer` menu:
-
-.. _sound2:
-
-.. figure:: images/sound2.png
-   :scale: 100%
-
-   Mixer Controls
-
-The :guilabel:`Mixer Controls` screen provides sliders to modify the
-left and right channels that control volume, pcm (the sound driver),
-the speaker, the microphone, the recording level, the input level, and
-the output level. Each control can be muted or unmuted by clicking
-:guilabel:`Mute` or :guilabel:`Unmute`, depending on its current mute
-state.
-
-:numref:`Figure %s <sound3>` shows the :guilabel:`System Configuration`
-tab of the :guilabel:`Mixer`.
-
-.. _sound3:
-
-.. figure:: images/sound3a.png
-   :scale: 100%
-
-   System Sound Configuration
-
-This tab contains several options:
-
-* **Recording Device:** Use the drop-down menu to select the device to
-  use for recording sound.
-
-* **Default Tray Device:** Use the drop-down menu to set the default
-  slider to display in the system tray.
-
-* **Audio Output Channel:** Use the drop-down menu to change the sound
-  device and use :guilabel:`Test` to determine if sound is working.
-  This is sometimes necessary when changing audio devices. For example,
-  when connecting a USB headset, |trueos| detects the new device and
-  automatically changes the audio device to the USB input. However, when
-  inserting a headset into an audio jack, the system may not detect this
-  new input, meaning the default device has changed manually.
-  :guilabel:`Set as Default` sets the currently selected audio output
-  channel as the system default.
-
-The :guilabel:`Disable PulseAudio` disables all PulseAudio support.
-
-The :guilabel:`File` menu can be used to quit this mixer screen or to
-close both this screen and remove the icon from the system tray.
-
-.. note:: To re-add the mixer icon after removing it,
-   type :samp:`pc-mixer &` in a command line. Alternately, open this
-   application without adding it back to the system tray by typing
-   :samp:`pc-mixer -notray`.
-
-|trueos| provides full
-`PulseAudio <https://www.freedesktop.org/wiki/Software/PulseAudio/>`_
-support, which can be configured using the :guilabel:`Configuration`
-menu in the :guilabel:`Mixer`. There are options for accessing the
-:guilabel:`PulseAudio Mixer` and :guilabel:`PulseAudio Settings`, as
-well as an option for restarting PulseAudio. These utilities can be
-used to configure discoverable network sound devices and mixer levels.
-
-.. index:: Flash
-.. _Flash plugin:
-
-Flash Plugin
-============
-
-|trueos| supports using a Flash plugin for those browsers/applications
-that use Flash. To begin using this plugin, search for and install
-"linux-flashplayer" using |appcafe|. Alternately, type
-:samp:`[samp@examp] ~% sudo pkg install linux-flashplayer` in a command
-line and enter the root password when requested.
-
-The "nspluginwrapper" is also required when using Flash. Install it
-with |appcafe| or by typing
-:samp:`[samp@examp] ~% sudo pkg install nspluginwrapper` in a command
-line.
-
-Once *linux-flashplayer* and *nspluginwrapper* are installed, configure
-them by opening a command line and typing this command:
-
-.. code-block:: none
-
- % nspluginwrapper -v -a -i
-
- Auto-install plugins from /usr/local/lib/browser_plugins
- Looking for plugins in /usr/local/lib/browser_plugins
- Auto-install plugins from /usr/local/lib/browser_plugins/linux-flashplayer
- Looking for plugins in /usr/local/lib/browser_plugins/linux-flashplayer
- Install plugin /usr/local/lib/browser_plugins/linux-flashplayer/libflashplayer.so
-   into /usr/home/tmoore/.mozilla/plugins/npwrapper.libflashplayer.so
- Auto-install plugins from /usr/home/tmoore/.mozilla/plugins
- Looking for plugins in /usr/home/tmoore/.mozilla/plugins
-
-In this example, Flash is configured and ready for use with the Firefox
-browser. To confirm Flash is usable, open Firefox and type
-**about:plugins** in the address bar. An *Installed plugins* page
-displays, listing *Shockwave Flash* an installed plugin. See
-:numref:`Figure %s <flash1>` as an example of Firefox with Flash
-installed.
-
-.. _flash1:
-
-.. figure:: images/flash1.png
-   :scale: 100%
-
-   "about:plugins" Example
-
-.. index:: multimedia
-.. _Multimedia:
-
-Multimedia
-==========
-
-|trueos| is pre-configured to support most multimedia formats and makes
-it easy to install most open source media applications using |appcafe|.
-
-After installing a web browser, most media formats become playable,
-including YouTube™ videos, Internet radio, and many trailer and movie
-sites. When encountering a file unplayable in a web browser or media
-player, it is likely in a proprietary format which requires a
-licensing fee or restricts distribution of the codec required to play
-the media format.
-
-.. note:: When troubleshooting Java™ or Flash® for your browser, please
-   refer to the
-   `FreeBSD browser <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/desktop-browsers.html>`_
-   documentation, which has more complete instructions for installing
-   Java™ and Flash® plugins with specific browsers.
-
-|appcafe| contains several dozen applications for playing and editing
-multimedia. It includes these popular applications:
-
-* `aTunes <http://www.atunes.org/?page_id=5>`_: Full-featured audio
-  player and manager which can play mp3, ogg, wma, wav, flac, mp4 and
-  radio streaming, allowing users to easily edit tags, organize music
-  and rip audio CDs.
-
-* `Audacity <https://sourceforge.net/projects/audacity/?lang=en>`_:
-  Multilingual audio editor and recorder.
-
-* `DeaDBeeF <http://deadbeef.sourceforge.net/screenshots.html>`_:
-  Music player supporting most audio formats.
-
-* `Decibel <http://decibel.silent-blade.org/index.php?n=Main.Screenshots>`_:
-  Audio player built around a highly modular structure which lets the
-  user completely disable unneeded features. Able to play CDs directly.
-
-* `gtkpod <http://gtkpod.org/libgpod/>`_: Graphical user interface for
-  the Apple iPod.
-
-* `Miro <http://www.getmiro.com/download/screenshots/>`_: HD video
-  player which can play almost any video file and offers over 6,000
-  free Internet TV shows and video podcasts.
-
-* `SMPlayer <http://www.smplayer.info/>`_: Universal media player which
-  can handle any media format and play audio CDs, DVDs, (S)VCDs,
-  TV/radio cards, YouTube™ and SHOUTcast™ streams.
-
-* `VLC media player <http://www.videolan.org/vlc/>`_: Open Source
-  cross-platform multimedia player capable of playing most multimedia
-  files, DVD and CD formats, and some streaming protocols.
-
-.. index:: Kodi
-.. _Kodi:
-
-Kodi
-----
-
-`Kodi, formerly known as XBMC, <https://kodi.tv/>`_ is a GPL-licensed
-software media player and entertainment hub for digital media. It can
-play most audio and video formats, CDs and DVDs from a disk or image
-file, and even files inside ZIP and RAR archives. It can scan all of
-your media and automatically create a personalized library with album
-covers, descriptions, and fan art.
-
-Kodi can be installed using |appcafe|. Once installed, an entry for
-:guilabel:`Kodi media center` is added to
-:guilabel:`Browse Applications`. Kodi is also started by typing
-:command:`kodi` from a command prompt.
-
-If you have never used Kodi before, take some time to skim through the
-`Kodi Wiki Manual <http://kodi.wiki/>`_. This post about using PC-BSD as
-a `home theater <https://forums.pcbsd.org/thread-19799.html>`_
-contains a useful how-to for configuring Kodi.
-
-.. index:: Plex
-.. _PlexHome Theater:
-
-PlexHome Theater
-----------------
-
-`Plex Home Theater <https://www.plex.tv/>`_ is a centralized media
-playback system. The central Plex Media Server streams media to many
-Plex player Apps which are used to view your media library and watch
-shows.
-
-To install PlexHome Theater, use |appcafe|. Once installed, an entry
-should be added to the :guilabel:`Multimedia` section of the application
-menu of your desktop. PlexHome Theater can also be started by typing
-:command:`plexhometheater` from a command prompt.
-
-Once installed, an entry for :guilabel:`Plex Home Theater` is also added
-to the login manager so you can login directly to the home theater
-instead of a desktop.
-
-The first time running or logging into Plex Home Theater, a wizard
-checks the audio settings and signs into your Plex account. If you have
-no Plex account, create one at `plex.tv <https://www.plex.tv/>`_. The
-wizard provides a PIN code and an URL to enter the code. Once the PIN is
-entered, the wizard connects and signs you in. Now it is possible to
-search for and watch media. To exit Plex, click :guilabel:`<` and
-:guilabel:`Quit`.
-
-.. index:: usb automounter
-.. _Automounter:
-
-Automounter
-===========
-
-.. tip:: The *Mount Tray* has been replaced by the new **Automounter**.
-
-The automounter, based on the :command:`devd` and :command:`automount`
-utilities, facilitates mounting and unmounting USB storage devices and
-optical media. It also conforms to an **XDG** standard to allow the
-addition of new features. The automounter is part of the default
-|trueos| installation, but is generally invisible until a new device is
-attached to the system.
-
-Currently, the automounter ignores internal hard drives (sata, ide) and
-networking shares. It does support many different filesystems:
-
-* cd9660
-
-* exFAT (Requires :file:`mount.exfat-fuse`. Possible intermittent
-  detection issues.)
-
-* ext2
-
-* ext4 (Requires :file:`ext4fuse`)
-
-* FAT32
-
-* MSDOSFS
-
-* MTPfs (Requires :file:`simple-mtpfs`)
-
-* NTFS (Requires :file:`ntfs-3g`)
-
-* ReiserFS
-
-* UDF
-
-* UFS
-
-* XFS
-
-.. warning:: Linux based filesystems may have some limitations. See
-   :numref:`Table %s <filesys support>` for more details.
-
-To engage the automounter, attach a USB storage device or insert optical
-media to the system. The automounter detects the device by ID and adds
-icons to the desktop, as seen in :numref:`Figure %s <automnt1>`:
-
-.. _automnt1:
-
-.. figure:: images/automnt1.png
-   :scale: 65%
-
-   USB icons added to desktop via the automounter. Hovering over the
-   icon displays the actual device name and filesystem type.
-
-.. tip:: The appearance of these icons do **not** mean the device is
-   mounted. Devices are only mounted when the user begins to interact
-   with the device.
-
-Either navigating to a device or beginning copy operations mounts the
-device. The device is unmounted by the **autounmountd** service after
-the user navigates away and/or file copy operations stop.
-
-For example, the above image shows USB drive "FreeNAS" attached to
-the system. After double-clicking the desktop icon,
-"Insight File Manager" opens to the device's location,
-:file:`autofs/da0`. While :guilabel:`Insight` opens, the automounter
-mounts the device. After closing :guilabel:`Insight`, the device is also
-unmounted and safe to remove from the system.
-
-In the CLI, the automounter adds a :file:`.desktop` file to
-:file:`/media` when a new USB/Optical device is added. Open the
-:file:`.desktop` file with :command:`xdg-open` or
-:command:`lumina-open`. When the device is removed, the symlink is
-immediately removed from :file:`/media`.
-
-.. note:: The :file:`/autofs/*` directories are not cleaned when the
-   device is removed. However, after device removal the directories are
-   no longer associated with the device in the backend. For this reason,
-   :file:`/media` is more useful to identify which devices are attached
-   to the system.
-
-Alternately, all device names are added to the :file:`/autofs`
-directory. Attached devices are also accessed by navigating to
-:file:`/autofs/<devicename>`.
-
-Known limitations:
-
-* UFS permissions. These permissions are preserved on USB media. To
-  allow multiple users access to files from a UFS stick, those files'
-  permissions need to be set to *read/write by any user* (777).
-
-* ZFS pools are not yet supported. This is under investigation to
-  ascertain if it can ever work with :command:`automount`.
-
-* Optical Media links are not yet created on the desktop. Optical media
-  is accessible by navigating to :file:`/autofs`.
-
-* Any file system with limited FreeBSD support (HFS or EXT) remain at
-  the same level of limited support.
-
-* exFAT detection issues are being investigated.
-
-Coming soon:
-
-* Optical media support for the desktop
-
-* Android device support
-
-* Possible support for ZFS pools
-
-.. index:: Freebsd ports
-.. _FreeBSD Ports:
-
-FreeBSD Ports
-=============
-
-Use :command:`git` to fetch the FreeBSD ports tree on a local system.
-Specifically, the |trueos| branch of the FreeBSD ports tree is pulled,
-which is regularly updated against the base FreeBSD ports tree.
-
-.. note:: These commands must be run as the superuser or **root**.
-
-When fetching ports for the first time:
-
-:samp:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`
-
-To update an existing local ports directory:
-
-.. code-block:: none
-
- # cd /usr/ports
- # git pull
-
-.. index:: files, file sharing
-.. _Files and File Sharing:
-
-Files and File Sharing
-======================
-
-Several file managers are available for installation using
-|appcafe|. :numref:`Table %s <filemanagers>` provides an overview
-of several popular file managers. To launch an installed file manager,
-type its name as it appears in the :guilabel:`Application` column. To
-install the file manager, use |appcafe| to install the package name
-listed in the :guilabel:`Install` column. To research a file manager's
-capabilities, start with the URL listed in its :guilabel:`Screenshot`
-column.
-
-.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}|
-
-.. _filemanagers:
-
-.. table:: Available File Managers
-   :class: longtable
-
-   +-------------+--------------+-------------------------------------------------------------+
-   | Application | Install      | Screenshots                                                 |
-   +=============+==============+=============================================================+
-   | dolphin     | kde-baseapps | `<https://userbase.kde.org/Dolphin>`_                       |
-   +-------------+--------------+-------------------------------------------------------------+
-   | emelfm2     | emelfm2      | `<http://emelfm2.net/wiki/ScreenShots>`_                    |
-   +-------------+--------------+-------------------------------------------------------------+
-   | caja        | caja         | `<http://mate-desktop.org/gallery/1.6/>`_                   |
-   +-------------+--------------+-------------------------------------------------------------+
-   | mucommander | mucommander  | `<http://www.mucommander.com/index.html>`_                  |
-   +-------------+--------------+-------------------------------------------------------------+
-   | nautilus    | nautilus     | `<https://projects.gnome.org/nautilus/screenshots.html>`_   |
-   +-------------+--------------+-------------------------------------------------------------+
-   | pcmanfm     | pcmanfm      | `<https://wiki.lxde.org/en/PCManFM>`_                       |
-   +-------------+--------------+-------------------------------------------------------------+
-   | thunar      | thunar       | `<http://docs.xfce.org/xfce/thunar/start>`_                 |
-   +-------------+--------------+-------------------------------------------------------------+
-   | xfe         | xfe          | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_ |
-   +-------------+--------------+-------------------------------------------------------------+
-
-When working with files on a |trueos| system, save your files to your
-home directory. Since most of the files outside your home directory are
-used by the operating system and applications, you should not delete or
-modify any files outside of your home directory unless confident in what
-you are doing.
-
-:numref:`Table %s <dirstructure>` summarizes the directory structure
-found on a |trueos| system. :command:`man hier` explains this directory
-structure in more detail.
-
-.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
-
-.. _dirstructure:
-
-.. table:: |TrueOS| Directory Structure
-   :class: longtable
-
-   +-------------------------+------------------------------------------+
-   | Directory               | Contents                                 |
-   +=========================+==========================================+
-   | /                       | Pronounced as "root" and represents the  |
-   |                         | beginning of the directory structure     |
-   +-------------------------+------------------------------------------+
-   | /bin/                   | Applications (binaries) that were        |
-   |                         | installed with the operating system      |
-   +-------------------------+------------------------------------------+
-   | /boot/                  | Stores the startup code, including       |
-   |                         | kernel modules (like hardware drivers)   |
-   +-------------------------+------------------------------------------+
-   | /compat/linux/          | Linux software compatibility files       |
-   +-------------------------+------------------------------------------+
-   | /dev/                   | Files which are used by the operating    |
-   |                         | system to access devices                 |
-   +-------------------------+------------------------------------------+
-   | /etc/                   | Operating system configuration files     |
-   +-------------------------+------------------------------------------+
-   | /etc/X11/               | The :file:`xorg.conf` configuration      |
-   |                         | file                                     |
-   +-------------------------+------------------------------------------+
-   | /etc/rc.d/              | Operating system startup scripts         |
-   +-------------------------+------------------------------------------+
-   | /home/                  | Subdirectories for each user account;    |
-   |                         | each user should store their files in    |
-   |                         | their own home directory                 |
-   |                         |                                          |
-   +-------------------------+------------------------------------------+
-   | /lib/                   | Operating system libraries needed for    |
-   |                         | applications                             |
-   +-------------------------+------------------------------------------+
-   | /libexec/               | Operating system libraries and binaries  |
-   +-------------------------+------------------------------------------+
-   | /media/                 | Mount point for storage media such as    |
-   |                         | DVDs and USB drives                      |
-   +-------------------------+------------------------------------------+
-   | /mnt/                   | Another mount point                      |
-   +-------------------------+------------------------------------------+
-   | /proc/                  | The proc filesystem required by some     |
-   |                         | Linux applications                       |
-   +-------------------------+------------------------------------------+
-   | /rescue/                | Emergency recovery programs              |
-   +-------------------------+------------------------------------------+
-   | /root/                  | Administrative account's home directory  |
-   +-------------------------+------------------------------------------+
-   | /sbin/                  | Operating system applications;           |
-   |                         | typically only the superuser can run     |
-   |                         | these applications                       |
-   +-------------------------+------------------------------------------+
-   | /tmp/                   | Temporary file storage; files stored     |
-   |                         | here may disappear when the system       |
-   |                         | reboots                                  |
-   +-------------------------+------------------------------------------+
-   | /usr/bin/               | Contains most of the command line        |
-   |                         | programs available to users              |
-   +-------------------------+------------------------------------------+
-   | /usr/local/             | Contains the binaries, libraries,        |
-   |                         | startup scripts, documentation, and      |
-   |                         | configuration files used by applications |
-   |                         | installed from ports or packages         |
-   +-------------------------+------------------------------------------+
-   | /usr/local/share/fonts/ | System wide fonts for graphical          |
-   |                         | applications                             |
-   +-------------------------+------------------------------------------+
-   | /usr/local/share/icons/ | System wide icons                        |
-   +-------------------------+------------------------------------------+
-   | /usr/ports/             | Location of system ports tree            |
-   |                         | (if installed)                           |
-   +-------------------------+------------------------------------------+
-   | /usr/share/             | System documentation and man pages       |
-   +-------------------------+------------------------------------------+
-   | /usr/sbin/              | Command line programs for the superuser  |
-   +-------------------------+------------------------------------------+
-   | /usr/src/               | Location of system source code           |
-   |                         | (if installed)                           |
-   +-------------------------+------------------------------------------+
-   | /var/                   | Files that change (vary), such as log    |
-   |                         | files and print jobs                     |
-   +-------------------------+------------------------------------------+
-
-|trueos| provides built-in support for accessing Windows shares, meaning
-you only have to decide which utility you prefer to access existing
-Windows shares on your network.
-
-:numref:`Table %s <windows shares utils>` summarizes some of the
-available utilities.
-
-.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
-                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}|
-
-.. _windows shares utils:
-
-.. table:: Utilities that Support Windows Shares
-   :class: longtable
-
-   +-------------+--------------+-----------------------------------------------------+
-   | Application | Install      | How to Access Existing Shares                       |
-   +=============+==============+=====================================================+
-   | dolphin     | kde-baseapps | In the left frame, click                            |
-   |             |              | :menuselection:`Network --> Samba Shares`, then the |
-   |             |              | Workgroup name; if the network requires a username  |
-   |             |              | and password to browse for shares, set this in      |
-   |             |              | :menuselection:`System Settings --> Sharing` while  |
-   |             |              | in KDE or type :command:`systemsettings` and click  |
-   |             |              | :guilabel:`Sharing` while in another desktop        |
-   +-------------+--------------+-----------------------------------------------------+
-   | smb4k       | smb4k-kde4   |                                                     |
-   +-------------+--------------+-----------------------------------------------------+
-   | mucommander | mucommander  | Click                                               |
-   |             |              | :menuselection:`Go --> Connect to server --> SMB`;  |
-   |             |              | input the NETBIOS name of server, name of share,    |
-   |             |              | name of domain (or workgroup), and the share's      |
-   |             |              | username and password                               |
-   +-------------+--------------+-----------------------------------------------------+
-   | nautilus    | nautilus     | Click                                               |
-   |             |              | :menuselection:`Browse Network --> Windows Network` |
-   +-------------+--------------+-----------------------------------------------------+
-   | thunar      | thunar       | In the left frame, click                            |
-   |             |              | :menuselection:`Network --> Windows Network`        |
-   +-------------+--------------+-----------------------------------------------------+
 
 .. index:: network manager
 .. _Network Manager:
@@ -1024,7 +331,7 @@ If multiple networks are added, use the arrow keys to place them in the
 desired connection order. |trueos| attempts to connect to networks in
 order from first to last in the connection list. When prioritizing
 connections, click :guilabel:`Apply`. A pop-up message then indicates
-|trueos| is restarting the network. Next, an an IP address and status of
+|trueos| is restarting the network. Next, an IP address and status of
 **associated** appears when hovering over the wireless icon in the
 system tray. If this does not happen, double-check for errors in the
 configuration values and read the Troubleshooting section on
@@ -1150,7 +457,7 @@ in the :guilabel:`Devices` tab.
 
 .. _network13:
 
-.. figure:: images/network13.png
+.. figure:: images/network13a.png
    :scale: 100%
 
    Network Configuration - Advanced
@@ -1268,6 +575,7 @@ Right-click the entry for a wireless device, as seen in
 .. figure:: images/network15.png
    :scale: 100%
 
+
    Setup Access Point
 
 :numref:`Figure %s <network16>` shows the configuration screen if
@@ -1352,172 +660,1148 @@ with no system tray, use these commands:
 
 * :samp:`sudo disable-tor-mode` disables tor mode.
 
-.. index:: windows emulation
-.. _Windows Emulation:
+.. index:: Sysadm
+.. _SysAdm:
 
-Windows Emulation
-=================
-
-`Wine <https://wiki.winehq.org/Main_Page>`_ is an application which
-allows the creation of a Windows environment for installing Windows
-software. This can be useful if your favorite Windows game or
-productivity application has not yet been ported to Linux or BSD.
-
-Wine is not guaranteed to work with every Windows application. You can
-search for desired applications in the :guilabel:`Browse Apps` section
-of the `Wine application database <https://appdb.winehq.org/>`_. The
-`Wine wiki <https://wiki.winehq.org/Main_Page>`_ contains resources to
-get started and troubleshooting reference material if problems are
-encountered with a Windows application.
-
-Wine can be installed using |appcafe|. After installing, it can be
-started by typing :command:`winecfg` in the command line. The first time
-running this utility, it may prompt to install additional required
-packages. If prompted, click :guilabel:`Install` in the pop-up menu.
-
-The initial Wine configuration menu is shown in
-:numref:`Figure %s <wine1>`.
-
-.. _wine1:
-
-.. figure:: images/wine1a.png
-   :scale: 100%
-
-   Wine Configuration Menu
-
-Click :guilabel:`Add application` to browse to the application's
-installer file. By default, the contents of the hard drive will be
-listed under *drive_c*. If the installer is on a CD/DVD, use the
-drop-down menu to browse to the
-:menuselection:`home directory --> *.wine --> dosdevices` folder. The
-contents of the CD/DVD should be listed under *d:*. If they are not,
-the most likely reason is your CD/DVD was not automatically mounted by
-the desktop. To mount the media, type
-:samp:`mount -t cd9660 /dev/cd0 /cdrom` as the superuser.
-
-The system then accesses the media and you can now select the installer
-file. Once selected, click :guilabel:`Apply` then :guilabel:`OK` to exit
-the configuration utility.
-
-To install the application, type :command:`winefile` to see the screen
-shown in :numref:`Figure %s <wine2>`.
-
-.. _wine2:
-
-.. figure:: images/wine2a.png
-   :scale: 100%
-
-   Installing the Application Using :command:`winefile`
-
-Click the button representing the drive which contains the installer and
-double-click on the installation file (e.g. :file:`setup.exe`). The
-installer then launches to allow installing the application as on a
-Windows system.
-
-.. note:: You may need need to unmount a CD/DVD before it ejects. As the
-   superuser, type :samp:`umount /mnt`.
-
-Once the installation is complete, browse to the application's location.
-:numref:`Figure %s <wine3>` shows an example of running Internet
-Explorer within :command:`winefile`.
-
-.. _wine3:
-
-.. figure:: images/wine3.png
-   :scale: 100%
-
-   Running the Installed Application
-
-.. index:: security
-.. _Security:
-
-Security
+|sysadm|
 ========
 
-Your |trueos| system is secure by default. This section provides an
-overview of the built-in security features. If you want to know more
-about increasing the security of your system beyond its current level,
-additional resources are also provided in this section.
+Beginning with |trueos| 11, most of the system management utilities
+previously available in the |pcbsd| Control Panel have been
+rewritten to use the |sysadm|
+`API <https://api.sysadm.us/getstarted.html>`_. This API is designed to
+simplify managing any FreeBSD, |trueos| desktop, or |trueos| server
+system over a secure connection from any operating system with the
+|sysadm| application installed. |sysadm| is built into |trueos| as the
+:guilabel:`SysAdm: Control Panel`.
 
-The security features built into |trueos| include:
+The |sysadm| `Client Handbook <https://sysadm.us/handbook/client/>`_
+is recommended for new |trueos| users, while the
+`Server <https://sysadm.us/handbook/server/>`_ and
+`API Reference <https://api.sysadm.us/>`_ guides are available for
+advanced users.
 
-* **Naturally immune to viruses and other malware:** Most viruses are
-  written to exploit Windows systems and do not understand the binaries
-  or paths found on a |trueos| system. Antivirus software is still
-  available in the Security section of |appcafe|, as this is useful when
-  sending or forwarding email attachments to users running other
-  operating systems.
+The rest of this section describes the elements of TrueOS controlled by
+SysAdm, providing links to the relevant SysAdm documentation:
 
-* **Potential for serious damage is limited:** File and directory
-  ownership and permissions along with separate user and group functions
-  mean, as an ordinary user, any program executed is only granted the
-  abilities and access of the user. A user not a member of the *wheel*
-  group can not switch to administrative access and can not enter or
-  list the contents of a directory not been set for universal access.
 
-* **Built-in firewall:** The default firewall ruleset allows accessing
-  the Internet and the shares available on your network, but does not
-  allow any inbound connections to your computer.
+ **Application Management**
 
-* **Very few services are enabled by default:** View which services are
-  started at boot time by reading through the output of
-  :command:`rc-update`.
 
-* **SSH is disabled by default:** SSH can only be enabled by the
-  superuser. This setting prevents bots and other users from trying to
-  access your system. If SSH is needed, add :command:`sshd_enable=YES`
-  to :file:`/etc/rc.conf`. Start the service by typing
-  :command:`service sshd start`. A firewall rule also needs to be added
-  using the |sysadm| :sysclbk:`Firewall Manager <firewall-manager>` to
-  allow SSH connections over TCP port 22.
+:sysclbk:`AppCafe <appcafe>` is a graphical interface for installing and
+managing FreeBSD packages. These are pre-built applications tested for
+use with a FreeBSD-based operating system. Open |appcafe| by clicking
+the :guilabel:`Start` button (lower-left), then
+:menuselection:`Control Panel --> AppCafe`.
 
-* **SSH root logins are disabled by default:** If SSH is enabled, login
-  as a regular user and use :command:`su` or :command:`sudo` when
-  administrative actions are required. Do not change this setting, as it
-  prevents an unwanted user from having complete access to the system.
+|appcafe| breaks popular applications into a few categories and provides
+search functionality for users looking for a specific application. Users
+can also browse through a list of all currently installed applications
+and view more details or delete them from the system.
 
-* **sudo is installed:** It is configured to allow users in the *wheel*
-  group permission to run an administrative command after typing their
-  password. By default, the first user created during installation
-  is added to the *wheel* group. Use the |sysadm|
-  :sysclbk:`User Manager <user-manager>` to add other users to this
-  group. Change the default :command:`sudo` configuration using
-  :command:`visudo` as the superuser.
+:sysclbk:`Update Manager <update-manager>` is a graphical interface for
+keeping both |trueos| and its installed applications up to date. Users
+can check for updates, switch between the STABLE and UNSTABLE tracks of
+TrueOS, configure automatic updating, and view the log files of previous
+updates.
 
-* :wiki:`AES instruction set <AES_instruction_set>` (AESNI) support is
-  loaded by default for the Intel Core i5/i7 processors that support
-  this encryption set. This support speeds up AES encryption and
-  decryption.
+See :ref:`Updating TrueOS` for more details about using the
+:guilabel:`Update Manager`.
 
-* **Automatic notification of security advisories:**
-  The |sysadm| :sysclbk:`Update Manager <update-manager>` automatically
-  notifies you if an update is available as the result of a
-  `security advisory <https://www.freebsd.org/security/advisories.html>`_
-  affecting |trueos|. This allows you to keep your operating system
-  fully patched with just the click of a mouse.
 
-* The |trueos| operating system and its available software packages are
-  built with `LibreSSL <http://www.libressl.org/>`_, which has fewer
-  vulnerabilities than OpenSSL.
+ **SysAdm Server Settings**
 
-* :sysclbk:`PersonaCrypt <personacrypt>` allows a user to use a
-  removable, encrypted device as their home directory.
 
-* :ref:`Tor Mode` can be used to anonymously access Internet sites as it
-  automatically forwards all Internet traffic through the
-  `Tor Project's <https://www.torproject.org/>`_ transparent proxy
-  service.
+:sysclbk:`Managing Remote Connections <managing-remote-connections>`
+provides instructions to create and manage SSL keys or certificate
+bundles.
 
-To learn more about security on FreeBSD and |trueos| systems,
-:command:`man security` is a good place to start. These resources
-provide more information about security on FreeBSD-based operating
-systems:
 
-* `FreeBSD Security Information <https://www.freebsd.org/security/>`_
+ **System Management**
 
-* `Security Section of FreeBSD Handbook <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/security.html>`_
 
-* `Hardening FreeBSD <http://www.bsdguides.org/2005/hardening-freebsd/>`_
+
+|sysadm| provides the "core" for managing |trueos|:
+
+:sysclbk:`Boot Environment Manager <boot-environment-manager>`: Create
+and manage ZFS Boot Environments (BEs). Boot Environments provide a
+"point-in-time" backup for the system and are highly recommended.
+Options to *create*, *clone*, *delete*, *rename*, *mount*, *unmount*,
+and *activate* a BE are available.
+
+:sysclbk:`Mouse Settings <mouse-settings>`: Tool for adjusting the
+settings of a connected mouse. Acceleration, DPI, right or left hand,
+drift, button emulation, and scrolling are all adjustable.
+
+:sysclbk:`Firewall Manager <firewall-manager>`: This is used to
+configure all ports and firewalls for |trueos|. Options to *open* and
+*close* ports are available, including adjusting the firewall's
+autostart settings.
+
+:sysclbk:`Service Manager <service-manager>`: This allows viewing and
+configuring all the system's installed services. There are options to
+*start*, *stop*, and *restart* services. Additional tunables to adjust
+automatic starting of services are provided.
+
+:sysclbk:`Task Manager <task-manager>`: A graphical window into system
+resource usage and a list of all running applications. This provides
+details about what is currently happening on the system and allows the
+user to stop any currently running process.
+
+:sysclbk:`User Manager <user-manager>`: This utility controls users and
+groups. There are :guilabel:`Standard` and :guilabel:`Advanced` views
+for both users and groups, and all options for creating new users and
+groups are provided.
+
+:sysclbk:`PersonaCrypt <personacrypt>` security can also be added to
+user accounts. This encrypts a user account so it only becomes
+accessible with the proper password or by plugging in an associated USB
+drive.
+
+
+ **Utilities**
+
+
+:sysclbk:`Life Preserver <life-preserver>` is the only utility currently
+included with |trueos|. This utility is used for system backups with
+:ref:`ZFS <ZFS Overview>` snapshots. :guilabel:`Life Preserver` provides
+easy management, replication, and scheduling of ZFS snapshots.
+
+.. index:: files, file sharing
+.. _Files and File Sharing:
+
+Files and File Sharing
+======================
+
+Several file managers are available for installation using
+|appcafe|. :numref:`Table %s <filemanagers>` provides an overview
+of several popular file managers. To launch an installed file manager,
+type its name as it appears in the :guilabel:`Application` column. To
+install the file manager, use |appcafe| to install the package name
+listed in the :guilabel:`Install` column. To research a file manager's
+capabilities, start with the URL listed in its :guilabel:`Screenshot`
+column.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}|
+
+.. _filemanagers:
+
+.. table:: Available File Managers
+   :class: longtable
+
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | Application | Install      | Screenshots                                                                                           |
+   +=============+==============+=======================================================================================================+
+   | dolphin     | kde-baseapps | `<https://userbase.kde.org/Dolphin>`_                                                                 |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | emelfm2     | emelfm2      | `<http://linuxg.net/how-to-install-emelfm2-0-8-2-1-on-ubuntu-linux-mint-and-elementary-os/>`_         |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | caja        | caja         | `<http://mate-desktop.org/gallery/1.6/>`_                                                             |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | mucommander | mucommander  | `<http://www.mucommander.com/index.html>`_                                                            |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | nautilus    | nautilus     | `<https://projects.gnome.org/nautilus/screenshots.html>`_                                             |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | pcmanfm     | pcmanfm      | `<https://wiki.lxde.org/en/PCManFM>`_                                                                 |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | thunar      | thunar       | `<http://docs.xfce.org/xfce/thunar/start>`_                                                           |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+   | xfe         | xfe          | `<http://roland65.free.fr/xfe/index.php?page=screenshots>`_                                           |
+   +-------------+--------------+-------------------------------------------------------------------------------------------------------+
+
+When working with files on a |trueos| system, save your files to your
+home directory. Since most of the files outside your home directory are
+used by the operating system and applications, you should not delete or
+modify any files outside of your home directory unless confident in what
+you are doing.
+
+:numref:`Table %s <dirstructure>` summarizes the directory structure
+found on a |trueos| system. :command:`man hier` explains this directory
+structure in more detail.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
+.. _dirstructure:
+
+.. table:: |TrueOS| Directory Structure
+   :class: longtable
+
+   +-------------------------+------------------------------------------+
+   | Directory               | Contents                                 |
+   +=========================+==========================================+
+   | /                       | Pronounced as "root" and represents the  |
+   |                         | beginning of the directory structure     |
+   +-------------------------+------------------------------------------+
+   | /bin/                   | Applications (binaries) that were        |
+   |                         | installed with the operating system      |
+   +-------------------------+------------------------------------------+
+   | /boot/                  | Stores the startup code, including       |
+   |                         | kernel modules (like hardware drivers)   |
+   +-------------------------+------------------------------------------+
+   | /compat/linux/          | Linux software compatibility files       |
+   +-------------------------+------------------------------------------+
+   | /dev/                   | Files which are used by the operating    |
+   |                         | system to access devices                 |
+   +-------------------------+------------------------------------------+
+   | /etc/                   | Operating system configuration files     |
+   +-------------------------+------------------------------------------+
+   | /etc/X11/               | The :file:`xorg.conf` configuration      |
+   |                         | file                                     |
+   +-------------------------+------------------------------------------+
+   | /etc/rc.d/              | Operating system startup scripts         |
+   +-------------------------+------------------------------------------+
+   | /home/                  | Subdirectories for each user account;    |
+   |                         | each user should store their files in    |
+   |                         | their own home directory                 |
+   |                         |                                          |
+   +-------------------------+------------------------------------------+
+   | /lib/                   | Operating system libraries needed for    |
+   |                         | applications                             |
+   +-------------------------+------------------------------------------+
+   | /libexec/               | Operating system libraries and binaries  |
+   +-------------------------+------------------------------------------+
+   | /media/                 | Mount point for storage media such as    |
+   |                         | DVDs and USB drives                      |
+   +-------------------------+------------------------------------------+
+   | /mnt/                   | Another mount point                      |
+   +-------------------------+------------------------------------------+
+   | /proc/                  | The proc filesystem required by some     |
+   |                         | Linux applications                       |
+   +-------------------------+------------------------------------------+
+   | /rescue/                | Emergency recovery programs              |
+   +-------------------------+------------------------------------------+
+   | /root/                  | Administrative account's home directory  |
+   +-------------------------+------------------------------------------+
+   | /sbin/                  | Operating system applications;           |
+   |                         | typically only the superuser can run     |
+   |                         | these applications                       |
+   +-------------------------+------------------------------------------+
+   | /tmp/                   | Temporary file storage; files stored     |
+   |                         | here may disappear when the system       |
+   |                         | reboots                                  |
+   +-------------------------+------------------------------------------+
+   | /usr/bin/               | Contains most of the command line        |
+   |                         | programs available to users              |
+   +-------------------------+------------------------------------------+
+   | /usr/local/             | Contains the binaries, libraries,        |
+   |                         | startup scripts, documentation, and      |
+   |                         | configuration files used by applications |
+   |                         | installed from ports or packages         |
+   +-------------------------+------------------------------------------+
+   | /usr/local/share/fonts/ | System wide fonts for graphical          |
+   |                         | applications                             |
+   +-------------------------+------------------------------------------+
+   | /usr/local/share/icons/ | System wide icons                        |
+   +-------------------------+------------------------------------------+
+   | /usr/ports/             | Location of system ports tree            |
+   |                         | (if installed)                           |
+   +-------------------------+------------------------------------------+
+   | /usr/share/             | System documentation and man pages       |
+   +-------------------------+------------------------------------------+
+   | /usr/sbin/              | Command line programs for the superuser  |
+   +-------------------------+------------------------------------------+
+   | /usr/src/               | Location of system source code           |
+   |                         | (if installed)                           |
+   +-------------------------+------------------------------------------+
+   | /var/                   | Files that change (vary), such as log    |
+   |                         | files and print jobs                     |
+   +-------------------------+------------------------------------------+
+
+|trueos| provides built-in support for accessing Windows shares, meaning
+you only have to decide which utility you prefer to access existing
+Windows shares on your network.
+
+:numref:`Table %s <windows shares utils>` summarizes some of the
+available utilities.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}|
+
+.. _windows shares utils:
+
+.. table:: Utilities that Support Windows Shares
+   :class: longtable
+
+   +-------------+--------------+-----------------------------------------------------+
+   | Application | Install      | How to Access Existing Shares                       |
+   +=============+==============+=====================================================+
+   | dolphin     | kde-baseapps | In the left frame, click                            |
+   |             |              | :menuselection:`Network --> Samba Shares`, then the |
+   |             |              | Workgroup name; if the network requires a username  |
+   |             |              | and password to browse for shares, set this in      |
+   |             |              | :menuselection:`System Settings --> Sharing` while  |
+   |             |              | in KDE or type :command:`systemsettings` and click  |
+   |             |              | :guilabel:`Sharing` while in another desktop        |
+   +-------------+--------------+-----------------------------------------------------+
+   | smb4k       | smb4k-kde4   |                                                     |
+   +-------------+--------------+-----------------------------------------------------+
+   | mucommander | mucommander  | Click                                               |
+   |             |              | :menuselection:`Go --> Connect to server --> SMB`;  |
+   |             |              | input the NETBIOS name of server, name of share,    |
+   |             |              | name of domain (or workgroup), and the share's      |
+   |             |              | username and password                               |
+   +-------------+--------------+-----------------------------------------------------+
+   | nautilus    | nautilus     | Click                                               |
+   |             |              | :menuselection:`Browse Network --> Windows Network` |
+   +-------------+--------------+-----------------------------------------------------+
+   | thunar      | thunar       | In the left frame, click                            |
+   |             |              | :menuselection:`Network --> Windows Network`        |
+   +-------------+--------------+-----------------------------------------------------+
+
+.. index:: Managing system services and Daemons
+.. _Managing System Services and Daemons:
+
+Managing System Services and Daemons
+====================================
+
+.. TODO Add description of switching between OpenRC and RC when that
+   feature is enabled.
+
+|trueos| now uses
+`OpenRC <https://wiki.gentoo.org/wiki/Project:OpenRC>`_ to manage system
+services.  OpenRC is an integral component of the |trueos| operating
+system, and is a major point of difference between |trueos| and FreeBSD.
+This section is intended to provide detailed information about system
+service management in |trueos|.
+
+.. index:: openrc vs rc
+.. _comparing openrc to RC:
+
+OpenRC in |trueos| compared with :command:`rc`
+----------------------------------------------
+
+:numref:`Table %s <trfbsdrc>` serves as a quick summary and series of
+working examples contrasting the FreeBSD :command:`rc` system and OpenRC
+in |trueos|.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.33\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.33\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.34\linewidth-2\tabcolsep}|
+
+.. _trfbsdrc:
+
+.. table:: Comparison between the FreeBSD :command:`rc` and |trueos|
+   OpenRC service management
+   :class: longtable
+
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Component or action            | FreeBSD                           | |trueos|                                        |
+   +================================+===================================+=================================================+
+   | Base system rc script location | :file:`/etc/rc.d`                 | :file:`/etc/init.d`                             |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Ports rc script location       | :file:`/usr/local/etc/rc.d`       | :file:`/usr/local/etc/init.d`                   |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Service configuration          | :file:`/etc/rc.conf` or           | OpenRC prefers :file:`/etc/conf.d/servicename`, |
+   |                                | :file:`/etc/rc.conf.local`        | but can use :file:`/etc/rc.conf` or             |
+   |                                |                                   | :file:`/etc/rc.conf.local`                      |
+   |                                | All services are configured       | Each service has its own configuration file.    |
+   |                                | in a central location.            |                                                 |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Starting e.g. the              | :samp:`$ service nginx start`     | :samp:`$ service nginx start`                   |
+   | :command:`nginx` service       |                                   |                                                 |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Configuring e.g.               | Edit :file:`/etc/rc.conf` and add | :samp:`$ rc-update add nginx default`           |
+   | :command:`nginx` to start on   | :command:`nginx_enable="YES"`     |                                                 |
+   | bootup.                        |                                   |                                                 |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+   | Check to see if a service      | :samp:`$ service nginx rcvar`     | :samp:`$ rc-update show default | grep nginx`   |
+   | is enabled.                    |                                   |                                                 |
+   |                                | If the service is enabled,        | If the service is enabled,                      |
+   |                                | the result is:                    | the result is:                                  |
+   |                                |                                   |                                                 |
+   |                                | :samp:`nginx_enable="YES"`        | :samp:`nginx | default`                         |
+   +--------------------------------+-----------------------------------+-------------------------------------------------+
+
+.. warning:: The user may find leftover RC files during the |trueos|
+   migration to OpenRC. These files do not work with OpenRC and are
+   intended to be removed both from the source tree and via
+   :command:`pc-updatemanager` when all functionality is successfully
+   migrated. If discovered, **do not** attempt to use these leftover
+   files.
+
+.. index:: openrc service management
+.. _Service Management in OpenRC:
+
+Service Management in OpenRC
+----------------------------
+
+.. index:: openrc runlevels
+.. _Runlevels:
+
+Runlevels
+^^^^^^^^^
+
+Traditionally, FreeBSD operates in single- and multi-user modes.
+However, OpenRC offers the ability to define **runlevels**. An OpenRC
+**runlevel** is a grouping of services, nothing more. Any number of
+system services can be associated with a given runlevel. In |trueos|,
+there are two main preconfigured runlevels: **boot** and **default**.
+The **default** runlevel is analogous to the FreeBSD multi-user mode,
+and is associated with the *Normal Bootup* option of the |trueos|
+bootloader.
+
+.. note:: No OpenRC runlevels are executed if the system is booted into
+   single-user mode (see :numref:`Figure %s <boot1>`.)
+
+Runlevels are defined by subdirectories of :file:`/etc/runlevels`; all
+associations between services and runlevels can be shown by running
+the command:
+
+:samp:`$ rc-update show -v`
+
+OpenRC has a few ordered runlevels in |trueos|. In order of execution:
+
+1. **sysinit**: Used for OpenRC to initialize itself.
+2. **boot**: Starts most base services from :file:`/etc/init.d/`.
+3. **default**: Services started by ports are added here.
+
+.. note:: Services added by ports cannot be added to *boot* or
+   *sysinit*.
+
+OpenRC allows users to add services in the prefix location to the *boot*
+runlevel. These services are started before the :file:`/usr` filesystem
+is mounted. Finally, there is a *shutdown* runlevel reserved for a few
+services like :command:`savecore` or :command:`pc-updatemanager`, which
+installs updates at shutdown.
+
+When a service is added to a runlevel, a symlink is created in
+:file:`/etc/runlevels`. When a service is started, stopped, or changed
+to another state, a symlink is added to :file:`/libexec/rc/init.d/`, as
+seen in this example:
+
+.. code-block:: none
+
+ [tmoore@Observer] ~% ls /libexec/rc/init.d/
+ daemons exclusive inactive scheduled starting wasinactive
+ depconfig failed options softlevel stopping
+ deptree hotplugged prefix.lock started tmp
+
+.. index:: services and runlevels
+.. _Services and Runlevels:
+
+Services and Runlevels
+^^^^^^^^^^^^^^^^^^^^^^
+
+OpenRC includes options to *start*, *stop*, *add*, or *delete* services
+from runlevels as seen in :numref:`Table %s <rcbootserv>`. Most of these
+actions can be accomplished using the
+:sysclbk:`Service Manager <service-manager>` built into |sysadm|.
+Individuals familiar with the FreeBSD :command:`service` command may
+notice some similarities between some of these commands.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
+.. _rcbootserv:
+
+.. table:: Service and Runlevel Management Commands
+   :class: longtable
+
+   +--------------------------------+------------------------------------------------------------+
+   | Command                        | Description                                                |
+   +================================+============================================================+
+   | service nginx start            | Start nginx from :file:`/usr/local/etc/init.d/nginx`.      |
+   +--------------------------------+------------------------------------------------------------+
+   | service nginx restart          | Restart nginx from :file:`/usr/local/etc/init.d/nginx`.    |
+   +--------------------------------+------------------------------------------------------------+
+   | service nginx stop             | Stop nginx from :file:`/usr/local/etc/init.d/nginx`.       |
+   +--------------------------------+------------------------------------------------------------+
+   | service nginx status           | View the status of the :command:`nginx` service.           |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-status                      | View the status of all running services.                   |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-update                      | Views all runlevels. Used in conjunction with service      |
+   |                                | names to add or delete services from the default runlevel. |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-update add nginx default    | Adds the :command:`nginx` service to the default runlevel. |
+   +--------------------------------+------------------------------------------------------------+
+   | rc-update delete nginx default | Removes :command:`nginx` from the default runlevel.        |
+   +--------------------------------+------------------------------------------------------------+
+
+.. index:: writing openrc services
+.. _Writing OpenRC Services:
+
+Writing OpenRC Services
+^^^^^^^^^^^^^^^^^^^^^^^
+
+OpenRC has a dependency based init system. As an example, examine the
+SysAdm service, which needs *network*. Here are the contents of the
+:file:`/usr/local/etc/init.d/sysadm` *depend* section:
+
+.. code-block:: none
+
+ depend() {
+ need net
+ after bootmisc
+ keyword -shutdown
+ }
+
+SysAdm requires *network* (**need net**), which is the nickname of the
+:file:`/etc/init.d/network` service defined by *provide in network*.
+SysAdm also starts **after** *bootmisc*. If you don’t want the
+restarting *network* to restart SysAdm, then *net* is unnecessary. To
+start SysAdm after *network*, then add *network to the actual name of
+the script in **after bootmisc**.
+
+Here are the contents of :file:`/etc/init.d/network`:
+
+.. code-block:: none
+
+ depend()
+ {
+ provide net
+ need localmount
+ after bootmisc modules
+ keyword -jail -prefix -vserver -stop
+ }
+
+The *provide* option sets the service nickname to *net*. *Need* means
+restarting *localmount* restarts *network*. *After* indicates the
+service starts after *bootmisc* and *modules*. For example, the keyword
+*-jail* option says this service doesn't run in a jail, prefix, or any
+of the other options shown.
+
+There is also a cache directory under :file:`/libexec/rc`. This keeps a
+dependencies cache that is only updated when those dependencies change.
+Several other directories exist for other binaries and special binaries
+used by OpenRC functions.
+
+For more creation options for OpenRC compatible init scripts, type
+:samp:`man openrc-run` in a CLI.
+
+.. index:: rc defaults
+.. _RC Defaults:
+
+RC Defaults
+-----------
+
+.. note:: RC Defaults are subject to change during development.
+
+|trueos| and FreeBSD now have very different rc defaults.
+
+**TrueOS OpenRC Defaults**
+
+The entire
+`TrueOS rc.conf file <https://github.com/trueos/freebsd/blob/drm-next-4.7/etc/defaults/rc.conf>`_
+is viewable on GitHub.
+
+.. code-block:: none
+
+ # Global OpenRC configuration settings
+
+ # Set to "YES" if you want the rc system to try and start services
+ # in parallel for a slight speed improvement. When running in parallel
+ # we prefix the service output with its name as the output will get
+ # jumbled up.
+ # WARNING: whilst we have improved parallel, it can still potentially
+ # lock the boot process. Don't file bugs about this unless you can
+ # supply patches that fix it without breaking other things!
+ #rc_parallel="NO"
+
+ # Set rc_interactive to "YES" and you'll be able to press the I key
+ # during boot so you can choose to start specific services. Set to "NO"
+ # to disable this feature. This feature is automatically disabled if
+ # rc_parallel is set to YES.
+ #rc_interactive="YES"
+
+ # If we need to drop to a shell, you can specify it here.
+ # If not specified we use $SHELL, otherwise the one specified in
+ # /etc/psswd, otherwise /bin/sh
+
+**FreeBSD RC Defaults**
+
+The entire
+`FreeBSD rc.conf file <https://github.com/freebsd/freebsd/blob/master/etc/defaults/rc.conf>`_
+is available online.
+
+.. code-block:: none
+
+ #!/bin/sh
+
+ # This is rc.conf - a file full of useful variables that you can set
+ # to change the default startup behavior of your system.  You should
+ # not edit this file!  Put any overrides into one of the
+ # ${rc_conf_files} instead and you will be able to update these
+ # defaults later without spamming your local configuration information.
+ #
+ # The ${rc_conf_files} files should only contain values which override
+ # values set in this file.  This eases the upgrade path when defaults
+ # are changed and new features are added.
+ #
+ # All arguments must be in double or single quotes.
+ #
+ # For a more detailed explanation of all the rc.conf variables, please
+ # refer to the rc.conf(5) manual page.
+ #
+ # $FreeBSD$
+
+ ##############################################################
+
+The |trueos| :file:`rc.conf` file is smaller because :file:`rc.conf` is
+now primarily used for tuning OpenRC behavior. By default, |trueos| uses
+3 elements, documented in :numref:`Table %s <orcpritun>`.
+
+:numref:`Table %s <rcuprnlvl>` lists services and their default
+runlevels in |trueos|.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
+.. _rcuprnlvl:
+
+.. table:: Services and runlevels
+   :class: longtable
+
+   +-------------+-------------------+
+   | Service     | Runlevel          |
+   +=============+===================+
+   | abi         | boot              |
+   +-------------+-------------------+
+   | adjkerntz   | boot              |
+   +-------------+-------------------+
+   | automount   | default           |
+   +-------------+-------------------+
+   | bootmisc    | boot              |
+   +-------------+-------------------+
+   | bridge      | boot              |
+   +-------------+-------------------+
+   | cron        | boot              |
+   +-------------+-------------------+
+   | cupsd       | default           |
+   +-------------+-------------------+
+   | dbus        | default           |
+   +-------------+-------------------+
+   | devd        | boot              |
+   +-------------+-------------------+
+   | dumpon      | boot              |
+   +-------------+-------------------+
+   | fsck        | boot              |
+   +-------------+-------------------+
+   | hostid      | boot              |
+   +-------------+-------------------+
+   | hostname    | boot              |
+   +-------------+-------------------+
+   | ipfw        | boot              |
+   +-------------+-------------------+
+   | local       | default nonetwork |
+   +-------------+-------------------+
+   | localmount  | boot              |
+   +-------------+-------------------+
+   | lockd       | default           |
+   +-------------+-------------------+
+   | loopback    | boot              |
+   +-------------+-------------------+
+   | modules     | boot              |
+   +-------------+-------------------+
+   | motd        | boot              |
+   +-------------+-------------------+
+   | moused      | default           |
+   +-------------+-------------------+
+   | netmount    | default           |
+   +-------------+-------------------+
+   | network     | boot              |
+   +-------------+-------------------+
+   | newsyslog   | boot              |
+   +-------------+-------------------+
+   | openntpd    | default           |
+   +-------------+-------------------+
+   | pcdm        | default           |
+   +-------------+-------------------+
+   | root        | boot              |
+   +-------------+-------------------+
+   | rpcbind     | default           |
+   +-------------+-------------------+
+   | savecache   | shutdown          |
+   +-------------+-------------------+
+   | savecore    | boot              |
+   +-------------+-------------------+
+   | statd       | default           |
+   +-------------+-------------------+
+   | staticroute | boot              |
+   +-------------+-------------------+
+   | swap        | boot              |
+   +-------------+-------------------+
+   | sysadm      | default           |
+   +-------------+-------------------+
+   | syscons     | boot              |
+   +-------------+-------------------+
+   | sysctl      | boot              |
+   +-------------+-------------------+
+   | syslogd     | boot              |
+   +-------------+-------------------+
+   | trueosinit  | default           |
+   +-------------+-------------------+
+   | urandom     | boot              |
+   +-------------+-------------------+
+   | zfs         | boot              |
+   +-------------+-------------------+
+   | zvol        | boot              |
+   +-------------+-------------------+
+
+.. index:: tuneables
+.. _Tuneables:
+
+Tuneables
+---------
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.60\linewidth-2\tabcolsep}|
+
+.. _orcpritun:
+
+.. table:: OpenRC Primary Tunables
+   :class: longtable
+
+   +-------------------------------+----------------------------------+
+   | Tunable                       | Description                      |
+   +===============================+==================================+
+   | rc_parallel="YES"             | Starts all services in parallel  |
+   |                               | (experimental).                  |
+   +-------------------------------+----------------------------------+
+   | rc_logger="YES"               | Enables logging                  |
+   +-------------------------------+----------------------------------+
+   | rc_log_path="/var/log/rc.log" | Defines the location for logging |
+   |                               | rc activity                      |
+   +-------------------------------+----------------------------------+
+
+:numref:`Table %s <orcalltun>` shows all other tunables enabled on a
+clean |trueos| installation. Many of these tunables continue to work in
+:file:`/etc/rc.conf` to ensure a smoother migration for existing users
+to upgrade. The eventual target locations for these services are also
+listed.
+
+.. note:: These migration targets are estimates and subject to change.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.40\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.25\linewidth-2\tabcolsep}|
+
+.. _orcalltun:
+
+.. table:: OpenRC Other Tunables
+   :class: longtable
+
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | Tunable                                  | Description                         | Migration Target             |
+   +==========================================+=====================================+==============================+
+   | linux_enable="YES"                       | Notifies :file:`/etc/init.d/abi`    | :file:`/etc/conf.d/abi`      |
+   |                                          | service to enable the Linux         |                              |
+   |                                          | compatability during boot           |                              |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | ifconfig_re0="DHCP"                      | Auto-obtain IP address on the *re0* | :file:`/etc/conf.d/network`  |
+   |                                          | device.                             |                              |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | ifconfig_re0_ipv6="inet6 accept_rtadv"   | Configure IPv6.                     | :file:`/etc/conf.d/network`  |
+   |                                          |                                     |                              |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | hostname="trueos-4843"                   | Set the system hostname.            | :file:`/etc/conf.d/hostname` |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | kldload_i915kms="i915kms"                | TrueOS specific. Allows loading an  | :file:`/etc/conf.d/modules`  |
+   |                                          | individual module via the installer |                              |
+   |                                          | post installation.                  |                              |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | zfs_enable="YES"                         | Obsolete, marked for removal        | None                         |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | wlans_iwm0="wlan 0 DHCP"                 | Configure iwm wireless with DHCP.   | :file:`/etc/conf.d/network`  |
+   +------------------------------------------+-------------------------------------+------------------------------+
+   | ifconfig_wlan0_ipv6="inet6 accept_rtadv" | Configure iwm wireless with IPv6.   | :file:`/etc/conf.d/network`  |
+   +------------------------------------------+-------------------------------------+------------------------------+
+
+.. index:: openrc install scripts
+.. _OpenRC Install Scripts:
+
+OpenRC Install Scripts
+----------------------
+
+There are number of scripts used for older |trueos| systems and new
+installations. These are listed below.
+
+.. index:: onetime migration
+.. _One time migration:
+
+One-time Migration Script
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A one time migration script is available for |trueos| installations
+dated 10-28-16 or older still using the legacy FreeBSD *rc* system:
+
+.. note:: This block is truncated from the
+   `original file <https://github.com/trueos/trueos-core/blob/master/xtrafiles/local/bin/migrate_rc_openrc>`_
+
+.. code-block:: none
+
+ #!/bin/sh
+
+ if [ ! -e /etc/rc.conf ] ; then
+   exit 0
+ fi
+
+ . /etc/rc.conf
+
+ for var in `set | grep "_enable="`
+ do
+   key=`echo $var | cut -d '=' -f 1 | sed 's|_enable||g'`
+   val=`echo $var | cut -d '=' -f 2`
+   if [ "$val" != "YES" ] && [ "$val" != "NO" ] ; then continue; fi
+   if [ "$val" = "NO" ] && [ -e "/etc/runlevels/default/$key" ] ; then
+       echo "Deleting OpenRC service for $key to default runlevel..."
+       rc-update delete $key default
+   fi
+   if [ -e "/etc/init.d/$key" -o -e "/usr/local/etc/init.d/$key" ] ; then
+     if [ -e "/etc/runlevels/default/$key" ] ; then
+       echo "OpenRC service for $key already enabled, skipping.."
+
+With this migration, :file:`rc.conf.trueos`, located in :file:`/etc/`,
+has been phased out of |trueos| and is automatically removed from legacy
+installs dated 10-28-16 and older by :command:`pc-updatemanger`:
+
+This script defines a list of services such as *PCDM* designated to boot
+by default on a desktop. It also defines what drivers to load on a
+desktop. This is now accomplished when the *trueos-desktop* or
+*trueos-server* package is installed using :command:`sysrc` or other
+methods. Now there is no need to keep an extra overlay file to
+accomplish this behaviour.
+
+.. index:: desktop pkginstall script
+.. _TrueOS desktop pkginstall script:
+
+|trueos| Desktop pkg-install Script
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: This is an excerpt from the |trueos| Desktop
+   :file:`pkg-install` file, available online:
+   https://github.com/trueos/trueos-desktop/blob/master/port-files/pkg-install
+
+.. code-block:: none
+
+ #!/bin/sh
+ # Script to install preload.conf
+
+ PREFIX=${PKG_PREFIX-/usr/local}
+
+ if [ "$2" != "POST-INSTALL" ] ; then
+    exit 0
+ fi
+
+ # If this is during staging, we can skip for now
+ echo $PREFIX | grep -q '/stage/'
+ if [ $? -eq 0 ] ; then
+    exit 0
+ fi
+
+ # REMOVEME - Temp fix to ensure i915kms is loaded on upgraded systems
+ # 8-29-2016
+ if [ -e "/etc/rc.conf.trueos" ] ; then
+   set +e
+   grep -q "i915kms" /etc/rc.conf.trueos
+
+.. index:: server pkginstall script
+.. _TrueOS server pkginstall script:
+
+TrueOS Server pkg-install script
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: This is an excerpt from the |trueos| Server
+   :file:`pkg-install` file, available on GitHub:
+   https://github.com/trueos/trueos-server/blob/master/port-files/pkg-install
+
+.. code-block:: none
+
+ #!/bin/sh
+ # Script to install preload.conf
+
+ PREFIX=${PKG_PREFIX-/usr/local}
+
+ if [ "$2" != "POST-INSTALL" ] ; then
+    exit 0
+ fi
+
+ # If this is during staging, we can skip for now
+ echo $PREFIX | grep -q '/stage/'
+ if [ $? -eq 0 ] ; then
+    exit 0
+ fi
+
+ # Copy over customizations for TrueOS
+   install -m 644 ${PREFIX}/share/trueos/conf/loader.conf.trueos /boot/loader.conf.trueos
+   install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
+   install -m 644 ${PREFIX}/share/trueos/server-defaults/etc/conf.d/modules /etc/conf.d/modules/
+
+The typical :command:`nginx_enable=”YES”` is no longer used to enable
+services. Instead, :command:`rc-update` adds or deletes services from
+runlevels. The one time migration script automatically adds previously
+defined user services to the OpenRC default runlevel. Leftover lines can
+be removed after migration.
+
+.. index:: update port makefile
+.. _Update Port Makefile:
+
+Updating a Port's Makefile
+--------------------------
+
+There are many required updates to adjust each port's :file:`Makefile`
+to the new format, **USE_OPENRC_SUBR=**. However, these are to be
+changed only when each service file has the new OpenRC ready format:
+
+.. note:: This is an excerpt from the |trueos| :file:`openrc-dbus.in`
+   file, which is available on the |trueos|
+   `freebsd-ports GitHub repository <https://github.com/trueos/freebsd-ports/blob/trueos-master/devel/dbus/files/openrc-dbus.in>`_
+
+.. code-block:: none
+
+ #!/sbin/openrc-run
+ # Copyright (c) 2007-2015 The OpenRC Authors.
+ # See the Authors file at the top-level directory of this distribution
+ # and https://github.com/OpenRC/openrc/blob/master/AUTHORS
+ #
+ # This file is part of OpenRC. It is subject to the license terms in
+ # the LICENSE file found in the top-level directory of this
+ # distribution and at
+ # https://github.com/OpenRC/openrc/blob/master/LICENSE.
+ # This file may not be copied, modified, propagated, or distributed
+ # except according to the terms contained in the LICENSE file.
+
+ command=/usr/local/bin/dbus-daemon
+ pidfile=/var/run/dbus/pid
+ command_args="${dbusd_args---system}"
+ name="Message Bus Daemon"
+
+ depend()
+ {
+	 need localmount
+	 after bootmisc
+ }
+
+Here is an example from FreeBSD of *dbus* using the legacy rc script
+format:
+
+.. note:: This is an excerpt from the legacy FreeBSD :file:`dbus.in`
+   file, which is available online:
+   https://github.com/freebsd/freebsd-ports/blob/master/devel/dbus/files/dbus.in
+
+.. code-block:: none
+
+ #!/bin/sh
+ #
+ # $FreeBSD$
+ #
+ # PROVIDE: dbus
+ # REQUIRE: DAEMON ldconfig
+ #
+ # Add these lines to /etc/rc.conf to enable the D-BUS messaging system:
+ #
+ # dbus_enable="YES"
+ #
+
+ . /etc/rc.subr
+ . %%GNOME_SUBR%%
+
+ dbus_enable=${dbus_enable-${gnome_enable}}
+ dbus_flags=${dbus_flags-"--system"}
+
+ name=dbus
+ rcvar=dbus_enable
+
+Several developers are working on the thousands of instances as quickly
+as possible. Anyone can begin transitioning to defining all service
+configurations in :file:`/etc/conf.d/`, if desired. All configuration
+files should reside in that directory with the name of the service for
+the configuration file itself. For example, *nginx* is
+:file:`/etc/conf.d/nginx`.
+
+Generally, usage of :file:`/etc/rc.conf` is minimized. Tweaking the
+default OpenRC configuration parameters is recommended only for advanced
+users. It is still possible to use service configurations through
+:file:`/etc/rc.conf`, but this file is unusable for enabling or
+disabling services for startup.
+
+.. index:: Flash
+.. _Flash plugin:
+
+Flash Plugin
+============
+
+|trueos| supports using a Flash plugin for those browsers/applications
+that use Flash. To begin using this plugin, search for and install
+"linux-flashplayer" using |appcafe|. Alternately, type
+:samp:`[samp@examp] ~% sudo pkg install linux-flashplayer` in a command
+line and enter the root password when requested.
+
+The "nspluginwrapper" is also required when using Flash. Install it
+with |appcafe| or by typing
+:samp:`[samp@examp] ~% sudo pkg install nspluginwrapper` in a command
+line.
+
+Once *linux-flashplayer* and *nspluginwrapper* are installed, configure
+them by opening a command line and typing this command:
+
+.. code-block:: none
+
+ % nspluginwrapper -v -a -i
+
+ Auto-install plugins from /usr/local/lib/browser_plugins
+ Looking for plugins in /usr/local/lib/browser_plugins
+ Auto-install plugins from /usr/local/lib/browser_plugins/linux-flashplayer
+ Looking for plugins in /usr/local/lib/browser_plugins/linux-flashplayer
+ Install plugin /usr/local/lib/browser_plugins/linux-flashplayer/libflashplayer.so
+   into /usr/home/tmoore/.mozilla/plugins/npwrapper.libflashplayer.so
+ Auto-install plugins from /usr/home/tmoore/.mozilla/plugins
+ Looking for plugins in /usr/home/tmoore/.mozilla/plugins
+
+In this example, Flash is configured and ready for use with the Firefox
+browser. To confirm Flash is usable, open Firefox and type
+**about:plugins** in the address bar. An *Installed plugins* page
+displays, listing *Shockwave Flash* an installed plugin. See
+:numref:`Figure %s <flash1>` as an example of Firefox with Flash
+installed.
+
+.. _flash1:
+
+.. figure:: images/flash1.png
+   :scale: 100%
+
+   "about:plugins" Example
+
+.. index:: usb automounter
+.. _Automounter:
+
+Automounter
+===========
+
+.. tip:: The *Mount Tray* has been replaced by the new **Automounter**.
+
+The automounter, based on the :command:`devd` and :command:`automount`
+utilities, facilitates mounting and unmounting USB storage devices and
+optical media. It also conforms to an **XDG** standard to allow the
+addition of new features. The automounter is part of the default
+|trueos| installation, but is generally invisible until a new device is
+attached to the system.
+
+Currently, the automounter ignores internal hard drives (sata, ide) and
+networking shares. It does support many different filesystems:
+
+* cd9660
+
+* exFAT (Requires :file:`mount.exfat-fuse`. Possible intermittent
+  detection issues.)
+
+* ext2
+
+* ext4 (Requires :file:`ext4fuse`)
+
+* FAT32
+
+* MSDOSFS
+
+* MTPfs (Requires :file:`simple-mtpfs`)
+
+* NTFS (Requires :file:`ntfs-3g`)
+
+* ReiserFS
+
+* UDF
+
+* UFS
+
+* XFS
+
+.. warning:: Linux based filesystems may have some limitations. See
+   :numref:`Table %s <filesys support>` for more details.
+
+To engage the automounter, attach a USB storage device or insert optical
+media to the system. The automounter detects the device by ID and adds
+icons to the desktop, as seen in :numref:`Figure %s <automnt1>`:
+
+.. _automnt1:
+
+.. figure:: images/automnt1.png
+   :scale: 65%
+
+   USB icons added to desktop via the automounter. Hovering over the
+   icon displays the actual device name and filesystem type.
+
+.. tip:: The appearance of these icons do **not** mean the device is
+   mounted. Devices are only mounted when the user begins to interact
+   with the device.
+
+Either navigating to a device or beginning copy operations mounts the
+device. The device is unmounted by the **autounmountd** service after
+the user navigates away and/or file copy operations stop.
+
+For example, the above image shows USB drive "FreeNAS" attached to
+the system. After double-clicking the desktop icon,
+"Insight File Manager" opens to the device's location,
+:file:`autofs/da0`. While :guilabel:`Insight` opens, the automounter
+mounts the device. After closing :guilabel:`Insight`, the device is also
+unmounted and safe to remove from the system.
+
+In the CLI, the automounter adds a :file:`.desktop` file to
+:file:`/media` when a new USB/Optical device is added. Open the
+:file:`.desktop` file with :command:`xdg-open` or
+:command:`lumina-open`. When the device is removed, the symlink is
+immediately removed from :file:`/media`.
+
+.. note:: The :file:`/.autofs/*` directories are not cleaned when the
+   device is removed. However, after device removal the directories are
+   no longer associated with the device in the backend. For this reason,
+   :file:`/media` is more useful to identify which devices are attached
+   to the system.
+
+Alternately, all device names are added to the :file:`/.autofs`
+directory. Attached devices are also accessed by navigating to
+:file:`/.autofs/<devicename>`.
+
+Known limitations:
+
+* UFS permissions. These permissions are preserved on USB media. To
+  allow multiple users access to files from a UFS stick, those files'
+  permissions need to be set to *read/write by any user* (777).
+
+* ZFS pools are not yet supported. This is under investigation to
+  ascertain if it can ever work with :command:`automount`.
+
+* Optical Media links are not yet created on the desktop. Optical media
+  is accessible by navigating to :file:`/.autofs`.
+
+* Any file system with limited FreeBSD support (HFS or EXT) remain at
+  the same level of limited support.
+
+* exFAT detection issues are being investigated.
+
+Coming soon:
+
+* Optical media support for the desktop
+
+* Android device support
+
+* Possible support for ZFS pools
+
+.. index:: Freebsd ports
+.. _FreeBSD Ports:
+
+FreeBSD Ports
+=============
+
+Use :command:`git` to fetch the FreeBSD ports tree on a local system.
+Specifically, the |trueos| branch of the FreeBSD ports tree is pulled,
+which is regularly updated against the base FreeBSD ports tree.
+
+.. note:: These commands must be run as the superuser or **root**.
+
+When fetching ports for the first time:
+
+:samp:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`
+
+To update an existing local ports directory:
+
+.. code-block:: none
+
+ # cd /usr/ports
+ # git pull
 
 .. index:: printing, scanning
 .. _Printing:
@@ -1681,7 +1965,7 @@ instead.
 
 **HTTP:** This option allows you to manually type in the URI to the
 printer. A list of possible URIs is available on the
-`CUPS site <https://www.cups.org/doc/network.html#TABLE1>`_. To use HTTP
+`CUPS site <https://www.cups.org/doc/network.html>`_. To use HTTP
 over an encrypted connection, select :guilabel:`https` instead.
 
 **AppSocket/HP JetDirect:** Select this option if connecting to an HP
@@ -1750,3 +2034,343 @@ By default, XSane uses the default browser when clicking :kbd:`F1` to
 access its built-in documentation. Configuring the default browser
 varies by window manager so an Internet search may be necessary to set
 the default browser setting.
+
+.. index:: fonts
+.. _Fonts:
+
+Fonts
+=====
+
+|trueos| installs with `Google Noto <http://www.google.com/get/noto/>`_
+which provides multi-lingual Sans and Serif fonts. Many other fonts are
+available from |appcafe|. Typically, fonts installed using |appcafe| do
+not require any additional configuration to "just work".
+
+If you have downloaded or purchased a collection of font, |trueos| can
+be configured to also use those fonts. Become the superuser and copy
+the downloaded font to the :file:`/usr/local/share/fonts/` directory.
+Then, run :samp:`fc-cache -f -v /usr/local/share/fonts/name_of_font`
+to refresh the fonts cache.
+
+.. index:: sound mixer tray
+.. _Sound Mixer Tray:
+
+Sound Mixer Tray
+================
+
+|trueos| includes a graphical utility for managing the sound card's
+mixer settings. The utility is accessed by clicking the
+:guilabel:`speaker` icon in the system tray.
+
+:numref:`Figure %s <sound1>` shows an example of highlighting the
+:guilabel:`Output` option after opening the Sound Mixer. If the
+system has one audio output, the :guilabel:`Output` submenu is not
+displayed. Clicking an option in this submenu does not set the default
+audio device. It only changes it to the selected output for the
+current session. The next reboot reverts audio output back to the
+default.
+
+.. _sound1:
+
+.. figure:: images/sound1.png
+   :scale: 100%
+
+   Output Options
+
+:numref:`Figure %s <sound2>` shows the :guilabel:`Mixer` menu:
+
+.. _sound2:
+
+.. figure:: images/sound2.png
+   :scale: 100%
+
+   Mixer Controls
+
+The :guilabel:`Mixer Controls` screen provides sliders to modify the
+left and right channels that control volume, pcm (the sound driver),
+the speaker, the microphone, the recording level, the input level, and
+the output level. Each control can be muted or unmuted by clicking
+:guilabel:`Mute` or :guilabel:`Unmute`, depending on its current mute
+state.
+
+:numref:`Figure %s <sound3>` shows the :guilabel:`System Configuration`
+tab of the :guilabel:`Mixer`.
+
+.. _sound3:
+
+.. figure:: images/sound3a.png
+   :scale: 100%
+
+   System Sound Configuration
+
+This tab contains several options:
+
+* **Recording Device:** Use the drop-down menu to select the device to
+  use for recording sound.
+
+* **Default Tray Device:** Use the drop-down menu to set the default
+  slider to display in the system tray.
+
+* **Audio Output Channel:** Use the drop-down menu to change the sound
+  device and use :guilabel:`Test` to determine if sound is working.
+  This is sometimes necessary when changing audio devices. For example,
+  when connecting a USB headset, |trueos| detects the new device and
+  automatically changes the audio device to the USB input. However, when
+  inserting a headset into an audio jack, the system may not detect this
+  new input, meaning the default device has changed manually.
+  :guilabel:`Set as Default` sets the currently selected audio output
+  channel as the system default.
+
+The :guilabel:`Disable PulseAudio` disables all PulseAudio support.
+
+The :guilabel:`File` menu can be used to quit this mixer screen or to
+close both this screen and remove the icon from the system tray.
+
+.. note:: To re-add the mixer icon after removing it,
+   type :samp:`pc-mixer &` in a command line. Alternately, open this
+   application without adding it back to the system tray by typing
+   :samp:`pc-mixer -notray`.
+
+|trueos| provides full
+`PulseAudio <https://www.freedesktop.org/wiki/Software/PulseAudio/>`_
+support, which can be configured using the :guilabel:`Configuration`
+menu in the :guilabel:`Mixer`. There are options for accessing the
+:guilabel:`PulseAudio Mixer` and :guilabel:`PulseAudio Settings`, as
+well as an option for restarting PulseAudio. These utilities can be
+used to configure discoverable network sound devices and mixer levels.
+
+.. index:: multimedia
+.. _Multimedia:
+
+Multimedia
+==========
+
+|trueos| is pre-configured to support most multimedia formats and makes
+it easy to install most open source media applications using |appcafe|.
+
+After installing a web browser, most media formats become playable,
+including YouTube™ videos, Internet radio, and many trailer and movie
+sites. When encountering a file unplayable in a web browser or media
+player, it is likely in a proprietary format which requires a
+licensing fee or restricts distribution of the codec required to play
+the media format.
+
+.. note:: When troubleshooting Java™ or Flash® for your browser, please
+   refer to the
+   `FreeBSD browser <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/desktop-browsers.html>`_
+   documentation, which has more complete instructions for installing
+   Java™ and Flash® plugins with specific browsers.
+
+|appcafe| contains several dozen applications for playing and editing
+multimedia. It includes these popular applications:
+
+* `aTunes <http://www.atunes.org/?page_id=5>`_: Full-featured audio
+  player and manager which can play mp3, ogg, wma, wav, flac, mp4 and
+  radio streaming, allowing users to easily edit tags, organize music
+  and rip audio CDs.
+
+* `Audacity <https://sourceforge.net/projects/audacity/?lang=en>`_:
+  Multilingual audio editor and recorder.
+
+* `DeaDBeeF <http://deadbeef.sourceforge.net/screenshots.html>`_:
+  Music player supporting most audio formats.
+
+* `Decibel <http://decibel.silent-blade.org/index.php?n=Main.Screenshots>`_:
+  Audio player built around a highly modular structure which lets the
+  user completely disable unneeded features. Able to play CDs directly.
+
+* `gtkpod <http://gtkpod.org/libgpod/>`_: Graphical user interface for
+  the Apple iPod.
+
+* `Miro <http://www.getmiro.com/download/screenshots/>`_: HD video
+  player which can play almost any video file and offers over 6,000
+  free Internet TV shows and video podcasts.
+
+* `SMPlayer <http://www.smplayer.info/>`_: Universal media player which
+  can handle any media format and play audio CDs, DVDs, (S)VCDs,
+  TV/radio cards, YouTube™ and SHOUTcast™ streams.
+
+* `VLC media player <http://www.videolan.org/vlc/>`_: Open Source
+  cross-platform multimedia player capable of playing most multimedia
+  files, DVD and CD formats, and some streaming protocols.\
+
+* `Kodi,formerly known as XBMC <https://kodi.tv/>`_: GPL-licensed
+  software media player and entertainment hub for digital media. It can
+  play most audio and video formats, CDs and DVDs from a disk or image
+  file, and even files inside ZIP and RAR archives.
+
+* `Plex Home Theater <https://www.plex.tv/>`_: Centralized media
+  playback system. The central Plex Media Server streams media to many
+  Plex player Apps which are used to view your media library and watch
+  shows.
+
+.. index:: windows emulation
+.. _Windows Emulation:
+
+Windows Emulation
+=================
+
+`Wine <https://wiki.winehq.org/Main_Page>`_ is an application which
+allows the creation of a Windows environment for installing Windows
+software. This can be useful if your favorite Windows game or
+productivity application has not yet been ported to Linux or BSD.
+
+Wine is not guaranteed to work with every Windows application. You can
+search for desired applications in the :guilabel:`Browse Apps` section
+of the `Wine application database <https://appdb.winehq.org/>`_. The
+`Wine wiki <https://wiki.winehq.org/Main_Page>`_ contains resources to
+get started and troubleshooting reference material if problems are
+encountered with a Windows application.
+
+Wine can be installed using |appcafe|. After installing, it can be
+started by typing :command:`winecfg` in the command line. The first time
+running this utility, it may prompt to install additional required
+packages. If prompted, click :guilabel:`Install` in the pop-up menu.
+
+The initial Wine configuration menu is shown in
+:numref:`Figure %s <wine1>`.
+
+.. _wine1:
+
+.. figure:: images/wine1a.png
+   :scale: 100%
+
+   Wine Configuration Menu
+
+Click :guilabel:`Add application` to browse to the application's
+installer file. By default, the contents of the hard drive will be
+listed under *drive_c*. If the installer is on a CD/DVD, use the
+drop-down menu to browse to the
+:menuselection:`home directory --> *.wine --> dosdevices` folder. The
+contents of the CD/DVD should be listed under *d:*. If they are not,
+the most likely reason is your CD/DVD was not automatically mounted by
+the desktop. To mount the media, type
+:samp:`mount -t cd9660 /dev/cd0 /cdrom` as the superuser.
+
+The system then accesses the media and you can now select the installer
+file. Once selected, click :guilabel:`Apply` then :guilabel:`OK` to exit
+the configuration utility.
+
+To install the application, type :command:`winefile` to see the screen
+shown in :numref:`Figure %s <wine2>`.
+
+.. _wine2:
+
+.. figure:: images/wine2a.png
+   :scale: 100%
+
+   Installing the Application Using :command:`winefile`
+
+Click the button representing the drive which contains the installer and
+double-click on the installation file (e.g. :file:`setup.exe`). The
+installer then launches to allow installing the application as on a
+Windows system.
+
+.. note:: You may need need to unmount a CD/DVD before it ejects. As the
+   superuser, type :samp:`umount /mnt`.
+
+Once the installation is complete, browse to the application's location.
+:numref:`Figure %s <wine3>` shows an example of running Internet
+Explorer within :command:`winefile`.
+
+.. _wine3:
+
+.. figure:: images/wine3.png
+   :scale: 100%
+
+   Running the Installed Application
+
+.. index:: Updating TrueOS
+.. _Updating TrueOS:
+
+Updating TrueOS
+===============
+
+The TrueOS project is organized around two update tracks: STABLE and
+UNSTABLE. Updating is handled through the |sysadm| Update Manager; refer
+to the SysAdm :sysclbk:`Update Manager <update-manager>` documentation
+for more details about using the Update Manager. This section only
+contains simple instructions to switch between update tracks.
+
+To view or adjust the current update track for TrueOS, click
+:menuselection:`Start Menu --> Control Panel --> Update Manager --> Settings`.
+The :guilabel:`Settings` tab, seen in :numref:`Figure %s <update1>`,
+allows you to adjust *when* and *where* to perform system updates.
+
+.. _update1:
+
+.. figure:: images/update1.png
+   :scale: 100%
+
+   Update Manager Settings
+
+While both STABLE and UNSTABLE tracks are rolling releases based on
+FreeBSD-CURRENT, there are a few key differences between them.
+
+.. warning:: Users with UNSTABLE installed before 7/14/2017 need to run
+   :command:`pc-updatemanager syncconf` in a command line in order to
+   switch to the new UNSTABLE repository added on that day. Alternately,
+   switch from UNSTABLE to STABLE in the Update Manager and click
+   :guilabel:`Save`. Then, switch back to UNSTABLE and click
+   :guilabel:`Save` again.
+
+.. index:: TrueOS STABLE updates
+.. _TrueOS STABLE:
+
+TrueOS STABLE
+-------------
+
+As its name implies, STABLE refers to the more solid version of TrueOS.
+STABLE updates are released infrequently, but are much more tested
+and polished. All TrueOS installation files are created from the
+STABLE track, and fresh TrueOS installations only look to the STABLE
+track for updates.
+
+The STABLE track is recommended for those users who want a more
+predictable experience with fewer regressions, and are willing to
+wait longer for bugfixes and new utilities or ports.
+
+.. index:: TrueOS UNSTABLE updates
+.. _TrueOS UNSTABLE:
+
+TrueOS UNSTABLE
+---------------
+
+The UNSTABLE track is the bleeding edge of TrueOS development.
+Experimental fixes, upstream patches from the FreeBSD project,
+and testing new utilities and applications all happen first with
+the UNSTABLE track.
+
+UNSTABLE is recommended for power users, those with custom hardware
+unsupported with STABLE, and project contributors who wish to help
+test patches committed to TrueOS and/or FreeBSD-CURRENT.
+
+To switch to the UNSTABLE track, open the SysAdm Update Manager and
+navigate to the *Settings* tab, seen in :ref:`update1`. Check
+:guilabel:`UNSTABLE Repository`, then click :guilabel:`Save Settings`.
+
+Alternately, you can edit :file:`/usr/local/etc/trueos.conf` to change
+update tracks without using SysAdm. Here is an example
+:file:`trueos.conf`:
+
+.. code-block:: none
+
+ # TrueOS Configuration Defaults
+
+ # Default package set to pull updates from
+ PACKAGE_SET: <STABLE, UNSTABLE, or CUSTOM>
+ PACKAGE_URL: <CUSTOM url>
+
+ # Default type of CDN to use
+ # IPFS - Use IPFS
+ # HTTP - Use a standard HTTP connection (default)
+ # CDN_TYPE: HTTP
+
+ # Set the number of automatic boot-environments to create / keep
+ MAXBE: 5
+ AUTO_UPDATE: disabled
+ AUTO_UPDATE_REBOOT: disabled
+
+Rolling back from UNSTABLE to STABLE is done by switching tracks back
+to the STABLE branch, checking for updates, and rebooting once the
+previous STABLE update is installed.

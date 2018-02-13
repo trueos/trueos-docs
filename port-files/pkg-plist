@@ -16,6 +16,7 @@ share/trueos/handbook/_images/config7a.png
 share/trueos/handbook/_images/display3a.png
 share/trueos/handbook/_images/docchange1.png
 share/trueos/handbook/_images/docchange2.png
+share/trueos/handbook/_images/downloadscreen1.png
 share/trueos/handbook/_images/encrypt1.png
 share/trueos/handbook/_images/flash1.png
 share/trueos/handbook/_images/helprep1.png
@@ -41,7 +42,7 @@ share/trueos/handbook/_images/network1.png
 share/trueos/handbook/_images/network10.png
 share/trueos/handbook/_images/network11.png
 share/trueos/handbook/_images/network12.png
-share/trueos/handbook/_images/network13.png
+share/trueos/handbook/_images/network13a.png
 share/trueos/handbook/_images/network14.png
 share/trueos/handbook/_images/network15.png
 share/trueos/handbook/_images/network16.png
@@ -163,8 +164,9 @@ share/trueos/handbook/install.html
 share/trueos/handbook/introducing.html
 share/trueos/handbook/objects.inv
 share/trueos/handbook/pico.html
-share/trueos/handbook/postinstall.html
-share/trueos/handbook/preinstall.html
+share/trueos/handbook/dualboot.html
+share/trueos/handbook/appendix_a.html
+share/trueos/handbook/advanced.html
 share/trueos/handbook/search.html
 share/trueos/handbook/searchindex.js
 share/trueos/handbook/trueos.html
