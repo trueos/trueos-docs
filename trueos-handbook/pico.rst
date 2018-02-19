@@ -242,7 +242,7 @@ VirtualGL (VGL) is the toolkit used by the |trpi| to provide 3D hardware
 acceleration to the |picl|. VGL redirects OpenGL commands and data to
 the GPU in the |pise|, then pulls back the rendered 3D images to the
 client. For further information about this open-source project, please
-refer to the `VirtualGL website <virtualgl.org>`_
+refer to the `VirtualGL website <https://virtualgl.org>`_
 
 VirtualGL also has an extensive
 `user guide <https://www.virtualgl.org/Documentation/Documentation>`_ to
