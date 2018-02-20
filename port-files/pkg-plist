@@ -105,6 +105,9 @@ share/trueos/handbook/_images/wine1a.png
 share/trueos/handbook/_images/wine2a.png
 share/trueos/handbook/_images/wine3.png
 share/trueos/handbook/_images/writer1.png
+share/trueos/handbook/_sources/advanced.rst.txt
+share/trueos/handbook/_sources/appendix_a.rst.txt
+share/trueos/handbook/_sources/dualboot.rst.txt
 share/trueos/handbook/_sources/helpsupport.rst.txt
 share/trueos/handbook/_sources/install.rst.txt
 share/trueos/handbook/_sources/introducing.rst.txt
