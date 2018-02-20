@@ -148,6 +148,7 @@ share/trueos/handbook/_static/plus.png
 share/trueos/handbook/_static/pygments.css
 share/trueos/handbook/_static/searchtools.js
 share/trueos/handbook/_static/transparentfireball.png
+share/trueos/handbook/_static/TrueNAS_Ad.png
 share/trueos/handbook/_static/trueos.ico
 share/trueos/handbook/_static/trueoslogo.png
 share/trueos/handbook/_static/underscore-1.3.1.js
@@ -155,15 +156,15 @@ share/trueos/handbook/_static/underscore.js
 share/trueos/handbook/_static/up-pressed.png
 share/trueos/handbook/_static/up.png
 share/trueos/handbook/_static/websupport.js
+share/trueos/handbook/advanced.html
+share/trueos/handbook/appendix_a.html
+share/trueos/handbook/dualboot.html
 share/trueos/handbook/genindex.html
 share/trueos/handbook/helpsupport.html
 share/trueos/handbook/install.html
 share/trueos/handbook/introducing.html
 share/trueos/handbook/objects.inv
 share/trueos/handbook/pico.html
-share/trueos/handbook/dualboot.html
-share/trueos/handbook/appendix_a.html
-share/trueos/handbook/advanced.html
 share/trueos/handbook/search.html
 share/trueos/handbook/searchindex.js
 share/trueos/handbook/trueos.html
