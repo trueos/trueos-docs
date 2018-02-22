@@ -369,15 +369,6 @@ msgid ""
 "a new connection and user login from the same |picl|."
 msgstr ""
 
-#: ../../pico.rst:253
-msgid ""
-"VirtualGL (VGL) is the toolkit used by the |trpi| to provide 3D hardware "
-"acceleration to the |picl|. VGL redirects OpenGL commands and data to the "
-"GPU in the |pise|, then pulls back the rendered 3D images to the client. For"
-" further information about this open-source project, please refer to the "
-"`VirtualGL website <virtualgl.org>`_"
-msgstr ""
-
 #: ../../pico.rst:264
 msgid ""
 "On a |picl|, test VGL functionality by opening the command line and typing "
@@ -460,6 +451,23 @@ msgid ""
 "<https://www.virtualgl.org/Documentation/Documentation>`_ to help guide new "
 "users through the various features of this useful toolkit."
 msgstr ""
+
+#: ../../pico.rst:253
+msgid ""
+"VirtualGL (VGL) is the toolkit used by the |trpi| to provide 3D hardware "
+"acceleration to the |picl|. VGL redirects OpenGL commands and data to the "
+"GPU in the |pise|, then pulls back the rendered 3D images to the client. For"
+" further information about this open-source project, please refer to the "
+"`VirtualGL website <https://virtualgl.org>`_"
+msgstr ""
+
+#~ msgid ""
+#~ "VirtualGL (VGL) is the toolkit used by the |trpi| to provide 3D hardware "
+#~ "acceleration to the |picl|. VGL redirects OpenGL commands and data to the "
+#~ "GPU in the |pise|, then pulls back the rendered 3D images to the client. For"
+#~ " further information about this open-source project, please refer to the "
+#~ "`VirtualGL website <virtualgl.org>`_"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Pico uses *Virtual GL* (vgl) for graphics hardware acceleration. VGL works "
