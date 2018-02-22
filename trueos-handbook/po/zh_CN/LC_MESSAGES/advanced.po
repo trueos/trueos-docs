@@ -1,0 +1,1458 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-05 15:02-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../advanced.rst:17
+msgid "Advanced Installation Topics"
+msgstr ""
+
+#: ../../advanced.rst:19
+msgid ""
+"The topics discussed in this chapter are intended for users that have a "
+"sound understanding with installing and manipulating open source software."
+msgstr ""
+
+#: ../../advanced.rst:23
+msgid ""
+"If the intent is to install a graphical desktop using the graphical "
+"installer, refer instead to the :ref:`Install` section."
+msgstr ""
+
+#: ../../advanced.rst:30
+msgid "Server Installation"
+msgstr ""
+
+#: ../../advanced.rst:32
+msgid ""
+"The :ref:`System Selection` screen of the |trueos| installer can be used to "
+"install a FreeBSD-based command-line server operating system rather than a "
+"graphical desktop operating system. A |trueos| server installation includes "
+"the `SysAdm™ API <https://api.sysadm.us/>`_ and `SysAdm™ Client "
+"<https://sysadm.us/handbook/client/>`_ for managing the server locally or "
+"remotely."
+msgstr ""
+
+#: ../../advanced.rst:39
+msgid ""
+"For a server installation, using the |trueos| installer rather than the "
+"FreeBSD installer offers several benefits:"
+msgstr ""
+
+#: ../../advanced.rst:42
+msgid "The ability to easily configure ZFS during installation."
+msgstr ""
+
+#: ../../advanced.rst:44
+msgid "The ability to configure multiple boot environments."
+msgstr ""
+
+#: ../../advanced.rst:46
+msgid ""
+"A wizard (described in this section) is provided during installation to "
+"configure the server for first use."
+msgstr ""
+
+#: ../../advanced.rst:49
+msgid ""
+"To perform a server installation, start the |trueos| installation as usual. "
+"At the :ref:`System Selection` screen of the installer, select "
+":guilabel:`TrueOS Server (console interface only)`."
+msgstr ""
+
+#: ../../advanced.rst:53
+msgid ""
+"Click :guilabel:`Next` to start the :guilabel:`Server Setup Wizard`, then "
+"click :guilabel:`Next` again to see the screen shown in :numref:`Figure %s "
+"<server2>`."
+msgstr ""
+
+#: ../../advanced.rst:62
+msgid "Root Password Creation"
+msgstr ""
+
+#: ../../advanced.rst:64
+msgid ""
+"Input and confirm the root password then click :guilabel:`Next` to proceed "
+"to the screen shown in :numref:`Figure %s <server3>`."
+msgstr ""
+
+#: ../../advanced.rst:72
+msgid "Primary User Account Creation"
+msgstr ""
+
+#: ../../advanced.rst:74
+msgid ""
+"For security reasons, do not login as the **root** user. The wizard requires"
+" creating a primary user account for logging into the server. This account "
+"is automatically added to the *wheel* group, allowing the user to "
+":command:`su` to the **root** account when administrative access is "
+"required."
+msgstr ""
+
+#: ../../advanced.rst:80
+msgid "Create an account by filling in these fields:"
+msgstr ""
+
+#: ../../advanced.rst:82
+msgid "**Name:** Can contain capital letters and spaces."
+msgstr ""
+
+#: ../../advanced.rst:84
+msgid ""
+"**Username:** The name to use for logging in. It cannot contain spaces and "
+"is case sensitive (e.g. *Kris* is a different username than *kris*)."
+msgstr ""
+
+#: ../../advanced.rst:88
+msgid ""
+"**Password:** The password to use for logging in. Type it twice to confirm "
+"it."
+msgstr ""
+
+#: ../../advanced.rst:91
+msgid ""
+"**Default shell:** Use the drop-down menu to select the **csh**, **tcsh**, "
+"**sh**, or **bash** login shell."
+msgstr ""
+
+#: ../../advanced.rst:94
+msgid ""
+"When finished, click :guilabel:`Next` to proceed to :numref:`Figure %s "
+"<server4>`."
+msgstr ""
+
+#: ../../advanced.rst:102
+msgid "Hostname Creation"
+msgstr ""
+
+#: ../../advanced.rst:104
+msgid ""
+"Input the system's hostname. If using :command:`ssh` to connect to the "
+"system, check :guilabel:`Enable remote SSH login`. Click :guilabel:`Next` to"
+" proceed to the network configuration screen shown in :numref:`Figure %s "
+"<server5>`."
+msgstr ""
+
+#: ../../advanced.rst:114
+msgid "Network Configuration"
+msgstr ""
+
+#: ../../advanced.rst:116
+msgid ""
+"Use the :guilabel:`Network Interface` drop-down menu to choose the desired "
+"interface:"
+msgstr ""
+
+#: ../../advanced.rst:119
+msgid ""
+"**AUTO-DHCP-SLAAC:** (default) Will configure every active interface for "
+"DHCP and for both IPv4 and IPv6."
+msgstr ""
+
+#: ../../advanced.rst:122
+msgid ""
+"**AUTO-DHCP:** Will configure every active interface for DHCP and for IPv4."
+msgstr ""
+
+#: ../../advanced.rst:125
+msgid ""
+"**IPv6-SLAAC:** Will configure every active interface for DHCP and for IPv6."
+msgstr ""
+
+#: ../../advanced.rst:128
+msgid ""
+"Alternately, use the drop-down menu to select the device name for the "
+"interface and manually configure and input the IPv4 and/or IPv6 addressing "
+"information. When finished, click :guilabel:`Next` to access the screen "
+"shown in :numref:`Figure %s <server6>`."
+msgstr ""
+
+#: ../../advanced.rst:138
+msgid "Optional Install Features"
+msgstr ""
+
+#: ../../advanced.rst:140
+msgid ""
+"To install the FreeBSD ports collection, check :guilabel:`Install ports "
+"tree` then click :guilabel:`Finish` to exit the wizard and access the "
+"summary screen shown in :ref:`Disk Selection`."
+msgstr ""
+
+#: ../../advanced.rst:144
+msgid ""
+"If installing the server to a system with ZFS already installed, you can "
+"choose to :guilabel:`Install to disk` or :guilabel:`Install into boot "
+"Environment`."
+msgstr ""
+
+#: ../../advanced.rst:148
+msgid ""
+"When installing to disk, click :guilabel:`Customize Disk Settings` to "
+"configure the system's disk(s). When installing into a Boot Environment, you"
+" can select the ZFS Pool for installation using the drop-down menu."
+msgstr ""
+
+#: ../../advanced.rst:152
+msgid ""
+"To save the install configuration for re-use at a later time, insert a "
+"MSDOSFS or FAT32 formatted USB stick and click :guilabel:`Save Config to "
+"USB`."
+msgstr ""
+
+#: ../../advanced.rst:156
+msgid ""
+"When ready to continue, click :guilabel:`Next`. A new window asks if you are"
+" ready to begin the installation. Click :guilabel:`Yes` to continue or "
+":guilabel:`No` to continue modifying the install configuration."
+msgstr ""
+
+#: ../../advanced.rst:160
+msgid ""
+"Once the system is installed, it boots to a command-line login prompt. Login"
+" using the primary user account configured during installation. Now the "
+"server can be configured like any other FreeBSD server installation. The "
+"`FreeBSD Handbook "
+"<https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/>`_ is an "
+"excellent reference for performing common FreeBSD server tasks."
+msgstr ""
+
+#: ../../advanced.rst:171
+msgid "Restore from Life Preserver backup"
+msgstr ""
+
+#: ../../advanced.rst:173
+msgid ""
+"If you have replicated the system's snapshots to a remote backup server, you"
+" can use a |trueos| installation media to perform an operating system "
+"restore or to clone another system. Start the installation as usual and "
+"select to :guilabel:`Restore from Life Preserver backup` in the :ref:`System"
+" Selection Screen <install3>`."
+msgstr ""
+
+#: ../../advanced.rst:180
+msgid ""
+"Before you can perform a restore, the network interface must be configured. "
+"Click the :guilabel:`Network Connectivity` (blue circle) icon in order to "
+"determine if the network connection was automatically detected. If not, "
+"refer to the instructions in the :ref:`Network Manager` section of this "
+"handbook and ensure networking is functional before continuing."
+msgstr ""
+
+#: ../../advanced.rst:187
+msgid ""
+"Once you are ready, click :guilabel:`Restore from Life Preserver backup` and"
+" :guilabel:`Next`. This starts the Restore Wizard. In the **SSH Restore** "
+"shown in :numref:`Figure %s <restore2>`, type the IP address of the backup "
+"server and the name of the user account that replicated the snapshots. If "
+"the server is listening on a non-standard SSH port, change the "
+":guilabel:`SSH port` number."
+msgstr ""
+
+#: ../../advanced.rst:199
+msgid ": Beginning a SSH Restore"
+msgstr ""
+
+#: ../../advanced.rst:201
+msgid ""
+"Click :guilabel:`Next` and the wizard provides a summary of your selections."
+" If correct, click :guilabel:`Finish`. Otherwise, click :guilabel:`Back` to "
+"correct them."
+msgstr ""
+
+#: ../../advanced.rst:205
+msgid ""
+"Once the connection to the backup server succeeds, you can select which host"
+" to restore. After making your selection, click :guilabel:`Next`. The "
+"restore wizard provides a summary of which host it restores from, the name "
+"of the user account associated with the replication, and the hostname of the"
+" target system. Click :guilabel:`Finish` and the installer proceeds to the "
+":ref:`Disk Selection Screen <install5>`. At this point, you can click "
+":guilabel:`Customize` to customize the disk options. However, any ZFS "
+"datasets will be greyed out as they are to be recreated from the backup "
+"during the restore. Once you are finished with any further customizations, "
+"click :guilabel:`Next` to perform the restore."
+msgstr ""
+
+#: ../../advanced.rst:221
+msgid "Using the System Utilities Menu"
+msgstr ""
+
+#: ../../advanced.rst:223
+msgid ""
+"The System Utilities menu is available from the \"Emergency Shell\" icon "
+"(see :ref:`insico`) in the various |trueos| installer screens. Once opened, "
+"you'll see the menu shown in :numref:`Figure %s <util1>`."
+msgstr ""
+
+#: ../../advanced.rst:234
+msgid "System Utilities Menu"
+msgstr ""
+
+#: ../../advanced.rst:236
+msgid "This screen provides several options:"
+msgstr ""
+
+#: ../../advanced.rst:238
+msgid ""
+"**shell:** This option is useful when troubleshooting a |trueos| system that"
+" no longer boots. It opens a shell with administrative access, including the"
+" base FreeBSD utilities. Advanced users can use this shell to identify a "
+"problem, create a backup or copy essential files to another system, or alter"
+" configuration files with an editor like `ee "
+"<https://www.freebsd.org/cgi/man.cgi?query=ee>`_ or :command:`vi`. When "
+"finished using the shell, type :command:`exit` to return to the :ref:`System"
+" Utilities Menu <util1>`."
+msgstr ""
+
+#: ../../advanced.rst:247
+msgid ""
+"**zimport** This option displays the names of available ZFS pools. Type the "
+"name of an available pool and the utility imports the pool then displays the"
+" available boot environments (BEs). Type the name of the desired BE and "
+"**zimport** mounts the BE then offers to open a chroot shell so the "
+"environment's contents can be viewed and edited as needed in order to "
+"perform maintenance on the boot environment. When finished, type "
+":command:`exit` to leave the boot environment and return to the :ref:`System"
+" Utilities Menu <util1>`."
+msgstr ""
+
+#: ../../advanced.rst:256
+msgid ""
+"**fixgrub:** This option is scheduled for removal as GRUB is no longer "
+"supported by |trueos|."
+msgstr ""
+
+#: ../../advanced.rst:259
+msgid ""
+"**exit:** This option returns the user to the main :ref:`TrueOS® "
+"Installation Menu <install1>`."
+msgstr ""
+
+#: ../../advanced.rst:266
+msgid "Automated Installations"
+msgstr ""
+
+#: ../../advanced.rst:268
+msgid ""
+"|trueos| provides a set of Bourne shell scripts to allow advanced users to "
+"create automatic or customized |trueos| installations. :command:`pc-"
+"sysinstall` is the name of the master script. The script reads a "
+"customizable configuration file and uses dozens of backend scripts to "
+"perform the installation. Read more about this utility by typing "
+":command:`man pc-sysinstall`."
+msgstr ""
+
+#: ../../advanced.rst:275
+msgid ""
+"Here is a quick overview of the components used by :command:`pc-sysinstall`:"
+msgstr ""
+
+#: ../../advanced.rst:278
+msgid ""
+":file:`/usr/local/share/pc-sysinstall/backend/` contains the scripts used by"
+" the |trueos| installer. Scripts have been divided by function, such as "
+":file:`functions-bsdlabel.sh` and :file:`functions-installcomponents.sh`. To"
+" learn more about how the |trueos| installer works, read through these "
+"scripts. This directory also contains the :file:`parseconfig.sh` and "
+":file:`startautoinstall.sh` scripts which :command:`pc-sysinstall` uses to "
+"parse the configuration file and begin the installation."
+msgstr ""
+
+#: ../../advanced.rst:287
+msgid ""
+":file:`/usr/local/share/pc-sysinstall/backend-query/` contains the scripts "
+"used by the installer to detect and configure hardware."
+msgstr ""
+
+#: ../../advanced.rst:290
+msgid ""
+":file:`/usr/local/share/pc-sysinstall/conf/` contains the configuration file"
+" :file:`pc-sysinstall.conf`. It also contains a file indicating which "
+"localizations are available (:file:`avail-langs`), an :file:`exclude-from-"
+"upgrade` file, and a :file:`licenses/` subdirectory containing text files of"
+" applicable licenses."
+msgstr ""
+
+#: ../../advanced.rst:297
+msgid ""
+":file:`/usr/local/share/pc-sysinstall/doc/` contains the help text seen if "
+":command:`pc-sysinstall` is run without any arguments."
+msgstr ""
+
+#: ../../advanced.rst:300
+msgid ""
+":file:`/usr/local/share/pc-sysinstall/examples/` contains several example "
+"configuration files for different scenarios (e.g. :file:`upgrade` and :file"
+":`fbsd-netinstall`). The :file:`README` in this directory should be "
+"considered as **mandatory** reading before using :command:`pc-sysinstall`."
+msgstr ""
+
+#: ../../advanced.rst:306
+msgid ""
+":file:`/usr/sbin/pc-sysinstall` is the script used to perform a customized "
+"installation."
+msgstr ""
+
+#: ../../advanced.rst:309
+msgid ""
+"This section discusses the steps needed to create a custom installation."
+msgstr ""
+
+#: ../../advanced.rst:311
+msgid ""
+"First, determine which variables to customize. A list of possible variables "
+"can be found in :file:`/usr/local/share/pc-sysinstall/examples/README` and "
+"are summarized in :numref:`Table %s <insvars>`."
+msgstr ""
+
+#: ../../advanced.rst:316
+msgid ""
+"This table is meant as a quick reference to determine which variables are "
+"available. The :file:`README` in :file:`/usr/local/share/pc-"
+"sysinstall/examples/` contains more complete descriptions for each variable."
+msgstr ""
+
+#: ../../advanced.rst:327
+msgid "Customizing a |trueos| Installation"
+msgstr ""
+
+#: ../../advanced.rst:331 ../../advanced.rst:618
+msgid "Variable"
+msgstr ""
+
+#: ../../advanced.rst:331 ../../advanced.rst:618
+msgid "Options"
+msgstr ""
+
+#: ../../advanced.rst:331 ../../advanced.rst:618
+msgid "Description"
+msgstr ""
+
+#: ../../advanced.rst:333
+msgid "hostname="
+msgstr ""
+
+#: ../../advanced.rst:333
+msgid "should be unique for the network"
+msgstr ""
+
+#: ../../advanced.rst:333
+msgid "optional as installer will auto\\-generate a hostname if empty"
+msgstr ""
+
+#: ../../advanced.rst:336
+msgid "installMode="
+msgstr ""
+
+#: ../../advanced.rst:336
+msgid "\"fresh\", \"upgrade\", \"extract\", or \"zfsrestore\""
+msgstr ""
+
+#: ../../advanced.rst:336
+msgid "sets the installation type"
+msgstr ""
+
+#: ../../advanced.rst:339
+msgid "installLocation="
+msgstr ""
+
+#: ../../advanced.rst:339
+msgid "/path/to/location"
+msgstr ""
+
+#: ../../advanced.rst:339
+msgid ""
+"used only when *installMode* is extract and should point to an already "
+"mounted location"
+msgstr ""
+
+#: ../../advanced.rst:343
+msgid "installInteractive="
+msgstr ""
+
+#: ../../advanced.rst:343 ../../advanced.rst:434 ../../advanced.rst:474
+#: ../../advanced.rst:538 ../../advanced.rst:623
+msgid "\"yes\" or \"no\""
+msgstr ""
+
+#: ../../advanced.rst:343
+msgid "set to \"no\" for automated installs without user input"
+msgstr ""
+
+#: ../../advanced.rst:347
+msgid "netDev="
+msgstr ""
+
+#: ../../advanced.rst:347
+msgid "\"AUTO-DHCP\" or FreeBSD interface name"
+msgstr ""
+
+#: ../../advanced.rst:347
+msgid "type of network connection to use during the installation"
+msgstr ""
+
+#: ../../advanced.rst:350
+msgid "netIP="
+msgstr ""
+
+#: ../../advanced.rst:350
+msgid "IP address of interface used during installation"
+msgstr ""
+
+#: ../../advanced.rst:350 ../../advanced.rst:353 ../../advanced.rst:356
+#: ../../advanced.rst:359
+msgid "only use if *netDev* is set to an interface name"
+msgstr ""
+
+#: ../../advanced.rst:353
+msgid "netMask="
+msgstr ""
+
+#: ../../advanced.rst:353 ../../advanced.rst:372
+msgid "subnet mask of interface"
+msgstr ""
+
+#: ../../advanced.rst:356
+msgid "netNameServer="
+msgstr ""
+
+#: ../../advanced.rst:356
+msgid "IP address of DNS server"
+msgstr ""
+
+#: ../../advanced.rst:359
+msgid "netDefaultRouter="
+msgstr ""
+
+#: ../../advanced.rst:359 ../../advanced.rst:382
+msgid "IP address of default gateway"
+msgstr ""
+
+#: ../../advanced.rst:362
+msgid "netSaveDev="
+msgstr ""
+
+#: ../../advanced.rst:362
+msgid ""
+"AUTO-DHCP or FreeBSD interface name(s) (multiple allowed separated by "
+"spaces)"
+msgstr ""
+
+#: ../../advanced.rst:362
+msgid ""
+"type of network configuration to enable on the installed system; can set "
+"multiple interfaces"
+msgstr ""
+
+#: ../../advanced.rst:367
+msgid "netSaveIP="
+msgstr ""
+
+#: ../../advanced.rst:367
+msgid "IP address of interface or \"DHCP\""
+msgstr ""
+
+#: ../../advanced.rst:367 ../../advanced.rst:372
+msgid ""
+"only use if *netSaveDev* is set to an interface name or a list of interface "
+"names (repeat for each interface)"
+msgstr ""
+
+#: ../../advanced.rst:372
+msgid "netSaveMask="
+msgstr ""
+
+#: ../../advanced.rst:377
+msgid "netSaveNameServer="
+msgstr ""
+
+#: ../../advanced.rst:377
+msgid "IP address of DNS server (multiple allowed separated by spaces)"
+msgstr ""
+
+#: ../../advanced.rst:377 ../../advanced.rst:382
+msgid ""
+"only use if *netSaveDev* is set to an interface name or a list of interface "
+"names (do not repeat for each interface)"
+msgstr ""
+
+#: ../../advanced.rst:382
+msgid "netSaveDefaultRouter="
+msgstr ""
+
+#: ../../advanced.rst:387
+msgid "disk0="
+msgstr ""
+
+#: ../../advanced.rst:387
+msgid "FreeBSD disk device name, (e.g. *ad0*)"
+msgstr ""
+
+#: ../../advanced.rst:387 ../../advanced.rst:390
+msgid "see *README* for examples"
+msgstr ""
+
+#: ../../advanced.rst:390
+msgid "partition="
+msgstr ""
+
+#: ../../advanced.rst:390
+msgid "\"all\", \"free\", \"s1\", \"s2\", \"s3\", \"s4\", or \"image\""
+msgstr ""
+
+#: ../../advanced.rst:393
+msgid "partscheme="
+msgstr ""
+
+#: ../../advanced.rst:393
+msgid "\"MBR\" or \"GPT\""
+msgstr ""
+
+#: ../../advanced.rst:393
+msgid "partition scheme type"
+msgstr ""
+
+#: ../../advanced.rst:396
+msgid "mirror="
+msgstr ""
+
+#: ../../advanced.rst:396
+msgid "FreeBSD disk device name (e.g. *ad1*)"
+msgstr ""
+
+#: ../../advanced.rst:396
+msgid "sets the target disk for the mirror (i.e. the second disk)"
+msgstr ""
+
+#: ../../advanced.rst:399
+msgid "mirrorbal="
+msgstr ""
+
+#: ../../advanced.rst:399
+msgid "\"load\", \"prefer\", \"round-robin\", or \"split\""
+msgstr ""
+
+#: ../../advanced.rst:399
+msgid "defaults to \"round-robin\" if the *mirrorbal* method is not specified"
+msgstr ""
+
+#: ../../advanced.rst:402
+msgid "bootManager="
+msgstr ""
+
+#: ../../advanced.rst:402
+msgid "\"none\" or \"bsd\""
+msgstr ""
+
+#: ../../advanced.rst:405
+msgid "image="
+msgstr ""
+
+#: ../../advanced.rst:405
+msgid "/path/to/image /mountpoint"
+msgstr ""
+
+#: ../../advanced.rst:405
+msgid "will write specified image file"
+msgstr ""
+
+#: ../../advanced.rst:407
+msgid "commitDiskPart"
+msgstr ""
+
+#: ../../advanced.rst:407
+msgid ""
+"this variable is mandatory and must be placed at the end of each *diskX* "
+"section; create a *diskX* section for each disk you wish to configure."
+msgstr ""
+
+#: ../../advanced.rst:413
+msgid "encpass="
+msgstr ""
+
+#: ../../advanced.rst:413
+msgid "password value"
+msgstr ""
+
+#: ../../advanced.rst:413
+msgid ""
+"at boot time, system will prompt for this password in order to mount the "
+"associated GELI encrypted partition"
+msgstr ""
+
+#: ../../advanced.rst:418
+msgid "commitDiskLabel"
+msgstr ""
+
+#: ../../advanced.rst:418
+msgid ""
+"this variable is mandatory and must be placed at the end of disk's "
+"partitioning settings; see the *README* for examples on how to set the <File"
+" System Type> <Size> <Mountpoint> entries for each disk"
+msgstr ""
+
+#: ../../advanced.rst:425
+msgid "installMedium="
+msgstr ""
+
+#: ../../advanced.rst:425
+msgid "\"dvd\", \"usb\", \"ftp\", \"rsync\", or \"image\""
+msgstr ""
+
+#: ../../advanced.rst:425
+msgid "source to be used for installation"
+msgstr ""
+
+#: ../../advanced.rst:428
+msgid "localPath="
+msgstr ""
+
+#: ../../advanced.rst:428
+msgid "/path/to/files"
+msgstr ""
+
+#: ../../advanced.rst:428
+msgid "location of directory containing installation files"
+msgstr ""
+
+#: ../../advanced.rst:431
+msgid "installType="
+msgstr ""
+
+#: ../../advanced.rst:431
+msgid "\"PCBSD\" or \"FreeBSD\""
+msgstr ""
+
+#: ../../advanced.rst:431
+msgid "determines whether this is a desktop or a server install"
+msgstr ""
+
+#: ../../advanced.rst:434
+msgid "installQuiet"
+msgstr ""
+
+#: ../../advanced.rst:434
+msgid "set to \"yes\" for automatic installations"
+msgstr ""
+
+#: ../../advanced.rst:437
+msgid "installFile="
+msgstr ""
+
+#: ../../advanced.rst:437
+msgid "e.g. \"fbsd-release.tbz\""
+msgstr ""
+
+#: ../../advanced.rst:437
+msgid "only set if using a customized installer archive"
+msgstr ""
+
+#: ../../advanced.rst:440
+msgid "packageType="
+msgstr ""
+
+#: ../../advanced.rst:440
+msgid "\"tar\", \"uzip\", \"split\", \"dist\", or \"pkg\""
+msgstr ""
+
+#: ../../advanced.rst:440
+msgid "the archive type on the installation media"
+msgstr ""
+
+#: ../../advanced.rst:443
+msgid "distFiles="
+msgstr ""
+
+#: ../../advanced.rst:443
+msgid "e.g. \"base src kernel\""
+msgstr ""
+
+#: ../../advanced.rst:443
+msgid ""
+"list of FreeBSD distribution files to install when using *packageType=dist*"
+msgstr ""
+
+#: ../../advanced.rst:447
+msgid "ftpPath="
+msgstr ""
+
+#: ../../advanced.rst:447
+msgid "ftp://ftp_path"
+msgstr ""
+
+#: ../../advanced.rst:447
+msgid "location of the installer archive when using *installMedium=ftp*"
+msgstr ""
+
+#: ../../advanced.rst:450
+msgid "rsyncPath="
+msgstr ""
+
+#: ../../advanced.rst:450
+msgid "e.g. \"life-preserver /back-2011-09-12T14_53_14\""
+msgstr ""
+
+#: ../../advanced.rst:450
+msgid ""
+"location of the rsync data on the remote server when using "
+"*installMedium=rsync*"
+msgstr ""
+
+#: ../../advanced.rst:454
+msgid "rsyncUser="
+msgstr ""
+
+#: ../../advanced.rst:454 ../../advanced.rst:552 ../../advanced.rst:562
+msgid "username"
+msgstr ""
+
+#: ../../advanced.rst:454 ../../advanced.rst:457 ../../advanced.rst:460
+msgid "set when using *installMedium=rsync*"
+msgstr ""
+
+#: ../../advanced.rst:457
+msgid "rsyncHost="
+msgstr ""
+
+#: ../../advanced.rst:457
+msgid "IP address of rsync server"
+msgstr ""
+
+#: ../../advanced.rst:460
+msgid "rsyncPort="
+msgstr ""
+
+#: ../../advanced.rst:460
+msgid "port number"
+msgstr ""
+
+#: ../../advanced.rst:463
+msgid "installComponents="
+msgstr ""
+
+#: ../../advanced.rst:463
+msgid "e.g. \"amarok, firefox, ports\""
+msgstr ""
+
+#: ../../advanced.rst:463
+msgid ""
+"components must exist in */PCBSD/pc-sysinstall/components/*; typically, "
+"*installPackages=* is used instead"
+msgstr ""
+
+#: ../../advanced.rst:468
+msgid "installPackages="
+msgstr ""
+
+#: ../../advanced.rst:468
+msgid "e.g. \"Xorg cabextract"
+msgstr ""
+
+#: ../../advanced.rst:468
+msgid "list of traditional or pkg packages to install; requires *pkgExt=*"
+msgstr ""
+
+#: ../../advanced.rst:471
+msgid "pkgExt="
+msgstr ""
+
+#: ../../advanced.rst:471
+msgid "\".txz\""
+msgstr ""
+
+#: ../../advanced.rst:471
+msgid "specify the extension used by the type of package to be installed"
+msgstr ""
+
+#: ../../advanced.rst:474
+msgid "upgradeKeepDesktopProfile="
+msgstr ""
+
+#: ../../advanced.rst:474
+msgid ""
+"specify if you wish to keep your existing user's desktop profile data during"
+" an upgrade"
+msgstr ""
+
+#: ../../advanced.rst:478
+msgid "rootPass="
+msgstr ""
+
+#: ../../advanced.rst:478
+msgid "password"
+msgstr ""
+
+#: ../../advanced.rst:478
+msgid "set the root password of the installed system to the specified string"
+msgstr ""
+
+#: ../../advanced.rst:482
+msgid "rootEncPass="
+msgstr ""
+
+#: ../../advanced.rst:482 ../../advanced.rst:492
+msgid "encrypted string"
+msgstr ""
+
+#: ../../advanced.rst:482
+msgid "set root password to specified encrypted string"
+msgstr ""
+
+#: ../../advanced.rst:485
+msgid "userName="
+msgstr ""
+
+#: ../../advanced.rst:485
+msgid "case sensitive value"
+msgstr ""
+
+#: ../../advanced.rst:485
+msgid "create a separate block of user values for each new user"
+msgstr ""
+
+#: ../../advanced.rst:488
+msgid "userComment="
+msgstr ""
+
+#: ../../advanced.rst:488
+msgid "description"
+msgstr ""
+
+#: ../../advanced.rst:488
+msgid "description text can include spaces"
+msgstr ""
+
+#: ../../advanced.rst:490
+msgid "userPass="
+msgstr ""
+
+#: ../../advanced.rst:490
+msgid "password of user"
+msgstr ""
+
+#: ../../advanced.rst:492
+msgid "userEncPass"
+msgstr ""
+
+#: ../../advanced.rst:492
+msgid "set user password to specified encrypted string"
+msgstr ""
+
+#: ../../advanced.rst:495
+msgid "userShell="
+msgstr ""
+
+#: ../../advanced.rst:495
+msgid "e.g. \"/bin/csh\""
+msgstr ""
+
+#: ../../advanced.rst:495
+msgid "path to default shell"
+msgstr ""
+
+#: ../../advanced.rst:497
+msgid "userHome="
+msgstr ""
+
+#: ../../advanced.rst:497
+msgid "e.g. \"/home/username\""
+msgstr ""
+
+#: ../../advanced.rst:497
+msgid "path to home directory"
+msgstr ""
+
+#: ../../advanced.rst:499
+msgid "defaultGroup="
+msgstr ""
+
+#: ../../advanced.rst:499
+msgid "e.g. \"wheel\""
+msgstr ""
+
+#: ../../advanced.rst:499
+msgid "default group"
+msgstr ""
+
+#: ../../advanced.rst:501
+msgid "userGroups="
+msgstr ""
+
+#: ../../advanced.rst:501
+msgid "e.g. \"wheel, operator\""
+msgstr ""
+
+#: ../../advanced.rst:501
+msgid "comma separated (no spaces) list of additional groups"
+msgstr ""
+
+#: ../../advanced.rst:504
+msgid "commitUser"
+msgstr ""
+
+#: ../../advanced.rst:504
+msgid "mandatory, must be last line in each user block"
+msgstr ""
+
+#: ../../advanced.rst:507
+msgid "runCommand="
+msgstr ""
+
+#: ../../advanced.rst:507 ../../advanced.rst:515 ../../advanced.rst:517
+#: ../../advanced.rst:520 ../../advanced.rst:523 ../../advanced.rst:526
+#: ../../advanced.rst:529 ../../advanced.rst:532
+msgid "full path to command"
+msgstr ""
+
+#: ../../advanced.rst:507
+msgid ""
+"run the specified command within chroot of the installed system, after the "
+"installation is complete"
+msgstr ""
+
+#: ../../advanced.rst:511
+msgid "runScript="
+msgstr ""
+
+#: ../../advanced.rst:511
+msgid "full path to script"
+msgstr ""
+
+#: ../../advanced.rst:511
+msgid ""
+"runs specified script within chroot of the installed system, after the "
+"installation is complete"
+msgstr ""
+
+#: ../../advanced.rst:515
+msgid "runExtCommand="
+msgstr ""
+
+#: ../../advanced.rst:515
+msgid "runs a command outside the chroot"
+msgstr ""
+
+#: ../../advanced.rst:517
+msgid "runPrePkgCommand="
+msgstr ""
+
+#: ../../advanced.rst:517 ../../advanced.rst:529 ../../advanced.rst:532
+msgid "runs the specified command before starting the pkg installation"
+msgstr ""
+
+#: ../../advanced.rst:520
+msgid "runPrePkgScript="
+msgstr ""
+
+#: ../../advanced.rst:520
+msgid "runs the specified sript before starting the pkg installation"
+msgstr ""
+
+#: ../../advanced.rst:523
+msgid "runPrePkgExtCommand="
+msgstr ""
+
+#: ../../advanced.rst:523
+msgid "runs the specified command before extracting the pkg"
+msgstr ""
+
+#: ../../advanced.rst:526
+msgid "runPreExtractCommand="
+msgstr ""
+
+#: ../../advanced.rst:526
+msgid "runs the specified command before extracting"
+msgstr ""
+
+#: ../../advanced.rst:529
+msgid "runPreExtractScript="
+msgstr ""
+
+#: ../../advanced.rst:532
+msgid "runPreExtractExtCommand="
+msgstr ""
+
+#: ../../advanced.rst:535
+msgid "timeZone="
+msgstr ""
+
+#: ../../advanced.rst:535
+msgid "e.g. \"America/New_York\""
+msgstr ""
+
+#: ../../advanced.rst:535
+msgid "location must exist in :file:`/usr/share/zoneinfo/`"
+msgstr ""
+
+#: ../../advanced.rst:538
+msgid "enableNTP="
+msgstr ""
+
+#: ../../advanced.rst:538
+msgid "enable/disable NTP"
+msgstr ""
+
+#: ../../advanced.rst:540
+msgid "localizeLang="
+msgstr ""
+
+#: ../../advanced.rst:540 ../../advanced.rst:543
+msgid "e.g. \"en\""
+msgstr ""
+
+#: ../../advanced.rst:540
+msgid "sets the system console and Desktop to the target language"
+msgstr ""
+
+#: ../../advanced.rst:543
+msgid "localizeKeyLayout="
+msgstr ""
+
+#: ../../advanced.rst:543
+msgid "updates the system's Xorg config to set the keyboard layout"
+msgstr ""
+
+#: ../../advanced.rst:546
+msgid "localizeKeyModel="
+msgstr ""
+
+#: ../../advanced.rst:546
+msgid "e.g. \"pc104\""
+msgstr ""
+
+#: ../../advanced.rst:546
+msgid "updates the system's Xorg config to set the keyboard model"
+msgstr ""
+
+#: ../../advanced.rst:549
+msgid "localizeKeyVariant="
+msgstr ""
+
+#: ../../advanced.rst:549
+msgid "e.g. \"intl\""
+msgstr ""
+
+#: ../../advanced.rst:549
+msgid "updates the Xorg config to set the keyboard variant"
+msgstr ""
+
+#: ../../advanced.rst:552
+msgid "autoLoginUser="
+msgstr ""
+
+#: ../../advanced.rst:552
+msgid "user will log in automatically without entering a password"
+msgstr ""
+
+#: ../../advanced.rst:555
+msgid "sshHost="
+msgstr ""
+
+#: ../../advanced.rst:555
+msgid "hostname or IP address"
+msgstr ""
+
+#: ../../advanced.rst:555
+msgid "the address of the remote server when using *installMode=zfsrestore*"
+msgstr ""
+
+#: ../../advanced.rst:558
+msgid "sshPort="
+msgstr ""
+
+#: ../../advanced.rst:558
+msgid "e.g \"22\""
+msgstr ""
+
+#: ../../advanced.rst:558
+msgid ""
+"the SSH port number of the remote server when using *installMode=zfsrestore*"
+msgstr ""
+
+#: ../../advanced.rst:562
+msgid "sshUser="
+msgstr ""
+
+#: ../../advanced.rst:562
+msgid "the username on the remote server when using *installMode=zfsrestore*"
+msgstr ""
+
+#: ../../advanced.rst:565
+msgid "sshKey="
+msgstr ""
+
+#: ../../advanced.rst:565
+msgid "e.g. \"/root/id_rsa\""
+msgstr ""
+
+#: ../../advanced.rst:565
+msgid ""
+"path to the SSH key file on the remote server when using "
+"*installMode=zfsrestore*"
+msgstr ""
+
+#: ../../advanced.rst:569
+msgid "zfsProps="
+msgstr ""
+
+#: ../../advanced.rst:569
+msgid "e.g. \".lp-props -tank#backups#mybackup\""
+msgstr ""
+
+#: ../../advanced.rst:569
+msgid ""
+"location of dataset properties file created by Life Preserver during "
+"replication when using *installMode=zfsrestore*"
+msgstr ""
+
+#: ../../advanced.rst:574
+msgid "zfsRemoteDataset="
+msgstr ""
+
+#: ../../advanced.rst:574
+msgid "e.g. \"tank/backups/ mybackup\""
+msgstr ""
+
+#: ../../advanced.rst:574
+msgid ""
+"location of remote dataset to restore from when using "
+"*installMode=zfsrestore*"
+msgstr ""
+
+#: ../../advanced.rst:579
+msgid ""
+"Next, create a customized configuration. One way to create a customized "
+"configuration file is to read through the configuration examples in "
+":file:`/usr/local/share/pc-sysinstall/examples/` and follow the most "
+"relevant example. Copy the file to any location and customize it so it "
+"includes the desired variables and values in the installation."
+msgstr ""
+
+#: ../../advanced.rst:585
+msgid ""
+"An alternate way to create this file is to start an installation, configure "
+"the system as desired, and save the configuration to a USB stick (with or "
+"without actually performing the installation). Use the saved configuration "
+"file as-is, or customize it to meet an installation's needs. This method may"
+" prove easier when performing complex disk layouts."
+msgstr ""
+
+#: ../../advanced.rst:592
+msgid ""
+"To perform a fully automated installation which does not prompt for any user"
+" input, review :file:`/usr/local/share/pc-sysinstall/examples/pc-"
+"autoinstall.conf` and place a customized copy of the file into :file:`/boot"
+"/pc-autoinstall.conf` on the installation media."
+msgstr ""
+
+#: ../../advanced.rst:598
+msgid ""
+":numref:`Table %s <autovars>` summarizes the additional variables available "
+"for fully automatic installations. More detailed descriptions can be found "
+"in the :file:`/usr/local/share/pc-sysinstall/examples/pc-autoinstall.conf` "
+"file."
+msgstr ""
+
+#: ../../advanced.rst:604
+msgid ""
+"The variables in this file use a different syntax than those in "
+":ref:`Customizing a TrueOS® Installation <insvars>` as the values follow a "
+"colon (:kbd:`:`) and a space rather than an :kbd:`=` sign."
+msgstr ""
+
+#: ../../advanced.rst:614
+msgid "Automated Installation Variables"
+msgstr ""
+
+#: ../../advanced.rst:620
+msgid "pc_config"
+msgstr ""
+
+#: ../../advanced.rst:620
+msgid "URL or /path/to/file"
+msgstr ""
+
+#: ../../advanced.rst:620
+msgid "location of customized :file:`pc-sysinstall.conf`"
+msgstr ""
+
+#: ../../advanced.rst:623
+msgid "confirm_install"
+msgstr ""
+
+#: ../../advanced.rst:623
+msgid ""
+"should be set to \"yes\", or booting the wrong disk will result in a system "
+"wipe"
+msgstr ""
+
+#: ../../advanced.rst:627
+msgid "shutdown_cmd"
+msgstr ""
+
+#: ../../advanced.rst:627
+msgid "e.g. :command:`shutdown -p now`"
+msgstr ""
+
+#: ../../advanced.rst:627
+msgid ""
+"running a shutdown is recommended, but this can be any command/script to "
+"execute post-install"
+msgstr ""
+
+#: ../../advanced.rst:631
+msgid "nic_config"
+msgstr ""
+
+#: ../../advanced.rst:631
+msgid "\"dhcp-all\" or <interface name> <IP address> <subnet mask>"
+msgstr ""
+
+#: ../../advanced.rst:631
+msgid ""
+"attempts DHCP on all found NICs until the installation file is fetched or "
+"will setup a specified interface"
+msgstr ""
+
+#: ../../advanced.rst:636
+msgid "nic_dns"
+msgstr ""
+
+#: ../../advanced.rst:636 ../../advanced.rst:638
+msgid "IP address"
+msgstr ""
+
+#: ../../advanced.rst:636
+msgid "DNS server to use"
+msgstr ""
+
+#: ../../advanced.rst:638
+msgid "nic_gateway"
+msgstr ""
+
+#: ../../advanced.rst:638
+msgid "default gateway to use"
+msgstr ""
+
+#: ../../advanced.rst:641
+msgid ""
+"Finally, create a custom installation media or installation server. :command"
+":`pc-sysinstall` supports two installation methods:"
+msgstr ""
+
+#: ../../advanced.rst:644
+msgid "From CD, DVD, or USB media."
+msgstr ""
+
+#: ../../advanced.rst:646
+msgid "From an installation directory on an HTTP, FTP, or SSH+rsync server."
+msgstr ""
+
+#: ../../advanced.rst:648
+msgid ""
+"The easiest way to create a custom installation media is to modify an "
+"existing installation image. For example, if an ISO for the |trueos| version"
+" to customize is downloaded, the superuser can access the contents of the "
+"ISO with a few commands:"
+msgstr ""
+
+#: ../../advanced.rst:659
+msgid ""
+"Make sure to :command:`cd` into the desired destination directory for the "
+"copied ISO contents. In the next examples, :file:`/tmp/custominstall/` was "
+"created for this purpose:"
+msgstr ""
+
+#: ../../advanced.rst:671
+msgid ""
+"Alternately, if an installation CD or DVD is inserted, mount the media and "
+"copy its contents to the desired directory"
+msgstr ""
+
+#: ../../advanced.rst:676
+msgid "[name@example] mount -t cd9660 /dev/cd0 /mnt"
+msgstr ""
+
+#: ../../advanced.rst:678
+msgid "[name@example] cp -R /mnt/* /tmp/custominstall/"
+msgstr ""
+
+#: ../../advanced.rst:680
+msgid "[name@example] umount /mnt"
+msgstr ""
+
+#: ../../advanced.rst:682
+msgid ""
+"If creating an automated installation, copy the customized :file:`pc-"
+"autoinstall.conf` to :file:`/tmp/custominstall/boot/`."
+msgstr ""
+
+#: ../../advanced.rst:685
+msgid ""
+"Copy the customized configuration file to :file:`/tmp/custominstall/`. "
+"Double-check the :command:`installMedium=` variable in the customized "
+"configuration file is set to the correct installation media."
+msgstr ""
+
+#: ../../advanced.rst:689
+msgid ""
+"Adding extra files may be necessary if certain variables are set in the "
+"custom configuration file:"
+msgstr ""
+
+#: ../../advanced.rst:692
+msgid ""
+"**installComponents=** Any extra components to install must exist in "
+":file:`extras/components/`."
+msgstr ""
+
+#: ../../advanced.rst:695
+msgid "**runCommand=** The command must exist in the specified path."
+msgstr ""
+
+#: ../../advanced.rst:697
+msgid "**runScript=** Make sure the script exists in the specified path."
+msgstr ""
+
+#: ../../advanced.rst:699
+msgid "**runExtCommand=** Ensure the command exists in the specified path."
+msgstr ""
+
+#: ../../advanced.rst:702
+msgid ""
+"If the installation media is a CD or DVD, create a bootable media containing"
+" the files in the directory. To create a bootable ISO:"
+msgstr ""
+
+#: ../../advanced.rst:711
+msgid "Use a preferred burning utility to burn the ISO to the media."
+msgstr ""
+
+#: ../../advanced.rst:713
+msgid ""
+"To begin an installation that requires user interaction, type :command:`pc-"
+"sysinstall -c /path_to_your_config_file`"
+msgstr ""
+
+#: ../../advanced.rst:716
+msgid ""
+"To begin a fully automated installation, insert the installation media and "
+"reboot."
+msgstr ""
+
+#: ../../advanced.rst:719
+msgid ""
+"If using an HTTP, FTP, or SSH server as the installation media, "
+":command:`untar` or copy the required files to a directory on the server "
+"accessible to users. Be sure to configure the server so installation files "
+"are accessible to the systems to install."
+msgstr ""
