@@ -907,11 +907,11 @@ How to prepare VirtualBox for an installation of |trueos| using an
 :file:`.iso` file.
 
 
-.. note:: To downlaod an :file:`.iso` file`, select TrueOs Desktop Image
-	(DVD image) from the download page.
+.. note:: To downlaod an :file:`.iso` file`, select :guilabel: 'TrueOs Desktop 
+	Image (DVD Image)'.
 
 Once a |trueos| ISO is
-`downloaded <https://www.trueos.org/downloads/downloads>`_ and
+`downloaded <https://www.trueos.org/downloads/>`_ and
 VirtualBox installed on the host system, create a new virtual machine to
 install |trueos| as a guest OS. The virtual machine must meet several
 minimum requirements in order to be useable. This section will
