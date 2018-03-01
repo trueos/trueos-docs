@@ -907,7 +907,7 @@ How to prepare VirtualBox for an installation of |trueos| using an
 :file:`.iso` file.
 
 
-.. note:: To downlaod an :file:`.iso` file`, select :guilabel: 'TrueOs Desktop 
+.. note:: To downlaod an :file:`.iso` file`, select :guilabel:'TrueOs Desktop 
 	Image (DVD Image)'.
 
 Once a |trueos| ISO is
