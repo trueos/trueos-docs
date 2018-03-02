@@ -906,16 +906,20 @@ Creating a Virtual Machine for a |trueos| install
 How to prepare VirtualBox for an installation of |trueos| using an
 :file:`.iso` file.
 
+
+.. note:: To downlaod an :file:`.iso` file`, select :guilabel:'TrueOs Desktop 
+	Image (DVD Image)'.
+
 Once a |trueos| ISO is
-`downloaded <https://www.trueos.org/downloads/downloads>`_ and
+`downloaded <https://www.trueos.org/downloads/>`_ and
 VirtualBox installed on the host system, create a new virtual machine to
 install |trueos| as a guest OS. The virtual machine must meet several
 minimum requirements in order to be useable. This section will
 demonstrate how to configure the virtual machine for a |trueos| guest.
 
-* A minimum of 1024MB of memory.
+* A minimum of 2 GB of memory.
 
-* A virtual disk of 10-15 GB for a server installation or 20-30 GB for
+* A virtual disk of 10-15 GB for a server installation or 50 GB for
   a desktop installation should be a useable starting point. The actual
   size of a virtual disk depends on the virtual machine's intended use,
   and what applications need to be installed for example but these sizes
