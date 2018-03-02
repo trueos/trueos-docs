@@ -1790,7 +1790,7 @@ TrueOS allows users to build applications using the ports system. Use :command:`
 
 .. note:: These commands must be run as the superuser or **root**.
 
-To fetch the ports for the first time, us the following command:
+To fetch the ports for the first time, use the following command:
 
 :samp:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`
 
