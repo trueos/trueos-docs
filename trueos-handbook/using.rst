@@ -1786,7 +1786,7 @@ Coming soon:
 FreeBSD Ports
 =============
 
-TrueOS allows users to build applications using the ports system. Use :command:`git` to fetch the FreeBSD ports tree on the local system. Specifically, it is reccomended that users make use of the |trueos| branch of the FreeBSD ports, which is regularly updated against the base FreeBSD ports tree.
+TrueOS allows users to build applications using the ports system. Use :command:`git` to fetch the FreeBSD ports tree on the local system. It is recommended that users make use of the |trueos| branch of the FreeBSD ports, which is regularly updated against the base FreeBSD ports tree.
 
 .. note:: These commands must be run as the superuser or **root**.
 
