@@ -112,10 +112,6 @@ msgstr ""
 msgid "Copyright & Trademarks"
 msgstr ""
 
-#: ../../appendix_a.rst:76
-msgid "Copyright © 2005-2017, iXsystems"
-msgstr ""
-
 #: ../../appendix_a.rst:78
 msgid ""
 "The |trueos| User Guide is freely available for sharing and redistribution "
@@ -287,3 +283,10 @@ msgid ""
 " project is afforded its commission. To ask questions about our Ethical "
 "Advertising policy, please contact joshms@trueos.org for more information."
 msgstr ""
+
+#: ../../appendix_a.rst:76
+msgid "Copyright © 2005-2018, iXsystems"
+msgstr ""
+
+#~ msgid "Copyright © 2005-2017, iXsystems"
+#~ msgstr ""

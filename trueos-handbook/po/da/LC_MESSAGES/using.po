@@ -11,15 +11,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../using.rst:2054
+#: ../../using.rst:2063
 msgid "Fonts"
 msgstr ""
 
-#: ../../using.rst:2071
+#: ../../using.rst:2080
 msgid "Sound Mixer Tray"
 msgstr ""
 
-#: ../../using.rst:2158
+#: ../../using.rst:2167
 msgid "Multimedia"
 msgstr ""
 
@@ -230,38 +230,38 @@ msgstr ""
 msgid "Tor Mode"
 msgstr ""
 
-#: ../../using.rst:2223
+#: ../../using.rst:2232
 msgid "Windows Emulation"
 msgstr ""
 
-#: ../../using.rst:1822
+#: ../../using.rst:1831
 msgid "Printing and Scanning"
 msgstr ""
 
-#: ../../using.rst:1840
+#: ../../using.rst:1849
 msgid "Researching your Printer"
 msgstr ""
 
-#: ../../using.rst:1860
+#: ../../using.rst:1869
 msgid "Adding a Printer"
 msgstr ""
 
-#: ../../using.rst:1954
+#: ../../using.rst:1963
 msgid "Manually Adding a Driver"
 msgstr ""
 
-#: ../../using.rst:1992
+#: ../../using.rst:2001
 msgid ""
 "After inputting the connection information, continue to add the printer and "
 "test the connection by printing a test page as described in :ref:`Adding a "
 "Printer`."
 msgstr ""
 
-#: ../../using.rst:2010
+#: ../../using.rst:2019
 msgid "Scanning"
 msgstr ""
 
-#: ../../using.rst:2039
+#: ../../using.rst:2048
 msgid ""
 "The `XSane documentation <http://www.xsane.org/doc/sane-xsane-doc.html>`_ "
 "contains details on how to perform common tasks such as saving an image to a"
@@ -269,55 +269,55 @@ msgid ""
 "the icons in the interface and how to use them."
 msgstr ""
 
-#: ../../using.rst:2118
+#: ../../using.rst:2127
 msgid "This tab contains several options:"
 msgstr ""
 
-#: ../../using.rst:2120
+#: ../../using.rst:2129
 msgid ""
 "**Recording Device:** Use the drop-down menu to select the device to use for"
 " recording sound."
 msgstr ""
 
-#: ../../using.rst:2123
+#: ../../using.rst:2132
 msgid ""
 "**Default Tray Device:** Use the drop-down menu to set the default slider to"
 " display in the system tray."
 msgstr ""
 
-#: ../../using.rst:2138
+#: ../../using.rst:2147
 msgid ""
 "The :guilabel:`File` menu can be used to quit this mixer screen or to close "
 "both this screen and remove the icon from the system tray."
 msgstr ""
 
-#: ../../using.rst:2179
+#: ../../using.rst:2188
 msgid ""
 "`aTunes <http://www.atunes.org/?page_id=5>`_: Full-featured audio player and"
 " manager which can play mp3, ogg, wma, wav, flac, mp4 and radio streaming, "
 "allowing users to easily edit tags, organize music and rip audio CDs."
 msgstr ""
 
-#: ../../using.rst:2184
+#: ../../using.rst:2193
 msgid ""
 "`Audacity <https://sourceforge.net/projects/audacity/?lang=en>`_: "
 "Multilingual audio editor and recorder."
 msgstr ""
 
-#: ../../using.rst:2187
+#: ../../using.rst:2196
 msgid ""
 "`DeaDBeeF <http://deadbeef.sourceforge.net/screenshots.html>`_: Music player"
 " supporting most audio formats."
 msgstr ""
 
-#: ../../using.rst:2190
+#: ../../using.rst:2199
 msgid ""
 "`Decibel <http://decibel.silent-blade.org/index.php?n=Main.Screenshots>`_: "
 "Audio player built around a highly modular structure which lets the user "
 "completely disable unneeded features. Able to play CDs directly."
 msgstr ""
 
-#: ../../using.rst:2197
+#: ../../using.rst:2206
 msgid ""
 "`Miro <http://www.getmiro.com/download/screenshots/>`_: HD video player "
 "which can play almost any video file and offers over 6,000 free Internet TV "
@@ -668,7 +668,7 @@ msgstr ""
 msgid "**Country Code:** The two letter country code of operation."
 msgstr ""
 
-#: ../../using.rst:2225
+#: ../../using.rst:2234
 msgid ""
 "`Wine <https://wiki.winehq.org/Main_Page>`_ is an application which allows "
 "the creation of a Windows environment for installing Windows software. This "
@@ -676,25 +676,25 @@ msgid ""
 "not yet been ported to Linux or BSD."
 msgstr ""
 
-#: ../../using.rst:2242
+#: ../../using.rst:2251
 msgid ""
 "The initial Wine configuration menu is shown in :numref:`Figure %s <wine1>`."
 msgstr ""
 
-#: ../../using.rst:2266
+#: ../../using.rst:2275
 msgid ""
 "To install the application, type :command:`winefile` to see the screen shown"
 " in :numref:`Figure %s <wine2>`."
 msgstr ""
 
-#: ../../using.rst:2284
+#: ../../using.rst:2293
 msgid ""
 "Once the installation is complete, browse to the application's location. "
 ":numref:`Figure %s <wine3>` shows an example of running Internet Explorer "
 "within :command:`winefile`."
 msgstr ""
 
-#: ../../using.rst:1899
+#: ../../using.rst:1908
 msgid ""
 "This screen automatically fills out the printer model series, a description,"
 " and the type of connection. If desired, add a descriptive "
@@ -702,14 +702,14 @@ msgid ""
 ":guilabel:`Sharing`."
 msgstr ""
 
-#: ../../using.rst:1956
+#: ../../using.rst:1965
 msgid ""
 "If the print configuration fails, double-check the printer is supported as "
 "described in :ref:`Researching your Printer` and HPLIP is installed if it is"
 " a HP printer. Also check the printer is plugged in and powered on."
 msgstr ""
 
-#: ../../using.rst:1972
+#: ../../using.rst:1981
 msgid ""
 "**IPP:** Select this option if connecting to a printer cabled to another "
 "computer (typically running a Microsoft operating system) sharing the "
@@ -718,14 +718,14 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../using.rst:1988
+#: ../../using.rst:1997
 msgid ""
 "**LPD/LPR:** Select this option if connecting to a printer which is cabled "
 "to a Unix computer using LPD to share the printer. Input the hostname and "
 "queue name of the Unix system."
 msgstr ""
 
-#: ../../using.rst:2045
+#: ../../using.rst:2054
 msgid ""
 "By default, XSane uses the default browser when clicking :kbd:`F1` to access"
 " its built-in documentation. Configuring the default browser varies by "
@@ -733,7 +733,7 @@ msgid ""
 "browser setting."
 msgstr ""
 
-#: ../../using.rst:2029
+#: ../../using.rst:2038
 msgid ""
 ":numref:`Figure %s <sane1>` shows the XSane interface running on a |trueos| "
 "system attached to an HP DeskJet Printer/Scanner."
@@ -743,15 +743,11 @@ msgstr ""
 msgid "FreeBSD Ports"
 msgstr ""
 
-#: ../../using.rst:1805
+#: ../../using.rst:1803
 msgid "These commands must be run as the superuser or **root**."
 msgstr ""
 
-#: ../../using.rst:1807
-msgid "When fetching ports for the first time:"
-msgstr ""
-
-#: ../../using.rst:1811
+#: ../../using.rst:1809
 msgid "To update an existing local ports directory:"
 msgstr ""
 
@@ -922,13 +918,13 @@ msgstr ""
 msgid "In the left frame, click :menuselection:`Network --> Windows Network`"
 msgstr ""
 
-#: ../../using.rst:1919
+#: ../../using.rst:1928
 msgid ""
 "The next screen, shown in :numref:`Figure %s <print8>`, can be used to "
 "modify the properties of the printer."
 msgstr ""
 
-#: ../../using.rst:1961
+#: ../../using.rst:1970
 msgid ""
 "If the wizard is unable to even detect the device, try to manually add the "
 "information for the print device. In the :guilabel:`Select Device` screen "
@@ -937,7 +933,7 @@ msgid ""
 "connection:"
 msgstr ""
 
-#: ../../using.rst:1996
+#: ../../using.rst:2005
 msgid ""
 "If the default driver is not working, try re-adding the printer. At the "
 ":ref:`print7` screen, try selecting a different driver."
@@ -999,7 +995,7 @@ msgid ""
 " in its :guilabel:`Screenshot` column."
 msgstr ""
 
-#: ../../using.rst:2025
+#: ../../using.rst:2034
 msgid ""
 "If the scanner is part of an HP All-in-One device, make sure the \"hplip\" "
 "package is installed. Use |appcafe| to see if the driver is installed, and "
@@ -1012,13 +1008,6 @@ msgid ""
 "recommended for new |trueos| users, while the `Server "
 "<https://sysadm.us/handbook/server/>`_ and `API Reference "
 "<https://api.sysadm.us/>`_ guides are available for advanced users."
-msgstr ""
-
-#: ../../using.rst:1801
-msgid ""
-"Use :command:`git` to fetch the FreeBSD ports tree on a local system. "
-"Specifically, the |trueos| branch of the FreeBSD ports tree is pulled, which"
-" is regularly updated against the base FreeBSD ports tree."
 msgstr ""
 
 #: ../../using.rst:234
@@ -1191,7 +1180,7 @@ msgstr ""
 msgid "Utilities that Support Windows Shares"
 msgstr ""
 
-#: ../../using.rst:2056
+#: ../../using.rst:2065
 msgid ""
 "|trueos| installs with `Google Noto <http://www.google.com/get/noto/>`_ "
 "which provides multi-lingual Sans and Serif fonts. Many other fonts are "
@@ -1199,7 +1188,7 @@ msgid ""
 "require any additional configuration to \"just work\"."
 msgstr ""
 
-#: ../../using.rst:2061
+#: ../../using.rst:2070
 msgid ""
 "If you have downloaded or purchased a collection of font, |trueos| can be "
 "configured to also use those fonts. Become the superuser and copy the "
@@ -1208,26 +1197,26 @@ msgid ""
 "fonts cache."
 msgstr ""
 
-#: ../../using.rst:2073
+#: ../../using.rst:2082
 msgid ""
 "|trueos| includes a graphical utility for managing the sound card's mixer "
 "settings. The utility is accessed by clicking the :guilabel:`speaker` icon "
 "in the system tray."
 msgstr ""
 
-#: ../../using.rst:2090
+#: ../../using.rst:2099
 msgid "Output Options"
 msgstr ""
 
-#: ../../using.rst:2092
+#: ../../using.rst:2101
 msgid ":numref:`Figure %s <sound2>` shows the :guilabel:`Mixer` menu:"
 msgstr ""
 
-#: ../../using.rst:2099
+#: ../../using.rst:2108
 msgid "Mixer Controls"
 msgstr ""
 
-#: ../../using.rst:2101
+#: ../../using.rst:2110
 msgid ""
 "The :guilabel:`Mixer Controls` screen provides sliders to modify the left "
 "and right channels that control volume, pcm (the sound driver), the speaker,"
@@ -1236,24 +1225,24 @@ msgid ""
 ":guilabel:`Unmute`, depending on its current mute state."
 msgstr ""
 
-#: ../../using.rst:2108
+#: ../../using.rst:2117
 msgid ""
 ":numref:`Figure %s <sound3>` shows the :guilabel:`System Configuration` tab "
 "of the :guilabel:`Mixer`."
 msgstr ""
 
-#: ../../using.rst:2116
+#: ../../using.rst:2125
 msgid "System Sound Configuration"
 msgstr ""
 
-#: ../../using.rst:2141
+#: ../../using.rst:2150
 msgid ""
 "To re-add the mixer icon after removing it, type :samp:`pc-mixer &` in a "
 "command line. Alternately, open this application without adding it back to "
 "the system tray by typing :samp:`pc-mixer -notray`."
 msgstr ""
 
-#: ../../using.rst:2146
+#: ../../using.rst:2155
 msgid ""
 "|trueos| provides full `PulseAudio "
 "<https://www.freedesktop.org/wiki/Software/PulseAudio/>`_ support, which can"
@@ -1264,13 +1253,13 @@ msgid ""
 " network sound devices and mixer levels."
 msgstr ""
 
-#: ../../using.rst:2160
+#: ../../using.rst:2169
 msgid ""
 "|trueos| is pre-configured to support most multimedia formats and makes it "
 "easy to install most open source media applications using |appcafe|."
 msgstr ""
 
-#: ../../using.rst:2163
+#: ../../using.rst:2172
 msgid ""
 "After installing a web browser, most media formats become playable, "
 "including YouTube™ videos, Internet radio, and many trailer and movie sites."
@@ -1279,7 +1268,7 @@ msgid ""
 "distribution of the codec required to play the media format."
 msgstr ""
 
-#: ../../using.rst:2170
+#: ../../using.rst:2179
 msgid ""
 "When troubleshooting Java™ or Flash® for your browser, please refer to the "
 "`FreeBSD browser <https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook"
@@ -1300,7 +1289,7 @@ msgid ""
 "user navigates away and/or file copy operations stop."
 msgstr ""
 
-#: ../../using.rst:1809
+#: ../../using.rst:1807
 msgid ""
 ":samp:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`"
 msgstr ""
@@ -1565,7 +1554,7 @@ msgstr ""
 msgid ":samp:`sudo disable-tor-mode` disables tor mode."
 msgstr ""
 
-#: ../../using.rst:2237
+#: ../../using.rst:2246
 msgid ""
 "Wine can be installed using |appcafe|. After installing, it can be started "
 "by typing :command:`winecfg` in the command line. The first time running "
@@ -1573,11 +1562,11 @@ msgid ""
 "prompted, click :guilabel:`Install` in the pop-up menu."
 msgstr ""
 
-#: ../../using.rst:2250
+#: ../../using.rst:2259
 msgid "Wine Configuration Menu"
 msgstr ""
 
-#: ../../using.rst:2252
+#: ../../using.rst:2261
 msgid ""
 "Click :guilabel:`Add application` to browse to the application's installer "
 "file. By default, the contents of the hard drive will be listed under "
@@ -1589,18 +1578,18 @@ msgid ""
 " the superuser."
 msgstr ""
 
-#: ../../using.rst:2262
+#: ../../using.rst:2271
 msgid ""
 "The system then accesses the media and you can now select the installer "
 "file. Once selected, click :guilabel:`Apply` then :guilabel:`OK` to exit the"
 " configuration utility."
 msgstr ""
 
-#: ../../using.rst:2274
+#: ../../using.rst:2283
 msgid "Installing the Application Using :command:`winefile`"
 msgstr ""
 
-#: ../../using.rst:2276
+#: ../../using.rst:2285
 msgid ""
 "Click the button representing the drive which contains the installer and "
 "double-click on the installation file (e.g. :file:`setup.exe`). The "
@@ -1608,17 +1597,17 @@ msgid ""
 "system."
 msgstr ""
 
-#: ../../using.rst:2281
+#: ../../using.rst:2290
 msgid ""
 "You may need need to unmount a CD/DVD before it ejects. As the superuser, "
 "type :samp:`umount /mnt`."
 msgstr ""
 
-#: ../../using.rst:2293
+#: ../../using.rst:2302
 msgid "Running the Installed Application"
 msgstr ""
 
-#: ../../using.rst:1827
+#: ../../using.rst:1836
 msgid ""
 "CUPS provides an easy-to-use utility for adding and managing printers. "
 "Whether or not it automatically detects a printer depends upon how well the "
@@ -1629,7 +1618,7 @@ msgid ""
 " for ideas on locating correct drivers for your printer."
 msgstr ""
 
-#: ../../using.rst:1842
+#: ../../using.rst:1851
 msgid ""
 "Before configuring your printer, see if a driver already exists for your "
 "particular model, and if so, which driver is recommended. If you are "
@@ -1641,7 +1630,7 @@ msgid ""
 "see the results."
 msgstr ""
 
-#: ../../using.rst:1851
+#: ../../using.rst:1860
 msgid ""
 "For the HP DeskJet model example, the HPLIP driver is recommended. In "
 "|trueos|, the HPLIP driver is available as an optional package called "
@@ -1649,7 +1638,7 @@ msgid ""
 "if not."
 msgstr ""
 
-#: ../../using.rst:1862
+#: ../../using.rst:1871
 msgid ""
 "Once printer support is determined, ensure the printer is plugged into your "
 "computer or, if the printer is a network printer, both your computer and the"
@@ -1658,22 +1647,22 @@ msgid ""
 "configuration, shown in :numref:`Figure %s <print4>`."
 msgstr ""
 
-#: ../../using.rst:1873
+#: ../../using.rst:1882
 msgid "Printer Configuration"
 msgstr ""
 
-#: ../../using.rst:1875
+#: ../../using.rst:1884
 msgid ""
 "To add a new printer, click :guilabel:`Add Printer`. CUPS will pause for a "
 "few seconds as it searches for available printers. When finished, a screen "
 "similar to :numref:`Figure %s <print5>` is shown."
 msgstr ""
 
-#: ../../using.rst:1884
+#: ../../using.rst:1893
 msgid "Print Device Selection"
 msgstr ""
 
-#: ../../using.rst:1886
+#: ../../using.rst:1895
 msgid ""
 "In this example, the wizard has found the HP DeskJet 3630 printer on both "
 "the USB port (first entry) and the wireless network (second entry). Click "
@@ -1682,11 +1671,11 @@ msgid ""
 "shown in :numref:`Figure %s <print6>` is shown."
 msgstr ""
 
-#: ../../using.rst:1897
+#: ../../using.rst:1906
 msgid "Describe Printer"
 msgstr ""
 
-#: ../../using.rst:1904
+#: ../../using.rst:1913
 msgid ""
 "Once you click :guilabel:`Continue`, the next screen, shown in "
 ":numref:`Figure %s <print7>`, displays a summary of the selected options and"
@@ -1696,15 +1685,15 @@ msgid ""
 "which describes how to use this screen in more detail."
 msgstr ""
 
-#: ../../using.rst:1917
+#: ../../using.rst:1926
 msgid "Viewing the Default Driver"
 msgstr ""
 
-#: ../../using.rst:1927
+#: ../../using.rst:1936
 msgid "Modify Print Properties"
 msgstr ""
 
-#: ../../using.rst:1929
+#: ../../using.rst:1938
 msgid ""
 "It is recommended to take a few minutes to review the settings in the "
 ":guilabel:`General`, :guilabel:`Banners`, and :guilabel:`Policies` tabs, as "
@@ -1716,18 +1705,18 @@ msgid ""
 " in :numref:`Figure %s <print9>`."
 msgstr ""
 
-#: ../../using.rst:1943
+#: ../../using.rst:1952
 msgid "Manage Printer"
 msgstr ""
 
-#: ../../using.rst:1945
+#: ../../using.rst:1954
 msgid ""
 "Print a test page to ensure the printer is working. Verify the printer has "
 "paper and click :menuselection:`Maintenance -> Print Test Page`. If a test "
 "page does not print, refer to the :ref:`Printer Help` of this handbook."
 msgstr ""
 
-#: ../../using.rst:1967
+#: ../../using.rst:1976
 msgid ""
 "**USB:** This entry only appears if a printer is plugged into a USB port and"
 " the number of entries vary depending on the number of USB ports on the "
@@ -1735,14 +1724,14 @@ msgid ""
 "the USB port your printer is plugged into."
 msgstr ""
 
-#: ../../using.rst:1983
+#: ../../using.rst:1992
 msgid ""
 "**AppSocket/HP JetDirect:** Select this option if connecting to an HP "
 "network printer. Input the IP address of the printer. Only change the port "
 "number if the printer is using a port other than the default of *9100*."
 msgstr ""
 
-#: ../../using.rst:1999
+#: ../../using.rst:2008
 msgid ""
 "Alternately, if you have a PPD driver from the manufacturer's website or on "
 "the CD packed in with the printer, click :guilabel:`Choose File` to browse "
@@ -1752,7 +1741,7 @@ msgid ""
 "compressed."
 msgstr ""
 
-#: ../../using.rst:2012
+#: ../../using.rst:2021
 msgid ""
 "While no scanning applications are included with |trueos|, there are a few "
 "options available via |appcafe|. One good option is `XSane "
@@ -1760,23 +1749,23 @@ msgid ""
 "rest of this section describes using *XSane* for scanning."
 msgstr ""
 
-#: ../../using.rst:2037
+#: ../../using.rst:2046
 msgid "XSane Interface"
 msgstr ""
 
-#: ../../using.rst:2176
+#: ../../using.rst:2185
 msgid ""
 "|appcafe| contains several dozen applications for playing and editing "
 "multimedia. It includes these popular applications:"
 msgstr ""
 
-#: ../../using.rst:2194
+#: ../../using.rst:2203
 msgid ""
 "`gtkpod <http://gtkpod.org/libgpod/>`_: Graphical user interface for the "
 "Apple iPod."
 msgstr ""
 
-#: ../../using.rst:2201
+#: ../../using.rst:2210
 msgid ""
 "`SMPlayer <http://www.smplayer.info/>`_: Universal media player which can "
 "handle any media format and play audio CDs, DVDs, (S)VCDs, TV/radio cards, "
@@ -1791,7 +1780,7 @@ msgstr ""
 msgid "`<https://wiki.lxde.org/en/PCManFM>`_"
 msgstr ""
 
-#: ../../using.rst:1824
+#: ../../using.rst:1833
 msgid ""
 "Like many open source operating systems, |trueos| uses the Common Unix "
 "Printing System (`CUPS <https://www.cups.org/>`_) to manage printing."
@@ -1807,7 +1796,7 @@ msgid ""
 "understanding of how to input an appropriate replacement address."
 msgstr ""
 
-#: ../../using.rst:2230
+#: ../../using.rst:2239
 msgid ""
 "Wine is not guaranteed to work with every Windows application. You can "
 "search for desired applications in the :guilabel:`Browse Apps` section of "
@@ -1871,7 +1860,7 @@ msgid ""
 "by default."
 msgstr ""
 
-#: ../../using.rst:2017
+#: ../../using.rst:2026
 msgid ""
 "To use your scanner, make sure the device is plugged into the |trueos| "
 "system and click :menuselection:`Browse Applications --> Scanner` or type "
@@ -2174,7 +2163,7 @@ msgid ""
 "easy management, replication, and scheduling of ZFS snapshots."
 msgstr ""
 
-#: ../../using.rst:2077
+#: ../../using.rst:2086
 msgid ""
 ":numref:`Figure %s <sound1>` shows an example of highlighting the "
 ":guilabel:`Output` option after opening the Sound Mixer. If the system has "
@@ -2184,7 +2173,7 @@ msgid ""
 "reverts audio output back to the default."
 msgstr ""
 
-#: ../../using.rst:2126
+#: ../../using.rst:2135
 msgid ""
 "**Audio Output Channel:** Use the drop-down menu to change the sound device "
 "and use :guilabel:`Test` to determine if sound is working. This is sometimes"
@@ -2196,7 +2185,7 @@ msgid ""
 " audio output channel as the system default."
 msgstr ""
 
-#: ../../using.rst:2136
+#: ../../using.rst:2145
 msgid "The :guilabel:`Disable PulseAudio` disables all PulseAudio support."
 msgstr ""
 
@@ -3139,7 +3128,7 @@ msgid ""
 "accessible by navigating to :file:`/.autofs`."
 msgstr ""
 
-#: ../../using.rst:1978
+#: ../../using.rst:1987
 msgid ""
 "**HTTP:** This option allows you to manually type in the URI to the printer."
 " A list of possible URIs is available on the `CUPS site "
@@ -3147,14 +3136,14 @@ msgid ""
 "connection, select :guilabel:`https` instead."
 msgstr ""
 
-#: ../../using.rst:2205
+#: ../../using.rst:2214
 msgid ""
 "`VLC media player <http://www.videolan.org/vlc/>`_: Open Source cross-"
 "platform multimedia player capable of playing most multimedia files, DVD and"
 " CD formats, and some streaming protocols.\\"
 msgstr ""
 
-#: ../../using.rst:2209
+#: ../../using.rst:2218
 msgid ""
 "`Kodi,formerly known as XBMC <https://kodi.tv/>`_: GPL-licensed software "
 "media player and entertainment hub for digital media. It can play most audio"
@@ -3162,18 +3151,18 @@ msgid ""
 "inside ZIP and RAR archives."
 msgstr ""
 
-#: ../../using.rst:2214
+#: ../../using.rst:2223
 msgid ""
 "`Plex Home Theater <https://www.plex.tv/>`_: Centralized media playback "
 "system. The central Plex Media Server streams media to many Plex player Apps"
 " which are used to view your media library and watch shows."
 msgstr ""
 
-#: ../../using.rst:2299
+#: ../../using.rst:2308
 msgid "Updating TrueOS"
 msgstr ""
 
-#: ../../using.rst:2301
+#: ../../using.rst:2310
 msgid ""
 "The TrueOS project is organized around two update tracks: STABLE and "
 "UNSTABLE. Updating is handled through the |sysadm| Update Manager; refer to "
@@ -3182,7 +3171,7 @@ msgid ""
 "instructions to switch between update tracks."
 msgstr ""
 
-#: ../../using.rst:2307
+#: ../../using.rst:2316
 msgid ""
 "To view or adjust the current update track for TrueOS, click "
 ":menuselection:`Start Menu --> Control Panel --> Update Manager --> "
@@ -3191,17 +3180,17 @@ msgid ""
 "updates."
 msgstr ""
 
-#: ../../using.rst:2317
+#: ../../using.rst:2326
 msgid "Update Manager Settings"
 msgstr ""
 
-#: ../../using.rst:2319
+#: ../../using.rst:2328
 msgid ""
 "While both STABLE and UNSTABLE tracks are rolling releases based on FreeBSD-"
 "CURRENT, there are a few key differences between them."
 msgstr ""
 
-#: ../../using.rst:2322
+#: ../../using.rst:2331
 msgid ""
 "Users with UNSTABLE installed before 7/14/2017 need to run :command:`pc-"
 "updatemanager syncconf` in a command line in order to switch to the new "
@@ -3210,11 +3199,11 @@ msgid ""
 "to UNSTABLE and click :guilabel:`Save` again."
 msgstr ""
 
-#: ../../using.rst:2333
+#: ../../using.rst:2342
 msgid "TrueOS STABLE"
 msgstr ""
 
-#: ../../using.rst:2335
+#: ../../using.rst:2344
 msgid ""
 "As its name implies, STABLE refers to the more solid version of TrueOS. "
 "STABLE updates are released infrequently, but are much more tested and "
@@ -3222,50 +3211,71 @@ msgid ""
 "and fresh TrueOS installations only look to the STABLE track for updates."
 msgstr ""
 
-#: ../../using.rst:2341
+#: ../../using.rst:2350
 msgid ""
 "The STABLE track is recommended for those users who want a more predictable "
 "experience with fewer regressions, and are willing to wait longer for "
 "bugfixes and new utilities or ports."
 msgstr ""
 
-#: ../../using.rst:2349
+#: ../../using.rst:2358
 msgid "TrueOS UNSTABLE"
 msgstr ""
 
-#: ../../using.rst:2351
+#: ../../using.rst:2360
 msgid ""
 "The UNSTABLE track is the bleeding edge of TrueOS development. Experimental "
 "fixes, upstream patches from the FreeBSD project, and testing new utilities "
 "and applications all happen first with the UNSTABLE track."
 msgstr ""
 
-#: ../../using.rst:2356
+#: ../../using.rst:2365
 msgid ""
 "UNSTABLE is recommended for power users, those with custom hardware "
 "unsupported with STABLE, and project contributors who wish to help test "
 "patches committed to TrueOS and/or FreeBSD-CURRENT."
 msgstr ""
 
-#: ../../using.rst:2360
+#: ../../using.rst:2369
 msgid ""
 "To switch to the UNSTABLE track, open the SysAdm Update Manager and navigate"
 " to the *Settings* tab, seen in :ref:`update1`. Check :guilabel:`UNSTABLE "
 "Repository`, then click :guilabel:`Save Settings`."
 msgstr ""
 
-#: ../../using.rst:2364
+#: ../../using.rst:2373
 msgid ""
 "Alternately, you can edit :file:`/usr/local/etc/trueos.conf` to change "
 "update tracks without using SysAdm. Here is an example :file:`trueos.conf`:"
 msgstr ""
 
-#: ../../using.rst:2386
+#: ../../using.rst:2395
 msgid ""
 "Rolling back from UNSTABLE to STABLE is done by switching tracks back to the"
 " STABLE branch, checking for updates, and rebooting once the previous STABLE"
 " update is installed."
 msgstr ""
+
+#: ../../using.rst:1801
+msgid ""
+"TrueOS allows users to build applications using the ports system. Use "
+":command:`git` to fetch the FreeBSD ports tree on the local system. It is "
+"recommended that users make use of the |trueos| branch of the FreeBSD ports,"
+" which is regularly updated against the base FreeBSD ports tree."
+msgstr ""
+
+#: ../../using.rst:1805
+msgid "To fetch the ports for the first time, use the following command:"
+msgstr ""
+
+#~ msgid "When fetching ports for the first time:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use :command:`git` to fetch the FreeBSD ports tree on a local system. "
+#~ "Specifically, the |trueos| branch of the FreeBSD ports tree is pulled, which"
+#~ " is regularly updated against the base FreeBSD ports tree."
+#~ msgstr ""
 
 #~ msgid "Kodi"
 #~ msgstr ""

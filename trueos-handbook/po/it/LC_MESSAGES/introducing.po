@@ -551,16 +551,6 @@ msgstr ""
 msgid "`Open Source Alternatives <https://opensource.com/alternatives>`_"
 msgstr ""
 
-#: ../../introducing.rst:32
-msgid ""
-"`TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in "
-"2005 when Kris Moore presented the first beta version of a FreeBSD operating"
-" system pre-configured for desktop use. Since then, |trueos| has matured "
-"into a polished, feature-rich, free-of-charge, open source operating system "
-"that meets the desktop or server needs of the beginner to the advanced user "
-"alike."
-msgstr ""
-
 #: ../../introducing.rst:756
 msgid ""
 "`Comparing BSD and Linux <https://www.freebsd.org/doc/en/articles"
@@ -633,17 +623,6 @@ msgstr ""
 msgid ""
 "**Automatically configured hardware:** Video, sound, network, and other "
 "devices are configured automatically during installation."
-msgstr ""
-
-#: ../../introducing.rst:24
-msgid ""
-"This Handbook covers the installation and use of |trueos|. This Handbook is "
-"a work in progress and relies on the contributions of many individuals. To "
-"assist with the Handbook, refer to the documentation `README "
-"<https://github.com/trueos/trueos-docs/blob/master/trueos-"
-"handbook/README.md>`_. If using IRC, join the #trueos channel on the "
-"Freenode network to converse with many other |trueos| users. `Gitter "
-"<https://gitter.im/trueos>`_ is another popular option for users."
 msgstr ""
 
 #: ../../introducing.rst:46
@@ -1610,54 +1589,31 @@ msgid ""
 ":file:`.iso` file."
 msgstr ""
 
-#: ../../introducing.rst:921
-msgid ""
-"Once a |trueos| ISO is `downloaded "
-"<https://www.trueos.org/downloads/downloads>`_ and VirtualBox installed on "
-"the host system, create a new virtual machine to install |trueos| as a guest"
-" OS. The virtual machine must meet several minimum requirements in order to "
-"be useable. This section will demonstrate how to configure the virtual "
-"machine for a |trueos| guest."
-msgstr ""
-
-#: ../../introducing.rst:928
-msgid "A minimum of 1024MB of memory."
-msgstr ""
-
-#: ../../introducing.rst:930
-msgid ""
-"A virtual disk of 10-15 GB for a server installation or 20-30 GB for a "
-"desktop installation should be a useable starting point. The actual size of "
-"a virtual disk depends on the virtual machine's intended use, and what "
-"applications need to be installed for example but these sizes should suit "
-"the average user's needs."
-msgstr ""
-
-#: ../../introducing.rst:936
+#: ../../introducing.rst:940
 msgid "A bridged adapter."
 msgstr ""
 
-#: ../../introducing.rst:938
+#: ../../introducing.rst:942
 msgid ""
 "To create the virtual machine, start VirtualBox to see the screen shown in "
 ":numref:`Figure %s <vbox1>`."
 msgstr ""
 
-#: ../../introducing.rst:946
+#: ../../introducing.rst:950
 msgid "VirtualBox Menu"
 msgstr ""
 
-#: ../../introducing.rst:948
+#: ../../introducing.rst:952
 msgid ""
 "Click :guilabel:`New` to start the new virtual machine wizard and display "
 "the screen in :numref:`Figure %s <vbox2>`."
 msgstr ""
 
-#: ../../introducing.rst:956
+#: ../../introducing.rst:960
 msgid "Create Virtual Machine - Name, Type, and Version"
 msgstr ""
 
-#: ../../introducing.rst:958
+#: ../../introducing.rst:962
 msgid ""
 "Enter a name for the virtual machine; anything can be entered but something "
 "descriptive is recommended. Click the :guilabel:`Operating System` drop-down"
@@ -1666,11 +1622,11 @@ msgid ""
 "screen in :numref:`Figure %s <vbox3>`."
 msgstr ""
 
-#: ../../introducing.rst:970
+#: ../../introducing.rst:974
 msgid "Virtual Machine Reserved Memory"
 msgstr ""
 
-#: ../../introducing.rst:972
+#: ../../introducing.rst:976
 msgid ""
 "The base memory size must be changed to **at least 1024 MB.** If the host "
 "system has a lot of RAM, use more. Any number within the green area is "
@@ -1679,11 +1635,11 @@ msgid ""
 ":guilabel:`Next` to see the screen in :numref:`Figure %s <vbox4>`."
 msgstr ""
 
-#: ../../introducing.rst:983
+#: ../../introducing.rst:987
 msgid "Virtual Hard Drive - New or Existing"
 msgstr ""
 
-#: ../../introducing.rst:985
+#: ../../introducing.rst:989
 msgid ""
 "This section is used to create the virtual hard drive, or the amount of disk"
 " space available to the guest OS installed in the virtual machine. If this "
@@ -1698,21 +1654,21 @@ msgid ""
 "drive by old unsed virtual machines."
 msgstr ""
 
-#: ../../introducing.rst:1003
+#: ../../introducing.rst:1007
 msgid "Hard Drive Type"
 msgstr ""
 
-#: ../../introducing.rst:1005
+#: ../../introducing.rst:1009
 msgid ""
 "Select :guilabel:`VDI` and click :guilabel:`Next` to see the screen in "
 ":numref:`Figure %s <vbox6>`."
 msgstr ""
 
-#: ../../introducing.rst:1013
+#: ../../introducing.rst:1017
 msgid "Storage Type"
 msgstr ""
 
-#: ../../introducing.rst:1015
+#: ../../introducing.rst:1019
 msgid ""
 "Next, choose whether to have :guilabel:`Dynamically allocated` or "
 ":guilabel:`Fixed size` storage. Dynamically allocated uses disk space as "
@@ -1724,11 +1680,11 @@ msgid ""
 "screen in :numref:`Figure %s <vbox7>` displays."
 msgstr ""
 
-#: ../../introducing.rst:1029
+#: ../../introducing.rst:1033
 msgid "Virtual Disk - File Name and Size"
 msgstr ""
 
-#: ../../introducing.rst:1031
+#: ../../introducing.rst:1035
 msgid ""
 "This screen is used to set the size (or upper limit) of the virtual machine."
 " If planning to install |trueos| as the guest OS on the virtual machine, "
@@ -1740,18 +1696,18 @@ msgid ""
 " a directory on disk with sufficient space to hold the virtual machine."
 msgstr ""
 
-#: ../../introducing.rst:1041
+#: ../../introducing.rst:1045
 msgid ""
 "Once the selections are made, click :guilabel:`Create` to finish using the "
 "wizard. The virtual machine will now show up in the left box, as seen in the"
 " example in :numref:`Figure %s <vbox8>`."
 msgstr ""
 
-#: ../../introducing.rst:1050
+#: ../../introducing.rst:1054
 msgid "New Virtual Machine \"test\""
 msgstr ""
 
-#: ../../introducing.rst:1052
+#: ../../introducing.rst:1056
 msgid ""
 "In order to use the network card, configure bridged network on the virtual "
 "machine. To do this, go to :menuselection:`Settings --> Network`. In the "
@@ -1762,11 +1718,11 @@ msgid ""
 "has a device name of :file:`re0`."
 msgstr ""
 
-#: ../../introducing.rst:1066
+#: ../../introducing.rst:1070
 msgid "VirtualBox Bridged Adapter Configuration"
 msgstr ""
 
-#: ../../introducing.rst:1068
+#: ../../introducing.rst:1072
 msgid ""
 "Before starting the virtual machine, configure it to use the ISO "
 "installation media downloaded previously. Click the :guilabel:`Storage` "
@@ -1774,11 +1730,11 @@ msgid ""
 ":numref:`Figure %s <vbox10>`."
 msgstr ""
 
-#: ../../introducing.rst:1078
+#: ../../introducing.rst:1082
 msgid "Virtual Machine Storage Settings"
 msgstr ""
 
-#: ../../introducing.rst:1080
+#: ../../introducing.rst:1084
 msgid ""
 "Click the word :guilabel:`Empty`, which represents the DVD reader. To access"
 " the |trueos| installer from the DVD reader, double-check the "
@@ -1787,7 +1743,7 @@ msgid ""
 "incorrect."
 msgstr ""
 
-#: ../../introducing.rst:1086
+#: ../../introducing.rst:1090
 msgid ""
 "If using an ISO stored on the hard disk is preferred, click the "
 ":guilabel:`DVD` icon then :guilabel:`Choose a virtual CD/DVD disk file` to "
@@ -1796,7 +1752,7 @@ msgid ""
 "in the :guilabel:`Storage Tree` section."
 msgstr ""
 
-#: ../../introducing.rst:1092
+#: ../../introducing.rst:1096
 msgid ""
 "|trueos| is now ready to be installed into the virtual machine as a guest "
 "OS. Highlight the virtual machine and click on the green :guilabel:`Start` "
@@ -1808,7 +1764,7 @@ msgid ""
 "the installation as described in the :ref:`Install` section."
 msgstr ""
 
-#: ../../introducing.rst:1102
+#: ../../introducing.rst:1106
 msgid ""
 "If the installer GUI doesn't appear to load after configuring the virtual "
 "machine, **EFI** may need to be enabled in Virtualbox by navigating "
@@ -1816,30 +1772,30 @@ msgid ""
 ":guilabel:`Enable EFI (special OSes only)`."
 msgstr ""
 
-#: ../../introducing.rst:1111
+#: ../../introducing.rst:1115
 msgid "Supported Hardware"
 msgstr ""
 
-#: ../../introducing.rst:1113
+#: ../../introducing.rst:1117
 msgid ""
 "While the |trueos| installer is very easy to use, installing a brand new "
 "operating system can sometimes be a daunting task."
 msgstr ""
 
-#: ../../introducing.rst:1116
+#: ../../introducing.rst:1120
 msgid ""
 "Before beginning, there are a few things to check to ensure the system is "
 "ready to install |trueos|."
 msgstr ""
 
-#: ../../introducing.rst:1119
+#: ../../introducing.rst:1123
 msgid ""
 "**Dual-booting or installing over the entire drive?** If dual-booting, "
 "please ensure a primary partition is available. Refer to the chapter on "
 ":ref:`Dual Booting`."
 msgstr ""
 
-#: ../../introducing.rst:1123
+#: ../../introducing.rst:1127
 msgid ""
 "**Ensure important data is backed up!** Any irreplaceable data, such as "
 "emails, bookmarks, or important files and documents should **always** be "
@@ -1848,34 +1804,34 @@ msgid ""
 "and losing important data can be avoided."
 msgstr ""
 
-#: ../../introducing.rst:1130
+#: ../../introducing.rst:1134
 msgid ""
 "To determine if the chosen hardware is detected by |trueos|, start a new "
 "installation and click the :guilabel:`Hardware Compatibility` icon in the "
 "lower left corner of the :ref:`Language` screen."
 msgstr ""
 
-#: ../../introducing.rst:1134
+#: ../../introducing.rst:1138
 msgid ""
 "If any problems arise with the installation, refer to the "
 ":ref:`Troubleshooting` section of this handbook."
 msgstr ""
 
-#: ../../introducing.rst:1141
+#: ../../introducing.rst:1145
 msgid "Hardware Requirements and Supported Hardware"
 msgstr ""
 
-#: ../../introducing.rst:1143
+#: ../../introducing.rst:1147
 msgid ""
 "This section discusses the |trueos| hardware requirements and some supported"
 " hardware."
 msgstr ""
 
-#: ../../introducing.rst:1150
+#: ../../introducing.rst:1154
 msgid "Minimum Requirements"
 msgstr ""
 
-#: ../../introducing.rst:1152
+#: ../../introducing.rst:1156
 msgid ""
 "|trueos| has moderate hardware requirements and typically uses less "
 "resources than its commercial counterparts. Before installing |trueos|, make"
@@ -1884,63 +1840,63 @@ msgid ""
 "exceeding the minimum or recommended system requirements."
 msgstr ""
 
-#: ../../introducing.rst:1158
+#: ../../introducing.rst:1162
 msgid ""
 "At a **bare minimum**, these requirements must be met in order to install "
 "|trueos|:"
 msgstr ""
 
-#: ../../introducing.rst:1161
+#: ../../introducing.rst:1165
 msgid "**Minimum Requirements**"
 msgstr ""
 
-#: ../../introducing.rst:1163 ../../introducing.rst:1177
+#: ../../introducing.rst:1167 ../../introducing.rst:1181
 msgid "64-bit processor"
 msgstr ""
 
-#: ../../introducing.rst:1165
+#: ../../introducing.rst:1169
 msgid "1 GB RAM"
 msgstr ""
 
-#: ../../introducing.rst:1167
+#: ../../introducing.rst:1171
 msgid ""
 "10 - 15 GB of free hard drive space on a **primary partition** for a "
 "command-line server installation."
 msgstr ""
 
-#: ../../introducing.rst:1170 ../../introducing.rst:1184
+#: ../../introducing.rst:1174 ../../introducing.rst:1188
 msgid "Network card"
 msgstr ""
 
-#: ../../introducing.rst:1172
+#: ../../introducing.rst:1176
 msgid ""
 "Here are the **recommended** requirements. More RAM and available disk space"
 " improves the computing experience:"
 msgstr ""
 
-#: ../../introducing.rst:1175
+#: ../../introducing.rst:1179
 msgid "**Recommended Requirements**"
 msgstr ""
 
-#: ../../introducing.rst:1179
+#: ../../introducing.rst:1183
 msgid "4 GB of RAM"
 msgstr ""
 
-#: ../../introducing.rst:1181
+#: ../../introducing.rst:1185
 msgid ""
 "20 - 30 GB of free hard drive space on a primary partition for a graphical "
 "desktop installation."
 msgstr ""
 
-#: ../../introducing.rst:1186
+#: ../../introducing.rst:1190
 msgid "Sound card"
 msgstr ""
 
-#: ../../introducing.rst:1188
+#: ../../introducing.rst:1192
 msgid "3D-accelerated video card"
 msgstr ""
 
-#: ../../introducing.rst:1190
+#: ../../introducing.rst:1194
 msgid ""
 "|trueos| does not require 50 GB for its installation. The minimum "
 "recommendation is to provide sufficient room for the installation of "
@@ -1949,18 +1905,18 @@ msgid ""
 "system to an earlier point in time, or clone the operating system."
 msgstr ""
 
-#: ../../introducing.rst:1197
+#: ../../introducing.rst:1201
 msgid ""
 "There is no such thing as too much RAM. ZFS thrives on systems with lots of "
 "RAM. To play modern video games, use a fast CPU. To create a collection of "
 "music and movies on the computer, sufficient disk space is required."
 msgstr ""
 
-#: ../../introducing.rst:1206
+#: ../../introducing.rst:1210
 msgid "Processor"
 msgstr ""
 
-#: ../../introducing.rst:1208
+#: ../../introducing.rst:1212
 msgid ""
 "|trueos| installs on any system containing a 64-bit (also called *amd64*) "
 "processor. Despite the name, a 64-bit processor does **not** need to be "
@@ -1970,11 +1926,11 @@ msgid ""
 "the *amd64* processors known to be compatible."
 msgstr ""
 
-#: ../../introducing.rst:1219
+#: ../../introducing.rst:1223
 msgid "Graphics"
 msgstr ""
 
-#: ../../introducing.rst:1221
+#: ../../introducing.rst:1225
 msgid ""
 "Like many open source operating systems, |trueos| uses `X.org "
 "<https://www.x.org/wiki/>`_ drivers for graphics support. |trueos| "
@@ -1983,11 +1939,11 @@ msgid ""
 ":guilabel:`Hardware Compatibility` icon within the installer."
 msgstr ""
 
-#: ../../introducing.rst:1228
+#: ../../introducing.rst:1232
 msgid "Here are the major graphic vendors supported in |trueos|:"
 msgstr ""
 
-#: ../../introducing.rst:1230
+#: ../../introducing.rst:1234
 msgid ""
 "**NVIDIA:** 3D acceleration on NVIDIA is provided by native FreeBSD drivers."
 " If an NVIDIA video card is detected, an :guilabel:`nVidia settings` icon "
@@ -1995,18 +1951,18 @@ msgid ""
 "settings."
 msgstr ""
 
-#: ../../introducing.rst:1235
+#: ../../introducing.rst:1239
 msgid ""
 "**Intel:** 3D acceleration on most Intel graphics is supported. This "
 "includes Skylake, Haswell, Broadwell, and ValleyView chipsets."
 msgstr ""
 
-#: ../../introducing.rst:1238
+#: ../../introducing.rst:1242
 msgid ""
 "**ATI/Radeon:** 3D acceleration on most ATI and Radeon cards is supported."
 msgstr ""
 
-#: ../../introducing.rst:1241
+#: ../../introducing.rst:1245
 msgid ""
 "**Optimus:** Currently, there is no switching support between the two "
 "graphics adapters provided by Optimus. Optimus implementations vary, so "
@@ -2018,11 +1974,11 @@ msgid ""
 "change in the future when the NVIDIA driver supports Optimus."
 msgstr ""
 
-#: ../../introducing.rst:1255
+#: ../../introducing.rst:1259
 msgid "Wireless"
 msgstr ""
 
-#: ../../introducing.rst:1257
+#: ../../introducing.rst:1261
 msgid ""
 "|trueos| has built-in support for most wireless networking cards. |trueos| "
 "automatically detects available wireless networks for supported wireless "
@@ -2031,7 +1987,7 @@ msgid ""
 "device, insert it before running the installer."
 msgstr ""
 
-#: ../../introducing.rst:1263
+#: ../../introducing.rst:1267
 msgid ""
 "Certain Broadcom devices, typically found in less expensive laptops, are "
 "buggy and lockup unexpectedly while in *DMA* mode. If the device freezes, "
@@ -2040,25 +1996,25 @@ msgid ""
 " that resolves the issue."
 msgstr ""
 
-#: ../../introducing.rst:1269
+#: ../../introducing.rst:1273
 msgid ""
 "Some wifi adapters are not configured during installation, but after first "
 "boot. Just because an adapter does not show up during installation does not "
 "mean it is unsupported."
 msgstr ""
 
-#: ../../introducing.rst:1277
+#: ../../introducing.rst:1281
 msgid "Laptops"
 msgstr ""
 
-#: ../../introducing.rst:1279
+#: ../../introducing.rst:1283
 msgid ""
 "Many |trueos| users successfully run |trueos| on their laptops. However, "
 "some issues may occur, depending upon the model of laptop. Some typical "
 "laptop issues:"
 msgstr ""
 
-#: ../../introducing.rst:1283
+#: ../../introducing.rst:1287
 msgid ""
 "**Sleep/suspend:** Unfortunately, :wiki:`Advanced Configuration and Power "
 "Interface <Advanced_Configuration_and_Power_Interface>` (ACPI) is not an "
@@ -2075,7 +2031,7 @@ msgid ""
 "value persist after a reboot."
 msgstr ""
 
-#: ../../introducing.rst:1298
+#: ../../introducing.rst:1302
 msgid ""
 "**Synaptics:** Disabling the system's touchpad may be dependant upon the "
 "hardware. This `forum post "
@@ -2084,32 +2040,32 @@ msgid ""
 "provides."
 msgstr ""
 
-#: ../../introducing.rst:1304
+#: ../../introducing.rst:1308
 msgid ""
 "The `SysAdm Mouse Settings <https://sysadm.us/handbook/client/>`_ also has "
 "options for disabling a system's touchpad, if one is detected."
 msgstr ""
 
-#: ../../introducing.rst:1308
+#: ../../introducing.rst:1312
 msgid ""
 "To test the laptop's hardware, use the :guilabel:`Hardware Compatibility` "
 "icon in the :ref:`Language` screen before continuing with the installation."
 msgstr ""
 
-#: ../../introducing.rst:1312
+#: ../../introducing.rst:1316
 msgid ""
 "To install |trueos| onto an Asus Eee PC, review the `FreeBSD Eee page "
 "<https://wiki.FreeBSD.org/AsusEee>`_ first."
 msgstr ""
 
-#: ../../introducing.rst:1315
+#: ../../introducing.rst:1319
 msgid ""
 "The FreeBSD `Tuning Power Consumption page "
 "<https://wiki.FreeBSD.org/TuningPowerConsumption>`_ has some tips for "
 "reducing power consumption."
 msgstr ""
 
-#: ../../introducing.rst:1322
+#: ../../introducing.rst:1326
 msgid ""
 "With regards to specific hardware, the ThinkPad T420 may panic during "
 "install. If it does, enter the BIOS and set the video mode to \"discrete\", "
@@ -2120,6 +2076,94 @@ msgid ""
 ":guilabel:`GPT (Best for new hardware)` is unchecked. If it was checked "
 "previously, redo the installation with the box unchecked."
 msgstr ""
+
+#: ../../introducing.rst:24
+msgid ""
+"This Handbook covers the installation and use of |trueos|. This Handbook is "
+"a work in progress and relies on the contributions of many individuals. To "
+"assist with the Handbook, read the section about :ref:`Contributing "
+"Documentation changes <Documentation>`. If using IRC, join the #trueos "
+"channel on the Freenode network to converse with other |trueos| users. The "
+":literal:`TrueOS Community` channel on `Telegram <https://telegram.org/>`_ "
+"is another popular option for users."
+msgstr ""
+
+#: ../../introducing.rst:32
+msgid ""
+"`TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in "
+"2005 when Kris Moore presented the first beta version of a FreeBSD operating"
+" system pre-configured for desktop use. Since then, |trueos| has matured "
+"into a polished, feature-rich, free-of-charge, Open Source operating system "
+"that meets the desktop or server needs of the beginner to the advanced user "
+"alike."
+msgstr ""
+
+#: ../../introducing.rst:922
+msgid ""
+"To downlaod an :file:`.iso` file`, select :guilabel:'TrueOs Desktop Image "
+"(DVD Image)'."
+msgstr ""
+
+#: ../../introducing.rst:925
+msgid ""
+"Once a |trueos| ISO is `downloaded <https://www.trueos.org/downloads/>`_ and"
+" VirtualBox installed on the host system, create a new virtual machine to "
+"install |trueos| as a guest OS. The virtual machine must meet several "
+"minimum requirements in order to be useable. This section will demonstrate "
+"how to configure the virtual machine for a |trueos| guest."
+msgstr ""
+
+#: ../../introducing.rst:932
+msgid "A minimum of 2 GB of memory."
+msgstr ""
+
+#: ../../introducing.rst:934
+msgid ""
+"A virtual disk of 10-15 GB for a server installation or 50 GB for a desktop "
+"installation should be a useable starting point. The actual size of a "
+"virtual disk depends on the virtual machine's intended use, and what "
+"applications need to be installed for example but these sizes should suit "
+"the average user's needs."
+msgstr ""
+
+#~ msgid ""
+#~ "`TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in "
+#~ "2005 when Kris Moore presented the first beta version of a FreeBSD operating"
+#~ " system pre-configured for desktop use. Since then, |trueos| has matured "
+#~ "into a polished, feature-rich, free-of-charge, open source operating system "
+#~ "that meets the desktop or server needs of the beginner to the advanced user "
+#~ "alike."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This Handbook covers the installation and use of |trueos|. This Handbook is "
+#~ "a work in progress and relies on the contributions of many individuals. To "
+#~ "assist with the Handbook, refer to the documentation `README "
+#~ "<https://github.com/trueos/trueos-docs/blob/master/trueos-"
+#~ "handbook/README.md>`_. If using IRC, join the #trueos channel on the "
+#~ "Freenode network to converse with many other |trueos| users. `Gitter "
+#~ "<https://gitter.im/trueos>`_ is another popular option for users."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once a |trueos| ISO is `downloaded "
+#~ "<https://www.trueos.org/downloads/downloads>`_ and VirtualBox installed on "
+#~ "the host system, create a new virtual machine to install |trueos| as a guest"
+#~ " OS. The virtual machine must meet several minimum requirements in order to "
+#~ "be useable. This section will demonstrate how to configure the virtual "
+#~ "machine for a |trueos| guest."
+#~ msgstr ""
+
+#~ msgid "A minimum of 1024MB of memory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A virtual disk of 10-15 GB for a server installation or 20-30 GB for a "
+#~ "desktop installation should be a useable starting point. The actual size of "
+#~ "a virtual disk depends on the virtual machine's intended use, and what "
+#~ "applications need to be installed for example but these sizes should suit "
+#~ "the average user's needs."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "This Handbook covers the installation and use of |trueos|. This Handbook is "
