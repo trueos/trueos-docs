@@ -11,16 +11,16 @@ Welcome to |trueos|!
 
 This Handbook covers the installation and use of |trueos|. This Handbook
 is a work in progress and relies on the contributions of many
-individuals. To assist with the Handbook, refer to the documentation
-`README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
-If using IRC, join the #trueos channel on the Freenode network to converse
-with many other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is
-another popular option for users.
+individuals. To assist with the Handbook, read the section about
+:ref:`Contributing Documentation changes <Documentation>`. If using IRC,
+join the #trueos channel on the Freenode network to converse with other
+|trueos| users. The :literal:`TrueOS Community` channel on
+`Telegram <https://telegram.org/>`_ is another popular option for users.
 
 `TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in
 2005 when Kris Moore presented the first beta version of a FreeBSD
 operating system pre-configured for desktop use. Since then, |trueos|
-has matured into a polished, feature-rich, free-of-charge, open source
+has matured into a polished, feature-rich, free-of-charge, Open Source
 operating system that meets the desktop or server needs of the beginner
 to the advanced user alike.
 
