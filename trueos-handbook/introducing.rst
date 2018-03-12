@@ -800,17 +800,48 @@ differences between Windows and BSD:
 * General `Comparison of Operating Systems <https://en.wikipedia.org/wiki/Comparison_of_operating_systems>`_
 * `Open Source Alternatives <https://opensource.com/alternatives>`_
 
-.. TODO: Expand this section
-   .. index:: MacOSX and TrueOS
-   .. _compareMacOSX:
 
-   Mac OS X and TrueOS
-   -------------------
+.. index:: MacOSX and TrueOS
+.. _compareMacOSX:
 
-   Mac OS X is actually related to FreeBSD, resulting in some system
-   level similarities. However, application development has diverged
-   pretty strongly, so here are some suggestions for TrueOS/FreeBSD
-   applications which may "fill the void" from your Mac system.
+Mac OS X and TrueOS
+-------------------
+
+Mac OS X is related to FreeBSD, resulting in some system level 
+similarities. Many of the features that make Mac OS X a popular 
+operating system are found in |trueos|. |trueos|, like Mac OS X, 
+includes built in securtiy features and access to many free programs 
+and apps. Mac OS X comes with some of these programs pre-installed, 
+but |trueos| users can use the App Cafe to download programs that 
+fill many of the same functions. |trueos|is intentionally a light 
+weight install. This allows for easy user customization.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}|
+
+.. table:: TrueOS/Mac OS X equivalents
+
+   +---------------------+-------------------+-------------------+
+   | Element             | Mac OS X          | TrueOS            |
+   +=====================+===================+===================+
+   | Office Applications | Pages, Numbers,   | LibreOffice       |
+   |                     | and Keynote       |                   |
+   +---------------------+-------------------+-------------------+
+   | Image Editing       | Photoshop         | GIMP              |
+   +---------------------+-------------------+-------------------+
+   | Video Editing       | Imovie            | Shotcut           |
+   +---------------------+-------------------+-------------------+
+   | Recording           | Garage Band       | Ardour5           |
+   +---------------------+-------------------+-------------------+
+   | PDF Viewing         | Acrobat           | Okular            |
+   +---------------------+-------------------+-------------------+
+   | Media Player        | Itunes            | VLC Media Player  |
+   +---------------------+-------------------+-------------------+
+   | Internet Browsing   | Safari            | Chromium, Firefox |
+   |                     | and many options  | and many options  |
+   +---------------------+-------------------+-------------------+
+
 
 .. index:: virtualization
 .. _Virtualization:
