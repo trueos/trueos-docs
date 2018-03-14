@@ -30,7 +30,7 @@ reverse is true: **contributing to the documentation is easy!**
 
 .. tip:: These instructions are for simple modifications of the
    |trueos| handbook, but they also apply to the |lumina| and |sysadm|
-   documentation! |lumina| documentation lives in the
+   documentation! |lumina| documentation is stored in the
    `lumina-docs <https://github.com/trueos/lumina-docs>`_ repository
    and |sysadm| guides are in
    `sysadm-docs <https://github.com/trueos/sysadm-docs>`_.

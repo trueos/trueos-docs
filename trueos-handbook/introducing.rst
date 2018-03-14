@@ -11,16 +11,16 @@ Welcome to |trueos|!
 
 This Handbook covers the installation and use of |trueos|. This Handbook
 is a work in progress and relies on the contributions of many
-individuals. To assist with the Handbook, refer to the documentation
-`README <https://github.com/trueos/trueos-docs/blob/master/trueos-handbook/README.md>`_.
-If using IRC, join the #trueos channel on the Freenode network to converse
-with many other |trueos| users. `Gitter <https://gitter.im/trueos>`_ is
-another popular option for users.
+individuals. To assist with the Handbook, read the section about
+:ref:`Contributing Documentation changes <Documentation>`. If using IRC,
+join the #trueos channel on the Freenode network to converse with other
+|trueos| users. The :literal:`TrueOS Community` channel on
+`Telegram <https://telegram.org/>`_ is another popular option for users.
 
 `TrueOS® <https://www.trueos.org>`_ (formerly known as |pcbsd|) began in
 2005 when Kris Moore presented the first beta version of a FreeBSD
 operating system pre-configured for desktop use. Since then, |trueos|
-has matured into a polished, feature-rich, free-of-charge, open source
+has matured into a polished, feature-rich, free-of-charge, Open Source
 operating system that meets the desktop or server needs of the beginner
 to the advanced user alike.
 
@@ -800,17 +800,48 @@ differences between Windows and BSD:
 * General `Comparison of Operating Systems <https://en.wikipedia.org/wiki/Comparison_of_operating_systems>`_
 * `Open Source Alternatives <https://opensource.com/alternatives>`_
 
-.. TODO: Expand this section
-   .. index:: MacOSX and TrueOS
-   .. _compareMacOSX:
 
-   Mac OS X and TrueOS
-   -------------------
+.. index:: MacOSX and TrueOS
+.. _compareMacOSX:
 
-   Mac OS X is actually related to FreeBSD, resulting in some system
-   level similarities. However, application development has diverged
-   pretty strongly, so here are some suggestions for TrueOS/FreeBSD
-   applications which may "fill the void" from your Mac system.
+Mac OS X and TrueOS
+-------------------
+
+Mac OS X is related to FreeBSD, resulting in some system level 
+similarities. Many of the features that make Mac OS X a popular 
+operating system are found in |trueos|. |trueos|, like Mac OS X, 
+includes built in securtiy features and access to many free programs 
+and apps. Mac OS X comes with some of these programs pre-installed, 
+but |trueos| users can use the App Cafe to download programs that 
+fill many of the same functions. |trueos|is intentionally a light 
+weight install. This allows for easy user customization.
+
+.. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}
+                    |>{\RaggedRight}p{\dimexpr 0.35\linewidth-2\tabcolsep}|
+
+.. table:: TrueOS/Mac OS X equivalents
+
+   +---------------------+-------------------+-------------------+
+   | Element             | Mac OS X          | TrueOS            |
+   +=====================+===================+===================+
+   | Office Applications | Pages, Numbers,   | LibreOffice       |
+   |                     | and Keynote       |                   |
+   +---------------------+-------------------+-------------------+
+   | Image Editing       | Photoshop         | GIMP              |
+   +---------------------+-------------------+-------------------+
+   | Video Editing       | Imovie            | Shotcut           |
+   +---------------------+-------------------+-------------------+
+   | Recording           | Garage Band       | Ardour5           |
+   +---------------------+-------------------+-------------------+
+   | PDF Viewing         | Acrobat           | Okular            |
+   +---------------------+-------------------+-------------------+
+   | Media Player        | Itunes            | VLC Media Player  |
+   +---------------------+-------------------+-------------------+
+   | Internet Browsing   | Safari            | Chromium, Firefox |
+   |                     | and many options  | and many options  |
+   +---------------------+-------------------+-------------------+
+
 
 .. index:: virtualization
 .. _Virtualization:
@@ -906,16 +937,20 @@ Creating a Virtual Machine for a |trueos| install
 How to prepare VirtualBox for an installation of |trueos| using an
 :file:`.iso` file.
 
+
+.. note:: To downlaod an :file:`.iso` file`, select :guilabel:'TrueOs Desktop 
+	Image (DVD Image)'.
+
 Once a |trueos| ISO is
-`downloaded <https://www.trueos.org/downloads/downloads>`_ and
+`downloaded <https://www.trueos.org/downloads/>`_ and
 VirtualBox installed on the host system, create a new virtual machine to
 install |trueos| as a guest OS. The virtual machine must meet several
 minimum requirements in order to be useable. This section will
 demonstrate how to configure the virtual machine for a |trueos| guest.
 
-* A minimum of 1024MB of memory.
+* A minimum of 2 GB of memory.
 
-* A virtual disk of 10-15 GB for a server installation or 20-30 GB for
+* A virtual disk of 10-15 GB for a server installation or 50 GB for
   a desktop installation should be a useable starting point. The actual
   size of a virtual disk depends on the virtual machine's intended use,
   and what applications need to be installed for example but these sizes

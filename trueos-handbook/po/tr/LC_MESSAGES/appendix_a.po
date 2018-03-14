@@ -1,0 +1,292 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: TrueOS® User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-05 15:02-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../appendix_a.rst:17
+msgid "Appendix A: Conventions & Legal"
+msgstr ""
+
+#: ../../appendix_a.rst:19
+msgid ""
+"This section contains the necessary legal information. It also contains a "
+"helpful table to understand some of the conventions used throughout this "
+"document."
+msgstr ""
+
+#: ../../appendix_a.rst:27
+msgid "Typographic Conventions"
+msgstr ""
+
+#: ../../appendix_a.rst:29
+msgid ""
+"The |trueos| User Guide uses several typographic conventions. :numref:`Table"
+" %s <typconv>` provides a simple reference for these conventions:"
+msgstr ""
+
+#: ../../appendix_a.rst:38
+msgid "Text Formatting Examples"
+msgstr ""
+
+#: ../../appendix_a.rst:42
+msgid "Item"
+msgstr ""
+
+#: ../../appendix_a.rst:42
+msgid "Visual Example"
+msgstr ""
+
+#: ../../appendix_a.rst:44
+msgid "Graphical elements: buttons, icons, fields, columns and boxes"
+msgstr ""
+
+#: ../../appendix_a.rst:44
+msgid "Click the :guilabel:`Import CA` button."
+msgstr ""
+
+#: ../../appendix_a.rst:49
+msgid "Menu selections"
+msgstr ""
+
+#: ../../appendix_a.rst:49
+msgid "Click :menuselection:`System --> Information`."
+msgstr ""
+
+#: ../../appendix_a.rst:52
+msgid "CLI Command name"
+msgstr ""
+
+#: ../../appendix_a.rst:52
+msgid "Use :command:`scp`."
+msgstr ""
+
+#: ../../appendix_a.rst:54
+msgid "A command line example"
+msgstr ""
+
+#: ../../appendix_a.rst:54
+msgid ":samp:`[tmoore@example] ls /etc`"
+msgstr ""
+
+#: ../../appendix_a.rst:57
+msgid "Files, volume and dataset names, and directories"
+msgstr ""
+
+#: ../../appendix_a.rst:57
+msgid "Locate the :file:`/etc/rc.conf` file."
+msgstr ""
+
+#: ../../appendix_a.rst:61
+msgid "Keyboard keys"
+msgstr ""
+
+#: ../../appendix_a.rst:61
+msgid "Press the :kbd:`Enter` key."
+msgstr ""
+
+#: ../../appendix_a.rst:63
+msgid "Important points"
+msgstr ""
+
+#: ../../appendix_a.rst:63
+msgid "**This is important.**"
+msgstr ""
+
+#: ../../appendix_a.rst:65
+msgid "Values entered into fields, or device names"
+msgstr ""
+
+#: ../../appendix_a.rst:65
+msgid "Enter *127.0.0.1* in the address field."
+msgstr ""
+
+#: ../../appendix_a.rst:74
+msgid "Copyright & Trademarks"
+msgstr ""
+
+#: ../../appendix_a.rst:78
+msgid ""
+"The |trueos| User Guide is freely available for sharing and redistribution "
+"under the terms of the `Creative Commons Attribution License "
+"<https://creativecommons.org/licenses/by/3.0/>`_. This means you have "
+"permission to copy, distribute, translate, and adapt the work, as long as "
+"you attribute the |trueos| Project as the original source of the Guide."
+msgstr ""
+
+#: ../../appendix_a.rst:85
+msgid ""
+"|trueos| and the |trueos| logo are registered trademarks of `iXsystems "
+"<https://www.ixsystems.com/>`_. To use the |trueos| logo in your own works, "
+"please ask for permission first from marketing@ixsystems.com."
+msgstr ""
+
+#: ../../appendix_a.rst:90
+msgid ""
+"|lumina| and the |lumina| logo are registered trademarks of `iXsystems "
+"<https://www.ixsystems.com/>`_. To use the |lumina| logo in your own works, "
+"please ask for permission first from marketing@ixsystems.com."
+msgstr ""
+
+#: ../../appendix_a.rst:95
+msgid "|sysadm| is a trademark of `iXsystems <https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../appendix_a.rst:97
+msgid ""
+"|trpi|, |pise|, and |picl| are trademarks of `iXsystems "
+"<https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../appendix_a.rst:100
+msgid "AMD is a trademark of Advanced Micro Devices, Inc."
+msgstr ""
+
+#: ../../appendix_a.rst:102
+msgid "Apache is a trademark of The Apache Software Foundation."
+msgstr ""
+
+#: ../../appendix_a.rst:104
+msgid ""
+"|appcafe| is a registered trademark of `iXsystems "
+"<https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../appendix_a.rst:107
+msgid "Asus® and Eee PC® are registered trademarks of ASUSTeK® Computer Inc."
+msgstr ""
+
+#: ../../appendix_a.rst:109
+msgid "Facebook® is a registered trademark of Facebook Inc."
+msgstr ""
+
+#: ../../appendix_a.rst:111
+msgid ""
+"Flash® is a registered trademark of Adobe Systems Incorporated in the United"
+" States and/or other countries."
+msgstr ""
+
+#: ../../appendix_a.rst:114
+msgid ""
+"FreeBSD® is a registered trademark of the `FreeBSD Foundation "
+"<https://www.freebsdfoundation.org/>`_."
+msgstr ""
+
+#: ../../appendix_a.rst:117
+msgid ""
+"|freenas| is a registered trademark of `iXsystems "
+"<https://www.ixsystems.com/>`_."
+msgstr ""
+
+#: ../../appendix_a.rst:120
+msgid ""
+"Intel, the Intel logo, Pentium Inside, and Pentium are trademarks of Intel "
+"Corporation in the U.S. and/or other countries."
+msgstr ""
+
+#: ../../appendix_a.rst:123
+msgid ""
+"Java™ is a trademark of Oracle America and/or its affiliates in the United "
+"States and other countries."
+msgstr ""
+
+#: ../../appendix_a.rst:126
+msgid "LinkedIn® is a registered trademark of LinkedIn Corporation."
+msgstr ""
+
+#: ../../appendix_a.rst:128
+msgid "Linux® is a registered trademark of Linus Torvalds."
+msgstr ""
+
+#: ../../appendix_a.rst:130
+msgid ""
+"Mac and Mac OS are trademarks of Apple Inc., registered in the U.S. and "
+"other countries."
+msgstr ""
+
+#: ../../appendix_a.rst:133
+msgid ""
+"NVIDIA® is a trademark and/or registered trademark of NVIDIA Corporation in "
+"the U.S. and other countries."
+msgstr ""
+
+#: ../../appendix_a.rst:136
+msgid "ThinkPad® is a registered trademark of Lenovo."
+msgstr ""
+
+#: ../../appendix_a.rst:138
+msgid ""
+"Twitter is a trademark of Twitter, Inc. in the United States and other "
+"countries."
+msgstr ""
+
+#: ../../appendix_a.rst:141
+msgid "UNIX® is a registered trademark of The Open Group."
+msgstr ""
+
+#: ../../appendix_a.rst:143
+msgid "VirtualBox® is a registered trademark of Oracle."
+msgstr ""
+
+#: ../../appendix_a.rst:145
+msgid "VMWare® is a registered trademark of VMWare, Inc."
+msgstr ""
+
+#: ../../appendix_a.rst:147
+msgid ""
+"Windows® is a registered trademark of Microsoft Corporation in the United "
+"States and other countries."
+msgstr ""
+
+#: ../../appendix_a.rst:154
+msgid "Ethical Advertising Policy"
+msgstr ""
+
+#: ../../appendix_a.rst:156
+msgid ""
+"For many years, users have wanted to give back to the |trueos| project. "
+"Generally, we encouraged users to donate or actively contribute to the "
+"FreeBSD project to ensure FreeBSD continues to be successful in the future. "
+"Because |trueos| is open source software, we have included a minimal number "
+"of ads as a simple method for users to give back to the project, if they "
+"wish."
+msgstr ""
+
+#: ../../appendix_a.rst:163
+msgid ""
+"The primary consideration for these ads is to avoid detracting from the user"
+" experience as much as possible. To this end, any ads in the Handbook will "
+"be limited to the navigation sidebar, and only in a predefined space "
+"underneath all other navigation options. We are resolved to protect user "
+"privacy and security, and do not collect user information, with the "
+"exception of click-throughs. Furthermore, we do not collect any data for "
+"targeted ads, and are committed to only show high quality ads pertaining to "
+"our user base."
+msgstr ""
+
+#: ../../appendix_a.rst:172
+msgid "**Cookie Policy**"
+msgstr ""
+
+#: ../../appendix_a.rst:174
+msgid ""
+"Clicking on a Newegg ad directs users through an affiliate link that gives "
+"the |trueos| project a modest commission based on any items purchased within"
+" 24 hours. This is a simple time tracking cookie used to ensure the |trueos|"
+" project is afforded its commission. To ask questions about our Ethical "
+"Advertising policy, please contact joshms@trueos.org for more information."
+msgstr ""
+
+#: ../../appendix_a.rst:76
+msgid "Copyright © 2005-2018, iXsystems"
+msgstr ""
+
+#~ msgid "Copyright © 2005-2017, iXsystems"
+#~ msgstr ""

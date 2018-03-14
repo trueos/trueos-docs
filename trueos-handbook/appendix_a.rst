@@ -61,7 +61,7 @@ conventions:
 Copyright & Trademarks
 ======================
 
-Copyright © 2005-2017, iXsystems
+Copyright © 2005-2018, iXsystems
 
 The |trueos| User Guide is freely available for sharing and
 redistribution under the terms of the

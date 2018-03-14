@@ -1786,13 +1786,11 @@ Coming soon:
 FreeBSD Ports
 =============
 
-Use :command:`git` to fetch the FreeBSD ports tree on a local system.
-Specifically, the |trueos| branch of the FreeBSD ports tree is pulled,
-which is regularly updated against the base FreeBSD ports tree.
+TrueOS allows users to build applications using the ports system. Use :command:`git` to fetch the FreeBSD ports tree on the local system. It is recommended that users make use of the |trueos| branch of the FreeBSD ports, which is regularly updated against the base FreeBSD ports tree.
 
 .. note:: These commands must be run as the superuser or **root**.
 
-When fetching ports for the first time:
+To fetch the ports for the first time, use the following command:
 
 :samp:`# git clone http://github.com/trueos/freebsd-ports.git /usr/ports`
 
@@ -1802,6 +1800,17 @@ To update an existing local ports directory:
 
  # cd /usr/ports
  # git pull
+ 
+ The easiest way to find the location of the port you want to build is to browse the TrueOS ports on GitHub: https://github.com/trueos/freebsd-ports. From there, navigate to the directory of the required application and start build process.
+ 
+ For example, to build Filezilla:
+ 
+.. code-block:: none
+
+ # cd /usr/ports/ftp/filezilla
+ # make install
+ 
+ 
 
 .. index:: printing, scanning
 .. _Printing:

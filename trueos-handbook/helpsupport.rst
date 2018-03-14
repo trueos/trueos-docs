@@ -375,8 +375,8 @@ in the system tray and received the same messages as noted above.
 
 **Second Attempt:**
 
-I was working with and want to give special thanks to :ref:`Gitter Chat`
-users *@RodMyers* and *@NorwegianRockCat*. They suggested I use the
+I was working with and want to give special thanks to users
+*@RodMyers* and *@NorwegianRockCat*. They suggested I use the
 :command:`lpreserver` command line. So I issued these commands:
 
 .. code-block:: none
@@ -535,32 +535,27 @@ inception. A wide variety of chat channels and forum options are now
 available for users to interact with each other, contributors to the
 project, and the core development team.
 
-.. index:: gitter chat
-.. _Gitter Chat:
+.. index:: Telegram Community
+.. _Telegram Community:
 
-Gitter Chat
------------
+Telegram Community
+------------------
 
-The |trueos| Project uses
-`Gitter <https://en.wikipedia.org/wiki/Gitter>`_ to provide real-time
-chat and collaboration with |trueos| users and developers. Gitter does
-not require an application to use, but does require a login using
-either an existing GitHub or Twitter account.
+The |trueos| Project uses `Telegram <https://telegram.org/>`_ to provide
+real-time chat and collaboration with |trueos| users and developers.
+Telegram is available in a web browser or as downloadable applications
+for Android, macOS, and PC/Mac/Linux.
 
-To access the TrueOS Gitter community, point a web browser to
-https://gitter.im/trueos.
+To access the TrueOS Telegram community, point a web browser to
+https://web.telegram.org. Sign in with a valid phone number and join
+the
+`TrueOS Community channel <https://web.telegram.org/#/im?p=@TrueOSCommunity>`_.
 
-Gitter also maintains a full archive of the chat history. This means
-lengthy conversations about hardware issues or workarounds are always
-available for reference. To access the Gitter archive, navigate to
-the desired |trueos| room's archive. For example, here is the address of
-the TrueOS Lobby archive: https://gitter.im/trueos/Lobby/archives.
+Telegram maintains a full archive of the chat history. This means lengthy
+conversations about hardware issues or workarounds are always available
+for reference.
 
-.. note:: It is not required to log in to Gitter to browse the archive.
-
-Gitter is a great way to chat with other users and get answers to
-questions. Here are few things to keep in mind when asking a question
-on the Gitter channel:
+Here are some tips about the community channel:
 
 * Most of the regular users are always logged in, even when they are
   away from their computer or are busy doing other things. If no one
@@ -848,11 +843,11 @@ Having as many people as possible using |trueos| on many different
 hardware configurations assists the Project in finding and fixing bugs.
 The end result is more polished and usable OS for the entire community.
 
-If you wish to become a tester, join the Gitter
-`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. Updates are typically
-announced announced here. You can also see any problems other testers
-are finding and can check to see if the problem exists on your hardware
-as well.
+If you wish to become a tester, join the Telegram
+`TrueOS Community channel <https://web.telegram.org/#/im?p=@TrueOSCommunity>`_.
+Updates are typically announced announced here. You can also see any
+problems other testers are finding and can check to see if the problem
+exists on your hardware as well.
 
 Anyone can become a beta tester. If you find a bug while testing, be
 sure to accurately describe the situation when
@@ -878,11 +873,11 @@ This section describes each of these translation areas in more detail
 and how to begin as a translator.
 
 Regardless of the type of desired translation, you should first join the
-`TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_. The first time
-joining the channel, introduce yourself and indicate which language(s)
-and which type(s) of translations you can assist with. This allows you
-to meet other volunteers and stay informed of any notices or updates
-affecting translators.
+`TrueOS Community channel <https://web.telegram.org/#/im?p=@TrueOSCommunity>`_.
+The first time joining the channel, introduce yourself and indicate
+which language(s) and which type(s) of translations you can assist with.
+This allows you to meet other volunteers and stay informed of any
+notices or updates affecting translators.
 
 .. index:: interface translation
 .. _Interface Translation:
@@ -938,7 +933,7 @@ translate. Once any selections are made, click :guilabel:`Save`.
 
 .. note:: If the language you wish to translate is missing from the
    "Translated languages" menu, request its addition in the
-   `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
+   `TrueOS Community channel <https://web.telegram.org/#/im?p=@TrueOSCommunity>`_.
 
 Next, click :guilabel:`Projects` at the top of the screen to select
 a localization project. In the example shown in
@@ -984,7 +979,8 @@ to translate.
    Translation Editor
 
 If assistance is needed with either a translation or the Weblate system,
-ask for help in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_.
+ask for help in the
+`TrueOS Community channel <https://web.telegram.org/#/im?p=@TrueOSCommunity>`_.
 
 .. index:: documentation translation
 .. _Documentation Translation:
@@ -1083,8 +1079,9 @@ Website Translation
 ^^^^^^^^^^^^^^^^^^^
 
 If you are interested in translating the |trueos| website, introduce
-yourself in the `TrueOS® Lobby <https://gitter.im/trueos/Lobby>`_ or
-open a new topic in our
+yourself in the
+`TrueOS Community channel <https://web.telegram.org/#/im?p=@TrueOSCommunity>`_
+or open a new topic in our
 `Discourse forum <https://discourse.trueos.org/>`_
 
 Currently, the website is being translated into several languages,
