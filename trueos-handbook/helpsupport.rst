@@ -1887,6 +1887,9 @@ excellent resource for learning how things work under the hood of a
    these instances, reading the FreeBSD Handbook section can help to
    learn how the system is configured and why it works.
 
+.. tip:: The FreeBSD Handbook (and some other useful documents) are also
+   installed on the |trueos| system at :file:`/usr/local/share/doc/freebsd`.
+
 .. index:: Search and Portals
 .. _Search and Portals:
 
