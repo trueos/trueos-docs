@@ -813,7 +813,7 @@ operating system are found in |trueos|. |trueos|, like Mac OS X,
 includes built in securtiy features and access to many free programs 
 and apps. Mac OS X comes with some of these programs pre-installed, 
 but |trueos| users can use the App Cafe to download programs that 
-fill many of the same functions. |trueos|is intentionally a light 
+fill many of the same functions. |trueos| is intentionally a light 
 weight install. This allows for easy user customization.
 
 .. tabularcolumns:: |>{\RaggedRight}p{\dimexpr 0.30\linewidth-2\tabcolsep}
