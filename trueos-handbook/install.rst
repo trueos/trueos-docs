@@ -15,6 +15,13 @@ using virtualization software such as
 Download and Prepare to Install
 ===============================
 
+.. note:: Beginning with |trueos| STABLE 18.06, a single :file:`.iso` is
+   available for download. This file can be burnt to a DVD or USB drive.
+   The instructions in this section about downloading :file:`.img` or
+   :file:`.iso` files are still relevant to the 18.03 version of STABLE
+   or UNSTABLE.
+
+
 |trueos| uses a rolling release model rather than versioned releases.
 There are two primary options of |trueos| install: STABLE and UNSTABLE:
 
@@ -44,20 +51,18 @@ Installation files can be downloaded from the
 `TrueOS® website <https://www.trueos.org/downloads/>`_.
 
 :numref:`Figure %s <downloadscreen1>` below shows the |trueos| website,
-and how to download a STABLE or UNSTABLE version of |trueos|. It also
-shows a drop down menu containing the different types of install files
-available for download.
+and how to download a STABLE or UNSTABLE version of |trueos|. There is
+also a :guilabel:`Browse Downloads` option which links to all the
+download directories.
 
 .. _downloadscreen1:
 
 .. figure:: images/downloadscreen1.png
    :scale: 100%
 
-   UNSTABLE or STABLE Download Screen
+   |trueos| Download Screen
 
 To install a graphical desktop, download the |trueos| Desktop option.
-Then, depending on the file chosen, either burn it to a DVD media
-or write it to a removable USB device.
 
 If installing a command-line only server is preferred, download and
 begin installing the |trueos| Server option.
