@@ -102,6 +102,11 @@ using TrueOS and/or FreeBSD before following these instructions.
 
 ### Required Applications <a name="reaps"></a>
 
+.. note:: In case you are building the documentation from an OS other than
+   TrueOS, please note that the only supported `make` tool is *NetBSD make*,
+   provided with TrueOS. So, please make sure you are
+   using the correct binary. For example, Debian-based systems use `bmake`.
+
 There are a few packages to install before making a local copy of the
 documentation. Sphinx and its relevant extensions are the most
 important.
